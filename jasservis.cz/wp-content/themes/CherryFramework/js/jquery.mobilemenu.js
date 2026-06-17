@@ -35,21 +35,11 @@
 			// Create select option from menu
 			el.find('a,.separator').each(function(){
 				var $this  = $(this),
-					// optText = $this.context.firstChild.textContent,
 					optText = $this.text(),
-					optSub = $this.parents( '.' + settings.subMenuClass ),
-					len   = optSub.length,
-					dash;
-				// if menu has sub menu
-				if( $this.parents('ul').hasClass( settings.subMenuClass ) ) {
-					dash = Array( len+1 ).join( settings.subMenuDash );
-					optText = dash + optText;
-				}
-				if($this.is('span')){
-					// Now build menu and append it
-					$('<optgroup />', {"label":optText,}).appendTo('.' + settings.className);
+					isParent = $this.parent('li').hasClass('menu-item-has-children');
+				if(isParent || $this.is('span')){
+					$('<optgroup />', {"label":optText}).appendTo('.' + settings.className);
 				}else{
-					// Now build menu and append it
 					$('<option />', {"value":this.href, "html":optText, "selected":(this.href == window.location.href)}).appendTo( '.' + settings.className );
 				}
 			}); // End el.find('a').each
