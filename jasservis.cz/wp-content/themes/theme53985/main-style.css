@@ -288,7 +288,7 @@ a:hover {
 	}
 }
 .header .header_block_2 {
-	background:#222222;
+	background:#191818;
 	position:relative;
 }
 @media (max-width: 767px) {
@@ -296,7 +296,7 @@ a:hover {
 }
 .header .header_block_2.isStuck { z-index:999; }
 .header .header_block_2:before {
-	background:#222222;
+	background:#191818;
 	display:block;
 	position:absolute;
 	top:0;
@@ -307,7 +307,7 @@ a:hover {
 	content:'';
 }
 .header .header_block_2:after {
-	background:#222222;
+	background:#191818;
 	display:block;
 	position:absolute;
 	top:0;
