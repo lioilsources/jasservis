@@ -3320,3 +3320,27 @@ article.type-clients .thumbnail {
 	opacity:0;
 	filter:alpha(opacity=0);
 }
+
+.header .logo {
+	white-space: nowrap;
+}
+.top-firma-badge {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 16px;
+	line-height: 0;
+}
+.top-firma-badge img {
+	display: block;
+	width: 80px;
+	height: auto;
+	transform: rotate(-10deg);
+}
+@media only screen and (max-width: 767px) {
+	.top-firma-badge {
+		margin-left: 10px;
+	}
+	.top-firma-badge img {
+		width: 56px;
+	}
+}
