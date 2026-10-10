@@ -1,0 +1,54 @@
+# The feedback loop: every PR gets a live URL on Cloudflare Pages, so the
+# owner can look at the change on their phone *before* merging.
+#
+# This is a preview only. Production is GitHub Pages (deploy.yml), which runs
+# on push to master — nothing here touches jasservis.cz.
+name: Web Preview
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+concurrency:
+  group: web-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    # Off until the repo is configured (VIBE_SLUG variable + Cloudflare
+    # secrets), so pushes before that don't fail loudly for no reason. PRs from
+    # forks are skipped too: they get no secrets and the deploy would only fail.
+    if: |
+      vars.VIBE_SLUG != '' &&
+      (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      # Same directory deploy.yml publishes, uploaded as-is — no build.
+      - name: Deploy to Cloudflare Pages
+        id: deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy jasservis.cz --project-name=${{ vars.VIBE_SLUG }}-vibe --branch=${{ github.head_ref || github.ref_name }}
+
+      - name: Comment the preview link on the PR
+        if: github.event_name == 'pull_request'
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: web-preview
+          message: |
+            ### 👀 Podívej se na změnu
+
+            **[Otevřít náhled](${{ steps.deploy.outputs.deployment-url }})**
+
+            Tohle je živá verze téhle změny — klikni z telefonu. Ostrý web
+            `jasservis.cz` se zatím nezměnil. Když se ti náhled líbí, dej
+            **Merge** a za minutu dvě je změna na ostrém webu.

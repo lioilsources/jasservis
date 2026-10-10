@@ -1,0 +1,10 @@
+# Everything that controls how the site is deployed, or what the vibe loop is
+# allowed to do, needs an owner's review. The customer owns the content of the
+# site; they do not own the machinery that ships it.
+/.github/           @lioilsources
+/.claude/           @lioilsources
+/CLAUDE.md          @lioilsources
+/*.py               @lioilsources
+/backup/            @lioilsources
+/CNAME              @lioilsources
+/jasservis.cz/CNAME @lioilsources

@@ -1,0 +1,55 @@
+# The vibe loop: write "@claude ..." in an issue or PR comment and Claude
+# edits the site on a branch and replies with a link to open a PR.
+#
+# This repo is PUBLIC, so anyone can open an issue or comment here. Two things
+# keep strangers from spending tokens: the author_association check below (the
+# job does not even start for them) and claude-code-action's own check that the
+# actor has write access. The model, the turn limit and the tool allowlist are
+# the cost and blast-radius controls; .github/** is covered by CODEOWNERS.
+name: Claude
+
+on:
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+  issues:
+    types: [opened, assigned]
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  claude:
+    if: |
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude') && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)) ||
+      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@claude') && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)) ||
+      (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@claude') && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.review.author_association)) ||
+      (github.event_name == 'issues' && (contains(github.event.issue.body, '@claude') || contains(github.event.issue.title, '@claude')) && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association))
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    concurrency:
+      # One Claude run per issue/PR at a time, queued rather than cancelled —
+      # cancelling mid-push can leave a half-written branch behind.
+      group: claude-${{ github.event.issue.number || github.event.pull_request.number }}
+      cancel-in-progress: false
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      # No build step: the site is plain HTML under jasservis.cz/, so there is
+      # nothing to install. The turn limit is higher than in the Flutter
+      # template (25) because the header and footer are copied into every
+      # page — a menu change touches ~20 files.
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: |
+            --model claude-sonnet-5
+            --max-turns 40
+            --allowedTools "Read,Edit,Write,MultiEdit,Glob,Grep,Bash(git *)"
