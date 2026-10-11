@@ -27,6 +27,7 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
+      issues: write
     steps:
       - uses: actions/checkout@v4
 
@@ -52,3 +53,23 @@ jobs:
             Tohle je živá verze téhle změny — klikni z telefonu. Ostrý web
             `jasservis.cz` se zatím nezměnil. Když se ti náhled líbí, dej
             **Merge** a za minutu dvě je změna na ostrém webu.
+
+      # The owner asked for the change in an issue and is watching that thread,
+      # not the PR. Claude's branches are named claude/issue-<N>-..., so the
+      # link goes back there too. One comment per issue, updated in place.
+      - name: Comment the preview link on the original issue
+        if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'claude/issue-')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HEAD_REF: ${{ github.head_ref }}
+          PREVIEW_URL: ${{ steps.deploy.outputs.deployment-url }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: |
+          [[ "$HEAD_REF" =~ ^claude/issue-([0-9]+)- ]] || exit 0
+          gh issue comment "${BASH_REMATCH[1]}" --repo "$GITHUB_REPOSITORY" \
+            --edit-last --create-if-none --body "### 👀 Náhled je připravený
+
+          **[Otevřít náhled]($PREVIEW_URL)**
+
+          Ostrý web se zatím nezměnil. Když se ti náhled líbí, otevři
+          [návrh změny]($PR_URL) a dej **Merge**."
