@@ -1,0 +1,23 @@
+# jasservis.cz — celý web je veřejný a smí se procházet i citovat.
+
+User-agent: *
+Allow: /
+
+# Vyhledávače
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: SeznamBot
+User-agent: Applebot
+Allow: /
+
+# Vyhledávání a načítání stránek pro AI asistenty
+# (ChatGPT, Perplexity, Claude)
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+Allow: /
+
+Sitemap: https://jasservis.cz/sitemap.xml

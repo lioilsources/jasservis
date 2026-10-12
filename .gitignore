@@ -1,3 +1,6 @@
 # Python
 __pycache__/
 *.pyc
+
+# Generated at deploy time by .github/scripts/sitemap.sh
+jasservis.cz/sitemap.xml
