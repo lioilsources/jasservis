@@ -30,8 +30,16 @@ jobs:
       issues: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history: sitemap.sh dates each page by its last commit.
+          fetch-depth: 0
 
-      # Same directory deploy.yml publishes, uploaded as-is — no build.
+      # Same step deploy.yml runs, so a broken sitemap shows up here first.
+      # The URLs point at the live domain on purpose — that is what ships.
+      - name: Generate sitemap.xml
+        run: .github/scripts/sitemap.sh jasservis.cz https://jasservis.cz
+
+      # Same directory deploy.yml publishes — no build beyond the sitemap.
       - name: Deploy to Cloudflare Pages
         id: deploy
         uses: cloudflare/wrangler-action@v3

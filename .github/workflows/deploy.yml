@@ -23,6 +23,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Full history: sitemap.sh dates each page by its last commit.
+          fetch-depth: 0
+
+      - name: Generate sitemap.xml
+        run: .github/scripts/sitemap.sh jasservis.cz https://jasservis.cz
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
