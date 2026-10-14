@@ -3344,3 +3344,24 @@ article.type-clients .thumbnail {
 		width: 56px;
 	}
 }
+
+/* ---- jasservis.cz: čitelnost textu, cenový blok, tlačítka objednání ---- */
+.content-holder .page p,
+.content-holder .page li { font-size:17px; line-height:27px; color:#3d3d3d; }
+@media (max-width: 767px) {
+	.content-holder .page p,
+	.content-holder .page li { font-size:16px; line-height:25px; }
+}
+.cena-blok { background:#fdf1ec; border-left:4px solid #f36639; padding:16px 20px 4px; margin:20px 0; }
+.cena-blok .cena-blok__titulek { margin:0 0 8px; font-weight:bold; text-transform:uppercase; color:#f36639; }
+.cena-blok strong { color:#222; }
+.tlacitko-akce,
+.tlacitko-akce:visited { display:inline-block; padding:12px 22px; background:#f36639; color:#fff; font-size:17px; line-height:22px; border-radius:3px; text-decoration:none; }
+.tlacitko-akce:hover,
+.tlacitko-akce:focus { background:#333; color:#fff; text-decoration:none; }
+.mapa-navigace { text-align:center; margin:20px 0; }
+.mapa-embed { display:block; margin-bottom:20px; }
+.header .header_block_1 .header_widget_2 .textwidget b a { color:#fff; text-decoration:none; }
+.header .tel { font-size:13px; }
+.header .tel a { color:inherit; text-decoration:none; }
+.header .tel a:hover { color:#f36639; }
