@@ -43,7 +43,8 @@ jobs:
       # <slug>-vibe.pages.dev, which Cloudflare itself does not mark noindex.
       # Only the live domain may be indexed, so all of them say so explicitly.
       - name: Keep previews out of search engines
-        run: printf '/*\n  X-Robots-Tag: noindex\n' > jasservis.cz/_headers
+        run: |
+          printf '/*\n  X-Robots-Tag: noindex\n' > jasservis.cz/_headers
 
       # Same directory deploy.yml publishes — no build beyond the sitemap.
       - name: Deploy to Cloudflare Pages
