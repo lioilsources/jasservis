@@ -4,3 +4,6 @@ __pycache__/
 
 # Generated at deploy time by .github/scripts/sitemap.sh
 jasservis.cz/sitemap.xml
+
+# Raw AI assistant answers from visibility measurements (public repo)
+mereni/surova-data/
