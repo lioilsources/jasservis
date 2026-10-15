@@ -3368,3 +3368,20 @@ article.type-clients .thumbnail {
 @media (max-width: 767px) {
 	.header .header_block_1 .header_widget_2 .textwidget b { align-self:center; font-size:13px; line-height:17px; padding:8px 10px; }
 }
+.diagnostika-systemy h2 { margin:30px 0 24px; }
+.rozbalovaci { border:1px solid #e3e3e3; border-left:4px solid #f36639; background:#fff; margin:0 0 10px; }
+.rozbalovaci > summary { position:relative; display:block; list-style:none; cursor:pointer; padding:14px 48px 14px 18px; }
+.rozbalovaci > summary::-webkit-details-marker { display:none; }
+.rozbalovaci > summary::after { content:"+"; position:absolute; right:18px; top:50%; margin-top:-15px; font-size:26px; line-height:30px; color:#f36639; }
+.rozbalovaci[open] > summary::after { content:"\2013"; }
+.rozbalovaci > summary:hover h3,
+.rozbalovaci > summary:focus-visible h3 { color:#f36639; }
+.rozbalovaci > summary h3 { margin:0; text-align:left; text-transform:none; font-size:19px; line-height:26px; font-weight:400 !important; color:#333; }
+.rozbalovaci__obsah { padding:0 18px 6px; border-top:1px solid #f0f0f0; }
+.rozbalovaci__obsah h4 { margin:20px 0 8px; text-transform:none; font-size:17px; line-height:24px; color:#222; }
+@media (max-width: 767px) {
+	.rozbalovaci > summary { padding:12px 40px 12px 14px; }
+	.rozbalovaci > summary::after { right:14px; }
+	.rozbalovaci > summary h3 { font-size:17px; line-height:23px; }
+	.rozbalovaci__obsah { padding:0 14px 4px; }
+}

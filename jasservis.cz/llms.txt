@@ -22,7 +22,7 @@
 
 ## Služby
 
-- [Diagnostika vozidel VW Group systémem ODIS](https://jasservis.cz/kompletni-diagnostika-vaseho-vozu/): základní diagnostika do 60 minut 1 210 Kč
+- [Diagnostika vozidel VW Group systémem ODIS](https://jasservis.cz/kompletni-diagnostika-vaseho-vozu/): základní diagnostika do 60 minut 1 210 Kč; ODIS online, podporované funkce SFD, GEKO/FAZIT a SVM; schválení SERMI zatím nemáme
 - [Převodovky DSG a S tronic](https://jasservis.cz/prevodovky-dsg-s-tronic/): diagnostika, servis a opravy, základní diagnostika 1 210 Kč
 - [Výměna rozvodů TSI, TFSI, MPI a TDI](https://jasservis.cz/vymena-rozvodu/): práce od 4 100 Kč
 - [Diagnostika podvozku](https://jasservis.cz/diagnostika-podvozku/): test tlumičů, brzdového systému včetně elektrické parkovací brzdy, detekce vůlí obou náprav
