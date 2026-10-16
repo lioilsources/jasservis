@@ -22,18 +22,18 @@
 
 ## Služby
 
-- [Diagnostika vozidel VW Group systémem ODIS](https://jasservis.cz/kompletni-diagnostika-vaseho-vozu/): základní diagnostika do 60 minut 1 210 Kč; ODIS online, podporované funkce SFD, GEKO/FAZIT a SVM; schválení SERMI zatím nemáme
-- [Převodovky DSG a S tronic](https://jasservis.cz/prevodovky-dsg-s-tronic/): diagnostika, servis a opravy, základní diagnostika 1 210 Kč
+- [Diagnostika vozidel VW Group systémem ODIS](https://jasservis.cz/kompletni-diagnostika-vaseho-vozu/): základní diagnostika do 60 minut od 1 210 Kč; ODIS online, podporované funkce SFD, GEKO/FAZIT a SVM; schválení SERMI zatím nemáme
+- [Převodovky DSG a S tronic](https://jasservis.cz/prevodovky-dsg-s-tronic/): diagnostika, servis a opravy, základní diagnostika od 1 210 Kč
 - [Výměna rozvodů TSI, TFSI, MPI a TDI](https://jasservis.cz/vymena-rozvodu/): práce od 4 100 Kč
 - [Diagnostika podvozku](https://jasservis.cz/diagnostika-podvozku/): test tlumičů, brzdového systému včetně elektrické parkovací brzdy, detekce vůlí obou náprav
-- [3D geometrie náprav](https://jasservis.cz/geometrie-vozidla/): 2 420 Kč
-- [Soustružení brzdových kotoučů](https://jasservis.cz/oprava-brzdovych-kotoucu/): přímo na vozidle bez demontáže, 1 815 Kč za přední kotouč
+- [3D geometrie náprav](https://jasservis.cz/geometrie-vozidla/): od 2 420 Kč
+- [Soustružení brzdových kotoučů](https://jasservis.cz/oprava-brzdovych-kotoucu/): přímo na vozidle bez demontáže, od 1 815 Kč za přední kotouč
 - [Klimatizace](https://jasservis.cz/opravy-diagnostika-plneni-klimatizaci/): servis, plnění, čištění a opravy, od 990 Kč
-- [Seřízení a kalibrace asistenčních systémů, kamer a radarů](https://jasservis.cz/serizeni-kalibrace-jizdnich-asistentu/): 3 200 Kč za jeden systém
+- [Seřízení a kalibrace asistenčních systémů, kamer a radarů](https://jasservis.cz/serizeni-kalibrace-jizdnich-asistentu/): od 3 200 Kč za jeden systém
 - [Seřízení světlometů a mlhovek](https://jasservis.cz/serizeni-svetlometu/): od 950 Kč
 - [Pneuservis a diagnostika kol](https://jasservis.cz/prezuti-a-prodej-pneumatik-pro-vas-vuz/): kompletní přezutí 4 kol od 1 490 Kč
-- [Příprava a realizace STK](https://jasservis.cz/priprava-a-realizace-stk/): příprava vozidla a zajištění STK 1 990 Kč
-- [Vyřízení škodní události](https://jasservis.cz/skodni-udalost-vyridime-za-vas/): včetně vstupní kontroly vozidla po nehodě, 1 210 Kč
+- [Příprava a realizace STK](https://jasservis.cz/priprava-a-realizace-stk/): příprava vozidla a zajištění STK od 1 990 Kč
+- [Vyřízení škodní události](https://jasservis.cz/skodni-udalost-vyridime-za-vas/): včetně vstupní kontroly vozidla po nehodě, od 1 210 Kč
 
 ## Další
 
