@@ -3385,3 +3385,6 @@ article.type-clients .thumbnail {
 	.rozbalovaci > summary h3 { font-size:17px; line-height:23px; }
 	.rozbalovaci__obsah { padding:0 14px 4px; }
 }
+.title-section h1,
+.title-section .breadcrumb { -webkit-hyphens:manual; -moz-hyphens:manual; -ms-hyphens:manual; hyphens:manual; }
+.sluzby-sloupec { margin:0 0 12px; text-align:left; font-size:18px; line-height:24px; color:#f36639; }
