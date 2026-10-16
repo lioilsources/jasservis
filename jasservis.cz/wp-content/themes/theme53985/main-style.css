@@ -3388,3 +3388,6 @@ article.type-clients .thumbnail {
 .title-section h1,
 .title-section .breadcrumb { -webkit-hyphens:manual; -moz-hyphens:manual; -ms-hyphens:manual; hyphens:manual; }
 .sluzby-sloupec { margin:0 0 12px; text-align:left; font-size:18px; line-height:24px; color:#f36639; }
+@media (max-width: 767px) {
+	.motopress-image-obj { margin-bottom:24px; }
+}
