@@ -1,36 +1,39 @@
 # J&S servis
 
-> Autoservis ve Statenicích (okres Praha-západ) pro vozy Volkswagen, Audi, SEAT/CUPRA, Škoda a Volkswagen Užitkové vozy. Servis, diagnostika, pneuservis, příprava na STK a další služby na jednom místě.
+> Nezávislý specializovaný autoservis VW Group ve Statenicích u Prahy (okres Praha-západ). Od roku 1994 servis, diagnostika a opravy vozů Audi, Volkswagen, Škoda, SEAT, CUPRA a Volkswagen Užitkové vozy. Pneuservis, příprava na STK a další služby na jednom místě.
 
-- Adresa: Kralupská 90, 252 62 Statenice, Praha-západ
+- Adresa: Kralupská 90, 252 62 Statenice – Černý Vůl (Praha-západ)
 - Otevírací doba: pondělí až pátek 9–18 hod.
-- Kancelář: +420 605 399 448, admin@jasservis.cz
+- Kancelář (objednávky): +420 605 399 448, admin@jasservis.cz
 - Servis: +420 608 313 437, j.mateju@jasservis.cz
 - Web: https://jasservis.cz/
 
 ## Servis podle značky
 
-- [Servis Volkswagen](https://jasservis.cz/autoservis/servis-vw/)
-- [Servis Audi](https://jasservis.cz/servis-audi/)
-- [Servis SEAT/CUPRA](https://jasservis.cz/servis-seat/)
-- [Servis Škoda](https://jasservis.cz/servis-skoda/)
-- [Servis Volkswagen Užitkové vozy](https://jasservis.cz/servis-volkswagen-uzitkove-vozy/)
+- [Servis Volkswagen](https://jasservis.cz/autoservis/servis-vw/): od 1 100 Kč / hodina
+- [Servis Audi](https://jasservis.cz/servis-audi/): od 1 400 Kč / hodina
+- [Servis SEAT](https://jasservis.cz/servis-seat/): od 1 100 Kč / hodina
+- [Servis CUPRA](https://jasservis.cz/servis-cupra/): od 1 100 Kč / hodina
+- [Servis Škoda](https://jasservis.cz/servis-skoda/): od 1 100 Kč / hodina
+- [Servis Volkswagen Užitkové vozy](https://jasservis.cz/servis-volkswagen-uzitkove-vozy/): od 1 100 Kč / hodina
+- [Servis nových vozů v záruce (GVO)](https://jasservis.cz/servis-novych-vozu-v-zaruce-gvo/): pravidelná údržba podle předpisů výrobce i během záruky
+- [Servis hybridních a elektrických vozidel](https://jasservis.cz/servis-hybridnich-a-elektrickych-vozidel/): od 2 000 Kč / hodina
 - [Autoservis pro firmy](https://jasservis.cz/autoservis-pro-firmy/)
 
 ## Služby
 
-- [Kompletní diagnostika vozu](https://jasservis.cz/kompletni-diagnostika-vaseho-vozu/)
+- [Diagnostika vozidel VW Group systémem ODIS](https://jasservis.cz/kompletni-diagnostika-vaseho-vozu/): základní diagnostika do 60 minut od 1 210 Kč; ODIS online, podporované funkce SFD, GEKO/FAZIT a SVM; schválení SERMI zatím nemáme
+- [Převodovky DSG a S tronic](https://jasservis.cz/prevodovky-dsg-s-tronic/): diagnostika, servis a opravy, základní diagnostika od 1 210 Kč
+- [Výměna rozvodů TSI, TFSI, MPI a TDI](https://jasservis.cz/vymena-rozvodu/): práce od 4 100 Kč
 - [Diagnostika podvozku](https://jasservis.cz/diagnostika-podvozku/): test tlumičů, brzdového systému včetně elektrické parkovací brzdy, detekce vůlí obou náprav
-- [Geometrie vozidla](https://jasservis.cz/geometrie-vozidla/): seřízení na originálním zařízení s technologií 3D
-- [Oprava brzdových kotoučů](https://jasservis.cz/oprava-brzdovych-kotoucu/): soustružení přímo na vozidle bez demontáže
-- [Klimatizace](https://jasservis.cz/opravy-diagnostika-plneni-klimatizaci/): diagnostika, opravy, plnění, čištění
-- [Seřízení a kalibrace jízdních asistentů](https://jasservis.cz/serizeni-kalibrace-jizdnich-asistentu/)
-- [Seřízení světlometů](https://jasservis.cz/serizeni-svetlometu/)
-- [Přezutí a prodej pneumatik](https://jasservis.cz/prezuti-a-prodej-pneumatik-pro-vas-vuz/)
-- [Příprava a realizace STK](https://jasservis.cz/priprava-a-realizace-stk/)
-- [Prodej a montáž dílů a autodoplňků](https://jasservis.cz/prodej-a-montaz-dilu-a-autodoplnku/)
-- [Zabezpečení auta](https://jasservis.cz/zabezpeceni-auta/)
-- [Vyřízení škodní události](https://jasservis.cz/skodni-udalost-vyridime-za-vas/)
+- [3D geometrie náprav](https://jasservis.cz/geometrie-vozidla/): od 2 420 Kč
+- [Soustružení brzdových kotoučů](https://jasservis.cz/oprava-brzdovych-kotoucu/): přímo na vozidle bez demontáže, od 1 815 Kč za přední kotouč
+- [Klimatizace](https://jasservis.cz/opravy-diagnostika-plneni-klimatizaci/): servis, plnění, čištění a opravy, od 990 Kč
+- [Seřízení a kalibrace asistenčních systémů, kamer a radarů](https://jasservis.cz/serizeni-kalibrace-jizdnich-asistentu/): od 3 200 Kč za jeden systém
+- [Seřízení světlometů a mlhovek](https://jasservis.cz/serizeni-svetlometu/): od 950 Kč
+- [Pneuservis a diagnostika kol](https://jasservis.cz/prezuti-a-prodej-pneumatik-pro-vas-vuz/): kompletní přezutí 4 kol od 1 490 Kč
+- [Příprava a realizace STK](https://jasservis.cz/priprava-a-realizace-stk/): příprava vozidla a zajištění STK od 1 990 Kč
+- [Vyřízení škodní události](https://jasservis.cz/skodni-udalost-vyridime-za-vas/): včetně vstupní kontroly vozidla po nehodě, od 1 210 Kč
 
 ## Další
 
