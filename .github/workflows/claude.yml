@@ -42,17 +42,25 @@ jobs:
         with:
           fetch-depth: 1
 
-      # No build step: the site is plain HTML under jasservis.cz/, so there is
-      # nothing to install. The turn limit is higher than in the Flutter
-      # template (25) because the header and footer are copied into every
-      # page — a menu change touches ~20 files.
+      # No build step: the site is plain HTML under jasservis.cz/. The only
+      # install is Pillow for .github/scripts/firmy-foto.py (photos from the
+      # Firmy.cz profile, resized for the site). The turn limit is higher than
+      # in the Flutter template (25) because the header and footer are copied
+      # into every page — a menu change touches ~20 files.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --quiet pillow
+
       - uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           # WebFetch is limited to firmy.cz: the customer asks Claude to sync
           # offers and categories from their Firmy.cz profile. Any other host
           # stays blocked, so a page Claude reads cannot send it elsewhere.
+          # Photos go only through firmy-foto.py, which downloads from Seznam's
+          # image CDN and writes only into jasservis.cz/wp-content/uploads/.
           claude_args: |
             --model claude-sonnet-5
             --max-turns 40
-            --allowedTools "Read,Edit,Write,MultiEdit,Glob,Grep,Bash(git *),WebFetch(domain:www.firmy.cz),WebFetch(domain:firmy.cz)"
+            --allowedTools "Read,Edit,Write,MultiEdit,Glob,Grep,Bash(git *),WebFetch(domain:www.firmy.cz),WebFetch(domain:firmy.cz),Bash(.github/scripts/firmy-foto.py *)"

@@ -57,6 +57,14 @@ vzniklá kopií podobné existující stránky, plus odkaz v menu na všech str�
 (pokud ji tam majitel chce). Nový obrázek patří do
 `jasservis.cz/wp-content/uploads/`.
 
+Fotky z profilu na Firmy.cz stahuj jen skriptem `.github/scripts/firmy-foto.py`,
+spouštěným přesně takhle, bez `python3` na začátku (jinak ho nemáš povolený):
+`seznam` vypíše nabídky s adresou fotky, `stahni <url> <nazev-bez-diakritiky>`
+uloží `<nazev>.jpg` (do 1280 px, fotka na stránce služby) a `<nazev>-s.jpg`
+(600×380, dlaždice na přehledových stránkách) a vypíše jejich cestu a rozměry.
+Rozměry pak zapiš i do `width`/`height` a do strukturovaných dat, pokud tam fotka je.
+Jinou cestou obrázky z internetu stahovat nemůžeš.
+
 ## Odpověď a Pull Request
 
 - **Název** lidsky, česky: „Nový telefon v patičce", ne
