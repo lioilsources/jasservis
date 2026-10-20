@@ -26,7 +26,7 @@ jobs:
       (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@claude') && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.review.author_association)) ||
       (github.event_name == 'issues' && (contains(github.event.issue.body, '@claude') || contains(github.event.issue.title, '@claude')) && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association))
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 40
     concurrency:
       # One Claude run per issue/PR at a time, queued rather than cancelled —
       # cancelling mid-push can leave a half-written branch behind.
@@ -44,9 +44,10 @@ jobs:
 
       # No build step: the site is plain HTML under jasservis.cz/. The only
       # install is Pillow for .github/scripts/firmy-foto.py (photos from the
-      # Firmy.cz profile, resized for the site). The turn limit is higher than
-      # in the Flutter template (25) because the header and footer are copied
-      # into every page — a menu change touches ~20 files.
+      # Firmy.cz profile, resized for the site). The turn limit is a cost cap, not
+      # a target: 40 ran out on a new menu page (~26 files) and on replacing a
+      # long text, because denied commands and progress-comment updates also
+      # cost turns. ls and wc are allowed so the model stops tripping on them.
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -62,5 +63,5 @@ jobs:
           # image CDN and writes only into jasservis.cz/wp-content/uploads/.
           claude_args: |
             --model claude-sonnet-5
-            --max-turns 40
-            --allowedTools "Read,Edit,Write,MultiEdit,Glob,Grep,Bash(git *),WebFetch(domain:www.firmy.cz),WebFetch(domain:firmy.cz),Bash(.github/scripts/firmy-foto.py *)"
+            --max-turns 100
+            --allowedTools "Read,Edit,Write,MultiEdit,Glob,Grep,Bash(git *),Bash(ls *),Bash(wc *),WebFetch(domain:www.firmy.cz),WebFetch(domain:firmy.cz),Bash(.github/scripts/firmy-foto.py *)"
