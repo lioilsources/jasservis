@@ -63,12 +63,12 @@ def record(path, number, run_id):
     if cost is None:
         print("no cost in execution file, nothing to record")
         return
-    line = f"\n\n<sub>Přibližná cena tohoto běhu: {czk(cost)}</sub>\n<!-- claude-cost: {cost:.4f} run:{run_id} -->"
+    line = f"\n\n<sub>💰 Přibližná cena tohoto běhu: {czk(cost)}</sub>\n<!-- claude-cost: {cost:.4f} run:{run_id} -->"
     run_link = f"/actions/runs/{run_id}"
     mine = [c for c in comments(number) if run_link in c["body"]]
     try:
         c = mine[-1]
-        body = re.sub(r"\n\n<sub>Přibližná cena tohoto běhu:[^\n]*</sub>\n" + MARK.pattern, "", c["body"])
+        body = re.sub(r"\n\n<sub>(?:💰 )?Přibližná cena tohoto běhu:[^\n]*</sub>\n" + MARK.pattern, "", c["body"])
         gh("-X", "PATCH", f"repos/{REPO}/issues/comments/{c['id']}", data={"body": body + line})
     except (IndexError, subprocess.CalledProcessError) as e:
         # progress comment not found or not editable: say it in a comment of its own
