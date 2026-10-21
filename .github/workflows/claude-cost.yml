@@ -1,0 +1,25 @@
+# When the owner opens a PR from Claude's branch, the runs on the issue have
+# already happened, so the PR gets its cost total here. Later runs on the PR
+# itself refresh it from claude.yml.
+name: Claude cost
+
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  total:
+    if: startsWith(github.head_ref, 'claude/') && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/scripts
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: .github/scripts/claude-cost.py total ${{ github.event.pull_request.number }}

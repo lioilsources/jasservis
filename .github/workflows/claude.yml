@@ -54,6 +54,7 @@ jobs:
       - run: pip install --quiet pillow
 
       - uses: anthropics/claude-code-action@v1
+        id: claude
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           # WebFetch is limited to firmy.cz: the customer asks Claude to sync
@@ -65,3 +66,16 @@ jobs:
             --model claude-sonnet-5
             --max-turns 100
             --allowedTools "Read,Edit,Write,MultiEdit,Glob,Grep,Bash(git *),Bash(ls *),Bash(wc *),WebFetch(domain:www.firmy.cz),WebFetch(domain:firmy.cz),Bash(.github/scripts/firmy-foto.py *)"
+
+      # Approximate cost of the run (Claude Code's own estimate at API list
+      # prices) goes under Claude's progress comment, and open PRs of the same
+      # issue get their running total refreshed. always(): runs that hit the
+      # turn limit cost money too. github.token, because the action revokes
+      # its app token when it finishes.
+      - name: Show the run's cost
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXECUTION_FILE: ${{ steps.claude.outputs.execution_file || format('{0}/claude-execution-output.json', runner.temp) }}
+          NUMBER: ${{ github.event.issue.number || github.event.pull_request.number }}
+        run: .github/scripts/claude-cost.py record "$EXECUTION_FILE" "$NUMBER" "$GITHUB_RUN_ID"
