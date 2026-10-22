@@ -88,7 +88,7 @@
 #topnav button.service-group-title {
     display:flex; align-items:center; justify-content:space-between; gap:12px;
     width:100%; min-height:48px; padding:12px; box-sizing:border-box;
-    border:0; border-bottom:1px solid #444; border-radius:0;
+    border:0; border-bottom:1px solid #ffffff26; border-radius:0;
     background:transparent; color:#f36639; font:inherit; font-size:15px;
     line-height:1.4; text-align:left; cursor:pointer;
 }
@@ -96,6 +96,7 @@
 #topnav button.service-group-title[aria-expanded="true"]:after { content:'−'; }
 #topnav button.service-group-title:hover { color:#fff; background:#292727; }
 /* Contacts: target the inner widget so duplicated WordPress wrappers do not form extra columns. */
+.header .header_block_1 { padding:10px 0; }
 .header .header_block_1 > .row {
     display:grid; grid-template-columns:minmax(0,1fr) auto; gap:16px; align-items:center; margin-left:0;
 }
@@ -106,15 +107,16 @@
 .header .header_block_1 .header_widget_1 .textwidget b { font-weight:500; }
 .header .header_block_1 .header_widget_2 { display:block; float:none; padding:0; }
 .header .header_block_1 .header_widget_2 .textwidget { float:none; margin:0; }
-.header .header_block_1 #text-8 > .textwidget { display:flex; gap:20px; align-items:center; text-align:left; }
+.header .header_block_1 #text-8 > .textwidget { display:flex; gap:18px; align-items:center; text-align:left; }
 .header .header_block_1 #text-8 > .textwidget > b {
     flex:none; float:none; margin:0; padding:0; background:#f36639; font-size:13px; line-height:1.4;
 }
 .header .header_block_1 #text-8 > .textwidget > b a {
     display:flex; align-items:center; min-height:44px; padding:10px 14px; box-sizing:border-box;
+    color:#191818; font-weight:600;
 }
-.header .header_block_1 #text-8 > .textwidget > b a:hover { background:#b7431e; }
-.header .header_block_1 .tel { font-size:14px; line-height:1.7; font-weight:400; text-transform:none; color:#eee; }
+.header .header_block_1 #text-8 > .textwidget > b a:hover { background:#ff8055; }
+.header .header_block_1 .tel { float:none; margin:0; font-size:14px; line-height:1.5; font-weight:400; text-transform:none; color:#eee; }
 .header .header_block_1 .tel a { display:inline-block; padding:3px 0; font-weight:500; }
 /* All destinations stay reachable in document flow without JavaScript. */
 .header .nav__primary:not(.navigation-ready) #topnav { display:block; }
@@ -130,10 +132,11 @@
     .navigation-ready .navigation-toggle { display:block; width:100%; text-align:left; }
     .header .nav__primary #topnav { display:block; }
     .header .nav__primary #topnav > li {
-        display:grid; grid-template-columns:minmax(0,max-content) 44px minmax(0,1fr); border-bottom:1px solid #444;
+        display:grid; grid-template-columns:minmax(0,max-content) 44px minmax(0,1fr); border-bottom:1px solid #ffffff26;
     }
     .header .nav__primary #topnav > li > a { min-height:48px; padding:12px; white-space:normal; }
-    .submenu-toggle { width:44px; margin:0; }
+    .submenu-toggle { width:44px; margin:0; font-size:0; }
+    .submenu-toggle:before { content:'›'; font-size:24px; line-height:1; }
     .header .nav__primary #topnav .sub-menu,
     .header .nav__primary #topnav > #menu-item-2076 > .sub-menu {
         position:static; grid-column:1 / -1; width:100%; max-width:100%;
@@ -162,8 +165,9 @@
     .header .nav__primary #topnav > li {
         flex:1 0 auto;
         justify-content:center;
-        border-right:1px solid #444;
+        border-right:1px solid #ffffff26;
     }
+    .header .nav__primary #topnav > li:last-child { border-right:0; }
 }
 
 /* Keep service cards in complete rows despite different description heights. */
@@ -229,4 +233,40 @@
         padding:12px;
         white-space:normal;
     }
+    .reviews-toggle > span { font-size:0; }
+    .reviews-toggle > span:before { content:'›'; font-size:24px; line-height:1; }
 }
+
+/* Cookie preferences retain the existing banner, with space reserved below the page. */
+body { padding-bottom:var(--cookie-space,0px); }
+#cf-cookie-banner {
+    box-sizing:border-box; margin:0; padding:16px 0;
+    background:#191818; color:#f5f5f5; border:0; border-top:1px solid #ffffff26;
+    font-size:15px; line-height:1.6; text-shadow:none;
+}
+#cf-cookie-banner.cookie-ready { position:fixed; left:0; right:0; bottom:0; z-index:1000; max-height:60vh; max-height:60dvh; overflow-y:auto; }
+#cf-cookie-banner[hidden], #cookie-settings[hidden], .cookie-embed-placeholder[hidden], iframe[data-cookie-src][hidden] { display:none !important; }
+#cf-cookie-banner .container { box-sizing:border-box; }
+#cf-cookie-banner p { margin:0 0 10px; font:inherit; color:inherit; }
+#cf-cookie-banner a { color:#ff9c7b; text-decoration:underline; }
+#cf-cookie-banner summary { width:fit-content; max-width:100%; min-height:44px; padding:10px 0; box-sizing:border-box; cursor:pointer; font-weight:500; }
+#cf-cookie-banner label { display:flex; align-items:center; gap:10px; min-height:44px; margin:0; color:inherit; font:inherit; cursor:pointer; }
+#cf-cookie-banner input { flex:none; width:20px; height:20px; margin:0; accent-color:#f36639; }
+#cf-cookie-banner code { background:#333; border:0; color:#fff; white-space:normal; overflow-wrap:anywhere; }
+.cookie-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:8px; }
+#cf-cookie-banner button, #cookie-settings, .cookie-embed-placeholder button {
+    box-sizing:border-box; min-height:44px; max-width:100%; padding:10px 16px;
+    border:1px solid #f36639; border-radius:4px; background:#191818; color:#fff;
+    font:inherit; line-height:1.5; text-shadow:none; cursor:pointer; white-space:normal;
+}
+#cf-cookie-banner button[data-cookie-choice="accept"] { background:#f36639; color:#191818; font-weight:600; }
+#cf-cookie-banner button:hover, #cookie-settings:hover, .cookie-embed-placeholder button:hover { background:#333; color:#fff; }
+#cf-cookie-banner :focus-visible, #cookie-settings:focus-visible, .cookie-embed-placeholder button:focus-visible { outline:3px solid #ff9c7b; outline-offset:2px; }
+#cookie-settings { position:fixed; right:16px; bottom:16px; z-index:999; font-size:14px; }
+.cookie-embed-placeholder { box-sizing:border-box; padding:24px 16px; text-align:center; background:#eee; }
+@media (max-width:767px) {
+    #cf-cookie-banner { padding:12px 0; }
+    #cf-cookie-banner .container { width:auto; margin:0; padding:0 20px; }
+    .cookie-actions > button { flex:1 1 200px; }
+}
+

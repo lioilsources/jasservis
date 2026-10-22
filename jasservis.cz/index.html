@@ -321,6 +321,7 @@ body { font-weight: normal;}
 
 <link rel="stylesheet" href="wp-content/themes/theme53985/service-navigation.css" />
 <script defer src="wp-content/themes/theme53985/js/service-navigation.js"></script>
+<script defer src="wp-content/themes/theme53985/js/cookie-preferences.js"></script>
 </head><body class="home page-template page-template-page-home page-template-page-home-php page page-id-203">
 
 	<div id="motopress-main" class="main-holder">
@@ -582,7 +583,7 @@ body { font-weight: normal;}
         height: 391px;
     }
 </style>
-<iframe id="map" src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sJ%26S+servis,+Kralupsk%C3%A1+90,+252+62+Statenice!6i15!3m1!1scs!5m1!1scs" style="border:0;display:block" loading="lazy" title="Mapa: J&amp;S servis, Kralupská 90, Statenice – Černý Vůl"></iframe>
+<iframe id="map" hidden data-cookie-category="maps" data-cookie-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sJ%26S+servis,+Kralupsk%C3%A1+90,+252+62+Statenice!6i15!3m1!1scs!5m1!1scs" style="border:0;display:block" loading="lazy" title="Mapa: J&amp;S servis, Kralupská 90, Statenice – Černý Vůl"></iframe>
 <p class="mapa-navigace"><a class="tlacitko-akce" href="https://www.google.com/maps/dir/?api=1&amp;destination=J%26S+servis%2C+Kralupsk%C3%A1+90%2C+252+62+Statenice" target="_blank" rel="noopener">Navigovat do servisu</a></p>	</div><div class="copyright">
 	<div class="row">
 		<div class="span12" data-motopress-type="static" data-motopress-static-file="static/static-footer-text.php">
@@ -649,17 +650,27 @@ var items_custom = [[0,1],[480,2],[768,3],[980,4],[1170,5]];
 <script type='text/javascript' src='wp-content/themes/CherryFramework/js/jquery.ba-resize.min.js' id='ba-resize-js'></script>
 <script type='text/javascript' src='wp-content/themes/CherryFramework/js/jquery.isotope.js' id='isotope-js'></script>
 
-<script type='text/javascript' src='wp-content/themes/theme53985/parallax-slider/js/parallaxSlider.js' id='parallax-slider-js'></script>		<div id="cf-cookie-banner" class="cf-cookie-banner-wrap alert fade in">
-
-			<div class="container">
-
-				<button type="button" class="close" data-dismiss="alert">&times;</button>
-
-				Tento web používá k poskytování služeb, personalizaci reklam a analýze návštěvnosti soubory cookie. Používáním tohoto webu s tím souhlasíte.
-			</div>
-
-		</div>		 <!-- this is used by many Wordpress features and for plugins to work properly -->
+<script type='text/javascript' src='wp-content/themes/theme53985/parallax-slider/js/parallaxSlider.js' id='parallax-slider-js'></script>		<div id="cf-cookie-banner" class="cf-cookie-banner-wrap" role="region" aria-label="Nastavení cookies">
+    <div class="container">
+        <p>Vložené Google mapy a Facebook se načtou pouze s vaším souhlasem. Mohou používat cookies a předávat údaje poskytovatelům těchto služeb.</p>
+        <details id="cookie-details">
+            <summary>Podrobné informace a nastavení</summary>
+            <p>Web ukládá pouze vaši volbu do technické cookie <code>cf-cookie-banner</code> na 365 dní. Samostatné analytické ani reklamní měření zde není zapojené. Odmítnutí neomezuje kontakty ani odkazy pro navigaci do servisu.</p>
+            <label><input type="checkbox" id="cookie-maps"> Povolit Google mapy (Google)</label>
+            <label><input type="checkbox" id="cookie-social"> Povolit vložený Facebook (Meta)</label>
+            <p>Poskytovatelé mohou údaje používat i pro vlastní analytické nebo reklamní účely. <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener noreferrer">Informace Google o cookies</a> · <a href="https://www.facebook.com/privacy/policies/cookies/" target="_blank" rel="noopener noreferrer">Informace Meta o cookies</a>. Volbu můžete kdykoli změnit tlačítkem Nastavení cookies.</p>
+            <button type="button" data-cookie-choice="save" hidden>Uložit nastavení</button>
+        </details>
+        <div class="cookie-actions">
+            <button type="button" data-cookie-choice="reject" hidden>Odmítnout nepovinné</button>
+            <button type="button" data-cookie-choice="accept" hidden>Přijmout všechny</button>
+        </div>
+        <noscript>Bez JavaScriptu se vložené služby nenačítají. Telefonní kontakty a běžné odkazy zůstávají dostupné.</noscript>
+    </div>
+</div>
+<button type="button" id="cookie-settings" aria-controls="cf-cookie-banner" hidden>Nastavení cookies</button>		 <!-- this is used by many Wordpress features and for plugins to work properly -->
 
 </body>
 
 </html>
+
