@@ -155,4 +155,3 @@
     nav.classList.add('navigation-ready');
     reset();
 }());
-
