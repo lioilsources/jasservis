@@ -25,6 +25,7 @@
         }
     }
     function close(control) {
+        window.clearTimeout(control.leaveTimer);
         control.button.setAttribute('aria-expanded', 'false');
         control.panel.hidden = true;
         groupControls.forEach(function (group) {
@@ -34,6 +35,18 @@
             }
         });
     }
+    function open(control) {
+        controls.forEach(function (other) {
+            if (other !== control) close(other);
+        });
+        window.clearTimeout(control.leaveTimer);
+        control.panel.hidden = false;
+        control.button.setAttribute('aria-expanded', 'true');
+        fit(control.panel);
+    }
+    Array.prototype.forEach.call(menu.querySelectorAll('.current-menu-item > a'), function (link) {
+        link.setAttribute('aria-current', 'page');
+    });
     Array.prototype.forEach.call(menu.children, function (item) {
         var panel = item.querySelector('.sub-menu');
         if (!panel) return;
@@ -46,15 +59,31 @@
         panel.id = item.id + '-submenu';
         button.setAttribute('aria-controls', panel.id);
         item.insertBefore(button, panel);
-        var control = {button: button, panel: panel};
+        var control = {button: button, panel: panel, leaveTimer: null};
         controls.push(control);
         close(control);
         button.addEventListener('click', function () {
-            var open = panel.hidden;
-            controls.forEach(close);
-            panel.hidden = !open;
-            button.setAttribute('aria-expanded', String(open));
-            fit(panel);
+            if (panel.hidden) open(control);
+            else close(control);
+        });
+        item.addEventListener('pointerenter', function (event) {
+            if (event.pointerType === 'mouse' && !compact.matches) open(control);
+        });
+        item.addEventListener('pointerleave', function (event) {
+            if (event.pointerType !== 'mouse' || compact.matches) return;
+            control.leaveTimer = window.setTimeout(function () {
+                if (!item.contains(document.activeElement)) close(control);
+            }, 200);
+        });
+        item.addEventListener('focusout', function (event) {
+            if (!item.contains(event.relatedTarget)) close(control);
+        });
+        item.addEventListener('keydown', function (event) {
+            if (event.key !== 'ArrowDown' || (event.target !== link && event.target !== button)) return;
+            event.preventDefault();
+            open(control);
+            var first = panel.querySelector('a, button');
+            if (first) first.focus();
         });
     });
     Array.prototype.forEach.call(menu.querySelectorAll('.service-group'), function (group, index) {
@@ -94,7 +123,13 @@
         if (menu.hidden) controls.forEach(close);
     });
     document.addEventListener('click', function (event) {
-        if (!nav.contains(event.target)) controls.forEach(close);
+        if (!nav.contains(event.target)) {
+            controls.forEach(close);
+            if (compact.matches) {
+                menu.hidden = true;
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+        }
     });
     nav.addEventListener('focusout', function (event) {
         if (!nav.contains(event.relatedTarget)) controls.forEach(close);
@@ -120,3 +155,4 @@
     nav.classList.add('navigation-ready');
     reset();
 }());
+
