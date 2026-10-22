@@ -4,6 +4,7 @@
 /.github/           @lioilsources
 /.claude/           @lioilsources
 /CLAUDE.md          @lioilsources
+/AGENTS.md          @lioilsources
 /*.py               @lioilsources
 /backup/            @lioilsources
 /CNAME              @lioilsources
