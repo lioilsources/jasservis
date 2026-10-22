@@ -5,6 +5,7 @@
     var nav = menu.parentElement;
     var compact = window.matchMedia('(max-width:1199px)');
     var controls = [];
+    var groupControls = [];
     var toggle = document.createElement('button');
     toggle.type = 'button';
     toggle.className = 'navigation-toggle';
@@ -14,12 +15,24 @@
 
     function fit(panel) {
         if (!compact.matches && !panel.hidden) {
-            panel.style.maxHeight = Math.max(0, window.innerHeight - panel.getBoundingClientRect().top - 16) + 'px';
+            var bottom = window.innerHeight;
+            var banner = document.getElementById('cf-cookie-banner');
+            if (banner && window.getComputedStyle(banner).position === 'fixed') {
+                var rect = banner.getBoundingClientRect();
+                if (rect.height > 0 && rect.top >= 0 && rect.top < bottom) bottom = rect.top;
+            }
+            panel.style.maxHeight = Math.max(0, bottom - panel.getBoundingClientRect().top - 16) + 'px';
         }
     }
     function close(control) {
         control.button.setAttribute('aria-expanded', 'false');
         control.panel.hidden = true;
+        groupControls.forEach(function (group) {
+            if (control.panel.contains(group.panel)) {
+                group.panel.hidden = true;
+                group.button.setAttribute('aria-expanded', 'false');
+            }
+        });
     }
     Array.prototype.forEach.call(menu.children, function (item) {
         var panel = item.querySelector('.sub-menu');
@@ -44,6 +57,32 @@
             fit(panel);
         });
     });
+    Array.prototype.forEach.call(menu.querySelectorAll('.service-group'), function (group, index) {
+        var title = group.querySelector('.service-group-title');
+        var list = group.querySelector('ul');
+        var button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'service-group-title';
+        button.textContent = title.textContent;
+        list.id = 'service-group-' + index;
+        list.hidden = true;
+        button.setAttribute('aria-controls', list.id);
+        button.setAttribute('aria-expanded', 'false');
+        title.parentNode.replaceChild(button, title);
+        groupControls.push({button: button, panel: list});
+        button.addEventListener('click', function () {
+            var open = list.hidden;
+            groupControls.forEach(function (control) {
+                control.panel.hidden = true;
+                control.button.setAttribute('aria-expanded', 'false');
+            });
+            list.hidden = !open;
+            button.setAttribute('aria-expanded', String(open));
+            var panel = group.parentElement;
+            panel.scrollTop = 0;
+            fit(panel);
+        });
+    });
     function reset() {
         controls.forEach(close);
         menu.hidden = compact.matches;
@@ -62,6 +101,14 @@
     });
     nav.addEventListener('keydown', function (event) {
         if (event.key !== 'Escape') return;
+        var group = groupControls.filter(function (control) { return !control.panel.hidden; })[0];
+        if (group) {
+            group.panel.hidden = true;
+            group.button.setAttribute('aria-expanded', 'false');
+            group.button.focus();
+            event.preventDefault();
+            return;
+        }
         var open = controls.filter(function (control) { return !control.panel.hidden; })[0];
         if (open) { close(open); open.button.focus(); }
         else if (compact.matches && !menu.hidden) { menu.hidden = true; toggle.setAttribute('aria-expanded', 'false'); toggle.focus(); }

@@ -42,9 +42,11 @@
 #topnav > li { position:static; display:flex; align-items:stretch; float:none; margin:0; }
 .header .nav__primary #topnav > li > a { padding:40px 12px; white-space:nowrap; }
 #topnav a { box-sizing:border-box; }
-#topnav a:focus-visible, .navigation-toggle:focus-visible, .submenu-toggle:focus-visible {
+#topnav a:focus-visible, #topnav .service-group-title:focus-visible, .navigation-toggle:focus-visible, .submenu-toggle:focus-visible {
     outline:3px solid #f36639; outline-offset:-3px;
 }
+
+
 .navigation-toggle, .submenu-toggle {
     border:0; border-radius:0; background:#333; color:#fff; font:inherit;
     cursor:pointer; min-width:44px; min-height:44px; text-shadow:none;
@@ -144,3 +146,31 @@
         gap:18px;
     }
 }
+
+/* Show the four service groups first; expand one group at a time. */
+.header .nav__primary #topnav > #menu-item-2076 > .service-groups {
+    grid-template-columns:minmax(0,1fr);
+    gap:0;
+}
+#topnav button.service-group-title {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    width:100%;
+    min-height:48px;
+    padding:12px 0;
+    border:0;
+    border-bottom:1px solid #666;
+    border-radius:0;
+    background:transparent;
+    color:#f36639;
+    font:inherit;
+    font-size:15px;
+    line-height:1.4;
+    text-align:left;
+    cursor:pointer;
+}
+#topnav button.service-group-title:after { content:'+'; flex:none; font-size:20px; }
+#topnav button.service-group-title[aria-expanded="true"]:after { content:'−'; }
+#topnav button.service-group-title:hover { color:#fff; }
