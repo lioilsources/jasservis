@@ -1,57 +1,50 @@
 /**
- * jQuery Mobile Menu
- * Turn unordered list menu into dropdown select menu
- * version 1.0(31-OCT-2011)
- *
- * Built on top of the jQuery library
- *   http://jquery.com
- *
- * Documentation
- *   http://github.com/mambows/mobilemenu
+ * Mobile navigation for the static site. Keep the desktop menu unchanged.
  */
-(function($){
-	$.fn.mobileMenu = function(options) {
-		var defaults = {
-				defaultText: 'Navigate to...',
-				className: 'select-menu',
-				subMenuClass: 'sub-menu',
-				subMenuDash: '&ndash;'
-				},
-			settings = $.extend( defaults, options ),
-			el = $(this);
+(function ($) {
+    $.fn.mobileMenu = function () {
+        return this.each(function (index) {
+            var source = $(this);
+            if (source.data('mobile-menu-ready')) return;
+            source.data('mobile-menu-ready', true);
 
-		$("head").append('<style type="text/css">@media(max-width: 767px){.sf-menu{display:none;} .select-menu{display: block;}}</style>')
+            var menuId = 'mobile-menu-' + index;
+            // Copy links without the desktop handlers, IDs or Superfish classes.
+            var menu = source.clone();
+            menu.find('*').andSelf().removeAttr('id class style');
+            menu.attr({id: menuId, 'class': 'mobile-menu-list'});
+            var button = $('<button type="button" class="mobile-menu-toggle" aria-expanded="false"></button>')
+                .attr('aria-controls', menuId)
+                .append('<span class="mobile-menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>')
+                .append('<span class="mobile-menu-label">MENU</span>');
+            source.after(menu);
+            menu.before(button);
 
-		this.each(function(){
-			// ad class to submenu list
-			el.find('ul').addClass(settings.subMenuClass);
+            function setOpen(open) {
+                button.attr('aria-expanded', open ? 'true' : 'false');
+                button.find('.mobile-menu-label').text(open ? 'ZAVŘÍT MENU' : 'MENU');
+                menu.toggleClass('is-open', open);
+            }
 
-			// Create base menu
-			$('<select />',{'class':settings.className}).insertAfter(el);
-
-			// Create default option
-			$('<option />', {"value":'#', "text":settings.defaultText}).appendTo( '.' + settings.className );
-
-			// Create select option from menu
-			el.find('a,.separator').each(function(){
-				var $this  = $(this),
-					optText = $this.text(),
-					isParent = $this.parent('li').hasClass('menu-item-has-children');
-				if(isParent || $this.is('span')){
-					$('<optgroup />', {"label":optText}).appendTo('.' + settings.className);
-				}else{
-					$('<option />', {"value":this.href, "html":optText, "selected":(this.href == window.location.href)}).appendTo( '.' + settings.className );
-				}
-			}); // End el.find('a').each
-
-			// Change event on select element
-			$('.' + settings.className).change(function(){
-				var locations = $(this).val();
-				if( locations !== '#' ) {
-					window.location.href = $(this).val();
-				}
-			});
-		}); // End this.each
-		return this;
-	};
+            button.on('click', function () {
+                setOpen(button.attr('aria-expanded') !== 'true');
+            });
+            button.add(menu).on('keydown', function (event) {
+                if (event.key === 'Escape' && button.attr('aria-expanded') === 'true') {
+                    event.preventDefault();
+                    setOpen(false);
+                    button.focus();
+                }
+            });
+            var mobile = window.matchMedia('(max-width: 767px)');
+            function resetMenu() {
+                var restoreFocus = !mobile.matches &&
+                    (button[0] === document.activeElement || $.contains(menu[0], document.activeElement));
+                setOpen(false);
+                if (restoreFocus) source.find('a').first().focus();
+            }
+            if (mobile.addEventListener) mobile.addEventListener('change', resetMenu);
+            else mobile.addListener(resetMenu);
+        });
+    };
 })(jQuery);

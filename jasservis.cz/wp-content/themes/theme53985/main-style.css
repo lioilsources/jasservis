@@ -3479,3 +3479,47 @@ article.type-clients .thumbnail {
 .kontakt-karta a:hover { color:#333; }
 .kontakt-karta .kontakt-tel { color:#333; font-size:22px; line-height:32px; font-weight:600; white-space:nowrap; }
 .kontakt-karta .tlacitko-akce, .kontakt-karta .tlacitko-akce:visited { color:#fff; }
+
+/* Mobile menu: the original desktop navigation and branding stay unchanged. */
+.mobile-menu-toggle,
+.mobile-menu-list { display:none; }
+@media (max-width: 767px) {
+    .header .nav__primary .mobile-menu-toggle {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:12px;
+        box-sizing:border-box;
+        width:100%;
+        min-height:48px;
+        margin:0;
+        padding:12px 16px;
+        border:0;
+        border-radius:4px;
+        background:#f36639;
+        color:#fff;
+        font-family:inherit;
+        font-size:16px;
+        line-height:24px;
+        font-weight:700;
+        text-transform:uppercase;
+        cursor:pointer;
+    }
+    .mobile-menu-toggle:focus-visible { outline:2px solid #fff; outline-offset:3px; }
+    .mobile-menu-icon { position:relative; display:block; width:22px; height:18px; flex:0 0 22px; }
+    .mobile-menu-icon span { position:absolute; left:0; width:22px; height:2px; background:currentColor; }
+    .mobile-menu-icon span:nth-child(1) { top:0; }
+    .mobile-menu-icon span:nth-child(2) { top:8px; }
+    .mobile-menu-icon span:nth-child(3) { top:16px; }
+    .mobile-menu-toggle[aria-expanded="true"] .mobile-menu-icon span:nth-child(1) { top:8px; transform:rotate(45deg); }
+    .mobile-menu-toggle[aria-expanded="true"] .mobile-menu-icon span:nth-child(2) { opacity:0; }
+    .mobile-menu-toggle[aria-expanded="true"] .mobile-menu-icon span:nth-child(3) { top:8px; transform:rotate(-45deg); }
+    .header .nav__primary .mobile-menu-list.is-open { display:block; }
+    .mobile-menu-list,
+    .mobile-menu-list ul { margin:0; padding:0; list-style:none; background:#333; }
+    .mobile-menu-list ul { padding-left:16px; }
+    .mobile-menu-list a { display:block; box-sizing:border-box; min-height:44px; padding:12px 16px; color:#fff; font-size:16px; line-height:22px; overflow-wrap:break-word; text-decoration:none; }
+    .mobile-menu-list > li > a { font-weight:700; }
+    .mobile-menu-list a:hover,
+    .mobile-menu-list a:focus-visible { background:#f36639; color:#fff; }
+}
