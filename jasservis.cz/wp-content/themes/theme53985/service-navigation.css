@@ -152,6 +152,20 @@
     .header .header_block_1 #text-8 > .textwidget > b { max-width:100%; }
 }
 
+/* Desktop spacing: bring the brand left and let tiles fill the remaining bar. */
+@media (min-width:1200px) {
+    .header .header_block_2 > .row {
+        grid-template-columns:280px minmax(0,1fr);
+        gap:12px;
+    }
+    .header .header_block_2 .logo { width:290px; margin-left:-10px; }
+    .header .nav__primary #topnav > li {
+        flex:1 0 auto;
+        justify-content:center;
+        border-right:1px solid #444;
+    }
+}
+
 /* Keep service cards in complete rows despite different description heights. */
 #post-2065 #portfolio-grid {
     display:grid;
