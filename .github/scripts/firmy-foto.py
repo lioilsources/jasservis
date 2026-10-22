@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
-"""Photos from the Firmy.cz profile, for @claude.
+"""Photos for the site, for @claude: from the Firmy.cz profile or attached in an issue.
 
   firmy-foto.py seznam              offers on the profile: title, price, photo URL (TSV)
   firmy-foto.py stahni <url> <name> download one photo and save it for the site:
                                     <name>.jpg   max 1280 px wide (page photo)
                                     <name>-s.jpg 600x380 crop (tile on overview pages)
                                     into jasservis.cz/wp-content/uploads/<YYYY>/<MM>/
+  firmy-foto.py ulozit <file> <name> the same for a photo the owner attached to an issue
+                                    or comment (claude-code-action downloads those
+                                    into /tmp/github-images/)
 
-Only photos from Seznam's image CDN (dNN-a.sdn.cz) are accepted and only into the
-uploads folder, so @claude can be allowed to run this without general web or
+Only photos from Seznam's image CDN (dNN-a.sdn.cz) or from the attachments folder
+are accepted and they are written only into the uploads folder, so @claude can be allowed to run this without general web or
 file-system access. Needs Pillow.
 """
 import html
@@ -26,6 +29,7 @@ CDN = re.compile(r"^https://d\d+-a\.sdn\.cz/(?:[A-Za-z0-9_-]+/)*[A-Za-z0-9_-]+\.
 NAME = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "jasservis.cz")
 MAX_BYTES = 20 * 1024 * 1024
+ATTACHMENTS = "/tmp/github-images"
 UA = {"User-Agent": "Mozilla/5.0 (jasservis.cz photo sync)"}
 
 
@@ -57,16 +61,39 @@ def seznam():
                          img if CDN.match(img) else "-")))
 
 
-def stahni(url, name):
-    from PIL import Image, ImageOps
+def check_name(name):
+    if not NAME.match(name) or len(name) > 60:
+        sys.exit("chyba: název jen malými písmeny bez diakritiky, číslice a pomlčky, např. servis-klimatizaci")
 
+
+def stahni(url, name):
     url = url.split("?", 1)[0]  # without ?fl=… the CDN serves the original size
     if not CDN.match(url):
         sys.exit("chyba: beru jen fotky z https://dNN-a.sdn.cz/ (úložiště Firmy.cz)")
-    if not NAME.match(name) or len(name) > 60:
-        sys.exit("chyba: název jen malými písmeny bez diakritiky, číslice a pomlčky, např. servis-klimatizaci")
-    im = Image.open(io.BytesIO(fetch(url, urllib.parse.urlsplit(url).hostname)))
-    if im.format not in ("JPEG", "PNG", "WEBP"):
+    check_name(name)
+    uloz(fetch(url, urllib.parse.urlsplit(url).hostname), name)
+
+
+def ulozit(path, name):
+    real = os.path.realpath(path)
+    if os.path.dirname(real) != os.path.realpath(ATTACHMENTS) or not os.path.isfile(real):
+        sys.exit(f"chyba: beru jen přílohy ze zadání, tedy soubory přímo v {ATTACHMENTS}/")
+    check_name(name)
+    if os.path.getsize(real) > MAX_BYTES:
+        sys.exit(f"chyba: soubor je větší než {MAX_BYTES // 2**20} MB")
+    with open(real, "rb") as f:
+        uloz(f.read(), name)
+
+
+def uloz(data, name):
+    from PIL import Image, ImageOps
+
+    try:
+        im = Image.open(io.BytesIO(data))
+    except Exception:
+        sys.exit("chyba: soubor není obrázek, který umím přečíst")
+    # MPO = JPEG with extra frames, which many phone cameras write
+    if im.format not in ("JPEG", "MPO", "PNG", "WEBP"):
         sys.exit(f"chyba: nečekaný formát {im.format}")
     im = ImageOps.exif_transpose(im).convert("RGB")
 
@@ -91,5 +118,7 @@ if __name__ == "__main__":
         seznam()
     elif len(args) == 3 and args[0] == "stahni":
         stahni(args[1], args[2])
+    elif len(args) == 3 and args[0] == "ulozit":
+        ulozit(args[1], args[2])
     else:
         sys.exit(__doc__)
