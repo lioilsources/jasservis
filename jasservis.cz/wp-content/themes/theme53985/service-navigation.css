@@ -131,3 +131,16 @@
         max-width:calc(100vw - 32px);
     }
 }
+
+/* Keep Další služby compact and anchored to its own navigation item. */
+@media (min-width:1200px) {
+    #topnav > #menu-item-2076 { position:relative; }
+    .header .nav__primary #topnav > #menu-item-2076 > .service-groups {
+        grid-template-columns:minmax(0,1fr);
+        left:auto;
+        right:0;
+        width:340px;
+        max-width:calc(100vw - 32px);
+        gap:18px;
+    }
+}
