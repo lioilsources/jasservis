@@ -45,7 +45,13 @@
     border:0; border-radius:4px; background:transparent; color:#fff; font:inherit;
     cursor:pointer; min-height:44px; text-shadow:none; box-sizing:border-box;
 }
-.submenu-toggle { flex:none; width:32px; padding:0; margin-right:2px; font-size:20px; line-height:1; }
+.submenu-toggle { flex:none; width:44px; padding:0; margin-right:2px; font-size:0; line-height:1; }
+.submenu-toggle:before, .reviews-toggle > span:before {
+    content:''; display:block; width:8px; height:8px; box-sizing:border-box;
+    border-right:2px solid currentColor; border-bottom:2px solid currentColor;
+    transform:rotate(45deg); margin:-4px auto 0;
+}
+.reviews-toggle > span { display:flex; align-items:center; justify-content:center; width:16px; font-size:0; }
 .submenu-toggle:hover, .submenu-toggle[aria-expanded="true"] { color:#f36639; background:#292727; }
 .navigation-toggle { display:none; padding:12px 16px; background:#292727; }
 #topnav[hidden], #topnav [hidden] { display:none !important; }
@@ -92,8 +98,12 @@
     background:transparent; color:#f36639; font:inherit; font-size:15px;
     line-height:1.4; text-align:left; cursor:pointer;
 }
-#topnav button.service-group-title:after { content:'+'; flex:none; font-size:20px; }
-#topnav button.service-group-title[aria-expanded="true"]:after { content:'−'; }
+#topnav button.service-group-title:after {
+    content:''; flex:none; width:8px; height:8px; margin-right:6px;
+    border-right:2px solid currentColor; border-bottom:2px solid currentColor;
+    transform:rotate(-45deg); box-sizing:border-box;
+}
+#topnav button.service-group-title[aria-expanded="true"]:after { transform:rotate(45deg); }
 #topnav button.service-group-title:hover { color:#fff; background:#292727; }
 /* Contacts: target the inner widget so duplicated WordPress wrappers do not form extra columns. */
 .header .header_block_1 { padding:10px 0; }
@@ -132,11 +142,13 @@
     .navigation-ready .navigation-toggle { display:block; width:100%; text-align:left; }
     .header .nav__primary #topnav { display:block; }
     .header .nav__primary #topnav > li {
-        display:grid; grid-template-columns:minmax(0,max-content) 44px minmax(0,1fr); border-bottom:1px solid #ffffff26;
+        display:grid; grid-template-columns:minmax(0,1fr) 44px; border-bottom:1px solid #ffffff26;
     }
-    .header .nav__primary #topnav > li > a { min-height:48px; padding:12px; white-space:normal; }
+    .header .nav__primary #topnav > li > a { min-height:44px; padding:10px 12px; white-space:normal; }
     .submenu-toggle { width:44px; margin:0; font-size:0; }
-    .submenu-toggle:before { content:'›'; font-size:24px; line-height:1; }
+    .submenu-toggle:before, .reviews-toggle > span:before { transform:rotate(-45deg); margin:0 auto; }
+    .submenu-toggle[aria-expanded="true"]:before,
+    .reviews-toggle[aria-expanded="true"] > span:before { transform:rotate(45deg); margin-top:-4px; }
     .header .nav__primary #topnav .sub-menu,
     .header .nav__primary #topnav > #menu-item-2076 > .sub-menu {
         position:static; grid-column:1 / -1; width:100%; max-width:100%;
@@ -163,11 +175,13 @@
     }
     .header .header_block_2 .logo { width:290px; margin-left:-10px; }
     .header .nav__primary #topnav > li {
-        flex:1 0 auto;
+        flex:1 1 auto;
         justify-content:center;
         border-right:1px solid #ffffff26;
     }
     .header .nav__primary #topnav > li:last-child { border-right:0; }
+    .header .nav__primary #topnav > li > a { padding-left:8px; padding-right:8px; font-size:13px; }
+    .header .nav__primary #topnav > li.menu-item-has-children > a { padding-right:0; }
 }
 
 /* Keep service cards in complete rows despite different description heights. */
@@ -228,13 +242,21 @@
 @media (max-width:1199px) {
     .header .nav__primary #topnav > li > .reviews-toggle {
         grid-column:1 / -1;
-        justify-content:flex-start;
-        min-height:48px;
-        padding:12px;
+        justify-content:space-between;
+        min-height:44px;
+        padding:0 0 0 12px;
         white-space:normal;
     }
     .reviews-toggle > span { font-size:0; }
-    .reviews-toggle > span:before { content:'›'; font-size:24px; line-height:1; }
+    .reviews-toggle > span { width:44px; min-height:44px; flex:none; }
+}
+
+/* Only the tyre card needs a longer subtitle; keep the other cards untouched. */
+#post-203 .service-box.style_1 h5.tyre-service-subtitle {
+    font-size:18px; line-height:1.4; text-transform:none; overflow-wrap:normal;
+}
+@media (min-width:768px) and (max-width:979px) {
+    #post-203 .service-box.style_1 h5.tyre-service-subtitle { font-size:16px; }
 }
 
 /* Cookie preferences retain the existing banner, with space reserved below the page. */

@@ -70,7 +70,11 @@
             else close(control);
         });
         item.addEventListener('pointerenter', function (event) {
-            if (event.pointerType === 'mouse' && !compact.matches && !item.querySelector('.reviews-toggle')) open(control);
+            // Entering the arrow must leave its first click free to open the panel.
+            // Entering the label still opens the desktop menu on hover.
+            var pointed = document.elementFromPoint(event.clientX, event.clientY);
+            if (event.pointerType === 'mouse' && !compact.matches && !item.querySelector('.reviews-toggle') &&
+                !(pointed && button.contains(pointed))) open(control);
         });
         item.addEventListener('pointerleave', function (event) {
             if (event.pointerType !== 'mouse' || compact.matches) return;
