@@ -120,3 +120,14 @@
 @media (max-width:549px) {
     #post-2065 #portfolio-grid { grid-template-columns:minmax(0,1fr); }
 }
+
+/* Anchor the compact brand list to Autoservis, rather than the whole navigation. */
+@media (min-width:1200px) {
+    #topnav > #menu-item-2275 { position:relative; }
+    .header .nav__primary #topnav > #menu-item-2275 > .sub-menu {
+        left:0;
+        right:auto;
+        width:340px;
+        max-width:calc(100vw - 32px);
+    }
+}
