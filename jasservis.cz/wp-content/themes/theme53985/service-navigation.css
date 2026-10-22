@@ -63,11 +63,20 @@
     text-transform:none; white-space:normal; overflow-wrap:anywhere;
 }
 .header .nav__primary #topnav > li > a:before { display:none; }
-.header .nav__primary #topnav > li > a:hover,
+/* Restore the original orange tiles; the label and its compact arrow share one tile. */
+.header .nav__primary #topnav > li:hover,
+.header .nav__primary #topnav > li:focus-within,
+.header .nav__primary #topnav > li.current-menu-item,
+.header .nav__primary #topnav > li.current-menu-parent,
+.header .nav__primary #topnav > li.current-menu-ancestor { background:#f36639; }
+.header .nav__primary #topnav > li:hover > a,
+.header .nav__primary #topnav > li:focus-within > a,
 .header .nav__primary #topnav > li.current-menu-item > a,
 .header .nav__primary #topnav > li.current-menu-parent > a,
-.header .nav__primary #topnav > li.current-menu-ancestor > a { color:#f36639; background:transparent; }
-.header .nav__primary #topnav > li.current-menu-item > a { box-shadow:inset 0 -2px #f36639; }
+.header .nav__primary #topnav > li.current-menu-ancestor > a { color:#fff; background:transparent; }
+.header .nav__primary #topnav > li > .submenu-toggle { color:#fff; background:transparent; }
+.header .nav__primary #topnav > li > a:focus-visible,
+.header .nav__primary #topnav > li > .submenu-toggle:focus-visible { outline-color:#fff; }
 .header .nav__primary #topnav li li a:hover { color:#f36639; background:#292727; }
 .header .nav__primary #topnav .service-group > ul {
     display:block; position:static; width:auto; padding:0; margin:0;
