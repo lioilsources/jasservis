@@ -1,7 +1,44 @@
 /* Shared navigation: disclosure buttons keep parent pages reachable on touch screens. */
+/* Reserve separate columns for branding and navigation; the badge stays inside its column. */
+.header .header_block_2 > .row {
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,3fr);
+    gap:24px;
+    align-items:center;
+    margin-left:0;
+}
+.header .header_block_2 > .row:before,
+.header .header_block_2 > .row:after { content:none; }
+.header .header_block_2 > .row > .span3,
+.header .header_block_2 > .row > .span9 {
+    float:none;
+    width:auto;
+    min-width:0;
+    margin-left:0;
+}
+.header .header_block_2 .logo {
+    display:flex;
+    align-items:center;
+    gap:16px;
+    float:none;
+    width:100%;
+    white-space:normal;
+    margin:10px 0;
+}
+.header .header_block_2 .logo_h__img { flex:1; min-width:0; }
+.header .header_block_2 .logo .logo_h__img img { width:100%; height:auto; }
+.header .header_block_2 .top-firma-badge { flex:0 0 80px; margin:0; }
+.header .header_block_2 .top-firma-badge img { max-width:100%; }
+@media (max-width:1199px) {
+    .header .header_block_2 > .row { grid-template-columns:minmax(0,1fr); gap:0; }
+    .header .header_block_2 .logo { max-width:350px; }
+}
+@media (max-width:767px) {
+    .header .header_block_2 .top-firma-badge { flex-basis:56px; }
+}
 .header .nav__primary { position:relative; z-index:100; }
 #topnav, #topnav ul { list-style:none; margin:0; box-sizing:border-box; }
-#topnav { display:flex; float:none; width:100%; }
+#topnav { display:flex; flex-wrap:wrap; float:none; width:100%; }
 #topnav > li { position:static; display:flex; align-items:stretch; float:none; margin:0; }
 .header .nav__primary #topnav > li > a { padding:40px 12px; white-space:nowrap; }
 #topnav a { box-sizing:border-box; }
