@@ -59,3 +59,27 @@
 @media (max-width:599px) {
     .header .nav__primary #topnav .service-groups { grid-template-columns:minmax(0,1fr); gap:18px; }
 }
+/* Keep service cards in complete rows despite different description heights. */
+#post-2065 #portfolio-grid {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:30px;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+#post-2065 #portfolio-grid:before,
+#post-2065 #portfolio-grid:after { content:none; }
+#post-2065 #portfolio-grid > li.portfolio_item {
+    float:none;
+    clear:none;
+    width:auto;
+    margin:0;
+    min-width:0;
+}
+@media (max-width:979px) {
+    #post-2065 #portfolio-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width:549px) {
+    #post-2065 #portfolio-grid { grid-template-columns:minmax(0,1fr); }
+}
