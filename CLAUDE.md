@@ -79,7 +79,8 @@ Jinou cestou obrázky z internetu stahovat nemůžeš.
 ## Co nesmíš měnit
 
 - `.github/**` — automatika, která web nasazuje
-- `.claude/**` a `CLAUDE.md` — tvoje vlastní oprávnění a pravidla
+- `.claude/**`, `CLAUDE.md` a `AGENTS.md` — tvoje vlastní oprávnění a pravidla
+  (a pravidla pro ostatní agenty, např. ChatGPT Codex)
 - `CNAME` a `jasservis.cz/CNAME` — na těch visí doména
 - `backup/**` a `*.py` — archiv a nástroje z migrace
 
