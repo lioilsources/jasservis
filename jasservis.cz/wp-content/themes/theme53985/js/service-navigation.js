@@ -50,15 +50,18 @@
     Array.prototype.forEach.call(menu.children, function (item) {
         var panel = item.querySelector('.sub-menu');
         if (!panel) return;
-        var link = item.querySelector('a');
-        var button = document.createElement('button');
-        button.type = 'button';
-        button.className = 'submenu-toggle';
-        button.textContent = '⌄';
-        button.setAttribute('aria-label', 'Rozbalit nabídku: ' + link.textContent);
+        var link = item.querySelector('.reviews-toggle') || item.querySelector('a');
+        var button = item.querySelector('.reviews-toggle');
+        if (!button) {
+            button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'submenu-toggle';
+            button.textContent = '⌄';
+            item.insertBefore(button, panel);
+        }
+        button.setAttribute('aria-label', 'Rozbalit nabídku: ' + link.textContent.replace(/\s*⌄\s*$/, ''));
         panel.id = item.id + '-submenu';
         button.setAttribute('aria-controls', panel.id);
-        item.insertBefore(button, panel);
         var control = {button: button, panel: panel, leaveTimer: null};
         controls.push(control);
         close(control);
@@ -67,7 +70,7 @@
             else close(control);
         });
         item.addEventListener('pointerenter', function (event) {
-            if (event.pointerType === 'mouse' && !compact.matches) open(control);
+            if (event.pointerType === 'mouse' && !compact.matches && !item.querySelector('.reviews-toggle')) open(control);
         });
         item.addEventListener('pointerleave', function (event) {
             if (event.pointerType !== 'mouse' || compact.matches) return;

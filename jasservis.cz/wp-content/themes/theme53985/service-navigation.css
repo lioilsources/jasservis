@@ -190,3 +190,43 @@
 @media (max-width:549px) {
     #post-2065 #portfolio-grid { grid-template-columns:minmax(0,1fr); }
 }
+
+/* Reviews: the entire tile opens a choice of review platforms. */
+.header .nav__primary #topnav > li > .reviews-toggle {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    width:100%;
+    min-height:80px;
+    box-sizing:border-box;
+    padding:12px 10px;
+    border:0;
+    border-radius:0;
+    background:transparent;
+    color:#fff;
+    font:inherit;
+    font-size:14px;
+    line-height:20px;
+    text-transform:uppercase;
+    white-space:nowrap;
+    cursor:pointer;
+    text-shadow:none;
+}
+.header .nav__primary #topnav > li > .reviews-toggle:focus-visible { outline-color:#fff; }
+@media (min-width:1200px) {
+    .header .nav__primary #topnav > #menu-item-recenze > .sub-menu {
+        left:auto;
+        right:0;
+        width:260px;
+    }
+}
+@media (max-width:1199px) {
+    .header .nav__primary #topnav > li > .reviews-toggle {
+        grid-column:1 / -1;
+        justify-content:flex-start;
+        min-height:48px;
+        padding:12px;
+        white-space:normal;
+    }
+}
