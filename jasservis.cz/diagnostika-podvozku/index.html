@@ -247,7 +247,7 @@ body { font-weight: normal;}
 
 			jQuery(function(){
 
-				jQuery('.sf-menu').mobileMenu({defaultText: "Navigate to..."});
+				// Main navigation uses service-navigation.js.
 
 			});
 
@@ -262,25 +262,7 @@ body { font-weight: normal;}
 
 		// main navigation init
 
-			jQuery('ul.sf-menu').superfish({
-
-				delay: 1000, // the delay in milliseconds that the mouse can remain outside a sub-menu without it closing
-
-				animation: {
-
-					opacity: "show",
-
-					height: "show"
-
-				}, // used to animate the sub-menu open
-
-				speed: "normal", // animation speed
-
-				autoArrows: false, // generation of arrow mark-up (for submenu)
-
-				disableHI: true // to disable hoverIntent detection
-
-			});		//Zoom fix
+			// Main navigation uses accessible disclosure buttons.		//Zoom fix
 
 		//IPad/IPhone
 
@@ -336,6 +318,8 @@ body { font-weight: normal;}
 
 	</script>
 
+<link rel="stylesheet" href="../wp-content/themes/theme53985/service-navigation.css" />
+<script defer src="../wp-content/themes/theme53985/js/service-navigation.js"></script>
 </head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-2816">
 
 	<div id="motopress-main" class="main-holder">
@@ -412,21 +396,37 @@ body { font-weight: normal;}
 <li id="menu-item-2110" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../autoservis-pro-firmy/">Autoservis pro firmy</a></li>
 <li id="menu-item-2083" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../prezuti-a-prodej-pneumatik-pro-vas-vuz/">Pneuservis</a></li>
 <li id="menu-item-2076" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children"><a href="../dalsi-sluzby/">Další služby</a>
-<ul class="sub-menu">
-	<li id="menu-item-2721" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../serizeni-kalibrace-jizdnich-asistentu/">Seřízení a kalibrace jízdních asistentů</a></li>
-	<li id="menu-item-2733" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../serizeni-svetlometu/">Seřízení světlometů</a></li>
-	<li id="menu-item-2155" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../kompletni-diagnostika-vaseho-vozu/">Diagnostika</a></li>
-	<li id="menu-item-2858" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2816 current_page_item"><a href="../diagnostika-podvozku/">Diagnostika podvozku</a></li>
-	<li id="menu-item-2968" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../opravy-diagnostika-plneni-klimatizaci/">Opravy a plnění klimatizací</a></li>
-	<li id="menu-item-2928" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../geometrie-vozidla/">Geometrie vozidla</a></li>
-	<li id="menu-item-2154" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../priprava-a-realizace-stk/">Příprava a realizace STK</a></li>
-	<li id="menu-item-2945" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../oprava-brzdovych-kotoucu/">Oprava brzdových kotoučů</a></li>
-	<li id="menu-item-4102" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../vymena-rozvodu/">Výměna rozvodů</a></li>
-	<li id="menu-item-4103" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../prevodovky-dsg-s-tronic/">Převodovky DSG a S tronic</a></li>
-	<li id="menu-item-4104" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../servis-hybridnich-a-elektrickych-vozidel/">Servis hybridů a elektromobilů</a></li>
-	<li id="menu-item-4106" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../dekarbonizace-motoru/">Dekarbonizace motoru</a></li>
-	<li id="menu-item-4107" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../vymena-ulozeni-napravnice-a-ramen/">Výměna uložení nápravnice a ramen</a></li>
-	<li id="menu-item-2149" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../skodni-udalost-vyridime-za-vas/">Vyřízení škodní události</a></li>
+<ul class="sub-menu service-groups">
+	<li class="service-group"><span class="service-group-title">Diagnostika a kalibrace</span>
+		<ul>
+			<li id="menu-item-2155" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../kompletni-diagnostika-vaseho-vozu/">Diagnostika</a></li>
+			<li id="menu-item-2721" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../serizeni-kalibrace-jizdnich-asistentu/">Seřízení a kalibrace jízdních asistentů</a></li>
+			<li id="menu-item-2733" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../serizeni-svetlometu/">Seřízení světlometů</a></li>
+		</ul>
+	</li>
+	<li class="service-group"><span class="service-group-title">Podvozek a brzdy</span>
+		<ul>
+			<li id="menu-item-2858" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2816 current_page_item"><a href="../diagnostika-podvozku/">Diagnostika podvozku</a></li>
+			<li id="menu-item-2928" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../geometrie-vozidla/">Geometrie vozidla</a></li>
+			<li id="menu-item-2945" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../oprava-brzdovych-kotoucu/">Oprava brzdových kotoučů</a></li>
+			<li id="menu-item-4107" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../vymena-ulozeni-napravnice-a-ramen/">Výměna uložení nápravnice a ramen</a></li>
+		</ul>
+	</li>
+	<li class="service-group"><span class="service-group-title">Motor a pohon</span>
+		<ul>
+			<li id="menu-item-4102" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../vymena-rozvodu/">Výměna rozvodů</a></li>
+			<li id="menu-item-4103" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../prevodovky-dsg-s-tronic/">Převodovky DSG a S tronic</a></li>
+			<li id="menu-item-4104" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../servis-hybridnich-a-elektrickych-vozidel/">Servis hybridů a elektromobilů</a></li>
+			<li id="menu-item-4106" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../dekarbonizace-motoru/">Dekarbonizace motoru</a></li>
+		</ul>
+	</li>
+	<li class="service-group"><span class="service-group-title">Údržba a vyřízení</span>
+		<ul>
+			<li id="menu-item-2968" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../opravy-diagnostika-plneni-klimatizaci/">Opravy a plnění klimatizací</a></li>
+			<li id="menu-item-2154" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../priprava-a-realizace-stk/">Příprava a realizace STK</a></li>
+			<li id="menu-item-2149" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../skodni-udalost-vyridime-za-vas/">Vyřízení škodní události</a></li>
+		</ul>
+	</li>
 </ul>
 </li>
 <li id="menu-item-2080" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../kontakt/">Kontakt</a></li>

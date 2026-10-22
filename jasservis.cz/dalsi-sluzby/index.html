@@ -247,7 +247,7 @@ body { font-weight: normal;}
 
 			jQuery(function(){
 
-				jQuery('.sf-menu').mobileMenu({defaultText: "Navigate to..."});
+				// Main navigation uses service-navigation.js.
 
 			});
 
@@ -262,25 +262,7 @@ body { font-weight: normal;}
 
 		// main navigation init
 
-			jQuery('ul.sf-menu').superfish({
-
-				delay: 1000, // the delay in milliseconds that the mouse can remain outside a sub-menu without it closing
-
-				animation: {
-
-					opacity: "show",
-
-					height: "show"
-
-				}, // used to animate the sub-menu open
-
-				speed: "normal", // animation speed
-
-				autoArrows: false, // generation of arrow mark-up (for submenu)
-
-				disableHI: true // to disable hoverIntent detection
-
-			});		//Zoom fix
+			// Main navigation uses accessible disclosure buttons.		//Zoom fix
 
 		//IPad/IPhone
 
@@ -336,6 +318,8 @@ body { font-weight: normal;}
 
 	</script>
 
+<link rel="stylesheet" href="../wp-content/themes/theme53985/service-navigation.css" />
+<script defer src="../wp-content/themes/theme53985/js/service-navigation.js"></script>
 </head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-2065 page-parent">
 
 	<div id="motopress-main" class="main-holder">
@@ -412,21 +396,37 @@ body { font-weight: normal;}
 <li id="menu-item-2110" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../autoservis-pro-firmy/">Autoservis pro firmy</a></li>
 <li id="menu-item-2083" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../prezuti-a-prodej-pneumatik-pro-vas-vuz/">Pneuservis</a></li>
 <li id="menu-item-2076" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2065 current_page_item menu-item-has-children"><a href="../dalsi-sluzby/">Další služby</a>
-<ul class="sub-menu">
-	<li id="menu-item-2721" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../serizeni-kalibrace-jizdnich-asistentu/">Seřízení a kalibrace jízdních asistentů</a></li>
-	<li id="menu-item-2733" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../serizeni-svetlometu/">Seřízení světlometů</a></li>
-	<li id="menu-item-2155" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../kompletni-diagnostika-vaseho-vozu/">Diagnostika</a></li>
-	<li id="menu-item-2858" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../diagnostika-podvozku/">Diagnostika podvozku</a></li>
-	<li id="menu-item-2968" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../opravy-diagnostika-plneni-klimatizaci/">Opravy a plnění klimatizací</a></li>
-	<li id="menu-item-2928" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../geometrie-vozidla/">Geometrie vozidla</a></li>
-	<li id="menu-item-2154" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../priprava-a-realizace-stk/">Příprava a realizace STK</a></li>
-	<li id="menu-item-2945" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../oprava-brzdovych-kotoucu/">Oprava brzdových kotoučů</a></li>
-	<li id="menu-item-4102" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../vymena-rozvodu/">Výměna rozvodů</a></li>
-	<li id="menu-item-4103" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../prevodovky-dsg-s-tronic/">Převodovky DSG a S tronic</a></li>
-	<li id="menu-item-4104" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../servis-hybridnich-a-elektrickych-vozidel/">Servis hybridů a elektromobilů</a></li>
-	<li id="menu-item-4106" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../dekarbonizace-motoru/">Dekarbonizace motoru</a></li>
-	<li id="menu-item-4107" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../vymena-ulozeni-napravnice-a-ramen/">Výměna uložení nápravnice a ramen</a></li>
-	<li id="menu-item-2149" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../skodni-udalost-vyridime-za-vas/">Vyřízení škodní události</a></li>
+<ul class="sub-menu service-groups">
+	<li class="service-group"><span class="service-group-title">Diagnostika a kalibrace</span>
+		<ul>
+			<li id="menu-item-2155" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../kompletni-diagnostika-vaseho-vozu/">Diagnostika</a></li>
+			<li id="menu-item-2721" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../serizeni-kalibrace-jizdnich-asistentu/">Seřízení a kalibrace jízdních asistentů</a></li>
+			<li id="menu-item-2733" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../serizeni-svetlometu/">Seřízení světlometů</a></li>
+		</ul>
+	</li>
+	<li class="service-group"><span class="service-group-title">Podvozek a brzdy</span>
+		<ul>
+			<li id="menu-item-2858" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../diagnostika-podvozku/">Diagnostika podvozku</a></li>
+			<li id="menu-item-2928" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../geometrie-vozidla/">Geometrie vozidla</a></li>
+			<li id="menu-item-2945" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../oprava-brzdovych-kotoucu/">Oprava brzdových kotoučů</a></li>
+			<li id="menu-item-4107" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../vymena-ulozeni-napravnice-a-ramen/">Výměna uložení nápravnice a ramen</a></li>
+		</ul>
+	</li>
+	<li class="service-group"><span class="service-group-title">Motor a pohon</span>
+		<ul>
+			<li id="menu-item-4102" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../vymena-rozvodu/">Výměna rozvodů</a></li>
+			<li id="menu-item-4103" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../prevodovky-dsg-s-tronic/">Převodovky DSG a S tronic</a></li>
+			<li id="menu-item-4104" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../servis-hybridnich-a-elektrickych-vozidel/">Servis hybridů a elektromobilů</a></li>
+			<li id="menu-item-4106" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../dekarbonizace-motoru/">Dekarbonizace motoru</a></li>
+		</ul>
+	</li>
+	<li class="service-group"><span class="service-group-title">Údržba a vyřízení</span>
+		<ul>
+			<li id="menu-item-2968" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../opravy-diagnostika-plneni-klimatizaci/">Opravy a plnění klimatizací</a></li>
+			<li id="menu-item-2154" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../priprava-a-realizace-stk/">Příprava a realizace STK</a></li>
+			<li id="menu-item-2149" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../skodni-udalost-vyridime-za-vas/">Vyřízení škodní události</a></li>
+		</ul>
+	</li>
 </ul>
 </li>
 <li id="menu-item-2080" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../kontakt/">Kontakt</a></li>
@@ -498,25 +498,13 @@ body { font-weight: normal;}
 </li>
 <li class="portfolio_item isotope-item">
 <div class="portfolio_item_holder">
-<figure class="thumbnail thumbnail__portfolio"><a class="image-wrap" title="Geometrie vozidla" href="../geometrie-vozidla/"><br />
-<img decoding="async" src="../wp-content/uploads/2026/10/geometrie-naprav-s.jpg" alt="Geometrie vozidla" /><br />
+<figure class="thumbnail thumbnail__portfolio"><a class="image-wrap" title="SEŘÍZENÍ A KALIBRACE JÍZDNÍCH ASISTENTŮ" href="../serizeni-kalibrace-jizdnich-asistentu/"><br />
+<img decoding="async" src="../wp-content/uploads/2026/10/kalibrace-asistencnich-systemu-s.jpg" alt="SEŘÍZENÍ A KALIBRACE JÍZDNÍCH ASISTENTŮ" /><br />
 </a></figure>
 <div class="caption caption__portfolio">
-<h3><a href="../geometrie-vozidla/">Geometrie vozidla</a></h3>
-<p class="excerpt">K seřízení geometrie vozidla používáme originální zařízení s technologií 3D.</p>
-<p><a class="btn btn-inverse btn-normal btn-primary " href="../geometrie-vozidla/">Zjistit více</a></p>
-</div>
-</div>
-</li>
-<li class="portfolio_item isotope-item">
-<div class="portfolio_item_holder">
-<figure class="thumbnail thumbnail__portfolio"><a class="image-wrap" title="Diagnostika podvozku" href="../diagnostika-podvozku/"><br />
-<img decoding="async" src="../wp-content/uploads/2021/05/podvozek-s.jpg" alt="Diagnostika podvozku" /><br />
-</a></figure>
-<div class="caption caption__portfolio">
-<h3><a href="../diagnostika-podvozku/">Diagnostika podvozku</a></h3>
-<p class="excerpt">Test tlumičů, brzdového systému ( včetně elektrické parkovací brzdy ), detekce vůlí obou náprav.</p>
-<p><a class="btn btn-inverse btn-normal btn-primary " href="../diagnostika-podvozku/">Zjistit více</a></p>
+<h3><a href="../serizeni-kalibrace-jizdnich-asistentu/">SEŘÍZENÍ A KALIBRACE JÍZDNÍCH ASISTENTŮ</a></h3>
+<p class="excerpt">Front Assist, Rear Assist ,Lane Assist, Side Assist, Adaptive Cruise Control, Area View, Laser Scanner, Night Vision, Head - up Display</p>
+<p><a class="btn btn-inverse btn-normal btn-primary " href="../serizeni-kalibrace-jizdnich-asistentu/">Zjistit více</a></p>
 </div>
 </div>
 </li>
@@ -534,49 +522,25 @@ body { font-weight: normal;}
 </li>
 <li class="portfolio_item isotope-item">
 <div class="portfolio_item_holder">
-<figure class="thumbnail thumbnail__portfolio"><a class="image-wrap" title="PŘÍPRAVA A REALIZACE STK" href="../priprava-a-realizace-stk/"><br />
-<img decoding="async" src="../wp-content/uploads/2026/10/priprava-stk-s.jpg" alt="PŘÍPRAVA A REALIZACE STKA" /><br />
+<figure class="thumbnail thumbnail__portfolio"><a class="image-wrap" title="Diagnostika podvozku" href="../diagnostika-podvozku/"><br />
+<img decoding="async" src="../wp-content/uploads/2021/05/podvozek-s.jpg" alt="Diagnostika podvozku" /><br />
 </a></figure>
 <div class="caption caption__portfolio">
-<h3><a href="../priprava-a-realizace-stk/">PŘÍPRAVA A REALIZACE STK</a></h3>
-<p class="excerpt">Zkontrolujeme a připravíme váš automobil před absolvováním státní technické kontroly, nebo ji celou vyřídíme za vás.</p>
-<p><a class="btn btn-inverse btn-normal btn-primary " href="../priprava-a-realizace-stk/">Zjistit více</a></p>
+<h3><a href="../diagnostika-podvozku/">Diagnostika podvozku</a></h3>
+<p class="excerpt">Test tlumičů, brzdového systému ( včetně elektrické parkovací brzdy ), detekce vůlí obou náprav.</p>
+<p><a class="btn btn-inverse btn-normal btn-primary " href="../diagnostika-podvozku/">Zjistit více</a></p>
 </div>
 </div>
 </li>
 <li class="portfolio_item isotope-item">
 <div class="portfolio_item_holder">
-<figure class="thumbnail thumbnail__portfolio"><a class="image-wrap" title="OPRAVY A PLNĚNÍ KLIMATIZACÍ" href="../opravy-diagnostika-plneni-klimatizaci/"><br />
-<img decoding="async" src="../wp-content/uploads/2026/10/servis-klimatizaci-s.jpg" alt="OPRAVY A PLNĚNÍ KLIMATIZACÍ" /><br />
+<figure class="thumbnail thumbnail__portfolio"><a class="image-wrap" title="Geometrie vozidla" href="../geometrie-vozidla/"><br />
+<img decoding="async" src="../wp-content/uploads/2026/10/geometrie-naprav-s.jpg" alt="Geometrie vozidla" /><br />
 </a></figure>
 <div class="caption caption__portfolio">
-<h3><a href="../opravy-diagnostika-plneni-klimatizaci/">OPRAVY, PLNĚNÍ, ČIŠTĚNÍ  KLIMATIZACE</a></h3>
-<p class="excerpt">Doplníme chladivo do klimatizace, odhalíme příčinu jejího špatného fungování a případnou závadu odstraníme.</p>
-<p><a class="btn btn-inverse btn-normal btn-primary " href="../opravy-diagnostika-plneni-klimatizaci/">Zjistit více</a></p>
-</div>
-</div>
-</li>
-<li class="portfolio_item isotope-item">
-<div class="portfolio_item_holder">
-<figure class="thumbnail thumbnail__portfolio"><a class="image-wrap" title="VYŘÍZENÍ ŠKODNÍ UDÁLOSTI" href="../skodni-udalost-vyridime-za-vas/"><br />
-<img decoding="async" src="../wp-content/uploads/2016/05/skodni-udalost-rozcestnik.jpg" alt="VYŘÍZENÍ ŠKODNÍ UDÁLOSTI" /><br />
-</a></figure>
-<div class="caption caption__portfolio">
-<h3><a href="../skodni-udalost-vyridime-za-vas/">VYŘÍZENÍ ŠKODNÍ UDÁLOSTI</a></h3>
-<p class="excerpt">Vyřídíme za vás veškerou administrativu spojenou se škodní událostí. Od jejího vzniku až po pojistné plnění.</p>
-<p><a class="btn btn-inverse btn-normal btn-primary " href="../skodni-udalost-vyridime-za-vas/">Zjistit více</a></p>
-</div>
-</div>
-</li>
-<li class="portfolio_item isotope-item">
-<div class="portfolio_item_holder">
-<figure class="thumbnail thumbnail__portfolio"><a class="image-wrap" title="SEŘÍZENÍ A KALIBRACE JÍZDNÍCH ASISTENTŮ" href="../serizeni-kalibrace-jizdnich-asistentu/"><br />
-<img decoding="async" src="../wp-content/uploads/2026/10/kalibrace-asistencnich-systemu-s.jpg" alt="SEŘÍZENÍ A KALIBRACE JÍZDNÍCH ASISTENTŮ" /><br />
-</a></figure>
-<div class="caption caption__portfolio">
-<h3><a href="../serizeni-kalibrace-jizdnich-asistentu/">SEŘÍZENÍ A KALIBRACE JÍZDNÍCH ASISTENTŮ</a></h3>
-<p class="excerpt">Front Assist, Rear Assist ,Lane Assist, Side Assist, Adaptive Cruise Control, Area View, Laser Scanner, Night Vision, Head - up Display</p>
-<p><a class="btn btn-inverse btn-normal btn-primary " href="../serizeni-kalibrace-jizdnich-asistentu/">Zjistit více</a></p>
+<h3><a href="../geometrie-vozidla/">Geometrie vozidla</a></h3>
+<p class="excerpt">K seřízení geometrie vozidla používáme originální zařízení s technologií 3D.</p>
+<p><a class="btn btn-inverse btn-normal btn-primary " href="../geometrie-vozidla/">Zjistit více</a></p>
 </div>
 </div>
 </li>
@@ -589,6 +553,18 @@ body { font-weight: normal;}
 <h3><a href="../oprava-brzdovych-kotoucu/">Oprava brzdových kotoučů</a></h3>
 <p class="excerpt">Provádíme opravy brzdových kotoučů soustružením přímo na vozidle bez nutnosti jejich demontáže.</p>
 <p><a class="btn btn-inverse btn-normal btn-primary " href="../oprava-brzdovych-kotoucu/">Zjistit více</a></p>
+</div>
+</div>
+</li>
+<li class="portfolio_item isotope-item">
+<div class="portfolio_item_holder">
+<figure class="thumbnail thumbnail__portfolio"><a class="image-wrap" title="Výměna uložení nápravnice a ramen" href="../vymena-ulozeni-napravnice-a-ramen/"><br />
+<img decoding="async" loading="lazy" src="../wp-content/uploads/2026/10/ulozeni-napravnice-dlazdice.webp" alt="Výměna uložení nápravnice a ramen – odborná práce v J&amp;S servis" /><br />
+</a></figure>
+<div class="caption caption__portfolio">
+<h3><a href="../vymena-ulozeni-napravnice-a-ramen/">Výměna uložení nápravnice a ramen</a></h3>
+<p class="excerpt">Odborná výměna silentbloků nápravnice a ramen s využitím speciálních přípravků VAS. U vybraných vozidel lze výměnu provést bez demontáže celé nápravy.</p>
+<p><a class="btn btn-inverse btn-normal btn-primary " href="../vymena-ulozeni-napravnice-a-ramen/">Zjistit více</a></p>
 </div>
 </div>
 </li>
@@ -642,13 +618,37 @@ body { font-weight: normal;}
 </li>
 <li class="portfolio_item isotope-item">
 <div class="portfolio_item_holder">
-<figure class="thumbnail thumbnail__portfolio"><a class="image-wrap" title="Výměna uložení nápravnice a ramen" href="../vymena-ulozeni-napravnice-a-ramen/"><br />
-<img decoding="async" loading="lazy" src="../wp-content/uploads/2026/10/ulozeni-napravnice-dlazdice.webp" alt="Výměna uložení nápravnice a ramen – odborná práce v J&amp;S servis" /><br />
+<figure class="thumbnail thumbnail__portfolio"><a class="image-wrap" title="OPRAVY A PLNĚNÍ KLIMATIZACÍ" href="../opravy-diagnostika-plneni-klimatizaci/"><br />
+<img decoding="async" src="../wp-content/uploads/2026/10/servis-klimatizaci-s.jpg" alt="OPRAVY A PLNĚNÍ KLIMATIZACÍ" /><br />
 </a></figure>
 <div class="caption caption__portfolio">
-<h3><a href="../vymena-ulozeni-napravnice-a-ramen/">Výměna uložení nápravnice a ramen</a></h3>
-<p class="excerpt">Odborná výměna silentbloků nápravnice a ramen s využitím speciálních přípravků VAS. U vybraných vozidel lze výměnu provést bez demontáže celé nápravy.</p>
-<p><a class="btn btn-inverse btn-normal btn-primary " href="../vymena-ulozeni-napravnice-a-ramen/">Zjistit více</a></p>
+<h3><a href="../opravy-diagnostika-plneni-klimatizaci/">OPRAVY, PLNĚNÍ, ČIŠTĚNÍ  KLIMATIZACE</a></h3>
+<p class="excerpt">Doplníme chladivo do klimatizace, odhalíme příčinu jejího špatného fungování a případnou závadu odstraníme.</p>
+<p><a class="btn btn-inverse btn-normal btn-primary " href="../opravy-diagnostika-plneni-klimatizaci/">Zjistit více</a></p>
+</div>
+</div>
+</li>
+<li class="portfolio_item isotope-item">
+<div class="portfolio_item_holder">
+<figure class="thumbnail thumbnail__portfolio"><a class="image-wrap" title="PŘÍPRAVA A REALIZACE STK" href="../priprava-a-realizace-stk/"><br />
+<img decoding="async" src="../wp-content/uploads/2026/10/priprava-stk-s.jpg" alt="PŘÍPRAVA A REALIZACE STKA" /><br />
+</a></figure>
+<div class="caption caption__portfolio">
+<h3><a href="../priprava-a-realizace-stk/">PŘÍPRAVA A REALIZACE STK</a></h3>
+<p class="excerpt">Zkontrolujeme a připravíme váš automobil před absolvováním státní technické kontroly, nebo ji celou vyřídíme za vás.</p>
+<p><a class="btn btn-inverse btn-normal btn-primary " href="../priprava-a-realizace-stk/">Zjistit více</a></p>
+</div>
+</div>
+</li>
+<li class="portfolio_item isotope-item">
+<div class="portfolio_item_holder">
+<figure class="thumbnail thumbnail__portfolio"><a class="image-wrap" title="VYŘÍZENÍ ŠKODNÍ UDÁLOSTI" href="../skodni-udalost-vyridime-za-vas/"><br />
+<img decoding="async" src="../wp-content/uploads/2016/05/skodni-udalost-rozcestnik.jpg" alt="VYŘÍZENÍ ŠKODNÍ UDÁLOSTI" /><br />
+</a></figure>
+<div class="caption caption__portfolio">
+<h3><a href="../skodni-udalost-vyridime-za-vas/">VYŘÍZENÍ ŠKODNÍ UDÁLOSTI</a></h3>
+<p class="excerpt">Vyřídíme za vás veškerou administrativu spojenou se škodní událostí. Od jejího vzniku až po pojistné plnění.</p>
+<p><a class="btn btn-inverse btn-normal btn-primary " href="../skodni-udalost-vyridime-za-vas/">Zjistit více</a></p>
 </div>
 </div>
 </li>
