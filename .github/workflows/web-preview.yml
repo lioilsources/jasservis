@@ -55,6 +55,16 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy jasservis.cz --project-name=${{ vars.VIBE_SLUG }}-vibe --branch=${{ github.head_ref || github.ref_name }}
 
+      # Cloudflare gives every deployment its own URL and every branch an alias
+      # that always serves the branch's latest deployment. The alias is the link
+      # to hand out: it never goes stale, wherever it was pasted.
+      - name: Pick the link to share
+        id: link
+        env:
+          ALIAS: ${{ steps.deploy.outputs.pages-deployment-alias-url }}
+          DEPLOYMENT: ${{ steps.deploy.outputs.deployment-url }}
+        run: echo "url=${ALIAS:-$DEPLOYMENT}" >> "$GITHUB_OUTPUT"
+
       - name: Comment the preview link on the PR
         if: github.event_name == 'pull_request'
         uses: marocchino/sticky-pull-request-comment@v2
@@ -63,11 +73,32 @@ jobs:
           message: |
             ### 👀 Podívej se na změnu
 
-            **[Otevřít náhled](${{ steps.deploy.outputs.deployment-url }})**
+            **[Otevřít náhled](${{ steps.link.outputs.url }})**
 
-            Tohle je živá verze téhle změny — klikni z telefonu. Ostrý web
-            `jasservis.cz` se zatím nezměnil. Když se ti náhled líbí, dej
-            **Merge** a za minutu dvě je změna na ostrém webu.
+            Tohle je živá verze téhle změny — klikni z telefonu. Odkaz platí
+            pořád a ukazuje vždy poslední verzi. Ostrý web `jasservis.cz` se
+            zatím nezměnil. Když se ti náhled líbí, dej **Merge** a za minutu
+            dvě je změna na ostrém webu.
+
+            <sub>Právě tato verze: ${{ steps.deploy.outputs.deployment-url }}</sub>
+
+      # The comment ends up far down a long PR, and agents (Codex, Claude) write
+      # their own descriptions with links to previews that go stale. One marked
+      # block at the top of the description is the place to look, kept current.
+      - name: Put the preview link at the top of the PR description
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.pull_request.number }}
+          URL: ${{ steps.link.outputs.url }}
+        run: |
+          body=$(gh pr view "$NUMBER" --repo "$GITHUB_REPOSITORY" --json body --jq .body)
+          rest=$(printf '%s' "$body" | perl -0pe 's/<!-- preview-link -->.*?<!-- \/preview-link -->\n*//s')
+          block="<!-- preview-link -->
+          **[▶ Otevřít aktuální náhled]($URL)** — vždy poslední verze této změny.
+          <!-- /preview-link -->"
+          printf '%s\n\n%s\n' "$block" "$rest" > "$RUNNER_TEMP/body.md"
+          gh pr edit "$NUMBER" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/body.md"
 
       # The owner asked for the change in an issue and is watching that thread,
       # not the PR. Claude's branches are named claude/issue-<N>-..., so the
@@ -77,7 +108,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           HEAD_REF: ${{ github.head_ref }}
-          PREVIEW_URL: ${{ steps.deploy.outputs.deployment-url }}
+          PREVIEW_URL: ${{ steps.link.outputs.url }}
           PR_URL: ${{ github.event.pull_request.html_url }}
         run: |
           [[ "$HEAD_REF" =~ ^claude/issue-([0-9]+)- ]] || exit 0
