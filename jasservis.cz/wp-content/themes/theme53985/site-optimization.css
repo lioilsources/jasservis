@@ -1,6 +1,7 @@
 /* One presentation system for the approved PR #39 content. */
 :root {
     --js-brand:#f36639;
+    --js-card:#c44720;
     --js-ink:#191818;
     --js-copy:#444;
     --js-paper:#fff;
@@ -53,7 +54,7 @@
 }
 /* Cards share one alignment and the same row height, with links always visible. */
 #post-203 .home-service-cards { gap:24px; margin-bottom:var(--js-section); }
-#post-203 .home-service-cards .service-box.style_1 { min-height:0; margin:-48px 0 0; padding:22px; background:var(--js-brand); text-align:center; }
+#post-203 .home-service-cards .service-box.style_1 { min-height:0; margin:-48px 0 0; padding:22px; background:var(--js-card); text-align:center; }
 #post-203 .home-service-cards .service-box:before,
 #post-203 .home-service-cards .service-box:after { display:none; }
 #post-203 .home-service-cards .service-box .icon { margin:0 0 10px; }
@@ -247,7 +248,7 @@
     .header.mobile-contact-ready .mobile-phone-options[hidden] { display:none !important; }
     .header.mobile-contact-ready .header_block_1 .tel .header-phone a {
         flex-direction:row; justify-content:space-between; gap:8px;
-        min-height:48px; box-sizing:border-box; padding:10px 12px; font-size:14px; line-height:24px;
+        min-height:44px; box-sizing:border-box; padding:8px 12px; font-size:14px; line-height:24px;
     }
     .header.mobile-contact-ready .mobile-phone-options .header-phone + .header-phone { border-top:1px solid #ffffff26; }
     .header.mobile-contact-ready .header_block_1 .tel .header-phone a:hover,
@@ -259,4 +260,53 @@
     .header.mobile-contact-ready .nav__primary .navigation-toggle {
         background:transparent; border:1px solid var(--js-brand); padding:9px 16px;
     }
+}
+
+/* Final shared navigation treatment: one dark surface, white labels and restrained accents. */
+.header .nav__primary #topnav li li a,
+.header .nav__primary #topnav button.service-group-title {
+    color:#fff; background:transparent; font-family:var(--js-font); font-size:14px;
+    line-height:22px; min-height:44px; padding:11px 12px;
+    border-bottom:1px solid #ffffff26;
+}
+.header .nav__primary #topnav li li a:hover,
+.header .nav__primary #topnav li li a:focus-visible,
+.header .nav__primary #topnav li li.current-menu-item > a,
+.header .nav__primary #topnav button.service-group-title:hover,
+.header .nav__primary #topnav button.service-group-title:focus-visible,
+.header .nav__primary #topnav button.service-group-title[aria-expanded="true"] {
+    color:var(--js-brand); background:#292727;
+}
+.header .nav__primary #topnav .service-group > ul { padding-left:12px; }
+@media (max-width:1199px) {
+    .header .nav__primary #topnav > li:hover,
+    .header .nav__primary #topnav > li:focus-within,
+    .header .nav__primary #topnav > li.current-menu-item,
+    .header .nav__primary #topnav > li.current-menu-parent,
+    .header .nav__primary #topnav > li.current-menu-ancestor { background:transparent; }
+    .header .nav__primary #topnav > li.current-menu-item > a,
+    .header .nav__primary #topnav > li.current-menu-parent > a,
+    .header .nav__primary #topnav > li.current-menu-ancestor > a {
+        color:var(--js-brand); box-shadow:inset 3px 0 var(--js-brand);
+    }
+    .header .nav__primary #topnav > li > a,
+    .header .nav__primary #topnav > li > .reviews-toggle { font-size:14px; line-height:22px; }
+    .header .nav__primary #topnav .sub-menu { padding:6px; border-top:0; background:#222; }
+    .header .nav__primary #topnav > li > .submenu-toggle[aria-expanded="true"] { color:var(--js-brand); }
+    .header .nav__primary .navigation-toggle { background:transparent; border:1px solid var(--js-brand); }
+}
+@media (max-width:767px) {
+    .header .header_block_2 .logo { width:264px; margin:8px auto 4px; gap:16px; }
+    .header .header_block_2 .top-firma-badge { flex-basis:60px; }
+    .header.mobile-contact-ready .header_block_1 #text-8 > .textwidget { gap:4px; }
+    .header.mobile-contact-ready .header_block_1 { padding-bottom:6px; }
+    .header.mobile-contact-ready .header_block_1 .tel .header-phone a {
+        display:grid; grid-template-columns:16px auto 1fr; column-gap:8px;
+    }
+    .header.mobile-contact-ready .header-phone a:before {
+        content:''; width:14px; height:14px; opacity:.75;
+        background:currentColor;
+        clip-path:polygon(8% 0,30% 0,43% 29%,30% 42%,58% 70%,71% 57%,100% 70%,100% 92%,88% 100%,65% 91%,40% 73%,19% 49%,2% 24%);
+    }
+    .header.mobile-contact-ready .header-phone a span { justify-self:end; }
 }
