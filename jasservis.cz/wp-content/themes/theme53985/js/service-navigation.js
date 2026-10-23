@@ -18,6 +18,7 @@
 
     function close(control) {
         window.clearTimeout(control.leaveTimer);
+        control.hoverOpened = false;
         control.button.setAttribute('aria-expanded', 'false');
         control.panel.hidden = true;
     }
@@ -54,7 +55,11 @@
             if (panel.hidden) open(control);
             else close(control);
         }
-        button.addEventListener('click', toggle);
+        button.addEventListener('click', function () {
+            // Recenze is one tile that hover already opened; the click that follows keeps it open.
+            if (control.hoverOpened && !panel.hidden) { control.hoverOpened = false; return; }
+            toggle();
+        });
         if (link !== button) {
             // On a phone every item with a submenu only unfolds, and the page itself
             // is the first entry of the submenu; the desktop label still opens the page.
@@ -73,10 +78,11 @@
         }
         item.addEventListener('pointerenter', function (event) {
             // Entering the arrow must leave its first click free to open the panel.
-            // Entering the label still opens the desktop menu on hover.
+            // Entering the label (or the whole Recenze tile) opens the desktop menu on hover.
             var pointed = document.elementFromPoint(event.clientX, event.clientY);
-            if (event.pointerType === 'mouse' && !compact.matches && !item.querySelector('.reviews-toggle') &&
-                !(pointed && button.contains(pointed))) open(control);
+            if (event.pointerType !== 'mouse' || compact.matches) return;
+            if (link === button) { if (panel.hidden) { open(control); control.hoverOpened = true; } }
+            else if (!(pointed && button.contains(pointed))) open(control);
         });
         item.addEventListener('pointerleave', function (event) {
             if (event.pointerType !== 'mouse' || compact.matches) return;

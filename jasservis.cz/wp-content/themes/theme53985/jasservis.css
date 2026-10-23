@@ -277,10 +277,6 @@ iframe[data-cookie-src][hidden] {
     display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:8px 20px;
     margin-top:12px;
 }
-.footer .footer-preferences a {
-    display:inline-flex; align-items:center; min-height:var(--js-button-height); font-size:15px;
-    text-decoration:underline;
-}
 #cookie-settings:hover, #cookie-settings:focus-visible { color:var(--js-paper); background:#333; }
 .header-phone, .header-hours { display:block; }
 @media (max-width:1199px) {
