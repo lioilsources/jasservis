@@ -1,0 +1,178 @@
+/* Follow-up to PR #38. Original colours, artwork and service information are retained. */
+/* Saved preferences belong in normal footer flow, never over page controls. */
+#cookie-settings {
+    position:static; margin:0; padding:8px 12px; min-height:44px;
+    font-size:14px; background:transparent; color:#444; border-color:#777;
+}
+.footer-preferences { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:8px 20px; margin-top:12px; }
+.footer .footer-preferences a { display:inline-flex; align-items:center; min-height:44px; font-size:15px; color:#444; text-decoration:underline; }
+#cookie-settings:hover, #cookie-settings:focus-visible { color:#fff; background:#333; }
+/* Compact contacts; the labels, opening hours and both numbers remain present. */
+.header-phone, .header-hours { display:block; }
+@media (max-width:1199px) {
+    .header > .container > .row > .span12 {
+        display:grid; grid-template-areas:'brand' 'contacts' 'navigation';
+    }
+    .header .header_block_2, .header .header_block_2 > .row { display:contents; }
+    .header .header_block_2 > .row > .span3 { grid-area:brand; }
+    .header .header_block_2 > .row > .span9 { grid-area:navigation; }
+    .header .header_block_1 { grid-area:contacts; padding:0 0 10px; }
+    .header .header_block_2 .logo { max-width:270px; margin:10px 0 6px; gap:14px; }
+    .header .header_block_2 .top-firma-badge { flex-basis:56px; }
+    .header .header_block_1 > .row { grid-template-columns:minmax(0,1fr); gap:4px; }
+    .header .header_block_1 #text-8 > .textwidget { display:grid; grid-template-columns:auto minmax(0,1fr); gap:8px 16px; }
+    .header .header_block_1 #text-8 > .textwidget > b { align-self:center; }
+    .header .header_block_1 #text-8 > .textwidget > b a { max-width:210px; }
+    .header .nav__primary { padding-bottom:10px; }
+}
+@media (max-width:767px) {
+    .header .header_block_2 .logo { max-width:240px; margin:8px 0 4px; }
+    .header .header_block_2 .top-firma-badge { flex-basis:48px; }
+    .header .header_block_1 .header_widget_1 { font-size:14px; line-height:20px; }
+    .header .header_block_1 #text-8 > .textwidget { grid-template-columns:1fr; gap:2px; }
+    .header .header_block_1 #text-8 > .textwidget > b { background:transparent; }
+    .header .header_block_1 #text-8 > .textwidget > b a {
+        max-width:none; min-height:44px; justify-content:center; padding:8px 12px;
+        background:#f36639; border-radius:4px; font-size:14px;
+    }
+    .header .header_block_1 .tel { display:grid; grid-template-columns:1fr 1fr; column-gap:12px; font-size:14px; line-height:20px; }
+    .header .header-phone { display:flex; flex-direction:column; }
+    .header .header-phone a { display:flex; align-items:center; min-height:32px; padding:0; }
+    .header .header-hours { grid-column:1 / -1; font-size:14px; line-height:20px; }
+    .header .nav__primary .navigation-toggle { min-height:44px; padding:10px 16px; }
+}
+/* Visible card links work with mouse, keyboard and touch without hiding descriptions. */
+#post-203 .home-service-cards { gap:24px; margin-bottom:36px; }
+#post-203 .home-service-cards .service-box.style_1 {
+    min-height:0; margin:-80px 0 0; padding:24px; background:#f36639;
+}
+#post-203 .home-service-cards .service-box:before,
+#post-203 .home-service-cards .service-box:after { display:none; }
+#post-203 .home-service-cards .service-box .icon { margin:0 0 12px; }
+#post-203 .home-service-cards .icon img { width:auto; height:48px; }
+#post-203 .home-service-cards .service-box h2 { font-size:26px; line-height:1.15; margin:0 0 2px; }
+#post-203 .home-service-cards .service-box h5 { font-size:22px; line-height:1.2; margin:0 0 14px; }
+#post-203 .home-service-cards .service-box h5.tyre-service-subtitle { font-size:18px; line-height:1.4; }
+#post-203 .home-service-cards .service-box .service-box_txt {
+    opacity:1; font-size:16px; line-height:1.5; color:#191818; margin:0 0 16px;
+}
+#post-203 .home-service-cards .service-box .btn-align { position:static; opacity:1; margin-top:auto; }
+#post-203 .home-service-cards .service-box .btn-align a {
+    display:inline-flex; align-items:center; justify-content:center; opacity:1;
+    min-height:44px; padding:8px 18px; box-sizing:border-box;
+    border:1px solid #191818; color:#fff; background:#191818; font-size:15px;
+}
+#post-203 .home-service-cards .service-box .btn-align a:hover,
+#post-203 .home-service-cards .service-box .btn-align a:focus-visible { background:#333; outline:2px solid #fff; outline-offset:3px; }
+@media (max-width:979px) and (min-width:768px) {
+    #post-203 .home-service-cards { gap:16px; }
+    #post-203 .home-service-cards .service-box.style_1 { padding:18px 14px; }
+    #post-203 .home-service-cards .service-box h2 { font-size:22px; }
+    #post-203 .home-service-cards .service-box h5 { font-size:18px; }
+}
+@media (max-width:767px) {
+    #post-203 .home-service-cards { gap:14px; margin-bottom:28px; }
+    #post-203 .home-service-cards .service-box.style_1 { margin:0; padding:18px 20px; }
+    #post-203 .home-service-cards .service-box_body { display:grid; grid-template-columns:minmax(0,1fr) auto; column-gap:14px; align-items:start; }
+    #post-203 .home-service-cards .service-box h2,
+    #post-203 .home-service-cards .service-box h5 { grid-column:1 / -1; }
+    #post-203 .home-service-cards .service-box h2 { font-size:24px; }
+    #post-203 .home-service-cards .service-box h5 { font-size:21px; margin-bottom:10px; }
+    #post-203 .home-service-cards .service-box .service-box_txt { grid-column:1 / -1; margin-bottom:12px; }
+    #post-203 .home-service-cards .service-box .btn-align { grid-column:1 / -1; justify-self:center; }
+    #post-203 .home-service-cards .icon img { height:36px; }
+    #post-203 .home-service-cards .service-box .icon { margin-bottom:8px; }
+}
+/* Preserve the full photo at its native resolution instead of enlarging it. */
+#post-203 .home-about { gap:24px; margin-bottom:32px; }
+#post-203 .home-about img { width:100%; max-width:580px; height:auto; margin:0 auto; }
+#post-203 .home-about .service-box.style_2 { max-width:850px; }
+#post-203 .home-about h1.sub-title { font-size:30px; line-height:1.3; margin:0 0 20px; }
+#post-203 .home-about .service-box_txt { font-size:17px; line-height:1.65; color:#444; }
+#post-203 .title-box_primary { font-size:28px; line-height:1.3; }
+#post-203 .title-box_secondary { font-size:22px; line-height:1.4; }
+#post-203 .sluzby-sloupec { font-size:18px; line-height:1.4; color:#ae3814; }
+#post-203 .arrow-list li a { display:inline-block; padding:6px 0; color:#444; font-size:17px; line-height:1.5; }
+#post-203 .arrow-list li a:hover { color:#ae3814; text-decoration:underline; }
+#post-203 .content_box.no-margin { padding-top:32px; padding-bottom:32px; }
+.home-reviews { padding:36px 0; text-align:center; scroll-margin-top:24px; }
+.home-reviews h2, #post-203 .home-booking h2 { font-size:30px; line-height:1.3; margin:0 0 16px; }
+.home-reviews p { color:#444; font-size:17px; line-height:1.6; }
+.review-links { display:flex; flex-wrap:wrap; justify-content:center; gap:16px; margin:20px 0 12px; }
+.review-links a {
+    display:flex; justify-content:space-between; align-items:center; gap:30px;
+    min-height:56px; padding:12px 24px; box-sizing:border-box; border:2px solid #f36639;
+    color:#333; font-size:18px; line-height:1.4; font-weight:500;
+}
+.review-links a:hover, .review-links a:focus-visible { background:#f36639; color:#191818; text-decoration:underline; }
+.home-reviews p.review-note { font-size:14px; margin-bottom:0; }
+#post-203 .home-booking { padding:32px 0; text-align:center; }
+#post-203 .home-booking h2 { color:#fff; }
+#post-203 .home-booking p { font-size:21px; line-height:1.6; }
+#post-203 .home-booking a { display:inline-block; padding:6px 0; }
+.parallax-slider .hero-specialization { display:block; font-size:20px; line-height:1.4; font-weight:500; margin-bottom:14px; text-transform:none; }
+@media (max-width:767px) {
+    .home .parallax-slider { height:320px; }
+    .home .parallax-slider #mainCaptionHolder .container { top:12%; }
+    .home .parallax-slider #mainCaptionHolder .slider_caption { font-size:30px; line-height:1.2; }
+    .parallax-slider .hero-specialization { font-size:16px; margin-bottom:10px; }
+    #post-203 .home-about h1.sub-title, .home-reviews h2, #post-203 .home-booking h2 { font-size:25px; }
+    #post-203 .title-box_primary { font-size:24px; }
+    .home-reviews { padding:28px 0; }
+    .review-links { flex-direction:column; gap:12px; }
+    .review-links a { font-size:17px; }
+    #post-203 .home-booking { padding:26px 0; }
+    #post-203 .home-booking p { font-size:18px; }
+}
+/* Remove the unused footer column and the legacy oversized padding. */
+.footer .footer-widgets { padding:28px 0; }
+.footer .footer-widgets > .row { display:grid; grid-template-columns:1fr 1fr 1.5fr; gap:24px; margin:0; }
+.footer .footer-widgets > .row:before, .footer .footer-widgets > .row:after { content:none; }
+.footer .footer-widgets .span3 { float:none; width:auto; margin:0; padding:0; min-width:0; }
+.footer .footer-widgets h4 { margin:0 0 12px; font-size:18px; line-height:1.4; }
+.footer .footer-widgets ul li { margin:0; }
+.footer .footer-widgets ul li a, .footer .footer-widgets .textwidget { font-size:15px; line-height:1.6; text-transform:none; color:#eee; }
+.footer .footer-widgets ul li a { display:inline-block; padding:5px 0; }
+.footer .footer-widgets .textwidget b, .footer .footer-widgets .textwidget i, .footer .footer-widgets .textwidget em { margin:0 0 8px; color:#eee; font-style:normal; font-size:15px; text-transform:none; line-height:1.6; }
+.footer .footer-widgets a { color:#eee; }
+.footer .footer-widgets a:hover, .footer .footer-widgets a:focus-visible { color:#ffad93; text-decoration:underline; }
+.footer .copyright { padding:16px 0; }
+.footer .copyright .footer-text, .footer .copyright a { color:#555; }
+.footer #map { height:300px; }
+.footer .mapa-navigace { margin:16px 0; }
+@media (max-width:767px) {
+    .footer .footer-widgets { padding:24px 0; }
+    .footer .footer-widgets > .row { grid-template-columns:1fr 1fr; gap:20px 16px; }
+    .footer .footer-widgets .span3:last-child { grid-column:1 / -1; }
+    .footer .footer-widgets ul li a { min-height:44px; box-sizing:border-box; display:flex; align-items:center; padding:6px 0; }
+    .footer .footer-widgets .textwidget a { display:inline-flex; align-items:center; min-height:44px; }
+    .footer .footer-widgets .textwidget i, .footer .footer-widgets .textwidget em { margin-bottom:0; }
+    .footer #map { height:240px; }
+}
+@media (prefers-reduced-motion:reduce) {
+    #post-203 section.lazy-load-box { transform:none !important; opacity:1 !important; transition:none !important; }
+}
+@media (max-width:767px) {
+    #post-203 .home-service-cards .service-box.style_1 { display:grid; grid-template-columns:36px minmax(0,1fr); column-gap:12px; }
+    #post-203 .home-service-cards .service-box .icon { grid-column:1; grid-row:1 / 3; margin:0; align-self:center; }
+    #post-203 .home-service-cards .service-box_body { display:contents; }
+    #post-203 .home-service-cards .service-box h2 { grid-column:2; text-align:left; }
+    #post-203 .home-service-cards .service-box h5 { grid-column:2; text-align:left; }
+    #post-203 .home-service-cards .service-box .service-box_txt { margin-top:8px; }
+}
+@media (max-width:767px) {
+    .header .header_block_2 .logo { max-width:220px; }
+    .header .header_block_1 #text-8 > .textwidget { grid-template-columns:1fr 1fr; gap:4px 12px; }
+    .header .header_block_1 #text-8 > .textwidget > b { grid-column:1; grid-row:2; }
+    .header .header_block_1 #text-8 > .textwidget > b a { text-align:center; font-size:13px; line-height:18px; }
+    .header .header_block_1 .tel { display:contents; }
+    .header .header-phone { grid-row:1; font-size:14px; line-height:20px; }
+    .header .header-phone a { min-height:32px; }
+    .header .header-hours { grid-column:2; grid-row:2; align-self:center; }
+    #post-203 .home-service-cards .service-box .service-box_txt { font-size:15px; line-height:1.5; }
+}
+@media (max-width:767px) {
+    .header .header_block_1 .tel .header-phone a { display:flex; flex-direction:column; align-items:flex-start; justify-content:center; min-height:44px; padding:0; font-weight:400; }
+    .header .header-phone a span { font-weight:600; }
+    .header .header_block_1 #text-8 > .textwidget > b a { padding:6px 8px; font-size:13px; line-height:16px; }
+}

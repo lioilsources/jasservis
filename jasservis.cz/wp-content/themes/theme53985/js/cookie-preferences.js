@@ -16,9 +16,11 @@
     } catch (error) { /* Keep optional services off when cookies are unavailable. */ }
 
     function reserveSpace() {
-        var height = banner.hidden ? settings.getBoundingClientRect().height + 32 : banner.getBoundingClientRect().height;
-        document.body.style.setProperty('--cookie-space', height + 'px');
-        window.dispatchEvent(new Event('resize'));
+        var height = banner.hidden ? 0 : banner.getBoundingClientRect().height;
+        if (document.body.style.getPropertyValue('--cookie-space') !== height + 'px') {
+            document.body.style.setProperty('--cookie-space', height + 'px');
+            window.dispatchEvent(new Event('resize'));
+        }
     }
     function showSettings() {
         returnFocus = document.activeElement;
