@@ -131,6 +131,8 @@
     .header .nav__primary #topnav .sub-menu,
     .header .nav__primary #topnav > #menu-item-2076 > .sub-menu {
         position:static; grid-column:1 / -1; width:100%; max-width:100%; max-height:none !important;
+        /* In the phone list a drag over the menu has to scroll the page, not a box inside it. */
+        overflow:visible; overscroll-behavior:auto;
         box-shadow:none;
     }
 }
