@@ -608,3 +608,22 @@ iframe[data-cookie-src][hidden] {
 @media (max-width:979px) {
     #post-203 .home-about.cupra-intro { grid-template-columns:minmax(0,1fr); gap:22px; }
 }
+
+/* Homepage CUPRA introduction: refined legibility and heading hierarchy. */
+#post-203 .cupra-intro .service-box.style_2 .service-box_body,
+#post-203 .cupra-intro .service-box.style_2 .service-box_txt {
+    color:#343a3d;
+}
+#post-203 .cupra-intro .service-box.style_2 .service-box_txt p {
+    color:#343a3d; line-height:1.65;
+}
+#post-203 .cupra-intro .service-box.style_2 .service-box_txt strong {
+    color:#252b2e; font-weight:700;
+}
+#post-203 .cupra-intro #cupra-intro-title {
+    color:#293136; font-weight:600; line-height:1.28;
+    letter-spacing:.01em; margin-bottom:18px;
+}
+@media (max-width:767px) {
+    #post-203 .cupra-intro #cupra-intro-title { margin-bottom:14px; }
+}
