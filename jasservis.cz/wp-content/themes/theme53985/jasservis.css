@@ -45,7 +45,7 @@
 .header .nav__primary #topnav .sub-menu {
     display:block; position:absolute; top:100%; left:0; width:340px; max-width:calc(100vw - 40px);
     padding:12px; background:#191818; border-top:2px solid #f36639; box-shadow:0 6px 16px #0005;
-    overflow-y:auto; overscroll-behavior:contain; z-index:100; max-height:calc(100vh - 230px);
+    overflow-y:auto; overscroll-behavior:contain; z-index:100; max-height:calc(100vh - 230px - var(--cookie-space, 0px));
 }
 .header .nav__primary #topnav > #menu-item-2076 > .sub-menu { left:auto; right:0; }
 .header .nav__primary #topnav .service-groups { display:grid; grid-template-columns:minmax(0,1fr); gap:0; }
@@ -554,4 +554,9 @@ iframe[data-cookie-src][hidden] {
     }
     .mobile-call > a span { justify-self:end; font-weight:600; }
     .mobile-call > a:hover, .mobile-call > a:focus-visible { background:#333; color:#fff; }
+}
+/* Desktop: the four service groups sit side by side, so the dropdown is only as tall as the
+   longest group and fits above an undecided cookie bar instead of scrolling inside. */
+@media (min-width:1200px) {
+    .header .nav__primary #topnav .service-groups { grid-template-columns:repeat(4,minmax(0,1fr)); column-gap:12px; width:960px; }
 }
