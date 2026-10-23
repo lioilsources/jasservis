@@ -61,8 +61,8 @@
             toggle();
         });
         if (link !== button) {
-            // On a phone every item with a submenu only unfolds, and the page itself
-            // is the first entry of the submenu; the desktop label still opens the page.
+            // The page itself is the first entry of its submenu, so it is reachable from the
+            // list on any screen; on a phone the label only unfolds, on a desktop it still opens the page.
             var overview = document.createElement('li');
             overview.className = 'menu-overview';
             var overviewLink = document.createElement('a');
