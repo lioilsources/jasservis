@@ -220,3 +220,43 @@
 @media (prefers-reduced-motion:reduce) {
     #post-203 section.lazy-load-box { transform:none !important; opacity:1 !important; transition:none !important; }
 }
+/* Mobile contacts: a single booking action reveals the existing two phone links in flow. */
+@media (max-width:767px) {
+    .header.mobile-contact-ready .header_block_1 #text-8 > .textwidget {
+        display:flex; flex-direction:column; align-items:stretch; gap:6px;
+    }
+    .header.mobile-contact-ready .header_block_1 #text-8 > .textwidget > b { margin:0; padding:0; }
+    .header.mobile-contact-ready .mobile-booking-toggle {
+        display:flex; align-items:center; justify-content:center; gap:10px;
+        width:100%; min-height:44px; box-sizing:border-box; padding:9px 12px;
+        border:1px solid var(--js-brand); border-radius:var(--js-radius);
+        background:var(--js-brand); color:var(--js-ink); cursor:pointer;
+        font-family:var(--js-font); font-size:14px; font-weight:600; line-height:24px;
+    }
+    .header.mobile-contact-ready .mobile-booking-toggle:after {
+        content:''; width:7px; height:7px; flex:none;
+        border-right:2px solid currentColor; border-bottom:2px solid currentColor;
+        transform:rotate(45deg); margin-top:-4px;
+    }
+    .header.mobile-contact-ready .mobile-booking-toggle[aria-expanded="true"]:after { transform:rotate(225deg); margin-top:4px; }
+    .header.mobile-contact-ready .mobile-booking-toggle:focus-visible { outline:2px solid #fff; outline-offset:3px; }
+    .header.mobile-contact-ready .header_block_1 #text-8 > .textwidget > .mobile-phone-options {
+        display:grid; grid-template-columns:minmax(0,1fr); gap:0; margin:0; width:100%; box-sizing:border-box;
+        border:1px solid #ffffff40; border-radius:var(--js-radius); background:var(--js-ink);
+    }
+    .header.mobile-contact-ready .mobile-phone-options[hidden] { display:none !important; }
+    .header.mobile-contact-ready .header_block_1 .tel .header-phone a {
+        flex-direction:row; justify-content:space-between; gap:8px;
+        min-height:48px; box-sizing:border-box; padding:10px 12px; font-size:14px; line-height:24px;
+    }
+    .header.mobile-contact-ready .mobile-phone-options .header-phone + .header-phone { border-top:1px solid #ffffff26; }
+    .header.mobile-contact-ready .header_block_1 .tel .header-phone a:hover,
+    .header.mobile-contact-ready .header_block_1 .tel .header-phone a:focus-visible { background:#333; color:#fff; }
+    .header.mobile-contact-ready .header-hours {
+        font-size:13px; font-weight:400; line-height:18px; color:#bbb;
+        text-transform:none; text-align:center;
+    }
+    .header.mobile-contact-ready .nav__primary .navigation-toggle {
+        background:transparent; border:1px solid var(--js-brand); padding:9px 16px;
+    }
+}
