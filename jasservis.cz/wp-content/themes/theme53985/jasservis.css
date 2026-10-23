@@ -551,6 +551,8 @@ iframe[data-cookie-src][hidden] {
     }
     .mobile-call > a span { justify-self:end; font-weight:600; }
     .mobile-call > a:hover, .mobile-call > a:focus-visible { background:#333; color:#fff; }
+    /* The street fits on wider screens only; the phone header keeps the place name. */
+    .header .address-street { display:none; }
 }
 /* Desktop: the four service groups sit side by side and the brands in two columns, so each
    dropdown fits above an undecided cookie bar instead of scrolling inside. */
