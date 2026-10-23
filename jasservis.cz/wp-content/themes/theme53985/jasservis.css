@@ -551,6 +551,8 @@ iframe[data-cookie-src][hidden] {
     }
     .mobile-call > a span { justify-self:end; font-weight:600; }
     .mobile-call > a:hover, .mobile-call > a:focus-visible { background:#333; color:#fff; }
+    /* The street fits on wider screens only; the phone header keeps the place name. */
+    .header .address-street { display:none; }
 }
 /* Desktop: the four service groups sit side by side and the brands in two columns, so each
    dropdown fits above an undecided cookie bar instead of scrolling inside. */
@@ -592,4 +594,17 @@ iframe[data-cookie-src][hidden] {
     #post-2816 .chassis-diagnostics h2 { font-size:23px; }
     #post-2816 .diagnostics-lead { font-size:19px; }
     #post-2816 .call-to-action-row p { font-size:16px; }
+}
+
+/* Approved CUPRA photograph and copy: limited to the homepage introduction. */
+#post-203 .home-about.cupra-intro {
+    display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    gap:28px; align-items:center; margin:0 0 var(--js-section);
+}
+#post-203 .cupra-intro::before, #post-203 .cupra-intro::after { display:none; }
+#post-203 .cupra-intro .cupra-intro-photo { min-width:0; }
+#post-203 .cupra-intro img { display:block; width:100%; max-width:none; height:auto; margin:0; }
+#post-203 .cupra-intro .service-box.style_2 { min-width:0; margin:0; padding:0; }
+@media (max-width:979px) {
+    #post-203 .home-about.cupra-intro { grid-template-columns:minmax(0,1fr); gap:22px; }
 }
