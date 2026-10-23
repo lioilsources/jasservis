@@ -63,7 +63,7 @@ jQuery(document).ready(function(){
 		var regM = /ipod|ipad|iphone/gi,
 			result = navigator.userAgent.match(regM)
 		if(!result) {
-			jQuery('.sf-menu li').each(function(){
+			jQuery('.sf-menu:not(#topnav) li').each(function(){
 				if(jQuery(">ul", this)[0]){
 					jQuery(">a", this).toggle(
 						function(){
