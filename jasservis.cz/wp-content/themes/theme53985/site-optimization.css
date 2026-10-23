@@ -106,6 +106,7 @@
 #post-203 .arrow-list ul { margin-bottom:0; }
 #post-203 .arrow-list li { margin-bottom:4px; font-size:16px; line-height:24px; }
 #post-203 .arrow-list li a { display:inline-block; padding:2px 0; color:var(--js-copy); font-size:16px; line-height:24px; }
+#post-203 .arrow-list li a:before { display:none; content:none; }
 #post-203 .arrow-list li:before {
     content:''; width:6px; height:6px; margin-top:0; top:11px; left:1px;
     border-top:2px solid var(--js-brand); border-right:2px solid var(--js-brand);
