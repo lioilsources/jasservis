@@ -9,7 +9,11 @@
     var toggle = document.createElement('button');
     toggle.type = 'button';
     toggle.className = 'navigation-toggle';
-    toggle.textContent = 'Menu';
+    toggle.innerHTML = '<span class="mobile-menu-icon" aria-hidden="true"><span></span><span></span><span></span></span><span class="mobile-menu-label">MENU</span>';
+    function syncToggle() {
+        toggle.setAttribute('aria-expanded', String(!menu.hidden));
+        toggle.querySelector('.mobile-menu-label').textContent = menu.hidden ? 'MENU' : 'ZAVŘÍT MENU';
+    }
     toggle.setAttribute('aria-controls', menu.id);
     nav.insertBefore(toggle, menu);
 
@@ -83,7 +87,9 @@
             }, 200);
         });
         item.addEventListener('focusout', function (event) {
-            if (!item.contains(event.relatedTarget)) close(control);
+            // In the mobile list, closing on blur moves the next button before its click.
+            // The next category closes this panel atomically in open().
+            if (!compact.matches && !item.contains(event.relatedTarget)) close(control);
         });
         item.addEventListener('keydown', function (event) {
             if (event.key !== 'ArrowDown' || (event.target !== link && event.target !== button)) return;
@@ -122,11 +128,11 @@
     function reset() {
         controls.forEach(close);
         menu.hidden = compact.matches;
-        toggle.setAttribute('aria-expanded', String(!menu.hidden));
+        syncToggle();
     }
     toggle.addEventListener('click', function () {
         menu.hidden = !menu.hidden;
-        toggle.setAttribute('aria-expanded', String(!menu.hidden));
+        syncToggle();
         if (menu.hidden) controls.forEach(close);
     });
     document.addEventListener('click', function (event) {
@@ -134,7 +140,7 @@
             controls.forEach(close);
             if (compact.matches) {
                 menu.hidden = true;
-                toggle.setAttribute('aria-expanded', 'false');
+                syncToggle();
             }
         }
     });
@@ -153,7 +159,7 @@
         }
         var open = controls.filter(function (control) { return !control.panel.hidden; })[0];
         if (open) { close(open); open.button.focus(); }
-        else if (compact.matches && !menu.hidden) { menu.hidden = true; toggle.setAttribute('aria-expanded', 'false'); toggle.focus(); }
+        else if (compact.matches && !menu.hidden) { menu.hidden = true; syncToggle(); toggle.focus(); }
     });
     window.addEventListener('resize', function () { controls.forEach(function (control) { fit(control.panel); }); });
     window.addEventListener('scroll', function () { controls.forEach(function (control) { fit(control.panel); }); }, {passive:true});
