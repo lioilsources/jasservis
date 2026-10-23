@@ -537,3 +537,40 @@ iframe[data-cookie-src][hidden] {
 @media (max-width:767px) {
     .header .header_block_2 .logo { width:264px; margin:8px auto 4px; gap:16px; }
 }
+/* Phone header: one button unfolds the two numbers. Native <details>, no script, so nothing
+   rebuilds the header while the visitor taps. Wider screens keep the numbers in view. */
+.mobile-call { display:none; }
+@media (max-width:767px) {
+    .header .header_block_1 #text-8 > .textwidget > b,
+    .header .header_block_1 .tel .header-phone { display:none; }
+    .header .header_block_1 .mobile-call { display:block; grid-row:1; }
+    .header .header_block_1 .tel { grid-row:2; }
+    .mobile-call > summary {
+        display:flex; align-items:center; justify-content:center; gap:10px; list-style:none;
+        min-height:var(--js-button-height); padding:9px 12px; box-sizing:border-box; cursor:pointer;
+        border-radius:var(--js-radius); background:var(--js-brand); color:var(--js-ink);
+        font-family:var(--js-font); font-size:14px; font-weight:600; line-height:24px;
+        text-transform:uppercase;
+    }
+    .mobile-call > summary::-webkit-details-marker { display:none; }
+    .mobile-call > summary:after {
+        content:''; width:7px; height:7px; flex:none; margin-top:-4px;
+        border-right:2px solid currentColor; border-bottom:2px solid currentColor; transform:rotate(45deg);
+    }
+    .mobile-call[open] > summary:after { transform:rotate(225deg); margin-top:4px; }
+    .mobile-call > summary:focus-visible { outline:2px solid #fff; outline-offset:3px; }
+    .mobile-call > a {
+        display:grid; grid-template-columns:16px auto 1fr; align-items:center; column-gap:8px;
+        min-height:44px; padding:8px 12px; box-sizing:border-box;
+        background:var(--js-ink); color:#fff; font-size:14px; line-height:24px; text-transform:none;
+        border:1px solid #ffffff40; border-top:0;
+    }
+    .mobile-call > summary + a { margin-top:6px; border-top:1px solid #ffffff40; border-radius:var(--js-radius) var(--js-radius) 0 0; }
+    .mobile-call > a:last-child { border-radius:0 0 var(--js-radius) var(--js-radius); }
+    .mobile-call > a:before {
+        content:''; width:14px; height:14px; opacity:.75; background:currentColor;
+        clip-path:polygon(8% 0,30% 0,43% 29%,30% 42%,58% 70%,71% 57%,100% 70%,100% 92%,88% 100%,65% 91%,40% 73%,19% 49%,2% 24%);
+    }
+    .mobile-call > a span { justify-self:end; font-weight:600; }
+    .mobile-call > a:hover, .mobile-call > a:focus-visible { background:#333; color:#fff; }
+}
