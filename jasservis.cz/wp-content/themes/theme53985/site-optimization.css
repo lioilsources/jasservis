@@ -1,178 +1,156 @@
-/* Follow-up to PR #38. Original colours, artwork and service information are retained. */
-/* Saved preferences belong in normal footer flow, never over page controls. */
-#cookie-settings {
-    position:static; margin:0; padding:8px 12px; min-height:44px;
-    font-size:14px; background:transparent; color:#444; border-color:#777;
-}
+/* Responsive presentation shared by all pages. No changes to the approved content or artwork. */
+#cookie-settings { position:static; margin:0; padding:8px 12px; min-height:44px; font-size:14px; background:transparent; color:#444; border-color:#777; }
 .footer-preferences { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:8px 20px; margin-top:12px; }
 .footer .footer-preferences a { display:inline-flex; align-items:center; min-height:44px; font-size:15px; color:#444; text-decoration:underline; }
 #cookie-settings:hover, #cookie-settings:focus-visible { color:#fff; background:#333; }
-/* Compact contacts; the labels, opening hours and both numbers remain present. */
 .header-phone, .header-hours { display:block; }
 @media (max-width:1199px) {
-    .header > .container > .row > .span12 {
-        display:grid; grid-template-areas:'brand' 'contacts' 'navigation';
-    }
+    .header > .container > .row > .span12 { display:grid; grid-template-areas:'brand' 'contacts' 'navigation'; }
     .header .header_block_2, .header .header_block_2 > .row { display:contents; }
     .header .header_block_2 > .row > .span3 { grid-area:brand; }
     .header .header_block_2 > .row > .span9 { grid-area:navigation; }
     .header .header_block_1 { grid-area:contacts; padding:0 0 10px; }
-    .header .header_block_2 .logo { max-width:270px; margin:10px 0 6px; gap:14px; }
-    .header .header_block_2 .top-firma-badge { flex-basis:56px; }
-    .header .header_block_1 > .row { grid-template-columns:minmax(0,1fr); gap:4px; }
-    .header .header_block_1 #text-8 > .textwidget { display:grid; grid-template-columns:auto minmax(0,1fr); gap:8px 16px; }
-    .header .header_block_1 #text-8 > .textwidget > b { align-self:center; }
-    .header .header_block_1 #text-8 > .textwidget > b a { max-width:210px; }
-    .header .nav__primary { padding-bottom:10px; }
-}
-@media (max-width:767px) {
-    .header .header_block_2 .logo { max-width:240px; margin:8px 0 4px; }
-    .header .header_block_2 .top-firma-badge { flex-basis:48px; }
-    .header .header_block_1 .header_widget_1 { font-size:14px; line-height:20px; }
-    .header .header_block_1 #text-8 > .textwidget { grid-template-columns:1fr; gap:2px; }
-    .header .header_block_1 #text-8 > .textwidget > b { background:transparent; }
-    .header .header_block_1 #text-8 > .textwidget > b a {
-        max-width:none; min-height:44px; justify-content:center; padding:8px 12px;
-        background:#f36639; border-radius:4px; font-size:14px;
-    }
-    .header .header_block_1 .tel { display:grid; grid-template-columns:1fr 1fr; column-gap:12px; font-size:14px; line-height:20px; }
-    .header .header-phone { display:flex; flex-direction:column; }
-    .header .header-phone a { display:flex; align-items:center; min-height:32px; padding:0; }
-    .header .header-hours { grid-column:1 / -1; font-size:14px; line-height:20px; }
+    .header .header_block_2 .logo { width:280px; max-width:100%; margin:12px auto 8px; gap:18px; }
+    .header .header_block_2 .top-firma-badge { flex-basis:60px; }
+    .header .header_block_1 > .row { grid-template-columns:minmax(0,1fr); gap:6px; }
+    .header .header_block_1 .header_widget_1 { text-align:center; font-size:14px; line-height:20px; }
+    .header .header_block_1 .header_widget_2 { width:100%; min-width:0; }
+    .header .header_block_1 .header_widget_2 .textwidget { display:block; width:100%; box-sizing:border-box; }
+    .header .header_block_1 #text-8 { width:100%; }
+    .header .header_block_1 #text-8 > .textwidget { display:grid; grid-template-columns:minmax(0,1fr); gap:8px; }
+    .header .header_block_1 #text-8 > .textwidget > b { grid-row:2; background:transparent; width:100%; justify-self:stretch; align-self:stretch; box-sizing:border-box; }
+    .header .header_block_1 #text-8 > .textwidget > b a { justify-content:center; width:100%; min-height:44px; padding:10px 12px; box-sizing:border-box; background:#f36639; font-size:14px; line-height:20px; text-align:center; border-radius:4px; }
+    .header .header_block_1 .tel { display:grid; grid-template-columns:1fr 1fr; gap:2px 16px; font-size:14px; line-height:20px; }
+    .header .header_block_1 .tel .header-phone a { display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:44px; padding:0; font-weight:400; }
+    .header .header-phone a span { font-size:15px; font-weight:600; }
+    .header .header-hours { grid-column:1 / -1; text-align:center; font-size:13px; line-height:20px; }
+    .header .nav__primary { padding-bottom:12px; }
     .header .nav__primary .navigation-toggle { min-height:44px; padding:10px 16px; }
 }
-/* Visible card links work with mouse, keyboard and touch without hiding descriptions. */
-#post-203 .home-service-cards { gap:24px; margin-bottom:36px; }
-#post-203 .home-service-cards .service-box.style_1 {
-    min-height:0; margin:-80px 0 0; padding:24px; background:#f36639;
-}
+/* Cards share one alignment and the same row height, with links always visible. */
+#post-203 .home-service-cards { gap:24px; margin-bottom:32px; }
+#post-203 .home-service-cards .service-box.style_1 { min-height:0; margin:-48px 0 0; padding:22px; background:#f36639; text-align:center; }
 #post-203 .home-service-cards .service-box:before,
 #post-203 .home-service-cards .service-box:after { display:none; }
-#post-203 .home-service-cards .service-box .icon { margin:0 0 12px; }
-#post-203 .home-service-cards .icon img { width:auto; height:48px; }
-#post-203 .home-service-cards .service-box h2 { font-size:26px; line-height:1.15; margin:0 0 2px; }
-#post-203 .home-service-cards .service-box h5 { font-size:22px; line-height:1.2; margin:0 0 14px; }
-#post-203 .home-service-cards .service-box h5.tyre-service-subtitle { font-size:18px; line-height:1.4; }
-#post-203 .home-service-cards .service-box .service-box_txt {
-    opacity:1; font-size:16px; line-height:1.5; color:#191818; margin:0 0 16px;
-}
+#post-203 .home-service-cards .service-box .icon { margin:0 0 10px; }
+#post-203 .home-service-cards .icon img { width:auto; height:40px; }
+#post-203 .home-service-cards .service-box h2 { font-size:24px; line-height:28px; margin:0; }
+#post-203 .home-service-cards .service-box h5,
+#post-203 .home-service-cards .service-box h5.tyre-service-subtitle { font-size:18px; line-height:24px; margin:0 0 12px; text-transform:none; }
+#post-203 .home-service-cards .service-box .service-box_txt { opacity:1; font-size:15px; line-height:23px; color:#191818; margin:0 0 14px; }
 #post-203 .home-service-cards .service-box .btn-align { position:static; opacity:1; margin-top:auto; }
-#post-203 .home-service-cards .service-box .btn-align a {
-    display:inline-flex; align-items:center; justify-content:center; opacity:1;
-    min-height:44px; padding:8px 18px; box-sizing:border-box;
-    border:1px solid #191818; color:#fff; background:#191818; font-size:15px;
-}
+#post-203 .home-service-cards .service-box .btn-align a,
+.review-links a { display:inline-flex; align-items:center; justify-content:center; opacity:1; min-height:44px; padding:9px 20px; box-sizing:border-box; border:1px solid #191818; border-radius:4px; color:#fff; background:#191818; font-size:15px; line-height:24px; text-decoration:none; }
 #post-203 .home-service-cards .service-box .btn-align a:hover,
-#post-203 .home-service-cards .service-box .btn-align a:focus-visible { background:#333; outline:2px solid #fff; outline-offset:3px; }
-@media (max-width:979px) and (min-width:768px) {
-    #post-203 .home-service-cards { gap:16px; }
-    #post-203 .home-service-cards .service-box.style_1 { padding:18px 14px; }
-    #post-203 .home-service-cards .service-box h2 { font-size:22px; }
-    #post-203 .home-service-cards .service-box h5 { font-size:18px; }
-}
-@media (max-width:767px) {
-    #post-203 .home-service-cards { gap:14px; margin-bottom:28px; }
-    #post-203 .home-service-cards .service-box.style_1 { margin:0; padding:18px 20px; }
-    #post-203 .home-service-cards .service-box_body { display:grid; grid-template-columns:minmax(0,1fr) auto; column-gap:14px; align-items:start; }
-    #post-203 .home-service-cards .service-box h2,
-    #post-203 .home-service-cards .service-box h5 { grid-column:1 / -1; }
-    #post-203 .home-service-cards .service-box h2 { font-size:24px; }
-    #post-203 .home-service-cards .service-box h5 { font-size:21px; margin-bottom:10px; }
-    #post-203 .home-service-cards .service-box .service-box_txt { grid-column:1 / -1; margin-bottom:12px; }
-    #post-203 .home-service-cards .service-box .btn-align { grid-column:1 / -1; justify-self:center; }
-    #post-203 .home-service-cards .icon img { height:36px; }
-    #post-203 .home-service-cards .service-box .icon { margin-bottom:8px; }
-}
-/* Preserve the full photo at its native resolution instead of enlarging it. */
-#post-203 .home-about { gap:24px; margin-bottom:32px; }
+#post-203 .home-service-cards .service-box .btn-align a:focus-visible,
+.review-links a:hover, .review-links a:focus-visible { background:#333; outline:2px solid #f36639; outline-offset:3px; color:#fff; }
+/* Paragraphs and lists use one rhythm rather than adding padding to every link. */
+#post-203 .home-about { gap:20px; margin-bottom:28px; }
 #post-203 .home-about img { width:100%; max-width:580px; height:auto; margin:0 auto; }
-#post-203 .home-about .service-box.style_2 { max-width:850px; }
-#post-203 .home-about h1.sub-title { font-size:30px; line-height:1.3; margin:0 0 20px; }
-#post-203 .home-about .service-box_txt { font-size:17px; line-height:1.65; color:#444; }
-#post-203 .title-box_primary { font-size:28px; line-height:1.3; }
-#post-203 .title-box_secondary { font-size:22px; line-height:1.4; }
-#post-203 .sluzby-sloupec { font-size:18px; line-height:1.4; color:#ae3814; }
-#post-203 .arrow-list li a { display:inline-block; padding:6px 0; color:#444; font-size:17px; line-height:1.5; }
+#post-203 .home-about .service-box.style_2 { max-width:850px; margin:0 auto; }
+#post-203 .home-about h1.sub-title { font-size:30px; line-height:1.25; margin:0 0 16px; text-align:left; }
+#post-203 .home-about .service-box_txt,
+#post-203 .home-about .service-box_txt p { font-size:17px; line-height:26px; color:#444; }
+#post-203 .home-about .service-box_txt { margin:0; }
+#post-203 .home-about .service-box_txt p { margin:0 0 12px; }
+#post-203 .home-about .service-box_txt p:last-child { margin-bottom:0; }
+#post-203 .title-box { margin:0 0 22px; }
+#post-203 .title-box_primary { font-size:27px; line-height:1.3; margin:0 0 6px; }
+#post-203 .title-box_secondary { font-size:21px; line-height:1.4; margin:0; }
+#post-203 .sluzby-sloupec { font-size:17px; line-height:24px; color:#ae3814; margin:0 0 8px; }
+#post-203 .arrow-list ul { margin-bottom:0; }
+#post-203 .arrow-list li { margin-bottom:4px; font-size:16px; line-height:24px; }
+#post-203 .arrow-list li a { display:inline-block; padding:2px 0; color:#444; font-size:16px; line-height:24px; }
 #post-203 .arrow-list li a:hover { color:#ae3814; text-decoration:underline; }
-#post-203 .content_box.no-margin { padding-top:32px; padding-bottom:32px; }
-.home-reviews { padding:36px 0; text-align:center; scroll-margin-top:24px; }
-.home-reviews h2, #post-203 .home-booking h2 { font-size:30px; line-height:1.3; margin:0 0 16px; }
-.home-reviews p { color:#444; font-size:17px; line-height:1.6; }
-.review-links { display:flex; flex-wrap:wrap; justify-content:center; gap:16px; margin:20px 0 12px; }
-.review-links a {
-    display:flex; justify-content:space-between; align-items:center; gap:30px;
-    min-height:56px; padding:12px 24px; box-sizing:border-box; border:2px solid #f36639;
-    color:#333; font-size:18px; line-height:1.4; font-weight:500;
-}
-.review-links a:hover, .review-links a:focus-visible { background:#f36639; color:#191818; text-decoration:underline; }
-.home-reviews p.review-note { font-size:14px; margin-bottom:0; }
-#post-203 .home-booking { padding:32px 0; text-align:center; }
+#post-203 .content_box.no-margin { padding:28px 0; }
+.home-reviews { padding:28px 0; text-align:center; scroll-margin-top:24px; }
+.home-reviews h2, #post-203 .home-booking h2 { font-size:28px; line-height:1.3; margin:0 0 12px; }
+.home-reviews p { color:#444; font-size:16px; line-height:25px; margin:0 0 12px; }
+.review-links { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; max-width:620px; margin:16px auto 12px; }
+.review-links a { gap:12px; }
+.home-reviews p.review-note { font-size:13px; line-height:20px; margin:0; }
+#post-203 .home-booking { padding:28px 0; text-align:center; margin-top:0; }
 #post-203 .home-booking h2 { color:#fff; }
-#post-203 .home-booking p { font-size:21px; line-height:1.6; }
+#post-203 .home-booking p { font-size:20px; line-height:1.5; }
 #post-203 .home-booking a { display:inline-block; padding:6px 0; }
-.parallax-slider .hero-specialization { display:block; font-size:20px; line-height:1.4; font-weight:500; margin-bottom:14px; text-transform:none; }
-@media (max-width:767px) {
-    .home .parallax-slider { height:320px; }
-    .home .parallax-slider #mainCaptionHolder .container { top:12%; }
-    .home .parallax-slider #mainCaptionHolder .slider_caption { font-size:30px; line-height:1.2; }
-    .parallax-slider .hero-specialization { font-size:16px; margin-bottom:10px; }
-    #post-203 .home-about h1.sub-title, .home-reviews h2, #post-203 .home-booking h2 { font-size:25px; }
-    #post-203 .title-box_primary { font-size:24px; }
-    .home-reviews { padding:28px 0; }
-    .review-links { flex-direction:column; gap:12px; }
-    .review-links a { font-size:17px; }
-    #post-203 .home-booking { padding:26px 0; }
-    #post-203 .home-booking p { font-size:18px; }
-}
-/* Remove the unused footer column and the legacy oversized padding. */
+/* A fixed caption grid keeps both slides and their buttons at the same coordinates. */
+.home .parallax-slider { height:520px; }
+.home .parallax-slider #mainCaptionHolder .container { top:0; height:100%; }
+.home .parallax-slider #mainCaptionHolder .primaryCaption,
+.home .parallax-slider #mainCaptionHolder .secondaryCaption { height:100%; display:flex; align-items:center; justify-content:flex-end; box-sizing:border-box; padding:28px 64px 60px; }
+.home .parallax-slider #mainCaptionHolder .slider_caption { width:480px; max-width:100%; display:grid; grid-template-rows:44px 146px 48px; gap:12px; align-items:center; padding:0; font-size:40px; line-height:1.18; }
+.home .parallax-slider .hero-specialization { display:block; font-size:18px; line-height:24px; font-weight:500; text-transform:none; }
+.home .parallax-slider .hero-title { display:block; }
+.home .parallax-slider #mainCaptionHolder .slider_caption em { margin:0; }
+.home .parallax-slider #mainCaptionHolder .slider_caption em a { min-height:44px; padding:10px 24px; font-size:15px; line-height:24px; box-sizing:border-box; }
+.home .parallax-slider .controlBtn { z-index:3; width:44px; height:44px; top:50%; margin:-22px 0 0; color:#fff; }
+.home .parallax-slider .parallaxPrevBtn { left:16px !important; }
+.home .parallax-slider .parallaxNextBtn { right:16px !important; }
+.home .parallax-slider .controlBtn:before { content:''; position:absolute; display:block; top:50%; left:50%; width:10px; height:10px; margin:-5px 0 0 -7px; border-top:2px solid currentColor; border-right:2px solid currentColor; transform:rotate(45deg); }
+.home .parallax-slider .parallaxPrevBtn:before { transform:rotate(-135deg); margin-left:-3px; }
+/* Footer labels wrap at spaces; mobile service links get the full column width. */
 .footer .footer-widgets { padding:28px 0; }
 .footer .footer-widgets > .row { display:grid; grid-template-columns:1fr 1fr 1.5fr; gap:24px; margin:0; }
 .footer .footer-widgets > .row:before, .footer .footer-widgets > .row:after { content:none; }
 .footer .footer-widgets .span3 { float:none; width:auto; margin:0; padding:0; min-width:0; }
-.footer .footer-widgets h4 { margin:0 0 12px; font-size:18px; line-height:1.4; }
+.footer .footer-widgets h4 { margin:0 0 8px; font-size:17px; line-height:24px; }
 .footer .footer-widgets ul li { margin:0; }
-.footer .footer-widgets ul li a, .footer .footer-widgets .textwidget { font-size:15px; line-height:1.6; text-transform:none; color:#eee; }
-.footer .footer-widgets ul li a { display:inline-block; padding:5px 0; }
-.footer .footer-widgets .textwidget b, .footer .footer-widgets .textwidget i, .footer .footer-widgets .textwidget em { margin:0 0 8px; color:#eee; font-style:normal; font-size:15px; text-transform:none; line-height:1.6; }
+.footer .footer-widgets ul li a, .footer .footer-widgets .textwidget { font-size:15px; line-height:22px; text-transform:none; color:#eee; word-break:normal; overflow-wrap:normal; hyphens:none; }
+.footer .footer-widgets ul li a { display:inline-block; padding:6px 0; min-height:34px; box-sizing:border-box; }
+.footer .footer-widgets .textwidget b, .footer .footer-widgets .textwidget i, .footer .footer-widgets .textwidget em { margin:0 0 4px; color:#eee; font-style:normal; font-size:15px; text-transform:none; line-height:22px; }
 .footer .footer-widgets a { color:#eee; }
 .footer .footer-widgets a:hover, .footer .footer-widgets a:focus-visible { color:#ffad93; text-decoration:underline; }
 .footer .copyright { padding:16px 0; }
 .footer .copyright .footer-text, .footer .copyright a { color:#555; }
-.footer #map { height:300px; }
+.footer #map { height:280px; }
 .footer .mapa-navigace { margin:16px 0; }
+@media (min-width:768px) and (max-width:979px) {
+    #post-203 .home-service-cards { gap:16px; }
+    #post-203 .home-service-cards .service-box.style_1 { padding:18px 14px; }
+    #post-203 .home-service-cards .service-box h2 { font-size:21px; line-height:26px; }
+    #post-203 .home-service-cards .service-box h5 { min-height:48px; }
+    .home .parallax-slider #mainCaptionHolder .primaryCaption,
+    .home .parallax-slider #mainCaptionHolder .secondaryCaption { padding-left:44px; padding-right:44px; }
+}
 @media (max-width:767px) {
+    /* One gutter for the header, page sections and footer; no nested side padding. */
+    .header, .footer { padding-left:16px; padding-right:16px; }
+    body.home .content-holder { padding:20px 16px 0; }
+    .header { background:#191818; }
+    .header .header_block_1, .header .header_block_1:before, .header .header_block_1:after { background:transparent; }
+    #post-203 .home-service-cards { grid-auto-rows:1fr; gap:14px; margin-bottom:24px; }
+    #post-203 .home-service-cards .service-box.style_1 { margin:0; padding:16px; }
+    #post-203 .home-service-cards .service-box .icon { margin-bottom:8px; }
+    #post-203 .home-service-cards .icon img { height:32px; }
+    #post-203 .home-service-cards .service-box h2 { font-size:23px; line-height:27px; }
+    #post-203 .home-service-cards .service-box h5 { font-size:18px; line-height:24px; margin-bottom:10px; }
+    #post-203 .home-service-cards .service-box .service-box_txt { line-height:22px; margin-bottom:12px; }
+    #post-203 .home-about { gap:16px; margin-bottom:24px; }
+    #post-203 .home-about h1.sub-title, .home-reviews h2, #post-203 .home-booking h2 { font-size:25px; line-height:31px; }
+    #post-203 .home-about .service-box_txt, #post-203 .home-about .service-box_txt p { font-size:16px; line-height:25px; }
+    #post-203 .title-box_primary { font-size:23px; line-height:29px; }
+    #post-203 .title-box_secondary { font-size:19px; line-height:26px; }
+    #post-203 .content_box.no-margin { padding:24px 0 8px; }
+    #post-203 .content_box.no-margin .span4 { margin-bottom:18px; }
+    .home-reviews { padding:24px 0; text-align:left; }
+    .review-links { grid-template-columns:minmax(0,1fr); margin:16px 0 12px; gap:10px; }
+    #post-203 .home-booking { padding:24px 0; }
+    #post-203 .home-booking p { font-size:18px; }
+    .home .parallax-slider { height:340px; }
+    .home .parallax-slider #mainCaptionHolder .primaryCaption,
+    .home .parallax-slider #mainCaptionHolder .secondaryCaption { justify-content:center; padding:18px 16px 54px; }
+    .home .parallax-slider #mainCaptionHolder .slider_caption { width:100%; grid-template-rows:40px 112px 44px; gap:10px; font-size:30px; }
+    .home .parallax-slider .hero-specialization { font-size:16px; line-height:22px; }
+    .home .parallax-slider .controlBtn { top:auto !important; bottom:8px; width:44px; height:36px; margin:0; }
+    .home .parallax-slider .parallaxPrevBtn { left:calc(50% - 48px) !important; }
+    .home .parallax-slider .parallaxNextBtn { right:calc(50% - 48px) !important; }
     .footer .footer-widgets { padding:24px 0; }
-    .footer .footer-widgets > .row { grid-template-columns:1fr 1fr; gap:20px 16px; }
-    .footer .footer-widgets .span3:last-child { grid-column:1 / -1; }
-    .footer .footer-widgets ul li a { min-height:44px; box-sizing:border-box; display:flex; align-items:center; padding:6px 0; }
-    .footer .footer-widgets .textwidget a { display:inline-flex; align-items:center; min-height:44px; }
+    .footer .footer-widgets > .row { grid-template-columns:minmax(0,1fr); gap:18px; }
+    .footer .footer-widgets .textwidget a { display:inline-flex; align-items:center; min-height:40px; }
     .footer .footer-widgets .textwidget i, .footer .footer-widgets .textwidget em { margin-bottom:0; }
     .footer #map { height:240px; }
+    .footer .copyright .footer-text { font-size:14px; line-height:22px; }
 }
 @media (prefers-reduced-motion:reduce) {
     #post-203 section.lazy-load-box { transform:none !important; opacity:1 !important; transition:none !important; }
-}
-@media (max-width:767px) {
-    #post-203 .home-service-cards .service-box.style_1 { display:grid; grid-template-columns:36px minmax(0,1fr); column-gap:12px; }
-    #post-203 .home-service-cards .service-box .icon { grid-column:1; grid-row:1 / 3; margin:0; align-self:center; }
-    #post-203 .home-service-cards .service-box_body { display:contents; }
-    #post-203 .home-service-cards .service-box h2 { grid-column:2; text-align:left; }
-    #post-203 .home-service-cards .service-box h5 { grid-column:2; text-align:left; }
-    #post-203 .home-service-cards .service-box .service-box_txt { margin-top:8px; }
-}
-@media (max-width:767px) {
-    .header .header_block_2 .logo { max-width:220px; }
-    .header .header_block_1 #text-8 > .textwidget { grid-template-columns:1fr 1fr; gap:4px 12px; }
-    .header .header_block_1 #text-8 > .textwidget > b { grid-column:1; grid-row:2; }
-    .header .header_block_1 #text-8 > .textwidget > b a { text-align:center; font-size:13px; line-height:18px; }
-    .header .header_block_1 .tel { display:contents; }
-    .header .header-phone { grid-row:1; font-size:14px; line-height:20px; }
-    .header .header-phone a { min-height:32px; }
-    .header .header-hours { grid-column:2; grid-row:2; align-self:center; }
-    #post-203 .home-service-cards .service-box .service-box_txt { font-size:15px; line-height:1.5; }
-}
-@media (max-width:767px) {
-    .header .header_block_1 .tel .header-phone a { display:flex; flex-direction:column; align-items:flex-start; justify-content:center; min-height:44px; padding:0; font-weight:400; }
-    .header .header-phone a span { font-weight:600; }
-    .header .header_block_1 #text-8 > .textwidget > b a { padding:6px 8px; font-size:13px; line-height:16px; }
 }
