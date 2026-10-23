@@ -222,18 +222,14 @@
     #post-203 section.lazy-load-box { transform:none !important; opacity:1 !important; transition:none !important; }
 }
 /* Final shared navigation treatment: one dark surface, white labels and restrained accents. */
-.header .nav__primary #topnav li li a,
-.header .nav__primary #topnav button.service-group-title {
+.header .nav__primary #topnav li li a {
     color:#fff; background:transparent; font-family:var(--js-font); font-size:14px;
     line-height:22px; min-height:44px; padding:11px 12px;
     border-bottom:1px solid #ffffff26;
 }
 .header .nav__primary #topnav li li a:hover,
 .header .nav__primary #topnav li li a:focus-visible,
-.header .nav__primary #topnav li li.current-menu-item > a,
-.header .nav__primary #topnav button.service-group-title:hover,
-.header .nav__primary #topnav button.service-group-title:focus-visible,
-.header .nav__primary #topnav button.service-group-title[aria-expanded="true"] {
+.header .nav__primary #topnav li li.current-menu-item > a {
     color:var(--js-brand); background:#292727;
 }
 .header .nav__primary #topnav .service-group > ul { padding-left:12px; }

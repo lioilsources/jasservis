@@ -89,22 +89,12 @@
     box-shadow:none; background:none;
 }
 #topnav .service-group-title {
-    display:block; color:#f36639; padding:12px; font-size:15px; line-height:1.4;
+    display:block; color:#f36639; padding:14px 12px 6px; font-size:12px; line-height:1.4;
+    font-weight:600; letter-spacing:.04em; text-transform:uppercase;
 }
-#topnav button.service-group-title {
-    display:flex; align-items:center; justify-content:space-between; gap:12px;
-    width:100%; min-height:48px; padding:12px; box-sizing:border-box;
-    border:0; border-bottom:1px solid #ffffff26; border-radius:0;
-    background:transparent; color:#f36639; font:inherit; font-size:15px;
-    line-height:1.4; text-align:left; cursor:pointer;
-}
-#topnav button.service-group-title:after {
-    content:''; flex:none; width:8px; height:8px; margin-right:6px;
-    border-right:2px solid currentColor; border-bottom:2px solid currentColor;
-    transform:rotate(-45deg); box-sizing:border-box;
-}
-#topnav button.service-group-title[aria-expanded="true"]:after { transform:rotate(45deg); }
-#topnav button.service-group-title:hover { color:#fff; background:#292727; }
+/* Phone menu: the parent page is the first entry of its own submenu. */
+.header .nav__primary #topnav li.menu-overview a { font-weight:600; }
+@media (min-width:1200px) { #topnav li.menu-overview { display:none; } }
 /* Contacts: target the inner widget so duplicated WordPress wrappers do not form extra columns. */
 .header .header_block_1 { padding:10px 0; }
 .header .header_block_1 > .row {
@@ -185,7 +175,7 @@
 }
 
 /* Keep service cards in complete rows despite different description heights. */
-#post-2065 #portfolio-grid {
+#post-2065 #portfolio-grid, #post-2272 #portfolio-grid {
     display:grid;
     grid-template-columns:repeat(3,minmax(0,1fr));
     gap:30px;
@@ -193,9 +183,9 @@
     padding:0;
     width:100%;
 }
-#post-2065 #portfolio-grid:before,
-#post-2065 #portfolio-grid:after { content:none; }
-#post-2065 #portfolio-grid > li.portfolio_item {
+#post-2065 #portfolio-grid:before, #post-2272 #portfolio-grid:before,
+#post-2065 #portfolio-grid:after, #post-2272 #portfolio-grid:after { content:none; }
+#post-2065 #portfolio-grid > li.portfolio_item, #post-2272 #portfolio-grid > li.portfolio_item {
     float:none;
     clear:none;
     width:auto;
@@ -203,10 +193,10 @@
     min-width:0;
 }
 @media (max-width:979px) {
-    #post-2065 #portfolio-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    #post-2065 #portfolio-grid, #post-2272 #portfolio-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
 }
 @media (max-width:549px) {
-    #post-2065 #portfolio-grid { grid-template-columns:minmax(0,1fr); }
+    #post-2065 #portfolio-grid, #post-2272 #portfolio-grid { grid-template-columns:minmax(0,1fr); }
 }
 
 /* Reviews: the entire tile opens a choice of review platforms. */
