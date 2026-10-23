@@ -156,6 +156,18 @@
 .footer .copyright .footer-text, .footer .copyright a { color:#555; }
 .footer #map { height:280px; }
 .footer .mapa-navigace { margin:16px 0; }
+/* Tablet keeps the brand and contacts side by side instead of stretching a phone header. */
+@media (min-width:768px) and (max-width:1199px) {
+    .header { background:var(--js-ink); }
+    .header .header_block_1, .header .header_block_1:before, .header .header_block_1:after { background:transparent; }
+    .header > .container > .row > .span12 {
+        grid-template-columns:280px minmax(0,1fr);
+        grid-template-areas:'brand contacts' 'navigation navigation'; column-gap:24px;
+    }
+    .header .header_block_2 > .row > .span3 { align-self:center; }
+    .header .header_block_2 .logo { margin:12px 0; }
+    .header .header_block_1 { padding:12px 0; }
+}
 @media (min-width:768px) and (max-width:979px) {
     #post-203 .home-service-cards { gap:16px; }
     #post-203 .home-service-cards .service-box.style_1 { padding:18px 14px; }
