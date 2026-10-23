@@ -223,6 +223,7 @@
 }
 /* Mobile contacts: a single booking action reveals the existing two phone links in flow. */
 @media (max-width:767px) {
+    .header.mobile-contact-ready { overflow-anchor:none; }
     .header.mobile-contact-ready .header_block_1 #text-8 > .textwidget {
         display:flex; flex-direction:column; align-items:stretch; gap:6px;
     }

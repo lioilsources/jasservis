@@ -21,8 +21,17 @@
     button.setAttribute('aria-controls', 'mobile-phone-options');
     button.setAttribute('aria-expanded', 'false');
 
+    // iOS Safari scrolled the page so the content under the button landed at the top
+    // whenever the list opened or closed; put the page back where the visitor had it.
+    function keepScroll(by) {
+        var y = window.pageYOffset + (by || 0);
+        requestAnimationFrame(function () {
+            if (Math.abs(window.pageYOffset - y) > 1) window.scrollTo(0, y);
+        });
+    }
     function close(returnFocus) {
         if (!active) return;
+        if (!phones.hidden) keepScroll();
         phones.hidden = true;
         button.setAttribute('aria-expanded', 'false');
         if (returnFocus) button.focus();
@@ -55,14 +64,17 @@
         }
     }
     button.addEventListener('click', function () {
+        var y = window.pageYOffset, by = 0;
         phones.hidden = !phones.hidden;
         button.setAttribute('aria-expanded', String(!phones.hidden));
         // Keep both choices visible above an undecided cookie banner on short screens.
         var banner = document.getElementById('cf-cookie-banner');
         if (!phones.hidden && banner && !banner.hidden && window.getComputedStyle(banner).position === 'fixed') {
             var overlap = phones.getBoundingClientRect().bottom - banner.getBoundingClientRect().top;
-            if (overlap > 0) window.scrollBy(0, overlap + 12);
+            if (overlap > 0) by = overlap + 12;
         }
+        window.scrollTo(0, y);
+        keepScroll(by);
     });
     phones.addEventListener('click', function (event) {
         if (active && event.target.closest('a[href^="tel:"]')) close(true);
