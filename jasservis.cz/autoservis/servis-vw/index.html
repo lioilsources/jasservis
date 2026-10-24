@@ -315,6 +315,34 @@ body { font-weight: normal;}
 
 <script defer src="../../wp-content/themes/theme53985/js/service-navigation.js"></script>
 <link rel="stylesheet" href="../../wp-content/themes/theme53985/jasservis.css" />
+
+<style id="volkswagen-reference-styles">
+/* Omezeno na referenční stránku; společné prvky webu zůstávají beze změny. */
+#post-2120 .brand-expertise { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 36px; }
+#post-2120 .brand-expertise__section { min-width:0; }
+#post-2120 .brand-expertise__section:nth-child(3) { grid-row:span 2; }
+@media (max-width:767px) {
+ #post-2120 .brand-expertise { grid-template-columns:minmax(0,1fr); }
+ #post-2120 .brand-expertise__section:nth-child(3) { grid-row:auto; }
+}
+#post-2120 h3.article_header { margin-top:30px; line-height:1.4; }
+</style>
+<style id="js-brand-models-accordion">
+.js-brand-models{clear:both;width:100%;margin:28px 0 32px;box-sizing:border-box}
+.js-brand-models>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;padding:17px 20px;border:1px solid #d9d9d9;border-left:5px solid #e97720;background:#f5f5f5;font-weight:700;font-size:19px;line-height:1.4;list-style:none}
+.js-brand-models>summary::-webkit-details-marker{display:none}
+.js-brand-models>summary:after{content:"+";font-size:26px;font-weight:700;color:#d66b21;line-height:1}
+.js-brand-models[open]>summary:after{content:"−"}
+.js-brand-models>summary:hover{background:#ededed}
+.js-brand-models[open]>summary{background:#f1f1f1}
+.js-brand-models__hint{display:block;font-size:13px;font-weight:400;color:#555;margin-top:3px}
+.js-brand-models__heading{display:block}
+.js-brand-models>summary:focus-visible{outline:3px solid #e97720;outline-offset:3px}
+.js-brand-models__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 16px;margin:0!important;padding:18px 0!important;list-style:none!important}
+.js-brand-service-scope{margin:12px 0 22px;line-height:1.65}.js-brand-models__note{margin:0 0 16px;line-height:1.5;color:#555}.js-brand-models__grid li{min-width:0;margin:0!important;padding:11px 14px!important;background:#f5f5f5;border-left:3px solid #e97720;line-height:1.5;overflow-wrap:anywhere}
+@media(max-width:767px){.js-brand-models__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.js-brand-models>summary{font-size:17px;padding:14px}}
+@media(max-width:420px){.js-brand-models__grid{grid-template-columns:minmax(0,1fr)}}
+</style>
 </head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-2120 page-child parent-pageid-2272">
 
 	<div id="motopress-main" class="main-holder">
@@ -485,6 +513,7 @@ body { font-weight: normal;}
 		<div class="mp-row-fluid motopress-row mpce-dsbl-margin-left mpce-dsbl-margin-right">
 <div class="motopress-clmn mp-span6  mpce-dsbl-margin-left mpce-dsbl-margin-right">
 <div class="motopress-text-obj">
+<p class="js-brand-service-scope"><strong>Specializujeme se na diagnostiku, údržbu a opravy vozidel Volkswagen od roku výroby 2010.</strong> Konkrétní rozsah servisních prací závisí na modelu, motorizaci, výbavě a technických možnostech servisu.</p>
 <p>J&amp;S servis ve Statenicích se od roku 1994 specializuje na diagnostiku, údržbu a odborné opravy vozidel koncernu Volkswagen. Jsme nezávislý autoservis se zaměřením na techniku značky Volkswagen.</p>
 <ul>
 <li>Specializace na vozy Volkswagen</li>
@@ -505,46 +534,48 @@ body { font-weight: normal;}
 <div class="mp-row-fluid motopress-row mpce-dsbl-margin-left mpce-dsbl-margin-right">
 <div class="motopress-clmn mp-span12  mpce-dsbl-margin-left mpce-dsbl-margin-right">
 <div class="motopress-text-obj">
+<div class="brand-expertise">
+<section class="brand-expertise__section">
 <h3 class="article_header"><strong>Diagnostika a opravy motorů</strong></h3>
 <p>Provádíme diagnostiku a opravy benzinových motorů TSI a TFSI a vznětových motorů TDI. Zaměřujeme se na rozvodové mechanismy, přeplňování, vstřikovací soustavy, chlazení motorů a emisní systémy včetně DPF, EGR a SCR/AdBlue.</p>
+<p>U motorů TSI a TDI se servisní postup liší podle konstrukce a kódu motoru. Při kontrole rozvodů je důležité rozlišit řemenový a řetězový pohon; intervaly a rozsah výměny nelze určit pouze podle názvu modelu. Olej i další provozní kapaliny musí odpovídat předepsané specifikaci pro konkrétní motor.</p>
+<p>Při nepravidelném chodu nebo ztrátě výkonu pomáhá porovnání požadovaných a skutečných hodnot přeplňování, vstřikování a provozních teplot rozlišit příčinu od následku závady. U TDI se stav DPF posuzuje také v souvislosti s diferenčním tlakem, teplotami a podmínkami regenerace. Samotné hlášení závady filtru proto nemusí znamenat nutnost jeho výměny.</p>
+</section>
+<section class="brand-expertise__section">
 <h3 class="article_header"><strong>Automatické převodovky a pohon všech kol</strong></h3>
 <p>Zajišťujeme diagnostiku, údržbu a opravy převodovek DSG a dalších automatických převodovek podle jejich konstrukce. Provádíme výměny převodových olejů a filtrů, diagnostiku mechatroniky a servis systémů pohonu všech kol 4MOTION.</p>
+<p>Převodovky DSG se liší mimo jiné provedením spojek a olejových okruhů. Specifikace náplně, postup kontroly hladiny i servisní interval se proto určují podle konkrétního typu převodovky, nikoli jen podle počtu převodových stupňů. Při škubání, prodlevě při rozjezdu nebo neobvyklém řazení je třeba vyhodnotit souvislost mezi chodem motoru, spojkami a mechatronikou.</p>
+<p>Také označení 4MOTION zahrnuje různá konstrukční řešení. Údržba spojky pohonu všech kol, rozvodovky a diferenciálů se řídí konkrétním provedením vozidla; jednotlivé olejové náplně nelze zaměňovat.</p>
+</section>
+<section class="brand-expertise__section">
 <h3 class="article_header"><strong>Originální diagnostika ODIS</strong></h3>
 <p>Používáme diagnostický systém ODIS, profesionální měřicí techniku a specializované servisní vybavení. Provádíme vyhledávání závad, vyhodnocování měřených hodnot, funkční zkoušky, základní nastavení a adaptace podle technických možností vozidla.</p>
+<p>ODIS (Offboard Diagnostic Information System) je diagnostický systém pro vozidla koncernu Volkswagen. Paměť závad poskytuje výchozí informace, samotný chybový kód však neurčuje díl k výměně. Důležité jsou také okolnosti vzniku závady a porovnání měřených hodnot s chováním vozidla.</p>
+<p>Diagnostický postup proto propojuje údaje z řídicích jednotek s měřením a mechanickou kontrolou. Po odstranění příčiny následuje ověření výsledku opravy. Potřeba základního nastavení nebo adaptace závisí na provedeném zásahu a technologickém postupu pro dané vozidlo.</p>
+</section>
+<section class="brand-expertise__section">
+<h3 class="article_header"><strong>Elektronika a elektrické soustavy</strong></h3>
+<p>Řídicí jednotky motoru, převodovky, brzd a komfortních systémů si předávají informace po datových sběrnicích. Více chybových hlášení tak může mít společnou příčinu, například problém s napájením, ukostřením nebo kabeláží. Kontrola akumulátoru, dobíjení a elektrických spojů pomáhá předejít zbytečné výměně funkčních součástí.</p>
+</section>
+<section class="brand-expertise__section">
 <h3 class="article_header"><strong>Servis a údržba vozidel</strong></h3>
 <p>Provádíme pravidelné servisní prohlídky, výměny provozních kapalin a filtrů, opravy brzdových a podvozkových systémů, řízení, elektroniky a klimatizací.</p>
 <p>Servisujeme také vybrané hybridní a elektrické modely Volkswagen včetně řady ID. v rozsahu běžné údržby a diagnostiky. Opravy vysokonapěťových baterií a zásahy do vysokonapěťových komponent nejsou součástí této nabídky.</p>
 <p>Pracujeme podle příslušných technologických postupů výrobce a s ohledem na konkrétní model, motorizaci a výbavu vozidla.</p>
+</section>
+</div>
 <h3 class="article_header"><strong>Cena servisních prací</strong></h3>
 <p>Hodinová sazba servisní práce činí od 1&nbsp;100&nbsp;Kč včetně DPH.</p>
 <p>Náhradní díly, provozní kapaliny a ostatní materiál se účtují samostatně. Celková cena opravy závisí na rozsahu provedených prací a je stanovena po dohodě se zákazníkem.</p>
 <p>Potřebujete zkontrolovat hned několik firemních vozů? Využijte našeho specializovaného <a href="../../autoservis-pro-firmy/">servisu pro firmy</a> a technici přijedou přímo do vašich prostor.</p>
-<h3 class="article_header"><strong>Typy servisovaných vozů Volkswagen</strong></h3>
-<div class="half-part">
-<ul>
-<li>up!</li>
-<li>Polo</li>
-<li>Golf</li>
-<li>Golf Variant</li>
-<li>Scirocco</li>
-<li>Taigo</li>
-<li>Passat</li>
-<li>Arteon</li>
-<li>Phaeton</li>
-<li>T-Cross</li>
-<li>T-Roc</li>
-<li>Tiguan</li>
-<li>Tayron</li>
-<li>Touareg</li>
-<li>ID.Polo</li>
-<li>ID.3 (Neo)</li>
-<li>ID.4</li>
-<li>ID.5</li>
-<li>ID.7</li>
-<li>ID.7 Tourer</li>
-</ul>
+
+
 </div>
 </div>
+</div>
+<div class="mp-row-fluid motopress-row mpce-dsbl-margin-left mpce-dsbl-margin-right">
+<div class="motopress-clmn mp-span12 mpce-dsbl-margin-left mpce-dsbl-margin-right">
+<details class="js-brand-models"><summary><span class="js-brand-models__heading">Servisované modely – Volkswagen<span class="js-brand-models__hint">Kliknutím zobrazíte modely</span></span></summary><ul class="js-brand-models__grid"><li>up!</li><li>Fox</li><li>Polo (včetně CrossPolo a GTI)</li><li>Golf (včetně Variant, GTI, GTD a R)</li><li>Scirocco</li><li>Taigo</li><li>Passat (včetně Variant a Alltrack)</li><li>Arteon</li><li>Phaeton</li><li>T-Cross</li><li>T-Roc (včetně Cabriolet)</li><li>Tiguan (včetně Allspace)</li><li>Tayron</li><li>Touareg</li><li>ID. Polo</li><li>ID. Cross</li><li>ID.3</li><li>ID.4</li><li>ID.5</li><li>ID.7 (včetně Tourer)</li><li>Touran</li><li>Sharan</li><li>Jetta</li><li>Beetle (včetně Cabriolet)</li><li>New Beetle (včetně Cabriolet)</li><li>Eos</li><li>CC (Passat CC)</li><li>Golf Plus</li><li>Golf Sportsvan</li><li>Golf Cabriolet</li><li>ID.3 Neo</li></ul><p class="js-brand-models__note"><strong>Specifické dovozy:</strong> ID.6 CROZZ a ID.6 X (individuální dovoz z Číny) nejsou určeny pro evropský trh; přijetí a proveditelnost jednotlivých úkonů je nutné ověřit předem. Přehled zahrnuje modelové řady oficiálně určené pro evropský trh, vyráběné alespoň v části období od roku 2010, včetně již nevyráběných modelů. U nově uvedených modelů a elektrických vozidel ověřujeme dostupnost diagnostických funkcí, servisních postupů a náhradních dílů individuálně podle VIN. Rozsah servisních úkonů závisí na konkrétním vozidle a technických možnostech servisu.</p></details>
 </div>
 </div>
 <div class="mp-row-fluid motopress-row mpce-dsbl-margin-left mpce-dsbl-margin-right">
