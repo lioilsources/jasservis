@@ -20,6 +20,7 @@
         window.clearTimeout(control.leaveTimer);
         control.hoverOpened = false;
         control.button.setAttribute('aria-expanded', 'false');
+        control.item.classList.remove('is-open');
         control.panel.hidden = true;
     }
     function open(control) {
@@ -29,6 +30,7 @@
         window.clearTimeout(control.leaveTimer);
         control.panel.hidden = false;
         control.button.setAttribute('aria-expanded', 'true');
+        control.item.classList.add('is-open');
     }
     Array.prototype.forEach.call(menu.querySelectorAll('.current-menu-item > a'), function (link) {
         link.setAttribute('aria-current', 'page');
@@ -48,7 +50,7 @@
         button.setAttribute('aria-label', 'Rozbalit nabídku: ' + link.textContent.replace(/\s*⌄\s*$/, ''));
         panel.id = item.id + '-submenu';
         button.setAttribute('aria-controls', panel.id);
-        var control = {button: button, panel: panel, leaveTimer: null};
+        var control = {item: item, button: button, panel: panel, leaveTimer: null};
         controls.push(control);
         close(control);
         function toggle() {
