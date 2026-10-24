@@ -316,6 +316,17 @@ body { font-weight: normal;}
 
 <script defer src="../wp-content/themes/theme53985/js/service-navigation.js"></script>
 <link rel="stylesheet" href="../wp-content/themes/theme53985/jasservis.css" />
+
+<style id="autoservis-card-alignment">
+@media (min-width:980px) {
+    #post-2272 #portfolio-grid > li.portfolio_item:last-child:nth-child(3n + 1) { grid-column:2; }
+}
+@media (min-width:550px) and (max-width:979px) {
+    #post-2272 #portfolio-grid > li.portfolio_item:last-child:nth-child(2n + 1) {
+        grid-column:1 / -1; width:calc((100% - 30px) / 2); justify-self:center;
+    }
+}
+</style>
 </head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-2272 page-parent">
 
 	<div id="motopress-main" class="main-holder">
