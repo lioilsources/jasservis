@@ -315,6 +315,18 @@ body { font-weight: normal;}
 
 <script defer src="../wp-content/themes/theme53985/js/service-navigation.js"></script>
 <link rel="stylesheet" href="../wp-content/themes/theme53985/jasservis.css" />
+<style id="js-brand-models-accordion">
+.js-brand-models{clear:both;width:100%;margin:28px 0 32px;box-sizing:border-box}
+.js-brand-models>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;padding:17px 20px;border:1px solid #ddd;background:#f7f7f7;font-weight:700;font-size:19px;line-height:1.4;list-style:none}
+.js-brand-models>summary::-webkit-details-marker{display:none}
+.js-brand-models>summary:after{content:"+";font-size:26px;font-weight:400;line-height:1}
+.js-brand-models[open]>summary:after{content:"−"}
+.js-brand-models>summary:focus-visible{outline:3px solid #e97720;outline-offset:3px}
+.js-brand-models__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 16px;margin:0!important;padding:18px 0!important;list-style:none!important}
+.js-brand-models__grid li{min-width:0;margin:0!important;padding:11px 14px!important;background:#f5f5f5;border-left:3px solid #e97720;line-height:1.5;overflow-wrap:anywhere}
+@media(max-width:767px){.js-brand-models__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.js-brand-models>summary{font-size:17px;padding:14px}}
+@media(max-width:420px){.js-brand-models__grid{grid-template-columns:minmax(0,1fr)}}
+</style>
 </head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-2118">
 
 	<div id="motopress-main" class="main-holder">
@@ -528,15 +540,7 @@ body { font-weight: normal;}
 <h3 class="article_header"><strong>Cena servisních prací</strong></h3>
 <p>Hodinová sazba servisní práce pro vozidla Audi činí od 1&nbsp;400&nbsp;Kč včetně DPH.</p>
 <p>Náhradní díly, provozní kapaliny a další materiál se účtují samostatně. Konečná cena opravy závisí na rozsahu prací, technickém stavu vozidla a použitých dílech. Rozsah opravy a předpokládanou cenu konzultujeme se zákazníkem.</p>
-<h3 class="article_header"><strong>Typy servisovaných vozů Audi</strong></h3>
-<ul>
-<li>Řada A: A1, A2, A3, A4, A5, A6, A6 e-tron, e-tron GT, A7, A8</li>
-<li>Řada Q: Q2, Q3, Q4, Q5, Q6 e-tron, Q7, Q8</li>
-<li>Řada R: R8</li>
-<li>Řada RS: RS 3, RS 4, RS 5, RS 6, RS 7, RS Q3, RS Q8</li>
-<li>Řada TT</li>
-</ul>
-</div>
+<details class="js-brand-models"><summary>Servisované modely – Audi</summary><ul class="js-brand-models__grid"><li>Řada A: A1, A2, A3, A4, A5, A6, A6 e-tron, e-tron GT, A7, A8</li><li>Řada Q: Q2, Q3, Q4, Q5, Q6 e-tron, Q7, Q8</li><li>Řada R: R8</li><li>Řada RS: RS 3, RS 4, RS 5, RS 6, RS 7, RS Q3, RS Q8</li><li>Řada TT</li></ul></details>
 </div>
 </div>
 <div class="mp-row-fluid motopress-row mpce-dsbl-margin-left mpce-dsbl-margin-right">
