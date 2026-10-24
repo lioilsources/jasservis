@@ -52,22 +52,41 @@
 .header .nav__primary #topnav li li { float:none; width:auto; margin:0; }
 .header .nav__primary #topnav li li a { text-transform:none; overflow-wrap:anywhere; }
 .header .nav__primary #topnav > li > a:before { display:none; }
-/* Restore the original orange tiles; the label and its compact arrow share one tile. */
-.header .nav__primary #topnav > li:hover,
-.header .nav__primary #topnav > li:focus-within,
+/* Orange identifies the current page or section, independently of hover and focus. */
 .header .nav__primary #topnav > li.current-menu-item,
 .header .nav__primary #topnav > li.current-menu-parent,
 .header .nav__primary #topnav > li.current-menu-ancestor {
     background:#f36639;
 }
-.header .nav__primary #topnav > li:hover > a,
-.header .nav__primary #topnav > li:focus-within > a,
 .header .nav__primary #topnav > li.current-menu-item > a,
 .header .nav__primary #topnav > li.current-menu-parent > a,
 .header .nav__primary #topnav > li.current-menu-ancestor > a {
     color:#fff; background:transparent;
 }
 .header .nav__primary #topnav > li > .submenu-toggle { color:#fff; background:transparent; }
+/* The open state follows the actual panel state, so touch hover cannot leave it behind. */
+.header .nav__primary #topnav > li.is-open {
+    background:#292727; box-shadow:inset 0 -2px #f36639;
+}
+.header .nav__primary #topnav > li.is-open > .submenu-toggle,
+.header .nav__primary #topnav > li.is-open > .reviews-toggle { color:#f36639; }
+.header .nav__primary #topnav > li.is-open > .submenu-toggle:before,
+.header .nav__primary #topnav > li.is-open > .reviews-toggle > span:before {
+    transform:rotate(225deg); margin-top:4px;
+}
+.header .nav__primary #topnav > li.current-menu-item.is-open,
+.header .nav__primary #topnav > li.current-menu-parent.is-open,
+.header .nav__primary #topnav > li.current-menu-ancestor.is-open { background:#f36639; box-shadow:none; }
+.header .nav__primary #topnav > li.current-menu-item.is-open > .submenu-toggle,
+.header .nav__primary #topnav > li.current-menu-parent.is-open > .submenu-toggle,
+.header .nav__primary #topnav > li.current-menu-ancestor.is-open > .submenu-toggle {
+    color:#fff; background:#292727;
+}
+@media (hover:hover) and (pointer:fine) {
+    .header .nav__primary #topnav > li:not(.current-menu-item):not(.current-menu-parent):not(.current-menu-ancestor):hover {
+        background:#292727;
+    }
+}
 .header .nav__primary #topnav > li > a:focus-visible,
 .header .nav__primary #topnav > li > .submenu-toggle:focus-visible {
     outline-color:#fff;
@@ -493,13 +512,15 @@ iframe[data-cookie-src][hidden] {
 }
 .header .nav__primary #topnav .service-group > ul { padding-left:12px; }
 @media (max-width:1199px) {
-    .header .nav__primary #topnav > li:hover,
-    .header .nav__primary #topnav > li:focus-within,
     .header .nav__primary #topnav > li.current-menu-item,
     .header .nav__primary #topnav > li.current-menu-parent,
     .header .nav__primary #topnav > li.current-menu-ancestor {
         background:transparent;
     }
+    .header .nav__primary #topnav > li.is-open { background:#292727; }
+    .header .nav__primary #topnav > li.current-menu-item.is-open,
+    .header .nav__primary #topnav > li.current-menu-parent.is-open,
+    .header .nav__primary #topnav > li.current-menu-ancestor.is-open { background:#292727; }
     .header .nav__primary #topnav > li.current-menu-item > a,
     .header .nav__primary #topnav > li.current-menu-parent > a,
     .header .nav__primary #topnav > li.current-menu-ancestor > a {
@@ -560,9 +581,19 @@ iframe[data-cookie-src][hidden] {
     .header .nav__primary #topnav .service-groups { grid-template-columns:repeat(4,minmax(0,1fr)); column-gap:12px; width:960px; }
     .header .nav__primary #topnav .service-groups > .menu-overview { grid-column:1 / -1; }
     .header .nav__primary #topnav > #menu-item-2275 > .sub-menu {
-        display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:12px; width:560px;
+        display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); grid-auto-flow:row; column-gap:8px; width:560px;
     }
     .header .nav__primary #topnav > #menu-item-2275 > .sub-menu > .menu-overview { grid-column:1 / -1; }
+}
+
+/* Compact brand overview, with GVO kept outside the six-brand grid. */
+.header .nav__primary #topnav > #menu-item-2275 > .sub-menu { padding:8px; }
+.header .nav__primary #topnav > #menu-item-2275 > .sub-menu > li > a {
+    display:flex; align-items:center; min-height:44px; padding:8px 10px;
+    font-size:14px; line-height:20px; font-weight:400;
+}
+.header .nav__primary #topnav > #menu-item-2275 > .sub-menu > #menu-item-4105 {
+    grid-column:1 / -1; margin-top:4px; padding-top:4px; border-top:1px solid #ffffff40;
 }
 
 /* Chassis diagnostics: photographs stay with their related inspection. */
