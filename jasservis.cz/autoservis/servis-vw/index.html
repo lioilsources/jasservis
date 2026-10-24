@@ -315,6 +315,31 @@ body { font-weight: normal;}
 
 <script defer src="../../wp-content/themes/theme53985/js/service-navigation.js"></script>
 <link rel="stylesheet" href="../../wp-content/themes/theme53985/jasservis.css" />
+
+<style id="volkswagen-reference-styles">
+/* Omezeno na referenční stránku; společné prvky webu zůstávají beze změny. */
+#post-2120 .brand-expertise { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 36px; }
+#post-2120 .brand-expertise__section { min-width:0; }
+#post-2120 .brand-expertise__section:nth-child(3) { grid-row:span 2; }
+@media (max-width:767px) {
+ #post-2120 .brand-expertise { grid-template-columns:minmax(0,1fr); }
+ #post-2120 .brand-expertise__section:nth-child(3) { grid-row:auto; }
+}
+#post-2120 h3.article_header { margin-top:30px; line-height:1.4; }
+#post-2120 .brand-models { width:100%; float:none; padding:0; box-sizing:border-box; }
+#post-2120 .brand-models ul { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px 24px; margin:0 0 30px; padding:0; list-style:none; }
+#post-2120 .brand-models li { margin:0; padding:12px 16px; background:#f5f5f5; border-left:3px solid #333; line-height:1.5; overflow-wrap:anywhere; }
+@media (max-width:979px) {
+ #post-2120 .brand-models ul { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 16px; }
+}
+@media (max-width:479px) {
+ #post-2120 .brand-models ul { gap:8px; }
+ #post-2120 .brand-models li { padding:10px; }
+}
+@media (max-width:359px) {
+ #post-2120 .brand-models ul { grid-template-columns:minmax(0,1fr); }
+}
+</style>
 </head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-2120 page-child parent-pageid-2272">
 
 	<div id="motopress-main" class="main-holder">
@@ -505,22 +530,43 @@ body { font-weight: normal;}
 <div class="mp-row-fluid motopress-row mpce-dsbl-margin-left mpce-dsbl-margin-right">
 <div class="motopress-clmn mp-span12  mpce-dsbl-margin-left mpce-dsbl-margin-right">
 <div class="motopress-text-obj">
+<div class="brand-expertise">
+<section class="brand-expertise__section">
 <h3 class="article_header"><strong>Diagnostika a opravy motorů</strong></h3>
 <p>Provádíme diagnostiku a opravy benzinových motorů TSI a TFSI a vznětových motorů TDI. Zaměřujeme se na rozvodové mechanismy, přeplňování, vstřikovací soustavy, chlazení motorů a emisní systémy včetně DPF, EGR a SCR/AdBlue.</p>
+<p>U motorů TSI a TDI se servisní postup liší podle konstrukce a kódu motoru. Při kontrole rozvodů je důležité rozlišit řemenový a řetězový pohon; intervaly a rozsah výměny nelze určit pouze podle názvu modelu. Olej i další provozní kapaliny musí odpovídat předepsané specifikaci pro konkrétní motor.</p>
+<p>Při nepravidelném chodu nebo ztrátě výkonu pomáhá porovnání požadovaných a skutečných hodnot přeplňování, vstřikování a provozních teplot rozlišit příčinu od následku závady. U TDI se stav DPF posuzuje také v souvislosti s diferenčním tlakem, teplotami a podmínkami regenerace. Samotné hlášení závady filtru proto nemusí znamenat nutnost jeho výměny.</p>
+</section>
+<section class="brand-expertise__section">
 <h3 class="article_header"><strong>Automatické převodovky a pohon všech kol</strong></h3>
 <p>Zajišťujeme diagnostiku, údržbu a opravy převodovek DSG a dalších automatických převodovek podle jejich konstrukce. Provádíme výměny převodových olejů a filtrů, diagnostiku mechatroniky a servis systémů pohonu všech kol 4MOTION.</p>
+<p>Převodovky DSG se liší mimo jiné provedením spojek a olejových okruhů. Specifikace náplně, postup kontroly hladiny i servisní interval se proto určují podle konkrétního typu převodovky, nikoli jen podle počtu převodových stupňů. Při škubání, prodlevě při rozjezdu nebo neobvyklém řazení je třeba vyhodnotit souvislost mezi chodem motoru, spojkami a mechatronikou.</p>
+<p>Také označení 4MOTION zahrnuje různá konstrukční řešení. Údržba spojky pohonu všech kol, rozvodovky a diferenciálů se řídí konkrétním provedením vozidla; jednotlivé olejové náplně nelze zaměňovat.</p>
+</section>
+<section class="brand-expertise__section">
 <h3 class="article_header"><strong>Originální diagnostika ODIS</strong></h3>
 <p>Používáme diagnostický systém ODIS, profesionální měřicí techniku a specializované servisní vybavení. Provádíme vyhledávání závad, vyhodnocování měřených hodnot, funkční zkoušky, základní nastavení a adaptace podle technických možností vozidla.</p>
+<p>ODIS (Offboard Diagnostic Information System) je diagnostický systém pro vozidla koncernu Volkswagen. Paměť závad poskytuje výchozí informace, samotný chybový kód však neurčuje díl k výměně. Důležité jsou také okolnosti vzniku závady a porovnání měřených hodnot s chováním vozidla.</p>
+<p>Diagnostický postup proto propojuje údaje z řídicích jednotek s měřením a mechanickou kontrolou. Po odstranění příčiny následuje ověření výsledku opravy. Potřeba základního nastavení nebo adaptace závisí na provedeném zásahu a technologickém postupu pro dané vozidlo.</p>
+</section>
+<section class="brand-expertise__section">
+<h3 class="article_header"><strong>Elektronika a elektrické soustavy</strong></h3>
+<p>Řídicí jednotky motoru, převodovky, brzd a komfortních systémů si předávají informace po datových sběrnicích. Více chybových hlášení tak může mít společnou příčinu, například problém s napájením, ukostřením nebo kabeláží. Kontrola akumulátoru, dobíjení a elektrických spojů pomáhá předejít zbytečné výměně funkčních součástí.</p>
+</section>
+<section class="brand-expertise__section">
 <h3 class="article_header"><strong>Servis a údržba vozidel</strong></h3>
 <p>Provádíme pravidelné servisní prohlídky, výměny provozních kapalin a filtrů, opravy brzdových a podvozkových systémů, řízení, elektroniky a klimatizací.</p>
 <p>Servisujeme také vybrané hybridní a elektrické modely Volkswagen včetně řady ID. v rozsahu běžné údržby a diagnostiky. Opravy vysokonapěťových baterií a zásahy do vysokonapěťových komponent nejsou součástí této nabídky.</p>
 <p>Pracujeme podle příslušných technologických postupů výrobce a s ohledem na konkrétní model, motorizaci a výbavu vozidla.</p>
+</section>
+</div>
 <h3 class="article_header"><strong>Cena servisních prací</strong></h3>
 <p>Hodinová sazba servisní práce činí od 1&nbsp;100&nbsp;Kč včetně DPH.</p>
 <p>Náhradní díly, provozní kapaliny a ostatní materiál se účtují samostatně. Celková cena opravy závisí na rozsahu provedených prací a je stanovena po dohodě se zákazníkem.</p>
 <p>Potřebujete zkontrolovat hned několik firemních vozů? Využijte našeho specializovaného <a href="../../autoservis-pro-firmy/">servisu pro firmy</a> a technici přijedou přímo do vašich prostor.</p>
 <h3 class="article_header"><strong>Typy servisovaných vozů Volkswagen</strong></h3>
-<div class="half-part">
+<div class="brand-models">
+<!-- Zachováno všech 20 původních modelů a jejich pořadí. -->
 <ul>
 <li>up!</li>
 <li>Polo</li>
