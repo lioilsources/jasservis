@@ -339,7 +339,17 @@ body { font-weight: normal;}
 @media(max-width:767px){.js-brand-models__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.js-brand-models>summary{font-size:17px;padding:14px}}
 @media(max-width:420px){.js-brand-models__grid{grid-template-columns:minmax(0,1fr)}}
 </style>
-</head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-2120 page-child parent-pageid-2272">
+<style id="js-vw-model-demo-styles">
+.js-vw-model-demo{margin:30px 0;clear:both}
+.js-vw-model-demo__choices{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.js-vw-model-demo__choices button{padding:10px 20px;border:1px solid #bbb;background:#f6f6f6;color:#222;cursor:pointer;border-radius:4px}
+.js-vw-model-demo__choices button[aria-pressed="true"]{border-color:#db712b;background:#fff0e5}
+.js-vw-model-demo__choices button:focus-visible{outline:3px solid #db712b;outline-offset:2px}
+.js-vw-model-demo__detail{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:center}
+.js-vw-model-demo__photo{aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;box-sizing:border-box;background:#f1f1f1;color:#555;border:1px dashed #aaa}
+.js-vw-model-demo__name{margin:0 0 12px;font-size:24px}
+@media(max-width:767px){.js-vw-model-demo__detail{grid-template-columns:minmax(0,1fr)}}
+</style></head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-2120 page-child parent-pageid-2272">
 
 	<div id="motopress-main" class="main-holder">
 
@@ -565,6 +575,29 @@ body { font-weight: normal;}
 <p>Náhradní díly, provozní kapaliny a ostatní materiál se účtují samostatně. Celková cena opravy závisí na rozsahu provedených prací a je stanovena po dohodě se zákazníkem.</p>
 <p>Potřebujete zkontrolovat hned několik firemních vozů? Využijte našeho specializovaného <a href="../../autoservis-pro-firmy/">servisu pro firmy</a> a technici přijedou přímo do vašich prostor.</p>
 <details class="js-brand-models"><summary>Servisované modely – Volkswagen</summary><ul class="js-brand-models__grid"><li>up!</li><li>Polo</li><li>Golf</li><li>Golf Variant</li><li>Scirocco</li><li>Taigo</li><li>Passat</li><li>Arteon</li><li>Phaeton</li><li>T-Cross</li><li>T-Roc</li><li>Tiguan</li><li>Tayron</li><li>Touareg</li><li>ID. Polo</li><li>ID.3</li><li>ID.4</li><li>ID.5</li><li>ID.7</li><li>ID.7 Tourer</li></ul><p class="js-brand-models__note">Přehled zahrnuje modely vyráběné také od roku 2010. Rozsah servisních úkonů závisí na konkrétním vozidle a technických možnostech servisu.</p></details>
+<section class="js-vw-model-demo" aria-labelledby="js-vw-demo-title">
+<h3 id="js-vw-demo-title" class="article_header"><strong>Ukázka detailu modelu</strong></h3>
+<p>Vyberte model a zobrazte jeho stručný servisní profil. Fotografie konkrétních generací budou doplněny po ověření podkladů a práv k jejich použití.</p>
+<div class="js-vw-model-demo__choices" role="group" aria-label="Vyberte model Volkswagen">
+<button type="button" data-vw-model="Golf" aria-pressed="true">Golf</button>
+<button type="button" data-vw-model="Passat" aria-pressed="false">Passat</button>
+<button type="button" data-vw-model="Tiguan" aria-pressed="false">Tiguan</button>
+</div>
+<div class="js-vw-model-demo__detail" aria-live="polite">
+<div class="js-vw-model-demo__photo" role="img" aria-label="Fotografie vybraného modelu bude doplněna">Fotografie konkrétní generace bude doplněna</div>
+<div><h4 class="js-vw-model-demo__name">Volkswagen Golf</h4><p class="js-vw-model-demo__description">Diagnostika a údržba motorů TSI a TDI, převodovek DSG, podvozku a elektronických systémů podle konkrétní generace a výbavy.</p><p>Specializace na vozidla od roku výroby 2010. Rozsah prací ověříme podle konkrétního vozidla.</p></div>
+</div></section>
+<script>
+(function(){
+var root=document.querySelector('.js-vw-model-demo');if(!root)return;
+var profiles={
+Golf:'Diagnostika a údržba motorů TSI a TDI, převodovek DSG, podvozku a elektronických systémů podle konkrétní generace a výbavy.',
+Passat:'Servis motorů TSI a TDI, automatických převodovek, emisních a komfortních systémů podle motorizace, roku výroby a výbavy.',
+Tiguan:'Diagnostika motorů TSI a TDI, převodovek DSG a systémů pohonu všech kol podle konkrétní konstrukce a výbavy.'
+};
+root.addEventListener('click',function(e){var btn=e.target.closest('button[data-vw-model]');if(!btn||!root.contains(btn))return;var model=btn.getAttribute('data-vw-model');if(!Object.prototype.hasOwnProperty.call(profiles,model))return;root.querySelectorAll('button[data-vw-model]').forEach(function(b){b.setAttribute('aria-pressed',String(b===btn));});root.querySelector('.js-vw-model-demo__name').textContent='Volkswagen '+model;root.querySelector('.js-vw-model-demo__description').textContent=profiles[model];});
+})();
+</script>
 </div>
 </div>
 </div>
