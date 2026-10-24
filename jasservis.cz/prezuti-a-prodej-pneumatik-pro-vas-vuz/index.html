@@ -316,6 +316,13 @@ body { font-weight: normal;}
 <script defer src="../wp-content/themes/theme53985/js/service-navigation.js"></script>
 <link rel="stylesheet" href="../wp-content/themes/theme53985/jasservis.css" />
 <style type="text/css">
+#post-2063 .pneuservis-overview {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px;align-items:start;margin:0 0 16px;}
+#post-2063 .pneuservis-overview .cena-blok {margin:0;}
+#post-2063 .pneuservis-overview__photo .motopress-image-obj {margin:0;}
+#post-2063 .pneuservis-overview__photo img {display:block;width:100%;height:auto;}
+@media (max-width:979px) {
+#post-2063 .pneuservis-overview {grid-template-columns:minmax(0,1fr);gap:20px;}
+}
 #post-2063 .pneuservis-tpms {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px;align-items:start;margin:24px 0;}
 #post-2063 .pneuservis-tpms__text h3:first-child {margin-top:0;}
 #post-2063 .pneuservis-tpms__photo {margin:0;}
@@ -492,15 +499,16 @@ body { font-weight: normal;}
 
 	<div id="post-2063" class="page post-2063 type-page status-publish hentry mpce-post-div">
 
-		<div class="mp-row-fluid motopress-row mpce-dsbl-margin-left mpce-dsbl-margin-right">
-<div class="motopress-clmn mp-span6  mpce-dsbl-margin-left mpce-dsbl-margin-right">
-<div class="motopress-text-obj">
+		<div class="pneuservis-intro motopress-text-obj">
 <p>J&amp;S servis ve Statenicích nabízí technologicky vyspělý pneuservis zaměřený na šetrnou montáž pneumatik, přesné vyvažování kol, diagnostiku jejich nepravidelností a kontrolu systémů TPMS. Využíváme specializované vybavení pro osobní, sportovní a výkonné automobily.</p>
 <ul>
 <li>Robotická montáž pneumatik VAS 6616</li>
 <li>Diagnostické vyvažování Beissbarth MT ZERO 8</li>
 <li>Diagnostika TPMS Continental a mytí kol</li>
 </ul>
+</div>
+<div class="pneuservis-overview">
+<div class="pneuservis-overview__price motopress-text-obj">
 <div class="cena-blok">
 <p class="cena-blok__titulek">Cena</p>
 <p>Kompletní pneuservis 4 kol, ceny včetně DPH:</p>
@@ -514,8 +522,7 @@ body { font-weight: normal;}
 <p class="cena-blok__akce"><a class="tlacitko-akce" href="tel:+420605399448">Zavolat a objednat servis</a></p>
 </div>
 </div>
-</div>
-<div class="motopress-clmn mp-span6  mpce-dsbl-margin-left mpce-dsbl-margin-right">
+<div class="pneuservis-overview__photo">
 <div class="motopress-image-obj motopress-text-align-left"><img src="../wp-content/uploads/2026/10/pneuservis.jpg" title="Pneuservis" alt="Pneuservis" class="motopress-image-obj-basic mpce-dsbl-margin-left mpce-dsbl-margin-right mpce-dsbl-margin-top mpce-dsbl-margin-bottom" /></div>
 </div>
 </div>
@@ -651,4 +658,5 @@ var items_custom = [[0,1],[480,2],[768,3],[980,4],[1170,5]];
 </body>
 
 </html>
+
 
