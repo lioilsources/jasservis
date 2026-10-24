@@ -315,6 +315,49 @@ body { font-weight: normal;}
 
 <script defer src="../wp-content/themes/theme53985/js/service-navigation.js"></script>
 <link rel="stylesheet" href="../wp-content/themes/theme53985/jasservis.css" />
+
+<!-- Styles limited to the corporate fleet service page. -->
+<style>
+body.page-id-2106 .content-holder { padding-bottom:32px; }
+#post-2106 .fleet-service { margin:0 0 28px; overflow-wrap:anywhere; }
+#post-2106 .fleet-service p { margin:0; }
+#post-2106 .fleet-service .fleet-intro { margin-bottom:28px; }
+#post-2106 .fleet-inspection { margin-top:24px; }
+#post-2106 .fleet-specialization {
+    display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);
+    gap:32px; align-items:start;
+}
+#post-2106 .fleet-specialization > * { min-width:0; }
+#post-2106 .fleet-specialization img { display:block; width:100%; height:auto; margin:0; }
+#post-2106 .fleet-service h2 {
+    font-size:26px; line-height:1.3; font-weight:600 !important; text-align:left;
+    margin:0 0 16px; color:#333333; white-space:normal;
+    word-break:normal; overflow-wrap:anywhere;
+}
+#post-2106 .fleet-service a { color:#ae3814; text-decoration:underline; }
+#post-2106 .call-to-action-row { margin:0; padding:22px 0; background:#191818; }
+#post-2106 .call-to-action-row:before,
+#post-2106 .call-to-action-row:after { background:#191818; }
+#post-2106 .fleet-contact { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px 24px; }
+#post-2106 .fleet-contact p { margin:0; color:#fff; font-size:16px; line-height:1.5; font-weight:400; text-align:left; }
+#post-2106 .fleet-contact .fleet-contact-title { font-size:18px; font-weight:500; }
+#post-2106 .fleet-contact-title span,
+#post-2106 .fleet-contact-label { font-size:14px; font-weight:400; color:#ddd; }
+#post-2106 .fleet-contact-label { display:block; }
+#post-2106 .fleet-contact a { display:inline-block; min-height:44px; box-sizing:border-box; padding:7px 0; color:#ffad93; font-size:20px; line-height:30px; font-weight:500; }
+#post-2106 .fleet-contact a:hover { color:#fff; text-decoration:underline; }
+#post-2106 a:focus-visible { outline:2px solid #f36639; outline-offset:3px; }
+@media (max-width:979px) {
+    #post-2106 .fleet-specialization { grid-template-columns:minmax(0,1fr); gap:22px; }
+    #post-2106 .fleet-specialization .motopress-image-obj { width:100%; max-width:680px; margin:0 auto; }
+}
+@media (max-width:767px) {
+    body.page-id-2106 .content-holder { padding-top:28px; padding-bottom:24px; }
+    #post-2106 .fleet-service h2 { font-size:22px; margin-bottom:12px; }
+    #post-2106 .fleet-contact { justify-content:flex-start; gap:14px 24px; }
+    #post-2106 .fleet-contact-title, #post-2106 .fleet-hours { flex-basis:100%; }
+}
+</style>
 </head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-2106">
 
 	<div id="motopress-main" class="main-holder">
@@ -484,20 +527,31 @@ body { font-weight: normal;}
 
 		<div class="mp-row-fluid motopress-row mpce-dsbl-margin-left mpce-dsbl-margin-right">
 <div class="motopress-clmn mp-span12  mpce-dsbl-margin-left mpce-dsbl-margin-right">
-<div class="row product-detail margin-bottom-45">
-<div class="span6 "><p>Služební vozy dostávají v běžném provozu pořádně zabrat. Proto je jim třeba věnovat pozornost a nezanedbávat pravidelné servisní kontroly. <strong>J&amp;S servis</strong> zajistí také celou řadu dalších<a href="../dalsi-sluzby/"> služeb</a>.</p>
-<h2><strong>Úzká specializace pro skutečně profesionální servis</strong></h2>
-<p>Specializujeme se na vozidla značek <strong>Volkswagen</strong>, <strong>Audi,</strong>  <strong>Seat/Cupra, Škoda, Volkswagen – užitkové vozy</strong>. Při práci používáme přípravky a zařízení a dodržujeme přísné kvalitativní standardy předepsané koncernem <strong>Volkswagen</strong> <strong>AG.</strong> Pravidelně absolvujeme servisní a další odborná školení.</p>
-<h2><strong>Do servisu jen s vozy, které to opravdu potřebují</strong></h2>
-<p>Kontrolu celého vozového parku provedeme v prostorách vaší firmy. V <a href="../kontakt/">našem servisu</a> proběhnou až případné opravy. Nemusíte k nám tak vozit všechny vozy, ale jen ty, u kterých se projeví závady.<br /></div>
-<div class="span6 "><div class="motopress-image-obj motopress-text-align-left"><img src="../wp-content/uploads/2026/10/autoservis-dilna.jpg" title="Autoservis pro firmy – dílna J&amp;S servis" alt="Autoservis pro firmy – dílna J&amp;S servis" class="motopress-image-obj-basic mpce-dsbl-margin-left mpce-dsbl-margin-right mpce-dsbl-margin-top mpce-dsbl-margin-bottom" /></div></div>
-</div><!-- .row (end) -->
+<div class="fleet-service">
+<p class="fleet-intro">Firemní vozidla musí být spolehlivá a připravená ke každodennímu provozu. J&amp;S SERVIS ve Statenicích u Prahy zajišťuje pravidelnou údržbu, diagnostiku a opravy osobních i užitkových vozidel koncernu Volkswagen. Při plánování servisních prací zohledňujeme provozní potřeby firemních zákazníků.</p>
+<div class="fleet-specialization">
+<div>
+<section aria-labelledby="fleet-specialization-title">
+<h2 id="fleet-specialization-title">Specializovaný servis firemních vozidel VW Group</h2>
+<p>Specializujeme se na vozidla značek Volkswagen, Audi, Škoda, SEAT, CUPRA a Volkswagen Užitkové vozy. Při diagnostice využíváme originální systém ODIS, specializované servisní přípravky a odpovídající měřicí techniku. Při opravách vycházíme z technických informací a servisních postupů výrobce.</p>
+</section>
+<section class="fleet-inspection" aria-labelledby="fleet-inspection-title">
+<h2 id="fleet-inspection-title">Kontrola firemních vozidel přímo u vás</h2>
+<p>Po dohodě provádíme kontroly firemních vozidel také přímo v areálu zákazníka. Na základě zjištěného technického stavu doporučíme potřebné servisní úkony a případné opravy následně zajistíme v <a href="../kontakt/">našem servisu</a>. Firmy tak mohou lépe plánovat odstávky vozidel a omezit zbytečné přesuny.</p>
+</section></div>
+<div class="motopress-image-obj motopress-text-align-left"><img src="../wp-content/uploads/2026/10/autoservis-dilna.jpg" title="Autoservis pro firmy – dílna J&amp;S servis" alt="Autoservis pro firmy – dílna J&amp;S servis" class="motopress-image-obj-basic mpce-dsbl-margin-left mpce-dsbl-margin-right mpce-dsbl-margin-top mpce-dsbl-margin-bottom" /></div>
+</div>
+</div>
 </div>
 </div>
 <div class="mp-row-fluid motopress-row mpce-dsbl-margin-left mpce-dsbl-margin-right">
 <div class="motopress-clmn mp-span12  mpce-dsbl-margin-left mpce-dsbl-margin-right">
-<div class="content_box call-to-action-row "> <div class="row "> <div class="span12 "><p>Pro objednání servisu firemních vozů ve <strong>Statenicích u Prahy</strong> volejte kancelář <a href="tel:+420605399448">+420&nbsp;605&nbsp;399&nbsp;448</a> nebo servis <a href="tel:+420608313437">+420&nbsp;608&nbsp;313&nbsp;437</a><br />
-(Po-Pá od 9 do 18 hod.)</p></div> </div><!-- .row (end) --> <div class="clear"></div></div><!-- .content_box (end) -->
+<div class="content_box call-to-action-row "> <div class="row "> <div class="span12 "><div class="fleet-contact">
+<p class="fleet-contact-title">Objednání servisu firemních vozů<br /><span>Statenice u Prahy</span></p>
+<p><span class="fleet-contact-label">Kancelář</span><a href="tel:+420605399448">+420&nbsp;605&nbsp;399&nbsp;448</a></p>
+<p><span class="fleet-contact-label">Servis</span><a href="tel:+420608313437">+420&nbsp;608&nbsp;313&nbsp;437</a></p>
+<p class="fleet-hours">Po-Pá od 9 do 18 hod.</p>
+</div></div> </div><!-- .row (end) --> <div class="clear"></div></div><!-- .content_box (end) -->
 </div>
 </div>
 
@@ -590,4 +644,5 @@ var items_custom = [[0,1],[480,2],[768,3],[980,4],[1170,5]];
 </body>
 
 </html>
+
 
