@@ -315,6 +315,39 @@ body { font-weight: normal;}
 
 <script defer src="../wp-content/themes/theme53985/js/service-navigation.js"></script>
 <link rel="stylesheet" href="../wp-content/themes/theme53985/jasservis.css" />
+<style id="diagnostika-accordion-styles">
+.diagnostika-systemy .rozbalovaci > summary h3 {
+    color:#333;
+    margin:0;
+    font-size:19px;
+    line-height:26px;
+    text-align:left;
+    text-transform:none;
+    overflow-wrap:break-word;
+}
+.diagnostika-systemy .rozbalovaci[open] > summary h3,
+.diagnostika-systemy .rozbalovaci > summary:active h3 {
+    color:#f36639;
+}
+@media (hover:hover) and (pointer:fine) {
+    .diagnostika-systemy .rozbalovaci > summary:hover h3 { color:#f36639; }
+}
+@media (max-width:767px) {
+    .diagnostika-systemy .rozbalovaci { margin-bottom:8px; }
+    .diagnostika-systemy .rozbalovaci > summary {
+        box-sizing:border-box;
+        min-height:44px;
+        padding:10px 40px 10px 12px;
+    }
+    .diagnostika-systemy .rozbalovaci > summary h3 { font-size:16px; line-height:22px; }
+    .diagnostika-systemy .rozbalovaci__obsah { padding:0 12px 4px; }
+    .diagnostika-systemy .rozbalovaci__obsah h4 { margin:16px 0 6px; }
+    .diagnostika-systemy .rozbalovaci__obsah p,
+    .diagnostika-systemy .rozbalovaci__obsah ul { margin-bottom:12px; }
+    .diagnostika-systemy .rozbalovaci__obsah > :first-child { margin-top:12px; }
+    .diagnostika-systemy .rozbalovaci__obsah > :last-child { margin-bottom:8px; }
+}
+</style>
 </head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-2135">
 
 	<div id="motopress-main" class="main-holder">
@@ -699,7 +732,7 @@ body { font-weight: normal;}
 </div>
 </details>
 <details class="rozbalovaci" id="fmc">
-<summary><h3>FMC - Flash Media Creator</h3></summary>
+<summary><h3>FMC – Flash Media Creator</h3></summary>
 <div class="rozbalovaci__obsah">
 <p>V J&amp;S servis využíváme originální nástroj koncernu Volkswagen FMC (Flash Media Creator), který slouží ke stažení příslušných softwarových souborů výrobce a přípravě aktualizačních médií USB nebo SD pro podporované elektronické systémy vozidel, zejména infotainment.</p>
 <p>Příprava aktualizačních médií pomocí FMC není totožná s online programováním řídicích jednotek prostřednictvím ODIS/SVM.</p>
