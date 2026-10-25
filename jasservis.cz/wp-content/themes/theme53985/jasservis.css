@@ -659,14 +659,21 @@ iframe[data-cookie-src][hidden] {
     #post-203 .cupra-intro #cupra-intro-title { margin-bottom:14px; }
 }
 
-/* Clear page headings for search and visitors. */
-#post-203 .home-main-heading {
-    font-size:26px; line-height:1.35; font-weight:600; text-transform:none;
-    text-align:center; margin:0 0 28px; overflow-wrap:break-word;
+/* Preserve the existing first card while giving the homepage one main heading. */
+#post-203 .home-service-cards .home-service-heading {
+    margin:0; padding:0; font-size:23px; line-height:28px;
+    font-weight:500 !important; color:#fff;
+}
+#post-203 .home-service-cards .home-service-heading .service-card-subtitle {
+    display:block; font-family:Ubuntu, sans-serif; font-size:18px; line-height:24px;
+    font-weight:300; margin:0 0 10px; padding:0; color:#fff; text-transform:none;
 }
 #post-2272 .autoservis-intro-heading {
     font:normal 30px/33px Ubuntu; color:#333333;
 }
+@media (min-width:768px) and (max-width:979px) {
+    #post-203 .home-service-cards .home-service-heading { font-size:21px; line-height:26px; }
+}
 @media (max-width:767px) {
-    #post-203 .home-main-heading { font-size:22px; margin-bottom:22px; }
+    #post-203 .home-service-cards .home-service-heading { line-height:27px; }
 }
