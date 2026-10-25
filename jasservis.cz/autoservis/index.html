@@ -327,6 +327,22 @@ body { font-weight: normal;}
     }
 }
 </style>
+
+<style id="js-autoservis-mobile-fixes">
+.cupra-mobile-image { display:none; }
+@media only screen and (max-width:767px) {
+  /* Keep the approved mobile header consistent with the homepage. */
+  header.header .header-hours { display:none !important; }
+  /* Show the real CUPRA photograph immediately after the service introduction. */
+  #post-2272 .cupra-mobile-image { display:block; margin:18px 0 22px; }
+  #post-2272 .cupra-mobile-image img { display:block; width:100%; height:auto; }
+  #post-2272 .cupra-desktop-image { display:none !important; }
+  /* Remove excess spacing before the brand-service grid. */
+  #post-2272 .row.product-detail.margin-bottom-45 { margin-bottom:16px !important; }
+  #post-2272 .mp-row-fluid + .mp-row-fluid { margin-top:0 !important; }
+  #post-2272 #portfolio-grid { margin-top:12px; }
+}
+</style>
 </head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-2272 page-parent">
 
 	<div id="motopress-main" class="main-holder">
@@ -500,11 +516,12 @@ body { font-weight: normal;}
 <div class="span6"><h1>NEZÁVISLÝ SPECIALIZOVANÝ AUTOSERVIS VW GROUP</h1>
 
 <p><strong>Odborný servis vozidel Volkswagen, Audi, Škoda, SEAT a CUPRA od roku 1994.</strong></p>
+<div class="cupra-mobile-image"><img src="../wp-content/uploads/2026/10/cupra-js-servis-zvedak.jpg" width="1280" height="960" loading="lazy" decoding="async" alt="Bílá CUPRA J&amp;S SERVIS na zvedáku v servisní dílně" style="width:100%;height:auto;" /></div>
 <p>J&amp;S SERVIS ve Statenicích u Prahy se specializuje na údržbu, diagnostiku a opravy osobních i užitkových vozidel koncernu Volkswagen.</p>
 <p>Při diagnostice a opravách využíváme originální diagnostický systém ODIS, specializované servisní přípravky VAS a odpovídající měřicí techniku. Při práci vycházíme z technických informací a servisních postupů výrobce.</p>
 <p>Důraz klademe na správné určení příčiny závady, kvalitně provedenou opravu a otevřenou komunikaci. Zákazníka informujeme o zjištěném stavu vozidla a případné vícepráce provádíme až po jeho odsouhlasení.</p>
 </div>
-<div class="span6"><img src="../wp-content/uploads/2026/10/cupra-js-servis-zvedak.jpg" width="1280" height="960" loading="lazy" decoding="async" alt="Bílá CUPRA J&amp;S SERVIS na zvedáku v servisní dílně" style="width:100%;height:auto;" /></div>
+<div class="span6 cupra-desktop-image"><img src="../wp-content/uploads/2026/10/cupra-js-servis-zvedak.jpg" width="1280" height="960" loading="lazy" decoding="async" alt="Bílá CUPRA J&amp;S SERVIS na zvedáku v servisní dílně" style="width:100%;height:auto;" /></div>
 </div><!-- .row (end) -->
 <div class="row product-detail margin-bottom-45">
 <div class="span12 "><p><strong>Pravidelné servisní prohlídky</strong></p>
