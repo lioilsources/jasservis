@@ -383,6 +383,9 @@ body { font-weight: normal;}
   #post-203 .home-offered-services { padding-top: 12px; padding-bottom: 22px; }
   /* One mobile-only outline for the complete service navigation, matching the cards. */
   #post-203 .home-offered-services { border: 2px solid #252525; box-sizing: border-box; padding-left: 38px; padding-right: 14px; margin: 0 16px 30px !important; width: auto !important; background: #f2f2f2 !important; box-shadow: none; position: relative; z-index: 1; }
+  /* The legacy content_box draws a full-bleed background via pseudo-elements. Disable it on mobile so the white perimeter stays visible. */
+  #post-203 .home-offered-services::before,
+  #post-203 .home-offered-services::after { background: transparent !important; box-shadow: none !important; }
   #post-203 .home-offered-services .row > .span4 { margin-bottom: 14px; }
   #post-203 .home-offered-services .row > .span4:last-child { margin-bottom: 0; }
   #post-203 .home-offered-services .sluzby-sloupec { font-size: 20px; margin-bottom: 7px; }
