@@ -662,7 +662,7 @@ iframe[data-cookie-src][hidden] {
 /* Preserve the existing first card while giving the homepage one main heading. */
 #post-203 .home-service-cards .home-service-heading {
     margin:0; padding:0; font-size:23px; line-height:28px;
-    font-weight:500; color:#fff;
+    font-weight:500 !important; color:#fff;
 }
 #post-203 .home-service-cards .home-service-heading .service-card-subtitle {
     display:block; font-family:Ubuntu, sans-serif; font-size:18px; line-height:24px;
