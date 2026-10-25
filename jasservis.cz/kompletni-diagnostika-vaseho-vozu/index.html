@@ -319,18 +319,30 @@ body { font-weight: normal;}
 .diagnostika-systemy .rozbalovaci > summary h3 {
     color:#333;
     margin:0;
-    font-size:19px;
+    font-size:20px;
+    font-weight:600 !important;
     line-height:26px;
     text-align:left;
     text-transform:none;
     overflow-wrap:break-word;
 }
+.diagnostika-systemy .rozbalovaci__obsah h4 {
+    color:#222;
+    font-size:20px;
+    font-weight:600;
+    line-height:1.4;
+    margin:24px 0 8px;
+    text-align:left;
+    text-transform:none;
+    overflow-wrap:break-word;
+}
 .diagnostika-systemy .rozbalovaci[open] > summary h3,
-.diagnostika-systemy .rozbalovaci > summary:active h3 {
-    color:#f36639;
+.diagnostika-systemy .rozbalovaci > summary:active h3,
+.diagnostika-systemy .rozbalovaci > summary:focus-visible h3 {
+    color:#a83c18;
 }
 @media (hover:hover) and (pointer:fine) {
-    .diagnostika-systemy .rozbalovaci > summary:hover h3 { color:#f36639; }
+    .diagnostika-systemy .rozbalovaci > summary:hover h3 { color:#a83c18; }
 }
 @media (max-width:767px) {
     .diagnostika-systemy .rozbalovaci { margin-bottom:8px; }
@@ -339,9 +351,9 @@ body { font-weight: normal;}
         min-height:44px;
         padding:10px 40px 10px 12px;
     }
-    .diagnostika-systemy .rozbalovaci > summary h3 { font-size:16px; line-height:22px; }
+    .diagnostika-systemy .rozbalovaci > summary h3 { font-size:18px; line-height:25px; }
     .diagnostika-systemy .rozbalovaci__obsah { padding:0 12px 4px; }
-    .diagnostika-systemy .rozbalovaci__obsah h4 { margin:16px 0 6px; }
+    .diagnostika-systemy .rozbalovaci__obsah h4 { font-size:18px; margin:20px 0 8px; }
     .diagnostika-systemy .rozbalovaci__obsah p,
     .diagnostika-systemy .rozbalovaci__obsah ul { margin-bottom:12px; }
     .diagnostika-systemy .rozbalovaci__obsah > :first-child { margin-top:12px; }
@@ -611,12 +623,10 @@ body { font-weight: normal;}
 <p>Jednotné přihlášení však neznamená automaticky neomezený přístup ke všem informacím koncernu.</p>
 <p>Jednotlivé značky mohou vyžadovat vlastní licence a některé servisní operace také samostatná oprávnění.</p>
 <p>ONE Business ID proto není náhradou bezpečnostních systémů SFD, GEKO/FAZIT ani schválení SERMI.</p>
-<h4>ELSA a ELSAPro – servisní informační systémy</h4>
-<p>ELSA (Elektronisches Service Auskunftssystem) a její navazující prostředí ELSAPro představují systémy servisních a technických informací používané koncernem Volkswagen.</p>
-<p>Jejich prostřednictvím lze podle dostupných funkcí vyhledávat informace vztahující se ke konkrétnímu vozidlu.</p>
-<p>Patří sem například dílenské postupy, technické údaje, informace o údržbě, elektrická schémata a servisní opatření.</p>
-<p>V novém prostředí erWin jsou dostupné také funkce navazující na systémy ELSA a ELSAPro.</p>
-<p>Nejde tedy o zcela oddělené nástroje, ale o související součásti servisního informačního prostředí výrobce.</p>
+<h4>ELSAPro – servisní informační systém</h4>
+<p>ELSAPro je servisní informační systém koncernu Volkswagen, určený pro práci se servisními informacemi a příslušnými servisními procesy podle dostupných funkcí a oprávnění.</p>
+<p>Portál erWin poskytuje přístup k servisním a opravárenským informacím výrobce. Rozsah dostupných informací a funkcí závisí na konkrétní značce, licenci a přístupových oprávněních.</p>
+<p>Přístup k portálu erWin sám o sobě nezaručuje dostupnost všech funkcí ELSAPro ani oprávnění k zabezpečeným servisním operacím.</p>
 <h4>TPI – technické produktové informace</h4>
 <p>TPI (Technical Product Information) jsou informace výrobce týkající se konkrétních technických problémů a doporučených servisních opatření.</p>
 <p>Mohou obsahovat popis známé závady, podmínky jejího výskytu, diagnostický postup nebo předepsané technické řešení.</p>
