@@ -658,3 +658,15 @@ iframe[data-cookie-src][hidden] {
 @media (max-width:767px) {
     #post-203 .cupra-intro #cupra-intro-title { margin-bottom:14px; }
 }
+
+/* Clear page headings for search and visitors. */
+#post-203 .home-main-heading {
+    font-size:26px; line-height:1.35; font-weight:600; text-transform:none;
+    text-align:center; margin:0 0 28px; overflow-wrap:break-word;
+}
+#post-2272 .autoservis-intro-heading {
+    font:normal 30px/33px Ubuntu; color:#333333;
+}
+@media (max-width:767px) {
+    #post-203 .home-main-heading { font-size:22px; margin-bottom:22px; }
+}
