@@ -383,30 +383,43 @@ body { font-weight: normal;}
 }
 </style>
 
-<style id="js-mobile-services-complete-frame">
-/* Mobile only: one inset, continuous frame around the offered-services list. */
+<style id="js-mobile-services-frame-final">
+/* Homepage offered-services frame: mobile only. */
 @media screen and (max-width:767px) {
-  #post-203 .home-offered-services { box-sizing:border-box !important; margin:0 16px 24px !important; width:auto !important; border:2px solid #292929 !important; background:#f1f1f1 !important; padding:22px 14px 18px !important; }
-  #post-203 .home-offered-services > .row { margin-left:0 !important; margin-right:0 !important; }
-  #post-203 .home-offered-services > .row > .span4 { box-sizing:border-box !important; width:100% !important; float:none !important; margin-left:0 !important; margin-right:0 !important; }
-  #post-203 .home-offered-services .arrow-list { padding-left:10px !important; padding-right:6px !important; }
-  #post-203 .home-offered-services .arrow-list ul { margin-left:0 !important; }
-  #post-203 .home-offered-services .arrow-list ul li { padding-left:20px !important; }
-  #post-203 .home-offered-services .arrow-list ul li:before { left:0 !important; }
-  #post-203 .home-offered-services .clear { display:none !important; }
-}
-</style>
-
-<style id="js-mobile-services-inner-frame-v2">
-@media only screen and (max-width:767px) {
-  .home-offered-services { box-sizing:border-box!important; width:100%!important; margin:0 0 0!important; padding:0 16px 22px!important; background:#fff!important; border:0!important; }
-  .home-offered-services:before,.home-offered-services:after { background:#fff!important; border:0!important; }
-  .home-offered-services .js-services-frame { position:relative; box-sizing:border-box; width:100%; background:#f1f1f1; border:2px solid #292929; padding:20px 14px 18px; }
-  .home-offered-services .js-services-frame > .row { margin-left:0!important; margin-right:0!important; }
-  .home-offered-services .js-services-frame > .row > .span4 { width:100%!important; float:none!important; margin-left:0!important; }
-  .home-offered-services .js-services-frame .arrow-list { padding-left:8px!important; }
-  .home-offered-services .js-services-frame .arrow-list ul li { padding-left:24px!important; }
-  .home-offered-services .js-services-frame .arrow-list ul li:before { left:2px!important; }
+  body.home #post-203 .home-offered-services {
+    display:block !important; position:relative !important;
+    box-sizing:border-box !important; width:100% !important;
+    margin:0 0 24px !important; padding:0 16px !important;
+    border:0 !important; background:#fff !important;
+    box-shadow:none !important; overflow:visible !important;
+  }
+  body.home #post-203 .home-offered-services > .js-services-frame {
+    display:block !important; position:relative !important;
+    box-sizing:border-box !important; width:100% !important;
+    margin:0 !important; padding:20px 16px 20px !important;
+    border:2px solid #292929 !important;
+    background:#f1f1f1 !important;
+  }
+  body.home #post-203 .home-offered-services .js-services-frame > .row {
+    margin-left:0 !important; margin-right:0 !important;
+  }
+  body.home #post-203 .home-offered-services .js-services-frame > .row > .span4 {
+    box-sizing:border-box !important; width:100% !important;
+    float:none !important; margin-left:0 !important; margin-right:0 !important;
+  }
+  body.home #post-203 .home-offered-services .js-services-frame .arrow-list {
+    padding-left:10px !important; padding-right:4px !important;
+  }
+  body.home #post-203 .home-offered-services .js-services-frame .arrow-list ul {
+    margin-left:0 !important;
+  }
+  body.home #post-203 .home-offered-services .js-services-frame .arrow-list ul li {
+    padding-left:24px !important;
+  }
+  body.home #post-203 .home-offered-services .js-services-frame .arrow-list ul li:before {
+    left:2px !important;
+  }
+  body.home #post-203 .home-offered-services .clear { display:none !important; }
 }
 </style>
 </head><body class="home page-template page-template-page-home page-template-page-home-php page page-id-203">
