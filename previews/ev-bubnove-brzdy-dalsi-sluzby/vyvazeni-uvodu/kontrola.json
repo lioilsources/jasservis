@@ -1,0 +1,350 @@
+{
+  "desktop_balance_before": {
+    "textWidth": 570,
+    "photoWidth": 570,
+    "photoHeight": 427.5,
+    "gapBelowText": 181.265625
+  },
+  "desktop_balance_after": {
+    "textWidth": 690,
+    "photoWidth": 450,
+    "photoHeight": 337.5,
+    "gapBelowText": 91.265625
+  },
+  "source_parent_commit": "a2c0ee81311ef3306404c3552d0191e2130c8459",
+  "page_sha256": "b8463f26a6413a3ab37b04b8198ca4b43c2c322d8537343b16192b8204cc643b",
+  "badge_url": "https://www.firmy.cz/top-firma/2025.svg",
+  "badge_http_status": 200,
+  "badge_in_preview": "Original unchanged SVG fetched from the existing URL and supplied through browser network interception; no website header edits.",
+  "checks": [
+    {
+      "width": 360,
+      "introFont": [
+        {
+          "size": "19px",
+          "lineHeight": "26.6px"
+        },
+        {
+          "size": "16px",
+          "lineHeight": "25.6px"
+        },
+        {
+          "size": "16px",
+          "lineHeight": "25.6px"
+        }
+      ],
+      "introPhotoTopDifference": "text-before-photo",
+      "touchTargets": [
+        93,
+        48,
+        70,
+        48
+      ],
+      "caption": {
+        "fontSize": "15px",
+        "lineHeight": "22.5px",
+        "text": "Servis zadní bubnové brzdy elektromobilu Škoda Enyaq s využitím speciálního nastavovacího přípravku řady T10635."
+      },
+      "photo": {
+        "width": 320,
+        "height": 240,
+        "naturalWidth": 1280,
+        "naturalHeight": 960,
+        "alt": "Zadní bubnová brzda Škoda Enyaq při odborném servisu v J&S SERVIS – kontrola a nastavení brzdového mechanismu."
+      },
+      "badgeLoaded": true,
+      "breadcrumb": [
+        {
+          "x": 105.5625,
+          "y": 353.03125,
+          "w": 40.25,
+          "h": 20
+        },
+        {
+          "x": 151.8125,
+          "y": 353.03125,
+          "w": 4.203125,
+          "h": 21
+        },
+        {
+          "x": 162.015625,
+          "y": 353.03125,
+          "w": 92.421875,
+          "h": 20
+        }
+      ],
+      "keyboardAndMouse": true,
+      "navigation": true,
+      "touchTap": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "introFont": [
+        {
+          "size": "19px",
+          "lineHeight": "26.6px"
+        },
+        {
+          "size": "16px",
+          "lineHeight": "25.6px"
+        },
+        {
+          "size": "16px",
+          "lineHeight": "25.6px"
+        }
+      ],
+      "introPhotoTopDifference": "text-before-photo",
+      "touchTargets": [
+        70,
+        48,
+        70,
+        48
+      ],
+      "caption": {
+        "fontSize": "15px",
+        "lineHeight": "22.5px",
+        "text": "Servis zadní bubnové brzdy elektromobilu Škoda Enyaq s využitím speciálního nastavovacího přípravku řady T10635."
+      },
+      "photo": {
+        "width": 350,
+        "height": 263,
+        "naturalWidth": 1280,
+        "naturalHeight": 960,
+        "alt": "Zadní bubnová brzda Škoda Enyaq při odborném servisu v J&S SERVIS – kontrola a nastavení brzdového mechanismu."
+      },
+      "badgeLoaded": true,
+      "breadcrumb": [
+        {
+          "x": 120.5625,
+          "y": 353.03125,
+          "w": 40.25,
+          "h": 20
+        },
+        {
+          "x": 166.8125,
+          "y": 353.03125,
+          "w": 4.203125,
+          "h": 21
+        },
+        {
+          "x": 177.015625,
+          "y": 353.03125,
+          "w": 92.421875,
+          "h": 20
+        }
+      ],
+      "keyboardAndMouse": true,
+      "navigation": true,
+      "touchTap": true,
+      "overflow": false
+    },
+    {
+      "width": 430,
+      "introFont": [
+        {
+          "size": "19px",
+          "lineHeight": "26.6px"
+        },
+        {
+          "size": "16px",
+          "lineHeight": "25.6px"
+        },
+        {
+          "size": "16px",
+          "lineHeight": "25.6px"
+        }
+      ],
+      "introPhotoTopDifference": "text-before-photo",
+      "touchTargets": [
+        70,
+        48,
+        70,
+        48
+      ],
+      "caption": {
+        "fontSize": "15px",
+        "lineHeight": "22.5px",
+        "text": "Servis zadní bubnové brzdy elektromobilu Škoda Enyaq s využitím speciálního nastavovacího přípravku řady T10635."
+      },
+      "photo": {
+        "width": 390,
+        "height": 293,
+        "naturalWidth": 1280,
+        "naturalHeight": 960,
+        "alt": "Zadní bubnová brzda Škoda Enyaq při odborném servisu v J&S SERVIS – kontrola a nastavení brzdového mechanismu."
+      },
+      "badgeLoaded": true,
+      "breadcrumb": [
+        {
+          "x": 140.5625,
+          "y": 353.03125,
+          "w": 40.25,
+          "h": 20
+        },
+        {
+          "x": 186.8125,
+          "y": 353.03125,
+          "w": 4.203125,
+          "h": 21
+        },
+        {
+          "x": 197.015625,
+          "y": 353.03125,
+          "w": 92.421875,
+          "h": 20
+        }
+      ],
+      "keyboardAndMouse": true,
+      "navigation": true,
+      "touchTap": true,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "introFont": [
+        {
+          "size": "20px",
+          "lineHeight": "28px"
+        },
+        {
+          "size": "17px",
+          "lineHeight": "28.05px"
+        },
+        {
+          "size": "17px",
+          "lineHeight": "28.05px"
+        }
+      ],
+      "introPhotoTopDifference": 0,
+      "touchTargets": [
+        54,
+        54,
+        54,
+        54
+      ],
+      "caption": {
+        "fontSize": "15px",
+        "lineHeight": "22.5px",
+        "text": "Servis zadní bubnové brzdy elektromobilu Škoda Enyaq s využitím speciálního nastavovacího přípravku řady T10635."
+      },
+      "photo": {
+        "width": 352,
+        "height": 264,
+        "naturalWidth": 1280,
+        "naturalHeight": 960,
+        "alt": "Zadní bubnová brzda Škoda Enyaq při odborném servisu v J&S SERVIS – kontrola a nastavení brzdového mechanismu."
+      },
+      "badgeLoaded": true,
+      "breadcrumb": [
+        {
+          "x": 293.84375,
+          "y": 297,
+          "w": 45.984375,
+          "h": 24
+        },
+        {
+          "x": 345.828125,
+          "y": 297,
+          "w": 4.8125,
+          "h": 25
+        },
+        {
+          "x": 356.640625,
+          "y": 297,
+          "w": 105.625,
+          "h": 24
+        },
+        {
+          "x": 468.265625,
+          "y": 297,
+          "w": 4.8125,
+          "h": 25
+        },
+        {
+          "x": 479.078125,
+          "y": 297,
+          "w": 266.921875,
+          "h": 24
+        }
+      ],
+      "keyboardAndMouse": true,
+      "navigation": true,
+      "touchTap": false,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "introFont": [
+        {
+          "size": "20px",
+          "lineHeight": "28px"
+        },
+        {
+          "size": "17px",
+          "lineHeight": "28.05px"
+        },
+        {
+          "size": "17px",
+          "lineHeight": "28.05px"
+        }
+      ],
+      "introPhotoTopDifference": 0.0,
+      "touchTargets": [
+        54,
+        54,
+        54,
+        54
+      ],
+      "caption": {
+        "fontSize": "15px",
+        "lineHeight": "22.5px",
+        "text": "Servis zadní bubnové brzdy elektromobilu Škoda Enyaq s využitím speciálního nastavovacího přípravku řady T10635."
+      },
+      "photo": {
+        "width": 450,
+        "height": 338,
+        "naturalWidth": 1280,
+        "naturalHeight": 960,
+        "alt": "Zadní bubnová brzda Škoda Enyaq při odborném servisu v J&S SERVIS – kontrola a nastavení brzdového mechanismu."
+      },
+      "badgeLoaded": true,
+      "breadcrumb": [
+        {
+          "x": 852.84375,
+          "y": 270.09375,
+          "w": 45.984375,
+          "h": 24
+        },
+        {
+          "x": 904.828125,
+          "y": 270.09375,
+          "w": 4.8125,
+          "h": 25
+        },
+        {
+          "x": 915.640625,
+          "y": 270.09375,
+          "w": 105.625,
+          "h": 24
+        },
+        {
+          "x": 1027.265625,
+          "y": 270.09375,
+          "w": 4.8125,
+          "h": 25
+        },
+        {
+          "x": 1038.078125,
+          "y": 270.09375,
+          "w": 266.921875,
+          "h": 24
+        }
+      ],
+      "keyboardAndMouse": true,
+      "navigation": true,
+      "touchTap": false,
+      "overflow": false
+    }
+  ]
+}
