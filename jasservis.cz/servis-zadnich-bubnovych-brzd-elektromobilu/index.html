@@ -319,8 +319,19 @@ body { font-weight: normal;}
 #post-ev-brzdy .product-detail > .span6:first-child p {font-size:inherit;line-height:inherit;margin-bottom:16px;}
 #post-ev-brzdy .product-detail > .span6:first-child p:first-child {font-size:20px;line-height:1.4;margin-bottom:18px;}
 #post-ev-brzdy figure figcaption {font-size:14px;line-height:1.5;color:#555;margin-top:9px;}
-@media (min-width:768px) {#post-ev-brzdy .product-detail {display:flex;align-items:center;flex-wrap:wrap;} #post-ev-brzdy .product-detail > .span6 {float:none;}}
+@media (min-width:768px) {#post-ev-brzdy .product-detail {display:flex;align-items:flex-start;flex-wrap:wrap;} #post-ev-brzdy .product-detail > .span6 {float:none;}}
 @media (max-width:767px) {#post-ev-brzdy .product-detail > .span6:first-child {font-size:16px;line-height:1.6;} #post-ev-brzdy .product-detail > .span6:first-child p:first-child {font-size:19px;} }
+
+/* Compact breadcrumb on this service page; keep the shared theme unchanged. */
+.ev-brakes-title .breadcrumb li {display:inline-block;white-space:nowrap;font-size:16px;line-height:24px;}
+.ev-brakes-title .breadcrumb li.divider:after {font-size:16px;line-height:24px;}
+#post-ev-brzdy .rozbalovaci > summary {box-sizing:border-box;min-height:48px;}
+@media (min-width:1200px) {.ev-brakes-title h1 {width:55%;} .ev-brakes-title .breadcrumb {width:45%;}}
+@media (max-width:1199px) {.ev-brakes-title .breadcrumb {margin-top:8px;}}
+@media (max-width:767px) {
+    .ev-brakes-title .breadcrumb li, .ev-brakes-title .breadcrumb li.divider:after {font-size:14px;line-height:20px;}
+    .ev-brakes-title .breadcrumb .breadcrumb-current, .ev-brakes-title .breadcrumb .breadcrumb-current-divider {display:none;}
+}
 </style>
 </head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-4006">
 
@@ -464,9 +475,9 @@ body { font-weight: normal;}
 					<div class="span12" data-motopress-type="static" data-motopress-static-file="static/static-title.php">
 
 
-<section class="title-section">
+<section class="title-section ev-brakes-title">
 <h1 class="title-header">Servis zadních bubnových brzd elektromobilů</h1>
-<ul class="breadcrumb breadcrumb__t"><li><a href="../">Úvod</a></li><li class="divider"></li><li><a href="../dalsi-sluzby/">Další služby</a></li><li class="divider"></li><li class="active">Bubnové brzdy elektromobilů</li></ul>
+<ul class="breadcrumb breadcrumb__t"><li><a href="../">Úvod</a></li><li class="divider"></li><li><a href="../dalsi-sluzby/">Další služby</a></li><li class="divider breadcrumb-current-divider"></li><li class="active breadcrumb-current">Bubnové brzdy elektromobilů</li></ul>
 </section><!-- .title-section -->					</div>
 
 				</div>
