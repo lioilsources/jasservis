@@ -361,12 +361,25 @@ body { font-weight: normal;}
 }
 </style>
 <style>
-.specializovana-diagnostika {overflow-wrap:break-word;}
-.specializovana-diagnostika figure {margin:24px 0 32px;max-width:900px;}
+/* Styles apply only to this service's content. */
+.specializovana-diagnostika {max-width:900px;margin:0 auto 24px;overflow-wrap:break-word;}
+.specializovana-diagnostika p {margin:0 0 16px;}
+.specializovana-diagnostika figure {margin:20px 0 24px;max-width:675px;}
 .specializovana-diagnostika figure img {display:block;width:100%;height:auto;}
-.specializovana-diagnostika figcaption {margin-top:10px;font-size:14px;line-height:1.5;}
-.specializovana-diagnostika h3 {margin-top:28px;}
+.specializovana-diagnostika figcaption {margin-top:8px;font-size:14px;line-height:1.5;}
+.specializovana-diagnostika h2,
+.specializovana-diagnostika h3 {margin:28px 0 12px;text-align:left;font-size:25px;line-height:1.25;font-weight:400;}
+.specializovana-diagnostika .protokol-nahled {max-width:900px;margin:16px auto 12px;}
+.specializovana-diagnostika .protokol-nahled > a {display:block;aspect-ratio:1224 / 1020;overflow:hidden;}
+.specializovana-diagnostika .protokol-nahled img {max-height:none;}
+.specializovana-diagnostika .protokol-nahled figcaption {text-align:center;}
+.specializovana-diagnostika .protokol-pdf {margin-bottom:24px;text-align:center;}
 .specializovana-diagnostika a:focus-visible {outline:3px solid #b70000;outline-offset:4px;}
+@media (max-width:767px) {
+    .specializovana-diagnostika h2,
+    .specializovana-diagnostika h3 {font-size:22px;margin-top:24px;}
+    .specializovana-diagnostika figure {margin-top:16px;margin-bottom:20px;}
+}
 </style>
 </head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-2135">
 
@@ -566,13 +579,14 @@ body { font-weight: normal;}
 <p>Měření poskytuje podklad pro další diagnostiku, samo však neurčuje konkrétní vadnou součást. Zvýšenou hodnotu nelze bez navazujících zkoušek označit za jednoznačný důkaz poškozeného těsnění pod hlavou válců. Ani výsledek bez zvýšeného CO₂ nelze chápat jako potvrzení bezvadnosti celého chladicího systému. Nález hodnotíme společně s provozními projevy a dalšími kontrolami.</p>
 <h3>Ukázka protokolu z měření</h3>
 <p>Na přiloženém protokolu ze zkoušky vozu Volkswagen Multivan byl výsledek programem vyhodnocen jako OK. Jde o výsledek konkrétního měření za podmínek této zkoušky, nikoli o obecné potvrzení bezvadnosti vozidla nebo celého chladicího systému.</p>
-<figure>
-<a href="../wp-content/uploads/2026/10/specializovana-diagnostika/03-konecny-protokol.webp">
+<!-- Compact preview omits only blank lower paper and the page-number footer; the complete document remains in PDF. -->
+<figure class="protokol-nahled">
+<a href="../wp-content/uploads/2026/10/specializovana-diagnostika/Multivan-anonymizovany.pdf" aria-label="Otevřít celý anonymizovaný protokol měření v PDF">
 <img src="../wp-content/uploads/2026/10/specializovana-diagnostika/03-konecny-protokol.webp" width="1224" height="1584" alt="Anonymizovaný protokol měření CO₂ a tlaku chladicího systému vozu Volkswagen Multivan s výsledkem OK." loading="lazy" />
 </a>
 <figcaption>Ukázka konečného protokolu konkrétní zkoušky s vyhodnocením OK. Posledních šest číslic VIN je zakryto.</figcaption>
 </figure>
-<p>
+<p class="protokol-pdf">
 <a href="../wp-content/uploads/2026/10/specializovana-diagnostika/Multivan-anonymizovany.pdf">Zobrazit protokol měření v PDF</a>
 </p>
 <h3>Objednání kontroly</h3>
