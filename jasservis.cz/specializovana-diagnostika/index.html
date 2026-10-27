@@ -461,6 +461,22 @@ body { font-weight: normal;}
 @media (max-width:767px) {
     .specializovana-diagnostika .uv-fotografie img {max-height:440px;}
 }
+
+/* Only the two portrait-and-text blocks on this service page. */
+.specializovana-diagnostika .portret-rozlozeni {display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);grid-template-areas:"intro photo" "continuation photo";grid-template-rows:auto 1fr;column-gap:1.75rem;row-gap:0;align-items:start;margin:1.5rem 0;}
+.specializovana-diagnostika .portret-uvod {grid-area:intro;min-width:0;}
+.specializovana-diagnostika .portret-navazujici {grid-area:continuation;min-width:0;}
+.specializovana-diagnostika .portret-rozlozeni > figure {grid-area:photo;min-width:0;width:100%;max-width:100%;margin:0;}
+.specializovana-diagnostika .portret-rozlozeni > figure img {width:100%;height:auto;max-height:none;}
+.specializovana-diagnostika .portret-uvod > :first-child,
+.specializovana-diagnostika .portret-navazujici > :first-child {margin-top:0;}
+.specializovana-diagnostika .portret-sekce > :last-child {margin-bottom:0;}
+@media (max-width:991px) {
+    .specializovana-diagnostika .portret-rozlozeni {grid-template-columns:minmax(0,1fr);grid-template-areas:"intro" "photo" "continuation";grid-template-rows:auto auto auto;gap:1.25rem;margin:1.25rem 0;}
+    .specializovana-diagnostika .portret-rozlozeni > figure {max-width:26rem;justify-self:center;}
+    .specializovana-diagnostika .portret-uvod > :last-child,
+    .specializovana-diagnostika .portret-navazujici > :last-child {margin-bottom:0;}
+}
 </style>
 </head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-2135">
 
@@ -758,10 +774,16 @@ body { font-weight: normal;}
 <li>Systém odvětrávání palivové nádrže a zachycování palivových par (EVAP) – netěsnosti vedení, spojů a součástí systému.</li>
 <li>Těsnění oken, dveří a dalších otvorů karoserie – místa nežádoucího proudění vzduchu, která mohou souviset s pískáním, průvanem nebo zvýšeným aerodynamickým hlukem v kabině.</li>
 </ul>
+<div class="portret-sekce" id="blok-tesneni-oken">
+<div class="portret-rozlozeni">
+<div class="portret-uvod">
 <h4>Jak kontrola probíhá?</h4>
 <p>U vhodných uzavřených systémů zavádíme diagnostický kouř do kontrolovaného okruhu a sledujeme, zda uniká mimo něj. Viditelný únik pomáhá lokalizovat netěsnost a zaměřit následnou opravu na konkrétní místo.</p>
-<p>Při kontrole těsnění karoserie sledujeme změny proudění kouře v okolí oken, dveří a těsnicích spár. Tím lze odhalit průchod vzduchu, který může být příčinou hluku za jízdy.</p>
+</div>
 <figure class="kourova-fotografie"><a href="../wp-content/uploads/2026/10/kourova-diagnostika-tesneni-okna.jpg"><img src="../wp-content/uploads/2026/10/kourova-diagnostika-tesneni-okna.jpg" width="1086" height="1448" alt="Kouřová kontrola těsnění okna a dveří vozidla v J&amp;S SERVIS." loading="lazy" decoding="async" /></a><figcaption>Kouřová kontrola těsnění okna a dveří.</figcaption></figure>
+<div class="portret-navazujici">
+<p>Při kontrole těsnění karoserie sledujeme změny proudění kouře v okolí oken, dveří a těsnicích spár. Tím lze odhalit průchod vzduchu, který může být příčinou hluku za jízdy.</p>
+
 
 <p>Způsob připojení a podmínky zkoušky volíme podle konkrétního vozidla, kontrolovaného systému a pokynů výrobce. U systému palivových par používáme předepsané zkušební médium a postup.</p>
 <h4>Jak vyhodnocujeme výsledek?</h4>
@@ -769,22 +791,34 @@ body { font-weight: normal;}
 <h4>Přínos pro zákazníka</h4>
 <p>Přesnější lokalizace netěsnosti pomáhá omezit zbytečnou demontáž a výměnu součástí bez prokázané příčiny. Výsledek poskytuje srozumitelný podklad pro vysvětlení závady a návrh dalšího postupu opravy.</p>
 </div>
+</div>
+
+</div>
+</div>
 </details>
 <details class="rozbalovaci" id="uv-diagnostika">
 <summary><h2>UV diagnostika</h2></summary>
 <div class="rozbalovaci__obsah">
+<div class="portret-sekce" id="blok-uv-vybaveni">
+<div class="portret-rozlozeni">
+<div class="portret-uvod">
 <h3>Vyhledávání úniků oleje a chladicí kapaliny pomocí UV diagnostiky</h3>
 <p>Drobné netěsnosti se mohou projevovat pouze pozvolným prosakováním. Unikající kapalina se navíc může šířit po povrchu součástí, takže viditelné znečištění nemusí odpovídat skutečnému místu úniku. UV diagnostika pomáhá tento zdroj přesněji lokalizovat.</p>
+</div>
+<figure class="uv-fotografie"><a href="../wp-content/uploads/2026/10/uv-lampa-vas-231-005-prisada.jpg"><img src="../wp-content/uploads/2026/10/uv-lampa-vas-231-005-prisada.jpg" width="1086" height="1448" alt="UV lampa VAS 231 005 a fluorescenční přísada G 052 940 A1 pro vyhledávání úniků motorového oleje v J&amp;S SERVIS." loading="lazy" decoding="async" /></a><figcaption>UV lampa VAS 231 005 a fluorescenční přísada G 052 940 A1 pro vyhledávání úniků motorového oleje.</figcaption></figure>
+<div class="portret-navazujici">
 <h4>Kontrola úniků motorového oleje</h4>
 <p>Pro vyhledávání úniků motorového oleje používáme fluorescenční přísadu G 052 940 A1 a speciální UV lampu VAS 231 005. Přísada se smísí s olejem a jeho stopa v místě úniku pod UV světlem výrazně fluoreskuje. To umožňuje sledovat cestu unikajícího oleje a dohledat místo netěsnosti.</p>
 <p>Výraznější únik může být patrný již při chodu motoru v dílně. U drobného prosakování může být nutné vozidlo nejprve projet. Pokud to jeho technický stav dovoluje, zákazník po aplikaci přísady vozidlo dále používá a následně se vrátí na dohodnutou kontrolu. Pomocí UV lampy poté prohlédneme podezřelé oblasti a vyhodnotíme vzniklé stopy.</p>
 <p>Přísada G 052 940 A1 může zůstat v motorovém oleji. Její použití samo o sobě nevyžaduje vypuštění oleje ani mimořádnou výměnu olejové náplně.</p>
-<figure class="uv-fotografie"><a href="../wp-content/uploads/2026/10/uv-lampa-vas-231-005-prisada.jpg"><img src="../wp-content/uploads/2026/10/uv-lampa-vas-231-005-prisada.jpg" width="1086" height="1448" alt="UV lampa VAS 231 005 a fluorescenční přísada G 052 940 A1 pro vyhledávání úniků motorového oleje v J&amp;S SERVIS." loading="lazy" decoding="async" /></a><figcaption>UV lampa VAS 231 005 a fluorescenční přísada G 052 940 A1 pro kontrolu úniků motorového oleje.</figcaption></figure>
+</div>
+</div>
 <h4>Kontrola úniků chladicí kapaliny</h4>
 <p>Stejnou UV lampu lze využít také při vyhledávání úniků chladicí kapaliny. Pro tuto kontrolu se používá samostatná fluorescenční přísada určená pro chladicí systémy, jejíž vhodnost musí být ověřena pro konkrétní chladicí kapalinu a vozidlo.</p>
 <p>Pod UV světlem lze následně hledat stopy úniku například v okolí hadicových spojů, chladiče, vodního čerpadla a dalších přístupných částí chladicího okruhu. Přísada G 052 940 A1 uvedená výše je určena pro kontrolu úniků motorového oleje.</p>
 <h4>Cílený podklad pro opravu</h4>
 <p>Nález vyhodnocujeme v souvislosti s projevy závady a výsledky dalších kontrol. Lokalizace skutečného zdroje úniku pomáhá určit rozsah opravy a omezit zbytečnou demontáž nebo výměnu součástí bez prokázané příčiny.</p>
+</div>
 </div>
 </details>
 </div>
