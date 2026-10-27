@@ -702,7 +702,7 @@ iframe[data-cookie-src][hidden] {
 
 /* Four concrete service blocks, with brands and general links kept below. */
 #post-203 .home-service-index {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:stretch;}
-#post-203 .home-service-index .home-service-group {min-width:0;margin:0;border:1px solid #9a9a9a;border-left:3px solid var(--js-brand);border-radius:4px;background:#fff;}
+#post-203 .home-service-index .home-service-group {min-width:0;margin:0;border:1px solid #9a9a9a;border-radius:4px;background:#fff;}
 #post-203 .home-service-index .home-service-group:not([open]) {align-self:start;}
 #post-203 .home-service-index summary {position:relative;display:block;list-style:none;cursor:pointer;padding:14px 46px 14px 18px;}
 #post-203 .home-service-index summary::-webkit-details-marker {display:none;}
@@ -762,3 +762,6 @@ iframe[data-cookie-src][hidden] {
         height:var(--service-menu-offset,0px);z-index:99;
     }
 }
+
+/* Only the specialised service accordions: grey perimeter, orange controls retained. */
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci {border:1px solid #9a9a9a;border-radius:4px;}
