@@ -849,3 +849,6 @@ body:has(.contact-booking-panel[open]) { overflow:hidden; }
     .contact-booking-panel { padding:max(18px,env(safe-area-inset-top,0px)) max(18px,env(safe-area-inset-right,0px)) max(18px,env(safe-area-inset-bottom,0px)) max(18px,env(safe-area-inset-left,0px)); }
 }
 .contact-booking-panel__phone:focus-visible { outline:3px solid #125b9a; outline-offset:3px; }
+@media (max-width:1199px) {
+    .header .navigation-toggle .mobile-menu-icon span { left:0; }
+}
