@@ -398,6 +398,20 @@ body { font-weight: normal;}
     .specializovana-diagnostika h3 {font-size:21px;}
     .specializovana-diagnostika .diagnosticka-metoda {padding-top:24px;margin-top:24px;}
 }
+
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary h2 {color:#333;margin:0;font-size:20px;font-weight:600 !important;line-height:26px;text-align:left;text-transform:none;overflow-wrap:break-word;}
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary::after {content:"▾";}
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci[open] > summary::after {content:"▴";}
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci[open] > summary h2,
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary:hover h2,
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary:focus-visible h2 {color:#a83c18;}
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary:focus-visible {outline:2px solid #a83c18;outline-offset:2px;}
+.specializovana-diagnostika .rozbalovaci__obsah > h3:first-child {margin-top:20px;}
+.specializovana-diagnostika .diagnostika-dvojice h4:first-child {margin-top:0;}
+@media (max-width:767px) {
+    .specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary {box-sizing:border-box;min-height:44px;padding:10px 40px 10px 12px;}
+    .specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary h2 {font-size:18px;line-height:25px;}
+}
 </style>
 </head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-2135">
 
@@ -577,51 +591,32 @@ body { font-weight: normal;}
 </a>
 </figure>
 </div>
-<section class="diagnosticka-metoda" id="kontrola-chladiciho-systemu">
-<h2>Diagnostika průniku spalin do chladicího systému</h2>
-<p>Pro kontrolu používáme přístroj AVL DiTEST VAS 531 009. Měří obsah oxidu uhličitého (CO₂) v expanzní nádobce chladicího systému a současně zaznamenává průběh tlaku. Zvýšený obsah CO₂ může ukazovat na průnik spalin do chladicího okruhu.</p>
-<div class="diagnostika-dvojice">
-<figure>
-<a href="../wp-content/uploads/2026/10/specializovana-diagnostika/01-vas-531-009-na-vozidle.webp">
-<img src="../wp-content/uploads/2026/10/specializovana-diagnostika/01-vas-531-009-na-vozidle.webp" width="1536" height="1152" alt="Přístroj VAS 531 009 při kontrole chladicího systému vozu Volkswagen v J&amp;S SERVIS." loading="lazy" />
-</a>
-<figcaption>VAS 531 009 při diagnostické kontrole chladicího systému.</figcaption>
-</figure>
-<div>
-
-<h3>Kdy je měření vhodné</h3>
-<p>Při hledání příčiny opakovaného úbytku chladicí kapaliny, neobvyklého tlakování nebo přehřívání motoru může být měření CO₂ součástí diagnostického postupu. Samotné tyto projevy však průnik spalin nepotvrzují. Vhodnost zkoušky posuzujeme podle konkrétního vozidla a výsledků předchozí kontroly.</p>
-<h3>Jak kontrola probíhá</h3>
-<p>Přístroj připojíme přes odpovídající adaptér k expanzní nádobce. Při zkoušce sledujeme hodnoty CO₂ a tlaku v čase. Postup a podmínky měření přizpůsobujeme pokynům výrobce vozidla a přístroje. Výstupem měřicího programu je protokol s naměřenými hodnotami a grafickým průběhem.</p>
+<div class="diagnostika-metody diagnostika-systemy">
+<details class="rozbalovaci" id="endoskopie">
+<summary><h2>Endoskopie</h2></summary>
+<div class="rozbalovaci__obsah">
+<h3>Endoskopická kontrola motoru a obtížně přístupných součástí</h3>
+<p>Endoskopie umožňuje prohlédnout vnitřní prostory a součásti, které nejsou při běžné vizuální kontrole přístupné. Pomocí kamerové sondy získáváme obraz kontrolovaného místa a podle konstrukce vozidla můžeme omezit rozsah demontáže potřebné k prvotnímu posouzení závady.</p>
+<h4>Co lze endoskopem kontrolovat?</h4>
+<ul>
+<li>Přístupné části spalovacích prostorů, dna pístů a stěny válců.</li>
+<li>Viditelné úsady a stopy mechanického poškození.</li>
+<li>Přístupné části sacího a výfukového systému.</li>
+<li>Vnitřní strukturu katalyzátoru nebo filtru pevných částic, pokud konstrukce konkrétního vozidla umožňuje zavedení sondy a potřebný výhled.</li>
+<li>Další obtížně přístupná místa podle charakteru závady.</li>
+</ul>
+<p>Rozsah kontroly vždy závisí na konstrukci konkrétního motoru nebo součásti, dostupných přístupových otvorech a možnosti bezpečného vedení sondy.</p>
+<h4>Jak vyhodnocujeme nález?</h4>
+<p>Endoskopický obraz posuzujeme v souvislosti s projevy závady a výsledky dalších diagnostických zkoušek. Pomáhá nám určit další postup a rozhodnout, zda je potřebná podrobnější kontrola nebo demontáž.</p>
+<p>Endoskopie ukazuje stav viditelných ploch. Samotný obraz nepotvrzuje těsnost spalovacího prostoru ani funkční účinnost katalyzátoru nebo filtru pevných částic. Podle nálezu proto kontrolu doplňujeme dalšími měřeními.</p>
+<h4>Přínos pro zákazníka</h4>
+<p>Cílená vizuální kontrola poskytuje konkrétní podklad pro vysvětlení nálezu a návrh opravy. V případech, kdy je kontrolované místo dostupné sondou, může pomoci omezit zbytečné rozebírání součástí.</p>
 </div>
-</div>
-<div class="diagnostika-dvojice">
-<figure>
-<a href="../wp-content/uploads/2026/10/specializovana-diagnostika/02-prubeh-mereni-co2-a-tlaku.webp">
-<img src="../wp-content/uploads/2026/10/specializovana-diagnostika/02-prubeh-mereni-co2-a-tlaku.webp" width="1536" height="1152" alt="Obrazovka programu CO2 Content Check s průběhem hodnot CO₂ a tlaku při probíhající zkoušce." loading="lazy" />
-</a>
-<figcaption>Průběžné zobrazení CO₂ a tlaku během měření. Snímek nezachycuje konečný výsledek zkoušky.</figcaption>
-</figure>
-<div>
-<h3>Jak výsledek vyhodnocujeme</h3>
-<p>Měření poskytuje podklad pro další diagnostiku, samo však neurčuje konkrétní vadnou součást. Zvýšenou hodnotu nelze bez navazujících zkoušek označit za jednoznačný důkaz poškozeného těsnění pod hlavou válců. Ani výsledek bez zvýšeného CO₂ nelze chápat jako potvrzení bezvadnosti celého chladicího systému. Nález hodnotíme společně s provozními projevy a dalšími kontrolami.</p>
-<h3>Ukázka protokolu z měření</h3>
-<p>Na přiloženém protokolu ze zkoušky vozu Volkswagen Multivan byl výsledek programem vyhodnocen jako OK. Jde o výsledek konkrétního měření za podmínek této zkoušky, nikoli o obecné potvrzení bezvadnosti vozidla nebo celého chladicího systému.</p>
-</div>
-</div>
-<!-- Compact preview omits only blank lower paper and the page-number footer; the complete document remains in PDF. -->
-<figure class="protokol-nahled">
-<a href="../wp-content/uploads/2026/10/specializovana-diagnostika/Multivan-anonymizovany.pdf" aria-label="Otevřít celý anonymizovaný protokol měření v PDF">
-<img src="../wp-content/uploads/2026/10/specializovana-diagnostika/03-konecny-protokol.webp" width="1224" height="1584" alt="Anonymizovaný protokol měření CO₂ a tlaku chladicího systému vozu Volkswagen Multivan s výsledkem OK." loading="lazy" />
-</a>
-<figcaption>Ukázka konečného protokolu konkrétní zkoušky s vyhodnocením OK. Posledních šest číslic VIN je zakryto.</figcaption>
-</figure>
-<p class="protokol-pdf">
-<a href="../wp-content/uploads/2026/10/specializovana-diagnostika/Multivan-anonymizovany.pdf">Zobrazit protokol měření v PDF</a>
-</p>
-</section>
-<section class="diagnosticka-metoda" id="mikroskopicka-kontrola-oleje">
-<h2>Mikroskopická kontrola motorového oleje</h2>
+</details>
+<details class="rozbalovaci" id="mikroskopicka-kontrola-oleje">
+<summary><h2>Mikroskopie</h2></summary>
+<div class="rozbalovaci__obsah">
+<h3>Mikroskopická kontrola motorového oleje</h3>
 <p>Vyšetření vzorků použitého motorového oleje na přítomnost pevných nečistot se zaměřením na částice podezřelé z karbonového původu.</p>
 <div class="diagnostika-dvojice">
 <figure>
@@ -636,7 +631,63 @@ body { font-weight: normal;}
 <p>Samotná přítomnost částic automaticky neznamená poškození motoru. K jednoznačnému určení jejich složení a původu může být nutné navazující laboratorní vyšetření.</p>
 </div>
 </div>
-</section>
+
+</div>
+</details>
+<details class="rozbalovaci" id="kontrola-chladiciho-systemu">
+<summary><h2>Test CO₂</h2></summary>
+<div class="rozbalovaci__obsah">
+<h3>Diagnostika průniku spalin do chladicího systému</h3>
+<p>Pro kontrolu používáme přístroj AVL DiTEST VAS 531 009. Měří obsah oxidu uhličitého (CO₂) v expanzní nádobce chladicího systému a současně zaznamenává průběh tlaku. Zvýšený obsah CO₂ může ukazovat na průnik spalin do chladicího okruhu.</p>
+<div class="diagnostika-dvojice">
+<figure>
+<a href="../wp-content/uploads/2026/10/specializovana-diagnostika/01-vas-531-009-na-vozidle.webp">
+<img src="../wp-content/uploads/2026/10/specializovana-diagnostika/01-vas-531-009-na-vozidle.webp" width="1536" height="1152" alt="Přístroj VAS 531 009 při kontrole chladicího systému vozu Volkswagen v J&amp;S SERVIS." loading="lazy" />
+</a>
+<figcaption>VAS 531 009 při diagnostické kontrole chladicího systému.</figcaption>
+</figure>
+<div>
+
+<h4>Kdy je měření vhodné</h4>
+<p>Při hledání příčiny opakovaného úbytku chladicí kapaliny, neobvyklého tlakování nebo přehřívání motoru může být měření CO₂ součástí diagnostického postupu. Samotné tyto projevy však průnik spalin nepotvrzují. Vhodnost zkoušky posuzujeme podle konkrétního vozidla a výsledků předchozí kontroly.</p>
+<h4>Jak kontrola probíhá</h4>
+<p>Přístroj připojíme přes odpovídající adaptér k expanzní nádobce. Při zkoušce sledujeme hodnoty CO₂ a tlaku v čase. Postup a podmínky měření přizpůsobujeme pokynům výrobce vozidla a přístroje. Výstupem měřicího programu je protokol s naměřenými hodnotami a grafickým průběhem.</p>
+</div>
+</div>
+<div class="diagnostika-dvojice">
+<figure>
+<a href="../wp-content/uploads/2026/10/specializovana-diagnostika/02-prubeh-mereni-co2-a-tlaku.webp">
+<img src="../wp-content/uploads/2026/10/specializovana-diagnostika/02-prubeh-mereni-co2-a-tlaku.webp" width="1536" height="1152" alt="Obrazovka programu CO2 Content Check s průběhem hodnot CO₂ a tlaku při probíhající zkoušce." loading="lazy" />
+</a>
+<figcaption>Průběžné zobrazení CO₂ a tlaku během měření. Snímek nezachycuje konečný výsledek zkoušky.</figcaption>
+</figure>
+<div>
+<h4>Jak výsledek vyhodnocujeme</h4>
+<p>Měření poskytuje podklad pro další diagnostiku, samo však neurčuje konkrétní vadnou součást. Zvýšenou hodnotu nelze bez navazujících zkoušek označit za jednoznačný důkaz poškozeného těsnění pod hlavou válců. Ani výsledek bez zvýšeného CO₂ nelze chápat jako potvrzení bezvadnosti celého chladicího systému. Nález hodnotíme společně s provozními projevy a dalšími kontrolami.</p>
+<h4>Ukázka protokolu z měření</h4>
+<p>Na přiloženém protokolu ze zkoušky vozu Volkswagen Multivan byl výsledek programem vyhodnocen jako OK. Jde o výsledek konkrétního měření za podmínek této zkoušky, nikoli o obecné potvrzení bezvadnosti vozidla nebo celého chladicího systému.</p>
+</div>
+</div>
+<!-- Compact preview omits only blank lower paper and the page-number footer; the complete document remains in PDF. -->
+<figure class="protokol-nahled">
+<a href="../wp-content/uploads/2026/10/specializovana-diagnostika/Multivan-anonymizovany.pdf" aria-label="Otevřít celý anonymizovaný protokol měření v PDF">
+<img src="../wp-content/uploads/2026/10/specializovana-diagnostika/03-konecny-protokol.webp" width="1224" height="1584" alt="Anonymizovaný protokol měření CO₂ a tlaku chladicího systému vozu Volkswagen Multivan s výsledkem OK." loading="lazy" />
+</a>
+<figcaption>Ukázka konečného protokolu konkrétní zkoušky s vyhodnocením OK. Posledních šest číslic VIN je zakryto.</figcaption>
+</figure>
+<p class="protokol-pdf">
+<a href="../wp-content/uploads/2026/10/specializovana-diagnostika/Multivan-anonymizovany.pdf">Zobrazit protokol měření v PDF</a>
+</p>
+
+</div>
+</details>
+<details class="rozbalovaci" id="kourova-diagnostika">
+<summary><h2>Kouřová diagnostika</h2></summary>
+<div class="rozbalovaci__obsah">
+<!-- No source material supplied for this method; intentionally no invented content. -->
+</div>
+</details>
+</div>
 <section class="diagnostika-objednani">
 <h2>Objednání kontroly</h2>
 <p>Při objednání nám popište, za jakých podmínek se potíže objevují a zda byla na chladicím systému nebo motoru nedávno provedena oprava. Podle těchto informací navrhneme vhodný rozsah diagnostiky.</p>
