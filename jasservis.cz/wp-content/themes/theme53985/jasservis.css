@@ -765,3 +765,22 @@ iframe[data-cookie-src][hidden] {
 
 /* Only the specialised service accordions: grey perimeter, orange controls retained. */
 .specializovana-diagnostika .diagnostika-metody > .rozbalovaci {border:1px solid #9a9a9a;border-radius:4px;}
+
+/* Compact spacing limited to the homepage service overview. */
+#post-203 .content_box.home-offered-services {padding:16px 0 20px;}
+#post-203 .home-offered-services .title-box {margin:0 0 12px;}
+#post-203 .home-offered-services .title-box .title-box_secondary {font-size:22px;line-height:1.3;font-weight:600 !important;margin:0;}
+#post-203 .home-offered-services .home-service-index summary {padding:12px 44px 12px 16px;}
+#post-203 .home-offered-services .home-service-index summary .sluzby-sloupec {margin:0;}
+#post-203 .home-offered-services .home-service-index ul {padding:0 16px 6px;}
+#post-203 .home-offered-services .home-service-index ul li a {padding:3px 0;}
+@media (max-width:979px) {
+    #post-203 .home-offered-services .home-service-index ul li a {display:flex;align-items:center;min-height:44px;padding:6px 0;}
+    #post-203 .home-offered-services .home-service-index ul li:before {top:17px;}
+}
+@media (max-width:767px) {
+    #post-203 .content_box.home-offered-services {padding:12px 0 16px;}
+    #post-203 .home-offered-services .title-box .title-box_secondary {font-size:21px;}
+    #post-203 .home-offered-services .home-service-index summary {padding:12px 42px 12px 14px;}
+    #post-203 .home-offered-services .home-service-index ul {padding-right:14px;padding-left:14px;}
+}
