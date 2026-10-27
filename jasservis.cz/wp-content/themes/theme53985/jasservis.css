@@ -45,7 +45,7 @@
 .header .nav__primary #topnav .sub-menu {
     display:block; position:absolute; top:100%; left:0; width:340px; max-width:calc(100vw - 40px);
     padding:12px; background:#191818; border-top:2px solid #f36639; box-shadow:0 6px 16px #0005;
-    overflow-y:auto; overscroll-behavior:contain; z-index:100; max-height:calc(100vh - 210px - var(--cookie-space, 0px));
+    overflow-y:auto; overscroll-behavior:contain; z-index:100; max-height:var(--menu-available,calc(100vh - 210px - var(--cookie-space, 0px)));
 }
 .header .nav__primary #topnav > #menu-item-2076 > .sub-menu { left:auto; right:0; }
 .header .nav__primary #topnav .service-groups { display:grid; grid-template-columns:minmax(0,1fr); gap:0; }
@@ -745,8 +745,8 @@ iframe[data-cookie-src][hidden] {
 @media (min-width:1200px) {
     .header .nav__primary #topnav .service-groups {
         top:100%;padding:8px;row-gap:4px;align-items:start;grid-auto-rows:min-content;
-        max-height:var(--service-menu-available,calc(100dvh - 210px - var(--cookie-space,0px)));
-        overflow-y:auto;overflow-x:hidden;scroll-padding:8px;scrollbar-gutter:stable;
+        max-height:var(--menu-available,calc(100dvh - 210px - var(--cookie-space,0px)));
+        overflow-y:auto;overflow-x:hidden;scroll-padding:8px;scrollbar-gutter:auto;
     }
     .header .nav__primary #topnav .service-groups li a {display:flex;align-items:center;min-height:40px;padding:8px;line-height:21px;}
     .header .nav__primary #topnav .service-groups > .menu-overview > a {min-height:40px;padding:8px;}
@@ -783,4 +783,8 @@ iframe[data-cookie-src][hidden] {
     #post-203 .home-offered-services .title-box .title-box_secondary {font-size:21px;}
     #post-203 .home-offered-services .home-service-index summary {padding:12px 42px 12px 14px;}
     #post-203 .home-offered-services .home-service-index ul {padding-right:14px;padding-left:14px;}
+}
+
+@media (min-width:1200px) {
+    .header .nav__primary #topnav > li > .sub-menu {height:auto;min-height:0;max-height:var(--menu-available,calc(100dvh - 210px - var(--cookie-space,0px)));overflow-y:auto;scrollbar-gutter:auto;}
 }

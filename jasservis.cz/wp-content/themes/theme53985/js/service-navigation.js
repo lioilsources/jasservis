@@ -50,19 +50,26 @@
         control.item.classList.remove('is-open');
         control.panel.hidden = true;
     }
-    function fitServicePanel(control) {
-        if (!control.panel.classList.contains('service-groups')) return;
+    function fitDropdown(control) {
         if (compact.matches) {
-            control.panel.style.removeProperty('--service-menu-available');
+            control.panel.style.removeProperty('--menu-available');
             control.item.style.removeProperty('--service-menu-offset');
             return;
         }
-        var header = nav.closest('header');
-        var offset = header ? Math.max(0, header.getBoundingClientRect().bottom - control.item.getBoundingClientRect().bottom) : 0;
-        control.item.style.setProperty('--service-menu-offset', Math.ceil(offset) + 'px');
-        var cookie = parseFloat(window.getComputedStyle(document.body).getPropertyValue('--cookie-space')) || 0;
-        var height = window.innerHeight - cookie - control.panel.getBoundingClientRect().top - 12;
-        control.panel.style.setProperty('--service-menu-available', Math.max(44, Math.floor(height)) + 'px');
+        if (control.panel.classList.contains('service-groups')) {
+            var header = nav.closest('header');
+            var offset = header ? Math.max(0, header.getBoundingClientRect().bottom - control.item.getBoundingClientRect().bottom) : 0;
+            control.item.style.setProperty('--service-menu-offset', Math.ceil(offset) + 'px');
+        }
+        var viewport = window.visualViewport;
+        var bottom = viewport ? viewport.offsetTop + viewport.height : window.innerHeight;
+        var banner = document.getElementById('cf-cookie-banner');
+        if (banner && !banner.hidden) {
+            var bannerBounds = banner.getBoundingClientRect();
+            if (bannerBounds.height > 0) bottom = Math.min(bottom, bannerBounds.top);
+        }
+        var height = bottom - control.panel.getBoundingClientRect().top - 12;
+        control.panel.style.setProperty('--menu-available', Math.max(44, Math.floor(height)) + 'px');
     }
     function open(control) {
         controls.forEach(function (other) {
@@ -72,7 +79,7 @@
         control.panel.hidden = false;
         control.button.setAttribute('aria-expanded', 'true');
         control.item.classList.add('is-open');
-        fitServicePanel(control);
+        fitDropdown(control);
     }
     Array.prototype.forEach.call(menu.querySelectorAll('.current-menu-item > a'), function (link) {
         link.setAttribute('aria-current', 'page');
@@ -177,13 +184,17 @@
     });
     if (compact.addEventListener) compact.addEventListener('change', reset);
     else compact.addListener(reset);
-    function fitOpenServicePanel() {
+    function fitOpenDropdowns() {
         controls.forEach(function (control) {
-            if (!control.panel.hidden) fitServicePanel(control);
+            if (!control.panel.hidden) fitDropdown(control);
         });
     }
-    window.addEventListener('resize', fitOpenServicePanel);
-    window.addEventListener('scroll', fitOpenServicePanel, {passive:true});
+    window.addEventListener('resize', fitOpenDropdowns);
+    window.addEventListener('scroll', fitOpenDropdowns, {passive:true});
+    if (window.visualViewport) {
+        window.visualViewport.addEventListener('resize', fitOpenDropdowns);
+        window.visualViewport.addEventListener('scroll', fitOpenDropdowns, {passive:true});
+    }
     nav.classList.add('navigation-ready');
     reset();
 }());
