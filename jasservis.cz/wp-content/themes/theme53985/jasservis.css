@@ -297,6 +297,7 @@ iframe[data-cookie-src][hidden] {
 }
 #cookie-settings:hover, #cookie-settings:focus-visible { color:var(--js-paper); background:#333; }
 .header-phone, .header-hours { display:block; }
+.header-phone a { white-space:nowrap; }
 @media (max-width:1199px) {
     .header > .container > .row > .span12 { display:grid; grid-template-areas:'brand' 'contacts' 'navigation'; }
     .header .header_block_2, .header .header_block_2 > .row { display:contents; }
@@ -322,7 +323,7 @@ iframe[data-cookie-src][hidden] {
     .header .header-phone a span { font-size:15px; font-weight:600; }
     .header .header-hours { grid-column:1 / -1; text-align:center; font-size:13px; line-height:18px; }
     .header .nav__primary { padding-bottom:10px; }
-    .header .nav__primary .navigation-toggle { min-height:var(--js-button-height); padding:10px 16px; }
+    .header .nav__primary .navigation-toggle { width:auto; min-width:132px; min-height:var(--js-button-height); padding:10px 16px; }
 }
 /* Cards share one alignment and the same row height, with links always visible. */
 #post-203 .home-service-cards { gap:24px; margin-bottom:var(--js-section); }
@@ -447,14 +448,35 @@ iframe[data-cookie-src][hidden] {
     .header { background:var(--js-ink); }
     .header .header_block_1, .header .header_block_1:before, .header .header_block_1:after { background:transparent; }
     .header > .container > .row > .span12 {
-        grid-template-columns:280px minmax(0,1fr);
+        grid-template-columns:250px minmax(0,1fr);
         grid-template-areas:'brand contacts' 'navigation navigation'; column-gap:24px;
     }
     .header .header_block_2 > .row > .span3 { align-self:center; }
     .header .header_block_2 .logo { margin:12px 0; }
-    .header .header_block_1 { padding:12px 0; }
+    .header .header_block_1 { padding:10px 0; }
+    .header .header_block_2 .logo { width:250px; }
+    .header .header_block_1 .header_widget_1 { text-align:left; }
+    .header .header_block_1 #text-8 > .textwidget {
+        grid-template-columns:minmax(0,1fr) auto; gap:12px; align-items:center;
+    }
+    .header .header_block_1 #text-8 > .textwidget > b {
+        grid-column:2; grid-row:1; justify-self:end; align-self:center;
+    }
+    .header .header_block_1 #text-8 > .textwidget > b a {
+        width:auto; padding:12px 16px; white-space:nowrap;
+    }
+    .header .header_block_1 .tel { display:flex; flex-direction:column; gap:0; }
+    .header .header_block_1 .tel .header-phone a {
+        display:block; min-height:0; padding:3px 0; line-height:22px; text-align:left;
+    }
+    .header .header-hours { text-align:left; font-size:14px; line-height:22px; }
+    .header .nav__primary { padding-bottom:10px; }
+
 }
 @media (min-width:768px) and (max-width:979px) {
+    .header .header_block_1 #text-8 > .textwidget { grid-template-columns:1fr; gap:6px; }
+    .header .header_block_1 #text-8 > .textwidget > b { grid-column:1; grid-row:2; justify-self:start; }
+
     #post-203 .home-service-cards { gap:16px; }
     #post-203 .home-service-cards .service-box.style_1 { padding:18px 14px; }
     #post-203 .home-service-cards .service-box h2 { font-size:21px; line-height:26px; }
