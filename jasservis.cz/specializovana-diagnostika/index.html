@@ -380,6 +380,24 @@ body { font-weight: normal;}
     .specializovana-diagnostika h3 {font-size:22px;margin-top:24px;}
     .specializovana-diagnostika figure {margin-top:16px;margin-bottom:20px;}
 }
+
+.specializovana-diagnostika {max-width:1170px;}
+.specializovana-diagnostika .diagnostika-dvojice {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start;margin:20px 0 28px;}
+.specializovana-diagnostika .diagnostika-dvojice > * {min-width:0;}
+.specializovana-diagnostika .diagnostika-dvojice figure {max-width:none;margin:0;}
+.specializovana-diagnostika .diagnostika-dvojice h3:first-child {margin-top:0;}
+.specializovana-diagnostika .diagnostika-uvod {align-items:center;}
+.specializovana-diagnostika .diagnosticka-metoda {border-top:1px solid #ddd;padding-top:28px;margin-top:32px;}
+.specializovana-diagnostika .diagnosticka-metoda > h2 {margin-top:0;}
+.specializovana-diagnostika h2 {font-size:28px;}
+.specializovana-diagnostika h3 {font-size:23px;}
+.specializovana-diagnostika .diagnostika-objednani {border-top:1px solid #ddd;margin-top:32px;padding-top:4px;}
+@media (max-width:767px) {
+    .specializovana-diagnostika .diagnostika-dvojice {grid-template-columns:minmax(0,1fr);gap:20px;margin:16px 0 24px;}
+    .specializovana-diagnostika h2 {font-size:24px;}
+    .specializovana-diagnostika h3 {font-size:21px;}
+    .specializovana-diagnostika .diagnosticka-metoda {padding-top:24px;margin-top:24px;}
+}
 </style>
 </head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-2135">
 
@@ -551,35 +569,46 @@ body { font-weight: normal;}
 	<div id="post-2135" class="page post-2135 type-page status-publish hentry mpce-post-div">
 
 		<div class="specializovana-diagnostika product-detail">
-<p>Při hledání příčiny závady je důležité spojit projevy vozidla s výsledky konkrétních měření. Ve specializované diagnostice využíváme cílené zkoušky, které pomáhají rozhodnout o dalším postupu opravy. Rozsah kontroly volíme podle konstrukce vozidla a popsaných potíží.</p>
+<div class="diagnostika-dvojice diagnostika-uvod">
+<div><p>Při hledání příčiny závady je důležité spojit projevy vozidla s výsledky konkrétních měření. Ve specializované diagnostice využíváme cílené zkoušky, které pomáhají rozhodnout o dalším postupu opravy. Rozsah kontroly volíme podle konstrukce vozidla a popsaných potíží.</p></div>
 <figure>
 <a href="../wp-content/uploads/2026/10/specializovana-diagnostika/00-specializovana-diagnostika-uvodni.png">
 <img src="../wp-content/uploads/2026/10/specializovana-diagnostika/00-specializovana-diagnostika-uvodni.png" width="1536" height="864" alt="Specializovaná diagnostika v J&amp;S SERVIS." />
 </a>
 </figure>
-<section>
+</div>
+<section class="diagnosticka-metoda" id="kontrola-chladiciho-systemu">
 <h2>Diagnostika průniku spalin do chladicího systému</h2>
 <p>Pro kontrolu používáme přístroj AVL DiTEST VAS 531 009. Měří obsah oxidu uhličitého (CO₂) v expanzní nádobce chladicího systému a současně zaznamenává průběh tlaku. Zvýšený obsah CO₂ může ukazovat na průnik spalin do chladicího okruhu.</p>
+<div class="diagnostika-dvojice">
 <figure>
 <a href="../wp-content/uploads/2026/10/specializovana-diagnostika/01-vas-531-009-na-vozidle.webp">
 <img src="../wp-content/uploads/2026/10/specializovana-diagnostika/01-vas-531-009-na-vozidle.webp" width="1536" height="1152" alt="Přístroj VAS 531 009 při kontrole chladicího systému vozu Volkswagen v J&amp;S SERVIS." loading="lazy" />
 </a>
 <figcaption>VAS 531 009 při diagnostické kontrole chladicího systému.</figcaption>
 </figure>
+<div>
+
 <h3>Kdy je měření vhodné</h3>
 <p>Při hledání příčiny opakovaného úbytku chladicí kapaliny, neobvyklého tlakování nebo přehřívání motoru může být měření CO₂ součástí diagnostického postupu. Samotné tyto projevy však průnik spalin nepotvrzují. Vhodnost zkoušky posuzujeme podle konkrétního vozidla a výsledků předchozí kontroly.</p>
 <h3>Jak kontrola probíhá</h3>
 <p>Přístroj připojíme přes odpovídající adaptér k expanzní nádobce. Při zkoušce sledujeme hodnoty CO₂ a tlaku v čase. Postup a podmínky měření přizpůsobujeme pokynům výrobce vozidla a přístroje. Výstupem měřicího programu je protokol s naměřenými hodnotami a grafickým průběhem.</p>
+</div>
+</div>
+<div class="diagnostika-dvojice">
 <figure>
 <a href="../wp-content/uploads/2026/10/specializovana-diagnostika/02-prubeh-mereni-co2-a-tlaku.webp">
 <img src="../wp-content/uploads/2026/10/specializovana-diagnostika/02-prubeh-mereni-co2-a-tlaku.webp" width="1536" height="1152" alt="Obrazovka programu CO2 Content Check s průběhem hodnot CO₂ a tlaku při probíhající zkoušce." loading="lazy" />
 </a>
 <figcaption>Průběžné zobrazení CO₂ a tlaku během měření. Snímek nezachycuje konečný výsledek zkoušky.</figcaption>
 </figure>
+<div>
 <h3>Jak výsledek vyhodnocujeme</h3>
 <p>Měření poskytuje podklad pro další diagnostiku, samo však neurčuje konkrétní vadnou součást. Zvýšenou hodnotu nelze bez navazujících zkoušek označit za jednoznačný důkaz poškozeného těsnění pod hlavou válců. Ani výsledek bez zvýšeného CO₂ nelze chápat jako potvrzení bezvadnosti celého chladicího systému. Nález hodnotíme společně s provozními projevy a dalšími kontrolami.</p>
 <h3>Ukázka protokolu z měření</h3>
 <p>Na přiloženém protokolu ze zkoušky vozu Volkswagen Multivan byl výsledek programem vyhodnocen jako OK. Jde o výsledek konkrétního měření za podmínek této zkoušky, nikoli o obecné potvrzení bezvadnosti vozidla nebo celého chladicího systému.</p>
+</div>
+</div>
 <!-- Compact preview omits only blank lower paper and the page-number footer; the complete document remains in PDF. -->
 <figure class="protokol-nahled">
 <a href="../wp-content/uploads/2026/10/specializovana-diagnostika/Multivan-anonymizovany.pdf" aria-label="Otevřít celý anonymizovaný protokol měření v PDF">
@@ -590,8 +619,28 @@ body { font-weight: normal;}
 <p class="protokol-pdf">
 <a href="../wp-content/uploads/2026/10/specializovana-diagnostika/Multivan-anonymizovany.pdf">Zobrazit protokol měření v PDF</a>
 </p>
-<h3>Objednání kontroly</h3>
+</section>
+<section class="diagnosticka-metoda" id="mikroskopicka-kontrola-oleje">
+<h2>Mikroskopická kontrola motorového oleje</h2>
+<p>Vyšetření vzorků použitého motorového oleje na přítomnost pevných nečistot se zaměřením na částice podezřelé z karbonového původu.</p>
+<div class="diagnostika-dvojice">
+<figure>
+<a href="../wp-content/uploads/2026/10/mikroskopicka-kontrola-oleje.jpg">
+<img src="../wp-content/uploads/2026/10/mikroskopicka-kontrola-oleje.jpg" width="1280" height="960" alt="Optický mikroskop s digitálním zobrazením při kontrole vzorku motorového oleje 1.4 TSI v J&amp;S SERVIS." loading="lazy" decoding="async" />
+</a>
+<figcaption>Kontrola vzorku použitého motorového oleje 1.4 TSI v J&amp;S SERVIS.</figcaption>
+</figure>
+<div>
+<p>Na fotografii je kontrola vzorku oleje z motoru 1.4 TSI. Pomocí optického mikroskopu s digitálním zobrazením posuzujeme vzhled, tvar a zastoupení pozorovaných částic.</p>
+<p>Výsledek slouží jako doplňující podklad při hledání příčin znečištění oleje a podezření na opotřebení motoru. Nález hodnotíme společně s provozními potížemi vozidla, nájezdem oleje, servisní historií a výsledky dalších kontrol.</p>
+<p>Samotná přítomnost částic automaticky neznamená poškození motoru. K jednoznačnému určení jejich složení a původu může být nutné navazující laboratorní vyšetření.</p>
+</div>
+</div>
+</section>
+<section class="diagnostika-objednani">
+<h2>Objednání kontroly</h2>
 <p>Při objednání nám popište, za jakých podmínek se potíže objevují a zda byla na chladicím systému nebo motoru nedávno provedena oprava. Podle těchto informací navrhneme vhodný rozsah diagnostiky.</p>
+<p><a class="btn btn-inverse btn-normal btn-primary" href="../kontakt/">Objednat kontrolu</a></p>
 </section>
 </div>
 <div class="mp-row-fluid motopress-row mpce-dsbl-margin-left mpce-dsbl-margin-right">
