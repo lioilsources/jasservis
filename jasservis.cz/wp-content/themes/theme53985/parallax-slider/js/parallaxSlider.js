@@ -293,7 +293,8 @@
     
         function autoSwitcher()
         {
-            if(options.autoSwitcher){
+            clearInterval(intervalSwitcher);
+            if(options.autoSwitcher && !document.hidden){
                 if(itemLength>1){
                     intervalSwitcher = setInterval(function(){
                         nextSwither();
@@ -350,10 +351,21 @@
                 }
             )
             
+            // Pause when the tab is hidden and restart with a full interval on return.
+            document.addEventListener('visibilitychange', autoSwitcher);
+            _this.on('focusin mouseenter', function(){ clearInterval(intervalSwitcher); });
+            _this.on('focusout mouseleave', function(){ autoSwitcher(); });
+            parallaxPrevBtn.add(parallaxNextBtn).attr('role', 'button').attr('tabindex', '0');
+            parallaxPrevBtn.attr('aria-label', 'Předchozí snímek');
+            parallaxNextBtn.attr('aria-label', 'Následující snímek');
+            parallaxPrevBtn.add(parallaxNextBtn).on('keydown', function(event){
+                if(event.key === 'Enter' || event.key === ' '){ event.preventDefault(); $(this).trigger('click'); }
+            });
             //--------------- keyboard events ----------------------//
             _window.on("keydown",
                 function(eventObject)
                 {
+                    if (!_this[0].contains(document.activeElement)) return;
                     switch (eventObject.keyCode){
                         case 37:
                             clearInterval(intervalSwitcher);
@@ -431,12 +443,14 @@
             if(primaryCaption){
                 secondaryCaption = primaryCaption;
                 secondaryCaption.toggleClass('primaryCaption').toggleClass('secondaryCaption');
+                // Retire the outgoing text immediately; image backgrounds may still crossfade.
+                secondaryCaption.attr('aria-hidden', 'true').attr('inert', '').hide();
             }
             
             if(sliderData[currIndex].caption != ''){
                 mainCaptionHolderContainer.append('<div class="primaryCaption"></div>');
                 primaryCaption = $('> .primaryCaption', mainCaptionHolderContainer);
-                primaryCaption.html(sliderData[currIndex].caption);
+                primaryCaption.html(sliderData[currIndex].caption).attr('aria-hidden', 'true').attr('inert', '');
                 objectCssTransition(primaryCaption, 0, 'ease');
                 primaryCaption.addClass('animateState');   
             }
@@ -675,7 +689,7 @@
                 objectCssTransition(primaryCaption, options.duration, 'outCubic');
                 if(primaryCaption){
                     
-                    primaryCaption.removeClass('animateState');                  
+                    primaryCaption.removeClass('animateState').attr('aria-hidden', 'false').removeAttr('inert');
                 } 
                 
                 if(secondaryCaption){
