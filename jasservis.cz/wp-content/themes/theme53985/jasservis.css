@@ -700,17 +700,40 @@ iframe[data-cookie-src][hidden] {
     #post-203 .home-service-cards .home-service-heading { line-height:27px; }
 }
 
-/* Complete home service index: keep service groups aligned with the upper menu. */
-#post-203 .home-service-index {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 32px;}
-#post-203 .home-service-index .home-service-group {min-width:0;margin:0;}
-#post-203 .home-service-index .sluzby-sloupec {text-transform:none;line-height:1.45;}
-#post-203 .home-service-index li a {overflow-wrap:break-word;}
-@media (min-width:768px) and (max-width:1199px) {
-    #post-203 .home-service-index {grid-template-columns:repeat(2,minmax(0,1fr));}
-}
+/* Four concrete service blocks, with brands and general links kept below. */
+#post-203 .home-service-index {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start;}
+#post-203 .home-service-index .home-service-group {min-width:0;margin:0;border:1px solid #ddd;border-left:3px solid var(--js-brand);border-radius:4px;background:#fff;}
+#post-203 .home-service-index summary {position:relative;display:block;list-style:none;cursor:pointer;padding:14px 46px 14px 18px;}
+#post-203 .home-service-index summary::-webkit-details-marker {display:none;}
+#post-203 .home-service-index summary:after {content:'';position:absolute;right:20px;top:50%;width:8px;height:8px;margin-top:-6px;border-right:2px solid var(--js-brand);border-bottom:2px solid var(--js-brand);transform:rotate(45deg);}
+#post-203 .home-service-index details[open] > summary:after {transform:rotate(225deg);margin-top:-2px;}
+#post-203 .home-service-index .sluzby-sloupec {margin:0;line-height:1.45;font-weight:600;text-transform:uppercase;}
+#post-203 .home-service-index ul {margin:0;padding:0 18px 12px;}
+#post-203 .home-service-index li {margin:0;}
+#post-203 .home-service-index li a {padding:4px 0;overflow-wrap:break-word;}
+#post-203 .home-service-index summary:focus-visible,
+#post-203 .home-service-brands a:focus-visible,
+#post-203 .home-service-general a:focus-visible {outline:2px solid var(--js-brand);outline-offset:2px;}
+#post-203 .home-service-brands {display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin-top:22px;padding-top:18px;border-top:1px solid #ddd;}
+#post-203 .home-service-brands .sluzby-sloupec {margin:0;font-weight:600;line-height:1.45;text-transform:none;}
+#post-203 .home-service-brands ul,
+#post-203 .home-service-general {display:flex;flex-wrap:wrap;gap:8px 18px;list-style:none;margin:0;padding:0;}
+#post-203 .home-service-brands li,
+#post-203 .home-service-general li {margin:0;padding:0;min-width:0;}
+#post-203 .home-service-brands a,
+#post-203 .home-service-general a {display:inline-block;line-height:24px;padding:6px 0;color:var(--js-copy);overflow-wrap:break-word;}
+#post-203 .home-service-brands a:hover,
+#post-203 .home-service-general a:hover {color:var(--js-accent-text);text-decoration:underline;}
+#post-203 .home-service-general {margin-top:14px;padding-top:12px;border-top:1px solid #ddd;}
 @media (max-width:767px) {
-    #post-203 .home-service-index {grid-template-columns:minmax(0,1fr);gap:24px;}
+    #post-203 .home-service-index {grid-template-columns:minmax(0,1fr);gap:10px;}
+    #post-203 .home-service-index summary {box-sizing:border-box;min-height:48px;padding:12px 42px 12px 14px;}
+    #post-203 .home-service-index ul {padding-right:14px;padding-left:14px;}
     #post-203 .home-service-index li a {display:flex;align-items:center;min-height:44px;box-sizing:border-box;padding:6px 0;}
+    #post-203 .home-service-brands {display:block;margin-top:18px;padding-top:14px;}
+    #post-203 .home-service-brands .sluzby-sloupec {margin-bottom:8px;}
+    #post-203 .home-service-brands a,
+    #post-203 .home-service-general a {display:inline-flex;align-items:center;min-height:44px;box-sizing:border-box;}
 }
 /* A separate overview row, followed by compact, independently scrollable groups. */
 .header .nav__primary #topnav .service-groups > .menu-overview {grid-column:1 / -1;display:block;float:none;width:auto;margin:0;}

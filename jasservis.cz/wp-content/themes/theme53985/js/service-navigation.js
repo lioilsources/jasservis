@@ -9,23 +9,28 @@
     // overview as a no-JavaScript fallback, and refresh it from that list here.
     var offered = document.querySelector('.home-service-index');
     if (offered) {
-        Array.prototype.forEach.call(menu.querySelectorAll('.service-group'), function (group) {
-            var title = group.querySelector('.service-group-title');
-            var target = Array.prototype.filter.call(offered.querySelectorAll('[data-service-group]'), function (section) {
-                return section.getAttribute('data-service-group') === title.textContent.trim();
-            })[0];
-            if (!target) return;
+        Array.prototype.forEach.call(offered.querySelectorAll('[data-service-links]'), function (target) {
             var list = target.querySelector('ul');
-            list.textContent = '';
-            Array.prototype.forEach.call(group.querySelectorAll('ul > li > a'), function (link) {
+            Array.prototype.forEach.call(target.getAttribute('data-service-links').split(' '), function (path, index) {
+                var link = menu.querySelector('a[href="' + path + '"]');
+                if (!link) return; // Retain the corresponding static fallback if a source link is absent.
                 var item = document.createElement('li');
                 var copy = document.createElement('a');
                 copy.setAttribute('href', link.getAttribute('href'));
                 copy.textContent = link.textContent;
                 item.appendChild(copy);
-                list.appendChild(item);
+                list.replaceChild(item, list.children[index]);
             });
         });
+        var phoneOverview = window.matchMedia('(max-width:767px)');
+        function resetOfferedGroups() {
+            Array.prototype.forEach.call(offered.querySelectorAll('details'), function (group) {
+                group.open = !phoneOverview.matches;
+            });
+        }
+        resetOfferedGroups();
+        if (phoneOverview.addEventListener) phoneOverview.addEventListener('change', resetOfferedGroups);
+        else phoneOverview.addListener(resetOfferedGroups);
     }
     var toggle = document.createElement('button');
     toggle.type = 'button';
