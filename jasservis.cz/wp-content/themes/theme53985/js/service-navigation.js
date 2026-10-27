@@ -191,6 +191,36 @@
         window.visualViewport.addEventListener('resize', fitOpenDropdowns);
         window.visualViewport.addEventListener('scroll', fitOpenDropdowns, {passive:true});
     }
+    // Reuse the same controls in a wrapping row on short landscape screens.
+    // No duplicate booking action or navigation state is created by rotation.
+    var shortLandscape = window.matchMedia('(max-width:1199px) and (max-height:500px) and (orientation:landscape)');
+    var booking = document.querySelector('.header .mobile-booking-trigger');
+    var bookingHome = document.createComment('booking action original position');
+    var actions;
+    if (booking) booking.parentNode.insertBefore(bookingHome, booking);
+    function arrangeShortHeader() {
+        if (!booking) return;
+        var focused = document.activeElement;
+        if (shortLandscape.matches && !actions) {
+            actions = document.createElement('div');
+            actions.className = 'compact-header-actions';
+            nav.insertBefore(actions, menu);
+            actions.appendChild(booking);
+            actions.appendChild(toggle);
+        } else if (!shortLandscape.matches && actions) {
+            bookingHome.parentNode.insertBefore(booking, bookingHome.nextSibling);
+            nav.insertBefore(toggle, menu);
+            actions.remove();
+            actions = null;
+        }
+        if (focused === booking || focused === toggle) focused.focus({preventScroll: true});
+    }
+    if (shortLandscape.addEventListener) shortLandscape.addEventListener('change', arrangeShortHeader);
+    else shortLandscape.addListener(arrangeShortHeader);
+    window.addEventListener('resize', arrangeShortHeader);
+    if (window.visualViewport) window.visualViewport.addEventListener('resize', arrangeShortHeader);
+    window.addEventListener('orientationchange', function () { window.requestAnimationFrame(arrangeShortHeader); });
+    arrangeShortHeader();
     // Safari may restore an expanded menu from the back/forward cache.
     window.addEventListener('pageshow', function (event) { if (event.persisted) reset(); });
     nav.classList.add('navigation-ready');
