@@ -699,3 +699,40 @@ iframe[data-cookie-src][hidden] {
 @media (max-width:767px) {
     #post-203 .home-service-cards .home-service-heading { line-height:27px; }
 }
+
+/* Complete home service index: keep service groups aligned with the upper menu. */
+#post-203 .home-service-index {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 32px;}
+#post-203 .home-service-index .home-service-group {min-width:0;margin:0;}
+#post-203 .home-service-index .sluzby-sloupec {text-transform:none;line-height:1.45;}
+#post-203 .home-service-index li a {overflow-wrap:break-word;}
+@media (min-width:768px) and (max-width:1199px) {
+    #post-203 .home-service-index {grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media (max-width:767px) {
+    #post-203 .home-service-index {grid-template-columns:minmax(0,1fr);gap:24px;}
+    #post-203 .home-service-index li a {display:flex;align-items:center;min-height:44px;box-sizing:border-box;padding:6px 0;}
+}
+/* A separate overview row, followed by compact, independently scrollable groups. */
+.header .nav__primary #topnav .service-groups > .menu-overview {grid-column:1 / -1;display:block;float:none;width:auto;margin:0;}
+.header .nav__primary #topnav .service-groups .service-group-title {padding:8px 8px 4px;}
+.header .nav__primary #topnav .service-groups .service-group > ul {padding-left:0;}
+@media (min-width:1200px) {
+    .header .nav__primary #topnav .service-groups {
+        top:100%;padding:8px;row-gap:4px;align-items:start;grid-auto-rows:min-content;
+        max-height:var(--service-menu-available,calc(100dvh - 210px - var(--cookie-space,0px)));
+        overflow-y:auto;overflow-x:hidden;scroll-padding:8px;scrollbar-gutter:stable;
+    }
+    .header .nav__primary #topnav .service-groups li a {display:flex;align-items:center;min-height:40px;padding:8px;line-height:21px;}
+    .header .nav__primary #topnav .service-groups > .menu-overview > a {min-height:40px;padding:8px;}
+}
+@media (pointer:coarse) {
+    .header .nav__primary #topnav .service-groups li a {min-height:44px;}
+}
+@media (min-width:1200px) {
+    .header .nav__primary #topnav .service-groups {top:calc(100% + var(--service-menu-offset,0px));}
+    /* Keep pointer travel through any header padding inside the same menu item. */
+    .header .nav__primary #topnav > #menu-item-2076.is-open:after {
+        content:'';position:absolute;top:100%;right:0;width:960px;max-width:calc(100vw - 40px);
+        height:var(--service-menu-offset,0px);z-index:99;
+    }
+}

@@ -5,6 +5,28 @@
     var nav = menu.parentElement;
     var compact = window.matchMedia('(max-width:1199px)');
     var controls = [];
+    // The rendered upper menu is the shared service list. Keep the static home
+    // overview as a no-JavaScript fallback, and refresh it from that list here.
+    var offered = document.querySelector('.home-service-index');
+    if (offered) {
+        Array.prototype.forEach.call(menu.querySelectorAll('.service-group'), function (group) {
+            var title = group.querySelector('.service-group-title');
+            var target = Array.prototype.filter.call(offered.querySelectorAll('[data-service-group]'), function (section) {
+                return section.getAttribute('data-service-group') === title.textContent.trim();
+            })[0];
+            if (!target) return;
+            var list = target.querySelector('ul');
+            list.textContent = '';
+            Array.prototype.forEach.call(group.querySelectorAll('ul > li > a'), function (link) {
+                var item = document.createElement('li');
+                var copy = document.createElement('a');
+                copy.setAttribute('href', link.getAttribute('href'));
+                copy.textContent = link.textContent;
+                item.appendChild(copy);
+                list.appendChild(item);
+            });
+        });
+    }
     var toggle = document.createElement('button');
     toggle.type = 'button';
     toggle.className = 'navigation-toggle';
@@ -23,6 +45,20 @@
         control.item.classList.remove('is-open');
         control.panel.hidden = true;
     }
+    function fitServicePanel(control) {
+        if (!control.panel.classList.contains('service-groups')) return;
+        if (compact.matches) {
+            control.panel.style.removeProperty('--service-menu-available');
+            control.item.style.removeProperty('--service-menu-offset');
+            return;
+        }
+        var header = nav.closest('header');
+        var offset = header ? Math.max(0, header.getBoundingClientRect().bottom - control.item.getBoundingClientRect().bottom) : 0;
+        control.item.style.setProperty('--service-menu-offset', Math.ceil(offset) + 'px');
+        var cookie = parseFloat(window.getComputedStyle(document.body).getPropertyValue('--cookie-space')) || 0;
+        var height = window.innerHeight - cookie - control.panel.getBoundingClientRect().top - 12;
+        control.panel.style.setProperty('--service-menu-available', Math.max(44, Math.floor(height)) + 'px');
+    }
     function open(control) {
         controls.forEach(function (other) {
             if (other !== control) close(other);
@@ -31,6 +67,7 @@
         control.panel.hidden = false;
         control.button.setAttribute('aria-expanded', 'true');
         control.item.classList.add('is-open');
+        fitServicePanel(control);
     }
     Array.prototype.forEach.call(menu.querySelectorAll('.current-menu-item > a'), function (link) {
         link.setAttribute('aria-current', 'page');
@@ -135,6 +172,13 @@
     });
     if (compact.addEventListener) compact.addEventListener('change', reset);
     else compact.addListener(reset);
+    function fitOpenServicePanel() {
+        controls.forEach(function (control) {
+            if (!control.panel.hidden) fitServicePanel(control);
+        });
+    }
+    window.addEventListener('resize', fitOpenServicePanel);
+    window.addEventListener('scroll', fitOpenServicePanel, {passive:true});
     nav.classList.add('navigation-ready');
     reset();
 }());
