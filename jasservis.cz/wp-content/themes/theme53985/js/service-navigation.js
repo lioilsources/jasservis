@@ -47,6 +47,7 @@
         window.clearTimeout(control.leaveTimer);
         control.hoverOpened = false;
         control.button.setAttribute('aria-expanded', 'false');
+        control.button.setAttribute('aria-label', 'Rozbalit nabídku: ' + control.label);
         control.item.classList.remove('is-open');
         control.panel.hidden = true;
     }
@@ -78,6 +79,7 @@
         window.clearTimeout(control.leaveTimer);
         control.panel.hidden = false;
         control.button.setAttribute('aria-expanded', 'true');
+        control.button.setAttribute('aria-label', 'Zavřít nabídku: ' + control.label);
         control.item.classList.add('is-open');
         fitDropdown(control);
     }
@@ -99,7 +101,7 @@
         button.setAttribute('aria-label', 'Rozbalit nabídku: ' + link.textContent.replace(/\s*⌄\s*$/, ''));
         panel.id = item.id + '-submenu';
         button.setAttribute('aria-controls', panel.id);
-        var control = {item: item, button: button, panel: panel, leaveTimer: null};
+        var control = {item: item, button: button, panel: panel, label: link.textContent.replace(/\s*⌄\s*$/, '').trim(), leaveTimer: null};
         controls.push(control);
         close(control);
         function toggle() {
@@ -112,8 +114,7 @@
             toggle();
         });
         if (link !== button) {
-            // The page itself is the first entry of its submenu, so it is reachable from the
-            // list on any screen; on a phone the label only unfolds, on a desktop it still opens the page.
+            // A label is always a page link; the separate arrow controls its submenu.
             var overview = document.createElement('li');
             overview.className = 'menu-overview';
             var overviewLink = document.createElement('a');
@@ -121,11 +122,6 @@
             overviewLink.textContent = 'Přehled – ' + link.textContent.trim() + ' →';
             overview.appendChild(overviewLink);
             panel.insertBefore(overview, panel.firstChild);
-            link.addEventListener('click', function (event) {
-                if (!compact.matches) return;
-                event.preventDefault();
-                toggle();
-            });
         }
         item.addEventListener('pointerenter', function (event) {
             // Entering the arrow must leave its first click free to open the panel.
@@ -195,6 +191,8 @@
         window.visualViewport.addEventListener('resize', fitOpenDropdowns);
         window.visualViewport.addEventListener('scroll', fitOpenDropdowns, {passive:true});
     }
+    // Safari may restore an expanded menu from the back/forward cache.
+    window.addEventListener('pageshow', function (event) { if (event.persisted) reset(); });
     nav.classList.add('navigation-ready');
     reset();
 }());

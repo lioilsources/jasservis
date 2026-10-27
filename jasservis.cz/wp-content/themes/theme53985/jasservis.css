@@ -829,3 +829,23 @@ body:has(.contact-booking-panel[open]) { overflow:hidden; }
     .contact-booking-panel { padding:18px; }
     .contact-booking-panel__cards { grid-template-columns:minmax(0,1fr); gap:12px; }
 }
+
+/* Shared compact navigation: centered control, full-width lists, independent page links. */
+@media (max-width:1199px) {
+    .header .nav__primary .navigation-toggle { margin:4px auto; text-align:center; justify-content:center; max-width:100%; }
+    .header .nav__primary #topnav { width:100%; margin-left:0; margin-right:0; }
+    .header .nav__primary #topnav a { overflow-wrap:anywhere; }
+    .header .nav__primary #topnav > li > .submenu-toggle { border-left:1px solid #ffffff40; border-radius:0; }
+    .header .nav__primary #topnav > li > .submenu-toggle:focus-visible,
+    .header .nav__primary .navigation-toggle:focus-visible { outline:3px solid #ffad93; outline-offset:2px; }
+}
+/* Keep the complete dialog usable within a changing mobile visual viewport. */
+.contact-booking-panel { max-height:calc(var(--contact-viewport-height,100vh) - 32px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px)); overscroll-behavior:contain; -webkit-overflow-scrolling:touch; }
+.contact-booking-panel__header { position:sticky; top:0; z-index:1; background:#fff; padding-bottom:12px; }
+.contact-booking-panel__header h2 { min-height:44px; display:flex; align-items:center; margin-bottom:0; }
+.contact-booking-panel__header .contact-booking-panel__close { top:0; right:0; }
+.contact-booking-panel__phone { display:block; margin:6px 0; user-select:text; -webkit-user-select:text; }
+@media (max-width:767px) {
+    .contact-booking-panel { padding:max(18px,env(safe-area-inset-top,0px)) max(18px,env(safe-area-inset-right,0px)) max(18px,env(safe-area-inset-bottom,0px)) max(18px,env(safe-area-inset-left,0px)); }
+}
+.contact-booking-panel__phone:focus-visible { outline:3px solid #125b9a; outline-offset:3px; }
