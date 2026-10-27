@@ -386,7 +386,7 @@ body { font-weight: normal;}
 .specializovana-diagnostika .diagnostika-dvojice > * {min-width:0;}
 .specializovana-diagnostika .diagnostika-dvojice figure {max-width:none;margin:0;}
 .specializovana-diagnostika .diagnostika-dvojice h3:first-child {margin-top:0;}
-.specializovana-diagnostika .diagnostika-uvod {align-items:center;}
+.specializovana-diagnostika .diagnostika-uvod {align-items:start;margin-top:0;}
 .specializovana-diagnostika .diagnosticka-metoda {border-top:1px solid #ddd;padding-top:28px;margin-top:32px;}
 .specializovana-diagnostika .diagnosticka-metoda > h2 {margin-top:0;}
 .specializovana-diagnostika h2 {font-size:28px;}
@@ -421,6 +421,33 @@ body { font-weight: normal;}
 @media (max-width:767px) {
     .specializovana-diagnostika .endoskopie-fotografie {grid-template-columns:minmax(0,1fr);gap:20px;}
     .specializovana-diagnostika .endoskopie-fotografie img {max-height:440px;}
+}
+
+/* Page-only readable typography; rem units follow the reader's root text size. */
+.specializovana-stranka #content {padding-top:1.5rem;}
+.specializovana-diagnostika {color:#333;font-weight:400;opacity:1;}
+.specializovana-diagnostika .diagnostika-uvod p {font-size:1.25rem;line-height:1.6;color:#333;font-weight:400;opacity:1;}
+.specializovana-diagnostika .rozbalovaci__obsah {font-size:1.125rem;line-height:1.6;color:#333;font-weight:400;opacity:1;}
+.specializovana-diagnostika .rozbalovaci__obsah p,
+.specializovana-diagnostika .rozbalovaci__obsah ul,
+.specializovana-diagnostika .rozbalovaci__obsah li {font-size:inherit;line-height:1.6;color:#333;font-weight:400;opacity:1;}
+.specializovana-diagnostika .rozbalovaci__obsah p,
+.specializovana-diagnostika .rozbalovaci__obsah ul {margin:0 0 1rem;}
+.specializovana-diagnostika .rozbalovaci__obsah ul {padding-left:1.25em;}
+.specializovana-diagnostika .rozbalovaci__obsah h3,
+.specializovana-diagnostika .rozbalovaci__obsah h4 {font-size:1.5rem;line-height:1.35;font-weight:600;text-transform:none;margin:1.5rem 0 .75rem;color:#333;}
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary {padding:1rem 3rem 1rem 1.125rem;}
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary h2 {font-size:1.375rem;line-height:1.4;font-weight:600 !important;white-space:normal;}
+.specializovana-diagnostika figcaption {font-size:1rem;line-height:1.6;color:#333;font-weight:400;opacity:1;margin-top:.5rem;}
+.specializovana-diagnostika .rozbalovaci__obsah figcaption {font-size:1rem;}
+.specializovana-diagnostika .diagnostika-dvojice {gap:1.75rem;margin-top:1.25rem;margin-bottom:1.5rem;}
+.specializovana-diagnostika .diagnostika-uvod {margin-top:0;}
+@media (max-width:767px) {
+    .specializovana-stranka #content {padding-top:1rem;}
+    .specializovana-diagnostika .diagnostika-uvod p {font-size:1.125rem;}
+    .specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary h2 {font-size:1.25rem;}
+    .specializovana-diagnostika .rozbalovaci__obsah h3,
+    .specializovana-diagnostika .rozbalovaci__obsah h4 {font-size:1.375rem;}
 }
 </style>
 </head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-2135">
@@ -552,7 +579,7 @@ body { font-weight: normal;}
 
 			</div>
 
-		</header><div class="motopress-wrapper content-holder clearfix">
+		</header><div class="motopress-wrapper content-holder clearfix specializovana-stranka">
 
 	<div class="container">
 
@@ -606,15 +633,15 @@ body { font-weight: normal;}
 <summary><h2>Endoskopie</h2></summary>
 <div class="rozbalovaci__obsah">
 <h3>Endoskopická kontrola motoru a obtížně přístupných součástí</h3>
-<p>Endoskopie umožňuje prohlédnout vnitřní prostory a součásti, které nejsou při běžné vizuální kontrole přístupné. Pomocí kamerové sondy získáváme obraz kontrolovaného místa a podle konstrukce vozidla můžeme omezit rozsah demontáže potřebné k prvotnímu posouzení závady.</p>
+<p>Endoskopie umožňuje prohlédnout vnitřní prostory a součásti, které nejsou při běžné vizuální kontrole přístupné. Používáme kamerový systém s ovládáním směru pohledu sondy v rozsahu 360°. Podle konstrukce vozidla tak můžeme omezit rozsah demontáže potřebné k prvotnímu posouzení závady.</p>
 <div class="endoskopie-fotografie">
 <figure>
 <a href="../wp-content/uploads/2026/10/endoskop-kontrola-vyfukoveho-systemu.jpg"><img src="../wp-content/uploads/2026/10/endoskop-kontrola-vyfukoveho-systemu.jpg" width="1280" height="1707" alt="Endoskop při kontrole výfukového systému vozidla v J&amp;S SERVIS." loading="lazy" decoding="async" /></a>
 <figcaption>Endoskopická kontrola obtížně přístupné části výfukového systému.</figcaption>
 </figure>
 <figure>
-<a href="../wp-content/uploads/2026/10/kamerovy-endoskop-se-sondou.jpg"><img src="../wp-content/uploads/2026/10/kamerovy-endoskop-se-sondou.jpg" width="1280" height="960" alt="Kamerový endoskop se sondou na servisním vozíku J&amp;S SERVIS." loading="lazy" decoding="async" /></a>
-<figcaption>Kamerový endoskop se sondou pro kontrolu obtížně přístupných míst.</figcaption>
+<a href="../wp-content/uploads/2026/10/kamerovy-endoskop-se-sondou.jpg"><img src="../wp-content/uploads/2026/10/kamerovy-endoskop-se-sondou.jpg" width="1280" height="960" alt="Kamerový systém se sondou ovladatelnou v rozsahu 360° na servisním vozíku J&amp;S SERVIS." loading="lazy" decoding="async" /></a>
+<figcaption>Kamerový systém s ovládáním směru pohledu sondy v rozsahu 360° pro kontrolu obtížně přístupných míst.</figcaption>
 </figure>
 </div>
 <h4>Co lze endoskopem kontrolovat?</h4>
@@ -634,10 +661,11 @@ body { font-weight: normal;}
 </div>
 </details>
 <details class="rozbalovaci" id="mikroskopicka-kontrola-oleje">
-<summary><h2>Mikroskopie</h2></summary>
+<summary><h2>Mikroskopická kontrola provozních kapalin</h2></summary>
 <div class="rozbalovaci__obsah">
-<h3>Mikroskopická kontrola motorového oleje</h3>
-<p>Vyšetření vzorků použitého motorového oleje na přítomnost pevných nečistot se zaměřením na částice podezřelé z karbonového původu.</p>
+<h3>Mikroskopická kontrola provozních kapalin</h3>
+<p>Mikroskopickou kontrolou vzorků provozních kapalin posuzujeme přítomnost a vzhled pevných částic a nečistot. Nález vyhodnocujeme v souvislosti s druhem kapaliny, místem odběru a projevy závady. Kontrola slouží jako doplňkový podklad pro další diagnostický postup.</p>
+<h4>Ukázka z praxe: kontrola použitého motorového oleje z motoru 1.4 TSI</h4>
 <div class="diagnostika-dvojice">
 <figure>
 <a href="../wp-content/uploads/2026/10/mikroskopicka-kontrola-oleje.jpg">
@@ -646,9 +674,9 @@ body { font-weight: normal;}
 <figcaption>Kontrola vzorku použitého motorového oleje 1.4 TSI v J&amp;S SERVIS.</figcaption>
 </figure>
 <div>
-<p>Na fotografii je kontrola vzorku oleje z motoru 1.4 TSI. Pomocí optického mikroskopu s digitálním zobrazením posuzujeme vzhled, tvar a zastoupení pozorovaných částic.</p>
-<p>Výsledek slouží jako doplňující podklad při hledání příčin znečištění oleje a podezření na opotřebení motoru. Nález hodnotíme společně s provozními potížemi vozidla, nájezdem oleje, servisní historií a výsledky dalších kontrol.</p>
-<p>Samotná přítomnost částic automaticky neznamená poškození motoru. K jednoznačnému určení jejich složení a původu může být nutné navazující laboratorní vyšetření.</p>
+<p>Na fotografii je kontrola vzorku použitého motorového oleje pomocí mikroskopu s digitálním zobrazením. Sledujeme vzhled a zastoupení pozorovaných pevných částic a nečistot.</p>
+<p>Nález posuzujeme společně s provozními potížemi vozidla a výsledky dalších kontrol. Samotná přítomnost částic nestačí k jednoznačnému určení příčiny závady.</p>
+<p>Samotný mikroskopický obraz neumožňuje spolehlivě určit chemické složení částic ani jejich přesný původ. Mikroskopická kontrola nenahrazuje laboratorní rozbor kapaliny.</p>
 </div>
 </div>
 
