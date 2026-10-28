@@ -1,0 +1,50 @@
+
+/* Pouze stránka Volkswagen. */
+.brand-service-page .breadcrumb.breadcrumb__t{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0;margin-top:10px;font-size:.875rem;line-height:1.6;font-weight:400}
+.brand-service-page .breadcrumb.breadcrumb__t li,.brand-service-page .breadcrumb.breadcrumb__t a{font-size:inherit;font-weight:400;text-shadow:none;text-transform:none}
+.brand-service-page .breadcrumb.breadcrumb__t .divider{margin:0 10px;padding:0;border:0;background:none;width:auto;height:auto;font-size:inherit;line-height:inherit}
+.brand-service-page .breadcrumb.breadcrumb__t .divider:before{content:none}
+.brand-service-page .breadcrumb.breadcrumb__t .divider:after{content:'|';font-weight:400;font-size:inherit;line-height:inherit}
+
+.brand-service-content .vw-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start;margin-bottom:20px}
+.brand-service-content .vw-intro img{display:block;width:100%;height:auto}
+.brand-service-content .vw-intro p:first-child{margin-top:0}
+.brand-service-content .vw-price{margin:0 0 24px;padding:20px;border:1px solid #9a9a9a;border-radius:4px;background:#f5f5f5}
+.brand-service-content .vw-price h2{font-size:1.375rem;line-height:1.4;margin:0 0 12px;font-weight:700}
+.brand-service-content .vw-price p:last-child{margin-bottom:0}
+.brand-service-content .brand-expertise{display:block}
+.brand-service-content .vw-accordion{box-sizing:border-box;min-width:0;margin:0 0 14px;border:1px solid #9a9a9a;border-radius:4px;background:#fff}
+.brand-service-content .vw-accordion>summary{position:relative;display:block;list-style:none;padding:16px 52px 16px 20px;background:var(--js-card);color:#fff;cursor:pointer;border-radius:3px;min-height:44px;box-sizing:border-box}
+.brand-service-content .vw-accordion>summary::-webkit-details-marker{display:none}
+.brand-service-content .vw-accordion>summary:after{content:'';position:absolute;right:22px;top:50%;width:9px;height:9px;margin-top:-7px;border-right:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(45deg)}
+.brand-service-content .vw-accordion[open]>summary:after{transform:rotate(225deg);margin-top:-2px}
+.brand-service-content .vw-accordion>summary h2{display:inline;margin:0;color:#fff;font-size:1.375rem;line-height:1.4;font-weight:700;text-transform:none}
+.brand-service-content .vw-accordion>summary h2 strong{font-weight:700;color:#fff}
+.brand-service-content .vw-accordion>summary:focus-visible{outline:3px solid #333;outline-offset:3px}
+.brand-service-content .vw-accordion__body{padding:20px;color:#333;font-size:1.125rem;line-height:1.6}
+.brand-service-content .vw-accordion__body p:last-child{margin-bottom:0}
+.brand-service-content .js-brand-models{clear:both;width:100%}
+.brand-service-content .js-brand-models__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 16px;margin:0 0 16px;padding:0;list-style:none}
+.brand-service-content .js-brand-models__grid li{min-width:0;margin:0;padding:10px;background:#f5f5f5;overflow-wrap:anywhere}
+.brand-service-content .js-brand-models__note{margin:0}
+.brand-service-content .vw-final{margin:24px 0 0}
+@media(max-width:767px){.brand-service-content .vw-intro{grid-template-columns:minmax(0,1fr);gap:16px}.brand-service-content .vw-accordion>summary{padding:14px 44px 14px 16px}.brand-service-content .vw-accordion>summary h2{font-size:1.25rem}.brand-service-content .vw-accordion__body{padding:16px}.brand-service-content .js-brand-models__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:420px){.brand-service-content .js-brand-models__grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Page-specific fluid containers; preserve shared header behavior and page content. */
+.brand-service-page .header>.container,.brand-service-page .content-holder>.container,.brand-service-page .footer>.container{box-sizing:border-box;width:calc(100% - 64px);max-width:1440px;margin-left:auto;margin-right:auto}
+.brand-service-page .header>.container>.row,.brand-service-page .content-holder>.container>.row,.brand-service-page .footer>.container>.row,.brand-service-page .content-holder .row{margin-left:0;margin-right:0}
+.brand-service-page .header>.container>.row>.span12,.brand-service-page .content-holder .row>.span12,.brand-service-page .footer>.container>.row>.span12{width:100%;min-width:0;margin-left:0;box-sizing:border-box}
+.brand-service-content{font-size:1.125rem;line-height:1.6;color:#333}
+.brand-service-content .vw-intro p,.brand-service-content .vw-price p,.brand-service-content .vw-final p,.brand-service-content .vw-accordion__body p{max-width:75ch}
+.brand-service-content .vw-accordion__body>p{margin-top:0}
+@media(min-width:768px){.brand-service-page .header,.brand-service-page .footer,.brand-service-page .content-holder{padding-left:0;padding-right:0}}
+@media(min-width:1200px){.brand-service-page .header .header_block_2 .logo{margin-left:0;width:280px}}
+@media(min-width:1200px){.brand-service-content .brand-expertise .vw-accordion__body{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 32px;align-items:start}.brand-service-content .brand-expertise .vw-accordion__body p{margin:0}.brand-service-content .brand-expertise .vw-accordion__body p:only-child{grid-column:1 / -1}}
+@media(min-width:1600px){.brand-service-page .header>.container,.brand-service-page .content-holder>.container,.brand-service-page .footer>.container{width:90%}}
+@media(max-width:767px){.brand-service-page .header,.brand-service-page .footer,.brand-service-page .content-holder{padding-left:16px;padding-right:16px}.brand-service-page .header>.container,.brand-service-page .content-holder>.container,.brand-service-page .footer>.container{width:100%;max-width:none}}
+
+.brand-service-content .vw-price strong{font-weight:700}
+.brand-service-content .vw-accordion__body ul{max-width:75ch}
+
+@media(min-width:1200px){.brand-service-content .brand-expertise .vw-accordion__body:has(ul){display:block}}
