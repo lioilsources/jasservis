@@ -4,6 +4,7 @@
     if (!menu) return;
     var nav = menu.parentElement;
     var compact = window.matchMedia('(max-width:1199px)');
+    var canHover = window.matchMedia('(hover:hover) and (pointer:fine)');
     var controls = [];
     var arrangingHeader = false;
     function isCompactMenu() { return compact.matches && !nav.classList.contains('short-header-full-nav'); }
@@ -129,12 +130,12 @@
             // Entering the arrow must leave its first click free to open the panel.
             // Entering the label (or the whole Recenze tile) opens the desktop menu on hover.
             var pointed = document.elementFromPoint(event.clientX, event.clientY);
-            if (event.pointerType !== 'mouse' || isCompactMenu()) return;
+            if (!canHover.matches || event.pointerType !== 'mouse' || isCompactMenu()) return;
             if (link === button) { if (panel.hidden) { open(control); control.hoverOpened = true; } }
             else if (!(pointed && button.contains(pointed))) open(control);
         });
         item.addEventListener('pointerleave', function (event) {
-            if (event.pointerType !== 'mouse' || isCompactMenu()) return;
+            if (!canHover.matches || event.pointerType !== 'mouse' || isCompactMenu()) return;
             control.leaveTimer = window.setTimeout(function () {
                 if (!item.contains(document.activeElement)) close(control);
             }, 200);
