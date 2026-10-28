@@ -4,10 +4,11 @@
     if (!menu) return;
     var nav = menu.parentElement;
     var compact = window.matchMedia('(max-width:1199px)');
+    var tablet = window.matchMedia('(min-width:768px) and (max-width:1199px) and (min-height:501px), (min-width:1200px) and (max-width:1399px) and (min-height:501px) and (any-pointer:coarse)');
     var canHover = window.matchMedia('(hover:hover) and (pointer:fine)');
     var controls = [];
     var arrangingHeader = false;
-    function isCompactMenu() { return compact.matches && !nav.classList.contains('short-header-full-nav'); }
+    function isCompactMenu() { return (compact.matches || tablet.matches) && !nav.classList.contains('short-header-full-nav'); }
     // The rendered upper menu is the shared service list. Keep the static home
     // overview as a no-JavaScript fallback, and refresh it from that list here.
     var offered = document.querySelector('.home-service-index');
@@ -183,8 +184,12 @@
         if (open) { close(open); open.button.focus(); }
         else if (isCompactMenu() && !menu.hidden) { menu.hidden = true; syncToggle(); toggle.focus(); }
     });
-    if (compact.addEventListener) compact.addEventListener('change', reset);
-    else compact.addListener(reset);
+    function onNavigationBreakpoint() {
+        if (!tablet.matches && !shortLandscape.matches) reset();
+        arrangeShortHeader();
+    }
+    if (compact.addEventListener) compact.addEventListener('change', onNavigationBreakpoint);
+    else compact.addListener(onNavigationBreakpoint);
     function fitOpenDropdowns() {
         controls.forEach(function (control) {
             if (!control.panel.hidden) fitDropdown(control);
@@ -210,48 +215,54 @@
         var moved = false;
         var wasFull = nav.classList.contains('short-header-full-nav');
         var wasHidden = menu.hidden;
-        if (shortLandscape.matches) {
-            if (!landscapeRow) {
-                landscapeRow = document.createElement('div');
-                landscapeRow.className = 'landscape-nav-row';
-                nav.insertBefore(landscapeRow, menu);
-                landscapeRow.appendChild(logo);
-                landscapeRow.appendChild(toggle);
-                moved = true;
-            }
-            // Measure the real labels and 44px arrow buttons without changing fonts.
-            nav.classList.add('measuring-short-nav');
-            menu.hidden = false;
-            var needed = menu.getBoundingClientRect().width;
-            var available = landscapeRow.clientWidth - logo.getBoundingClientRect().width - 16;
-            nav.classList.remove('measuring-short-nav');
-            var fits = needed <= available;
-            nav.classList.toggle('short-header-full-nav', fits);
-            if (fits && menu.parentElement !== landscapeRow) {
-                landscapeRow.appendChild(menu);
-                moved = true;
-            } else if (!fits && menu.parentElement === landscapeRow) {
-                nav.insertBefore(menu, landscapeRow.nextSibling);
-                moved = true;
-            }
-            menu.hidden = fits ? false : (wasFull ? controls.every(function (control) { return control.panel.hidden; }) : wasHidden);
-        } else if (landscapeRow) {
+        if (shortLandscape.matches && !landscapeRow) {
+            landscapeRow = document.createElement('div');
+            landscapeRow.className = 'landscape-nav-row';
+            nav.insertBefore(landscapeRow, menu);
+            landscapeRow.appendChild(logo);
+            landscapeRow.appendChild(toggle);
+            moved = true;
+        } else if (!shortLandscape.matches && landscapeRow) {
             logoHome.parentNode.insertBefore(logo, logoHome.nextSibling);
             if (menu.parentElement === landscapeRow) nav.insertBefore(menu, landscapeRow.nextSibling);
             nav.insertBefore(toggle, menu);
             landscapeRow.remove();
             landscapeRow = null;
-            nav.classList.remove('short-header-full-nav');
-            if (wasFull) menu.hidden = compact.matches && controls.every(function (control) { return control.panel.hidden; });
             moved = true;
+        }
+        nav.classList.toggle('tablet-navigation', tablet.matches);
+        if (shortLandscape.matches || tablet.matches) {
+            // Measure actual labels and original touch areas, rather than device names.
+            nav.classList.add('measuring-short-nav');
+            menu.hidden = false;
+            var needed = menu.getBoundingClientRect().width;
+            var available = shortLandscape.matches ? landscapeRow.clientWidth - logo.getBoundingClientRect().width - 16 : nav.clientWidth;
+            nav.classList.remove('measuring-short-nav');
+            var fits = needed <= available;
+            nav.classList.toggle('short-header-full-nav', fits);
+            if (shortLandscape.matches && fits && menu.parentElement !== landscapeRow) {
+                landscapeRow.appendChild(menu);
+                moved = true;
+            } else if (landscapeRow && !fits && menu.parentElement === landscapeRow) {
+                nav.insertBefore(menu, landscapeRow.nextSibling);
+                moved = true;
+            }
+            menu.hidden = fits ? false : (wasFull ? controls.every(function (control) { return control.panel.hidden; }) : wasHidden);
+        } else {
+            nav.classList.remove('short-header-full-nav');
+            if (!compact.matches) menu.hidden = false;
+            else if (wasFull) menu.hidden = controls.every(function (control) { return control.panel.hidden; });
         }
         if (menu.hidden) controls.forEach(close);
         syncToggle();
         fitOpenDropdowns();
-        if (moved && focused === toggle && !isCompactMenu()) menu.querySelector('a, button').focus({preventScroll: true});
-        else if (moved && focused && focused.isConnected && (focused === toggle || logo.contains(focused) || (!menu.hidden && menu.contains(focused)))) focused.focus({preventScroll: true});
+        var restoreFocus = moved || document.activeElement !== focused;
+        if (restoreFocus && focused === toggle && !isCompactMenu()) menu.querySelector('a, button').focus({preventScroll: true});
+        else if (restoreFocus && focused && focused.isConnected && (focused === toggle || logo.contains(focused) || (!menu.hidden && menu.contains(focused)))) focused.focus({preventScroll: true});
         arrangingHeader = false;
     }
+    if (tablet.addEventListener) tablet.addEventListener('change', arrangeShortHeader);
+    else tablet.addListener(arrangeShortHeader);
     if (shortLandscape.addEventListener) shortLandscape.addEventListener('change', arrangeShortHeader);
     else shortLandscape.addListener(arrangeShortHeader);
     window.addEventListener('resize', arrangeShortHeader);
