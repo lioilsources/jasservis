@@ -48,3 +48,6 @@
 .brand-service-content .vw-accordion__body ul{max-width:75ch}
 
 @media(min-width:1200px){.brand-service-content .brand-expertise .vw-accordion__body:has(ul){display:block}}
+
+.brand-service-page .breadcrumb.breadcrumb__t{row-gap:4px}
+.brand-service-page .breadcrumb.breadcrumb__t li{max-width:100%;overflow-wrap:break-word}
