@@ -1,0 +1,37 @@
+/* Scoped visual refinements; page content and shared header are unchanged. */
+#post-2272 .autoservis-brand-grid-title{display:block;width:100%;box-sizing:border-box;text-align:center;color:#111111;font-weight:600!important;margin:0 0 18px}
+#post-2272 .autoservis-brand-grid-title strong{color:#111111;font-weight:600!important}
+/* Rectangles on the homepage only. Compensate the original 2px tile border. */
+#post-203 .home-service-cards .service-box.style_1{border:1px solid #333333;padding:23px}
+#post-203 .home-offered-services .home-service-index .home-service-group{border:1px solid #333333}
+#post-203 .home-offered-services .home-service-index details>summary{border:0}
+#post-203 .home-offered-services .home-service-index details[open]>summary{border-bottom:1px solid #333333}
+#post-203 .home-offered-services .home-service-brands a,
+#post-203 .home-offered-services .home-service-brands a:hover,
+#post-203 .home-offered-services .home-service-brands a:focus-visible,
+#post-203 .home-offered-services .home-service-general a,
+#post-203 .home-offered-services .home-service-general a:hover,
+#post-203 .home-offered-services .home-service-general a:focus-visible{border:1px solid #333333}
+/* The two diagnostic pages share post-2135 in the static export. */
+:is(#post-2135,#post-ev-brzdy,#post-2703) details.rozbalovaci{box-sizing:border-box;margin:0 0 14px;border:1px solid #333333;border-radius:4px;background:#fff}
+:is(#post-2135,#post-ev-brzdy,#post-2703) details.rozbalovaci>summary{position:relative;display:block;list-style:none;box-sizing:border-box;min-height:44px;padding:16px 52px 16px 20px;background:var(--js-card);color:#fff;border:0;border-radius:3px;cursor:pointer}
+:is(#post-2135,#post-ev-brzdy,#post-2703) details.rozbalovaci>summary::-webkit-details-marker{display:none}
+:is(#post-2135,#post-ev-brzdy,#post-2703) details.rozbalovaci>summary:before{content:none}
+:is(#post-2135,#post-ev-brzdy,#post-2703) details.rozbalovaci>summary:after{content:'';position:absolute;right:22px;top:50%;width:9px;height:9px;margin:-7px 0 0;border:0;border-right:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(45deg);font-size:0;line-height:0;color:#fff}
+:is(#post-2135,#post-ev-brzdy,#post-2703) details.rozbalovaci[open]>summary:after{transform:rotate(225deg);margin-top:-2px}
+:is(#post-2135,#post-ev-brzdy,#post-2703) details.rozbalovaci>summary :is(h2,h3),
+:is(#post-2135,#post-ev-brzdy,#post-2703) details.rozbalovaci[open]>summary :is(h2,h3),
+:is(#post-2135,#post-ev-brzdy,#post-2703) details.rozbalovaci>summary:hover :is(h2,h3),
+:is(#post-2135,#post-ev-brzdy,#post-2703) details.rozbalovaci>summary:focus-visible :is(h2,h3){margin:0;color:#fff;font-size:1.375rem;line-height:1.4;font-weight:600!important;text-align:left;text-transform:none;white-space:normal;overflow-wrap:break-word}
+:is(#post-2135,#post-ev-brzdy,#post-2703) details.rozbalovaci>summary:focus-visible{outline:3px solid #333333;outline-offset:3px}
+:is(#post-2135,#post-ev-brzdy,#post-2703) details.rozbalovaci>.rozbalovaci__obsah{padding:20px;background:#fff;color:#333;border-top:0}
+:is(#post-2135,#post-ev-brzdy,#post-2703) details.rozbalovaci>.rozbalovaci__obsah>:first-child{margin-top:0}
+:is(#post-2135,#post-ev-brzdy,#post-2703) details.rozbalovaci>.rozbalovaci__obsah>:last-child{margin-bottom:0}
+#post-14 .kontakt-prehled .kontakt-prehled__uvod{color:#111111;font-weight:600}
+@media(max-width:1199px){#post-203 .home-service-cards .service-box.style_1{padding:19px 15px}}
+@media(max-width:767px){
+ #post-203 .home-service-cards .service-box.style_1{padding:15px 17px}
+ :is(#post-2135,#post-ev-brzdy,#post-2703) details.rozbalovaci>summary{padding:14px 44px 14px 16px}
+ :is(#post-2135,#post-ev-brzdy,#post-2703) details.rozbalovaci>summary :is(h2,h3){font-size:1.25rem!important}
+ :is(#post-2135,#post-ev-brzdy,#post-2703) details.rozbalovaci>.rozbalovaci__obsah{padding:16px}
+}

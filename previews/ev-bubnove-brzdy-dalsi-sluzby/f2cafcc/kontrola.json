@@ -1,0 +1,96 @@
+{
+  "source_commit": "f2cafcc3532b1ccacd8d8c97a47c161966fd60f2",
+  "checks": [
+    {
+      "width": 1440,
+      "intro": [
+        {
+          "fontSize": "20px",
+          "lineHeight": "28px",
+          "color": "rgb(61, 61, 61)",
+          "fontFamily": "Ubuntu",
+          "width": 570
+        },
+        {
+          "fontSize": "17px",
+          "lineHeight": "28.05px",
+          "color": "rgb(61, 61, 61)",
+          "fontFamily": "Ubuntu",
+          "width": 570
+        },
+        {
+          "fontSize": "17px",
+          "lineHeight": "28.05px",
+          "color": "rgb(61, 61, 61)",
+          "fontFamily": "Ubuntu",
+          "width": 570
+        }
+      ],
+      "caption": {
+        "text": "Servis zadní bubnové brzdy elektromobilu Škoda Enyaq s využitím speciálního nastavovacího přípravku řady T10635.",
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "color": "rgb(85, 85, 85)"
+      },
+      "photo": {
+        "width": 570,
+        "height": 428,
+        "naturalWidth": 1280,
+        "naturalHeight": 960,
+        "source": "http://127.0.0.1:8768/wp-content/uploads/2026/10/enyaq-zadni-bubnova-brzda.webp",
+        "alt": "Zadní bubnová brzda Škoda Enyaq při odborném servisu v J&S SERVIS – kontrola a nastavení brzdového mechanismu."
+      },
+      "h1": 1,
+      "blocks": 4,
+      "keyboard_and_mouse": true,
+      "navigation": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "intro": [
+        {
+          "fontSize": "19px",
+          "lineHeight": "26.6px",
+          "color": "rgb(61, 61, 61)",
+          "fontFamily": "Ubuntu",
+          "width": 350
+        },
+        {
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(61, 61, 61)",
+          "fontFamily": "Ubuntu",
+          "width": 350
+        },
+        {
+          "fontSize": "16px",
+          "lineHeight": "25.6px",
+          "color": "rgb(61, 61, 61)",
+          "fontFamily": "Ubuntu",
+          "width": 350
+        }
+      ],
+      "caption": {
+        "text": "Servis zadní bubnové brzdy elektromobilu Škoda Enyaq s využitím speciálního nastavovacího přípravku řady T10635.",
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "color": "rgb(85, 85, 85)"
+      },
+      "photo": {
+        "width": 350,
+        "height": 263,
+        "naturalWidth": 1280,
+        "naturalHeight": 960,
+        "source": "http://127.0.0.1:8768/wp-content/uploads/2026/10/enyaq-zadni-bubnova-brzda.webp",
+        "alt": "Zadní bubnová brzda Škoda Enyaq při odborném servisu v J&S SERVIS – kontrola a nastavení brzdového mechanismu."
+      },
+      "h1": 1,
+      "blocks": 4,
+      "keyboard_and_mouse": true,
+      "navigation": true,
+      "overflow": false
+    }
+  ],
+  "original_sha256": "b53bf5f87cedde7c8c31f71a1e17eaa6e7ee1c0c014e49e6fc02c642078e2425"
+}
