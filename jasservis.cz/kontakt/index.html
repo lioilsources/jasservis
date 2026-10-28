@@ -312,9 +312,50 @@ body { font-weight: normal;}
 
 	</script>
 
-<script defer src="../wp-content/themes/theme53985/js/service-navigation.js?v=20261027-services-v2"></script>
+<script defer src="../wp-content/themes/theme53985/js/service-navigation.js?v=20261028-two-bands-v2"></script>
+<script defer src="../wp-content/themes/theme53985/js/contact-actions.js?v=20261027-iphone-v1"></script>
 <script defer src="../wp-content/themes/theme53985/js/cookie-preferences.js"></script>
-<link rel="stylesheet" href="../wp-content/themes/theme53985/jasservis.css?v=20261027-services-v6" />
+<link rel="stylesheet" href="../wp-content/themes/theme53985/jasservis.css?v=20261028-compact-booking-v1" />
+<style id="kontakt-prehled-styles">
+#post-14 .kontakt-prehled {max-width:1000px;margin:0 auto;color:#333;font-size:1.125rem;line-height:1.6;}
+#post-14 .kontakt-prehled__uvod {margin:0 0 20px;font-size:1.25rem;line-height:1.5;}
+#post-14 .kontakt-prehled__karty {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-bottom:20px;align-items:start;}
+#post-14 .kontakt-prehled__karta,
+#post-14 .kontakt-prehled__udaje {box-sizing:border-box;min-width:0;border:1px solid #9a9a9a;border-radius:4px;background:#fff;padding:22px;}
+#post-14 .kontakt-prehled h2 {margin:0 0 14px;text-align:left;text-transform:uppercase;color:#333;font-size:1.25rem;line-height:1.35;font-weight:700 !important;}
+#post-14 .kontakt-prehled p {font-size:inherit;line-height:inherit;margin:0 0 12px;}
+#post-14 .kontakt-prehled .kontakt-prehled__uvod {font-size:1.25rem;line-height:1.5;margin-bottom:20px;}
+#post-14 .kontakt-prehled a {overflow-wrap:break-word;}
+#post-14 .kontakt-prehled__karta > p > a {color:#333;text-decoration:none;}
+#post-14 .kontakt-prehled__karta > p > a:hover {text-decoration:underline;}
+#post-14 .kontakt-prehled .kontakt-prehled__tel {display:inline-block;font-size:1.875rem;line-height:1.35;font-weight:600;white-space:nowrap;}
+#post-14 .kontakt-prehled__akce {display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;}
+#post-14 .kontakt-prehled .kontakt-prehled__tlacitko,
+#post-14 .kontakt-prehled__kopie {display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:44px;max-width:100%;padding:10px 18px;border:1px solid var(--js-card);border-radius:4px;background:var(--js-card);color:#fff;font:inherit;font-size:1rem;line-height:1.5;font-weight:700;text-decoration:none;cursor:pointer;}
+#post-14 .kontakt-prehled__kopie {border-color:#9a9a9a;background:#fff;color:#333;font-weight:400;}
+#post-14 .kontakt-prehled .kontakt-prehled__tlacitko:hover {background:#a83c18;color:#fff;}
+#post-14 .kontakt-prehled__kopie:hover {background:#f2f2f2;}
+#post-14 .kontakt-prehled :focus-visible {outline:3px solid #333;outline-offset:3px;}
+#post-14 .kontakt-prehled .kontakt-prehled__stav {margin:8px 0 0;font-size:1rem;line-height:1.5;}
+#post-14 .kontakt-prehled__stav:empty {margin:0;}
+#post-14 .kontakt-prehled__udaje {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;}
+#post-14 .kontakt-prehled address {margin:0 0 16px;font:inherit;font-style:normal;}
+#post-14 .kontakt-prehled__udaje p:last-child {margin-bottom:0;}
+#post-14 .kontakt-prehled .kontakt-prehled__facebook {margin:16px 0;font-size:1rem;}
+#post-14 .kontakt-prehled__facebook a {color:#333;}
+#post-14 .kontakt-prehled__mapa {margin-top:20px;}
+#post-14 .kontakt-prehled__mapa iframe {max-width:100%;width:100%;}
+#post-14 .kontakt-prehled [hidden] {display:none !important;}
+#post-14 .kontakt-prehled__sr {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+@media (max-width:767px) {
+    #post-14 .kontakt-prehled__karty,
+    #post-14 .kontakt-prehled__udaje {grid-template-columns:minmax(0,1fr);gap:16px;}
+    #post-14 .kontakt-prehled__karta,
+    #post-14 .kontakt-prehled__udaje {padding:16px;}
+    #post-14 .kontakt-prehled .kontakt-prehled__tel {font-size:1.625rem;}
+    #post-14 .kontakt-prehled .kontakt-prehled__uvod {font-size:1.125rem;}
+}
+</style>
 </head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-14">
 
 	<div id="motopress-main" class="main-holder">
@@ -342,7 +383,7 @@ body { font-weight: normal;}
 		<div class="span6">
 			<div class="header_widget_2" data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="header-sidebar-2">
 				<div id="custom_html-3" class="widget_text visible-all-devices "><div class="textwidget custom-html-widget"><div class="header_widget_2" data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="header-sidebar-2">
-				<div id="text-8"><div class="textwidget"><details class="mobile-call"><summary>Zavolat a objednat servis</summary><a href="tel:+420605399448">Kancelář <span>+420&nbsp;605&nbsp;399&nbsp;448</span></a><a href="tel:+420608313437">Servis <span>+420&nbsp;608&nbsp;313&nbsp;437</span></a></details><b><a href="tel:+420605399448">Zavolat a objednat servis</a></b><div class="tel"><span class="header-phone"><a href="tel:+420605399448">Kancelář: <span>+420&nbsp;605&nbsp;399&nbsp;448</span></a></span><span class="header-phone"><a href="tel:+420608313437">Servis: <span>+420&nbsp;608&nbsp;313&nbsp;437</span></a></span><span class="header-hours">Po-Pá od 9 do 18 hod</span></div></div>
+				<div id="text-8"><div class="textwidget"><a class="mobile-call mobile-booking-trigger" data-booking-panel href="../kontakt/"><span class="booking-label-default">Zavolat a objednat servis</span><span class="booking-label-landscape">Objednat servis</span></a><b><a href="../kontakt/" data-booking-panel>Zavolat a objednat servis</a></b><div class="tel"><span class="header-phone"><a href="tel:+420605399448">Kancelář: <span>+420&nbsp;605&nbsp;399&nbsp;448</span></a></span><span class="header-phone"><a href="tel:+420608313437">Servis: <span>+420&nbsp;608&nbsp;313&nbsp;437</span></a></span><span class="header-hours">Po–Pá 9:00–18:00</span></div></div>
 		</div>			</div></div></div>			</div>
 			<div class="clear"></div>
 		</div>
@@ -409,19 +450,20 @@ body { font-weight: normal;}
 			<li id="menu-item-4107" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../vymena-ulozeni-napravnice-a-ramen/">Výměna uložení nápravnice a ramen</a></li>
 		</ul>
 	</li>
-	<li class="service-group"><span class="service-group-title">Motor a pohon</span>
+	<li class="service-group"><span class="service-group-title">Motor a převodovky</span>
 		<ul>
 			<li id="menu-item-4102" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../vymena-rozvodu/">Výměna rozvodů</a></li>
 			<li id="menu-item-4103" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../prevodovky-dsg-s-tronic/">Převodovky DSG a S tronic</a></li>
-			<li id="menu-item-4104" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../servis-hybridnich-a-elektrickych-vozidel/">Servis hybridů a elektromobilů</a></li>
 			<li id="menu-item-4106" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../dekarbonizace-motoru/">Dekarbonizace motoru</a></li>
 		</ul>
 	</li>
-	<li class="service-group"><span class="service-group-title">Další servisní služby</span>
+	<li class="service-group"><span class="service-group-title">Ostatní servisní služby</span>
 		<ul>
 			<li id="menu-item-2968" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../opravy-diagnostika-plneni-klimatizaci/">Opravy a plnění klimatizací</a></li>
 			<li id="menu-item-2154" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../priprava-a-realizace-stk/">Příprava a realizace STK</a></li>
 			<li id="menu-item-2149" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../skodni-udalost-vyridime-za-vas/">Kontrola vozidla po nehodě</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../prezuti-a-prodej-pneumatik-pro-vas-vuz/">Pneuservis</a></li>
+			<li id="menu-item-4104" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../servis-hybridnich-a-elektrickych-vozidel/">Servis hybridů a elektromobilů</a></li>
 		</ul>
 	</li>
 </ul>
@@ -483,41 +525,46 @@ body { font-weight: normal;}
 						
 
 	<div id="post-14" class="page post-14 type-page status-publish hentry mpce-post-div">
-
-		<div class="mp-row-fluid motopress-row mpce-dsbl-margin-left mpce-dsbl-margin-right">
-<div class="motopress-clmn mp-span12  mpce-dsbl-margin-left mpce-dsbl-margin-right">
-<div class="row "> <div class="span12 "><h5>Kompletní péče o váš automobil ve Statenicích u Prahy</h5>
-<p>Využijte náš nezávislý specializovaný autoservis VW Group pro vozy <strong>Volkswagen, Audi, Škoda, SEAT, CUPRA, Volkswagen Užitkové vozy</strong></p>
-<div class="kontakt-karty">
-<div class="kontakt-karta">
-<h3>Adresa</h3>
-<p><strong>J&amp;S servis</strong><br />
-Kralupská 90<br />
-252 62 Statenice – Černý Vůl<br />
-Praha-západ</p>
-<p><a href="#kde-nas-najdete">Mapa a navigace</a></p>
+<div class="kontakt-prehled">
+<p class="kontakt-prehled__uvod">Nezávislý autoservis se specializací na vozy Volkswagen Group.</p>
+<div class="kontakt-prehled__karty">
+<section class="kontakt-prehled__karta" aria-labelledby="kontakt-kancelar">
+<h2 id="kontakt-kancelar">Kancelář a objednání</h2>
+<p><a class="kontakt-prehled__tel" href="tel:+420605399448">+420&nbsp;605&nbsp;399&nbsp;448</a></p>
+<p><a href="mailto:admin@jasservis.cz">admin@jasservis.cz</a></p>
+<div class="kontakt-prehled__akce">
+<a class="kontakt-prehled__tlacitko" href="tel:+420605399448">Zavolat<span class="kontakt-prehled__sr"> – kancelář a objednání</span></a>
+<button class="kontakt-prehled__kopie" type="button" data-copy-number="+420 605 399 448" aria-label="Kopírovat číslo – kancelář a objednání" hidden>Kopírovat číslo</button>
 </div>
-<div class="kontakt-karta">
-<h3>Kancelář</h3>
-<p><a class="kontakt-tel" href="tel:+420605399448">+420&nbsp;605&nbsp;399&nbsp;448</a><br />
-<a href="mailto:admin@jasservis.cz">admin@jasservis.cz</a></p>
-<p><a class="tlacitko-akce" href="tel:+420605399448">Zavolat a objednat servis</a></p>
+<div class="kontakt-prehled__stav" role="status" aria-live="polite" aria-atomic="true"></div>
+</section>
+<section class="kontakt-prehled__karta" aria-labelledby="kontakt-servis">
+<h2 id="kontakt-servis">Servis</h2>
+<p><a class="kontakt-prehled__tel" href="tel:+420608313437">+420&nbsp;608&nbsp;313&nbsp;437</a></p>
+<p><a href="mailto:j.mateju@jasservis.cz">j.mateju@jasservis.cz</a></p>
+<div class="kontakt-prehled__akce">
+<a class="kontakt-prehled__tlacitko" href="tel:+420608313437">Zavolat<span class="kontakt-prehled__sr"> – servis</span></a>
+<button class="kontakt-prehled__kopie" type="button" data-copy-number="+420 608 313 437" aria-label="Kopírovat číslo – servis" hidden>Kopírovat číslo</button>
 </div>
-<div class="kontakt-karta">
-<h3>Servis</h3>
-<p><a class="kontakt-tel" href="tel:+420608313437">+420&nbsp;608&nbsp;313&nbsp;437</a><br />
-<a href="mailto:j.mateju@jasservis.cz">j.mateju@jasservis.cz</a></p>
+<div class="kontakt-prehled__stav" role="status" aria-live="polite" aria-atomic="true"></div>
+</section>
 </div>
-<div class="kontakt-karta">
-<h3>Otevírací doba</h3>
-<p>Po–Pá od 9 do 18 hod.</p>
+<section class="kontakt-prehled__udaje" aria-label="Provozovna a otevírací doba">
+<div>
+<h2>Adresa provozovny</h2>
+<address><strong>J&amp;S servis</strong><br>Kralupská 90<br>252 62 Statenice – Černý Vůl<br>Praha-západ</address>
+<p><a class="kontakt-prehled__tlacitko" href="https://www.google.com/maps/dir/?api=1&amp;destination=J%26S+servis%2C+Kralupsk%C3%A1+90%2C+252+62+Statenice" target="_blank" rel="noopener noreferrer">Mapa a navigace</a></p>
 </div>
+<div>
+<h2>Otevírací doba</h2>
+<p>Po–Pá 9:00–18:00</p>
 </div>
-<p><iframe style="border: none; overflow: hidden;" hidden data-cookie-category="social" data-cookie-src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjasservisstatenice&amp;width=340&amp;height=75&amp;small_header=true&amp;adapt_container_width=false&amp;hide_cover=true&amp;show_facepile=false&amp;appId" width="340" height="75" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></p></div> </div><!-- .row (end) --> <div class="content_box call-to-action-row "> <div class="row "> <div class="span12 "><p>Volejte kancelář <a href="tel:+420605399448">+420&nbsp;605&nbsp;399&nbsp;448</a> nebo servis <a href="tel:+420608313437">+420&nbsp;608&nbsp;313&nbsp;437</a><br />
-Po–Pá 9:00–18:00</p></div> </div> <!-- .row (end) --> <div class="clear"></div></div><!-- .content_box (end) --> <div class="row topGap" id="kde-nas-najdete"> <div class="span12 "><h2>Kde nás najdete?</h2>
-<p class="mapa-navigace"><a class="tlacitko-akce" href="https://www.google.com/maps/dir/?api=1&amp;destination=J%26S+servis%2C+Kralupsk%C3%A1+90%2C+252+62+Statenice" target="_blank" rel="noopener">Navigovat do servisu</a></p>
-<iframe class="mapa-embed" hidden data-cookie-category="maps" data-cookie-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sJ%26S+servis,+Kralupsk%C3%A1+90,+252+62+Statenice!6i15!3m1!1scs!5m1!1scs" width="100%" height="450" style="border:0" loading="lazy" title="Mapa: J&amp;S servis, Kralupská 90, Statenice – Černý Vůl"></iframe> <div class="spacer"></div><!-- .spacer (end) --></div> </div><!-- .row (end) -->
-</div>
+</section>
+<p class="kontakt-prehled__facebook"><a href="https://www.facebook.com/jasservisstatenice" target="_blank" rel="noopener noreferrer">J&amp;S servis na Facebooku</a></p>
+<section class="kontakt-prehled__mapa" id="kde-nas-najdete">
+<h2>Kde nás najdete?</h2>
+<iframe class="mapa-embed" hidden data-cookie-category="maps" data-cookie-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sJ%26S+servis,+Kralupsk%C3%A1+90,+252+62+Statenice!6i15!3m1!1scs!5m1!1scs" width="100%" height="450" style="border:0" loading="lazy" title="Mapa: J&amp;S servis, Kralupská 90, Statenice – Černý Vůl"></iframe>
+</section>
 </div>
 
 		<div class="clear"></div>

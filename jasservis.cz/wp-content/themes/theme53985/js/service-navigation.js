@@ -4,7 +4,10 @@
     if (!menu) return;
     var nav = menu.parentElement;
     var compact = window.matchMedia('(max-width:1199px)');
+    var canHover = window.matchMedia('(hover:hover) and (pointer:fine)');
     var controls = [];
+    var arrangingHeader = false;
+    function isCompactMenu() { return compact.matches && !nav.classList.contains('short-header-full-nav'); }
     // The rendered upper menu is the shared service list. Keep the static home
     // overview as a no-JavaScript fallback, and refresh it from that list here.
     var offered = document.querySelector('.home-service-index');
@@ -47,22 +50,30 @@
         window.clearTimeout(control.leaveTimer);
         control.hoverOpened = false;
         control.button.setAttribute('aria-expanded', 'false');
+        control.button.setAttribute('aria-label', 'Rozbalit nabídku: ' + control.label);
         control.item.classList.remove('is-open');
         control.panel.hidden = true;
     }
-    function fitServicePanel(control) {
-        if (!control.panel.classList.contains('service-groups')) return;
-        if (compact.matches) {
-            control.panel.style.removeProperty('--service-menu-available');
+    function fitDropdown(control) {
+        if (isCompactMenu()) {
+            control.panel.style.removeProperty('--menu-available');
             control.item.style.removeProperty('--service-menu-offset');
             return;
         }
-        var header = nav.closest('header');
-        var offset = header ? Math.max(0, header.getBoundingClientRect().bottom - control.item.getBoundingClientRect().bottom) : 0;
-        control.item.style.setProperty('--service-menu-offset', Math.ceil(offset) + 'px');
-        var cookie = parseFloat(window.getComputedStyle(document.body).getPropertyValue('--cookie-space')) || 0;
-        var height = window.innerHeight - cookie - control.panel.getBoundingClientRect().top - 12;
-        control.panel.style.setProperty('--service-menu-available', Math.max(44, Math.floor(height)) + 'px');
+        if (control.panel.classList.contains('service-groups')) {
+            var header = nav.closest('header');
+            var offset = header ? Math.max(0, header.getBoundingClientRect().bottom - control.item.getBoundingClientRect().bottom) : 0;
+            control.item.style.setProperty('--service-menu-offset', Math.ceil(offset) + 'px');
+        }
+        var viewport = window.visualViewport;
+        var bottom = viewport ? viewport.offsetTop + viewport.height : window.innerHeight;
+        var banner = document.getElementById('cf-cookie-banner');
+        if (banner && !banner.hidden) {
+            var bannerBounds = banner.getBoundingClientRect();
+            if (bannerBounds.height > 0) bottom = Math.min(bottom, bannerBounds.top);
+        }
+        var height = bottom - control.panel.getBoundingClientRect().top - 12;
+        control.panel.style.setProperty('--menu-available', Math.max(44, Math.floor(height)) + 'px');
     }
     function open(control) {
         controls.forEach(function (other) {
@@ -71,8 +82,9 @@
         window.clearTimeout(control.leaveTimer);
         control.panel.hidden = false;
         control.button.setAttribute('aria-expanded', 'true');
+        control.button.setAttribute('aria-label', 'Zavřít nabídku: ' + control.label);
         control.item.classList.add('is-open');
-        fitServicePanel(control);
+        fitDropdown(control);
     }
     Array.prototype.forEach.call(menu.querySelectorAll('.current-menu-item > a'), function (link) {
         link.setAttribute('aria-current', 'page');
@@ -92,7 +104,7 @@
         button.setAttribute('aria-label', 'Rozbalit nabídku: ' + link.textContent.replace(/\s*⌄\s*$/, ''));
         panel.id = item.id + '-submenu';
         button.setAttribute('aria-controls', panel.id);
-        var control = {item: item, button: button, panel: panel, leaveTimer: null};
+        var control = {item: item, button: button, panel: panel, label: link.textContent.replace(/\s*⌄\s*$/, '').trim(), leaveTimer: null};
         controls.push(control);
         close(control);
         function toggle() {
@@ -105,8 +117,7 @@
             toggle();
         });
         if (link !== button) {
-            // The page itself is the first entry of its submenu, so it is reachable from the
-            // list on any screen; on a phone the label only unfolds, on a desktop it still opens the page.
+            // A label is always a page link; the separate arrow controls its submenu.
             var overview = document.createElement('li');
             overview.className = 'menu-overview';
             var overviewLink = document.createElement('a');
@@ -114,30 +125,26 @@
             overviewLink.textContent = 'Přehled – ' + link.textContent.trim() + ' →';
             overview.appendChild(overviewLink);
             panel.insertBefore(overview, panel.firstChild);
-            link.addEventListener('click', function (event) {
-                if (!compact.matches) return;
-                event.preventDefault();
-                toggle();
-            });
         }
         item.addEventListener('pointerenter', function (event) {
             // Entering the arrow must leave its first click free to open the panel.
             // Entering the label (or the whole Recenze tile) opens the desktop menu on hover.
             var pointed = document.elementFromPoint(event.clientX, event.clientY);
-            if (event.pointerType !== 'mouse' || compact.matches) return;
+            if (!canHover.matches || event.pointerType !== 'mouse' || isCompactMenu()) return;
             if (link === button) { if (panel.hidden) { open(control); control.hoverOpened = true; } }
             else if (!(pointed && button.contains(pointed))) open(control);
         });
         item.addEventListener('pointerleave', function (event) {
-            if (event.pointerType !== 'mouse' || compact.matches) return;
+            if (!canHover.matches || event.pointerType !== 'mouse' || isCompactMenu()) return;
             control.leaveTimer = window.setTimeout(function () {
                 if (!item.contains(document.activeElement)) close(control);
             }, 200);
         });
         item.addEventListener('focusout', function (event) {
+            if (arrangingHeader) return;
             // In the mobile list, closing on blur moves the next button before its click.
             // The next category closes this panel atomically in open().
-            if (!compact.matches && !item.contains(event.relatedTarget)) close(control);
+            if (!isCompactMenu() && !item.contains(event.relatedTarget)) close(control);
         });
         item.addEventListener('keydown', function (event) {
             if (event.key !== 'ArrowDown' || (event.target !== link && event.target !== button)) return;
@@ -149,7 +156,7 @@
     });
     function reset() {
         controls.forEach(close);
-        menu.hidden = compact.matches;
+        menu.hidden = isCompactMenu();
         syncToggle();
     }
     toggle.addEventListener('click', function () {
@@ -160,30 +167,100 @@
     document.addEventListener('click', function (event) {
         if (!nav.contains(event.target)) {
             controls.forEach(close);
-            if (compact.matches) {
+            if (isCompactMenu()) {
                 menu.hidden = true;
                 syncToggle();
             }
         }
     });
     nav.addEventListener('focusout', function (event) {
+        if (arrangingHeader) return;
         if (!nav.contains(event.relatedTarget)) controls.forEach(close);
     });
     nav.addEventListener('keydown', function (event) {
         if (event.key !== 'Escape') return;
         var open = controls.filter(function (control) { return !control.panel.hidden; })[0];
         if (open) { close(open); open.button.focus(); }
-        else if (compact.matches && !menu.hidden) { menu.hidden = true; syncToggle(); toggle.focus(); }
+        else if (isCompactMenu() && !menu.hidden) { menu.hidden = true; syncToggle(); toggle.focus(); }
     });
     if (compact.addEventListener) compact.addEventListener('change', reset);
     else compact.addListener(reset);
-    function fitOpenServicePanel() {
+    function fitOpenDropdowns() {
         controls.forEach(function (control) {
-            if (!control.panel.hidden) fitServicePanel(control);
+            if (!control.panel.hidden) fitDropdown(control);
         });
     }
-    window.addEventListener('resize', fitOpenServicePanel);
-    window.addEventListener('scroll', fitOpenServicePanel, {passive:true});
+    window.addEventListener('resize', fitOpenDropdowns);
+    window.addEventListener('scroll', fitOpenDropdowns, {passive:true});
+    if (window.visualViewport) {
+        window.visualViewport.addEventListener('resize', fitOpenDropdowns);
+        window.visualViewport.addEventListener('scroll', fitOpenDropdowns, {passive:true});
+    }
+    // Landscape uses a contact strip above a brand/navigation strip.
+    // Move the original logo and controls, never copies of links or menu state.
+    var shortLandscape = window.matchMedia('(max-width:1199px) and (max-height:500px) and (orientation:landscape)');
+    var logo = document.querySelector('.header .logo');
+    var logoHome = document.createComment('logo original position');
+    var landscapeRow;
+    if (logo) logo.parentNode.insertBefore(logoHome, logo);
+    function arrangeShortHeader() {
+        if (!logo) return;
+        arrangingHeader = true;
+        var focused = document.activeElement;
+        var moved = false;
+        var wasFull = nav.classList.contains('short-header-full-nav');
+        var wasHidden = menu.hidden;
+        if (shortLandscape.matches) {
+            if (!landscapeRow) {
+                landscapeRow = document.createElement('div');
+                landscapeRow.className = 'landscape-nav-row';
+                nav.insertBefore(landscapeRow, menu);
+                landscapeRow.appendChild(logo);
+                landscapeRow.appendChild(toggle);
+                moved = true;
+            }
+            // Measure the real labels and 44px arrow buttons without changing fonts.
+            nav.classList.add('measuring-short-nav');
+            menu.hidden = false;
+            var needed = menu.getBoundingClientRect().width;
+            var available = landscapeRow.clientWidth - logo.getBoundingClientRect().width - 16;
+            nav.classList.remove('measuring-short-nav');
+            var fits = needed <= available;
+            nav.classList.toggle('short-header-full-nav', fits);
+            if (fits && menu.parentElement !== landscapeRow) {
+                landscapeRow.appendChild(menu);
+                moved = true;
+            } else if (!fits && menu.parentElement === landscapeRow) {
+                nav.insertBefore(menu, landscapeRow.nextSibling);
+                moved = true;
+            }
+            menu.hidden = fits ? false : (wasFull ? controls.every(function (control) { return control.panel.hidden; }) : wasHidden);
+        } else if (landscapeRow) {
+            logoHome.parentNode.insertBefore(logo, logoHome.nextSibling);
+            if (menu.parentElement === landscapeRow) nav.insertBefore(menu, landscapeRow.nextSibling);
+            nav.insertBefore(toggle, menu);
+            landscapeRow.remove();
+            landscapeRow = null;
+            nav.classList.remove('short-header-full-nav');
+            if (wasFull) menu.hidden = compact.matches && controls.every(function (control) { return control.panel.hidden; });
+            moved = true;
+        }
+        if (menu.hidden) controls.forEach(close);
+        syncToggle();
+        fitOpenDropdowns();
+        if (moved && focused === toggle && !isCompactMenu()) menu.querySelector('a, button').focus({preventScroll: true});
+        else if (moved && focused && focused.isConnected && (focused === toggle || logo.contains(focused) || (!menu.hidden && menu.contains(focused)))) focused.focus({preventScroll: true});
+        arrangingHeader = false;
+    }
+    if (shortLandscape.addEventListener) shortLandscape.addEventListener('change', arrangeShortHeader);
+    else shortLandscape.addListener(arrangeShortHeader);
+    window.addEventListener('resize', arrangeShortHeader);
+    if (window.visualViewport) window.visualViewport.addEventListener('resize', arrangeShortHeader);
+    window.addEventListener('orientationchange', function () { window.requestAnimationFrame(arrangeShortHeader); });
+    // Safari may restore an expanded menu from the back/forward cache.
+    window.addEventListener('pageshow', function (event) { if (event.persisted) { reset(); arrangeShortHeader(); } });
     nav.classList.add('navigation-ready');
     reset();
+    arrangeShortHeader();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(arrangeShortHeader);
 }());
