@@ -996,3 +996,34 @@ body:has(.contact-booking-panel[open]) { overflow:hidden; }
  .header .nav__primary.desktop-menu-collapsed #topnav .sub-menu,.header .nav__primary.desktop-menu-collapsed #topnav > #menu-item-2076 > .sub-menu{position:static;grid-column:1 / -1;width:100%;max-width:100%;max-height:none;overflow:visible}
  .header .nav__primary.desktop-menu-collapsed #topnav .service-groups{grid-template-columns:minmax(0,1fr)}
 }
+
+
+/* The approved homepage portrait header is shared by every page. */
+@media screen and (max-width: 767px) {
+  .header .header-hours { display: none !important; }
+  .header_block_2 .span3 { width: 100% !important; float: none !important; margin: 0 !important; }
+  .header_block_2 .logo { position: relative !important; float: none !important; width: 100% !important; box-sizing: border-box; margin: 0 auto !important; padding: 4px 12px 0 !important; text-align: center !important; }
+  .header_block_2 .logo .logo_h { display: block !important; flex: 0 0 auto !important; width: min(43vw, 168px) !important; max-width: 100% !important; margin: 0 auto !important; float: none !important; }
+  .header_block_2 .logo .logo_h img { display: block !important; width: 100% !important; height: auto !important; margin: 0 auto !important; }
+  .header_block_2 .logo .top-firma-badge { position: absolute !important; left: 8px !important; top: 6px !important; right: auto !important; width: clamp(46px, 13vw, 56px) !important; height: auto !important; margin: 0 !important; }
+  .header_block_2 .logo .top-firma-badge img { display: block !important; width: 100% !important; height: auto !important; }
+  .header_block_2 .logo .logo_tagline { text-align: center !important; }
+  .header_block_1 .mobile-call summary { cursor: pointer; }
+  .header_block_2 .nav__primary { margin-top: 4px !important; margin-bottom: 4px !important; }
+}
+
+/* A narrower content page must not change the mobile/tablet header gutters. */
+@media(max-width:1199px){
+ #motopress-main .header{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+ #motopress-main .header>.container{box-sizing:border-box;width:100%;max-width:none;margin-left:0;margin-right:0}
+}
+/* Wide touch tablets retain the homepage desktop bar and its container. */
+@media(min-width:1200px) and (max-width:1399px) and (any-pointer:coarse){
+ #motopress-main .header{padding-left:0;padding-right:0}
+ #motopress-main .header>.container{box-sizing:border-box;width:1170px;max-width:calc(100% - 64px);margin-left:auto;margin-right:auto}
+ #motopress-main .header .header_block_2 .logo{width:290px;margin-left:-10px}
+}
+/* Do not animate header geometry while navigating or rotating a touch screen. */
+@media(max-width:1199px), (min-width:1200px) and (max-width:1399px) and (any-pointer:coarse){
+ .header a,.header button,.header .logo_h img,.header .top-firma-badge img{transition-property:color,background-color,border-color,opacity}
+}
