@@ -3428,7 +3428,7 @@ article.type-clients .thumbnail {
 .cena-blok .cena-blok__titulek { margin:0 0 8px; font-weight:bold; text-transform:uppercase; color:#f36639; }
 .cena-blok strong { color:#222; }
 .tlacitko-akce,
-.tlacitko-akce:visited { display:inline-block; padding:12px 22px; background:#f36639; color:#fff; font-size:17px; line-height:22px; border-radius:3px; text-decoration:none; }
+.tlacitko-akce:visited { display:inline-block; padding:12px 22px; background:#f36639; color:#191818; font-size:17px; font-weight:500; line-height:22px; border-radius:3px; text-decoration:none; }
 .tlacitko-akce:hover,
 .tlacitko-akce:focus { background:#333; color:#fff; text-decoration:none; }
 .mapa-navigace { text-align:center; margin:20px 0; }
@@ -3478,7 +3478,8 @@ article.type-clients .thumbnail {
 .kontakt-karta a { color:#f36639; }
 .kontakt-karta a:hover { color:#333; }
 .kontakt-karta .kontakt-tel { color:#333; font-size:22px; line-height:32px; font-weight:600; white-space:nowrap; }
-.kontakt-karta .tlacitko-akce, .kontakt-karta .tlacitko-akce:visited { color:#fff; }
+.kontakt-karta .tlacitko-akce, .kontakt-karta .tlacitko-akce:visited { color:#191818; }
+.kontakt-karta .tlacitko-akce:hover, .kontakt-karta .tlacitko-akce:focus { color:#fff; }
 
 /* Home introduction: full-width photo, followed by readable copy without an empty column. */
 #post-203 .home-about {
@@ -3512,4 +3513,14 @@ article.type-clients .thumbnail {
 #post-203 .home-about h1.sub-title { margin-bottom:20px; }
 @media (max-width:767px) {
     #post-203 .home-about { gap:20px; margin-bottom:24px; }
+}
+
+/* Audit: readable booking controls and semantic home card subtitles. */
+.tlacitko-akce:focus-visible { outline:3px solid #191818; outline-offset:3px; }
+#post-203 .home-service-cards .service-box p.service-card-subtitle {
+    font-family:Ubuntu, sans-serif; font-size:18px; line-height:24px;
+    font-weight:300; margin:0 0 10px; padding:0; color:#fff; text-transform:none;
+}
+.content-holder .page .pneuservis-illustration-note {
+    margin:8px 0 0; font-size:14px; line-height:21px; color:#444;
 }

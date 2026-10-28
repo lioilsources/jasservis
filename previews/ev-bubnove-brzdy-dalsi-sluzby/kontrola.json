@@ -1,0 +1,67 @@
+[
+  {
+    "sirka": 1440,
+    "preteka": false,
+    "menu": true,
+    "karta": true,
+    "rozbaleni_klavesnici": true,
+    "obrazek": {
+      "width": 570,
+      "height": 428,
+      "naturalWidth": 1280,
+      "naturalHeight": 960
+    }
+  },
+  {
+    "sirka": 768,
+    "preteka": false,
+    "menu": true,
+    "karta": true,
+    "rozbaleni_klavesnici": true,
+    "obrazek": {
+      "width": 352,
+      "height": 264,
+      "naturalWidth": 1280,
+      "naturalHeight": 960
+    }
+  },
+  {
+    "sirka": 360,
+    "preteka": false,
+    "menu": true,
+    "karta": true,
+    "rozbaleni_klavesnici": true,
+    "obrazek": {
+      "width": 320,
+      "height": 240,
+      "naturalWidth": 1280,
+      "naturalHeight": 960
+    }
+  },
+  {
+    "sirka": 390,
+    "preteka": false,
+    "menu": true,
+    "karta": true,
+    "rozbaleni_klavesnici": true,
+    "obrazek": {
+      "width": 350,
+      "height": 263,
+      "naturalWidth": 1280,
+      "naturalHeight": 960
+    }
+  },
+  {
+    "sirka": 430,
+    "preteka": false,
+    "menu": true,
+    "karta": true,
+    "rozbaleni_klavesnici": true,
+    "obrazek": {
+      "width": 390,
+      "height": 293,
+      "naturalWidth": 1280,
+      "naturalHeight": 960
+    }
+  }
+]
