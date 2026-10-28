@@ -314,7 +314,7 @@ body { font-weight: normal;}
 
 	</script>
 
-<script defer src="wp-content/themes/theme53985/js/service-navigation.js?v=20261028-tablet-v1"></script>
+<script defer src="wp-content/themes/theme53985/js/service-navigation.js?v=20261028-menu-spacing-v3"></script>
 <script defer src="wp-content/themes/theme53985/js/contact-actions.js?v=20261027-iphone-v1"></script>
 <script defer src="wp-content/themes/theme53985/js/cookie-preferences.js"></script>
 
@@ -332,7 +332,7 @@ body { font-weight: normal;}
 #post-203 .home-service-cards section { transform:none !important; opacity:1 !important; }
 }
 </style>
-<link rel="stylesheet" href="wp-content/themes/theme53985/jasservis.css?v=20261028-tablet-v1" />
+<link rel="stylesheet" href="wp-content/themes/theme53985/jasservis.css?v=20261028-menu-spacing-v3" />
 
 <!-- Touch targets and spacing limited to the homepage service lists. -->
 <style>
@@ -446,6 +446,17 @@ body { font-weight: normal;}
 #post-203 .home-offered-services .home-service-brands a:hover {text-decoration:underline;}
 #post-203 .home-offered-services .home-service-index summary:focus-visible,
 #post-203 .home-offered-services .home-service-brands a:focus-visible {outline:3px solid #191818;outline-offset:2px;}
+</style>
+
+<style id="js-centered-service-banner">
+/* Shared caption coordinates and a continuous overlay above both photographs. */
+.home .parallax-slider #mainImageHolder:after{content:'';position:absolute;inset:0;z-index:2;pointer-events:none;background:radial-gradient(ellipse at center,rgba(0,0,0,.3) 0%,rgba(0,0,0,.16) 55%,rgba(0,0,0,.06) 100%)}
+.home .parallax-slider #mainCaptionHolder .primaryCaption,
+.home .parallax-slider #mainCaptionHolder .secondaryCaption{justify-content:center}
+.home .parallax-slider #mainCaptionHolder .slider_caption{box-sizing:border-box;width:620px;max-width:100%;margin:0 auto;padding:0;grid-template-rows:44px 146px 48px;gap:12px;justify-items:center;text-align:center;background:none;border:0;border-radius:0;box-shadow:none;text-shadow:0 1px 3px #000}
+.home .parallax-slider #mainCaptionHolder .slider_caption>*{max-width:100%;text-align:center}
+.home .parallax-slider #mainCaptionHolder .slider_caption .hero-title{line-height:1.18;overflow-wrap:normal}
+@media(max-width:767px){.home .parallax-slider #mainCaptionHolder .slider_caption{grid-template-rows:40px 112px 44px;gap:10px}}
 </style>
 </head><body class="home page-template page-template-page-home page-template-page-home-php page page-id-203">
 

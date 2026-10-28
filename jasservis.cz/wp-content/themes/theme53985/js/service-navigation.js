@@ -4,11 +4,11 @@
     if (!menu) return;
     var nav = menu.parentElement;
     var compact = window.matchMedia('(max-width:1199px)');
-    var tablet = window.matchMedia('(min-width:768px) and (max-width:1199px) and (min-height:501px), (min-width:1200px) and (max-width:1399px) and (min-height:501px) and (any-pointer:coarse)');
+    var tablet = window.matchMedia('(min-width:768px) and (max-width:1199px) and (min-height:501px)');
     var canHover = window.matchMedia('(hover:hover) and (pointer:fine)');
     var controls = [];
     var arrangingHeader = false;
-    function isCompactMenu() { return (compact.matches || tablet.matches) && !nav.classList.contains('short-header-full-nav'); }
+    function isCompactMenu() { return (compact.matches || tablet.matches || nav.classList.contains('desktop-menu-collapsed')) && !nav.classList.contains('short-header-full-nav'); }
     // The rendered upper menu is the shared service list. Keep the static home
     // overview as a no-JavaScript fallback, and refresh it from that list here.
     var offered = document.querySelector('.home-service-index');
@@ -231,6 +231,8 @@
             moved = true;
         }
         nav.classList.toggle('tablet-navigation', tablet.matches);
+        var wasCollapsed = nav.classList.contains('desktop-menu-collapsed');
+        nav.classList.remove('desktop-menu-collapsed');
         if (shortLandscape.matches || tablet.matches) {
             // Measure actual labels and original touch areas, rather than device names.
             nav.classList.add('measuring-short-nav');
@@ -250,7 +252,15 @@
             menu.hidden = fits ? false : (wasFull ? controls.every(function (control) { return control.panel.hidden; }) : wasHidden);
         } else {
             nav.classList.remove('short-header-full-nav');
-            if (!compact.matches) menu.hidden = false;
+            if (!compact.matches) {
+                nav.classList.add('desktop-menu-measuring');
+                menu.hidden = false;
+                var desktopNeeded = menu.getBoundingClientRect().width;
+                nav.classList.remove('desktop-menu-measuring');
+                var desktopFits = desktopNeeded <= nav.clientWidth;
+                nav.classList.toggle('desktop-menu-collapsed', !desktopFits);
+                menu.hidden = desktopFits ? false : (wasCollapsed ? wasHidden : true);
+            }
             else if (wasFull) menu.hidden = controls.every(function (control) { return control.panel.hidden; });
         }
         if (menu.hidden) controls.forEach(close);
