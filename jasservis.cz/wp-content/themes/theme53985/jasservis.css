@@ -973,3 +973,26 @@ body:has(.contact-booking-panel[open]) { overflow:hidden; }
     .header .nav__primary.short-header-full-nav #topnav > #menu-item-2076 > .sub-menu { position:absolute; top:calc(100% + 8px); left:auto; right:0; width:960px; max-width:calc(100vw - 32px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px)); max-height:var(--menu-available,60dvh)!important; overflow:auto; }
     .header .nav__primary.short-header-full-nav #topnav .service-groups ul { position:static; max-height:none!important; overflow:visible; }
 }
+
+/* Even desktop menu spacing; collapse when the real labels exceed the row. */
+@media(min-width:1200px){
+ .header .nav__primary #topnav > li{box-sizing:border-box;padding:0 12px}
+ .header .nav__primary #topnav > li > a{padding-left:0;padding-right:0}
+ .header .nav__primary #topnav > li > .submenu-toggle{width:44px;margin-right:0;padding:0}
+ .header .nav__primary #topnav > li > .submenu-toggle:before{margin-left:10px;margin-right:0}
+ .header .nav__primary #topnav > li > .reviews-toggle{gap:12px;padding-left:0;padding-right:0}
+ .header .nav__primary.desktop-menu-measuring #topnav{display:flex!important;position:absolute!important;visibility:hidden!important;width:max-content!important;max-width:none!important}
+ .header .nav__primary.desktop-menu-measuring #topnav > li{flex:none!important}
+ .header .nav__primary.desktop-menu-measuring #topnav .sub-menu{display:none!important}
+ .header .nav__primary.desktop-menu-collapsed .navigation-toggle{display:flex;align-items:center;justify-content:center;gap:12px;margin-left:auto;min-height:44px;border:1px solid var(--js-brand);background:transparent;color:#fff}
+ .header .nav__primary.desktop-menu-collapsed .mobile-menu-icon{position:relative;height:18px;flex:0 0 22px}
+ .header .nav__primary.desktop-menu-collapsed .mobile-menu-icon span{position:absolute;left:0;width:22px;height:2px;background:currentColor}
+ .header .nav__primary.desktop-menu-collapsed .mobile-menu-icon span:nth-child(2){top:8px}
+ .header .nav__primary.desktop-menu-collapsed .mobile-menu-icon span:nth-child(3){top:16px}
+ .header .nav__primary.desktop-menu-collapsed #topnav{position:absolute;top:100%;right:0;display:block;width:100%;padding:8px;background:var(--js-ink);max-height:var(--menu-available,65dvh);overflow:auto}
+ .header .nav__primary.desktop-menu-collapsed #topnav > li{display:grid;grid-template-columns:minmax(0,1fr) 44px;padding:0;border-right:0;border-bottom:1px solid #ffffff26}
+ .header .nav__primary.desktop-menu-collapsed #topnav > li > a{min-height:44px;padding:10px 12px;white-space:normal}
+ .header .nav__primary.desktop-menu-collapsed #topnav > li > .reviews-toggle{grid-column:1 / -1;justify-content:space-between;min-height:44px;padding:10px 12px}
+ .header .nav__primary.desktop-menu-collapsed #topnav .sub-menu,.header .nav__primary.desktop-menu-collapsed #topnav > #menu-item-2076 > .sub-menu{position:static;grid-column:1 / -1;width:100%;max-width:100%;max-height:none;overflow:visible}
+ .header .nav__primary.desktop-menu-collapsed #topnav .service-groups{grid-template-columns:minmax(0,1fr)}
+}
