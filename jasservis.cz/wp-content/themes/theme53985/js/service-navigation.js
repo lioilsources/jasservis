@@ -47,6 +47,76 @@
     toggle.setAttribute('aria-controls', menu.id);
     nav.insertBefore(toggle, menu);
 
+    // Move the original navigation into a native modal; never duplicate links.
+    var mobilePanel = document.createElement('dialog');
+    mobilePanel.className = 'mobile-nav-panel';
+    mobilePanel.id = 'mobile-nav-panel';
+    toggle.setAttribute('aria-controls', mobilePanel.id);
+    toggle.setAttribute('aria-haspopup', 'dialog');
+    mobilePanel.setAttribute('aria-labelledby', 'mobile-nav-title');
+    mobilePanel.innerHTML = '<div class="mobile-nav-toolbar"><h2 id="mobile-nav-title">Menu</h2><button type="button" class="mobile-nav-close">Zavřít <span aria-hidden="true">×</span></button></div><div class="mobile-nav-scroll"></div>';
+    document.body.appendChild(mobilePanel);
+    var menuSlot = document.createComment('original navigation position');
+    var savedScroll;
+    var booking = document.createElement('button');
+    booking.type = 'button';
+    booking.className = 'mobile-nav-booking';
+    booking.textContent = 'Zavolat a objednat servis';
+    var menuScroll = mobilePanel.querySelector('.mobile-nav-scroll');
+    menuScroll.appendChild(booking);
+    function closeMobilePanel(restoreFocus) {
+        if (!mobilePanel.open) return;
+        mobilePanel.close();
+        menuSlot.parentNode.insertBefore(menu, menuSlot);
+        menuSlot.remove();
+        menu.hidden = true;
+        controls.forEach(close);
+        syncToggle();
+        if (savedScroll) {
+            var state = savedScroll;
+            savedScroll = null;
+            document.body.style.cssText = state.body;
+            document.documentElement.style.overflow = state.overflow;
+            window.scrollTo(state.x, state.y);
+        }
+        if (restoreFocus !== false) toggle.focus({preventScroll:true});
+        window.requestAnimationFrame(arrangeShortHeader);
+    }
+    function openMobilePanel() {
+        controls.forEach(close);
+        menu.parentNode.insertBefore(menuSlot, menu);
+        menuScroll.insertBefore(menu, booking);
+        menu.hidden = false;
+        syncToggle();
+        savedScroll = {x:window.scrollX,y:window.scrollY,body:document.body.style.cssText,overflow:document.documentElement.style.overflow};
+        document.body.style.position = 'fixed';
+        document.body.style.top = -savedScroll.y + 'px';
+        document.body.style.left = -savedScroll.x + 'px';
+        document.body.style.width = '100%';
+        document.documentElement.style.overflow = 'hidden';
+        mobilePanel.showModal();
+        menuScroll.scrollTop = 0;
+        mobilePanel.querySelector('.mobile-nav-close').focus();
+    }
+    mobilePanel.querySelector('.mobile-nav-close').addEventListener('click', function () { closeMobilePanel(); });
+    mobilePanel.addEventListener('cancel', function (event) { event.preventDefault(); closeMobilePanel(); });
+    mobilePanel.addEventListener('keydown', function (event) {
+        if (event.key !== 'Tab') return;
+        var focusable = Array.prototype.filter.call(mobilePanel.querySelectorAll('a[href],button:not([disabled])'), function (element) {
+            return element.getClientRects().length && element.tabIndex >= 0;
+        });
+        var first = focusable[0], last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    });
+    booking.addEventListener('click', function () {
+        closeMobilePanel();
+        var original = document.querySelector('.header [data-booking-panel]');
+        if (original) original.click();
+    });
+    mobilePanel.addEventListener('click', function (event) {
+        if (event.target.closest('a[href]')) closeMobilePanel(false);
+    });
     function close(control) {
         window.clearTimeout(control.leaveTimer);
         control.hoverOpened = false;
@@ -87,8 +157,10 @@
         control.item.classList.add('is-open');
         fitDropdown(control);
     }
-    Array.prototype.forEach.call(menu.querySelectorAll('.current-menu-item > a'), function (link) {
-        link.setAttribute('aria-current', 'page');
+    Array.prototype.forEach.call(menu.querySelectorAll('a[href]'), function (link) {
+        var target = new URL(link.href, document.baseURI);
+        if (target.origin === location.origin && target.pathname === location.pathname) link.setAttribute('aria-current', 'page');
+        else link.removeAttribute('aria-current');
     });
     Array.prototype.forEach.call(menu.children, function (item) {
         var panel = item.querySelector('.sub-menu');
@@ -156,17 +228,19 @@
         });
     });
     function reset() {
+        if (mobilePanel.open) return;
         controls.forEach(close);
         menu.hidden = isCompactMenu();
         syncToggle();
     }
     toggle.addEventListener('click', function () {
+        if (isCompactMenu()) { if (mobilePanel.open) closeMobilePanel(); else openMobilePanel(); return; }
         menu.hidden = !menu.hidden;
         syncToggle();
         if (menu.hidden) controls.forEach(close);
     });
     document.addEventListener('click', function (event) {
-        if (!nav.contains(event.target)) {
+        if (!nav.contains(event.target) && !mobilePanel.contains(event.target)) {
             controls.forEach(close);
             if (isCompactMenu()) {
                 menu.hidden = true;
@@ -210,6 +284,7 @@
     if (logo) logo.parentNode.insertBefore(logoHome, logo);
     function arrangeShortHeader() {
         if (!logo) return;
+        if (mobilePanel.open) { if (compact.matches) return; closeMobilePanel(false); }
         arrangingHeader = true;
         var focused = document.activeElement;
         var moved = false;
@@ -279,7 +354,7 @@
     if (window.visualViewport) window.visualViewport.addEventListener('resize', arrangeShortHeader);
     window.addEventListener('orientationchange', function () { window.requestAnimationFrame(arrangeShortHeader); });
     // Safari may restore an expanded menu from the back/forward cache.
-    window.addEventListener('pageshow', function (event) { if (event.persisted) { reset(); arrangeShortHeader(); } });
+    window.addEventListener('pageshow', function (event) { if (event.persisted) { closeMobilePanel(false); reset(); arrangeShortHeader(); } });
     nav.classList.add('navigation-ready');
     reset();
     arrangeShortHeader();
