@@ -1,0 +1,39 @@
+/* Homepage only. Keep the approved phone, tablet and notebook layouts below 1440px. */
+@media (min-width:1440px) {
+ .home .header>.container,
+ .home .content-holder>.container,
+ .home .footer>.container{box-sizing:border-box;width:90%;max-width:1440px;margin-inline:auto}
+ .home .header>.container>.row,
+ .home .content-holder .row,
+ .home .footer>.container>.row{margin-left:0;margin-right:0}
+ .home .header>.container>.row>.span12,
+ .home .content-holder .row>.span12,
+ .home .footer>.container>.row>.span12{box-sizing:border-box;width:100%;min-width:0;margin-left:0;margin-right:0}
+ .home #post-203 .home-service-cards{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .home #post-203 .home-service-index{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .home #post-203 .home-service-cards .service-box_txt{font-size:1.0625rem;line-height:1.55}
+ .home #post-203 .home-service-cards :is(.home-service-heading,h2.title){font-size:1.5rem;line-height:1.25}
+ .home #post-203 .home-service-cards .service-box :is(p.service-card-subtitle,.home-service-heading .service-card-subtitle){font-size:1.1875rem;line-height:1.4;font-weight:400}
+ .home #post-203 .home-service-cards .btn-align a{font-size:1rem}
+ .home #post-203 .home-offered-services .arrow-list li a{font-size:1.125rem;line-height:1.5}
+ .home #post-203 .home-service-index summary .sluzby-sloupec{font-size:1.375rem;line-height:1.4}
+ .home #post-203 .home-offered-services .title-box .title-box_secondary,
+ .home #post-203 .home-offered-services .home-service-brands .home-brands-heading{font-size:1.5rem;line-height:1.3}
+ .home #post-203 .home-service-brands a,
+ .home #post-203 .home-service-general a{font-size:1.0625rem;line-height:1.45}
+ .home .header .header_block_1 .header_widget_1,
+ .home .header .header_block_1 .header-phone a,
+ .home .header .header_block_1 .header-phone a span,
+ .home .header .header_block_1 .tel .header-hours,
+ .home .header .header_block_1 #text-8>.textwidget>b a{font-size:1rem;line-height:1.5}
+ .home .header .nav__primary #topnav>li>a,
+ .home .header .nav__primary #topnav>li>.reviews-toggle{font-size:.9375rem}
+ .home #post-203 .home-booking h2{font-size:1.875rem;line-height:1.3}
+ .home #post-203 .home-booking p{font-size:1.25rem;line-height:1.6}
+ .home #post-203 .home-booking-call{font-size:1rem}
+ .home .footer .footer-widgets h4{font-size:1.125rem;line-height:1.4}
+ .home .footer .footer-widgets ul li a{font-size:1rem;line-height:1.5}
+ .home .footer .footer-widgets .textwidget{font-size:1.0625rem;line-height:1.6;font-weight:400}
+ .home .parallax-slider #mainCaptionHolder .slider_caption{width:760px;font-size:clamp(2.625rem,2.4vw,3rem);grid-template-rows:44px 176px 48px}
+ .home .parallax-slider .hero-specialization{font-size:1.1875rem;line-height:1.5}
+}
