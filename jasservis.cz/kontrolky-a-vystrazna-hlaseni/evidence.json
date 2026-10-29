@@ -622,27 +622,62 @@
     {
       "id": "B",
       "name": "Hladina motorového oleje",
-      "reason": "Význam svícení a blikání doložen; samostatná žlutá varianta s hladinou není zatím graficky ověřena. Červený symbol nebyl pouze přebarven."
+      "reason": "Význam svícení a blikání doložen; samostatná žlutá varianta s hladinou není zatím graficky ověřena. Červený symbol nebyl pouze přebarven.",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/engine-oil-level.html",
+      "checked": "2026-10-29",
+      "brand": "Volkswagen",
+      "model": null,
+      "model_year": null,
+      "graphic": null,
+      "published": false
     },
     {
       "id": "K",
       "name": "Elektrický pohon – červená",
-      "reason": "Textový podklad Volkswagen ID. dohledán; chybí ověřený, právně použitelný grafický soubor přesné varianty. Nezobrazuje se náhradní symbol."
+      "reason": "Textový podklad Volkswagen ID. dohledán; chybí ověřený, právně použitelný grafický soubor přesné varianty. Nezobrazuje se náhradní symbol.",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/electric-fault-in-electric-drive-system.html",
+      "checked": "2026-10-29",
+      "brand": "Volkswagen",
+      "model": "ID. – bez doložené generace",
+      "model_year": null,
+      "graphic": null,
+      "published": false
     },
     {
       "id": "L",
       "name": "Elektrický pohon – žlutá",
-      "reason": "Textový podklad Volkswagen ID. dohledán; chybí ověřený, právně použitelný grafický soubor přesné varianty. Nezobrazuje se náhradní symbol."
+      "reason": "Textový podklad Volkswagen ID. dohledán; chybí ověřený, právně použitelný grafický soubor přesné varianty. Nezobrazuje se náhradní symbol.",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/electric-error-in-the-electrical-drive-system.html",
+      "checked": "2026-10-29",
+      "brand": "Volkswagen",
+      "model": "ID. – bez doložené generace",
+      "model_year": null,
+      "graphic": null,
+      "published": false
     },
     {
       "id": "M",
       "name": "Přehřátí elektrického pohonu",
-      "reason": "Textový podklad Volkswagen ID. dohledán; chybí ověřený, právně použitelný grafický soubor přesné varianty. Nezobrazuje se náhradní symbol."
+      "reason": "Textový podklad Volkswagen ID. dohledán; chybí ověřený, právně použitelný grafický soubor přesné varianty. Nezobrazuje se náhradní symbol.",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/electric-drive-overheated.html",
+      "checked": "2026-10-29",
+      "brand": "Volkswagen",
+      "model": "ID. – bez doložené generace",
+      "model_year": null,
+      "graphic": null,
+      "published": false
     },
     {
       "id": "N",
       "name": "Omezený výkon – želva",
-      "reason": "Textový podklad Volkswagen ID. dohledán; chybí ověřený, právně použitelný grafický soubor přesné varianty. Nezobrazuje se náhradní symbol."
+      "reason": "Textový podklad Volkswagen ID. dohledán; chybí ověřený, právně použitelný grafický soubor přesné varianty. Nezobrazuje se náhradní symbol.",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/electric-reduced-power.html",
+      "checked": "2026-10-29",
+      "brand": "Volkswagen",
+      "model": "ID. – bez doložené generace",
+      "model_year": null,
+      "graphic": null,
+      "published": false
     },
     {
       "name": "ESC/ASR – zásah, vypnutí a závada",
