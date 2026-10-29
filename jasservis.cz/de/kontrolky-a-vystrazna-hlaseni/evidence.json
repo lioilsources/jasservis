@@ -1,0 +1,11 @@
+{
+  "canonical_catalog": "../../_warnings/catalog.json",
+  "review_status": "incomplete-preview",
+  "checked": "2026-10-29",
+  "semantic_records": 73,
+  "legacy_generic_volkswagen": 15,
+  "model_documented_semantic_records": 58,
+  "model_edition_assignments": 225,
+  "partially_reviewed_manual_editions": 31,
+  "shared_graphic_colour_variants": 43
+}

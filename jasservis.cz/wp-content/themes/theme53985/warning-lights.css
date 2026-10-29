@@ -61,3 +61,23 @@
 #warning-lights .wl-results>.wl-group{margin-top:16px}
 
 #warning-lights #wl-results-title:focus{outline:none}
+/* Model evidence, shared pictograms and brand groups; all rules stay inside this page. */
+#warning-lights .wl-filters:not([hidden]){grid-template-columns:repeat(3,minmax(0,1fr));align-items:end}
+#warning-lights .wl-filters>label:first-child{grid-column:span 2}
+#warning-lights .wl-scope p{margin:8px 0}
+#warning-lights .wl-brand>h2{font-size:1.5rem;margin:16px 0 8px;border-bottom:1px solid #777;padding-bottom:8px}
+#warning-lights .wl-group>h3{font:600 1.25rem/1.35 var(--js-font,Ubuntu,sans-serif);text-transform:none;color:#111;background:var(--js-brand);border:1px solid #333;border-radius:4px;padding:10px 14px;margin:0 0 14px}
+#warning-lights .wl-detail h4{font:600 1.125rem/1.4 var(--js-font,Ubuntu,sans-serif);text-transform:none;color:#111;margin:18px 0 8px}
+#warning-lights .wl-detail h4:first-child{margin-top:0}
+#warning-lights .wl-detail p,#warning-lights .wl-detail li{font:400 1rem/1.6 var(--js-font,Ubuntu,sans-serif);color:#333}
+#warning-lights .wl-sources{margin:0 0 16px;padding-left:20px}
+#warning-lights .wl-sources>li{margin-bottom:14px}
+#warning-lights .wl-brand-context{font-size:1rem;margin-bottom:6px}
+#warning-lights .wl-card>summary{min-height:250px}
+@media(max-width:1000px){#warning-lights .wl-filters:not([hidden]){grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:599px){#warning-lights .wl-filters:not([hidden]){grid-template-columns:minmax(0,1fr)}#warning-lights .wl-filters>label:first-child{grid-column:auto}#warning-lights .wl-card>summary{min-height:0}}
+
+#warning-lights .wl-results[data-selected-brand]:not([data-selected-brand=""])>.wl-brand>h2{display:none}
+/* Keep the icon and its name together in short landscape windows, including
+   the temporary space occupied while the existing sticky header settles. */
+@media(max-height:500px) and (orientation:landscape){#warning-lights .wl-symbol{height:80px}}
