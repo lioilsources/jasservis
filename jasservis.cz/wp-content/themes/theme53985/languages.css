@@ -1,0 +1,9 @@
+/* Static language editions: allow longer translated labels without changing Czech styling. */
+html:is([lang="en"],[lang="de"]) :is(.btn,.button,.home-general-links a,.home-brand-links a){white-space:normal;overflow-wrap:break-word}
+html:is([lang="en"],[lang="de"]) :is(summary,.service-groups a,.mobile-nav-panel a){overflow-wrap:break-word;hyphens:auto}
+html:is([lang="en"],[lang="de"]) .language-options a{color:#eee}
+html:is([lang="en"],[lang="de"]) .header .contact-booking-link{max-width:100%}
+html:is([lang="en"],[lang="de"]) .header .contact-booking-link .booking-short{white-space:normal}
+html:is([lang="en"],[lang="de"]) .parallax-slider .slider_caption{overflow-wrap:normal}
+.document-language-note{font-size:1rem;line-height:1.6;color:#333;margin:.5rem 0 1rem}
+@media(max-width:767px){html:is([lang="en"],[lang="de"]) .home-brand-links a{font-size:1rem}}

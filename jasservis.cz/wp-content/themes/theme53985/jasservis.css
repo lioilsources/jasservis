@@ -1104,3 +1104,46 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
  #motopress-main .header .header_block_1 .mobile-booking-trigger{grid-column:3;grid-row:2}
  #motopress-main .header .header_block_1 .header-hours{grid-column:1/-1;grid-row:3}
 }
+
+/* Shared mobile dialog refinement: preserve the closed header and desktop menu. */
+.mobile-nav-panel #topnav>li>a[aria-current=page],
+.mobile-nav-panel #topnav .sub-menu a[aria-current=page]{color:var(--js-brand);box-shadow:inset 3px 0 0 var(--js-brand)}
+.mobile-nav-panel #topnav>#menu-item-2275>.sub-menu>li:not(.menu-overview)>a{color:#f5f5f5}
+.mobile-nav-panel #topnav>#menu-item-2275>.sub-menu>li:not(.menu-overview)>a[aria-current=page]{color:var(--js-brand)}
+.mobile-nav-panel #topnav>li>.reviews-toggle{display:grid;grid-template-columns:minmax(0,1fr) 48px;align-items:center;padding-left:14px;padding-right:0}
+.mobile-nav-panel #topnav>li>.reviews-toggle:after{justify-self:center}
+/* One independent centre for the main brand; the award occupies its left slot. */
+#motopress-main .header .header_block_2>.row{grid-template-columns:minmax(0,1fr);gap:0}
+#motopress-main .header .logo{--brand-width:200px;--award-width:80px;position:relative!important;display:grid!important;grid-template-columns:minmax(0,1fr) var(--brand-width) minmax(0,1fr);align-items:center;justify-content:normal;column-gap:12px!important;row-gap:0;box-sizing:border-box;float:none;width:100%!important;max-width:none;margin:8px auto!important;padding:0!important}
+#motopress-main .header .logo .logo_h{grid-column:2;grid-row:1;display:block!important;flex:none!important;box-sizing:border-box;float:none;width:var(--brand-width)!important;max-width:100%!important;min-width:0;min-height:0;margin:0!important}
+#motopress-main .header .logo .logo_h img{display:block!important;width:100%!important;max-width:100%;height:auto!important;margin:0!important}
+#motopress-main .header .logo .top-firma-badge{grid-column:1;grid-row:1;justify-self:end;position:static!important;display:flex;align-items:center;justify-content:center;flex:none!important;width:var(--award-width)!important;max-width:100%;min-height:44px;margin:0!important}
+#motopress-main .header .logo .top-firma-badge img{display:block;width:100%!important;height:auto!important}
+#motopress-main .header .logo .logo_tagline{grid-column:1/-1;grid-row:2;text-align:center!important}
+@media(max-width:767px){#motopress-main .header .logo{--brand-width:min(43vw,168px);--award-width:clamp(46px,13vw,56px);margin:4px auto 0!important}}
+@media(min-width:768px) and (max-width:1199px) and (min-height:501px){
+ #motopress-main .header>.container>.row>.span12{grid-template-columns:minmax(0,1fr);grid-template-areas:'brand' 'contacts' 'navigation';gap:4px 0}
+ #motopress-main .header .logo{--brand-width:140px;--award-width:44px;margin:0 auto!important}
+ #motopress-main .header .header_block_1 #text-8>.textwidget{justify-content:center}
+ #motopress-main .header .header_block_1 .tel{justify-content:center}
+ #motopress-main .header .header_widget_1,#motopress-main .header .header-hours{text-align:center}
+}
+@media(max-width:1199px) and (max-height:500px) and (orientation:landscape){
+ #motopress-main .header .landscape-nav-row{position:relative;min-height:50px}
+ #motopress-main .header .nav__primary .landscape-nav-row .logo{--brand-width:112px;--award-width:44px;position:absolute!important;inset:0;align-self:center;pointer-events:none;margin:0!important}
+ #motopress-main .header .landscape-nav-row .logo a{pointer-events:auto}
+}
+@media(max-width:599px) and (max-height:500px) and (orientation:landscape){
+ #motopress-main .header .nav__primary .landscape-nav-row .logo{position:relative!important;inset:auto;flex-basis:100%;margin:0!important}
+}
+/* The homepage's wide header must not make the brand row jump on subpages. */
+@media(min-width:1440px){
+ #motopress-main .header>.container{box-sizing:border-box;width:90%;max-width:1440px;margin-inline:auto}
+ #motopress-main .header>.container>.row{margin-left:0;margin-right:0}
+ #motopress-main .header>.container>.row>.span12{box-sizing:border-box;width:100%;min-width:0;margin-left:0;margin-right:0}
+ #motopress-main .header .header_block_1 .header_widget_1,#motopress-main .header .header_block_1 .header-phone a,#motopress-main .header .header_block_1 .header-phone a span,#motopress-main .header .header_block_1 .tel .header-hours,#motopress-main .header .header_block_1 #text-8>.textwidget>b a{font-size:1rem;line-height:1.5}
+ #motopress-main .header .nav__primary #topnav>li>a,#motopress-main .header .nav__primary #topnav>li>.reviews-toggle{font-size:.9375rem}
+}
+@media(max-width:1199px){
+ #motopress-main .header{padding-left:max(16px,env(safe-area-inset-left,0px),env(safe-area-inset-right,0px));padding-right:max(16px,env(safe-area-inset-left,0px),env(safe-area-inset-right,0px))}
+}
