@@ -998,14 +998,14 @@ body:has(.contact-booking-panel[open]) { overflow:hidden; }
 }
 
 
-/* The approved homepage portrait header is shared by every page. */
+/* The portrait logo row is shared by every page. */
 @media screen and (max-width: 767px) {
   .header .header_block_1 .tel .header-hours { display:block!important; }
   .header_block_2 .span3 { width: 100% !important; float: none !important; margin: 0 !important; }
-  .header_block_2 .logo { position: relative !important; float: none !important; width: 100% !important; box-sizing: border-box; margin: 0 auto !important; padding: 4px 12px 0 !important; text-align: center !important; }
-  .header_block_2 .logo .logo_h { display: block !important; flex: 0 0 auto !important; width: min(43vw, 168px) !important; max-width: 100% !important; margin: 0 auto !important; float: none !important; }
+  .header_block_2 .logo { position: relative !important; display:flex!important; flex-direction:row!important; align-items:center; justify-content:center; gap:12px!important; float: none !important; width: 100% !important; box-sizing: border-box; margin: 0 auto !important; padding: 4px 12px 0 !important; text-align: center !important; }
+  .header_block_2 .logo .logo_h { display: block !important; flex: 0 0 auto !important; width: min(43vw, 168px) !important; max-width: 100% !important; margin: 0 !important; float: none !important; }
   .header_block_2 .logo .logo_h img { display: block !important; width: 100% !important; height: auto !important; margin: 0 auto !important; }
-  .header_block_2 .logo .top-firma-badge { position: absolute !important; left: 8px !important; top: 6px !important; right: auto !important; width: clamp(46px, 13vw, 56px) !important; height: auto !important; margin: 0 !important; }
+  .header_block_2 .logo .top-firma-badge { position: static !important; display:flex; align-items:center; justify-content:center; flex:0 0 auto!important; left: auto !important; top: auto !important; right: auto !important; width: clamp(46px, 13vw, 56px) !important; min-height:44px; height: auto !important; margin: 0 !important; }
   .header_block_2 .logo .top-firma-badge img { display: block !important; width: 100% !important; height: auto !important; }
   .header_block_2 .logo .logo_tagline { text-align: center !important; }
   .header_block_1 .mobile-call summary { cursor: pointer; }
@@ -1080,3 +1080,27 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
 /* Brand and GVO destinations keep the brand orange in every navigation layout. */
 .header .nav__primary #topnav>#menu-item-2275>.sub-menu>li:not(.menu-overview)>a,
 .mobile-nav-panel #topnav>#menu-item-2275>.sub-menu>li:not(.menu-overview)>a{color:var(--js-brand)}
+/* Short landscape viewports: retain touch targets while revealing the page content. */
+@media (max-width:1199px) and (max-height:500px) and (orientation:landscape) {
+ #motopress-main .header{padding-top:env(safe-area-inset-top,0px);padding-bottom:0}
+ #motopress-main .header .header_block_1{padding-bottom:2px}
+ #motopress-main .header .header_block_1 .tel .header-hours{margin-top:0}
+ #motopress-main .header .header_block_2 .nav__primary{margin-top:0!important;margin-bottom:0!important}
+ #motopress-main .header .nav__primary .landscape-nav-row .logo{padding-top:0!important;padding-bottom:0!important}
+ #motopress-main .title-section{display:flex;flex-direction:column;align-items:stretch;gap:4px;padding-top:8px;padding-bottom:8px}
+ #motopress-main .title-section h1{display:block;float:none;clear:both;box-sizing:border-box;width:100%;max-width:100%;margin:0;text-align:left;white-space:normal;overflow-wrap:break-word;line-height:1.25}
+ #motopress-main .title-section .breadcrumb{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:flex-start;float:none;clear:both;box-sizing:border-box;width:100%;max-width:100%;margin:0;padding:0;gap:0;font-size:.8125rem;line-height:1.4;font-weight:400;text-align:left}
+ #motopress-main .title-section .breadcrumb :is(li,a,strong){font-size:inherit;line-height:inherit;font-weight:400;text-align:left;text-transform:none}
+ #motopress-main .title-section .breadcrumb li{display:block;min-width:0;max-width:100%;white-space:normal;overflow-wrap:break-word}
+ #motopress-main .title-section .breadcrumb li.divider{flex:none;margin:0 .375rem}
+ #motopress-main .title-section .breadcrumb li.divider:after{font-size:inherit;line-height:inherit;font-weight:400}
+}
+@media (max-width:740px) and (max-height:500px) and (orientation:landscape) {
+ #motopress-main .header .header_block_1>.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:0 8px}
+ #motopress-main .header .header_block_1>.row>.span6:first-child{grid-column:1/-1;grid-row:1;min-width:0}
+ #motopress-main .header .header_block_1 .header-phone{min-width:0}
+ #motopress-main .header .header_block_1 .header-phone:first-child{grid-column:1;grid-row:2}
+ #motopress-main .header .header_block_1 .header-phone:nth-child(2){grid-column:2;grid-row:2}
+ #motopress-main .header .header_block_1 .mobile-booking-trigger{grid-column:3;grid-row:2}
+ #motopress-main .header .header_block_1 .header-hours{grid-column:1/-1;grid-row:3}
+}
