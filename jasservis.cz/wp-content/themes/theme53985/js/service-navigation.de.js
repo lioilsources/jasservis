@@ -225,7 +225,7 @@
             if (event.key !== 'ArrowDown' || (event.target !== link && event.target !== button)) return;
             event.preventDefault();
             open(control);
-            var first = panel.querySelector('a, button');
+            var first = Array.prototype.filter.call(panel.querySelectorAll('a, button'), function (element) { return element.getClientRects().length && !element.closest('[hidden]'); })[0];
             if (first) first.focus();
         });
     });

@@ -1104,3 +1104,11 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
  #motopress-main .header .header_block_1 .mobile-booking-trigger{grid-column:3;grid-row:2}
  #motopress-main .header .header_block_1 .header-hours{grid-column:1/-1;grid-row:3}
 }
+
+/* Shared mobile dialog refinement: preserve the closed header and desktop menu. */
+.mobile-nav-panel #topnav>li>a[aria-current=page],
+.mobile-nav-panel #topnav .sub-menu a[aria-current=page]{color:var(--js-brand);box-shadow:inset 3px 0 0 var(--js-brand)}
+.mobile-nav-panel #topnav>#menu-item-2275>.sub-menu>li:not(.menu-overview)>a{color:#f5f5f5}
+.mobile-nav-panel #topnav>#menu-item-2275>.sub-menu>li:not(.menu-overview)>a[aria-current=page]{color:var(--js-brand)}
+.mobile-nav-panel #topnav>li>.reviews-toggle{display:grid;grid-template-columns:minmax(0,1fr) 48px;align-items:center;padding-left:14px;padding-right:0}
+.mobile-nav-panel #topnav>li>.reviews-toggle:after{justify-self:center}
