@@ -1147,3 +1147,17 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
 @media(max-width:1199px){
  #motopress-main .header{padding-left:max(16px,env(safe-area-inset-left,0px),env(safe-area-inset-right,0px));padding-right:max(16px,env(safe-area-inset-left,0px),env(safe-area-inset-right,0px))}
 }
+
+/* Low-height phones: readable contact rows and breathing room around the brand. */
+@media(max-width:1199px) and (max-height:500px) and (orientation:landscape){
+ #motopress-main .header .address-street{display:none}
+ #motopress-main .header .header_block_1 .header_widget_1 b{white-space:nowrap}
+ #motopress-main .header .header_block_1>.row{column-gap:12px;row-gap:2px}
+ #motopress-main .header .header_block_1>.row>.span6:first-child{flex:0 0 auto}
+ #motopress-main .header .landscape-nav-row{box-sizing:border-box;min-height:66px;padding-block:8px}
+ #motopress-main .header .nav__primary .landscape-nav-row .logo{inset:8px 0}
+ #motopress-main .header .header_block_2 .nav__primary{margin-block:4px!important}
+}
+@media(max-width:599px) and (max-height:500px) and (orientation:landscape){
+ #motopress-main .header .nav__primary .landscape-nav-row .logo{inset:auto}
+}
