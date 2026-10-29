@@ -1076,3 +1076,4 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
 .mobile-nav-panel #topnav a:hover{background:#ffffff0c}
 .mobile-nav-panel #topnav .sub-menu .menu-overview{display:none}
 .mobile-nav-panel #topnav .service-group-title{text-align:left;letter-spacing:normal}
+.mobile-nav-panel #topnav .sub-menu a{text-align:left;justify-content:flex-start}
