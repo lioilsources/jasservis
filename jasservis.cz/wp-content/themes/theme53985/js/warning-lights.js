@@ -50,6 +50,12 @@
    (target===results?root.querySelector('#wl-results-title'):target).focus({preventScroll:true});
   });
  }
+ root.querySelector('.wl-countline a').addEventListener('click',function(event){
+  if(location.search)return; // Removing a brand preset requires the clean URL.
+  event.preventDefault();form.reset();filter();userMoved=false;
+  if(location.hash!=='#prehled-kontrolek')location.hash='prehled-kontrolek';
+  else revealHash();
+ });
  window.addEventListener('hashchange',function(){userMoved=false;revealHash();});
  if(location.hash){
   revealHash();
