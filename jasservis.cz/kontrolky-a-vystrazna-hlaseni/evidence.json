@@ -1,0 +1,736 @@
+{
+  "review_status": "Náhled pro odbornou kontrolu, nezveřejněno v produkci",
+  "checked": "2026-10-29",
+  "published_items": [
+    {
+      "id": "A",
+      "name": "Tlak motorového oleje",
+      "color": "cervena",
+      "group": "motor",
+      "graphic": "oil-pressure.svg",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/engine-oil-pressure.html",
+      "meaning": "Výstraha upozorňuje na nedostatečný tlak motorového oleje. Správná hladina oleje sama o sobě nepotvrzuje dostatečný tlak mazání.",
+      "action": "Bezpečně zastavte a vypněte motor. Nenechávejte jej běžet ani na volnoběh. Další postup včetně případného opětovného spuštění musí odpovídat návodu konkrétního vozidla; při nejasnosti kontaktujte odbornou pomoc.",
+      "status": "Výstraha",
+      "signal": "Svícení",
+      "difference": "Nezaměňovat se žlutým upozorněním na hladinu oleje. Zdroj popisuje také podmíněný postup po doplnění oleje; nejde o univerzální povolení opětovně nastartovat.",
+      "scope": "Příklad systému Volkswagen se spalovacím motorem z uvedeného přehledu pro britský trh. Model, generace a modelový rok nejsou zdrojem vymezeny. Platnost pro jiné značky ani pro konkrétní vůz tím není potvrzena.",
+      "brand": "Volkswagen",
+      "model": null,
+      "generation": null,
+      "model_year": null,
+      "powertrains": [
+        "spalovaci"
+      ],
+      "source_type": "Oficiální evropský přehled Volkswagen UK; nejde o modelový návod",
+      "pdf_page": null,
+      "pdf_edition": null,
+      "checked": "2026-10-29",
+      "unresolved": [
+        "Ověřit provedení symbolu a pokyny v návodu konkrétního vozidla.",
+        "Modelová a ročníková platnost není doložena."
+      ],
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Oeldruck.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Oeldruck.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Kontrollleuchte_Oeldruck.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "modifications": "Beze změny tvaru a barev.",
+        "sha256": "7b03c2cb5062d50c4b8877dfffef435cac547d84d39da51fc3e7bf67b398960f",
+        "comparison": "Tvar symbolu a barevný stav porovnány s obrazovým podkladem u uvedeného oficiálního zdroje; nejde o fotografii konkrétního přístrojového panelu.",
+        "author": "Benutzer:chris828"
+      },
+      "graphic_path": "wp-content/uploads/kontrolky/oil-pressure.svg"
+    },
+    {
+      "id": "C",
+      "name": "Chladicí soustava spalovacího motoru",
+      "color": "cervena",
+      "group": "motor",
+      "graphic": "coolant.svg",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/engine-cooling-system.html",
+      "meaning": "Může upozorňovat na přehřátí, nesprávnou hladinu chladicí kapaliny nebo závadu chladicí soustavy.",
+      "action": "Bezpečně zastavte, vypněte motor a respektujte hlášení vozidla. Kontrolu kapaliny provádějte podle návodu až po bezpečném vychladnutí. Neotvírejte horkou expanzní nádobu.",
+      "status": "Výstraha",
+      "signal": "Svícení",
+      "difference": "Výstrahu nepovažujte za vyřešenou pouze proto, že je v nádobě vidět kapalina. Tento záznam se nevztahuje na chlazení elektrického pohonu.",
+      "scope": "Příklad systému Volkswagen se spalovacím motorem z uvedeného přehledu pro britský trh. Model, generace a modelový rok nejsou zdrojem vymezeny. Platnost pro jiné značky ani pro konkrétní vůz tím není potvrzena.",
+      "brand": "Volkswagen",
+      "model": null,
+      "generation": null,
+      "model_year": null,
+      "powertrains": [
+        "spalovaci"
+      ],
+      "source_type": "Oficiální evropský přehled Volkswagen UK; nejde o modelový návod",
+      "pdf_page": null,
+      "pdf_edition": null,
+      "checked": "2026-10-29",
+      "unresolved": [
+        "Ověřit provedení symbolu a pokyny v návodu konkrétního vozidla.",
+        "Modelová a ročníková platnost není doložena."
+      ],
+      "graphic_source": {
+        "title": "File:ISO 7000 - Ref-No 0246.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0246.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/e/eb/ISO_7000_-_Ref-No_0246.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "modifications": "Monochromatický symbol ISO 0246 vykreslen červeně podle doložené varianty Volkswagen; odstraněny šedé rohové registrační značky předlohy, tvar kontrolky nezměněn.",
+        "sha256": "cafe03711b8f7dddcf39615ac2bd31f113a317a06b976df2c1c44c054b9d33df",
+        "comparison": "Tvar symbolu a barevný stav porovnány s obrazovým podkladem u uvedeného oficiálního zdroje; nejde o fotografii konkrétního přístrojového panelu.",
+        "author": "Vectorization:  Mrmw"
+      },
+      "graphic_path": "wp-content/uploads/kontrolky/coolant.svg"
+    },
+    {
+      "id": "D",
+      "name": "Brzdová soustava",
+      "color": "cervena",
+      "group": "brzdy",
+      "graphic": "brake.svg",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/brake-system.html",
+      "meaning": "Podle provedení může symbol souviset se zataženou parkovací brzdou, nízkou hladinou brzdové kapaliny nebo závadou brzdové soustavy.",
+      "action": "Rozhoduje konkrétní symbol a text. Pokud výstraha zůstává po uvolnění parkovací brzdy nebo vozidlo hlásí závadu brzd, bezpečně zastavte a vyhledejte odbornou pomoc.",
+      "status": "Výstraha",
+      "signal": "Svícení",
+      "difference": "Samotné doplnění brzdové kapaliny není opravou příčiny jejího úbytku. Poruchovou výstrahu odlišujte od běžného potvrzení aktivované parkovací brzdy.",
+      "scope": "Příklad systému Volkswagen se spalovacím motorem z uvedeného přehledu pro britský trh. Model, generace a modelový rok nejsou zdrojem vymezeny. Platnost pro jiné značky ani pro konkrétní vůz tím není potvrzena.",
+      "brand": "Volkswagen",
+      "model": null,
+      "generation": null,
+      "model_year": null,
+      "powertrains": [
+        "spalovaci"
+      ],
+      "source_type": "Oficiální evropský přehled Volkswagen UK; nejde o modelový návod",
+      "pdf_page": null,
+      "pdf_edition": null,
+      "checked": "2026-10-29",
+      "unresolved": [
+        "Ověřit provedení symbolu a pokyny v návodu konkrétního vozidla.",
+        "Modelová a ročníková platnost není doložena."
+      ],
+      "graphic_source": {
+        "title": "File:B01 Brake failure.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:B01_Brake_failure.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/d/d8/B01_Brake_failure.svg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "modifications": "Beze změny tvaru a barev.",
+        "sha256": "15bab093add2fb0af742dd0de075e6c367828386726a75ee2eefcd00e9f426ba",
+        "comparison": "Tvar symbolu a barevný stav porovnány s obrazovým podkladem u uvedeného oficiálního zdroje; nejde o fotografii konkrétního přístrojového panelu.",
+        "author": "Ehsnils"
+      },
+      "graphic_path": "wp-content/uploads/kontrolky/brake.svg"
+    },
+    {
+      "id": "E",
+      "name": "Opotřebení brzdového obložení",
+      "color": "zluta",
+      "group": "brzdy",
+      "graphic": "pads.svg",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/brake-pad-monitoring.html",
+      "meaning": "Systém sledování opotřebení upozorňuje na potřebu kontroly brzdového obložení.",
+      "action": "Objednejte kontrolu brzd. Kontrolka neposkytuje spolehlivý údaj o počtu kilometrů, které ještě zbývají do výměny.",
+      "status": "Upozornění",
+      "signal": "Svícení",
+      "difference": "Nezaměňovat s červenou výstrahou závady brzdové soustavy.",
+      "scope": "Příklad systému Volkswagen se spalovacím motorem z uvedeného přehledu pro britský trh. Model, generace a modelový rok nejsou zdrojem vymezeny. Platnost pro jiné značky ani pro konkrétní vůz tím není potvrzena.",
+      "brand": "Volkswagen",
+      "model": null,
+      "generation": null,
+      "model_year": null,
+      "powertrains": [
+        "spalovaci"
+      ],
+      "source_type": "Oficiální evropský přehled Volkswagen UK; nejde o modelový návod",
+      "pdf_page": null,
+      "pdf_edition": null,
+      "checked": "2026-10-29",
+      "unresolved": [
+        "Ověřit provedení symbolu a pokyny v návodu konkrétního vozidla.",
+        "Modelová a ročníková platnost není doložena."
+      ],
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Bremsbelagverschleiss.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Bremsbelagverschleiss.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/9/98/Kontrollleuchte_Bremsbelagverschleiss.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "modifications": "Beze změny tvaru a barev.",
+        "sha256": "97a86611ebecb6c9e700e594db7745fa177587304c3170610c52630433334c7a",
+        "comparison": "Tvar symbolu a barevný stav porovnány s obrazovým podkladem u uvedeného oficiálního zdroje; nejde o fotografii konkrétního přístrojového panelu.",
+        "author": "Chris828 at German Wikipedia"
+      },
+      "graphic_path": "wp-content/uploads/kontrolky/pads.svg"
+    },
+    {
+      "id": "F",
+      "name": "Řízení motoru a emisní systém – MIL",
+      "color": "zluta",
+      "group": "motor",
+      "graphic": "engine.svg",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/emission-control.html",
+      "meaning": "Řídicí systém zaznamenal závadu související s řízením motoru nebo emisním systémem. Kontrolka sama neurčuje vadnou součást.",
+      "action": "Rozlišujte trvalé svícení a blikání. U příslušných provedení může blikání souviset s vynecháváním spalování. Pokud motor výrazně škube, vibruje nebo ztrácí výkon, bezpečně zastavte a kontaktujte odbornou pomoc. Jinak další postup určete podle hlášení a návodu vozidla.",
+      "status": "Výstraha",
+      "signal": "Svícení / blikání podle provedení",
+      "difference": "Smazání závady není odstraněním příčiny. Záznam neposkytuje univerzální povolení pokračovat v jízdě.",
+      "scope": "Příklad systému Volkswagen se spalovacím motorem z uvedeného přehledu pro britský trh. Model, generace a modelový rok nejsou zdrojem vymezeny. Platnost pro jiné značky ani pro konkrétní vůz tím není potvrzena.",
+      "brand": "Volkswagen",
+      "model": null,
+      "generation": null,
+      "model_year": null,
+      "powertrains": [
+        "spalovaci"
+      ],
+      "source_type": "Oficiální evropský přehled Volkswagen UK; nejde o modelový návod",
+      "pdf_page": null,
+      "pdf_edition": null,
+      "checked": "2026-10-29",
+      "unresolved": [
+        "Ověřit provedení symbolu a pokyny v návodu konkrétního vozidla.",
+        "Modelová a ročníková platnost není doložena."
+      ],
+      "graphic_source": {
+        "title": "File:Motorkontrollleuchte.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Motorkontrollleuchte.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/6/60/Motorkontrollleuchte.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "modifications": "Monochromatický předlohový symbol vykreslen žlutě podle doložené varianty Volkswagen; tvar nezměněn.",
+        "sha256": "6faee65c4ee575ade86d9d7ad2538bb511e82f271c66fb73f792eeced7c5a0bc",
+        "comparison": "Tvar symbolu a barevný stav porovnány s obrazovým podkladem u uvedeného oficiálního zdroje; nejde o fotografii konkrétního přístrojového panelu.",
+        "author": "Benutzer:chris828"
+      },
+      "graphic_path": "wp-content/uploads/kontrolky/engine.svg"
+    },
+    {
+      "id": "G",
+      "name": "Žhavení a řízení vznětového motoru",
+      "color": "zluta",
+      "group": "motor",
+      "graphic": "glow.svg",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/diesel-engine-management-lamp.html",
+      "meaning": "Krátké rozsvícení před nastartováním může být běžným projevem předehřevu. Rozsvícení nebo blikání při běžícím motoru může signalizovat závadu řízení motoru.",
+      "action": "Respektujte hlášení a zajistěte kontrolu. Z tohoto symbolu nelze automaticky určit závadu žhavicích svíček.",
+      "status": "Informace / upozornění",
+      "signal": "Krátké svícení před startem; svícení / blikání za chodu",
+      "difference": "",
+      "scope": "Volkswagen se vznětovým motorem, pouze provedení se symbolem žhavení v uvedeném zdroji. Model, generace a rok nejsou doloženy; nevztahuje se na benzinový ani čistě elektrický pohon.",
+      "brand": "Volkswagen",
+      "model": null,
+      "generation": null,
+      "model_year": null,
+      "powertrains": [
+        "spalovaci"
+      ],
+      "source_type": "Oficiální evropský přehled Volkswagen UK; nejde o modelový návod",
+      "pdf_page": null,
+      "pdf_edition": null,
+      "checked": "2026-10-29",
+      "unresolved": [
+        "Ověřit provedení symbolu a pokyny v návodu konkrétního vozidla.",
+        "Modelová a ročníková platnost není doložena."
+      ],
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Vorgluehen.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Vorgluehen.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/1/19/Kontrollleuchte_Vorgluehen.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "modifications": "Beze změny tvaru a barev.",
+        "sha256": "590dc6255cff9049bcebc2442a1b61be209d1dbeb4a9014e0b00ccf5ae4de8a4",
+        "comparison": "Tvar symbolu a barevný stav porovnány s obrazovým podkladem u uvedeného oficiálního zdroje; nejde o fotografii konkrétního přístrojového panelu.",
+        "author": "Chris828 at German Wikipedia"
+      },
+      "graphic_path": "wp-content/uploads/kontrolky/glow.svg"
+    },
+    {
+      "id": "H",
+      "name": "Filtr pevných částic – DPF",
+      "color": "zluta",
+      "group": "emise",
+      "graphic": "dpf.svg",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/diesel-particulate-filter.html",
+      "meaning": "U příslušných vznětových vozidel upozorňuje na nahromadění sazí a potřebu regenerace filtru.",
+      "action": "Podmínky případné regenerační jízdy ověřte v návodu konkrétního vozidla. Pokud současně svítí další výstrahy nebo je provoz motoru neobvyklý, neprovádějte regenerační jízdu podle univerzálního internetového návodu.",
+      "status": "Upozornění",
+      "signal": "Svícení",
+      "difference": "Nejde o záznam pro benzinový filtr GPF/OPF. Rychlost, otáčky ani dobu z britského přehledu nepřenášíme jako univerzální postup.",
+      "scope": "Vybraná vznětová vozidla Volkswagen s DPF podle uvedeného přehledu. Konkrétní motor, model a rok nejsou vymezeny.",
+      "brand": "Volkswagen",
+      "model": null,
+      "generation": null,
+      "model_year": null,
+      "powertrains": [
+        "spalovaci"
+      ],
+      "source_type": "Oficiální evropský přehled Volkswagen UK; nejde o modelový návod",
+      "pdf_page": null,
+      "pdf_edition": null,
+      "checked": "2026-10-29",
+      "unresolved": [
+        "Ověřit provedení symbolu a pokyny v návodu konkrétního vozidla.",
+        "Modelová a ročníková platnost není doložena."
+      ],
+      "graphic_source": {
+        "title": "File:Kontrollleuchte DPF.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_DPF.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Kontrollleuchte_DPF.svg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "modifications": "Beze změny tvaru a barev.",
+        "sha256": "37f8e57e8d4c13640561270b64d78a3a05af48299a05fbfc8595be4b7e1d80fb",
+        "comparison": "Tvar symbolu a barevný stav porovnány s obrazovým podkladem u uvedeného oficiálního zdroje; nejde o fotografii konkrétního přístrojového panelu.",
+        "author": "Chris828"
+      },
+      "graphic_path": "wp-content/uploads/kontrolky/dpf.svg"
+    },
+    {
+      "id": "I",
+      "name": "Tlak v pneumatikách – TPMS",
+      "color": "zluta",
+      "group": "pneumatiky",
+      "graphic": "tyres.svg",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/tyre-pressure-monitoring.html",
+      "meaning": "Symbol upozorňuje na nesprávný tlak v pneumatikách. Samotný symbol neurčuje konkrétní netěsnost.",
+      "action": "Bezpečně zastavte a zkontrolujte pneumatiky i jejich tlak. Referenční hodnoty ukládejte až po správné kontrole a úpravě tlaku postupem stanoveným výrobcem.",
+      "status": "Upozornění",
+      "signal": "Svícení",
+      "difference": "Pouhé potvrzení nebo reset upozornění neopravuje defekt ani únik vzduchu. Přímé měření snímači a nepřímý systém podle otáčení kol nemají nutně stejný postup učení. Způsob blikání při závadě zde není doložen; určete jej podle modelového návodu.",
+      "scope": "Příklad systému Volkswagen se spalovacím motorem z uvedeného přehledu pro britský trh. Model, generace a modelový rok nejsou zdrojem vymezeny. Platnost pro jiné značky ani pro konkrétní vůz tím není potvrzena.",
+      "brand": "Volkswagen",
+      "model": null,
+      "generation": null,
+      "model_year": null,
+      "powertrains": [
+        "spalovaci"
+      ],
+      "source_type": "Oficiální evropský přehled Volkswagen UK; nejde o modelový návod",
+      "pdf_page": null,
+      "pdf_edition": null,
+      "checked": "2026-10-29",
+      "unresolved": [
+        "Ověřit provedení symbolu a pokyny v návodu konkrétního vozidla.",
+        "Modelová a ročníková platnost není doložena."
+      ],
+      "graphic_source": {
+        "title": "File:Warnlampe Druckverlust.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Warnlampe_Druckverlust.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/06/Warnlampe_Druckverlust.svg",
+        "license": "Copyrighted free use",
+        "license_url": "",
+        "modifications": "Beze změny tvaru a barev.",
+        "sha256": "b8e9bccf8ccf083d61a666ace921c38e2000daa3d2e840b9a02babf32b6dc6ff",
+        "comparison": "Tvar symbolu a barevný stav porovnány s obrazovým podkladem u uvedeného oficiálního zdroje; nejde o fotografii konkrétního přístrojového panelu.",
+        "author": "de:Benutzer:chris828"
+      },
+      "graphic_path": "wp-content/uploads/kontrolky/tyres.svg"
+    },
+    {
+      "id": "J",
+      "name": "Elektrická soustava a dobíjení",
+      "color": "cervena",
+      "group": "elektricka-soustava",
+      "graphic": "charging.svg",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/vehicle-charging-system.html",
+      "meaning": "U spalovacího vozidla může výstraha upozorňovat na závadu dobíjení nebo elektrické soustavy. Nejde automaticky o vadný akumulátor.",
+      "action": "Přečtěte doprovodné hlášení a řiďte se návodem. Při současných dalších výstrahách nebo omezení funkcí bezpečně zastavte a zajistěte odbornou pomoc.",
+      "status": "Výstraha",
+      "signal": "Svícení",
+      "difference": "Tento záznam není výkladem 12V soustavy elektromobilu. U elektromobilu nelze tímto symbolem dovozovat závadu alternátoru.",
+      "scope": "Příklad systému Volkswagen se spalovacím motorem z uvedeného přehledu pro britský trh. Model, generace a modelový rok nejsou zdrojem vymezeny. Platnost pro jiné značky ani pro konkrétní vůz tím není potvrzena.",
+      "brand": "Volkswagen",
+      "model": null,
+      "generation": null,
+      "model_year": null,
+      "powertrains": [
+        "spalovaci"
+      ],
+      "source_type": "Oficiální evropský přehled Volkswagen UK; nejde o modelový návod",
+      "pdf_page": null,
+      "pdf_edition": null,
+      "checked": "2026-10-29",
+      "unresolved": [
+        "Ověřit provedení symbolu a pokyny v návodu konkrétního vozidla.",
+        "Modelová a ročníková platnost není doložena."
+      ],
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Generator.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Generator.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Kontrollleuchte_Generator.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "modifications": "Beze změny tvaru a barev.",
+        "sha256": "3c9d3e4ba0a88278a7650c427d23701ddfc4d281853c7e36275b1b1cbddeb02f",
+        "comparison": "Tvar symbolu a barevný stav porovnány s obrazovým podkladem u uvedeného oficiálního zdroje; nejde o fotografii konkrétního přístrojového panelu.",
+        "author": "Chris828 at German Wikipedia"
+      },
+      "graphic_path": "wp-content/uploads/kontrolky/charging.svg"
+    },
+    {
+      "id": "ABS",
+      "name": "Protiblokovací systém brzd – ABS",
+      "color": "zluta",
+      "group": "brzdy",
+      "graphic": "abs.svg",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/anti-lock-brake-system.html",
+      "meaning": "Systém ABS hlásí závadu. Protiblokovací funkce a podle provedení také stabilizace mohou být omezené.",
+      "action": "Respektujte hlášení a zajistěte kontrolu brzdového systému. Pokud zároveň svítí červená výstraha brzd nebo je brzdění neobvyklé, bezpečně zastavte a zajistěte odbornou pomoc.",
+      "status": "Omezení funkce",
+      "signal": "Svícení",
+      "difference": "Žlutá kontrolka ABS sama nepotvrzuje vadný snímač otáček kola.",
+      "scope": "Příklad systému Volkswagen se spalovacím motorem z uvedeného přehledu pro britský trh. Model, generace a modelový rok nejsou zdrojem vymezeny. Platnost pro jiné značky ani pro konkrétní vůz tím není potvrzena.",
+      "brand": "Volkswagen",
+      "model": null,
+      "generation": null,
+      "model_year": null,
+      "powertrains": [
+        "spalovaci"
+      ],
+      "source_type": "Oficiální evropský přehled Volkswagen UK; nejde o modelový návod",
+      "pdf_page": null,
+      "pdf_edition": null,
+      "checked": "2026-10-29",
+      "unresolved": [
+        "Ověřit provedení symbolu a pokyny v návodu konkrétního vozidla.",
+        "Modelová a ročníková platnost není doložena."
+      ],
+      "graphic_source": {
+        "title": "File:B05 Anti-lock brake system malfunction.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:B05_Anti-lock_brake_system_malfunction.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/a/a6/B05_Anti-lock_brake_system_malfunction.svg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "modifications": "Beze změny tvaru a barev.",
+        "sha256": "7f4029dfad0c92b520ab3186552ceae023d1a996702660ccaadc3cd1d13e7ad4",
+        "comparison": "Tvar symbolu a barevný stav porovnány s obrazovým podkladem u uvedeného oficiálního zdroje; nejde o fotografii konkrétního přístrojového panelu.",
+        "author": "Ehsnils"
+      },
+      "graphic_path": "wp-content/uploads/kontrolky/abs.svg"
+    },
+    {
+      "id": "BULB",
+      "name": "Závada vnějšího osvětlení",
+      "color": "zluta",
+      "group": "osvetleni",
+      "graphic": "bulb.svg",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/bulb-monitoring.html",
+      "meaning": "Systém sledování osvětlení upozorňuje na závadu některého vnějšího světla.",
+      "action": "Na bezpečném místě zkontrolujte funkci vnějšího osvětlení a zajistěte odstranění závady. Řiďte se přesným hlášením vozidla.",
+      "status": "Upozornění",
+      "signal": "Svícení",
+      "difference": "Kontrolka sama neurčuje konkrétní žárovku nebo řídicí jednotku. Nezaměňovat s poruchou regulace dosahu světlometů.",
+      "scope": "Příklad systému Volkswagen se spalovacím motorem z uvedeného přehledu pro britský trh. Model, generace a modelový rok nejsou zdrojem vymezeny. Platnost pro jiné značky ani pro konkrétní vůz tím není potvrzena.",
+      "brand": "Volkswagen",
+      "model": null,
+      "generation": null,
+      "model_year": null,
+      "powertrains": [
+        "spalovaci"
+      ],
+      "source_type": "Oficiální evropský přehled Volkswagen UK; nejde o modelový návod",
+      "pdf_page": null,
+      "pdf_edition": null,
+      "checked": "2026-10-29",
+      "unresolved": [
+        "Ověřit provedení symbolu a pokyny v návodu konkrétního vozidla.",
+        "Modelová a ročníková platnost není doložena."
+      ],
+      "graphic_source": {
+        "title": "File:A14 Exterior bulb failure.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:A14_Exterior_bulb_failure.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/07/A14_Exterior_bulb_failure.svg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "modifications": "Beze změny tvaru a barev.",
+        "sha256": "2560f229d647b4af0dfe3bd7e639e58ece6afd4d4ad031dc727e4229b25870dd",
+        "comparison": "Tvar symbolu a barevný stav porovnány s obrazovým podkladem u uvedeného oficiálního zdroje; nejde o fotografii konkrétního přístrojového panelu.",
+        "author": "Ehsnils"
+      },
+      "graphic_path": "wp-content/uploads/kontrolky/bulb.svg"
+    },
+    {
+      "id": "RANGE",
+      "name": "Regulace dosahu světlometů",
+      "color": "zluta",
+      "group": "osvetleni",
+      "graphic": "headlight-range.svg",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/headlight-range-control.html",
+      "meaning": "U uvedeného provedení jde o závadu systému regulace dosahu světlometů.",
+      "action": "Respektujte hlášení a objednejte odbornou kontrolu osvětlení.",
+      "status": "Omezení funkce",
+      "signal": "Svícení",
+      "difference": "Nejde o automatické určení vadného snímače výšky ani o shodný výklad všech variant adaptivního osvětlení.",
+      "scope": "Příklad systému Volkswagen se spalovacím motorem z uvedeného přehledu pro britský trh. Model, generace a modelový rok nejsou zdrojem vymezeny. Platnost pro jiné značky ani pro konkrétní vůz tím není potvrzena.",
+      "brand": "Volkswagen",
+      "model": null,
+      "generation": null,
+      "model_year": null,
+      "powertrains": [
+        "spalovaci"
+      ],
+      "source_type": "Oficiální evropský přehled Volkswagen UK; nejde o modelový návod",
+      "pdf_page": null,
+      "pdf_edition": null,
+      "checked": "2026-10-29",
+      "unresolved": [
+        "Ověřit provedení symbolu a pokyny v návodu konkrétního vozidla.",
+        "Modelová a ročníková platnost není doložena."
+      ],
+      "graphic_source": {
+        "title": "File:A04 Headlamp levelling control warning.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:A04_Headlamp_levelling_control_warning.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/a/a5/A04_Headlamp_levelling_control_warning.svg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "modifications": "Beze změny tvaru a barev.",
+        "sha256": "b6a6cc4b5f249c4988aeb94a9b0fdbd990eae6dd0d9ec0dc2b22600926a92a45",
+        "comparison": "Tvar symbolu a barevný stav porovnány s obrazovým podkladem u uvedeného oficiálního zdroje; nejde o fotografii konkrétního přístrojového panelu.",
+        "author": "Ehsnils"
+      },
+      "graphic_path": "wp-content/uploads/kontrolky/headlight-range.svg"
+    },
+    {
+      "id": "REAR-FOG",
+      "name": "Zapnuté zadní mlhové světlo",
+      "color": "zluta",
+      "group": "osvetleni",
+      "graphic": "rear-fog.svg",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/rear-fog-lights.html",
+      "meaning": "Kontrolka informuje o zapnutém zadním mlhovém světle.",
+      "action": "Ověřte, zda jeho použití odpovídá podmínkám viditelnosti a pravidlům provozu. Není-li potřebné, vypněte jej.",
+      "status": "Provozní informace",
+      "signal": "Svícení",
+      "difference": "Jde o informaci o zapnuté funkci, nikoli automaticky o závadu světla.",
+      "scope": "Příklad systému Volkswagen se spalovacím motorem z uvedeného přehledu pro britský trh. Model, generace a modelový rok nejsou zdrojem vymezeny. Platnost pro jiné značky ani pro konkrétní vůz tím není potvrzena.",
+      "brand": "Volkswagen",
+      "model": null,
+      "generation": null,
+      "model_year": null,
+      "powertrains": [
+        "spalovaci"
+      ],
+      "source_type": "Oficiální evropský přehled Volkswagen UK; nejde o modelový návod",
+      "pdf_page": null,
+      "pdf_edition": null,
+      "checked": "2026-10-29",
+      "unresolved": [
+        "Ověřit provedení symbolu a pokyny v návodu konkrétního vozidla.",
+        "Modelová a ročníková platnost není doložena."
+      ],
+      "graphic_source": {
+        "title": "File:A06 Rear fog light.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:A06_Rear_fog_light.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/1/1a/A06_Rear_fog_light.svg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "modifications": "Beze změny tvaru a barev.",
+        "sha256": "0c5bb92ed9a42a45039f3ff4deab12c64bc5dd9e912e5e505486c8e4efd6653f",
+        "comparison": "Tvar symbolu a barevný stav porovnány s obrazovým podkladem u uvedeného oficiálního zdroje; nejde o fotografii konkrétního přístrojového panelu.",
+        "author": "Ehsnils"
+      },
+      "graphic_path": "wp-content/uploads/kontrolky/rear-fog.svg"
+    },
+    {
+      "id": "AIRBAG",
+      "name": "Airbagy a předpínače pásů",
+      "color": "zluta",
+      "group": "bezpecnost",
+      "graphic": "airbag.svg",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/airbag-and-seat-belt-system-yellow.html",
+      "meaning": "Kontrolka může upozorňovat na závadu systému airbagů nebo předpínačů bezpečnostních pásů. Ochranná funkce může být omezená.",
+      "action": "Respektujte hlášení a zajistěte odbornou kontrolu bezpečnostního systému.",
+      "status": "Omezení funkce",
+      "signal": "Svícení / blikání",
+      "difference": "Nezaměňovat s nápisem PASSENGER AIR BAG OFF, který má samostatný význam. Samotná kontrolka neurčuje vadný airbag.",
+      "scope": "Příklad systému Volkswagen se spalovacím motorem z uvedeného přehledu pro britský trh. Model, generace a modelový rok nejsou zdrojem vymezeny. Platnost pro jiné značky ani pro konkrétní vůz tím není potvrzena.",
+      "brand": "Volkswagen",
+      "model": null,
+      "generation": null,
+      "model_year": null,
+      "powertrains": [
+        "spalovaci"
+      ],
+      "source_type": "Oficiální evropský přehled Volkswagen UK; nejde o modelový návod",
+      "pdf_page": null,
+      "pdf_edition": null,
+      "checked": "2026-10-29",
+      "unresolved": [
+        "Ověřit provedení symbolu a pokyny v návodu konkrétního vozidla.",
+        "Modelová a ročníková platnost není doložena."
+      ],
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Airbag.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Airbag.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/9/94/Kontrollleuchte_Airbag.svg",
+        "license": "Copyrighted free use",
+        "license_url": "",
+        "modifications": "Beze změny tvaru a barev.",
+        "sha256": "31485a7d0341b53581b636ae0bd9ef7ed5aba6139a47d6efc5131fd53f8df0d5",
+        "comparison": "Tvar symbolu a barevný stav porovnány s obrazovým podkladem u uvedeného oficiálního zdroje; nejde o fotografii konkrétního přístrojového panelu.",
+        "author": "de:Benutzer:chris828"
+      },
+      "graphic_path": "wp-content/uploads/kontrolky/airbag.svg"
+    },
+    {
+      "id": "BELT",
+      "name": "Bezpečnostní pásy",
+      "color": "cervena",
+      "group": "bezpecnost",
+      "graphic": "seatbelt.svg",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/seat-belt-buckles.html",
+      "meaning": "Připomíná nezapnutý bezpečnostní pás podle obsazeného sedadla a konkrétního provedení.",
+      "action": "Před jízdou správně zapněte bezpečnostní pásy. Případné další hlášení posuďte podle návodu vozidla.",
+      "status": "Výzva k činnosti",
+      "signal": "Svícení",
+      "difference": "Nezaměňovat s poruchovou kontrolkou airbagů a předpínačů. Barva sama neznamená závadu motoru.",
+      "scope": "Příklad systému Volkswagen se spalovacím motorem z uvedeného přehledu pro britský trh. Model, generace a modelový rok nejsou zdrojem vymezeny. Platnost pro jiné značky ani pro konkrétní vůz tím není potvrzena.",
+      "brand": "Volkswagen",
+      "model": null,
+      "generation": null,
+      "model_year": null,
+      "powertrains": [
+        "spalovaci"
+      ],
+      "source_type": "Oficiální evropský přehled Volkswagen UK; nejde o modelový návod",
+      "pdf_page": null,
+      "pdf_edition": null,
+      "checked": "2026-10-29",
+      "unresolved": [
+        "Ověřit provedení symbolu a pokyny v návodu konkrétního vozidla.",
+        "Modelová a ročníková platnost není doložena."
+      ],
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Gurtwarnung.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Gurtwarnung.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/09/Kontrollleuchte_Gurtwarnung.svg",
+        "license": "Copyrighted free use",
+        "license_url": "",
+        "modifications": "Beze změny tvaru a barev.",
+        "sha256": "afa58b3aa7fdb69ae863c4cf28c8a43e0cc225f6812cc3d609f0497f3524f6ef",
+        "comparison": "Tvar symbolu a barevný stav porovnány s obrazovým podkladem u uvedeného oficiálního zdroje; nejde o fotografii konkrétního přístrojového panelu.",
+        "author": "de:Benutzer:chris828"
+      },
+      "graphic_path": "wp-content/uploads/kontrolky/seatbelt.svg"
+    }
+  ],
+  "not_displayed": [
+    {
+      "id": "B",
+      "name": "Hladina motorového oleje",
+      "reason": "Význam svícení a blikání doložen; samostatná žlutá varianta s hladinou není zatím graficky ověřena. Červený symbol nebyl pouze přebarven."
+    },
+    {
+      "id": "K",
+      "name": "Elektrický pohon – červená",
+      "reason": "Textový podklad Volkswagen ID. dohledán; chybí ověřený, právně použitelný grafický soubor přesné varianty. Nezobrazuje se náhradní symbol."
+    },
+    {
+      "id": "L",
+      "name": "Elektrický pohon – žlutá",
+      "reason": "Textový podklad Volkswagen ID. dohledán; chybí ověřený, právně použitelný grafický soubor přesné varianty. Nezobrazuje se náhradní symbol."
+    },
+    {
+      "id": "M",
+      "name": "Přehřátí elektrického pohonu",
+      "reason": "Textový podklad Volkswagen ID. dohledán; chybí ověřený, právně použitelný grafický soubor přesné varianty. Nezobrazuje se náhradní symbol."
+    },
+    {
+      "id": "N",
+      "name": "Omezený výkon – želva",
+      "reason": "Textový podklad Volkswagen ID. dohledán; chybí ověřený, právně použitelný grafický soubor přesné varianty. Nezobrazuje se náhradní symbol."
+    },
+    {
+      "name": "ESC/ASR – zásah, vypnutí a závada",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "EPC",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "Vypnutý airbag spolujezdce",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "Elektromechanické řízení a zámek sloupku",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "Parkovací brzda a Auto Hold",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "Převodovka – přehřátí a omezený provoz",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "AdBlue/SCR – hladina, závada a zákaz startu",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "Adaptivní osvětlení",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "Dálková světla a asistent dálkových světel",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "Přední mlhová světla",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "ACC, Front Assist, Lane Assist, Side Assist, Travel Assist",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "Start-stop – nedostupnost a závada",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "eCall",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "Nízké nabití vysokonapěťového akumulátoru",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "Nabíjení a připojený konektor",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "READY",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "Centrální výstraha",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "Servisní interval",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "Otevřené dveře, kapota a zavazadlový prostor",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    },
+    {
+      "name": "GPF/OPF",
+      "reason": "Chybí dokončené ověření konkrétní kombinace symbolu, barevného stavu, modelové platnosti a grafické licence."
+    }
+  ],
+  "brands_not_covered": [
+    "Audi",
+    "Škoda",
+    "SEAT",
+    "CUPRA",
+    "Volkswagen Užitkové vozy"
+  ],
+  "model_manuals": "Pro konkrétní modelové roky nebyly v této sadě doloženy návody. Rozsah je výslovně omezen na příklady z Volkswagen UK. Před zveřejněním ověřit evropské modelové návody a grafické přiřazení."
+}
