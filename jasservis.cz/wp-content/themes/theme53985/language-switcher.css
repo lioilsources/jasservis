@@ -1,4 +1,4 @@
-/* Visual proposal only: Czech is current; no untranslated destination is linked. */
+/* Same-page links to the three static language editions. */
 .header .language-switcher{position:relative;z-index:2000;flex:none;align-self:center;box-sizing:border-box;width:max-content;margin:0;color:#eee;font-family:var(--js-font);font-weight:400;text-transform:none}
 .header .language-desktop{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:.875rem;line-height:1.4;white-space:nowrap}
 .header .language-codes{display:flex;align-items:center;gap:6px}
@@ -29,3 +29,10 @@
  .header .nav__primary .landscape-nav-row>.navigation-toggle{order:3;margin-left:0}
  .header .landscape-nav-row>#topnav{order:1}
 }
+
+.header .language-codes a{color:inherit;text-decoration:none;padding:4px 0}
+.header .language-codes a:hover{color:var(--js-brand)}
+.header .language-options>li{padding:0}
+.header .language-options>li>a{display:flex;align-items:center;box-sizing:border-box;width:100%;min-height:48px;padding:8px 12px;color:#eee;text-decoration:none}
+.header .language-options>li>a:hover{color:var(--js-brand);background:#ffffff0a}
+.header .language-switcher a:focus-visible{outline:2px solid var(--js-brand);outline-offset:2px}

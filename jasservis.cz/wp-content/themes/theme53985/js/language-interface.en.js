@@ -1,0 +1,1 @@
+(function(){if(!window.jQuery||!jQuery.magnificPopup)return;var d=jQuery.magnificPopup.defaults;var t=["Close (Esc)", "Loading…", "Previous (Left arrow key)", "Next (Right arrow key)", "%curr% of %total%", "The image could not be loaded."];d.tClose=t[0];d.tLoading=t[1];d.gallery.tPrev=t[2];d.gallery.tNext=t[3];d.gallery.tCounter=t[4];d.image.tError=t[5];}());
