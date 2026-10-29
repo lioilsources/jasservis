@@ -1077,3 +1077,6 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
 .mobile-nav-panel #topnav .sub-menu .menu-overview{display:none}
 .mobile-nav-panel #topnav .service-group-title{text-align:left;letter-spacing:normal}
 .mobile-nav-panel #topnav .sub-menu a{text-align:left;justify-content:flex-start}
+/* Brand and GVO destinations keep the brand orange in every navigation layout. */
+.header .nav__primary #topnav>#menu-item-2275>.sub-menu>li:not(.menu-overview)>a,
+.mobile-nav-panel #topnav>#menu-item-2275>.sub-menu>li:not(.menu-overview)>a{color:var(--js-brand)}
