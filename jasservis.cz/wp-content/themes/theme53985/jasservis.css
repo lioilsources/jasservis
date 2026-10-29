@@ -1044,3 +1044,39 @@ body:has(.contact-booking-panel[open]) { overflow:hidden; }
  .header .header_block_1 .tel .header-phone{order:0}
  .header .header_block_1 .tel .header-hours{display:block!important;flex:1 0 100%;order:2;margin:0;text-align:right;line-height:20px}
 }
+/* Modal navigation uses the original link tree; desktop and closed header stay unchanged. */
+dialog.mobile-nav-panel{box-sizing:border-box;position:fixed;inset:0;margin:0;width:100%;max-width:none;height:100vh;height:100dvh;max-height:none;padding:0;border:0;background:#191818;color:#f5f5f5;overflow:hidden;font:400 1.125rem/1.45 Ubuntu,sans-serif}
+dialog.mobile-nav-panel:not([open]){display:none}
+dialog.mobile-nav-panel[open]{display:flex;flex-direction:column}
+dialog.mobile-nav-panel::backdrop{background:#191818}
+.mobile-nav-panel .mobile-nav-toolbar{display:flex;align-items:center;justify-content:space-between;flex:none;gap:16px;padding:calc(8px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px));border-bottom:1px solid #ffffff30}
+.mobile-nav-panel #mobile-nav-title{margin:0;color:#fff;font:600 1.25rem/1.4 Ubuntu,sans-serif;text-transform:none}
+.mobile-nav-panel .mobile-nav-close{display:flex;align-items:center;gap:12px;min-height:48px;padding:8px 12px;color:#fff;background:transparent;border:1px solid #ffffff60;border-radius:3px;font:600 1rem/1.4 Ubuntu,sans-serif;cursor:pointer}
+.mobile-nav-panel .mobile-nav-close span{font-size:1.75rem;line-height:1}
+.mobile-nav-panel .mobile-nav-scroll{overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;min-height:0;flex:1;padding:0 max(16px,env(safe-area-inset-right,0px)) max(20px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.mobile-nav-panel #topnav{position:static!important;display:block!important;width:100%!important;max-width:none!important;margin:0;padding:0;background:transparent;float:none;max-height:none!important;overflow:visible!important}
+.mobile-nav-panel #topnav>li{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 48px;float:none;width:100%;box-sizing:border-box;margin:0;padding:0;border:0;border-bottom:1px solid #ffffff26;background:transparent}
+.mobile-nav-panel #topnav>li>a,.mobile-nav-panel #topnav>li>.reviews-toggle{box-sizing:border-box;display:flex;align-items:center;min-height:52px;padding:12px 14px;margin:0;border:0;background:transparent;color:#f5f5f5;font:400 1.125rem/1.45 Ubuntu,sans-serif;text-align:left;text-transform:none;white-space:normal;overflow-wrap:break-word;text-decoration:none;box-shadow:none;text-shadow:none}
+.mobile-nav-panel #topnav>li>.reviews-toggle{grid-column:1/-1;justify-content:space-between;padding-right:18px;cursor:pointer}
+.mobile-nav-panel #topnav>li>.reviews-toggle span{display:none}
+.mobile-nav-panel #topnav>li>a[aria-current=page]{color:#ff814a;box-shadow:none}
+.mobile-nav-panel #topnav>li>.submenu-toggle{position:static;display:flex;align-items:center;justify-content:center;width:48px;min-height:52px;padding:0;margin:0;border:0;background:transparent;box-shadow:none;font-size:0;color:#fff;cursor:pointer}
+.mobile-nav-panel #topnav>li>.submenu-toggle:before{content:none}
+.mobile-nav-panel #topnav>li>.submenu-toggle:after,.mobile-nav-panel #topnav>li>.reviews-toggle:after{content:'';display:block;flex:none;width:8px;height:8px;margin:0;box-sizing:content-box;border:0;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg)}
+.mobile-nav-panel #topnav>li>button[aria-expanded=true]:after{transform:rotate(225deg)}
+.mobile-nav-panel #topnav .sub-menu,.mobile-nav-panel #topnav .service-groups,.mobile-nav-panel #topnav .service-groups ul{position:static!important;grid-column:1/-1;display:block;box-sizing:border-box;float:none;width:100%!important;max-width:none!important;max-height:none!important;margin:0;padding:0;border:0;background:#242323;overflow:visible!important;opacity:1!important;visibility:visible!important;box-shadow:none;transform:none}
+.mobile-nav-panel #topnav [hidden]{display:none!important}
+.mobile-nav-panel #topnav .sub-menu li{position:static;display:block;float:none;width:auto;margin:0;padding:0;border:0;background:transparent}
+.mobile-nav-panel #topnav .sub-menu a{display:flex;align-items:center;box-sizing:border-box;min-height:48px;padding:10px 20px 10px 28px;border:0;border-top:1px solid #ffffff12;background:transparent;color:#f5f5f5;font:400 1.125rem/1.45 Ubuntu,sans-serif;text-transform:none;text-decoration:none;white-space:normal;overflow-wrap:break-word;text-shadow:none}
+.mobile-nav-panel #topnav .sub-menu a[aria-current=page]{color:#ff814a;box-shadow:none}
+.mobile-nav-panel #topnav .service-group-title{display:block;padding:18px 20px 8px 28px;color:#ff814a;font:600 1.15rem/1.4 Ubuntu,sans-serif;text-transform:none}
+.mobile-nav-panel #topnav .menu-overview{display:none}
+.mobile-nav-panel .mobile-nav-booking{display:block;box-sizing:border-box;width:100%;min-height:48px;margin:20px 0 0;padding:12px 16px;background:var(--js-card);color:#fff;border:1px solid #333;border-radius:3px;font:600 1.125rem/1.45 Ubuntu,sans-serif;cursor:pointer}
+.mobile-nav-panel :is(a,button):focus-visible{outline:3px solid #ffb077!important;outline-offset:-3px}
+.mobile-nav-panel #topnav a:hover{background:#ffffff0c}
+.mobile-nav-panel #topnav .sub-menu .menu-overview{display:none}
+.mobile-nav-panel #topnav .service-group-title{text-align:left;letter-spacing:normal}
+.mobile-nav-panel #topnav .sub-menu a{text-align:left;justify-content:flex-start}
+/* Brand and GVO destinations keep the brand orange in every navigation layout. */
+.header .nav__primary #topnav>#menu-item-2275>.sub-menu>li:not(.menu-overview)>a,
+.mobile-nav-panel #topnav>#menu-item-2275>.sub-menu>li:not(.menu-overview)>a{color:var(--js-brand)}
