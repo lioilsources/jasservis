@@ -1,0 +1,31 @@
+/* Visual proposal only: Czech is current; no untranslated destination is linked. */
+.header .language-switcher{position:relative;z-index:2000;flex:none;align-self:center;box-sizing:border-box;width:max-content;margin:0;color:#eee;font-family:var(--js-font);font-weight:400;text-transform:none}
+.header .language-desktop{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:.875rem;line-height:1.4;white-space:nowrap}
+.header .language-codes{display:flex;align-items:center;gap:6px}
+.header .language-codes [aria-current]{color:var(--js-brand);font-weight:600}
+.header .language-desktop small{font-size:.65625rem;line-height:1.4;color:#bbb}
+.header .language-mobile{display:none;position:relative;width:52px;margin:0}
+.header .language-mobile>summary{display:flex;align-items:center;justify-content:center;gap:6px;box-sizing:border-box;width:52px;min-height:44px;padding:8px;border:1px solid #ffffff60;border-radius:3px;color:var(--js-brand);background:transparent;font:600 .875rem/1.4 Ubuntu,sans-serif;list-style:none;cursor:pointer}
+.header .language-mobile>summary::-webkit-details-marker{display:none}
+.header .language-mobile>summary:after{content:'';width:6px;height:6px;flex:none;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);margin-top:-3px}
+.header .language-mobile[open]>summary:after{transform:rotate(225deg);margin-top:3px}
+.header .language-options{position:absolute;top:calc(100% + var(--language-panel-gap,6px));right:0;z-index:1;box-sizing:border-box;width:208px;max-width:calc(100vw - 32px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px));max-height:var(--language-available,240px);overflow-y:auto;overscroll-behavior:contain;margin:0;padding:6px 0;border:1px solid #ffffff50;border-radius:3px;background:#242323;list-style:none;color:#eee;font:400 1rem/1.4 Ubuntu,sans-serif;text-align:left}
+.header .language-mobile:not([open])>.language-options{display:none}
+.header .language-options>li{display:flex;align-items:center;justify-content:space-between;gap:12px;box-sizing:border-box;min-height:48px;margin:0;padding:8px 12px;border:0;list-style:none;white-space:normal}
+.header .language-options>li:first-child{padding:0}
+.header .language-options>li+li{border-top:1px solid #ffffff1f}
+.header .language-options small{font-size:.75rem;color:#bbb;white-space:nowrap}
+.header .language-options .language-current{display:block;width:100%;min-height:48px;padding:8px 12px;border:0;background:transparent;color:var(--js-brand);font:600 1rem/1.4 Ubuntu,sans-serif;text-align:left;cursor:pointer}
+.header .language-switcher :is(button,summary):focus-visible{outline:2px solid var(--js-brand);outline-offset:2px}
+@media(min-width:1200px){.header .header_block_1>.language-contact-row{grid-template-columns:minmax(0,1fr) auto auto}}
+@media(max-width:1199px), (max-width:1399px) and (any-pointer:coarse){
+ .header .language-switcher:not(.language-ready){display:none}
+ .header .language-desktop{display:none}
+ .header .language-mobile{display:block}
+ .header .nav__primary>.language-switcher{position:absolute;top:4px;right:0;width:52px}
+ .header .nav__primary.has-language-control.short-header-full-nav{box-sizing:border-box;padding-right:68px}
+ .header .nav__primary.has-language-control.short-header-full-nav>.language-switcher{top:50%;transform:translateY(-50%)}
+ .header .landscape-nav-row>.language-switcher{position:relative;order:2;margin-left:auto;width:52px}
+ .header .nav__primary .landscape-nav-row>.navigation-toggle{order:3;margin-left:0}
+ .header .landscape-nav-row>#topnav{order:1}
+}

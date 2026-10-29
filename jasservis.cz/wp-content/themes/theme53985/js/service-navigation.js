@@ -83,6 +83,7 @@
         window.requestAnimationFrame(arrangeShortHeader);
     }
     function openMobilePanel() {
+        closeLanguage(false);
         controls.forEach(close);
         menu.parentNode.insertBefore(menuSlot, menu);
         menuScroll.insertBefore(menu, booking);
@@ -147,6 +148,7 @@
         control.panel.style.setProperty('--menu-available', Math.max(44, Math.floor(height)) + 'px');
     }
     function open(control) {
+        closeLanguage(false);
         controls.forEach(function (other) {
             if (other !== control) close(other);
         });
@@ -203,7 +205,7 @@
             // Entering the arrow must leave its first click free to open the panel.
             // Entering the label (or the whole Recenze tile) opens the desktop menu on hover.
             var pointed = document.elementFromPoint(event.clientX, event.clientY);
-            if (!canHover.matches || event.pointerType !== 'mouse' || isCompactMenu()) return;
+            if (!canHover.matches || event.pointerType !== 'mouse' || isCompactMenu() || (languageDetails && languageDetails.open)) return;
             if (link === button) { if (panel.hidden) { open(control); control.hoverOpened = true; } }
             else if (!(pointed && button.contains(pointed))) open(control);
         });
@@ -281,6 +283,44 @@
     var logo = document.querySelector('.header .logo');
     var logoHome = document.createComment('logo original position');
     var landscapeRow;
+    var languageSwitch = document.querySelector('.language-switcher');
+    var languageCompact = window.matchMedia('(max-width:1199px), (max-width:1399px) and (any-pointer:coarse)');
+    var languageHome = document.createComment('language original position');
+    var languageDetails = languageSwitch && languageSwitch.querySelector('.language-mobile');
+    var languageSummary = languageDetails && languageDetails.querySelector('summary');
+    if (languageSwitch) languageSwitch.parentNode.insertBefore(languageHome, languageSwitch);
+    function closeLanguage(restoreFocus) {
+        if (!languageDetails || !languageDetails.open) return;
+        languageDetails.open = false;
+        if (restoreFocus) languageSummary.focus({preventScroll:true});
+    }
+    function fitLanguagePanel() {
+        if (!languageDetails || !languageDetails.open) return;
+        var panel = languageDetails.querySelector('.language-options');
+        var anchorBottom = languageSummary.getBoundingClientRect().bottom;
+        Array.prototype.forEach.call(languageSwitch.closest('.header').querySelectorAll('a,button,summary'), function (element) {
+            if (!languageSwitch.contains(element) && element.getClientRects().length) anchorBottom = Math.max(anchorBottom, element.getBoundingClientRect().bottom);
+        });
+        languageDetails.style.setProperty('--language-panel-gap', Math.max(6, anchorBottom - languageDetails.getBoundingClientRect().bottom + 6) + 'px');
+        var viewport = window.visualViewport;
+        var bottom = viewport ? viewport.offsetTop + viewport.height : window.innerHeight;
+        languageDetails.style.setProperty('--language-available', Math.max(48, Math.min(240, bottom - panel.getBoundingClientRect().top - 8)) + 'px');
+    }
+    if (languageDetails) {
+        languageDetails.addEventListener('toggle', function () {
+            if (languageDetails.open) { controls.forEach(close); fitLanguagePanel(); }
+        });
+        languageDetails.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && languageDetails.open) {
+                event.preventDefault(); event.stopPropagation(); closeLanguage(true);
+            }
+        });
+        languageDetails.querySelector('.language-current').addEventListener('click', function () { closeLanguage(true); });
+        document.addEventListener('click', function (event) { if (!languageSwitch.contains(event.target)) closeLanguage(false); });
+        window.addEventListener('resize', fitLanguagePanel);
+        if (window.visualViewport) window.visualViewport.addEventListener('resize', fitLanguagePanel);
+    }
+
     if (logo) logo.parentNode.insertBefore(logoHome, logo);
     function arrangeShortHeader() {
         if (!logo) return;
@@ -301,9 +341,20 @@
             logoHome.parentNode.insertBefore(logo, logoHome.nextSibling);
             if (menu.parentElement === landscapeRow) nav.insertBefore(menu, landscapeRow.nextSibling);
             nav.insertBefore(toggle, menu);
+            if (languageSwitch && languageSwitch.parentNode === landscapeRow) nav.appendChild(languageSwitch);
             landscapeRow.remove();
             landscapeRow = null;
             moved = true;
+        }
+        if (languageSwitch) {
+            var languageTarget = shortLandscape.matches ? landscapeRow : (compact.matches ? nav : languageHome.parentNode);
+            if (languageSwitch.parentNode !== languageTarget) {
+                languageTarget.appendChild(languageSwitch);
+                moved = true;
+            }
+            languageSwitch.classList.add('language-ready');
+            nav.classList.toggle('has-language-control', languageSwitch.parentNode === nav);
+            if (!languageCompact.matches) closeLanguage(false);
         }
         nav.classList.toggle('tablet-navigation', tablet.matches);
         var wasCollapsed = nav.classList.contains('desktop-menu-collapsed');
@@ -314,6 +365,7 @@
             menu.hidden = false;
             var needed = menu.getBoundingClientRect().width;
             var available = shortLandscape.matches ? landscapeRow.clientWidth - logo.getBoundingClientRect().width - 16 : nav.clientWidth;
+            if (languageSwitch) available -= languageSwitch.getBoundingClientRect().width + 16;
             nav.classList.remove('measuring-short-nav');
             var fits = needed <= available;
             nav.classList.toggle('short-header-full-nav', fits);
@@ -341,9 +393,10 @@
         if (menu.hidden) controls.forEach(close);
         syncToggle();
         fitOpenDropdowns();
+        fitLanguagePanel();
         var restoreFocus = moved || document.activeElement !== focused;
         if (restoreFocus && focused === toggle && !isCompactMenu()) menu.querySelector('a, button').focus({preventScroll: true});
-        else if (restoreFocus && focused && focused.isConnected && (focused === toggle || logo.contains(focused) || (!menu.hidden && menu.contains(focused)))) focused.focus({preventScroll: true});
+        else if (restoreFocus && focused && focused.isConnected && (focused === toggle || logo.contains(focused) || (languageSwitch && languageSwitch.contains(focused) && languageSummary.getClientRects().length) || (!menu.hidden && menu.contains(focused)))) focused.focus({preventScroll: true});
         arrangingHeader = false;
     }
     if (tablet.addEventListener) tablet.addEventListener('change', arrangeShortHeader);
