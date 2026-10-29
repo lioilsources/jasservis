@@ -127,6 +127,7 @@
         control.panel.hidden = true;
     }
     function fitDropdown(control) {
+        control.panel.style.removeProperty('--dropdown-shift-x');
         if (isCompactMenu()) {
             control.panel.style.removeProperty('--menu-available');
             control.item.style.removeProperty('--service-menu-offset');
@@ -143,6 +144,15 @@
         if (banner && !banner.hidden) {
             var bannerBounds = banner.getBoundingClientRect();
             if (bannerBounds.height > 0) bottom = Math.min(bottom, bannerBounds.top);
+        }
+        // Only floating desktop panels need horizontal correction. Reset before
+        // each measurement so resizing cannot accumulate an earlier offset.
+        if (window.innerWidth >= 1200) {
+            var bounds = control.panel.getBoundingClientRect();
+            var left = viewport ? viewport.offsetLeft : 0;
+            var right = left + (viewport ? viewport.width : window.innerWidth);
+            var shift = bounds.left < left + 16 ? left + 16 - bounds.left : (bounds.right > right - 16 ? right - 16 - bounds.right : 0);
+            if (shift) control.panel.style.setProperty('--dropdown-shift-x', Math.round(shift) + 'px');
         }
         var height = bottom - control.panel.getBoundingClientRect().top - 12;
         control.panel.style.setProperty('--menu-available', Math.max(44, Math.floor(height)) + 'px');
