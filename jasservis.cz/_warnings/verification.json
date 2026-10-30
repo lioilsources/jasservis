@@ -87,8 +87,82 @@
     ]
   },
   "brand_page_cta_tests": 36,
-  "rendered_colour_variants_checked_in_each_engine": 45,
+  "rendered_colour_variants_checked_in_each_engine": 47,
   "physical_devices_tested": [],
   "device_note": "Linux Chromium and WebKit with viewport/touch emulation; no physical iPhone, Android phone or tablet tested.",
-  "unrelated_content": "Shared headers unchanged. Other brand-page content unchanged apart from warning-catalogue availability notes. Media parity: 28 page groups, 76 entries."
+  "unrelated_content": "Shared headers unchanged. Other brand-page content unchanged apart from warning-catalogue availability notes. Media parity: 28 page groups, 76 entries.",
+  "new_model_cases": 36,
+  "catalog_counts": {
+    "semantic_records": 88,
+    "legacy_generic_volkswagen": 2,
+    "model_documented_semantic_records": 83,
+    "model_edition_assignments": 334,
+    "partially_reviewed_manual_editions": 35,
+    "shared_graphic_colour_variants": 47,
+    "distinct_pictogram_shapes": 35,
+    "by_brand": {
+      "volkswagen": {
+        "distinct_pictogram_shapes": 22,
+        "graphic_colour_variants": 25,
+        "semantic_variants": 27,
+        "model_edition_assignments": 25,
+        "generic_brand_assignments": 2,
+        "reviewed_manual_editions": 1,
+        "first_party_hosted_manual_editions": 1,
+        "third_party_hosted_manual_editions": 0
+      },
+      "audi": {
+        "distinct_pictogram_shapes": 0,
+        "graphic_colour_variants": 0,
+        "semantic_variants": 0,
+        "model_edition_assignments": 0,
+        "generic_brand_assignments": 0,
+        "reviewed_manual_editions": 0,
+        "first_party_hosted_manual_editions": 0,
+        "third_party_hosted_manual_editions": 0
+      },
+      "skoda": {
+        "distinct_pictogram_shapes": 27,
+        "graphic_colour_variants": 34,
+        "semantic_variants": 45,
+        "model_edition_assignments": 63,
+        "generic_brand_assignments": 0,
+        "reviewed_manual_editions": 2,
+        "first_party_hosted_manual_editions": 0,
+        "third_party_hosted_manual_editions": 2
+      },
+      "seat": {
+        "distinct_pictogram_shapes": 27,
+        "graphic_colour_variants": 34,
+        "semantic_variants": 43,
+        "model_edition_assignments": 93,
+        "generic_brand_assignments": 0,
+        "reviewed_manual_editions": 19,
+        "first_party_hosted_manual_editions": 19,
+        "third_party_hosted_manual_editions": 0
+      },
+      "cupra": {
+        "distinct_pictogram_shapes": 30,
+        "graphic_colour_variants": 37,
+        "semantic_variants": 49,
+        "model_edition_assignments": 132,
+        "generic_brand_assignments": 0,
+        "reviewed_manual_editions": 12,
+        "first_party_hosted_manual_editions": 12,
+        "third_party_hosted_manual_editions": 0
+      },
+      "volkswagen-uzitkove-vozy": {
+        "distinct_pictogram_shapes": 23,
+        "graphic_colour_variants": 26,
+        "semantic_variants": 28,
+        "model_edition_assignments": 21,
+        "generic_brand_assignments": 7,
+        "reviewed_manual_editions": 1,
+        "first_party_hosted_manual_editions": 1,
+        "third_party_hosted_manual_editions": 0
+      }
+    }
+  },
+  "preservation_check": "All original SEAT, CUPRA and Skoda records and model assignments retained; 30 generic scopes replaced with model evidence and previous scope archived.",
+  "svg_geometry_check": "Both new hands-on-wheel colour variants preserve the licensed source path data, circle geometry, stroke width and stroke-only ring."
 }

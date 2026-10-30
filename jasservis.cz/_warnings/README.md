@@ -64,3 +64,23 @@ AUTO HOLD jsou doložené krátké nápisy; nevkládají proprietární font vý
 
 Všechny tři nové stránky i jejich zdrojové přehledy mají `noindex, nofollow`.
 Zbývající ochranu celého náhledu přidává stávající preview workflow.
+
+## Modelové doložení 30. 10. 2026
+
+- Oficiální veřejný německý DIMA portál umožnil zvolit model a vydání bez VIN.
+  Nově jsou samostatně doloženy Golf 5H0, 11.2020 (5H0012769AD), a Caddy 2K7,
+  11.2025 (2K7012767AM). Nejde o návod přizpůsobený konkrétnímu VIN.
+- HTML příručky mají `document_type: html`, `source_sections` a
+  `source_topic_ids`; nevymýšlejí se čísla stránek PDF. Původní veřejná URL
+  výběru návodu neobsahuje soukromý token.
+- `change_history` dokládá přesný přechod 73 → 86 i další přechod 86 → 88.
+  Původních 73 záznamů zůstalo zachováno. Rozšíření Škoda 43 = 36 přiřazení
+  starých záznamů + 7 nových; užitkové vozy 24 = 18 přiřazení + 6 nových.
+- Nová modelová kontrola přidala 48 přiřazení a dva významové stavy jednoho
+  nového tvaru (ruce na volantu, bílá/červená). Třicet obecných rozsahů bylo
+  nahrazeno modelem; starý zdroj zůstává v `previous_general_scopes`.
+- Žádný starší záznam ani modelový rozsah Škoda/SEAT/CUPRA nebyl odstraněn.
+- Nelze přebírat rozdílné tvary: Caddy má jiná provedení jízdních pruhů,
+  některých asistentů, volantu a DPF. Nepotvrzené varianty zůstávají oddělené.
+- Kompletní revize Audi, všech modelů/let a všech ADAS/EV symbolů stále chybí.
+  Přehled proto musí zůstat označený jako nekompletní a pouze v náhledu.

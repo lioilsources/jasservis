@@ -35,8 +35,14 @@ def card(item,brand,lang,page):
  out+=f'<h4>{esc(u["validity"])}</h4><ul class="wl-sources">'
  for s in scopes:
   if s.get('manual'):
-   m=CAT['manuals'][s['manual']];pg=', '.join(map(str,s['printed_pages']));pdf=', '.join(map(str,s['pdf_pages']));url=m['url']+'#page='+str(s['pdf_pages'][0]);powers=', '.join(u['powers'][p] for p in s['powertrains'])
-   out+=f'<li><strong>{esc(u["brands"][brand])} {esc(model_label(s["model"],s["model_year"]))}</strong><br>{esc(s["edition"])} · {esc(powers)}<br><a href="{esc(url)}" target="_blank" rel="noopener">{esc(source_label(m,lang))}: {esc(u["pages"])} {pg} ({esc(u["pdfPages"])} {pdf})</a></li>'
+   m=CAT['manuals'][s['manual']];powers=', '.join(u['powers'][p] for p in s['powertrains'])
+   if m.get('document_type')=='html':
+    url=m['url'];location=' · '.join(s['source_sections'])
+   else:
+    pg=', '.join(map(str,s['printed_pages']));pdf=', '.join(map(str,s['pdf_pages']));url=m['url']+'#page='+str(s['pdf_pages'][0]);location=f'{u["pages"]} {pg} ({u["pdfPages"]} {pdf})'
+   out+=f'<li><strong>{esc(u["brands"][brand])} {esc(model_label(s["model"],s["model_year"]))}</strong><br>{esc(s["edition"])} · {esc(powers)}<br><a href="{esc(url)}" target="_blank" rel="noopener">{esc(source_label(m,lang))}: {esc(location)}</a>'
+   if s.get('model_note'):out+='<p>'+esc(s['model_note'][lang])+'</p>'
+   out+='</li>'
   else:out+=f'<li><strong>{esc(u["generic"])}</strong><p>{esc(s["scope"][lang])}</p><a href="{esc(s["url"])}" target="_blank" rel="noopener">{esc(s.get("source_label", "Volkswagen UK (English)"))}</a></li>'
  out+='</ul><p>'+esc(u['equipment'])+'</p>'
  for sc in scopes:
@@ -98,6 +104,35 @@ def create_page(lang):
  meta+='<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False).replace('</','<\\/')+'</script>'
  s=s.replace('</head>',meta+'</head>');s=re.sub(r'(?m)^[ \t]+$','',s);return page,s
 
+def history_table(lang):
+ u=UI[lang];h=next(x for x in CAT.get('change_history',[]) if x['id']=='73-to-86')
+ labels={'cs':['Vysvětlení změny 73 → 86','Původních 73 významových záznamů zůstalo zachováno včetně textů a modelových přiřazení. Přibylo 13 nových záznamů: 7 pro Škodu a 6 pro užitkové vozy. Nic nebylo sloučeno, nahrazeno ani odstraněno.','Škoda: 43 položek = 36 nových přiřazení stávajících záznamů + 7 nových záznamů. Volkswagen Užitkové vozy: 24 položek = 18 přiřazení stávajících záznamů + 6 nových záznamů. Počet karet podle značek se změnil ze 107 na 174, nikoli počet unikátních významů o 67.','Nové významové záznamy','Přiřazené stávající záznamy','Zachované položky SEAT a CUPRA','Tento rozpis porovnává konkrétně verze db2c200 a 279c4c9. Další rozšíření se vykazují samostatně.'],
+ 'en':['Explaining the change from 73 to 86','All 73 original semantic records were retained, including their texts and model assignments. Thirteen new records were added: seven for Škoda and six for commercial vehicles. None were merged, replaced or removed.','Škoda: 43 brand entries = 36 assignments of existing records + 7 new records. Volkswagen Commercial Vehicles: 24 brand entries = 18 assignments of existing records + 6 new records. Brand-card count rose from 107 to 174; this does not mean 67 new unique meanings.','New semantic records','Assignments of existing records','Retained SEAT and CUPRA entries','This reconciliation specifically compares versions db2c200 and 279c4c9. Subsequent expansions are reported separately.'],
+ 'de':['Erklärung der Änderung von 73 auf 86','Alle 73 ursprünglichen Bedeutungseinträge einschließlich Texten und Modellzuordnungen blieben erhalten. Hinzu kamen 13 neue Einträge: sieben für Škoda und sechs für Nutzfahrzeuge. Nichts wurde zusammengeführt, ersetzt oder entfernt.','Škoda: 43 Markeneinträge = 36 Zuordnungen vorhandener Einträge + 7 neue Einträge. Volkswagen Nutzfahrzeuge: 24 Markeneinträge = 18 Zuordnungen vorhandener Einträge + 6 neue Einträge. Die Zahl der Markenkarten stieg von 107 auf 174; dies bedeutet nicht 67 neue einzigartige Bedeutungen.','Neue Bedeutungseinträge','Zuordnungen vorhandener Einträge','Erhaltene SEAT- und CUPRA-Einträge','Dieser Abgleich vergleicht ausdrücklich die Versionen db2c200 und 279c4c9. Weitere Ergänzungen werden gesondert ausgewiesen.']}[lang]
+ out='<section id="zmeny-73-86"><h2>'+labels[0]+'</h2><p>'+labels[1]+'</p><p>'+labels[2]+'</p><p>'+labels[6]+'</p><h3>'+labels[3]+'</h3><ul>'
+ for row in h['added']:out+='<li><code>'+esc(row['id'])+'</code> — '+esc(row['name'][lang])+'</li>'
+ out+='</ul><h3>'+labels[4]+'</h3>'
+ for brand,row in h['brand_additions'].items():
+  ids=set(row['existing_records_assigned']);out+='<details><summary>'+esc(u['brands'][brand])+' · '+str(len(ids))+'</summary><ul>'
+  for item in CAT['items']:
+   if item['id'] in ids:out+='<li><code>'+esc(item['id'])+'</code> — '+esc(item['name'][lang])+'</li>'
+  out+='</ul></details>'
+ out+='<h3>'+labels[5]+'</h3><p>SEAT: 43 → 43. CUPRA: 49 → 49.</p></section>'
+ return out
+
+def latest_history(lang):
+ u=UI[lang];event=next(x for x in CAT['change_history'] if x['id']=='86-to-88')
+ t={'cs':['Nové ověření: 86 → 88 významových záznamů','Přibyly dva samostatné významy stejného nového tvaru: bílá výzva k převzetí řízení a červená naléhavá výzva. Celkem nyní 35 tvarů a 47 barevných variant. Přibylo 48 modelových přiřazení; 30 z nich nahrazuje obecné rozsahy (13 Volkswagen, 17 užitkové vozy). Původní obecné zdroje zůstávají uložené v evidenci. Žádný původní záznam ani modelové přiřazení SEAT/CUPRA/Škoda nebylo odstraněno.','Nahrazené obecné rozsahy','Nově doložená modelová přiřazení'],
+ 'en':['New verification: 86 → 88 semantic records','Two distinct meanings of one new pictogram shape were added: a white steering take-over request and a red urgent request. There are now 35 shapes and 47 colour variants. Forty-eight model assignments were added; 30 replace general scopes (13 Volkswagen, 17 commercial vehicles). Previous general sources remain in the evidence. No original SEAT/CUPRA/Škoda record or model assignment was removed.','Replaced general scopes','Newly supported model assignments'],
+ 'de':['Neue Prüfung: 86 → 88 Bedeutungseinträge','Zwei Bedeutungen einer neuen Piktogrammform kamen hinzu: weiße Aufforderung zur Lenkungsübernahme und rote dringende Aufforderung. Insgesamt jetzt 35 Formen und 47 Farbvarianten. 48 Modellzuordnungen kamen hinzu; 30 ersetzen allgemeine Geltungsbereiche (13 Volkswagen, 17 Nutzfahrzeuge). Bisherige allgemeine Quellen bleiben dokumentiert. Kein ursprünglicher SEAT/CUPRA/Škoda-Eintrag oder Modellnachweis wurde entfernt.','Ersetzte allgemeine Geltungsbereiche','Neu belegte Modellzuordnungen']}[lang]
+ out='<section id="zmeny-86-88"><h2>'+t[0]+'</h2><p>'+t[1]+'</p>'
+ for key,title in [('replaced_general_scopes',t[2]),('added_model_assignments',t[3])]:
+  out+='<details><summary>'+title+'</summary><ul>'
+  for row in event[key]:
+   m=CAT['manuals'][row['manual']];out+='<li><code>'+esc(row['id'])+'</code> · '+esc(u['brands'][row['brand']])+' · '+esc(m['model'])+' · '+esc(m['edition'])+'</li>'
+  out+='</ul></details>'
+ return out+'</section>'
+
 def coverage_table(lang):
  u=UI[lang]
  labels={'cs':['Rozsah po značkách','Značka','Tvary symbolů','Barevné varianty','Významové varianty','Modelová přiřazení','Obecné příklady','Přesné chybějící podklady a přístup','Zdroj'],
@@ -106,7 +141,19 @@ def coverage_table(lang):
  text='<h2>'+labels[0]+'</h2><p>'+esc(CAT['counting_method'][lang])+'</p><table><thead><tr>'+''.join('<th>'+esc(x)+'</th>' for x in labels[1:7])+'</tr></thead><tbody>'
  for brand,n in CAT['counts']['by_brand'].items():
   text+='<tr><td>'+esc(u['brands'][brand])+'</td>'+''.join('<td>'+str(n[k])+'</td>' for k in ['distinct_pictogram_shapes','graphic_colour_variants','semantic_variants','model_edition_assignments','generic_brand_assignments'])+'</tr>'
- text+='</tbody></table><h2>'+labels[7]+'</h2><ul>'
+ text+='</tbody></table>'
+ for brand,n in CAT['counts']['by_brand'].items():
+  text+='<section id="rozsah-'+brand+'"><h3>'+esc(u['brands'][brand])+'</h3><ul>'
+  keys=sorted({s['manual'] for i in CAT['items'] for s in i['scopes'] if s['brand']==brand and s.get('manual')})
+  for key in keys:
+   m=CAT['manuals'][key];text+='<li>'+esc(model_label(m['model'],m['year']))+' · '+esc(m['edition'])+' · '+esc(source_label(m,lang))+'</li>'
+  text+='</ul>'
+  for gap in CAT['gaps']:
+   if gap['brand']==brand:text+='<p>'+esc(gap['description'][lang])+'</p>'
+  generic=[i for i in CAT['items'] if any(s['brand']==brand and not s.get('manual') for s in i['scopes'])]
+  if generic:text+='<p>'+esc(labels[6])+': '+', '.join('<code>'+esc(i['id'])+'</code>' for i in generic)+'.</p>'
+  text+='</section>'
+ text+='<h2>'+labels[7]+'</h2><ul>'
  for entry in CAT['source_access_log']:text+='<li><strong>'+esc(u['brands'][entry['brand']])+'</strong>: '+esc(entry['summary'][lang])+' <a href="'+esc(entry['url'])+'" target="_blank" rel="noopener">'+labels[8]+'</a></li>'
  return text+'</ul>'
 
@@ -120,7 +167,7 @@ def audit(lang,page):
  # Localised, explicit brand access gaps. No private Drive URLs or documents are published.
  gap=CAT['review_gaps'][lang]
  text+='<ul>'+''.join('<li>'+esc(x)+'</li>' for x in gap)+'</ul>'
- text+=coverage_table(lang)
+ text+=history_table(lang)+latest_history(lang)+coverage_table(lang)
  text+='<h2>'+{'cs':'Křížová kontrola návodů','en':'Manual cross-check','de':'Abgleich der Anleitungen'}[lang]+'</h2>'
  for flag in CAT.get('cross_checks',[]):
   text+='<p><strong>'+esc(flag['model'])+' · MY '+str(flag['model_year'])+'</strong>: '+esc(flag['note'][lang])+'</p><ul>'

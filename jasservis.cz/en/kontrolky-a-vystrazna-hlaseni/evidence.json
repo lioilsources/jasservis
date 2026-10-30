@@ -1,23 +1,23 @@
 {
   "canonical_catalog": "../../_warnings/catalog.json",
   "review_status": "incomplete-preview",
-  "checked": "2026-10-29",
-  "semantic_records": 86,
-  "legacy_generic_volkswagen": 15,
-  "model_documented_semantic_records": 65,
-  "model_edition_assignments": 286,
-  "partially_reviewed_manual_editions": 33,
-  "shared_graphic_colour_variants": 45,
-  "distinct_pictogram_shapes": 34,
+  "checked": "2026-10-30",
+  "semantic_records": 88,
+  "legacy_generic_volkswagen": 2,
+  "model_documented_semantic_records": 83,
+  "model_edition_assignments": 334,
+  "partially_reviewed_manual_editions": 35,
+  "shared_graphic_colour_variants": 47,
+  "distinct_pictogram_shapes": 35,
   "by_brand": {
     "volkswagen": {
-      "distinct_pictogram_shapes": 15,
-      "graphic_colour_variants": 15,
-      "semantic_variants": 15,
-      "model_edition_assignments": 0,
-      "generic_brand_assignments": 15,
-      "reviewed_manual_editions": 0,
-      "first_party_hosted_manual_editions": 0,
+      "distinct_pictogram_shapes": 22,
+      "graphic_colour_variants": 25,
+      "semantic_variants": 27,
+      "model_edition_assignments": 25,
+      "generic_brand_assignments": 2,
+      "reviewed_manual_editions": 1,
+      "first_party_hosted_manual_editions": 1,
       "third_party_hosted_manual_editions": 0
     },
     "audi": {
@@ -31,10 +31,10 @@
       "third_party_hosted_manual_editions": 0
     },
     "skoda": {
-      "distinct_pictogram_shapes": 26,
-      "graphic_colour_variants": 32,
-      "semantic_variants": 43,
-      "model_edition_assignments": 61,
+      "distinct_pictogram_shapes": 27,
+      "graphic_colour_variants": 34,
+      "semantic_variants": 45,
+      "model_edition_assignments": 63,
       "generic_brand_assignments": 0,
       "reviewed_manual_editions": 2,
       "first_party_hosted_manual_editions": 0,
@@ -61,13 +61,13 @@
       "third_party_hosted_manual_editions": 0
     },
     "volkswagen-uzitkove-vozy": {
-      "distinct_pictogram_shapes": 21,
-      "graphic_colour_variants": 23,
-      "semantic_variants": 24,
-      "model_edition_assignments": 0,
-      "generic_brand_assignments": 24,
-      "reviewed_manual_editions": 0,
-      "first_party_hosted_manual_editions": 0,
+      "distinct_pictogram_shapes": 23,
+      "graphic_colour_variants": 26,
+      "semantic_variants": 28,
+      "model_edition_assignments": 21,
+      "generic_brand_assignments": 7,
+      "reviewed_manual_editions": 1,
+      "first_party_hosted_manual_editions": 1,
       "third_party_hosted_manual_editions": 0
     }
   }
