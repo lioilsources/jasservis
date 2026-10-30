@@ -21339,6 +21339,14 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "Five photographs supplied in conversation: four Control Centre views and one instrument cluster. Sixth photograph not yet supplied. Control shortcuts are separated from operating/fault indicators. Photo vehicle MY and software version are unknown; no model-year inference."
+    },
+    {
+      "id": "sixth-terramar-photo-review",
+      "checked": "2026-10-30",
+      "added_record_ids": [],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Subsequent sixth distinct user photograph supplied and visually reviewed. Current photo evidence is 6/6 visually reviewed, with individual source/state matching incomplete. Earlier five-photo/missing-photo notes describe the historical state at those events. No catalogue items or model scopes added from appearance alone."
     }
   ]
 }

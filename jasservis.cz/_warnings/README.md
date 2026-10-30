@@ -131,11 +131,11 @@ Zbývající ochranu celého náhledu přidává stávající preview workflow.
 - Terramar 09.24 / 11.25: ovládací MAX a REAR byly individuálně porovnané
   na tištěných stranách 146 / 148. Jde o samostatnou skupinu ovládacích ikon,
   jejichž bílá schematická barva neznamená závadu ani univerzální aktivaci.
-- Následně dodáno a vizuálně porovnáno **pět** fotografií Terramar: čtyři
-  obrazovky Control Centre a jeden přístrojový panel. Šestá fotografie chybí.
+- Následně dodáno a vizuálně porovnáno **šest** fotografií Terramar: čtyři
+  obrazovky Control Centre a dva odlišné snímky přístrojového panelu.
   Modelový rok, software, původní názvy a otisky souborů nejsou doložené.
-  `terramar-photo-review.json` eviduje 45 pozorování; nejde o 45 nových
-  unikátních kontrolek ani o úplné zdrojové ověření všech pěti fotografií.
+  `terramar-photo-review.json` eviduje 54 pozorování; nejde o 54 nových
+  unikátních kontrolek ani o úplné zdrojové ověření všech šesti fotografií.
 - `review-register.json` a `manual-review.csv` oddělují vybrané ověřené položky
   od kompletního porovnání celého vydání. **Kompletně porovnaná vydání: 0.**
   `source-character-review.csv` je pouze automatický pracovní index znaků
@@ -165,3 +165,11 @@ Zbývající ochranu celého náhledu přidává stávající preview workflow.
 - Dalších 24 funkčních kontrol ve třech jazycích, Chromium a WebKit,
   rozměry 390×844, 844×390, 768×1024 a 1366×768. Skutečná mobilní zařízení
   nebyla testována. Funkční zkoušky nepotvrzují úplnost odborného obsahu.
+
+## Šestý uživatelský snímek
+
+Druhý odlišný přístrojový panel doplněn do evidence; nyní 6/6 vizuálně
+zkontrolovaných fotografií, nikoli 6/6 kompletně zdrojově ověřených sad ikon.
+Návod Terramar 11.25, strany 11–14 a 16/178, porovnán pro viditelné podoby,
+kontrolu zapalování a samostatnou polohu voliče P. Drobné nečitelné stavové
+varianty nejsou odhadovány; nedošlo k navýšení katalogu 131 záznamů.

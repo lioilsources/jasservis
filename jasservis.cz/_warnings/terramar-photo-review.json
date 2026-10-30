@@ -1,8 +1,8 @@
 {
   "expected_photographs": 6,
-  "received_photographs": 5,
-  "visually_reviewed_photographs": 5,
-  "missing_photographs": 1,
+  "received_photographs": 6,
+  "visually_reviewed_photographs": 6,
+  "missing_photographs": 0,
   "photo_vehicle_model": "CUPRA Terramar as stated by the user",
   "model_year": null,
   "software_version": null,
@@ -71,6 +71,20 @@
         "de": "Kombiinstrument bei 0 U/min"
       },
       "received_in": "User conversation, latest message",
+      "visual_review": true,
+      "original_filename": null,
+      "file_hash": null,
+      "model_year": null,
+      "software_version": null
+    },
+    {
+      "id": "terramar-photo-06",
+      "name": {
+        "cs": "Přístrojový panel s více rozsvícenými symboly při 0 ot/min",
+        "en": "Instrument cluster with multiple illuminated symbols at 0 rpm",
+        "de": "Kombiinstrument mit mehreren leuchtenden Symbolen bei 0 U/min"
+      },
+      "received_in": "User conversation, distinct sixth photo supplied after five-photo review",
       "visual_review": true,
       "original_filename": null,
       "file_hash": null,
@@ -787,7 +801,8 @@
         "de": "Gelbes Motorsymbol bei 0 U/min"
       },
       "photos": [
-        "terramar-photo-05"
+        "terramar-photo-05",
+        "terramar-photo-06"
       ],
       "classification": "warning-or-ignition-function-check",
       "catalogue_entries": [
@@ -808,7 +823,8 @@
         "de": "Sicherheitsgurte und Belegungsanzeige"
       },
       "photos": [
-        "terramar-photo-05"
+        "terramar-photo-05",
+        "terramar-photo-06"
       ],
       "classification": "instrument-display",
       "catalogue_entries": [],
@@ -1004,11 +1020,245 @@
         "en": "Without the relevant context this control or status marking is not presented as a fault warning. The top-bar P is not conflated with the red instrument-cluster parking-brake P.",
         "de": "Ohne zugehörigen Kontext wird dieses Bedien- oder Statuszeichen nicht als Störungswarnung dargestellt. Das P der Kopfleiste wird nicht mit dem roten Parkbremsen-P im Kombiinstrument gleichgesetzt."
       }
+    },
+    {
+      "id": "photo06-abs",
+      "name": {
+        "cs": "Žlutý symbol ABS",
+        "en": "Amber ABS symbol",
+        "de": "Gelbes ABS-Symbol"
+      },
+      "photos": [
+        "terramar-photo-06"
+      ],
+      "classification": "instrument-warning-or-ignition-function-check",
+      "catalogue_entries": [
+        "abs-fault"
+      ],
+      "status": "appearance-compared-signalling-state-not-established",
+      "source_manual": "cupra-terramar-2026-11-25",
+      "source_printed_pages": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "note": {
+        "cs": "Porovnána podoba a barva s přehledem v návodu Terramar 11.25, strany 11–14. Fotografie při 0 ot/min neprokazuje poruchu ani trvalé svícení po nastartování; některé kontrolky se rozsvěcují při zapnutí zapalování. Chybí přesné hlášení a časový průběh.",
+        "en": "Appearance and colour compared with the Terramar 11.25 overview, pages 11–14. The photo at 0 rpm does not establish a fault or persistent illumination after starting; some lamps illuminate when the ignition is switched on. Exact messages and timing are unavailable.",
+        "de": "Form und Farbe mit der Übersicht Terramar 11.25, Seiten 11–14, verglichen. Das Foto bei 0 U/min belegt weder eine Störung noch ein dauerhaftes Leuchten nach dem Start; manche Leuchten erscheinen beim Einschalten der Zündung. Genaue Meldungen und zeitlicher Verlauf fehlen."
+      }
+    },
+    {
+      "id": "photo06-esc",
+      "name": {
+        "cs": "Žluté symboly smyku a vypnutí stabilizace",
+        "en": "Amber skidding-car and stability-deactivation symbols",
+        "de": "Gelbe Schleuder- und Stabilitätsdeaktivierungssymbole"
+      },
+      "photos": [
+        "terramar-photo-06"
+      ],
+      "classification": "instrument-warning-or-ignition-function-check",
+      "catalogue_entries": [
+        "esc-regulating",
+        "esc-fault"
+      ],
+      "status": "appearance-compared-signalling-state-not-established",
+      "source_manual": "cupra-terramar-2026-11-25",
+      "source_printed_pages": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "note": {
+        "cs": "Porovnána podoba a barva s přehledem v návodu Terramar 11.25, strany 11–14. Fotografie při 0 ot/min neprokazuje poruchu ani trvalé svícení po nastartování; některé kontrolky se rozsvěcují při zapnutí zapalování. Chybí přesné hlášení a časový průběh.",
+        "en": "Appearance and colour compared with the Terramar 11.25 overview, pages 11–14. The photo at 0 rpm does not establish a fault or persistent illumination after starting; some lamps illuminate when the ignition is switched on. Exact messages and timing are unavailable.",
+        "de": "Form und Farbe mit der Übersicht Terramar 11.25, Seiten 11–14, verglichen. Das Foto bei 0 U/min belegt weder eine Störung noch ein dauerhaftes Leuchten nach dem Start; manche Leuchten erscheinen beim Einschalten der Zündung. Genaue Meldungen und zeitlicher Verlauf fehlen."
+      }
+    },
+    {
+      "id": "photo06-airbag",
+      "name": {
+        "cs": "Žlutý symbol airbagu",
+        "en": "Amber airbag symbol",
+        "de": "Gelbes Airbag-Symbol"
+      },
+      "photos": [
+        "terramar-photo-06"
+      ],
+      "classification": "instrument-warning-or-ignition-function-check",
+      "catalogue_entries": [
+        "airbag-fault"
+      ],
+      "status": "appearance-compared-signalling-state-not-established",
+      "source_manual": "cupra-terramar-2026-11-25",
+      "source_printed_pages": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "note": {
+        "cs": "Porovnána podoba a barva s přehledem v návodu Terramar 11.25, strany 11–14. Fotografie při 0 ot/min neprokazuje poruchu ani trvalé svícení po nastartování; některé kontrolky se rozsvěcují při zapnutí zapalování. Chybí přesné hlášení a časový průběh.",
+        "en": "Appearance and colour compared with the Terramar 11.25 overview, pages 11–14. The photo at 0 rpm does not establish a fault or persistent illumination after starting; some lamps illuminate when the ignition is switched on. Exact messages and timing are unavailable.",
+        "de": "Form und Farbe mit der Übersicht Terramar 11.25, Seiten 11–14, verglichen. Das Foto bei 0 U/min belegt weder eine Störung noch ein dauerhaftes Leuchten nach dem Start; manche Leuchten erscheinen beim Einschalten der Zündung. Genaue Meldungen und zeitlicher Verlauf fehlen."
+      }
+    },
+    {
+      "id": "photo06-steering",
+      "name": {
+        "cs": "Červený volant s vykřičníkem",
+        "en": "Red steering wheel with exclamation mark",
+        "de": "Rotes Lenkrad mit Ausrufezeichen"
+      },
+      "photos": [
+        "terramar-photo-06"
+      ],
+      "classification": "instrument-warning-or-ignition-function-check",
+      "catalogue_entries": [],
+      "status": "appearance-compared-signalling-state-not-established",
+      "source_manual": "cupra-terramar-2026-11-25",
+      "source_printed_pages": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "note": {
+        "cs": "Porovnána podoba a barva s přehledem v návodu Terramar 11.25, strany 11–14. Fotografie při 0 ot/min neprokazuje poruchu ani trvalé svícení po nastartování; některé kontrolky se rozsvěcují při zapnutí zapalování. Chybí přesné hlášení a časový průběh.",
+        "en": "Appearance and colour compared with the Terramar 11.25 overview, pages 11–14. The photo at 0 rpm does not establish a fault or persistent illumination after starting; some lamps illuminate when the ignition is switched on. Exact messages and timing are unavailable.",
+        "de": "Form und Farbe mit der Übersicht Terramar 11.25, Seiten 11–14, verglichen. Das Foto bei 0 U/min belegt weder eine Störung noch ein dauerhaftes Leuchten nach dem Start; manche Leuchten erscheinen beim Einschalten der Zündung. Genaue Meldungen und zeitlicher Verlauf fehlen."
+      }
+    },
+    {
+      "id": "photo06-brakes",
+      "name": {
+        "cs": "Červená kruhová výstraha brzd",
+        "en": "Red circular brake warning",
+        "de": "Rote kreisförmige Bremswarnung"
+      },
+      "photos": [
+        "terramar-photo-06"
+      ],
+      "classification": "instrument-warning-or-ignition-function-check",
+      "catalogue_entries": [],
+      "status": "appearance-compared-signalling-state-not-established",
+      "source_manual": "cupra-terramar-2026-11-25",
+      "source_printed_pages": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "note": {
+        "cs": "Porovnána podoba a barva s přehledem v návodu Terramar 11.25, strany 11–14. Fotografie při 0 ot/min neprokazuje poruchu ani trvalé svícení po nastartování; některé kontrolky se rozsvěcují při zapnutí zapalování. Chybí přesné hlášení a časový průběh.",
+        "en": "Appearance and colour compared with the Terramar 11.25 overview, pages 11–14. The photo at 0 rpm does not establish a fault or persistent illumination after starting; some lamps illuminate when the ignition is switched on. Exact messages and timing are unavailable.",
+        "de": "Form und Farbe mit der Übersicht Terramar 11.25, Seiten 11–14, verglichen. Das Foto bei 0 U/min belegt weder eine Störung noch ein dauerhaftes Leuchten nach dem Start; manche Leuchten erscheinen beim Einschalten der Zündung. Genaue Meldungen und zeitlicher Verlauf fehlen."
+      }
+    },
+    {
+      "id": "photo06-central",
+      "name": {
+        "cs": "Červený výstražný trojúhelník",
+        "en": "Red warning triangle",
+        "de": "Rotes Warndreieck"
+      },
+      "photos": [
+        "terramar-photo-06"
+      ],
+      "classification": "instrument-warning-or-ignition-function-check",
+      "catalogue_entries": [],
+      "status": "appearance-compared-signalling-state-not-established",
+      "source_manual": "cupra-terramar-2026-11-25",
+      "source_printed_pages": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "note": {
+        "cs": "Porovnána podoba a barva s přehledem v návodu Terramar 11.25, strany 11–14. Fotografie při 0 ot/min neprokazuje poruchu ani trvalé svícení po nastartování; některé kontrolky se rozsvěcují při zapnutí zapalování. Chybí přesné hlášení a časový průběh.",
+        "en": "Appearance and colour compared with the Terramar 11.25 overview, pages 11–14. The photo at 0 rpm does not establish a fault or persistent illumination after starting; some lamps illuminate when the ignition is switched on. Exact messages and timing are unavailable.",
+        "de": "Form und Farbe mit der Übersicht Terramar 11.25, Seiten 11–14, verglichen. Das Foto bei 0 U/min belegt weder eine Störung noch ein dauerhaftes Leuchten nach dem Start; manche Leuchten erscheinen beim Einschalten der Zündung. Genaue Meldungen und zeitlicher Verlauf fehlen."
+      }
+    },
+    {
+      "id": "photo06-parking",
+      "name": {
+        "cs": "Červené P v kruhu dole na přístrojovém panelu",
+        "en": "Red circled P at the bottom of the instrument cluster",
+        "de": "Rotes eingekreistes P unten im Kombiinstrument"
+      },
+      "photos": [
+        "terramar-photo-06"
+      ],
+      "classification": "instrument-warning-or-ignition-function-check",
+      "catalogue_entries": [
+        "parking-applied"
+      ],
+      "status": "appearance-compared-signalling-state-not-established",
+      "source_manual": "cupra-terramar-2026-11-25",
+      "source_printed_pages": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "note": {
+        "cs": "Porovnána podoba a barva s přehledem v návodu Terramar 11.25, strany 11–14. Fotografie při 0 ot/min neprokazuje poruchu ani trvalé svícení po nastartování; některé kontrolky se rozsvěcují při zapnutí zapalování. Chybí přesné hlášení a časový průběh.",
+        "en": "Appearance and colour compared with the Terramar 11.25 overview, pages 11–14. The photo at 0 rpm does not establish a fault or persistent illumination after starting; some lamps illuminate when the ignition is switched on. Exact messages and timing are unavailable.",
+        "de": "Form und Farbe mit der Übersicht Terramar 11.25, Seiten 11–14, verglichen. Das Foto bei 0 U/min belegt weder eine Störung noch ein dauerhaftes Leuchten nach dem Start; manche Leuchten erscheinen beim Einschalten der Zündung. Genaue Meldungen und zeitlicher Verlauf fehlen."
+      }
+    },
+    {
+      "id": "photo06-selector-p",
+      "name": {
+        "cs": "Samostatné červené P – poloha voliče",
+        "en": "Separate red P – selector position",
+        "de": "Separates rotes P – Wählhebelstellung"
+      },
+      "photos": [
+        "terramar-photo-06"
+      ],
+      "classification": "operating-display",
+      "catalogue_entries": [],
+      "status": "appearance-compared-not-a-parking-brake-warning",
+      "source_manual": "cupra-terramar-2026-11-25",
+      "source_printed_pages": [
+        16,
+        178
+      ],
+      "note": {
+        "cs": "Samostatné P vlevo dole není sloučeno s odděleným P v kruhu parkovací brzdy. Přehled přístrojového panelu uvádí samostatné zobrazení zařazeného stupně nebo polohy voliče.",
+        "en": "The separate lower-left P is not conflated with the separate circled parking-brake P. The instrument-cluster overview identifies a distinct gear/selector-position display.",
+        "de": "Das separate P links unten wird nicht mit dem eingekreisten Parkbremsen-P gleichgesetzt. Die Kombiinstrument-Übersicht nennt eine eigene Gang-/Wählhebelstellungsanzeige."
+      }
+    },
+    {
+      "id": "photo06-small-status",
+      "name": {
+        "cs": "Drobné stavové symboly vpravo dole a symboly obsazenosti",
+        "en": "Small lower-right status and occupancy symbols",
+        "de": "Kleine Statussymbole rechts unten und Belegungsanzeigen"
+      },
+      "photos": [
+        "terramar-photo-06"
+      ],
+      "classification": "unresolved-instrument-state",
+      "catalogue_entries": [],
+      "status": "visually-observed-exact-variant-review-pending",
+      "note": {
+        "cs": "Ze zmenšené fotografie nelze spolehlivě rozlišit všechny vnitřní značky, číslice ani stavové varianty. Nejsou nahrazeny podobnou grafikou ani vydávány za nově ověřené kontrolky.",
+        "en": "The reduced photograph does not reliably resolve all internal marks, numerals or state variants. They are not replaced by similar artwork or presented as newly verified warning lamps.",
+        "de": "Im verkleinerten Foto sind nicht alle inneren Zeichen, Ziffern oder Zustandsvarianten zuverlässig erkennbar. Sie werden weder durch ähnliche Grafiken ersetzt noch als neu bestätigte Kontrollleuchten dargestellt."
+      }
     }
   ],
   "important_limitations": {
-    "cs": "Pět dodaných fotografií bylo vizuálně zkontrolováno. Šestý snímek chybí. Vizuální kontrola fotografie neznamená úplné ověření všech zobrazených ovládacích ikon ani všech jejich stavů. Rok a verze softwaru fotografovaného vozu nejsou doložené.",
-    "en": "Five supplied photographs were visually reviewed. The sixth is missing. Visual review of a photograph does not completely validate every control icon or all of its states. The photographed vehicle’s year and software version are not documented.",
-    "de": "Fünf bereitgestellte Fotos wurden visuell geprüft. Das sechste fehlt. Die Sichtprüfung eines Fotos bestätigt nicht vollständig alle Bedienzeichen oder deren sämtliche Zustände. Baujahr und Softwarestand des fotografierten Fahrzeugs sind nicht belegt."
+    "cs": "Všech šest odlišných dodaných fotografií bylo vizuálně zkontrolováno. To neznamená úplné zdrojové ověření každé zobrazené ikony ani všech jejích stavů. Šestý snímek při 0 ot/min s více kontrolkami není důkazem souběžných závad; je nutné znát stav zapalování, hlášení a chování po nastartování. Modelový rok a software vozu nejsou doložené.",
+    "en": "All six distinct supplied photographs were visually reviewed. This does not fully validate every depicted icon or all of its states against sources. The sixth photo at 0 rpm with multiple lamps does not establish simultaneous faults; ignition state, messages and behaviour after starting are needed. Vehicle model year and software are undocumented.",
+    "de": "Alle sechs unterschiedlichen bereitgestellten Fotos wurden visuell geprüft. Dies bestätigt nicht jede abgebildete Ikone oder alle Zustände vollständig anhand von Quellen. Das sechste Foto bei 0 U/min mit mehreren Leuchten belegt keine gleichzeitigen Störungen; Zündungszustand, Meldungen und Verhalten nach dem Start sind erforderlich. Modelljahr und Softwarestand sind nicht belegt."
   }
 }

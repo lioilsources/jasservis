@@ -180,7 +180,7 @@
   "physical_devices": [],
   "limitations": [
     "No manual is claimed fully compared. Selected entries and full text-layer indexing do not prove completeness.",
-    "Five supplied Terramar photographs visually reviewed; sixth missing. Individual icons partially matched; no photograph is claimed fully source-matched. Vehicle model year/software version unknown.",
+    "All six supplied Terramar photographs visually reviewed. Individual icons partially source-matched; no photograph is claimed fully source-matched. Vehicle model year/software version unknown.",
     "Exact Volkswagen headlight-range warning still has no specific model/edition proof.",
     "Audi A4 8W 01.2016, A8 4N for 2018 and Q4 e-tron 2022 remain unsupported; Q4 07.2024 is not substituted for another edition.",
     "Combined ADAS/HV and additional infotainment/comfort graphics still require exact lawful assets and state-specific review.",
@@ -238,12 +238,12 @@
   },
   "terramar_photographs": {
     "expected": 6,
-    "received_identifiable_photographs": 5,
-    "visually_reviewed": 5,
+    "received_identifiable_photographs": 6,
+    "visually_reviewed": 6,
     "fully_source_matched_photographs": 0,
-    "status": "five-received-sixth-missing-individual-icons-partially-matched",
+    "status": "six-received-and-visually-reviewed-individual-source-matching-incomplete",
     "evidence": "terramar-photo-review.json",
-    "note": "Four Control Centre views and one instrument cluster supplied in the user conversation. All five visually reviewed; sixth missing. Original filenames/hashes and vehicle MY/software version not provided. No 6/6 claim."
+    "note": "All six distinct user photographs visually reviewed. Exact state matching is incomplete; the sixth cluster photograph at 0 rpm is not proof of simultaneous faults. Model year/software and original file metadata unknown."
   },
   "navigation": {
     "catalogue_access": "Six brand-specific Autoservis CTA blocks only; all 18 language/brand links retained",
@@ -283,5 +283,43 @@
       "Keyboard opening, expanded content, image decoding and no horizontal overflow",
       "Photo review table in all three languages"
     ]
+  },
+  "sixth_photo_review_page_checks": {
+    "cases": 24,
+    "result": "PASS",
+    "languages": [
+      "cs",
+      "en",
+      "de"
+    ],
+    "engines": [
+      "Chromium",
+      "WebKit"
+    ],
+    "dimensions": [
+      [
+        390,
+        844
+      ],
+      [
+        844,
+        390
+      ],
+      [
+        768,
+        1024
+      ],
+      [
+        1366,
+        768
+      ]
+    ],
+    "checks": [
+      "sixth-photo rows present",
+      "no horizontal overflow",
+      "lang",
+      "noindex"
+    ],
+    "physical_devices": []
   }
 }
