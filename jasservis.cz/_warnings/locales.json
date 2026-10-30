@@ -69,7 +69,8 @@
       "flash-then-steady": "Blikání a následné svícení",
       "message": "Symbol s hlášením",
       "source-dependent": "Podle uvedeného zdroje",
-      "control": "Ovládací znak (nikoli výstraha)"
+      "control": "Ovládací znak (nikoli výstraha)",
+      "steady-4s-then-flashing-12s": "Po zapnutí zapalování svítí 4 s, potom bliká 12 s"
     },
     "groups": {
       "motor": "Motor, mazání a chlazení",
@@ -175,7 +176,8 @@
       "flash-then-steady": "Flashing, then steady",
       "message": "Symbol with message",
       "source-dependent": "As described in the source",
-      "control": "Control marking (not a warning)"
+      "control": "Control marking (not a warning)",
+      "steady-4s-then-flashing-12s": "After ignition: steady for 4 s, then flashing for 12 s"
     },
     "groups": {
       "motor": "Engine, lubrication and cooling",
@@ -281,7 +283,8 @@
       "flash-then-steady": "Blinken, danach Dauerlicht",
       "message": "Symbol mit Meldung",
       "source-dependent": "Gemäß angegebener Quelle",
-      "control": "Bedienzeichen (keine Warnung)"
+      "control": "Bedienzeichen (keine Warnung)",
+      "steady-4s-then-flashing-12s": "Nach Einschalten der Zündung: 4 s Leuchten, dann 12 s Blinken"
     },
     "groups": {
       "motor": "Motor, Schmierung und Kühlung",

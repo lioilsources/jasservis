@@ -5002,16 +5002,16 @@
       "graphic": "airbag",
       "color": "zluta",
       "group": "bezpecnost",
-      "state": "steady",
+      "state": "source-dependent",
       "name": {
         "cs": "Airbagy / předpínače deaktivované diagnostikou",
         "en": "Airbag / belt tensioners deactivated by diagnostic tester",
         "de": "Airbag / Gurtstraffer per Diagnose deaktiviert"
       },
       "meaning": {
-        "cs": "U uvedeného provedení může stejný symbol doprovázet diagnostické vypnutí airbagu nebo předpínače. Rozhoduje přesné hlášení a konfigurace.",
-        "en": "On the listed version, the same symbol can accompany diagnostic deactivation of an airbag or belt tensioner. The exact message and configuration are decisive.",
-        "de": "Bei der aufgeführten Ausführung kann dasselbe Symbol eine diagnostische Deaktivierung von Airbag oder Gurtstraffer begleiten. Entscheidend sind Meldung und Konfiguration."
+        "cs": "Symbol může doprovázet diagnostické vypnutí airbagu nebo předpínače. Průběh signalizace se liší podle modelu a vydání: Enyaq iV 11.2020 a Octavia 11.2018 uvádějí po zapnutí zapalování svícení 4 s a následné blikání 12 s; Born 08.21 uvádí svícení. Rozhoduje přesné hlášení a návod konkrétního vozu.",
+        "en": "The symbol may accompany diagnostic deactivation of an airbag or belt tensioner. The signal sequence depends on model and edition: Enyaq iV 11.2020 and Octavia 11.2018 specify illumination for 4 s after ignition is switched on, followed by flashing for 12 s; Born 08.21 specifies illumination. Follow the exact message and the specific vehicle manual.",
+        "de": "Das Symbol kann die diagnostische Abschaltung eines Airbags oder Gurtstraffers begleiten. Der Signalablauf hängt von Modell und Ausgabe ab: Enyaq iV 11.2020 und Octavia 11.2018 nennen nach dem Einschalten der Zündung 4 s Leuchten und anschließend 12 s Blinken; Born 08.21 nennt Leuchten. Maßgeblich sind die genaue Meldung und die Anleitung des konkreten Fahrzeugs."
       },
       "action": {
         "cs": "Nechte ve specializovaném servisu ověřit, zda má systém zůstat deaktivovaný. Samotný symbol nepotvrzuje příčinu.",
@@ -5040,7 +5040,8 @@
           ],
           "powertrains": [
             "elektricky"
-          ]
+          ],
+          "signal_state": "steady"
         },
         {
           "manual": "skoda-octavia-5e-2018-11-cs",
@@ -5063,6 +5064,13 @@
             "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
             "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
             "level": "manufacturer-manual-third-party-copy"
+          },
+          "signal_state": "steady-4s-then-flashing-12s",
+          "signal_state_verification": {
+            "method": "Manufacturer-authored manual page independently reread; diagnostic deactivation distinguished from ordinary airbag fault and passenger key switch.",
+            "printed_page": 45,
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "checked": "2026-10-30"
           }
         },
         {
@@ -5086,6 +5094,13 @@
             "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
+          },
+          "signal_state": "steady-4s-then-flashing-12s",
+          "signal_state_verification": {
+            "method": "Manufacturer-authored manual page independently reread; diagnostic deactivation distinguished from ordinary airbag fault and passenger key switch.",
+            "printed_page": 73,
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "checked": "2026-10-30"
           }
         },
         {
@@ -5114,7 +5129,8 @@
             "topic_response_sha256": "c10a09511cc354a108a7f6f2874c8a2d5fb95a2b0addb68ae1a8d12c02713ad3",
             "source_overview_row": 33,
             "checked": "2026-10-30"
-          }
+          },
+          "signal_state": "source-dependent"
         }
       ],
       "checked": "2026-10-30",
@@ -9561,7 +9577,7 @@
         "en": "Glow plug lamp – preheating before starting — amber symbol",
         "de": "Vorglühen vor dem Start — gelbes Symbol"
       },
-      "kind": "warning",
+      "kind": "information",
       "previous_general_scopes": [
         {
           "brand": "volkswagen-uzitkove-vozy",
@@ -20129,9 +20145,9 @@
         "de": "Das weiße Symbol ohne Störungsmeldung zeigt die eingeschaltete, aber nicht aktivierte Geschwindigkeitsregelanlage."
       },
       "action": {
-        "cs": "Rychlost sledujte sami a respektujte aktuální dopravní značení. Omezovač nezbavuje řidiče odpovědnosti za rychlost; při přerušení nebo překročení upravte rychlost bezpečně sami.",
-        "en": "Monitor speed yourself and obey actual road signs. The limiter does not remove the driver’s responsibility for speed; adjust speed safely yourself if limitation is interrupted or exceeded.",
-        "de": "Geschwindigkeit selbst überwachen und tatsächliche Verkehrszeichen beachten. Der Begrenzer entbindet nicht von der Geschwindigkeitsverantwortung; bei Unterbrechung oder Überschreitung Geschwindigkeit selbst sicher anpassen."
+        "cs": "Tempomat je zapnutý, ale rychlost zatím nereguluje. Rychlost a odstup udržujte sami. Regulaci aktivujte pouze za vhodných podmínek podle návodu; buďte připraveni kdykoli brzdit a převzít ovládání.",
+        "en": "Cruise control is switched on but is not yet regulating speed. Maintain speed and distance yourself. Activate regulation only in suitable conditions as described in the manual; remain ready to brake and take over at any time.",
+        "de": "Die Geschwindigkeitsregelanlage ist eingeschaltet, regelt aber noch nicht. Geschwindigkeit und Abstand selbst halten. Die Regelung nur unter geeigneten Bedingungen gemäß Betriebsanleitung aktivieren; jederzeit zum Bremsen und Übernehmen bereit bleiben."
       },
       "note": {
         "cs": "Pouze pro uvedené vybavení a vydání návodu Q4 e-tron. Jiné hlášení vyžaduje samostatný výklad.",
@@ -28779,6 +28795,21 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "Independent known DE11.2020 copy, NOT identification or comparison of missing five requested photos12–17. Red insufficient power differs from amber limitation/Q4 red meaning. Existing EV-specific EPC verified, not duplicated. Co-warning conditions made explicit for12V/coolant."
+    },
+    {
+      "id": "independent-audit-signal-and-copy-corrections",
+      "checked": "2026-10-30",
+      "before_semantic_records": 169,
+      "after_semantic_records": 169,
+      "added_record_ids": [],
+      "corrected_record_ids": [
+        "glow-preheat",
+        "audi-q4-cruise-ready",
+        "airbag-diagnostic-off"
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Normal preheating classified as information; Q4 cruise standby instructions no longer describe a limiter in any locale. Airbag diagnostic-deactivation signal checked independently against Born 08.21 p45, Enyaq DE11.2020 p73 and Octavia CS11.2018 p45; signal sequence is scoped by manual, not transferred across models. Caddy timing remains source-dependent pending a dedicated reread. No additional catalogue completeness claimed."
     }
   ],
   "evidence_gaps_revision": [

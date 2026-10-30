@@ -122,6 +122,11 @@
       "cs": "Řádek je čitelný, ale přesné rozlišení stavu vyžaduje příslušnou podrobnou kapitolu tohoto vydání.",
       "en": "The row is readable, but the exact state distinction requires the corresponding detailed chapter of this edition.",
       "de": "Die Zeile ist lesbar; die genaue Zustandsabgrenzung erfordert jedoch das zugehörige Detailkapitel dieser Ausgabe."
+    },
+    "meaning-present-state-corrected": {
+      "cs": "Významová shoda existovala, ale katalog chybně uváděl trvalé svícení. Signalizace byla opravena podle samostatně ověřeného návodu Enyaq DE11.2020, str.73: svítí 4 s, potom bliká 12 s. Fotografie sama uvádí 4 s a následné blikání; její vydání ani přesná použitelná grafika nejsou doložené.",
+      "en": "The meaning matched, but the catalogue incorrectly specified steady illumination. The signal was corrected using the independently checked Enyaq DE11.2020 manual, p73: steady for 4 s, then flashing for 12 s. The photo itself states 4 s followed by flashing; its edition and exact reusable graphic remain undocumented.",
+      "de": "Die Bedeutung stimmte überein, der Katalog nannte jedoch fälschlich Dauerleuchten. Der Signalablauf wurde anhand der separat geprüften Enyaq-Anleitung DE11.2020, S73, berichtigt: 4 s Leuchten, dann 12 s Blinken. Das Foto selbst nennt 4 s und anschließendes Blinken; seine Ausgabe und die genaue verwendbare Grafik bleiben unbelegt."
     }
   },
   "rows": [
@@ -1815,11 +1820,11 @@
       "matching_current_enyaq_catalogue_ids": [
         "airbag-diagnostic-off"
       ],
-      "catalogue_result": "correct-existing-model-entry",
+      "catalogue_result": "meaning-present-state-corrected",
       "catalogue_result_text": {
-        "cs": "Odpovídající významová položka s dříve doloženým rozsahem Enyaq je v katalogu; české fotografované vydání zatím nemá vlastní identifikaci.",
-        "en": "A matching semantic item with previously documented Enyaq scope is in the catalogue; the photographed Czech edition is not yet identified.",
-        "de": "Ein passender Bedeutungseintrag mit früher belegtem Enyaq-Umfang ist im Katalog; die fotografierte tschechische Ausgabe ist noch nicht identifiziert."
+        "cs": "Významová shoda existovala, ale katalog chybně uváděl trvalé svícení. Signalizace byla opravena podle samostatně ověřeného návodu Enyaq DE11.2020, str.73: svítí 4 s, potom bliká 12 s. Fotografie sama uvádí 4 s a následné blikání; její vydání ani přesná použitelná grafika nejsou doložené.",
+        "en": "The meaning matched, but the catalogue incorrectly specified steady illumination. The signal was corrected using the independently checked Enyaq DE11.2020 manual, p73: steady for 4 s, then flashing for 12 s. The photo itself states 4 s followed by flashing; its edition and exact reusable graphic remain undocumented.",
+        "de": "Die Bedeutung stimmte überein, der Katalog nannte jedoch fälschlich Dauerleuchten. Der Signalablauf wurde anhand der separat geprüften Enyaq-Anleitung DE11.2020, S73, berichtigt: 4 s Leuchten, dann 12 s Blinken. Das Foto selbst nennt 4 s und anschließendes Blinken; seine Ausgabe und die genaue verwendbare Grafik bleiben unbelegt."
       },
       "actually_added_from_this_photo_set": false,
       "notes_cs": ""
