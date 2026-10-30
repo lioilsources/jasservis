@@ -1,8 +1,10 @@
 {
   "checked": "2026-10-30",
+  "technical_run_is_historical_baseline_before_latest_photo_and_navigation_updates": true,
   "content": {
     "requested_photographs": 5,
-    "available_photographs": 0,
+    "received_photographs": 10,
+    "unique_printed_pages_covered": 6,
     "requested_printed_pages": [
       12,
       13,
@@ -11,7 +13,9 @@
       16,
       17
     ],
-    "requested_photo_rows_compared": 0,
+    "requested_photo_rows_compared": 122,
+    "requested_photo_overview_comparison_complete": true,
+    "requested_photo_detailed_chapter_comparison_complete": false,
     "requested_edition_identified": false,
     "independent_source": "skoda-enyaq-2020-11-de",
     "independent_source_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
@@ -133,12 +137,20 @@
       "review_export_verified": true,
       "terramar_source_overview_meaning_cells": 110,
       "claimed_user_photo_identification": false,
-      "available_photos_per_group": [
+      "available_photos_per_group_at_test_time": [
         6,
         0,
         0,
         0,
         0
+      ],
+      "current_available_photos_per_group": [
+        6,
+        0,
+        0,
+        0,
+        10,
+        5
       ],
       "complete_manuals": 0
     },

@@ -1175,3 +1175,40 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
 @media(min-width:1200px){
  .header .nav__primary:not(.desktop-menu-collapsed) #topnav>li>.sub-menu{translate:var(--dropdown-shift-x,0px) 0}
 }
+
+/* A second route into the shared warning-light catalogue.  It stays beside the
+   existing booking action and retains a full 44px touch target. */
+.header .header-driver-advice{
+ display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;
+ min-height:44px;padding:9px 14px;border:1px solid var(--js-brand);border-radius:var(--js-radius);
+ background:var(--js-brand);color:var(--js-ink);font-family:var(--js-font);font-size:var(--js-small);
+ font-weight:700;line-height:24px;text-align:center;text-decoration:none;white-space:normal;
+ transition:background-color .18s,color .18s,border-color .18s
+}
+.header .header-driver-advice:hover,.header .header-driver-advice:focus-visible{
+ background:#ff8055;color:var(--js-ink);border-color:#ff8055
+}
+@media(max-width:1199px){
+ .header .header-driver-advice{order:2;flex:0 0 auto;min-height:44px;padding:4px 8px;font-size:14px;line-height:24px}
+}
+@media(max-width:767px) and (min-height:501px){
+ #motopress-main .header .header_block_1 #text-8>.textwidget{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px
+ }
+ #motopress-main .header .header_block_1 .mobile-booking-trigger{
+  grid-column:1;grid-row:1;width:100%;min-width:0
+ }
+ #motopress-main .header .header_block_1 .header-driver-advice{
+  grid-column:2;grid-row:1;width:100%;min-width:0
+ }
+ #motopress-main .header .header_block_1 .tel{grid-column:1/-1;grid-row:2}
+}
+@media(max-width:1199px) and (max-height:500px) and (orientation:landscape){
+ #motopress-main .header .header_block_1 #text-8>.textwidget{display:contents}
+ #motopress-main .header .header-driver-advice{order:2;flex:0 0 auto;min-width:44px;min-height:44px;padding:4px 8px}
+}
+@media(max-width:740px) and (max-height:500px) and (orientation:landscape){
+ #motopress-main .header .header_block_1>.row{grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto auto}
+ #motopress-main .header .header_block_1 .mobile-booking-trigger{grid-column:3;grid-row:2}
+ #motopress-main .header .header_block_1 .header-driver-advice{grid-column:4;grid-row:2}
+}

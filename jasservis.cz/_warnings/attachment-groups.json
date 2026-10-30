@@ -68,8 +68,8 @@
     {
       "id": "enyaq-manual-five-12-17",
       "expected": 5,
-      "available_in_conversation": 0,
-      "visually_compared": 0,
+      "available_in_conversation": 10,
+      "visually_compared": 10,
       "brand_asserted_by_user": "Škoda",
       "model_asserted_by_user": "Enyaq",
       "verified_model_from_document": null,
@@ -83,18 +83,27 @@
         16,
         17
       ],
-      "kind": "five requested photographs spanning printed12–17; overlaps unknown",
+      "kind": "ten received photographs covering unique printed pages12–17; earlier and replacement views overlap",
+      "unique_printed_pages_covered": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "row_comparison": "enyaq-photo-review.json",
       "status": {
-        "cs": "Pět fotografií v aktuální zprávě a dostupném archivu chybí. Škoda Enyaq potvrzen uživatelem; vydání, modelový rok, varianty a přiřazení stránek k fotografiím nedoložené. Dostupný DE11.2020 je jiný, nezávisle vedený podklad.",
-        "en": "Five photos absent from the current message/available archive. User confirms Škoda Enyaq; edition, model year, variants and photo/page mapping undocumented. Available DE11.2020 is a separate independent source.",
-        "de": "Fünf Fotos fehlen in aktueller Nachricht/verfügbarem Archiv. Škoda Enyaq vom Nutzer bestätigt; Ausgabe, Modelljahr, Varianten und Foto-/Seitenzuordnung unbelegt. Verfügbare DE11.2020 ist eigenständige andere Quelle."
+        "cs": "Deset fotografií bylo přijato a obrazově porovnáno; pokrývají celý fotografovaný přehled stran12–17. Opakované a náhradní záběry se nepočítají jako nové řádky. Škoda Enyaq potvrzen uživatelem; vydání a modelový rok zůstávají nedoložené. DE11.2020 je samostatný zdroj.",
+        "en": "Ten photos were received and visually compared, covering the complete photographed overview on pp12–17. Repeated and replacement views are not counted as new rows. User confirms Škoda Enyaq; edition and model year remain undocumented. DE11.2020 is a separate source.",
+        "de": "Zehn Fotos wurden empfangen und visuell verglichen; sie decken die vollständige fotografierte Übersicht S12–17 ab. Wiederholte und Ersatzaufnahmen zählen nicht als neue Zeilen. Škoda Enyaq vom Nutzer bestätigt; Ausgabe und Modelljahr bleiben unbelegt. DE11.2020 ist eine getrennte Quelle."
       }
     },
     {
       "id": "multivan-manual-four-16-19",
       "expected": 4,
-      "available_in_conversation": 0,
-      "visually_compared": 0,
+      "available_in_conversation": 5,
+      "visually_compared": 5,
       "brand_asserted_by_user": "Volkswagen Užitkové vozy",
       "model_asserted_by_user": "Multivan",
       "verified_generation": null,
@@ -106,11 +115,18 @@
         18,
         19
       ],
-      "kind": "four requested photographs of manual tables; actual photo/page mapping unknown",
+      "kind": "five received photographs covering unique printed pages16–19; page16 has a clearer replacement view",
+      "unique_printed_pages_covered": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "row_comparison": "multivan-photo-review.json",
       "status": {
-        "cs": "Čtyři fotografie stran16–19 nejsou v aktuální zprávě ani dostupném archivu. Model Multivan potvrzuje uživatel; generace, modelový rok a vydání nejsou doložené. Řádky ani podrobné pokyny dosud nelze porovnat. Nic nebylo převzato z Caddy, Transporteru ani jiného modelu.",
-        "en": "Four photos of pp16–19 are absent from the current message/available archive. User confirms Multivan; generation, model year and edition are undocumented. Rows and detailed instructions cannot yet be compared. Nothing inherited from Caddy, Transporter or another model.",
-        "de": "Vier Fotos S16–19 fehlen in aktueller Nachricht/verfügbarem Archiv. Multivan vom Nutzer bestätigt; Generation, Modelljahr und Ausgabe unbelegt. Zeilen und Detailanweisungen noch nicht vergleichbar. Nichts von Caddy, Transporter oder anderem Modell übernommen."
+        "cs": "Pět fotografií bylo přijato a obrazově porovnáno; pokrývají strany16–19 a novější záběr strany16 nahrazuje starší. Model Multivan potvrzuje uživatel; generace, modelový rok a vydání nejsou doložené. Podrobné pokyny z odkazovaných kapitol zůstávají otevřené a nic nebylo převzato z jiného modelu.",
+        "en": "Five photos were received and visually compared, covering pp16–19; the newer page16 view supersedes the earlier one. User confirms Multivan; generation, model year and edition are undocumented. Detailed instructions from referenced chapters remain open and nothing was inherited from another model.",
+        "de": "Fünf Fotos wurden empfangen und visuell verglichen; sie decken S16–19 ab, wobei die neuere Aufnahme von S16 die ältere ersetzt. Multivan vom Nutzer bestätigt; Generation, Modelljahr und Ausgabe unbelegt. Detailanweisungen aus den verwiesenen Kapiteln bleiben offen; nichts von einem anderen Modell übernommen."
       }
     }
   ],
