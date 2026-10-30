@@ -19,7 +19,7 @@
       "checked": "2026-10-30",
       "geometry_and_colour_compared": true,
       "customer_graphic_published": false,
-      "publication_blocker": "No confirmed reuse licence for the manufacturer SVG; no substitute or recoloured Terramar graphic published. Source files kept private."
+      "publication_blocker": "Specific reuse basis not established; generic website clause2 grants no licence by access. No permission request was sent or refused. Individual copyright eligibility/statutory exception not determined."
     },
     {
       "source_row": 70,
@@ -34,7 +34,7 @@
       "checked": "2026-10-30",
       "geometry_and_colour_compared": true,
       "customer_graphic_published": false,
-      "publication_blocker": "No confirmed reuse licence for the manufacturer SVG; no substitute or recoloured Terramar graphic published. Source files kept private."
+      "publication_blocker": "Specific reuse basis not established; generic website clause2 grants no licence by access. No permission request was sent or refused. Individual copyright eligibility/statutory exception not determined."
     },
     {
       "source_row": 71,
@@ -49,7 +49,7 @@
       "checked": "2026-10-30",
       "geometry_and_colour_compared": true,
       "customer_graphic_published": false,
-      "publication_blocker": "No confirmed reuse licence for the manufacturer SVG; no substitute or recoloured Terramar graphic published. Source files kept private."
+      "publication_blocker": "Specific reuse basis not established; generic website clause2 grants no licence by access. No permission request was sent or refused. Individual copyright eligibility/statutory exception not determined."
     },
     {
       "source_row": 104,
@@ -64,7 +64,7 @@
       "checked": "2026-10-30",
       "geometry_and_colour_compared": true,
       "customer_graphic_published": false,
-      "publication_blocker": "No confirmed reuse licence for the manufacturer SVG; no substitute or recoloured Terramar graphic published. Source files kept private."
+      "publication_blocker": "Specific reuse basis not established; generic website clause2 grants no licence by access. No permission request was sent or refused. Individual copyright eligibility/statutory exception not determined."
     },
     {
       "source_row": 121,
@@ -79,7 +79,24 @@
       "checked": "2026-10-30",
       "geometry_and_colour_compared": true,
       "customer_graphic_published": false,
-      "publication_blocker": "No confirmed reuse licence for the manufacturer SVG; no substitute or recoloured Terramar graphic published. Source files kept private."
+      "publication_blocker": "Specific reuse basis not established; generic website clause2 grants no licence by access. No permission request was sent or refused. Individual copyright eligibility/statutory exception not determined."
     }
-  ]
+  ],
+  "usage_review": {
+    "checked": "2026-10-30",
+    "source_terms_url": "https://www.volkswagen.de/de/mehr/rechtliches/nutzungsbedingungen.html",
+    "source_terms_edition": "Wolfsburg, Juni 2026",
+    "source_clause": "2. Schutzrechte an den Inhalten der Webseiten",
+    "short_quote": "Durch die Abrufbarkeit der Webseiten der Volkswagen AG wird keine Lizenz oder ein sonstiges Nutzungsrecht gewährt.",
+    "finding": {
+      "cs": "Bod 2 vyhrazuje práva k prezentovaným obrázkům a samotným přístupem licenci neposkytuje. Specifická licence těchto pěti SVG nebyla nalezena; žádost neodešla, nejde o čekání na odpověď.",
+      "en": "Clause 2 reserves rights in presented images; access grants no licence. No specific licence for these five SVGs was found; no request was sent and no reply is awaited.",
+      "de": "Ziffer 2 behält Rechte an dargestellten Bildern vor; Abruf gewährt keine Lizenz. Keine konkrete Lizenz für diese fünf SVGs gefunden; keine Anfrage versandt, keine Antwort ausstehend."
+    },
+    "unresolved": "A specific reuse licence, applicable permission or assessed statutory basis. This review does not determine copyright eligibility of each simple pictogram or declare that every lawful use is prohibited.",
+    "embedded_svg_licence_statement_found": false,
+    "permission_request_sent": false,
+    "permission_refused": false,
+    "manufacturer_files_republished": false
+  }
 }

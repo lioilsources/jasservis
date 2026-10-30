@@ -1439,7 +1439,9 @@
         "enyaq-12v-fault",
         "enyaq-12v-low",
         "enyaq-coolant",
+        "enyaq-dynamic-light-assist-active",
         "enyaq-epc",
+        "enyaq-parking-steep-slope",
         "esc-fault",
         "esc-regulating",
         "ev-12v-yellow-replace",
@@ -1473,6 +1475,8 @@
         77,
         79,
         80,
+        81,
+        82,
         100,
         101,
         161,
@@ -1525,6 +1529,7 @@
         "esc-fault",
         "esc-regulating",
         "glow-preheat",
+        "golf-white-high-beam-assist-enabled",
         "high-beam",
         "lane-correction",
         "lane-ready",
@@ -1559,10 +1564,12 @@
         "Fahrerassistenzsysteme / Lane Assist / korrigierender Lenkeingriff",
         "Fahrerassistenzsysteme / Travel Assist / Lenkung übernehmen",
         "Fahrerinformationen / Symbole im Kombi-Instrument",
+        "Fahrerinformationen / Symbole im Kombi-Instrument / Fernlichtregulierung aktiv (row 102)",
         "Kraftstoff und Abgasreinigung / Abgasreinigung / Problemlösungen",
         "Kraftstoff und Abgasreinigung / Partikelfilter mit Ruß zugesetzt (Dieselmotor)",
         "Licht / Fahrbeleuchtung",
         "Licht / Fahrbeleuchtung / Problemlösungen",
+        "Licht / Fernlichtregulierung",
         "Licht / Kontrollleuchte Blinklicht",
         "Licht / Nebelschlussleuchte ein- und ausschalten",
         "Parken und Rangieren / Bremsunterstützende Systeme / Problemlösungen",
@@ -1594,9 +1601,13 @@
       "verified_item_ids": [
         "abs-fault",
         "airbag-diagnostic-off",
+        "brake-servo",
         "bulb-fault",
+        "caddy-asr-manually-off",
+        "caddy-brake-servo-yellow-restricted",
         "central-red",
         "esc-fault",
+        "esc-regulating",
         "glow-preheat",
         "high-beam",
         "mii-foot-brake",
@@ -1618,7 +1629,11 @@
       "reviewed_html_sections": [
         "Fahren / Bremsen / Informationen zu den Bremsen",
         "Fahren / Bremsunterstützende Systeme / ABS ausgefallen oder gestört",
+        "Fahren / Bremsunterstützende Systeme / ASR aus- und einschalten",
         "Fahren / Bremsunterstützende Systeme / ESC gestört",
+        "Fahren / Bremsunterstützende Systeme / Informationen / ESC und ASR regeln",
+        "Fahren / Bremsunterstützende Systeme / Problemlösungen / Elektromechanischer Bremskraftverstärker ausgefallen",
+        "Fahren / Bremsunterstützende Systeme / Problemlösungen / Elektromechanischer Bremskraftverstärker gestört",
         "Fahren / Motor starten / Bremspedal treten",
         "Fahren / Start-Stopp-System",
         "Fahren / Vorglühanlage",
@@ -2158,6 +2173,38 @@
         "indexed_character_keys": null
       },
       "unresolved": "Whole manual remains incomplete. The precise closed subsection boundaries and remaining chapter areas are in chapter-review.json."
+    },
+    {
+      "id": "seat-tarraco-2024-06-23",
+      "brand": "seat",
+      "model": "Tarraco",
+      "edition": "06.2023",
+      "model_year": "2024",
+      "source_url": "https://www.seat.com/datamanual-manual/tarraco/my24_w25/en-uk/TARRACO_06_23_EN.pdf",
+      "part_number": "5FJ012720BR",
+      "whole_manual_comparison": "not-complete",
+      "sections": {
+        "instrument-panel": "not-yet-item-compared",
+        "driver-assistance": "not-yet-item-compared",
+        "infotainment-and-control-icons": "not-yet-item-compared",
+        "comfort-controls": "not-yet-item-compared"
+      },
+      "unresolved": "Whole-edition comparison remains incomplete.",
+      "verified_item_ids": [
+        "high-beam",
+        "parking-applied",
+        "tarraco-auto-hold-green-p",
+        "tarraco-light-assist-enabled-blue"
+      ],
+      "reviewed_printed_pages": [
+        119,
+        122,
+        123,
+        210,
+        211,
+        212
+      ],
+      "reviewed_html_sections": []
     }
   ],
   "source_character_index": [
@@ -74202,6 +74249,146 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "A4 own ignition-off rotary-AUTO operation documented separately from A8 MAX hold. No new graphic or shape."
+    },
+    {
+      "id": "enyaq-tarraco-independent-function-review",
+      "checked": "2026-10-30",
+      "before_semantic_records": 159,
+      "after_semantic_records": 163,
+      "added_record_ids": [
+        "enyaq-parking-steep-slope",
+        "enyaq-dynamic-light-assist-active",
+        "tarraco-auto-hold-green-p",
+        "tarraco-light-assist-enabled-blue"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "enyaq-parking-steep-slope",
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda"
+        },
+        {
+          "id": "enyaq-dynamic-light-assist-active",
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda"
+        },
+        {
+          "id": "tarraco-auto-hold-green-p",
+          "manual": "seat-tarraco-2024-06-23",
+          "brand": "seat"
+        },
+        {
+          "id": "tarraco-light-assist-enabled-blue",
+          "manual": "seat-tarraco-2024-06-23",
+          "brand": "seat"
+        },
+        {
+          "id": "parking-applied",
+          "manual": "seat-tarraco-2024-06-23",
+          "brand": "seat"
+        },
+        {
+          "id": "high-beam",
+          "manual": "seat-tarraco-2024-06-23",
+          "brand": "seat"
+        }
+      ],
+      "corrected_record_ids": [
+        "high-beam-assist-blue"
+      ],
+      "corrections": [
+        {
+          "id": "high-beam-assist-blue",
+          "before": {
+            "name": {
+              "cs": "Light Assist – zapnutý (modrá varianta)",
+              "en": "Light Assist on (blue version)",
+              "de": "Light Assist eingeschaltet (blaue Variante)"
+            },
+            "meaning": {
+              "cs": "Symbol s písmenem A potvrzuje zapnutý asistent. Sám nepotvrzuje právě rozsvícená dálková světla; ta mají vlastní modrou kontrolku.",
+              "en": "The symbol with A indicates that the assistant is switched on. It does not itself confirm that main beam is currently lit; that has a separate blue indicator.",
+              "de": "Das Symbol mit A zeigt den eingeschalteten Assistenten an. Es bestätigt nicht allein eingeschaltetes Fernlicht; dafür gibt es eine separate blaue Kontrollleuchte."
+            },
+            "action": {
+              "cs": "Sledujte osvětlení a provoz. Při riziku oslnění přepněte ručně; asistent nemusí všechny účastníky správně rozpoznat.",
+              "en": "Monitor lighting and traffic. Dip manually if there is a risk of dazzling; the assistant may not recognise every road user.",
+              "de": "Beobachten Sie Beleuchtung und Verkehr. Blenden Sie bei Blendgefahr manuell ab; der Assistent erkennt nicht alle Verkehrsteilnehmer zuverlässig."
+            },
+            "note": {
+              "cs": "Platí jen pro uvedená provedení a výbavu. Rozhoduje přesné hlášení a návod vašeho vozu.",
+              "en": "Only the listed versions and equipment are covered. Follow the exact message and your vehicle’s manual.",
+              "de": "Gilt nur für die aufgeführten Ausführungen und Ausstattungen. Maßgeblich sind die genaue Meldung und die Betriebsanleitung Ihres Fahrzeugs."
+            }
+          },
+          "source_manuals": [
+            "skoda-enyaq-2020-11-de",
+            "cupra-born-2022-08-21"
+          ]
+        }
+      ],
+      "enriched_existing_model_scopes": [
+        "auto-hold-active / Enyaq 11.2020",
+        "auto-hold-standby / Enyaq 11.2020",
+        "e-sound-fault / Enyaq 11.2020"
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Independent Enyaq and Born operational paragraphs correct former blue-A interpretation. Tarraco colour explicitly sourced from its own legend, not inherited. Full Tarraco 06.2023 is a separate obtained edition, not an assumed base for appendix01.24."
+    },
+    {
+      "id": "golf-white-assistant-independent-review",
+      "checked": "2026-10-30",
+      "before_semantic_records": 163,
+      "after_semantic_records": 164,
+      "added_record_ids": [
+        "golf-white-high-beam-assist-enabled"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "golf-white-high-beam-assist-enabled",
+          "manual": "vw-golf-2020-11-de",
+          "brand": "volkswagen"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "White standard-graphic rendition added only after source row102 colour/shape verification in Golf11.2020. Not an OEM asset copy; no cross-brand colour transfer."
+    },
+    {
+      "id": "caddy-braking-support-independent-review",
+      "checked": "2026-10-30",
+      "before_semantic_records": 164,
+      "after_semantic_records": 166,
+      "added_record_ids": [
+        "caddy-brake-servo-yellow-restricted",
+        "caddy-asr-manually-off"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "caddy-brake-servo-yellow-restricted",
+          "manual": "vwcv-caddy-2025-11-de",
+          "brand": "volkswagen-uzitkove-vozy"
+        },
+        {
+          "id": "caddy-asr-manually-off",
+          "manual": "vwcv-caddy-2025-11-de",
+          "brand": "volkswagen-uzitkove-vozy"
+        },
+        {
+          "id": "brake-servo",
+          "manual": "vwcv-caddy-2025-11-de",
+          "brand": "volkswagen-uzitkove-vozy"
+        },
+        {
+          "id": "esc-regulating",
+          "manual": "vwcv-caddy-2025-11-de",
+          "brand": "volkswagen-uzitkove-vozy"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Three available cached own-edition Caddy brake-support topics read in full. Yellow reduced assistance distinct from red failure; manually disabled ASR distinct from fault and intervention. Native LaneAssist reuse issue is independent and blocks none of these licensed standard renderings."
     }
   ],
   "chapter_register": "chapter-review.json",
@@ -74228,6 +74415,39 @@
     "a8-rear-climate",
     "a8-climate-sync",
     "a8-climate-off",
-    "a8-cooling-control-paragraph"
-  ]
+    "a8-cooling-control-paragraph",
+    "enyaq-light-assist-section",
+    "enyaq-dynamic-light-assist-section",
+    "enyaq-electronic-parking-section",
+    "enyaq-auto-hold-section",
+    "enyaq-esound-section",
+    "octavia-5e-light-assist-section",
+    "tarraco-2023-electronic-parking-section",
+    "tarraco-2023-auto-hold-section",
+    "tarraco-2023-light-assist-section",
+    "born-2021-light-assist-section",
+    "golf-2020-fernlichtregulierung-topic",
+    "caddy-2025-braking-support-topics",
+    "q4-2024-climate-driver-messages"
+  ],
+  "latest_round": {
+    "before_semantic_records": 159,
+    "after_semantic_records": 166,
+    "added_record_ids": [
+      "enyaq-parking-steep-slope",
+      "enyaq-dynamic-light-assist-active",
+      "tarraco-auto-hold-green-p",
+      "tarraco-light-assist-enabled-blue",
+      "golf-white-high-beam-assist-enabled",
+      "caddy-brake-servo-yellow-restricted",
+      "caddy-asr-manually-off"
+    ],
+    "corrected_record_ids": [
+      "high-beam-assist-blue",
+      "audi-q4-ac-co2-red",
+      "audi-q4-ac-co2-yellow"
+    ],
+    "removed_record_ids": [],
+    "whole_manuals_complete": 0
+  }
 }

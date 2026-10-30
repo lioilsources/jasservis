@@ -651,6 +651,31 @@
         "en": "Edition 06.2023 does not establish a model year and does not replace the missing 2022 edition. AUDI AG copy hosted by a third party; manufacturer-hosted file not compared.",
         "de": "Ausgabe 06.2023 belegt kein Modelljahr und ersetzt nicht die fehlende 2022-Ausgabe. AUDI-AG-Kopie von Dritten gehostet; Herstellerdatei nicht abgeglichen."
       }
+    },
+    "seat-tarraco-2024-06-23": {
+      "brand": "seat",
+      "model": "Tarraco",
+      "modelId": "tarraco",
+      "generation": "KN2",
+      "year": "2024",
+      "edition": "06.2023",
+      "lang": "EN",
+      "url": "https://www.seat.com/datamanual-manual/tarraco/my24_w25/en-uk/TARRACO_06_23_EN.pdf",
+      "bytes": 20580525,
+      "sha256": "6fb761e40ced17a71dfa92fc732af167388caf26c2924358d752f6667d0b4e5d",
+      "pages": 408,
+      "publisher": "SEAT S.A.",
+      "host_kind": "manufacturer",
+      "part_number": "5FJ012720BR",
+      "status": "selected-symbols-and-instructions-reviewed-not-complete",
+      "document_kind": "complete-owner-manual",
+      "checked": "2026-10-30",
+      "model_year_note": {
+        "cs": "Výrobce toto vydání nabízí ve výběru MY2024. Konkrétní výbava a pohon se řídí dokumentací vozidla. Není doloženo, že tento soubor je výslovně určený základ doplňku 01.24; vydání vedeme samostatně.",
+        "en": "The manufacturer lists this edition under MY2024. Actual equipment/powertrain follows vehicle documentation. It is not established that this file is the explicitly designated base for the 01.24 appendix; editions are separate.",
+        "de": "Hersteller führt diese Ausgabe unter MY2024. Konkrete Ausstattung/Antrieb laut Fahrzeugunterlagen. Nicht belegt, dass diese Datei die ausdrücklich zugeordnete Grundlage der Ergänzung 01.24 ist; Ausgaben getrennt."
+      },
+      "portal_catalogue": "https://www.seat.com/owners/about-my-car/manuals"
     }
   },
   "items": [
@@ -1277,6 +1302,32 @@
             "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "vwcv-caddy-2025-11-de",
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": "Caddy",
+          "model_year": null,
+          "generation": "2K7",
+          "edition": "11.2025",
+          "language": "DE",
+          "printed_pages": [],
+          "pdf_pages": [],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "source_sections": [
+            "Fahren / Bremsunterstützende Systeme / Problemlösungen / Elektromechanischer Bremskraftverstärker ausgefallen"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "method": "Full Caddy topic independently read; source symbol identity/colour compared with previously licensed conventional graphic. No copied manufacturer SVG and no cross-model inheritance.",
+            "source_topic_ids": [
+              "adc7169f38755360ccab371feaa6300a_1_de_DE",
+              "5f81129a864b4dd2c101446831c3c385_1_de_DE",
+              "2efa9c19fdda9e3fac14451e64b26693_10_de_DE"
+            ]
           }
         }
       ],
@@ -2758,6 +2809,32 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "vwcv-caddy-2025-11-de",
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": "Caddy",
+          "model_year": null,
+          "generation": "2K7",
+          "edition": "11.2025",
+          "language": "DE",
+          "printed_pages": [],
+          "pdf_pages": [],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "source_sections": [
+            "Fahren / Bremsunterstützende Systeme / Informationen / ESC und ASR regeln"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "method": "Full Caddy topic independently read; source symbol identity/colour compared with previously licensed conventional graphic. No copied manufacturer SVG and no cross-model inheritance.",
+            "source_topic_ids": [
+              "adc7169f38755360ccab371feaa6300a_1_de_DE",
+              "5f81129a864b4dd2c101446831c3c385_1_de_DE",
+              "2efa9c19fdda9e3fac14451e64b26693_10_de_DE"
+            ]
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -3696,6 +3773,36 @@
               12
             ],
             "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "seat-tarraco-2024-06-23",
+          "brand": "seat",
+          "model": "Tarraco",
+          "model_year": "2024",
+          "generation": "KN2",
+          "edition": "06.2023",
+          "language": "EN",
+          "printed_pages": [
+            210,
+            211
+          ],
+          "pdf_pages": [
+            212,
+            213
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "method": "Source shape and stated colour independently compared in this exact manual; driver instructions and equipment limits read. No cross-model or cross-brand inheritance.",
+            "document_sha256": "6fb761e40ced17a71dfa92fc732af167388caf26c2924358d752f6667d0b4e5d",
+            "graphic_printed_pages": [
+              210,
+              211
+            ]
           }
         }
       ],
@@ -6665,6 +6772,36 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "seat-tarraco-2024-06-23",
+          "brand": "seat",
+          "model": "Tarraco",
+          "model_year": "2024",
+          "generation": "KN2",
+          "edition": "06.2023",
+          "language": "EN",
+          "printed_pages": [
+            119,
+            122
+          ],
+          "pdf_pages": [
+            121,
+            124
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "method": "Source shape and stated colour independently compared in this exact manual; driver instructions and equipment limits read. No cross-model or cross-brand inheritance.",
+            "document_sha256": "6fb761e40ced17a71dfa92fc732af167388caf26c2924358d752f6667d0b4e5d",
+            "graphic_printed_pages": [
+              119,
+              122
+            ]
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -7871,10 +8008,12 @@
           "edition": "11.2020",
           "language": "DE",
           "printed_pages": [
-            170
+            170,
+            171
           ],
           "pdf_pages": [
-            172
+            172,
+            173
           ],
           "powertrains": [
             "elektricky"
@@ -7883,6 +8022,11 @@
             "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
+          },
+          "model_note": {
+            "cs": "Enyaq 11.2020: podmínkou je zavřené dveře řidiče, zapnuté zapalování, aktivovaná funkce a nezařazené N. Při rozjezdu se držení uvolní; za určitých okolností převezme držení parkovací brzda s červeným P.",
+            "en": "Enyaq 11.2020: driver door closed, ignition on, function enabled and N not selected. Holding releases on move-off; parking brake can take over with red P.",
+            "de": "Enyaq 11.2020: Fahrertür zu, Zündung an, Funktion aktiv, N nicht gewählt. Beim Anfahren gelöst; Parkbremse kann mit rotem P übernehmen."
           }
         },
         {
@@ -7996,10 +8140,12 @@
           "edition": "11.2020",
           "language": "DE",
           "printed_pages": [
-            170
+            170,
+            171
           ],
           "pdf_pages": [
-            172
+            172,
+            173
           ],
           "powertrains": [
             "elektricky"
@@ -8008,6 +8154,11 @@
             "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
+          },
+          "model_note": {
+            "cs": "Enyaq 11.2020: šedý nápis označuje aktivovanou funkci, nikoli potvrzení držení. Držení potvrzuje zelený nápis. Nastavení je v infotainmentu; pro požadované volné rolování například v myčce funkci deaktivujte.",
+            "en": "Enyaq 11.2020: grey inscription means enabled function, not confirmed holding. Green confirms holding. Set in infotainment; disable when free rolling is required, such as a conveyor car wash.",
+            "de": "Enyaq 11.2020: graue Aufschrift bedeutet aktive Funktion, nicht bestätigtes Halten. Grün bestätigt Halten. Einstellung im Infotainment; bei erforderlichem freien Rollen, etwa Waschanlage, deaktivieren."
           }
         },
         {
@@ -9983,6 +10134,11 @@
             "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
+          },
+          "model_note": {
+            "cs": "Toto vydání Enyaq uvádí e-Sound do 25 km/h a bez možnosti vypnutí. Ani funkční zvuk nezaručuje, že ostatní vůz uslyší. Při kontrolce výpadku vyhledejte odbornou pomoc.",
+            "en": "This Enyaq edition specifies e-Sound up to 25 km/h and no off option. Working sound does not guarantee others hear the vehicle. Seek professional help for the failure indicator.",
+            "de": "Diese Enyaq-Ausgabe nennt e-Sound bis 25 km/h ohne Abschaltmöglichkeit. Funktionierender Klang garantiert kein Gehörtwerden. Bei Ausfallanzeige Fachhilfe aufsuchen."
           }
         },
         {
@@ -10137,24 +10293,24 @@
       "group": "osvetleni",
       "state": "steady",
       "name": {
-        "cs": "Light Assist – zapnutý (modrá varianta)",
-        "en": "Light Assist on (blue version)",
-        "de": "Light Assist eingeschaltet (blaue Variante)"
+        "cs": "Light Assist – automaticky zapnutá dálková světla, modré A",
+        "en": "Light Assist – automatically activated main beam, blue A",
+        "de": "Light Assist – automatisch eingeschaltetes Fernlicht, blaues A"
       },
       "meaning": {
-        "cs": "Symbol s písmenem A potvrzuje zapnutý asistent. Sám nepotvrzuje právě rozsvícená dálková světla; ta mají vlastní modrou kontrolku.",
-        "en": "The symbol with A indicates that the assistant is switched on. It does not itself confirm that main beam is currently lit; that has a separate blue indicator.",
-        "de": "Das Symbol mit A zeigt den eingeschalteten Assistenten an. Es bestätigt nicht allein eingeschaltetes Fernlicht; dafür gibt es eine separate blaue Kontrollleuchte."
+        "cs": "V uvedených vydáních Enyaq a Born modrý symbol s A podle provozních pokynů označuje automatické zapnutí dálkových světel. Samotné neutrální označení zapnutého asistenta je jiný stav.",
+        "en": "In the cited Enyaq and Born editions, the operating instructions associate the blue A symbol with automatically activated main beam. The neutral enabled-assistant indication is a different state.",
+        "de": "In genannten Enyaq-/Born-Ausgaben ordnen die Bedienhinweise das blaue A automatisch eingeschaltetem Fernlicht zu. Neutrale Anzeige des eingeschalteten Assistenten ist anderer Zustand."
       },
       "action": {
-        "cs": "Sledujte osvětlení a provoz. Při riziku oslnění přepněte ručně; asistent nemusí všechny účastníky správně rozpoznat.",
-        "en": "Monitor lighting and traffic. Dip manually if there is a risk of dazzling; the assistant may not recognise every road user.",
-        "de": "Beobachten Sie Beleuchtung und Verkehr. Blenden Sie bei Blendgefahr manuell ab; der Assistent erkennt nicht alle Verkehrsteilnehmer zuverlässig."
+        "cs": "Sledujte protijedoucí i předjížděná vozidla a další účastníky. Podle potřeby dálková světla ručně vypněte; zakrytá kamera nebo špatně osvětlený účastník nemusí být správně rozpoznán.",
+        "en": "Watch oncoming/preceding vehicles and other road users. Switch main beam off manually when necessary; an obscured camera or poorly lit road user may not be recognised correctly.",
+        "de": "Gegenverkehr, vorausfahrende Fahrzeuge und weitere Verkehrsteilnehmer beachten. Fernlicht nötigenfalls manuell ausschalten; verdeckte Kamera oder schlecht beleuchtete Teilnehmer können falsch erkannt werden."
       },
       "note": {
-        "cs": "Platí jen pro uvedená provedení a výbavu. Rozhoduje přesné hlášení a návod vašeho vozu.",
-        "en": "Only the listed versions and equipment are covered. Follow the exact message and your vehicle’s manual.",
-        "de": "Gilt nur für die aufgeführten Ausführungen und Ausstattungen. Maßgeblich sind die genaue Meldung und die Betriebsanleitung Ihres Fahrzeugs."
+        "cs": "Původní tvrzení, že tato modrá varianta sama nepotvrzuje rozsvícená dálková světla, bylo opraveno podle Enyaq 11.2020 str. 80 a Born 08.2021 str. 108. Výklad nebyl přenesen na jinou značku nebo vydání.",
+        "en": "The former statement that this blue variant does not itself confirm lit main beam was corrected using Enyaq 11.2020 p80 and Born 08.2021 p108. Not transferred to another brand or edition.",
+        "de": "Frühere Aussage, diese blaue Variante bestätige nicht selbst eingeschaltetes Fernlicht, anhand Enyaq 11.2020 S80 und Born 08.2021 S108 korrigiert. Nicht auf andere Marke/Ausgabe übertragen."
       },
       "scopes": [
         {
@@ -19632,9 +19788,9 @@
         "de": "Fahrzeug unverzüglich lüften. Bleibt die Meldung bestehen, nicht weiterfahren und einen Fachbetrieb kontaktieren. Auch bei erloschener Meldung die Ursache demnächst prüfen lassen."
       },
       "note": {
-        "cs": "Výklad vyžaduje uvedené hlášení o CO₂. Není to obecný význam tlačítka A/C ani měření CO₂ v chladicí soustavě spalovacího motoru.",
-        "en": "This interpretation requires the stated CO₂ message. It is not the general meaning of an A/C button or an engine-coolant CO₂ test.",
-        "de": "Diese Auslegung setzt die genannte CO₂-Meldung voraus. Keine allgemeine Bedeutung der A/C-Taste und keine CO₂-Messung im Motorkühlsystem."
+        "cs": "Výklad vyžaduje uvedené hlášení o CO₂. Není to obecný význam tlačítka A/C ani měření CO₂ v chladicí soustavě spalovacího motoru. Samostatné textové hlášení „Klimatisierung eingeschränkt“ na stejné straně popisuje omezení klimatizace při zvýšeném chlazení vysokonapěťového akumulátoru pro jeho ochranu. Není totožné s touto výstrahou CO₂ a nemá zde vlastní doložený symbol.",
+        "en": "This interpretation requires the stated CO₂ message. It is not the general meaning of an A/C button or an engine-coolant CO₂ test. The separate text message “Klimatisierung eingeschränkt” on the same page describes reduced cabin climate operation during increased cooling to protect the high-voltage battery. It is not this CO₂ warning and has no separately documented symbol here.",
+        "de": "Diese Auslegung setzt die genannte CO₂-Meldung voraus. Keine allgemeine Bedeutung der A/C-Taste und keine CO₂-Messung im Motorkühlsystem. Der gesonderte Texthinweis „Klimatisierung eingeschränkt“ auf derselben Seite beschreibt eingeschränkte Innenraumklimatisierung bei erhöhter Kühlung zum Schutz der Hochvoltbatterie. Er ist nicht mit dieser CO₂-Warnung gleichzusetzen und hat hier kein eigenes belegtes Symbol."
       },
       "alt": {
         "cs": "A/C – koncentrace CO₂ v kabině stále zvýšená",
@@ -19708,9 +19864,9 @@
         "de": "Fahrzeug unverzüglich lüften. Bleibt die Meldung bestehen, nicht weiterfahren und einen Fachbetrieb kontaktieren. Auch bei erloschener Meldung die Ursache demnächst prüfen lassen."
       },
       "note": {
-        "cs": "Výklad vyžaduje uvedené hlášení o CO₂. Není to obecný význam tlačítka A/C ani měření CO₂ v chladicí soustavě spalovacího motoru.",
-        "en": "This interpretation requires the stated CO₂ message. It is not the general meaning of an A/C button or an engine-coolant CO₂ test.",
-        "de": "Diese Auslegung setzt die genannte CO₂-Meldung voraus. Keine allgemeine Bedeutung der A/C-Taste und keine CO₂-Messung im Motorkühlsystem."
+        "cs": "Výklad vyžaduje uvedené hlášení o CO₂. Není to obecný význam tlačítka A/C ani měření CO₂ v chladicí soustavě spalovacího motoru. Samostatné textové hlášení „Klimatisierung eingeschränkt“ na stejné straně popisuje omezení klimatizace při zvýšeném chlazení vysokonapěťového akumulátoru pro jeho ochranu. Není totožné s touto výstrahou CO₂ a nemá zde vlastní doložený symbol.",
+        "en": "This interpretation requires the stated CO₂ message. It is not the general meaning of an A/C button or an engine-coolant CO₂ test. The separate text message “Klimatisierung eingeschränkt” on the same page describes reduced cabin climate operation during increased cooling to protect the high-voltage battery. It is not this CO₂ warning and has no separately documented symbol here.",
+        "de": "Diese Auslegung setzt die genannte CO₂-Meldung voraus. Keine allgemeine Bedeutung der A/C-Taste und keine CO₂-Messung im Motorkühlsystem. Der gesonderte Texthinweis „Klimatisierung eingeschränkt“ auf derselben Seite beschreibt eingeschränkte Innenraumklimatisierung bei erhöhter Kühlung zum Schutz der Hochvoltbatterie. Er ist nicht mit dieser CO₂-Warnung gleichzusetzen und hat hier kein eigenes belegtes Symbol."
       },
       "alt": {
         "cs": "A/C – zvýšená koncentrace CO₂ v kabině",
@@ -23137,6 +23293,549 @@
       },
       "checked": "2026-10-30",
       "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "enyaq-parking-steep-slope",
+      "graphic": "parking",
+      "color": "cervena",
+      "group": "brzdy",
+      "state": "flashing",
+      "name": {
+        "cs": "Parkovací brzda – příliš prudký sklon parkovacího místa",
+        "en": "Parking brake – parking position on an excessively steep gradient",
+        "de": "Parkbremse – Parkposition mit zu starker Neigung"
+      },
+      "meaning": {
+        "cs": "U Enyaqu tohoto vydání blikající červené P spolu s odpovídajícím hlášením upozorňuje na příliš prudký sklon parkovacího místa. Nejde o stejný výklad jako trvalá žlutá kontrolka závady parkovací brzdy.",
+        "en": "In this Enyaq edition, flashing red P with the corresponding message warns that the parking position has an excessively steep gradient. Not the same interpretation as the steady amber parking-brake fault indicator.",
+        "de": "Bei diesem Enyaq weist blinkendes rotes P mit entsprechender Meldung auf zu starke Neigung der Parkposition hin. Nicht dieselbe Bedeutung wie dauerhaft gelbe Parkbrems-Störungsanzeige."
+      },
+      "action": {
+        "cs": "Zajistěte vozidlo proti pohybu a podle pokynu vyhledejte jiné parkovací místo s menším sklonem. Nerozhodujte pouze podle barvy nebo jediné fotografie.",
+        "en": "Secure the vehicle against movement and follow the instruction to find another parking place with a gentler gradient. Do not decide from colour or one photograph alone.",
+        "de": "Fahrzeug gegen Wegrollen sichern und laut Anweisung anderen Parkplatz mit geringerer Neigung aufsuchen. Nicht allein nach Farbe oder Einzelfoto entscheiden."
+      },
+      "note": {
+        "cs": "Výklad platí pouze pro uvedené hlášení a modelové vydání. Červené P při běžném zajištění vozidla je trvalý provozní stav, nikoli tato blikající výstraha.",
+        "en": "Only the specified message and model edition. Steady red P during ordinary vehicle securing is an operating state, not this flashing warning.",
+        "de": "Nur genannte Meldung und Modellausgabe. Dauerhaft rotes P beim üblichen Sichern ist Betriebszustand, nicht diese blinkende Warnung."
+      },
+      "scopes": [
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            169
+          ],
+          "pdf_pages": [
+            171
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "method": "Source shape and stated colour independently compared in this exact manual; driver instructions and equipment limits read. No cross-model or cross-brand inheritance.",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "graphic_printed_pages": [
+              169
+            ]
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/parking-cervena.svg",
+      "graphic_source": {
+        "title": "File:ISO 7000 - Ref-No 0238.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0238.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/5/5f/ISO_7000_-_Ref-No_0238.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "author": "Vectorization:    Mrmw",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "15af89fee95a1bec724316f46dd612422ea291b312b6c1a638bbb1b923a4e44a",
+        "file": "wp-content/uploads/kontrolky/parking-cervena.svg"
+      },
+      "alt": {
+        "cs": "Parkovací brzda – příliš prudký sklon parkovacího místa",
+        "en": "Parking brake – parking position on an excessively steep gradient",
+        "de": "Parkbremse – Parkposition mit zu starker Neigung"
+      },
+      "kind": "warning"
+    },
+    {
+      "id": "enyaq-dynamic-light-assist-active",
+      "graphic": "high-beam-assist",
+      "color": "modra",
+      "group": "osvetleni",
+      "state": "steady",
+      "name": {
+        "cs": "Dynamic Light Assist – automatická dálková světla s úpravou kuželu",
+        "en": "Dynamic Light Assist – automatic main beam with beam adaptation",
+        "de": "Dynamic Light Assist – automatisches Fernlicht mit Lichtkegelanpassung"
+      },
+      "meaning": {
+        "cs": "U uvedené výbavy Enyaqu modré A označuje automaticky zapnutá dálková světla. Dynamic Light Assist navíc upravuje světelný kužel, aby neoslňoval protijedoucí a předjížděná vozidla; samotná kontrolka nezaručuje jejich rozpoznání.",
+        "en": "On the specified Enyaq equipment, blue A indicates automatically activated main beam. Dynamic Light Assist additionally adapts the beam to avoid dazzling oncoming/preceding vehicles; the indicator does not guarantee their recognition.",
+        "de": "Bei genannter Enyaq-Ausstattung kennzeichnet blaues A automatisch eingeschaltetes Fernlicht. Dynamic Light Assist passt zusätzlich den Lichtkegel an, um Gegenverkehr/Vorausfahrende nicht zu blenden; die Anzeige garantiert deren Erkennung nicht."
+      },
+      "action": {
+        "cs": "Při riziku oslnění zasáhněte ručně. Respektujte zakrytí, znečištění nebo poruchu světel ostatních vozidel a podmínky v konkrétním návodu.",
+        "en": "Intervene manually if there is a risk of dazzling. Account for obscured, dirty or failed lamps on other vehicles and the conditions in the actual manual.",
+        "de": "Bei Blendgefahr manuell eingreifen. Verdeckte, verschmutzte oder ausgefallene Leuchten anderer Fahrzeuge und Bedingungen der konkreten Anleitung beachten."
+      },
+      "note": {
+        "cs": "Pouze výbava Dynamic Light Assist, nikoli automatické přiřazení všem Enyaqům. Tentýž tvar A u běžného Light Assist neznamená, že má vůz i dynamickou úpravu kuželu.",
+        "en": "Only Dynamic Light Assist equipment, not automatically all Enyaqs. The same A shape on ordinary Light Assist does not establish dynamic beam adaptation.",
+        "de": "Nur Ausstattung Dynamic Light Assist, nicht automatisch alle Enyaq. Gleiche A-Form bei gewöhnlichem Light Assist belegt keine dynamische Lichtkegelanpassung."
+      },
+      "scopes": [
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            81,
+            82
+          ],
+          "pdf_pages": [
+            83,
+            84
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "method": "Source shape and stated colour independently compared in this exact manual; driver instructions and equipment limits read. No cross-model or cross-brand inheritance.",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "graphic_printed_pages": [
+              81,
+              82
+            ]
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/high-beam-assist-modra.svg",
+      "graphic_source": {
+        "title": "File:ISO 7000 - Ref-No 2956.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_2956.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/a/a3/ISO_7000_-_Ref-No_2956.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "author": "Vectorization:    Mrmw",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "5748a04bdd75242a016913c6ea9c2c5f23c4679663b455081dc8e85b374e30f6",
+        "file": "wp-content/uploads/kontrolky/high-beam-assist-modra.svg"
+      },
+      "alt": {
+        "cs": "Dynamic Light Assist – automatická dálková světla s úpravou kuželu",
+        "en": "Dynamic Light Assist – automatic main beam with beam adaptation",
+        "de": "Dynamic Light Assist – automatisches Fernlicht mit Lichtkegelanpassung"
+      },
+      "kind": "information"
+    },
+    {
+      "id": "tarraco-auto-hold-green-p",
+      "graphic": "parking",
+      "graphic_path": "wp-content/uploads/kontrolky/parking-zelena.svg",
+      "color": "zelena",
+      "group": "brzdy",
+      "state": "steady",
+      "kind": "information",
+      "name": {
+        "cs": "Auto Hold – vozidlo drženo, zelené P (Tarraco)",
+        "en": "Auto Hold – vehicle held, green P (Tarraco)",
+        "de": "Auto Hold – Fahrzeug gehalten, grünes P (Tarraco)"
+      },
+      "meaning": {
+        "cs": "U uvedeného Tarraca se při aktivním držení vozidla funkcí Auto Hold rozsvítí zelené P. Text AUTO HOLD na fyzickém tlačítku je označení ovladače, nikoli tento stavový symbol.",
+        "en": "On the specified Tarraco, green P lights when Auto Hold holds the vehicle. AUTO HOLD text on the physical button labels the control, not this status symbol.",
+        "de": "Beim genannten Tarraco leuchtet grünes P beim Halten durch Auto Hold. AUTO HOLD auf physischer Taste ist Bedienkennzeichnung, nicht dieses Statussymbol."
+      },
+      "action": {
+        "cs": "Zůstaňte připraveni brzdit. Před opuštěním vozidlo řádně zajistěte a neponechávejte je běžet pouze s Auto Hold. Před průjezdem myčkou funkci vypněte podle návodu.",
+        "en": "Remain ready to brake. Secure the vehicle properly before leaving; do not leave it running relying only on Auto Hold. Disable before a conveyor car wash as instructed.",
+        "de": "Bremsbereit bleiben. Fahrzeug vor Verlassen ordnungsgemäß sichern, nicht laufend allein auf Auto Hold verlassen. Vor Förderbandwaschanlage gemäß Anleitung deaktivieren."
+      },
+      "note": {
+        "cs": "Tento záznam je doložen pro konvenční pohon a uvedenou výbavu. Požadavky zahrnují zavřené dveře řidiče, zapnutý pás a běžící motor. Nezaměňovat s červeným P parkovací brzdy ani s nápisem AUTO HOLD u jiných modelů.",
+        "en": "This record documents conventional-drive equipment in the specified edition. Requirements include closed driver door, fastened belt and running engine. Not red parking-brake P or the AUTO HOLD inscription used by other models.",
+        "de": "Dieser Eintrag belegt konventionelle Antriebsausstattung genannter Ausgabe. Voraussetzungen: Fahrertür zu, Gurt angelegt, Motor läuft. Nicht rotes Parkbrems-P oder AUTO-HOLD-Aufschrift anderer Modelle."
+      },
+      "alt": {
+        "cs": "Auto Hold – vozidlo drženo, zelené P (Tarraco)",
+        "en": "Auto Hold – vehicle held, green P (Tarraco)",
+        "de": "Auto Hold – Fahrzeug gehalten, grünes P (Tarraco)"
+      },
+      "graphic_source": {
+        "title": "File:ISO 7000 - Ref-No 0238.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0238.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/5/5f/ISO_7000_-_Ref-No_0238.svg",
+        "author": "Mrmw",
+        "license": "CC0 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "modifications": "Licensed standard pictogram geometry retained; registration marks removed; only source-documented foreground colour applied. Stroke-only elements remain unfilled.",
+        "file": "wp-content/uploads/kontrolky/parking-zelena.svg",
+        "sha256": "ee1737843162b638f1d966461cfaad9ef61ea75ba346ab2577506f82aa8865ff"
+      },
+      "scopes": [
+        {
+          "manual": "seat-tarraco-2024-06-23",
+          "brand": "seat",
+          "model": "Tarraco",
+          "model_year": "2024",
+          "generation": "KN2",
+          "edition": "06.2023",
+          "language": "EN",
+          "printed_pages": [
+            211,
+            212
+          ],
+          "pdf_pages": [
+            213,
+            214
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "method": "Source shape and stated colour independently compared in this exact manual; driver instructions and equipment limits read. No cross-model or cross-brand inheritance.",
+            "document_sha256": "6fb761e40ced17a71dfa92fc732af167388caf26c2924358d752f6667d0b4e5d",
+            "graphic_printed_pages": [
+              211,
+              212
+            ]
+          }
+        }
+      ],
+      "checked": "2026-10-30",
+      "review_status": "specific-manual-and-licensed-pictogram-reviewed; complete-model-inventory-not-claimed"
+    },
+    {
+      "id": "tarraco-light-assist-enabled-blue",
+      "graphic": "high-beam-assist",
+      "color": "modra",
+      "group": "osvetleni",
+      "state": "steady",
+      "name": {
+        "cs": "Light Assist – asistent zapnutý, modrá varianta Tarraco",
+        "en": "Light Assist – assistant enabled, Tarraco blue variant",
+        "de": "Light Assist – Assistent eingeschaltet, blaue Tarraco-Variante"
+      },
+      "meaning": {
+        "cs": "Legenda tohoto vydání Tarraco uvádí modrý symbol s A pro zapnutý Light Assist. Samostatná modrá kontrolka dálkových světel označuje jejich rozsvícení; rozlišujte oba tvary a pokyny na displeji.",
+        "en": "This Tarraco edition’s legend specifies the blue A symbol for enabled Light Assist. The separate blue main-beam indicator denotes lit main beam; distinguish the shapes and display instructions.",
+        "de": "Legende dieser Tarraco-Ausgabe nennt blaues A für eingeschalteten Light Assist. Separate blaue Fernlichtanzeige kennzeichnet leuchtendes Fernlicht; Formen und Displayhinweise unterscheiden."
+      },
+      "action": {
+        "cs": "Sledujte skutečné osvětlení a ostatní účastníky, při riziku oslnění přepněte ručně. Znečištěné nebo zakryté zorné pole kamery může funkci omezit.",
+        "en": "Monitor actual lighting and other road users; switch manually if dazzling is possible. Dirty/obscured camera view can restrict operation.",
+        "de": "Tatsächliche Beleuchtung und andere Teilnehmer beachten; bei Blendgefahr manuell schalten. Verschmutztes/verdecktes Kamerasichtfeld kann Funktion einschränken."
+      },
+      "note": {
+        "cs": "Barvu dokládá výslovný popisek legendy str. 119; oddíl 122–123 rozlišuje zapnutí asistenta a dálkových světel. Tento výklad se nepřenáší z Enyaqu/Bornu, jejichž modré A má v provozních pokynech jiný důraz.",
+        "en": "Colour is explicitly stated in the p119 legend; pp122–123 distinguish assistant enablement and main-beam operation. Not inherited from Enyaq/Born, whose blue-A operating instructions have a different emphasis.",
+        "de": "Farbe ausdrücklich in Legende S119; S122–123 unterscheiden Assistenteneinschaltung und Fernlichtbetrieb. Nicht von Enyaq/Born übernommen, deren blaue-A-Bedienhinweise anders gewichtet sind."
+      },
+      "scopes": [
+        {
+          "manual": "seat-tarraco-2024-06-23",
+          "brand": "seat",
+          "model": "Tarraco",
+          "model_year": "2024",
+          "generation": "KN2",
+          "edition": "06.2023",
+          "language": "EN",
+          "printed_pages": [
+            119,
+            122,
+            123
+          ],
+          "pdf_pages": [
+            121,
+            124,
+            125
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "method": "Source shape and stated colour independently compared in this exact manual; driver instructions and equipment limits read. No cross-model or cross-brand inheritance.",
+            "document_sha256": "6fb761e40ced17a71dfa92fc732af167388caf26c2924358d752f6667d0b4e5d",
+            "graphic_printed_pages": [
+              119,
+              122,
+              123
+            ]
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/high-beam-assist-modra.svg",
+      "graphic_source": {
+        "title": "File:ISO 7000 - Ref-No 2956.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_2956.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/a/a3/ISO_7000_-_Ref-No_2956.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "author": "Vectorization:    Mrmw",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "5748a04bdd75242a016913c6ea9c2c5f23c4679663b455081dc8e85b374e30f6",
+        "file": "wp-content/uploads/kontrolky/high-beam-assist-modra.svg"
+      },
+      "alt": {
+        "cs": "Light Assist – asistent zapnutý, modrá varianta Tarraco",
+        "en": "Light Assist – assistant enabled, Tarraco blue variant",
+        "de": "Light Assist – Assistent eingeschaltet, blaue Tarraco-Variante"
+      },
+      "kind": "information"
+    },
+    {
+      "id": "golf-white-high-beam-assist-enabled",
+      "graphic": "high-beam-assist",
+      "color": "bila",
+      "group": "osvetleni",
+      "state": "steady",
+      "name": {
+        "cs": "Regulace dálkových světel – zapnutá, bílé A (Golf)",
+        "en": "Main-beam control – enabled, white A (Golf)",
+        "de": "Fernlichtregulierung – eingeschaltet, weißes A (Golf)"
+      },
+      "meaning": {
+        "cs": "Bílý symbol s A v tomto vydání Golfu označuje zapnutou regulaci dálkových světel. Skutečné rozsvícení dálkových světel potvrzuje samostatná modrá kontrolka dálkových světel.",
+        "en": "In this Golf edition, white A indicates enabled main-beam control. Actual main-beam illumination is confirmed by the separate blue main-beam indicator.",
+        "de": "Bei dieser Golf-Ausgabe zeigt weißes A eingeschaltete Fernlichtregulierung. Tatsächlich leuchtendes Fernlicht bestätigt die separate blaue Fernlichtanzeige."
+      },
+      "action": {
+        "cs": "Kontrolujte skutečné osvětlení a podle potřeby přepněte ručně. Nejasně osvětlení účastníci, zakrytá kamera, počasí či členitá vozovka mohou automatiku omezit.",
+        "en": "Monitor actual lighting and switch manually if needed. Poorly lit road users, an obscured camera, weather or road layout can restrict automatic operation.",
+        "de": "Tatsächliche Beleuchtung kontrollieren und nötigenfalls manuell schalten. Schlecht beleuchtete Teilnehmer, verdeckte Kamera, Wetter oder Straßenverlauf können Automatik einschränken."
+      },
+      "note": {
+        "cs": "Barva je doložena původní bílou variantou v přehledu symbolů tohoto konkrétního vydání. Oddíl popisuje i trojí potvrzovací bliknutí při nastavení citlivosti v některých zemích; jeho barvu zvlášť neodhadujeme a nevydáváme je za závadu.",
+        "en": "Colour is documented by the original white rendition in this exact edition’s symbol overview. The section also describes three confirmation flashes during sensitivity adjustment in some markets; their colour is not independently assumed and the flashes are not represented as a fault.",
+        "de": "Farbe durch weiße Originalvariante der Symbolübersicht genau dieser Ausgabe belegt. Abschnitt nennt auch dreimaliges Bestätigungsblinken bei Empfindlichkeitseinstellung in einigen Ländern; dessen Farbe nicht gesondert angenommen und Blinken nicht als Störung dargestellt."
+      },
+      "scopes": [
+        {
+          "manual": "vw-golf-2020-11-de",
+          "brand": "volkswagen",
+          "model": "Golf",
+          "model_year": null,
+          "generation": "5H0",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [],
+          "pdf_pages": [],
+          "source_sections": [
+            "Fahrerinformationen / Symbole im Kombi-Instrument / Fernlichtregulierung aktiv (row 102)",
+            "Licht / Fernlichtregulierung"
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "method": "Original white source SVG row102 visually compared with licensed ISO2956 graphic; same rays/enclosed A identity, no assertion of pixel-identical OEM contours. Full own-edition light-control topic read. Explicit enabled/blue-main-beam distinction preserved.",
+            "source_topic_id": "18839ebf815c20765ed803c19ab2f2ad_4_de_DE",
+            "source_topic_sha256": "ab04333d744cf3b44fe4478a58f8610970a9170f2742fb6f92f2a5d43e6d6203",
+            "colour_source": "Source overview row102 vw-color-white and _white.svg; not inferred from another model."
+          },
+          "model_note": {
+            "cs": "Pouze výbava a vydání uvedené zde; neznamená přítomnost Dynamic Light Assist ve všech vozech. Použitá standardizovaná grafika není převzatý originální SVG soubor výrobce.",
+            "en": "Only the equipment/edition listed here; does not establish Dynamic Light Assist on all vehicles. Standardized graphic is not a reproduced original manufacturer SVG.",
+            "de": "Nur hier genannte Ausstattung/Ausgabe; kein Nachweis von Dynamic Light Assist in allen Fahrzeugen. Standardgrafik ist keine übernommene Hersteller-SVG-Datei."
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/high-beam-assist-bila.svg",
+      "graphic_source": {
+        "title": "File:ISO 7000 - Ref-No 2956.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_2956.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/a/a3/ISO_7000_-_Ref-No_2956.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "author": "Vectorization:    Mrmw",
+        "modifications": "Previously licensed ISO 7000 ref2956 geometry retained. White foreground independently confirmed from Golf 11.2020 original overview row102 and source white SVG (same five rays and enclosed A). Standardized rendering, not a facsimile copy of the manufacturer SVG. No Enyaq/Caddy applicability inferred.",
+        "sha256": "1b6757cdaf9d9531ea1f3623fe505d178c3de5d958f6177e365843c9c05de841",
+        "file": "wp-content/uploads/kontrolky/high-beam-assist-bila.svg"
+      },
+      "alt": {
+        "cs": "Bílá kontrolka regulace dálkových světel s písmenem A",
+        "en": "White main-beam-control indicator with letter A",
+        "de": "Weiße Fernlichtregulierungsanzeige mit Buchstabe A"
+      },
+      "kind": "information"
+    },
+    {
+      "id": "caddy-brake-servo-yellow-restricted",
+      "graphic": "brake",
+      "color": "zluta",
+      "group": "brzdy",
+      "state": "steady",
+      "name": {
+        "cs": "Posilovač brzd – omezená funkce, žluté hlášení Caddy",
+        "en": "Brake servo – restricted operation, Caddy amber warning",
+        "de": "Bremskraftverstärker – eingeschränkte Funktion, gelbe Caddy-Meldung"
+      },
+      "meaning": {
+        "cs": "Při doloženém žlutém hlášení je elektromechanická podpora brzdění omezená. Při sešlápnutí se mohou objevit pulzující pohyby pedálu a brzdná dráha se může prodloužit.",
+        "en": "With the documented amber warning, electromechanical braking assistance is restricted. Pedal pulsations may occur and stopping distance can increase.",
+        "de": "Bei belegter gelber Meldung ist elektromechanische Bremsunterstützung eingeschränkt. Pulsierende Pedalbewegungen und längerer Bremsweg sind möglich."
+      },
+      "action": {
+        "cs": "Počítejte s potřebou větší síly na brzdový pedál a vyhledejte odborný servis. Další souběžná hlášení včetně STOP mají přednost; žlutá barva není univerzální potvrzení bezpečné další jízdy.",
+        "en": "Allow for greater brake-pedal effort and seek professional service. Other simultaneous messages, including STOP, take priority; amber is not universal assurance that continued travel is safe.",
+        "de": "Größere Bremspedalkraft einplanen und Fachbetrieb aufsuchen. Weitere gleichzeitige Meldungen einschließlich STOP haben Vorrang; Gelb bestätigt nicht allgemein sichere Weiterfahrt."
+      },
+      "note": {
+        "cs": "Odlišit od červeného selhání posilovače s pokynem nepokračovat. Stejný znak může v jiném hlášení označovat jinou část brzd; rozhoduje přesný text a uvedené vydání.",
+        "en": "Different from red servo failure with the instruction not to continue. In another message the same sign can refer to another brake component; exact text and cited edition are decisive.",
+        "de": "Von rotem Verstärkerausfall mit Nichtweiterfahren-Anweisung unterscheiden. Gleiches Zeichen kann bei anderer Meldung andere Bremskomponente betreffen; genauer Text/genannte Ausgabe maßgeblich."
+      },
+      "scopes": [
+        {
+          "manual": "vwcv-caddy-2025-11-de",
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": "Caddy",
+          "model_year": null,
+          "generation": "2K7",
+          "edition": "11.2025",
+          "language": "DE",
+          "printed_pages": [],
+          "pdf_pages": [],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "source_sections": [
+            "Fahren / Bremsunterstützende Systeme / Problemlösungen / Elektromechanischer Bremskraftverstärker gestört"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "method": "Full Caddy topic independently read; source symbol identity/colour compared with previously licensed conventional graphic. No copied manufacturer SVG and no cross-model inheritance.",
+            "source_topic_ids": [
+              "adc7169f38755360ccab371feaa6300a_1_de_DE",
+              "5f81129a864b4dd2c101446831c3c385_1_de_DE",
+              "2efa9c19fdda9e3fac14451e64b26693_10_de_DE"
+            ]
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/brake-zluta.svg",
+      "graphic_source": {
+        "title": "File:B01 Brake failure.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:B01_Brake_failure.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/d/d8/B01_Brake_failure.svg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Ehsnils",
+        "modifications": "Existing licensed Ehsnils geometry/mask retained. Foreground set to yellow only after independent Caddy11.2025 source-colour/identity check: native imgc239...yellow in braking-support fault topic. Native source SVG not copied. CC BY-SA3.0 attribution retained.",
+        "sha256": "5911d79ddd82c1b5e917348f196b545675ef8de4dd0c9fd7d3a5442ae30356b3",
+        "file": "wp-content/uploads/kontrolky/brake-zluta.svg"
+      },
+      "alt": {
+        "cs": "Žlutá kruhová výstraha omezeného posilovače brzd",
+        "en": "Amber circular warning for restricted brake assistance",
+        "de": "Gelbe kreisförmige Warnung eingeschränkter Bremsunterstützung"
+      },
+      "kind": "warning"
+    },
+    {
+      "id": "caddy-asr-manually-off",
+      "graphic": "esp-off-text",
+      "graphic_path": "wp-content/uploads/kontrolky/esp-off-text-zluta.svg",
+      "color": "zluta",
+      "group": "brzdy",
+      "state": "steady",
+      "kind": "information",
+      "name": {
+        "cs": "ASR – ručně vypnuté omezení prokluzu (Caddy)",
+        "en": "ASR – traction control manually off (Caddy)",
+        "de": "ASR – manuell ausgeschaltet (Caddy)"
+      },
+      "meaning": {
+        "cs": "U tohoto Caddy trvalý žlutý znak vozu ve smyku s OFF potvrzuje ruční vypnutí ASR. Není automaticky důkazem poruchy ani úplného vypnutí všech stabilizačních funkcí.",
+        "en": "On this Caddy, the steady amber skidding-car OFF sign confirms manual ASR deactivation. Not automatically a fault or complete deactivation of every stability function.",
+        "de": "Bei diesem Caddy bestätigt dauerhaft gelbes Schleudersymbol mit OFF manuelle ASR-Abschaltung. Nicht automatisch Störung oder vollständige Abschaltung sämtlicher Stabilisierungsfunktionen."
+      },
+      "action": {
+        "cs": "Za běžných podmínek ponechte brzdové asistenty zapnuté. Návod uvádí vypnutí ASR například pro sypký povrch či vyprošťování; po skončení potřeby funkci znovu zapněte.",
+        "en": "Keep braking assistance enabled in ordinary conditions. The manual gives loose surfaces or freeing a stuck vehicle as ASR-off examples; restore the function when no longer needed.",
+        "de": "Bremsassistenten unter normalen Bedingungen eingeschaltet lassen. Anleitung nennt etwa losen Untergrund/Freischaukeln für ASR aus; danach Funktion wieder einschalten."
+      },
+      "note": {
+        "cs": "Nezaměňovat trvalé OFF s blikáním prostého symbolu při zásahu ASR/ESC. Ovládání je v nastavení ESC infotainmentu; název nabídky sám neprokazuje vypnutí celého ESC.",
+        "en": "Not the plain symbol flashing during ASR/ESC intervention. Control is in infotainment ESC settings; menu name alone does not establish that all ESC functions are off.",
+        "de": "Nicht einfaches blinkendes Zeichen beim ASR-/ESC-Eingriff. Bedienung in ESC-Infotainmenteinstellungen; Menüname allein belegt keine vollständige ESC-Abschaltung."
+      },
+      "alt": {
+        "cs": "Žlutý vůz ve smyku s nápisem OFF – ASR ručně vypnuté",
+        "en": "Amber skidding car with OFF – ASR manually disabled",
+        "de": "Gelbes schleuderndes Fahrzeug mit OFF – ASR manuell aus"
+      },
+      "scopes": [
+        {
+          "manual": "vwcv-caddy-2025-11-de",
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": "Caddy",
+          "model_year": null,
+          "generation": "2K7",
+          "edition": "11.2025",
+          "language": "DE",
+          "printed_pages": [],
+          "pdf_pages": [],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "source_sections": [
+            "Fahren / Bremsunterstützende Systeme / ASR aus- und einschalten"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "method": "Full Caddy topic independently read; source symbol identity/colour compared with previously licensed conventional graphic. No copied manufacturer SVG and no cross-model inheritance.",
+            "source_topic_ids": [
+              "adc7169f38755360ccab371feaa6300a_1_de_DE",
+              "5f81129a864b4dd2c101446831c3c385_1_de_DE",
+              "2efa9c19fdda9e3fac14451e64b26693_10_de_DE"
+            ]
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "File:Kontrollleuchte ESP 2.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_ESP_2.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Kontrollleuchte_ESP_2.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "author": "Chris828  at  German Wikipedia",
+        "modifications": "Public-domain car and skid outlines retained; enclosing triangle removed to match the independently reviewed modern ESC variant; documented amber foreground. Original shape unchanged; OFF functional inscription appended as independently documented in Terramar 11.25 p.12. Original licence retained.",
+        "sha256": "77816a480494921696e928e95f63d545bf113c642fca89be2b5e0fffb7cec9bb",
+        "file": "wp-content/uploads/kontrolky/esp-off-text-zluta.svg"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
     }
   ],
   "pending_items": [
@@ -24450,22 +25149,44 @@
       "modifications": "Exact short functional inscription documented in Audi A4 07.2024 p106; no manufacturer font embedded and no pictogram reconstructed.",
       "file": "wp-content/uploads/kontrolky/set-rear-control-bila.svg",
       "sha256": "e4e231a42c0d5e7578c36553851afadd7f178bf11141ac266ca2d3e82451c8e8"
+    },
+    "high-beam-assist-bila": {
+      "title": "File:ISO 7000 - Ref-No 2956.svg",
+      "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_2956.svg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/a/a3/ISO_7000_-_Ref-No_2956.svg",
+      "license": "Public domain",
+      "license_url": "",
+      "author": "Vectorization:    Mrmw",
+      "modifications": "Previously licensed ISO 7000 ref2956 geometry retained. White foreground independently confirmed from Golf 11.2020 original overview row102 and source white SVG (same five rays and enclosed A). Standardized rendering, not a facsimile copy of the manufacturer SVG. No Enyaq/Caddy applicability inferred.",
+      "sha256": "1b6757cdaf9d9531ea1f3623fe505d178c3de5d958f6177e365843c9c05de841",
+      "file": "wp-content/uploads/kontrolky/high-beam-assist-bila.svg"
+    },
+    "brake-zluta": {
+      "title": "File:B01 Brake failure.svg",
+      "page": "https://commons.wikimedia.org/wiki/File:B01_Brake_failure.svg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/d/d8/B01_Brake_failure.svg",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "author": "Ehsnils",
+      "modifications": "Existing licensed Ehsnils geometry/mask retained. Foreground set to yellow only after independent Caddy11.2025 source-colour/identity check: native imgc239...yellow in braking-support fault topic. Native source SVG not copied. CC BY-SA3.0 attribution retained.",
+      "sha256": "5911d79ddd82c1b5e917348f196b545675ef8de4dd0c9fd7d3a5442ae30356b3",
+      "file": "wp-content/uploads/kontrolky/brake-zluta.svg"
     }
   },
   "counts": {
-    "semantic_records": 159,
+    "semantic_records": 166,
     "legacy_generic_volkswagen": 1,
-    "model_documented_semantic_records": 155,
-    "model_edition_assignments": 554,
-    "partially_reviewed_manual_editions": 42,
-    "shared_graphic_colour_variants": 92,
+    "model_documented_semantic_records": 162,
+    "model_edition_assignments": 565,
+    "partially_reviewed_manual_editions": 43,
+    "shared_graphic_colour_variants": 94,
     "distinct_pictogram_shapes": 67,
     "by_brand": {
       "volkswagen": {
-        "distinct_pictogram_shapes": 25,
-        "graphic_colour_variants": 29,
-        "semantic_variants": 32,
-        "model_edition_assignments": 34,
+        "distinct_pictogram_shapes": 26,
+        "graphic_colour_variants": 30,
+        "semantic_variants": 33,
+        "model_edition_assignments": 35,
         "generic_brand_assignments": 1,
         "reviewed_manual_editions": 3,
         "first_party_hosted_manual_editions": 3,
@@ -24484,21 +25205,21 @@
       "skoda": {
         "distinct_pictogram_shapes": 28,
         "graphic_colour_variants": 35,
-        "semantic_variants": 46,
-        "model_edition_assignments": 64,
+        "semantic_variants": 48,
+        "model_edition_assignments": 66,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 2,
         "first_party_hosted_manual_editions": 0,
         "third_party_hosted_manual_editions": 2
       },
       "seat": {
-        "distinct_pictogram_shapes": 28,
-        "graphic_colour_variants": 36,
-        "semantic_variants": 45,
-        "model_edition_assignments": 97,
+        "distinct_pictogram_shapes": 29,
+        "graphic_colour_variants": 38,
+        "semantic_variants": 47,
+        "model_edition_assignments": 101,
         "generic_brand_assignments": 0,
-        "reviewed_manual_editions": 19,
-        "first_party_hosted_manual_editions": 19,
+        "reviewed_manual_editions": 20,
+        "first_party_hosted_manual_editions": 20,
         "third_party_hosted_manual_editions": 0
       },
       "cupra": {
@@ -24512,10 +25233,10 @@
         "third_party_hosted_manual_editions": 0
       },
       "volkswagen-uzitkove-vozy": {
-        "distinct_pictogram_shapes": 23,
-        "graphic_colour_variants": 26,
-        "semantic_variants": 28,
-        "model_edition_assignments": 21,
+        "distinct_pictogram_shapes": 24,
+        "graphic_colour_variants": 28,
+        "semantic_variants": 32,
+        "model_edition_assignments": 25,
         "generic_brand_assignments": 7,
         "reviewed_manual_editions": 1,
         "first_party_hosted_manual_editions": 1,
@@ -27019,6 +27740,160 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "A4 own ignition-off rotary-AUTO operation documented separately from A8 MAX hold. No new graphic or shape."
+    },
+    {
+      "id": "enyaq-tarraco-independent-function-review",
+      "checked": "2026-10-30",
+      "before_semantic_records": 159,
+      "after_semantic_records": 163,
+      "added_record_ids": [
+        "enyaq-parking-steep-slope",
+        "enyaq-dynamic-light-assist-active",
+        "tarraco-auto-hold-green-p",
+        "tarraco-light-assist-enabled-blue"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "enyaq-parking-steep-slope",
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda"
+        },
+        {
+          "id": "enyaq-dynamic-light-assist-active",
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda"
+        },
+        {
+          "id": "tarraco-auto-hold-green-p",
+          "manual": "seat-tarraco-2024-06-23",
+          "brand": "seat"
+        },
+        {
+          "id": "tarraco-light-assist-enabled-blue",
+          "manual": "seat-tarraco-2024-06-23",
+          "brand": "seat"
+        },
+        {
+          "id": "parking-applied",
+          "manual": "seat-tarraco-2024-06-23",
+          "brand": "seat"
+        },
+        {
+          "id": "high-beam",
+          "manual": "seat-tarraco-2024-06-23",
+          "brand": "seat"
+        }
+      ],
+      "corrected_record_ids": [
+        "high-beam-assist-blue"
+      ],
+      "corrections": [
+        {
+          "id": "high-beam-assist-blue",
+          "before": {
+            "name": {
+              "cs": "Light Assist – zapnutý (modrá varianta)",
+              "en": "Light Assist on (blue version)",
+              "de": "Light Assist eingeschaltet (blaue Variante)"
+            },
+            "meaning": {
+              "cs": "Symbol s písmenem A potvrzuje zapnutý asistent. Sám nepotvrzuje právě rozsvícená dálková světla; ta mají vlastní modrou kontrolku.",
+              "en": "The symbol with A indicates that the assistant is switched on. It does not itself confirm that main beam is currently lit; that has a separate blue indicator.",
+              "de": "Das Symbol mit A zeigt den eingeschalteten Assistenten an. Es bestätigt nicht allein eingeschaltetes Fernlicht; dafür gibt es eine separate blaue Kontrollleuchte."
+            },
+            "action": {
+              "cs": "Sledujte osvětlení a provoz. Při riziku oslnění přepněte ručně; asistent nemusí všechny účastníky správně rozpoznat.",
+              "en": "Monitor lighting and traffic. Dip manually if there is a risk of dazzling; the assistant may not recognise every road user.",
+              "de": "Beobachten Sie Beleuchtung und Verkehr. Blenden Sie bei Blendgefahr manuell ab; der Assistent erkennt nicht alle Verkehrsteilnehmer zuverlässig."
+            },
+            "note": {
+              "cs": "Platí jen pro uvedená provedení a výbavu. Rozhoduje přesné hlášení a návod vašeho vozu.",
+              "en": "Only the listed versions and equipment are covered. Follow the exact message and your vehicle’s manual.",
+              "de": "Gilt nur für die aufgeführten Ausführungen und Ausstattungen. Maßgeblich sind die genaue Meldung und die Betriebsanleitung Ihres Fahrzeugs."
+            }
+          },
+          "source_manuals": [
+            "skoda-enyaq-2020-11-de",
+            "cupra-born-2022-08-21"
+          ]
+        }
+      ],
+      "enriched_existing_model_scopes": [
+        "auto-hold-active / Enyaq 11.2020",
+        "auto-hold-standby / Enyaq 11.2020",
+        "e-sound-fault / Enyaq 11.2020"
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Independent Enyaq and Born operational paragraphs correct former blue-A interpretation. Tarraco colour explicitly sourced from its own legend, not inherited. Full Tarraco 06.2023 is a separate obtained edition, not an assumed base for appendix01.24."
+    },
+    {
+      "id": "golf-white-assistant-independent-review",
+      "checked": "2026-10-30",
+      "before_semantic_records": 163,
+      "after_semantic_records": 164,
+      "added_record_ids": [
+        "golf-white-high-beam-assist-enabled"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "golf-white-high-beam-assist-enabled",
+          "manual": "vw-golf-2020-11-de",
+          "brand": "volkswagen"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "White standard-graphic rendition added only after source row102 colour/shape verification in Golf11.2020. Not an OEM asset copy; no cross-brand colour transfer."
+    },
+    {
+      "id": "caddy-braking-support-independent-review",
+      "checked": "2026-10-30",
+      "before_semantic_records": 164,
+      "after_semantic_records": 166,
+      "added_record_ids": [
+        "caddy-brake-servo-yellow-restricted",
+        "caddy-asr-manually-off"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "caddy-brake-servo-yellow-restricted",
+          "manual": "vwcv-caddy-2025-11-de",
+          "brand": "volkswagen-uzitkove-vozy"
+        },
+        {
+          "id": "caddy-asr-manually-off",
+          "manual": "vwcv-caddy-2025-11-de",
+          "brand": "volkswagen-uzitkove-vozy"
+        },
+        {
+          "id": "brake-servo",
+          "manual": "vwcv-caddy-2025-11-de",
+          "brand": "volkswagen-uzitkove-vozy"
+        },
+        {
+          "id": "esc-regulating",
+          "manual": "vwcv-caddy-2025-11-de",
+          "brand": "volkswagen-uzitkove-vozy"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Three available cached own-edition Caddy brake-support topics read in full. Yellow reduced assistance distinct from red failure; manually disabled ASR distinct from fault and intervention. Native LaneAssist reuse issue is independent and blocks none of these licensed standard renderings."
+    },
+    {
+      "id": "q4-climate-driver-messages-context",
+      "checked": "2026-10-30",
+      "before_semantic_records": 166,
+      "after_semantic_records": 166,
+      "added_record_ids": [],
+      "corrected_record_ids": [
+        "audi-q4-ac-co2-red",
+        "audi-q4-ac-co2-yellow"
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Compared the entire Fahrerhinweise climate subsection on Q4 07.2024 printed p.92, before Lenkradheizung. Both CO2 driver instructions retained. Separate text-only reduced climate operation for HV-battery cooling added as context, not a new warning icon."
     }
   ],
   "evidence_gaps_revision": [
