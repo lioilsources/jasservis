@@ -545,6 +545,7 @@
         "central-red",
         "cruise-standby",
         "esc-fault",
+        "esc-off-inscription",
         "esc-regulating",
         "lane-correction",
         "lane-ready",
@@ -772,6 +773,8 @@
         "airbag-fault",
         "esc-fault",
         "esc-regulating",
+        "lane-correction",
+        "lane-ready",
         "mil-flashing",
         "mil-steady",
         "terramar-lane-passive"
@@ -1552,6 +1555,7 @@
         "Fahrerassistenzsysteme / ACC / Problemlösungen",
         "Fahrerassistenzsysteme / Geschwindigkeitsregelanlage",
         "Fahrerassistenzsysteme / Lane Assist / Fahren mit dem Spurhalteassistenten",
+        "Fahrerassistenzsysteme / Lane Assist / Problemlösungen / Spurhalteassistent nicht verfügbar",
         "Fahrerassistenzsysteme / Lane Assist / korrigierender Lenkeingriff",
         "Fahrerassistenzsysteme / Travel Assist / Lenkung übernehmen",
         "Fahrerinformationen / Symbole im Kombi-Instrument",
@@ -1841,6 +1845,8 @@
         "audi-lane-unavailable-bila",
         "audi-lane-unavailable-zluta",
         "audi-park-assist-unavailable",
+        "audi-predictive-limit-adoption-unavailable",
+        "audi-predictive-limiter-active",
         "audi-q4-ac-co2-red",
         "audi-q4-ac-co2-yellow",
         "audi-q4-cruise-ready",
@@ -1896,6 +1902,7 @@
         110,
         156,
         157,
+        159,
         160,
         161,
         162,
@@ -1923,6 +1930,168 @@
         "indexed_character_keys": 338
       },
       "unresolved": "Whole-edition comparison remains incomplete. A text-layer scan does not verify state, colour, meaning, raster illustrations, every infotainment/comfort icon or reuse rights."
+    },
+    {
+      "id": "audi-a4-2024-07-de",
+      "brand": "audi",
+      "model": "A4",
+      "edition": "07.2024",
+      "model_year": null,
+      "source_url": "https://pdf.bordbuecher.de/7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d.pdf",
+      "part_number": "8W1012705AN",
+      "whole_manual_comparison": "not-complete",
+      "verified_item_ids": [
+        "abs-fault",
+        "audi-12v-system-red",
+        "audi-ac-cooling-control",
+        "audi-climate-auto-control",
+        "audi-fatigue-break-recommended",
+        "audi-fatigue-break-required",
+        "audi-fatigue-unavailable",
+        "audi-headlight-range",
+        "audi-high-beam-auto-enabled",
+        "audi-high-beam-auto-on",
+        "audi-high-beam-auto-unavailable",
+        "brake-fault",
+        "esc-fault",
+        "esc-off-inscription",
+        "esc-regulating",
+        "high-beam",
+        "oil-pressure",
+        "pads-worn",
+        "parking-applied",
+        "seatbelt",
+        "steering-red"
+      ],
+      "reviewed_printed_pages": [
+        13,
+        64,
+        65,
+        66,
+        82,
+        105,
+        106,
+        127,
+        128,
+        141,
+        144,
+        145,
+        163,
+        164,
+        287,
+        293
+      ],
+      "reviewed_html_sections": [],
+      "sections": {
+        "instrument-panel": "selected-entries-reviewed",
+        "driver-assistance": "selected-entries-reviewed",
+        "infotainment-and-control-icons": "selected-entries-reviewed",
+        "comfort-controls": "selected-entries-reviewed"
+      },
+      "source_scan": {
+        "method": "No automated full glyph scan claimed for this newly obtained edition. Only the explicitly cited source subsections were individually read and visually compared.",
+        "pdf_pages": 372,
+        "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+        "indexed_character_keys": null
+      },
+      "unresolved": "Whole manual remains incomplete. The precise closed subsection boundaries and remaining chapter areas are in chapter-review.json."
+    },
+    {
+      "id": "audi-a8-2025-06-de",
+      "brand": "audi",
+      "model": "A8",
+      "edition": "06.2025",
+      "model_year": null,
+      "source_url": "https://pdf.bordbuecher.de/cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00.pdf",
+      "part_number": "4N1012705AH",
+      "whole_manual_comparison": "not-complete",
+      "verified_item_ids": [
+        "abs-fault",
+        "audi-12v-system-red",
+        "audi-ac-cooling-control",
+        "audi-climate-auto-control",
+        "audi-fatigue-break-recommended",
+        "audi-fatigue-break-required",
+        "audi-fatigue-unavailable",
+        "audi-headlight-range",
+        "audi-high-beam-auto-enabled",
+        "audi-high-beam-auto-on",
+        "audi-high-beam-auto-unavailable",
+        "brake-fault",
+        "esc-fault",
+        "esc-off-inscription",
+        "esc-regulating",
+        "high-beam",
+        "oil-pressure",
+        "pads-worn",
+        "parking-applied",
+        "seatbelt",
+        "steering-red"
+      ],
+      "reviewed_printed_pages": [
+        13,
+        71,
+        72,
+        74,
+        94,
+        113,
+        114,
+        140,
+        148,
+        150,
+        151,
+        190,
+        191,
+        192,
+        342,
+        348
+      ],
+      "reviewed_html_sections": [],
+      "sections": {
+        "instrument-panel": "selected-entries-reviewed",
+        "driver-assistance": "selected-entries-reviewed",
+        "infotainment-and-control-icons": "selected-entries-reviewed",
+        "comfort-controls": "selected-entries-reviewed"
+      },
+      "source_scan": {
+        "method": "No automated full glyph scan claimed for this newly obtained edition. Only the explicitly cited source subsections were individually read and visually compared.",
+        "pdf_pages": 427,
+        "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+        "indexed_character_keys": null
+      },
+      "unresolved": "Whole manual remains incomplete. The precise closed subsection boundaries and remaining chapter areas are in chapter-review.json."
+    },
+    {
+      "id": "audi-q4-etron-2023-06-de",
+      "brand": "audi",
+      "model": "Q4 e-tron",
+      "edition": "06.2023",
+      "model_year": null,
+      "source_url": "https://pdf.bordbuecher.de/9ee02d233f0c9d1f0b69988d913085275c9b5430920f7841504eb359a954fe63.pdf",
+      "part_number": "89A012705AH",
+      "whole_manual_comparison": "not-complete",
+      "verified_item_ids": [
+        "fatigue"
+      ],
+      "reviewed_printed_pages": [
+        13,
+        151,
+        152
+      ],
+      "reviewed_html_sections": [],
+      "sections": {
+        "instrument-panel": "selected-entries-reviewed",
+        "driver-assistance": "selected-entries-reviewed",
+        "infotainment-and-control-icons": "not-yet-item-compared",
+        "comfort-controls": "not-yet-item-compared"
+      },
+      "source_scan": {
+        "method": "No automated full glyph scan claimed for this newly obtained edition. Only the explicitly cited source subsections were individually read and visually compared.",
+        "pdf_pages": 326,
+        "document_sha256": "9ee02d233f0c9d1f0b69988d913085275c9b5430920f7841504eb359a954fe63",
+        "indexed_character_keys": null
+      },
+      "unresolved": "Whole manual remains incomplete. The precise closed subsection boundaries and remaining chapter areas are in chapter-review.json."
     }
   ],
   "source_character_index": [
@@ -73393,6 +73562,290 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "Independent SEAT Leon 11.25 grey Lane Assist and VW Golf 5H0 11.2020 unavailable variant checked in their own sources. Different continuous-lane Caddy variants withheld; no Terramar inheritance."
+    },
+    {
+      "id": "audi-editions-and-chapter-states",
+      "checked": "2026-10-30",
+      "before_semantic_records": 137,
+      "after_semantic_records": 142,
+      "added_record_ids": [
+        "audi-predictive-limiter-active",
+        "audi-predictive-limit-adoption-unavailable",
+        "audi-climate-auto-control",
+        "audi-ac-cooling-control",
+        "esc-off-inscription"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "audi-headlight-range",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-fatigue-break-recommended",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-fatigue-break-required",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-fatigue-unavailable",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "oil-pressure",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-12v-system-red",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "steering-red",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "brake-fault",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "parking-applied",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "seatbelt",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "pads-worn",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "abs-fault",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "esc-regulating",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "esc-fault",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "high-beam",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-high-beam-auto-enabled",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-high-beam-auto-on",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-high-beam-auto-unavailable",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-headlight-range",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "audi-fatigue-break-recommended",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "audi-fatigue-break-required",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "audi-fatigue-unavailable",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "oil-pressure",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "audi-12v-system-red",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "steering-red",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "brake-fault",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "parking-applied",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "seatbelt",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "pads-worn",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "abs-fault",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "esc-regulating",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "esc-fault",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "high-beam",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "audi-high-beam-auto-enabled",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "audi-high-beam-auto-on",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "audi-high-beam-auto-unavailable",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "lane-ready",
+          "brand": "seat",
+          "manual": "seat-leon-2026-11-25"
+        },
+        {
+          "id": "lane-correction",
+          "brand": "seat",
+          "manual": "seat-leon-2026-11-25"
+        },
+        {
+          "id": "audi-predictive-limiter-active",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-predictive-limit-adoption-unavailable",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-climate-auto-control",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-climate-auto-control",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "audi-ac-cooling-control",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-ac-cooling-control",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "esc-off-inscription",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "esc-off-inscription",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "esc-off-inscription",
+          "brand": "cupra",
+          "manual": "cupra-terramar-2026-11-25"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Audi A4 07.2024 8W1012705AN and A8 06.2025 4N1012705AH are exact newly obtained editions, not substitutes for missing older manuals. Five new distinct meaning/control records; old scopes retained. Complete narrow subsection comparisons recorded separately; whole manuals remain incomplete."
+    },
+    {
+      "id": "q4-2023-cup-edition",
+      "checked": "2026-10-30",
+      "before_semantic_records": 142,
+      "after_semantic_records": 142,
+      "added_record_ids": [],
+      "added_model_assignments": [
+        {
+          "id": "fatigue",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2023-06-de"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Exact newly acquired Q4 06.2023 89A012705AH has a white cup break-recommendation symbol; not the eye of 07.2024 and not a substitute for missing 2022 documentation. Entire small Pausenempfehlung subsection compared, not the whole manual."
     }
+  ],
+  "chapter_register": "chapter-review.json",
+  "completed_bounded_subsections": [
+    "q4-2023-break-recommendation",
+    "q4-2024-speed-indicator-overview",
+    "audi-a4-2024-07-de-fatigue-messages",
+    "audi-a8-2025-06-de-fatigue-messages",
+    "audi-a4-2024-07-de-climate-auto",
+    "audi-a8-2025-06-de-climate-auto",
+    "cupra-terramar-2026-11-25-lane-control-lamps",
+    "seat-leon-2026-11-25-lane-control-lamps",
+    "enyaq-2020-lane-status",
+    "golf-2020-lane-operating-lamps",
+    "caddy-2025-lane-operating-lamps"
   ]
 }

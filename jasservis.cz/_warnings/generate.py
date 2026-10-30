@@ -31,6 +31,7 @@ def card(item,brand,lang,page):
  u=UI[lang];scopes=[s for s in item['scopes'] if s['brand']==brand];i=item;data=[{'model':modelkey(s),'power':s['powertrains']} for s in scopes];sid='kontrolka-'+(i['legacy_id'].lower() if i.get('legacy_id') and brand=='volkswagen' else i['id']+'-'+brand)
  search=' '.join(i['name'].values())+' '+i['id']+' '+u['brands'][brand]+' '+' '.join(str(s.get('model') or '') for s in scopes)
  out=f'<details class="wl-card" id="{sid}" data-item="{esc(i["id"])}" data-brand="{brand}" data-color="{i["color"]}" data-system="{i["group"]}" data-search="{esc(search)}" data-scopes="{esc(json.dumps(data))}"><summary><span class="wl-symbol"><img src="{rel(i["graphic_path"],page)}" width="96" height="72" alt="{esc(i["alt"][lang])}"></span><span class="wl-name">{esc(i["name"][lang])}</span><span class="wl-status">{esc(u["colors"][i["color"]])} · {esc(u["kinds"][i["kind"]])} · {esc(u["states"][i["state"]])}</span><span class="wl-open">{esc(u["detail"])} <span aria-hidden="true"></span></span></summary><div class="wl-detail">'
+ if not any(sc.get('manual')for sc in scopes):out=out.replace('<span class="wl-open">','<span class="wl-status">'+esc(u['generic'])+'</span><span class="wl-open">',1)
  for key,label in [('meaning','meaning'),('action','action'),('note','signal')]:out+=f'<h4>{esc(u[label])}</h4><p>{esc(i[key][lang])}</p>'
  out+=f'<h4>{esc(u["validity"])}</h4><ul class="wl-sources">'
  for s in scopes:
@@ -106,6 +107,41 @@ def create_page(lang):
  meta+='<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False).replace('</','<\\/')+'</script>'
  s=s.replace('</head>',meta+'</head>');s=re.sub(r'(?m)^[ \t]+$','',s);return page,s
 
+def chapter_page(lang,page):
+ u=UI[lang];d=json.loads((HERE/'chapter-review.json').read_text());photos=json.loads((HERE/'terramar-photo-review.json').read_text())
+ t={'cs':['Revize po modelech, vydáních a kapitolách','Žádný celý návod ani celá značka zatím nejsou označené jako dokončené. Uzavřené níže uvedené úzké oddíly nejsou dokončením ostatních kapitol.','Fotografie Terramar – identifikace souborů a záběrů','Pracovní označení','Původní název souboru','Záběr','Nepředán u vloženého obrázku','Uzavřená porovnání přesně vymezených oddílů','Porovnání uzavřeno; položky na webu doplněné','Porovnání uzavřeno; doplnění do webu není hotové','Postup podle jednotlivých vydání','Oblast','Stav','Porovnané stránky / části','Konkrétní položky na webu','Co zbývá','Zbývající přesné podklady','Technické testy jsou vedené odděleně a nedokládají obsahovou úplnost.','Vybrané položky porovnány; zbytek kapitoly otevřený','Zatím neporovnáno','Některé přesně vymezené oddíly uzavřené; zbytek otevřený','Funkce porovnány, přesné grafiky chybějí'],
+ 'en':['Review by model, edition and chapter','No entire manual or brand is marked complete. The closed narrow subsections below do not complete the remaining chapters.','Terramar photos – file and view identification','Working reference','Original filename','View','Not supplied with the inline image','Closed comparisons of precisely bounded subsections','Comparison closed; corresponding website entries present','Comparison closed; website publication incomplete','Progress by individual edition','Area','Status','Compared pages / sections','Specific website entries','Remaining work','Exact outstanding sources','Technical tests are recorded separately and do not establish content completeness.','Selected entries compared; rest of chapter open','Not yet compared','Some bounded subsections closed; rest open','Functions compared; exact graphics missing'],
+ 'de':['Prüfung nach Modell, Ausgabe und Kapitel','Keine vollständige Anleitung oder Marke ist abgeschlossen. Die unten abgeschlossenen engen Teilabschnitte schließen andere Kapitel nicht ab.','Terramar-Fotos – Datei- und Bildidentifikation','Arbeitskennung','Originaldateiname','Ansicht','Mit eingebettetem Bild nicht mitgeteilt','Abgeschlossene Vergleiche genau begrenzter Teilabschnitte','Vergleich abgeschlossen; Webeinträge vorhanden','Vergleich abgeschlossen; Veröffentlichung unvollständig','Fortschritt nach einzelner Ausgabe','Bereich','Status','Verglichene Seiten / Abschnitte','Konkrete Webeinträge','Offene Arbeit','Genaue fehlende Quellen','Technische Tests werden getrennt geführt und belegen keine inhaltliche Vollständigkeit.','Ausgewählte Einträge verglichen; restliches Kapitel offen','Noch nicht verglichen','Einige begrenzte Abschnitte abgeschlossen; Rest offen','Funktionen verglichen; genaue Grafiken fehlen']}[lang]
+ style='body{font:18px/1.6 system-ui,sans-serif;color:#222;max-width:1440px;padding:20px;margin:auto;overflow-wrap:anywhere}h1,h2,h3{line-height:1.3}a{color:#111}table{border-collapse:collapse;width:100%;font-size:16px}th,td{border:1px solid #999;padding:9px;text-align:left;vertical-align:top}details{border:1px solid #999;margin-block:12px}summary{cursor:pointer;padding:14px;font-weight:600;background:#f4f4f4}details>div{padding:14px}summary:focus-visible,a:focus-visible{outline:3px solid #df5300;outline-offset:3px}@media(max-width:900px){table,tbody,tr,td{display:block}thead{display:none}td:before{content:attr(data-label)+": ";font-weight:600}tr{margin-bottom:16px}}'
+ out='<!doctype html><html lang="'+lang+'"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>'+esc(t[0])+' | J&amp;S SERVIS</title><style>'+style+'</style></head><body><a href="./#prehled-kontrolek">'+esc(u['overview'])+'</a> · <a href="revize.html#fotografie-terramar">'+esc(u['auditLink'])+'</a><h1>'+t[0]+'</h1><p><strong>'+t[1]+'</strong></p><nav>'
+ for l in LANGS:out+='<a lang="'+l+'" href="'+rel(locale_root(l)+ROUTE+'/revize-kapitol.html',page)+'">'+l.upper()+'</a> '
+ out+='</nav><section id="fotografie"><h2>'+t[2]+'</h2><p>'+esc(photos['photo_inventory_status']['clarification'][lang])+'</p><p><a href="'+rel('_warnings/terramar-photo-inventory.'+lang+'.csv',page)+'">CSV</a></p><table><thead><tr>'+''.join('<th>'+x+'</th>'for x in t[3:6])+'</tr></thead><tbody>'
+ for ph in photos['photos']:
+  vals=[ph['working_reference'],ph.get('original_filename')or t[6],ph['identifying_description'][lang]]
+  out+='<tr>'+''.join('<td data-label="'+esc(label)+'">'+esc(value)+'</td>'for label,value in zip(t[3:6],vals))+'</tr>'
+ out+='</tbody></table></section><section id="hotove-oddily"><h2>'+t[7]+'</h2>'
+ for row in d['completed_bounded_subsections']:
+  m=CAT['manuals'][row['manual']];where=', '.join(map(str,row['printed_pages']))or' / '.join(row['source_sections']);ref=m['url']+('#page='+str(row['printed_pages'][0]+2)if row['printed_pages']else'')
+  out+='<details><summary>'+esc(u['brands'][m['brand']]+' '+m['model']+' · '+m['edition']+' · '+row['title'][lang])+'</summary><div><p><strong>'+(t[8]if row['website_complete']else t[9])+'</strong></p><p><a href="'+esc(ref)+'">'+esc(u['pages'])+': '+esc(where)+'</a></p><p>'+esc(row['precise_boundary_i18n'][lang])+'</p><ul>'
+  for state in row['source_rows']:
+   out+='<li>'+esc(state['source_state'][lang])+': '
+   for id in state['catalogue_ids']:
+    item=next(i for i in CAT['items']if i['id']==id);out+='<a href="./?znacka='+m['brand']+'#kontrolka-'+(item['legacy_id'].lower()if item.get('legacy_id')and m['brand']=='volkswagen'else id+'-'+m['brand'])+'">'+esc(item['name'][lang])+'</a> '
+   if not state['catalogue_ids']:out+=esc(t[9])
+   out+='</li>'
+  out+='</ul><p>'+esc(row['remaining'][lang])+'</p></div></details>'
+ out+='</section><section id="navody"><h2>'+t[10]+'</h2><p><a href="'+rel('_warnings/chapter-review.'+lang+'.csv',page)+'">CSV</a> · <a href="'+rel('_warnings/chapter-review.json',page)+'">JSON</a></p>'
+ status=dict(zip(['selected-items-compared-not-full-chapter','not-yet-compared','bounded-subsections-compared-rest-open','functions-compared-exact-graphics-pending'],t[18:22]))
+ for m in d['manuals']:
+  out+='<details><summary>'+esc(u['brands'][m['brand']]+' '+m['model']+' · '+m['edition'])+'</summary><div><p><a href="'+esc(m['source_url'])+'">'+esc(m.get('part_number')or m['edition'])+'</a></p><table><thead><tr>'+''.join('<th>'+x+'</th>'for x in t[11:16])+'</tr></thead><tbody>'
+  for row in m['areas']:
+   loc=', '.join(map(str,row['reviewed_printed_pages']))or' / '.join(row['reviewed_html_sections']);vals=[row['title'][lang],status[row['status']],loc,', '.join(row['verified_catalogue_ids']),row['remaining'][lang]]
+   out+='<tr>'+''.join('<td data-label="'+esc(label)+'">'+esc(value)+'</td>'for label,value in zip(t[11:16],vals))+'</tr>'
+  out+='</tbody></table></div></details>'
+ out+='</section><section id="chybejici-podklady"><h2>'+t[16]+'</h2><ul>'
+ for msg in CAT['review_gaps'][lang]:out+='<li>'+esc(msg)+'</li>'
+ out+='</ul></section><p>'+t[17]+' <a href="'+rel('_warnings/verification.json',page)+'">JSON</a></p></body></html>';return out
+
 def history_table(lang):
  u=UI[lang];h=next(x for x in CAT.get('change_history',[]) if x['id']=='73-to-86')
  labels={'cs':['Vysvětlení změny 73 → 86','Původních 73 významových záznamů zůstalo zachováno včetně textů a modelových přiřazení. Přibylo 13 nových záznamů: 7 pro Škodu a 6 pro užitkové vozy. Nic nebylo sloučeno, nahrazeno ani odstraněno.','Škoda: 43 položek = 36 nových přiřazení stávajících záznamů + 7 nových záznamů. Volkswagen Užitkové vozy: 24 položek = 18 přiřazení stávajících záznamů + 6 nových záznamů. Počet karet podle značek se změnil ze 107 na 174, nikoli počet unikátních významů o 67.','Nové významové záznamy','Přiřazené stávající záznamy','Zachované položky SEAT a CUPRA','Tento rozpis porovnává konkrétně verze db2c200 a 279c4c9. Další rozšíření se vykazují samostatně.'],
@@ -179,8 +215,8 @@ def review_page(lang,page):
  for m in r['manuals']:
   vals=[u['brands'][m['brand']]+' '+str(m['model']),m['edition']]+[t[10]if m['sections'][k]=='selected-entries-reviewed'else t[11]for k in ['instrument-panel','driver-assistance','infotainment-and-control-icons','comfort-controls']]+[t[12]]
   out+='<tr>'+''.join('<td data-label="'+esc(label)+'">'+esc(value)+'</td>'for label,value in zip(t[3:10],vals))+'</tr>'
- out+='</tbody></table><h2>'+t[13]+'</h2><p>'+t[14]+'</p><p>'+t[15]+'</p><h2>'+t[16]+'</h2><ul>'
- events=[e for e in CAT['change_history']if e['id']in ['116-q4-and-control-icons','129-to-131-terramar-user-photos','terramar-functional-photo-comparison','independent-seat-vw-lane-review']];event={'added_record_ids':[id for e in events for id in e['added_record_ids']]}
+ out+='</tbody></table><p><a href="revize-kapitol.html">'+{'cs':'Revize po modelech, vydáních a kapitolách; identifikace fotografií','en':'Review by model, edition and chapter; photo identification','de':'Prüfung nach Modell, Ausgabe und Kapitel; Fotoidentifikation'}[lang]+'</a></p><h2>'+t[13]+'</h2><p>'+t[14]+'</p><p>'+t[15]+'</p><h2>'+t[16]+'</h2><ul>'
+ events=[e for e in CAT['change_history']if e['id']in ['116-q4-and-control-icons','129-to-131-terramar-user-photos','terramar-functional-photo-comparison','independent-seat-vw-lane-review','audi-editions-and-chapter-states','q4-2023-cup-edition']];event={'added_record_ids':[id for e in events for id in e['added_record_ids']]}
  for i in CAT['items']:
   if i['id']in event['added_record_ids']:out+='<li><code>'+esc(i['id'])+'</code> — '+esc(i['name'][lang])+'</li>'
  out+='</ul><h2>'+t[17]+'</h2><ul>'+''.join('<li>'+esc(x)+'</li>'for x in CAT['review_gaps'][lang])+'</ul><p>'+t[21]+'</p><ul>'
@@ -250,7 +286,7 @@ for item in CAT['items']:
   writer.writerow([item['id'],item['name']['cs'],item['name']['en'],item['name']['de'],scope['brand'],scope.get('model') or 'Not documented',scope.get('model_year') or 'Not documented',scope.get('edition') or '',','.join(map(str,scope.get('printed_pages',[]))),','.join(map(str,scope.get('pdf_pages',[]))),','.join(scope['powertrains']),item['state'],item['color'],source,item['graphic_path'],item['graphic_source'].get('page',''),item['graphic_source']['license'],item['checked']])
 outputs=[(HERE/'coverage.csv','\ufeff'+csv_stream.getvalue())]
 for lang in LANGS:
- page,body=create_page(lang);outputs.append((page,body));outputs.append((page.parent/'zdroje.html',audit(lang,page)));outputs.append((page.parent/'revize.html',review_page(lang,page)));outputs.append((page.parent/'evidence.json',json.dumps({'canonical_catalog':rel('_warnings/catalog.json',page),'review_status':'incomplete-preview','checked':CAT['checked'],**CAT['counts']},indent=2)+'\n'))
+ page,body=create_page(lang);outputs.append((page,body));outputs.append((page.parent/'zdroje.html',audit(lang,page)));outputs.append((page.parent/'revize.html',review_page(lang,page)));outputs.append((page.parent/'revize-kapitol.html',chapter_page(lang,page)));outputs.append((page.parent/'evidence.json',json.dumps({'canonical_catalog':rel('_warnings/catalog.json',page),'review_status':'incomplete-preview','checked':CAT['checked'],**CAT['counts']},indent=2)+'\n'))
 # Validate all translations and assets before touching output files.
 assert len({x['id'] for x in CAT['items']})==len(CAT['items'])
 for item in CAT['items']:

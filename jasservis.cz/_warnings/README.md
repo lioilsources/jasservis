@@ -207,3 +207,13 @@ varianty nejsou odhadovány; nedošlo k navýšení katalogu 131 záznamů.
 - Všech 18 značkových položek nyní používá název „Kontrolky a ikony…“.
   Nadále jsou za modely a vedou rovnou na předvolenou značku s kotvou.
   V Dalších službách ani u světlometů není přidán žádný odkaz.
+
+## Revize modelů a kapitol 30. 10. 2026
+
+Nově ověřené výtisky Audi A4 DE 07.2024, A8 DE 06.2025 a Q4 e-tron DE 06.2023 nenahrazují chybějící starší vydání. Přidáno pět významových záznamů: LIM AUTO, nedostupnost automatického převzetí limitu, ovládání AUTO a A/C Audi a samostatný nápis ESC OFF. Starší Q4 má vlastní rozsah symbolu šálku, nikoli automaticky oko z 07.2024.
+
+Aktuálně 142 významových záznamů, 58 tvarů a 83 barevných grafik; 44 evidovaných návodů. `chapter-review.json` a přeložené CSV rozlišují 352 oblastí a 11 přesně ohraničených uzavřených porovnání. Deset jejich webových podmnožin je zveřejněno; Caddy čeká na přesné grafiky. Žádný celý návod ani značka není označena jako dokončená.
+
+Přijato všech šest odlišných fotografií Terramaru; původní názvy souborů nebyly předány. Pracovní identifikátory nejsou názvy originálů. Inventář obsahují `terramar-photo-inventory.*.csv`.
+
+Technicky úspěšných 36 testů modelů a revizních stránek a 36 návazností značek v CZ/EN/DE, Chromium 154 a WebKit 26 na Linuxu. Kontrola 83 grafik v obou jádrech. Rozměry 360×800, 390×844, 844×390, 768×1024, 1366×768 a 1920×1080; nejde o skutečný iPhone ani Android. Tyto testy nedokládají obsahovou úplnost.

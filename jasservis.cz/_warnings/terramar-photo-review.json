@@ -19,7 +19,14 @@
       "original_filename": null,
       "file_hash": null,
       "model_year": null,
-      "software_version": null
+      "software_version": null,
+      "working_reference": "terramar-photo-01",
+      "original_filename_status": "not-provided-with-inline-image",
+      "identifying_description": {
+        "cs": "Telefonní nabídka: Opakovaná volba, Volat, Napsat zprávu.",
+        "en": "Phone menu: Redial, Dial, Write message.",
+        "de": "Telefonmenü: Wahlwiederholung, Wählen, Nachricht schreiben."
+      }
     },
     {
       "id": "terramar-photo-02",
@@ -33,7 +40,14 @@
       "original_filename": null,
       "file_hash": null,
       "model_year": null,
-      "software_version": null
+      "software_version": null,
+      "working_reference": "terramar-photo-02",
+      "original_filename_status": "not-provided-with-inline-image",
+      "identifying_description": {
+        "cs": "Nabídka Keyless Access, Bluetooth, Audio, TP, oblíbená rádia/média, seznam stanic a média.",
+        "en": "Keyless Access, Bluetooth, Audio, TP, favourite radio/media, station list and media.",
+        "de": "Keyless Access, Bluetooth, Audio, TP, Radio-/Medienfavoriten, Senderliste und Medien."
+      }
     },
     {
       "id": "terramar-photo-03",
@@ -47,7 +61,14 @@
       "original_filename": null,
       "file_hash": null,
       "model_year": null,
-      "software_version": null
+      "software_version": null,
+      "working_reference": "terramar-photo-03",
+      "original_filename_status": "not-provided-with-inline-image",
+      "identifying_description": {
+        "cs": "Nabídka Lane Assist, výstraha rychlosti, Wi-Fi, hotspot, start-stop, HUD a poloha HUD.",
+        "en": "Lane Assist, speed warning, Wi-Fi, hotspot, start-stop, HUD and HUD position.",
+        "de": "Lane Assist, Geschwindigkeitswarnung, Wi-Fi, Hotspot, Start-Stopp, HUD und HUD-Position."
+      }
     },
     {
       "id": "terramar-photo-04",
@@ -61,7 +82,14 @@
       "original_filename": null,
       "file_hash": null,
       "model_year": null,
-      "software_version": null
+      "software_version": null,
+      "working_reference": "terramar-photo-04",
+      "original_filename_status": "not-provided-with-inline-image",
+      "identifying_description": {
+        "cs": "Nabídka telefonních oblíbených, datových paketů, okamžité klimatizace, CUPRA Assistant, tipů, návodu a pozornosti.",
+        "en": "Phone favourites, data plans, immediate climate control, CUPRA Assistant, tips, manual and attention.",
+        "de": "Telefonfavoriten, Datenpakete, sofortige Klimatisierung, CUPRA Assistant, Tipps, Anleitung und Aufmerksamkeit."
+      }
     },
     {
       "id": "terramar-photo-05",
@@ -75,7 +103,14 @@
       "original_filename": null,
       "file_hash": null,
       "model_year": null,
-      "software_version": null
+      "software_version": null,
+      "working_reference": "terramar-photo-05",
+      "original_filename_status": "not-provided-with-inline-image",
+      "identifying_description": {
+        "cs": "První přístrojový panel: otevřené levé dveře na grafice vozidla, otáčkoměr 0, značka 20, zelený pokyn brzdy a žlutý motor.",
+        "en": "First cluster: open left door in vehicle graphic, rev counter 0, 20 sign, green brake prompt and amber engine.",
+        "de": "Erstes Kombiinstrument: offene linke Tür in Fahrzeuggrafik, Drehzahl 0, Zeichen 20, grüne Bremsaufforderung und gelber Motor."
+      }
     },
     {
       "id": "terramar-photo-06",
@@ -89,7 +124,14 @@
       "original_filename": null,
       "file_hash": null,
       "model_year": null,
-      "software_version": null
+      "software_version": null,
+      "working_reference": "terramar-photo-06",
+      "original_filename_status": "not-provided-with-inline-image",
+      "identifying_description": {
+        "cs": "Druhý přístrojový panel: více kontrolek nahoře, červený trojúhelník vlevo, velké samostatné P vlevo dole a další P v kruhu pod ním. Bez velké grafiky otevřených dveří.",
+        "en": "Second cluster: multiple upper lamps, red triangle left, large standalone P at lower left and separate circled P below. No large open-door vehicle graphic.",
+        "de": "Zweites Kombiinstrument: mehrere Leuchten oben, rotes Dreieck links, großes separates P links unten und eingekreistes P darunter. Keine große Grafik der offenen Tür."
+      }
     }
   ],
   "observations": [
@@ -6717,5 +6759,15 @@
     "document_title": "832239405-Nový Terramar 2025.pdf",
     "finding": "Downloaded readable contents are a marketing brochure, not an SSP or owner manual; not used to establish warning meanings or model-specific state instructions. Technical Audi SSP 679 is Audi MIB3 context only; not a Terramar applicability source. Private Drive files are not published."
   },
-  "observations_count_note": "Aggregate headings with aggregate_only=true are not individual symbols and are excluded from occurrence exports. Number of observations is not a unique pictogram or completeness count."
+  "observations_count_note": "Aggregate headings with aggregate_only=true are not individual symbols and are excluded from occurrence exports. Number of observations is not a unique pictogram or completeness count.",
+  "photo_inventory_status": {
+    "expected": 6,
+    "received": 6,
+    "missing": [],
+    "clarification": {
+      "cs": "Šestá fotografie již byla dodána samostatně. Nejde o chybějící snímek; původní názvy souborů a originální soubory nebyly k vloženým obrázkům předány. Pracovní označení nejsou vydávána za skutečné názvy souborů.",
+      "en": "The sixth photograph was already supplied separately. No photograph is missing; original filenames and raw files were not provided with the inline images. Working references are not represented as original filenames.",
+      "de": "Das sechste Foto wurde bereits separat geliefert. Kein Foto fehlt; Originaldateinamen und Rohdateien wurden mit den eingebetteten Bildern nicht bereitgestellt. Arbeitskennungen sind keine behaupteten Originaldateinamen."
+    }
+  }
 }

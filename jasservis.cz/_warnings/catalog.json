@@ -582,6 +582,75 @@
         "de": "Belegt für Q4 e-tron und Ausgabe 07/2024, nicht automatisch für alle Modelljahre. Die AUDI-AG-Ausgabe wird von Dritten gehostet; der Abgleich mit einem Hersteller-Original steht aus."
       },
       "viewer_url": "https://bordbuecher.de/audi/q4-e-tron/#year=2025&page={page}"
+    },
+    "audi-a4-2024-07-de": {
+      "brand": "audi",
+      "model": "A4",
+      "year": null,
+      "generation": null,
+      "edition": "07.2024",
+      "lang": "DE",
+      "url": "https://pdf.bordbuecher.de/7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d.pdf",
+      "viewer_url": "https://bordbuecher.de/audi/a4/#page={page}",
+      "status": "selected-symbols-and-instructions-reviewed-not-complete",
+      "publisher": "AUDI AG",
+      "host_kind": "third-party-copy",
+      "part_number": "8W1012705AN",
+      "sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+      "pdf_pages": 372,
+      "access_method": "Ordinary public browser viewer download of the observed file URL; no login bypass. Edition and part read from the cover, not from the host year label.",
+      "checked": "2026-10-30",
+      "model_year_note": {
+        "cs": "Jde o vydání dokumentu 07.2024, nikoli automatické přiřazení modelového roku. Kopie dokumentu AUDI AG je hostována třetí stranou a nebyla porovnána s původním souborem na serveru výrobce.",
+        "en": "This is document edition 07.2024, not an automatic model-year assignment. The AUDI AG document copy is hosted by a third party and has not been compared with the manufacturer-hosted file.",
+        "de": "Dokumentausgabe 07.2024, keine automatische Modelljahrzuordnung. Die Kopie des AUDI-AG-Dokuments wird von Dritten gehostet und wurde nicht mit der Herstellerdatei abgeglichen."
+      }
+    },
+    "audi-a8-2025-06-de": {
+      "brand": "audi",
+      "model": "A8",
+      "year": null,
+      "generation": null,
+      "edition": "06.2025",
+      "lang": "DE",
+      "url": "https://pdf.bordbuecher.de/cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00.pdf",
+      "viewer_url": "https://bordbuecher.de/audi/a8/#page={page}",
+      "status": "selected-symbols-and-instructions-reviewed-not-complete",
+      "publisher": "AUDI AG",
+      "host_kind": "third-party-copy",
+      "part_number": "4N1012705AH",
+      "sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+      "pdf_pages": 427,
+      "access_method": "Ordinary public browser viewer download of the observed file URL; no login bypass. Edition and part read from the cover, not from the host year label.",
+      "checked": "2026-10-30",
+      "model_year_note": {
+        "cs": "Jde o vydání dokumentu 06.2025, nikoli automatické přiřazení modelového roku. Kopie dokumentu AUDI AG je hostována třetí stranou a nebyla porovnána s původním souborem na serveru výrobce.",
+        "en": "This is document edition 06.2025, not an automatic model-year assignment. The AUDI AG document copy is hosted by a third party and has not been compared with the manufacturer-hosted file.",
+        "de": "Dokumentausgabe 06.2025, keine automatische Modelljahrzuordnung. Die Kopie des AUDI-AG-Dokuments wird von Dritten gehostet und wurde nicht mit der Herstellerdatei abgeglichen."
+      }
+    },
+    "audi-q4-etron-2023-06-de": {
+      "brand": "audi",
+      "model": "Q4 e-tron",
+      "year": null,
+      "generation": null,
+      "edition": "06.2023",
+      "lang": "DE",
+      "url": "https://pdf.bordbuecher.de/9ee02d233f0c9d1f0b69988d913085275c9b5430920f7841504eb359a954fe63.pdf",
+      "viewer_url": "https://bordbuecher.de/audi/q4-e-tron/#page={page}",
+      "status": "selected-symbols-and-instructions-reviewed-not-complete",
+      "publisher": "AUDI AG",
+      "host_kind": "third-party-copy",
+      "part_number": "89A012705AH",
+      "sha256": "9ee02d233f0c9d1f0b69988d913085275c9b5430920f7841504eb359a954fe63",
+      "pdf_pages": 326,
+      "access_method": "Ordinary public viewer download. Part/edition read visually on rear cover; OCR confuses 5/S in running headers. Host year label is not used as model-year evidence.",
+      "checked": "2026-10-30",
+      "model_year_note": {
+        "cs": "Vydání 06.2023 není důkazem modelového roku ani náhradou chybějícího vydání pro rok 2022. Kopie AUDI AG je hostována třetí stranou; původní soubor výrobce nebyl porovnán.",
+        "en": "Edition 06.2023 does not establish a model year and does not replace the missing 2022 edition. AUDI AG copy hosted by a third party; manufacturer-hosted file not compared.",
+        "de": "Ausgabe 06.2023 belegt kein Modelljahr und ersetzt nicht die fehlende 2022-Ausgabe. AUDI-AG-Kopie von Dritten gehostet; Herstellerdatei nicht abgeglichen."
+      }
     }
   },
   "items": [
@@ -859,6 +928,59 @@
           "verification": {
             "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            127
+          ],
+          "pdf_pages": [
+            129
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            142
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
             "graphic_printed_pages": [
               12
             ],
@@ -1452,6 +1574,59 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            127
+          ],
+          "pdf_pages": [
+            129
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            142
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -1979,6 +2154,63 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            144,
+            145
+          ],
+          "pdf_pages": [
+            146,
+            147
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            150,
+            151
+          ],
+          "pdf_pages": [
+            152,
+            153
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -2466,6 +2698,63 @@
             "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
             "graphic_printed_pages": [
               12
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            144,
+            145
+          ],
+          "pdf_pages": [
+            146,
+            147
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            150,
+            151
+          ],
+          "pdf_pages": [
+            152,
+            153
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              13
             ],
             "checked": "2026-10-30"
           }
@@ -2961,6 +3250,63 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            144,
+            145
+          ],
+          "pdf_pages": [
+            146,
+            147
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            150,
+            151
+          ],
+          "pdf_pages": [
+            152,
+            153
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -3297,6 +3643,59 @@
             "cs": "Fotografie dodané zadavatelem potvrzují podobu na fotografovaném Terramaru; jeho modelový rok ani verze softwaru nejsou doložené. Rozsah tohoto záznamu se řídí samostatně uvedeným vydáním návodu.",
             "en": "User-supplied photographs confirm the depiction on the photographed Terramar; its model year and software version are not documented. This entry’s scope follows the separately cited manual edition.",
             "de": "Die bereitgestellten Fotos bestätigen die Darstellung am fotografierten Terramar; Modelljahr und Softwarestand sind nicht belegt. Der Geltungsbereich folgt der separat genannten Anleitungsausgabe."
+          }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            128
+          ],
+          "pdf_pages": [
+            130
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            142
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
           }
         }
       ],
@@ -3674,6 +4073,59 @@
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "graphic_printed_pages": [
               47
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            82
+          ],
+          "pdf_pages": [
+            84
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              11
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            96
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              11
             ],
             "checked": "2026-10-30"
           }
@@ -5116,6 +5568,35 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "seat-leon-2026-11-25",
+          "brand": "seat",
+          "model": "Leon",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            16,
+            216
+          ],
+          "pdf_pages": [
+            18,
+            218
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "2a4ef0fce63c0e2b45da01bb6d8a53c2f7acd7c4457fe698fad3a57ecf1558d8",
+            "graphic_printed_pages": [
+              16
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -5356,6 +5837,35 @@
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "graphic_printed_pages": [
               13
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "seat-leon-2026-11-25",
+          "brand": "seat",
+          "model": "Leon",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            16,
+            216
+          ],
+          "pdf_pages": [
+            18,
+            218
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "2a4ef0fce63c0e2b45da01bb6d8a53c2f7acd7c4457fe698fad3a57ecf1558d8",
+            "graphic_printed_pages": [
+              16
             ],
             "checked": "2026-10-30"
           }
@@ -5803,6 +6313,41 @@
             "spalovaci",
             "phev"
           ]
+        },
+        {
+          "manual": "audi-q4-etron-2023-06-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2023",
+          "language": "DE",
+          "printed_pages": [
+            13,
+            151,
+            152
+          ],
+          "pdf_pages": [
+            15,
+            153,
+            154
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Cup pictogram and white colour visually compared in the actual 06.2023 overview p.13; entire Pausenempfehlung subsection pp.151–152 read and compared. Not inherited from the eye-based 07.2024 edition.",
+            "document_sha256": "9ee02d233f0c9d1f0b69988d913085275c9b5430920f7841504eb359a954fe63",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          },
+          "model_note": {
+            "cs": "Toto vydání Q4 doporučení přestávky zobrazuje šálkem a vychází z vyhodnocení řízení. Novější ověřené vydání 07.2024 používá odlišnou podobu oka; obrázky a návody se neslučují.",
+            "en": "This Q4 edition displays break recommendation with a cup and evaluates steering behaviour. The separately verified 07.2024 edition uses a different eye depiction; graphics and instructions are not conflated.",
+            "de": "Diese Q4-Ausgabe zeigt die Pausenempfehlung mit einer Tasse und wertet das Lenkverhalten aus. Die separat geprüfte Ausgabe 07.2024 verwendet eine andere Augendarstellung; Grafiken und Anleitungen werden nicht vermischt."
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -6060,6 +6605,63 @@
             "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
             "graphic_printed_pages": [
               13
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            64,
+            65
+          ],
+          "pdf_pages": [
+            66,
+            67
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            71,
+            72
+          ],
+          "pdf_pages": [
+            73,
+            74
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              15
             ],
             "checked": "2026-10-30"
           }
@@ -8875,6 +9477,59 @@
             "en": "Audi Q3 11/2024: stop driving and switch off the engine when low pressure is reported. If the oil level is correct and the warning remains, do not run the engine; obtain professional help. Follow this manual for further steps and any topping-up.",
             "de": "Audi Q3 11/2024: Bei gemeldetem niedrigem Öldruck nicht weiterfahren und Motor abstellen. Bei richtigem Ölstand und weiterhin leuchtender Warnung Motor nicht laufen lassen; fachmännische Hilfe anfordern. Weitere Schritte und gegebenenfalls Nachfüllen nach dieser Anleitung."
           }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            287
+          ],
+          "pdf_pages": [
+            289
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            342
+          ],
+          "pdf_pages": [
+            344
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -9772,6 +10427,59 @@
           "verification": {
             "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            141
+          ],
+          "pdf_pages": [
+            143
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            148
+          ],
+          "pdf_pages": [
+            150
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
             "graphic_printed_pages": [
               12
             ],
@@ -15653,6 +16361,59 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            66
+          ],
+          "pdf_pages": [
+            68
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            74
+          ],
+          "pdf_pages": [
+            76
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -15751,6 +16512,59 @@
             "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
             "graphic_printed_pages": [
               13
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            65
+          ],
+          "pdf_pages": [
+            67
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            72
+          ],
+          "pdf_pages": [
+            74
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              15
             ],
             "checked": "2026-10-30"
           }
@@ -15855,6 +16669,63 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            65,
+            66
+          ],
+          "pdf_pages": [
+            67,
+            68
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              15
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            72,
+            74
+          ],
+          "pdf_pages": [
+            74,
+            76
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              15
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -15955,6 +16826,59 @@
             "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
             "graphic_printed_pages": [
               13
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            66
+          ],
+          "pdf_pages": [
+            68
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              15
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            74
+          ],
+          "pdf_pages": [
+            76
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              15
             ],
             "checked": "2026-10-30"
           }
@@ -16370,6 +17294,65 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            163,
+            164
+          ],
+          "pdf_pages": [
+            165,
+            166
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              15
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            190,
+            191,
+            192
+          ],
+          "pdf_pages": [
+            192,
+            193,
+            194
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              16
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -16475,6 +17458,65 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            163,
+            164
+          ],
+          "pdf_pages": [
+            165,
+            166
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              15
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            190,
+            191,
+            192
+          ],
+          "pdf_pages": [
+            192,
+            193,
+            194
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              16
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -16573,6 +17615,65 @@
             "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
             "graphic_printed_pages": [
               12
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            163,
+            164
+          ],
+          "pdf_pages": [
+            165,
+            166
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            190,
+            191,
+            192
+          ],
+          "pdf_pages": [
+            192,
+            193,
+            194
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              13
             ],
             "checked": "2026-10-30"
           }
@@ -16852,6 +17953,59 @@
             "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
             "graphic_printed_pages": [
               11
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            293
+          ],
+          "pdf_pages": [
+            295
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            348
+          ],
+          "pdf_pages": [
+            350
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              12
             ],
             "checked": "2026-10-30"
           }
@@ -19294,6 +20448,511 @@
         "de": "Gelbes Auto zwischen unterbrochenen Spurmarkierungen mit Ausrufezeichen – Lane Assist nicht verfügbar."
       },
       "kind": "restriction"
+    },
+    {
+      "id": "audi-predictive-limiter-active",
+      "graphic": "lim-auto-text",
+      "graphic_path": "wp-content/uploads/kontrolky/lim-auto-text-zelena.svg",
+      "color": "zelena",
+      "group": "asistenty",
+      "state": "steady",
+      "kind": "information",
+      "name": {
+        "cs": "LIM AUTO – prediktivní omezování rychlosti",
+        "en": "LIM AUTO – predictive speed limiting",
+        "de": "LIM AUTO – prädiktive Geschwindigkeitsbegrenzung"
+      },
+      "meaning": {
+        "cs": "Prediktivní omezovač aktivně omezuje rychlost na rozpoznaný limit nebo ručně zvolenou hodnotu. Nejde o běžný ruční stav LIM ani o závadu.",
+        "en": "The predictive limiter actively limits speed to a detected speed limit or manually selected value. It is not the plain manual LIM state or a fault.",
+        "de": "Der prädiktive Begrenzer begrenzt aktiv auf ein erkanntes Tempolimit oder einen manuell gewählten Wert. Nicht der einfache manuelle LIM-Zustand und keine Störung."
+      },
+      "action": {
+        "cs": "Za dodržení rychlosti odpovídá řidič. Skutečné dopravní značky mají přednost; chybné rozpoznání nebo mapy mohou vést k nesprávné regulaci.",
+        "en": "The driver is responsible for speed compliance. Actual road signs take priority; recognition or map errors can cause incorrect regulation.",
+        "de": "Der Fahrer verantwortet die Geschwindigkeit. Tatsächliche Verkehrszeichen haben Vorrang; Erkennungs- oder Kartenfehler können zu unplausibler Regelung führen."
+      },
+      "note": {
+        "cs": "Pouze pro doloženou prediktivní výbavu Q4 e-tron 07.2024. Automatické převzetí limitu a bílý neaktivní omezovač nejsou totožné stavy.",
+        "en": "Only for documented predictive equipment in Q4 e-tron 07.2024. Automatic limit adoption and a white inactive limiter are different states.",
+        "de": "Nur für belegte prädiktive Ausstattung Q4 e-tron 07.2024. Automatische Limitübernahme und weißer inaktiver Begrenzer sind verschiedene Zustände."
+      },
+      "alt": {
+        "cs": "LIM AUTO – prediktivní omezování rychlosti — zelena",
+        "en": "LIM AUTO – predictive speed limiting — green",
+        "de": "LIM AUTO – prädiktive Geschwindigkeitsbegrenzung — grün"
+      },
+      "scopes": [
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            159,
+            160
+          ],
+          "pdf_pages": [
+            161,
+            162
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              160
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription LIM AUTO",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Short functional inscription independently documented in the cited exact edition. System sans-serif; no manufacturer font embedded; no unrelated symbol used.",
+        "file": "wp-content/uploads/kontrolky/lim-auto-text-zelena.svg",
+        "sha256": "c05c2a5e406000848b0afe04520b4fc491e482e836ba7b17f04326f3fb9911e4"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "audi-predictive-limit-adoption-unavailable",
+      "graphic": "lim-text",
+      "graphic_path": "wp-content/uploads/kontrolky/lim-text-bila.svg",
+      "color": "bila",
+      "group": "asistenty",
+      "state": "message",
+      "kind": "restriction",
+      "name": {
+        "cs": "LIM – dočasně nelze převzít rozpoznaný limit",
+        "en": "LIM – detected speed limit cannot currently be adopted",
+        "de": "LIM – Tempolimitübernahme derzeit nicht verfügbar"
+      },
+      "meaning": {
+        "cs": "Konkrétní hlášení o nedostupném převzetí limitu omezuje prediktivní funkci. Podle tohoto návodu omezování nadále probíhá na ručně nastavenou hodnotu. Neznamená automaticky úplné vypnutí omezovače.",
+        "en": "The specific unavailable-limit-adoption message restricts the predictive function. In this manual, limiting continues at the manually set value. It does not automatically mean the limiter is entirely switched off.",
+        "de": "Die konkrete Meldung zur nicht verfügbaren Tempolimitübernahme beschränkt die prädiktive Funktion. Laut dieser Anleitung wird weiter auf den manuell eingestellten Wert begrenzt. Nicht automatisch vollständige Abschaltung."
+      },
+      "action": {
+        "cs": "Zkontrolujte přesné hlášení a nastavenou rychlost. Rychlost volte sami podle dopravního značení; při trvajícím problému postupujte podle návodu a servisu.",
+        "en": "Check the exact message and selected speed. Choose speed yourself according to road signs; follow the manual and seek service if the issue persists.",
+        "de": "Genaue Meldung und eingestellte Geschwindigkeit prüfen. Geschwindigkeit selbst nach Beschilderung wählen; bei anhaltendem Problem Anleitung beachten und Fachbetrieb aufsuchen."
+      },
+      "note": {
+        "cs": "Platí pouze pro uvedené hlášení Q4 e-tron 07.2024, nikoli každé bílé LIM nebo obecnou závadu omezovače.",
+        "en": "Only the specified Q4 e-tron 07.2024 message, not every white LIM or general limiter fault.",
+        "de": "Nur genannte Meldung Q4 e-tron 07.2024, nicht jedes weiße LIM oder jede Begrenzerstörung."
+      },
+      "alt": {
+        "cs": "LIM – dočasně nelze převzít rozpoznaný limit — bila",
+        "en": "LIM – detected speed limit cannot currently be adopted — white",
+        "de": "LIM – Tempolimitübernahme derzeit nicht verfügbar — weiß"
+      },
+      "scopes": [
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            162
+          ],
+          "pdf_pages": [
+            164
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              162
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription LIM",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Exact short functional inscription documented in the cited source; system sans-serif font, no manufacturer font embedded. Only independently documented colours used.",
+        "file": "wp-content/uploads/kontrolky/lim-text-bila.svg",
+        "sha256": "43c91164cd261b947c52d878bf3512545a1aeaa0a5f0949a76206352e9ebaeb6"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "audi-climate-auto-control",
+      "graphic": "climate-auto-text",
+      "graphic_path": "wp-content/uploads/kontrolky/climate-auto-text-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "AUTO – automatický režim klimatizace Audi",
+        "en": "AUTO – Audi automatic climate mode",
+        "de": "AUTO – Audi Klimaautomatikmodus"
+      },
+      "meaning": {
+        "cs": "Ovládání automatického udržování nastavené teploty pomocí množství a rozdělení vzduchu podle uvedené výbavy. Nápis není Auto Hold ani samočinná převodovka.",
+        "en": "Control of automatic regulation to the selected temperature using airflow and distribution, according to the specified equipment. Not Auto Hold or an automatic gearbox.",
+        "de": "Bedienung der automatischen Regelung auf die gewählte Temperatur durch Luftmenge/-verteilung gemäß Ausstattung. Nicht Auto Hold oder Automatikgetriebe."
+      },
+      "action": {
+        "cs": "Nastavte požadovanou teplotu a ověřte skutečně aktivní režim. Při zamlžení zajistěte dostatečné odmlžení a výhled.",
+        "en": "Select the desired temperature and check the actual active mode. Demist sufficiently and maintain visibility if windows fog.",
+        "de": "Gewünschte Temperatur wählen und tatsächlich aktiven Modus prüfen. Bei beschlagenen Scheiben ausreichend entfeuchten und Sicht sichern."
+      },
+      "note": {
+        "cs": "Ovládací označení samo neprokazuje závadu ani aktuální aktivaci. A4 má fyzické ovládání a A8 podle výbavy dotykové a další ovladače; postupy se nepřenášejí bez návodu.",
+        "en": "The label alone proves neither a fault nor current activation. A4 uses physical controls and A8 equipment includes touch and other controls; procedures are not transferred without the manual.",
+        "de": "Die Kennzeichnung belegt weder Störung noch aktuelle Aktivierung. A4 hat physische, A8 je nach Ausstattung Touch-/weitere Bedienungen; Abläufe nicht ohne Anleitung übertragen."
+      },
+      "alt": {
+        "cs": "AUTO – automatický režim klimatizace Audi — bila",
+        "en": "AUTO – Audi automatic climate mode — white",
+        "de": "AUTO – Audi Klimaautomatikmodus — weiß"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            105,
+            106
+          ],
+          "pdf_pages": [
+            107,
+            108
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              105
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            113,
+            114
+          ],
+          "pdf_pages": [
+            115,
+            116
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              113
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription AUTO",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Exact short functional inscription from the cited manual and supplied photographs; no manufacturer typeface embedded. Not a substitute for a different pictogram.",
+        "file": "wp-content/uploads/kontrolky/climate-auto-text-bila.svg",
+        "sha256": "2b7a066d34af875ab1372e4f7d64d6869aee683cf43229d187a7eb2a55b79ad5"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "audi-ac-cooling-control",
+      "graphic": "ac-control-text",
+      "graphic_path": "wp-content/uploads/kontrolky/ac-control-text-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "A/C – ovládání chlazení klimatizace",
+        "en": "A/C – air-conditioning cooling control",
+        "de": "A/C – Bedienung des Klimakühlbetriebs"
+      },
+      "meaning": {
+        "cs": "Bílé A/C je ovládací označení chladicího režimu. Chlazení vyžaduje zapnutý ventilátor; při vypnutém režimu se vzduch nechladí ani neodvlhčuje.",
+        "en": "White A/C is the cooling-mode control label. Cooling requires the fan; with cooling off, air is neither cooled nor dehumidified.",
+        "de": "Weißes A/C kennzeichnet die Kühlbedienung. Kühlung benötigt das Gebläse; bei ausgeschaltetem Kühlbetrieb wird Luft weder gekühlt noch entfeuchtet."
+      },
+      "action": {
+        "cs": "Nastavte režim podle návodu konkrétní klimatizace. Při zamlžení obnovte odpovídající odvlhčení; v nízkých venkovních teplotách se chlazení může automaticky vypnout.",
+        "en": "Set the mode following the actual climate-system manual. Restore appropriate dehumidification if windows mist; cooling can switch off automatically at low outside temperatures.",
+        "de": "Modus nach Anleitung der konkreten Klimaanlage einstellen. Bei Beschlag passend entfeuchten; bei niedriger Außentemperatur kann Kühlung automatisch abschalten."
+      },
+      "note": {
+        "cs": "Nezaměňovat s červeným/žlutým A/C hlášením o CO₂ v kabině Q4. A/C MAX, ECO nebo OFF a další grafické ovladače mají vlastní význam.",
+        "en": "Not the red/amber Q4 A/C cabin-CO₂ warning. A/C MAX, ECO or OFF and other graphical controls have separate meanings.",
+        "de": "Nicht die rote/gelbe Q4-A/C-Warnung zu CO₂ im Innenraum. A/C MAX, ECO oder OFF sowie andere Grafikbedienungen haben eigene Bedeutungen."
+      },
+      "alt": {
+        "cs": "A/C – ovládání chlazení klimatizace — bila",
+        "en": "A/C – air-conditioning cooling control — white",
+        "de": "A/C – Bedienung des Klimakühlbetriebs — weiß"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            105,
+            106
+          ],
+          "pdf_pages": [
+            107,
+            108
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              105
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            113,
+            114
+          ],
+          "pdf_pages": [
+            115,
+            116
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              113
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription A/C",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Short functional inscription independently documented in the cited exact edition. System sans-serif; no manufacturer font embedded; no unrelated symbol used.",
+        "file": "wp-content/uploads/kontrolky/ac-control-text-bila.svg",
+        "sha256": "b64c9ded5524ffe359dfdad33bc74e07a332291ab993ce939bc111324c8117b2"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "esc-off-inscription",
+      "graphic": "esc-off-text",
+      "graphic_path": "wp-content/uploads/kontrolky/esc-off-text-zluta.svg",
+      "color": "zluta",
+      "group": "brzdy",
+      "state": "steady",
+      "kind": "information",
+      "name": {
+        "cs": "ESC OFF – stabilizace vypnutá",
+        "en": "ESC OFF – stability control switched off",
+        "de": "ESC OFF – Stabilisierung ausgeschaltet"
+      },
+      "meaning": {
+        "cs": "Samostatný žlutý nápis ESC OFF potvrzuje vypnutí stabilizačních funkcí podle uvedeného návodu. Není to automaticky závada a není totožný se samotným symbolem smyku.",
+        "en": "The separate amber ESC OFF inscription indicates deactivated stability functions according to the specified manual. Not automatically a fault and not the plain skidding symbol.",
+        "de": "Die separate gelbe Aufschrift ESC OFF zeigt abgeschaltete Stabilisierungsfunktionen gemäß genannter Anleitung. Nicht automatisch eine Störung und nicht das einfache Schleudersymbol."
+      },
+      "action": {
+        "cs": "Počítejte s omezenou bezpečnostní rezervou. Použijte režim jen tehdy, pokud to vyžadují podmínky a dovoluje návod; stabilizaci co nejdříve znovu zapněte.",
+        "en": "Allow for the reduced safety margin. Use the mode only when required by conditions and allowed by the manual; restore stability control as soon as possible.",
+        "de": "Geringere Sicherheitsreserve beachten. Modus nur bei erforderlichen Bedingungen und laut Anleitung verwenden; Stabilisierung möglichst bald wieder einschalten."
+      },
+      "note": {
+        "cs": "Sportovní režim, vypnutí TCS a úplné vypnutí ESC se rozlišují podle hlášení a konkrétního symbolu. Po zapnutí zapalování může probíhat kontrolní fáze.",
+        "en": "Distinguish Sport mode, TCS deactivation and full ESC deactivation by message and exact symbol. An ignition function-check phase may occur.",
+        "de": "Sportmodus, TCS-Abschaltung und vollständige ESC-Abschaltung anhand Meldung und genauem Symbol unterscheiden. Nach Zündung kann eine Funktionsprüfung erfolgen."
+      },
+      "alt": {
+        "cs": "ESC OFF – stabilizace vypnutá — zluta",
+        "en": "ESC OFF – stability control switched off — amber",
+        "de": "ESC OFF – Stabilisierung ausgeschaltet — gelb"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            13,
+            144,
+            145
+          ],
+          "pdf_pages": [
+            15,
+            146,
+            147
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            13,
+            150,
+            151
+          ],
+          "pdf_pages": [
+            15,
+            152,
+            153
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            12,
+            192,
+            193
+          ],
+          "pdf_pages": [
+            14,
+            194,
+            195
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source graphic, source colour and distinct state independently compared with the functional licensed graphic; instructions read in this exact edition. No cross-brand/model inheritance and no whole-manual completeness claim.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription ESC OFF",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Short functional inscription independently documented in the cited exact edition. System sans-serif; no manufacturer font embedded; no unrelated symbol used.",
+        "file": "wp-content/uploads/kontrolky/esc-off-text-zluta.svg",
+        "sha256": "ad89457cf8cfc4db88d6da35cc7ae26e026be3f486a2c452cc93bc0ec65730f0"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
     }
   ],
   "pending_items": [
@@ -19439,9 +21098,9 @@
     {
       "brand": "audi",
       "description": {
-        "cs": "Audi: vybrané položky Q3 11.2024 (83B012705AA) a nově Q4 e-tron 07.2024 (89A012705AM). Oba úplné dokumenty AUDI AG jsou kopie na serverech třetích stran. Q4 má 338 stran, přesnou obálku, vydání a kontrolní otisk; nejde o náhradu vydání 2022. Soubor byl získán běžným prohlížečem z veřejného PDF prohlížeče; dřívější překážka 403 je pro tuto kopii vyřešená. Ani jeden návod není kompletně položkově porovnaný. Nadále chybí A4 8W 01.2016 (8W0012705AC), ověřené vydání A8 4N pro vůz 2018 a Q4 e-tron 2022; oficiální modelové/GPSR odkazy vracejí 403. Některé kombinované ADAS/HV a ovládací grafiky nejsou doplněné bez přesného legálně použitelného podkladu.",
-        "en": "Audi: selected entries for Q3 11.2024 (83B012705AA) and now Q4 e-tron 07.2024 (89A012705AM). Both full AUDI AG documents are copies on third-party hosts. Q4 has 338 pages with its exact cover, edition and file hash verified; it is not substituted for a 2022 edition. The file was obtained through the public PDF viewer in an ordinary browser, resolving the earlier 403 obstacle for this copy. Neither manual has been completely compared item by item. A4 8W 01.2016 (8W0012705AC), a verified A8 4N edition for a 2018 vehicle, and Q4 e-tron 2022 remain missing; official model/GPSR links return 403. Some combined ADAS/HV and control graphics remain unpublished without exact lawfully reusable assets.",
-        "de": "Audi: ausgewählte Einträge für Q3 11.2024 (83B012705AA) und neu Q4 e-tron 07.2024 (89A012705AM). Beide vollständigen AUDI-AG-Dokumente sind Kopien auf Drittservern. Q4 hat 338 Seiten mit geprüfter genauer Titelseite, Ausgabe und Dateiprüfsumme; kein Ersatz für eine Ausgabe 2022. Der Abruf über den öffentlichen PDF-Betrachter im normalen Browser löste das bisherige 403-Hindernis für diese Kopie. Keine der Anleitungen wurde vollständig Eintrag für Eintrag verglichen. A4 8W 01.2016 (8W0012705AC), eine verifizierte A8-4N-Ausgabe für ein Fahrzeug 2018 und Q4 e-tron 2022 fehlen weiterhin; offizielle Modell-/GPSR-Links liefern 403. Einige kombinierte ADAS-/HV- und Bediengrafiken bleiben ohne genaue rechtmäßig nutzbare Vorlage unveröffentlicht."
+        "cs": "Audi: vybrané položky Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) a Q4 e-tron 06.2023 (89A012705AH). Jde o dokumenty AUDI AG hostované třetími stranami; obálky, vydání a otisky jsou doložené, soubory výrobce nebyly porovnány. Nová vydání nejsou náhradou A4 8W 01.2016 (8W0012705AC), původního A8 4N pro 2018 ani Q4 pro 2022; pro tyto přesné rozsahy stále chybí přístupný odpovídající návod. Vybrané uzavřené oddíly neznamenají dokončené celé vydání.",
+        "en": "Audi: selected entries from Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) and Q4 e-tron 06.2023 (89A012705AH). AUDI AG documents hosted by third parties; covers, editions and hashes documented, manufacturer files not compared. New editions do not replace A4 8W 01.2016 (8W0012705AC), original A8 4N for 2018 or Q4 for 2022; accessible corresponding manuals remain missing for those exact scopes. Completed narrow subsections do not mean a complete edition.",
+        "de": "Audi: ausgewählte Einträge Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) und Q4 e-tron 06.2023 (89A012705AH). AUDI-AG-Dokumente von Dritten gehostet; Umschläge, Ausgaben und Hashes belegt, Herstellerdateien nicht abgeglichen. Neue Ausgaben ersetzen nicht A4 8W 01.2016 (8W0012705AC), ursprünglichen A8 4N für 2018 oder Q4 für 2022; passende zugängliche Anleitungen für diese genauen Bereiche fehlen weiterhin. Abgeschlossene Teilabschnitte sind keine vollständig abgeschlossene Ausgabe."
       }
     },
     {
@@ -20386,16 +22045,49 @@
       "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source. Licensed base geometry retained. Functional exclamation mark added only for the separately documented Golf 5H0 11.2020 unavailable variant, source overview row 61. This is a documented functional illustration, not an OEM contour-identical file.",
       "sha256": "0c0f6c2b56b63c088957ba65208a98b9d79bc96fa19c9068581c39b1233d2acd",
       "file": "wp-content/uploads/kontrolky/lane-alert-zluta.svg"
+    },
+    "lim-auto-text-zelena": {
+      "title": "Functional inscription LIM AUTO",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Short functional inscription independently documented in the cited exact edition. System sans-serif; no manufacturer font embedded; no unrelated symbol used.",
+      "file": "wp-content/uploads/kontrolky/lim-auto-text-zelena.svg",
+      "sha256": "c05c2a5e406000848b0afe04520b4fc491e482e836ba7b17f04326f3fb9911e4"
+    },
+    "ac-control-text-bila": {
+      "title": "Functional inscription A/C",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Short functional inscription independently documented in the cited exact edition. System sans-serif; no manufacturer font embedded; no unrelated symbol used.",
+      "file": "wp-content/uploads/kontrolky/ac-control-text-bila.svg",
+      "sha256": "b64c9ded5524ffe359dfdad33bc74e07a332291ab993ce939bc111324c8117b2"
+    },
+    "esc-off-text-zluta": {
+      "title": "Functional inscription ESC OFF",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Short functional inscription independently documented in the cited exact edition. System sans-serif; no manufacturer font embedded; no unrelated symbol used.",
+      "file": "wp-content/uploads/kontrolky/esc-off-text-zluta.svg",
+      "sha256": "ad89457cf8cfc4db88d6da35cc7ae26e026be3f486a2c452cc93bc0ec65730f0"
     }
   },
   "counts": {
-    "semantic_records": 137,
+    "semantic_records": 142,
     "legacy_generic_volkswagen": 1,
-    "model_documented_semantic_records": 133,
-    "model_edition_assignments": 462,
-    "partially_reviewed_manual_editions": 39,
-    "shared_graphic_colour_variants": 80,
-    "distinct_pictogram_shapes": 55,
+    "model_documented_semantic_records": 138,
+    "model_edition_assignments": 510,
+    "partially_reviewed_manual_editions": 42,
+    "shared_graphic_colour_variants": 83,
+    "distinct_pictogram_shapes": 58,
     "by_brand": {
       "volkswagen": {
         "distinct_pictogram_shapes": 25,
@@ -20408,14 +22100,14 @@
         "third_party_hosted_manual_editions": 0
       },
       "audi": {
-        "distinct_pictogram_shapes": 38,
-        "graphic_colour_variants": 50,
-        "semantic_variants": 58,
-        "model_edition_assignments": 92,
+        "distinct_pictogram_shapes": 43,
+        "graphic_colour_variants": 55,
+        "semantic_variants": 64,
+        "model_edition_assignments": 137,
         "generic_brand_assignments": 0,
-        "reviewed_manual_editions": 2,
+        "reviewed_manual_editions": 5,
         "first_party_hosted_manual_editions": 0,
-        "third_party_hosted_manual_editions": 2
+        "third_party_hosted_manual_editions": 5
       },
       "skoda": {
         "distinct_pictogram_shapes": 28,
@@ -20431,17 +22123,17 @@
         "distinct_pictogram_shapes": 28,
         "graphic_colour_variants": 36,
         "semantic_variants": 45,
-        "model_edition_assignments": 95,
+        "model_edition_assignments": 97,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 19,
         "first_party_hosted_manual_editions": 19,
         "third_party_hosted_manual_editions": 0
       },
       "cupra": {
-        "distinct_pictogram_shapes": 38,
-        "graphic_colour_variants": 49,
-        "semantic_variants": 61,
-        "model_edition_assignments": 156,
+        "distinct_pictogram_shapes": 39,
+        "graphic_colour_variants": 50,
+        "semantic_variants": 62,
+        "model_edition_assignments": 157,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 12,
         "first_party_hosted_manual_editions": 12,
@@ -20757,7 +22449,7 @@
   "review_gaps": {
     "cs": [
       "Volkswagen: původní položky jsou modelově doložené ve 14 z 15 případů. Nově je ověřeno žhavení i blikající závada řízení dieselu Golf VII 11.2019 (5G0012705AK). Golf 5H0 11.2020 a ID.4 11.2021 (11A012705AF) mají další jednotlivá doložení. Stále chybí modelový doklad pro původní žlutou regulaci dosahu světlometů (vw-range); kontrola Golf VII a Touareg 11.2019 tento konkrétní symbol nepotvrdila. Obecný příklad zůstává výslovně bez modelu. Ostatní modely a roky od 2010 nejsou automaticky pokryté.",
-      "Audi: vybrané položky Q3 11.2024 (83B012705AA) a nově Q4 e-tron 07.2024 (89A012705AM). Oba úplné dokumenty AUDI AG jsou kopie na serverech třetích stran. Q4 má 338 stran, přesnou obálku, vydání a kontrolní otisk; nejde o náhradu vydání 2022. Soubor byl získán běžným prohlížečem z veřejného PDF prohlížeče; dřívější překážka 403 je pro tuto kopii vyřešená. Ani jeden návod není kompletně položkově porovnaný. Nadále chybí A4 8W 01.2016 (8W0012705AC), ověřené vydání A8 4N pro vůz 2018 a Q4 e-tron 2022; oficiální modelové/GPSR odkazy vracejí 403. Některé kombinované ADAS/HV a ovládací grafiky nejsou doplněné bez přesného legálně použitelného podkladu.",
+      "Audi: vybrané položky Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) a Q4 e-tron 06.2023 (89A012705AH). Jde o dokumenty AUDI AG hostované třetími stranami; obálky, vydání a otisky jsou doložené, soubory výrobce nebyly porovnány. Nová vydání nejsou náhradou A4 8W 01.2016 (8W0012705AC), původního A8 4N pro 2018 ani Q4 pro 2022; pro tyto přesné rozsahy stále chybí přístupný odpovídající návod. Vybrané uzavřené oddíly neznamenají dokončené celé vydání.",
       "Škoda: zkontrolované vybrané položky pocházejí z kopie návodu Octavia 5E 11.2018 (5E0012715AQ) a Enyaq iV 11.2020, německy. Vydání není modelový rok a nepokrývá ostatní roky. Pro srovnání chybí původní soubory výrobce. Dále chybí Octavia 07.2019, Superb 05.2010 a pokyny digitálního návodu Octavia iV 11.2020 (5E4012715CB). Přesné dokumenty a výsledky přístupu jsou níže.",
       "Volkswagen Užitkové vozy: nově doložen Caddy 2K7, digitální návod 11.2025. U 17 původních obecných příkladů je obecný rozsah nahrazen konkrétním doložením; původní zdroje jsou v evidenci zachovány. Zbývajících 7 příkladů dosud není modelově potvrzeno: EPC, obecná brzdová výstraha, DPF, převzetí ovládání ACC a tři varianty prostého volantu. Nový Caddy používá u řízení a některých asistentů jiné značky; podobnost není důkazem shody. Starší Caddy, T6/T6.1, nový Transporter, ID. Buzz, Crafter a Amarok nejsou tímto vydáním pokryté.",
       "SEAT a CUPRA: zachované položky platí jen pro výslovně uvedená vydání a výbavu. Kompletní revize všech modelů a let od 2010, resp. CUPRA od vzniku samostatné značky, není dokončená. Mezery mezi vydáními se automaticky nevyplňují.",
@@ -20765,7 +22457,7 @@
     ],
     "en": [
       "Volkswagen: 14 of the original 15 entries now have model evidence. Preheating and a flashing diesel engine-management fault are newly verified for Golf VII 11.2019 (5G0012705AK). Golf 5H0 11.2020 and ID.4 11.2021 (11A012705AF) have further individual evidence. Model evidence for the original yellow headlight-range warning (vw-range) is still missing; reviewing Golf VII and Touareg 11.2019 did not confirm this exact pictogram. The general example remains explicitly without a model. Other models and years from 2010 are not automatically covered.",
-      "Audi: selected entries for Q3 11.2024 (83B012705AA) and now Q4 e-tron 07.2024 (89A012705AM). Both full AUDI AG documents are copies on third-party hosts. Q4 has 338 pages with its exact cover, edition and file hash verified; it is not substituted for a 2022 edition. The file was obtained through the public PDF viewer in an ordinary browser, resolving the earlier 403 obstacle for this copy. Neither manual has been completely compared item by item. A4 8W 01.2016 (8W0012705AC), a verified A8 4N edition for a 2018 vehicle, and Q4 e-tron 2022 remain missing; official model/GPSR links return 403. Some combined ADAS/HV and control graphics remain unpublished without exact lawfully reusable assets.",
+      "Audi: selected entries from Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) and Q4 e-tron 06.2023 (89A012705AH). AUDI AG documents hosted by third parties; covers, editions and hashes documented, manufacturer files not compared. New editions do not replace A4 8W 01.2016 (8W0012705AC), original A8 4N for 2018 or Q4 for 2022; accessible corresponding manuals remain missing for those exact scopes. Completed narrow subsections do not mean a complete edition.",
       "Škoda: selected reviewed entries come from copies of the Octavia 5E 11.2018 manual (5E0012715AQ) and the German Enyaq iV 11.2020 manual. An edition is not a model year and does not cover other years. The original manufacturer files are still needed for comparison. Octavia 07.2019, Superb 05.2010 and the instructions in the Octavia iV 11.2020 digital manual (5E4012715CB) also remain missing. Exact documents and access outcomes are listed below.",
       "Volkswagen Commercial Vehicles: Caddy 2K7, digital manual 11.2025, is now documented. Seventeen original general examples have been replaced by specific model evidence, with their previous sources retained in the audit. Seven examples remain without model confirmation: EPC, general brake warning, DPF, ACC take-over prompt and three plain steering-wheel variants. New Caddy steering and some assistant pictograms differ; similarity is not evidence of equivalence. Earlier Caddy, T6/T6.1, new Transporter, ID. Buzz, Crafter and Amarok are not covered by this edition.",
       "SEAT and CUPRA: retained entries apply only to explicitly listed editions and equipment. A complete review of all models and years from 2010, or CUPRA from its establishment as a separate brand, remains incomplete. Gaps between editions are not automatically filled.",
@@ -20773,7 +22465,7 @@
     ],
     "de": [
       "Volkswagen: Für 14 der ursprünglichen 15 Einträge liegt jetzt ein Modellnachweis vor. Vorglühen und blinkende Diesel-Motorsteuerungsstörung sind neu für Golf VII 11.2019 (5G0012705AK) belegt. Golf 5H0 11.2020 und ID.4 11.2021 (11A012705AF) haben weitere Einzelnachweise. Für die ursprüngliche gelbe Leuchtweitenwarnung (vw-range) fehlt der Modellnachweis; die Prüfung von Golf VII und Touareg 11.2019 bestätigte dieses genaue Piktogramm nicht. Das allgemeine Beispiel bleibt ausdrücklich ohne Modell. Andere Modelle und Jahre ab 2010 sind nicht automatisch abgedeckt.",
-      "Audi: ausgewählte Einträge für Q3 11.2024 (83B012705AA) und neu Q4 e-tron 07.2024 (89A012705AM). Beide vollständigen AUDI-AG-Dokumente sind Kopien auf Drittservern. Q4 hat 338 Seiten mit geprüfter genauer Titelseite, Ausgabe und Dateiprüfsumme; kein Ersatz für eine Ausgabe 2022. Der Abruf über den öffentlichen PDF-Betrachter im normalen Browser löste das bisherige 403-Hindernis für diese Kopie. Keine der Anleitungen wurde vollständig Eintrag für Eintrag verglichen. A4 8W 01.2016 (8W0012705AC), eine verifizierte A8-4N-Ausgabe für ein Fahrzeug 2018 und Q4 e-tron 2022 fehlen weiterhin; offizielle Modell-/GPSR-Links liefern 403. Einige kombinierte ADAS-/HV- und Bediengrafiken bleiben ohne genaue rechtmäßig nutzbare Vorlage unveröffentlicht.",
+      "Audi: ausgewählte Einträge Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) und Q4 e-tron 06.2023 (89A012705AH). AUDI-AG-Dokumente von Dritten gehostet; Umschläge, Ausgaben und Hashes belegt, Herstellerdateien nicht abgeglichen. Neue Ausgaben ersetzen nicht A4 8W 01.2016 (8W0012705AC), ursprünglichen A8 4N für 2018 oder Q4 für 2022; passende zugängliche Anleitungen für diese genauen Bereiche fehlen weiterhin. Abgeschlossene Teilabschnitte sind keine vollständig abgeschlossene Ausgabe.",
       "Škoda: Ausgewählte geprüfte Einträge stammen aus Kopien der Anleitung Octavia 5E 11.2018 (5E0012715AQ) und der deutschen Anleitung Enyaq iV 11.2020. Eine Ausgabe ist kein Modelljahr und deckt andere Jahre nicht ab. Für den Abgleich fehlen die Hersteller-Originaldateien. Außerdem fehlen Octavia 07.2019, Superb 05.2010 und die Fahrerhinweise der digitalen Anleitung Octavia iV 11.2020 (5E4012715CB). Genaue Dokumente und Zugriffsergebnisse sind unten aufgeführt.",
       "Volkswagen Nutzfahrzeuge: Neu belegt ist Caddy 2K7, digitale Anleitung 11.2025. Bei 17 ursprünglichen allgemeinen Beispielen wurde der allgemeine Geltungsbereich durch konkreten Modellnachweis ersetzt; bisherige Quellen bleiben in der Dokumentation. Sieben Beispiele bleiben ohne Modellbestätigung: EPC, allgemeine Bremswarnung, DPF, ACC-Übernahmeaufforderung und drei einfache Lenkradvarianten. Beim neuen Caddy weichen Lenkungs- und manche Assistenzpiktogramme ab; Ähnlichkeit ist kein Gleichheitsnachweis. Ältere Caddy, T6/T6.1, neuer Transporter, ID. Buzz, Crafter und Amarok sind durch diese Ausgabe nicht abgedeckt.",
       "SEAT und CUPRA: Die erhaltenen Einträge gelten nur für ausdrücklich genannte Ausgaben und Ausstattungen. Die vollständige Prüfung aller Modelle und Jahre ab 2010 beziehungsweise CUPRA seit Gründung als eigenständige Marke ist noch nicht abgeschlossen. Lücken zwischen Ausgaben werden nicht automatisch geschlossen.",
@@ -22363,6 +24055,295 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "Independent SEAT Leon 11.25 grey Lane Assist and VW Golf 5H0 11.2020 unavailable variant checked in their own sources. Different continuous-lane Caddy variants withheld; no Terramar inheritance."
+    },
+    {
+      "id": "audi-editions-and-chapter-states",
+      "checked": "2026-10-30",
+      "before_semantic_records": 137,
+      "after_semantic_records": 142,
+      "added_record_ids": [
+        "audi-predictive-limiter-active",
+        "audi-predictive-limit-adoption-unavailable",
+        "audi-climate-auto-control",
+        "audi-ac-cooling-control",
+        "esc-off-inscription"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "audi-headlight-range",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-fatigue-break-recommended",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-fatigue-break-required",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-fatigue-unavailable",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "oil-pressure",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-12v-system-red",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "steering-red",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "brake-fault",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "parking-applied",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "seatbelt",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "pads-worn",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "abs-fault",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "esc-regulating",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "esc-fault",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "high-beam",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-high-beam-auto-enabled",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-high-beam-auto-on",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-high-beam-auto-unavailable",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-headlight-range",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "audi-fatigue-break-recommended",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "audi-fatigue-break-required",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "audi-fatigue-unavailable",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "oil-pressure",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "audi-12v-system-red",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "steering-red",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "brake-fault",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "parking-applied",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "seatbelt",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "pads-worn",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "abs-fault",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "esc-regulating",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "esc-fault",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "high-beam",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "audi-high-beam-auto-enabled",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "audi-high-beam-auto-on",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "audi-high-beam-auto-unavailable",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "lane-ready",
+          "brand": "seat",
+          "manual": "seat-leon-2026-11-25"
+        },
+        {
+          "id": "lane-correction",
+          "brand": "seat",
+          "manual": "seat-leon-2026-11-25"
+        },
+        {
+          "id": "audi-predictive-limiter-active",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-predictive-limit-adoption-unavailable",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-climate-auto-control",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-climate-auto-control",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "audi-ac-cooling-control",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "audi-ac-cooling-control",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "esc-off-inscription",
+          "brand": "audi",
+          "manual": "audi-a4-2024-07-de"
+        },
+        {
+          "id": "esc-off-inscription",
+          "brand": "audi",
+          "manual": "audi-a8-2025-06-de"
+        },
+        {
+          "id": "esc-off-inscription",
+          "brand": "cupra",
+          "manual": "cupra-terramar-2026-11-25"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Audi A4 07.2024 8W1012705AN and A8 06.2025 4N1012705AH are exact newly obtained editions, not substitutes for missing older manuals. Five new distinct meaning/control records; old scopes retained. Complete narrow subsection comparisons recorded separately; whole manuals remain incomplete."
+    },
+    {
+      "id": "q4-2023-cup-edition",
+      "checked": "2026-10-30",
+      "before_semantic_records": 142,
+      "after_semantic_records": 142,
+      "added_record_ids": [],
+      "added_model_assignments": [
+        {
+          "id": "fatigue",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2023-06-de"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Exact newly acquired Q4 06.2023 89A012705AH has a white cup break-recommendation symbol; not the eye of 07.2024 and not a substitute for missing 2022 documentation. Entire small Pausenempfehlung subsection compared, not the whole manual."
+    }
+  ],
+  "evidence_gaps_revision": [
+    {
+      "id": "vw-range-specific-model",
+      "claim_not_established": "This exact yellow headlamp up/down range-control pictogram applies to a specific European Volkswagen model/edition from 2010.",
+      "missing_source": "European Volkswagen owner manual with this exact pictogram, colour and instructions, plus model and edition. General VW UK page does not establish a model.",
+      "checked_sources": [
+        "Golf VII 11.2019 5G0012705AK official symbol overview and lighting-fault topic",
+        "Touareg 11.2019 760012705AF official symbol overview and lighting-fault topic",
+        "Targeted searches for Phaeton/Touareg/Golf range-control warning; accessory/wiring/workshop pages rejected as driver-symbol evidence"
+      ],
+      "result": "Not model-documented; no model guessed. General example remains visibly qualified."
+    },
+    {
+      "id": "audi-older-editions",
+      "claim_not_established": "Newer A4/A8/Q4 editions establish the old 2016/2018/2022 variants.",
+      "missing_source": "A4 8W 01.2016 8W0012705AC; A8 4N owner manual matching 2018 vehicle scope (exact edition still unidentified); Q4 e-tron owner manual matching 2022 vehicle scope.",
+      "result": "No substitution. Newly obtained editions registered independently."
     }
   ]
 }

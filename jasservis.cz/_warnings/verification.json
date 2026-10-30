@@ -381,5 +381,513 @@
     "terramar-photo-comparison.en.csv",
     "terramar-photo-comparison.de.csv",
     "brand-functional-review.json"
-  ]
+  ],
+  "latest_chapter_revision": {
+    "checked": "2026-10-30",
+    "catalog_counts": {
+      "semantic_records": 142,
+      "legacy_generic_volkswagen": 1,
+      "model_documented_semantic_records": 138,
+      "model_edition_assignments": 510,
+      "partially_reviewed_manual_editions": 42,
+      "shared_graphic_colour_variants": 83,
+      "distinct_pictogram_shapes": 58,
+      "by_brand": {
+        "volkswagen": {
+          "distinct_pictogram_shapes": 25,
+          "graphic_colour_variants": 29,
+          "semantic_variants": 32,
+          "model_edition_assignments": 34,
+          "generic_brand_assignments": 1,
+          "reviewed_manual_editions": 3,
+          "first_party_hosted_manual_editions": 3,
+          "third_party_hosted_manual_editions": 0
+        },
+        "audi": {
+          "distinct_pictogram_shapes": 43,
+          "graphic_colour_variants": 55,
+          "semantic_variants": 64,
+          "model_edition_assignments": 137,
+          "generic_brand_assignments": 0,
+          "reviewed_manual_editions": 5,
+          "first_party_hosted_manual_editions": 0,
+          "third_party_hosted_manual_editions": 5
+        },
+        "skoda": {
+          "distinct_pictogram_shapes": 28,
+          "graphic_colour_variants": 35,
+          "semantic_variants": 46,
+          "model_edition_assignments": 64,
+          "generic_brand_assignments": 0,
+          "reviewed_manual_editions": 2,
+          "first_party_hosted_manual_editions": 0,
+          "third_party_hosted_manual_editions": 2
+        },
+        "seat": {
+          "distinct_pictogram_shapes": 28,
+          "graphic_colour_variants": 36,
+          "semantic_variants": 45,
+          "model_edition_assignments": 97,
+          "generic_brand_assignments": 0,
+          "reviewed_manual_editions": 19,
+          "first_party_hosted_manual_editions": 19,
+          "third_party_hosted_manual_editions": 0
+        },
+        "cupra": {
+          "distinct_pictogram_shapes": 39,
+          "graphic_colour_variants": 50,
+          "semantic_variants": 62,
+          "model_edition_assignments": 157,
+          "generic_brand_assignments": 0,
+          "reviewed_manual_editions": 12,
+          "first_party_hosted_manual_editions": 12,
+          "third_party_hosted_manual_editions": 0
+        },
+        "volkswagen-uzitkove-vozy": {
+          "distinct_pictogram_shapes": 23,
+          "graphic_colour_variants": 26,
+          "semantic_variants": 28,
+          "model_edition_assignments": 21,
+          "generic_brand_assignments": 7,
+          "reviewed_manual_editions": 1,
+          "first_party_hosted_manual_editions": 1,
+          "third_party_hosted_manual_editions": 0
+        }
+      }
+    },
+    "manuals": 44,
+    "whole_manuals_complete": 0,
+    "bounded_subsections_compared": 11,
+    "published_subsections_complete": 10,
+    "caddy_lane_graphics_pending": true,
+    "photo_count": 6,
+    "original_photo_filenames_available": false,
+    "browser_cases": 36,
+    "results": {
+      "cases": [
+        {
+          "engine": "chromium",
+          "lang": "cs",
+          "width": 360,
+          "height": 800,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "chromium",
+          "lang": "cs",
+          "width": 390,
+          "height": 844,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "chromium",
+          "lang": "cs",
+          "width": 844,
+          "height": 390,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "chromium",
+          "lang": "cs",
+          "width": 768,
+          "height": 1024,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "chromium",
+          "lang": "cs",
+          "width": 1366,
+          "height": 768,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "chromium",
+          "lang": "cs",
+          "width": 1920,
+          "height": 1080,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "chromium",
+          "lang": "en",
+          "width": 360,
+          "height": 800,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "chromium",
+          "lang": "en",
+          "width": 390,
+          "height": 844,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "chromium",
+          "lang": "en",
+          "width": 844,
+          "height": 390,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "chromium",
+          "lang": "en",
+          "width": 768,
+          "height": 1024,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "chromium",
+          "lang": "en",
+          "width": 1366,
+          "height": 768,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "chromium",
+          "lang": "en",
+          "width": 1920,
+          "height": 1080,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "chromium",
+          "lang": "de",
+          "width": 360,
+          "height": 800,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "chromium",
+          "lang": "de",
+          "width": 390,
+          "height": 844,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "chromium",
+          "lang": "de",
+          "width": 844,
+          "height": 390,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "chromium",
+          "lang": "de",
+          "width": 768,
+          "height": 1024,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "chromium",
+          "lang": "de",
+          "width": 1366,
+          "height": 768,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "chromium",
+          "lang": "de",
+          "width": 1920,
+          "height": 1080,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "cs",
+          "width": 360,
+          "height": 800,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "cs",
+          "width": 390,
+          "height": 844,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "cs",
+          "width": 844,
+          "height": 390,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "cs",
+          "width": 768,
+          "height": 1024,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "cs",
+          "width": 1366,
+          "height": 768,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "cs",
+          "width": 1920,
+          "height": 1080,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "en",
+          "width": 360,
+          "height": 800,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "en",
+          "width": 390,
+          "height": 844,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "en",
+          "width": 844,
+          "height": 390,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "en",
+          "width": 768,
+          "height": 1024,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "en",
+          "width": 1366,
+          "height": 768,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "en",
+          "width": 1920,
+          "height": 1080,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "de",
+          "width": 360,
+          "height": 800,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "de",
+          "width": 390,
+          "height": 844,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "de",
+          "width": 844,
+          "height": 390,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "de",
+          "width": 768,
+          "height": 1024,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "de",
+          "width": 1366,
+          "height": 768,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        },
+        {
+          "engine": "webkit",
+          "lang": "de",
+          "width": 1920,
+          "height": 1080,
+          "modelFilters": 4,
+          "publishedClosedSubsections": 10,
+          "photos": 6,
+          "manualRows": 44,
+          "result": "PASS"
+        }
+      ],
+      "engines": [
+        {
+          "engine": "chromium",
+          "version": "154.0.8037.57"
+        },
+        {
+          "engine": "webkit",
+          "version": "26.0"
+        }
+      ],
+      "errors": [],
+      "physicalDevices": []
+    },
+    "svg_rendering": [
+      {
+        "engine": "chromium",
+        "version": "154.0.8037.57",
+        "images": 83
+      },
+      {
+        "engine": "webkit",
+        "version": "26.0",
+        "images": 83
+      }
+    ],
+    "physical_devices_tested": [],
+    "content_completeness_confirmed": false
+  }
 }
