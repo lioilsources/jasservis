@@ -157,6 +157,17 @@ def coverage_table(lang):
  for entry in CAT['source_access_log']:text+='<li><strong>'+esc(u['brands'][entry['brand']])+'</strong>: '+esc(entry['summary'][lang])+' <a href="'+esc(entry['url'])+'" target="_blank" rel="noopener">'+labels[8]+'</a></li>'
  return text+'</ul>'
 
+def current_expansion(lang):
+ labels={'cs':['Další rozšíření: 88 → 116 významových záznamů','Přibylo 28 nových významových záznamů a 57 modelových přiřazení. Audi Q3 11.2024 má 45 položek: 22 přiřazení dosavadních záznamů a 23 nových významů. Dalších pět nových významů rozlišuje elektrický pohon Born, Enyaq, Mii electric a ID.4. Žádný původní záznam ani modelové přiřazení Škoda, SEAT a CUPRA nebylo odstraněno.','Golf VII 11.2019 nově dokládá původní spirálu žhavení i blikající závadu řízení dieselu. Modelově doloženo je 14 z původních 15 položek Volkswagen; konkrétní modelový doklad pro vw-range nadále chybí.','Přidané významové záznamy'],
+ 'en':['Further expansion: 88 → 116 semantic records','Twenty-eight new semantic records and 57 model assignments were added. Audi Q3 11.2024 has 45 entries: 22 assignments of existing records and 23 new meanings. Five further new meanings distinguish the electric drive of Born, Enyaq, Mii electric and ID.4. No original Škoda, SEAT or CUPRA record or model assignment was removed.','Golf VII 11.2019 now documents the original preheating coil and flashing diesel engine-management fault. Fourteen of the original 15 Volkswagen entries have model evidence; specific model evidence for vw-range remains missing.','Added semantic records'],
+ 'de':['Weitere Ergänzung: 88 → 116 Bedeutungseinträge','28 neue Bedeutungseinträge und 57 Modellzuordnungen kamen hinzu. Audi Q3 11.2024 hat 45 Einträge: 22 Zuordnungen bestehender Einträge und 23 neue Bedeutungen. Fünf weitere neue Bedeutungen unterscheiden den Elektroantrieb von Born, Enyaq, Mii electric und ID.4. Kein ursprünglicher Škoda-, SEAT- oder CUPRA-Eintrag oder Modellnachweis wurde entfernt.','Golf VII 11.2019 belegt jetzt die ursprüngliche Vorglühspirale und die blinkende Diesel-Motorsteuerungsstörung. Für 14 der ursprünglichen 15 Volkswagen-Einträge liegt ein Modellnachweis vor; der konkrete Modellnachweis für vw-range fehlt weiterhin.','Hinzugefügte Bedeutungseinträge']}[lang]
+ events=[e for e in CAT['change_history'] if e['id'] in ['88-to-audi-ev','113-to-115-model-evidence','115-to-116-traffic-sign']]
+ ids={id for event in events for id in event['added_record_ids']}
+ out='<section id="zmeny-audi-ev"><h2>'+labels[0]+'</h2><p>'+labels[1]+'</p><p>'+labels[2]+'</p><h3>'+labels[3]+'</h3><ul>'
+ for item in CAT['items']:
+  if item['id'] in ids:out+='<li><code>'+esc(item['id'])+'</code> — '+esc(item['name'][lang])+'</li>'
+ return out+'</ul></section>'
+
 def audit(lang,page):
  u=UI[lang];heading={'cs':'Stav systematické kontroly','en':'Systematic review status','de':'Stand der systematischen Prüfung'}[lang]
  text=f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>{esc(u["audit"])}</title><style>body{{font:18px/1.6 system-ui,sans-serif;max-width:1100px;padding:20px;margin:auto;color:#222;overflow-wrap:anywhere}}h1,h2{{line-height:1.3}}table{{border-collapse:collapse;width:100%}}th,td{{border:1px solid #777;padding:10px;text-align:left;vertical-align:top}}a{{color:#111}}section{{margin-block:28px}}@media(max-width:650px){{table,tbody,tr,td{{display:block}}thead{{display:none}}td{{border-bottom:0}}tr{{margin-bottom:16px;border-bottom:1px solid #777}}}}</style></head><body><a href="./#prehled-kontrolek">{esc(u["overview"])}</a><h1>{esc(u["audit"])}</h1><p><strong>{esc(u["scopeTitle"])}</strong></p><p>{esc(u["scope"])}</p><p>{esc(u["counts"].format(items=len(CAT["items"]),graphics=CAT["counts"]["shared_graphic_colour_variants"],shapes=CAT["counts"]["distinct_pictogram_shapes"]))}</p><p>{esc(u["yearNote"])}</p><p>{esc(u["auditNote"])}</p><h2>{heading}</h2>'
@@ -167,7 +178,7 @@ def audit(lang,page):
  # Localised, explicit brand access gaps. No private Drive URLs or documents are published.
  gap=CAT['review_gaps'][lang]
  text+='<ul>'+''.join('<li>'+esc(x)+'</li>' for x in gap)+'</ul>'
- text+=history_table(lang)+latest_history(lang)+coverage_table(lang)
+ text+=history_table(lang)+latest_history(lang)+current_expansion(lang)+coverage_table(lang)
  text+='<h2>'+{'cs':'Křížová kontrola návodů','en':'Manual cross-check','de':'Abgleich der Anleitungen'}[lang]+'</h2>'
  for flag in CAT.get('cross_checks',[]):
   text+='<p><strong>'+esc(flag['model'])+' · MY '+str(flag['model_year'])+'</strong>: '+esc(flag['note'][lang])+'</p><ul>'

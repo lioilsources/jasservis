@@ -84,3 +84,35 @@ Zbývající ochranu celého náhledu přidává stávající preview workflow.
   některých asistentů, volantu a DPF. Nepotvrzené varianty zůstávají oddělené.
 - Kompletní revize Audi, všech modelů/let a všech ADAS/EV symbolů stále chybí.
   Přehled proto musí zůstat označený jako nekompletní a pouze v náhledu.
+
+## Audi a elektrické pohony, další kontrola 30. 10. 2026
+
+- Audi Q3: 45 doložených významových položek z německé příručky 11.2024,
+  83B012705AA. Úplný dokument AUDI AG je veřejně hostovaný autoškolou;
+  není vydáván za soubor stažený z Audi a jeho vydání není modelový rok.
+  Přesné stránky, otisk dokumentu a porovnání grafiky jsou v každém rozsahu.
+- Rozlišeny jsou mimo jiné oko pro únavu, bílé/žluté stavy nedostupnosti
+  asistentů, výzvy k převzetí řízení, nápis TPMS a AUTO u dálkových světel.
+  Rozpoznaná značka 120 je doložený příklad z obr. 100, nikoli poruchová
+  kontrolka nebo zde platný rychlostní limit; dodatkové tabulky se neimplikují.
+- Elektrické pohony: želva v kruhu má samostatně doložené významy pro Born,
+  Enyaq, Mii electric a ID.4. Omezený výkon, příliš studený akumulátor a hrozící
+  vypnutí při vybití se neslučují. ID.4 11.2021 má také nezávisle ověřené
+  rozsahy e-Sound, Lane Assist a výzev k převzetí řízení.
+- Golf VII 11.2019 dokládá původní položku `vw-g` včetně blikající závady
+  řízení dieselu. Modelové doložení původních položek Volkswagen je 14/15.
+  Pro `vw-range` chybí odpovídající modelový podklad; kontrola přehledů
+  a závad osvětlení Golf VII a Touareg 11.2019 požadovaný symbol nepotvrdila.
+  Podklad Audi Q3 se na Volkswagen nepřenáší.
+- Celkem 116 významových záznamů, 42 tvarů a 64 barevných grafických variant.
+  Není to 116 unikátních obrázků ani kompletní katalog všech vozů od roku 2010.
+  Přibylo 28 záznamů a 57 modelových přiřazení oproti verzi s 88 záznamy.
+  Všech 88 původních záznamů a jejich texty i všechny dosavadní modelové
+  rozsahy SEAT/CUPRA/Škoda zůstaly zachované.
+- Audi A4 8W 01.2016 (8W0012705AC), A8 4N 2018 a Q4 e-tron 2022 mají stále
+  nedostupné evropské návody (portál /models a zveřejněné odkazy: 403).
+  Není stanovena zástupná platnost Q3 pro tyto modely. SSP je pouze doplněk.
+- Přesné složené a vícebarevné grafiky Travel Assist, další dopravní značky
+  a jejich stavy, některá parkovací/Front Assist/AdBlue/HV upozornění nejsou
+  nahrazována podobnými obrázky. Jejich chybějící grafické podklady a modelový
+  rozsah jsou výslovně uvedené v přeložené evidenci.

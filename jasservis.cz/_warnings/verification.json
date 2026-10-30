@@ -54,98 +54,103 @@
       ]
     ]
   },
-  "new_brand_content": {
-    "cases": 36,
-    "engines": [
-      {
-        "name": "chromium",
-        "version": "154.0.8037.57"
-      },
-      {
-        "name": "webkit",
-        "version": "26.0"
-      }
-    ],
-    "languages": [
-      "cs",
-      "en",
-      "de"
-    ],
-    "dimensions": [
-      [
-        1366,
-        768
-      ],
-      [
-        390,
-        844
-      ],
-      [
-        844,
-        390
-      ]
-    ]
-  },
   "brand_page_cta_tests": 36,
-  "rendered_colour_variants_checked_in_each_engine": 47,
   "physical_devices_tested": [],
   "device_note": "Linux Chromium and WebKit with viewport/touch emulation; no physical iPhone, Android phone or tablet tested.",
   "unrelated_content": "Shared headers unchanged. Other brand-page content unchanged apart from warning-catalogue availability notes. Media parity: 28 page groups, 76 entries.",
-  "new_model_cases": 36,
-  "catalog_counts": {
-    "semantic_records": 88,
-    "legacy_generic_volkswagen": 2,
-    "model_documented_semantic_records": 83,
-    "model_edition_assignments": 334,
-    "partially_reviewed_manual_editions": 35,
-    "shared_graphic_colour_variants": 47,
-    "distinct_pictogram_shapes": 35,
+  "audi_and_new_vw_models": {
+    "cases": 54,
+    "engines": [
+      {
+        "engine": "chromium",
+        "version": "154.0.8037.57"
+      },
+      {
+        "engine": "webkit",
+        "version": "26.0"
+      }
+    ],
+    "models": [
+      "Audi Q3 11.2024 (45 entries)",
+      "Golf VII 11.2019 (1 newly model-supported original entry)",
+      "ID.4 11.2021 (7 independently supported entries)"
+    ],
+    "errors": [],
+    "physical_devices": []
+  },
+  "brand_cta_navigation": {
+    "cases": 36,
+    "result": "PASS; all six brands, CS/EN/DE, Chromium and WebKit; brand query and overview anchor retained"
+  },
+  "svg_rendering": {
+    "engines": [
+      {
+        "engine": "chromium",
+        "version": "154.0.8037.57",
+        "images": 64
+      },
+      {
+        "engine": "webkit",
+        "version": "26.0",
+        "images": 64
+      }
+    ],
+    "result": "Every shared SVG decodes and renders a non-empty, non-solid-rectangle image"
+  },
+  "current_catalogue": {
+    "semantic_records": 116,
+    "legacy_generic_volkswagen": 1,
+    "model_documented_semantic_records": 112,
+    "model_edition_assignments": 391,
+    "partially_reviewed_manual_editions": 38,
+    "shared_graphic_colour_variants": 64,
+    "distinct_pictogram_shapes": 42,
     "by_brand": {
       "volkswagen": {
-        "distinct_pictogram_shapes": 22,
-        "graphic_colour_variants": 25,
-        "semantic_variants": 27,
-        "model_edition_assignments": 25,
-        "generic_brand_assignments": 2,
-        "reviewed_manual_editions": 1,
-        "first_party_hosted_manual_editions": 1,
+        "distinct_pictogram_shapes": 24,
+        "graphic_colour_variants": 28,
+        "semantic_variants": 31,
+        "model_edition_assignments": 33,
+        "generic_brand_assignments": 1,
+        "reviewed_manual_editions": 3,
+        "first_party_hosted_manual_editions": 3,
         "third_party_hosted_manual_editions": 0
       },
       "audi": {
-        "distinct_pictogram_shapes": 0,
-        "graphic_colour_variants": 0,
-        "semantic_variants": 0,
-        "model_edition_assignments": 0,
+        "distinct_pictogram_shapes": 31,
+        "graphic_colour_variants": 40,
+        "semantic_variants": 45,
+        "model_edition_assignments": 45,
         "generic_brand_assignments": 0,
-        "reviewed_manual_editions": 0,
+        "reviewed_manual_editions": 1,
         "first_party_hosted_manual_editions": 0,
-        "third_party_hosted_manual_editions": 0
+        "third_party_hosted_manual_editions": 1
       },
       "skoda": {
-        "distinct_pictogram_shapes": 27,
-        "graphic_colour_variants": 34,
-        "semantic_variants": 45,
-        "model_edition_assignments": 63,
+        "distinct_pictogram_shapes": 28,
+        "graphic_colour_variants": 35,
+        "semantic_variants": 46,
+        "model_edition_assignments": 64,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 2,
         "first_party_hosted_manual_editions": 0,
         "third_party_hosted_manual_editions": 2
       },
       "seat": {
-        "distinct_pictogram_shapes": 27,
-        "graphic_colour_variants": 34,
-        "semantic_variants": 43,
-        "model_edition_assignments": 93,
+        "distinct_pictogram_shapes": 28,
+        "graphic_colour_variants": 35,
+        "semantic_variants": 44,
+        "model_edition_assignments": 94,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 19,
         "first_party_hosted_manual_editions": 19,
         "third_party_hosted_manual_editions": 0
       },
       "cupra": {
-        "distinct_pictogram_shapes": 30,
-        "graphic_colour_variants": 37,
-        "semantic_variants": 49,
-        "model_edition_assignments": 132,
+        "distinct_pictogram_shapes": 31,
+        "graphic_colour_variants": 39,
+        "semantic_variants": 51,
+        "model_edition_assignments": 134,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 12,
         "first_party_hosted_manual_editions": 12,
@@ -163,6 +168,18 @@
       }
     }
   },
-  "preservation_check": "All original SEAT, CUPRA and Skoda records and model assignments retained; 30 generic scopes replaced with model evidence and previous scope archived.",
-  "svg_geometry_check": "Both new hands-on-wheel colour variants preserve the licensed source path data, circle geometry, stroke width and stroke-only ring."
+  "preservation": {
+    "original_semantic_records_retained": 88,
+    "original_record_texts_unchanged": true,
+    "all_previous_seat_cupra_skoda_model_scopes_retained": true,
+    "header_footer_unchanged": true
+  },
+  "physical_devices": [],
+  "limitations": [
+    "No physical iPhone, Android phone or tablet was available. Viewport/touch emulation and automated Linux WebKit are not real-device Safari tests.",
+    "Browser tests do not establish catalogue completeness or replace source review.",
+    "Audi Q3 and Skoda evidence uses explicitly identified manufacturer-authored copies on third-party hosts.",
+    "Volkswagen vw-range remains without model-specific proof; other model/edition and exact-graphic gaps are listed in the source audit."
+  ],
+  "rendered_colour_variants_checked_in_each_engine": 64
 }
