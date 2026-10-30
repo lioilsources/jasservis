@@ -35,8 +35,27 @@ pokud nebyla doložená. Žádný interval mezi dvěma vydáními se automaticky
 - `pending_items` a `gaps` uvádějí nevyřešené případy a přístupové překážky.
 - Soukromé SSP ani jejich obrázky se nepublikují; jsou doplňujícím technickým
   podkladem, nikoli náhradou pokynů v návodu k obsluze.
-- Návody a grafika nejsou znovu publikované jako celé příručky. Odkazy vedou na
-  oficiální dokumenty; jejich původní anglický text se nevydává za přeložený PDF.
+- Příručky se celé znovu nepublikují. U každé je uveden jazyk a hostitel;
+  kopie vydání výrobce na jiném serveru je výslovně označena. Původní text PDF
+  se nevydává za přeložený dokument.
+
+## Rozšíření kontroly 29. 10. 2026
+
+- Počty `distinct_pictogram_shapes`, `graphic_colour_variants`,
+  `semantic_variants` a `model_edition_assignments` jsou oddělené, také po
+  značkách. Barva ani další přiřazení stejného tvaru není další unikátní symbol.
+- Škoda: vybrané položky z Octavia 5E 11.2018 (5E0012715AQ) a Enyaq iV
+  11.2020 DE. Jde o výrobcem vydané příručky hostované třetí stranou;
+  `host_kind` a `verification.level` tuto skutečnost odlišují. Chybí porovnání
+  se souborem na serveru výrobce. Rok vydání se nepřevádí na modelový rok;
+  `model_year` proto zůstává `null`.
+- Volkswagen Užitkové vozy: samostatně ověřené obecné příklady z oficiálního
+  přehledu značky UK; žádný konkrétní model ani ročník z toho neodvozujeme.
+- Audi: SSP 668 slouží pouze jako technický doplněk. Nezávislá HTML kopie A4
+  2014 nebyla přijata jako ověřené evropské vydání. Zákaznické položky pro Audi
+  se nepřidávají odhadem.
+- `source_access_log` uvádí konkrétní dokumenty, přístupové chyby a potřebný
+  podklad. `review_gaps` obsahuje shodný přeložený seznam mezer CZ/EN/DE.
 
 Před přidáním položky je nutné ověřit grafiku/licenci, význam, barvu, stav,
 postup, přesný rozsah a všechny překlady. Odlišná barva nebo blikání se nesmí

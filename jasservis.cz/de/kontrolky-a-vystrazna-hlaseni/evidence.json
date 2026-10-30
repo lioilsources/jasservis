@@ -2,10 +2,73 @@
   "canonical_catalog": "../../_warnings/catalog.json",
   "review_status": "incomplete-preview",
   "checked": "2026-10-29",
-  "semantic_records": 73,
+  "semantic_records": 86,
   "legacy_generic_volkswagen": 15,
-  "model_documented_semantic_records": 58,
-  "model_edition_assignments": 225,
-  "partially_reviewed_manual_editions": 31,
-  "shared_graphic_colour_variants": 43
+  "model_documented_semantic_records": 65,
+  "model_edition_assignments": 286,
+  "partially_reviewed_manual_editions": 33,
+  "shared_graphic_colour_variants": 45,
+  "distinct_pictogram_shapes": 34,
+  "by_brand": {
+    "volkswagen": {
+      "distinct_pictogram_shapes": 15,
+      "graphic_colour_variants": 15,
+      "semantic_variants": 15,
+      "model_edition_assignments": 0,
+      "generic_brand_assignments": 15,
+      "reviewed_manual_editions": 0,
+      "first_party_hosted_manual_editions": 0,
+      "third_party_hosted_manual_editions": 0
+    },
+    "audi": {
+      "distinct_pictogram_shapes": 0,
+      "graphic_colour_variants": 0,
+      "semantic_variants": 0,
+      "model_edition_assignments": 0,
+      "generic_brand_assignments": 0,
+      "reviewed_manual_editions": 0,
+      "first_party_hosted_manual_editions": 0,
+      "third_party_hosted_manual_editions": 0
+    },
+    "skoda": {
+      "distinct_pictogram_shapes": 26,
+      "graphic_colour_variants": 32,
+      "semantic_variants": 43,
+      "model_edition_assignments": 61,
+      "generic_brand_assignments": 0,
+      "reviewed_manual_editions": 2,
+      "first_party_hosted_manual_editions": 0,
+      "third_party_hosted_manual_editions": 2
+    },
+    "seat": {
+      "distinct_pictogram_shapes": 27,
+      "graphic_colour_variants": 34,
+      "semantic_variants": 43,
+      "model_edition_assignments": 93,
+      "generic_brand_assignments": 0,
+      "reviewed_manual_editions": 19,
+      "first_party_hosted_manual_editions": 19,
+      "third_party_hosted_manual_editions": 0
+    },
+    "cupra": {
+      "distinct_pictogram_shapes": 30,
+      "graphic_colour_variants": 37,
+      "semantic_variants": 49,
+      "model_edition_assignments": 132,
+      "generic_brand_assignments": 0,
+      "reviewed_manual_editions": 12,
+      "first_party_hosted_manual_editions": 12,
+      "third_party_hosted_manual_editions": 0
+    },
+    "volkswagen-uzitkove-vozy": {
+      "distinct_pictogram_shapes": 21,
+      "graphic_colour_variants": 23,
+      "semantic_variants": 24,
+      "model_edition_assignments": 0,
+      "generic_brand_assignments": 24,
+      "reviewed_manual_editions": 0,
+      "first_party_hosted_manual_editions": 0,
+      "third_party_hosted_manual_editions": 0
+    }
+  }
 }

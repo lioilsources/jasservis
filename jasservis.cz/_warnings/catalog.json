@@ -412,6 +412,48 @@
       "sha256": "954a6517b57dc81562f8d8fbcac2850445a7e1e0311c9d86d282a68beb1aa6c2",
       "pages": 310,
       "status": "selected-symbols-and-instructions-reviewed-not-complete"
+    },
+    "skoda-octavia-5e-2018-11-cs": {
+      "brand": "skoda",
+      "model": "Octavia",
+      "generation": "5E",
+      "year": null,
+      "edition": "11.2018",
+      "lang": "CS",
+      "url": "https://octaviaclub.cz/wp-content/uploads/2019/06/N%C3%A1vod-k-obsluze-%C5%A0koda-Octavia-III-3.pdf",
+      "bytes": 56131716,
+      "sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+      "status": "selected-symbols-and-instructions-reviewed-not-complete",
+      "publisher": "ŠKODA AUTO a.s.",
+      "host_kind": "third-party-copy",
+      "research_filename": "skoda-octavia-5e-copy.pdf",
+      "portal_catalogue": "https://manual.skoda-auto.com/005/cs-BZ/api/Editions?model=Octavia_5E",
+      "model_year_note": {
+        "cs": "Vydání návodu není údaj o modelovém roku. Platnost nerozšiřujeme na ostatní roky.",
+        "en": "The manual edition is not a model-year statement. Applicability is not extended to other years.",
+        "de": "Die Ausgabe ist keine Modelljahresangabe. Die Gültigkeit wird nicht auf andere Jahre ausgedehnt."
+      }
+    },
+    "skoda-enyaq-2020-11-de": {
+      "brand": "skoda",
+      "model": "Enyaq iV",
+      "generation": "5A",
+      "year": null,
+      "edition": "11.2020",
+      "lang": "DE",
+      "url": "https://firstev.de/wp-content/uploads/2024/10/A_SUVe_Enyaq_OwnersManual.pdf",
+      "bytes": 24490695,
+      "sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+      "status": "selected-symbols-and-instructions-reviewed-not-complete",
+      "publisher": "ŠKODA AUTO a.s.",
+      "host_kind": "third-party-copy",
+      "research_filename": "skoda-enyaq-2020-11-de.pdf",
+      "portal_catalogue": "https://manual.skoda-auto.com/005/cs-BZ/api/Editions?model=Enyaq_IV_5A",
+      "model_year_note": {
+        "cs": "Vydání návodu není údaj o modelovém roku. Platnost nerozšiřujeme na ostatní roky.",
+        "en": "The manual edition is not a model-year statement. Applicability is not extended to other years.",
+        "de": "Die Ausgabe ist keine Modelljahresangabe. Die Gültigkeit wird nicht auf andere Jahre ausgedehnt."
+      }
     }
   },
   "items": [
@@ -620,8 +662,8 @@
         "license": "CC BY-SA 3.0",
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
         "author": "Ehsnils",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "ca39f2e68862739d8a609d156ed7155c775e6b4ee87c35ca86fa58c718ce9158",
+        "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+        "sha256": "ecd04f7548b919e7e770eb0610b5bc57af7f2df5ad55adca955441ca82fd5ad7",
         "file": "wp-content/uploads/kontrolky/brake-cervena.svg"
       },
       "alt": {
@@ -712,6 +754,52 @@
             "spalovaci",
             "phev"
           ]
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            43
+          ],
+          "pdf_pages": [
+            45
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            168
+          ],
+          "pdf_pages": [
+            170
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -724,8 +812,8 @@
         "license": "CC BY-SA 3.0",
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
         "author": "Ehsnils",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "ca39f2e68862739d8a609d156ed7155c775e6b4ee87c35ca86fa58c718ce9158",
+        "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+        "sha256": "ecd04f7548b919e7e770eb0610b5bc57af7f2df5ad55adca955441ca82fd5ad7",
         "file": "wp-content/uploads/kontrolky/brake-cervena.svg"
       },
       "alt": {
@@ -779,6 +867,29 @@
           "powertrains": [
             "elektricky"
           ]
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            173
+          ],
+          "pdf_pages": [
+            175
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -791,8 +902,8 @@
         "license": "CC BY-SA 3.0",
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
         "author": "Ehsnils",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "ca39f2e68862739d8a609d156ed7155c775e6b4ee87c35ca86fa58c718ce9158",
+        "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+        "sha256": "ecd04f7548b919e7e770eb0610b5bc57af7f2df5ad55adca955441ca82fd5ad7",
         "file": "wp-content/uploads/kontrolky/brake-cervena.svg"
       },
       "alt": {
@@ -949,6 +1060,74 @@
           "powertrains": [
             "spalovaci"
           ]
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            48
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            168
+          ],
+          "pdf_pages": [
+            170
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/brake-pad-monitoring.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "d90d36656c8a9ef2c5ddeeb32e42f23bc292db007978f5f2aa933bdb6d4a86de",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-yellow-front-brake-lining-4_3-2500x1865"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -1326,6 +1505,74 @@
           "powertrains": [
             "spalovaci"
           ]
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            44
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            173
+          ],
+          "pdf_pages": [
+            175
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/anti-lock-brake-system.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "5085edf9b2e156e81f9c43887d63e04dbc51e1f14bd286c3fc6a64a94a4e953d",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-yellow-abs-problem-4_3-2500x1865"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -1338,8 +1585,8 @@
         "license": "CC BY-SA 3.0",
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
         "author": "Ehsnils",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "e3364f56411d41ca944634a66a61bc0cb42e819cc95948d60243d73c1c4e5f08",
+        "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+        "sha256": "5ef791a7348e6bc504718d2434443149036e64f6e3f9eda5d334f66f850b0475",
         "file": "wp-content/uploads/kontrolky/abs-zluta.svg"
       },
       "alt": {
@@ -1662,6 +1909,52 @@
             "instruction_page_text_sha256": "bb4a0bb4075185b1b473e4f71b3662cd69f5435561466b84dab453087ffa8e6a",
             "review_crop_sha256": "16c055a11edb24c8137e040b2a7bd493c90b2fa68e56f717230a633e76095139"
           }
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            44
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            171
+          ],
+          "pdf_pages": [
+            173
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -1674,8 +1967,8 @@
         "license": "Public domain",
         "license_url": "",
         "author": "Chris828  at  German Wikipedia",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "802f1eebf4cfe51f740eb1d349111a06325833761f51dd19f0ecfbf36a07842a",
+        "modifications": "Public-domain car and skid outlines retained; enclosing triangle removed to match the independently reviewed modern ESC variant; documented amber foreground.",
+        "sha256": "b8fc706ebe617424fa82921d4da8494ecaf0025b064caed068ba326605778afe",
         "file": "wp-content/uploads/kontrolky/esp-basic-zluta.svg"
       },
       "alt": {
@@ -1998,6 +2291,74 @@
             "instruction_page_text_sha256": "bb4a0bb4075185b1b473e4f71b3662cd69f5435561466b84dab453087ffa8e6a",
             "review_crop_sha256": "16c055a11edb24c8137e040b2a7bd493c90b2fa68e56f717230a633e76095139"
           }
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            44
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            173
+          ],
+          "pdf_pages": [
+            175
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/electronic-stability-programme.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "45247312d07c84eafa532310625146eae28a343459acf6039e5be5d8cf738a84",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-yellow-asr-esc-problem-4_3-2500x1865"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -2010,8 +2371,8 @@
         "license": "Public domain",
         "license_url": "",
         "author": "Chris828  at  German Wikipedia",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "802f1eebf4cfe51f740eb1d349111a06325833761f51dd19f0ecfbf36a07842a",
+        "modifications": "Public-domain car and skid outlines retained; enclosing triangle removed to match the independently reviewed modern ESC variant; documented amber foreground.",
+        "sha256": "b8fc706ebe617424fa82921d4da8494ecaf0025b064caed068ba326605778afe",
         "file": "wp-content/uploads/kontrolky/esp-basic-zluta.svg"
       },
       "alt": {
@@ -2199,6 +2560,29 @@
             "method": "Official manual instruction checked; symbol outline independently matched to a reviewed source. No brand validity inferred from platform sharing.",
             "glyph_outline_sha256": "24b711b254ff747224ce0dedce1195831bcb4a6cf42acbb8c13d661f83ed6f5d",
             "instruction_page_text_sha256": "57ad86072a4098f0d00c72b2102ea7e74cc73917507a03a2325bb0749c44f20d"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            169
+          ],
+          "pdf_pages": [
+            171
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
           }
         }
       ],
@@ -2438,6 +2822,29 @@
             "spalovaci",
             "phev"
           ]
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            43
+          ],
+          "pdf_pages": [
+            45
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -3112,6 +3519,52 @@
           "powertrains": [
             "elektricky"
           ]
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            47
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            73
+          ],
+          "pdf_pages": [
+            75
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -3222,6 +3675,54 @@
             "spalovaci",
             "phev"
           ]
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            45,
+            46
+          ],
+          "pdf_pages": [
+            47,
+            48
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            238
+          ],
+          "pdf_pages": [
+            240
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -3330,6 +3831,52 @@
             "spalovaci",
             "phev"
           ]
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            47
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            239
+          ],
+          "pdf_pages": [
+            241
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -3485,6 +4032,31 @@
             "method": "Official manual instruction checked; symbol outline independently matched to a reviewed source. No brand validity inferred from platform sharing.",
             "glyph_outline_sha256": "6c0b2022d2d11945793465b7b0fe95b10b4534dfc0b03aba2fd02f8684ac7aa4",
             "instruction_page_text_sha256": "5932c89779bba0b3781d0150c6658cbb46dff62ebe52d1c2432fc451e57b1d24"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            183,
+            184
+          ],
+          "pdf_pages": [
+            185,
+            186
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
           }
         }
       ],
@@ -3642,6 +4214,29 @@
             "glyph_outline_sha256": "6c0b2022d2d11945793465b7b0fe95b10b4534dfc0b03aba2fd02f8684ac7aa4",
             "instruction_page_text_sha256": "5932c89779bba0b3781d0150c6658cbb46dff62ebe52d1c2432fc451e57b1d24"
           }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            183
+          ],
+          "pdf_pages": [
+            185
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -3768,6 +4363,29 @@
             "method": "Official manual instruction checked; symbol outline independently matched to a reviewed source. No brand validity inferred from platform sharing.",
             "glyph_outline_sha256": "2a05ad65a9f881b8e25e2036a1e009e974d6a6b44255e7bfdec3b1591e40187c",
             "instruction_page_text_sha256": "8609fa183b24c92096a3eef6c52ef5816671a452b26053897849eaac298531d0"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            182
+          ],
+          "pdf_pages": [
+            184
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
           }
         }
       ],
@@ -3901,6 +4519,29 @@
             "method": "Official manual instruction checked; symbol outline independently matched to a reviewed source. No brand validity inferred from platform sharing.",
             "glyph_outline_sha256": "9d57b42d4080208ae979c077af67566c1260cf161c2a758482ca23cbd24f32ce",
             "instruction_page_text_sha256": "fa9f2672706b5caf275db44910c1d0b7984b527362ec7ab7cfbb84c942c564d6"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            179
+          ],
+          "pdf_pages": [
+            181
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
           }
         }
       ],
@@ -4116,6 +4757,74 @@
             "spalovaci",
             "phev"
           ]
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            47
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            76
+          ],
+          "pdf_pages": [
+            78
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/headlights-blue.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "0c7eb868c768b9853e58274bbe235fe428cde18d3e5b236bebc696a18536b70f",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-blue-high-beam-engaged-4_3-2500x1865"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -4128,8 +4837,8 @@
         "license": "CC BY-SA 3.0",
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
         "author": "Ehsnils",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "52d5746be7bc43b84dea65a165c8aaab7f90f02b4712e3bf620090edef807c05",
+        "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+        "sha256": "f5a110dc1ae17a9fa3a514273745624883888c2ded59b9479063d4f33d124ce9",
         "file": "wp-content/uploads/kontrolky/high-beam-modra.svg"
       },
       "alt": {
@@ -4220,6 +4929,74 @@
             "spalovaci",
             "phev"
           ]
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            44
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            77
+          ],
+          "pdf_pages": [
+            79
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/rear-fog-light.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "8af3955321d5f3f2eec4b83dc7a85352c9edd787c643804a9f7e9c4bb7720486",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-yellow-rear-fog-light-engaged-4_3-2500x1865"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -4232,8 +5009,8 @@
         "license": "CC BY-SA 3.0",
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
         "author": "Ehsnils",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "7b5296834abce40ea0f91b8ae41d7a5c587443fbbaad7f95d30de8366f3905f2",
+        "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+        "sha256": "e67d67fc70d8f4633376b6dcc93b32f781b8f51956419ac50bf0b7019cf9261e",
         "file": "wp-content/uploads/kontrolky/rear-fog-zluta.svg"
       },
       "alt": {
@@ -4324,6 +5101,74 @@
             "spalovaci",
             "phev"
           ]
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            48
+          ],
+          "pdf_pages": [
+            50
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            79
+          ],
+          "pdf_pages": [
+            81
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/vehicle-lighting-failure.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "ba9aba92a53d8ddc60b3ce8706342cf0ac50df150c75d627f5a7a56ef2e7accc",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-yellow-driving-lights-problem-4_3-2500x1865"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -4336,8 +5181,8 @@
         "license": "CC BY-SA 3.0",
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
         "author": "Ehsnils",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "e28a6302c6cae7d077a184b6bab58fb19c2d936c06c6f02f31b7b27d69143f60",
+        "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+        "sha256": "5e73516dffb44e793c24e2e5a4aad793f930ea297026c04dc3915ed2754adbe3",
         "file": "wp-content/uploads/kontrolky/bulb-zluta.svg"
       },
       "alt": {
@@ -4428,6 +5273,76 @@
             "spalovaci",
             "phev"
           ]
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            48
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            76,
+            79
+          ],
+          "pdf_pages": [
+            78,
+            81
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/turn-signals.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "535437252ffd5474a85baae74bad76082cb52fe193445c924b17cbb64eb9a329",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-green-hazard-lights-on-4_3-2500x1865"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -4440,8 +5355,8 @@
         "license": "CC BY-SA 3.0",
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
         "author": "Ehsnils",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "fbd1ea157e1f639a781bfa0babfa17e8f4dbcdabc7a32e0e012aa23ebad5e1a3",
+        "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+        "sha256": "ff886e947c17ddc1c1f5425336af08406588e1ba9ba84390c36b22a22034d017",
         "file": "wp-content/uploads/kontrolky/turn-signals-zelena.svg"
       },
       "alt": {
@@ -4517,6 +5432,28 @@
           "powertrains": [
             "spalovaci"
           ]
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/stop-start-system.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "13341e04398706f72901d7b47757bb2ae0a18ce8cf5482432afc466e9ca7533c",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-white-start-stop-system-engaged-4_3-2500x1865"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -4606,6 +5543,28 @@
           "powertrains": [
             "spalovaci"
           ]
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/stop-start-system-fault.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "6b8f859398d02c55c5f876902a3c337a744339fd9946819d2336a47c7127461d",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-white-start-stop-system-disengaged-4_3-2500x1865"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -4675,6 +5634,29 @@
           "powertrains": [
             "elektricky"
           ]
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            170
+          ],
+          "pdf_pages": [
+            172
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -4743,6 +5725,29 @@
           "powertrains": [
             "elektricky"
           ]
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            170
+          ],
+          "pdf_pages": [
+            172
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -4873,6 +5878,51 @@
             "method": "Official manual instruction checked; symbol outline independently matched to a reviewed source. No brand validity inferred from platform sharing.",
             "glyph_outline_sha256": "53de31d33c2508707c4b3be385a50ce3a7f7ca12269e24a511d1984d526a8833",
             "instruction_page_text_sha256": "96ab8404a38570e8dd36c8f72453f1a56b38f899585b90dc8b6ec832c20c9e35"
+          }
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            47
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/electronic-power-control.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "08565e3a89398aa6db59834b76b1e82da611e922270c4be4ce777042b9264594",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-yellow-motor-control-problem-4_3-2500x1865"
           }
         }
       ],
@@ -5236,6 +6286,51 @@
             "method": "Official manual instruction and coloured symbol visually checked against the standard pictogram; preview awaits technician review.",
             "instruction_page_text_sha256": "c89c32938829743986dcb51c8b17f3b0119f5f23486db3fbe71ab209ca94273d",
             "review_crop_sha256": "2d7e236df3a2737abdea742d44b499a1fd68db95bcb47683d8a0129631e9f90b"
+          }
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            44
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/exhaust-system-fault.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "e4b6c05d45a9fa67bbb1a3638cc58b87e9b1233dded5909070faa5ede1cb6963",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-yellow-exhaust-system-problem-4_3-2500x1865"
           }
         }
       ],
@@ -5622,6 +6717,28 @@
           "powertrains": [
             "spalovaci"
           ]
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/diesel-engine-preheating.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "771cd99f702303cd4200803eafeb146fa226267dd78f2c657c3d00975f2dccc3",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-yellow-diesel-problem-4_3-2500x1865"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -5691,6 +6808,31 @@
           "powertrains": [
             "spalovaci"
           ]
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            44,
+            45
+          ],
+          "pdf_pages": [
+            46,
+            47
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -6206,6 +7348,29 @@
           "powertrains": [
             "elektricky"
           ]
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            222
+          ],
+          "pdf_pages": [
+            224
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -6293,6 +7458,29 @@
           "powertrains": [
             "phev"
           ]
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            171
+          ],
+          "pdf_pages": [
+            173
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -6431,6 +7619,29 @@
           "powertrains": [
             "elektricky"
           ]
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            80
+          ],
+          "pdf_pages": [
+            82
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -6583,6 +7794,52 @@
             "glyph_outline_sha256": "22ab3ffe305d57bc0625baf6f3c112d7c331b238200114022b2fab00215598c4",
             "instruction_page_text_sha256": "503764c281c9f39cf428d7dff91a6bf7f6246b9cf59f8b5decadd97e46fca77a"
           }
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            43
+          ],
+          "pdf_pages": [
+            45
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            60
+          ],
+          "pdf_pages": [
+            62
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -6595,8 +7852,8 @@
         "license": "CC0",
         "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
         "author": "Chris828",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "d1e2c2dd549ec182d148100a5b9034307354fb81d2e1d7d8ca2cd9ddab7c38df",
+        "modifications": "One complete CC0 wheel/exclamation pictogram selected from the two-colour source sheet, preserving its contour; viewBox normalised; independently documented colour.",
+        "sha256": "d1cd821e8524fe8384c2bb83829aa79d798a707b02404b0a3617ed480a8fec9a",
         "file": "wp-content/uploads/kontrolky/steering-alert-cervena.svg"
       },
       "alt": {
@@ -6652,6 +7909,52 @@
           "powertrains": [
             "elektricky"
           ]
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            43
+          ],
+          "pdf_pages": [
+            45
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            60
+          ],
+          "pdf_pages": [
+            62
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -6664,8 +7967,8 @@
         "license": "CC0",
         "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
         "author": "Chris828",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "d1e2c2dd549ec182d148100a5b9034307354fb81d2e1d7d8ca2cd9ddab7c38df",
+        "modifications": "One complete CC0 wheel/exclamation pictogram selected from the two-colour source sheet, preserving its contour; viewBox normalised; independently documented colour.",
+        "sha256": "d1cd821e8524fe8384c2bb83829aa79d798a707b02404b0a3617ed480a8fec9a",
         "file": "wp-content/uploads/kontrolky/steering-alert-cervena.svg"
       },
       "alt": {
@@ -6779,6 +8082,52 @@
             "glyph_outline_sha256": "22ab3ffe305d57bc0625baf6f3c112d7c331b238200114022b2fab00215598c4",
             "instruction_page_text_sha256": "be100e049210c85ff663422ef0715be7ff3cf0719667018d7509316ae7184f3c"
           }
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            43
+          ],
+          "pdf_pages": [
+            45
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            60
+          ],
+          "pdf_pages": [
+            62
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -6791,8 +8140,8 @@
         "license": "CC0",
         "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
         "author": "Chris828",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "1ce83c8496a3098305708c681c7844c269ac871dd3d3a0716024864ccef493ac",
+        "modifications": "One complete CC0 wheel/exclamation pictogram selected from the two-colour source sheet, preserving its contour; viewBox normalised; independently documented colour.",
+        "sha256": "14347a4cf4536fa3ddf55a5f8af6ff266d83a669cedf4293999d7eb44e1a9c63",
         "file": "wp-content/uploads/kontrolky/steering-alert-zluta.svg"
       },
       "alt": {
@@ -6929,6 +8278,54 @@
             "glyph_outline_sha256": "22ab3ffe305d57bc0625baf6f3c112d7c331b238200114022b2fab00215598c4",
             "instruction_page_text_sha256": "54d740ede3df2d5433ab69d592ca48d6910a4b08b481fd9312ac515d2dc1d145"
           }
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            43
+          ],
+          "pdf_pages": [
+            45
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            60,
+            61
+          ],
+          "pdf_pages": [
+            62,
+            63
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -6941,8 +8338,8 @@
         "license": "CC0",
         "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
         "author": "Chris828",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "1ce83c8496a3098305708c681c7844c269ac871dd3d3a0716024864ccef493ac",
+        "modifications": "One complete CC0 wheel/exclamation pictogram selected from the two-colour source sheet, preserving its contour; viewBox normalised; independently documented colour.",
+        "sha256": "14347a4cf4536fa3ddf55a5f8af6ff266d83a669cedf4293999d7eb44e1a9c63",
         "file": "wp-content/uploads/kontrolky/steering-alert-zluta.svg"
       },
       "alt": {
@@ -6996,6 +8393,51 @@
           "powertrains": [
             "elektricky"
           ]
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            17
+          ],
+          "pdf_pages": [
+            19
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/central-warning-light-symbol.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "b31cb2e00ecf657a90496d0e7ab037698e3d03a132d3bc1b6f7b7f237d285988",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-red-central-warning-light-4_3-2500x1865"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -7063,6 +8505,29 @@
           "powertrains": [
             "elektricky"
           ]
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            17
+          ],
+          "pdf_pages": [
+            19
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -7132,6 +8597,51 @@
           "powertrains": [
             "elektricky"
           ]
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            48
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/press-the-brake-pedal.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "42a82f4b4a5147611fac062149bba10a7e19707eff7b5d4dddea143170aaf594",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-green-brake-pedal-not-locked-4_3-2500x1865"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -7199,6 +8709,29 @@
           "powertrains": [
             "elektricky"
           ]
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            161
+          ],
+          "pdf_pages": [
+            163
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -7331,6 +8864,28 @@
             "en": "Example from the official Volkswagen UK overview, limited to the stated combustion-engine application. The source does not specify a model, generation or model year. Applicability to another brand or a specific vehicle is not established.",
             "de": "Beispiel aus der offiziellen Volkswagen-UK-Übersicht, beschränkt auf den angegebenen Verbrenner-Anwendungsfall. Die Quelle nennt kein Modell, keine Generation und kein Modelljahr. Die Gültigkeit für andere Marken oder ein konkretes Fahrzeug ist nicht belegt."
           }
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/engine-cooling-system-temperature.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "3b6a56fb7d36cf14b6c4f2a8f151f0ffb42dbf7103040295074dad75ed1e38e2",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-red-check-engine-cooling-system-4_3-2500x1865"
+          }
         }
       ],
       "graphic_source": {
@@ -7397,6 +8952,28 @@
             "en": "Example from the official Volkswagen UK overview, limited to the stated combustion-engine application. The source does not specify a model, generation or model year. Applicability to another brand or a specific vehicle is not established.",
             "de": "Beispiel aus der offiziellen Volkswagen-UK-Übersicht, beschränkt auf den angegebenen Verbrenner-Anwendungsfall. Die Quelle nennt kein Modell, keine Generation und kein Modelljahr. Die Gültigkeit für andere Marken oder ein konkretes Fahrzeug ist nicht belegt."
           }
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/brake-system.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "5043fcb84202f7d2da52b3a327110fc1899892c3dc6666f72b5dd943de37f00e",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-red-do-not-continue-driving-4_3-2500x1865"
+          }
         }
       ],
       "graphic_source": {
@@ -7406,8 +8983,8 @@
         "license": "CC BY-SA 3.0",
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
         "author": "Ehsnils",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "ca39f2e68862739d8a609d156ed7155c775e6b4ee87c35ca86fa58c718ce9158",
+        "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+        "sha256": "ecd04f7548b919e7e770eb0610b5bc57af7f2df5ad55adca955441ca82fd5ad7",
         "file": "wp-content/uploads/kontrolky/brake-cervena.svg"
       },
       "checked": "2026-10-29",
@@ -7661,6 +9238,28 @@
             "en": "Example from the official Volkswagen UK overview, limited to the stated combustion-engine application. The source does not specify a model, generation or model year. Applicability to another brand or a specific vehicle is not established. Diesel application only; not petrol or purely electric vehicles.",
             "de": "Beispiel aus der offiziellen Volkswagen-UK-Übersicht, beschränkt auf den angegebenen Verbrenner-Anwendungsfall. Die Quelle nennt kein Modell, keine Generation und kein Modelljahr. Die Gültigkeit für andere Marken oder ein konkretes Fahrzeug ist nicht belegt. Nur für Diesel; nicht für Benziner oder reine Elektrofahrzeuge."
           }
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/particulate-filter-clogged-with-soot.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "d80fbd56e50e0f45003b489af2fe3d3d8ebf2fe631bdcf0ee49443d2bb3d7722",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-yellow-diesel-particle-filter-4_3-2500x1865"
+          }
         }
       ],
       "graphic_source": {
@@ -7868,8 +9467,8 @@
         "license": "CC BY-SA 3.0",
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
         "author": "Ehsnils",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "e3364f56411d41ca944634a66a61bc0cb42e819cc95948d60243d73c1c4e5f08",
+        "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+        "sha256": "5ef791a7348e6bc504718d2434443149036e64f6e3f9eda5d334f66f850b0475",
         "file": "wp-content/uploads/kontrolky/abs-zluta.svg"
       },
       "checked": "2026-10-29",
@@ -7934,8 +9533,8 @@
         "license": "CC BY-SA 3.0",
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
         "author": "Ehsnils",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "e28a6302c6cae7d077a184b6bab58fb19c2d936c06c6f02f31b7b27d69143f60",
+        "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+        "sha256": "5e73516dffb44e793c24e2e5a4aad793f930ea297026c04dc3915ed2754adbe3",
         "file": "wp-content/uploads/kontrolky/bulb-zluta.svg"
       },
       "checked": "2026-10-29",
@@ -8000,8 +9599,8 @@
         "license": "CC BY-SA 3.0",
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
         "author": "Ehsnils",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "bcda22d2b3a9d7cad9210c5773574cc910f883959f10d27fbe2ab5798ad3fa1f",
+        "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+        "sha256": "75ca90f0cb477952a098bb599565a03af616f1e3011f3bc05d3484502bbd267a",
         "file": "wp-content/uploads/kontrolky/headlight-range-zluta.svg"
       },
       "checked": "2026-10-29",
@@ -8066,8 +9665,8 @@
         "license": "CC BY-SA 3.0",
         "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
         "author": "Ehsnils",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-        "sha256": "7b5296834abce40ea0f91b8ae41d7a5c587443fbbaad7f95d30de8366f3905f2",
+        "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+        "sha256": "e67d67fc70d8f4633376b6dcc93b32f781b8f51956419ac50bf0b7019cf9261e",
         "file": "wp-content/uploads/kontrolky/rear-fog-zluta.svg"
       },
       "checked": "2026-10-29",
@@ -8579,6 +10178,51 @@
             "spalovaci",
             "phev"
           ]
+        },
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            43
+          ],
+          "pdf_pages": [
+            45
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/adaptive-cruise-control-warning-light.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "f770493aa9248df1e6c50f880f2077329f5e57943228bd3c8b332199db9673e7",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-red-brake-pedal-not-used-4_3-2500x1865"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -8938,6 +10582,981 @@
         "de": "Motorkühlung – rote Warnung (Toledo) — Symbol"
       },
       "kind": "warning"
+    },
+    {
+      "id": "skoda-airbag-fault",
+      "graphic": "airbag",
+      "color": "zluta",
+      "group": "bezpecnost",
+      "state": "steady",
+      "name": {
+        "cs": "Airbagy – trvalá výstraha závady",
+        "en": "Airbags – steady fault warning",
+        "de": "Airbags – dauerhafte Störungsanzeige"
+      },
+      "meaning": {
+        "cs": "Trvale svítící symbol s hlášením závady upozorňuje na poruchu bezpečnostního systému.",
+        "en": "A steady symbol with a fault message indicates a restraint-system malfunction.",
+        "de": "Das dauerhaft leuchtende Symbol mit einer Störungsmeldung weist auf einen Fehler des Rückhaltesystems hin."
+      },
+      "action": {
+        "cs": "Zajistěte neprodlenou odbornou kontrolu. Při nehodě může být funkce systému omezená.",
+        "en": "Arrange prompt professional inspection. System protection may be impaired in an accident.",
+        "de": "Lassen Sie das System unverzüglich prüfen. Die Schutzfunktion kann bei einem Unfall beeinträchtigt sein."
+      },
+      "note": {
+        "cs": "Platí jen pro uvedená provedení a výbavu. Rozhoduje přesné hlášení a návod vašeho vozu.",
+        "en": "Only the listed versions and equipment are covered. Follow the exact message and your vehicle’s manual.",
+        "de": "Gilt nur für die aufgeführten Ausführungen und Ausstattungen. Maßgeblich sind die genaue Meldung und die Betriebsanleitung Ihres Fahrzeugs."
+      },
+      "scopes": [
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            47
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            73
+          ],
+          "pdf_pages": [
+            75
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/airbag-zluta.svg",
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Airbag.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Airbag.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/9/94/Kontrollleuchte_Airbag.svg",
+        "license": "Copyrighted free use",
+        "license_url": "",
+        "author": "de:Benutzer:chris828",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "214fb708237364dcf6ecbab42d7fbc438f0f492109f5e668ab1a56ac7b4aad37",
+        "file": "wp-content/uploads/kontrolky/airbag-zluta.svg"
+      },
+      "alt": {
+        "cs": "Airbagy – trvalá výstraha závady – doložený symbol v uvedeném návodu.",
+        "en": "Airbags – steady fault warning – symbol documented in the cited manual.",
+        "de": "Airbags – dauerhafte Störungsanzeige – in der angegebenen Anleitung belegtes Symbol."
+      },
+      "kind": "warning"
+    },
+    {
+      "id": "skoda-proactive-protection",
+      "graphic": "airbag",
+      "color": "zluta",
+      "group": "bezpecnost",
+      "state": "steady",
+      "name": {
+        "cs": "Proaktivní ochrana cestujících – omezení nebo závada",
+        "en": "Proactive occupant protection unavailable or restricted",
+        "de": "Proaktiver Insassenschutz nicht verfügbar oder eingeschränkt"
+      },
+      "meaning": {
+        "cs": "Stejný symbol airbagu může s příslušným textem označovat omezení proaktivní ochrany cestujících. Přesný stav určuje doprovodné hlášení.",
+        "en": "With the corresponding message, the airbag symbol can indicate restricted proactive occupant protection. The accompanying text identifies the condition.",
+        "de": "Mit der entsprechenden Meldung kann das Airbagsymbol einen eingeschränkten proaktiven Insassenschutz anzeigen. Maßgeblich ist der Begleittext."
+      },
+      "action": {
+        "cs": "Nechte bezpečnostní systémy neprodleně odborně zkontrolovat.",
+        "en": "Have the safety systems professionally inspected promptly.",
+        "de": "Lassen Sie die Sicherheitssysteme unverzüglich fachkundig prüfen."
+      },
+      "note": {
+        "cs": "Platí jen pro uvedená provedení a výbavu. Rozhoduje přesné hlášení a návod vašeho vozu.",
+        "en": "Only the listed versions and equipment are covered. Follow the exact message and your vehicle’s manual.",
+        "de": "Gilt nur für die aufgeführten Ausführungen und Ausstattungen. Maßgeblich sind die genaue Meldung und die Betriebsanleitung Ihres Fahrzeugs."
+      },
+      "scopes": [
+        {
+          "manual": "skoda-octavia-5e-2018-11-cs",
+          "brand": "skoda",
+          "model": "Octavia",
+          "model_year": null,
+          "generation": "5E",
+          "edition": "11.2018",
+          "language": "CS",
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            47
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            191
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/airbag-zluta.svg",
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Airbag.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Airbag.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/9/94/Kontrollleuchte_Airbag.svg",
+        "license": "Copyrighted free use",
+        "license_url": "",
+        "author": "de:Benutzer:chris828",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "214fb708237364dcf6ecbab42d7fbc438f0f492109f5e668ab1a56ac7b4aad37",
+        "file": "wp-content/uploads/kontrolky/airbag-zluta.svg"
+      },
+      "alt": {
+        "cs": "Proaktivní ochrana cestujících – omezení nebo závada – doložený symbol v uvedeném návodu.",
+        "en": "Proactive occupant protection unavailable or restricted – symbol documented in the cited manual.",
+        "de": "Proaktiver Insassenschutz nicht verfügbar oder eingeschränkt – in der angegebenen Anleitung belegtes Symbol."
+      },
+      "kind": "warning"
+    },
+    {
+      "id": "enyaq-epc",
+      "graphic": "epc",
+      "color": "zluta",
+      "group": "elektro",
+      "state": "steady",
+      "name": {
+        "cs": "Elektrický pohon – EPC, závada řízení motoru",
+        "en": "Electric drive – EPC motor-control fault",
+        "de": "Elektroantrieb – EPC, Fehler der Motorsteuerung"
+      },
+      "meaning": {
+        "cs": "V tomto elektrickém Enyaqu je nápis EPC samostatně doloženou signalizací chyby řízení motoru. Nejde o výklad pro benzinový motor.",
+        "en": "On this electric Enyaq, EPC is separately documented as a motor-control fault indication. This is not the petrol-engine interpretation.",
+        "de": "Beim hier belegten elektrischen Enyaq zeigt EPC gesondert einen Fehler der Motorsteuerung an. Dies ist nicht die Deutung für einen Benzinmotor."
+      },
+      "action": {
+        "cs": "Vyhledejte odborný servis a respektujte případná další hlášení vozidla.",
+        "en": "Obtain professional assistance and follow any additional vehicle messages.",
+        "de": "Nehmen Sie fachkundige Hilfe in Anspruch und beachten Sie weitere Fahrzeugmeldungen."
+      },
+      "note": {
+        "cs": "Platí jen pro uvedená provedení a výbavu. Rozhoduje přesné hlášení a návod vašeho vozu.",
+        "en": "Only the listed versions and equipment are covered. Follow the exact message and your vehicle’s manual.",
+        "de": "Gilt nur für die aufgeführten Ausführungen und Ausstattungen. Maßgeblich sind die genaue Meldung und die Betriebsanleitung Ihres Fahrzeugs."
+      },
+      "scopes": [
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            201
+          ],
+          "pdf_pages": [
+            203
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/epc-zluta.svg",
+      "graphic_source": {
+        "title": "Literal EPC inscription",
+        "license": "Original typesetting of a short functional inscription",
+        "license_url": "",
+        "page": "",
+        "author": "J&S SERVIS preview",
+        "modifications": "Literal documented inscription, no proprietary font embedded.",
+        "sha256": "8c52b8b2a82aac5d4cbd1d80cb1cb0d5513b7795d9c1e1116af4b67c88f825d6",
+        "file": "wp-content/uploads/kontrolky/epc-zluta.svg"
+      },
+      "alt": {
+        "cs": "Elektrický pohon – EPC, závada řízení motoru – doložený symbol v uvedeném návodu.",
+        "en": "Electric drive – EPC motor-control fault – symbol documented in the cited manual.",
+        "de": "Elektroantrieb – EPC, Fehler der Motorsteuerung – in der angegebenen Anleitung belegtes Symbol."
+      },
+      "kind": "warning"
+    },
+    {
+      "id": "enyaq-12v-charge-fault",
+      "graphic": "charging",
+      "color": "cervena",
+      "group": "elektricka-soustava",
+      "state": "steady",
+      "name": {
+        "cs": "Enyaq iV – 12V akumulátor se nenabíjí",
+        "en": "Enyaq iV – 12 V battery not charging",
+        "de": "Enyaq iV – 12-Volt-Batterie wird nicht geladen"
+      },
+      "meaning": {
+        "cs": "Červený symbol akumulátoru s doprovodnou výstrahou upozorňuje na poruchu nabíjení 12V akumulátoru.",
+        "en": "The red battery symbol with an accompanying warning indicates a 12 V battery charging fault.",
+        "de": "Das rote Batteriesymbol mit zusätzlicher Warnung zeigt eine Störung beim Laden der 12-Volt-Batterie an."
+      },
+      "action": {
+        "cs": "Nepokračujte v jízdě. Bezpečně zastavte, vypněte zapalování a zajistěte odbornou pomoc.",
+        "en": "Do not continue driving. Stop safely, switch off the ignition and obtain professional assistance.",
+        "de": "Fahren Sie nicht weiter. Halten Sie sicher an, schalten Sie die Zündung aus und holen Sie fachkundige Hilfe."
+      },
+      "note": {
+        "cs": "Platí jen pro uvedená provedení a výbavu. Rozhoduje přesné hlášení a návod vašeho vozu.",
+        "en": "Only the listed versions and equipment are covered. Follow the exact message and your vehicle’s manual.",
+        "de": "Gilt nur für die aufgeführten Ausführungen und Ausstattungen. Maßgeblich sind die genaue Meldung und die Betriebsanleitung Ihres Fahrzeugs."
+      },
+      "scopes": [
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            221
+          ],
+          "pdf_pages": [
+            223
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/charging-cervena.svg",
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Generator.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Generator.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Kontrollleuchte_Generator.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "author": "Chris828  at  German Wikipedia",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "588729de9bb9a1f4d483ee81c0b9f98911942108bdeb151f74188cf5418da859",
+        "file": "wp-content/uploads/kontrolky/charging-cervena.svg"
+      },
+      "alt": {
+        "cs": "Enyaq iV – 12V akumulátor se nenabíjí – doložený symbol v uvedeném návodu.",
+        "en": "Enyaq iV – 12 V battery not charging – symbol documented in the cited manual.",
+        "de": "Enyaq iV – 12-Volt-Batterie wird nicht geladen – in der angegebenen Anleitung belegtes Symbol."
+      },
+      "kind": "warning"
+    },
+    {
+      "id": "enyaq-12v-fault",
+      "graphic": "charging",
+      "color": "zluta",
+      "group": "elektricka-soustava",
+      "state": "steady",
+      "name": {
+        "cs": "Enyaq iV – závada 12V akumulátoru nebo souvisejících systémů",
+        "en": "Enyaq iV – 12 V battery or related-system fault",
+        "de": "Enyaq iV – Störung der 12-Volt-Batterie oder zugehöriger Systeme"
+      },
+      "meaning": {
+        "cs": "Žlutý symbol akumulátoru společně s výstrahou a přesným hlášením označuje poruchu 12V akumulátoru nebo navazujících systémů.",
+        "en": "The yellow battery symbol, additional warning and exact message identify a fault in the 12 V battery or associated systems.",
+        "de": "Das gelbe Batteriesymbol mit zusätzlicher Warnung und genauer Meldung kennzeichnet eine Störung der 12-Volt-Batterie oder nachgeordneter Systeme."
+      },
+      "action": {
+        "cs": "Vyhledejte odborný servis. Samotný symbol neprokazuje vadný akumulátor ani neurčuje nutnost jeho výměny.",
+        "en": "Contact a specialist workshop. The symbol alone does not prove that the battery is defective or needs replacement.",
+        "de": "Nehmen Sie fachkundige Hilfe in Anspruch. Das Symbol allein beweist weder einen Batteriedefekt noch die Notwendigkeit eines Austauschs."
+      },
+      "note": {
+        "cs": "Platí jen pro uvedená provedení a výbavu. Rozhoduje přesné hlášení a návod vašeho vozu.",
+        "en": "Only the listed versions and equipment are covered. Follow the exact message and your vehicle’s manual.",
+        "de": "Gilt nur für die aufgeführten Ausführungen und Ausstattungen. Maßgeblich sind die genaue Meldung und die Betriebsanleitung Ihres Fahrzeugs."
+      },
+      "scopes": [
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            222
+          ],
+          "pdf_pages": [
+            224
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/charging-zluta.svg",
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Generator.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Generator.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Kontrollleuchte_Generator.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "author": "Chris828  at  German Wikipedia",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "ee9c66e4977f19ebf9d06a484f2ec6ea1ae7421cf18a1247d8a7c839941f7962",
+        "file": "wp-content/uploads/kontrolky/charging-zluta.svg"
+      },
+      "alt": {
+        "cs": "Enyaq iV – závada 12V akumulátoru nebo souvisejících systémů – doložený symbol v uvedeném návodu.",
+        "en": "Enyaq iV – 12 V battery or related-system fault – symbol documented in the cited manual.",
+        "de": "Enyaq iV – Störung der 12-Volt-Batterie oder zugehöriger Systeme – in der angegebenen Anleitung belegtes Symbol."
+      },
+      "kind": "warning"
+    },
+    {
+      "id": "enyaq-12v-low",
+      "graphic": "charging",
+      "color": "zluta",
+      "group": "elektricka-soustava",
+      "state": "steady",
+      "name": {
+        "cs": "Enyaq iV – nízké nabití 12V akumulátoru",
+        "en": "Enyaq iV – low 12 V battery charge",
+        "de": "Enyaq iV – niedriger Ladezustand der 12-Volt-Batterie"
+      },
+      "meaning": {
+        "cs": "Žlutý symbol s odpovídajícím hlášením upozorňuje na slabý nebo vybitý 12V akumulátor. Není shodný s červenou výstrahou poruchy nabíjení.",
+        "en": "With the corresponding message, the yellow symbol indicates a weak or discharged 12 V battery. It differs from the red charging-fault warning.",
+        "de": "Mit der entsprechenden Meldung zeigt das gelbe Symbol eine schwache oder entladene 12-Volt-Batterie an. Dies unterscheidet sich von der roten Ladestörungswarnung."
+      },
+      "action": {
+        "cs": "Postupujte podle přesného hlášení a návodu k dobití. Návod tohoto vydání uvádí dobití jízdou nebo vhodným nabíjením; při dalších výstrahách jízdu nepředpokládejte jako bezpečnou.",
+        "en": "Follow the exact message and charging instructions. This edition describes charging while driving or with suitable charging equipment; additional warnings may prevent continued driving.",
+        "de": "Beachten Sie die genaue Meldung und die Ladeanweisungen. Diese Ausgabe nennt das Aufladen während der Fahrt oder mit geeigneter Ladetechnik; bei weiteren Warnungen ist die Weiterfahrt nicht pauschal zulässig."
+      },
+      "note": {
+        "cs": "Platí jen pro uvedená provedení a výbavu. Rozhoduje přesné hlášení a návod vašeho vozu.",
+        "en": "Only the listed versions and equipment are covered. Follow the exact message and your vehicle’s manual.",
+        "de": "Gilt nur für die aufgeführten Ausführungen und Ausstattungen. Maßgeblich sind die genaue Meldung und die Betriebsanleitung Ihres Fahrzeugs."
+      },
+      "scopes": [
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            222
+          ],
+          "pdf_pages": [
+            224
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/charging-zluta.svg",
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Generator.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Generator.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Kontrollleuchte_Generator.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "author": "Chris828  at  German Wikipedia",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "ee9c66e4977f19ebf9d06a484f2ec6ea1ae7421cf18a1247d8a7c839941f7962",
+        "file": "wp-content/uploads/kontrolky/charging-zluta.svg"
+      },
+      "alt": {
+        "cs": "Enyaq iV – nízké nabití 12V akumulátoru – doložený symbol v uvedeném návodu.",
+        "en": "Enyaq iV – low 12 V battery charge – symbol documented in the cited manual.",
+        "de": "Enyaq iV – niedriger Ladezustand der 12-Volt-Batterie – in der angegebenen Anleitung belegtes Symbol."
+      },
+      "kind": "warning"
+    },
+    {
+      "id": "enyaq-coolant",
+      "graphic": "coolant",
+      "color": "cervena",
+      "group": "elektro",
+      "state": "steady-flashing",
+      "name": {
+        "cs": "Enyaq iV – chladicí kapalina",
+        "en": "Enyaq iV – coolant warning",
+        "de": "Enyaq iV – Kühlmittelwarnung"
+      },
+      "meaning": {
+        "cs": "Samostatný symbol chladicí kapaliny svítí nebo bliká při příliš vysoké teplotě nebo nízké hladině. Nezaměňujte jej s kombinovanou výstrahou přehřátí elektrického systému.",
+        "en": "The separate coolant symbol lights up or flashes for excessive temperature or low level. Do not confuse it with the combined electrical-system overheating warning.",
+        "de": "Das separate Kühlmittelsymbol leuchtet oder blinkt bei zu hoher Temperatur oder niedrigem Stand. Es ist nicht mit der kombinierten Überhitzungswarnung des elektrischen Systems gleichzusetzen."
+      },
+      "action": {
+        "cs": "Bezpečně zastavte. Hladinu kontrolujte pouze bezpečným postupem z návodu po vychladnutí. Pokud výstraha přetrvává při správné hladině nebo nelze kapalinu bezpečně doplnit, nepokračujte a zajistěte odbornou pomoc.",
+        "en": "Stop safely. Check the level only by the safe procedure in the manual after cooling. If the warning persists with the correct level or safe topping-up is not possible, do not continue; obtain professional assistance.",
+        "de": "Halten Sie sicher an. Prüfen Sie den Stand erst nach dem Abkühlen gemäß sicherem Verfahren der Anleitung. Bleibt die Warnung bei korrektem Stand oder ist sicheres Nachfüllen nicht möglich, fahren Sie nicht weiter und holen Sie fachkundige Hilfe."
+      },
+      "note": {
+        "cs": "Při kombinované výstraze přehřátí elektrického systému na straně 201 platí: zastavit, vypnout zapalování, chladicí kapalinu nedoplňovat a vyhledat pomoc.",
+        "en": "For the combined electrical-system overheating warning on page 201: stop, switch off the ignition, do not add coolant and obtain assistance.",
+        "de": "Bei der kombinierten Überhitzungswarnung des elektrischen Systems auf Seite 201: anhalten, Zündung ausschalten, kein Kühlmittel nachfüllen und Hilfe holen."
+      },
+      "scopes": [
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            219
+          ],
+          "pdf_pages": [
+            221
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy"
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/coolant-cervena.svg",
+      "graphic_source": {
+        "title": "File:ISO 7000 - Ref-No 0246.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0246.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/e/eb/ISO_7000_-_Ref-No_0246.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "author": "Vectorization:    Mrmw",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "b4e84d7ec2dabc38b6b9d654ff18aa43ffbcc02554a36dd59d598af1436aa376",
+        "file": "wp-content/uploads/kontrolky/coolant-cervena.svg"
+      },
+      "alt": {
+        "cs": "Enyaq iV – chladicí kapalina – doložený symbol v uvedeném návodu.",
+        "en": "Enyaq iV – coolant warning – symbol documented in the cited manual.",
+        "de": "Enyaq iV – Kühlmittelwarnung – in der angegebenen Anleitung belegtes Symbol."
+      },
+      "kind": "warning"
+    },
+    {
+      "id": "vwcv-airbag-fault",
+      "graphic": "airbag",
+      "color": "zluta",
+      "group": "bezpecnost",
+      "state": "steady",
+      "name": {
+        "cs": "Airbagy nebo předpínače – závada",
+        "en": "Airbag or belt tensioner fault",
+        "de": "Airbag- oder Gurtstrafferstörung"
+      },
+      "meaning": {
+        "cs": "Byla zjištěna závada nejméně jednoho airbagu nebo předpínače pásu. Může ji doprovázet textová zpráva.",
+        "en": "A fault has been detected in at least one airbag or belt tensioner. A text message may accompany the lamp.",
+        "de": "Mindestens ein Airbag oder Gurtstraffer weist eine Störung auf. Eine Textmeldung kann die Leuchte begleiten."
+      },
+      "action": {
+        "cs": "Nechte airbagy a předpínače neprodleně odborně zkontrolovat.",
+        "en": "Have the airbags and belt tensioners professionally checked promptly.",
+        "de": "Lassen Sie Airbags und Gurtstraffer unverzüglich fachkundig prüfen."
+      },
+      "note": {
+        "cs": "Řiďte se přesným hlášením a návodem konkrétního vozu. Obecný přehled nedokládá všechny modelové varianty.",
+        "en": "Follow the exact message and your vehicle’s manual. The general guide does not document every model variant.",
+        "de": "Beachten Sie die genaue Meldung und die Anleitung Ihres Fahrzeugs. Die allgemeine Übersicht belegt nicht jede Modellvariante."
+      },
+      "scopes": [
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/airbag-belt-tensioner-system-fault.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "429dca6aa1fabec00a878080f1154d56e93d13d0063ffae7e7c75045db0d0110",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-yellow-airbag-problem-4_3-2500x1865"
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/airbag-zluta.svg",
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Airbag.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Airbag.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/9/94/Kontrollleuchte_Airbag.svg",
+        "license": "Copyrighted free use",
+        "license_url": "",
+        "author": "de:Benutzer:chris828",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "214fb708237364dcf6ecbab42d7fbc438f0f492109f5e668ab1a56ac7b4aad37",
+        "file": "wp-content/uploads/kontrolky/airbag-zluta.svg"
+      },
+      "alt": {
+        "cs": "Airbagy nebo předpínače – závada",
+        "en": "Airbag or belt tensioner fault",
+        "de": "Airbag- oder Gurtstrafferstörung"
+      },
+      "kind": "warning"
+    },
+    {
+      "id": "vwcv-battery-charge-fault",
+      "graphic": "charging",
+      "color": "cervena",
+      "group": "elektricka-soustava",
+      "state": "steady",
+      "name": {
+        "cs": "Dobíjení – akumulátor se za jízdy nenabíjí",
+        "en": "Charging fault – battery not charging while driving",
+        "de": "Ladestörung – Batterie wird während der Fahrt nicht geladen"
+      },
+      "meaning": {
+        "cs": "Červená výstraha upozorňuje, že akumulátor se za jízdy nenabíjí. Neurčuje sama vadnou součást.",
+        "en": "The red warning indicates that the battery is not charging while driving. It does not identify the failed component.",
+        "de": "Die rote Warnung zeigt an, dass die Batterie während der Fahrt nicht geladen wird. Sie bestimmt nicht das defekte Bauteil."
+      },
+      "action": {
+        "cs": "Bezpečně zastavte a nepokračujte. Vypněte nepotřebné spotřebiče a zajistěte odbornou kontrolu elektrické soustavy.",
+        "en": "Stop safely and do not continue. Switch off unnecessary electrical consumers and obtain professional inspection of the electrical system.",
+        "de": "Halten Sie sicher an und fahren Sie nicht weiter. Schalten Sie unnötige Verbraucher aus und lassen Sie die elektrische Anlage fachkundig prüfen."
+      },
+      "note": {
+        "cs": "Řiďte se přesným hlášením a návodem konkrétního vozu. Obecný přehled nedokládá všechny modelové varianty.",
+        "en": "Follow the exact message and your vehicle’s manual. The general guide does not document every model variant.",
+        "de": "Beachten Sie die genaue Meldung und die Anleitung Ihres Fahrzeugs. Die allgemeine Übersicht belegt nicht jede Modellvariante."
+      },
+      "scopes": [
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/vehicle-battery.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "4c8404b3b17e99a8e97180fd4d5030daf680d59b909238bb5aa80e8a4df59b87",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-red-start-stop-system-problem-4_3-2500x1865"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Generator.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Generator.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Kontrollleuchte_Generator.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "author": "Chris828  at  German Wikipedia",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "588729de9bb9a1f4d483ee81c0b9f98911942108bdeb151f74188cf5418da859",
+        "file": "wp-content/uploads/kontrolky/charging-cervena.svg"
+      },
+      "checked": "2026-10-29",
+      "review_status": "generic-Volkswagen-UK-not-model-year-verified",
+      "graphic_path": "wp-content/uploads/kontrolky/charging-cervena.svg",
+      "alt": {
+        "cs": "Dobíjení – akumulátor se za jízdy nenabíjí",
+        "en": "Charging fault – battery not charging while driving",
+        "de": "Ladestörung – Batterie wird während der Fahrt nicht geladen"
+      },
+      "kind": "warning"
+    },
+    {
+      "id": "vwcv-oil-pressure-flashing",
+      "graphic": "oil-pressure",
+      "color": "cervena",
+      "group": "motor",
+      "state": "flashing",
+      "name": {
+        "cs": "Tlak motorového oleje – blikající červená výstraha",
+        "en": "Engine oil pressure – flashing red warning",
+        "de": "Motoröldruck – blinkende rote Warnung"
+      },
+      "meaning": {
+        "cs": "Blikající červený symbol s hlášením poruchy tlaku oleje upozorňuje na nedostatečné mazání. Správná hladina oleje neprokazuje správný tlak.",
+        "en": "A flashing red symbol with an oil-pressure fault message warns of inadequate lubrication. A correct oil level does not prove correct pressure.",
+        "de": "Das blinkende rote Symbol mit Öldruck-Fehlermeldung warnt vor unzureichender Schmierung. Ein korrekter Ölstand beweist keinen ausreichenden Druck."
+      },
+      "action": {
+        "cs": "Bezpečně zastavte a vypněte motor. Nenechávejte jej běžet. Případné další spuštění musí výslovně odpovídat návodu konkrétního vozidla; při nejasnosti zajistěte odbornou pomoc.",
+        "en": "Stop safely and switch off the engine. Do not leave it running. Any restart must explicitly follow the instructions for the specific vehicle; obtain professional assistance if uncertain.",
+        "de": "Halten Sie sicher an und stellen Sie den Motor ab. Lassen Sie ihn nicht laufen. Ein erneuter Start muss ausdrücklich der Anleitung des konkreten Fahrzeugs entsprechen; holen Sie bei Unklarheiten fachkundige Hilfe."
+      },
+      "note": {
+        "cs": "Řiďte se přesným hlášením a návodem konkrétního vozu. Obecný přehled nedokládá všechny modelové varianty.",
+        "en": "Follow the exact message and your vehicle’s manual. The general guide does not document every model variant.",
+        "de": "Beachten Sie die genaue Meldung und die Anleitung Ihres Fahrzeugs. Die allgemeine Übersicht belegt nicht jede Modellvariante."
+      },
+      "scopes": [
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/engine-oil-pressure.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "3dc115584983d08e744ab9419025311a3b84253a30dff9d45803340d1e26bdb4",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-red-lack-of-oil-pressure-4_3-2500x1865"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Oeldruck.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Oeldruck.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Kontrollleuchte_Oeldruck.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "author": "Benutzer:chris828",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "fdbcecc42495d2749f3fe2bb844c917621c6b62d6356fcafc9bd47f0605b8162",
+        "file": "wp-content/uploads/kontrolky/oil-pressure-cervena.svg"
+      },
+      "checked": "2026-10-29",
+      "review_status": "generic-Volkswagen-UK-not-model-year-verified",
+      "graphic_path": "wp-content/uploads/kontrolky/oil-pressure-cervena.svg",
+      "alt": {
+        "cs": "Tlak motorového oleje – blikající červená výstraha",
+        "en": "Engine oil pressure – flashing red warning",
+        "de": "Motoröldruck – blinkende rote Warnung"
+      },
+      "kind": "warning"
+    },
+    {
+      "id": "vwcv-steering-red",
+      "graphic": "steering-plain",
+      "color": "cervena",
+      "group": "pneumatiky",
+      "state": "steady",
+      "name": {
+        "cs": "Posilovač řízení – červená výstraha",
+        "en": "Power steering – red warning",
+        "de": "Lenkunterstützung – rote Warnung"
+      },
+      "meaning": {
+        "cs": "Červený symbol volantu v tomto přehledu upozorňuje na selhání elektromechanického posilovače.",
+        "en": "The red steering-wheel symbol in this guide indicates failure of electromechanical steering assistance.",
+        "de": "Das rote Lenkradsymbol dieser Übersicht zeigt den Ausfall der elektromechanischen Lenkunterstützung an."
+      },
+      "action": {
+        "cs": "Bezpečně zastavte, nepokračujte v jízdě a zajistěte neprodlenou odbornou kontrolu.",
+        "en": "Stop safely, do not continue driving and obtain immediate professional inspection.",
+        "de": "Halten Sie sicher an, fahren Sie nicht weiter und veranlassen Sie eine unverzügliche fachkundige Prüfung."
+      },
+      "note": {
+        "cs": "Řiďte se přesným hlášením a návodem konkrétního vozu. Obecný přehled nedokládá všechny modelové varianty.",
+        "en": "Follow the exact message and your vehicle’s manual. The general guide does not document every model variant.",
+        "de": "Beachten Sie die genaue Meldung und die Anleitung Ihres Fahrzeugs. Die allgemeine Übersicht belegt nicht jede Modellvariante."
+      },
+      "scopes": [
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/electromechanical-steering-warning.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "8d764e2a4bd2690845eab569da7185577c8d447ee63726cb6ef20b9c5fa4890b",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-red-steering-problem-4_3-2500x1865"
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/steering-plain-cervena.svg",
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Lenkhilfe.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Lenkhilfe.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/1/19/Kontrollleuchte_Lenkhilfe.svg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Chris828",
+        "modifications": "CC0 wheel outline retained from Kontrollleuchte Lenkhilfe.svg; separate exclamation-mark subpaths removed to match the independently reviewed plain-wheel VW Commercial Vehicles source; normalised viewBox and documented foreground colour. No OEM font embedded.",
+        "sha256": "68e181c9c3ba4eba1f3bf26f29b2dd1d9e914ca5d6d38de7e2172762af224a52",
+        "file": "wp-content/uploads/kontrolky/steering-plain-cervena.svg"
+      },
+      "alt": {
+        "cs": "Posilovač řízení – červená výstraha",
+        "en": "Power steering – red warning",
+        "de": "Lenkunterstützung – rote Warnung"
+      },
+      "kind": "warning"
+    },
+    {
+      "id": "vwcv-steering-yellow",
+      "graphic": "steering-plain",
+      "color": "zluta",
+      "group": "pneumatiky",
+      "state": "steady",
+      "name": {
+        "cs": "Posilovač řízení – žluté upozornění",
+        "en": "Power steering – amber warning",
+        "de": "Lenkunterstützung – gelbe Warnung"
+      },
+      "meaning": {
+        "cs": "Trvalé svícení může označovat omezené posilování nebo stav po odpojení a opětovném připojení akumulátoru.",
+        "en": "Steady illumination may indicate reduced steering assistance or a condition after battery disconnection and reconnection.",
+        "de": "Dauerlicht kann eine verminderte Lenkunterstützung oder einen Zustand nach Ab- und Wiederanklemmen der Batterie anzeigen."
+      },
+      "action": {
+        "cs": "Respektujte hlášení a návod konkrétního vozu. Při přetrvávání upozornění zajistěte odbornou kontrolu.",
+        "en": "Follow the exact message and vehicle manual. Obtain professional inspection if the warning persists.",
+        "de": "Beachten Sie die genaue Meldung und die Fahrzeuganleitung. Lassen Sie eine anhaltende Warnung fachkundig prüfen."
+      },
+      "note": {
+        "cs": "Řiďte se přesným hlášením a návodem konkrétního vozu. Obecný přehled nedokládá všechny modelové varianty.",
+        "en": "Follow the exact message and your vehicle’s manual. The general guide does not document every model variant.",
+        "de": "Beachten Sie die genaue Meldung und die Anleitung Ihres Fahrzeugs. Die allgemeine Übersicht belegt nicht jede Modellvariante."
+      },
+      "scopes": [
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/electromechanical-steering.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "288ef48757bc1fac0c1722f319664d4140c4a0033862d41a6fcb5d962481b527",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-yellow-steer-by-wire-4_3-2500x1865"
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/steering-plain-zluta.svg",
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Lenkhilfe.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Lenkhilfe.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/1/19/Kontrollleuchte_Lenkhilfe.svg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Chris828",
+        "modifications": "CC0 wheel outline retained from Kontrollleuchte Lenkhilfe.svg; separate exclamation-mark subpaths removed to match the independently reviewed plain-wheel VW Commercial Vehicles source; normalised viewBox and documented foreground colour. No OEM font embedded.",
+        "sha256": "c0e3c9d193bee393a354c692641dcff4969035909a41f283b780f19a6dbe7418",
+        "file": "wp-content/uploads/kontrolky/steering-plain-zluta.svg"
+      },
+      "alt": {
+        "cs": "Posilovač řízení – žluté upozornění",
+        "en": "Power steering – amber warning",
+        "de": "Lenkunterstützung – gelbe Warnung"
+      },
+      "kind": "warning"
+    },
+    {
+      "id": "vwcv-steering-yellow-flash",
+      "graphic": "steering-plain",
+      "color": "zluta",
+      "group": "pneumatiky",
+      "state": "flashing",
+      "name": {
+        "cs": "Zámek řízení – žlutý symbol bliká",
+        "en": "Steering lock – flashing amber symbol",
+        "de": "Lenkungssperre – gelbes Symbol blinkt"
+      },
+      "meaning": {
+        "cs": "Blikání může v tomto přehledu souviset s mechanicky namáhaným nebo neodemknutým či nezamknutým sloupkem řízení.",
+        "en": "In this guide, flashing can relate to a strained steering column or a column that has not unlocked or locked.",
+        "de": "Das Blinken kann in dieser Übersicht mit einer verspannten, nicht entriegelten oder nicht verriegelten Lenksäule zusammenhängen."
+      },
+      "action": {
+        "cs": "Postup určete podle přesného hlášení a návodu; pokud řízení nelze bezpečně odemknout, zajistěte odbornou pomoc.",
+        "en": "Follow the exact message and manual; obtain professional assistance if the steering cannot be safely unlocked.",
+        "de": "Richten Sie sich nach genauer Meldung und Anleitung; lässt sich die Lenkung nicht sicher entriegeln, holen Sie fachkundige Hilfe."
+      },
+      "note": {
+        "cs": "Řiďte se přesným hlášením a návodem konkrétního vozu. Obecný přehled nedokládá všechny modelové varianty.",
+        "en": "Follow the exact message and your vehicle’s manual. The general guide does not document every model variant.",
+        "de": "Beachten Sie die genaue Meldung und die Anleitung Ihres Fahrzeugs. Die allgemeine Übersicht belegt nicht jede Modellvariante."
+      },
+      "scopes": [
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/electromechanical-steering.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "288ef48757bc1fac0c1722f319664d4140c4a0033862d41a6fcb5d962481b527",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-yellow-steer-by-wire-4_3-2500x1865"
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/steering-plain-zluta.svg",
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Lenkhilfe.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Lenkhilfe.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/1/19/Kontrollleuchte_Lenkhilfe.svg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Chris828",
+        "modifications": "CC0 wheel outline retained from Kontrollleuchte Lenkhilfe.svg; separate exclamation-mark subpaths removed to match the independently reviewed plain-wheel VW Commercial Vehicles source; normalised viewBox and documented foreground colour. No OEM font embedded.",
+        "sha256": "c0e3c9d193bee393a354c692641dcff4969035909a41f283b780f19a6dbe7418",
+        "file": "wp-content/uploads/kontrolky/steering-plain-zluta.svg"
+      },
+      "alt": {
+        "cs": "Zámek řízení – žlutý symbol bliká",
+        "en": "Steering lock – flashing amber symbol",
+        "de": "Lenkungssperre – gelbes Symbol blinkt"
+      },
+      "kind": "warning"
     }
   ],
   "pending_items": [
@@ -9073,99 +11692,52 @@
   ],
   "gaps": [
     {
-      "brands": [
-        "volkswagen"
-      ],
-      "models": "Všechny evropské modely a modelové roky od 2010; obecné příklady níže nemají ročník.",
-      "missing": "Evropské modelové návody se symboly a pokyny, vydání a oprávněně dostupné přesné grafické varianty.",
-      "verified": "15 obecných příkladů oficiálního přehledu Volkswagen UK.",
-      "access": "Veřejný digitální návod vyžaduje VIN; žádný VIN nebyl poskytnut.",
-      "owner_input": "Návody k obsluze nebo přístup k jejich složce; seznam konkrétních modelů/generací a roků."
+      "brand": "volkswagen",
+      "description": {
+        "cs": "Volkswagen: původních 15 obecných příkladů UK zůstává bez doloženého modelového roku. Pro kontrolu jsou konkrétně potřeba evropské návody Golf VII 2015, Golf VIII 2020 a ID.3 2021; další modely od roku 2010 nejsou tímto výčtem pokryté. Rakouský portál nově uvádí volbu modelu bez VIN, jeho načtení je zde blokováno (403).",
+        "en": "Volkswagen: the original 15 general UK examples still have no documented model year. Specific verification requires European manuals for Golf VII 2015, Golf VIII 2020 and ID.3 2021; this list does not cover other models from 2010. The Austrian portal now advertises model selection without a VIN, but loading it here is blocked (403).",
+        "de": "Volkswagen: Für die ursprünglichen 15 allgemeinen UK-Beispiele ist weiterhin kein Modelljahr belegt. Konkret benötigt werden europäische Anleitungen für Golf VII 2015, Golf VIII 2020 und ID.3 2021; andere Modelle ab 2010 sind damit nicht abgedeckt. Das österreichische Portal bietet inzwischen eine Modellauswahl ohne FIN an, wird hier jedoch blockiert (403)."
+      }
     },
     {
-      "brands": [
-        "audi"
-      ],
-      "models": "Všechny evropské modely a modelové roky od 2010.",
-      "missing": "Evropské návody k obsluze podle modelu/roku a přesné symboly.",
-      "verified": "Přístupný portál; doplňkový SSP 667 k parkovacím systémům. Žádné přenesení platnosti z Volkswagenu.",
-      "access": "Veřejný endpoint seznamu modelů vrací v tomto prostředí 403. Americký výchozí region nebyl použit jako důkaz.",
-      "owner_input": "Evropské návody nebo přístup k jejich složce."
+      "brand": "audi",
+      "description": {
+        "cs": "Audi: žádné evropské vydání není v zákaznickém obrazovém přehledu potvrzené. Konkrétně chybí A4 8W 01.2016 (8W0012705AC), A8 4N 2018 a Q4 e-tron 2022. Seznam modelů i výrobcem zveřejněné evropské odkazy vracejí 403. SSP 668 (84 stran) byl zpracován jako technický doplněk k A8; nenahrazuje pokyny pro řidiče. Nalezená nezávislá HTML kopie A4 2014 nebyla označena za ověřený originál.",
+        "en": "Audi: no European edition is confirmed in the customer-facing illustrated overview. Specifically missing are A4 8W 01.2016 (8W0012705AC), A8 4N 2018 and Q4 e-tron 2022. The model list and manufacturer-published European links return 403. SSP 668 (84 pages) was reviewed as technical context for the A8, not as a replacement for driver instructions. An independent A4 2014 HTML copy was not accepted as a verified original.",
+        "de": "Audi: In der bebilderten Kundenübersicht ist noch keine europäische Ausgabe bestätigt. Konkret fehlen A4 8W 01.2016 (8W0012705AC), A8 4N 2018 und Q4 e-tron 2022. Die Modellliste und vom Hersteller veröffentlichte europäische Links liefern 403. SSP 668 (84 Seiten) wurde als technischer Hintergrund zum A8 geprüft, ersetzt aber keine Fahrerhinweise. Eine unabhängige HTML-Kopie zum A4 2014 wurde nicht als verifiziertes Original eingestuft."
+      }
     },
     {
-      "brands": [
-        "skoda"
-      ],
-      "models": "Všechny evropské modely a modelové roky od 2010.",
-      "missing": "Dostupné evropské návody s grafickými symboly a modelovým rozsahem.",
-      "verified": "Portál a jeho veřejná konfigurace; SSP na Disku nalezeny jako doplňkový zdroj.",
-      "access": "Zdroj aplikace je v tomto prostředí nedostupný (403); starší oficiální služba návodů vrací 503.",
-      "owner_input": "Evropské návody nebo přístup k jejich složce."
+      "brand": "skoda",
+      "description": {
+        "cs": "Škoda: zkontrolované vybrané položky pocházejí z kopie návodu Octavia 5E 11.2018 (5E0012715AQ) a Enyaq iV 11.2020, německy. Vydání není modelový rok a nepokrývá ostatní roky. Pro srovnání chybí původní soubory výrobce. Dále chybí Octavia 07.2019, Superb 05.2010 a pokyny digitálního návodu Octavia iV 11.2020 (5E4012715CB). Přesné dokumenty a výsledky přístupu jsou níže.",
+        "en": "Škoda: selected reviewed entries come from copies of the Octavia 5E 11.2018 manual (5E0012715AQ) and the German Enyaq iV 11.2020 manual. An edition is not a model year and does not cover other years. The original manufacturer files are still needed for comparison. Octavia 07.2019, Superb 05.2010 and the instructions in the Octavia iV 11.2020 digital manual (5E4012715CB) also remain missing. Exact documents and access outcomes are listed below.",
+        "de": "Škoda: Ausgewählte geprüfte Einträge stammen aus Kopien der Anleitung Octavia 5E 11.2018 (5E0012715AQ) und der deutschen Anleitung Enyaq iV 11.2020. Eine Ausgabe ist kein Modelljahr und deckt andere Jahre nicht ab. Für den Abgleich fehlen die Hersteller-Originaldateien. Außerdem fehlen Octavia 07.2019, Superb 05.2010 und die Fahrerhinweise der digitalen Anleitung Octavia iV 11.2020 (5E4012715CB). Genaue Dokumente und Zugriffsergebnisse sind unten aufgeführt."
+      }
     },
     {
-      "brands": [
-        "volkswagen-uzitkove-vozy"
-      ],
-      "models": "Všechny evropské užitkové modely a modelové roky od 2010.",
-      "missing": "Modelové návody včetně variant pohonu a provedení přístrojového panelu.",
-      "verified": "Oficiální portál vyžaduje VIN; servisní SSP nepovažovány za náhradu pokynů pro řidiče.",
-      "access": "Digitální manuál vyžaduje skutečný VIN; nebyl vymyšlen ani použit cizí zákaznický údaj.",
-      "owner_input": "Evropské návody k obsluze nebo přístup ke složce."
+      "brand": "volkswagen-uzitkove-vozy",
+      "description": {
+        "cs": "Volkswagen Užitkové vozy: přidané příklady jsou samostatně ověřené z obecného oficiálního přehledu této značky UK. Nejde o modelové přiřazení. Potřebné jsou například návody Caddy 2016 a 2021, Transporter T6 2016, T6.1 2020, nový Transporter 2025 a ID. Buzz 2023. Nalezené přestavbářské směrnice nejsou návody k obsluze. Příručky Crafter a Amarok také nejsou pokryté.",
+        "en": "Volkswagen Commercial Vehicles: the added examples were independently checked against this brand’s general official UK guide. They are not model-specific assignments. Needed manuals include Caddy 2016 and 2021, Transporter T6 2016, T6.1 2020, new Transporter 2025 and ID. Buzz 2023. Located bodybuilder guidelines are not owner’s manuals. Crafter and Amarok manuals are also not covered.",
+        "de": "Volkswagen Nutzfahrzeuge: Die ergänzten Beispiele wurden eigenständig anhand der allgemeinen offiziellen UK-Übersicht dieser Marke geprüft. Es sind keine Modellzuordnungen. Benötigt werden unter anderem Caddy 2016 und 2021, Transporter T6 2016, T6.1 2020, neuer Transporter 2025 und ID. Buzz 2023. Gefundene Aufbaurichtlinien sind keine Betriebsanleitungen. Auch Crafter- und Amarok-Anleitungen sind noch nicht abgedeckt."
+      }
     },
     {
-      "brands": [
-        "seat"
-      ],
-      "models": "Všechny modely, roky a symboly mimo jednotlivé výslovně doložené položky zůstávají nepokryté.",
-      "missing": "Dokončit revizi dalších dostupných vydání a dohledat přesnou grafiku zbývajících variant; interval mezi vydáními nelze automaticky doplnit.",
-      "verified": "Jednotlivé kontrolky v 19 modelových vydáních; nejde o úplnou kontrolu těchto vozidel.",
-      "access": "Dostupné zdroje nejsou kompletní potvrzením všech vozidel od roku 2010. Jeden z nových dokumentů Tarraco je pouze dvacetistránkový doplněk.",
-      "owner_input": "Případné chybějící evropské návody a kontrola technikem; samotné další dostupné podklady mohu zpracovávat bez potvrzení.",
-      "verified_model_editions": [
-        "Alhambra MY2011 (Edition 07.10)",
-        "Alhambra MY2023 (Edition 06.22)",
-        "Altea MY2010 (Edition 07.09)",
-        "Arona MY2018 (Edition 11.17)",
-        "Arona MY2026 (Edition 11.25)",
-        "Ateca MY2017 (Edition 11.16)",
-        "Ateca MY2026 (Edition 11.25)",
-        "Ibiza MY2010 (Edition 07.09)",
-        "Ibiza MY2018 (Edition 11.17)",
-        "Ibiza MY2026 (Edition 11.25)",
-        "Leon MY2010 (Edition 07.09)",
-        "Leon MY2014 (Edition 10.13)",
-        "Leon MY2021 (Edition 11.20)",
-        "Leon MY2026 (Edition 11.25)",
-        "Mii MY2013 (Edition 07.12)",
-        "Mii electric MY2020 (Edition 11.19)",
-        "Mii electric MY2022 (Edition 06.21)",
-        "Tarraco MY2019 (Edition 11.18)",
-        "Toledo MY2013 (Edition 05.12)"
-      ]
+      "brand": "seat",
+      "description": {
+        "cs": "SEAT a CUPRA: zachované položky platí jen pro výslovně uvedená vydání a výbavu. Kompletní revize všech modelů a let od 2010, resp. CUPRA od vzniku samostatné značky, není dokončená. Mezery mezi vydáními se automaticky nevyplňují.",
+        "en": "SEAT and CUPRA: retained entries apply only to explicitly listed editions and equipment. A complete review of all models and years from 2010, or CUPRA from its establishment as a separate brand, remains incomplete. Gaps between editions are not automatically filled.",
+        "de": "SEAT und CUPRA: Die erhaltenen Einträge gelten nur für ausdrücklich genannte Ausgaben und Ausstattungen. Die vollständige Prüfung aller Modelle und Jahre ab 2010 beziehungsweise CUPRA seit Gründung als eigenständige Marke ist noch nicht abgeschlossen. Lücken zwischen Ausgaben werden nicht automatisch geschlossen."
+      }
     },
     {
-      "brands": [
-        "cupra"
-      ],
-      "models": "Všechny modely, roky a symboly mimo jednotlivé výslovně doložené položky zůstávají nepokryté.",
-      "missing": "Dokončit revizi dalších modelových vydání a přesné grafické varianty pro elektrický pohon, Travel Assist, Front Assist a další stavy.",
-      "verified": "Jednotlivé kontrolky v 12 modelových vydáních; nejde o úplnou kontrolu těchto vozidel.",
-      "access": "MY se nerovná výrobnímu roku. Přístupné ostatní návody zůstávají označeny jako stažené, nikoli hotově ověřené.",
-      "owner_input": "Kontrola automotive technikem a případné chybějící návody; další dostupné zdroje mohu zpracovávat bez potvrzení.",
-      "verified_model_editions": [
-        "Ateca MY2019 (Edition 09.18)",
-        "Ateca MY2026 (Edition 11.25)",
-        "Born MY2022 (Edition 08.21)",
-        "Born MY2026 (Edition 07.25)",
-        "Formentor MY2021 (Edition 07.20)",
-        "Formentor MY2026 (Edition 11.25)",
-        "Leon MY2021 (Edition 08.20)",
-        "Leon MY2026 (Edition 11.25)",
-        "Tavascan MY2024 (Edition 12.23)",
-        "Tavascan MY2025 (Edition 11.24)",
-        "Terramar MY2025 (Edition 09.24)",
-        "Terramar MY2026 (Edition 11.25)"
-      ]
+      "brand": "cupra",
+      "description": {
+        "cs": "SEAT a CUPRA: zachované položky platí jen pro výslovně uvedená vydání a výbavu. Kompletní revize všech modelů a let od 2010, resp. CUPRA od vzniku samostatné značky, není dokončená. Mezery mezi vydáními se automaticky nevyplňují.",
+        "en": "SEAT and CUPRA: retained entries apply only to explicitly listed editions and equipment. A complete review of all models and years from 2010, or CUPRA from its establishment as a separate brand, remains incomplete. Gaps between editions are not automatically filled.",
+        "de": "SEAT und CUPRA: Die erhaltenen Einträge gelten nur für ausdrücklich genannte Ausgaben und Ausstattungen. Die vollständige Prüfung aller Modelle und Jahre ab 2010 beziehungsweise CUPRA seit Gründung als eigenständige Marke ist noch nicht abgeschlossen. Lücken zwischen Ausgaben werden nicht automatisch geschlossen."
+      }
     }
   ],
   "supplementary_sources": [
@@ -9194,6 +11766,10 @@
     {
       "title": "CUPRA Born MC06, technical status 10.22",
       "usage": "Text inspected for technical context. Private document not republished; no graphics extracted for the public page."
+    },
+    {
+      "title": "Audi SSP 668 – A8 (type 4N), driver assistance systems; Czech internal training copy",
+      "use": "Technical context only; does not establish owner instructions or republication rights for the original graphics."
     }
   ],
   "graphics": {
@@ -9204,8 +11780,8 @@
       "license": "CC BY-SA 3.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
       "author": "Ehsnils",
-      "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-      "sha256": "ca39f2e68862739d8a609d156ed7155c775e6b4ee87c35ca86fa58c718ce9158",
+      "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+      "sha256": "ecd04f7548b919e7e770eb0610b5bc57af7f2df5ad55adca955441ca82fd5ad7",
       "file": "wp-content/uploads/kontrolky/brake-cervena.svg"
     },
     "pads-zluta": {
@@ -9226,8 +11802,8 @@
       "license": "CC BY-SA 3.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
       "author": "Ehsnils",
-      "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-      "sha256": "e3364f56411d41ca944634a66a61bc0cb42e819cc95948d60243d73c1c4e5f08",
+      "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+      "sha256": "5ef791a7348e6bc504718d2434443149036e64f6e3f9eda5d334f66f850b0475",
       "file": "wp-content/uploads/kontrolky/abs-zluta.svg"
     },
     "esp-basic-zluta": {
@@ -9237,8 +11813,8 @@
       "license": "Public domain",
       "license_url": "",
       "author": "Chris828  at  German Wikipedia",
-      "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-      "sha256": "802f1eebf4cfe51f740eb1d349111a06325833761f51dd19f0ecfbf36a07842a",
+      "modifications": "Public-domain car and skid outlines retained; enclosing triangle removed to match the independently reviewed modern ESC variant; documented amber foreground.",
+      "sha256": "b8fc706ebe617424fa82921d4da8494ecaf0025b064caed068ba326605778afe",
       "file": "wp-content/uploads/kontrolky/esp-basic-zluta.svg"
     },
     "parking-cervena": {
@@ -9347,8 +11923,8 @@
       "license": "CC BY-SA 3.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
       "author": "Ehsnils",
-      "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-      "sha256": "52d5746be7bc43b84dea65a165c8aaab7f90f02b4712e3bf620090edef807c05",
+      "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+      "sha256": "f5a110dc1ae17a9fa3a514273745624883888c2ded59b9479063d4f33d124ce9",
       "file": "wp-content/uploads/kontrolky/high-beam-modra.svg"
     },
     "rear-fog-zluta": {
@@ -9358,8 +11934,8 @@
       "license": "CC BY-SA 3.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
       "author": "Ehsnils",
-      "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-      "sha256": "7b5296834abce40ea0f91b8ae41d7a5c587443fbbaad7f95d30de8366f3905f2",
+      "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+      "sha256": "e67d67fc70d8f4633376b6dcc93b32f781b8f51956419ac50bf0b7019cf9261e",
       "file": "wp-content/uploads/kontrolky/rear-fog-zluta.svg"
     },
     "bulb-zluta": {
@@ -9369,8 +11945,8 @@
       "license": "CC BY-SA 3.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
       "author": "Ehsnils",
-      "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-      "sha256": "e28a6302c6cae7d077a184b6bab58fb19c2d936c06c6f02f31b7b27d69143f60",
+      "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+      "sha256": "5e73516dffb44e793c24e2e5a4aad793f930ea297026c04dc3915ed2754adbe3",
       "file": "wp-content/uploads/kontrolky/bulb-zluta.svg"
     },
     "turn-signals-zelena": {
@@ -9380,8 +11956,8 @@
       "license": "CC BY-SA 3.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
       "author": "Ehsnils",
-      "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-      "sha256": "fbd1ea157e1f639a781bfa0babfa17e8f4dbcdabc7a32e0e012aa23ebad5e1a3",
+      "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+      "sha256": "ff886e947c17ddc1c1f5425336af08406588e1ba9ba84390c36b22a22034d017",
       "file": "wp-content/uploads/kontrolky/turn-signals-zelena.svg"
     },
     "start-stop-bila": {
@@ -9531,8 +12107,8 @@
       "license": "CC0",
       "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "author": "Chris828",
-      "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-      "sha256": "d1e2c2dd549ec182d148100a5b9034307354fb81d2e1d7d8ca2cd9ddab7c38df",
+      "modifications": "One complete CC0 wheel/exclamation pictogram selected from the two-colour source sheet, preserving its contour; viewBox normalised; independently documented colour.",
+      "sha256": "d1cd821e8524fe8384c2bb83829aa79d798a707b02404b0a3617ed480a8fec9a",
       "file": "wp-content/uploads/kontrolky/steering-alert-cervena.svg"
     },
     "steering-alert-zluta": {
@@ -9542,8 +12118,8 @@
       "license": "CC0",
       "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "author": "Chris828",
-      "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-      "sha256": "1ce83c8496a3098305708c681c7844c269ac871dd3d3a0716024864ccef493ac",
+      "modifications": "One complete CC0 wheel/exclamation pictogram selected from the two-colour source sheet, preserving its contour; viewBox normalised; independently documented colour.",
+      "sha256": "14347a4cf4536fa3ddf55a5f8af6ff266d83a669cedf4293999d7eb44e1a9c63",
       "file": "wp-content/uploads/kontrolky/steering-alert-zluta.svg"
     },
     "central-cervena": {
@@ -9597,8 +12173,8 @@
       "license": "CC BY-SA 3.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
       "author": "Ehsnils",
-      "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
-      "sha256": "bcda22d2b3a9d7cad9210c5773574cc910f883959f10d27fbe2ab5798ad3fa1f",
+      "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed.",
+      "sha256": "75ca90f0cb477952a098bb599565a03af616f1e3011f3bc05d3484502bbd267a",
       "file": "wp-content/uploads/kontrolky/headlight-range-zluta.svg"
     },
     "cruise-zelena": {
@@ -9666,15 +12242,100 @@
       "modifications": "Shape preserved; colour changed only for the explicitly documented Toledo MY2013 state.",
       "sha256": "92d37ba68bb9c2804e18503f792c7e794c833c8069a5add53cc3dc609bd9fa3e",
       "file": "wp-content/uploads/kontrolky/coolant-modra.svg"
+    },
+    "steering-plain-cervena": {
+      "title": "File:Kontrollleuchte Lenkhilfe.svg",
+      "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Lenkhilfe.svg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/1/19/Kontrollleuchte_Lenkhilfe.svg",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author": "Chris828",
+      "modifications": "CC0 wheel outline retained from Kontrollleuchte Lenkhilfe.svg; separate exclamation-mark subpaths removed to match the independently reviewed plain-wheel VW Commercial Vehicles source; normalised viewBox and documented foreground colour. No OEM font embedded.",
+      "sha256": "68e181c9c3ba4eba1f3bf26f29b2dd1d9e914ca5d6d38de7e2172762af224a52",
+      "file": "wp-content/uploads/kontrolky/steering-plain-cervena.svg"
+    },
+    "steering-plain-zluta": {
+      "title": "File:Kontrollleuchte Lenkhilfe.svg",
+      "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Lenkhilfe.svg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/1/19/Kontrollleuchte_Lenkhilfe.svg",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author": "Chris828",
+      "modifications": "CC0 wheel outline retained from Kontrollleuchte Lenkhilfe.svg; separate exclamation-mark subpaths removed to match the independently reviewed plain-wheel VW Commercial Vehicles source; normalised viewBox and documented foreground colour. No OEM font embedded.",
+      "sha256": "c0e3c9d193bee393a354c692641dcff4969035909a41f283b780f19a6dbe7418",
+      "file": "wp-content/uploads/kontrolky/steering-plain-zluta.svg"
     }
   },
   "counts": {
-    "semantic_records": 73,
+    "semantic_records": 86,
     "legacy_generic_volkswagen": 15,
-    "model_documented_semantic_records": 58,
-    "model_edition_assignments": 225,
-    "partially_reviewed_manual_editions": 31,
-    "shared_graphic_colour_variants": 43
+    "model_documented_semantic_records": 65,
+    "model_edition_assignments": 286,
+    "partially_reviewed_manual_editions": 33,
+    "shared_graphic_colour_variants": 45,
+    "distinct_pictogram_shapes": 34,
+    "by_brand": {
+      "volkswagen": {
+        "distinct_pictogram_shapes": 15,
+        "graphic_colour_variants": 15,
+        "semantic_variants": 15,
+        "model_edition_assignments": 0,
+        "generic_brand_assignments": 15,
+        "reviewed_manual_editions": 0,
+        "first_party_hosted_manual_editions": 0,
+        "third_party_hosted_manual_editions": 0
+      },
+      "audi": {
+        "distinct_pictogram_shapes": 0,
+        "graphic_colour_variants": 0,
+        "semantic_variants": 0,
+        "model_edition_assignments": 0,
+        "generic_brand_assignments": 0,
+        "reviewed_manual_editions": 0,
+        "first_party_hosted_manual_editions": 0,
+        "third_party_hosted_manual_editions": 0
+      },
+      "skoda": {
+        "distinct_pictogram_shapes": 26,
+        "graphic_colour_variants": 32,
+        "semantic_variants": 43,
+        "model_edition_assignments": 61,
+        "generic_brand_assignments": 0,
+        "reviewed_manual_editions": 2,
+        "first_party_hosted_manual_editions": 0,
+        "third_party_hosted_manual_editions": 2
+      },
+      "seat": {
+        "distinct_pictogram_shapes": 27,
+        "graphic_colour_variants": 34,
+        "semantic_variants": 43,
+        "model_edition_assignments": 93,
+        "generic_brand_assignments": 0,
+        "reviewed_manual_editions": 19,
+        "first_party_hosted_manual_editions": 19,
+        "third_party_hosted_manual_editions": 0
+      },
+      "cupra": {
+        "distinct_pictogram_shapes": 30,
+        "graphic_colour_variants": 37,
+        "semantic_variants": 49,
+        "model_edition_assignments": 132,
+        "generic_brand_assignments": 0,
+        "reviewed_manual_editions": 12,
+        "first_party_hosted_manual_editions": 12,
+        "third_party_hosted_manual_editions": 0
+      },
+      "volkswagen-uzitkove-vozy": {
+        "distinct_pictogram_shapes": 21,
+        "graphic_colour_variants": 23,
+        "semantic_variants": 24,
+        "model_edition_assignments": 0,
+        "generic_brand_assignments": 24,
+        "reviewed_manual_editions": 0,
+        "first_party_hosted_manual_editions": 0,
+        "third_party_hosted_manual_editions": 0
+      }
+    }
   },
   "pending_model_evidence": [
     {
@@ -9725,5 +12386,182 @@
       },
       "checked": "2026-10-29"
     }
-  ]
+  ],
+  "source_access_log": [
+    {
+      "brand": "audi",
+      "model": "A4 (8W)",
+      "requested_year": "2016",
+      "document": "European German owner manual, 8W0012705AC, edition 01.2016",
+      "url": "https://ownersmanual.audi.com/home/de_DE",
+      "result": "Model-list request /web/models/ returns HTTP 403. Official GPSR A4 link also returns 403. Third-party HTML copy for A4 2014 located, not accepted as verified official edition.",
+      "needed": "PDF or export of the European owner manual including warning overview and referenced instruction pages.",
+      "summary": {
+        "cs": "A4 8W, návod 01.2016, číslo 8W0012705AC: evropský portál i seznam modelů vrací 403. Potřebuji příslušný PDF návod nebo export.",
+        "en": "A4 8W, manual 01.2016, part 8W0012705AC: European portal and model list return 403. The PDF manual or an export is needed.",
+        "de": "A4 8W, Anleitung 01.2016, Nummer 8W0012705AC: Europäisches Portal und Modellliste liefern 403. Benötigt wird die PDF-Anleitung oder ein Export."
+      }
+    },
+    {
+      "brand": "audi",
+      "model": "Q4 e-tron",
+      "requested_year": "2022",
+      "document": "European owner manual; exact edition not established",
+      "url": "https://ownersmanual.audi.com/web/rdw/start?vin=GPSRSAMPLEQ4E0001&language=de_DE&origin=GPSR",
+      "result": "Official European model portal blocked (403); no year-specific instruction pages obtained. The GPSR sample link is manufacturer-published, not a customer VIN.",
+      "needed": "European model-year 2022 owner manual, warning overview and electric-drive/assistance chapters.",
+      "summary": {
+        "cs": "Q4 e-tron 2022: konkrétní evropské vydání dosud nebylo zpřístupněno. Potřebný je návod s přehledem symbolů a kapitolami o pohonu a asistentech.",
+        "en": "Q4 e-tron 2022: the specific European edition remains inaccessible. The manual’s symbol overview and drive/assistance chapters are needed.",
+        "de": "Q4 e-tron 2022: Die konkrete europäische Ausgabe ist noch nicht zugänglich. Benötigt werden Symbolübersicht und Kapitel zu Antrieb und Assistenzsystemen."
+      }
+    },
+    {
+      "brand": "audi",
+      "model": "A8 (4N)",
+      "requested_year": "2018",
+      "document": "European owner manual; SSP 668 available as supplementary technical source",
+      "url": "https://ownersmanual.audi.com/home/de_DE",
+      "result": "Model list blocked (403). SSP 668 reviewed for system context, no driver instructions or graphic reuse rights inferred.",
+      "needed": "European owner manual for A8 4N 2018 with exact edition.",
+      "summary": {
+        "cs": "A8 4N 2018: dostupný SSP 668 nenahrazuje návod k obsluze. Potřebuji evropské vydání návodu včetně pokynů pro řidiče.",
+        "en": "A8 4N 2018: available SSP 668 does not replace the owner’s manual. A European manual including driver instructions is needed.",
+        "de": "A8 4N 2018: Das verfügbare SSP 668 ersetzt keine Betriebsanleitung. Benötigt wird die europäische Ausgabe einschließlich Fahrerhinweisen."
+      }
+    },
+    {
+      "brand": "skoda",
+      "model": "Octavia (5E)",
+      "requested_year": null,
+      "document": "Owner manual 07.2019, Czech",
+      "url": "https://ownersmanuals.blob.core.windows.net/ownersmanuals/cz/Octavia_5E/07-2019/OwnersManual.pdf",
+      "result": "URL confirmed by official public catalogue; PDF connection denied by runtime proxy (403). A separate manufacturer-authored 11.2018 PDF copy was reviewed, not relabelled 07.2019.",
+      "needed": "The 07.2019 PDF, or network access to its official download.",
+      "summary": {
+        "cs": "Octavia 5E 07.2019: přesný soubor potvrzuje oficiální katalog, stažení blokuje proxy (403). Zpracovaná kopie 11.2018 není vydávána za toto vydání.",
+        "en": "Octavia 5E 07.2019: the official catalogue confirms the exact file; the proxy blocks its download (403). The reviewed 11.2018 copy is not presented as this edition.",
+        "de": "Octavia 5E 07.2019: Der offizielle Katalog bestätigt die genaue Datei; der Proxy blockiert den Download (403). Die geprüfte Kopie 11.2018 wird nicht als diese Ausgabe ausgegeben."
+      }
+    },
+    {
+      "brand": "skoda",
+      "model": "Octavia iV (NX)",
+      "requested_year": null,
+      "document": "Digital owner manual 11.2020, part 5E4012715CB, cs_CZ",
+      "url": "https://manual.skoda-auto.com/005/cs-BZ/api/Manuals?model=Octavia_IV_NX&edition=11-2020&market=C&language=cs",
+      "result": "Official catalogue accessible; digital entry point requires a functioning manual session. No instruction content confirmed.",
+      "needed": "PDF/export of this edition including PHEV and assistance symbols.",
+      "summary": {
+        "cs": "Octavia iV 11.2020: katalog zpřístupnil identifikaci 5E4012715CB, nikoli samotné pokyny. Potřebuji export tohoto digitálního návodu.",
+        "en": "Octavia iV 11.2020: the catalogue provides identifier 5E4012715CB, not the instruction content. An export of this digital manual is needed.",
+        "de": "Octavia iV 11.2020: Der Katalog liefert die Kennung 5E4012715CB, nicht den Inhalt der Fahrerhinweise. Benötigt wird ein Export dieser digitalen Anleitung."
+      }
+    },
+    {
+      "brand": "skoda",
+      "model": "Enyaq iV (5A)",
+      "requested_year": null,
+      "document": "Digital owner manual 11.2020, part 5LG012715CE, cs_CZ",
+      "url": "https://manual.skoda-auto.com/005/cs-BZ/api/Manuals?model=Enyaq_IV_5A&edition=11-2020&market=C&language=cs",
+      "result": "Official catalogue accessible. Normal digital entry POST returns error ERR_01_003_TP. Manufacturer-authored German PDF copy of edition 11.2020 reviewed; it is explicitly labelled as third-party hosted.",
+      "needed": "Official PDF/export or functioning public digital manual for comparison with the reviewed copy.",
+      "summary": {
+        "cs": "Enyaq iV 11.2020: běžný vstup do českého digitálního návodu 5LG012715CE vrací ERR_01_003_TP. Prohlédnuta byla zvlášť označená německá PDF kopie. Chybí srovnání s originálním souborem.",
+        "en": "Enyaq iV 11.2020: normal access to Czech digital manual 5LG012715CE returns ERR_01_003_TP. A separately identified German PDF copy was reviewed. Comparison with the original file remains outstanding.",
+        "de": "Enyaq iV 11.2020: Der normale Zugang zur tschechischen digitalen Anleitung 5LG012715CE liefert ERR_01_003_TP. Eine gesondert gekennzeichnete deutsche PDF-Kopie wurde geprüft. Der Abgleich mit der Originaldatei steht noch aus."
+      }
+    },
+    {
+      "brand": "skoda",
+      "model": "Superb (3T)",
+      "requested_year": null,
+      "document": "Czech owner manual 05.2010",
+      "url": "https://ownersmanuals.blob.core.windows.net/ownersmanuals/cz/Superb_3T/05-2010/OwnersManual.pdf",
+      "result": "Official catalogue confirms edition and download, but PDF connection denied by proxy (403).",
+      "needed": "The exact 05.2010 PDF or access to its official download.",
+      "summary": {
+        "cs": "Superb 3T 05.2010: katalog potvrzuje konkrétní soubor, proxy blokuje stažení (403). Potřebuji tento PDF návod.",
+        "en": "Superb 3T 05.2010: the catalogue confirms the specific file; the proxy blocks download (403). This PDF manual is needed.",
+        "de": "Superb 3T 05.2010: Der Katalog bestätigt die konkrete Datei; der Proxy blockiert den Download (403). Benötigt wird diese PDF-Anleitung."
+      }
+    },
+    {
+      "brand": "volkswagen-uzitkove-vozy",
+      "model": "Caddy (SA / SB)",
+      "requested_year": "2016 / 2021",
+      "document": "European complete owner manuals, exact editions not established",
+      "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/owners-manuals.html",
+      "result": "Owner manual access requests a VIN. Located Caddy 2016/2021 PDFs are bodybuilder guidelines, not owner manuals; they were not used as warning-light evidence.",
+      "needed": "European Caddy owner manuals for these generations; warning overview and referenced instruction pages.",
+      "summary": {
+        "cs": "Caddy 2016 a 2021: nalezené PDF jsou přestavbářské směrnice. Potřebuji evropské návody k obsluze příslušných generací, nikoli tyto technické směrnice.",
+        "en": "Caddy 2016 and 2021: located PDFs are bodybuilder guidelines. European owner’s manuals for these generations are needed instead.",
+        "de": "Caddy 2016 und 2021: Die gefundenen PDFs sind Aufbaurichtlinien. Benötigt werden stattdessen europäische Betriebsanleitungen der jeweiligen Generationen."
+      }
+    },
+    {
+      "brand": "volkswagen-uzitkove-vozy",
+      "model": "Transporter T6 / T6.1 / T7; ID. Buzz",
+      "requested_year": "2016 / 2020 / 2025; 2023",
+      "document": "European owner manuals; exact editions not established",
+      "url": "https://www.volkswagenvans.ie/en/owners-and-users/digital-manual.html",
+      "result": "Official portal needs VIN. General official warning guide separately reviewed; no model-year applicability inherited.",
+      "needed": "European manuals for the listed model years, including EV/assistance warning chapters for ID. Buzz.",
+      "summary": {
+        "cs": "Transporter 2016, 2020 a 2025; ID. Buzz 2023: oficiální portál vyžaduje VIN. Obecný přehled značky nedokládá tato modelová vydání; potřebuji jejich návody k obsluze.",
+        "en": "Transporter 2016, 2020 and 2025; ID. Buzz 2023: the official portal requires a VIN. The general brand guide does not establish these model editions; their owner’s manuals are needed.",
+        "de": "Transporter 2016, 2020 und 2025; ID. Buzz 2023: Das offizielle Portal benötigt eine FIN. Die allgemeine Markenübersicht belegt diese Modellausgaben nicht; benötigt werden deren Betriebsanleitungen."
+      }
+    },
+    {
+      "brand": "volkswagen",
+      "model": "Golf VII; Golf VIII; ID.3",
+      "requested_year": "2015; 2020; 2021",
+      "document": "European owner manuals needed to audit the original 15 generic examples",
+      "url": "https://www.volkswagen.at/service-zubehoer/ueber-dein-auto/digitale-betriebsanleitung",
+      "result": "Austrian official page advertises model selection without VIN; runtime request returns 403. German/UK public portals request VIN. No model year assigned to the original generic 15 records.",
+      "needed": "European model manuals for these years, with exact editions; other European models from 2010 remain outside confirmed coverage.",
+      "summary": {
+        "cs": "Golf VII 2015, Golf VIII 2020, ID.3 2021: pro původních 15 příkladů stále chybí modelové ověření. Rakouský portál nabízí volbu modelu, ale přístup zde vrací 403. Potřebuji evropské návody těchto vydání.",
+        "en": "Golf VII 2015, Golf VIII 2020, ID.3 2021: the original 15 examples still lack model verification. The Austrian portal offers model selection, but access here returns 403. European manuals for these editions are needed.",
+        "de": "Golf VII 2015, Golf VIII 2020, ID.3 2021: Für die ursprünglichen 15 Beispiele fehlt weiterhin die Modellprüfung. Das österreichische Portal bietet eine Modellauswahl, liefert hier jedoch 403. Benötigt werden europäische Anleitungen dieser Ausgaben."
+      }
+    }
+  ],
+  "counting_method": {
+    "cs": "Odlišný tvar symbolu počítáme jednou bez ohledu na barvu a počet přiřazených modelů. Barevné obrazové varianty, významové záznamy a modelová přiřazení vykazujeme zvlášť. Dvě příručky Škoda jsou kopie vydání výrobce hostované třetí stranou; nejsou vydávané za soubory ověřené na serveru výrobce.",
+    "en": "A distinct pictogram shape is counted once regardless of colour or model assignments. Colour renditions, semantic records and model assignments are reported separately. Two Škoda manuals are manufacturer-authored editions hosted by third parties, not files verified on the manufacturer’s server.",
+    "de": "Eine unterschiedliche Piktogrammform wird unabhängig von Farbe und Modellzuordnungen einmal gezählt. Farbvarianten, Bedeutungseinträge und Modellzuordnungen werden getrennt ausgewiesen. Zwei Škoda-Anleitungen sind von Dritten gehostete Herstellerausgaben, keine auf dem Herstellerserver geprüften Dateien."
+  },
+  "review_gaps": {
+    "cs": [
+      "Volkswagen: původních 15 obecných příkladů UK zůstává bez doloženého modelového roku. Pro kontrolu jsou konkrétně potřeba evropské návody Golf VII 2015, Golf VIII 2020 a ID.3 2021; další modely od roku 2010 nejsou tímto výčtem pokryté. Rakouský portál nově uvádí volbu modelu bez VIN, jeho načtení je zde blokováno (403).",
+      "Audi: žádné evropské vydání není v zákaznickém obrazovém přehledu potvrzené. Konkrétně chybí A4 8W 01.2016 (8W0012705AC), A8 4N 2018 a Q4 e-tron 2022. Seznam modelů i výrobcem zveřejněné evropské odkazy vracejí 403. SSP 668 (84 stran) byl zpracován jako technický doplněk k A8; nenahrazuje pokyny pro řidiče. Nalezená nezávislá HTML kopie A4 2014 nebyla označena za ověřený originál.",
+      "Škoda: zkontrolované vybrané položky pocházejí z kopie návodu Octavia 5E 11.2018 (5E0012715AQ) a Enyaq iV 11.2020, německy. Vydání není modelový rok a nepokrývá ostatní roky. Pro srovnání chybí původní soubory výrobce. Dále chybí Octavia 07.2019, Superb 05.2010 a pokyny digitálního návodu Octavia iV 11.2020 (5E4012715CB). Přesné dokumenty a výsledky přístupu jsou níže.",
+      "Volkswagen Užitkové vozy: přidané příklady jsou samostatně ověřené z obecného oficiálního přehledu této značky UK. Nejde o modelové přiřazení. Potřebné jsou například návody Caddy 2016 a 2021, Transporter T6 2016, T6.1 2020, nový Transporter 2025 a ID. Buzz 2023. Nalezené přestavbářské směrnice nejsou návody k obsluze. Příručky Crafter a Amarok také nejsou pokryté.",
+      "SEAT a CUPRA: zachované položky platí jen pro výslovně uvedená vydání a výbavu. Kompletní revize všech modelů a let od 2010, resp. CUPRA od vzniku samostatné značky, není dokončená. Mezery mezi vydáními se automaticky nevyplňují.",
+      "Zbývají přesné, oprávněně použitelné obrazové varianty Travel Assist, Front Assist, rozpoznávání značek, parkovacích asistentů, AdBlue/SCR a vysokonapěťových výstrah. Nově načtený návod Enyaqu tyto varianty rozlišuje, ale samotný název systému ani podobný náhradní obrázek nejsou publikovanou kontrolkou."
+    ],
+    "en": [
+      "Volkswagen: the original 15 general UK examples still have no documented model year. Specific verification requires European manuals for Golf VII 2015, Golf VIII 2020 and ID.3 2021; this list does not cover other models from 2010. The Austrian portal now advertises model selection without a VIN, but loading it here is blocked (403).",
+      "Audi: no European edition is confirmed in the customer-facing illustrated overview. Specifically missing are A4 8W 01.2016 (8W0012705AC), A8 4N 2018 and Q4 e-tron 2022. The model list and manufacturer-published European links return 403. SSP 668 (84 pages) was reviewed as technical context for the A8, not as a replacement for driver instructions. An independent A4 2014 HTML copy was not accepted as a verified original.",
+      "Škoda: selected reviewed entries come from copies of the Octavia 5E 11.2018 manual (5E0012715AQ) and the German Enyaq iV 11.2020 manual. An edition is not a model year and does not cover other years. The original manufacturer files are still needed for comparison. Octavia 07.2019, Superb 05.2010 and the instructions in the Octavia iV 11.2020 digital manual (5E4012715CB) also remain missing. Exact documents and access outcomes are listed below.",
+      "Volkswagen Commercial Vehicles: the added examples were independently checked against this brand’s general official UK guide. They are not model-specific assignments. Needed manuals include Caddy 2016 and 2021, Transporter T6 2016, T6.1 2020, new Transporter 2025 and ID. Buzz 2023. Located bodybuilder guidelines are not owner’s manuals. Crafter and Amarok manuals are also not covered.",
+      "SEAT and CUPRA: retained entries apply only to explicitly listed editions and equipment. A complete review of all models and years from 2010, or CUPRA from its establishment as a separate brand, remains incomplete. Gaps between editions are not automatically filled.",
+      "Exact, lawfully reusable graphic variants of Travel Assist, Front Assist, traffic sign recognition, parking assistants, AdBlue/SCR and high-voltage warnings remain outstanding. The newly reviewed Enyaq manual distinguishes these variants, but a system name alone or a similar substitute image is not published as a warning-light entry."
+    ],
+    "de": [
+      "Volkswagen: Für die ursprünglichen 15 allgemeinen UK-Beispiele ist weiterhin kein Modelljahr belegt. Konkret benötigt werden europäische Anleitungen für Golf VII 2015, Golf VIII 2020 und ID.3 2021; andere Modelle ab 2010 sind damit nicht abgedeckt. Das österreichische Portal bietet inzwischen eine Modellauswahl ohne FIN an, wird hier jedoch blockiert (403).",
+      "Audi: In der bebilderten Kundenübersicht ist noch keine europäische Ausgabe bestätigt. Konkret fehlen A4 8W 01.2016 (8W0012705AC), A8 4N 2018 und Q4 e-tron 2022. Die Modellliste und vom Hersteller veröffentlichte europäische Links liefern 403. SSP 668 (84 Seiten) wurde als technischer Hintergrund zum A8 geprüft, ersetzt aber keine Fahrerhinweise. Eine unabhängige HTML-Kopie zum A4 2014 wurde nicht als verifiziertes Original eingestuft.",
+      "Škoda: Ausgewählte geprüfte Einträge stammen aus Kopien der Anleitung Octavia 5E 11.2018 (5E0012715AQ) und der deutschen Anleitung Enyaq iV 11.2020. Eine Ausgabe ist kein Modelljahr und deckt andere Jahre nicht ab. Für den Abgleich fehlen die Hersteller-Originaldateien. Außerdem fehlen Octavia 07.2019, Superb 05.2010 und die Fahrerhinweise der digitalen Anleitung Octavia iV 11.2020 (5E4012715CB). Genaue Dokumente und Zugriffsergebnisse sind unten aufgeführt.",
+      "Volkswagen Nutzfahrzeuge: Die ergänzten Beispiele wurden eigenständig anhand der allgemeinen offiziellen UK-Übersicht dieser Marke geprüft. Es sind keine Modellzuordnungen. Benötigt werden unter anderem Caddy 2016 und 2021, Transporter T6 2016, T6.1 2020, neuer Transporter 2025 und ID. Buzz 2023. Gefundene Aufbaurichtlinien sind keine Betriebsanleitungen. Auch Crafter- und Amarok-Anleitungen sind noch nicht abgedeckt.",
+      "SEAT und CUPRA: Die erhaltenen Einträge gelten nur für ausdrücklich genannte Ausgaben und Ausstattungen. Die vollständige Prüfung aller Modelle und Jahre ab 2010 beziehungsweise CUPRA seit Gründung als eigenständige Marke ist noch nicht abgeschlossen. Lücken zwischen Ausgaben werden nicht automatisch geschlossen.",
+      "Es fehlen weiterhin genaue, rechtmäßig nutzbare Grafikvarianten für Travel Assist, Front Assist, Verkehrszeichenerkennung, Parkassistenten, AdBlue/SCR und Hochvoltwarnungen. Die neu geprüfte Enyaq-Anleitung unterscheidet diese Varianten; ein Systemname allein oder ein ähnliches Ersatzbild wird jedoch nicht als Kontrollleuchte veröffentlicht."
+    ]
+  },
+  "rendering_review": {
+    "checked": "2026-10-30",
+    "method": "Contact-sheet visual review of every shared colour rendition; corrected opaque source backgrounds, duplicated steering samples and the modern ESC triangle mismatch. Source contours and licences retained."
+  }
 }

@@ -1,0 +1,94 @@
+{
+  "checked": "2026-10-30",
+  "deployment": "preview-only",
+  "catalogue_complete": false,
+  "browser_matrix": {
+    "cases": 54,
+    "errors": [],
+    "engines": [
+      {
+        "engine": "chromium",
+        "version": "154.0.8037.57"
+      },
+      {
+        "engine": "webkit",
+        "version": "26.0"
+      }
+    ],
+    "dimensions": [
+      [
+        360,
+        800
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        430,
+        932
+      ],
+      [
+        768,
+        1024
+      ],
+      [
+        800,
+        360
+      ],
+      [
+        844,
+        390
+      ],
+      [
+        1024,
+        768
+      ],
+      [
+        1366,
+        768
+      ],
+      [
+        1920,
+        1080
+      ]
+    ]
+  },
+  "new_brand_content": {
+    "cases": 36,
+    "engines": [
+      {
+        "name": "chromium",
+        "version": "154.0.8037.57"
+      },
+      {
+        "name": "webkit",
+        "version": "26.0"
+      }
+    ],
+    "languages": [
+      "cs",
+      "en",
+      "de"
+    ],
+    "dimensions": [
+      [
+        1366,
+        768
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        844,
+        390
+      ]
+    ]
+  },
+  "brand_page_cta_tests": 36,
+  "rendered_colour_variants_checked_in_each_engine": 45,
+  "physical_devices_tested": [],
+  "device_note": "Linux Chromium and WebKit with viewport/touch emulation; no physical iPhone, Android phone or tablet tested.",
+  "unrelated_content": "Shared headers unchanged. Other brand-page content unchanged apart from warning-catalogue availability notes. Media parity: 28 page groups, 76 entries."
+}
