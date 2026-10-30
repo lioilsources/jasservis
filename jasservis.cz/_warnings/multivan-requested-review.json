@@ -1,0 +1,46 @@
+{
+  "checked": "2026-10-30",
+  "photo_group": "multivan-manual-four-16-19",
+  "brand_user_confirmed": "Volkswagen Užitkové vozy",
+  "model_user_confirmed": "Multivan",
+  "generation": null,
+  "model_year": null,
+  "manual_edition": null,
+  "source_document_identified": false,
+  "requested_printed_pages": [
+    16,
+    17,
+    18,
+    19
+  ],
+  "expected_photos": 4,
+  "available_photos": 0,
+  "photo_rows_compared": 0,
+  "actual_observed_symbols": [],
+  "new_catalogue_items": [],
+  "model_assignments_added": [],
+  "inherited_from_other_models": false,
+  "status": {
+    "cs": "Čtyři fotografie stran16–19 nejsou v aktuální zprávě ani dostupném archivu. Model Multivan potvrzuje uživatel; generace, modelový rok a vydání nejsou doložené. Řádky ani podrobné pokyny dosud nelze porovnat. Nic nebylo převzato z Caddy, Transporteru ani jiného modelu.",
+    "en": "Four photos of pp16–19 are absent from the current message/available archive. User confirms Multivan; generation, model year and edition are undocumented. Rows and detailed instructions cannot yet be compared. Nothing inherited from Caddy, Transporter or another model.",
+    "de": "Vier Fotos S16–19 fehlen in aktueller Nachricht/verfügbarem Archiv. Multivan vom Nutzer bestätigt; Generation, Modelljahr und Ausgabe unbelegt. Zeilen und Detailanweisungen noch nicht vergleichbar. Nichts von Caddy, Transporter oder anderem Modell übernommen."
+  },
+  "required_for_row_comparison": "The four actual photographs; documentary identification must be established from them or the original manual. No photo/page positions inferred.",
+  "requirements_not_verified_from_photos": [
+    "multifunction table/locking",
+    "sliding-door locking",
+    "seat occupancy/seatbelts",
+    "towing/trailer indicators",
+    "auxiliary heater",
+    "wiper fault",
+    "SCR/AdBlue variants",
+    "powertrain-specific HV warnings",
+    "traffic/predictive information",
+    "assistance-system operating/fault states",
+    "tyre warning with do-not-continue instruction",
+    "oil level/pressure variants",
+    "brake/servo warnings",
+    "ESC/ASR steady versus flashing",
+    "high-beam control colours/states"
+  ]
+}
