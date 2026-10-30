@@ -87,24 +87,24 @@
       {
         "engine": "chromium",
         "version": "154.0.8037.57",
-        "images": 64
+        "images": 74
       },
       {
         "engine": "webkit",
         "version": "26.0",
-        "images": 64
+        "images": 74
       }
     ],
-    "result": "Every shared SVG decodes and renders a non-empty, non-solid-rectangle image"
+    "result": "PASS; all 74 shared colour variants decode and render non-empty images"
   },
   "current_catalogue": {
-    "semantic_records": 116,
+    "semantic_records": 131,
     "legacy_generic_volkswagen": 1,
-    "model_documented_semantic_records": 112,
-    "model_edition_assignments": 391,
-    "partially_reviewed_manual_editions": 38,
-    "shared_graphic_colour_variants": 64,
-    "distinct_pictogram_shapes": 42,
+    "model_documented_semantic_records": 127,
+    "model_edition_assignments": 446,
+    "partially_reviewed_manual_editions": 39,
+    "shared_graphic_colour_variants": 74,
+    "distinct_pictogram_shapes": 50,
     "by_brand": {
       "volkswagen": {
         "distinct_pictogram_shapes": 24,
@@ -117,14 +117,14 @@
         "third_party_hosted_manual_editions": 0
       },
       "audi": {
-        "distinct_pictogram_shapes": 31,
-        "graphic_colour_variants": 40,
-        "semantic_variants": 45,
-        "model_edition_assignments": 45,
+        "distinct_pictogram_shapes": 38,
+        "graphic_colour_variants": 50,
+        "semantic_variants": 58,
+        "model_edition_assignments": 92,
         "generic_brand_assignments": 0,
-        "reviewed_manual_editions": 1,
+        "reviewed_manual_editions": 2,
         "first_party_hosted_manual_editions": 0,
-        "third_party_hosted_manual_editions": 1
+        "third_party_hosted_manual_editions": 2
       },
       "skoda": {
         "distinct_pictogram_shapes": 28,
@@ -147,10 +147,10 @@
         "third_party_hosted_manual_editions": 0
       },
       "cupra": {
-        "distinct_pictogram_shapes": 31,
-        "graphic_colour_variants": 39,
-        "semantic_variants": 51,
-        "model_edition_assignments": 134,
+        "distinct_pictogram_shapes": 34,
+        "graphic_colour_variants": 44,
+        "semantic_variants": 56,
+        "model_edition_assignments": 142,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 12,
         "first_party_hosted_manual_editions": 12,
@@ -169,17 +169,119 @@
     }
   },
   "preservation": {
-    "original_semantic_records_retained": 88,
-    "original_record_texts_unchanged": true,
-    "all_previous_seat_cupra_skoda_model_scopes_retained": true,
-    "header_footer_unchanged": true
+    "previous_116_records_and_scopes_retained": true,
+    "previous_names_meanings_actions_alts_retained": true,
+    "source_specific_notes_updated_for_five_audi_records": true,
+    "all_old_seat_skoda_cupra_scopes_retained": true,
+    "footer_unchanged": true,
+    "shared_media_groups": 28,
+    "shared_media_entries": 76
   },
   "physical_devices": [],
   "limitations": [
-    "No physical iPhone, Android phone or tablet was available. Viewport/touch emulation and automated Linux WebKit are not real-device Safari tests.",
-    "Browser tests do not establish catalogue completeness or replace source review.",
-    "Audi Q3 and Skoda evidence uses explicitly identified manufacturer-authored copies on third-party hosts.",
-    "Volkswagen vw-range remains without model-specific proof; other model/edition and exact-graphic gaps are listed in the source audit."
+    "No manual is claimed fully compared. Selected entries and full text-layer indexing do not prove completeness.",
+    "Five supplied Terramar photographs visually reviewed; sixth missing. Individual icons partially matched; no photograph is claimed fully source-matched. Vehicle model year/software version unknown.",
+    "Exact Volkswagen headlight-range warning still has no specific model/edition proof.",
+    "Audi A4 8W 01.2016, A8 4N for 2018 and Q4 e-tron 2022 remain unsupported; Q4 07.2024 is not substituted for another edition.",
+    "Combined ADAS/HV and additional infotainment/comfort graphics still require exact lawful assets and state-specific review.",
+    "No physical iPhone, Android phone or tablet was tested; Linux Chromium/WebKit viewport/touch emulation only."
   ],
-  "rendered_colour_variants_checked_in_each_engine": 64
+  "rendered_colour_variants_checked_in_each_engine": 74,
+  "fully_compared_manuals": [],
+  "review_register": "review-register.json",
+  "q4_exact_edition": {
+    "part": "89A012705AM",
+    "edition": "07.2024",
+    "pages": 338,
+    "sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+    "host": "third-party copy of AUDI AG document",
+    "access": "Ordinary public PDF viewer/browser request; previous 403 obstacle resolved for the exact copy"
+  },
+  "new_q4_and_terramar_checks": {
+    "cases": 54,
+    "errors": [],
+    "engines": [
+      {
+        "engine": "chromium",
+        "version": "154.0.8037.57"
+      },
+      {
+        "engine": "webkit",
+        "version": "26.0"
+      },
+      {
+        "engine": "webkit",
+        "version": "26.0"
+      }
+    ],
+    "dimensions": [
+      [
+        390,
+        844
+      ],
+      [
+        844,
+        390
+      ],
+      [
+        1366,
+        768
+      ]
+    ],
+    "checks": [
+      "Exact selected-model counts from the shared catalogue",
+      "All selected entries expanded; all images decode; no horizontal overflow",
+      "Keyboard opening of native details after real keyboard interaction",
+      "Czech/English/German parity",
+      "Responsive noindex review table"
+    ]
+  },
+  "terramar_photographs": {
+    "expected": 6,
+    "received_identifiable_photographs": 5,
+    "visually_reviewed": 5,
+    "fully_source_matched_photographs": 0,
+    "status": "five-received-sixth-missing-individual-icons-partially-matched",
+    "evidence": "terramar-photo-review.json",
+    "note": "Four Control Centre views and one instrument cluster supplied in the user conversation. All five visually reviewed; sixth missing. Original filenames/hashes and vehicle MY/software version not provided. No 6/6 claim."
+  },
+  "navigation": {
+    "catalogue_access": "Six brand-specific Autoservis CTA blocks only; all 18 language/brand links retained",
+    "additional_services_link_removed_from_all_90_pages": true,
+    "home_service_group_link_removed": true,
+    "header_layout_and_styles_unchanged": true
+  },
+  "initial_focus_fix": "Queued initial anchor correction no longer steals focus after actual user interaction.",
+  "terramar_photo_followup_checks": {
+    "cases": 24,
+    "errors": [],
+    "dimensions": [
+      [
+        390,
+        844
+      ],
+      [
+        844,
+        390
+      ],
+      [
+        768,
+        1024
+      ],
+      [
+        1366,
+        768
+      ]
+    ],
+    "engines": [
+      "Chromium 154.0.8037.57",
+      "WebKit 26.0"
+    ],
+    "checks": [
+      "All three locales, 12 Terramar 11.25 selected entries",
+      "A OFF control excluded for PHEV; Lane Assist control retained",
+      "Keyboard opening, expanded content, image decoding and no horizontal overflow",
+      "Photo review table in all three languages"
+    ]
+  }
 }

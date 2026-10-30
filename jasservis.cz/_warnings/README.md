@@ -116,3 +116,52 @@ Zbývající ochranu celého náhledu přidává stávající preview workflow.
   a jejich stavy, některá parkovací/Front Assist/AdBlue/HV upozornění nejsou
   nahrazována podobnými obrázky. Jejich chybějící grafické podklady a modelový
   rozsah jsou výslovně uvedené v přeložené evidenci.
+
+## Přesné vydání Q4, ovládací ikony a kontrolní tabulky
+
+- Získán celý Q4 e-tron DE 07.2024, 89A012705AM, 338 stran. SHA-256:
+  `597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e`.
+  Běžný veřejný prohlížeč PDF umožnil načtení přesného souboru; nešlo
+  o obejití přihlášení nebo záměnu za jiné vydání. Hostitel je třetí strana.
+- Nové stavy zahrnují červenou želvu Q4 s omezením na manévrování, samostatné
+  funkční nápisy HOLD a LIM (aktivní, neaktivní, blikající překročení, chyba),
+  bílý neaktivní tempomat a červené/žluté hlášení A/C o CO₂ v kabině.
+  Levá a pravá směrovka Q4 mají oddělenou grafiku; žlutá zadní mlhovka nebyla
+  na Q4 přenesena bez vlastního barevného důkazu. Staré rozsahy zůstaly.
+- Terramar 09.24 / 11.25: ovládací MAX a REAR byly individuálně porovnané
+  na tištěných stranách 146 / 148. Jde o samostatnou skupinu ovládacích ikon,
+  jejichž bílá schematická barva neznamená závadu ani univerzální aktivaci.
+- Následně dodáno a vizuálně porovnáno **pět** fotografií Terramar: čtyři
+  obrazovky Control Centre a jeden přístrojový panel. Šestá fotografie chybí.
+  Modelový rok, software, původní názvy a otisky souborů nejsou doložené.
+  `terramar-photo-review.json` eviduje 45 pozorování; nejde o 45 nových
+  unikátních kontrolek ani o úplné zdrojové ověření všech pěti fotografií.
+- `review-register.json` a `manual-review.csv` oddělují vybrané ověřené položky
+  od kompletního porovnání celého vydání. **Kompletně porovnaná vydání: 0.**
+  `source-character-review.csv` je pouze automatický pracovní index znaků
+  textové vrstvy všech dostupných PDF, nikoli důkaz grafické nebo obsahové
+  úplnosti. Rastrové obrázky ani některé ovládací nápisy jím nejsou pokryté.
+- `q4-overview-review.json/.csv` evidují jednotlivé řádky obrazového přehledu
+  Q4 na stranách 10–14: samostatně přiřazené ověřené stavy a dosud nezařazené
+  varianty. Přiřazení řádku nepotvrzuje všechny významy jeho obrázku.
+- `revize.html` je přeložená kontrolní tabulka CZ/EN/DE. Ani počet dokumentů,
+  přiřazení, znaků, tvarů, barev nebo testů se nevydává za důkaz úplnosti.
+- Z veřejných nabídek Další služby a úvodního přehledu byl odkaz kontrolek
+  odstraněn ve všech stránkách a jazycích. Přístup přes šest konkrétních značek
+  v Autoservisu zůstává. Existující URL přehledu se nemění; drobečková úroveň
+  nyní odpovídá Autoservisu. Záhlaví se jinak nepřestavuje.
+
+## Doplnění po pěti fotografiích Terramar
+
+- Samostatně doloženy bílé ovládací zkratky Lane Assist a A OFF v návodu
+  Terramar 11.25. A OFF není poruchová kontrolka a jeho rozsah nezahrnuje PHEV.
+- Zelený pokyn sešlápnout brzdu není zaměněn s Auto Hold. Červená parkovací
+  brzda je samostatná; žlutý symbol motoru na fotografii při 0 ot/min není
+  důkazem závady bez hlášení a provozního kontextu.
+- Neoznačené ikony bez doloženého významu nejsou odhadovány. Ovládací
+  fotografie se nevydávají za nezávislý důkaz všech signalizačních stavů.
+- Aktuálně 131 významových záznamů, 50 tvarů, 74 barevných variant,
+  446 modelových přiřazení. Plně porovnané návody stále **0**.
+- Dalších 24 funkčních kontrol ve třech jazycích, Chromium a WebKit,
+  rozměry 390×844, 844×390, 768×1024 a 1366×768. Skutečná mobilní zařízení
+  nebyla testována. Funkční zkoušky nepotvrzují úplnost odborného obsahu.

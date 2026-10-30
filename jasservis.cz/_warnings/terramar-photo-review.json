@@ -1,0 +1,1014 @@
+{
+  "expected_photographs": 6,
+  "received_photographs": 5,
+  "visually_reviewed_photographs": 5,
+  "missing_photographs": 1,
+  "photo_vehicle_model": "CUPRA Terramar as stated by the user",
+  "model_year": null,
+  "software_version": null,
+  "photos": [
+    {
+      "id": "terramar-photo-01",
+      "name": {
+        "cs": "Control Centre – telefonní funkce",
+        "en": "Control Centre – phone functions",
+        "de": "Control Centre – Telefonfunktionen"
+      },
+      "received_in": "User conversation, latest message",
+      "visual_review": true,
+      "original_filename": null,
+      "file_hash": null,
+      "model_year": null,
+      "software_version": null
+    },
+    {
+      "id": "terramar-photo-02",
+      "name": {
+        "cs": "Control Centre – připojení a média",
+        "en": "Control Centre – connectivity and media",
+        "de": "Control Centre – Verbindungen und Medien"
+      },
+      "received_in": "User conversation, latest message",
+      "visual_review": true,
+      "original_filename": null,
+      "file_hash": null,
+      "model_year": null,
+      "software_version": null
+    },
+    {
+      "id": "terramar-photo-03",
+      "name": {
+        "cs": "Control Centre – asistenti a HUD",
+        "en": "Control Centre – assistants and HUD",
+        "de": "Control Centre – Assistenten und HUD"
+      },
+      "received_in": "User conversation, latest message",
+      "visual_review": true,
+      "original_filename": null,
+      "file_hash": null,
+      "model_year": null,
+      "software_version": null
+    },
+    {
+      "id": "terramar-photo-04",
+      "name": {
+        "cs": "Control Centre – oblíbené a pozornost",
+        "en": "Control Centre – favourites and attention",
+        "de": "Control Centre – Favoriten und Aufmerksamkeit"
+      },
+      "received_in": "User conversation, latest message",
+      "visual_review": true,
+      "original_filename": null,
+      "file_hash": null,
+      "model_year": null,
+      "software_version": null
+    },
+    {
+      "id": "terramar-photo-05",
+      "name": {
+        "cs": "Přístrojový panel při 0 ot/min",
+        "en": "Instrument cluster at 0 rpm",
+        "de": "Kombiinstrument bei 0 U/min"
+      },
+      "received_in": "User conversation, latest message",
+      "visual_review": true,
+      "original_filename": null,
+      "file_hash": null,
+      "model_year": null,
+      "software_version": null
+    }
+  ],
+  "observations": [
+    {
+      "id": "redial",
+      "name": {
+        "cs": "Opakovaná volba",
+        "en": "Redial",
+        "de": "Wahlwiederholung"
+      },
+      "photos": [
+        "terramar-photo-01"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "dial",
+      "name": {
+        "cs": "Volat – tlačítko s mřížkou",
+        "en": "Call – button with a grid",
+        "de": "Anrufen – Schaltfläche mit Raster"
+      },
+      "photos": [
+        "terramar-photo-01"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "compose",
+      "name": {
+        "cs": "Napsat zprávu",
+        "en": "Compose message",
+        "de": "Nachricht schreiben"
+      },
+      "photos": [
+        "terramar-photo-01"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "keyless",
+      "name": {
+        "cs": "Keyless Access",
+        "en": "Keyless Access",
+        "de": "Keyless Access"
+      },
+      "photos": [
+        "terramar-photo-02"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "bluetooth",
+      "name": {
+        "cs": "Bluetooth",
+        "en": "Bluetooth",
+        "de": "Bluetooth"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "audio",
+      "name": {
+        "cs": "Audio – ikona přeškrtnutého reproduktoru",
+        "en": "Audio – crossed-speaker icon",
+        "de": "Audio – durchgestrichenes Lautsprechersymbol"
+      },
+      "photos": [
+        "terramar-photo-02"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "tp",
+      "name": {
+        "cs": "TP – dopravní zpravodajství",
+        "en": "TP – traffic announcements",
+        "de": "TP – Verkehrsfunk"
+      },
+      "photos": [
+        "terramar-photo-02"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "media-favourites",
+      "name": {
+        "cs": "Oblíbená rádia/média",
+        "en": "Favourite radio/media",
+        "de": "Radio-/Medienfavoriten"
+      },
+      "photos": [
+        "terramar-photo-02"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "stations",
+      "name": {
+        "cs": "Seznam stanic",
+        "en": "Station list",
+        "de": "Senderliste"
+      },
+      "photos": [
+        "terramar-photo-02"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "media",
+      "name": {
+        "cs": "Média",
+        "en": "Media",
+        "de": "Medien"
+      },
+      "photos": [
+        "terramar-photo-02"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "speed-warning",
+      "name": {
+        "cs": "Výstraha rychlosti",
+        "en": "Speed warning",
+        "de": "Geschwindigkeitswarnung"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "wifi",
+      "name": {
+        "cs": "Wi-Fi",
+        "en": "Wi-Fi",
+        "de": "WLAN"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "hotspot",
+      "name": {
+        "cs": "Hotspot",
+        "en": "Hotspot",
+        "de": "Hotspot"
+      },
+      "photos": [
+        "terramar-photo-03"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "hud",
+      "name": {
+        "cs": "HUD",
+        "en": "HUD",
+        "de": "HUD"
+      },
+      "photos": [
+        "terramar-photo-03"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "hud-position",
+      "name": {
+        "cs": "Poloha HUD",
+        "en": "HUD position",
+        "de": "HUD-Position"
+      },
+      "photos": [
+        "terramar-photo-03"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "phone-favourites",
+      "name": {
+        "cs": "Oblíbené – telefon",
+        "en": "Favourites – phone",
+        "de": "Favoriten – Telefon"
+      },
+      "photos": [
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "data-packages",
+      "name": {
+        "cs": "Datové pakety",
+        "en": "Data packages",
+        "de": "Datenpakete"
+      },
+      "photos": [
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "climate-now",
+      "name": {
+        "cs": "Okamžitě klimatizovat",
+        "en": "Immediate climate control",
+        "de": "Sofort klimatisieren"
+      },
+      "photos": [
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "cupra-assistant",
+      "name": {
+        "cs": "CUPRA Assistant",
+        "en": "CUPRA Assistant",
+        "de": "CUPRA Assistant"
+      },
+      "photos": [
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "tips",
+      "name": {
+        "cs": "Tipy",
+        "en": "Tips",
+        "de": "Tipps"
+      },
+      "photos": [
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "manual",
+      "name": {
+        "cs": "Návod",
+        "en": "Owner’s manual",
+        "de": "Betriebsanleitung"
+      },
+      "photos": [
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "attention",
+      "name": {
+        "cs": "Výstraha pozornosti – oko s vykřičníkem",
+        "en": "Attention warning – eye with exclamation mark",
+        "de": "Aufmerksamkeitswarnung – Auge mit Ausrufezeichen"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "clima-menu",
+      "name": {
+        "cs": "CLIMA – nabídka klimatizace",
+        "en": "CLIMA – air-conditioning menu",
+        "de": "CLIMA – Klimamenü"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "auto-climate",
+      "name": {
+        "cs": "AUTO – automatické řízení klimatizace",
+        "en": "AUTO – automatic climate control",
+        "de": "AUTO – automatische Klimaregelung"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "seat-heating",
+      "name": {
+        "cs": "Vyhřívání sedadel",
+        "en": "Seat heating",
+        "de": "Sitzheizung"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "recirculation",
+      "name": {
+        "cs": "Recirkulace vzduchu",
+        "en": "Air recirculation",
+        "de": "Umluft"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "layout",
+      "name": {
+        "cs": "Přepnutí rozložení / mřížky",
+        "en": "Layout / grid switch",
+        "de": "Layout-/Rasterumschaltung"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "plus",
+      "name": {
+        "cs": "Přidat položku",
+        "en": "Add item",
+        "de": "Eintrag hinzufügen"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "lane-control",
+      "name": {
+        "cs": "Lane Assist – ovládací zkratka",
+        "en": "Lane Assist – control shortcut",
+        "de": "Lane Assist – Bedienverknüpfung"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [
+        "terramar-lane-control"
+      ],
+      "status": "manual-and-photo-compared",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "start-stop-control",
+      "name": {
+        "cs": "Start-stop – ovládací A OFF",
+        "en": "Start-stop – A OFF control",
+        "de": "Start-Stopp – Bedienzeichen A OFF"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [
+        "terramar-start-stop-control"
+      ],
+      "status": "manual-and-photo-compared",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "front-max",
+      "name": {
+        "cs": "MAX – odmlžení čelního skla",
+        "en": "MAX – windscreen demisting",
+        "de": "MAX – Frontscheibe entfeuchten"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [
+        "terramar-front-max"
+      ],
+      "status": "manual-and-photo-compared",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "rear",
+      "name": {
+        "cs": "REAR – vyhřívání zadního skla",
+        "en": "REAR – rear-window heating",
+        "de": "REAR – Heckscheibenheizung"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "control",
+      "catalogue_entries": [
+        "terramar-rear-heating"
+      ],
+      "status": "manual-and-photo-compared",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "park-brake",
+      "name": {
+        "cs": "Červené P – parkovací brzda",
+        "en": "Red P – parking brake",
+        "de": "Rotes P – Parkbremse"
+      },
+      "photos": [
+        "terramar-photo-05"
+      ],
+      "classification": "operating-indicator",
+      "catalogue_entries": [
+        "parking-applied"
+      ],
+      "status": "manual-and-photo-compared",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "press-brake",
+      "name": {
+        "cs": "Zelený symbol sešlápnutí brzdy",
+        "en": "Green press-brake-pedal symbol",
+        "de": "Grünes Bremspedal-betätigen-Symbol"
+      },
+      "photos": [
+        "terramar-photo-05"
+      ],
+      "classification": "operating-indicator",
+      "catalogue_entries": [
+        "mii-foot-brake"
+      ],
+      "status": "manual-and-photo-compared",
+      "note": {
+        "cs": "Viditelný popisek potvrzuje označení zkratky, nikoli její aktivní stav ani úplný význam všech signalizací. Přesná grafika a modelový výklad nejsou v zákaznickém přehledu nahrazené odhadem.",
+        "en": "The visible label confirms the shortcut’s name, not its active state or every signalling meaning. Exact artwork and model-specific interpretation are not replaced with a guess in the customer overview.",
+        "de": "Die sichtbare Beschriftung bestätigt die Bezeichnung der Verknüpfung, nicht ihren aktiven Zustand oder alle Signalbedeutungen. Genaue Grafik und modellspezifische Auslegung werden in der Kundenübersicht nicht durch Vermutungen ersetzt."
+      }
+    },
+    {
+      "id": "mil",
+      "name": {
+        "cs": "Žlutý symbol motoru při 0 ot/min",
+        "en": "Yellow engine symbol at 0 rpm",
+        "de": "Gelbes Motorsymbol bei 0 U/min"
+      },
+      "photos": [
+        "terramar-photo-05"
+      ],
+      "classification": "warning-or-ignition-function-check",
+      "catalogue_entries": [
+        "mil-steady"
+      ],
+      "status": "manual-and-photo-compared",
+      "note": {
+        "cs": "Otáčkoměr ukazuje 0 ot/min. Ze snímku nelze prohlásit závadu emisního systému; je nutné znát stav zapalování, chování po nastartování a hlášení.",
+        "en": "The rev counter shows 0 rpm. The photo does not establish an emissions fault; ignition state, behaviour after starting and messages are needed.",
+        "de": "Der Drehzahlmesser zeigt 0 U/min. Das Foto belegt keine Abgasstörung; erforderlich sind Zündungszustand, Verhalten nach dem Start und Meldungen."
+      }
+    },
+    {
+      "id": "belt",
+      "name": {
+        "cs": "Bezpečnostní pásy a zobrazení obsazenosti",
+        "en": "Seat belts and occupancy display",
+        "de": "Sicherheitsgurte und Belegungsanzeige"
+      },
+      "photos": [
+        "terramar-photo-05"
+      ],
+      "classification": "instrument-display",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Podoba je na fotografii viditelná. Přesný stav a případné omezení nelze určit jen ze zmenšeného snímku; vyžaduje samostatné modelové a obrazové přiřazení.",
+        "en": "The depiction is visible in the photograph. Its exact state or limitation cannot be determined from the reduced photograph alone; an individual model and graphic match is required.",
+        "de": "Die Darstellung ist auf dem Foto sichtbar. Der genaue Zustand oder eine Einschränkung lässt sich aus dem verkleinerten Foto allein nicht bestimmen; individuelle Modell- und Grafikzuordnung erforderlich."
+      }
+    },
+    {
+      "id": "door",
+      "name": {
+        "cs": "Otevřené dveře – grafika vozidla",
+        "en": "Open door – vehicle graphic",
+        "de": "Offene Tür – Fahrzeuggrafik"
+      },
+      "photos": [
+        "terramar-photo-05"
+      ],
+      "classification": "instrument-display",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Podoba je na fotografii viditelná. Přesný stav a případné omezení nelze určit jen ze zmenšeného snímku; vyžaduje samostatné modelové a obrazové přiřazení.",
+        "en": "The depiction is visible in the photograph. Its exact state or limitation cannot be determined from the reduced photograph alone; an individual model and graphic match is required.",
+        "de": "Die Darstellung ist auf dem Foto sichtbar. Der genaue Zustand oder eine Einschränkung lässt sich aus dem verkleinerten Foto allein nicht bestimmen; individuelle Modell- und Grafikzuordnung erforderlich."
+      }
+    },
+    {
+      "id": "limit20",
+      "name": {
+        "cs": "Zobrazená dopravní značka 20",
+        "en": "Displayed 20 road sign",
+        "de": "Angezeigtes Verkehrszeichen 20"
+      },
+      "photos": [
+        "terramar-photo-05"
+      ],
+      "classification": "instrument-display",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Podoba je na fotografii viditelná. Přesný stav a případné omezení nelze určit jen ze zmenšeného snímku; vyžaduje samostatné modelové a obrazové přiřazení.",
+        "en": "The depiction is visible in the photograph. Its exact state or limitation cannot be determined from the reduced photograph alone; an individual model and graphic match is required.",
+        "de": "Die Darstellung ist auf dem Foto sichtbar. Der genaue Zustand oder eine Einschränkung lässt sich aus dem verkleinerten Foto allein nicht bestimmen; individuelle Modell- und Grafikzuordnung erforderlich."
+      }
+    },
+    {
+      "id": "lane-status",
+      "name": {
+        "cs": "Neutrální stavový symbol jízdních pruhů",
+        "en": "Neutral lane-status symbol",
+        "de": "Neutrales Fahrspur-Statussymbol"
+      },
+      "photos": [
+        "terramar-photo-05"
+      ],
+      "classification": "instrument-display",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Podoba je na fotografii viditelná. Přesný stav a případné omezení nelze určit jen ze zmenšeného snímku; vyžaduje samostatné modelové a obrazové přiřazení.",
+        "en": "The depiction is visible in the photograph. Its exact state or limitation cannot be determined from the reduced photograph alone; an individual model and graphic match is required.",
+        "de": "Die Darstellung ist auf dem Foto sichtbar. Der genaue Zustand oder eine Einschränkung lässt sich aus dem verkleinerten Foto allein nicht bestimmen; individuelle Modell- und Grafikzuordnung erforderlich."
+      }
+    },
+    {
+      "id": "cruise-status",
+      "name": {
+        "cs": "Stavový symbol regulace rychlosti",
+        "en": "Speed-regulation status symbol",
+        "de": "Geschwindigkeitsregelungs-Statussymbol"
+      },
+      "photos": [
+        "terramar-photo-05"
+      ],
+      "classification": "instrument-display",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Podoba je na fotografii viditelná. Přesný stav a případné omezení nelze určit jen ze zmenšeného snímku; vyžaduje samostatné modelové a obrazové přiřazení.",
+        "en": "The depiction is visible in the photograph. Its exact state or limitation cannot be determined from the reduced photograph alone; an individual model and graphic match is required.",
+        "de": "Die Darstellung ist auf dem Foto sichtbar. Der genaue Zustand oder eine Einschränkung lässt sich aus dem verkleinerten Foto allein nicht bestimmen; individuelle Modell- und Grafikzuordnung erforderlich."
+      }
+    },
+    {
+      "id": "unlabelled-car-check",
+      "name": {
+        "cs": "Nepopsaná zkratka vozu v kruhu se zaškrtnutím",
+        "en": "Unlabelled car-in-circle shortcut with a check mark",
+        "de": "Unbeschriftete Auto-im-Kreis-Verknüpfung mit Häkchen"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "unresolved-control",
+      "catalogue_entries": [],
+      "status": "visually-observed-label-confirmed-source-graphic-or-state-review-pending",
+      "note": {
+        "cs": "Fotografie neobsahuje název této zkratky. Funkci nepojmenováváme odhadem.",
+        "en": "The photograph does not label this shortcut. Its function is not guessed.",
+        "de": "Das Foto benennt diese Verknüpfung nicht. Die Funktion wird nicht geraten."
+      }
+    },
+    {
+      "id": "p-header",
+      "name": {
+        "cs": "P v horní liště infotainmentu",
+        "en": "P in the infotainment top bar",
+        "de": "P in der Infotainment-Kopfleiste"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "unresolved-control-or-status",
+      "catalogue_entries": [],
+      "status": "visually-observed-context-and-state-review-pending",
+      "note": {
+        "cs": "Bez příslušného kontextu nevydáváme tento ovládací nebo stavový znak za poruchovou kontrolku. P v horní liště neslučujeme s červeným P parkovací brzdy na přístrojovém panelu.",
+        "en": "Without the relevant context this control or status marking is not presented as a fault warning. The top-bar P is not conflated with the red instrument-cluster parking-brake P.",
+        "de": "Ohne zugehörigen Kontext wird dieses Bedien- oder Statuszeichen nicht als Störungswarnung dargestellt. Das P der Kopfleiste wird nicht mit dem roten Parkbremsen-P im Kombiinstrument gleichgesetzt."
+      }
+    },
+    {
+      "id": "status-top",
+      "name": {
+        "cs": "Stavová lišta – uživatel, zeměkoule a čas",
+        "en": "Status bar – user, globe and clock",
+        "de": "Statusleiste – Benutzer, Globus und Uhrzeit"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "unresolved-control-or-status",
+      "catalogue_entries": [],
+      "status": "visually-observed-context-and-state-review-pending",
+      "note": {
+        "cs": "Bez příslušného kontextu nevydáváme tento ovládací nebo stavový znak za poruchovou kontrolku. P v horní liště neslučujeme s červeným P parkovací brzdy na přístrojovém panelu.",
+        "en": "Without the relevant context this control or status marking is not presented as a fault warning. The top-bar P is not conflated with the red instrument-cluster parking-brake P.",
+        "de": "Ohne zugehörigen Kontext wird dieses Bedien- oder Statuszeichen nicht als Störungswarnung dargestellt. Das P der Kopfleiste wird nicht mit dem roten Parkbremsen-P im Kombiinstrument gleichgesetzt."
+      }
+    },
+    {
+      "id": "app-nav",
+      "name": {
+        "cs": "Navigace aplikací – rozložení, vůz a telefon",
+        "en": "App navigation – layout, car and phone",
+        "de": "App-Navigation – Layout, Fahrzeug und Telefon"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "unresolved-control-or-status",
+      "catalogue_entries": [],
+      "status": "visually-observed-context-and-state-review-pending",
+      "note": {
+        "cs": "Bez příslušného kontextu nevydáváme tento ovládací nebo stavový znak za poruchovou kontrolku. P v horní liště neslučujeme s červeným P parkovací brzdy na přístrojovém panelu.",
+        "en": "Without the relevant context this control or status marking is not presented as a fault warning. The top-bar P is not conflated with the red instrument-cluster parking-brake P.",
+        "de": "Ohne zugehörigen Kontext wird dieses Bedien- oder Statuszeichen nicht als Störungswarnung dargestellt. Das P der Kopfleiste wird nicht mit dem roten Parkbremsen-P im Kombiinstrument gleichgesetzt."
+      }
+    },
+    {
+      "id": "power-volume",
+      "name": {
+        "cs": "Vypínání a ovládání hlasitosti infotainmentu",
+        "en": "Infotainment power and volume controls",
+        "de": "Ein-/Ausschalten und Lautstärke des Infotainments"
+      },
+      "photos": [
+        "terramar-photo-01",
+        "terramar-photo-02",
+        "terramar-photo-03",
+        "terramar-photo-04"
+      ],
+      "classification": "unresolved-control-or-status",
+      "catalogue_entries": [],
+      "status": "visually-observed-context-and-state-review-pending",
+      "note": {
+        "cs": "Bez příslušného kontextu nevydáváme tento ovládací nebo stavový znak za poruchovou kontrolku. P v horní liště neslučujeme s červeným P parkovací brzdy na přístrojovém panelu.",
+        "en": "Without the relevant context this control or status marking is not presented as a fault warning. The top-bar P is not conflated with the red instrument-cluster parking-brake P.",
+        "de": "Ohne zugehörigen Kontext wird dieses Bedien- oder Statuszeichen nicht als Störungswarnung dargestellt. Das P der Kopfleiste wird nicht mit dem roten Parkbremsen-P im Kombiinstrument gleichgesetzt."
+      }
+    }
+  ],
+  "important_limitations": {
+    "cs": "Pět dodaných fotografií bylo vizuálně zkontrolováno. Šestý snímek chybí. Vizuální kontrola fotografie neznamená úplné ověření všech zobrazených ovládacích ikon ani všech jejich stavů. Rok a verze softwaru fotografovaného vozu nejsou doložené.",
+    "en": "Five supplied photographs were visually reviewed. The sixth is missing. Visual review of a photograph does not completely validate every control icon or all of its states. The photographed vehicle’s year and software version are not documented.",
+    "de": "Fünf bereitgestellte Fotos wurden visuell geprüft. Das sechste fehlt. Die Sichtprüfung eines Fotos bestätigt nicht vollständig alle Bedienzeichen oder deren sämtliche Zustände. Baujahr und Softwarestand des fotografierten Fahrzeugs sind nicht belegt."
+  }
+}

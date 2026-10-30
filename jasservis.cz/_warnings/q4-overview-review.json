@@ -1,0 +1,1842 @@
+{
+  "manual": "Q4 e-tron 07.2024 · 89A012705AM",
+  "complete_manual": false,
+  "scope": "All dark-background symbol cells of the printed overview pp. 10–14 were visually inspected; this does not complete all assistant, infotainment or comfort chapters.",
+  "rows": [
+    {
+      "row_id": "q4-072024-10-1",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 10,
+      "pdf_page": 12,
+      "source_label_de": "Zentralkontrollleuchte ð Seite 10, Kombiinstrument ð Seite 15",
+      "source_character_codes": "U+F02A",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [
+        "audi-central-red"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-10-2",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 10,
+      "pdf_page": 12,
+      "source_label_de": "Sicherheitsgurt ð Seite 70",
+      "source_character_codes": "U+F0AA",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [
+        "seatbelt"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-10-3",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 10,
+      "pdf_page": 12,
+      "source_label_de": "Klimaanlage ð Seite 92",
+      "source_character_codes": "",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [
+        "audi-q4-ac-co2-red"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-10-4",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 10,
+      "pdf_page": 12,
+      "source_label_de": "Antriebssystem ð Seite 99, ð Seite 300, ð Seite 301, Hochvoltsystem ð Seite 113, Kühlsystem ð Seite 270, ð Seite 271, Bordnetz ð Seite 273",
+      "source_character_codes": "U+F0DF",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-10-5",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 10,
+      "pdf_page": 12,
+      "source_label_de": "Antriebssystem ð Seite 99",
+      "source_character_codes": "U+F0ED",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [
+        "audi-q4-manoeuvre-only"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-10-6",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 10,
+      "pdf_page": 12,
+      "source_label_de": "Elektromechanische Parkbremse ð Seite 102",
+      "source_character_codes": "U+F067",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [
+        "parking-applied"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-10-7",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 10,
+      "pdf_page": 12,
+      "source_label_de": "Elektromechanische Parkbremse ð Seite 104, Bremsanlage ð Seite 273 ",
+      "source_character_codes": "U+F068",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [
+        "brake-fluid"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-1",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Lenkung ð Seite 107",
+      "source_character_codes": "U+F0CB",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [
+        "steering-red"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-2",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Lenkungsverriegelung ð Seite 107",
+      "source_character_codes": "U+F045",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-3",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Adaptiver Fahrassistent ð Seite 166, Bremsübernahmeaufforderung ð Seite 170, Anfahrüberwachung ð Seite 175",
+      "source_character_codes": "U+F06F",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-4",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Adaptiver Fahrassistent ð Seite 166, ð Seite 171",
+      "source_character_codes": "U+F0FE",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-5",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Lenkungsübernahmeaufforde- rung (Adaptiver Fahrassistent) ð Seite 166, ð Seite 171",
+      "source_character_codes": "U+F09D",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [
+        "take-steering-immediate"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-6",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Assistierter Spurwechsel (Adapti- ver Fahrassistent) ð Seite 166, ð Seite 170",
+      "source_character_codes": "U+F0F4",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-7",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Abstandswarnung ð Seite 177",
+      "source_character_codes": "U+F09C",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-8",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Spurverlassenswarnung ð Seite 178",
+      "source_character_codes": "U+F05C",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-9",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Spurverlassenswarnung ð Seite 178",
+      "source_character_codes": "U+F05D",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-10",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Pre sense ð Seite 181, ð Seite 181, ð Seite 181",
+      "source_character_codes": "U+F08F",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-11",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Ausweichunterstützung ð Seite 182",
+      "source_character_codes": "U+F03F",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-12",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Software-Update ð Seite 264",
+      "source_character_codes": "U+F099",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-13",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Frontraumklappe ð Seite 269",
+      "source_character_codes": "U+F025",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-14",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Kühlsystem ð Seite 270, ð Seite 270, ð Seite 271, ð Seite 300",
+      "source_character_codes": "U+F054",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-15",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Bordnetz ð Seite 273",
+      "source_character_codes": "U+F066",
+      "source_colours": [
+        "0xef4044"
+      ],
+      "catalogue_entries": [
+        "audi-12v-system-red"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-16",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Zentralkontrollleuchte ð Seite 10",
+      "source_character_codes": "U+F02A",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-17",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Zentralverriegelung ð Seite 36",
+      "source_character_codes": "U+F0FD",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-18",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Batterie im Funkschlüssel ð Seite 41",
+      "source_character_codes": "U+F0E6",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-19",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Lampenausfallkontrolle ð Seite 55",
+      "source_character_codes": "U+F03D",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [
+        "bulb-fault"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-20",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Adaptive light ð Seite 55",
+      "source_character_codes": "U+F026",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-21",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Leuchtweitenregulierung ð Seite 55",
+      "source_character_codes": "U+F026",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [
+        "audi-headlight-range"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-22",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Licht-/Regensensor ð Seite 55, ð Seite 61",
+      "source_character_codes": "U+F021",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-23",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Scheibenwischer ð Seite 61",
+      "source_character_codes": "U+F039",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-24",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Sicherheitssysteme ð Seite 73",
+      "source_character_codes": "U+F0C1",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [
+        "airbag-fault"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-25",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Klimaanlage ð Seite 92",
+      "source_character_codes": "",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [
+        "audi-q4-ac-co2-yellow"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-26",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Motorstartsystem ð Seite 96",
+      "source_character_codes": "U+F04D",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-27",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Komfortschlüssel ð Seite 96",
+      "source_character_codes": "U+F0E5",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-28",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Antriebssystem ð Seite 99, Ladesystem ð Seite 120",
+      "source_character_codes": "U+F0DF",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-29",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Antriebssystem ð Seite 99",
+      "source_character_codes": "U+F0ED",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [
+        "ev-power-limited-ring"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-30",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Fahrzeugsound ð Seite 99",
+      "source_character_codes": "U+F091",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [
+        "e-sound-fault"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-31",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Bremsbelag ð Seite 101",
+      "source_character_codes": "U+F069",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [
+        "pads-worn"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-32",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Bremskraftverstärker ð Seite 101, Elektromechanische Parkbremse ð Seite 104",
+      "source_character_codes": "U+F068",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-11-33",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 11,
+      "pdf_page": 13,
+      "source_label_de": "Bremsanlage ð Seite 101 ",
+      "source_character_codes": "U+F036",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-1",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Dämpferregelung ð Seite 107",
+      "source_character_codes": "U+F077",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-2",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Lenkung ð Seite 107",
+      "source_character_codes": "U+F0CB",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [
+        "steering-yellow"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-3",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Lenkungsverriegelung ð Seite 107",
+      "source_character_codes": "U+F045",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-4",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Allradantrieb ð Seite 108",
+      "source_character_codes": "U+F035",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-5",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Elektronische Stabilisierungskon- trolle ð Seite 109",
+      "source_character_codes": "U+F0AB",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-6",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Elektronische Stabilisierungskon- trolle ð Seite 109",
+      "source_character_codes": "U+F045 U+F053 U+F043 U+F04F U+F046 U+F046",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-7",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Elektronische Stabilisierungskon- trolle ð Seite 110",
+      "source_character_codes": "U+F022",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [
+        "esc-fault",
+        "esc-regulating"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-8",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Antiblockiersystem ð Seite 110",
+      "source_character_codes": "U+F06A",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [
+        "abs-fault"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-9",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Reichweite Hochvoltbatterie ð Seite 120",
+      "source_character_codes": "U+F067",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-10",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Anhängevorrichtung ð Seite 140, ð Seite 140, ð Seite 143",
+      "source_character_codes": "U+F025",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-11",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Müdigkeitswarnung ð Seite 157",
+      "source_character_codes": "U+F064",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [
+        "audi-fatigue-unavailable"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-12",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Ablenkungswarnung ð Seite 158",
+      "source_character_codes": "U+F065",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-13",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Lenkungsübernahmeaufforde- rung (Adaptiver Fahrassistent) ð Seite 166, ð Seite 171, Lenkungsübernahmeaufforde- rung (Spurverlassenswarnung) ð Seite 179",
+      "source_character_codes": "U+F09D",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [
+        "audi-take-steering-yellow"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-14",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Assistierter Spurwechsel (Adapti- ver Fahrassistent) ð Seite 170",
+      "source_character_codes": "U+F0F4",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-15",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Adaptiver Fahrassistent ð Seite 176",
+      "source_character_codes": "U+F080",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [
+        "audi-adaptive-assist-unavailable-zluta"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-16",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Abstandswarnung ð Seite 177",
+      "source_character_codes": "U+F09C",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-17",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Spurverlassenswarnung ð Seite 180",
+      "source_character_codes": "U+F05B",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [
+        "audi-lane-unavailable-zluta"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-18",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Pre sense ð Seite 180, ð Seite 183, ð Seite 183",
+      "source_character_codes": "U+F08F",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-19",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Spurwechselwarnung ð Seite 185",
+      "source_character_codes": "U+F044",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [
+        "audi-side-assist-zluta"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-20",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Ausstiegswarnung ð Seite 186",
+      "source_character_codes": "U+F043",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-21",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Notfallassistent ð Seite 187",
+      "source_character_codes": "U+F035",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-22",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Einparkhilfen ð Seite 189, ð Seite 191",
+      "source_character_codes": "U+F03B",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-23",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Querverkehrassistent hinten ð Seite 197",
+      "source_character_codes": "U+F09A",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-24",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Parkassistent plus ð Seite 202",
+      "source_character_codes": "U+F0E2",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-25",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Notruffunktion ð Seite 222",
+      "source_character_codes": "U+F029",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-26",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Bordnetz ð Seite 273",
+      "source_character_codes": "U+F066",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-27",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Waschwasserstand ð Seite 278",
+      "source_character_codes": "U+F0F4",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-28",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Reifendruck ð Seite 284",
+      "source_character_codes": "U+F0C7",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [
+        "tpms-low"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-29",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Reifendruck ð Seite 284",
+      "source_character_codes": "U+F054 U+F050 U+F04D U+F053",
+      "source_colours": [
+        "0xffe700"
+      ],
+      "catalogue_entries": [
+        "audi-tpms-fault"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-30",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Abblendlicht ð Seite 52",
+      "source_character_codes": "U+F025",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-31",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Standlicht ð Seite 52, ð Seite 52",
+      "source_character_codes": "U+F028",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-32",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Blinkanlage ð Seite 53, ð Seite 55",
+      "source_character_codes": "U+F02C",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [
+        "audi-q4-turn-left"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-33",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Blinkanlage ð Seite 53, ð Seite 55",
+      "source_character_codes": "U+F02D",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [
+        "audi-q4-turn-right"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-12-34",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 12,
+      "pdf_page": 14,
+      "source_label_de": "Sicherheitsgurt hinten ð Seite 70 ",
+      "source_character_codes": "U+F0AA",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-1",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Halteassistent ð Seite 103",
+      "source_character_codes": "U+F042",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [
+        "audi-q4-hold-active"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-2",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Anhängerblinkanlage ð Seite 139",
+      "source_character_codes": "U+F023",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-3",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Geschwindigkeitsregelanlage ð Seite 160",
+      "source_character_codes": "U+F05D",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [
+        "cruise-active"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-4",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Geschwindigkeitsbegrenzer ð Seite 160",
+      "source_character_codes": "U+F03A",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [
+        "audi-q4-lim-active",
+        "audi-q4-lim-overridden"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-5",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Prädiktiver Geschwindigkeitsbe- grenzer ð Seite 160",
+      "source_character_codes": "U+F0E2",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-6",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Effizienzassistent ð Seite 163, ð Seite 163",
+      "source_character_codes": "U+F048",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-7",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Effizienzassistent ð Seite 163",
+      "source_character_codes": "U+F05D",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-8",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Effizienzassistent ð Seite 163",
+      "source_character_codes": "U+F044",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-9",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Effizienzassistent ð Seite 163",
+      "source_character_codes": "U+F045",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-10",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Effizienzassistent ð Seite 163",
+      "source_character_codes": "U+F046",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-11",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Effizienzassistent ð Seite 163",
+      "source_character_codes": "U+F047",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-12",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Effizienzassistent ð Seite 163, Adaptiver Fahrassistent ð Seite 166",
+      "source_character_codes": "U+F05A",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-13",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Adaptiver Fahrassistent ð Seite 166",
+      "source_character_codes": "U+F071",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-14",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Adaptiver Fahrassistent ð Seite 166",
+      "source_character_codes": "U+F06F",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-15",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Adaptiver Fahrassistent ð Seite 166",
+      "source_character_codes": "U+F070",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-16",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Adaptiver Fahrassistent ð Seite 166",
+      "source_character_codes": "U+F0FE",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-17",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Assistierter Spurwechsel (Adapti- ver Fahrassistent) ð Seite 166",
+      "source_character_codes": "U+F0F7",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-18",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Spurverlassenswarnung ð Seite 178",
+      "source_character_codes": "U+F05C",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-19",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Parkassistent plus ð Seite 200, ð Seite 201",
+      "source_character_codes": "U+F063",
+      "source_colours": [
+        "0x8dc63f"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-20",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Fernlicht ð Seite 53, ð Seite 54",
+      "source_character_codes": "U+F067",
+      "source_colours": [
+        "0x72c6ef"
+      ],
+      "catalogue_entries": [
+        "high-beam"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-21",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Fernlichtassistent ð Seite 54",
+      "source_character_codes": "U+F068",
+      "source_colours": [
+        "0x72c6ef"
+      ],
+      "catalogue_entries": [
+        "audi-high-beam-auto-on"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-22",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Rücksitzhinweis mit Warnton ð Seite 36",
+      "source_character_codes": "U+F03A",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-23",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Rücksitzhinweis ð Seite 36",
+      "source_character_codes": "U+F039",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-24",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Kindersicherung ð Seite 46",
+      "source_character_codes": "U+F0AD",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-25",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Fernlichtassistent ð Seite 54, ð Seite 55",
+      "source_character_codes": "U+F03B",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [
+        "audi-high-beam-auto-enabled",
+        "audi-high-beam-auto-unavailable"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-26",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Sicherheitsgurt hinten ð Seite 70",
+      "source_character_codes": "U+F0DC",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-27",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Komfortschlüssel ð Seite 96",
+      "source_character_codes": "U+F0BC",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-28",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Elektromechanische Parkbremse ð Seite 104",
+      "source_character_codes": "U+F067",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-29",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Bremse ð Seite 104",
+      "source_character_codes": "U+F0F1",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-30",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Geschwindigkeitswarnanlage ð Seite 152",
+      "source_character_codes": "U+F0A9",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-31",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Kamerabasierte Verkehrszeichen- erkennung ð Seite 154",
+      "source_character_codes": "U+F069",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-32",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Müdigkeitswarnung ð Seite 157",
+      "source_character_codes": "U+F064",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [
+        "audi-fatigue-break-recommended",
+        "audi-fatigue-break-required"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-33",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Ablenkungswarnung ð Seite 158",
+      "source_character_codes": "U+F065",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-34",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Geschwindigkeitsregelanlage ð Seite 160, ð Seite 162",
+      "source_character_codes": "U+F05D",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [
+        "audi-q4-cruise-ready"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-13-35",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 13,
+      "pdf_page": 15,
+      "source_label_de": "Geschwindigkeitsbegrenzer ð Seite 160, ð Seite 162 ",
+      "source_character_codes": "U+F03A",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [
+        "audi-q4-lim-ready",
+        "audi-q4-lim-unavailable"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-14-1",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 14,
+      "pdf_page": 16,
+      "source_label_de": "Effizienzassistent ð Seite 163, Adaptiver Fahrassistent ð Seite 175, ð Seite 176",
+      "source_character_codes": "U+F080",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-14-2",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 14,
+      "pdf_page": 16,
+      "source_label_de": "Adaptiver Fahrassistent ð Seite 166, ð Seite 169",
+      "source_character_codes": "U+F0FE",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-14-3",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 14,
+      "pdf_page": 16,
+      "source_label_de": "Assistierter Spurwechsel (Adapti- ver Fahrassistent) ð Seite 166",
+      "source_character_codes": "U+F0F7",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-14-4",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 14,
+      "pdf_page": 16,
+      "source_label_de": "Assistierter Spurwechsel (Adapti- ver Fahrassistent) ð Seite 166, ð Seite 170, ð Seite 170",
+      "source_character_codes": "U+F0F4",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-14-5",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 14,
+      "pdf_page": 16,
+      "source_label_de": "Adaptiver Fahrassistent ð Seite 173",
+      "source_character_codes": "U+F060",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-14-6",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 14,
+      "pdf_page": 16,
+      "source_label_de": "Abstandswarnung ð Seite 177",
+      "source_character_codes": "U+F09C",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-14-7",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 14,
+      "pdf_page": 16,
+      "source_label_de": "Spurverlassenswarnung ð Seite 178",
+      "source_character_codes": "U+F05C",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-14-8",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 14,
+      "pdf_page": 16,
+      "source_label_de": "Spurverlassenswarnung ð Seite 178",
+      "source_character_codes": "U+F032",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-14-9",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 14,
+      "pdf_page": 16,
+      "source_label_de": "Spurverlassenswarnung ð Seite 180",
+      "source_character_codes": "U+F05B",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [
+        "audi-lane-unavailable-bila"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-14-10",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 14,
+      "pdf_page": 16,
+      "source_label_de": "Spurwechselwarnung ð Seite 185",
+      "source_character_codes": "U+F044",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [
+        "audi-side-assist-bila"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-14-11",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 14,
+      "pdf_page": 16,
+      "source_label_de": "Ausstiegswarnung ð Seite 186",
+      "source_character_codes": "U+F043",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-14-12",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 14,
+      "pdf_page": 16,
+      "source_label_de": "Notfallassistent ð Seite 187",
+      "source_character_codes": "U+F035",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-14-13",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 14,
+      "pdf_page": 16,
+      "source_label_de": "Einparkhilfen ð Seite 189, ð Seite 191",
+      "source_character_codes": "U+F03B",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-14-14",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 14,
+      "pdf_page": 16,
+      "source_label_de": "Querverkehrassistent hinten ð Seite 197",
+      "source_character_codes": "U+F09A",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-14-15",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 14,
+      "pdf_page": 16,
+      "source_label_de": "Parkassistent plus ð Seite 202",
+      "source_character_codes": "U+F0E2",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [],
+      "status": "not-yet-published-or-unmatched",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    },
+    {
+      "row_id": "q4-072024-14-16",
+      "manual": "audi-q4-etron-2024-07-de",
+      "printed_page": 14,
+      "pdf_page": 16,
+      "source_label_de": "Parkassistent plus ð Seite 202",
+      "source_character_codes": "U+F09F",
+      "source_colours": [
+        "0xffffff"
+      ],
+      "catalogue_entries": [
+        "audi-park-assist-unavailable"
+      ],
+      "status": "selected-state-in-catalogue",
+      "remaining": "Other meanings/states are not implied by a graphic match. Missing exact lawful assets or individual instruction review prevents publication."
+    }
+  ]
+}

@@ -559,6 +559,29 @@
       },
       "access_method": "Official public model/edition selection; no VIN and no inferred model-year interval.",
       "checked": "2026-10-30"
+    },
+    "audi-q4-etron-2024-07-de": {
+      "brand": "audi",
+      "model": "Q4 e-tron",
+      "year": null,
+      "generation": null,
+      "edition": "07.2024",
+      "lang": "DE",
+      "url": "https://pdf.bordbuecher.de/597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e.pdf",
+      "bytes": 10166852,
+      "sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+      "status": "selected-symbols-and-instructions-reviewed-not-complete",
+      "publisher": "AUDI AG",
+      "part_number": "89A012705AM",
+      "host_kind": "third-party-copy",
+      "checked": "2026-10-30",
+      "access_method": "Ordinary browser PDF viewer and same public PDF request; all 338 pages received and cover/part number/edition verified. No alternate model or edition substituted.",
+      "model_year_note": {
+        "cs": "Doloženo pro Q4 e-tron a vydání 07/2024, nikoli automaticky pro všechny roky. Soubor je kopie vydání AUDI AG hostovaná třetí stranou; porovnání s originálem na serveru výrobce chybí.",
+        "en": "Documented for Q4 e-tron and edition 07/2024, not automatically all model years. This is a third-party-hosted copy of an AUDI AG edition; comparison with a manufacturer-hosted original remains outstanding.",
+        "de": "Belegt für Q4 e-tron und Ausgabe 07/2024, nicht automatisch für alle Modelljahre. Die AUDI-AG-Ausgabe wird von Dritten gehostet; der Abgleich mit einem Hersteller-Original steht aus."
+      },
+      "viewer_url": "https://bordbuecher.de/audi/q4-e-tron/#year=2025&page={page}"
     }
   },
   "items": [
@@ -781,6 +804,32 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            101
+          ],
+          "pdf_pages": [
+            103
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              10
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -954,6 +1003,32 @@
             "document_sha256": "b82f4b43085c5fe161d296e81c56c792593da8b6bb27342c550984857776fbbe",
             "graphic_printed_pages": [
               9
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            273
+          ],
+          "pdf_pages": [
+            275
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              10
             ],
             "checked": "2026-10-30"
           }
@@ -1314,6 +1389,32 @@
             "document_sha256": "b82f4b43085c5fe161d296e81c56c792593da8b6bb27342c550984857776fbbe",
             "graphic_printed_pages": [
               10
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            101
+          ],
+          "pdf_pages": [
+            103
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              11
             ],
             "checked": "2026-10-30"
           }
@@ -1818,6 +1919,32 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            110
+          ],
+          "pdf_pages": [
+            112
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -2277,6 +2404,34 @@
             "document_sha256": "b82f4b43085c5fe161d296e81c56c792593da8b6bb27342c550984857776fbbe",
             "graphic_printed_pages": [
               11
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            109,
+            110
+          ],
+          "pdf_pages": [
+            111,
+            112
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              12
             ],
             "checked": "2026-10-30"
           }
@@ -2746,6 +2901,32 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            110
+          ],
+          "pdf_pages": [
+            112
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -3020,6 +3201,68 @@
               9
             ],
             "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            102,
+            104
+          ],
+          "pdf_pages": [
+            104,
+            106
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              10
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            12,
+            227
+          ],
+          "pdf_pages": [
+            14,
+            229
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Source-manual instructions and actual source pictogram compared with the corresponding user-supplied Terramar photograph. The photographed vehicle model year, VIN and software version are not known and are not inferred from the manual edition.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "photo_refs": [
+              "terramar-photo-05"
+            ],
+            "checked": "2026-10-30"
+          },
+          "model_note": {
+            "cs": "Fotografie dodané zadavatelem potvrzují podobu na fotografovaném Terramaru; jeho modelový rok ani verze softwaru nejsou doložené. Rozsah tohoto záznamu se řídí samostatně uvedeným vydáním návodu.",
+            "en": "User-supplied photographs confirm the depiction on the photographed Terramar; its model year and software version are not documented. This entry’s scope follows the separately cited manual edition.",
+            "de": "Die bereitgestellten Fotos bestätigen die Darstellung am fotografierten Terramar; Modelljahr und Softwarestand sind nicht belegt. Der Geltungsbereich folgt der separat genannten Anleitungsausgabe."
           }
         }
       ],
@@ -3333,6 +3576,36 @@
             "document_sha256": "b82f4b43085c5fe161d296e81c56c792593da8b6bb27342c550984857776fbbe",
             "graphic_printed_pages": [
               9
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            68,
+            69,
+            70
+          ],
+          "pdf_pages": [
+            70,
+            71,
+            72
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              10
             ],
             "checked": "2026-10-30"
           }
@@ -3969,6 +4242,32 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            73
+          ],
+          "pdf_pages": [
+            75
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              11
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -4291,6 +4590,34 @@
             "document_sha256": "b82f4b43085c5fe161d296e81c56c792593da8b6bb27342c550984857776fbbe",
             "graphic_printed_pages": [
               11
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            284,
+            285
+          ],
+          "pdf_pages": [
+            286,
+            287
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              12
             ],
             "checked": "2026-10-30"
           }
@@ -5568,6 +5895,34 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            53,
+            54
+          ],
+          "pdf_pages": [
+            55,
+            56
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -6021,6 +6376,32 @@
             "document_sha256": "b82f4b43085c5fe161d296e81c56c792593da8b6bb27342c550984857776fbbe",
             "graphic_printed_pages": [
               10
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            55
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              11
             ],
             "checked": "2026-10-30"
           }
@@ -7268,6 +7649,11 @@
             "method": "Official manual instruction and coloured symbol visually checked against the standard pictogram; preview awaits technician review.",
             "instruction_page_text_sha256": "a43f79e416c96df5cf483f212b17765f0cb5f995f5c1ae5ab7218c5b83d35224",
             "review_crop_sha256": "895aeb2c2636e1d764e67c24e5998346c79d4303b4c19d3e340b9cfd48d8ba0c"
+          },
+          "model_note": {
+            "cs": "Některé kontrolky se po zapnutí zapalování rozsvítí při kontrole funkce. Fotografie s otáčkoměrem na 0 ot/min sama nepotvrzuje závadu motoru; rozhodují následné chování kontrolky, hlášení a návod.",
+            "en": "Some indicators illuminate for a function check after the ignition is switched on. A photograph showing 0 rpm does not itself establish an engine fault; subsequent indicator behaviour, messages and the manual are decisive.",
+            "de": "Einige Kontrollleuchten leuchten nach Einschalten der Zündung zur Funktionsprüfung. Ein Foto mit 0 U/min belegt allein keine Motorstörung; maßgeblich sind das weitere Leuchtenverhalten, Meldungen und die Anleitung."
           }
         },
         {
@@ -7687,6 +8073,11 @@
             "method": "Official manual instruction and coloured symbol visually checked against the standard pictogram; preview awaits technician review.",
             "instruction_page_text_sha256": "a43f79e416c96df5cf483f212b17765f0cb5f995f5c1ae5ab7218c5b83d35224",
             "review_crop_sha256": "895aeb2c2636e1d764e67c24e5998346c79d4303b4c19d3e340b9cfd48d8ba0c"
+          },
+          "model_note": {
+            "cs": "Některé kontrolky se po zapnutí zapalování rozsvítí při kontrole funkce. Fotografie s otáčkoměrem na 0 ot/min sama nepotvrzuje závadu motoru; rozhodují následné chování kontrolky, hlášení a návod.",
+            "en": "Some indicators illuminate for a function check after the ignition is switched on. A photograph showing 0 rpm does not itself establish an engine fault; subsequent indicator behaviour, messages and the manual are decisive.",
+            "de": "Einige Kontrollleuchten leuchten nach Einschalten der Zündung zur Funktionsprüfung. Ein Foto mit 0 U/min belegt allein keine Motorstörung; maßgeblich sind das weitere Leuchtenverhalten, Meldungen und die Anleitung."
           }
         },
         {
@@ -8705,6 +9096,34 @@
             "topic_response_sha256": "3712f78570e6beb77692f656718c07fb0c4ba386585ef5b1d359ffd1bdea7954",
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            99,
+            100
+          ],
+          "pdf_pages": [
+            101,
+            102
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              11
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -9090,6 +9509,32 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            107
+          ],
+          "pdf_pages": [
+            109
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              11
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -9403,6 +9848,34 @@
             "document_sha256": "b82f4b43085c5fe161d296e81c56c792593da8b6bb27342c550984857776fbbe",
             "graphic_printed_pages": [
               10
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            107,
+            108
+          ],
+          "pdf_pages": [
+            109,
+            110
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              12
             ],
             "checked": "2026-10-30"
           }
@@ -9955,6 +10428,40 @@
             "topic_response_sha256": "0edb0c00e3e0611827f3a451c856217032c8bd260762371ad418af550ac670f1",
             "source_overview_row": 97,
             "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            14,
+            183
+          ],
+          "pdf_pages": [
+            16,
+            185
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Source-manual instructions and actual source pictogram compared with the corresponding user-supplied Terramar photograph. The photographed vehicle model year, VIN and software version are not known and are not inferred from the manual edition.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "photo_refs": [
+              "terramar-photo-05"
+            ],
+            "checked": "2026-10-30"
+          },
+          "model_note": {
+            "cs": "Fotografie dodané zadavatelem potvrzují podobu na fotografovaném Terramaru; jeho modelový rok ani verze softwaru nejsou doložené. Rozsah tohoto záznamu se řídí samostatně uvedeným vydáním návodu.",
+            "en": "User-supplied photographs confirm the depiction on the photographed Terramar; its model year and software version are not documented. This entry’s scope follows the separately cited manual edition.",
+            "de": "Die bereitgestellten Fotos bestätigen die Darstellung am fotografierten Terramar; Modelljahr und Softwarestand sind nicht belegt. Der Geltungsbereich folgt der separat genannten Anleitungsausgabe."
           }
         }
       ],
@@ -11780,6 +12287,32 @@
             "document_sha256": "b82f4b43085c5fe161d296e81c56c792593da8b6bb27342c550984857776fbbe",
             "graphic_printed_pages": [
               12
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            160
+          ],
+          "pdf_pages": [
+            162
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              13
             ],
             "checked": "2026-10-30"
           }
@@ -13908,6 +14441,32 @@
             "topic_response_sha256": "72ed418d7f8eab36b0638e50a56b8f0ddac971b2376cfa1abdb95eac2ffc720a",
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            171
+          ],
+          "pdf_pages": [
+            173
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              11
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "graphic_source": {
@@ -13948,9 +14507,9 @@
         "de": "Reifen und Luftdruck prüfen und Fahrzeugmeldung beachten. System fachgerecht prüfen lassen; Zurücksetzen behebt weder Leck noch Störung."
       },
       "note": {
-        "cs": "Platí pouze pro provedení uvedené v návodu Q3; postup kalibrace se řídí konkrétní výbavou.",
-        "en": "Applies only to the implementation in the cited Q3 manual; calibration depends on the actual equipment.",
-        "de": "Gilt nur für die Ausführung der genannten Q3-Anleitung; die Kalibrierung richtet sich nach der tatsächlichen Ausstattung."
+        "cs": "Platí pouze pro provedení uvedená u jednotlivých zdrojů; postup kalibrace se řídí konkrétní výbavou.",
+        "en": "Only the versions listed with each source are covered; calibration follows the actual equipment.",
+        "de": "Gilt nur für die bei den einzelnen Quellen genannten Ausführungen; die Kalibrierung richtet sich nach der tatsächlichen Ausstattung."
       },
       "alt": {
         "cs": "TPMS – závada kontroly tlaku",
@@ -13991,6 +14550,34 @@
             "document_sha256": "b82f4b43085c5fe161d296e81c56c792593da8b6bb27342c550984857776fbbe",
             "graphic_printed_pages": [
               11
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            284,
+            285
+          ],
+          "pdf_pages": [
+            286,
+            287
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              12
             ],
             "checked": "2026-10-30"
           }
@@ -14223,6 +14810,32 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            171
+          ],
+          "pdf_pages": [
+            173
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -14295,6 +14908,32 @@
             "document_sha256": "b82f4b43085c5fe161d296e81c56c792593da8b6bb27342c550984857776fbbe",
             "graphic_printed_pages": [
               11
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            185
+          ],
+          "pdf_pages": [
+            187
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              12
             ],
             "checked": "2026-10-30"
           }
@@ -14373,6 +15012,32 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            185
+          ],
+          "pdf_pages": [
+            187
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -14402,9 +15067,9 @@
         "de": "Selbst lenken und Fahrbahnmarkierungen beobachten. Meldung und Kamerasicht nach Anleitung prüfen; bei anhaltendem Problem fachgerechte Prüfung veranlassen."
       },
       "note": {
-        "cs": "Tento význam je doložen pro Q3. Podobný žlutý symbol u jiné značky může znamenat korekční zásah; význam se automaticky nepřebírá.",
-        "en": "This meaning is documented for Q3. A similar yellow symbol on another brand may indicate a corrective intervention; meanings are not inherited.",
-        "de": "Diese Bedeutung ist für Q3 belegt. Ein ähnliches gelbes Symbol einer anderen Marke kann einen korrigierenden Eingriff anzeigen; Bedeutungen werden nicht übernommen."
+        "cs": "Tento význam je doložen pro výslovně uvedená vydání Q3 a Q4 e-tron. Podobný žlutý symbol u jiné značky může znamenat korekční zásah; význam se automaticky nepřebírá.",
+        "en": "This meaning is documented for the explicitly cited Q3 and Q4 e-tron editions. A similar yellow symbol on another brand may indicate a corrective intervention; the meaning is not automatically transferred.",
+        "de": "Diese Bedeutung ist für die ausdrücklich genannten Q3- und Q4-e-tron-Ausgaben belegt. Ein ähnliches gelbes Symbol einer anderen Marke kann einen korrigierenden Eingriff bedeuten; die Bedeutung wird nicht automatisch übertragen."
       },
       "alt": {
         "cs": "Varování při opuštění pruhu – omezené nebo nedostupné",
@@ -14448,6 +15113,32 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            180
+          ],
+          "pdf_pages": [
+            182
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -14477,9 +15168,9 @@
         "de": "Selbst lenken und Fahrbahnmarkierungen beobachten. Meldung und Kamerasicht nach Anleitung prüfen; bei anhaltendem Problem fachgerechte Prüfung veranlassen."
       },
       "note": {
-        "cs": "Tento význam je doložen pro Q3. Podobný žlutý symbol u jiné značky může znamenat korekční zásah; význam se automaticky nepřebírá.",
-        "en": "This meaning is documented for Q3. A similar yellow symbol on another brand may indicate a corrective intervention; meanings are not inherited.",
-        "de": "Diese Bedeutung ist für Q3 belegt. Ein ähnliches gelbes Symbol einer anderen Marke kann einen korrigierenden Eingriff anzeigen; Bedeutungen werden nicht übernommen."
+        "cs": "Tento význam je doložen pro výslovně uvedená vydání Q3 a Q4 e-tron. Podobný žlutý symbol u jiné značky může znamenat korekční zásah; význam se automaticky nepřebírá.",
+        "en": "This meaning is documented for the explicitly cited Q3 and Q4 e-tron editions. A similar yellow symbol on another brand may indicate a corrective intervention; the meaning is not automatically transferred.",
+        "de": "Diese Bedeutung ist für die ausdrücklich genannten Q3- und Q4-e-tron-Ausgaben belegt. Ein ähnliches gelbes Symbol einer anderen Marke kann einen korrigierenden Eingriff bedeuten; die Bedeutung wird nicht automatisch übertragen."
       },
       "alt": {
         "cs": "Varování při opuštění pruhu – omezené nebo nedostupné",
@@ -14520,6 +15211,32 @@
             "document_sha256": "b82f4b43085c5fe161d296e81c56c792593da8b6bb27342c550984857776fbbe",
             "graphic_printed_pages": [
               13
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            180
+          ],
+          "pdf_pages": [
+            182
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              14
             ],
             "checked": "2026-10-30"
           }
@@ -14598,6 +15315,32 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            55
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              11
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -14627,9 +15370,9 @@
         "de": "Verkehr und Beleuchtung beobachten. Bei unpassender Automatikreaktion Licht manuell bedienen, um Blendung zu vermeiden."
       },
       "note": {
-        "cs": "Význam je doložen pro Q3 s tímto asistentem a nápisem AUTO. Nezaměňovat s variantou A uvnitř symbolu jiné značky.",
-        "en": "Documented for Q3 with this assistant and AUTO inscription. Do not substitute the A-in-symbol variant used elsewhere.",
-        "de": "Für Q3 mit diesem Assistenten und AUTO-Aufschrift belegt. Nicht mit der A-im-Symbol-Variante anderer Fahrzeuge gleichsetzen."
+        "cs": "Význam je doložen pro uvedená provedení s tímto asistentem a nápisem AUTO. Nezaměňovat s variantou A uvnitř symbolu jiné značky.",
+        "en": "This meaning is documented for the cited versions with this assistant and the AUTO inscription. Do not confuse it with the A-inside-the-symbol variant used on another brand.",
+        "de": "Diese Bedeutung ist für die genannten Ausführungen mit diesem Assistenten und der Aufschrift AUTO belegt. Nicht mit der Variante mit A im Symbol einer anderen Marke verwechseln."
       },
       "alt": {
         "cs": "Asistent dálkových světel – dálková světla zapnutá (AUTO)",
@@ -14670,6 +15413,32 @@
             "document_sha256": "b82f4b43085c5fe161d296e81c56c792593da8b6bb27342c550984857776fbbe",
             "graphic_printed_pages": [
               12
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            54
+          ],
+          "pdf_pages": [
+            56
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              13
             ],
             "checked": "2026-10-30"
           }
@@ -14748,6 +15517,32 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            54
+          ],
+          "pdf_pages": [
+            56
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -14820,6 +15615,34 @@
             "document_sha256": "b82f4b43085c5fe161d296e81c56c792593da8b6bb27342c550984857776fbbe",
             "graphic_printed_pages": [
               12
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            55,
+            56
+          ],
+          "pdf_pages": [
+            57,
+            58
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              13
             ],
             "checked": "2026-10-30"
           }
@@ -14900,6 +15723,32 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            176
+          ],
+          "pdf_pages": [
+            178
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -14977,6 +15826,32 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            176
+          ],
+          "pdf_pages": [
+            178
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -15049,6 +15924,32 @@
             "document_sha256": "b82f4b43085c5fe161d296e81c56c792593da8b6bb27342c550984857776fbbe",
             "graphic_printed_pages": [
               13
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            202
+          ],
+          "pdf_pages": [
+            204
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              14
             ],
             "checked": "2026-10-30"
           }
@@ -15129,6 +16030,34 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            156,
+            157
+          ],
+          "pdf_pages": [
+            158,
+            159
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -15206,6 +16135,34 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            156,
+            157
+          ],
+          "pdf_pages": [
+            158,
+            159
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -15278,6 +16235,32 @@
             "document_sha256": "b82f4b43085c5fe161d296e81c56c792593da8b6bb27342c550984857776fbbe",
             "graphic_printed_pages": [
               11
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            157
+          ],
+          "pdf_pages": [
+            159
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              12
             ],
             "checked": "2026-10-30"
           }
@@ -15431,6 +16414,32 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              10
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -15460,9 +16469,9 @@
         "de": "Fahrzeug sicher abstellen, nicht weiterfahren und Zündung ausschalten. Fachmännische Hilfe nach Anleitung anfordern."
       },
       "note": {
-        "cs": "Platí pro červené hlášení bezpečného odstavení nebo nenabíjení v uvedeném návodu Q3; žlutá hlášení mají samostatné postupy.",
-        "en": "Applies to the red safe-stop or non-charging message in the cited Q3 manual; yellow messages have separate procedures.",
-        "de": "Gilt für die rote Abstell- oder Nichtlade-Meldung der genannten Q3-Anleitung; gelbe Meldungen haben eigene Vorgehensweisen."
+        "cs": "Platí pro uvedená červená hlášení o bezpečném odstavení nebo nenabíjení podle příslušného návodu; žlutá hlášení mají samostatné postupy.",
+        "en": "Applies to the cited red safe-stop or non-charging messages under the relevant manual; yellow messages have separate procedures.",
+        "de": "Gilt für die genannten roten Meldungen zum sicheren Abstellen oder fehlenden Laden nach der jeweiligen Anleitung; für gelbe Meldungen gelten eigene Verfahren."
       },
       "alt": {
         "cs": "Elektrická soustava – červená výstraha Audi",
@@ -15503,6 +16512,34 @@
             "document_sha256": "b82f4b43085c5fe161d296e81c56c792593da8b6bb27342c550984857776fbbe",
             "graphic_printed_pages": [
               10
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            273,
+            274
+          ],
+          "pdf_pages": [
+            275,
+            276
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              11
             ],
             "checked": "2026-10-30"
           }
@@ -15715,6 +16752,32 @@
             "source_image_url": "https://userguide.volkswagen.de:443/api/consumer/V4/media?language=de_DE&key=img1e277c40bffa3eae0a010f077072d8ae_1_--_--_vw_Symbol_SVG_online_yellow.svg",
             "source_overview_row": 58,
             "topic_response_sha256": "d54de024e8651c6e3f15fbe16f1802d449eae6162e67798c224096f6e9f7c174",
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            100
+          ],
+          "pdf_pages": [
+            102
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              11
+            ],
             "checked": "2026-10-30"
           }
         }
@@ -16111,6 +17174,1288 @@
       },
       "checked": "2026-10-30",
       "review_status": "model-source-and-public-domain-sign-reviewed-not-complete"
+    },
+    {
+      "id": "audi-q4-manoeuvre-only",
+      "graphic": "turtle-ring",
+      "graphic_path": "wp-content/uploads/kontrolky/turtle-ring-cervena.svg",
+      "color": "cervena",
+      "group": "elektro",
+      "state": "message",
+      "kind": "warning",
+      "name": {
+        "cs": "Q4 e-tron – povoleno pouze omezené manévrování",
+        "en": "Q4 e-tron – limited manoeuvring only",
+        "de": "Q4 e-tron – nur eingeschränkter Rangierbetrieb"
+      },
+      "meaning": {
+        "cs": "Červená želva s příslušným hlášením znamená nedostatečný výkon pro běžnou jízdu, například kvůli nízké teplotě nebo nabití vysokonapěťového akumulátoru. Při jízdě může hrozit bezprostřední zastavení vozidla.",
+        "en": "A red turtle with the corresponding message means insufficient power for normal driving, for example because of low high-voltage battery temperature or charge. While driving, vehicle immobilisation may be imminent.",
+        "de": "Die rote Schildkröte mit entsprechender Meldung bedeutet unzureichende Leistung für normale Fahrt, etwa durch niedrige Temperatur oder niedrigen Ladezustand der Hochvoltbatterie. Während der Fahrt kann unmittelbares Liegenbleiben drohen."
+      },
+      "action": {
+        "cs": "Nepokračujte v běžné jízdě. Podle provozu vozidlo bezpečně odstavte a respektujte přesné hlášení. Při nízkém nabití zajistěte nabití podle návodu. Omezené manévrování není povolením pokračovat v cestě.",
+        "en": "Do not continue normal driving. Park safely as traffic permits and follow the exact message. If charge is low, arrange charging as instructed. Limited manoeuvring does not authorise continuing the journey.",
+        "de": "Normale Fahrt nicht fortsetzen. Fahrzeug verkehrsgerecht sicher abstellen und genaue Meldung beachten. Bei niedrigem Ladezustand Laden nach Anleitung veranlassen. Eingeschränktes Rangieren erlaubt keine Fortsetzung der Reise."
+      },
+      "note": {
+        "cs": "Pouze pro uvedené vybavení a vydání návodu Q4 e-tron. Jiné hlášení vyžaduje samostatný výklad.",
+        "en": "Only the cited Q4 e-tron equipment and manual edition are covered. A different message requires its own interpretation.",
+        "de": "Nur die genannte Q4-e-tron-Ausstattung und Anleitungsausgabe sind erfasst. Eine andere Meldung erfordert eine eigene Auslegung."
+      },
+      "alt": {
+        "cs": "Q4 e-tron – povoleno pouze omezené manévrování",
+        "en": "Q4 e-tron – limited manoeuvring only",
+        "de": "Q4 e-tron – nur eingeschränkter Rangierbetrieb"
+      },
+      "scopes": [
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            99,
+            100
+          ],
+          "pdf_pages": [
+            101,
+            102
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              10
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "File:ISO 7000 - Ref-No 2811.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_2811.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/1/1a/ISO_7000_-_Ref-No_2811.svg",
+        "author": "Mrmw",
+        "license": "CC0 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "modifications": "Licensed turtle outline uniformly scaled without reshaping; registration marks removed. Simple circular frame added only for the ringed variant independently shown in each cited manual; source-documented red/yellow states kept separate.",
+        "file": "wp-content/uploads/kontrolky/turtle-ring-cervena.svg",
+        "sha256": "3bffd20b5fb41e5b14a27b053793c8c91da267804f3de1b8c2bdd78ed0366819"
+      },
+      "checked": "2026-10-30",
+      "review_status": "model-source-and-lawful-graphic-reviewed-not-complete"
+    },
+    {
+      "id": "audi-q4-hold-active",
+      "graphic": "hold-text",
+      "graphic_path": "wp-content/uploads/kontrolky/hold-text-zelena.svg",
+      "color": "zelena",
+      "group": "brzdy",
+      "state": "steady",
+      "kind": "information",
+      "name": {
+        "cs": "HOLD – asistent drží vozidlo",
+        "en": "HOLD – vehicle being held",
+        "de": "HOLD – Fahrzeug wird gehalten"
+      },
+      "meaning": {
+        "cs": "Zelený nápis potvrzuje, že Halteassistent při splněných podmínkách drží stojící vozidlo.",
+        "en": "The green inscription confirms that the hold assistant is holding the stationary vehicle with its operating conditions met.",
+        "de": "Die grüne Aufschrift bestätigt, dass der Halteassistent das stehende Fahrzeug bei erfüllten Bedingungen hält."
+      },
+      "action": {
+        "cs": "Zůstaňte připraveni brzdit a kontrolujte bezpečné stání. Pro rozjezd postupujte podle návodu. Před opuštěním vozidlo řádně zajistěte; HOLD není univerzální náhradou parkovací brzdy.",
+        "en": "Remain ready to brake and check that the vehicle is safely stationary. Follow the manual when moving off. Secure the vehicle before leaving; HOLD is not a universal substitute for the parking brake.",
+        "de": "Bremsbereit bleiben und sicheren Stillstand kontrollieren. Zum Anfahren Anleitung beachten. Fahrzeug vor dem Verlassen sichern; HOLD ersetzt die Parkbremse nicht pauschal."
+      },
+      "note": {
+        "cs": "Pouze pro uvedené vybavení a vydání návodu Q4 e-tron. Jiné hlášení vyžaduje samostatný výklad.",
+        "en": "Only the cited Q4 e-tron equipment and manual edition are covered. A different message requires its own interpretation.",
+        "de": "Nur die genannte Q4-e-tron-Ausstattung und Anleitungsausgabe sind erfasst. Eine andere Meldung erfordert eine eigene Auslegung."
+      },
+      "alt": {
+        "cs": "HOLD – asistent drží vozidlo",
+        "en": "HOLD – vehicle being held",
+        "de": "HOLD – Fahrzeug wird gehalten"
+      },
+      "scopes": [
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            103
+          ],
+          "pdf_pages": [
+            105
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription HOLD",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Exact short functional inscription documented in the cited source; system sans-serif font, no manufacturer font embedded. Only independently documented colours used.",
+        "file": "wp-content/uploads/kontrolky/hold-text-zelena.svg",
+        "sha256": "3d114e1f907d2a1af8d29a44da01efd2d9c8b4e8e500c007fa6c8ce82aef7be0"
+      },
+      "checked": "2026-10-30",
+      "review_status": "model-source-and-lawful-graphic-reviewed-not-complete"
+    },
+    {
+      "id": "audi-q4-lim-active",
+      "graphic": "lim-text",
+      "graphic_path": "wp-content/uploads/kontrolky/lim-text-zelena.svg",
+      "color": "zelena",
+      "group": "asistenty",
+      "state": "steady",
+      "kind": "information",
+      "name": {
+        "cs": "LIM – aktivní omezování rychlosti",
+        "en": "LIM – speed limitation active",
+        "de": "LIM – Geschwindigkeitsbegrenzung aktiv"
+      },
+      "meaning": {
+        "cs": "Omezovač je zapnutý a aktivně omezuje rychlost na nastavenou hodnotu.",
+        "en": "The limiter is switched on and actively limits speed to the set value.",
+        "de": "Der Begrenzer ist eingeschaltet und begrenzt die Geschwindigkeit aktiv auf den eingestellten Wert."
+      },
+      "action": {
+        "cs": "Rychlost sledujte sami a respektujte aktuální dopravní značení. Omezovač nezbavuje řidiče odpovědnosti za rychlost; při přerušení nebo překročení upravte rychlost bezpečně sami.",
+        "en": "Monitor speed yourself and obey actual road signs. The limiter does not remove the driver’s responsibility for speed; adjust speed safely yourself if limitation is interrupted or exceeded.",
+        "de": "Geschwindigkeit selbst überwachen und tatsächliche Verkehrszeichen beachten. Der Begrenzer entbindet nicht von der Geschwindigkeitsverantwortung; bei Unterbrechung oder Überschreitung Geschwindigkeit selbst sicher anpassen."
+      },
+      "note": {
+        "cs": "Pouze pro uvedené vybavení a vydání návodu Q4 e-tron. Jiné hlášení vyžaduje samostatný výklad.",
+        "en": "Only the cited Q4 e-tron equipment and manual edition are covered. A different message requires its own interpretation.",
+        "de": "Nur die genannte Q4-e-tron-Ausstattung und Anleitungsausgabe sind erfasst. Eine andere Meldung erfordert eine eigene Auslegung."
+      },
+      "alt": {
+        "cs": "LIM – aktivní omezování rychlosti",
+        "en": "LIM – speed limitation active",
+        "de": "LIM – Geschwindigkeitsbegrenzung aktiv"
+      },
+      "scopes": [
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            160,
+            161,
+            162
+          ],
+          "pdf_pages": [
+            162,
+            163,
+            164
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription LIM",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Exact short functional inscription documented in the cited source; system sans-serif font, no manufacturer font embedded. Only independently documented colours used.",
+        "file": "wp-content/uploads/kontrolky/lim-text-zelena.svg",
+        "sha256": "30e5f98583cff80f79b41414c83b2491da13bc5c0bbbad56c91ef2d70c110875"
+      },
+      "checked": "2026-10-30",
+      "review_status": "model-source-and-lawful-graphic-reviewed-not-complete"
+    },
+    {
+      "id": "audi-q4-lim-overridden",
+      "graphic": "lim-text",
+      "graphic_path": "wp-content/uploads/kontrolky/lim-text-zelena.svg",
+      "color": "zelena",
+      "group": "asistenty",
+      "state": "flashing",
+      "kind": "information-warning",
+      "name": {
+        "cs": "LIM bliká – nastavená rychlost překročena",
+        "en": "LIM flashing – set speed exceeded",
+        "de": "LIM blinkt – eingestellte Geschwindigkeit überschritten"
+      },
+      "meaning": {
+        "cs": "Nastavená regulační rychlost je překročena a omezení bylo dočasně ručně překonáno.",
+        "en": "The set control speed has been exceeded and limitation has temporarily been manually overridden.",
+        "de": "Die eingestellte Regelgeschwindigkeit ist überschritten und die Begrenzung vorübergehend manuell überstimmt."
+      },
+      "action": {
+        "cs": "Rychlost sledujte sami a respektujte aktuální dopravní značení. Omezovač nezbavuje řidiče odpovědnosti za rychlost; při přerušení nebo překročení upravte rychlost bezpečně sami.",
+        "en": "Monitor speed yourself and obey actual road signs. The limiter does not remove the driver’s responsibility for speed; adjust speed safely yourself if limitation is interrupted or exceeded.",
+        "de": "Geschwindigkeit selbst überwachen und tatsächliche Verkehrszeichen beachten. Der Begrenzer entbindet nicht von der Geschwindigkeitsverantwortung; bei Unterbrechung oder Überschreitung Geschwindigkeit selbst sicher anpassen."
+      },
+      "note": {
+        "cs": "Pouze pro uvedené vybavení a vydání návodu Q4 e-tron. Jiné hlášení vyžaduje samostatný výklad.",
+        "en": "Only the cited Q4 e-tron equipment and manual edition are covered. A different message requires its own interpretation.",
+        "de": "Nur die genannte Q4-e-tron-Ausstattung und Anleitungsausgabe sind erfasst. Eine andere Meldung erfordert eine eigene Auslegung."
+      },
+      "alt": {
+        "cs": "LIM bliká – nastavená rychlost překročena",
+        "en": "LIM flashing – set speed exceeded",
+        "de": "LIM blinkt – eingestellte Geschwindigkeit überschritten"
+      },
+      "scopes": [
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            160,
+            161,
+            162
+          ],
+          "pdf_pages": [
+            162,
+            163,
+            164
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription LIM",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Exact short functional inscription documented in the cited source; system sans-serif font, no manufacturer font embedded. Only independently documented colours used.",
+        "file": "wp-content/uploads/kontrolky/lim-text-zelena.svg",
+        "sha256": "30e5f98583cff80f79b41414c83b2491da13bc5c0bbbad56c91ef2d70c110875"
+      },
+      "checked": "2026-10-30",
+      "review_status": "model-source-and-lawful-graphic-reviewed-not-complete"
+    },
+    {
+      "id": "audi-q4-lim-ready",
+      "graphic": "lim-text",
+      "graphic_path": "wp-content/uploads/kontrolky/lim-text-bila.svg",
+      "color": "bila",
+      "group": "asistenty",
+      "state": "steady",
+      "kind": "information",
+      "name": {
+        "cs": "LIM – zapnutý, neaktivní omezovač",
+        "en": "LIM – switched on, not limiting",
+        "de": "LIM – eingeschaltet, nicht aktiv"
+      },
+      "meaning": {
+        "cs": "Omezovač je zapnutý, ale není aktivovaný. Nápis nepotvrzuje probíhající omezení rychlosti.",
+        "en": "The limiter is switched on but not activated. The inscription does not confirm active speed limitation.",
+        "de": "Der Begrenzer ist eingeschaltet, aber nicht aktiviert. Die Aufschrift bestätigt keine aktive Geschwindigkeitsbegrenzung."
+      },
+      "action": {
+        "cs": "Rychlost sledujte sami a respektujte aktuální dopravní značení. Omezovač nezbavuje řidiče odpovědnosti za rychlost; při přerušení nebo překročení upravte rychlost bezpečně sami.",
+        "en": "Monitor speed yourself and obey actual road signs. The limiter does not remove the driver’s responsibility for speed; adjust speed safely yourself if limitation is interrupted or exceeded.",
+        "de": "Geschwindigkeit selbst überwachen und tatsächliche Verkehrszeichen beachten. Der Begrenzer entbindet nicht von der Geschwindigkeitsverantwortung; bei Unterbrechung oder Überschreitung Geschwindigkeit selbst sicher anpassen."
+      },
+      "note": {
+        "cs": "Pouze pro uvedené vybavení a vydání návodu Q4 e-tron. Jiné hlášení vyžaduje samostatný výklad.",
+        "en": "Only the cited Q4 e-tron equipment and manual edition are covered. A different message requires its own interpretation.",
+        "de": "Nur die genannte Q4-e-tron-Ausstattung und Anleitungsausgabe sind erfasst. Eine andere Meldung erfordert eine eigene Auslegung."
+      },
+      "alt": {
+        "cs": "LIM – zapnutý, neaktivní omezovač",
+        "en": "LIM – switched on, not limiting",
+        "de": "LIM – eingeschaltet, nicht aktiv"
+      },
+      "scopes": [
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            160,
+            161,
+            162
+          ],
+          "pdf_pages": [
+            162,
+            163,
+            164
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription LIM",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Exact short functional inscription documented in the cited source; system sans-serif font, no manufacturer font embedded. Only independently documented colours used.",
+        "file": "wp-content/uploads/kontrolky/lim-text-bila.svg",
+        "sha256": "43c91164cd261b947c52d878bf3512545a1aeaa0a5f0949a76206352e9ebaeb6"
+      },
+      "checked": "2026-10-30",
+      "review_status": "model-source-and-lawful-graphic-reviewed-not-complete"
+    },
+    {
+      "id": "audi-q4-lim-unavailable",
+      "graphic": "lim-text",
+      "graphic_path": "wp-content/uploads/kontrolky/lim-text-bila.svg",
+      "color": "bila",
+      "group": "asistenty",
+      "state": "message",
+      "kind": "restriction",
+      "name": {
+        "cs": "LIM – hlášení omezení nebo poruchy",
+        "en": "LIM – limitation or fault message",
+        "de": "LIM – Einschränkungs- oder Störungsmeldung"
+      },
+      "meaning": {
+        "cs": "S doprovodným hlášením může být omezovač nedostupný nebo omezený. Samotný bílý nápis bez hlášení může být běžný neaktivní stav.",
+        "en": "With an accompanying message, the limiter may be unavailable or restricted. A white inscription alone may simply mean the normal inactive state.",
+        "de": "Mit begleitender Meldung kann der Begrenzer nicht oder nur eingeschränkt verfügbar sein. Die weiße Aufschrift allein kann den normalen inaktiven Zustand bedeuten."
+      },
+      "action": {
+        "cs": "Rychlost řiďte sami. Postupujte podle hlášení a návodu; při trvající poruše zajistěte odbornou kontrolu.",
+        "en": "Control speed yourself. Follow the message and manual; arrange a professional check if the fault persists.",
+        "de": "Geschwindigkeit selbst regeln. Meldung und Anleitung beachten; bei anhaltender Störung fachgerechte Prüfung veranlassen."
+      },
+      "note": {
+        "cs": "Pouze pro uvedené vybavení a vydání návodu Q4 e-tron. Jiné hlášení vyžaduje samostatný výklad.",
+        "en": "Only the cited Q4 e-tron equipment and manual edition are covered. A different message requires its own interpretation.",
+        "de": "Nur die genannte Q4-e-tron-Ausstattung und Anleitungsausgabe sind erfasst. Eine andere Meldung erfordert eine eigene Auslegung."
+      },
+      "alt": {
+        "cs": "LIM – hlášení omezení nebo poruchy",
+        "en": "LIM – limitation or fault message",
+        "de": "LIM – Einschränkungs- oder Störungsmeldung"
+      },
+      "scopes": [
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            162
+          ],
+          "pdf_pages": [
+            164
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription LIM",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Exact short functional inscription documented in the cited source; system sans-serif font, no manufacturer font embedded. Only independently documented colours used.",
+        "file": "wp-content/uploads/kontrolky/lim-text-bila.svg",
+        "sha256": "43c91164cd261b947c52d878bf3512545a1aeaa0a5f0949a76206352e9ebaeb6"
+      },
+      "checked": "2026-10-30",
+      "review_status": "model-source-and-lawful-graphic-reviewed-not-complete"
+    },
+    {
+      "id": "audi-q4-cruise-ready",
+      "graphic": "cruise",
+      "graphic_path": "wp-content/uploads/kontrolky/cruise-bila.svg",
+      "color": "bila",
+      "group": "asistenty",
+      "state": "steady",
+      "kind": "information",
+      "name": {
+        "cs": "Tempomat – zapnutý, regulace neaktivní (bílá)",
+        "en": "Cruise control – on, regulation inactive (white)",
+        "de": "Geschwindigkeitsregelanlage – ein, Regelung inaktiv (weiß)"
+      },
+      "meaning": {
+        "cs": "Bílý symbol bez chybové zprávy ukazuje zapnutý, ale neaktivovaný tempomat.",
+        "en": "The white symbol without a fault message indicates cruise control switched on but not activated.",
+        "de": "Das weiße Symbol ohne Störungsmeldung zeigt die eingeschaltete, aber nicht aktivierte Geschwindigkeitsregelanlage."
+      },
+      "action": {
+        "cs": "Rychlost sledujte sami a respektujte aktuální dopravní značení. Omezovač nezbavuje řidiče odpovědnosti za rychlost; při přerušení nebo překročení upravte rychlost bezpečně sami.",
+        "en": "Monitor speed yourself and obey actual road signs. The limiter does not remove the driver’s responsibility for speed; adjust speed safely yourself if limitation is interrupted or exceeded.",
+        "de": "Geschwindigkeit selbst überwachen und tatsächliche Verkehrszeichen beachten. Der Begrenzer entbindet nicht von der Geschwindigkeitsverantwortung; bei Unterbrechung oder Überschreitung Geschwindigkeit selbst sicher anpassen."
+      },
+      "note": {
+        "cs": "Pouze pro uvedené vybavení a vydání návodu Q4 e-tron. Jiné hlášení vyžaduje samostatný výklad.",
+        "en": "Only the cited Q4 e-tron equipment and manual edition are covered. A different message requires its own interpretation.",
+        "de": "Nur die genannte Q4-e-tron-Ausstattung und Anleitungsausgabe sind erfasst. Eine andere Meldung erfordert eine eigene Auslegung."
+      },
+      "alt": {
+        "cs": "Tempomat – zapnutý, regulace neaktivní (bílá)",
+        "en": "Cruise control – on, regulation inactive (white)",
+        "de": "Geschwindigkeitsregelanlage – ein, Regelung inaktiv (weiß)"
+      },
+      "scopes": [
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            160,
+            162
+          ],
+          "pdf_pages": [
+            162,
+            164
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "File:ISO 7000 - Ref-No 2047.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_2047.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/07/ISO_7000_-_Ref-No_2047.svg",
+        "author": "Mrmw",
+        "license": "CC0 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "modifications": "Licensed standard pictogram geometry retained; registration marks removed; only source-documented foreground colour applied. Stroke-only elements remain unfilled.",
+        "file": "wp-content/uploads/kontrolky/cruise-bila.svg",
+        "sha256": "dcea932818e914688f7469a5fcda48b76718864a8a09a6b5cd71aab7386f8796"
+      },
+      "checked": "2026-10-30",
+      "review_status": "model-source-and-lawful-graphic-reviewed-not-complete"
+    },
+    {
+      "id": "audi-q4-ac-co2-red",
+      "graphic": "ac-text",
+      "graphic_path": "wp-content/uploads/kontrolky/ac-text-cervena.svg",
+      "color": "cervena",
+      "group": "elektro",
+      "state": "message",
+      "kind": "warning",
+      "name": {
+        "cs": "A/C – koncentrace CO₂ v kabině stále zvýšená",
+        "en": "A/C – cabin CO₂ concentration remains elevated",
+        "de": "A/C – CO₂-Konzentration im Innenraum weiterhin erhöht"
+      },
+      "meaning": {
+        "cs": "U uvedeného provedení hlášení klimatizace upozorňuje na stále zvýšenou koncentraci CO₂ v kabině.",
+        "en": "On the cited version, the air-conditioning message warns that cabin CO₂ concentration remains elevated.",
+        "de": "Bei der genannten Ausführung warnt die Klimaanlagenmeldung vor einer weiterhin erhöhten CO₂-Konzentration im Innenraum."
+      },
+      "action": {
+        "cs": "Bezprostředně vyvětrejte vozidlo. Pokud hlášení trvá, nepokračujte v jízdě a obraťte se na odborný servis. I při zhasnutí hlášení nechte příčinu co nejdříve zkontrolovat.",
+        "en": "Ventilate the vehicle immediately. If the message persists, do not continue driving and contact a qualified workshop. Even if it disappears, have the cause checked soon.",
+        "de": "Fahrzeug unverzüglich lüften. Bleibt die Meldung bestehen, nicht weiterfahren und einen Fachbetrieb kontaktieren. Auch bei erloschener Meldung die Ursache demnächst prüfen lassen."
+      },
+      "note": {
+        "cs": "Výklad vyžaduje uvedené hlášení o CO₂. Není to obecný význam tlačítka A/C ani měření CO₂ v chladicí soustavě spalovacího motoru.",
+        "en": "This interpretation requires the stated CO₂ message. It is not the general meaning of an A/C button or an engine-coolant CO₂ test.",
+        "de": "Diese Auslegung setzt die genannte CO₂-Meldung voraus. Keine allgemeine Bedeutung der A/C-Taste und keine CO₂-Messung im Motorkühlsystem."
+      },
+      "alt": {
+        "cs": "A/C – koncentrace CO₂ v kabině stále zvýšená",
+        "en": "A/C – cabin CO₂ concentration remains elevated",
+        "de": "A/C – CO₂-Konzentration im Innenraum weiterhin erhöht"
+      },
+      "scopes": [
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            92
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              10,
+              92
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription A/C",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Exact short functional inscription documented in the cited source; system sans-serif font, no manufacturer font embedded. Only independently documented colours used.",
+        "file": "wp-content/uploads/kontrolky/ac-text-cervena.svg",
+        "sha256": "8d6d28ffe70c8ca9305ddbd7aeb377fe942c0adcf819f10e610b215a9607a311"
+      },
+      "checked": "2026-10-30",
+      "review_status": "model-source-and-lawful-graphic-reviewed-not-complete"
+    },
+    {
+      "id": "audi-q4-ac-co2-yellow",
+      "graphic": "ac-text",
+      "graphic_path": "wp-content/uploads/kontrolky/ac-text-zluta.svg",
+      "color": "zluta",
+      "group": "elektro",
+      "state": "message",
+      "kind": "warning",
+      "name": {
+        "cs": "A/C – zvýšená koncentrace CO₂ v kabině",
+        "en": "A/C – elevated cabin CO₂ concentration",
+        "de": "A/C – erhöhte CO₂-Konzentration im Innenraum"
+      },
+      "meaning": {
+        "cs": "U uvedeného provedení hlášení klimatizace upozorňuje na zvýšenou koncentraci CO₂ v kabině.",
+        "en": "On the cited version, the air-conditioning message warns of elevated cabin CO₂ concentration.",
+        "de": "Bei der genannten Ausführung warnt die Klimaanlagenmeldung vor einer erhöhten CO₂-Konzentration im Innenraum."
+      },
+      "action": {
+        "cs": "Bezprostředně vyvětrejte vozidlo. Pokud hlášení trvá, nepokračujte v jízdě a obraťte se na odborný servis. I při zhasnutí hlášení nechte příčinu co nejdříve zkontrolovat.",
+        "en": "Ventilate the vehicle immediately. If the message persists, do not continue driving and contact a qualified workshop. Even if it disappears, have the cause checked soon.",
+        "de": "Fahrzeug unverzüglich lüften. Bleibt die Meldung bestehen, nicht weiterfahren und einen Fachbetrieb kontaktieren. Auch bei erloschener Meldung die Ursache demnächst prüfen lassen."
+      },
+      "note": {
+        "cs": "Výklad vyžaduje uvedené hlášení o CO₂. Není to obecný význam tlačítka A/C ani měření CO₂ v chladicí soustavě spalovacího motoru.",
+        "en": "This interpretation requires the stated CO₂ message. It is not the general meaning of an A/C button or an engine-coolant CO₂ test.",
+        "de": "Diese Auslegung setzt die genannte CO₂-Meldung voraus. Keine allgemeine Bedeutung der A/C-Taste und keine CO₂-Messung im Motorkühlsystem."
+      },
+      "alt": {
+        "cs": "A/C – zvýšená koncentrace CO₂ v kabině",
+        "en": "A/C – elevated cabin CO₂ concentration",
+        "de": "A/C – erhöhte CO₂-Konzentration im Innenraum"
+      },
+      "scopes": [
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            92
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              11,
+              92
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription A/C",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Exact short functional inscription documented in the cited source; system sans-serif font, no manufacturer font embedded. Only independently documented colours used.",
+        "file": "wp-content/uploads/kontrolky/ac-text-zluta.svg",
+        "sha256": "823d935eb6002c5eb45e08c643ce4248cf1685f8875cd0f9e1acf3f1a2c001c4"
+      },
+      "checked": "2026-10-30",
+      "review_status": "model-source-and-lawful-graphic-reviewed-not-complete"
+    },
+    {
+      "id": "terramar-front-max",
+      "graphic": "front-demist",
+      "graphic_path": "wp-content/uploads/kontrolky/front-demist-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "MAX – odmlžení a odmrazení čelního skla",
+        "en": "MAX – windscreen demisting and defrosting",
+        "de": "MAX – Frontscheibe entfeuchten und enteisen"
+      },
+      "meaning": {
+        "cs": "Ovládací ikona Climatronicu zapíná odmlžení a odmrazení čelního skla pomocí odvlhčeného vzduchu a vysokého výkonu ventilátoru.",
+        "en": "This Climatronic control activates windscreen demisting and defrosting using dehumidified air and a high fan setting.",
+        "de": "Dieses Climatronic-Bedienzeichen schaltet das Entfeuchten und Enteisen der Frontscheibe mit entfeuchteter Luft und hoher Gebläsestufe ein."
+      },
+      "action": {
+        "cs": "Použijte podle potřeby pro zajištění výhledu a po odmlžení funkci upravte podle návodu. Nejde samo o hlášení závady.",
+        "en": "Use as needed to maintain visibility and adjust the function after demisting as instructed. This is not by itself a fault message.",
+        "de": "Bei Bedarf zur Sicherung der Sicht verwenden und nach dem Entfeuchten gemäß Anleitung anpassen. Dies ist allein keine Störungsmeldung."
+      },
+      "note": {
+        "cs": "Bílá je schematická barva ovladače v uvedeném návodu; neznamená potvrzení aktivního stavu na všech displejích. Jde o ovládací ikonu, nikoli poruchovou kontrolku.",
+        "en": "White is the schematic control colour in the cited manual; it does not confirm activation on every display. This is a control icon, not a fault warning.",
+        "de": "Weiß ist die schematische Bedienfarbe der genannten Anleitung und bestätigt nicht auf jedem Display einen aktiven Zustand. Bedienzeichen, keine Störungskontrollleuchte."
+      },
+      "alt": {
+        "cs": "MAX – odmlžení a odmrazení čelního skla",
+        "en": "MAX – windscreen demisting and defrosting",
+        "de": "MAX – Frontscheibe entfeuchten und enteisen"
+      },
+      "scopes": [
+        {
+          "manual": "cupra-terramar-2025-09-24",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2025",
+          "generation": null,
+          "edition": "Edition 09.24",
+          "language": "EN",
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            148
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "0a9ac8a4efffce37b5b7d4c6fa885780d2a5077de40db6c628286ff176fbf74c",
+            "graphic_printed_pages": [
+              146
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            148
+          ],
+          "pdf_pages": [
+            150
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              148
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "ISO 7000 – Ref-No 0635B",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0635B.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/2/25/ISO_7000_-_Ref-No_0635B.svg",
+        "author": "Mrmw",
+        "license": "CC0 1.0 / public-domain functional symbol",
+        "license_url": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0635B.svg#Licensing",
+        "modifications": "Licensed demist geometry retained with stroke-only elements unfilled; registration marks removed; white schematic foreground and exact MAX/REAR functional inscription added only where shown in the cited Terramar control diagram. Not a dashboard warning state.",
+        "file": "wp-content/uploads/kontrolky/front-demist-bila.svg",
+        "sha256": "f132aaba0be2a18abf2a2528a107dd9069227dd7864ecc74b120abb311725595"
+      },
+      "checked": "2026-10-30",
+      "review_status": "model-source-and-lawful-graphic-reviewed-not-complete"
+    },
+    {
+      "id": "terramar-rear-heating",
+      "graphic": "rear-demist",
+      "graphic_path": "wp-content/uploads/kontrolky/rear-demist-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "REAR – vyhřívání zadního skla",
+        "en": "REAR – heated rear window",
+        "de": "REAR – Heckscheibenheizung"
+      },
+      "meaning": {
+        "cs": "Ovládací ikona zapíná a vypíná vyhřívání zadního skla za podmínek uvedených v návodu.",
+        "en": "This control switches rear-window heating on or off under the conditions in the manual.",
+        "de": "Dieses Bedienzeichen schaltet die Heckscheibenheizung unter den in der Anleitung genannten Bedingungen ein oder aus."
+      },
+      "action": {
+        "cs": "Použijte podle potřeby pro zajištění výhledu a po odmlžení funkci upravte podle návodu. Nejde samo o hlášení závady.",
+        "en": "Use as needed to maintain visibility and adjust the function after demisting as instructed. This is not by itself a fault message.",
+        "de": "Bei Bedarf zur Sicherung der Sicht verwenden und nach dem Entfeuchten gemäß Anleitung anpassen. Dies ist allein keine Störungsmeldung."
+      },
+      "note": {
+        "cs": "Bílá je schematická barva ovladače v uvedeném návodu; neznamená potvrzení aktivního stavu na všech displejích. Jde o ovládací ikonu, nikoli poruchovou kontrolku.",
+        "en": "White is the schematic control colour in the cited manual; it does not confirm activation on every display. This is a control icon, not a fault warning.",
+        "de": "Weiß ist die schematische Bedienfarbe der genannten Anleitung und bestätigt nicht auf jedem Display einen aktiven Zustand. Bedienzeichen, keine Störungskontrollleuchte."
+      },
+      "alt": {
+        "cs": "REAR – vyhřívání zadního skla",
+        "en": "REAR – heated rear window",
+        "de": "REAR – Heckscheibenheizung"
+      },
+      "scopes": [
+        {
+          "manual": "cupra-terramar-2025-09-24",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2025",
+          "generation": null,
+          "edition": "Edition 09.24",
+          "language": "EN",
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            148
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "0a9ac8a4efffce37b5b7d4c6fa885780d2a5077de40db6c628286ff176fbf74c",
+            "graphic_printed_pages": [
+              146
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            148
+          ],
+          "pdf_pages": [
+            150
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              148
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "ISO 7000 – Ref-No 0636A",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0636A.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/7/7c/ISO_7000_-_Ref-No_0636A.svg",
+        "author": "Mrmw",
+        "license": "CC0 1.0 / public-domain functional symbol",
+        "license_url": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0636A.svg#Licensing",
+        "modifications": "Licensed demist geometry retained with stroke-only elements unfilled; registration marks removed; white schematic foreground and exact MAX/REAR functional inscription added only where shown in the cited Terramar control diagram. Not a dashboard warning state.",
+        "file": "wp-content/uploads/kontrolky/rear-demist-bila.svg",
+        "sha256": "4fd06e1e5d8134b325cf7a9abfd11606cb3a3ed995227092cf19449176ee102d"
+      },
+      "checked": "2026-10-30",
+      "review_status": "model-source-and-lawful-graphic-reviewed-not-complete"
+    },
+    {
+      "id": "audi-q4-turn-left",
+      "graphic": "turn-left",
+      "color": "zelena",
+      "group": "osvetleni",
+      "state": "flashing",
+      "name": {
+        "cs": "Levé směrové světlo",
+        "en": "Left direction indicator",
+        "de": "Linker Blinker"
+      },
+      "meaning": {
+        "cs": "Blikání ukazuje činnost směrových nebo výstražných světel. Zrychlené blikání může u příslušného provedení souviset s vadným směrovým světlem.",
+        "en": "Flashing indicates turn signals or hazard warning lights in operation. A faster rate may indicate a failed turn signal on the listed versions.",
+        "de": "Blinken zeigt die Funktion der Fahrtrichtungsanzeiger oder Warnblinkanlage an. Schnelleres Blinken kann bei den aufgeführten Ausführungen auf einen defekten Blinker hinweisen."
+      },
+      "action": {
+        "cs": "Ověřte správnou funkci světel. Výstražná světla používejte při zajištění vozidla podle situace a pravidel.",
+        "en": "Check that the lights work correctly. Use hazard lights as appropriate when securing the vehicle.",
+        "de": "Prüfen Sie die Funktion der Leuchten. Nutzen Sie die Warnblinkanlage situations- und vorschriftsgerecht."
+      },
+      "note": {
+        "cs": "Jednotlivá šipka ukazuje příslušný směr. Současné blikání obou šipek při výstražné funkci je jiný stav; tento obrázek jej nepředstavuje.",
+        "en": "The individual arrow shows the relevant direction. Both arrows flashing together during hazard operation are a different state not depicted by this image.",
+        "de": "Der einzelne Pfeil zeigt die jeweilige Richtung. Gleichzeitiges Blinken beider Pfeile bei Warnblinkbetrieb ist ein anderer, hier nicht dargestellter Zustand."
+      },
+      "scopes": [
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            53,
+            55
+          ],
+          "pdf_pages": [
+            55,
+            57
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              12,
+              13
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "checked": "2026-10-30",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/turn-left-zelena.svg",
+      "graphic_source": {
+        "title": "File:A16 Turn signals.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:A16_Turn_signals.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/3/37/A16_Turn_signals.svg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Ehsnils",
+        "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed. One independently documented direction arrow isolated by the viewBox; no contour redrawn. Derivative remains CC BY-SA 3.0.",
+        "sha256": "0833128f4911b09e12799a912bb97aaa9d6f1ca0d973b2b75aa3e104e0ca5ac5",
+        "file": "wp-content/uploads/kontrolky/turn-left-zelena.svg"
+      },
+      "alt": {
+        "cs": "Levé směrové světlo",
+        "en": "Left direction indicator",
+        "de": "Linker Blinker"
+      },
+      "kind": "information",
+      "previous_general_scopes": [
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/turn-signals.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "535437252ffd5474a85baae74bad76082cb52fe193445c924b17cbb64eb9a329",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-green-hazard-lights-on-4_3-2500x1865"
+          }
+        }
+      ]
+    },
+    {
+      "id": "audi-q4-turn-right",
+      "graphic": "turn-right",
+      "color": "zelena",
+      "group": "osvetleni",
+      "state": "flashing",
+      "name": {
+        "cs": "Pravé směrové světlo",
+        "en": "Right direction indicator",
+        "de": "Rechter Blinker"
+      },
+      "meaning": {
+        "cs": "Blikání ukazuje činnost směrových nebo výstražných světel. Zrychlené blikání může u příslušného provedení souviset s vadným směrovým světlem.",
+        "en": "Flashing indicates turn signals or hazard warning lights in operation. A faster rate may indicate a failed turn signal on the listed versions.",
+        "de": "Blinken zeigt die Funktion der Fahrtrichtungsanzeiger oder Warnblinkanlage an. Schnelleres Blinken kann bei den aufgeführten Ausführungen auf einen defekten Blinker hinweisen."
+      },
+      "action": {
+        "cs": "Ověřte správnou funkci světel. Výstražná světla používejte při zajištění vozidla podle situace a pravidel.",
+        "en": "Check that the lights work correctly. Use hazard lights as appropriate when securing the vehicle.",
+        "de": "Prüfen Sie die Funktion der Leuchten. Nutzen Sie die Warnblinkanlage situations- und vorschriftsgerecht."
+      },
+      "note": {
+        "cs": "Jednotlivá šipka ukazuje příslušný směr. Současné blikání obou šipek při výstražné funkci je jiný stav; tento obrázek jej nepředstavuje.",
+        "en": "The individual arrow shows the relevant direction. Both arrows flashing together during hazard operation are a different state not depicted by this image.",
+        "de": "Der einzelne Pfeil zeigt die jeweilige Richtung. Gleichzeitiges Blinken beider Pfeile bei Warnblinkbetrieb ist ein anderer, hier nicht dargestellter Zustand."
+      },
+      "scopes": [
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            53,
+            55
+          ],
+          "pdf_pages": [
+            55,
+            57
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Actual pictogram, source colour and distinct state compared visually with the licensed graphic; instructions read on the cited pages. Whole-manual completeness is not claimed.",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "graphic_printed_pages": [
+              12,
+              13
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "checked": "2026-10-30",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/turn-right-zelena.svg",
+      "graphic_source": {
+        "title": "File:A16 Turn signals.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:A16_Turn_signals.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/3/37/A16_Turn_signals.svg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Ehsnils",
+        "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed. One independently documented direction arrow isolated by the viewBox; no contour redrawn. Derivative remains CC BY-SA 3.0.",
+        "sha256": "92878c689736c6cb2a8ec6ca6f1bcae51ded148d0026024772d94ffb027ff670",
+        "file": "wp-content/uploads/kontrolky/turn-right-zelena.svg"
+      },
+      "alt": {
+        "cs": "Pravé směrové světlo",
+        "en": "Right direction indicator",
+        "de": "Rechter Blinker"
+      },
+      "kind": "information",
+      "previous_general_scopes": [
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/turn-signals.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "535437252ffd5474a85baae74bad76082cb52fe193445c924b17cbb64eb9a329",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-green-hazard-lights-on-4_3-2500x1865"
+          }
+        }
+      ]
+    },
+    {
+      "id": "terramar-lane-control",
+      "graphic": "lane-assist",
+      "graphic_path": "wp-content/uploads/kontrolky/lane-assist-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "Lane Assist – ovládací zkratka v Control Centru",
+        "en": "Lane Assist – Control Centre shortcut",
+        "de": "Lane Assist – Bedienverknüpfung im Control Centre"
+      },
+      "meaning": {
+        "cs": "Bílá ikona v nabídce oblíbených položek označuje přístup k ovládání Lane Assist. Sama nepotvrzuje, že je asistent zapnutý, připravený zasahovat nebo právě koriguje směr.",
+        "en": "The white icon in the favourites menu identifies access to Lane Assist controls. It does not by itself confirm that the assistant is enabled, ready to intervene or correcting the course.",
+        "de": "Das weiße Symbol im Favoritenmenü kennzeichnet den Zugang zur Lane-Assist-Bedienung. Es bestätigt allein weder Aktivierung noch Eingriffsbereitschaft oder einen aktuellen Lenkeingriff."
+      },
+      "action": {
+        "cs": "Nastavení měňte pouze u bezpečně odstaveného vozidla a ověřte skutečný stav podle příslušné nabídky a přístrojového panelu. Řiďte se návodem konkrétní výbavy.",
+        "en": "Change settings only while safely parked and check the actual state in the relevant menu and instrument cluster. Follow the manual for the actual equipment.",
+        "de": "Einstellungen nur am sicher abgestellten Fahrzeug ändern und den tatsächlichen Zustand im zugehörigen Menü und Kombiinstrument prüfen. Anleitung der konkreten Ausstattung beachten."
+      },
+      "note": {
+        "cs": "Stejný systém může mít odlišné provozní kontrolky podle stavu. Barva ovládací zkratky není jejich náhradou.",
+        "en": "The same system may use different operating indicators for different states. The control shortcut’s colour does not replace them.",
+        "de": "Dasselbe System kann je nach Zustand andere Betriebsanzeigen verwenden. Die Farbe der Bedienverknüpfung ersetzt diese nicht."
+      },
+      "alt": {
+        "cs": "Bílý vůz mezi čarami jízdního pruhu – ovládací zkratka Lane Assist.",
+        "en": "White car between lane markings – Lane Assist control shortcut.",
+        "de": "Weißes Auto zwischen Fahrspurmarkierungen – Lane-Assist-Bedienverknüpfung."
+      },
+      "scopes": [
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            35,
+            37,
+            39,
+            216,
+            218
+          ],
+          "pdf_pages": [
+            37,
+            39,
+            41,
+            218,
+            220
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Source-manual instructions and actual source pictogram compared with the corresponding user-supplied Terramar photograph. The photographed vehicle model year, VIN and software version are not known and are not inferred from the manual edition.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "photo_refs": [
+              "terramar-photo-01",
+              "terramar-photo-02",
+              "terramar-photo-03",
+              "terramar-photo-04"
+            ],
+            "checked": "2026-10-30"
+          },
+          "model_note": {
+            "cs": "Fotografie dodané zadavatelem potvrzují podobu na fotografovaném Terramaru; jeho modelový rok ani verze softwaru nejsou doložené. Rozsah tohoto záznamu se řídí samostatně uvedeným vydáním návodu.",
+            "en": "User-supplied photographs confirm the depiction on the photographed Terramar; its model year and software version are not documented. This entry’s scope follows the separately cited manual edition.",
+            "de": "Die bereitgestellten Fotos bestätigen die Darstellung am fotografierten Terramar; Modelljahr und Softwarestand sind nicht belegt. Der Geltungsbereich folgt der separat genannten Anleitungsausgabe."
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "File:ISO 7000 - Ref-No 3128.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_3128.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/01/ISO_7000_-_Ref-No_3128.svg",
+        "author": "Mrmw",
+        "license": "CC0 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "modifications": "Licensed standard pictogram geometry retained; registration marks removed; only source-documented foreground colour applied. Stroke-only elements remain unfilled.",
+        "file": "wp-content/uploads/kontrolky/lane-assist-bila.svg",
+        "sha256": "104959037626466ac610ab4f170c178603c3954fe490e2679bddf79ba5a63e01"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "terramar-start-stop-control",
+      "graphic": "start-stop-off-text",
+      "graphic_path": "wp-content/uploads/kontrolky/start-stop-off-text-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "Start-stop – ovládací zkratka A OFF",
+        "en": "Start-stop – A OFF control shortcut",
+        "de": "Start-Stopp – Bedienverknüpfung A OFF"
+      },
+      "meaning": {
+        "cs": "Bílá ikona A OFF v nabídce slouží k ovládání funkce start-stop. Samotný piktogram v seznamu oblíbených nepotvrzuje poruchu ani právě neaktivní stav; skutečné nastavení je třeba zkontrolovat v příslušné nabídce.",
+        "en": "The white A OFF menu icon is a start-stop control. The pictogram in a favourites list alone does not establish a fault or current inactive state; check the actual setting in the corresponding menu.",
+        "de": "Das weiße Menüsymbol A OFF dient der Start-Stopp-Bedienung. Das Piktogramm in der Favoritenliste allein bestätigt weder Störung noch einen aktuell inaktiven Zustand; die tatsächliche Einstellung im zugehörigen Menü prüfen."
+      },
+      "action": {
+        "cs": "Funkci nastavujte pouze při bezpečném odstavení podle návodu vozidla. Rozlišujte ovladač a provozní hlášení přístrojového panelu.",
+        "en": "Adjust the function only while safely parked, following the vehicle manual. Distinguish the control from instrument-cluster operating messages.",
+        "de": "Funktion nur am sicher abgestellten Fahrzeug nach Anleitung einstellen. Bedienzeichen und Betriebsmeldungen im Kombiinstrument unterscheiden."
+      },
+      "note": {
+        "cs": "Návod Terramar 11.25 tuto funkci výslovně neuvádí pro plug-in hybridy. Toto doložení proto není přiřazené PHEV. Ikona A OFF není stejná varianta jako přeškrtnuté A.",
+        "en": "Terramar manual 11.25 explicitly excludes plug-in hybrids from this function. This evidence is therefore not assigned to PHEVs. A OFF is distinct from a diagonally crossed A.",
+        "de": "Die Terramar-Anleitung 11.25 schließt Plug-in-Hybride bei dieser Funktion ausdrücklich aus. Der Nachweis wird daher keinem PHEV zugeordnet. A OFF ist eine andere Variante als ein schräg durchgestrichenes A."
+      },
+      "alt": {
+        "cs": "Bílá ovládací ikona start-stop A s kruhovou šipkou a nápisem OFF.",
+        "en": "White start-stop control icon: A with a circular arrow and OFF inscription.",
+        "de": "Weißes Start-Stopp-Bedienzeichen: A mit Kreispfeil und Aufschrift OFF."
+      },
+      "scopes": [
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            39,
+            176,
+            178
+          ],
+          "pdf_pages": [
+            41,
+            178,
+            180
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Source-manual instructions and actual source pictogram compared with the corresponding user-supplied Terramar photograph. The photographed vehicle model year, VIN and software version are not known and are not inferred from the manual edition.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "photo_refs": [
+              "terramar-photo-01",
+              "terramar-photo-02",
+              "terramar-photo-03",
+              "terramar-photo-04"
+            ],
+            "checked": "2026-10-30"
+          },
+          "model_note": {
+            "cs": "Fotografie dodané zadavatelem potvrzují podobu na fotografovaném Terramaru; jeho modelový rok ani verze softwaru nejsou doložené. Rozsah tohoto záznamu se řídí samostatně uvedeným vydáním návodu.",
+            "en": "User-supplied photographs confirm the depiction on the photographed Terramar; its model year and software version are not documented. This entry’s scope follows the separately cited manual edition.",
+            "de": "Die bereitgestellten Fotos bestätigen die Darstellung am fotografierten Terramar; Modelljahr und Softwarestand sind nicht belegt. Der Geltungsbereich folgt der separat genannten Anleitungsausgabe."
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "File:ISO 7000 - Ref-No 3127.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_3127.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/9/96/ISO_7000_-_Ref-No_3127.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "author": "Vectorization:    Mrmw",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source. OFF functional inscription added only for the independently documented Terramar menu-control variant (figure 118 and supplied photographs). No diagonal cancellation stroke added.",
+        "sha256": "497c92a36fc5be8ba28cf4c125d26cb9b6b30adb2264404ca72edc5f94a912bf",
+        "file": "wp-content/uploads/kontrolky/start-stop-off-text-bila.svg"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
     }
   ],
   "pending_items": [
@@ -16256,9 +18601,9 @@
     {
       "brand": "audi",
       "description": {
-        "cs": "Audi: nově 45 obrazových významových položek pro Q3, německý návod 11.2024, 83B012705AA. Jde o úplný dokument vydaný AUDI AG hostovaný autoškolou, nikoli na serveru Audi; vydání není modelový rok a porovnání s původním souborem výrobce chybí. Pro A4 8W 01.2016 (8W0012705AC), A8 4N 2018 a Q4 e-tron 2022 nadále chybí dostupný evropský návod k obsluze; portál models a zveřejněné odkazy vracejí 403. SSP 668 nenahrazuje pokyny pro řidiče. Q3 nedokládá platnost pro ostatní Audi ani pro elektrické e-tron.",
-        "en": "Audi: 45 illustrated semantic entries are now documented for Q3, German manual 11.2024, 83B012705AA. This is a full AUDI AG document hosted by a driving school, not Audi; the edition is not a model year and comparison with the manufacturer-hosted file remains outstanding. Accessible European owner’s manuals for A4 8W 01.2016 (8W0012705AC), A8 4N 2018 and Q4 e-tron 2022 are still missing; the models portal and published links return 403. SSP 668 does not replace driver instructions. Q3 evidence does not establish applicability to other Audis or electric e-tron models.",
-        "de": "Audi: Neu belegt sind 45 bebilderte Bedeutungseinträge für Q3, deutsche Anleitung 11.2024, 83B012705AA. Das vollständige Dokument von AUDI AG wird von einer Fahrschule, nicht von Audi, gehostet; die Ausgabe ist kein Modelljahr und der Abgleich mit der Herstellerdatei steht aus. Zugängliche europäische Betriebsanleitungen für A4 8W 01.2016 (8W0012705AC), A8 4N 2018 und Q4 e-tron 2022 fehlen weiterhin; Modellportal und veröffentlichte Links liefern 403. SSP 668 ersetzt keine Fahrerhinweise. Q3-Nachweise gelten nicht automatisch für andere Audi oder elektrische e-tron-Modelle."
+        "cs": "Audi: vybrané položky Q3 11.2024 (83B012705AA) a nově Q4 e-tron 07.2024 (89A012705AM). Oba úplné dokumenty AUDI AG jsou kopie na serverech třetích stran. Q4 má 338 stran, přesnou obálku, vydání a kontrolní otisk; nejde o náhradu vydání 2022. Soubor byl získán běžným prohlížečem z veřejného PDF prohlížeče; dřívější překážka 403 je pro tuto kopii vyřešená. Ani jeden návod není kompletně položkově porovnaný. Nadále chybí A4 8W 01.2016 (8W0012705AC), ověřené vydání A8 4N pro vůz 2018 a Q4 e-tron 2022; oficiální modelové/GPSR odkazy vracejí 403. Některé kombinované ADAS/HV a ovládací grafiky nejsou doplněné bez přesného legálně použitelného podkladu.",
+        "en": "Audi: selected entries for Q3 11.2024 (83B012705AA) and now Q4 e-tron 07.2024 (89A012705AM). Both full AUDI AG documents are copies on third-party hosts. Q4 has 338 pages with its exact cover, edition and file hash verified; it is not substituted for a 2022 edition. The file was obtained through the public PDF viewer in an ordinary browser, resolving the earlier 403 obstacle for this copy. Neither manual has been completely compared item by item. A4 8W 01.2016 (8W0012705AC), a verified A8 4N edition for a 2018 vehicle, and Q4 e-tron 2022 remain missing; official model/GPSR links return 403. Some combined ADAS/HV and control graphics remain unpublished without exact lawfully reusable assets.",
+        "de": "Audi: ausgewählte Einträge für Q3 11.2024 (83B012705AA) und neu Q4 e-tron 07.2024 (89A012705AM). Beide vollständigen AUDI-AG-Dokumente sind Kopien auf Drittservern. Q4 hat 338 Seiten mit geprüfter genauer Titelseite, Ausgabe und Dateiprüfsumme; kein Ersatz für eine Ausgabe 2022. Der Abruf über den öffentlichen PDF-Betrachter im normalen Browser löste das bisherige 403-Hindernis für diese Kopie. Keine der Anleitungen wurde vollständig Eintrag für Eintrag verglichen. A4 8W 01.2016 (8W0012705AC), eine verifizierte A8-4N-Ausgabe für ein Fahrzeug 2018 und Q4 e-tron 2022 fehlen weiterhin; offizielle Modell-/GPSR-Links liefern 403. Einige kombinierte ADAS-/HV- und Bediengrafiken bleiben ohne genaue rechtmäßig nutzbare Vorlage unveröffentlicht."
       }
     },
     {
@@ -17027,16 +19372,126 @@
       "modifications": "Unchanged sign geometry, prescribed red/white/black colours and 120 inscription. Inkscape metadata removed. A displayed road-sign example, not a manufacturer warning icon or a claim of current speed limit.",
       "file": "wp-content/uploads/kontrolky/traffic-speed-120-cervena.svg",
       "sha256": "c8f620a83b9c3ce398cc8277a8f1a38e2ccd817e65ca5b430fd6e573f45c8b05"
+    },
+    "hold-text-zelena": {
+      "title": "Functional inscription HOLD",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Exact short functional inscription documented in the cited source; system sans-serif font, no manufacturer font embedded. Only independently documented colours used.",
+      "file": "wp-content/uploads/kontrolky/hold-text-zelena.svg",
+      "sha256": "3d114e1f907d2a1af8d29a44da01efd2d9c8b4e8e500c007fa6c8ce82aef7be0"
+    },
+    "lim-text-zelena": {
+      "title": "Functional inscription LIM",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Exact short functional inscription documented in the cited source; system sans-serif font, no manufacturer font embedded. Only independently documented colours used.",
+      "file": "wp-content/uploads/kontrolky/lim-text-zelena.svg",
+      "sha256": "30e5f98583cff80f79b41414c83b2491da13bc5c0bbbad56c91ef2d70c110875"
+    },
+    "lim-text-bila": {
+      "title": "Functional inscription LIM",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Exact short functional inscription documented in the cited source; system sans-serif font, no manufacturer font embedded. Only independently documented colours used.",
+      "file": "wp-content/uploads/kontrolky/lim-text-bila.svg",
+      "sha256": "43c91164cd261b947c52d878bf3512545a1aeaa0a5f0949a76206352e9ebaeb6"
+    },
+    "ac-text-cervena": {
+      "title": "Functional inscription A/C",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Exact short functional inscription documented in the cited source; system sans-serif font, no manufacturer font embedded. Only independently documented colours used.",
+      "file": "wp-content/uploads/kontrolky/ac-text-cervena.svg",
+      "sha256": "8d6d28ffe70c8ca9305ddbd7aeb377fe942c0adcf819f10e610b215a9607a311"
+    },
+    "ac-text-zluta": {
+      "title": "Functional inscription A/C",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Exact short functional inscription documented in the cited source; system sans-serif font, no manufacturer font embedded. Only independently documented colours used.",
+      "file": "wp-content/uploads/kontrolky/ac-text-zluta.svg",
+      "sha256": "823d935eb6002c5eb45e08c643ce4248cf1685f8875cd0f9e1acf3f1a2c001c4"
+    },
+    "front-demist-bila": {
+      "title": "ISO 7000 – Ref-No 0635B",
+      "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0635B.svg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/2/25/ISO_7000_-_Ref-No_0635B.svg",
+      "author": "Mrmw",
+      "license": "CC0 1.0 / public-domain functional symbol",
+      "license_url": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0635B.svg#Licensing",
+      "modifications": "Licensed demist geometry retained with stroke-only elements unfilled; registration marks removed; white schematic foreground and exact MAX/REAR functional inscription added only where shown in the cited Terramar control diagram. Not a dashboard warning state.",
+      "file": "wp-content/uploads/kontrolky/front-demist-bila.svg",
+      "sha256": "f132aaba0be2a18abf2a2528a107dd9069227dd7864ecc74b120abb311725595"
+    },
+    "rear-demist-bila": {
+      "title": "ISO 7000 – Ref-No 0636A",
+      "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0636A.svg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/7/7c/ISO_7000_-_Ref-No_0636A.svg",
+      "author": "Mrmw",
+      "license": "CC0 1.0 / public-domain functional symbol",
+      "license_url": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0636A.svg#Licensing",
+      "modifications": "Licensed demist geometry retained with stroke-only elements unfilled; registration marks removed; white schematic foreground and exact MAX/REAR functional inscription added only where shown in the cited Terramar control diagram. Not a dashboard warning state.",
+      "file": "wp-content/uploads/kontrolky/rear-demist-bila.svg",
+      "sha256": "4fd06e1e5d8134b325cf7a9abfd11606cb3a3ed995227092cf19449176ee102d"
+    },
+    "turn-left-zelena": {
+      "title": "File:A16 Turn signals.svg",
+      "page": "https://commons.wikimedia.org/wiki/File:A16_Turn_signals.svg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/3/37/A16_Turn_signals.svg",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "author": "Ehsnils",
+      "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed. One independently documented direction arrow isolated by the viewBox; no contour redrawn. Derivative remains CC BY-SA 3.0.",
+      "sha256": "0833128f4911b09e12799a912bb97aaa9d6f1ca0d973b2b75aa3e104e0ca5ac5",
+      "file": "wp-content/uploads/kontrolky/turn-left-zelena.svg"
+    },
+    "turn-right-zelena": {
+      "title": "File:A16 Turn signals.svg",
+      "page": "https://commons.wikimedia.org/wiki/File:A16_Turn_signals.svg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/3/37/A16_Turn_signals.svg",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "author": "Ehsnils",
+      "modifications": "Original positive/negative geometry preserved in a luminance mask; original black background/cut-outs made transparent; documented foreground colour retained. No symbol contour reconstructed. One independently documented direction arrow isolated by the viewBox; no contour redrawn. Derivative remains CC BY-SA 3.0.",
+      "sha256": "92878c689736c6cb2a8ec6ca6f1bcae51ded148d0026024772d94ffb027ff670",
+      "file": "wp-content/uploads/kontrolky/turn-right-zelena.svg"
+    },
+    "start-stop-off-text-bila": {
+      "title": "File:ISO 7000 - Ref-No 3127.svg",
+      "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_3127.svg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/9/96/ISO_7000_-_Ref-No_3127.svg",
+      "license": "Public domain",
+      "license_url": "",
+      "author": "Vectorization:    Mrmw",
+      "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source. OFF functional inscription added only for the independently documented Terramar menu-control variant (figure 118 and supplied photographs). No diagonal cancellation stroke added.",
+      "sha256": "497c92a36fc5be8ba28cf4c125d26cb9b6b30adb2264404ca72edc5f94a912bf",
+      "file": "wp-content/uploads/kontrolky/start-stop-off-text-bila.svg"
     }
   },
   "counts": {
-    "semantic_records": 116,
+    "semantic_records": 131,
     "legacy_generic_volkswagen": 1,
-    "model_documented_semantic_records": 112,
-    "model_edition_assignments": 391,
-    "partially_reviewed_manual_editions": 38,
-    "shared_graphic_colour_variants": 64,
-    "distinct_pictogram_shapes": 42,
+    "model_documented_semantic_records": 127,
+    "model_edition_assignments": 446,
+    "partially_reviewed_manual_editions": 39,
+    "shared_graphic_colour_variants": 74,
+    "distinct_pictogram_shapes": 50,
     "by_brand": {
       "volkswagen": {
         "distinct_pictogram_shapes": 24,
@@ -17049,14 +19504,14 @@
         "third_party_hosted_manual_editions": 0
       },
       "audi": {
-        "distinct_pictogram_shapes": 31,
-        "graphic_colour_variants": 40,
-        "semantic_variants": 45,
-        "model_edition_assignments": 45,
+        "distinct_pictogram_shapes": 38,
+        "graphic_colour_variants": 50,
+        "semantic_variants": 58,
+        "model_edition_assignments": 92,
         "generic_brand_assignments": 0,
-        "reviewed_manual_editions": 1,
+        "reviewed_manual_editions": 2,
         "first_party_hosted_manual_editions": 0,
-        "third_party_hosted_manual_editions": 1
+        "third_party_hosted_manual_editions": 2
       },
       "skoda": {
         "distinct_pictogram_shapes": 28,
@@ -17079,10 +19534,10 @@
         "third_party_hosted_manual_editions": 0
       },
       "cupra": {
-        "distinct_pictogram_shapes": 31,
-        "graphic_colour_variants": 39,
-        "semantic_variants": 51,
-        "model_edition_assignments": 134,
+        "distinct_pictogram_shapes": 34,
+        "graphic_colour_variants": 44,
+        "semantic_variants": 56,
+        "model_edition_assignments": 142,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 12,
         "first_party_hosted_manual_editions": 12,
@@ -17378,6 +19833,16 @@
         "en": "Q4 e-tron: a copy of the German 07.2024 manual, 89A012705AM, 338 pages, was located. The text index confirms the edition, not graphic accuracy. Direct PDF retrieval returns 403 in this environment; the normal host-page link yielded no accessible file and the tool returned no usable page image. No entries were assigned from this copy without visual review. Completion requires an accessible original file or readable symbol-overview pages and their associated instructions.",
         "de": "Q4 e-tron: Kopie der deutschen Anleitung 07.2024, 89A012705AM, 338 Seiten, gefunden. Der Textindex bestätigt die Ausgabe, nicht die Grafikgenauigkeit. Der direkte PDF-Abruf liefert hier 403; der normale Link der Host-Seite ergab keine zugängliche Datei, und das Werkzeug lieferte kein nutzbares Seitenbild. Ohne Sichtprüfung wurden daraus keine Einträge zugeordnet. Benötigt wird eine zugängliche Originaldatei oder lesbare Symbolübersichten mit zugehörigen Anweisungen."
       }
+    },
+    {
+      "brand": "audi",
+      "date": "2026-10-30",
+      "url": "https://pdf.bordbuecher.de/597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e.pdf",
+      "summary": {
+        "cs": "Vyřešeno: Q4 e-tron 07.2024, 89A012705AM, celý soubor 338 stran získán přes běžný veřejný prohlížeč. SHA-256 odpovídá identifikátoru souboru. Obrázky i pokyny vybraných položek porovnané samostatně; nejde o kompletní revizi celého návodu.",
+        "en": "Resolved: full 338-page Q4 e-tron 07.2024, 89A012705AM, obtained through the ordinary public browser viewer. SHA-256 matches the file identifier. Selected images and instructions checked individually; not a complete review of the manual.",
+        "de": "Gelöst: vollständige 338-seitige Q4-e-tron-Anleitung 07.2024, 89A012705AM, über den normalen öffentlichen Browser-Betrachter abgerufen. SHA-256 entspricht der Dateikennung. Ausgewählte Bilder und Anweisungen einzeln verglichen; keine vollständige Anleitungsprüfung."
+      }
     }
   ],
   "counting_method": {
@@ -17388,7 +19853,7 @@
   "review_gaps": {
     "cs": [
       "Volkswagen: původní položky jsou modelově doložené ve 14 z 15 případů. Nově je ověřeno žhavení i blikající závada řízení dieselu Golf VII 11.2019 (5G0012705AK). Golf 5H0 11.2020 a ID.4 11.2021 (11A012705AF) mají další jednotlivá doložení. Stále chybí modelový doklad pro původní žlutou regulaci dosahu světlometů (vw-range); kontrola Golf VII a Touareg 11.2019 tento konkrétní symbol nepotvrdila. Obecný příklad zůstává výslovně bez modelu. Ostatní modely a roky od 2010 nejsou automaticky pokryté.",
-      "Audi: nově 45 obrazových významových položek pro Q3, německý návod 11.2024, 83B012705AA. Jde o úplný dokument vydaný AUDI AG hostovaný autoškolou, nikoli na serveru Audi; vydání není modelový rok a porovnání s původním souborem výrobce chybí. Pro A4 8W 01.2016 (8W0012705AC), A8 4N 2018 a Q4 e-tron 2022 nadále chybí dostupný evropský návod k obsluze; portál models a zveřejněné odkazy vracejí 403. SSP 668 nenahrazuje pokyny pro řidiče. Q3 nedokládá platnost pro ostatní Audi ani pro elektrické e-tron.",
+      "Audi: vybrané položky Q3 11.2024 (83B012705AA) a nově Q4 e-tron 07.2024 (89A012705AM). Oba úplné dokumenty AUDI AG jsou kopie na serverech třetích stran. Q4 má 338 stran, přesnou obálku, vydání a kontrolní otisk; nejde o náhradu vydání 2022. Soubor byl získán běžným prohlížečem z veřejného PDF prohlížeče; dřívější překážka 403 je pro tuto kopii vyřešená. Ani jeden návod není kompletně položkově porovnaný. Nadále chybí A4 8W 01.2016 (8W0012705AC), ověřené vydání A8 4N pro vůz 2018 a Q4 e-tron 2022; oficiální modelové/GPSR odkazy vracejí 403. Některé kombinované ADAS/HV a ovládací grafiky nejsou doplněné bez přesného legálně použitelného podkladu.",
       "Škoda: zkontrolované vybrané položky pocházejí z kopie návodu Octavia 5E 11.2018 (5E0012715AQ) a Enyaq iV 11.2020, německy. Vydání není modelový rok a nepokrývá ostatní roky. Pro srovnání chybí původní soubory výrobce. Dále chybí Octavia 07.2019, Superb 05.2010 a pokyny digitálního návodu Octavia iV 11.2020 (5E4012715CB). Přesné dokumenty a výsledky přístupu jsou níže.",
       "Volkswagen Užitkové vozy: nově doložen Caddy 2K7, digitální návod 11.2025. U 17 původních obecných příkladů je obecný rozsah nahrazen konkrétním doložením; původní zdroje jsou v evidenci zachovány. Zbývajících 7 příkladů dosud není modelově potvrzeno: EPC, obecná brzdová výstraha, DPF, převzetí ovládání ACC a tři varianty prostého volantu. Nový Caddy používá u řízení a některých asistentů jiné značky; podobnost není důkazem shody. Starší Caddy, T6/T6.1, nový Transporter, ID. Buzz, Crafter a Amarok nejsou tímto vydáním pokryté.",
       "SEAT a CUPRA: zachované položky platí jen pro výslovně uvedená vydání a výbavu. Kompletní revize všech modelů a let od 2010, resp. CUPRA od vzniku samostatné značky, není dokončená. Mezery mezi vydáními se automaticky nevyplňují.",
@@ -17396,7 +19861,7 @@
     ],
     "en": [
       "Volkswagen: 14 of the original 15 entries now have model evidence. Preheating and a flashing diesel engine-management fault are newly verified for Golf VII 11.2019 (5G0012705AK). Golf 5H0 11.2020 and ID.4 11.2021 (11A012705AF) have further individual evidence. Model evidence for the original yellow headlight-range warning (vw-range) is still missing; reviewing Golf VII and Touareg 11.2019 did not confirm this exact pictogram. The general example remains explicitly without a model. Other models and years from 2010 are not automatically covered.",
-      "Audi: 45 illustrated semantic entries are now documented for Q3, German manual 11.2024, 83B012705AA. This is a full AUDI AG document hosted by a driving school, not Audi; the edition is not a model year and comparison with the manufacturer-hosted file remains outstanding. Accessible European owner’s manuals for A4 8W 01.2016 (8W0012705AC), A8 4N 2018 and Q4 e-tron 2022 are still missing; the models portal and published links return 403. SSP 668 does not replace driver instructions. Q3 evidence does not establish applicability to other Audis or electric e-tron models.",
+      "Audi: selected entries for Q3 11.2024 (83B012705AA) and now Q4 e-tron 07.2024 (89A012705AM). Both full AUDI AG documents are copies on third-party hosts. Q4 has 338 pages with its exact cover, edition and file hash verified; it is not substituted for a 2022 edition. The file was obtained through the public PDF viewer in an ordinary browser, resolving the earlier 403 obstacle for this copy. Neither manual has been completely compared item by item. A4 8W 01.2016 (8W0012705AC), a verified A8 4N edition for a 2018 vehicle, and Q4 e-tron 2022 remain missing; official model/GPSR links return 403. Some combined ADAS/HV and control graphics remain unpublished without exact lawfully reusable assets.",
       "Škoda: selected reviewed entries come from copies of the Octavia 5E 11.2018 manual (5E0012715AQ) and the German Enyaq iV 11.2020 manual. An edition is not a model year and does not cover other years. The original manufacturer files are still needed for comparison. Octavia 07.2019, Superb 05.2010 and the instructions in the Octavia iV 11.2020 digital manual (5E4012715CB) also remain missing. Exact documents and access outcomes are listed below.",
       "Volkswagen Commercial Vehicles: Caddy 2K7, digital manual 11.2025, is now documented. Seventeen original general examples have been replaced by specific model evidence, with their previous sources retained in the audit. Seven examples remain without model confirmation: EPC, general brake warning, DPF, ACC take-over prompt and three plain steering-wheel variants. New Caddy steering and some assistant pictograms differ; similarity is not evidence of equivalence. Earlier Caddy, T6/T6.1, new Transporter, ID. Buzz, Crafter and Amarok are not covered by this edition.",
       "SEAT and CUPRA: retained entries apply only to explicitly listed editions and equipment. A complete review of all models and years from 2010, or CUPRA from its establishment as a separate brand, remains incomplete. Gaps between editions are not automatically filled.",
@@ -17404,7 +19869,7 @@
     ],
     "de": [
       "Volkswagen: Für 14 der ursprünglichen 15 Einträge liegt jetzt ein Modellnachweis vor. Vorglühen und blinkende Diesel-Motorsteuerungsstörung sind neu für Golf VII 11.2019 (5G0012705AK) belegt. Golf 5H0 11.2020 und ID.4 11.2021 (11A012705AF) haben weitere Einzelnachweise. Für die ursprüngliche gelbe Leuchtweitenwarnung (vw-range) fehlt der Modellnachweis; die Prüfung von Golf VII und Touareg 11.2019 bestätigte dieses genaue Piktogramm nicht. Das allgemeine Beispiel bleibt ausdrücklich ohne Modell. Andere Modelle und Jahre ab 2010 sind nicht automatisch abgedeckt.",
-      "Audi: Neu belegt sind 45 bebilderte Bedeutungseinträge für Q3, deutsche Anleitung 11.2024, 83B012705AA. Das vollständige Dokument von AUDI AG wird von einer Fahrschule, nicht von Audi, gehostet; die Ausgabe ist kein Modelljahr und der Abgleich mit der Herstellerdatei steht aus. Zugängliche europäische Betriebsanleitungen für A4 8W 01.2016 (8W0012705AC), A8 4N 2018 und Q4 e-tron 2022 fehlen weiterhin; Modellportal und veröffentlichte Links liefern 403. SSP 668 ersetzt keine Fahrerhinweise. Q3-Nachweise gelten nicht automatisch für andere Audi oder elektrische e-tron-Modelle.",
+      "Audi: ausgewählte Einträge für Q3 11.2024 (83B012705AA) und neu Q4 e-tron 07.2024 (89A012705AM). Beide vollständigen AUDI-AG-Dokumente sind Kopien auf Drittservern. Q4 hat 338 Seiten mit geprüfter genauer Titelseite, Ausgabe und Dateiprüfsumme; kein Ersatz für eine Ausgabe 2022. Der Abruf über den öffentlichen PDF-Betrachter im normalen Browser löste das bisherige 403-Hindernis für diese Kopie. Keine der Anleitungen wurde vollständig Eintrag für Eintrag verglichen. A4 8W 01.2016 (8W0012705AC), eine verifizierte A8-4N-Ausgabe für ein Fahrzeug 2018 und Q4 e-tron 2022 fehlen weiterhin; offizielle Modell-/GPSR-Links liefern 403. Einige kombinierte ADAS-/HV- und Bediengrafiken bleiben ohne genaue rechtmäßig nutzbare Vorlage unveröffentlicht.",
       "Škoda: Ausgewählte geprüfte Einträge stammen aus Kopien der Anleitung Octavia 5E 11.2018 (5E0012715AQ) und der deutschen Anleitung Enyaq iV 11.2020. Eine Ausgabe ist kein Modelljahr und deckt andere Jahre nicht ab. Für den Abgleich fehlen die Hersteller-Originaldateien. Außerdem fehlen Octavia 07.2019, Superb 05.2010 und die Fahrerhinweise der digitalen Anleitung Octavia iV 11.2020 (5E4012715CB). Genaue Dokumente und Zugriffsergebnisse sind unten aufgeführt.",
       "Volkswagen Nutzfahrzeuge: Neu belegt ist Caddy 2K7, digitale Anleitung 11.2025. Bei 17 ursprünglichen allgemeinen Beispielen wurde der allgemeine Geltungsbereich durch konkreten Modellnachweis ersetzt; bisherige Quellen bleiben in der Dokumentation. Sieben Beispiele bleiben ohne Modellbestätigung: EPC, allgemeine Bremswarnung, DPF, ACC-Übernahmeaufforderung und drei einfache Lenkradvarianten. Beim neuen Caddy weichen Lenkungs- und manche Assistenzpiktogramme ab; Ähnlichkeit ist kein Gleichheitsnachweis. Ältere Caddy, T6/T6.1, neuer Transporter, ID. Buzz, Crafter und Amarok sind durch diese Ausgabe nicht abgedeckt.",
       "SEAT und CUPRA: Die erhaltenen Einträge gelten nur für ausdrücklich genannte Ausgaben und Ausstattungen. Die vollständige Prüfung aller Modelle und Jahre ab 2010 beziehungsweise CUPRA seit Gründung als eigenständige Marke ist noch nicht abgeschlossen. Lücken zwischen Ausgaben werden nicht automatisch geschlossen.",
@@ -18546,6 +21011,334 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "A source-illustrated road-sign display example, not a generic fault lamp. Additional plate, overspeed and unavailable-state variants are explicitly not implied."
+    },
+    {
+      "id": "116-q4-and-control-icons",
+      "date": "2026-10-30",
+      "before_semantic_records": 116,
+      "after_semantic_records": 129,
+      "added_record_ids": [
+        "audi-q4-manoeuvre-only",
+        "audi-q4-hold-active",
+        "audi-q4-lim-active",
+        "audi-q4-lim-overridden",
+        "audi-q4-lim-ready",
+        "audi-q4-lim-unavailable",
+        "audi-q4-cruise-ready",
+        "audi-q4-ac-co2-red",
+        "audi-q4-ac-co2-yellow",
+        "terramar-front-max",
+        "terramar-rear-heating",
+        "audi-q4-turn-left",
+        "audi-q4-turn-right"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "brake-fault",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "brake-fluid",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "pads-worn",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "abs-fault",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "esc-regulating",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "esc-fault",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "parking-applied",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "seatbelt",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "airbag-fault",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "tpms-low",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-tpms-fault",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "high-beam",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "bulb-fault",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "steering-red",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "steering-yellow",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "cruise-active",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "take-steering-immediate",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-take-steering-yellow",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-headlight-range",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-high-beam-auto-on",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-high-beam-auto-enabled",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-high-beam-auto-unavailable",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-lane-unavailable-zluta",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-lane-unavailable-bila",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-side-assist-zluta",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-side-assist-bila",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-adaptive-assist-unavailable-zluta",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-adaptive-assist-unavailable-bila",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-fatigue-break-recommended",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-fatigue-break-required",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-fatigue-unavailable",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-park-assist-unavailable",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-central-red",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-12v-system-red",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "ev-power-limited-ring",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "e-sound-fault",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-q4-manoeuvre-only",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-q4-hold-active",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-q4-lim-active",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-q4-lim-overridden",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-q4-lim-ready",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-q4-lim-unavailable",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-q4-cruise-ready",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-q4-ac-co2-red",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-q4-ac-co2-yellow",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "terramar-front-max",
+          "brand": "cupra",
+          "manual": "cupra-terramar-2025-09-24"
+        },
+        {
+          "id": "terramar-front-max",
+          "brand": "cupra",
+          "manual": "cupra-terramar-2026-11-25"
+        },
+        {
+          "id": "terramar-rear-heating",
+          "brand": "cupra",
+          "manual": "cupra-terramar-2025-09-24"
+        },
+        {
+          "id": "terramar-rear-heating",
+          "brand": "cupra",
+          "manual": "cupra-terramar-2026-11-25"
+        },
+        {
+          "id": "audi-q4-turn-left",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        },
+        {
+          "id": "audi-q4-turn-right",
+          "brand": "audi",
+          "manual": "audi-q4-etron-2024-07-de"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Q4 e-tron 07.2024, 89A012705AM, exact edition received through its ordinary browser viewer; no edition substitution. Terramar 09.24/11.25 MAX and REAR controls independently read in both editions. Six user photographs remain unavailable and are not claimed reviewed.",
+      "source_candidates_withheld": [
+        {
+          "id": "rear-fog",
+          "manual": "audi-q4-etron-2024-07-de",
+          "reason": "No independent yellow-colour evidence in the reviewed Q4 overview; not inherited from Q3."
+        },
+        {
+          "id": "turn-signals",
+          "manual": "audi-q4-etron-2024-07-de",
+          "reason": "Combined-arrow image replaced for this newly added Q4 scope by two separately source-documented direction variants; previous non-Q4 scopes retained."
+        }
+      ]
+    },
+    {
+      "id": "129-to-131-terramar-user-photos",
+      "date": "2026-10-30",
+      "before_semantic_records": 129,
+      "after_semantic_records": 131,
+      "added_record_ids": [
+        "terramar-lane-control",
+        "terramar-start-stop-control"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "terramar-lane-control",
+          "brand": "cupra",
+          "manual": "cupra-terramar-2026-11-25"
+        },
+        {
+          "id": "terramar-start-stop-control",
+          "brand": "cupra",
+          "manual": "cupra-terramar-2026-11-25"
+        },
+        {
+          "id": "mii-foot-brake",
+          "brand": "cupra",
+          "manual": "cupra-terramar-2026-11-25"
+        },
+        {
+          "id": "parking-applied",
+          "brand": "cupra",
+          "manual": "cupra-terramar-2026-11-25"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Five photographs supplied in conversation: four Control Centre views and one instrument cluster. Sixth photograph not yet supplied. Control shortcuts are separated from operating/fault indicators. Photo vehicle MY and software version are unknown; no model-year inference."
     }
   ]
 }

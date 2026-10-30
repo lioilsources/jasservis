@@ -47,7 +47,7 @@
    if((style.position==='fixed'||style.position==='sticky')&&box.height>0&&box.top<=1&&box.bottom>0)offset=Math.max(offset,box.bottom+12);
   });return offset;
  }
- function revealHash(){
+ function revealHash(initial){
   var id;try{id=decodeURIComponent(location.hash.slice(1));}catch(error){return;}
   // Existing individual-card and system anchors remain valid.
   var target=document.getElementById(id);
@@ -56,7 +56,7 @@
   if(!target||!root.contains(target))return;
   if(target!==results&&target.closest('[hidden]'))target=results;
   if(target.tagName==='DETAILS')target.open=true;
-  requestAnimationFrame(function(){var offset=headerOffset();results.style.setProperty('--wl-anchor-offset',offset+'px');scrollTo(0,Math.max(0,scrollY+target.getBoundingClientRect().top-offset));(target===results?heading:target).focus({preventScroll:true});});
+  requestAnimationFrame(function(){if(initial===true&&userMoved)return;var offset=headerOffset();results.style.setProperty('--wl-anchor-offset',offset+'px');scrollTo(0,Math.max(0,scrollY+target.getBoundingClientRect().top-offset));(target===results?heading:target).focus({preventScroll:true});});
  }
  root.querySelector('.wl-countline a').addEventListener('click',function(event){event.preventDefault();reset();userMoved=false;if(location.hash!=='#prehled-kontrolek')location.hash='prehled-kontrolek';else revealHash();});
  window.addEventListener('popstate',function(){var brand=new URLSearchParams(location.search).get('znacka');fields.brand.value=Object.prototype.hasOwnProperty.call(text.brands,brand)?brand:'';filter();});
@@ -64,6 +64,6 @@
  if(location.hash){
   // WebKit can finish the header/filter layout after the load event. Correct
   // this initial layout shift only until the user interacts; never change the header.
-  if(window.ResizeObserver){var initialLayout=new ResizeObserver(function(){if(!userMoved)revealHash();});initialLayout.observe(root);initialLayout.observe(document.body);setTimeout(function(){initialLayout.disconnect();},2500);}
-  revealHash();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){if(!userMoved)revealHash();});if(document.readyState!=='complete')window.addEventListener('load',function(){if(!userMoved)revealHash();},{once:true});}
+  if(window.ResizeObserver){var initialLayout=new ResizeObserver(function(){if(!userMoved)revealHash(true);});initialLayout.observe(root);initialLayout.observe(document.body);setTimeout(function(){initialLayout.disconnect();},2500);}
+  revealHash(true);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){if(!userMoved)revealHash(true);});if(document.readyState!=='complete')window.addEventListener('load',function(){if(!userMoved)revealHash(true);},{once:true});}
 })();

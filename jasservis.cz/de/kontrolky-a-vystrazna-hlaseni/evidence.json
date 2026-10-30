@@ -2,13 +2,13 @@
   "canonical_catalog": "../../_warnings/catalog.json",
   "review_status": "incomplete-preview",
   "checked": "2026-10-30",
-  "semantic_records": 116,
+  "semantic_records": 131,
   "legacy_generic_volkswagen": 1,
-  "model_documented_semantic_records": 112,
-  "model_edition_assignments": 391,
-  "partially_reviewed_manual_editions": 38,
-  "shared_graphic_colour_variants": 64,
-  "distinct_pictogram_shapes": 42,
+  "model_documented_semantic_records": 127,
+  "model_edition_assignments": 446,
+  "partially_reviewed_manual_editions": 39,
+  "shared_graphic_colour_variants": 74,
+  "distinct_pictogram_shapes": 50,
   "by_brand": {
     "volkswagen": {
       "distinct_pictogram_shapes": 24,
@@ -21,14 +21,14 @@
       "third_party_hosted_manual_editions": 0
     },
     "audi": {
-      "distinct_pictogram_shapes": 31,
-      "graphic_colour_variants": 40,
-      "semantic_variants": 45,
-      "model_edition_assignments": 45,
+      "distinct_pictogram_shapes": 38,
+      "graphic_colour_variants": 50,
+      "semantic_variants": 58,
+      "model_edition_assignments": 92,
       "generic_brand_assignments": 0,
-      "reviewed_manual_editions": 1,
+      "reviewed_manual_editions": 2,
       "first_party_hosted_manual_editions": 0,
-      "third_party_hosted_manual_editions": 1
+      "third_party_hosted_manual_editions": 2
     },
     "skoda": {
       "distinct_pictogram_shapes": 28,
@@ -51,10 +51,10 @@
       "third_party_hosted_manual_editions": 0
     },
     "cupra": {
-      "distinct_pictogram_shapes": 31,
-      "graphic_colour_variants": 39,
-      "semantic_variants": 51,
-      "model_edition_assignments": 134,
+      "distinct_pictogram_shapes": 34,
+      "graphic_colour_variants": 44,
+      "semantic_variants": 56,
+      "model_edition_assignments": 142,
       "generic_brand_assignments": 0,
       "reviewed_manual_editions": 12,
       "first_party_hosted_manual_editions": 12,
