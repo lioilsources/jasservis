@@ -196,7 +196,16 @@
           "source_url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
           "document_type": "pdf",
           "closed_comparisons": [
-            "cupra-terramar-2026-11-25-lane-control-lamps"
+            "cupra-terramar-2026-11-25-lane-control-lamps",
+            "terramar-1125-overview-all-cells",
+            "terramar-1125-brake-support",
+            "terramar-1125-electronic-parking",
+            "terramar-1125-autohold",
+            "terramar-1125-oil-troubleshooting",
+            "terramar-1125-steering-troubleshooting",
+            "terramar-1125-mainbeam-assist",
+            "terramar-1125-cruise-section",
+            "terramar-1125-tyre-pressure-section"
           ],
           "whole_manual_complete": false,
           "remaining": {
@@ -680,7 +689,8 @@
           "document_type": "pdf",
           "closed_comparisons": [
             "q4-2024-speed-indicator-overview",
-            "q4-2024-climate-driver-messages"
+            "q4-2024-climate-driver-messages",
+            "q4-2024-full-klimaanlage-review"
           ],
           "whole_manual_complete": false,
           "remaining": {
@@ -906,11 +916,87 @@
       ]
     },
     {
+      "id": "unverified-meanings-and-graphics",
+      "title": {
+        "cs": "3. Neověřené významy a grafické či stavové varianty",
+        "en": "3. Unverified meanings and graphic/state variants",
+        "de": "3. Ungeprüfte Bedeutungen und Grafik-/Zustandsvarianten"
+      },
+      "rows": [
+        {
+          "brand": "volkswagen",
+          "model": "Golf",
+          "edition": "11.2020",
+          "source_url": "https://www.volkswagen.de/de/besitzer-und-service/ueber-ihr-auto/digitale-betriebsanleitung-welcome.html?part-number-app=5H0012769AD&brand-pattern-app=WVW",
+          "remaining": {
+            "cs": "Dosud neuzavřené modelové významy, přesné grafiky a stavové varianty jsou vedené po vydáních v revizi kapitol. Dostupný návod neznamená ověřenou položku.",
+            "en": "Unclosed model meanings, exact graphics and state variants are tracked by edition in chapter review. Available manual does not mean a verified entry.",
+            "de": "Offene Modellbedeutungen, genaue Grafiken und Zustandsvarianten nach Ausgabe in Kapitelprüfung erfasst. Verfügbare Anleitung bedeutet keinen geprüften Eintrag."
+          }
+        },
+        {
+          "brand": "audi",
+          "model": "Q3",
+          "edition": "11.2024",
+          "source_url": "https://drivers-college.de/wp-content/uploads/2025/06/audi-q3-2025-betriebsanleitung.pdf",
+          "remaining": {
+            "cs": "Dostupná vydání Q3/Q4/A4/A8 nejsou kompletně porovnaná. Q4 07.2024 AUTO doplněné; další přesné ovladače a varianty asistentů/pohonu otevřené. Čtyři fotografie Audi a tři starší fotografie návodu 9–13 nejsou dostupné, jejich model nelze odhadnout.",
+            "en": "Available Q3/Q4/A4/A8 editions not fully compared. Q4 07.2024 AUTO added; other exact controls and assistance/drive variants open. Four Audi vehicle photos and three earlier pp9–13 manual photos unavailable; model cannot be guessed.",
+            "de": "Verfügbare Q3-/Q4-/A4-/A8-Ausgaben nicht vollständig verglichen. Q4 07.2024 AUTO ergänzt; weitere genaue Bedien-/Assistenz-/Antriebsvarianten offen. Vier Audi-Fahrzeugfotos und drei frühere Anleitungsfotos S.9–13 fehlen; Modell nicht schätzen."
+          }
+        },
+        {
+          "brand": "skoda",
+          "model": "Octavia",
+          "edition": "11.2018",
+          "source_url": "https://octaviaclub.cz/wp-content/uploads/2019/06/N%C3%A1vod-k-obsluze-%C5%A0koda-Octavia-III-3.pdf",
+          "remaining": {
+            "cs": "Dosud neuzavřené modelové významy, přesné grafiky a stavové varianty jsou vedené po vydáních v revizi kapitol. Dostupný návod neznamená ověřenou položku.",
+            "en": "Unclosed model meanings, exact graphics and state variants are tracked by edition in chapter review. Available manual does not mean a verified entry.",
+            "de": "Offene Modellbedeutungen, genaue Grafiken und Zustandsvarianten nach Ausgabe in Kapitelprüfung erfasst. Verfügbare Anleitung bedeutet keinen geprüften Eintrag."
+          }
+        },
+        {
+          "brand": "seat",
+          "model": "Leon",
+          "edition": "Edition 07.09",
+          "source_url": "https://www.seat.com/datamanual-manual/leon/my10_w45/en-uk/Leon_EN.pdf",
+          "remaining": {
+            "cs": "Dosud neuzavřené modelové významy, přesné grafiky a stavové varianty jsou vedené po vydáních v revizi kapitol. Dostupný návod neznamená ověřenou položku.",
+            "en": "Unclosed model meanings, exact graphics and state variants are tracked by edition in chapter review. Available manual does not mean a verified entry.",
+            "de": "Offene Modellbedeutungen, genaue Grafiken und Zustandsvarianten nach Ausgabe in Kapitelprüfung erfasst. Verfügbare Anleitung bedeutet keinen geprüften Eintrag."
+          }
+        },
+        {
+          "brand": "cupra",
+          "model": "Terramar",
+          "edition": "Edition 11.25",
+          "source_url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
+          "remaining": {
+            "cs": "Terramar 11.2025: celý přehled 110 buněk porovnán; chybí mj. přesné SOS/Front/Travel/Emergency Assist a prediktivní varianty, nové olejové a hybridní grafiky a další ovladače. Tabulka odlišuje ověřené významy od dosud neprověřených pokynů. Nové fotografie stran 7–10 nejsou dostupné ani identifikované.",
+            "en": "Terramar 11.2025: all 110 overview cells compared; exact SOS/Front/Travel/Emergency Assist and predictive variants, new oil/hybrid graphics and further controls remain missing. Table separates verified meanings from unreviewed instructions. New pp7–10 photos unavailable/unidentified.",
+            "de": "Terramar 11.2025: alle 110 Übersichtszellen verglichen; genaue SOS-/Front-/Travel-/Emergency-Assist- und Prädiktivvarianten, neue Öl-/Hybridgrafiken sowie weitere Bedienungen fehlen. Tabelle trennt geprüfte Bedeutung von ungeprüften Anweisungen. Neue Fotos S.7–10 fehlen/unidentifiziert."
+          }
+        },
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": "Caddy",
+          "edition": "11.2025",
+          "source_url": "https://www.volkswagen.de/de/besitzer-und-service/ueber-ihr-auto/digitale-betriebsanleitung-welcome.html?part-number-app=2K7012767AM&brand-pattern-app=WV1",
+          "remaining": {
+            "cs": "Dosud neuzavřené modelové významy, přesné grafiky a stavové varianty jsou vedené po vydáních v revizi kapitol. Dostupný návod neznamená ověřenou položku.",
+            "en": "Unclosed model meanings, exact graphics and state variants are tracked by edition in chapter review. Available manual does not mean a verified entry.",
+            "de": "Offene Modellbedeutungen, genaue Grafiken und Zustandsvarianten nach Ausgabe in Kapitelprüfung erfasst. Verfügbare Anleitung bedeutet keinen geprüften Eintrag."
+          }
+        }
+      ]
+    },
+    {
       "id": "verified-graphic-use-open",
       "title": {
-        "cs": "3. Ověřená podoba a význam; způsob použití grafiky otevřený",
-        "en": "3. Verified shape and meaning; graphic reuse basis unresolved",
-        "de": "3. Form und Bedeutung geprüft; Grafiknutzung ungeklärt"
+        "cs": "4. Ověřená podoba a význam; způsob použití grafiky otevřený",
+        "en": "4. Verified shape and meaning; graphic reuse basis unresolved",
+        "de": "4. Form und Bedeutung geprüft; Grafiknutzung ungeklärt"
       },
       "rows": [
         {

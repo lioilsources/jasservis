@@ -1,0 +1,88 @@
+{
+  "checked": "2026-10-30",
+  "scope": "Attachment groups are not interchangeable. Missing images are not substituted by manual renders, Drive search results or another model.",
+  "groups": [
+    {
+      "id": "terramar-vehicle-six",
+      "expected": 6,
+      "available_in_conversation": 6,
+      "visually_compared": 6,
+      "brand_asserted_by_user": "CUPRA",
+      "verified_model": "Terramar",
+      "verified_manual_edition_for_photographed_vehicle": null,
+      "kind": "4 infotainment + 2 instrument cluster",
+      "evidence": "terramar-photo-review.json",
+      "status": {
+        "cs": "Všech šest fotografií dostupných; obrazově porovnáno. Ne všechny významy a přesné varianty jsou zdrojově uzavřené.",
+        "en": "All six photos available and visually compared. Not all meanings and exact variants are source-closed.",
+        "de": "Alle sechs Fotos verfügbar und visuell verglichen. Nicht alle Bedeutungen und genauen Varianten quellenmäßig abgeschlossen."
+      }
+    },
+    {
+      "id": "cupra-new-manual-7-10",
+      "expected": 3,
+      "available_in_conversation": 0,
+      "visually_compared": 0,
+      "brand_asserted_by_user": "CUPRA",
+      "verified_brand_from_document": null,
+      "verified_model": null,
+      "verified_edition": null,
+      "kind": "3 photographs of manual pp7–10",
+      "status": {
+        "cs": "Nové tři fotografie stran 7–10 nejsou v dostupných přílohách tohoto zadání ani lokálním archivu. CUPRA podle zadání; model a vydání nelze doložit. Nejde o Audi ani automaticky Terramar.",
+        "en": "The three new photos of pp7–10 are absent from available task attachments/local archive. CUPRA as specified by user; model and edition cannot be established. Not Audi or automatically Terramar.",
+        "de": "Drei neue Fotos S.7–10 fehlen in verfügbaren Aufgabenanhängen/lokalem Archiv. CUPRA laut Auftrag; Modell/Ausgabe nicht belegbar. Nicht Audi oder automatisch Terramar."
+      }
+    },
+    {
+      "id": "audi-vehicle-four",
+      "expected": 4,
+      "available_in_conversation": 0,
+      "visually_compared": 0,
+      "brand_asserted_by_user": "Audi",
+      "verified_model": null,
+      "verified_edition": null,
+      "kind": "4 instrument-cluster and infotainment photos",
+      "status": {
+        "cs": "Čtyři fotografie vozu Audi nejsou v dostupných přílohách. Nelze prověřit servisní klíč, konkrétní palivové hlášení ani související oznámení MMI. Hodnota dojezdu 50 km se nepřebírá jako univerzální práh.",
+        "en": "Four Audi vehicle photos are absent from available attachments. Service wrench, specific fuel message and linked MMI notice cannot be checked. A displayed 50 km range is not adopted as a universal threshold.",
+        "de": "Vier Audi-Fahrzeugfotos fehlen in verfügbaren Anhängen. Serviceschlüssel, konkrete Kraftstoffmeldung und zugehöriger MMI-Hinweis nicht prüfbar. Angezeigte 50 km Reichweite nicht als allgemeine Schwelle übernommen."
+      }
+    },
+    {
+      "id": "earlier-unidentified-manual-9-13",
+      "expected": 3,
+      "available_in_conversation": 0,
+      "visually_compared": 0,
+      "previous_unverified_label": "Audi",
+      "verified_brand_from_document": null,
+      "verified_model": null,
+      "verified_edition": null,
+      "kind": "3 earlier photographs of manual overview pp9–13",
+      "status": {
+        "cs": "Tři dřívější fotografie přehledu stran 9–13 nejsou v dostupném kontextu ani lokálním archivu. Původní označení Audi není ověřenou identifikací dokumentu.",
+        "en": "Three earlier overview photos pp9–13 are absent from available context/local archive. Their previous Audi label is not verified document identification.",
+        "de": "Drei frühere Übersichtsfotos S.9–13 fehlen im verfügbaren Kontext/lokalen Archiv. Bisherige Bezeichnung Audi ist keine geprüfte Dokumentidentifikation."
+      }
+    }
+  ],
+  "search_checks": {
+    "local_attachment_archive": "/workspace/attachments scanned; PDFs/ZIPs only, no corresponding new photos",
+    "local_source_renders": "not counted as user photographs",
+    "drive": "CUPRA metadata search and one Audi image-search page checked; no requested attachment set identified. Not a claim of an exhaustive image search. SSPs/maintenance documents remain technical context, not driver instructions."
+  },
+  "independent_document_check": {
+    "manual": "cupra-terramar-2026-11-25",
+    "part_number": "578012720AC",
+    "edition": "Edition 11.25",
+    "printed_pages_7_10": "vehicle views, not warning tables",
+    "overview_printed_pages": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "new_photo_identity_established": false
+  }
+}

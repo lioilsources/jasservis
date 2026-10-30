@@ -2782,6 +2782,1181 @@
         "de": "Kein fehlender Zustand in diesem genau begrenzten Abschnitt. Der Rest der Anleitung bleibt in Bearbeitung."
       },
       "evidence_file": "function-review-current.json"
+    },
+    {
+      "id": "terramar-1125-overview-all-cells",
+      "manual": "cupra-terramar-2026-11-25",
+      "area": "instrument-panel",
+      "title": {
+        "cs": "Celý přehled kontrolek, všech 110 významových buněk",
+        "en": "Complete control-lamp overview, all 110 meaning cells",
+        "de": "Vollständige Kontrollleuchtenübersicht, alle 110 Bedeutungszellen"
+      },
+      "printed_pages": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "source_sections": [],
+      "precise_boundary": "Complete control-lamp overview, all 110 meaning cells",
+      "precise_boundary_i18n": {
+        "cs": "Porovnány přesně uvedené stránky samostatného oddílu; nikoli zbytek kapitoly ani celé vydání. Celý přehled kontrolek, všech 110 významových buněk",
+        "en": "The specified pages of the standalone section were compared, not the rest of the chapter or entire edition. Complete control-lamp overview, all 110 meaning cells",
+        "de": "Genannte Seiten des eigenständigen Abschnitts verglichen, nicht restliches Kapitel oder gesamte Ausgabe. Vollständige Kontrollleuchtenübersicht, alle 110 Bedeutungszellen"
+      },
+      "comparison_complete": true,
+      "website_complete": false,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "Závada ABS",
+            "en": "ABS fault",
+            "de": "ABS-Störung"
+          },
+          "catalogue_ids": [
+            "abs-fault"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Airbagy a předpínače – závada",
+            "en": "Airbag and belt tensioner fault",
+            "de": "Airbag- und Gurtstrafferstörung"
+          },
+          "catalogue_ids": [
+            "airbag-fault"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "AUTO HOLD – vozidlo je drženo",
+            "en": "AUTO HOLD – vehicle held",
+            "de": "AUTO HOLD – Fahrzeug wird gehalten"
+          },
+          "catalogue_ids": [
+            "auto-hold-active"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "AUTO HOLD – zapnutý, ale nedrží vozidlo",
+            "en": "AUTO HOLD – switched on, not holding",
+            "de": "AUTO HOLD – eingeschaltet, hält aber nicht"
+          },
+          "catalogue_ids": [
+            "auto-hold-standby"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Závada brzdové soustavy",
+            "en": "Brake system fault",
+            "de": "Störung der Bremsanlage"
+          },
+          "catalogue_ids": [
+            "brake-fault"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Nízká hladina brzdové kapaliny",
+            "en": "Low brake fluid level",
+            "de": "Bremsflüssigkeitsstand zu niedrig"
+          },
+          "catalogue_ids": [
+            "brake-fluid"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Elektromechanický posilovač brzd nefunguje",
+            "en": "Electromechanical brake servo not working",
+            "de": "Elektromechanischer Bremskraftverstärker ausgefallen"
+          },
+          "catalogue_ids": [
+            "brake-servo"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Závada vnějšího osvětlení",
+            "en": "Exterior lighting fault",
+            "de": "Störung der Außenbeleuchtung"
+          },
+          "catalogue_ids": [
+            "bulb-fault"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Posilovač brzd – omezená funkce, žluté hlášení",
+            "en": "Brake servo – restricted operation, amber warning",
+            "de": "Bremskraftverstärker – eingeschränkte Funktion, gelbe Meldung"
+          },
+          "catalogue_ids": [
+            "caddy-brake-servo-yellow-restricted"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Centrální výstraha – priorita 1",
+            "en": "Central warning – priority 1",
+            "de": "Zentralwarnung – Priorität 1"
+          },
+          "catalogue_ids": [
+            "central-red"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Centrální výstraha – priorita 2",
+            "en": "Central warning – priority 2",
+            "de": "Zentralwarnung – Priorität 2"
+          },
+          "catalogue_ids": [
+            "central-yellow"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Tempomat – aktivní regulace",
+            "en": "Cruise control actively regulating",
+            "de": "Geschwindigkeitsregelanlage – Regelung aktiv"
+          },
+          "catalogue_ids": [
+            "cruise-active"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Tempomat – zapnutý bez regulace",
+            "en": "Cruise control on, not regulating",
+            "de": "Geschwindigkeitsregelanlage – eingeschaltet, regelt nicht"
+          },
+          "catalogue_ids": [
+            "cruise-standby"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "ESC – závada nebo systémové vypnutí",
+            "en": "ESC fault or system-induced deactivation",
+            "de": "ESC-Störung oder systembedingte Abschaltung"
+          },
+          "catalogue_ids": [
+            "esc-fault"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "ESC OFF – stabilizace vypnutá",
+            "en": "ESC OFF – stability control switched off",
+            "de": "ESC OFF – Stabilisierung ausgeschaltet"
+          },
+          "catalogue_ids": [
+            "esc-off-inscription"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "ESC / ASR – zásah systému",
+            "en": "ESC / TCS intervention",
+            "de": "ESC / ASR regelt"
+          },
+          "catalogue_ids": [
+            "esc-regulating"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Dálková světla",
+            "en": "Main beam headlights",
+            "de": "Fernlicht"
+          },
+          "catalogue_ids": [
+            "high-beam"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Light Assist – automaticky zapnutá dálková světla, modré A",
+            "en": "Light Assist – automatically activated main beam, blue A",
+            "de": "Light Assist – automatisch eingeschaltetes Fernlicht, blaues A"
+          },
+          "catalogue_ids": [
+            "high-beam-assist-blue"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Lane Assist – korekce řízení",
+            "en": "Lane Assist steering correction",
+            "de": "Lane Assist – Lenkeingriff"
+          },
+          "catalogue_ids": [
+            "lane-correction"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Lane Assist – aktivní a připravený",
+            "en": "Lane Assist active and available",
+            "de": "Lane Assist aktiv und verfügbar"
+          },
+          "catalogue_ids": [
+            "lane-ready"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Sešlápněte brzdový pedál",
+            "en": "Press the brake pedal",
+            "de": "Bremspedal betätigen"
+          },
+          "catalogue_ids": [
+            "mii-foot-brake"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "MIL bliká – vynechávání spalování",
+            "en": "Flashing MIL – misfiring",
+            "de": "Blinkende MIL – Verbrennungsaussetzer"
+          },
+          "catalogue_ids": [
+            "mil-flashing"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Emisní systém – trvalé svícení MIL",
+            "en": "Emissions system – MIL steadily lit",
+            "de": "Abgassystem – MIL leuchtet dauerhaft"
+          },
+          "catalogue_ids": [
+            "mil-steady"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Nedostatečný tlak motorového oleje",
+            "en": "Low engine oil pressure",
+            "de": "Motoröldruck zu niedrig"
+          },
+          "catalogue_ids": [
+            "oil-pressure"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Opotřebení brzdového obložení",
+            "en": "Brake pad wear",
+            "de": "Bremsbelagverschleiß"
+          },
+          "catalogue_ids": [
+            "pads-worn"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Parkovací brzda aktivní",
+            "en": "Parking brake applied",
+            "de": "Parkbremse angelegt"
+          },
+          "catalogue_ids": [
+            "parking-applied"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Zadní mlhové světlo",
+            "en": "Rear fog light",
+            "de": "Nebelschlussleuchte"
+          },
+          "catalogue_ids": [
+            "rear-fog"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Nezapnutý bezpečnostní pás",
+            "en": "Seat belt not fastened",
+            "de": "Sicherheitsgurt nicht angelegt"
+          },
+          "catalogue_ids": [
+            "seatbelt"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Řízení – červená výstraha",
+            "en": "Steering – red warning",
+            "de": "Lenkung – rote Warnung"
+          },
+          "catalogue_ids": [
+            "steering-red"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Řízení – omezená funkce",
+            "en": "Steering – restricted operation",
+            "de": "Lenkung – eingeschränkte Funktion"
+          },
+          "catalogue_ids": [
+            "steering-yellow"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "ESC/TCS – vypnutí nebo sportovní režim, symbol OFF",
+            "en": "ESC/TCS – deactivation or Sport mode, OFF symbol",
+            "de": "ESC/TCS – Abschaltung oder Sportmodus, OFF-Symbol"
+          },
+          "catalogue_ids": [
+            "terramar-esc-tcs-off"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Lane Assist – pasivní, nevede vozidlo",
+            "en": "Lane Assist – passive, not providing guidance",
+            "de": "Lane Assist – passiv, keine Spurführung"
+          },
+          "catalogue_ids": [
+            "terramar-lane-passive"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Elektronická parkovací brzda – žlutá závada (Terramar)",
+            "en": "Electronic parking brake – amber fault (Terramar)",
+            "de": "Elektronische Parkbremse – gelbe Störung (Terramar)"
+          },
+          "catalogue_ids": [
+            "terramar-parking-brake-fault"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Řízení – žlutá blikající výstraha (Terramar)",
+            "en": "Steering – flashing amber warning (Terramar)",
+            "de": "Lenkung – gelb blinkende Warnung (Terramar)"
+          },
+          "catalogue_ids": [
+            "terramar-steering-yellow-flashing"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Závada sledování tlaku v pneumatikách",
+            "en": "Tyre pressure monitoring fault",
+            "de": "Störung der Reifendruckkontrolle"
+          },
+          "catalogue_ids": [
+            "tpms-fault"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Pokles tlaku nebo poškození pneumatiky",
+            "en": "Low tyre pressure or tyre damage",
+            "de": "Reifendruckverlust oder Reifenschaden"
+          },
+          "catalogue_ids": [
+            "tpms-low"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Směrová nebo výstražná světla",
+            "en": "Turn signals or hazard warning lights",
+            "de": "Blinker oder Warnblinkanlage"
+          },
+          "catalogue_ids": [
+            "turn-signals"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        }
+      ],
+      "remaining": {
+        "cs": "Nejde o 110 unikátních symbolů. Tabulka výslovně rozlišuje chybějící položky, ověření navazujících pokynů, podobu a zveřejnění. Ne všechny odkazované kapitoly jsou uzavřené.",
+        "en": "Not 110 unique symbols. The table explicitly separates missing entries, referenced-instruction review, shape and publication. Not all referenced chapters are closed.",
+        "de": "Keine 110 einzigartigen Symbole. Tabelle trennt fehlende Einträge, Prüfung der Folgehinweise, Form und Veröffentlichung. Nicht alle verwiesenen Kapitel abgeschlossen."
+      },
+      "evidence_file": "terramar-1125-overview-review.json"
+    },
+    {
+      "id": "terramar-1125-brake-support",
+      "manual": "cupra-terramar-2026-11-25",
+      "area": "parking",
+      "title": {
+        "cs": "Brake assist systems, celý oddíl před Assistant systems",
+        "en": "Brake assist systems, whole section before Assistant systems",
+        "de": "Brake assist systems, ganzer Abschnitt vor Assistant systems"
+      },
+      "printed_pages": [
+        190,
+        191,
+        192,
+        193,
+        194
+      ],
+      "source_sections": [],
+      "precise_boundary": "Brake assist systems, whole section before Assistant systems",
+      "precise_boundary_i18n": {
+        "cs": "Porovnány přesně uvedené stránky samostatného oddílu; nikoli zbytek kapitoly ani celé vydání. Brake assist systems, celý oddíl před Assistant systems",
+        "en": "The specified pages of the standalone section were compared, not the rest of the chapter or entire edition. Brake assist systems, whole section before Assistant systems",
+        "de": "Genannte Seiten des eigenständigen Abschnitts verglichen, nicht restliches Kapitel oder gesamte Ausgabe. Brake assist systems, ganzer Abschnitt vor Assistant systems"
+      },
+      "comparison_complete": true,
+      "website_complete": false,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "Elektromechanický posilovač brzd nefunguje",
+            "en": "Electromechanical brake servo not working",
+            "de": "Elektromechanischer Bremskraftverstärker ausgefallen"
+          },
+          "catalogue_ids": [
+            "brake-servo"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Posilovač brzd – omezená funkce, žluté hlášení",
+            "en": "Brake servo – restricted operation, amber warning",
+            "de": "Bremskraftverstärker – eingeschränkte Funktion, gelbe Meldung"
+          },
+          "catalogue_ids": [
+            "caddy-brake-servo-yellow-restricted"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "ESC / ASR – zásah systému",
+            "en": "ESC / TCS intervention",
+            "de": "ESC / ASR regelt"
+          },
+          "catalogue_ids": [
+            "esc-regulating"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "ESC – závada nebo systémové vypnutí",
+            "en": "ESC fault or system-induced deactivation",
+            "de": "ESC-Störung oder systembedingte Abschaltung"
+          },
+          "catalogue_ids": [
+            "esc-fault"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Závada ABS",
+            "en": "ABS fault",
+            "de": "ABS-Störung"
+          },
+          "catalogue_ids": [
+            "abs-fault"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "ESC/TCS – vypnutí nebo sportovní režim, symbol OFF",
+            "en": "ESC/TCS – deactivation or Sport mode, OFF symbol",
+            "de": "ESC/TCS – Abschaltung oder Sportmodus, OFF-Symbol"
+          },
+          "catalogue_ids": [
+            "terramar-esc-tcs-off"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "ESC OFF – stabilizace vypnutá",
+            "en": "ESC OFF – stability control switched off",
+            "de": "ESC OFF – Stabilisierung ausgeschaltet"
+          },
+          "catalogue_ids": [
+            "esc-off-inscription"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        }
+      ],
+      "remaining": {
+        "cs": "Zbývají přesné ovládací grafiky a nepokryté varianty; celé vydání není dokončené.",
+        "en": "Exact control graphics and uncovered variants remain; the whole edition is incomplete.",
+        "de": "Genaue Bediengrafiken und nicht abgedeckte Varianten bleiben offen; gesamte Ausgabe unvollständig."
+      },
+      "evidence_file": "terramar-1125-overview-review.json"
+    },
+    {
+      "id": "terramar-1125-electronic-parking",
+      "manual": "cupra-terramar-2026-11-25",
+      "area": "parking",
+      "title": {
+        "cs": "Electronic parking brake, celý oddíl před Auto Hold",
+        "en": "Electronic parking brake, whole section before Auto Hold",
+        "de": "Electronic parking brake, ganzer Abschnitt vor Auto Hold"
+      },
+      "printed_pages": [
+        227,
+        228,
+        229
+      ],
+      "source_sections": [],
+      "precise_boundary": "Electronic parking brake, whole section before Auto Hold",
+      "precise_boundary_i18n": {
+        "cs": "Porovnány přesně uvedené stránky samostatného oddílu; nikoli zbytek kapitoly ani celé vydání. Electronic parking brake, celý oddíl před Auto Hold",
+        "en": "The specified pages of the standalone section were compared, not the rest of the chapter or entire edition. Electronic parking brake, whole section before Auto Hold",
+        "de": "Genannte Seiten des eigenständigen Abschnitts verglichen, nicht restliches Kapitel oder gesamte Ausgabe. Electronic parking brake, ganzer Abschnitt vor Auto Hold"
+      },
+      "comparison_complete": true,
+      "website_complete": false,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "Parkovací brzda aktivní",
+            "en": "Parking brake applied",
+            "de": "Parkbremse angelegt"
+          },
+          "catalogue_ids": [
+            "parking-applied"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Elektronická parkovací brzda – žlutá závada (Terramar)",
+            "en": "Electronic parking brake – amber fault (Terramar)",
+            "de": "Elektronische Parkbremse – gelbe Störung (Terramar)"
+          },
+          "catalogue_ids": [
+            "terramar-parking-brake-fault"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        }
+      ],
+      "remaining": {
+        "cs": "Zbývají přesné ovládací grafiky a nepokryté varianty; celé vydání není dokončené.",
+        "en": "Exact control graphics and uncovered variants remain; the whole edition is incomplete.",
+        "de": "Genaue Bediengrafiken und nicht abgedeckte Varianten bleiben offen; gesamte Ausgabe unvollständig."
+      },
+      "evidence_file": "terramar-1125-overview-review.json"
+    },
+    {
+      "id": "terramar-1125-autohold",
+      "manual": "cupra-terramar-2026-11-25",
+      "area": "parking",
+      "title": {
+        "cs": "Auto Hold, celý oddíl před General information on parking systems",
+        "en": "Auto Hold, whole section before General information on parking systems",
+        "de": "Auto Hold, ganzer Abschnitt vor General information on parking systems"
+      },
+      "printed_pages": [
+        229,
+        230
+      ],
+      "source_sections": [],
+      "precise_boundary": "Auto Hold, whole section before General information on parking systems",
+      "precise_boundary_i18n": {
+        "cs": "Porovnány přesně uvedené stránky samostatného oddílu; nikoli zbytek kapitoly ani celé vydání. Auto Hold, celý oddíl před General information on parking systems",
+        "en": "The specified pages of the standalone section were compared, not the rest of the chapter or entire edition. Auto Hold, whole section before General information on parking systems",
+        "de": "Genannte Seiten des eigenständigen Abschnitts verglichen, nicht restliches Kapitel oder gesamte Ausgabe. Auto Hold, ganzer Abschnitt vor General information on parking systems"
+      },
+      "comparison_complete": true,
+      "website_complete": false,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "AUTO HOLD – vozidlo je drženo",
+            "en": "AUTO HOLD – vehicle held",
+            "de": "AUTO HOLD – Fahrzeug wird gehalten"
+          },
+          "catalogue_ids": [
+            "auto-hold-active"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "AUTO HOLD – zapnutý, ale nedrží vozidlo",
+            "en": "AUTO HOLD – switched on, not holding",
+            "de": "AUTO HOLD – eingeschaltet, hält aber nicht"
+          },
+          "catalogue_ids": [
+            "auto-hold-standby"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        }
+      ],
+      "remaining": {
+        "cs": "Zbývají přesné ovládací grafiky a nepokryté varianty; celé vydání není dokončené.",
+        "en": "Exact control graphics and uncovered variants remain; the whole edition is incomplete.",
+        "de": "Genaue Bediengrafiken und nicht abgedeckte Varianten bleiben offen; gesamte Ausgabe unvollständig."
+      },
+      "evidence_file": "terramar-1125-overview-review.json"
+    },
+    {
+      "id": "terramar-1125-oil-troubleshooting",
+      "manual": "cupra-terramar-2026-11-25",
+      "area": "powertrain",
+      "title": {
+        "cs": "Engine oil: Troubleshooting, celý oddíl před 12-volt battery",
+        "en": "Engine oil: Troubleshooting, whole section before 12-volt battery",
+        "de": "Engine oil: Troubleshooting, ganzer Abschnitt vor 12-volt battery"
+      },
+      "printed_pages": [
+        366,
+        367
+      ],
+      "source_sections": [],
+      "precise_boundary": "Engine oil: Troubleshooting, whole section before 12-volt battery",
+      "precise_boundary_i18n": {
+        "cs": "Porovnány přesně uvedené stránky samostatného oddílu; nikoli zbytek kapitoly ani celé vydání. Engine oil: Troubleshooting, celý oddíl před 12-volt battery",
+        "en": "The specified pages of the standalone section were compared, not the rest of the chapter or entire edition. Engine oil: Troubleshooting, whole section before 12-volt battery",
+        "de": "Genannte Seiten des eigenständigen Abschnitts verglichen, nicht restliches Kapitel oder gesamte Ausgabe. Engine oil: Troubleshooting, ganzer Abschnitt vor 12-volt battery"
+      },
+      "comparison_complete": true,
+      "website_complete": false,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "Nedostatečný tlak motorového oleje",
+            "en": "Low engine oil pressure",
+            "de": "Motoröldruck zu niedrig"
+          },
+          "catalogue_ids": [
+            "oil-pressure"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        }
+      ],
+      "remaining": {
+        "cs": "Velmi nízká hladina červeně, nízká/vysoká hladina a závada snímače žlutě mají vlastní ověřené pokyny; přesné grafiky nejsou vložené a nejsou nahrazené značkou tlaku.",
+        "en": "Red very low level, amber low/high level and sensor fault have their own verified instructions; exact graphics are not inserted or replaced by the pressure symbol.",
+        "de": "Rot sehr niedriger Stand, gelb niedriger/hoher Stand und Sensorstörung haben eigene geprüfte Anweisungen; genaue Grafiken nicht eingefügt oder durch Druckzeichen ersetzt."
+      },
+      "evidence_file": "terramar-1125-overview-review.json"
+    },
+    {
+      "id": "terramar-1125-steering-troubleshooting",
+      "manual": "cupra-terramar-2026-11-25",
+      "area": "powertrain",
+      "title": {
+        "cs": "Steering: Troubleshooting, celý oddíl před Drive Profiles",
+        "en": "Steering: Troubleshooting, whole section before Drive Profiles",
+        "de": "Steering: Troubleshooting, ganzer Abschnitt vor Drive Profiles"
+      },
+      "printed_pages": [
+        186
+      ],
+      "source_sections": [],
+      "precise_boundary": "Steering: Troubleshooting, whole section before Drive Profiles",
+      "precise_boundary_i18n": {
+        "cs": "Porovnány přesně uvedené stránky samostatného oddílu; nikoli zbytek kapitoly ani celé vydání. Steering: Troubleshooting, celý oddíl před Drive Profiles",
+        "en": "The specified pages of the standalone section were compared, not the rest of the chapter or entire edition. Steering: Troubleshooting, whole section before Drive Profiles",
+        "de": "Genannte Seiten des eigenständigen Abschnitts verglichen, nicht restliches Kapitel oder gesamte Ausgabe. Steering: Troubleshooting, ganzer Abschnitt vor Drive Profiles"
+      },
+      "comparison_complete": true,
+      "website_complete": true,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "Řízení – červená výstraha",
+            "en": "Steering – red warning",
+            "de": "Lenkung – rote Warnung"
+          },
+          "catalogue_ids": [
+            "steering-red"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Řízení – omezená funkce",
+            "en": "Steering – restricted operation",
+            "de": "Lenkung – eingeschränkte Funktion"
+          },
+          "catalogue_ids": [
+            "steering-yellow"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Řízení – žlutá blikající výstraha (Terramar)",
+            "en": "Steering – flashing amber warning (Terramar)",
+            "de": "Lenkung – gelb blinkende Warnung (Terramar)"
+          },
+          "catalogue_ids": [
+            "terramar-steering-yellow-flashing"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        }
+      ],
+      "remaining": {
+        "cs": "Tři stavy uvedeného oddílu vložené; jiná vydání ani zámek sloupku z nich nejsou odvozené.",
+        "en": "The section’s three states are inserted; other editions or steering-lock faults are not inferred.",
+        "de": "Drei Zustände dieses Abschnitts eingefügt; andere Ausgaben oder Lenkschlossstörungen nicht daraus abgeleitet."
+      },
+      "evidence_file": "terramar-1125-overview-review.json"
+    },
+    {
+      "id": "terramar-1125-mainbeam-assist",
+      "manual": "cupra-terramar-2026-11-25",
+      "area": "lighting",
+      "title": {
+        "cs": "Main beam assist a Matrix, celý oddíl před Coming home",
+        "en": "Main beam assist and Matrix, whole section before Coming home",
+        "de": "Main beam assist und Matrix, ganzer Abschnitt vor Coming home"
+      },
+      "printed_pages": [
+        133,
+        134,
+        135
+      ],
+      "source_sections": [],
+      "precise_boundary": "Main beam assist and Matrix, whole section before Coming home",
+      "precise_boundary_i18n": {
+        "cs": "Porovnány přesně uvedené stránky samostatného oddílu; nikoli zbytek kapitoly ani celé vydání. Main beam assist a Matrix, celý oddíl před Coming home",
+        "en": "The specified pages of the standalone section were compared, not the rest of the chapter or entire edition. Main beam assist and Matrix, whole section before Coming home",
+        "de": "Genannte Seiten des eigenständigen Abschnitts verglichen, nicht restliches Kapitel oder gesamte Ausgabe. Main beam assist und Matrix, ganzer Abschnitt vor Coming home"
+      },
+      "comparison_complete": true,
+      "website_complete": false,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "Light Assist – automaticky zapnutá dálková světla, modré A",
+            "en": "Light Assist – automatically activated main beam, blue A",
+            "de": "Light Assist – automatisch eingeschaltetes Fernlicht, blaues A"
+          },
+          "catalogue_ids": [
+            "high-beam-assist-blue"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Dálková světla",
+            "en": "Main beam headlights",
+            "de": "Fernlicht"
+          },
+          "catalogue_ids": [
+            "high-beam"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        }
+      ],
+      "remaining": {
+        "cs": "Modré A výslovně potvrzeno v provozním textu. Neutrální zapnutí asistenta nemá v tomto místě výslovně potvrzenou barvu; nevznikla odhadnutá černá varianta. Další ovládací grafiky zůstávají nepublikované.",
+        "en": "Blue A explicitly confirmed by operational text. Neutral assistant enablement has no explicitly established colour here; no assumed black version created. Further control graphics remain unpublished.",
+        "de": "Blaues A ausdrücklich durch Bedienungstext bestätigt. Neutrale Assistentenaktivierung hier ohne ausdrücklich bestätigte Farbe; keine angenommene schwarze Variante angelegt. Weitere Bediengrafiken unveröffentlicht."
+      },
+      "evidence_file": "terramar-1125-overview-review.json"
+    },
+    {
+      "id": "terramar-1125-cruise-section",
+      "manual": "cupra-terramar-2026-11-25",
+      "area": "assistants",
+      "title": {
+        "cs": "Cruise control, celý oddíl před Speed limiter",
+        "en": "Cruise control, whole section before Speed limiter",
+        "de": "Cruise control, ganzer Abschnitt vor Speed limiter"
+      },
+      "printed_pages": [
+        200,
+        201
+      ],
+      "source_sections": [],
+      "precise_boundary": "Cruise control, whole section before Speed limiter",
+      "precise_boundary_i18n": {
+        "cs": "Porovnány přesně uvedené stránky samostatného oddílu; nikoli zbytek kapitoly ani celé vydání. Cruise control, celý oddíl před Speed limiter",
+        "en": "The specified pages of the standalone section were compared, not the rest of the chapter or entire edition. Cruise control, whole section before Speed limiter",
+        "de": "Genannte Seiten des eigenständigen Abschnitts verglichen, nicht restliches Kapitel oder gesamte Ausgabe. Cruise control, ganzer Abschnitt vor Speed limiter"
+      },
+      "comparison_complete": true,
+      "website_complete": false,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "Tempomat – aktivní regulace",
+            "en": "Cruise control actively regulating",
+            "de": "Geschwindigkeitsregelanlage – Regelung aktiv"
+          },
+          "catalogue_ids": [
+            "cruise-active"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Tempomat – zapnutý bez regulace",
+            "en": "Cruise control on, not regulating",
+            "de": "Geschwindigkeitsregelanlage – eingeschaltet, regelt nicht"
+          },
+          "catalogue_ids": [
+            "cruise-standby"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        }
+      ],
+      "remaining": {
+        "cs": "Zbývají přesné ovládací grafiky a nepokryté varianty; celé vydání není dokončené.",
+        "en": "Exact control graphics and uncovered variants remain; the whole edition is incomplete.",
+        "de": "Genaue Bediengrafiken und nicht abgedeckte Varianten bleiben offen; gesamte Ausgabe unvollständig."
+      },
+      "evidence_file": "terramar-1125-overview-review.json"
+    },
+    {
+      "id": "terramar-1125-tyre-pressure-section",
+      "manual": "cupra-terramar-2026-11-25",
+      "area": "instrument-panel",
+      "title": {
+        "cs": "Tyre pressure monitor system, celý oddíl před Tyre repair",
+        "en": "Tyre pressure monitor system, whole section before Tyre repair",
+        "de": "Tyre pressure monitor system, ganzer Abschnitt vor Tyre repair"
+      },
+      "printed_pages": [
+        387,
+        388,
+        389
+      ],
+      "source_sections": [],
+      "precise_boundary": "Tyre pressure monitor system, whole section before Tyre repair",
+      "precise_boundary_i18n": {
+        "cs": "Porovnány přesně uvedené stránky samostatného oddílu; nikoli zbytek kapitoly ani celé vydání. Tyre pressure monitor system, celý oddíl před Tyre repair",
+        "en": "The specified pages of the standalone section were compared, not the rest of the chapter or entire edition. Tyre pressure monitor system, whole section before Tyre repair",
+        "de": "Genannte Seiten des eigenständigen Abschnitts verglichen, nicht restliches Kapitel oder gesamte Ausgabe. Tyre pressure monitor system, ganzer Abschnitt vor Tyre repair"
+      },
+      "comparison_complete": true,
+      "website_complete": false,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "Pokles tlaku nebo poškození pneumatiky",
+            "en": "Low tyre pressure or tyre damage",
+            "de": "Reifendruckverlust oder Reifenschaden"
+          },
+          "catalogue_ids": [
+            "tpms-low"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "Závada sledování tlaku v pneumatikách",
+            "en": "Tyre pressure monitoring fault",
+            "de": "Störung der Reifendruckkontrolle"
+          },
+          "catalogue_ids": [
+            "tpms-fault"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        }
+      ],
+      "remaining": {
+        "cs": "Ztráta tlaku a závada vložené; krátké potvrzovací bliknutí kalibrace vysvětlené v modelové poznámce. Přesné grafiky nabídkových cest ještě nejsou publikované.",
+        "en": "Pressure loss and fault inserted; brief calibration flash explained in model note. Exact menu-path graphics not yet published.",
+        "de": "Druckverlust und Störung eingefügt; kurzes Kalibrierblinken in Modellhinweis erklärt. Genaue Menüpfadgrafiken noch nicht veröffentlicht."
+      },
+      "evidence_file": "terramar-1125-overview-review.json"
+    },
+    {
+      "id": "q4-2024-full-klimaanlage-review",
+      "manual": "audi-q4-etron-2024-07-de",
+      "area": "climate",
+      "title": {
+        "cs": "Klimaanlage, celý samostatný oddíl před Lenkradheizung",
+        "en": "Klimaanlage, whole standalone section before Lenkradheizung",
+        "de": "Klimaanlage, ganzer eigenständiger Abschnitt vor Lenkradheizung"
+      },
+      "printed_pages": [
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "source_sections": [],
+      "precise_boundary": "Klimaanlage, whole standalone section before Lenkradheizung",
+      "precise_boundary_i18n": {
+        "cs": "Porovnány přesně uvedené stránky samostatného oddílu; nikoli zbytek kapitoly ani celé vydání. Klimaanlage, celý samostatný oddíl před Lenkradheizung",
+        "en": "The specified pages of the standalone section were compared, not the rest of the chapter or entire edition. Klimaanlage, whole standalone section before Lenkradheizung",
+        "de": "Genannte Seiten des eigenständigen Abschnitts verglichen, nicht restliches Kapitel oder gesamte Ausgabe. Klimaanlage, ganzer eigenständiger Abschnitt vor Lenkradheizung"
+      },
+      "comparison_complete": true,
+      "website_complete": false,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "AUTO – automatický režim klimatizace Audi",
+            "en": "AUTO – Audi automatic climate mode",
+            "de": "AUTO – Audi Klimaautomatikmodus"
+          },
+          "catalogue_ids": [
+            "audi-climate-auto-control"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "A/C – koncentrace CO₂ v kabině stále zvýšená",
+            "en": "A/C – cabin CO₂ concentration remains elevated",
+            "de": "A/C – CO₂-Konzentration im Innenraum weiterhin erhöht"
+          },
+          "catalogue_ids": [
+            "audi-q4-ac-co2-red"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        },
+        {
+          "source_state": {
+            "cs": "A/C – zvýšená koncentrace CO₂ v kabině",
+            "en": "A/C – elevated cabin CO₂ concentration",
+            "de": "A/C – erhöhte CO₂-Konzentration im Innenraum"
+          },
+          "catalogue_ids": [
+            "audi-q4-ac-co2-yellow"
+          ],
+          "web_status": "present",
+          "meaning_verified": true,
+          "exact_source_variant_verified": true,
+          "published": true
+        }
+      ],
+      "remaining": {
+        "cs": "AUTO a dvě CO₂ výstrahy vložené; další fyzické ovladače, rozdělení vzduchu, recirkulace a zóny nejsou automaticky převzaté z A4/A8. Zbytek Warm und kalt včetně Standklimatisierung zůstává otevřený.",
+        "en": "AUTO and two CO₂ warnings inserted; other physical controls, distribution, recirculation and zones not inherited automatically from A4/A8. Remaining Warm und kalt including Standklimatisierung stays open.",
+        "de": "AUTO und zwei CO₂-Warnungen eingefügt; weitere physische Bedienungen, Verteilung, Umluft und Zonen nicht automatisch von A4/A8 übernommen. Rest von Warm und kalt einschließlich Standklimatisierung offen."
+      },
+      "evidence_file": "q4-climate-function-review.json"
     }
   ],
   "manuals": [
@@ -4984,7 +6159,7 @@
       "model": "Terramar",
       "model_year": "2026",
       "edition": "Edition 11.25",
-      "part_number": null,
+      "part_number": "578012720AC",
       "source_url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
       "whole_manual_complete": false,
       "areas": [
@@ -4995,7 +6170,7 @@
             "en": "Overview and instrument cluster",
             "de": "Übersicht und Kombiinstrument"
           },
-          "status": "selected-items-compared-not-full-chapter",
+          "status": "bounded-subsections-compared-rest-open",
           "whole_chapter_complete": false,
           "verified_catalogue_ids": [
             "abs-fault",
@@ -5003,27 +6178,45 @@
             "auto-hold-active",
             "auto-hold-standby",
             "brake-fault",
+            "brake-fluid",
+            "brake-servo",
+            "bulb-fault",
+            "caddy-brake-servo-yellow-restricted",
             "central-red",
+            "central-yellow",
+            "cruise-active",
             "cruise-standby",
             "esc-fault",
             "esc-off-inscription",
             "esc-regulating",
+            "high-beam",
+            "high-beam-assist-blue",
             "lane-correction",
             "lane-ready",
             "mii-foot-brake",
             "mil-flashing",
             "mil-steady",
+            "oil-pressure",
+            "pads-worn",
             "parking-applied",
+            "rear-fog",
             "seatbelt",
             "steering-red",
+            "steering-yellow",
             "terramar-esc-tcs-off",
-            "terramar-lane-passive"
+            "terramar-lane-passive",
+            "terramar-parking-brake-fault",
+            "terramar-steering-yellow-flashing",
+            "tpms-fault",
+            "tpms-low",
+            "turn-signals"
           ],
           "reviewed_printed_pages": [
             11,
             12,
             13,
             14,
+            15,
             25,
             47,
             48,
@@ -5038,10 +6231,16 @@
             218,
             227,
             229,
-            338
+            338,
+            387,
+            388,
+            389
           ],
           "reviewed_html_sections": [],
-          "completed_bounded_subsections": [],
+          "completed_bounded_subsections": [
+            "terramar-1125-overview-all-cells",
+            "terramar-1125-tyre-pressure-section"
+          ],
           "remaining": {
             "cs": "Zbývá porovnat zbytek této kapitoly v daném vydání, včetně všech ovládacích a stavových variant. Dostupný návod není překážkou; kontrola je rozpracovaná.",
             "en": "The rest of this chapter in this edition remains to be compared, including every control and state variant. The available manual is not an access obstacle; review is in progress.",
@@ -5058,6 +6257,7 @@
           "status": "bounded-subsections-compared-rest-open",
           "whole_chapter_complete": false,
           "verified_catalogue_ids": [
+            "cruise-active",
             "cruise-standby",
             "lane-correction",
             "lane-ready",
@@ -5067,12 +6267,14 @@
             13,
             14,
             200,
+            201,
             216,
             218
           ],
           "reviewed_html_sections": [],
           "completed_bounded_subsections": [
-            "cupra-terramar-2026-11-25-lane-control-lamps"
+            "cupra-terramar-2026-11-25-lane-control-lamps",
+            "terramar-1125-cruise-section"
           ],
           "remaining": {
             "cs": "Zbývá porovnat zbytek této kapitoly v daném vydání, včetně všech ovládacích a stavových variant. Dostupný návod není překážkou; kontrola je rozpracovaná.",
@@ -5087,21 +6289,40 @@
             "en": "Parking and manoeuvring",
             "de": "Parken und Rangieren"
           },
-          "status": "selected-items-compared-not-full-chapter",
+          "status": "bounded-subsections-compared-rest-open",
           "whole_chapter_complete": false,
           "verified_catalogue_ids": [
+            "abs-fault",
             "auto-hold-active",
             "auto-hold-standby",
-            "parking-applied"
+            "brake-servo",
+            "caddy-brake-servo-yellow-restricted",
+            "esc-fault",
+            "esc-off-inscription",
+            "esc-regulating",
+            "parking-applied",
+            "terramar-esc-tcs-off",
+            "terramar-parking-brake-fault"
           ],
           "reviewed_printed_pages": [
             12,
             14,
+            190,
+            191,
+            192,
+            193,
+            194,
             227,
-            229
+            228,
+            229,
+            230
           ],
           "reviewed_html_sections": [],
-          "completed_bounded_subsections": [],
+          "completed_bounded_subsections": [
+            "terramar-1125-brake-support",
+            "terramar-1125-electronic-parking",
+            "terramar-1125-autohold"
+          ],
           "remaining": {
             "cs": "Zbývá porovnat zbytek této kapitoly v daném vydání, včetně všech ovládacích a stavových variant. Dostupný návod není překážkou; kontrola je rozpracovaná.",
             "en": "The rest of this chapter in this edition remains to be compared, including every control and state variant. The available manual is not an access obstacle; review is in progress.",
@@ -5115,12 +6336,21 @@
             "en": "Lighting and visibility",
             "de": "Licht und Sicht"
           },
-          "status": "not-yet-compared",
+          "status": "bounded-subsections-compared-rest-open",
           "whole_chapter_complete": false,
-          "verified_catalogue_ids": [],
-          "reviewed_printed_pages": [],
+          "verified_catalogue_ids": [
+            "high-beam",
+            "high-beam-assist-blue"
+          ],
+          "reviewed_printed_pages": [
+            133,
+            134,
+            135
+          ],
           "reviewed_html_sections": [],
-          "completed_bounded_subsections": [],
+          "completed_bounded_subsections": [
+            "terramar-1125-mainbeam-assist"
+          ],
           "remaining": {
             "cs": "Zbývá porovnat zbytek této kapitoly v daném vydání, včetně všech ovládacích a stavových variant. Dostupný návod není překážkou; kontrola je rozpracovaná.",
             "en": "The rest of this chapter in this edition remains to be compared, including every control and state variant. The available manual is not an access obstacle; review is in progress.",
@@ -5134,20 +6364,30 @@
             "en": "Powertrain and electrical system",
             "de": "Antrieb und Bordnetz"
           },
-          "status": "selected-items-compared-not-full-chapter",
+          "status": "bounded-subsections-compared-rest-open",
           "whole_chapter_complete": false,
           "verified_catalogue_ids": [
             "mii-foot-brake",
             "mil-flashing",
-            "mil-steady"
+            "mil-steady",
+            "oil-pressure",
+            "steering-red",
+            "steering-yellow",
+            "terramar-steering-yellow-flashing"
           ],
           "reviewed_printed_pages": [
             14,
             183,
-            338
+            186,
+            338,
+            366,
+            367
           ],
           "reviewed_html_sections": [],
-          "completed_bounded_subsections": [],
+          "completed_bounded_subsections": [
+            "terramar-1125-oil-troubleshooting",
+            "terramar-1125-steering-troubleshooting"
+          ],
           "remaining": {
             "cs": "Zbývá porovnat zbytek této kapitoly v daném vydání, včetně všech ovládacích a stavových variant. Dostupný návod není překážkou; kontrola je rozpracovaná.",
             "en": "The rest of this chapter in this edition remains to be compared, including every control and state variant. The available manual is not an access obstacle; review is in progress.",
@@ -11053,15 +12293,21 @@
           "status": "bounded-subsections-compared-rest-open",
           "whole_chapter_complete": false,
           "verified_catalogue_ids": [
+            "audi-climate-auto-control",
             "audi-q4-ac-co2-red",
             "audi-q4-ac-co2-yellow"
           ],
           "reviewed_printed_pages": [
+            88,
+            89,
+            90,
+            91,
             92
           ],
           "reviewed_html_sections": [],
           "completed_bounded_subsections": [
-            "q4-2024-climate-driver-messages"
+            "q4-2024-climate-driver-messages",
+            "q4-2024-full-klimaanlage-review"
           ],
           "remaining": {
             "cs": "Zbývá porovnat zbytek této kapitoly v daném vydání, včetně všech ovládacích a stavových variant. Dostupný návod není překážkou; kontrola je rozpracovaná.",

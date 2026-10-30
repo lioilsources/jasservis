@@ -1,0 +1,595 @@
+{
+  "manual": "audi-q4-etron-2024-07-de",
+  "edition": "07.2024",
+  "part_number": "89A012705AM",
+  "checked": "2026-10-30",
+  "scope": "Entire standalone Klimaanlage section pp88–92 before Lenkradheizung. NOT whole Warm und kalt; excludes Standklimatisierung. Functional comparisons can overlap; row count not unique graphics.",
+  "source_comparison_complete": true,
+  "website_publication_complete": false,
+  "rows": [
+    {
+      "id": "zones",
+      "printed_pages": [
+        88
+      ],
+      "pdf_pages": [
+        90
+      ],
+      "label": {
+        "cs": "Jedna, dvě a tři zóny",
+        "en": "One, two and three zones",
+        "de": "Eine, zwei und drei Zonen"
+      },
+      "meaning": {
+        "cs": "Jedna zóna společně; dvě nezávisle vpředu; tři navíc teplota vzadu. Dostupnost podle výbavy.",
+        "en": "One common zone; two independently in front; three additionally provide rear temperature. Equipment-dependent.",
+        "de": "Eine gemeinsame Zone; zwei unabhängig vorn; drei zusätzlich Temperatur hinten. Ausstattungsabhängig."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": false,
+      "published_ids": [],
+      "remaining": {
+        "cs": "Význam ověřený; přesné grafické zpracování či vlastní kontext tohoto ovladače zatím nejsou v katalogu. Nepřevzato automaticky z A4, A8 ani CUPRA.",
+        "en": "Meaning verified; exact graphic treatment or this control’s own context is not yet in the catalogue. Not inherited automatically from A4, A8 or CUPRA.",
+        "de": "Bedeutung geprüft; genaue Grafik oder eigener Bedienkontext noch nicht im Katalog. Nicht automatisch von A4, A8 oder CUPRA übernommen."
+      }
+    },
+    {
+      "id": "whole-system-off",
+      "printed_pages": [
+        89
+      ],
+      "pdf_pages": [
+        91
+      ],
+      "label": {
+        "cs": "Celkové OFF",
+        "en": "Whole-system OFF",
+        "de": "Gesamtanlage OFF"
+      },
+      "meaning": {
+        "cs": "Vypíná klimatizaci a uzavírá přívod venkovního vzduchu. Jiné tlačítko systém opět zapne. Není to A/C OFF.",
+        "en": "Switches climate system off and closes outside-air intake. Another button restarts it. Not A/C OFF.",
+        "de": "Schaltet Klimaanlage aus und sperrt Außenluft. Andere Taste schaltet wieder ein. Nicht A/C OFF."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": false,
+      "published_ids": [],
+      "remaining": {
+        "cs": "Význam ověřený; přesné grafické zpracování či vlastní kontext tohoto ovladače zatím nejsou v katalogu. Nepřevzato automaticky z A4, A8 ani CUPRA.",
+        "en": "Meaning verified; exact graphic treatment or this control’s own context is not yet in the catalogue. Not inherited automatically from A4, A8 or CUPRA.",
+        "de": "Bedeutung geprüft; genaue Grafik oder eigener Bedienkontext noch nicht im Katalog. Nicht automatisch von A4, A8 oder CUPRA übernommen."
+      }
+    },
+    {
+      "id": "cooling-prerequisites",
+      "printed_pages": [
+        89
+      ],
+      "pdf_pages": [
+        91
+      ],
+      "label": {
+        "cs": "Chlazení A/C",
+        "en": "A/C cooling",
+        "de": "A/C-Kühlbetrieb"
+      },
+      "meaning": {
+        "cs": "Vyžaduje běžící ventilátor; při nízké venkovní teplotě se může automaticky vypnout. Bez chlazení se vzduch ani neodvlhčuje.",
+        "en": "Requires blower operation; may switch off at low outside temperature. Without cooling the air is not dehumidified either.",
+        "de": "Benötigt laufendes Gebläse; kann bei niedriger Außentemperatur abschalten. Ohne Kühlung auch keine Entfeuchtung."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": false,
+      "published_ids": [],
+      "remaining": {
+        "cs": "Význam ověřený; přesné grafické zpracování či vlastní kontext tohoto ovladače zatím nejsou v katalogu. Nepřevzato automaticky z A4, A8 ani CUPRA.",
+        "en": "Meaning verified; exact graphic treatment or this control’s own context is not yet in the catalogue. Not inherited automatically from A4, A8 or CUPRA.",
+        "de": "Bedeutung geprüft; genaue Grafik oder eigener Bedienkontext noch nicht im Katalog. Nicht automatisch von A4, A8 oder CUPRA übernommen."
+      }
+    },
+    {
+      "id": "cooling-max",
+      "printed_pages": [
+        89
+      ],
+      "pdf_pages": [
+        91
+      ],
+      "label": {
+        "cs": "A/C MAX",
+        "en": "A/C MAX",
+        "de": "A/C MAX"
+      },
+      "meaning": {
+        "cs": "Maximální chladicí výkon. Používat krátce; za nepříznivých podmínek může přispět k zamlžení. Tato věta sama nedokládá maximální rychlost ventilátoru, a proto se nepřebírá rozšířený výklad A8.",
+        "en": "Maximum cooling output. Use briefly; adverse conditions may cause misting. This sentence alone does not establish maximum blower speed, so the extended A8 explanation is not inherited.",
+        "de": "Maximale Kühlleistung. Kurzzeitig nutzen; bei ungünstigen Bedingungen Beschlag möglich. Satz belegt allein keine maximale Gebläsestufe, daher keine Übernahme erweiterter A8-Erklärung."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": false,
+      "published_ids": [],
+      "remaining": {
+        "cs": "Význam ověřený; přesné grafické zpracování či vlastní kontext tohoto ovladače zatím nejsou v katalogu. Nepřevzato automaticky z A4, A8 ani CUPRA.",
+        "en": "Meaning verified; exact graphic treatment or this control’s own context is not yet in the catalogue. Not inherited automatically from A4, A8 or CUPRA.",
+        "de": "Bedeutung geprüft; genaue Grafik oder eigener Bedienkontext noch nicht im Katalog. Nicht automatisch von A4, A8 oder CUPRA übernommen."
+      }
+    },
+    {
+      "id": "cooling-eco",
+      "printed_pages": [
+        89
+      ],
+      "pdf_pages": [
+        91
+      ],
+      "label": {
+        "cs": "A/C ECO",
+        "en": "A/C ECO",
+        "de": "A/C ECO"
+      },
+      "meaning": {
+        "cs": "Energeticky úsporný režim klimatizace; není jízdní profil vozu.",
+        "en": "Energy-saving climate mode, not the vehicle driving profile.",
+        "de": "Energiesparmodus der Klimaanlage, kein Fahrzeug-Fahrprofil."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": false,
+      "published_ids": [],
+      "remaining": {
+        "cs": "Význam ověřený; přesné grafické zpracování či vlastní kontext tohoto ovladače zatím nejsou v katalogu. Nepřevzato automaticky z A4, A8 ani CUPRA.",
+        "en": "Meaning verified; exact graphic treatment or this control’s own context is not yet in the catalogue. Not inherited automatically from A4, A8 or CUPRA.",
+        "de": "Bedeutung geprüft; genaue Grafik oder eigener Bedienkontext noch nicht im Katalog. Nicht automatisch von A4, A8 oder CUPRA übernommen."
+      }
+    },
+    {
+      "id": "cooling-on",
+      "printed_pages": [
+        89
+      ],
+      "pdf_pages": [
+        91
+      ],
+      "label": {
+        "cs": "A/C ON",
+        "en": "A/C ON",
+        "de": "A/C ON"
+      },
+      "meaning": {
+        "cs": "Zapnuté automaticky regulované chlazení.",
+        "en": "Cooling enabled and automatically regulated.",
+        "de": "Kühlbetrieb eingeschaltet und automatisch geregelt."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": false,
+      "published_ids": [],
+      "remaining": {
+        "cs": "Význam ověřený; přesné grafické zpracování či vlastní kontext tohoto ovladače zatím nejsou v katalogu. Nepřevzato automaticky z A4, A8 ani CUPRA.",
+        "en": "Meaning verified; exact graphic treatment or this control’s own context is not yet in the catalogue. Not inherited automatically from A4, A8 or CUPRA.",
+        "de": "Bedeutung geprüft; genaue Grafik oder eigener Bedienkontext noch nicht im Katalog. Nicht automatisch von A4, A8 oder CUPRA übernommen."
+      }
+    },
+    {
+      "id": "cooling-off",
+      "printed_pages": [
+        89
+      ],
+      "pdf_pages": [
+        91
+      ],
+      "label": {
+        "cs": "A/C OFF",
+        "en": "A/C OFF",
+        "de": "A/C OFF"
+      },
+      "meaning": {
+        "cs": "Vypíná pouze chladicí režim; odlišit od celkového OFF.",
+        "en": "Disables cooling only; distinguish whole-system OFF.",
+        "de": "Schaltet nur Kühlbetrieb aus; Gesamt-OFF unterscheiden."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": false,
+      "published_ids": [],
+      "remaining": {
+        "cs": "Význam ověřený; přesné grafické zpracování či vlastní kontext tohoto ovladače zatím nejsou v katalogu. Nepřevzato automaticky z A4, A8 ani CUPRA.",
+        "en": "Meaning verified; exact graphic treatment or this control’s own context is not yet in the catalogue. Not inherited automatically from A4, A8 or CUPRA.",
+        "de": "Bedeutung geprüft; genaue Grafik oder eigener Bedienkontext noch nicht im Katalog. Nicht automatisch von A4, A8 oder CUPRA übernommen."
+      }
+    },
+    {
+      "id": "auto",
+      "printed_pages": [
+        89
+      ],
+      "pdf_pages": [
+        91
+      ],
+      "label": {
+        "cs": "AUTO",
+        "en": "AUTO",
+        "de": "AUTO"
+      },
+      "meaning": {
+        "cs": "Reguluje teplotu, množství i rozdělení vzduchu a zapíná automatickou recirkulaci. Zásah do ventilace automatiku vypíná.",
+        "en": "Regulates temperature, airflow and distribution; enables automatic recirculation. Ventilation-related control cancels automatic operation.",
+        "de": "Regelt Temperatur, Luftmenge und Verteilung, schaltet Umluftautomatik ein. Belüftungsrelevante Bedienung beendet Automatik."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": true,
+      "published_ids": [
+        "audi-climate-auto-control"
+      ],
+      "remaining": {
+        "cs": "Ověřené samostatné modelové zpracování je v katalogu.",
+        "en": "Verified own-model entry is in the catalogue.",
+        "de": "Geprüfter eigener Modelleintrag ist im Katalog."
+      }
+    },
+    {
+      "id": "temperature",
+      "printed_pages": [
+        89
+      ],
+      "pdf_pages": [
+        91
+      ],
+      "label": {
+        "cs": "Teplota a LO/HI",
+        "en": "Temperature and LO/HI",
+        "de": "Temperatur und LO/HI"
+      },
+      "meaning": {
+        "cs": "Rozsah 16–28 °C; pod a nad ním LO/HI znamená trvalý maximální chladicí nebo topný výkon. Ovládání závisí na počtu zón.",
+        "en": "Range 16–28 °C; below/above it LO/HI means continuous maximum cooling/heating. Operation depends on zones.",
+        "de": "Bereich 16–28 °C; darunter/darüber LO/HI für dauernd maximale Kühl-/Heizleistung. Bedienung zonenabhängig."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": false,
+      "published_ids": [],
+      "remaining": {
+        "cs": "Význam ověřený; přesné grafické zpracování či vlastní kontext tohoto ovladače zatím nejsou v katalogu. Nepřevzato automaticky z A4, A8 ani CUPRA.",
+        "en": "Meaning verified; exact graphic treatment or this control’s own context is not yet in the catalogue. Not inherited automatically from A4, A8 or CUPRA.",
+        "de": "Bedeutung geprüft; genaue Grafik oder eigener Bedienkontext noch nicht im Katalog. Nicht automatisch von A4, A8 oder CUPRA übernommen."
+      }
+    },
+    {
+      "id": "sync",
+      "printed_pages": [
+        89
+      ],
+      "pdf_pages": [
+        91
+      ],
+      "label": {
+        "cs": "SYNC podle počtu zón",
+        "en": "SYNC by number of zones",
+        "de": "SYNC je Zonenzahl"
+      },
+      "meaning": {
+        "cs": "Jedna zóna: trvale aktivní. Dvě/tři: přebírá se teplota řidiče pro spolujezdce, ne automaticky všechny parametry vzduchu jako v jiném modelu. U tří zón a dětské pojistky také vzadu.",
+        "en": "One zone: always active. Two/three: driver temperature copied to passenger, not automatically every airflow parameter from another model. Three zones with child lock also includes rear.",
+        "de": "Eine Zone: dauerhaft aktiv. Zwei/drei: Fahrertemperatur zum Beifahrer übernommen, nicht automatisch alle Luftparameter anderer Modelle. Drei Zonen mit Kindersicherung auch hinten."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": false,
+      "published_ids": [],
+      "remaining": {
+        "cs": "Význam ověřený; přesné grafické zpracování či vlastní kontext tohoto ovladače zatím nejsou v katalogu. Nepřevzato automaticky z A4, A8 ani CUPRA.",
+        "en": "Meaning verified; exact graphic treatment or this control’s own context is not yet in the catalogue. Not inherited automatically from A4, A8 or CUPRA.",
+        "de": "Bedeutung geprüft; genaue Grafik oder eigener Bedienkontext noch nicht im Katalog. Nicht automatisch von A4, A8 oder CUPRA übernommen."
+      }
+    },
+    {
+      "id": "blower",
+      "printed_pages": [
+        89
+      ],
+      "pdf_pages": [
+        91
+      ],
+      "label": {
+        "cs": "Ventilátor",
+        "en": "Blower",
+        "de": "Gebläse"
+      },
+      "meaning": {
+        "cs": "Množství se mění kolébkovým ovladačem; AUTO obnoví automatickou regulaci. Příliš nízký výkon může vést k zamlžení.",
+        "en": "Airflow adjusted by rocker; AUTO restores automatic control. Too little flow can cause misting.",
+        "de": "Luftmenge per Wippe; AUTO stellt automatische Regelung her. Zu geringe Stufe kann Beschlag fördern."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": false,
+      "published_ids": [],
+      "remaining": {
+        "cs": "Význam ověřený; přesné grafické zpracování či vlastní kontext tohoto ovladače zatím nejsou v katalogu. Nepřevzato automaticky z A4, A8 ani CUPRA.",
+        "en": "Meaning verified; exact graphic treatment or this control’s own context is not yet in the catalogue. Not inherited automatically from A4, A8 or CUPRA.",
+        "de": "Bedeutung geprüft; genaue Grafik oder eigener Bedienkontext noch nicht im Katalog. Nicht automatisch von A4, A8 oder CUPRA übernommen."
+      }
+    },
+    {
+      "id": "distribution",
+      "printed_pages": [
+        89,
+        90
+      ],
+      "pdf_pages": [
+        91,
+        92
+      ],
+      "label": {
+        "cs": "Rozdělení vzduchu",
+        "en": "Air distribution",
+        "de": "Luftverteilung"
+      },
+      "meaning": {
+        "cs": "Kolébkovým ovladačem se volí rozdělení; AUTO obnoví automatiku. Boční výdechy nasměrovat na boční skla pro omezení mlžení.",
+        "en": "Rocker selects distribution; AUTO restores automatic mode. Aim side outlets at side windows to reduce misting.",
+        "de": "Wippe wählt Verteilung; AUTO stellt Automatik her. Seitliche Ausströmer gegen Beschlag auf Seitenscheiben richten."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": false,
+      "published_ids": [],
+      "remaining": {
+        "cs": "Význam ověřený; přesné grafické zpracování či vlastní kontext tohoto ovladače zatím nejsou v katalogu. Nepřevzato automaticky z A4, A8 ani CUPRA.",
+        "en": "Meaning verified; exact graphic treatment or this control’s own context is not yet in the catalogue. Not inherited automatically from A4, A8 or CUPRA.",
+        "de": "Bedeutung geprüft; genaue Grafik oder eigener Bedienkontext noch nicht im Katalog. Nicht automatisch von A4, A8 oder CUPRA übernommen."
+      }
+    },
+    {
+      "id": "front-defrost",
+      "printed_pages": [
+        90
+      ],
+      "pdf_pages": [
+        92
+      ],
+      "label": {
+        "cs": "Odmlžení/odmrazení vpředu",
+        "en": "Front demisting/defrosting",
+        "de": "Vorn entfrosten"
+      },
+      "meaning": {
+        "cs": "Vzduch převážně pod čelní sklo, recirkulace vypnutá, automatická teplota a podle podmínek A/C. Podle výbavy lze zahrnout vyhřívání čelního skla. Ikona bez nápisu MAX není automaticky převzata z Terramaru.",
+        "en": "Air mainly below windscreen, recirculation off, automatic temperature and A/C as conditions require. Windscreen heating equipment-dependent. Icon without MAX not inherited from Terramar.",
+        "de": "Luft überwiegend unter Frontscheibe, Umluft aus, automatische Temperatur und je Bedingungen A/C. Frontscheibenheizung ausstattungsabhängig. Symbol ohne MAX nicht von Terramar übernommen."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": false,
+      "published_ids": [],
+      "remaining": {
+        "cs": "Význam ověřený; přesné grafické zpracování či vlastní kontext tohoto ovladače zatím nejsou v katalogu. Nepřevzato automaticky z A4, A8 ani CUPRA.",
+        "en": "Meaning verified; exact graphic treatment or this control’s own context is not yet in the catalogue. Not inherited automatically from A4, A8 or CUPRA.",
+        "de": "Bedeutung geprüft; genaue Grafik oder eigener Bedienkontext noch nicht im Katalog. Nicht automatisch von A4, A8 oder CUPRA übernommen."
+      }
+    },
+    {
+      "id": "recirculation",
+      "printed_pages": [
+        90,
+        92
+      ],
+      "pdf_pages": [
+        92,
+        94
+      ],
+      "label": {
+        "cs": "Recirkulace ruční M / automatická A",
+        "en": "Recirculation manual M / automatic A",
+        "de": "Umluft manuell M / automatisch A"
+      },
+      "meaning": {
+        "cs": "M a A volí stavy nad stejným ovladačem. Neprovozovat dlouhodobě bez výměny vzduchu; při nevolnosti vypnout a větrat. MMI nastavení na str.92 je určeno třízónové výbavě.",
+        "en": "M/A select states above one control. Avoid prolonged operation without fresh air; turn off and ventilate if unwell. MMI setting p92 applies to three-zone equipment.",
+        "de": "M/A wählen Zustände über gleichem Bedienelement. Nicht lange ohne Luftwechsel; bei Unwohlsein aus und lüften. MMI-Einstellung S92 gilt für Dreizonen-Ausstattung."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": false,
+      "published_ids": [],
+      "remaining": {
+        "cs": "Význam ověřený; přesné grafické zpracování či vlastní kontext tohoto ovladače zatím nejsou v katalogu. Nepřevzato automaticky z A4, A8 ani CUPRA.",
+        "en": "Meaning verified; exact graphic treatment or this control’s own context is not yet in the catalogue. Not inherited automatically from A4, A8 or CUPRA.",
+        "de": "Bedeutung geprüft; genaue Grafik oder eigener Bedienkontext noch nicht im Katalog. Nicht automatisch von A4, A8 oder CUPRA übernommen."
+      }
+    },
+    {
+      "id": "rear-window-heating",
+      "printed_pages": [
+        90
+      ],
+      "pdf_pages": [
+        92
+      ],
+      "label": {
+        "cs": "Vyhřívání zadního skla",
+        "en": "Heated rear window",
+        "de": "Heckscheibenheizung"
+      },
+      "meaning": {
+        "cs": "Dostupnost řídí energie 12V soustavy; při aktivním pohonu se samo vypíná za 10–20 minut podle teploty. Delší stisk umožňuje trvalé zapnutí; podle výbavy i zrcátka.",
+        "en": "Availability managed by 12V energy system; with drive active switches off after 10–20 minutes depending on temperature. Longer press permits continuous operation; mirrors equipment-dependent.",
+        "de": "Verfügbarkeit durch 12-V-Energiemanagement; bei aktivem Antrieb nach 10–20 Minuten temperaturabhängig aus. Längerer Druck für dauerhaftes Ein; Spiegel ausstattungsabhängig."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": false,
+      "published_ids": [],
+      "remaining": {
+        "cs": "Význam ověřený; přesné grafické zpracování či vlastní kontext tohoto ovladače zatím nejsou v katalogu. Nepřevzato automaticky z A4, A8 ani CUPRA.",
+        "en": "Meaning verified; exact graphic treatment or this control’s own context is not yet in the catalogue. Not inherited automatically from A4, A8 or CUPRA.",
+        "de": "Bedeutung geprüft; genaue Grafik oder eigener Bedienkontext noch nicht im Katalog. Nicht automatisch von A4, A8 oder CUPRA übernommen."
+      }
+    },
+    {
+      "id": "outlets",
+      "printed_pages": [
+        90
+      ],
+      "pdf_pages": [
+        92
+      ],
+      "label": {
+        "cs": "Výdechy",
+        "en": "Air outlets",
+        "de": "Luftausströmer"
+      },
+      "meaning": {
+        "cs": "Středové a boční výdechy lze otevírat a směrovat páčkami.",
+        "en": "Central/side outlets opened and directed by levers.",
+        "de": "Mittlere/seitliche Ausströmer per Hebel öffnen und ausrichten."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": false,
+      "published_ids": [],
+      "remaining": {
+        "cs": "Význam ověřený; přesné grafické zpracování či vlastní kontext tohoto ovladače zatím nejsou v katalogu. Nepřevzato automaticky z A4, A8 ani CUPRA.",
+        "en": "Meaning verified; exact graphic treatment or this control’s own context is not yet in the catalogue. Not inherited automatically from A4, A8 or CUPRA.",
+        "de": "Bedeutung geprüft; genaue Grafik oder eigener Bedienkontext noch nicht im Katalog. Nicht automatisch von A4, A8 oder CUPRA übernommen."
+      }
+    },
+    {
+      "id": "seat-heating",
+      "printed_pages": [
+        90,
+        91
+      ],
+      "pdf_pages": [
+        92,
+        93
+      ],
+      "label": {
+        "cs": "Vyhřívání sedadel",
+        "en": "Seat heating",
+        "de": "Sitzheizung"
+      },
+      "meaning": {
+        "cs": "Stisk zapíná nejvyšší stupeň, další snižují, bez LED vypnuto. Platí bezpečnostní omezení pro snížené vnímání tepla, mokré plochy a zakrytí; není to kontrolka závady.",
+        "en": "Press selects highest level, further presses reduce it; no LED means off. Safety limits apply to impaired heat perception, wet or covered seats; not a fault lamp.",
+        "de": "Druck wählt höchste Stufe, weitere reduzieren; keine LED bedeutet aus. Sicherheitsgrenzen bei eingeschränktem Wärmeempfinden, nassen/abgedeckten Sitzen; keine Störungsleuchte."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": false,
+      "published_ids": [],
+      "remaining": {
+        "cs": "Význam ověřený; přesné grafické zpracování či vlastní kontext tohoto ovladače zatím nejsou v katalogu. Nepřevzato automaticky z A4, A8 ani CUPRA.",
+        "en": "Meaning verified; exact graphic treatment or this control’s own context is not yet in the catalogue. Not inherited automatically from A4, A8 or CUPRA.",
+        "de": "Bedeutung geprüft; genaue Grafik oder eigener Bedienkontext noch nicht im Katalog. Nicht automatisch von A4, A8 oder CUPRA übernommen."
+      }
+    },
+    {
+      "id": "rear-operation",
+      "printed_pages": [
+        91,
+        92
+      ],
+      "pdf_pages": [
+        93,
+        94
+      ],
+      "label": {
+        "cs": "Ovládání vzadu",
+        "en": "Rear operation",
+        "de": "Bedienung im Fond"
+      },
+      "meaning": {
+        "cs": "U tří zón teplota tlačítky minus a plus. Nejde o zadní dotykové ovládání A8.",
+        "en": "Three-zone temperature via minus/plus buttons. Not the A8 rear touch interface.",
+        "de": "Dreizonen-Temperatur per Minus/Plus. Nicht hintere Touchbedienung A8."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": false,
+      "published_ids": [],
+      "remaining": {
+        "cs": "Význam ověřený; přesné grafické zpracování či vlastní kontext tohoto ovladače zatím nejsou v katalogu. Nepřevzato automaticky z A4, A8 ani CUPRA.",
+        "en": "Meaning verified; exact graphic treatment or this control’s own context is not yet in the catalogue. Not inherited automatically from A4, A8 or CUPRA.",
+        "de": "Bedeutung geprüft; genaue Grafik oder eigener Bedienkontext noch nicht im Katalog. Nicht automatisch von A4, A8 oder CUPRA übernommen."
+      }
+    },
+    {
+      "id": "co2-red",
+      "printed_pages": [
+        92
+      ],
+      "pdf_pages": [
+        94
+      ],
+      "label": {
+        "cs": "Červené A/C: CO₂ stále zvýšené",
+        "en": "Red A/C: CO₂ remains elevated",
+        "de": "Rotes A/C: CO₂ weiterhin erhöht"
+      },
+      "meaning": {
+        "cs": "Ihned větrat; při přetrvání nepokračovat a kontaktovat odborný servis. I po zhasnutí nechat co nejdříve zkontrolovat.",
+        "en": "Ventilate immediately; if persistent do not continue and contact specialist service. Arrange prompt inspection even if warning clears.",
+        "de": "Unmittelbar lüften; bei Fortbestehen nicht weiterfahren und Fachbetrieb kontaktieren. Auch nach Erlöschen zeitnah prüfen lassen."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": true,
+      "published_ids": [
+        "audi-q4-ac-co2-red"
+      ],
+      "remaining": {
+        "cs": "Ověřené samostatné modelové zpracování je v katalogu.",
+        "en": "Verified own-model entry is in the catalogue.",
+        "de": "Geprüfter eigener Modelleintrag ist im Katalog."
+      }
+    },
+    {
+      "id": "co2-yellow",
+      "printed_pages": [
+        92
+      ],
+      "pdf_pages": [
+        94
+      ],
+      "label": {
+        "cs": "Žluté A/C: CO₂ zvýšené",
+        "en": "Amber A/C: CO₂ elevated",
+        "de": "Gelbes A/C: CO₂ erhöht"
+      },
+      "meaning": {
+        "cs": "Větrat; při přetrvání nepokračovat a kontaktovat odborný servis. Žlutá zde není automatické povolení pokračovat.",
+        "en": "Ventilate; if persistent do not continue and contact specialist service. Amber is not automatic permission to continue here.",
+        "de": "Lüften; bei Fortbestehen nicht weiterfahren und Fachbetrieb kontaktieren. Gelb ist hier keine automatische Weiterfahrerlaubnis."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": true,
+      "published_ids": [
+        "audi-q4-ac-co2-yellow"
+      ],
+      "remaining": {
+        "cs": "Ověřené samostatné modelové zpracování je v katalogu.",
+        "en": "Verified own-model entry is in the catalogue.",
+        "de": "Geprüfter eigener Modelleintrag ist im Katalog."
+      }
+    },
+    {
+      "id": "climate-restricted-battery-cooling",
+      "printed_pages": [
+        92
+      ],
+      "pdf_pages": [
+        94
+      ],
+      "label": {
+        "cs": "Textové omezení klimatizace",
+        "en": "Text-only climate restriction",
+        "de": "Klimatisierung eingeschränkt als Texthinweis"
+      },
+      "meaning": {
+        "cs": "Vyšší chlazení na ochranu HV akumulátoru omezuje klimatizaci; v tomto místě nemá vlastní grafiku a není totožné s výstrahou CO₂. V katalogu vysvětleno jako kontext, ne nový symbol.",
+        "en": "Increased cooling protects the HV battery and restricts cabin climate; no own graphic here and not the CO₂ warning. Explained as context, not a new symbol.",
+        "de": "Erhöhte Kühlung schützt HV-Batterie und schränkt Klimatisierung ein; hier ohne eigene Grafik, nicht CO₂-Warnung. Im Katalog als Kontext, nicht neues Symbol erklärt."
+      },
+      "meaning_verified": true,
+      "exact_graphic_and_context_published": true,
+      "published_ids": [
+        "audi-q4-ac-co2-red",
+        "audi-q4-ac-co2-yellow"
+      ],
+      "remaining": {
+        "cs": "Ověřené samostatné modelové zpracování je v katalogu.",
+        "en": "Verified own-model entry is in the catalogue.",
+        "de": "Geprüfter eigener Modelleintrag ist im Katalog."
+      }
+    }
+  ]
+}

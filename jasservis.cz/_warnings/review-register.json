@@ -534,7 +534,7 @@
       "edition": "Edition 11.25",
       "model_year": "2026",
       "source_url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
-      "part_number": null,
+      "part_number": "578012720AC",
       "whole_manual_comparison": "not-complete",
       "verified_item_ids": [
         "abs-fault",
@@ -542,28 +542,45 @@
         "auto-hold-active",
         "auto-hold-standby",
         "brake-fault",
+        "brake-fluid",
+        "brake-servo",
+        "bulb-fault",
+        "caddy-brake-servo-yellow-restricted",
         "central-red",
+        "central-yellow",
+        "cruise-active",
         "cruise-standby",
         "esc-fault",
         "esc-off-inscription",
         "esc-regulating",
+        "high-beam",
+        "high-beam-assist-blue",
         "lane-correction",
         "lane-ready",
         "mii-foot-brake",
         "mil-flashing",
         "mil-steady",
+        "oil-pressure",
+        "pads-worn",
         "parking-applied",
+        "rear-fog",
         "seatbelt",
         "steering-red",
+        "steering-yellow",
         "terramar-clima-control",
         "terramar-climate-auto-control",
         "terramar-esc-tcs-off",
         "terramar-front-max",
         "terramar-lane-control",
         "terramar-lane-passive",
+        "terramar-parking-brake-fault",
         "terramar-rear-heating",
         "terramar-start-stop-control",
-        "terramar-tp-control"
+        "terramar-steering-yellow-flashing",
+        "terramar-tp-control",
+        "tpms-fault",
+        "tpms-low",
+        "turn-signals"
       ],
       "reviewed_printed_pages": [
         11,
@@ -577,6 +594,13 @@
         47,
         48,
         56,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
         148,
         150,
         176,
@@ -587,13 +611,20 @@
         192,
         193,
         200,
+        201,
         216,
         218,
         227,
+        228,
         229,
         295,
         296,
-        338
+        338,
+        361,
+        366,
+        387,
+        388,
+        389
       ],
       "reviewed_html_sections": [],
       "sections": {
@@ -1850,6 +1881,7 @@
         "audi-adaptive-assist-unavailable-bila",
         "audi-adaptive-assist-unavailable-zluta",
         "audi-central-red",
+        "audi-climate-auto-control",
         "audi-fatigue-break-recommended",
         "audi-fatigue-break-required",
         "audi-fatigue-unavailable",
@@ -1904,6 +1936,8 @@
         69,
         70,
         73,
+        88,
+        89,
         92,
         99,
         100,
@@ -74389,6 +74423,128 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "Three available cached own-edition Caddy brake-support topics read in full. Yellow reduced assistance distinct from red failure; manually disabled ASR distinct from fault and intervention. Native LaneAssist reuse issue is independent and blocks none of these licensed standard renderings."
+    },
+    {
+      "id": "terramar-own-overview-and-driver-sections",
+      "checked": "2026-10-30",
+      "before_semantic_records": 166,
+      "after_semantic_records": 168,
+      "added_record_ids": [
+        "terramar-parking-brake-fault",
+        "terramar-steering-yellow-flashing"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "brake-fluid",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "brake-servo",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "pads-worn",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "oil-pressure",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "rear-fog",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "bulb-fault",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "steering-yellow",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "central-yellow",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "high-beam",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "turn-signals",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "cruise-active",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "high-beam-assist-blue",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "caddy-brake-servo-yellow-restricted",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "terramar-parking-brake-fault",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "terramar-steering-yellow-flashing",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "tpms-low",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "tpms-fault",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        }
+      ],
+      "corrected_record_ids": [
+        "parking-applied",
+        "high-beam-assist-blue",
+        "caddy-brake-servo-yellow-restricted"
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Independent review of known complete Terramar EN11.25,578012720AC, not identification of absent new CUPRA photos7–10. Added two distinct meanings and fifteen assignments of existing records; no new graphic files/shapes/colours. Corrected parking-brake overview page12→11. Grey/white unspecified schematic marks not made black warnings; eSound native shape not substituted with a different car/speaker drawing. Independent tyre-pressure subsection387–389 added: indirect ABS-based system, pressure loss separate from one-minute flashing fault and brief calibration confirmation."
+    },
+    {
+      "id": "q4-own-climate-auto-assignment",
+      "checked": "2026-10-30",
+      "before_semantic_records": 168,
+      "after_semantic_records": 168,
+      "added_record_ids": [],
+      "added_model_assignments": [
+        {
+          "id": "audi-climate-auto-control",
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Own Q4 07.2024 AUTO control checked from original figure77 and pp88–89, with Q4-specific recirculation/ventilation behaviour. One model assignment, not a new unique symbol. Complete Klimaanlage source subsection88–92 compared; remaining exact control graphics not automatically inherited."
     }
   ],
   "chapter_register": "chapter-review.json",
@@ -74428,26 +74584,123 @@
     "born-2021-light-assist-section",
     "golf-2020-fernlichtregulierung-topic",
     "caddy-2025-braking-support-topics",
-    "q4-2024-climate-driver-messages"
+    "q4-2024-climate-driver-messages",
+    "terramar-1125-overview-all-cells",
+    "terramar-1125-brake-support",
+    "terramar-1125-electronic-parking",
+    "terramar-1125-autohold",
+    "terramar-1125-oil-troubleshooting",
+    "terramar-1125-steering-troubleshooting",
+    "terramar-1125-mainbeam-assist",
+    "terramar-1125-cruise-section",
+    "terramar-1125-tyre-pressure-section",
+    "q4-2024-full-klimaanlage-review"
   ],
   "latest_round": {
-    "before_semantic_records": 159,
-    "after_semantic_records": 166,
+    "before_semantic_records": 166,
+    "after_semantic_records": 168,
     "added_record_ids": [
-      "enyaq-parking-steep-slope",
-      "enyaq-dynamic-light-assist-active",
-      "tarraco-auto-hold-green-p",
-      "tarraco-light-assist-enabled-blue",
-      "golf-white-high-beam-assist-enabled",
-      "caddy-brake-servo-yellow-restricted",
-      "caddy-asr-manually-off"
+      "terramar-parking-brake-fault",
+      "terramar-steering-yellow-flashing"
+    ],
+    "added_model_assignments": [
+      {
+        "id": "brake-fluid",
+        "manual": "cupra-terramar-2026-11-25",
+        "brand": "cupra"
+      },
+      {
+        "id": "brake-servo",
+        "manual": "cupra-terramar-2026-11-25",
+        "brand": "cupra"
+      },
+      {
+        "id": "pads-worn",
+        "manual": "cupra-terramar-2026-11-25",
+        "brand": "cupra"
+      },
+      {
+        "id": "oil-pressure",
+        "manual": "cupra-terramar-2026-11-25",
+        "brand": "cupra"
+      },
+      {
+        "id": "rear-fog",
+        "manual": "cupra-terramar-2026-11-25",
+        "brand": "cupra"
+      },
+      {
+        "id": "bulb-fault",
+        "manual": "cupra-terramar-2026-11-25",
+        "brand": "cupra"
+      },
+      {
+        "id": "steering-yellow",
+        "manual": "cupra-terramar-2026-11-25",
+        "brand": "cupra"
+      },
+      {
+        "id": "central-yellow",
+        "manual": "cupra-terramar-2026-11-25",
+        "brand": "cupra"
+      },
+      {
+        "id": "high-beam",
+        "manual": "cupra-terramar-2026-11-25",
+        "brand": "cupra"
+      },
+      {
+        "id": "turn-signals",
+        "manual": "cupra-terramar-2026-11-25",
+        "brand": "cupra"
+      },
+      {
+        "id": "cruise-active",
+        "manual": "cupra-terramar-2026-11-25",
+        "brand": "cupra"
+      },
+      {
+        "id": "high-beam-assist-blue",
+        "manual": "cupra-terramar-2026-11-25",
+        "brand": "cupra"
+      },
+      {
+        "id": "caddy-brake-servo-yellow-restricted",
+        "manual": "cupra-terramar-2026-11-25",
+        "brand": "cupra"
+      },
+      {
+        "id": "terramar-parking-brake-fault",
+        "manual": "cupra-terramar-2026-11-25",
+        "brand": "cupra"
+      },
+      {
+        "id": "terramar-steering-yellow-flashing",
+        "manual": "cupra-terramar-2026-11-25",
+        "brand": "cupra"
+      },
+      {
+        "id": "tpms-low",
+        "manual": "cupra-terramar-2026-11-25",
+        "brand": "cupra"
+      },
+      {
+        "id": "tpms-fault",
+        "manual": "cupra-terramar-2026-11-25",
+        "brand": "cupra"
+      },
+      {
+        "id": "audi-climate-auto-control",
+        "manual": "audi-q4-etron-2024-07-de",
+        "brand": "audi"
+      }
     ],
     "corrected_record_ids": [
+      "parking-applied",
       "high-beam-assist-blue",
-      "audi-q4-ac-co2-red",
-      "audi-q4-ac-co2-yellow"
+      "caddy-brake-servo-yellow-restricted"
     ],
-    "removed_record_ids": [],
-    "whole_manuals_complete": 0
+    "whole_manuals_complete": 0,
+    "attachment_register": "attachment-groups.json"
   }
 }

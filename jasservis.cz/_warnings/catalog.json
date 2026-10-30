@@ -137,7 +137,8 @@
       "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
       "bytes": 7335666,
       "sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
-      "status": "selected-symbols-and-instructions-reviewed-not-complete"
+      "status": "selected-symbols-and-instructions-reviewed-not-complete",
+      "part_number": "578012720AC"
     },
     "seat-leon-2010-07-09": {
       "brand": "seat",
@@ -1213,6 +1214,32 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            12,
+            361
+          ],
+          "pdf_pages": [
+            14,
+            363
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "level": "own-manual-overview-and-referenced-instructions",
+            "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -1328,6 +1355,32 @@
               "5f81129a864b4dd2c101446831c3c385_1_de_DE",
               "2efa9c19fdda9e3fac14451e64b26693_10_de_DE"
             ]
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            12,
+            193
+          ],
+          "pdf_pages": [
+            14,
+            195
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "level": "own-manual-overview-and-referenced-instructions",
+            "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
           }
         }
       ],
@@ -1677,6 +1730,32 @@
               13
             ],
             "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            12,
+            190
+          ],
+          "pdf_pages": [
+            14,
+            192
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "level": "own-manual-overview-and-referenced-instructions",
+            "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
           }
         }
       ],
@@ -3697,11 +3776,11 @@
           "edition": "Edition 11.25",
           "language": "EN",
           "printed_pages": [
-            12,
+            11,
             227
           ],
           "pdf_pages": [
-            14,
+            13,
             229
           ],
           "powertrains": [
@@ -5248,6 +5327,41 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            13,
+            387,
+            388,
+            389
+          ],
+          "pdf_pages": [
+            15,
+            389,
+            390,
+            391
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "level": "own-manual-overview-and-referenced-instructions",
+            "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
+          },
+          "model_note": {
+            "cs": "Terramar 11.2025 používá nepřímé sledování obvodu kol pomocí snímačů ABS. Hodnoty ukládejte až po kontrole studených pneumatik; při kalibraci může krátce bliknout kontrolka a zaznít potvrzení. To není totéž jako přibližně minutové blikání následované trvalým žlutým svícením při poruše.",
+            "en": "Terramar 11.2025 uses indirect wheel-circumference monitoring through ABS sensors. Store values only after checking cold tyres. Calibration may produce a brief lamp flash and confirmation sound; this is not the approximately one-minute flash followed by steady amber that indicates a fault.",
+            "de": "Terramar 11.2025 nutzt indirekte Abrollumfangüberwachung über ABS-Sensoren. Werte erst nach Prüfung kalter Reifen speichern. Kalibrierung kann kurzzeitiges Blinken und Bestätigungston auslösen; nicht mit etwa einminütigem Blinken und anschließendem gelbem Dauerlicht bei Störung verwechseln."
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -5401,6 +5515,41 @@
             "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            13,
+            387,
+            388,
+            389
+          ],
+          "pdf_pages": [
+            15,
+            389,
+            390,
+            391
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "level": "own-manual-overview-and-referenced-instructions",
+            "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
+          },
+          "model_note": {
+            "cs": "Terramar 11.2025 používá nepřímé sledování obvodu kol pomocí snímačů ABS. Hodnoty ukládejte až po kontrole studených pneumatik; při kalibraci může krátce bliknout kontrolka a zaznít potvrzení. To není totéž jako přibližně minutové blikání následované trvalým žlutým svícením při poruše.",
+            "en": "Terramar 11.2025 uses indirect wheel-circumference monitoring through ABS sensors. Store values only after checking cold tyres. Calibration may produce a brief lamp flash and confirmation sound; this is not the approximately one-minute flash followed by steady amber that indicates a fault.",
+            "de": "Terramar 11.2025 nutzt indirekte Abrollumfangüberwachung über ABS-Sensoren. Werte erst nach Prüfung kalter Reifen speichern. Kalibrierung kann kurzzeitiges Blinken und Bestätigungston auslösen; nicht mit etwa einminütigem Blinken und anschließendem gelbem Dauerlicht bei Störung verwechseln."
           }
         }
       ],
@@ -6802,6 +6951,34 @@
               122
             ]
           }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            14,
+            132,
+            134
+          ],
+          "pdf_pages": [
+            16,
+            134,
+            136
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "level": "own-manual-overview-and-referenced-instructions",
+            "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -7029,6 +7206,32 @@
               55
             ],
             "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            13,
+            131
+          ],
+          "pdf_pages": [
+            15,
+            133
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "level": "own-manual-overview-and-referenced-instructions",
+            "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
           }
         }
       ],
@@ -7337,6 +7540,32 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            13,
+            137
+          ],
+          "pdf_pages": [
+            15,
+            139
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "level": "own-manual-overview-and-referenced-instructions",
+            "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -7596,6 +7825,32 @@
               12
             ],
             "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            14,
+            136
+          ],
+          "pdf_pages": [
+            16,
+            138
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "level": "own-manual-overview-and-referenced-instructions",
+            "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
           }
         }
       ],
@@ -9734,6 +9989,32 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            12,
+            366
+          ],
+          "pdf_pages": [
+            14,
+            368
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "level": "own-manual-overview-and-referenced-instructions",
+            "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -10298,9 +10579,9 @@
         "de": "Light Assist – automatisch eingeschaltetes Fernlicht, blaues A"
       },
       "meaning": {
-        "cs": "V uvedených vydáních Enyaq a Born modrý symbol s A podle provozních pokynů označuje automatické zapnutí dálkových světel. Samotné neutrální označení zapnutého asistenta je jiný stav.",
-        "en": "In the cited Enyaq and Born editions, the operating instructions associate the blue A symbol with automatically activated main beam. The neutral enabled-assistant indication is a different state.",
-        "de": "In genannten Enyaq-/Born-Ausgaben ordnen die Bedienhinweise das blaue A automatisch eingeschaltetem Fernlicht zu. Neutrale Anzeige des eingeschalteten Assistenten ist anderer Zustand."
+        "cs": "V uvedených vydáních Enyaq, Born a Terramar modrý symbol s A podle vlastních provozních pokynů označuje automatické zapnutí dálkových světel. Samotné neutrální označení zapnutého asistenta je jiný stav.",
+        "en": "In the cited Enyaq, Born and Terramar editions, the blue A symbol denotes automatically activated main beam according to each edition’s own operating instructions. The neutral assistant-enabled indication is a different state.",
+        "de": "In den genannten Ausgaben von Enyaq, Born und Terramar kennzeichnet das blaue A gemäß den jeweils eigenen Bedienhinweisen automatisch eingeschaltetes Fernlicht. Die neutrale Anzeige des eingeschalteten Assistenten ist ein anderer Zustand."
       },
       "action": {
         "cs": "Sledujte protijedoucí i předjížděná vozidla a další účastníky. Podle potřeby dálková světla ručně vypněte; zakrytá kamera nebo špatně osvětlený účastník nemusí být správně rozpoznán.",
@@ -10308,9 +10589,9 @@
         "de": "Gegenverkehr, vorausfahrende Fahrzeuge und weitere Verkehrsteilnehmer beachten. Fernlicht nötigenfalls manuell ausschalten; verdeckte Kamera oder schlecht beleuchtete Teilnehmer können falsch erkannt werden."
       },
       "note": {
-        "cs": "Původní tvrzení, že tato modrá varianta sama nepotvrzuje rozsvícená dálková světla, bylo opraveno podle Enyaq 11.2020 str. 80 a Born 08.2021 str. 108. Výklad nebyl přenesen na jinou značku nebo vydání.",
-        "en": "The former statement that this blue variant does not itself confirm lit main beam was corrected using Enyaq 11.2020 p80 and Born 08.2021 p108. Not transferred to another brand or edition.",
-        "de": "Frühere Aussage, diese blaue Variante bestätige nicht selbst eingeschaltetes Fernlicht, anhand Enyaq 11.2020 S80 und Born 08.2021 S108 korrigiert. Nicht auf andere Marke/Ausgabe übertragen."
+        "cs": "Rozsah platí jen pro uvedená modelová vydání a výbavu. Nezaměňovat s modrou variantou Tarraco 06.2023, pro kterou je samostatně uveden výklad podle její vlastní legendy. Při riziku oslnění zasáhněte ručně.",
+        "en": "Applies only to the listed model editions and equipment. Do not confuse with the Tarraco 06.2023 blue variant, whose own legend is documented separately. Intervene manually if dazzling is possible.",
+        "de": "Gilt nur für genannte Modellausgaben und Ausstattung. Nicht mit der blauen Tarraco-Variante 06.2023 verwechseln, deren eigene Legende gesondert dokumentiert ist. Bei Blendgefahr manuell eingreifen."
       },
       "scopes": [
         {
@@ -10356,6 +10637,36 @@
             "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            14,
+            133,
+            134,
+            135
+          ],
+          "pdf_pages": [
+            16,
+            135,
+            136,
+            137
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "level": "own-manual-overview-and-referenced-instructions",
+            "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
           }
         }
       ],
@@ -10629,9 +10940,9 @@
             "phev"
           ],
           "model_note": {
-            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
-            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
-            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+            "cs": "Terramar 11.2025 str. 186: u červené poruchy řízení nepokračovat, zajistit odbornou pomoc a netáhnout vůz po vlastních kolech. Nezaměňovat se žlutým trvalým nebo blikajícím stavem.",
+            "en": "Terramar 11.2025 p.186: with a red steering fault do not continue, obtain professional help and do not tow on the vehicle’s own wheels. Distinguish steady/flashing amber states.",
+            "de": "Terramar 11.2025 S.186: bei roter Lenkungsstörung nicht weiterfahren, Fachhilfe holen und nicht auf eigenen Rädern abschleppen. Gelbes Dauer-/Blinklicht unterscheiden."
           },
           "verification": {
             "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
@@ -11037,6 +11348,32 @@
               12
             ],
             "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            13,
+            186
+          ],
+          "pdf_pages": [
+            15,
+            188
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "level": "own-manual-overview-and-referenced-instructions",
+            "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
           }
         }
       ],
@@ -11503,6 +11840,32 @@
             "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            12,
+            25
+          ],
+          "pdf_pages": [
+            14,
+            27
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "level": "own-manual-overview-and-referenced-instructions",
+            "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
           }
         }
       ],
@@ -13569,6 +13932,34 @@
               197
             ],
             "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            14,
+            200,
+            201
+          ],
+          "pdf_pages": [
+            16,
+            202,
+            203
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "level": "own-manual-overview-and-referenced-instructions",
+            "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
           }
         }
       ],
@@ -21525,6 +21916,35 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi",
+          "model": "Q4 e-tron",
+          "model_year": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            88,
+            89
+          ],
+          "pdf_pages": [
+            90,
+            91
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "model_note": {
+            "cs": "Q4 e-tron 07.2024: stiskem AUTO se automaticky řídí teplota, množství a rozdělení vzduchu a zapne se také automatická recirkulace. Zásahem do ovládání ventilace se automatický režim vypne. Fyzické ovládání tohoto modelu se nepřebírá z A4 ani A8.",
+            "en": "Q4 e-tron 07.2024: AUTO automatically controls temperature, airflow and distribution and also enables automatic recirculation. Operating a ventilation-related control cancels automatic mode. This model’s physical operation is not inherited from A4 or A8.",
+            "de": "Q4 e-tron 07.2024: AUTO regelt Temperatur, Luftmenge und Luftverteilung automatisch und schaltet Umluftautomatik ein. Eine belüftungsrelevante Bedienung beendet Automatikbetrieb. Physische Bedienung nicht von A4/A8 übernommen."
+          },
+          "verification": {
+            "checked": "2026-10-30",
+            "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
+            "method": "Own complete Klimaanlage subsection pp88–92 read; AUTO physical functional inscription independently verified in figure77 and own p89, existing generic typeset AUTO reused; no factory font/graphic reproduced."
+          }
         }
       ],
       "graphic_source": {
@@ -23694,9 +24114,9 @@
       "group": "brzdy",
       "state": "steady",
       "name": {
-        "cs": "Posilovač brzd – omezená funkce, žluté hlášení Caddy",
-        "en": "Brake servo – restricted operation, Caddy amber warning",
-        "de": "Bremskraftverstärker – eingeschränkte Funktion, gelbe Caddy-Meldung"
+        "cs": "Posilovač brzd – omezená funkce, žluté hlášení",
+        "en": "Brake servo – restricted operation, amber warning",
+        "de": "Bremskraftverstärker – eingeschränkte Funktion, gelbe Meldung"
       },
       "meaning": {
         "cs": "Při doloženém žlutém hlášení je elektromechanická podpora brzdění omezená. Při sešlápnutí se mohou objevit pulzující pohyby pedálu a brzdná dráha se může prodloužit.",
@@ -23738,6 +24158,32 @@
               "5f81129a864b4dd2c101446831c3c385_1_de_DE",
               "2efa9c19fdda9e3fac14451e64b26693_10_de_DE"
             ]
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            13,
+            193
+          ],
+          "pdf_pages": [
+            15,
+            195
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "level": "own-manual-overview-and-referenced-instructions",
+            "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
           }
         }
       ],
@@ -23836,6 +24282,158 @@
       },
       "checked": "2026-10-30",
       "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "terramar-parking-brake-fault",
+      "graphic": "brake",
+      "color": "zluta",
+      "group": "brzdy",
+      "state": "steady",
+      "name": {
+        "cs": "Elektronická parkovací brzda – žlutá závada (Terramar)",
+        "en": "Electronic parking brake – amber fault (Terramar)",
+        "de": "Elektronische Parkbremse – gelbe Störung (Terramar)"
+      },
+      "meaning": {
+        "cs": "Žluté hlášení tohoto provedení upozorňuje na závadu elektronické parkovací brzdy. Není běžným červeným potvrzením, že je parkovací brzda zatažená.",
+        "en": "This version’s amber message indicates an electronic parking-brake fault. It is not the normal red confirmation that the parking brake is applied.",
+        "de": "Die gelbe Meldung dieser Ausführung weist auf eine Störung der elektronischen Parkbremse hin. Nicht die normale rote Bestätigung einer angezogenen Parkbremse."
+      },
+      "action": {
+        "cs": "Navštivte odborný servis. Při odstavení se ujistěte, že je vozidlo bezpečně zajištěné proti pohybu; řiďte se přesným hlášením. Další současná výstraha STOP má přednost.",
+        "en": "Visit a specialist workshop. When parking, ensure the vehicle is safely secured against movement and follow the exact message. Any simultaneous STOP warning takes priority.",
+        "de": "Fachbetrieb aufsuchen. Beim Abstellen Fahrzeug sicher gegen Wegrollen sichern und genaue Meldung beachten. Eine gleichzeitige STOP-Warnung hat Vorrang."
+      },
+      "note": {
+        "cs": "Ověřeno pro Terramar 11.2025, přehled str. 13 a samostatné řešení závady str. 228–229. Stejný žlutý kruhový znak může s jiným textem označovat omezený posilovač; oba významy jsou oddělené.",
+        "en": "Verified for Terramar 11.2025, overview p.13 and specific fault instructions pp.228–229. The same amber circular sign can indicate restricted brake assistance with a different message; the meanings are separate.",
+        "de": "Für Terramar 11.2025 belegt: Übersicht S.13, eigene Störungshinweise S.228–229. Gleiches gelbes Kreiszeichen kann mit anderem Text eingeschränkte Bremsunterstützung bedeuten; Bedeutungen getrennt."
+      },
+      "scopes": [
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            13,
+            228,
+            229
+          ],
+          "pdf_pages": [
+            15,
+            230,
+            231
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "level": "own-manual-overview-and-referenced-instructions",
+            "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/brake-zluta.svg",
+      "graphic_source": {
+        "title": "File:B01 Brake failure.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:B01_Brake_failure.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/d/d8/B01_Brake_failure.svg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Ehsnils",
+        "modifications": "Existing licensed Ehsnils geometry/mask retained. Foreground set to yellow only after independent Caddy11.2025 source-colour/identity check: native imgc239...yellow in braking-support fault topic. Native source SVG not copied. CC BY-SA3.0 attribution retained.",
+        "sha256": "5911d79ddd82c1b5e917348f196b545675ef8de4dd0c9fd7d3a5442ae30356b3",
+        "file": "wp-content/uploads/kontrolky/brake-zluta.svg"
+      },
+      "alt": {
+        "cs": "Žlutý kruhový znak s vykřičníkem pro závadu parkovací brzdy",
+        "en": "Amber circular exclamation mark for a parking-brake fault",
+        "de": "Gelbes kreisförmiges Ausrufezeichen bei Parkbremsstörung"
+      },
+      "kind": "warning"
+    },
+    {
+      "id": "terramar-steering-yellow-flashing",
+      "graphic": "steering-alert",
+      "color": "zluta",
+      "group": "pneumatiky",
+      "state": "flashing",
+      "name": {
+        "cs": "Řízení – žlutá blikající výstraha (Terramar)",
+        "en": "Steering – flashing amber warning (Terramar)",
+        "de": "Lenkung – gelb blinkende Warnung (Terramar)"
+      },
+      "meaning": {
+        "cs": "Blikající žlutý symbol v tomto vydání patří k poruše nebo omezení řízení. Řízení může být tužší nebo citlivější než obvykle. Z tohoto symbolu samotného nelze určit závadu zámku sloupku.",
+        "en": "In this edition the flashing amber symbol relates to a steering fault or restriction. Steering may feel stiffer or more sensitive than usual. The symbol alone does not identify a steering-column lock fault.",
+        "de": "Das gelb blinkende Zeichen betrifft in dieser Ausgabe eine Störung oder Einschränkung der Lenkung. Diese kann schwergängiger oder empfindlicher reagieren. Das Zeichen allein bestimmt keine Lenkschlossstörung."
+      },
+      "action": {
+        "cs": "Nejprve bezpečně odstavte vozidlo. Návod pro tuto blikající variantu uvádí lehké pootočení volantem na obě strany a vypnutí a opětovné zapnutí zapalování. Respektujte doprovodná hlášení. Pokud kontrolka po zapnutí dál bliká, nepokračujte v jízdě a zajistěte odbornou pomoc.",
+        "en": "First bring the vehicle to a safe stop. For this flashing version the manual specifies moving the steering wheel slightly to both sides and switching the ignition off and on. Observe accompanying messages. If flashing persists after switching on, do not continue driving; seek professional assistance.",
+        "de": "Fahrzeug zunächst sicher abstellen. Für diese blinkende Variante nennt die Anleitung leichtes Lenken zu beiden Seiten und Aus-/Einschalten der Zündung. Begleitmeldungen beachten. Blinkt die Leuchte nach Einschalten weiter, nicht weiterfahren und Fachhilfe holen."
+      },
+      "note": {
+        "cs": "Pouze konkrétní vydání Terramar 11.2025, str. 186. Trvalé žluté svícení má jiné pokyny; červená závada vyžaduje zastavení. Neodvozujte příčinu z podobné kontrolky jiného modelu.",
+        "en": "Only Terramar 11.2025 p.186. Steady amber has different instructions; the red fault requires stopping. Do not infer a cause from a similar lamp on another model.",
+        "de": "Nur Terramar 11.2025 S.186. Gelbes Dauerlicht hat andere Hinweise; rote Störung verlangt Anhalten. Keine Ursache aus ähnlicher Leuchte eines anderen Modells ableiten."
+      },
+      "scopes": [
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            13,
+            186
+          ],
+          "pdf_pages": [
+            15,
+            188
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "level": "own-manual-overview-and-referenced-instructions",
+            "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/steering-alert-zluta.svg",
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Lenkhilfe.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Lenkhilfe.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/1/19/Kontrollleuchte_Lenkhilfe.svg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Chris828",
+        "modifications": "One complete CC0 wheel/exclamation pictogram selected from the two-colour source sheet, preserving its contour; viewBox normalised; independently documented colour.",
+        "sha256": "14347a4cf4536fa3ddf55a5f8af6ff266d83a669cedf4293999d7eb44e1a9c63",
+        "file": "wp-content/uploads/kontrolky/steering-alert-zluta.svg"
+      },
+      "alt": {
+        "cs": "Blikající žlutý volant s vykřičníkem – výstraha řízení Terramar",
+        "en": "Flashing amber steering wheel with exclamation mark – Terramar steering warning",
+        "de": "Gelb blinkendes Lenkrad mit Ausrufezeichen – Lenkungswarnung Terramar"
+      },
+      "kind": "warning"
     }
   ],
   "pending_items": [
@@ -25174,10 +25772,10 @@
     }
   },
   "counts": {
-    "semantic_records": 166,
+    "semantic_records": 168,
     "legacy_generic_volkswagen": 1,
-    "model_documented_semantic_records": 162,
-    "model_edition_assignments": 565,
+    "model_documented_semantic_records": 164,
+    "model_edition_assignments": 583,
     "partially_reviewed_manual_editions": 43,
     "shared_graphic_colour_variants": 94,
     "distinct_pictogram_shapes": 67,
@@ -25196,7 +25794,7 @@
         "distinct_pictogram_shapes": 54,
         "graphic_colour_variants": 66,
         "semantic_variants": 83,
-        "model_edition_assignments": 181,
+        "model_edition_assignments": 182,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 5,
         "first_party_hosted_manual_editions": 0,
@@ -25224,9 +25822,9 @@
       },
       "cupra": {
         "distinct_pictogram_shapes": 39,
-        "graphic_colour_variants": 50,
-        "semantic_variants": 62,
-        "model_edition_assignments": 157,
+        "graphic_colour_variants": 51,
+        "semantic_variants": 65,
+        "model_edition_assignments": 174,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 12,
         "first_party_hosted_manual_editions": 12,
@@ -27894,6 +28492,128 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "Compared the entire Fahrerhinweise climate subsection on Q4 07.2024 printed p.92, before Lenkradheizung. Both CO2 driver instructions retained. Separate text-only reduced climate operation for HV-battery cooling added as context, not a new warning icon."
+    },
+    {
+      "id": "terramar-own-overview-and-driver-sections",
+      "checked": "2026-10-30",
+      "before_semantic_records": 166,
+      "after_semantic_records": 168,
+      "added_record_ids": [
+        "terramar-parking-brake-fault",
+        "terramar-steering-yellow-flashing"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "brake-fluid",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "brake-servo",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "pads-worn",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "oil-pressure",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "rear-fog",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "bulb-fault",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "steering-yellow",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "central-yellow",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "high-beam",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "turn-signals",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "cruise-active",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "high-beam-assist-blue",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "caddy-brake-servo-yellow-restricted",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "terramar-parking-brake-fault",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "terramar-steering-yellow-flashing",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "tpms-low",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "tpms-fault",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        }
+      ],
+      "corrected_record_ids": [
+        "parking-applied",
+        "high-beam-assist-blue",
+        "caddy-brake-servo-yellow-restricted"
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Independent review of known complete Terramar EN11.25,578012720AC, not identification of absent new CUPRA photos7–10. Added two distinct meanings and fifteen assignments of existing records; no new graphic files/shapes/colours. Corrected parking-brake overview page12→11. Grey/white unspecified schematic marks not made black warnings; eSound native shape not substituted with a different car/speaker drawing. Independent tyre-pressure subsection387–389 added: indirect ABS-based system, pressure loss separate from one-minute flashing fault and brief calibration confirmation."
+    },
+    {
+      "id": "q4-own-climate-auto-assignment",
+      "checked": "2026-10-30",
+      "before_semantic_records": 168,
+      "after_semantic_records": 168,
+      "added_record_ids": [],
+      "added_model_assignments": [
+        {
+          "id": "audi-climate-auto-control",
+          "manual": "audi-q4-etron-2024-07-de",
+          "brand": "audi"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Own Q4 07.2024 AUTO control checked from original figure77 and pp88–89, with Q4-specific recirculation/ventilation behaviour. One model assignment, not a new unique symbol. Complete Klimaanlage source subsection88–92 compared; remaining exact control graphics not automatically inherited."
     }
   ],
   "evidence_gaps_revision": [

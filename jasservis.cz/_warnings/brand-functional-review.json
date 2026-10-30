@@ -754,13 +754,345 @@
         "audi-q4-ac-co2-yellow"
       ],
       "whole_manual_complete": false
+    },
+    {
+      "brand": "cupra",
+      "manual": "cupra-terramar-2026-11-25",
+      "model": "Terramar",
+      "model_year": "2026",
+      "edition": "Edition 11.25",
+      "source_url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
+      "printed_pages": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "Celý přehled kontrolek, všech 110 významových buněk",
+        "en": "Complete control-lamp overview, all 110 meaning cells",
+        "de": "Vollständige Kontrollleuchtenübersicht, alle 110 Bedeutungszellen"
+      },
+      "remaining": {
+        "cs": "Nejde o 110 unikátních symbolů. Tabulka výslovně rozlišuje chybějící položky, ověření navazujících pokynů, podobu a zveřejnění. Ne všechny odkazované kapitoly jsou uzavřené.",
+        "en": "Not 110 unique symbols. The table explicitly separates missing entries, referenced-instruction review, shape and publication. Not all referenced chapters are closed.",
+        "de": "Keine 110 einzigartigen Symbole. Tabelle trennt fehlende Einträge, Prüfung der Folgehinweise, Form und Veröffentlichung. Nicht alle verwiesenen Kapitel abgeschlossen."
+      },
+      "catalogue_ids": [
+        "abs-fault",
+        "airbag-fault",
+        "auto-hold-active",
+        "auto-hold-standby",
+        "brake-fault",
+        "brake-fluid",
+        "brake-servo",
+        "bulb-fault",
+        "caddy-brake-servo-yellow-restricted",
+        "central-red",
+        "central-yellow",
+        "cruise-active",
+        "cruise-standby",
+        "esc-fault",
+        "esc-off-inscription",
+        "esc-regulating",
+        "high-beam",
+        "high-beam-assist-blue",
+        "lane-correction",
+        "lane-ready",
+        "mii-foot-brake",
+        "mil-flashing",
+        "mil-steady",
+        "oil-pressure",
+        "pads-worn",
+        "parking-applied",
+        "rear-fog",
+        "seatbelt",
+        "steering-red",
+        "steering-yellow",
+        "terramar-esc-tcs-off",
+        "terramar-lane-passive",
+        "terramar-parking-brake-fault",
+        "terramar-steering-yellow-flashing",
+        "tpms-fault",
+        "tpms-low",
+        "turn-signals"
+      ],
+      "whole_manual_complete": false
+    },
+    {
+      "brand": "cupra",
+      "manual": "cupra-terramar-2026-11-25",
+      "model": "Terramar",
+      "model_year": "2026",
+      "edition": "Edition 11.25",
+      "source_url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
+      "printed_pages": [
+        190,
+        191,
+        192,
+        193,
+        194
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "Brake assist systems, celý oddíl před Assistant systems",
+        "en": "Brake assist systems, whole section before Assistant systems",
+        "de": "Brake assist systems, ganzer Abschnitt vor Assistant systems"
+      },
+      "remaining": {
+        "cs": "Zbývají přesné ovládací grafiky a nepokryté varianty; celé vydání není dokončené.",
+        "en": "Exact control graphics and uncovered variants remain; the whole edition is incomplete.",
+        "de": "Genaue Bediengrafiken und nicht abgedeckte Varianten bleiben offen; gesamte Ausgabe unvollständig."
+      },
+      "catalogue_ids": [
+        "brake-servo",
+        "caddy-brake-servo-yellow-restricted",
+        "esc-regulating",
+        "esc-fault",
+        "abs-fault",
+        "terramar-esc-tcs-off",
+        "esc-off-inscription"
+      ],
+      "whole_manual_complete": false
+    },
+    {
+      "brand": "cupra",
+      "manual": "cupra-terramar-2026-11-25",
+      "model": "Terramar",
+      "model_year": "2026",
+      "edition": "Edition 11.25",
+      "source_url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
+      "printed_pages": [
+        227,
+        228,
+        229
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "Electronic parking brake, celý oddíl před Auto Hold",
+        "en": "Electronic parking brake, whole section before Auto Hold",
+        "de": "Electronic parking brake, ganzer Abschnitt vor Auto Hold"
+      },
+      "remaining": {
+        "cs": "Zbývají přesné ovládací grafiky a nepokryté varianty; celé vydání není dokončené.",
+        "en": "Exact control graphics and uncovered variants remain; the whole edition is incomplete.",
+        "de": "Genaue Bediengrafiken und nicht abgedeckte Varianten bleiben offen; gesamte Ausgabe unvollständig."
+      },
+      "catalogue_ids": [
+        "parking-applied",
+        "terramar-parking-brake-fault"
+      ],
+      "whole_manual_complete": false
+    },
+    {
+      "brand": "cupra",
+      "manual": "cupra-terramar-2026-11-25",
+      "model": "Terramar",
+      "model_year": "2026",
+      "edition": "Edition 11.25",
+      "source_url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
+      "printed_pages": [
+        229,
+        230
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "Auto Hold, celý oddíl před General information on parking systems",
+        "en": "Auto Hold, whole section before General information on parking systems",
+        "de": "Auto Hold, ganzer Abschnitt vor General information on parking systems"
+      },
+      "remaining": {
+        "cs": "Zbývají přesné ovládací grafiky a nepokryté varianty; celé vydání není dokončené.",
+        "en": "Exact control graphics and uncovered variants remain; the whole edition is incomplete.",
+        "de": "Genaue Bediengrafiken und nicht abgedeckte Varianten bleiben offen; gesamte Ausgabe unvollständig."
+      },
+      "catalogue_ids": [
+        "auto-hold-active",
+        "auto-hold-standby"
+      ],
+      "whole_manual_complete": false
+    },
+    {
+      "brand": "cupra",
+      "manual": "cupra-terramar-2026-11-25",
+      "model": "Terramar",
+      "model_year": "2026",
+      "edition": "Edition 11.25",
+      "source_url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
+      "printed_pages": [
+        366,
+        367
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "Engine oil: Troubleshooting, celý oddíl před 12-volt battery",
+        "en": "Engine oil: Troubleshooting, whole section before 12-volt battery",
+        "de": "Engine oil: Troubleshooting, ganzer Abschnitt vor 12-volt battery"
+      },
+      "remaining": {
+        "cs": "Velmi nízká hladina červeně, nízká/vysoká hladina a závada snímače žlutě mají vlastní ověřené pokyny; přesné grafiky nejsou vložené a nejsou nahrazené značkou tlaku.",
+        "en": "Red very low level, amber low/high level and sensor fault have their own verified instructions; exact graphics are not inserted or replaced by the pressure symbol.",
+        "de": "Rot sehr niedriger Stand, gelb niedriger/hoher Stand und Sensorstörung haben eigene geprüfte Anweisungen; genaue Grafiken nicht eingefügt oder durch Druckzeichen ersetzt."
+      },
+      "catalogue_ids": [
+        "oil-pressure"
+      ],
+      "whole_manual_complete": false
+    },
+    {
+      "brand": "cupra",
+      "manual": "cupra-terramar-2026-11-25",
+      "model": "Terramar",
+      "model_year": "2026",
+      "edition": "Edition 11.25",
+      "source_url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
+      "printed_pages": [
+        186
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "Steering: Troubleshooting, celý oddíl před Drive Profiles",
+        "en": "Steering: Troubleshooting, whole section before Drive Profiles",
+        "de": "Steering: Troubleshooting, ganzer Abschnitt vor Drive Profiles"
+      },
+      "remaining": {
+        "cs": "Tři stavy uvedeného oddílu vložené; jiná vydání ani zámek sloupku z nich nejsou odvozené.",
+        "en": "The section’s three states are inserted; other editions or steering-lock faults are not inferred.",
+        "de": "Drei Zustände dieses Abschnitts eingefügt; andere Ausgaben oder Lenkschlossstörungen nicht daraus abgeleitet."
+      },
+      "catalogue_ids": [
+        "steering-red",
+        "steering-yellow",
+        "terramar-steering-yellow-flashing"
+      ],
+      "whole_manual_complete": false
+    },
+    {
+      "brand": "cupra",
+      "manual": "cupra-terramar-2026-11-25",
+      "model": "Terramar",
+      "model_year": "2026",
+      "edition": "Edition 11.25",
+      "source_url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
+      "printed_pages": [
+        133,
+        134,
+        135
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "Main beam assist a Matrix, celý oddíl před Coming home",
+        "en": "Main beam assist and Matrix, whole section before Coming home",
+        "de": "Main beam assist und Matrix, ganzer Abschnitt vor Coming home"
+      },
+      "remaining": {
+        "cs": "Modré A výslovně potvrzeno v provozním textu. Neutrální zapnutí asistenta nemá v tomto místě výslovně potvrzenou barvu; nevznikla odhadnutá černá varianta. Další ovládací grafiky zůstávají nepublikované.",
+        "en": "Blue A explicitly confirmed by operational text. Neutral assistant enablement has no explicitly established colour here; no assumed black version created. Further control graphics remain unpublished.",
+        "de": "Blaues A ausdrücklich durch Bedienungstext bestätigt. Neutrale Assistentenaktivierung hier ohne ausdrücklich bestätigte Farbe; keine angenommene schwarze Variante angelegt. Weitere Bediengrafiken unveröffentlicht."
+      },
+      "catalogue_ids": [
+        "high-beam-assist-blue",
+        "high-beam"
+      ],
+      "whole_manual_complete": false
+    },
+    {
+      "brand": "cupra",
+      "manual": "cupra-terramar-2026-11-25",
+      "model": "Terramar",
+      "model_year": "2026",
+      "edition": "Edition 11.25",
+      "source_url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
+      "printed_pages": [
+        200,
+        201
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "Cruise control, celý oddíl před Speed limiter",
+        "en": "Cruise control, whole section before Speed limiter",
+        "de": "Cruise control, ganzer Abschnitt vor Speed limiter"
+      },
+      "remaining": {
+        "cs": "Zbývají přesné ovládací grafiky a nepokryté varianty; celé vydání není dokončené.",
+        "en": "Exact control graphics and uncovered variants remain; the whole edition is incomplete.",
+        "de": "Genaue Bediengrafiken und nicht abgedeckte Varianten bleiben offen; gesamte Ausgabe unvollständig."
+      },
+      "catalogue_ids": [
+        "cruise-active",
+        "cruise-standby"
+      ],
+      "whole_manual_complete": false
+    },
+    {
+      "brand": "cupra",
+      "manual": "cupra-terramar-2026-11-25",
+      "model": "Terramar",
+      "model_year": "2026",
+      "edition": "Edition 11.25",
+      "source_url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
+      "printed_pages": [
+        387,
+        388,
+        389
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "Tyre pressure monitor system, celý oddíl před Tyre repair",
+        "en": "Tyre pressure monitor system, whole section before Tyre repair",
+        "de": "Tyre pressure monitor system, ganzer Abschnitt vor Tyre repair"
+      },
+      "remaining": {
+        "cs": "Ztráta tlaku a závada vložené; krátké potvrzovací bliknutí kalibrace vysvětlené v modelové poznámce. Přesné grafiky nabídkových cest ještě nejsou publikované.",
+        "en": "Pressure loss and fault inserted; brief calibration flash explained in model note. Exact menu-path graphics not yet published.",
+        "de": "Druckverlust und Störung eingefügt; kurzes Kalibrierblinken in Modellhinweis erklärt. Genaue Menüpfadgrafiken noch nicht veröffentlicht."
+      },
+      "catalogue_ids": [
+        "tpms-low",
+        "tpms-fault"
+      ],
+      "whole_manual_complete": false
+    },
+    {
+      "brand": "audi",
+      "manual": "audi-q4-etron-2024-07-de",
+      "model": "Q4 e-tron",
+      "model_year": null,
+      "edition": "07.2024",
+      "source_url": "https://pdf.bordbuecher.de/597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e.pdf",
+      "printed_pages": [
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "Klimaanlage, celý samostatný oddíl před Lenkradheizung",
+        "en": "Klimaanlage, whole standalone section before Lenkradheizung",
+        "de": "Klimaanlage, ganzer eigenständiger Abschnitt vor Lenkradheizung"
+      },
+      "remaining": {
+        "cs": "AUTO a dvě CO₂ výstrahy vložené; další fyzické ovladače, rozdělení vzduchu, recirkulace a zóny nejsou automaticky převzaté z A4/A8. Zbytek Warm und kalt včetně Standklimatisierung zůstává otevřený.",
+        "en": "AUTO and two CO₂ warnings inserted; other physical controls, distribution, recirculation and zones not inherited automatically from A4/A8. Remaining Warm und kalt including Standklimatisierung stays open.",
+        "de": "AUTO und zwei CO₂-Warnungen eingefügt; weitere physische Bedienungen, Verteilung, Umluft und Zonen nicht automatisch von A4/A8 übernommen. Rest von Warm und kalt einschließlich Standklimatisierung offen."
+      },
+      "catalogue_ids": [
+        "audi-climate-auto-control",
+        "audi-q4-ac-co2-red",
+        "audi-q4-ac-co2-yellow"
+      ],
+      "whole_manual_complete": false
     }
   ],
   "counts": {
-    "semantic_records": 166,
+    "semantic_records": 168,
     "legacy_generic_volkswagen": 1,
-    "model_documented_semantic_records": 162,
-    "model_edition_assignments": 565,
+    "model_documented_semantic_records": 164,
+    "model_edition_assignments": 583,
     "partially_reviewed_manual_editions": 43,
     "shared_graphic_colour_variants": 94,
     "distinct_pictogram_shapes": 67,
@@ -779,7 +1111,7 @@
         "distinct_pictogram_shapes": 54,
         "graphic_colour_variants": 66,
         "semantic_variants": 83,
-        "model_edition_assignments": 181,
+        "model_edition_assignments": 182,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 5,
         "first_party_hosted_manual_editions": 0,
@@ -807,9 +1139,9 @@
       },
       "cupra": {
         "distinct_pictogram_shapes": 39,
-        "graphic_colour_variants": 50,
-        "semantic_variants": 62,
-        "model_edition_assignments": 157,
+        "graphic_colour_variants": 51,
+        "semantic_variants": 65,
+        "model_edition_assignments": 174,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 12,
         "first_party_hosted_manual_editions": 12,
