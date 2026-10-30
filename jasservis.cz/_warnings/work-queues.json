@@ -951,14 +951,17 @@
         },
         {
           "brand": "skoda",
-          "model": "Octavia",
-          "edition": "11.2018",
-          "source_url": "https://octaviaclub.cz/wp-content/uploads/2019/06/N%C3%A1vod-k-obsluze-%C5%A0koda-Octavia-III-3.pdf",
+          "model": "Enyaq",
+          "edition": "Photographed Czech manual pp.12–17; edition undocumented",
+          "source_url": null,
           "remaining": {
             "cs": "Fotografie Enyaqu pokrývají celý přehled stran12–17 a všech122 čitelných významových řádků je přepsáno a porovnáno. Vydání a ročník se neodhadují. DE11.2020 zůstává samostatný zdroj. Chybí tiráž, podrobné odkazované kapitoly a přesné použitelné grafiky69 chybějících variant;2 kombinované grafiky jsou neúplné a8 stavů vyžaduje detail kapitoly.",
             "en": "Enyaq photos cover the complete overview on pp12–17 and all122 readable semantic rows are transcribed and compared. Edition/year are not guessed. DE11.2020 remains a separate source. The imprint, referenced detailed chapters and exact usable graphics for69 missing variants remain open;2 combined graphics are incomplete and8 states need chapter detail.",
             "de": "Enyaq-Fotos decken die vollständige Übersicht S12–17 ab; alle122 lesbaren Bedeutungszeilen sind transkribiert und verglichen. Ausgabe/Jahr werden nicht geraten. DE11.2020 bleibt getrennte Quelle. Titelei, verwiesene Detailkapitel und genaue nutzbare Grafiken für69 fehlende Varianten bleiben offen;2 Kombinationsgrafiken sind unvollständig und8 Zustände brauchen Kapitelprüfung."
-          }
+          },
+          "source_file": "_warnings/enyaq-photo-review.json",
+          "source_kind": "photographed-manual-overview",
+          "source_edition_identified": false
         },
         {
           "brand": "seat",
@@ -986,12 +989,15 @@
           "brand": "volkswagen-uzitkove-vozy",
           "model": "Multivan",
           "edition": "fotografovaný český návod, vydání nedoložené",
-          "source_url": "druha-kontrola.html#multivan",
+          "source_url": null,
           "remaining": {
             "cs": "Strany16–19 jsou přepsané po všech129 čitelných významových řádcích. Žádná položka zatím nemá doložený rozsah Multivan;37 řádků má pouze kandidáta a92 žádného. Pět grafik je obrazově nejasných. Chybí tiráž, odkazované kapitoly a přesné použitelné grafiky.",
             "en": "Pages16–19 are transcribed across all129 readable semantic rows. No item yet has documented Multivan scope;37 rows only have a candidate and92 have none. Five graphics are visually unclear. The imprint, referenced chapters and exact usable graphics are missing.",
             "de": "Seiten16–19 sind über alle129 lesbaren Bedeutungszeilen transkribiert. Kein Eintrag hat bislang belegten Multivan-Umfang;37 Zeilen haben nur einen Kandidaten und92 keinen. Fünf Grafiken sind visuell unklar. Titelei, verwiesene Kapitel und genaue nutzbare Grafiken fehlen."
-          }
+          },
+          "source_file": "_warnings/multivan-photo-review.json",
+          "source_kind": "photographed-manual-overview",
+          "source_edition_identified": false
         },
         {
           "brand": "volkswagen-uzitkove-vozy",

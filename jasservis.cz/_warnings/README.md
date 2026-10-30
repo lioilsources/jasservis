@@ -269,3 +269,17 @@ Technicky: 42 kombinací rozměru/jazyka/prohlížeče, šest dotykových a mode
 - Přijato pět fotografií, přičemž novější záběr strany16 nahrazuje starší. Čtyři unikátní strany16–19 jsou přepsané po všech129 čitelných významových řádcích. `multivan-photo-review.json` a tři CSV drží stránku, sloupec, polohu, doslovný popisek, barvu, výslovný STOP a oddělený stav grafiky, významu a publikování.
 - Třicet sedm řádků má pouze podobného významového kandidáta v současném katalogu,92 nemá ani kandidáta. Žádná položka zatím nemá doložený rozsah Multivan a žádná nebyla převzata z Caddy nebo jiné značky. Pět drobných grafik zůstává obrazově nejasných.
 - Model Multivan potvrdil uživatel; generace, modelový rok a vydání návodu jsou nedoložené. Pro přiřazení a pokyny řidiči chybí tiráž a odkazované podrobné kapitoly. Samotný veřejný seznam vydání7T0 neurčuje vydání fotografované knihy.
+
+
+## Opravy po auditu 30. 10. 2026
+
+- Pracovní fronty fotografovaných příruček Enyaqu a Multivanu odkazují na vlastní JSON evidenci. Identita vydání zůstává nedoložená; nepřebírá se příručka Octavie ani jiné modelové vydání.
+- Aktuální fotografický souhrn je odvozený z výslovně vymezených skupin Enyaq a Multivan: 15 přijatých fotografií vůči 9 původně požadovaným; překryvy a náhradní záběry nejsou nové řádky. Ostatní chybějící skupiny a Terramar jsou vedené samostatně.
+- Kandidát bez rozsahu příslušné značky se v revizní tabulce vypisuje bez odkazu na neexistující kartu. Nevzniká nové modelové přiřazení.
+- Generátor obnovuje také work-queues.*.csv. ZIP doplňuje coverage.csv, manual-review.csv, tři pracovní CSV a export-manifest.json s otisky všech ostatních položek archivu. Soukromé originály fotografií ani celé návody nepřidává.
+- validate.py ověřuje počty, datové vazby, překlady, grafiky, CSV, vymezenou dostupnost fotografií, vztah fotopřehledu a modelu i kotvy 15 katalogových/revizních HTML stránek. Kontrola generátoru zůstává samostatná. Úspěch obou kontrol není odborným potvrzením všech pokynů ani úplnosti celého katalogu.
+
+```sh
+python3 jasservis.cz/_warnings/validate.py
+python3 jasservis.cz/_warnings/generate.py --check
+```

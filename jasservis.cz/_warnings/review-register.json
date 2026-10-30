@@ -74645,7 +74645,67 @@
       "ev-12v-yellow-replace"
     ],
     "whole_manuals_complete": 0,
-    "requested_photos_available": 0,
-    "requested_photos_expected": 5
+    "requested_photos_available": 15,
+    "requested_photos_expected": 9,
+    "requested_photos_visually_compared": 15,
+    "requested_photos_scope_group_ids": [
+      "enyaq-manual-five-12-17",
+      "multivan-manual-four-16-19"
+    ],
+    "requested_photos_source": "attachment-groups.json",
+    "requested_photos_expected_basis": "Original expected photograph counts for these two requested groups; received overlaps and replacement views are counted as photographs, not new table rows or unique pages.",
+    "requested_photos_by_group": [
+      {
+        "id": "enyaq-manual-five-12-17",
+        "expected": 5,
+        "available_in_conversation": 10,
+        "visually_compared": 10,
+        "unique_printed_pages_covered": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "id": "multivan-manual-four-16-19",
+        "expected": 4,
+        "available_in_conversation": 5,
+        "visually_compared": 5,
+        "unique_printed_pages_covered": [
+          16,
+          17,
+          18,
+          19
+        ]
+      }
+    ],
+    "other_missing_requested_photo_groups": [
+      {
+        "id": "cupra-new-manual-7-10",
+        "expected": 3,
+        "available_in_conversation": 0
+      },
+      {
+        "id": "audi-vehicle-four",
+        "expected": 4,
+        "available_in_conversation": 0
+      },
+      {
+        "id": "earlier-unidentified-manual-9-13",
+        "expected": 3,
+        "available_in_conversation": 0
+      }
+    ],
+    "other_missing_requested_photos_expected": 10,
+    "other_available_photo_groups_excluded_from_this_round": [
+      {
+        "id": "terramar-vehicle-six",
+        "expected": 6,
+        "available_in_conversation": 6
+      }
+    ]
   }
 }

@@ -20,6 +20,13 @@ def switcher(lang,page):
  label={'cs':'Jazyk webu','en':'Website language','de':'Sprache der Website'}[lang]
  return f'<nav class="language-switcher" aria-label="{label}"><div class="language-desktop"><div class="language-codes">'+ '<span aria-hidden="true">|</span>'.join(desktop)+f'</div></div><details class="language-mobile"><summary aria-label="{label}: {names[lang]}">{codes[lang]}</summary><ul class="language-options" aria-label="{label}">'+''.join(mobile)+'</ul></details></nav>'
 def modelkey(s):return s.get('manual','generic')
+def item_anchor(item,brand):
+ return 'kontrolka-'+(item['legacy_id'].lower()if item.get('legacy_id')and brand=='volkswagen'else item['id']+'-'+brand)
+def candidate_link(item,brand,lang):
+ # A semantic candidate without this brand's scope has no corresponding card.
+ label=esc(item['name'][lang])
+ if not any(s['brand']==brand for s in item['scopes']):return label+' <code>'+esc(item['id'])+'</code>'
+ return '<a href="./?znacka='+esc(brand)+'#'+esc(item_anchor(item,brand))+'">'+label+'</a>'
 def model_label(model,year):return str(model)+(f' · MY {year}' if year else '')
 def source_label(m,lang):
  names={'cs':{'CS':'čeština','DE':'němčina','EN':'angličtina'},'en':{'CS':'Czech','DE':'German','EN':'English'},'de':{'CS':'Tschechisch','DE':'Deutsch','EN':'Englisch'}}
@@ -28,7 +35,7 @@ def source_label(m,lang):
  return label
 def options(vals,allText):return '<option value="">'+esc(allText)+'</option>'+''.join(f'<option value="{esc(k)}">{esc(v)}</option>' for k,v in vals.items())
 def card(item,brand,lang,page):
- u=UI[lang];scopes=[s for s in item['scopes'] if s['brand']==brand];i=item;data=[{'model':modelkey(s),'power':s['powertrains']} for s in scopes];sid='kontrolka-'+(i['legacy_id'].lower() if i.get('legacy_id') and brand=='volkswagen' else i['id']+'-'+brand)
+ u=UI[lang];scopes=[s for s in item['scopes'] if s['brand']==brand];i=item;data=[{'model':modelkey(s),'power':s['powertrains']} for s in scopes];sid=item_anchor(i,brand)
  states=list(dict.fromkeys(sc.get('signal_state',i['state']) for sc in scopes))
  state_label=' / '.join(u['states'][state] for state in states)
  search=' '.join(i['name'].values())+' '+i['id']+' '+u['brands'][brand]+' '+' '.join(str(s.get('model') or '') for s in scopes)
@@ -137,7 +144,7 @@ def second_review_page(lang,page):
   candidates=[]
   for id in r['candidate_catalogue_ids']:
    item=next((i for i in CAT['items']if i['id']==id),None)
-   if item:candidates.append('<a href="./?znacka=skoda#kontrolka-'+esc(id)+'-skoda">'+esc(item['name'][lang])+'</a>')
+   if item:candidates.append(candidate_link(item,'skoda',lang))
   comparison=esc(r['catalogue_result_text'][lang])
   if candidates:comparison+='<br>'+esc(photo_labels[7])+': '+'<br>'.join(candidates)
   source_state=r['source_state_text_cs'];state_key='steady'if source_state=='Svítí.'else'flashing'if source_state=='Bliká.'else'four'if source_state.startswith('Svítí čtyři')else'generic'
@@ -171,7 +178,8 @@ def work_queue_section(lang,page):
     if state in r:out+='<p><strong>'+label+': '+(labels[9]if r[state]else labels[10])+'</strong></p>'
    refs=r.get('closed_comparisons',r.get('graphic_references',[]))
    if refs:out+='<p>'+labels[3]+': '+esc(', '.join(refs))+'</p>'
-   out+='<p>'+esc(r['remaining'][lang])+'</p><p><a href="'+esc(r['source_url'])+'">'+labels[5]+'</a></p>'
+   source=rel(r['source_file'],page)if r.get('source_file')else r['source_url']
+   out+='<p>'+esc(r['remaining'][lang])+'</p><p><a href="'+esc(source)+'">'+labels[5]+'</a></p>'
    if r.get('conditions_source'):out+='<p><a href="'+esc(r['conditions_source'])+'">'+esc(r['conditions_edition']+' · '+r['conditions_clause'])+'</a></p>'
    out+='</div></details>'
  out+='</section>';return out
@@ -359,10 +367,18 @@ for item in CAT['items']:
   source=CAT['manuals'][scope['manual']]['url'] if scope.get('manual') else scope['url']
   writer.writerow([item['id'],item['name']['cs'],item['name']['en'],item['name']['de'],scope['brand'],scope.get('model') or 'Not documented',scope.get('model_year') or 'Not documented',scope.get('edition') or '',','.join(map(str,scope.get('printed_pages',[]))),','.join(map(str,scope.get('pdf_pages',[]))),','.join(scope['powertrains']),scope.get('signal_state',item['state']),item['color'],source,item['graphic_path'],item['graphic_source'].get('page',''),item['graphic_source']['license'],item['checked']])
 outputs=[(HERE/'coverage.csv','\ufeff'+csv_stream.getvalue())]
+queues=json.loads((HERE/'work-queues.json').read_text())
+for lang in LANGS:
+ stream=io.StringIO();w=csv.writer(stream,delimiter=';',lineterminator='\n')
+ w.writerow(['queue','brand','model','edition','document_kind','meaning_verified','exact_graphic_verified','published','remaining','source_url','source_file'])
+ for group in queues['groups']:
+  for row in group['rows']:
+   w.writerow([group['id'],row['brand'],row.get('model',''),row['edition'],row.get('document_kind',row.get('source_kind','owner-manual'if row.get('manual')else'')),row.get('meaning_verified',''),row.get('exact_source_graphic_verified',''),row.get('published',''),row['remaining'][lang],row.get('source_url')or'',row.get('source_file')or''])
+ outputs.append((HERE/f'work-queues.{lang}.csv','\ufeff'+stream.getvalue()))
 for lang in LANGS:
  page,body=create_page(lang);outputs.append((page,body));outputs.append((page.parent/'zdroje.html',audit(lang,page)));outputs.append((page.parent/'revize.html',review_page(lang,page)));outputs.append((page.parent/'revize-kapitol.html',chapter_page(lang,page)));outputs.append((page.parent/'druha-kontrola.html',second_review_page(lang,page)));outputs.append((page.parent/'evidence.json',json.dumps({'canonical_catalog':rel('_warnings/catalog.json',page),'review_status':'incomplete-preview','checked':CAT['checked'],**CAT['counts']},indent=2)+'\n'))
 from export_review import review_export_outputs
-outputs+=review_export_outputs(ROOT,HERE,CAT)
+outputs+=review_export_outputs(ROOT,HERE,CAT,outputs)
 # Validate all translations and assets before touching output files.
 assert len({x['id'] for x in CAT['items']})==len(CAT['items'])
 for item in CAT['items']:
