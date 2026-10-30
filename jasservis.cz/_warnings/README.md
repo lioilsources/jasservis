@@ -173,3 +173,37 @@ zkontrolovaných fotografií, nikoli 6/6 kompletně zdrojově ověřených sad i
 Návod Terramar 11.25, strany 11–14 a 16/178, porovnán pro viditelné podoby,
 kontrolu zapalování a samostatnou polohu voliče P. Drobné nečitelné stavové
 varianty nejsou odhadovány; nedošlo k navýšení katalogu 131 záznamů.
+
+## Podrobné porovnání fotografií a skutečné doplnění přehledu
+
+- Všech šest fotografií má jednotlivé záznamy s konkrétní polohou, významem,
+  postupem řidiče, kategorií, stavem před/po revizi, vydáním/stranou zdroje
+  a potřebnou opravou. 69 jednotlivých pozorování není počet unikátních
+  kontrolek; opakované výskyty jsou oddělené a souhrnné řádky vyřazené z CSV.
+- Nově přímo ve funkčním přehledu Terramar: CLIMA, AUTO klimatizace, TP,
+  šedý pasivní Lane Assist a vůz ve smyku s OFF. Devět starších položek
+  získalo vlastní doložení Terramar 11.25 (pásy, řízení, brzdy, centrální
+  výstraha, Lane Assist, tempomat a Auto Hold). Pásy mají přesné strany 47–48.
+- SEAT Leon 11.25 má samostatně doložený šedý pasivní Lane Assist (16/216).
+  Golf 5H0 11.2020 má novou žlutou nedostupnost Lane Assist s vykřičníkem
+  podle vlastního originálního HTML přehledu a kapitoly řešení problémů.
+- Přesné grafiky řady dalších ovladačů dosud chybí; nejsou nahrazovány emoji,
+  obecným telefonem, podobným HUD ani jinou barvou bez konkrétního důkazu.
+  Oko s vykřičníkem Terramar se nezaměňuje s prostým okem Audi ani šálkem.
+  Nepopsaná karta mobilního zařízení není automaticky označena za Telefon.
+  Nabídka Audio sama neprokazuje aktivní ztlumení. Neoznačený vůz s oblouky
+  a zaškrtnutím byl dohledán u Assistants, Terramar 11.25 strana 39.
+- Caddy 2K7 11.2025: pět zdrojových variant Lane Assist má souvislé čáry,
+  na rozdíl od Terramar/SEAT. Bez vhodné přesné grafiky nebyly přeneseny.
+  Výsledek vlastní kontroly každé značky je v `brand-functional-review.json`
+  a přeložených CSV. Jde o vybrané kapitoly, ne všechna modelová vydání.
+- Připojený Disk byl prohledán. Soubor „Nový Terramar 2025“ je marketingový
+  prospekt, nikoli SSP; neslouží k výkladu kontrolek. Audi SSP 679 je pouze
+  technický kontext různých infotainmentových platforem Audi, nikoli důkaz
+  shodných ikon Terramar. Soukromé materiály nejsou na webu zveřejněné.
+- Zachováno 131 původních záznamů a všechny jejich dosavadní modelové
+  rozsahy. Aktuálně 137 významových záznamů, 55 tvarů, 80 barevných variant.
+  Počet plně porovnaných celých návodů zůstává 0.
+- Všech 18 značkových položek nyní používá název „Kontrolky a ikony…“.
+  Nadále jsou za modely a vedou rovnou na předvolenou značku s kotvou.
+  V Dalších službách ani u světlometů není přidán žádný odkaz.

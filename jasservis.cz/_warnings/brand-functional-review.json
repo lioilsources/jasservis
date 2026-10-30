@@ -1,0 +1,312 @@
+{
+  "checked": "2026-10-30",
+  "scope": "Selected independent own-brand manual chapter checks; not complete all-model or whole-manual comparison. No photographed Terramar model-year inference.",
+  "rows": [
+    {
+      "brand": "volkswagen",
+      "manual": "vw-golf-2020-11-de",
+      "model": "Golf",
+      "model_year": null,
+      "edition": "11.2020",
+      "source_url": "https://www.volkswagen.de/de/besitzer-und-service/ueber-ihr-auto/digitale-betriebsanleitung-welcome.html?part-number-app=5H0012769AD&brand-pattern-app=WVW",
+      "printed_pages": [],
+      "source_sections": [
+        "Fahrerinformationen / Symbole im Kombi-Instrument",
+        "Lane Assist / Fahren mit dem Spurhalteassistenten",
+        "Lane Assist / Problemlösungen"
+      ],
+      "reviewed": {
+        "cs": "Zelená připravenost, žlutý zásah a žlutý symbol s vykřičníkem rozlišeny podle vlastního zdroje Golf. Poslední varianta nově v náhledu.",
+        "en": "Green availability, amber intervention and amber exclamation-mark variant distinguished using the Golf source. Last variant newly added to preview.",
+        "de": "Grüne Bereitschaft, gelber Eingriff und gelbe Ausrufezeichen-Variante anhand Golf-Quelle unterschieden. Letzte Variante neu in der Vorschau."
+      },
+      "remaining": {
+        "cs": "Žlutá regulace dosahu světlometů stále bez modelového dokladu; další edice, komfortní a infotainmentové ikony nejsou plně zpracované.",
+        "en": "Amber headlight-range warning still lacks model evidence; further editions, comfort and infotainment icons are not fully processed.",
+        "de": "Gelbe Leuchtweitenwarnung weiterhin ohne Modellnachweis; weitere Ausgaben, Komfort- und Infotainmentzeichen nicht vollständig bearbeitet."
+      },
+      "catalogue_ids": [
+        "lane-ready",
+        "lane-correction",
+        "vw-golf-lane-unavailable"
+      ],
+      "whole_manual_complete": false
+    },
+    {
+      "brand": "audi",
+      "manual": "audi-q4-etron-2024-07-de",
+      "model": "Q4 e-tron",
+      "model_year": null,
+      "edition": "07.2024",
+      "source_url": "https://pdf.bordbuecher.de/597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e.pdf",
+      "printed_pages": [
+        28,
+        113,
+        156,
+        157
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "HUD ověřen ve vlastním návodu Audi, HOLD držení vozidla se neslučuje s AUTO HOLD CUPRA. Únava je ověřena odděleně od ovládací ikony pozornosti Terramar.",
+        "en": "HUD checked in the Audi manual; HOLD vehicle holding is not conflated with CUPRA AUTO HOLD. Fatigue is separate from the Terramar attention-control icon.",
+        "de": "HUD anhand Audi-Anleitung geprüft; HOLD-Fahrzeughalten wird nicht mit CUPRA AUTO HOLD gleichgesetzt. Müdigkeit getrennt vom Terramar-Aufmerksamkeits-Bedienzeichen."
+      },
+      "remaining": {
+        "cs": "Přesná ovládací grafika HUD a dalších komfortních funkcí chybí. A4 8W 01.2016, A8 4N 2018 a Q4 2022 zůstávají bez dostupného ověřeného návodu.",
+        "en": "Exact HUD/control graphics for further comfort functions are missing. A4 8W 01.2016, A8 4N 2018 and Q4 2022 still lack an accessible verified manual.",
+        "de": "Genaue HUD-/Bediengrafiken weiterer Komfortfunktionen fehlen. A4 8W 01.2016, A8 4N 2018 und Q4 2022 weiterhin ohne zugängliche geprüfte Anleitung."
+      },
+      "catalogue_ids": [
+        "audi-q4-hold-active",
+        "audi-fatigue-break-recommended",
+        "audi-fatigue-unavailable"
+      ],
+      "whole_manual_complete": false
+    },
+    {
+      "brand": "skoda",
+      "manual": "skoda-enyaq-2020-11-de",
+      "model": "Enyaq iV",
+      "model_year": null,
+      "edition": "11.2020",
+      "source_url": "https://firstev.de/wp-content/uploads/2024/10/A_SUVe_Enyaq_OwnersManual.pdf",
+      "printed_pages": [
+        170,
+        183,
+        184
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "Lane Assist: skutečný obrázek rozlišuje zelenou připravenost a žlutý zásah; přímá podobnost není podkladem pro přenos všech šedých stavů Terramar. Auto Hold má vlastní textové stavy.",
+        "en": "Lane Assist actual artwork distinguishes green availability and amber intervention; resemblance does not establish all Terramar grey states. Auto Hold has its own textual states.",
+        "de": "Die tatsächliche Lane-Assist-Grafik unterscheidet grüne Bereitschaft und gelben Eingriff; Ähnlichkeit belegt nicht alle grauen Terramar-Zustände. Auto Hold hat eigene Textzustände."
+      },
+      "remaining": {
+        "cs": "Šedý Lane Assist v tomto konkrétním oddíle není samostatně doložen. Další modely a vydání, infotainment a kompletní komfortní ikony zůstávají otevřené.",
+        "en": "Grey Lane Assist is not independently documented in this particular section. Further models/editions, infotainment and complete comfort icons remain open.",
+        "de": "Grauer Lane Assist in diesem konkreten Abschnitt nicht gesondert belegt. Weitere Modelle/Ausgaben, Infotainment und vollständige Komfortzeichen bleiben offen."
+      },
+      "catalogue_ids": [
+        "lane-ready",
+        "lane-correction",
+        "auto-hold-active",
+        "auto-hold-standby"
+      ],
+      "whole_manual_complete": false
+    },
+    {
+      "brand": "seat",
+      "manual": "seat-leon-2026-11-25",
+      "model": "Leon",
+      "model_year": "2026",
+      "edition": "Edition 11.25",
+      "source_url": "https://www.seat.com/datamanual-manual/manuals/seat/en-gb/SEAT_Leon_11_25_EN.pdf",
+      "printed_pages": [
+        16,
+        216
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "Šedý pasivní Lane Assist samostatně porovnán s obrázkem a instrukcí SEAT; nově přiřazen pouze tomuto vydání. Zelený a žlutý stav jsou jiné.",
+        "en": "Grey passive Lane Assist independently compared with SEAT artwork/instructions; newly assigned only to this edition. Green and amber states differ.",
+        "de": "Grauer passiver Lane Assist unabhängig mit SEAT-Grafik/Anweisung verglichen; neu nur dieser Ausgabe zugeordnet. Grün und Gelb sind andere Zustände."
+      },
+      "remaining": {
+        "cs": "Nové přiřazení nedokládá ostatní modely SEAT, všechny jejich roky ani ovládací grafiku konektivity.",
+        "en": "The new assignment does not document other SEAT models, all years or connectivity-control artwork.",
+        "de": "Die neue Zuordnung belegt nicht andere SEAT-Modelle, alle Baujahre oder Konnektivitäts-Bediengrafiken."
+      },
+      "catalogue_ids": [
+        "terramar-lane-passive"
+      ],
+      "whole_manual_complete": false
+    },
+    {
+      "brand": "cupra",
+      "manual": "cupra-terramar-2026-11-25",
+      "model": "Terramar",
+      "model_year": "2026",
+      "edition": "Edition 11.25",
+      "source_url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
+      "printed_pages": [
+        11,
+        12,
+        14,
+        22,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        39,
+        47,
+        48,
+        101,
+        102,
+        103,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        159,
+        160,
+        161,
+        176,
+        178,
+        186,
+        190,
+        192,
+        193,
+        200,
+        216,
+        218,
+        227,
+        228,
+        229,
+        275,
+        276,
+        277,
+        287,
+        291,
+        292,
+        293,
+        295,
+        296,
+        298,
+        299,
+        300,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        338
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "Všech šest fotografií má konkrétní pozice, typ, význam, stav na webu a zdroj. Pět nových položek v zákaznickém přehledu, devět samostatných modelových přiřazení stávajících položek.",
+        "en": "All six photos have concrete positions, type, meaning, website status and source. Five new customer-overview entries and nine individual model assignments of existing entries.",
+        "de": "Alle sechs Fotos mit konkreten Positionen, Typ, Bedeutung, Webstatus und Quelle. Fünf neue Kundenübersicht-Einträge und neun einzelne Modellzuordnungen bestehender Einträge."
+      },
+      "remaining": {
+        "cs": "Přesné samostatně použitelné grafiky HUD, Keyless, telefonu, Wi-Fi/hotspotu, Bluetooth, médií a dalších ovladačů ještě chybí. Rok/software fotografovaného vozu není doložen; nejasné zkratky nejsou určeny odhadem.",
+        "en": "Exact independently usable graphics for HUD, Keyless, telephone, Wi-Fi/hotspot, Bluetooth, media and further controls remain missing. Photo vehicle year/software undocumented; ambiguous shortcuts are not guessed.",
+        "de": "Genaue eigenständig nutzbare Grafiken für HUD, Keyless, Telefon, Wi-Fi/Hotspot, Bluetooth, Medien und weitere Bedienungen fehlen noch. Foto-Fahrzeugjahr/Software nicht belegt; unklare Verknüpfungen nicht geraten."
+      },
+      "catalogue_ids": [
+        "terramar-clima-control",
+        "terramar-climate-auto-control",
+        "terramar-tp-control",
+        "terramar-lane-passive",
+        "terramar-esc-tcs-off"
+      ],
+      "whole_manual_complete": false
+    },
+    {
+      "brand": "volkswagen-uzitkove-vozy",
+      "manual": "vwcv-caddy-2025-11-de",
+      "model": "Caddy",
+      "model_year": null,
+      "edition": "11.2025",
+      "source_url": "https://www.volkswagen.de/de/besitzer-und-service/ueber-ihr-auto/digitale-betriebsanleitung-welcome.html?part-number-app=2K7012767AM&brand-pattern-app=WV1",
+      "printed_pages": [],
+      "source_sections": [
+        "Symbole im Kombi-Instrument / rows 65, 70, 71, 104, 121",
+        "Lane Assist / Einleitung zum Thema"
+      ],
+      "reviewed": {
+        "cs": "Samostatně porovnány zdrojové obrázky: vypnutí OFF, nedostupnost s vykřičníkem, žlutý zásah, zelená připravenost a šedý pasivní stav. Caddy má souvislé čáry; nebyl nahrazen variantou Terramar s přerušovanými čarami.",
+        "en": "Source artwork separately compared: OFF, exclamation-mark unavailability, amber intervention, green availability and grey passive state. Caddy uses continuous lane lines; not substituted by Terramar’s dashed-line variant.",
+        "de": "Quellgrafiken getrennt verglichen: OFF, Nichtverfügbarkeit mit Ausrufezeichen, gelber Eingriff, grüne Bereitschaft und grauer passiver Zustand. Caddy hat durchgezogene Linien; nicht durch Terramar mit unterbrochenen Linien ersetzt."
+      },
+      "remaining": {
+        "cs": "Těchto pět přesných souvislých grafických variant dosud nemá samostatně použitelný podklad v náhledu. Ostatní modely jako Transporter, Crafter a Multivan nejsou tímto vydáním pokryté.",
+        "en": "These five exact continuous-line graphic variants still lack independently usable artwork in the preview. Other models such as Transporter, Crafter and Multivan are not covered by this edition.",
+        "de": "Für diese fünf genauen Varianten mit durchgezogenen Linien fehlt noch eigenständig nutzbare Grafik in der Vorschau. Andere Modelle wie Transporter, Crafter und Multivan sind durch diese Ausgabe nicht abgedeckt."
+      },
+      "catalogue_ids": [],
+      "whole_manual_complete": false
+    }
+  ],
+  "counts": {
+    "semantic_records": 137,
+    "legacy_generic_volkswagen": 1,
+    "model_documented_semantic_records": 133,
+    "model_edition_assignments": 462,
+    "partially_reviewed_manual_editions": 39,
+    "shared_graphic_colour_variants": 80,
+    "distinct_pictogram_shapes": 55,
+    "by_brand": {
+      "volkswagen": {
+        "distinct_pictogram_shapes": 25,
+        "graphic_colour_variants": 29,
+        "semantic_variants": 32,
+        "model_edition_assignments": 34,
+        "generic_brand_assignments": 1,
+        "reviewed_manual_editions": 3,
+        "first_party_hosted_manual_editions": 3,
+        "third_party_hosted_manual_editions": 0
+      },
+      "audi": {
+        "distinct_pictogram_shapes": 38,
+        "graphic_colour_variants": 50,
+        "semantic_variants": 58,
+        "model_edition_assignments": 92,
+        "generic_brand_assignments": 0,
+        "reviewed_manual_editions": 2,
+        "first_party_hosted_manual_editions": 0,
+        "third_party_hosted_manual_editions": 2
+      },
+      "skoda": {
+        "distinct_pictogram_shapes": 28,
+        "graphic_colour_variants": 35,
+        "semantic_variants": 46,
+        "model_edition_assignments": 64,
+        "generic_brand_assignments": 0,
+        "reviewed_manual_editions": 2,
+        "first_party_hosted_manual_editions": 0,
+        "third_party_hosted_manual_editions": 2
+      },
+      "seat": {
+        "distinct_pictogram_shapes": 28,
+        "graphic_colour_variants": 36,
+        "semantic_variants": 45,
+        "model_edition_assignments": 95,
+        "generic_brand_assignments": 0,
+        "reviewed_manual_editions": 19,
+        "first_party_hosted_manual_editions": 19,
+        "third_party_hosted_manual_editions": 0
+      },
+      "cupra": {
+        "distinct_pictogram_shapes": 38,
+        "graphic_colour_variants": 49,
+        "semantic_variants": 61,
+        "model_edition_assignments": 156,
+        "generic_brand_assignments": 0,
+        "reviewed_manual_editions": 12,
+        "first_party_hosted_manual_editions": 12,
+        "third_party_hosted_manual_editions": 0
+      },
+      "volkswagen-uzitkove-vozy": {
+        "distinct_pictogram_shapes": 23,
+        "graphic_colour_variants": 26,
+        "semantic_variants": 28,
+        "model_edition_assignments": 21,
+        "generic_brand_assignments": 7,
+        "reviewed_manual_editions": 1,
+        "first_party_hosted_manual_editions": 1,
+        "third_party_hosted_manual_editions": 0
+      }
+    }
+  },
+  "fully_compared_manuals": []
+}

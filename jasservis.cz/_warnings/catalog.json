@@ -830,6 +830,40 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            12,
+            190
+          ],
+          "pdf_pages": [
+            14,
+            192
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "model_note": {
+            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+          },
+          "verification": {
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -3609,6 +3643,40 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            47,
+            48
+          ],
+          "pdf_pages": [
+            49,
+            50
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "model_note": {
+            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+          },
+          "verification": {
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              47
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -5012,6 +5080,42 @@
             "topic_response_sha256": "893e4901010ef61de1216efc88d18de7811c19908386b6c198b8a9816451f210",
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            14,
+            216,
+            218
+          ],
+          "pdf_pages": [
+            16,
+            218,
+            220
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "model_note": {
+            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+          },
+          "verification": {
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -5217,6 +5321,42 @@
             "source_image_url": "https://userguide.volkswagen.de:443/api/consumer/V4/media?language=de_DE&key=img0df5e4ecbffa38fa0a010f077072d8ae_1_--_--_vw_Symbol_SVG_online_yellow.svg",
             "topic_response_sha256": "f39f456c04dddb489d7acd07899ea4f32d7b49512b5a11cbd1a6b5d4add35278",
             "source_overview_row": 62,
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            13,
+            216,
+            218
+          ],
+          "pdf_pages": [
+            15,
+            218,
+            220
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "model_note": {
+            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+          },
+          "verification": {
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              13
+            ],
             "checked": "2026-10-30"
           }
         }
@@ -7089,6 +7229,40 @@
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
           }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            14,
+            229
+          ],
+          "pdf_pages": [
+            16,
+            231
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "model_note": {
+            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+          },
+          "verification": {
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -7179,6 +7353,40 @@
             "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            14,
+            229
+          ],
+          "pdf_pages": [
+            16,
+            231
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "model_note": {
+            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+          },
+          "verification": {
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
           }
         }
       ],
@@ -9535,6 +9743,40 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            12,
+            186
+          ],
+          "pdf_pages": [
+            14,
+            188
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "model_note": {
+            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+          },
+          "verification": {
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-29",
@@ -10193,6 +10435,42 @@
             "source_image_url": "https://userguide.volkswagen.de:443/vwn/api/consumer/V4/media?language=de_DE&key=img6799d96fbffa1e600a010f077072d8ae_1_--_--_vw_Symbol_SVG_online_red.svg",
             "topic_response_sha256": "120a9b9c6120eedd81078c958b45e4e085a704373f43baad81ff3a50f7fa0e53",
             "source_overview_row": 2,
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            11,
+            12,
+            25
+          ],
+          "pdf_pages": [
+            13,
+            14,
+            27
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "model_note": {
+            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+          },
+          "verification": {
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              12
+            ],
             "checked": "2026-10-30"
           }
         }
@@ -12427,6 +12705,40 @@
             "source_image_url": "https://userguide.volkswagen.de:443/api/consumer/V4/media?language=de_DE&key=img0301430ee0d124990a010f715a7da49a_1_--_--_vw_Symbol_SVG_online_grey.svg",
             "topic_response_sha256": "384fe5935f37a49fd3de37c3fb6b31ef8b4f425e1518818c6e16e1a68d7f3db1",
             "source_overview_row": 94,
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            14,
+            200
+          ],
+          "pdf_pages": [
+            16,
+            202
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "model_note": {
+            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+          },
+          "verification": {
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              14
+            ],
             "checked": "2026-10-30"
           }
         }
@@ -18456,6 +18768,532 @@
       },
       "checked": "2026-10-30",
       "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "terramar-clima-control",
+      "graphic": "clima-text",
+      "graphic_path": "wp-content/uploads/kontrolky/clima-text-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "CLIMA – otevření nabídky klimatizace",
+        "en": "CLIMA – open the climate-control menu",
+        "de": "CLIMA – Klimamenü öffnen"
+      },
+      "meaning": {
+        "cs": "Označení CLIMA na spodní liště otevírá nabídku klimatizace. Neoznamuje závadu chladicího systému ani automaticky zapnutý kompresor.",
+        "en": "CLIMA on the lower bar opens the climate-control menu. It does not report a cooling-system fault or automatically confirm compressor operation.",
+        "de": "CLIMA in der unteren Leiste öffnet das Klimamenü. Es meldet weder einen Kühlungsfehler noch bestätigt es automatisch einen laufenden Kompressor."
+      },
+      "action": {
+        "cs": "Nabídku nastavujte u bezpečně odstaveného vozidla. Při zamlžování oken zvolte odpovídající odmlžení a zachovejte výhled.",
+        "en": "Adjust the menu while safely parked. If windows mist, select appropriate demisting and maintain visibility.",
+        "de": "Menü am sicher abgestellten Fahrzeug einstellen. Bei beschlagenen Scheiben passend entfeuchten und freie Sicht gewährleisten."
+      },
+      "note": {
+        "cs": "Jde o ovládací označení, nikoli výstražnou kontrolku. Pouhá přítomnost v nabídce oblíbených nepotvrzuje aktivní funkci. Dostupnost závisí na výbavě, trhu a softwaru.",
+        "en": "This is a control label, not a warning lamp. Mere presence in a favourites menu does not establish an active function. Availability depends on equipment, market and software.",
+        "de": "Dies ist eine Bedienkennzeichnung, keine Warnleuchte. Das Vorhandensein im Favoritenmenü bestätigt keine aktive Funktion. Verfügbarkeit abhängig von Ausstattung, Markt und Software."
+      },
+      "alt": {
+        "cs": "Bílý nápis CLIMA – ovladač nabídky klimatizace.",
+        "en": "White CLIMA inscription – climate-menu control.",
+        "de": "Weiße Aufschrift CLIMA – Bedienung des Klimamenüs."
+      },
+      "scopes": [
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            148
+          ],
+          "pdf_pages": [
+            150
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "model_note": {
+            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+          },
+          "verification": {
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              148
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription CLIMA",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Exact short functional inscription from the cited manual and supplied photographs; no manufacturer typeface embedded. Not a substitute for a different pictogram.",
+        "file": "wp-content/uploads/kontrolky/clima-text-bila.svg",
+        "sha256": "fa1aa97f0a2963e039a6512be50b382bec599a84a1cff7391bd9ddd8f9a891a8"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "terramar-climate-auto-control",
+      "graphic": "climate-auto-text",
+      "graphic_path": "wp-content/uploads/kontrolky/climate-auto-text-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "AUTO – automatická regulace klimatizace",
+        "en": "AUTO – automatic climate regulation",
+        "de": "AUTO – automatische Klimaregelung"
+      },
+      "meaning": {
+        "cs": "Ovladač automatické regulace teploty, ventilátoru a rozvodu vzduchu. V oblíbeném místě Climabaru může být podle výbavy jiná funkce; text AUTO není Auto Hold.",
+        "en": "Control for automatic temperature, fan and air-distribution regulation. Depending on equipment, a different function may occupy the Climabar favourite position; AUTO is not Auto Hold.",
+        "de": "Bedienung der automatischen Temperatur-, Gebläse- und Luftverteilungsregelung. Je nach Ausstattung kann an der Climabar-Favoritenposition eine andere Funktion liegen; AUTO ist nicht Auto Hold."
+      },
+      "action": {
+        "cs": "Po změně ventilátoru, rozvodu vzduchu, odmlžení nebo recirkulace se automatický režim může vypnout podle popisu návodu. Ověřte skutečné nastavení na displeji.",
+        "en": "Manual changes to fan speed, air distribution, demisting or recirculation may cancel automatic mode as described in the manual. Check the actual display setting.",
+        "de": "Manuelle Änderungen an Gebläse, Luftverteilung, Entfeuchtung oder Umluft können den Automatikmodus laut Anleitung beenden. Tatsächliche Einstellung am Display prüfen."
+      },
+      "note": {
+        "cs": "Jde o ovládací označení, nikoli výstražnou kontrolku. Pouhá přítomnost v nabídce oblíbených nepotvrzuje aktivní funkci. Dostupnost závisí na výbavě, trhu a softwaru.",
+        "en": "This is a control label, not a warning lamp. Mere presence in a favourites menu does not establish an active function. Availability depends on equipment, market and software.",
+        "de": "Dies ist eine Bedienkennzeichnung, keine Warnleuchte. Das Vorhandensein im Favoritenmenü bestätigt keine aktive Funktion. Verfügbarkeit abhängig von Ausstattung, Markt und Software."
+      },
+      "alt": {
+        "cs": "Bílý nápis AUTO – automatická klimatizace, nikoli Auto Hold.",
+        "en": "White AUTO inscription – automatic climate control, not Auto Hold.",
+        "de": "Weiße Aufschrift AUTO – Klimaautomatik, nicht Auto Hold."
+      },
+      "scopes": [
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            148,
+            150
+          ],
+          "pdf_pages": [
+            150,
+            152
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "model_note": {
+            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+          },
+          "verification": {
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              148,
+              150
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription AUTO",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Exact short functional inscription from the cited manual and supplied photographs; no manufacturer typeface embedded. Not a substitute for a different pictogram.",
+        "file": "wp-content/uploads/kontrolky/climate-auto-text-bila.svg",
+        "sha256": "2b7a066d34af875ab1372e4f7d64d6869aee683cf43229d187a7eb2a55b79ad5"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "terramar-tp-control",
+      "graphic": "traffic-programme-text",
+      "graphic_path": "wp-content/uploads/kontrolky/traffic-programme-text-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "TP – dopravní zpravodajství rádia",
+        "en": "TP – radio traffic announcements",
+        "de": "TP – Verkehrsfunk des Radios"
+      },
+      "meaning": {
+        "cs": "Ovládání dopravních hlášení rádia. Při zapnuté funkci mohou příchozí hlášení přerušit přehrávání; je nutný příjem vhodné stanice. Nejde o rozpoznávání dopravních značek ani nouzové volání.",
+        "en": "Control for radio traffic announcements. When enabled, incoming announcements can interrupt playback; reception of a suitable station is required. This is neither road-sign recognition nor an emergency call.",
+        "de": "Bedienung der Radio-Verkehrsmeldungen. Bei Aktivierung können Meldungen die Wiedergabe unterbrechen; ein geeigneter Sender muss empfangbar sein. Weder Verkehrszeichenerkennung noch Notruf."
+      },
+      "action": {
+        "cs": "Funkci TP zapněte nebo vypněte v nabídce rádia či médií. Dostupnost hlášení závisí na stanici a zemi; nenahrazují dopravní značení.",
+        "en": "Enable or disable TP in the radio or media menu. Announcements depend on station and country; they do not replace road signs.",
+        "de": "TP im Radio- oder Medienmenü ein-/ausschalten. Meldungen sind sender- und landabhängig und ersetzen keine Verkehrszeichen."
+      },
+      "note": {
+        "cs": "Jde o ovládací označení, nikoli výstražnou kontrolku. Pouhá přítomnost v nabídce oblíbených nepotvrzuje aktivní funkci. Dostupnost závisí na výbavě, trhu a softwaru.",
+        "en": "This is a control label, not a warning lamp. Mere presence in a favourites menu does not establish an active function. Availability depends on equipment, market and software.",
+        "de": "Dies ist eine Bedienkennzeichnung, keine Warnleuchte. Das Vorhandensein im Favoritenmenü bestätigt keine aktive Funktion. Verfügbarkeit abhängig von Ausstattung, Markt und Software."
+      },
+      "alt": {
+        "cs": "Bílý nápis TP – dopravní hlášení rádia.",
+        "en": "White TP inscription – radio traffic announcements.",
+        "de": "Weiße Aufschrift TP – Radio-Verkehrsmeldungen."
+      },
+      "scopes": [
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            295,
+            296
+          ],
+          "pdf_pages": [
+            297,
+            298
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "model_note": {
+            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+          },
+          "verification": {
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              295,
+              296
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription TP",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Exact short functional inscription from the cited manual and supplied photographs; no manufacturer typeface embedded. Not a substitute for a different pictogram.",
+        "file": "wp-content/uploads/kontrolky/traffic-programme-text-bila.svg",
+        "sha256": "78312f0ac43f28f34efb1dc4004d3341f7c80f234d4c1434a5f5f626568bb368"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "terramar-lane-passive",
+      "graphic": "lane-assist",
+      "graphic_path": "wp-content/uploads/kontrolky/lane-assist-seda.svg",
+      "color": "seda",
+      "group": "asistenty",
+      "state": "steady",
+      "kind": "information",
+      "name": {
+        "cs": "Lane Assist – pasivní, nevede vozidlo",
+        "en": "Lane Assist – passive, not providing guidance",
+        "de": "Lane Assist – passiv, keine Spurführung"
+      },
+      "meaning": {
+        "cs": "Šedá provozní kontrolka znamená, že Lane Assist je pasivní a není dostupný pro vedení. Není totožná s bílým ovladačem v Control Centru ani sama o sobě důkazem závady kamery.",
+        "en": "The grey operating indicator means Lane Assist is passive and not available for guidance. It differs from the white Control Centre shortcut and does not itself prove a camera fault.",
+        "de": "Die graue Betriebsanzeige bedeutet, dass Lane Assist passiv und nicht zur Führung verfügbar ist. Sie unterscheidet sich vom weißen Control-Centre-Bedienzeichen und belegt allein keinen Kamerafehler."
+      },
+      "action": {
+        "cs": "Řízení a udržování v pruhu zůstává na řidiči. Respektujte doprovodné hlášení, podmínky funkce a omezení uvedené v návodu.",
+        "en": "The driver remains responsible for steering and keeping the lane. Observe messages, operating conditions and limits in the manual.",
+        "de": "Der Fahrer bleibt für Lenkung und Spurhaltung verantwortlich. Meldungen, Funktionsbedingungen und Grenzen der Anleitung beachten."
+      },
+      "note": {
+        "cs": "Zelená znamená připravenost a žlutá zásah; tyto doložené stavy nejsou zaměněny se šedým pasivním stavem.",
+        "en": "Green denotes availability and yellow intervention; these documented states are not conflated with grey passive status.",
+        "de": "Grün bedeutet Verfügbarkeit, Gelb Eingriff; diese belegten Zustände werden nicht mit dem grauen passiven Zustand verwechselt."
+      },
+      "alt": {
+        "cs": "Šedý vůz mezi čarami jízdního pruhu – pasivní Lane Assist.",
+        "en": "Grey car between lane markings – passive Lane Assist.",
+        "de": "Graues Auto zwischen Fahrspurmarkierungen – passiver Lane Assist."
+      },
+      "scopes": [
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            14,
+            216,
+            218
+          ],
+          "pdf_pages": [
+            16,
+            218,
+            220
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "model_note": {
+            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+          },
+          "verification": {
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "seat-leon-2026-11-25",
+          "brand": "seat",
+          "model": "Leon",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            16,
+            216
+          ],
+          "pdf_pages": [
+            18,
+            218
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Independent visual comparison of actual grey symbol in SEAT Leon 11.25 overview p.16 and control-lamp instructions p.216. Not inherited from CUPRA.",
+            "document_sha256": "2a4ef0fce63c0e2b45da01bb6d8a53c2f7acd7c4457fe698fad3a57ecf1558d8",
+            "graphic_printed_pages": [
+              16
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "File:ISO 7000 - Ref-No 3128.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_3128.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/01/ISO_7000_-_Ref-No_3128.svg",
+        "author": "Mrmw",
+        "license": "CC0 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "modifications": "Licensed standard pictogram geometry retained; registration marks removed; only source-documented foreground colour applied. Stroke-only elements remain unfilled. Grey passive state independently documented in Terramar 11.25 p.14/218; shape unchanged.",
+        "file": "wp-content/uploads/kontrolky/lane-assist-seda.svg",
+        "sha256": "f8e45e9a896acf9e5fe61611444294e718e7fc6bfc6f098b01909572facb9e81"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "terramar-esc-tcs-off",
+      "graphic": "esp-off-text",
+      "graphic_path": "wp-content/uploads/kontrolky/esp-off-text-zluta.svg",
+      "color": "zluta",
+      "group": "brzdy",
+      "state": "steady",
+      "kind": "information",
+      "name": {
+        "cs": "ESC/TCS – vypnutí nebo sportovní režim, symbol OFF",
+        "en": "ESC/TCS – deactivation or Sport mode, OFF symbol",
+        "de": "ESC/TCS – Abschaltung oder Sportmodus, OFF-Symbol"
+      },
+      "meaning": {
+        "cs": "Žlutý symbol vozu ve smyku s OFF je v tomto vydání přiřazen ručnímu vypnutí TCS, režimu ESC Sport nebo ručnímu vypnutí ESC podle výbavy a hlášení. Není zaměněn s blikajícím zásahem ani trvale svítící závadou prostého symbolu smyku.",
+        "en": "In this edition, the amber skidding-car OFF symbol denotes manual TCS deactivation, ESC Sport or manual ESC deactivation, depending on equipment and message. It is not conflated with flashing intervention or a steady fault indicated by the plain skidding-car symbol.",
+        "de": "Das gelbe schleudernde Auto mit OFF bezeichnet in dieser Ausgabe manuell abgeschaltete TCS, ESC Sport oder manuell abgeschaltetes ESC je nach Ausstattung und Meldung. Nicht mit blinkendem Regeleingriff oder Störung beim einfachen Schleudersymbol gleichsetzen."
+      },
+      "action": {
+        "cs": "Zkontrolujte skutečně zvolený režim. Omezená nebo vypnutá stabilizace mění bezpečnostní rezervu; režim volte pouze při odpovídajících podmínkách podle návodu.",
+        "en": "Check the selected mode. Limited or disabled stability control changes the safety margin; select the mode only under suitable conditions following the manual.",
+        "de": "Gewählten Modus prüfen. Begrenzte oder deaktivierte Stabilisierung verändert die Sicherheitsreserve; Modus nur unter geeigneten Bedingungen gemäß Anleitung wählen."
+      },
+      "note": {
+        "cs": "Některé verze mají navíc samostatný nápis ESC OFF. Tento odlišný grafický znak zde není vydáván za totožný obrázek.",
+        "en": "Some versions also use a separate ESC OFF inscription. That different graphic is not presented here as the same image.",
+        "de": "Einige Versionen besitzen zusätzlich die separate Aufschrift ESC OFF. Dieses andere Zeichen wird hier nicht als identische Grafik dargestellt."
+      },
+      "alt": {
+        "cs": "Žlutý vůz ve smyku s nápisem OFF – stav vypnutí stabilizace nebo sportovní režim.",
+        "en": "Amber skidding car with OFF – stability deactivation or Sport mode.",
+        "de": "Gelbes schleuderndes Auto mit OFF – Abschaltung der Stabilisierung oder Sportmodus."
+      },
+      "scopes": [
+        {
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": "2026",
+          "generation": null,
+          "edition": "Edition 11.25",
+          "language": "EN",
+          "printed_pages": [
+            12,
+            192,
+            193
+          ],
+          "pdf_pages": [
+            14,
+            194,
+            195
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "model_note": {
+            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+          },
+          "verification": {
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "File:Kontrollleuchte ESP 2.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_ESP_2.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Kontrollleuchte_ESP_2.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "author": "Chris828  at  German Wikipedia",
+        "modifications": "Public-domain car and skid outlines retained; enclosing triangle removed to match the independently reviewed modern ESC variant; documented amber foreground. Original shape unchanged; OFF functional inscription appended as independently documented in Terramar 11.25 p.12. Original licence retained.",
+        "sha256": "77816a480494921696e928e95f63d545bf113c642fca89be2b5e0fffb7cec9bb",
+        "file": "wp-content/uploads/kontrolky/esp-off-text-zluta.svg"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "vw-golf-lane-unavailable",
+      "graphic": "lane-alert",
+      "color": "zluta",
+      "group": "asistenty",
+      "state": "message",
+      "name": {
+        "cs": "Lane Assist – nedostupný, symbol s vykřičníkem",
+        "en": "Lane Assist – unavailable, symbol with exclamation mark",
+        "de": "Lane Assist – nicht verfügbar, Symbol mit Ausrufezeichen"
+      },
+      "meaning": {
+        "cs": "Žlutý symbol Lane Assist s vykřičníkem a hlášením znamená nedostupnost asistenta. Příčinou může být omezený výhled kamery, poškození nebo závada; symbol sám neurčuje vadný snímač.",
+        "en": "The amber Lane Assist symbol with exclamation mark and message means the assistant is unavailable. Camera-view limitations, damage or faults may be responsible; the symbol alone does not identify a failed sensor.",
+        "de": "Das gelbe Lane-Assist-Symbol mit Ausrufezeichen und Meldung bedeutet Nichtverfügbarkeit. Eingeschränkte Kamerasicht, Beschädigung oder Störung sind mögliche Ursachen; das Symbol bestimmt keinen defekten Sensor."
+      },
+      "action": {
+        "cs": "Řízení přebírá řidič. Podle návodu zkontrolujte a vyčistěte výhled kamery a odstraňte překážky nebo nálepky. Při přetrvávajícím problému vyhledejte odborný servis; respektujte hlášení vozidla.",
+        "en": "The driver must steer. Follow the manual to inspect and clean the camera view and remove obstructions or stickers. Seek a qualified workshop if the problem persists; follow vehicle messages.",
+        "de": "Der Fahrer muss lenken. Laut Anleitung Kamerasicht prüfen/reinigen und Hindernisse oder Aufkleber entfernen. Bei anhaltendem Problem Fachbetrieb aufsuchen; Fahrzeugmeldungen beachten."
+      },
+      "note": {
+        "cs": "Pouze modelově doložené vydání Golf 5H0 11.2020. Žlutý zásah bez vykřičníku a zelená připravenost jsou jiné stavy. Nedostupnost může současně omezit Emergency Assist a Travel Assist.",
+        "en": "Only the documented Golf 5H0 11.2020 edition. Amber intervention without an exclamation mark and green availability are distinct states. Unavailability may also affect Emergency Assist and Travel Assist.",
+        "de": "Nur belegte Ausgabe Golf 5H0 11.2020. Gelber Eingriff ohne Ausrufezeichen und grüne Bereitschaft sind andere Zustände. Nichtverfügbarkeit kann auch Emergency Assist und Travel Assist betreffen."
+      },
+      "scopes": [
+        {
+          "manual": "vw-golf-2020-11-de",
+          "brand": "volkswagen",
+          "model": "Golf",
+          "model_year": null,
+          "generation": "5H0",
+          "edition": "11.2020",
+          "language": "DE",
+          "source_sections": [
+            "Fahrerinformationen / Symbole im Kombi-Instrument",
+            "Fahrerassistenzsysteme / Lane Assist / Problemlösungen / Spurhalteassistent nicht verfügbar"
+          ],
+          "source_topic_ids": [
+            "d4f6d40a9b1c74c356b9864eeec3b034_102_de_DE",
+            "e6a33b66d69c495160dd571d3b4e9b87_5_de_DE"
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source symbol, colour and exclamation mark visually compared; actual model-specific instructions read. Not transferred to another brand/model.",
+            "source_image_sha256": "b26f1f671d301f570ff1e4189d1b6e4a5a8e9e6546d64b38455384d652d62826",
+            "source_image_url": "https://userguide.volkswagen.de:443/api/consumer/V4/media?language=de_DE&key=img4d7c1553559f84690adf02e72f9ea93f_1_--_--_vw_Symbol_SVG_online_yellow.svg",
+            "source_overview_row": 61,
+            "topic_response_sha256": "2067dbccc1a87ccdf273333909ca3039027ca49e444c96d58959c01b9bee345e",
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "checked": "2026-10-30",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/lane-alert-zluta.svg",
+      "graphic_source": {
+        "title": "File:ISO 7000 - Ref-No 3128.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_3128.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/01/ISO_7000_-_Ref-No_3128.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "author": "Vectorization:    Mrmw",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source. Licensed base geometry retained. Functional exclamation mark added only for the separately documented Golf 5H0 11.2020 unavailable variant, source overview row 61. This is a documented functional illustration, not an OEM contour-identical file.",
+        "sha256": "0c0f6c2b56b63c088957ba65208a98b9d79bc96fa19c9068581c39b1233d2acd",
+        "file": "wp-content/uploads/kontrolky/lane-alert-zluta.svg"
+      },
+      "alt": {
+        "cs": "Žlutý vůz mezi přerušovanými čarami s vykřičníkem – Lane Assist není dostupný.",
+        "en": "Amber car between dashed lane markings with exclamation mark – Lane Assist unavailable.",
+        "de": "Gelbes Auto zwischen unterbrochenen Spurmarkierungen mit Ausrufezeichen – Lane Assist nicht verfügbar."
+      },
+      "kind": "restriction"
     }
   ],
   "pending_items": [
@@ -19482,22 +20320,88 @@
       "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source. OFF functional inscription added only for the independently documented Terramar menu-control variant (figure 118 and supplied photographs). No diagonal cancellation stroke added.",
       "sha256": "497c92a36fc5be8ba28cf4c125d26cb9b6b30adb2264404ca72edc5f94a912bf",
       "file": "wp-content/uploads/kontrolky/start-stop-off-text-bila.svg"
+    },
+    "clima-text-bila": {
+      "title": "Functional inscription CLIMA",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Exact short functional inscription from the cited manual and supplied photographs; no manufacturer typeface embedded. Not a substitute for a different pictogram.",
+      "file": "wp-content/uploads/kontrolky/clima-text-bila.svg",
+      "sha256": "fa1aa97f0a2963e039a6512be50b382bec599a84a1cff7391bd9ddd8f9a891a8"
+    },
+    "climate-auto-text-bila": {
+      "title": "Functional inscription AUTO",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Exact short functional inscription from the cited manual and supplied photographs; no manufacturer typeface embedded. Not a substitute for a different pictogram.",
+      "file": "wp-content/uploads/kontrolky/climate-auto-text-bila.svg",
+      "sha256": "2b7a066d34af875ab1372e4f7d64d6869aee683cf43229d187a7eb2a55b79ad5"
+    },
+    "traffic-programme-text-bila": {
+      "title": "Functional inscription TP",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Exact short functional inscription from the cited manual and supplied photographs; no manufacturer typeface embedded. Not a substitute for a different pictogram.",
+      "file": "wp-content/uploads/kontrolky/traffic-programme-text-bila.svg",
+      "sha256": "78312f0ac43f28f34efb1dc4004d3341f7c80f234d4c1434a5f5f626568bb368"
+    },
+    "lane-assist-seda": {
+      "title": "File:ISO 7000 - Ref-No 3128.svg",
+      "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_3128.svg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/0/01/ISO_7000_-_Ref-No_3128.svg",
+      "author": "Mrmw",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "Licensed standard pictogram geometry retained; registration marks removed; only source-documented foreground colour applied. Stroke-only elements remain unfilled. Grey passive state independently documented in Terramar 11.25 p.14/218; shape unchanged.",
+      "file": "wp-content/uploads/kontrolky/lane-assist-seda.svg",
+      "sha256": "f8e45e9a896acf9e5fe61611444294e718e7fc6bfc6f098b01909572facb9e81"
+    },
+    "esp-off-text-zluta": {
+      "title": "File:Kontrollleuchte ESP 2.svg",
+      "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_ESP_2.svg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Kontrollleuchte_ESP_2.svg",
+      "license": "Public domain",
+      "license_url": "",
+      "author": "Chris828  at  German Wikipedia",
+      "modifications": "Public-domain car and skid outlines retained; enclosing triangle removed to match the independently reviewed modern ESC variant; documented amber foreground. Original shape unchanged; OFF functional inscription appended as independently documented in Terramar 11.25 p.12. Original licence retained.",
+      "sha256": "77816a480494921696e928e95f63d545bf113c642fca89be2b5e0fffb7cec9bb",
+      "file": "wp-content/uploads/kontrolky/esp-off-text-zluta.svg"
+    },
+    "lane-alert-zluta": {
+      "title": "File:ISO 7000 - Ref-No 3128.svg",
+      "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_3128.svg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/0/01/ISO_7000_-_Ref-No_3128.svg",
+      "license": "Public domain",
+      "license_url": "",
+      "author": "Vectorization:    Mrmw",
+      "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source. Licensed base geometry retained. Functional exclamation mark added only for the separately documented Golf 5H0 11.2020 unavailable variant, source overview row 61. This is a documented functional illustration, not an OEM contour-identical file.",
+      "sha256": "0c0f6c2b56b63c088957ba65208a98b9d79bc96fa19c9068581c39b1233d2acd",
+      "file": "wp-content/uploads/kontrolky/lane-alert-zluta.svg"
     }
   },
   "counts": {
-    "semantic_records": 131,
+    "semantic_records": 137,
     "legacy_generic_volkswagen": 1,
-    "model_documented_semantic_records": 127,
-    "model_edition_assignments": 446,
+    "model_documented_semantic_records": 133,
+    "model_edition_assignments": 462,
     "partially_reviewed_manual_editions": 39,
-    "shared_graphic_colour_variants": 74,
-    "distinct_pictogram_shapes": 50,
+    "shared_graphic_colour_variants": 80,
+    "distinct_pictogram_shapes": 55,
     "by_brand": {
       "volkswagen": {
-        "distinct_pictogram_shapes": 24,
-        "graphic_colour_variants": 28,
-        "semantic_variants": 31,
-        "model_edition_assignments": 33,
+        "distinct_pictogram_shapes": 25,
+        "graphic_colour_variants": 29,
+        "semantic_variants": 32,
+        "model_edition_assignments": 34,
         "generic_brand_assignments": 1,
         "reviewed_manual_editions": 3,
         "first_party_hosted_manual_editions": 3,
@@ -19525,19 +20429,19 @@
       },
       "seat": {
         "distinct_pictogram_shapes": 28,
-        "graphic_colour_variants": 35,
-        "semantic_variants": 44,
-        "model_edition_assignments": 94,
+        "graphic_colour_variants": 36,
+        "semantic_variants": 45,
+        "model_edition_assignments": 95,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 19,
         "first_party_hosted_manual_editions": 19,
         "third_party_hosted_manual_editions": 0
       },
       "cupra": {
-        "distinct_pictogram_shapes": 34,
-        "graphic_colour_variants": 44,
-        "semantic_variants": 56,
-        "model_edition_assignments": 142,
+        "distinct_pictogram_shapes": 38,
+        "graphic_colour_variants": 49,
+        "semantic_variants": 61,
+        "model_edition_assignments": 156,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 12,
         "first_party_hosted_manual_editions": 12,
@@ -21347,6 +22251,118 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "Subsequent sixth distinct user photograph supplied and visually reviewed. Current photo evidence is 6/6 visually reviewed, with individual source/state matching incomplete. Earlier five-photo/missing-photo notes describe the historical state at those events. No catalogue items or model scopes added from appearance alone."
+    },
+    {
+      "id": "terramar-functional-photo-comparison",
+      "checked": "2026-10-30",
+      "before_semantic_records": 131,
+      "after_semantic_records": 136,
+      "added_record_ids": [
+        "terramar-clima-control",
+        "terramar-climate-auto-control",
+        "terramar-tp-control",
+        "terramar-lane-passive",
+        "terramar-esc-tcs-off"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "terramar-clima-control",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "terramar-climate-auto-control",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "terramar-tp-control",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "terramar-lane-passive",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "terramar-esc-tcs-off",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "seatbelt",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "central-red",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "steering-red",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "brake-fault",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "lane-ready",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "lane-correction",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "cruise-standby",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "auto-hold-active",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        },
+        {
+          "id": "auto-hold-standby",
+          "manual": "cupra-terramar-2026-11-25",
+          "brand": "cupra"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Five actual catalogue records added, not only an audit update. Sources restricted to Terramar 11.25; no transfer to other brands. Existing records and scopes retained. Six-photo audit separately records positions, functions, sources and missing exact artwork."
+    },
+    {
+      "id": "independent-seat-vw-lane-review",
+      "checked": "2026-10-30",
+      "before_semantic_records": 136,
+      "after_semantic_records": 137,
+      "added_record_ids": [
+        "vw-golf-lane-unavailable"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "terramar-lane-passive",
+          "brand": "seat",
+          "manual": "seat-leon-2026-11-25"
+        },
+        {
+          "id": "vw-golf-lane-unavailable",
+          "brand": "volkswagen",
+          "manual": "vw-golf-2020-11-de"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Independent SEAT Leon 11.25 grey Lane Assist and VW Golf 5H0 11.2020 unavailable variant checked in their own sources. Different continuous-lane Caddy variants withheld; no Terramar inheritance."
     }
   ]
 }

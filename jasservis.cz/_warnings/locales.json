@@ -23,7 +23,7 @@
     "allSystems": "Všechny systémy",
     "allPowers": "Všechny doložené pohony",
     "reset": "Zrušit filtry",
-    "overview": "Obrazový přehled kontrolek",
+    "overview": "Obrazový přehled kontrolek a ikon",
     "all": "Zobrazit celý doložený přehled",
     "count": "Zobrazeno {count} z {total} obrazových položek pro zvolenou značku.",
     "empty": "Pro zvolenou kombinaci nejsou doložené obrazové položky. Neznamená to, že daný vůz tuto kontrolku nemá. Zrušte filtry nebo otevřete návod konkrétního vozidla.",
@@ -83,7 +83,7 @@
       "elektricka-soustava": "Akumulátor a elektrická soustava",
       "elektro": "Elektromobily a plug-in hybridy",
       "provoz": "Provozní a informační symboly",
-      "ovladani": "Ovládací ikony – klimatizace a komfort"
+      "ovladani": "Ovládací ikony a infotainment"
     },
     "powers": {
       "spalovaci": "Spalovací",
@@ -129,7 +129,7 @@
     "allSystems": "All systems",
     "allPowers": "All documented powertrains",
     "reset": "Reset filters",
-    "overview": "Illustrated indicator overview",
+    "overview": "Illustrated overview of warning lights and icons",
     "all": "Show the full documented overview",
     "count": "Showing {count} of {total} illustrated entries for the selected brand.",
     "empty": "No illustrated entries are documented for this combination. This does not mean that the vehicle lacks the indicator. Clear the filters or consult the specific vehicle manual.",
@@ -189,7 +189,7 @@
       "elektricka-soustava": "Battery and electrical system",
       "elektro": "Electric vehicles and plug-in hybrids",
       "provoz": "Operating and information symbols",
-      "ovladani": "Control icons – climate and comfort"
+      "ovladani": "Control icons and infotainment"
     },
     "powers": {
       "spalovaci": "Combustion",
@@ -235,7 +235,7 @@
     "allSystems": "Alle Systeme",
     "allPowers": "Alle belegten Antriebe",
     "reset": "Filter zurücksetzen",
-    "overview": "Bebilderte Leuchtenübersicht",
+    "overview": "Bildübersicht der Kontrollleuchten und Symbole",
     "all": "Gesamte belegte Übersicht anzeigen",
     "count": "{count} von {total} bebilderten Einträgen für die ausgewählte Marke angezeigt.",
     "empty": "Für diese Kombination sind keine bebilderten Einträge belegt. Dies bedeutet nicht, dass das Fahrzeug diese Anzeige nicht hat. Setzen Sie die Filter zurück oder sehen Sie in der konkreten Betriebsanleitung nach.",
@@ -295,7 +295,7 @@
       "elektricka-soustava": "Batterie und elektrische Anlage",
       "elektro": "Elektrofahrzeuge und Plug-in-Hybride",
       "provoz": "Betriebs- und Informationssymbole",
-      "ovladani": "Bedienzeichen – Klima und Komfort"
+      "ovladani": "Bedienzeichen und Infotainment"
     },
     "powers": {
       "spalovaci": "Verbrenner",
