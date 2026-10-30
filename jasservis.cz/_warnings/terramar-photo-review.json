@@ -3718,9 +3718,9 @@
         "de": "Ein Bedienzeichen bestätigt weder aktives System noch Störung. Bei Warnungen genaue Meldung beachten; ein Einzelfoto belegt weder Blinken noch Fortbestehen nach der Zündungsprüfung."
       },
       "meaning": {
-        "cs": "Samostatné P v horní liště není přiřazeno konkrétní parkovací funkci bez kontextu; není sloučeno s polohou voliče ani s parkovací brzdou.",
-        "en": "The top-bar P is not assigned a parking function without context; not conflated with selector position or parking brake.",
-        "de": "Das P in der Kopfleiste wird ohne Kontext keiner Parkfunktion zugeordnet; nicht mit Wählhebelstellung oder Parkbremse gleichsetzen."
+        "cs": "Návod na str. 37 řadí tuto oblast C mezi aktivní funkce, které nejsou v oblasti rychlých voleb B. Přesná funkce samotného P v tomto fotografovaném kontextu zůstává nedoložená; není automaticky potvrzením parkovací brzdy ani polohy převodovky.",
+        "en": "Page 37 identifies area C as active functions not present in shortcut area B. The exact function of P in this photographed context remains undocumented; it is not automatically parking-brake confirmation or a transmission position.",
+        "de": "S.37 ordnet Bereich C aktiven Funktionen zu, die nicht im Schnellwahlbereich B erscheinen. Die genaue P-Funktion im fotografierten Kontext bleibt unbelegt; nicht automatisch Parkbremsbestätigung oder Getriebestellung."
       },
       "source_review": {
         "manual": "cupra-terramar-2026-11-25",
@@ -3737,7 +3737,8 @@
           "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
           "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
         },
-        "specific_meaning_confirmed": false
+        "specific_meaning_confirmed": false,
+        "role_confirmed": true
       },
       "signal_state_from_photo": "not-established-by-still-photo",
       "required_change": {
@@ -4009,10 +4010,12 @@
       "source_review": {
         "manual": "cupra-terramar-2026-11-25",
         "printed_pages": [
+          285,
           286,
           287
         ],
         "pdf_pages": [
+          287,
           288,
           289
         ],
@@ -4023,7 +4026,8 @@
           "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
           "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
         },
-        "specific_meaning_confirmed": true
+        "specific_meaning_confirmed": true,
+        "exact_original_shape_compared": true
       },
       "signal_state_from_photo": "not-established-by-still-photo",
       "required_change": {
@@ -4875,17 +4879,22 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "printed_pages": [
-          148
+          148,
+          285,
+          287
         ],
         "pdf_pages": [
-          150
+          150,
+          287,
+          289
         ],
         "specific_meaning_confirmed": true,
         "scope_note": {
           "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
           "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
           "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
-        }
+        },
+        "exact_original_shape_compared": true
       },
       "web_result": "missing-exact-model-scoped-graphic-entry",
       "required_change": {
@@ -4972,17 +4981,22 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "printed_pages": [
-          148
+          148,
+          285,
+          287
         ],
         "pdf_pages": [
-          150
+          150,
+          287,
+          289
         ],
         "specific_meaning_confirmed": true,
         "scope_note": {
           "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
           "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
           "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
-        }
+        },
+        "exact_original_shape_compared": true
       },
       "web_result": "missing-exact-model-scoped-graphic-entry",
       "required_change": {
@@ -5767,10 +5781,14 @@
       "source_review": {
         "manual": "cupra-terramar-2026-11-25",
         "printed_pages": [
-          37
+          37,
+          285,
+          287
         ],
         "pdf_pages": [
-          39
+          39,
+          287,
+          289
         ],
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
@@ -5779,7 +5797,8 @@
           "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
           "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
         },
-        "specific_meaning_confirmed": true
+        "specific_meaning_confirmed": true,
+        "exact_original_shape_compared": true
       },
       "signal_state_from_photo": "not-established-by-still-photo",
       "required_change": {
@@ -5865,10 +5884,14 @@
       "source_review": {
         "manual": "cupra-terramar-2026-11-25",
         "printed_pages": [
-          37
+          37,
+          285,
+          287
         ],
         "pdf_pages": [
-          39
+          39,
+          287,
+          289
         ],
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
@@ -5877,7 +5900,8 @@
           "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
           "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
         },
-        "specific_meaning_confirmed": true
+        "specific_meaning_confirmed": true,
+        "exact_original_shape_compared": true
       },
       "signal_state_from_photo": "not-established-by-still-photo",
       "required_change": {
@@ -6037,9 +6061,9 @@
     {
       "id": "phone-app",
       "name": {
-        "cs": "Zkratka s ikonou mobilního zařízení v horní liště",
-        "en": "Top-bar shortcut with a mobile-device icon",
-        "de": "Verknüpfung mit Mobilgeräte-Symbol in der oberen Leiste"
+        "cs": "Full Link – zkratka propojení telefonu",
+        "en": "Full Link – smartphone integration shortcut",
+        "de": "Full Link – Smartphone-Integrationsverknüpfung"
       },
       "photos": [
         "terramar-photo-01",
@@ -6049,26 +6073,28 @@
       ],
       "classification": "unresolved-control-or-status",
       "catalogue_entries": [],
-      "status": "visually-observed-context-and-state-review-pending",
+      "status": "full-link-original-shape-and-function-source-matched-reusable-graphic-pending",
       "note": {
         "cs": "Ovládací ikona není potvrzením aktivního systému nebo závady. U výstrah se řiďte přesným hlášením; jednorázová fotografie nedokládá blikání ani přetrvání po zapnutí zapalování.",
         "en": "A control icon does not confirm an active system or fault. For warnings, follow the exact message; one photo establishes neither flashing nor persistence after the ignition check.",
         "de": "Ein Bedienzeichen bestätigt weder aktives System noch Störung. Bei Warnungen genaue Meldung beachten; ein Einzelfoto belegt weder Blinken noch Fortbestehen nach der Zündungsprüfung."
       },
       "meaning": {
-        "cs": "Je vidět karta se symbolem mobilního zařízení/aplikací. Bez otevření nebo přesného popisku nelze určit, zda vede na telefon, Full Link nebo jinou funkci; návod na straně 37 popisuje jen obecnou oblast zkratek.",
-        "en": "A card with a mobile-device/app symbol is visible. Without opening it or an exact label, its destination cannot be established as telephone, Full Link or another function; page 37 only describes the general shortcut area.",
-        "de": "Eine Karte mit Mobilgeräte-/App-Symbol ist sichtbar. Ohne Öffnen oder genaue Beschriftung ist das Ziel Telefon, Full Link oder andere Funktion nicht bestimmbar; Seite 37 beschreibt nur den allgemeinen Verknüpfungsbereich."
+        "cs": "Podoba mobilního zařízení s mřížkou byla porovnána s ikonou Full Link v seznamu hlavních nabídek Terramar 11.25. Jde o vstup k podporovanému propojení telefonu, nikoli důkaz připojeného telefonu, aktivního CarPlay/Android Auto ani závady.",
+        "en": "The device-and-grid shape was compared with the Full Link icon in the Terramar 11.25 main-menu list. It opens supported smartphone integration; it does not prove that a phone, CarPlay or Android Auto is connected, or that a fault exists.",
+        "de": "Die Geräte-/Rasterform wurde mit dem Full-Link-Zeichen der Hauptmenüliste Terramar 11.25 verglichen. Einstieg zur unterstützten Smartphone-Integration; kein Nachweis einer Verbindung, aktiven CarPlay-/Android-Auto-Funktion oder Störung."
       },
       "source_review": {
         "manual": "cupra-terramar-2026-11-25",
         "printed_pages": [
-          37,
-          308
+          277,
+          278,
+          287
         ],
         "pdf_pages": [
-          39,
-          310
+          279,
+          280,
+          289
         ],
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
@@ -6077,15 +6103,19 @@
           "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
           "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
         },
-        "specific_meaning_confirmed": false
+        "specific_meaning_confirmed": true,
+        "exact_original_shape_compared": true,
+        "graphic_source_printed_pages": [
+          287
+        ]
       },
       "signal_state_from_photo": "not-established-by-still-photo",
       "required_change": {
-        "cs": "Ověřit přesný popisek nebo otevřený detail zkratky. Neoznačovat ji automaticky za telefonní aplikaci.",
-        "en": "Verify the exact label or opened shortcut detail. Do not automatically call it a telephone app.",
-        "de": "Genaue Beschriftung oder geöffnetes Verknüpfungsdetail prüfen. Nicht automatisch als Telefon-App bezeichnen."
+        "cs": "Identifikace opravena z neurčené zkratky: odpovídá Full Link, nikoli běžnému menu Telefon. Originální tvar je v návodu 11.25 na str. 287; do obrazového přehledu zatím nebyl vložen, protože není připravená přesná grafika s ověřeným právem použití.",
+        "en": "Identification corrected from unresolved shortcut: matches Full Link, not the ordinary Telephone menu. Original shape is on p.287 of edition 11.25; not yet inserted into the pictorial overview because an exact graphic with confirmed use rights is not prepared.",
+        "de": "Identifikation der zuvor ungeklärten Verknüpfung korrigiert: entspricht Full Link, nicht dem normalen Telefonmenü. Originalform in Ausgabe 11.25 S.287; noch nicht im Bildkatalog, da genaue Grafik mit bestätigter Nutzungserlaubnis nicht vorbereitet."
       },
-      "web_result": "meaning-not-established-for-this-shortcut",
+      "web_result": "missing-exact-model-scoped-graphic-entry",
       "occurrences": [
         {
           "photo": "terramar-photo-01",
@@ -6129,9 +6159,9 @@
         "new_model_scopes_in_this_revision": []
       },
       "driver_action": {
-        "cs": "Ze snímku nevyvozovat funkci nebo závadu. Ověřit přesný popisek a aktuální hlášení v konkrétním vozidle.",
-        "en": "Do not infer function or fault from the photo. Verify the exact label and current message in the actual vehicle.",
-        "de": "Aus dem Foto keine Funktion oder Störung ableiten. Genaue Beschriftung und aktuelle Meldung im konkreten Fahrzeug prüfen."
+        "cs": "Telefon a podporovaný způsob propojení nastavujte ve stojícím vozidle. Dostupnost závisí na trhu, výbavě, zařízení a podporované technologii; případné výzvy potvrzujte podle návodu.",
+        "en": "Set up the phone and supported connection while stationary. Availability depends on market, equipment, device and supported technology; handle prompts following the manual.",
+        "de": "Telefon und unterstützte Verbindung im stehenden Fahrzeug einrichten. Verfügbarkeit abhängig von Markt, Ausstattung, Gerät und unterstützter Technik; Aufforderungen gemäß Anleitung bestätigen."
       }
     },
     {
@@ -6747,7 +6777,7 @@
   "schema": 2,
   "comparison_date": "2026-10-30",
   "catalogue_before_revision": "351a939",
-  "catalogue_semantic_records_after": 137,
+  "catalogue_semantic_records_after": 159,
   "review_method": "Every distinguishable labelled shortcut and visible instrument symbol on all six supplied photographs compared with current CUPRA/Terramar catalogue scopes and separately cited manufacturer manual pages. Meaning, exact artwork, state, and model applicability are separate checks. Unreadable compound indicators are not guessed.",
   "completion": {
     "all_six_photographs_visually_compared": true,
@@ -6769,5 +6799,22 @@
       "en": "The sixth photograph was already supplied separately. No photograph is missing; original filenames and raw files were not provided with the inline images. Working references are not represented as original filenames.",
       "de": "Das sechste Foto wurde bereits separat geliefert. Kein Foto fehlt; Originaldateinamen und Rohdateien wurden mit den eingebetteten Bildern nicht bereitgestellt. Arbeitskennungen sind keine behaupteten Originaldateinamen."
     }
+  },
+  "latest_revision": {
+    "checked": "2026-10-30",
+    "resolved_observation_ids": [
+      "phone-app"
+    ],
+    "clarified_observation_ids": [
+      "p-header",
+      "power-volume",
+      "temperature-left",
+      "temperature-right",
+      "widget-view",
+      "tile-view"
+    ],
+    "all_six_available": true,
+    "request_repeat_delivery": false,
+    "all_photo_variants_source_matched": false
   }
 }

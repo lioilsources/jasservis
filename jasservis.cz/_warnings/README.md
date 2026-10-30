@@ -217,3 +217,15 @@ Aktuálně 142 významových záznamů, 58 tvarů a 83 barevných grafik; 44 evi
 Přijato všech šest odlišných fotografií Terramaru; původní názvy souborů nebyly předány. Pracovní identifikátory nejsou názvy originálů. Inventář obsahují `terramar-photo-inventory.*.csv`.
 
 Technicky úspěšných 36 testů modelů a revizních stránek a 36 návazností značek v CZ/EN/DE, Chromium 154 a WebKit 26 na Linuxu. Kontrola 83 grafik v obou jádrech. Rozměry 360×800, 390×844, 844×390, 768×1024, 1366×768 a 1920×1080; nejde o skutečný iPhone ani Android. Tyto testy nedokládají obsahovou úplnost.
+
+## Pokračování obsahové revize 30. 10. 2026
+
+Porovnány celé samostatné oddíly Klimaanlage: Audi A4 07.2024 str. 104–109 před Lenkradheizung a Audi A8 06.2025 str. 113–118 před Lenkradheizung. Nejde o celé Warm und kalt ani celé knihy. Evidence `audi-climate-source-comparison.json` a tři CSV zachycují jednotlivé funkční rodiny i doložené odlišné stavy a chybějící obrazové položky. Zveřejnění celého obrazového obsahu hotové není. Dále porovnány celé oddíly přímého Reifendruck-Kontrollsystem a Start-Stop-System v obou těchto vydáních.
+
+V náhledu je 17 nových významových položek oproti 0bf6bba. Přímé měření tlaku má samostatné nízké/kritické hlášení a výměnu kol, běžný neprovedený stop není porucha. A4 A/C OFF není celkové OFF, SET REAR není A8 REAR. Zbytkové teplo má vlastní ovládání AUTO pro A4 a podržení MAX pro A8. Funkční nápisy jsou samostatně sázené krátké ovládací značky, nikoli nové výrobní piktogramy.
+
+Nesprávná náhrada Audi A OFF nebyla zveřejněna: Audi má OFF vedle A, licencovaná Terramar varianta pod A. Přesných pět původních SVG Caddy bylo vizuálně porovnáno včetně původních barev; soubory zatím nejsou převzaty do webu bez potvrzeného oprávnění použití. Zdrojové adresy a otisky uvádí `caddy-source-graphic-review.json`. Žádné podobné náhradní obrázky.
+
+Fotografie Terramar: všech šest zachováno v evidenci, nově rozpoznán Full Link podle přesné kresby na str. 287 vydání 11.25. P v horní liště má doloženou roli oblasti aktivních funkcí, ale konkrétní význam této zkratky zůstává otevřený. Malé znaky přístrojového panelu a některé ovládací varianty nejsou násilně určeny. Fotografie při 0 ot/min nedokládá závadu.
+
+Technicky: 42 kombinací rozměru/jazyka/prohlížeče, šest dotykových a modelových scénářů včetně otočení, 36 značkových vstupů a 92 grafik v Chromium 154 / WebKit 26 na Linuxu. Bez skutečného iPhonu či Androidu. Všech 142 původních záznamů i rozsahů zůstalo zachováno; čtyři související textové opravy jsou doložené novým zdrojem. Všech 90 záhlaví a patiček beze změny, společná média 28 skupin / 76 položek konzistentní. Počty zahrnují i funkční nápisy a neprokazují úplnost.

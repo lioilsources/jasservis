@@ -1,6 +1,6 @@
 {
   "checked": "2026-10-30",
-  "method": "Precise bounded source subsection closure is separate from entire chapter, entire manual, publication completeness and technical web tests. Broad chapter status is never marked complete from a selected subset. No model/year inheritance.",
+  "method": "Precise bounded source subsection closure is separate from entire chapter, entire manual, publication completeness and technical web tests. Broad chapter status is never marked complete from a selected subset. No model/year inheritance. Closed comparison records can overlap (for example AUTO and the complete Klimaanlage section); their count must not be summed as a count of distinct completed chapters.",
   "area_labels": {
     "instrument-panel": {
       "cs": "Přehled a přístrojový panel",
@@ -662,14 +662,1238 @@
         }
       ],
       "remaining": {
-        "cs": "Porovnání těchto tří řádků je uzavřené: v náhledu chybějí jejich přesné grafiky se souvislými čarami. Publikace není hotová. Vypnutí OFF a nedostupnost s vykřičníkem jsou další samostatné varianty.",
-        "en": "Comparison of these three rows is closed: their exact continuous-line graphics are missing in the preview. Publication is incomplete. OFF and exclamation-mark unavailability are further separate variants.",
-        "de": "Der Vergleich dieser drei Zeilen ist abgeschlossen: Die genauen Grafiken mit durchgezogenen Linien fehlen in der Vorschau. Veröffentlichung unvollständig. OFF und Nichtverfügbarkeit mit Ausrufezeichen sind weitere Varianten."
+        "cs": "Přesné originální SVG tří stavů i samostatných OFF a ! byly porovnány: stavová geometrie je shodná, barvy jsou doložené výrobcem. V náhledu nejsou převzaté, protože není potvrzené oprávnění k dalšímu použití grafických souborů. Souvislé čáry nejsou nahrazeny přerušovanou variantou Terramar.",
+        "en": "Exact original SVGs for three states and separate OFF/! were compared: operating-state geometry is identical and colours are manufacturer-documented. Not republished in the preview because permission to reuse the graphic files is unconfirmed. Continuous lines are not replaced by the dashed Terramar variant.",
+        "de": "Exakte Original-SVGs für drei Zustände und separate OFF/! verglichen: Betriebszustandsgeometrie identisch, Farben vom Hersteller belegt. Nicht in Vorschau übernommen, da Nachnutzungserlaubnis der Grafikdateien nicht bestätigt. Durchgezogene Linien nicht durch gestrichelte Terramar-Variante ersetzt."
       },
       "precise_boundary_i18n": {
         "cs": "Přesně tři stavy v odstavci Je nach Fahrsituation leuchten folgende Kontrollleuchten. Porovnání se zdrojem je uzavřené, publikace čeká na přesné grafiky. Přerušované čáry Terramar nebyly převzaty.",
         "en": "Exact paragraph Je nach Fahrsituation leuchten folgende Kontrollleuchten with three source states. Publication pending; no reuse of dashed-lane Terramar graphic.",
         "de": "Genau drei Zustände im Absatz Je nach Fahrsituation leuchten folgende Kontrollleuchten. Quellenvergleich abgeschlossen, Veröffentlichung wartet auf genaue Grafiken. Unterbrochene Terramar-Linien nicht übernommen."
+      }
+    },
+    {
+      "id": "audi-a4-2024-07-de-start-stop-section",
+      "manual": "audi-a4-2024-07-de",
+      "area": "powertrain",
+      "title": {
+        "cs": "Start-Stop-System – celý samostatný oddíl",
+        "en": "Start-Stop-System – complete standalone section",
+        "de": "Start-Stop-System – vollständiger eigenständiger Abschnitt"
+      },
+      "printed_pages": [
+        124,
+        125,
+        126
+      ],
+      "source_sections": [],
+      "precise_boundary": "Od nadpisu Start-Stop-System po konec Fahrerhinweise před Bremsen. Zahrnuje podmínky, opětovný start, fyzické A OFF, zelené A, bílé přeškrtnuté A a odlišná textová hlášení. Nejde o celou kapitolu Fahren ani hybridní řízení pohonu.",
+      "precise_boundary_i18n": {
+        "cs": "Od nadpisu Start-Stop-System po konec Fahrerhinweise před Bremsen. Zahrnuje podmínky, opětovný start, fyzické A OFF, zelené A, bílé přeškrtnuté A a odlišná textová hlášení. Nejde o celou kapitolu Fahren ani hybridní řízení pohonu.",
+        "en": "From Start-Stop-System heading through Fahrerhinweise before Bremsen. Includes conditions, restart, physical A OFF, green A, white crossed-out A and distinct textual messages. Not the full Fahren chapter or hybrid powertrain management.",
+        "de": "Vom Titel Start-Stop-System bis Ende Fahrerhinweise vor Bremsen. Einschließlich Voraussetzungen, Wiederstart, physischem A OFF, grünem A, weißem durchgestrichenem A und unterschiedlichen Textmeldungen. Nicht ganz Fahren oder Hybrid-Antriebsmanagement."
+      },
+      "comparison_complete": true,
+      "website_complete": false,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "Zelené A – automaticky vypnutý motor",
+            "en": "Green A – automatically stopped engine",
+            "de": "Grünes A – automatisch abgestellter Motor"
+          },
+          "catalogue_ids": [
+            "audi-start-stop-green"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "Bílé přeškrtnuté A – podmínky nejsou splněny",
+            "en": "White crossed-out A – conditions not met",
+            "de": "Weißes durchgestrichenes A – Voraussetzungen nicht erfüllt"
+          },
+          "catalogue_ids": [
+            "audi-start-stop-no-stop"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "A OFF – fyzické ovládání, svícení tlačítka při vypnuté funkci",
+            "en": "A OFF – physical control, illuminated button with function off",
+            "de": "A OFF – physische Bedienung, leuchtende Taste bei ausgeschalteter Funktion"
+          },
+          "catalogue_ids": [],
+          "web_status": "withheld-exact-layout-and-reuse-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Ruční start versus výslovné hlášení poruchy – texty nejsou automaticky významem bílé ikony",
+            "en": "Manual restart versus explicit malfunction message – not automatically the meaning of the white icon",
+            "de": "Manueller Start gegenüber ausdrücklicher Störungsmeldung – nicht automatisch Bedeutung des weißen Zeichens"
+          },
+          "catalogue_ids": [
+            "audi-start-stop-no-stop"
+          ],
+          "web_status": "present"
+        }
+      ],
+      "remaining": {
+        "cs": "Fyzický ovladač Audi má A se šipkou a OFF vedle něj. Licencovaná grafika Terramar má OFF pod A a nesmí být použita jako přesná varianta Audi. Význam a původní obrázek jsou doložené; samostatná přesná grafika s ověřeným právem použití není připravená.",
+        "en": "Audi’s physical control has A with an arrow and OFF beside it. The licensed Terramar graphic puts OFF below A and must not be used as the exact Audi variant. Meaning and original artwork are documented; an exact reusable graphic with confirmed use rights is not prepared.",
+        "de": "Die physische Audi-Bedienung hat A mit Pfeil und OFF daneben. Die lizenzierte Terramar-Grafik hat OFF unter A und darf nicht als genaue Audi-Variante verwendet werden. Bedeutung und Originalbild belegt; genaue nachnutzbare Grafik mit bestätigter Erlaubnis noch nicht vorbereitet."
+      }
+    },
+    {
+      "id": "audi-a4-2024-07-de-speed-signal-list",
+      "manual": "audi-a4-2024-07-de",
+      "area": "assistants",
+      "title": {
+        "cs": "Geschwindigkeitsregelsysteme – celý seznam tří stavů kontrolek",
+        "en": "Geschwindigkeitsregelsysteme – complete list of three indicator states",
+        "de": "Geschwindigkeitsregelsysteme – vollständige Liste von drei Kontrollleuchtenzuständen"
+      },
+      "printed_pages": [
+        168
+      ],
+      "source_sections": [],
+      "precise_boundary": "Pouze Anzeigenübersicht / Kontrollleuchten: zelený tempomat, zelené LIM a blikající LIM; konec před System einschalten. Páčka, mapové/prediktivní ikony a celá kapitola nejsou zahrnuty.",
+      "precise_boundary_i18n": {
+        "cs": "Pouze Anzeigenübersicht / Kontrollleuchten: zelený tempomat, zelené LIM a blikající LIM; konec před System einschalten. Páčka, mapové/prediktivní ikony a celá kapitola nejsou zahrnuty.",
+        "en": "Only Anzeigenübersicht / Kontrollleuchten: green cruise, green LIM and flashing LIM; ends before System einschalten. Stalk controls, map/predictive icons and the whole chapter are excluded.",
+        "de": "Nur Anzeigenübersicht / Kontrollleuchten: grüner Tempomat, grünes LIM und blinkendes LIM; Ende vor System einschalten. Hebel, Karten-/Prädiktivsymbole und ganzes Kapitel nicht enthalten."
+      },
+      "comparison_complete": true,
+      "website_complete": true,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "Zelený tempomat – reguluje",
+            "en": "Green cruise – regulating",
+            "de": "Grüner Tempomat – regelt"
+          },
+          "catalogue_ids": [
+            "cruise-active"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "Zelené LIM – omezuje rychlost",
+            "en": "Green LIM – limiting speed",
+            "de": "Grünes LIM – begrenzt"
+          },
+          "catalogue_ids": [
+            "audi-q4-lim-active"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "Blikající zelené LIM – ruční překonání limitu",
+            "en": "Flashing green LIM – manual override",
+            "de": "Blinkendes grünes LIM – manuelles Übersteuern"
+          },
+          "catalogue_ids": [
+            "audi-q4-lim-overridden"
+          ],
+          "web_status": "present"
+        }
+      ],
+      "remaining": {
+        "cs": "V tomto přesně vymezeném oddílu jsou porovnané ovládací značka, signalizační stavy a textová hlášení. Jiné části pohonu, parkování nebo přístrojového panelu nejsou tímto dokončené.",
+        "en": "The control label, indicator states and textual messages within this precisely bounded section are compared. Other powertrain, parking or instrument-cluster sections are not thereby complete.",
+        "de": "Bedienkennzeichnung, Signalzustände und Textmeldungen dieses genau begrenzten Abschnitts sind verglichen. Andere Antriebs-, Park- oder Kombiinstrumentabschnitte sind damit nicht abgeschlossen."
+      }
+    },
+    {
+      "id": "audi-a4-2024-07-de-direct-tyre-system",
+      "manual": "audi-a4-2024-07-de",
+      "area": "instrument-panel",
+      "title": {
+        "cs": "Reifendruck-Kontrollsystem – celý oddíl přímého měření",
+        "en": "Reifendruck-Kontrollsystem – complete direct-monitoring section",
+        "de": "Reifendruck-Kontrollsystem – vollständiger Abschnitt der direkten Überwachung"
+      },
+      "printed_pages": [
+        307,
+        308,
+        309
+      ],
+      "source_sections": [],
+      "precise_boundary": "Od nadpisu Reifendruck-Kontrollsystem po konec Funktionsstörungen; končí před Reifen mit Notlaufeigenschaften. Zahrnuje tlaky/teploty a jejich barvy či pomlčky, nízký a kritický tlak, výměnu kol, uložení a učení, TPMS a blikání s trvalým svícením. Nepřímá Reifendruck-Kontrollanzeige není zahrnuta.",
+      "precise_boundary_i18n": {
+        "cs": "Od nadpisu Reifendruck-Kontrollsystem po konec Funktionsstörungen; končí před Reifen mit Notlaufeigenschaften. Zahrnuje tlaky/teploty a jejich barvy či pomlčky, nízký a kritický tlak, výměnu kol, uložení a učení, TPMS a blikání s trvalým svícením. Nepřímá Reifendruck-Kontrollanzeige není zahrnuta.",
+        "en": "From Reifendruck-Kontrollsystem heading through Funktionsstörungen; ends before Reifen mit Notlaufeigenschaften. Includes pressure/temperature values and colours/dashes, low and critical pressure, wheel changes, storage/learning, TPMS and flashing followed by steady light. Indirect Reifendruck-Kontrollanzeige is excluded.",
+        "de": "Vom Titel Reifendruck-Kontrollsystem bis Ende Funktionsstörungen; Ende vor Reifen mit Notlaufeigenschaften. Einschließlich Druck-/Temperaturwerten und Farben/Strichen, Druckverlust/Panne, Radwechsel, Speichern/Anlernen, TPMS sowie Blinken mit anschließendem Dauerleuchten. Indirekte Reifendruck-Kontrollanzeige nicht enthalten."
+      },
+      "comparison_complete": true,
+      "website_complete": true,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "Pneumatika – nízký tlak",
+            "en": "Tyre – low pressure",
+            "de": "Reifen – Druckverlust"
+          },
+          "catalogue_ids": [
+            "audi-direct-pressure-low"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "Pneumatika a hlášení Reifenpanne! – kritický tlak",
+            "en": "Tyre and Reifenpanne! message – critical pressure",
+            "de": "Reifen und Meldung Reifenpanne! – kritischer Druck"
+          },
+          "catalogue_ids": [
+            "audi-direct-pressure-critical"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "Pneumatika a Radwechsel erkannt – změna kol",
+            "en": "Tyre and Radwechsel erkannt – wheel change",
+            "de": "Reifen und Radwechsel erkannt – Rädertausch"
+          },
+          "catalogue_ids": [
+            "audi-direct-wheel-change"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "TPMS a přibližně minuta blikání pneumatiky, poté svítí – systémová porucha",
+            "en": "TPMS and tyre flashing about one minute then steady – system malfunction",
+            "de": "TPMS und etwa einminütiges Reifenblinken, dann Dauerleuchten – Systemstörung"
+          },
+          "catalogue_ids": [
+            "audi-tpms-fault"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "Číselné hodnoty zelené/žluté/červené a pomlčky – vysvětlené varianty zobrazení, ne další unikátní ikony",
+            "en": "Green/amber/red numerical values and dashes – explained display variants, not additional unique icons",
+            "de": "Grüne/gelbe/rote Zahlen und Striche – erklärte Anzeigevarianten, keine zusätzlichen Einzelpiktogramme"
+          },
+          "catalogue_ids": [
+            "audi-direct-pressure-low"
+          ],
+          "web_status": "present"
+        }
+      ],
+      "remaining": {
+        "cs": "V tomto přesně vymezeném oddílu jsou porovnané ovládací značka, signalizační stavy a textová hlášení. Jiné části pohonu, parkování nebo přístrojového panelu nejsou tímto dokončené.",
+        "en": "The control label, indicator states and textual messages within this precisely bounded section are compared. Other powertrain, parking or instrument-cluster sections are not thereby complete.",
+        "de": "Bedienkennzeichnung, Signalzustände und Textmeldungen dieses genau begrenzten Abschnitts sind verglichen. Andere Antriebs-, Park- oder Kombiinstrumentabschnitte sind damit nicht abgeschlossen."
+      }
+    },
+    {
+      "id": "audi-a8-2025-06-de-start-stop-section",
+      "manual": "audi-a8-2025-06-de",
+      "area": "powertrain",
+      "title": {
+        "cs": "Start-Stop-System – celý samostatný oddíl",
+        "en": "Start-Stop-System – complete standalone section",
+        "de": "Start-Stop-System – vollständiger eigenständiger Abschnitt"
+      },
+      "printed_pages": [
+        137,
+        138
+      ],
+      "source_sections": [],
+      "precise_boundary": "Od nadpisu Start-Stop-System po konec Fahrerhinweise před Bremsen. Zahrnuje podmínky, opětovný start, fyzické A OFF, zelené A, bílé přeškrtnuté A a odlišná textová hlášení. Nejde o celou kapitolu Fahren ani hybridní řízení pohonu.",
+      "precise_boundary_i18n": {
+        "cs": "Od nadpisu Start-Stop-System po konec Fahrerhinweise před Bremsen. Zahrnuje podmínky, opětovný start, fyzické A OFF, zelené A, bílé přeškrtnuté A a odlišná textová hlášení. Nejde o celou kapitolu Fahren ani hybridní řízení pohonu.",
+        "en": "From Start-Stop-System heading through Fahrerhinweise before Bremsen. Includes conditions, restart, physical A OFF, green A, white crossed-out A and distinct textual messages. Not the full Fahren chapter or hybrid powertrain management.",
+        "de": "Vom Titel Start-Stop-System bis Ende Fahrerhinweise vor Bremsen. Einschließlich Voraussetzungen, Wiederstart, physischem A OFF, grünem A, weißem durchgestrichenem A und unterschiedlichen Textmeldungen. Nicht ganz Fahren oder Hybrid-Antriebsmanagement."
+      },
+      "comparison_complete": true,
+      "website_complete": false,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "Zelené A – automaticky vypnutý motor",
+            "en": "Green A – automatically stopped engine",
+            "de": "Grünes A – automatisch abgestellter Motor"
+          },
+          "catalogue_ids": [
+            "audi-start-stop-green"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "Bílé přeškrtnuté A – podmínky nejsou splněny",
+            "en": "White crossed-out A – conditions not met",
+            "de": "Weißes durchgestrichenes A – Voraussetzungen nicht erfüllt"
+          },
+          "catalogue_ids": [
+            "audi-start-stop-no-stop"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "A OFF – fyzické ovládání, svícení tlačítka při vypnuté funkci",
+            "en": "A OFF – physical control, illuminated button with function off",
+            "de": "A OFF – physische Bedienung, leuchtende Taste bei ausgeschalteter Funktion"
+          },
+          "catalogue_ids": [],
+          "web_status": "withheld-exact-layout-and-reuse-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Ruční start versus výslovné hlášení poruchy – texty nejsou automaticky významem bílé ikony",
+            "en": "Manual restart versus explicit malfunction message – not automatically the meaning of the white icon",
+            "de": "Manueller Start gegenüber ausdrücklicher Störungsmeldung – nicht automatisch Bedeutung des weißen Zeichens"
+          },
+          "catalogue_ids": [
+            "audi-start-stop-no-stop"
+          ],
+          "web_status": "present"
+        }
+      ],
+      "remaining": {
+        "cs": "Fyzický ovladač Audi má A se šipkou a OFF vedle něj. Licencovaná grafika Terramar má OFF pod A a nesmí být použita jako přesná varianta Audi. Význam a původní obrázek jsou doložené; samostatná přesná grafika s ověřeným právem použití není připravená.",
+        "en": "Audi’s physical control has A with an arrow and OFF beside it. The licensed Terramar graphic puts OFF below A and must not be used as the exact Audi variant. Meaning and original artwork are documented; an exact reusable graphic with confirmed use rights is not prepared.",
+        "de": "Die physische Audi-Bedienung hat A mit Pfeil und OFF daneben. Die lizenzierte Terramar-Grafik hat OFF unter A und darf nicht als genaue Audi-Variante verwendet werden. Bedeutung und Originalbild belegt; genaue nachnutzbare Grafik mit bestätigter Erlaubnis noch nicht vorbereitet."
+      }
+    },
+    {
+      "id": "audi-a8-2025-06-de-speed-signal-list",
+      "manual": "audi-a8-2025-06-de",
+      "area": "assistants",
+      "title": {
+        "cs": "Geschwindigkeitsregelsysteme – celý seznam tří stavů kontrolek",
+        "en": "Geschwindigkeitsregelsysteme – complete list of three indicator states",
+        "de": "Geschwindigkeitsregelsysteme – vollständige Liste von drei Kontrollleuchtenzuständen"
+      },
+      "printed_pages": [
+        197
+      ],
+      "source_sections": [],
+      "precise_boundary": "Pouze Anzeigenübersicht / Kontrollleuchten: zelený tempomat, zelené LIM a blikající LIM; konec před System einschalten. Páčka, mapové/prediktivní ikony a celá kapitola nejsou zahrnuty.",
+      "precise_boundary_i18n": {
+        "cs": "Pouze Anzeigenübersicht / Kontrollleuchten: zelený tempomat, zelené LIM a blikající LIM; konec před System einschalten. Páčka, mapové/prediktivní ikony a celá kapitola nejsou zahrnuty.",
+        "en": "Only Anzeigenübersicht / Kontrollleuchten: green cruise, green LIM and flashing LIM; ends before System einschalten. Stalk controls, map/predictive icons and the whole chapter are excluded.",
+        "de": "Nur Anzeigenübersicht / Kontrollleuchten: grüner Tempomat, grünes LIM und blinkendes LIM; Ende vor System einschalten. Hebel, Karten-/Prädiktivsymbole und ganzes Kapitel nicht enthalten."
+      },
+      "comparison_complete": true,
+      "website_complete": true,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "Zelený tempomat – reguluje",
+            "en": "Green cruise – regulating",
+            "de": "Grüner Tempomat – regelt"
+          },
+          "catalogue_ids": [
+            "cruise-active"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "Zelené LIM – omezuje rychlost",
+            "en": "Green LIM – limiting speed",
+            "de": "Grünes LIM – begrenzt"
+          },
+          "catalogue_ids": [
+            "audi-q4-lim-active"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "Blikající zelené LIM – ruční překonání limitu",
+            "en": "Flashing green LIM – manual override",
+            "de": "Blinkendes grünes LIM – manuelles Übersteuern"
+          },
+          "catalogue_ids": [
+            "audi-q4-lim-overridden"
+          ],
+          "web_status": "present"
+        }
+      ],
+      "remaining": {
+        "cs": "V tomto přesně vymezeném oddílu jsou porovnané ovládací značka, signalizační stavy a textová hlášení. Jiné části pohonu, parkování nebo přístrojového panelu nejsou tímto dokončené.",
+        "en": "The control label, indicator states and textual messages within this precisely bounded section are compared. Other powertrain, parking or instrument-cluster sections are not thereby complete.",
+        "de": "Bedienkennzeichnung, Signalzustände und Textmeldungen dieses genau begrenzten Abschnitts sind verglichen. Andere Antriebs-, Park- oder Kombiinstrumentabschnitte sind damit nicht abgeschlossen."
+      }
+    },
+    {
+      "id": "audi-a8-2025-06-de-direct-tyre-system",
+      "manual": "audi-a8-2025-06-de",
+      "area": "instrument-panel",
+      "title": {
+        "cs": "Reifendruck-Kontrollsystem – celý oddíl přímého měření",
+        "en": "Reifendruck-Kontrollsystem – complete direct-monitoring section",
+        "de": "Reifendruck-Kontrollsystem – vollständiger Abschnitt der direkten Überwachung"
+      },
+      "printed_pages": [
+        362,
+        363,
+        364
+      ],
+      "source_sections": [],
+      "precise_boundary": "Od nadpisu Reifendruck-Kontrollsystem po konec Funktionsstörungen; končí před Reifen mit Notlaufeigenschaften. Zahrnuje tlaky/teploty a jejich barvy či pomlčky, nízký a kritický tlak, výměnu kol, uložení a učení, TPMS a blikání s trvalým svícením. Nepřímá Reifendruck-Kontrollanzeige není zahrnuta.",
+      "precise_boundary_i18n": {
+        "cs": "Od nadpisu Reifendruck-Kontrollsystem po konec Funktionsstörungen; končí před Reifen mit Notlaufeigenschaften. Zahrnuje tlaky/teploty a jejich barvy či pomlčky, nízký a kritický tlak, výměnu kol, uložení a učení, TPMS a blikání s trvalým svícením. Nepřímá Reifendruck-Kontrollanzeige není zahrnuta.",
+        "en": "From Reifendruck-Kontrollsystem heading through Funktionsstörungen; ends before Reifen mit Notlaufeigenschaften. Includes pressure/temperature values and colours/dashes, low and critical pressure, wheel changes, storage/learning, TPMS and flashing followed by steady light. Indirect Reifendruck-Kontrollanzeige is excluded.",
+        "de": "Vom Titel Reifendruck-Kontrollsystem bis Ende Funktionsstörungen; Ende vor Reifen mit Notlaufeigenschaften. Einschließlich Druck-/Temperaturwerten und Farben/Strichen, Druckverlust/Panne, Radwechsel, Speichern/Anlernen, TPMS sowie Blinken mit anschließendem Dauerleuchten. Indirekte Reifendruck-Kontrollanzeige nicht enthalten."
+      },
+      "comparison_complete": true,
+      "website_complete": true,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "Pneumatika – nízký tlak",
+            "en": "Tyre – low pressure",
+            "de": "Reifen – Druckverlust"
+          },
+          "catalogue_ids": [
+            "audi-direct-pressure-low"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "Pneumatika a hlášení Reifenpanne! – kritický tlak",
+            "en": "Tyre and Reifenpanne! message – critical pressure",
+            "de": "Reifen und Meldung Reifenpanne! – kritischer Druck"
+          },
+          "catalogue_ids": [
+            "audi-direct-pressure-critical"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "Pneumatika a Radwechsel erkannt – změna kol",
+            "en": "Tyre and Radwechsel erkannt – wheel change",
+            "de": "Reifen und Radwechsel erkannt – Rädertausch"
+          },
+          "catalogue_ids": [
+            "audi-direct-wheel-change"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "TPMS a přibližně minuta blikání pneumatiky, poté svítí – systémová porucha",
+            "en": "TPMS and tyre flashing about one minute then steady – system malfunction",
+            "de": "TPMS und etwa einminütiges Reifenblinken, dann Dauerleuchten – Systemstörung"
+          },
+          "catalogue_ids": [
+            "audi-tpms-fault"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "Číselné hodnoty zelené/žluté/červené a pomlčky – vysvětlené varianty zobrazení, ne další unikátní ikony",
+            "en": "Green/amber/red numerical values and dashes – explained display variants, not additional unique icons",
+            "de": "Grüne/gelbe/rote Zahlen und Striche – erklärte Anzeigevarianten, keine zusätzlichen Einzelpiktogramme"
+          },
+          "catalogue_ids": [
+            "audi-direct-pressure-low"
+          ],
+          "web_status": "present"
+        }
+      ],
+      "remaining": {
+        "cs": "V tomto přesně vymezeném oddílu jsou porovnané ovládací značka, signalizační stavy a textová hlášení. Jiné části pohonu, parkování nebo přístrojového panelu nejsou tímto dokončené.",
+        "en": "The control label, indicator states and textual messages within this precisely bounded section are compared. Other powertrain, parking or instrument-cluster sections are not thereby complete.",
+        "de": "Bedienkennzeichnung, Signalzustände und Textmeldungen dieses genau begrenzten Abschnitts sind verglichen. Andere Antriebs-, Park- oder Kombiinstrumentabschnitte sind damit nicht abgeschlossen."
+      }
+    },
+    {
+      "id": "audi-a4-2024-07-de-full-klimaanlage-source-comparison",
+      "manual": "audi-a4-2024-07-de",
+      "area": "climate",
+      "title": {
+        "cs": "Klimaanlage – celý samostatný oddíl včetně obrázků a nastavení",
+        "en": "Klimaanlage – complete standalone section including figures/settings",
+        "de": "Klimaanlage – vollständiger eigenständiger Abschnitt samt Abbildungen/Einstellungen"
+      },
+      "printed_pages": [
+        104,
+        105,
+        106,
+        107,
+        108,
+        109
+      ],
+      "source_sections": [],
+      "precise_boundary": "Klimaanlage through Weitere Einstellungen, ending before Lenkradheizung on p109; figures97–99.",
+      "precise_boundary_i18n": {
+        "cs": "Celý samostatný oddíl Klimaanlage na uvedených stranách, končí před Lenkradheizung. Nezahrnuje samostatné nezávislé topení ani celé Warm und kalt. Texty, vybavenostní odlišnosti, všechna uvedená ovládání a schémata porovnány; chybějící obrazové položky jsou vypsané jednotlivě.",
+        "en": "Complete standalone Klimaanlage section on the cited pages, ending before Lenkradheizung. Excludes separate auxiliary-heating section and full Warm und kalt. Text, equipment differences, listed controls and figures compared; missing pictorial entries individually identified.",
+        "de": "Vollständiger eigenständiger Abschnitt Klimaanlage auf genannten Seiten, Ende vor Lenkradheizung. Separate Standheizung und ganz Warm und kalt ausgeschlossen. Texte, Ausstattungsunterschiede, genannte Bedienungen/Abbildungen verglichen; fehlende Bildeinträge einzeln erfasst."
+      },
+      "comparison_complete": true,
+      "website_complete": false,
+      "evidence_file": "audi-climate-source-comparison.json",
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "AUTO – automatická regulace",
+            "en": "AUTO – automatic regulation",
+            "de": "AUTO – Automatikbetrieb"
+          },
+          "catalogue_ids": [
+            "audi-climate-auto-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "A/C – chladicí režim",
+            "en": "A/C – cooling mode",
+            "de": "A/C – Kühlbetrieb"
+          },
+          "catalogue_ids": [
+            "audi-ac-cooling-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "OFF – vypnutí celého systému",
+            "en": "OFF – whole-system shutdown",
+            "de": "OFF – gesamte Anlage ausschalten"
+          },
+          "catalogue_ids": [
+            "audi-a4-climate-off-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "A/C MAX – maximální chlazení",
+            "en": "A/C MAX – maximum cooling",
+            "de": "A/C MAX – maximale Kühlung"
+          },
+          "catalogue_ids": [
+            "audi-a4-ac-max-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "A/C eco / ECO – úsporné chlazení",
+            "en": "A/C eco / ECO – energy-saving cooling",
+            "de": "A/C eco / ECO – energiesparender Kühlbetrieb"
+          },
+          "catalogue_ids": [
+            "audi-a4-ac-eco-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "SYNC – synchronizace zón",
+            "en": "SYNC – synchronise zones",
+            "de": "SYNC – Zonen synchronisieren"
+          },
+          "catalogue_ids": [
+            "audi-a8-climate-sync-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "MAX – odmlžení a odmrazení",
+            "en": "MAX – demisting and defrosting",
+            "de": "MAX – Entfeuchten und Entfrosten"
+          },
+          "catalogue_ids": [
+            "terramar-front-max"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "REAR s obdélníkem a topnými čarami – zadní sklo",
+            "en": "REAR with rectangle/heating lines – rear glass",
+            "de": "REAR mit Rechteck/Heizlinien – Heckscheibe"
+          },
+          "catalogue_ids": [
+            "terramar-rear-heating"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "Teplota – barevné značky nebo plus/minus",
+            "en": "Temperature – colour markers or plus/minus",
+            "de": "Temperatur – Farbmarkierungen oder Plus/Minus"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Ventilátor a jeho regulace",
+            "en": "Fan and level adjustment",
+            "de": "Gebläse und Stufenbedienung"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Rozdělení vzduchu – jednotlivé směry",
+            "en": "Air distribution – individual directions",
+            "de": "Luftverteilung – einzelne Richtungen"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Vyhřívání čelního skla – samostatná funkce a blikající LED",
+            "en": "Windscreen heating – separate function and flashing LED",
+            "de": "Frontscheibenheizung – eigene Funktion und blinkende LED"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Vůz se šipkou – ruční recirkulace",
+            "en": "Car with arrow – manual recirculation",
+            "de": "Fahrzeug mit Pfeil – manueller Umluftbetrieb"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Automatická recirkulace / AUTO se symbolem vozu",
+            "en": "Automatic recirculation / AUTO car symbol",
+            "de": "Umluftautomatik / AUTO-Fahrzeugsymbol"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Sedadlo s topnými čarami – vyhřívání",
+            "en": "Seat with heating lines – heating",
+            "de": "Sitz mit Heizlinien – Sitzheizung"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Sedadlo s ventilátorem – ventilace",
+            "en": "Seat with fan – ventilation",
+            "de": "Sitz mit Gebläse – Sitzlüftung"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Zbytkové teplo – stejný ovladač v jiném kontextu",
+            "en": "Residual heat – shared control in another context",
+            "de": "Restwärme – gleiche Bedienung in anderem Kontext"
+          },
+          "catalogue_ids": [
+            "audi-a4-residual-heat-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "A/C ON – zapnuté chlazení",
+            "en": "A/C ON – cooling on",
+            "de": "A/C ON – Kühlbetrieb an"
+          },
+          "catalogue_ids": [
+            "audi-a4-ac-on-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "A/C OFF – vypnuté jen chlazení",
+            "en": "A/C OFF – cooling only off",
+            "de": "A/C OFF – nur Kühlbetrieb aus"
+          },
+          "catalogue_ids": [
+            "audi-a4-ac-off-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "SET REAR – zadní nastavení z kokpitu",
+            "en": "SET REAR – rear settings from cockpit",
+            "de": "SET REAR – Fondeinstellung im Cockpit"
+          },
+          "catalogue_ids": [
+            "audi-a4-set-rear-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "3-ZONE – konec synchronizace",
+            "en": "3-ZONE – synchronisation ended",
+            "de": "3-ZONE – Synchronisation beendet"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Plus/minus vzadu a zadní vyhřívání sedadel",
+            "en": "Rear plus/minus and rear seat heating",
+            "de": "Plus/Minus hinten und Fondsitzheizung"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "LO – krajní nastavení",
+            "en": "LO – extreme setting",
+            "de": "LO – Endstellung"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "HI – krajní nastavení",
+            "en": "HI – extreme setting",
+            "de": "HI – Endstellung"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        }
+      ],
+      "remaining": {
+        "cs": "Zdrojové porovnání tohoto oddílu je uzavřené, nikoli jeho úplné obrazové zveřejnění. Chybějí přesné samostatně použitelné grafiky uvedených výdechů, ventilátoru, recirkulace, sedadel a dalších prvků; konkrétní řádky a důvody obsahuje evidence.",
+        "en": "Source comparison of this section is closed, not complete pictorial publication. Exact reusable graphics for the listed vents, fan, recirculation, seats and other elements remain; evidence contains individual rows and reasons.",
+        "de": "Quellenvergleich dieses Abschnitts abgeschlossen, nicht vollständige Bildveröffentlichung. Genaue nachnutzbare Grafiken genannter Düsen, Gebläse, Umluft, Sitze und weiterer Elemente fehlen; Einzelzeilen/Gründe in Evidenz."
+      }
+    },
+    {
+      "id": "audi-a8-2025-06-de-full-klimaanlage-source-comparison",
+      "manual": "audi-a8-2025-06-de",
+      "area": "climate",
+      "title": {
+        "cs": "Klimaanlage – celý samostatný oddíl včetně obrázků a nastavení",
+        "en": "Klimaanlage – complete standalone section including figures/settings",
+        "de": "Klimaanlage – vollständiger eigenständiger Abschnitt samt Abbildungen/Einstellungen"
+      },
+      "printed_pages": [
+        113,
+        114,
+        115,
+        116,
+        117,
+        118
+      ],
+      "source_sections": [],
+      "precise_boundary": "Klimaanlage through Luftqualitätsanzeige, ending before Lenkradheizung on p118; figures91–93.",
+      "precise_boundary_i18n": {
+        "cs": "Celý samostatný oddíl Klimaanlage na uvedených stranách, končí před Lenkradheizung. Nezahrnuje samostatné nezávislé topení ani celé Warm und kalt. Texty, vybavenostní odlišnosti, všechna uvedená ovládání a schémata porovnány; chybějící obrazové položky jsou vypsané jednotlivě.",
+        "en": "Complete standalone Klimaanlage section on the cited pages, ending before Lenkradheizung. Excludes separate auxiliary-heating section and full Warm und kalt. Text, equipment differences, listed controls and figures compared; missing pictorial entries individually identified.",
+        "de": "Vollständiger eigenständiger Abschnitt Klimaanlage auf genannten Seiten, Ende vor Lenkradheizung. Separate Standheizung und ganz Warm und kalt ausgeschlossen. Texte, Ausstattungsunterschiede, genannte Bedienungen/Abbildungen verglichen; fehlende Bildeinträge einzeln erfasst."
+      },
+      "comparison_complete": true,
+      "website_complete": false,
+      "evidence_file": "audi-climate-source-comparison.json",
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "AUTO – automatická regulace",
+            "en": "AUTO – automatic regulation",
+            "de": "AUTO – Automatikbetrieb"
+          },
+          "catalogue_ids": [
+            "audi-climate-auto-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "A/C – chladicí režim",
+            "en": "A/C – cooling mode",
+            "de": "A/C – Kühlbetrieb"
+          },
+          "catalogue_ids": [
+            "audi-ac-cooling-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "OFF – vypnutí celého systému",
+            "en": "OFF – whole-system shutdown",
+            "de": "OFF – gesamte Anlage ausschalten"
+          },
+          "catalogue_ids": [
+            "audi-a8-climate-off-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "A/C MAX – maximální chlazení",
+            "en": "A/C MAX – maximum cooling",
+            "de": "A/C MAX – maximale Kühlung"
+          },
+          "catalogue_ids": [
+            "audi-a8-ac-max-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "A/C eco / ECO – úsporné chlazení",
+            "en": "A/C eco / ECO – energy-saving cooling",
+            "de": "A/C eco / ECO – energiesparender Kühlbetrieb"
+          },
+          "catalogue_ids": [
+            "audi-a8-ac-eco-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "SYNC – synchronizace zón",
+            "en": "SYNC – synchronise zones",
+            "de": "SYNC – Zonen synchronisieren"
+          },
+          "catalogue_ids": [
+            "audi-a8-climate-sync-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "MAX – odmlžení a odmrazení",
+            "en": "MAX – demisting and defrosting",
+            "de": "MAX – Entfeuchten und Entfrosten"
+          },
+          "catalogue_ids": [
+            "terramar-front-max"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "REAR s obdélníkem a topnými čarami – zadní sklo",
+            "en": "REAR with rectangle/heating lines – rear glass",
+            "de": "REAR mit Rechteck/Heizlinien – Heckscheibe"
+          },
+          "catalogue_ids": [
+            "terramar-rear-heating"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "Teplota – barevné značky nebo plus/minus",
+            "en": "Temperature – colour markers or plus/minus",
+            "de": "Temperatur – Farbmarkierungen oder Plus/Minus"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Ventilátor a jeho regulace",
+            "en": "Fan and level adjustment",
+            "de": "Gebläse und Stufenbedienung"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Rozdělení vzduchu – jednotlivé směry",
+            "en": "Air distribution – individual directions",
+            "de": "Luftverteilung – einzelne Richtungen"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Vyhřívání čelního skla – samostatná funkce a blikající LED",
+            "en": "Windscreen heating – separate function and flashing LED",
+            "de": "Frontscheibenheizung – eigene Funktion und blinkende LED"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Vůz se šipkou – ruční recirkulace",
+            "en": "Car with arrow – manual recirculation",
+            "de": "Fahrzeug mit Pfeil – manueller Umluftbetrieb"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Automatická recirkulace / AUTO se symbolem vozu",
+            "en": "Automatic recirculation / AUTO car symbol",
+            "de": "Umluftautomatik / AUTO-Fahrzeugsymbol"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Sedadlo s topnými čarami – vyhřívání",
+            "en": "Seat with heating lines – heating",
+            "de": "Sitz mit Heizlinien – Sitzheizung"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Sedadlo s ventilátorem – ventilace",
+            "en": "Seat with fan – ventilation",
+            "de": "Sitz mit Gebläse – Sitzlüftung"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Zbytkové teplo – stejný ovladač v jiném kontextu",
+            "en": "Residual heat – shared control in another context",
+            "de": "Restwärme – gleiche Bedienung in anderem Kontext"
+          },
+          "catalogue_ids": [
+            "audi-a8-residual-heat-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "REAR – zpřístupnění zadního ovládání",
+            "en": "REAR – rear-control access",
+            "de": "REAR – Fondbedienung freischalten"
+          },
+          "catalogue_ids": [
+            "audi-a8-rear-climate-control"
+          ],
+          "web_status": "present-in-model-filter"
+        },
+        {
+          "source_state": {
+            "cs": "Vyhřívání chodidel",
+            "en": "Foot-sole heating",
+            "de": "Fußsohlenheizung"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Dětská pojistka Rear Seat Remote",
+            "en": "Rear Seat Remote child lock",
+            "de": "Kindersicherung Rear Seat Remote"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Ionizace",
+            "en": "Ionisation",
+            "de": "Ionisator"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Aromatizace a její nastavení",
+            "en": "Fragrance and settings",
+            "de": "Aromatisierung und Einstellungen"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Výdechy – škála otevření a zavření",
+            "en": "Vents – opening and closing scale",
+            "de": "Düsen – Öffnungs-/Schließskala"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Ozubené kolo – další klimatická nastavení",
+            "en": "Gear – further climate settings",
+            "de": "Zahnrad – weitere Klimaeinstellungen"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Kvalita vzduchu – AQI nebo schematická filtrace",
+            "en": "Air quality – AQI or schematic filtration",
+            "de": "Luftqualität – AQI oder schematische Filterung"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "LOW – krajní nastavení",
+            "en": "LOW – extreme setting",
+            "de": "LOW – Endstellung"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "HIGH – krajní nastavení",
+            "en": "HIGH – extreme setting",
+            "de": "HIGH – Endstellung"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Šipka k čelnímu sklu",
+            "en": "Arrow towards windscreen",
+            "de": "Pfeil zur Frontscheibe"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Směrový symbol k horní části těla",
+            "en": "Upper-body direction symbol",
+            "de": "Richtungssymbol zum Oberkörper"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        },
+        {
+          "source_state": {
+            "cs": "Směrový symbol k nohám",
+            "en": "Footwell direction symbol",
+            "de": "Richtungssymbol zum Fußraum"
+          },
+          "catalogue_ids": [],
+          "web_status": "exact-reusable-graphic-or-display-variant-pending"
+        }
+      ],
+      "remaining": {
+        "cs": "Zdrojové porovnání tohoto oddílu je uzavřené, nikoli jeho úplné obrazové zveřejnění. Chybějí přesné samostatně použitelné grafiky uvedených výdechů, ventilátoru, recirkulace, sedadel a dalších prvků; konkrétní řádky a důvody obsahuje evidence.",
+        "en": "Source comparison of this section is closed, not complete pictorial publication. Exact reusable graphics for the listed vents, fan, recirculation, seats and other elements remain; evidence contains individual rows and reasons.",
+        "de": "Quellenvergleich dieses Abschnitts abgeschlossen, nicht vollständige Bildveröffentlichung. Genaue nachnutzbare Grafiken genannter Düsen, Gebläse, Umluft, Sitze und weiterer Elemente fehlen; Einzelzeilen/Gründe in Evidenz."
+      }
+    },
+    {
+      "id": "a8-rear-climate",
+      "manual": "audi-a8-2025-06-de",
+      "area": "climate",
+      "title": {
+        "cs": "REAR – zadní klimatizace",
+        "en": "REAR – rear climate control",
+        "de": "REAR – Klimatisierung hinten"
+      },
+      "printed_pages": [
+        114
+      ],
+      "source_sections": [],
+      "precise_boundary": "REAR – zadní klimatizace",
+      "precise_boundary_i18n": {
+        "cs": "Pouze celý konkrétní odstavec označený REAR – zadní klimatizace. Ostatní ovladače, topení, recirkulace, sedadla a celá kapitola Klimaanlage nejsou tímto dokončené.",
+        "en": "Only the entire specific labelled paragraph REAR – rear climate control. Other controls, heating, recirculation, seats and the whole Klimaanlage chapter are not completed by this review.",
+        "de": "Nur der gesamte konkret bezeichnete Absatz REAR – Klimatisierung hinten. Andere Bedienungen, Heizung, Umluft, Sitze und das ganze Kapitel Klimaanlage sind damit nicht abgeschlossen."
+      },
+      "comparison_complete": true,
+      "website_complete": true,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "REAR – ovládání klimatizace vzadu",
+            "en": "REAR – rear climate controls",
+            "de": "REAR – Klimabedienung hinten"
+          },
+          "catalogue_ids": [
+            "audi-a8-rear-climate-control"
+          ],
+          "web_status": "present"
+        }
+      ],
+      "remaining": {
+        "cs": "V tomto přesně vymezeném pododdílu nic nezůstává otevřené. Bílé nápisy jsou ovládací označení; aktivaci zobrazuje barevný proužek či LED podle návodu.",
+        "en": "Nothing remains open in this precisely bounded subsection. White inscriptions label controls; activation is indicated by a coloured bar or LED according to the manual.",
+        "de": "In diesem genau begrenzten Unterabschnitt nichts offen. Weiße Aufschriften kennzeichnen Bedienungen; Aktivierung zeigt laut Anleitung ein farbiger Balken bzw. eine LED."
+      }
+    },
+    {
+      "id": "a8-climate-sync",
+      "manual": "audi-a8-2025-06-de",
+      "area": "climate",
+      "title": {
+        "cs": "SYNC – synchronizace",
+        "en": "SYNC – synchronisation",
+        "de": "SYNC – Synchronisation"
+      },
+      "printed_pages": [
+        114
+      ],
+      "source_sections": [],
+      "precise_boundary": "SYNC – synchronizace",
+      "precise_boundary_i18n": {
+        "cs": "Pouze celý konkrétní odstavec označený SYNC – synchronizace. Ostatní ovladače, topení, recirkulace, sedadla a celá kapitola Klimaanlage nejsou tímto dokončené.",
+        "en": "Only the entire specific labelled paragraph SYNC – synchronisation. Other controls, heating, recirculation, seats and the whole Klimaanlage chapter are not completed by this review.",
+        "de": "Nur der gesamte konkret bezeichnete Absatz SYNC – Synchronisation. Andere Bedienungen, Heizung, Umluft, Sitze und das ganze Kapitel Klimaanlage sind damit nicht abgeschlossen."
+      },
+      "comparison_complete": true,
+      "website_complete": true,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "SYNC – synchronizace klimatických zón",
+            "en": "SYNC – climate-zone synchronisation",
+            "de": "SYNC – Synchronisation der Klimazonen"
+          },
+          "catalogue_ids": [
+            "audi-a8-climate-sync-control"
+          ],
+          "web_status": "present"
+        }
+      ],
+      "remaining": {
+        "cs": "V tomto přesně vymezeném pododdílu nic nezůstává otevřené. Bílé nápisy jsou ovládací označení; aktivaci zobrazuje barevný proužek či LED podle návodu.",
+        "en": "Nothing remains open in this precisely bounded subsection. White inscriptions label controls; activation is indicated by a coloured bar or LED according to the manual.",
+        "de": "In diesem genau begrenzten Unterabschnitt nichts offen. Weiße Aufschriften kennzeichnen Bedienungen; Aktivierung zeigt laut Anleitung ein farbiger Balken bzw. eine LED."
+      }
+    },
+    {
+      "id": "a8-climate-off",
+      "manual": "audi-a8-2025-06-de",
+      "area": "climate",
+      "title": {
+        "cs": "OFF – vypnutí klimatizace",
+        "en": "OFF – climate off",
+        "de": "OFF – Klimaanlage ausschalten"
+      },
+      "printed_pages": [
+        114
+      ],
+      "source_sections": [],
+      "precise_boundary": "OFF – vypnutí klimatizace",
+      "precise_boundary_i18n": {
+        "cs": "Pouze celý konkrétní odstavec označený OFF – vypnutí klimatizace. Ostatní ovladače, topení, recirkulace, sedadla a celá kapitola Klimaanlage nejsou tímto dokončené.",
+        "en": "Only the entire specific labelled paragraph OFF – climate off. Other controls, heating, recirculation, seats and the whole Klimaanlage chapter are not completed by this review.",
+        "de": "Nur der gesamte konkret bezeichnete Absatz OFF – Klimaanlage ausschalten. Andere Bedienungen, Heizung, Umluft, Sitze und das ganze Kapitel Klimaanlage sind damit nicht abgeschlossen."
+      },
+      "comparison_complete": true,
+      "website_complete": true,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "OFF – vypnutí klimatizace Audi A8",
+            "en": "OFF – Audi A8 climate system off",
+            "de": "OFF – Audi-A8-Klimaanlage ausschalten"
+          },
+          "catalogue_ids": [
+            "audi-a8-climate-off-control"
+          ],
+          "web_status": "present"
+        }
+      ],
+      "remaining": {
+        "cs": "V tomto přesně vymezeném pododdílu nic nezůstává otevřené. Bílé nápisy jsou ovládací označení; aktivaci zobrazuje barevný proužek či LED podle návodu.",
+        "en": "Nothing remains open in this precisely bounded subsection. White inscriptions label controls; activation is indicated by a coloured bar or LED according to the manual.",
+        "de": "In diesem genau begrenzten Unterabschnitt nichts offen. Weiße Aufschriften kennzeichnen Bedienungen; Aktivierung zeigt laut Anleitung ein farbiger Balken bzw. eine LED."
+      }
+    },
+    {
+      "id": "a8-cooling-control-paragraph",
+      "manual": "audi-a8-2025-06-de",
+      "area": "climate",
+      "title": {
+        "cs": "Kühlbetrieb – celý pododdíl A/C, A/C MAX a A/C ECO",
+        "en": "Kühlbetrieb – complete A/C, A/C MAX and A/C ECO subsection",
+        "de": "Kühlbetrieb – vollständiger Unterabschnitt A/C, A/C MAX und A/C ECO"
+      },
+      "printed_pages": [
+        114,
+        115
+      ],
+      "source_sections": [],
+      "precise_boundary": "Kühlbetrieb – celý pododdíl A/C, A/C MAX a A/C ECO",
+      "precise_boundary_i18n": {
+        "cs": "Pouze celý konkrétní odstavec označený Kühlbetrieb – celý pododdíl A/C, A/C MAX a A/C ECO. Ostatní ovladače, topení, recirkulace, sedadla a celá kapitola Klimaanlage nejsou tímto dokončené.",
+        "en": "Only the entire specific labelled paragraph Kühlbetrieb – complete A/C, A/C MAX and A/C ECO subsection. Other controls, heating, recirculation, seats and the whole Klimaanlage chapter are not completed by this review.",
+        "de": "Nur der gesamte konkret bezeichnete Absatz Kühlbetrieb – vollständiger Unterabschnitt A/C, A/C MAX und A/C ECO. Andere Bedienungen, Heizung, Umluft, Sitze und das ganze Kapitel Klimaanlage sind damit nicht abgeschlossen."
+      },
+      "comparison_complete": true,
+      "website_complete": true,
+      "source_rows": [
+        {
+          "source_state": {
+            "cs": "A/C – ovládání chlazení klimatizace",
+            "en": "A/C – air-conditioning cooling control",
+            "de": "A/C – Bedienung des Klimakühlbetriebs"
+          },
+          "catalogue_ids": [
+            "audi-ac-cooling-control"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "A/C MAX – maximální chlazení",
+            "en": "A/C MAX – maximum cooling",
+            "de": "A/C MAX – maximale Kühlung"
+          },
+          "catalogue_ids": [
+            "audi-a8-ac-max-control"
+          ],
+          "web_status": "present"
+        },
+        {
+          "source_state": {
+            "cs": "A/C ECO – úsporný režim klimatizace",
+            "en": "A/C ECO – energy-saving climate mode",
+            "de": "A/C ECO – Energiesparmodus der Klimaanlage"
+          },
+          "catalogue_ids": [
+            "audi-a8-ac-eco-control"
+          ],
+          "web_status": "present"
+        }
+      ],
+      "remaining": {
+        "cs": "V tomto přesně vymezeném pododdílu nic nezůstává otevřené. Bílé nápisy jsou ovládací označení; aktivaci zobrazuje barevný proužek či LED podle návodu.",
+        "en": "Nothing remains open in this precisely bounded subsection. White inscriptions label controls; activation is indicated by a coloured bar or LED according to the manual.",
+        "de": "In diesem genau begrenzten Unterabschnitt nichts offen. Weiße Aufschriften kennzeichnen Bedienungen; Aktivierung zeigt laut Anleitung ein farbiger Balken bzw. eine LED."
       }
     }
   ],
@@ -8931,11 +10155,16 @@
             "en": "Overview and instrument cluster",
             "de": "Übersicht und Kombiinstrument"
           },
-          "status": "selected-items-compared-not-full-chapter",
+          "status": "bounded-subsections-compared-rest-open",
           "whole_chapter_complete": false,
           "verified_catalogue_ids": [
             "abs-fault",
             "audi-12v-system-red",
+            "audi-ac-cooling-control",
+            "audi-climate-auto-control",
+            "audi-direct-pressure-critical",
+            "audi-direct-pressure-low",
+            "audi-direct-wheel-change",
             "audi-fatigue-break-recommended",
             "audi-fatigue-break-required",
             "audi-fatigue-unavailable",
@@ -8943,7 +10172,17 @@
             "audi-high-beam-auto-enabled",
             "audi-high-beam-auto-on",
             "audi-high-beam-auto-unavailable",
+            "audi-hold-green-p",
+            "audi-q4-lim-active",
+            "audi-q4-lim-overridden",
+            "audi-q4-turn-left",
+            "audi-q4-turn-right",
+            "audi-start-stop-green",
+            "audi-start-stop-no-stop",
+            "audi-tpms-fault",
             "brake-fault",
+            "bulb-fault",
+            "cruise-active",
             "esc-fault",
             "esc-off-inscription",
             "esc-regulating",
@@ -8960,18 +10199,31 @@
             65,
             66,
             82,
+            105,
+            106,
+            124,
+            125,
+            126,
             127,
             128,
+            129,
             141,
             144,
             145,
             163,
             164,
+            168,
+            169,
             287,
-            293
+            293,
+            307,
+            308,
+            309
           ],
           "reviewed_html_sections": [],
-          "completed_bounded_subsections": [],
+          "completed_bounded_subsections": [
+            "audi-a4-2024-07-de-direct-tyre-system"
+          ],
           "remaining": {
             "cs": "Zbývá porovnat zbytek této kapitoly v daném vydání, včetně všech ovládacích a stavových variant. Dostupný návod není překážkou; kontrola je rozpracovaná.",
             "en": "The rest of this chapter in this edition remains to be compared, including every control and state variant. The available manual is not an access obstacle; review is in progress.",
@@ -8990,15 +10242,21 @@
           "verified_catalogue_ids": [
             "audi-fatigue-break-recommended",
             "audi-fatigue-break-required",
-            "audi-fatigue-unavailable"
+            "audi-fatigue-unavailable",
+            "audi-q4-lim-active",
+            "audi-q4-lim-overridden",
+            "cruise-active"
           ],
           "reviewed_printed_pages": [
             163,
-            164
+            164,
+            168,
+            169
           ],
           "reviewed_html_sections": [],
           "completed_bounded_subsections": [
-            "audi-a4-2024-07-de-fatigue-messages"
+            "audi-a4-2024-07-de-fatigue-messages",
+            "audi-a4-2024-07-de-speed-signal-list"
           ],
           "remaining": {
             "cs": "Zbývá porovnat zbytek této kapitoly v daném vydání, včetně všech ovládacích a stavových variant. Dostupný návod není překážkou; kontrola je rozpracovaná.",
@@ -9016,10 +10274,12 @@
           "status": "selected-items-compared-not-full-chapter",
           "whole_chapter_complete": false,
           "verified_catalogue_ids": [
+            "audi-hold-green-p",
             "parking-applied"
           ],
           "reviewed_printed_pages": [
-            128
+            128,
+            129
           ],
           "reviewed_html_sections": [],
           "completed_bounded_subsections": [],
@@ -9043,6 +10303,9 @@
             "audi-high-beam-auto-enabled",
             "audi-high-beam-auto-on",
             "audi-high-beam-auto-unavailable",
+            "audi-q4-turn-left",
+            "audi-q4-turn-right",
+            "bulb-fault",
             "high-beam"
           ],
           "reviewed_printed_pages": [
@@ -9065,18 +10328,25 @@
             "en": "Powertrain and electrical system",
             "de": "Antrieb und Bordnetz"
           },
-          "status": "selected-items-compared-not-full-chapter",
+          "status": "bounded-subsections-compared-rest-open",
           "whole_chapter_complete": false,
           "verified_catalogue_ids": [
             "audi-12v-system-red",
+            "audi-start-stop-green",
+            "audi-start-stop-no-stop",
             "oil-pressure"
           ],
           "reviewed_printed_pages": [
+            124,
+            125,
+            126,
             287,
             293
           ],
           "reviewed_html_sections": [],
-          "completed_bounded_subsections": [],
+          "completed_bounded_subsections": [
+            "audi-a4-2024-07-de-start-stop-section"
+          ],
           "remaining": {
             "cs": "Zbývá porovnat zbytek této kapitoly v daném vydání, včetně všech ovládacích a stavových variant. Dostupný návod není překážkou; kontrola je rozpracovaná.",
             "en": "The rest of this chapter in this edition remains to be compared, including every control and state variant. The available manual is not an access obstacle; review is in progress.",
@@ -9140,7 +10410,8 @@
           ],
           "reviewed_html_sections": [],
           "completed_bounded_subsections": [
-            "audi-a4-2024-07-de-climate-auto"
+            "audi-a4-2024-07-de-climate-auto",
+            "audi-a4-2024-07-de-full-klimaanlage-source-comparison"
           ],
           "remaining": {
             "cs": "Zbývá porovnat zbytek této kapitoly v daném vydání, včetně všech ovládacích a stavových variant. Dostupný návod není překážkou; kontrola je rozpracovaná.",
@@ -9167,11 +10438,16 @@
             "en": "Overview and instrument cluster",
             "de": "Übersicht und Kombiinstrument"
           },
-          "status": "selected-items-compared-not-full-chapter",
+          "status": "bounded-subsections-compared-rest-open",
           "whole_chapter_complete": false,
           "verified_catalogue_ids": [
             "abs-fault",
             "audi-12v-system-red",
+            "audi-ac-cooling-control",
+            "audi-climate-auto-control",
+            "audi-direct-pressure-critical",
+            "audi-direct-pressure-low",
+            "audi-direct-wheel-change",
             "audi-fatigue-break-recommended",
             "audi-fatigue-break-required",
             "audi-fatigue-unavailable",
@@ -9179,7 +10455,17 @@
             "audi-high-beam-auto-enabled",
             "audi-high-beam-auto-on",
             "audi-high-beam-auto-unavailable",
+            "audi-hold-green-p",
+            "audi-q4-lim-active",
+            "audi-q4-lim-overridden",
+            "audi-q4-turn-left",
+            "audi-q4-turn-right",
+            "audi-start-stop-green",
+            "audi-start-stop-no-stop",
+            "audi-tpms-fault",
             "brake-fault",
+            "bulb-fault",
+            "cruise-active",
             "esc-fault",
             "esc-off-inscription",
             "esc-regulating",
@@ -9196,18 +10482,31 @@
             72,
             74,
             94,
+            113,
+            114,
+            137,
+            138,
             140,
+            141,
             148,
             150,
             151,
             190,
             191,
             192,
+            197,
+            198,
+            199,
             342,
-            348
+            348,
+            362,
+            363,
+            364
           ],
           "reviewed_html_sections": [],
-          "completed_bounded_subsections": [],
+          "completed_bounded_subsections": [
+            "audi-a8-2025-06-de-direct-tyre-system"
+          ],
           "remaining": {
             "cs": "Zbývá porovnat zbytek této kapitoly v daném vydání, včetně všech ovládacích a stavových variant. Dostupný návod není překážkou; kontrola je rozpracovaná.",
             "en": "The rest of this chapter in this edition remains to be compared, including every control and state variant. The available manual is not an access obstacle; review is in progress.",
@@ -9226,16 +10525,23 @@
           "verified_catalogue_ids": [
             "audi-fatigue-break-recommended",
             "audi-fatigue-break-required",
-            "audi-fatigue-unavailable"
+            "audi-fatigue-unavailable",
+            "audi-q4-lim-active",
+            "audi-q4-lim-overridden",
+            "cruise-active"
           ],
           "reviewed_printed_pages": [
             190,
             191,
-            192
+            192,
+            197,
+            198,
+            199
           ],
           "reviewed_html_sections": [],
           "completed_bounded_subsections": [
-            "audi-a8-2025-06-de-fatigue-messages"
+            "audi-a8-2025-06-de-fatigue-messages",
+            "audi-a8-2025-06-de-speed-signal-list"
           ],
           "remaining": {
             "cs": "Zbývá porovnat zbytek této kapitoly v daném vydání, včetně všech ovládacích a stavových variant. Dostupný návod není překážkou; kontrola je rozpracovaná.",
@@ -9253,10 +10559,12 @@
           "status": "selected-items-compared-not-full-chapter",
           "whole_chapter_complete": false,
           "verified_catalogue_ids": [
+            "audi-hold-green-p",
             "parking-applied"
           ],
           "reviewed_printed_pages": [
-            140
+            140,
+            141
           ],
           "reviewed_html_sections": [],
           "completed_bounded_subsections": [],
@@ -9280,6 +10588,9 @@
             "audi-high-beam-auto-enabled",
             "audi-high-beam-auto-on",
             "audi-high-beam-auto-unavailable",
+            "audi-q4-turn-left",
+            "audi-q4-turn-right",
+            "bulb-fault",
             "high-beam"
           ],
           "reviewed_printed_pages": [
@@ -9302,18 +10613,24 @@
             "en": "Powertrain and electrical system",
             "de": "Antrieb und Bordnetz"
           },
-          "status": "selected-items-compared-not-full-chapter",
+          "status": "bounded-subsections-compared-rest-open",
           "whole_chapter_complete": false,
           "verified_catalogue_ids": [
             "audi-12v-system-red",
+            "audi-start-stop-green",
+            "audi-start-stop-no-stop",
             "oil-pressure"
           ],
           "reviewed_printed_pages": [
+            137,
+            138,
             342,
             348
           ],
           "reviewed_html_sections": [],
-          "completed_bounded_subsections": [],
+          "completed_bounded_subsections": [
+            "audi-a8-2025-06-de-start-stop-section"
+          ],
           "remaining": {
             "cs": "Zbývá porovnat zbytek této kapitoly v daném vydání, včetně všech ovládacích a stavových variant. Dostupný návod není překážkou; kontrola je rozpracovaná.",
             "en": "The rest of this chapter in this edition remains to be compared, including every control and state variant. The available manual is not an access obstacle; review is in progress.",
@@ -9368,6 +10685,12 @@
           "status": "bounded-subsections-compared-rest-open",
           "whole_chapter_complete": false,
           "verified_catalogue_ids": [
+            "audi-a8-ac-eco-control",
+            "audi-a8-ac-max-control",
+            "audi-a8-climate-off-control",
+            "audi-a8-climate-sync-control",
+            "audi-a8-rear-climate-control",
+            "audi-a8-residual-heat-control",
             "audi-ac-cooling-control",
             "audi-climate-auto-control"
           ],
@@ -9377,7 +10700,12 @@
           ],
           "reviewed_html_sections": [],
           "completed_bounded_subsections": [
-            "audi-a8-2025-06-de-climate-auto"
+            "audi-a8-2025-06-de-climate-auto",
+            "audi-a8-2025-06-de-full-klimaanlage-source-comparison",
+            "a8-rear-climate",
+            "a8-climate-sync",
+            "a8-climate-off",
+            "a8-cooling-control-paragraph"
           ],
           "remaining": {
             "cs": "Zbývá porovnat zbytek této kapitoly v daném vydání, včetně všech ovládacích a stavových variant. Dostupný návod není překážkou; kontrola je rozpracovaná.",

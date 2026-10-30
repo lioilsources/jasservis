@@ -7147,6 +7147,59 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            66
+          ],
+          "pdf_pages": [
+            68
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              12
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            74
+          ],
+          "pdf_pages": [
+            76
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              13
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -13302,6 +13355,65 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            168,
+            169
+          ],
+          "pdf_pages": [
+            170,
+            171
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              168
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            197,
+            198,
+            199
+          ],
+          "pdf_pages": [
+            199,
+            200,
+            201
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              197
+            ],
+            "checked": "2026-10-30"
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -15601,6 +15713,77 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            307,
+            308,
+            309
+          ],
+          "pdf_pages": [
+            309,
+            310,
+            311
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          },
+          "model_note": {
+            "cs": "Přímá výbava: zpráva TPMS spolu s přibližně minutovým blikáním symbolu pneumatiky a následným trvalým svícením označuje systémovou poruchu. Příčinou mohou být mimo jiné nekompatibilní snímače, rádiové rušení či sněhové řetězy; symbol neurčuje vadný díl.",
+            "en": "Direct-system equipment: a TPMS message together with the tyre symbol flashing for about one minute then staying on indicates a system malfunction. Causes can include incompatible sensors, radio interference or snow chains; the icon does not identify a failed part.",
+            "de": "Direkte Ausstattung: TPMS-Meldung zusammen mit etwa einminütigem Blinken des Reifensymbols und anschließendem Dauerleuchten kennzeichnet eine Systemstörung. Unter anderem können inkompatible Sensoren, Funkstörungen oder Schneeketten ursächlich sein; kein Nachweis eines bestimmten defekten Teils."
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            362,
+            363,
+            364
+          ],
+          "pdf_pages": [
+            364,
+            365,
+            366
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          },
+          "model_note": {
+            "cs": "Přímá výbava: zpráva TPMS spolu s přibližně minutovým blikáním symbolu pneumatiky a následným trvalým svícením označuje systémovou poruchu. Příčinou mohou být mimo jiné nekompatibilní snímače, rádiové rušení či sněhové řetězy; symbol neurčuje vadný díl.",
+            "en": "Direct-system equipment: a TPMS message together with the tyre symbol flashing for about one minute then staying on indicates a system malfunction. Causes can include incompatible sensors, radio interference or snow chains; the icon does not identify a failed part.",
+            "de": "Direkte Ausstattung: TPMS-Meldung zusammen mit etwa einminütigem Blinken des Reifensymbols und anschließendem Dauerleuchten kennzeichnet eine Systemstörung. Unter anderem können inkompatible Sensoren, Funkstörungen oder Schneeketten ursächlich sein; kein Nachweis eines bestimmten defekten Teils."
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -15678,6 +15861,74 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            124,
+            125,
+            126
+          ],
+          "pdf_pages": [
+            126,
+            127,
+            128
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          },
+          "model_note": {
+            "cs": "Pouze vozidla vybavená tímto systémem start-stop. Omezení se nevztahuje automaticky na řízení spalovacího motoru při elektrické jízdě plug-in hybridu.",
+            "en": "Only vehicles equipped with this start-stop system. This scope does not automatically cover combustion-engine management during plug-in-hybrid electric driving.",
+            "de": "Nur Fahrzeuge mit diesem Start-Stop-System. Geltung nicht automatisch für Verbrennungsmotormanagement während elektrischer Plug-in-Hybrid-Fahrt."
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            137,
+            138
+          ],
+          "pdf_pages": [
+            139,
+            140
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          },
+          "model_note": {
+            "cs": "Pouze vozidla vybavená tímto systémem start-stop. Omezení se nevztahuje automaticky na řízení spalovacího motoru při elektrické jízdě plug-in hybridu.",
+            "en": "Only vehicles equipped with this start-stop system. This scope does not automatically cover combustion-engine management during plug-in-hybrid electric driving.",
+            "de": "Nur Fahrzeuge mit diesem Start-Stop-System. Geltung nicht automatisch für Verbrennungsmotormanagement während elektrischer Plug-in-Hybrid-Fahrt."
+          }
         }
       ],
       "checked": "2026-10-30",
@@ -15707,9 +15958,9 @@
         "de": "Bremsbereit bleiben. Das System hält das Fahrzeug nicht unter allen Bedingungen; vor dem Verlassen ordnungsgemäß sichern."
       },
       "note": {
-        "cs": "Doloženo pro Q3 s asistentem podle uvedeného návodu. Nepřenášet na všechny symboly P.",
-        "en": "Documented for Q3 with the hold assistant in this manual. Do not apply this meaning to every P symbol.",
-        "de": "Für Q3 mit Halteassistent laut genannter Anleitung belegt. Nicht auf alle P-Symbole übertragen."
+        "cs": "Platí pouze pro uvedená provedení s asistentem držení. Není to červené potvrzení parkovací brzdy, bílé vypnutí asistenta ani samostatné P polohy převodovky.",
+        "en": "Only the specified versions with a hold assistant. Not red parking-brake confirmation, white assistant deactivation or the separate transmission-position P.",
+        "de": "Nur genannte Ausführungen mit Halteassistent. Nicht rote Parkbremsbestätigung, weiße Assistentenabschaltung oder separates Getriebestellungs-P."
       },
       "alt": {
         "cs": "Asistent rozjezdu – vozidlo je drženo (zelené P)",
@@ -15750,6 +16001,63 @@
             "document_sha256": "b82f4b43085c5fe161d296e81c56c792593da8b6bb27342c550984857776fbbe",
             "graphic_printed_pages": [
               12
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            128,
+            129
+          ],
+          "pdf_pages": [
+            130,
+            131
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            140,
+            141
+          ],
+          "pdf_pages": [
+            142,
+            143
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              14
             ],
             "checked": "2026-10-30"
           }
@@ -18817,9 +19125,9 @@
         "de": "Geschwindigkeit selbst überwachen und tatsächliche Verkehrszeichen beachten. Der Begrenzer entbindet nicht von der Geschwindigkeitsverantwortung; bei Unterbrechung oder Überschreitung Geschwindigkeit selbst sicher anpassen."
       },
       "note": {
-        "cs": "Pouze pro uvedené vybavení a vydání návodu Q4 e-tron. Jiné hlášení vyžaduje samostatný výklad.",
-        "en": "Only the cited Q4 e-tron equipment and manual edition are covered. A different message requires its own interpretation.",
-        "de": "Nur die genannte Q4-e-tron-Ausstattung und Anleitungsausgabe sind erfasst. Eine andere Meldung erfordert eine eigene Auslegung."
+        "cs": "Platí jen pro uvedená vydání a výbavu Audi. Ostatní bílé, blikající nebo prediktivní varianty vyžadují vlastní výklad.",
+        "en": "Only the listed Audi editions/equipment. Other white, flashing or predictive variants require their own interpretation.",
+        "de": "Nur genannte Audi-Ausgaben/-Ausstattungen. Andere weiße, blinkende oder prädiktive Varianten erfordern eigene Erklärung."
       },
       "alt": {
         "cs": "LIM – aktivní omezování rychlosti",
@@ -18853,6 +19161,65 @@
             "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
             "graphic_printed_pages": [
               13
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            168,
+            169
+          ],
+          "pdf_pages": [
+            170,
+            171
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              168
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            197,
+            198,
+            199
+          ],
+          "pdf_pages": [
+            199,
+            200,
+            201
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              197
             ],
             "checked": "2026-10-30"
           }
@@ -18896,9 +19263,9 @@
         "de": "Geschwindigkeit selbst überwachen und tatsächliche Verkehrszeichen beachten. Der Begrenzer entbindet nicht von der Geschwindigkeitsverantwortung; bei Unterbrechung oder Überschreitung Geschwindigkeit selbst sicher anpassen."
       },
       "note": {
-        "cs": "Pouze pro uvedené vybavení a vydání návodu Q4 e-tron. Jiné hlášení vyžaduje samostatný výklad.",
-        "en": "Only the cited Q4 e-tron equipment and manual edition are covered. A different message requires its own interpretation.",
-        "de": "Nur die genannte Q4-e-tron-Ausstattung und Anleitungsausgabe sind erfasst. Eine andere Meldung erfordert eine eigene Auslegung."
+        "cs": "Platí pouze pro doložený zelený nápis LIM a uvedená vydání Audi. Neznamená vypnutí všech asistentů ani poruchu motoru.",
+        "en": "Only the documented green LIM inscription and listed Audi editions. Does not mean all assistants are off or an engine fault.",
+        "de": "Nur belegte grüne LIM-Aufschrift und genannte Audi-Ausgaben. Kein Abschalten aller Assistenten und keine Motorstörung."
       },
       "alt": {
         "cs": "LIM bliká – nastavená rychlost překročena",
@@ -18932,6 +19299,65 @@
             "document_sha256": "597a12fce2d3a5e749ae0c70754d649c218c6a735638a6dd6e8d3b394abdcf9e",
             "graphic_printed_pages": [
               13
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            168,
+            169
+          ],
+          "pdf_pages": [
+            170,
+            171
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              168
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            197,
+            198,
+            199
+          ],
+          "pdf_pages": [
+            199,
+            200,
+            201
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              197
             ],
             "checked": "2026-10-30"
           }
@@ -19348,9 +19774,9 @@
         "de": "MAX – Frontscheibe entfeuchten und enteisen"
       },
       "meaning": {
-        "cs": "Ovládací ikona Climatronicu zapíná odmlžení a odmrazení čelního skla pomocí odvlhčeného vzduchu a vysokého výkonu ventilátoru.",
-        "en": "This Climatronic control activates windscreen demisting and defrosting using dehumidified air and a high fan setting.",
-        "de": "Dieses Climatronic-Bedienzeichen schaltet das Entfeuchten und Enteisen der Frontscheibe mit entfeuchteter Luft und hoher Gebläsestufe ein."
+        "cs": "Ovládací ikona klimatizace zapíná odmlžení a odmrazení čelního skla pomocí odvlhčeného vzduchu a vysokého výkonu ventilátoru.",
+        "en": "This climate-control icon activates windscreen demisting and defrosting using dehumidified air and a high fan setting.",
+        "de": "Dieses Klimabedienzeichen schaltet das Entfeuchten und Enteisen der Frontscheibe mit entfeuchteter Luft und hoher Gebläsestufe ein."
       },
       "action": {
         "cs": "Použijte podle potřeby pro zajištění výhledu a po odmlžení funkci upravte podle návodu. Nejde samo o hlášení závady.",
@@ -19420,6 +19846,75 @@
               148
             ],
             "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            105,
+            107
+          ],
+          "pdf_pages": [
+            107,
+            109
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "graphic_printed_pages": [
+              105,
+              107
+            ],
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "method": "Exact functional label or conventional graphic independently visually compared in this model edition; source paragraph and limitations read. No inherited applicability."
+          },
+          "model_note": {
+            "cs": "Funkce a vzhled nezávisle ověřeny v tomto vydání Audi. Odmlžení vypne recirkulaci; podle venkovní teploty a výbavy může zapnout vyhřívání skla. Blikající LED manuálně zapnutého vyhřívání je jiný stav než samotné bílé označení tlačítka.",
+            "en": "Function/artwork independently checked in this Audi edition. Defrost switches recirculation off; depending on temperature/equipment it can enable windscreen heating. A flashing LED for manually enabled glass heating is distinct from the white button label.",
+            "de": "Funktion/Darstellung in dieser Audi-Ausgabe unabhängig geprüft. Entfrosten schaltet Umluft aus; temperatur-/ausstattungsabhängig kann Frontscheibenheizung einschalten. Blinkende LED manuell eingeschalteter Heizung ist anderer Zustand als weiße Tastenkennzeichnung."
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            113,
+            115
+          ],
+          "pdf_pages": [
+            115,
+            117
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "graphic_printed_pages": [
+              113,
+              115
+            ],
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "method": "Exact functional label or conventional graphic independently visually compared in this model edition; source paragraph and limitations read. No inherited applicability."
+          },
+          "model_note": {
+            "cs": "Funkce a vzhled nezávisle ověřeny v tomto vydání Audi. Odmlžení vypne recirkulaci; podle venkovní teploty a výbavy může zapnout vyhřívání skla. Blikající LED manuálně zapnutého vyhřívání je jiný stav než samotné bílé označení tlačítka.",
+            "en": "Function/artwork independently checked in this Audi edition. Defrost switches recirculation off; depending on temperature/equipment it can enable windscreen heating. A flashing LED for manually enabled glass heating is distinct from the white button label.",
+            "de": "Funktion/Darstellung in dieser Audi-Ausgabe unabhängig geprüft. Entfrosten schaltet Umluft aus; temperatur-/ausstattungsabhängig kann Frontscheibenheizung einschalten. Blinkende LED manuell eingeschalteter Heizung ist anderer Zustand als weiße Tastenkennzeichnung."
           }
         }
       ],
@@ -19524,6 +20019,75 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            105,
+            107
+          ],
+          "pdf_pages": [
+            107,
+            109
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "graphic_printed_pages": [
+              105,
+              107
+            ],
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "method": "Exact functional label or conventional graphic independently visually compared in this model edition; source paragraph and limitations read. No inherited applicability."
+          },
+          "model_note": {
+            "cs": "Toto vydání Audi uvádí funkci při běžícím motoru a vypnutí podle venkovní teploty po 10–20 minutách. Podržení déle než tři sekundy umožní trvalé zapnutí do vypnutí zapalování. Nezaměňovat s textovým REAR pro ovládání klimatizace vzadu.",
+            "en": "This Audi edition specifies operation with the engine running and automatic shut-off after 10–20 minutes depending on outside temperature. Holding longer than three seconds enables operation until ignition off. Not the text-only REAR control for rear climate settings.",
+            "de": "Diese Audi-Ausgabe nennt Betrieb bei laufendem Motor und temperaturabhängiges Abschalten nach 10–20 Minuten. Länger als drei Sekunden drücken ermöglicht Betrieb bis Zündung aus. Nicht textliches REAR zur Fondklimabedienung."
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            113,
+            115
+          ],
+          "pdf_pages": [
+            115,
+            117
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "graphic_printed_pages": [
+              113,
+              115
+            ],
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "method": "Exact functional label or conventional graphic independently visually compared in this model edition; source paragraph and limitations read. No inherited applicability."
+          },
+          "model_note": {
+            "cs": "Toto vydání Audi uvádí funkci při běžícím motoru a vypnutí podle venkovní teploty po 10–20 minutách. Podržení déle než tři sekundy umožní trvalé zapnutí do vypnutí zapalování. Nezaměňovat s textovým REAR pro ovládání klimatizace vzadu.",
+            "en": "This Audi edition specifies operation with the engine running and automatic shut-off after 10–20 minutes depending on outside temperature. Holding longer than three seconds enables operation until ignition off. Not the text-only REAR control for rear climate settings.",
+            "de": "Diese Audi-Ausgabe nennt Betrieb bei laufendem Motor und temperaturabhängiges Abschalten nach 10–20 Minuten. Länger als drei Sekunden drücken ermöglicht Betrieb bis Zündung aus. Nicht textliches REAR zur Fondklimabedienung."
+          }
         }
       ],
       "graphic_source": {
@@ -19592,6 +20156,63 @@
             "graphic_printed_pages": [
               12,
               13
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            64,
+            66
+          ],
+          "pdf_pages": [
+            66,
+            68
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            71,
+            74
+          ],
+          "pdf_pages": [
+            73,
+            76
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              14
             ],
             "checked": "2026-10-30"
           }
@@ -19694,6 +20315,63 @@
             "graphic_printed_pages": [
               12,
               13
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            64,
+            66
+          ],
+          "pdf_pages": [
+            66,
+            68
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            71,
+            74
+          ],
+          "pdf_pages": [
+            73,
+            76
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              14
             ],
             "checked": "2026-10-30"
           }
@@ -20953,6 +21631,1512 @@
       },
       "checked": "2026-10-30",
       "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "audi-start-stop-no-stop",
+      "graphic": "start-stop-off",
+      "color": "bila",
+      "group": "provoz",
+      "state": "steady",
+      "name": {
+        "cs": "Start-stop – motor nebyl automaticky vypnut",
+        "en": "Start-stop – engine not automatically stopped",
+        "de": "Start-Stop – Motor nicht automatisch abgestellt"
+      },
+      "meaning": {
+        "cs": "Bílé přeškrtnuté A může podle motoru znamenat, že nejsou splněny podmínky pro automatické vypnutí motoru. Samo o sobě nedokládá poruchu.",
+        "en": "Depending on engine version, the white crossed-out A can mean that conditions for automatic engine stop are not met. It does not by itself establish a fault.",
+        "de": "Das weiße durchgestrichene A kann motorabhängig anzeigen, dass die Voraussetzungen für einen automatischen Motorstopp nicht erfüllt sind. Allein kein Störungsnachweis."
+      },
+      "action": {
+        "cs": "Sledujte provoz vozidla a přesné hlášení. Podmínky ovlivňuje například teplota, stav akumulátoru, odběr proudu či asistenti. Při výslovném hlášení závady startovacího systému zajistěte servis; požadavek ručního startu řešte podle návodu.",
+        "en": "Monitor operation and the exact message. Conditions include temperature, battery state, electrical demand and assistance systems. Arrange service for an explicit starting-system fault message; follow the manual if a manual restart is requested.",
+        "de": "Fahrzeugbetrieb und genaue Meldung beachten. Unter anderem wirken Temperatur, Batteriezustand, Strombedarf und Assistenten auf die Voraussetzungen. Bei ausdrücklicher Störungsmeldung des Startsystems Fachbetrieb aufsuchen; Aufforderung zum manuellen Start gemäß Anleitung befolgen."
+      },
+      "note": {
+        "cs": "Odlišujte tento stav od zeleného A při stop-fázi a od fyzického tlačítka A OFF. Hlášení „Antrieb: Bitte Fahrzeug manuell starten“ a „Fahrzeugstartsystem: Störung! Bitte Service aufsuchen“ mají odlišný význam; bílá ikona je sama nerozlišuje. Tato textová hlášení nelze automaticky přiřadit každému zobrazení bílé ikony.",
+        "en": "Distinguish this state from the green stop-phase A and physical A OFF button. “Antrieb: Bitte Fahrzeug manuell starten” and “Fahrzeugstartsystem: Störung! Bitte Service aufsuchen” are different messages; the white icon alone does not distinguish them. These textual messages must not automatically be assigned to every occurrence of the white icon.",
+        "de": "Vom grünen A in der Stoppphase und der physischen A-OFF-Taste unterscheiden. „Antrieb: Bitte Fahrzeug manuell starten“ und „Fahrzeugstartsystem: Störung! Bitte Service aufsuchen“ sind unterschiedliche Meldungen; das weiße Zeichen allein unterscheidet sie nicht. Diese Textmeldungen nicht automatisch jedem Auftreten des weißen Symbols zuordnen."
+      },
+      "scopes": [
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            124,
+            125,
+            126
+          ],
+          "pdf_pages": [
+            126,
+            127,
+            128
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              15
+            ],
+            "checked": "2026-10-30"
+          },
+          "model_note": {
+            "cs": "Pouze vozidla vybavená tímto systémem start-stop. Omezení se nevztahuje automaticky na řízení spalovacího motoru při elektrické jízdě plug-in hybridu.",
+            "en": "Only vehicles equipped with this start-stop system. This scope does not automatically cover combustion-engine management during plug-in-hybrid electric driving.",
+            "de": "Nur Fahrzeuge mit diesem Start-Stop-System. Geltung nicht automatisch für Verbrennungsmotormanagement während elektrischer Plug-in-Hybrid-Fahrt."
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            137,
+            138
+          ],
+          "pdf_pages": [
+            139,
+            140
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              16
+            ],
+            "checked": "2026-10-30"
+          },
+          "model_note": {
+            "cs": "Pouze vozidla vybavená tímto systémem start-stop. Omezení se nevztahuje automaticky na řízení spalovacího motoru při elektrické jízdě plug-in hybridu.",
+            "en": "Only vehicles equipped with this start-stop system. This scope does not automatically cover combustion-engine management during plug-in-hybrid electric driving.",
+            "de": "Nur Fahrzeuge mit diesem Start-Stop-System. Geltung nicht automatisch für Verbrennungsmotormanagement während elektrischer Plug-in-Hybrid-Fahrt."
+          }
+        }
+      ],
+      "checked": "2026-10-30",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/start-stop-off-bila.svg",
+      "graphic_source": {
+        "title": "File:ISO 7000 - Ref-No 3747.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_3747.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/b/b9/ISO_7000_-_Ref-No_3747.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "author": "Vectorization:    Mrmw",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "b08d40917448cb1ff2ae45e6b5c3d04dbd973cc139f2ffc09a812f94c738e244",
+        "file": "wp-content/uploads/kontrolky/start-stop-off-bila.svg"
+      },
+      "alt": {
+        "cs": "Start-stop – motor nebyl automaticky vypnut",
+        "en": "Start-stop – engine not automatically stopped",
+        "de": "Start-Stop – Motor nicht automatisch abgestellt"
+      },
+      "kind": "information",
+      "previous_general_scopes": [
+        {
+          "brand": "volkswagen-uzitkove-vozy",
+          "model": null,
+          "model_year": null,
+          "generation": null,
+          "edition": null,
+          "powertrains": [
+            "spalovaci"
+          ],
+          "url": "https://www.volkswagen-vans.co.uk/en/owners-and-drivers/about-my-vehicle/warning-lights/stop-start-system-fault.html",
+          "source_label": "Volkswagen Commercial Vehicles UK (English)",
+          "scope": {
+            "cs": "Obecný oficiální přehled Volkswagen Užitkové vozy UK. Zdroj neuvádí konkrétní model ani modelový rok; platnost pro všechny vozy od roku 2010 není doložena.",
+            "en": "General official Volkswagen Commercial Vehicles UK guide. It specifies no model or model year; applicability to all vehicles from 2010 is not established.",
+            "de": "Allgemeine offizielle Übersicht von Volkswagen Nutzfahrzeuge UK. Modell und Modelljahr sind nicht genannt; eine Gültigkeit für alle Fahrzeuge ab 2010 ist nicht belegt."
+          },
+          "verification": {
+            "method": "independent official-brand web source; graphic visually compared",
+            "source_sha256": "6b8f859398d02c55c5f876902a3c337a744339fd9946819d2336a47c7127461d",
+            "original_graphic_url": "https://assets.volkswagen.com/is/image/volkswagenag/vw-white-start-stop-system-disengaged-4_3-2500x1865"
+          }
+        }
+      ]
+    },
+    {
+      "id": "audi-direct-pressure-low",
+      "graphic": "tyres",
+      "color": "zluta",
+      "group": "pneumatiky",
+      "state": "message",
+      "name": {
+        "cs": "Přímé měření tlaku – nízký tlak",
+        "en": "Direct tyre-pressure monitoring – low pressure",
+        "de": "Direkte Reifendruckkontrolle – Druckverlust"
+      },
+      "meaning": {
+        "cs": "Trvale svítící žlutá pneumatika s vykřičníkem může v uvedeném přímém systému oznamovat tlak pod uloženou referenční hodnotou. Přesný význam určuje doprovodná zpráva.",
+        "en": "In the specified direct system, a steady amber tyre with exclamation mark can indicate pressure below the stored reference. The accompanying message determines the exact meaning.",
+        "de": "Im genannten direkten System kann das dauerhaft gelbe Reifensymbol mit Ausrufezeichen einen Druck unter dem gespeicherten Sollwert anzeigen. Die Begleitmeldung bestimmt die genaue Bedeutung."
+      },
+      "action": {
+        "cs": "Zkontrolujte všechny pneumatiky a při nejbližší bezpečné možnosti upravte tlak podle předepsané hodnoty. Správné hodnoty uložte až po kontrole; uložený tlak nemusí sám odpovídat předpisu výrobce.",
+        "en": "Check all tyres and correct pressure to the specified values at the next safe opportunity. Store correct reference values only after checking; stored values do not themselves prove compliance with the manufacturer’s specification.",
+        "de": "Alle Reifen prüfen und Druck bei nächster sicherer Möglichkeit auf vorgeschriebene Werte korrigieren. Richtige Sollwerte erst nach Prüfung speichern; gespeicherte Werte müssen nicht automatisch der Herstellervorgabe entsprechen."
+      },
+      "note": {
+        "cs": "Pouze výbava s přímými snímači tlaku a teploty v kolech. Stejný symbol s hlášením „Reifenpanne!“ nebo „Radwechsel erkannt“ má jiný význam. Nepřenášet postup na nepřímé měření. Na zobrazení skutečných hodnot přímého systému znamená zelená přibližnou shodu s uloženou referencí, žlutá nízký a červená výrazně nízký tlak. Pomlčky při stání nebo učení nejsou naměřený tlak. Tlak kontrolujte při odpovídající teplotě pneumatik podle návodu; upouštění horkých pneumatik není obecný postup.",
+        "en": "Only equipment with direct wheel pressure/temperature sensors. The same symbol with “Reifenpanne!” or “Radwechsel erkannt” has a different meaning. Do not transfer the procedure to indirect monitoring. In the direct system’s numerical display, green means approximately matching the stored reference, amber low pressure and red substantially low pressure. Dashes while stationary or learning are not measured pressure. Check tyre pressure at the appropriate temperature according to the manual; releasing air from hot tyres is not a general procedure.",
+        "de": "Nur Ausstattung mit direkten Druck-/Temperatursensoren in den Rädern. Dasselbe Symbol mit „Reifenpanne!“ oder „Radwechsel erkannt“ hat eine andere Bedeutung. Ablauf nicht auf indirekte Überwachung übertragen. In der Zahlenanzeige des direkten Systems bedeutet Grün ungefährer Sollwertabgleich, Gelb zu niedriger und Rot erheblich zu niedriger Druck. Striche im Stand oder während der Anlernphase sind kein gemessener Druck. Reifendruck bei geeigneter Temperatur gemäß Anleitung prüfen; Luft aus heißen Reifen ablassen ist kein allgemeiner Ablauf."
+      },
+      "scopes": [
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            307,
+            308,
+            309
+          ],
+          "pdf_pages": [
+            309,
+            310,
+            311
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            362,
+            363,
+            364
+          ],
+          "pdf_pages": [
+            364,
+            365,
+            366
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/tyres-zluta.svg",
+      "graphic_source": {
+        "title": "File:Warnlampe Druckverlust.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Warnlampe_Druckverlust.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/06/Warnlampe_Druckverlust.svg",
+        "license": "Copyrighted free use",
+        "license_url": "",
+        "author": "de:Benutzer:chris828",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "30355503ec82f2180ef890b183795efb24293e8eeb5b3f0abf71fc3b02f37141",
+        "file": "wp-content/uploads/kontrolky/tyres-zluta.svg"
+      },
+      "alt": {
+        "cs": "Přímé měření tlaku – nízký tlak",
+        "en": "Direct tyre-pressure monitoring – low pressure",
+        "de": "Direkte Reifendruckkontrolle – Druckverlust"
+      },
+      "kind": "warning"
+    },
+    {
+      "id": "audi-direct-pressure-critical",
+      "graphic": "tyres",
+      "color": "zluta",
+      "group": "pneumatiky",
+      "state": "message",
+      "name": {
+        "cs": "Přímé měření tlaku – hlášení defektu „Reifenpanne!“",
+        "en": "Direct tyre-pressure monitoring – “Reifenpanne!” warning",
+        "de": "Direkte Reifendruckkontrolle – Meldung „Reifenpanne!“"
+      },
+      "meaning": {
+        "cs": "Symbol společně s výslovným hlášením defektu znamená kritický pokles tlaku vůči uložené referenci. Pouhá žlutá barva není svolením k pokračování.",
+        "en": "The symbol together with the explicit puncture message indicates critically low pressure relative to the stored reference. Amber alone is not permission to continue.",
+        "de": "Das Symbol zusammen mit der ausdrücklichen Reifenpannenmeldung zeigt einen kritischen Druckabfall gegenüber dem gespeicherten Sollwert an. Gelb allein erlaubt keine Weiterfahrt."
+      },
+      "action": {
+        "cs": "Vyhněte se zbytečnému prudkému řízení a brzdění. Bezpečně zastavte při nejbližší možnosti a zkontrolujte pneumatiky. O další jízdě rozhoduje skutečný stav a návod; kontrolku jen neresetujte.",
+        "en": "Avoid unnecessary abrupt steering and braking. Stop safely at the next opportunity and inspect the tyres. Actual condition and the manual determine whether further travel is possible; do not merely reset the warning.",
+        "de": "Unnötige abrupte Lenk- und Bremsmanöver vermeiden. Bei nächster Möglichkeit sicher anhalten und Reifen prüfen. Tatsächlicher Zustand und Anleitung entscheiden über mögliche Weiterfahrt; Warnung nicht lediglich zurücksetzen."
+      },
+      "note": {
+        "cs": "Platí pro přesné hlášení „Reifenpanne! Fahrzeug sicher abstellen. Bitte alle Reifen prüfen und im MMI speichern“ u uvedené přímé výbavy. Ze symbolu samotného nelze určit rozsah poškození ani bezpečný zbývající dojezd. Na zobrazení skutečných hodnot přímého systému znamená zelená přibližnou shodu s uloženou referencí, žlutá nízký a červená výrazně nízký tlak. Pomlčky při stání nebo učení nejsou naměřený tlak. Tlak kontrolujte při odpovídající teplotě pneumatik podle návodu; upouštění horkých pneumatik není obecný postup.",
+        "en": "Applies to the exact “Reifenpanne! Fahrzeug sicher abstellen. Bitte alle Reifen prüfen und im MMI speichern” message with the specified direct system. The symbol alone establishes neither damage extent nor a safe remaining range. In the direct system’s numerical display, green means approximately matching the stored reference, amber low pressure and red substantially low pressure. Dashes while stationary or learning are not measured pressure. Check tyre pressure at the appropriate temperature according to the manual; releasing air from hot tyres is not a general procedure.",
+        "de": "Gilt für die genaue Meldung „Reifenpanne! Fahrzeug sicher abstellen. Bitte alle Reifen prüfen und im MMI speichern“ bei genannter direkter Ausstattung. Das Symbol allein belegt weder Schadensumfang noch sichere Restreichweite. In der Zahlenanzeige des direkten Systems bedeutet Grün ungefährer Sollwertabgleich, Gelb zu niedriger und Rot erheblich zu niedriger Druck. Striche im Stand oder während der Anlernphase sind kein gemessener Druck. Reifendruck bei geeigneter Temperatur gemäß Anleitung prüfen; Luft aus heißen Reifen ablassen ist kein allgemeiner Ablauf."
+      },
+      "scopes": [
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            307,
+            308,
+            309
+          ],
+          "pdf_pages": [
+            309,
+            310,
+            311
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            362,
+            363,
+            364
+          ],
+          "pdf_pages": [
+            364,
+            365,
+            366
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/tyres-zluta.svg",
+      "graphic_source": {
+        "title": "File:Warnlampe Druckverlust.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Warnlampe_Druckverlust.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/06/Warnlampe_Druckverlust.svg",
+        "license": "Copyrighted free use",
+        "license_url": "",
+        "author": "de:Benutzer:chris828",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "30355503ec82f2180ef890b183795efb24293e8eeb5b3f0abf71fc3b02f37141",
+        "file": "wp-content/uploads/kontrolky/tyres-zluta.svg"
+      },
+      "alt": {
+        "cs": "Přímé měření tlaku – hlášení defektu „Reifenpanne!“",
+        "en": "Direct tyre-pressure monitoring – “Reifenpanne!” warning",
+        "de": "Direkte Reifendruckkontrolle – Meldung „Reifenpanne!“"
+      },
+      "kind": "warning"
+    },
+    {
+      "id": "audi-direct-wheel-change",
+      "graphic": "tyres",
+      "color": "zluta",
+      "group": "pneumatiky",
+      "state": "message",
+      "name": {
+        "cs": "Přímé měření tlaku – rozpoznána výměna kol",
+        "en": "Direct tyre-pressure monitoring – wheel change detected",
+        "de": "Direkte Reifendruckkontrolle – Radwechsel erkannt"
+      },
+      "meaning": {
+        "cs": "Stejný žlutý symbol může s hlášením „Radwechsel erkannt“ oznamovat změnu polohy snímačů po záměně kol nebo nové snímače. Není automaticky totožný s kritickým únikem tlaku.",
+        "en": "With the “Radwechsel erkannt” message, the same amber symbol can report changed sensor positions after a wheel swap or newly fitted sensors. Not automatically the same as critically low pressure.",
+        "de": "Mit der Meldung „Radwechsel erkannt“ kann dasselbe gelbe Symbol geänderte Sensorpositionen nach Rädertausch oder neue Sensoren anzeigen. Nicht automatisch identisch mit kritischem Druckverlust."
+      },
+      "action": {
+        "cs": "Nejprve ověřte stav a předepsaný tlak všech kol, poté uložte správné referenční hodnoty postupem konkrétního MMI. Za správný tlak odpovídá řidič; potvrzení samo pneumatiku neopravuje.",
+        "en": "First check all tyres and their specified pressures, then store correct reference values using the actual MMI procedure. The driver remains responsible for correct pressure; confirmation does not repair a tyre.",
+        "de": "Zuerst Zustand und vorgeschriebenen Druck aller Reifen prüfen, danach richtige Sollwerte im konkreten MMI speichern. Der Fahrer bleibt für richtigen Druck verantwortlich; Bestätigung repariert keinen Reifen."
+      },
+      "note": {
+        "cs": "Význam je doložen pouze spolu s přesnou zprávou a přímými snímači. Samotná podoba kontrolky nerozlišuje nízký tlak, kritický pokles a výměnu kol. Na zobrazení skutečných hodnot přímého systému znamená zelená přibližnou shodu s uloženou referencí, žlutá nízký a červená výrazně nízký tlak. Pomlčky při stání nebo učení nejsou naměřený tlak. Tlak kontrolujte při odpovídající teplotě pneumatik podle návodu; upouštění horkých pneumatik není obecný postup.",
+        "en": "Meaning is documented only with the exact message and direct sensors. The icon alone does not distinguish low pressure, critical loss and a wheel change. In the direct system’s numerical display, green means approximately matching the stored reference, amber low pressure and red substantially low pressure. Dashes while stationary or learning are not measured pressure. Check tyre pressure at the appropriate temperature according to the manual; releasing air from hot tyres is not a general procedure.",
+        "de": "Bedeutung nur zusammen mit genauer Meldung und direkten Sensoren belegt. Das Symbol allein unterscheidet Druckverlust, kritischen Druckabfall und Radwechsel nicht. In der Zahlenanzeige des direkten Systems bedeutet Grün ungefährer Sollwertabgleich, Gelb zu niedriger und Rot erheblich zu niedriger Druck. Striche im Stand oder während der Anlernphase sind kein gemessener Druck. Reifendruck bei geeigneter Temperatur gemäß Anleitung prüfen; Luft aus heißen Reifen ablassen ist kein allgemeiner Ablauf."
+      },
+      "scopes": [
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            307,
+            308,
+            309
+          ],
+          "pdf_pages": [
+            309,
+            310,
+            311
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            362,
+            363,
+            364
+          ],
+          "pdf_pages": [
+            364,
+            365,
+            366
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "checked": "2026-10-29",
+      "review_status": "preview-awaiting-automotive-review",
+      "graphic_path": "wp-content/uploads/kontrolky/tyres-zluta.svg",
+      "graphic_source": {
+        "title": "File:Warnlampe Druckverlust.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Warnlampe_Druckverlust.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/06/Warnlampe_Druckverlust.svg",
+        "license": "Copyrighted free use",
+        "license_url": "",
+        "author": "de:Benutzer:chris828",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "30355503ec82f2180ef890b183795efb24293e8eeb5b3f0abf71fc3b02f37141",
+        "file": "wp-content/uploads/kontrolky/tyres-zluta.svg"
+      },
+      "alt": {
+        "cs": "Přímé měření tlaku – rozpoznána výměna kol",
+        "en": "Direct tyre-pressure monitoring – wheel change detected",
+        "de": "Direkte Reifendruckkontrolle – Radwechsel erkannt"
+      },
+      "kind": "information"
+    },
+    {
+      "id": "audi-a8-ac-max-control",
+      "graphic": "ac-max-control",
+      "graphic_path": "wp-content/uploads/kontrolky/ac-max-control-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "A/C MAX – maximální chlazení",
+        "en": "A/C MAX – maximum cooling",
+        "de": "A/C MAX – maximale Kühlung"
+      },
+      "meaning": {
+        "cs": "Ovládací označení maximálního chladicího výkonu a maximálního proudění vzduchu. Nejde o červenou nebo žlutou výstrahu A/C v jiných modelech.",
+        "en": "Control label for maximum cooling performance and airflow. Not the red or amber A/C warning used in other models.",
+        "de": "Bedienkennzeichnung für maximale Kühlleistung und Luftanströmung. Nicht die rote oder gelbe A/C-Warnung anderer Modelle."
+      },
+      "action": {
+        "cs": "Používejte krátkodobě, abyste zbytečně nezvyšovali spotřebu energie. Za nepříznivých klimatických podmínek může režim podle tohoto návodu přispět k zamlžení skel; zajistěte výhled.",
+        "en": "Use briefly to avoid unnecessary energy use. In unfavourable conditions this manual warns that the mode can contribute to window misting; maintain visibility.",
+        "de": "Nur kurzzeitig nutzen, um unnötigen Energieverbrauch zu vermeiden. Bei ungünstigen Klimabedingungen kann die Funktion laut dieser Anleitung zum Scheibenbeschlag beitragen; Sicht sicherstellen."
+      },
+      "note": {
+        "cs": "Bílý nápis označuje ovladač, nikoli sám aktuální stav funkce. Aktivaci podle návodu ukazuje barevný proužek v ovládacím poli nebo LED; dostupnost a rozmístění závisí na výbavě. Platí pouze pro uvedené vydání Audi A8.",
+        "en": "The white inscription labels a control, not by itself the function’s current state. According to the manual, activation is shown by a coloured bar in the control field or an LED; availability/layout depends on equipment. Only the cited Audi A8 edition.",
+        "de": "Die weiße Aufschrift kennzeichnet eine Bedienung, nicht allein den aktuellen Funktionszustand. Laut Anleitung zeigt ein farbiger Balken im Bedienfeld bzw. eine LED die Aktivierung; Verfügbarkeit/Anordnung sind ausstattungsabhängig. Nur genannte Audi-A8-Ausgabe."
+      },
+      "alt": {
+        "cs": "A/C MAX – maximální chlazení",
+        "en": "A/C MAX – maximum cooling",
+        "de": "A/C MAX – maximale Kühlung"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            113,
+            114
+          ],
+          "pdf_pages": [
+            115,
+            116
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "method": "Exact functional inscription and line arrangement visually compared on source pages; own short-text typesetting, not a replacement pictogram. Full named functional paragraph read. No whole climate chapter closure.",
+            "graphic_printed_pages": [
+              113,
+              114
+            ],
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription A/C MAX",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Only the exact short functional inscription and documented line arrangement are typeset; no manufacturer font or pictogram copied, no alternate system symbol substituted. Source Audi A8 06.2025 pp113–115.",
+        "file": "wp-content/uploads/kontrolky/ac-max-control-bila.svg",
+        "sha256": "0872ad4c98379f46ee130bac4e713c108e1e5ddde222e0c5296126a7d08fcaad"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "audi-a8-ac-eco-control",
+      "graphic": "ac-eco-control",
+      "graphic_path": "wp-content/uploads/kontrolky/ac-eco-control-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "A/C ECO – úsporný režim klimatizace",
+        "en": "A/C ECO – energy-saving climate mode",
+        "de": "A/C ECO – Energiesparmodus der Klimaanlage"
+      },
+      "meaning": {
+        "cs": "Ovládání energeticky úsporného provozu klimatizace u uvedené výbavy. Nejde o potvrzení závady, nízkého chladiva ani jízdního profilu celého vozu.",
+        "en": "Control for energy-saving air-conditioning operation on the specified equipment. Not confirmation of a fault, low refrigerant or a whole-vehicle drive profile.",
+        "de": "Bedienung des energiesparenden Klimabetriebs bei genannter Ausstattung. Kein Nachweis einer Störung, fehlenden Kältemittels oder eines Fahrprofils des gesamten Fahrzeugs."
+      },
+      "action": {
+        "cs": "Volte režim podle potřeb chlazení a výhledu. Při zamlžení skel upravte klimatizaci a proudění vzduchu podle návodu.",
+        "en": "Choose the mode according to cooling and visibility needs. If windows mist, adjust climate control and airflow according to the manual.",
+        "de": "Modus nach Kühl- und Sichtbedarf wählen. Bei Scheibenbeschlag Klimaeinstellungen und Luftstrom gemäß Anleitung anpassen."
+      },
+      "note": {
+        "cs": "Bílý nápis označuje ovladač, nikoli sám aktuální stav funkce. Aktivaci podle návodu ukazuje barevný proužek v ovládacím poli nebo LED; dostupnost a rozmístění závisí na výbavě. Platí pouze pro uvedené vydání Audi A8.",
+        "en": "The white inscription labels a control, not by itself the function’s current state. According to the manual, activation is shown by a coloured bar in the control field or an LED; availability/layout depends on equipment. Only the cited Audi A8 edition.",
+        "de": "Die weiße Aufschrift kennzeichnet eine Bedienung, nicht allein den aktuellen Funktionszustand. Laut Anleitung zeigt ein farbiger Balken im Bedienfeld bzw. eine LED die Aktivierung; Verfügbarkeit/Anordnung sind ausstattungsabhängig. Nur genannte Audi-A8-Ausgabe."
+      },
+      "alt": {
+        "cs": "A/C ECO – úsporný režim klimatizace",
+        "en": "A/C ECO – energy-saving climate mode",
+        "de": "A/C ECO – Energiesparmodus der Klimaanlage"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            113,
+            114,
+            115
+          ],
+          "pdf_pages": [
+            115,
+            116,
+            117
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "method": "Exact functional inscription and line arrangement visually compared on source pages; own short-text typesetting, not a replacement pictogram. Full named functional paragraph read. No whole climate chapter closure.",
+            "graphic_printed_pages": [
+              113,
+              114,
+              115
+            ],
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription A/C ECO",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Only the exact short functional inscription and documented line arrangement are typeset; no manufacturer font or pictogram copied, no alternate system symbol substituted. Source Audi A8 06.2025 pp113–115.",
+        "file": "wp-content/uploads/kontrolky/ac-eco-control-bila.svg",
+        "sha256": "6f6daa9583da75a8c1adb2cae5af17a1ebbf093f3d3a2c0853bb0a3f9c74334d"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "audi-a8-rear-climate-control",
+      "graphic": "rear-climate-control",
+      "graphic_path": "wp-content/uploads/kontrolky/rear-climate-control-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "REAR – ovládání klimatizace vzadu",
+        "en": "REAR – rear climate controls",
+        "de": "REAR – Klimabedienung hinten"
+      },
+      "meaning": {
+        "cs": "Označení zpřístupní ovládání klimatizace v zadní části vozu s příslušnou výbavou. Samotný text REAR není symbolem vyhřívání zadního skla.",
+        "en": "This label gives access to rear climate controls where equipped. REAR text alone is not the rear-window heating symbol.",
+        "de": "Die Kennzeichnung schaltet bei entsprechender Ausstattung die Klimabedienung im Fond frei. Die Aufschrift REAR allein ist nicht das Heckscheibenheizungssymbol."
+      },
+      "action": {
+        "cs": "Stiskněte REAR pro otevření příslušného režimu; opusťte jej pomocí REAR nebo REAR MODE EXIT. Funkce vyžaduje zadní ovládání podle konkrétní výbavy.",
+        "en": "Press REAR to access the mode; leave it using REAR or REAR MODE EXIT. The function requires the applicable rear climate-control equipment.",
+        "de": "Mit REAR den Modus öffnen; mit REAR oder REAR MODE EXIT verlassen. Funktion setzt ausstattungsspezifische Klimabedienung im Fond voraus."
+      },
+      "note": {
+        "cs": "Bílý nápis označuje ovladač, nikoli sám aktuální stav funkce. Aktivaci podle návodu ukazuje barevný proužek v ovládacím poli nebo LED; dostupnost a rozmístění závisí na výbavě. Platí pouze pro uvedené vydání Audi A8.",
+        "en": "The white inscription labels a control, not by itself the function’s current state. According to the manual, activation is shown by a coloured bar in the control field or an LED; availability/layout depends on equipment. Only the cited Audi A8 edition.",
+        "de": "Die weiße Aufschrift kennzeichnet eine Bedienung, nicht allein den aktuellen Funktionszustand. Laut Anleitung zeigt ein farbiger Balken im Bedienfeld bzw. eine LED die Aktivierung; Verfügbarkeit/Anordnung sind ausstattungsabhängig. Nur genannte Audi-A8-Ausgabe."
+      },
+      "alt": {
+        "cs": "REAR – ovládání klimatizace vzadu",
+        "en": "REAR – rear climate controls",
+        "de": "REAR – Klimabedienung hinten"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            116
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "method": "Exact functional inscription and line arrangement visually compared on source pages; own short-text typesetting, not a replacement pictogram. Full named functional paragraph read. No whole climate chapter closure.",
+            "graphic_printed_pages": [
+              114
+            ],
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription REAR",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Only the exact short functional inscription and documented line arrangement are typeset; no manufacturer font or pictogram copied, no alternate system symbol substituted. Source Audi A8 06.2025 pp113–115.",
+        "file": "wp-content/uploads/kontrolky/rear-climate-control-bila.svg",
+        "sha256": "5c13b78f3d285c0f1fdac63774c50054be84291623ba53e47d0799bd8bc79882"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "audi-a8-climate-sync-control",
+      "graphic": "climate-sync-control",
+      "graphic_path": "wp-content/uploads/kontrolky/climate-sync-control-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "SYNC – synchronizace klimatických zón",
+        "en": "SYNC – climate-zone synchronisation",
+        "de": "SYNC – Synchronisation der Klimazonen"
+      },
+      "meaning": {
+        "cs": "Při zapnuté synchronizaci jsou pro ostatní místa převzaty teplota, rozdělení vzduchu a výkon ventilátoru ze strany řidiče.",
+        "en": "With synchronisation enabled, temperature, air distribution and fan settings from the driver’s side are adopted for the other seats.",
+        "de": "Bei eingeschalteter Synchronisation werden Temperatur, Luftverteilung und Gebläsestärke der Fahrerseite für die übrigen Sitzplätze übernommen."
+      },
+      "action": {
+        "cs": "Aktivujte podle potřeby společného nastavení. Audi A8 06.2025 uvádí i gesto přiblížení dvou prstů na dolním displeji; Audi A4 07.2024 používá vlastní kolébkovou volbu. Postupy se nezaměňují.",
+        "en": "Enable when shared settings are desired. Audi A8 06.2025 also specifies a two-finger pinch on the lower display; Audi A4 07.2024 uses its own rocker selection. Procedures are not interchangeable.",
+        "de": "Bei gewünschter gemeinsamer Einstellung aktivieren. Audi A8 06.2025 nennt auch Zusammenziehen zweier Finger am unteren Display; Audi A4 07.2024 nutzt eigene Wipptastenauswahl. Abläufe nicht austauschbar."
+      },
+      "note": {
+        "cs": "Bílý nápis označuje ovládání; aktivaci potvrzuje skutečná indikace konkrétní klimatizace. Pouze výslovně uvedená vydání a výbava Audi.",
+        "en": "The white label identifies a control; actual climate-system indication confirms activation. Only the explicitly listed Audi editions/equipment.",
+        "de": "Die weiße Aufschrift bezeichnet die Bedienung; tatsächliche Anzeige der konkreten Klimaanlage bestätigt Aktivierung. Nur ausdrücklich genannte Audi-Ausgaben/-Ausstattungen."
+      },
+      "alt": {
+        "cs": "SYNC – synchronizace klimatických zón",
+        "en": "SYNC – climate-zone synchronisation",
+        "de": "SYNC – Synchronisation der Klimazonen"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            116
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "method": "Exact functional inscription and line arrangement visually compared on source pages; own short-text typesetting, not a replacement pictogram. Full named functional paragraph read. No whole climate chapter closure.",
+            "graphic_printed_pages": [
+              114
+            ],
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00"
+          }
+        },
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            106
+          ],
+          "pdf_pages": [
+            108
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "graphic_printed_pages": [
+              106
+            ],
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "method": "Exact functional label or conventional graphic independently visually compared in this model edition; source paragraph and limitations read. No inherited applicability."
+          },
+          "model_note": {
+            "cs": "A4 třízónová výbava: synchronizace nepřebírá podle výbavy vyhřívání/ventilaci sedadel. Změnou nastavení u spolujezdce nebo vzadu se vypne a zobrazí se 3-ZONE. Gesto na displeji popsané u A8 pro toto A4 neplatí.",
+            "en": "A4 three-zone equipment: depending on equipment, seat heating/ventilation are excluded. Changing passenger/rear settings cancels synchronisation and displays 3-ZONE. The A8 display gesture is not an A4 procedure.",
+            "de": "A4-Dreizonenausstattung: Sitzheizung/-lüftung ausstattungsabhängig ausgenommen. Änderung auf Beifahrerseite/im Fond beendet Synchronisation und zeigt 3-ZONE. A8-Displaygeste ist kein A4-Ablauf."
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription SYNC",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Only the exact short functional inscription and documented line arrangement are typeset; no manufacturer font or pictogram copied, no alternate system symbol substituted. Source Audi A8 06.2025 pp113–115.",
+        "file": "wp-content/uploads/kontrolky/climate-sync-control-bila.svg",
+        "sha256": "f5f245012a08fdd93d0640fde1fba2d39527ef043ffb0834ed5d75b294f6a2b9"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "audi-a8-climate-off-control",
+      "graphic": "climate-off-control",
+      "graphic_path": "wp-content/uploads/kontrolky/climate-off-control-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "OFF – vypnutí klimatizace Audi A8",
+        "en": "OFF – Audi A8 climate system off",
+        "de": "OFF – Audi-A8-Klimaanlage ausschalten"
+      },
+      "meaning": {
+        "cs": "V uvedeném systému se vypne klimatizace a uzavře přívod venkovního vzduchu. Přední OFF vypíná přední i zadní část; podle výbavy zadní OFF ovládá pouze zadní část.",
+        "en": "In the specified system, climate control switches off and outside-air intake closes. Front OFF switches off front and rear; where equipped, rear OFF controls only the rear section.",
+        "de": "Im genannten System werden Klimaanlage ausgeschaltet und Außenluftzufuhr gesperrt. Vorderes OFF schaltet vorn und hinten aus; ausstattungsabhängiges hinteres OFF nur den Fond."
+      },
+      "action": {
+        "cs": "Pro opětovné zapnutí použijte některé ovládací pole příslušného displeje. Zajistěte dostatečnou výměnu vzduchu a výhled; při zamlžení obnovte vhodný režim.",
+        "en": "To switch back on, use a control field on the applicable display. Maintain ventilation and visibility; restore an appropriate mode if windows mist.",
+        "de": "Zum Wiedereinschalten ein Bedienfeld des jeweiligen Displays betätigen. Luftaustausch und Sicht sicherstellen; bei Beschlag geeigneten Betrieb wiederherstellen."
+      },
+      "note": {
+        "cs": "Bílý nápis označuje ovladač, nikoli sám aktuální stav funkce. Aktivaci podle návodu ukazuje barevný proužek v ovládacím poli nebo LED; dostupnost a rozmístění závisí na výbavě. Platí pouze pro uvedené vydání Audi A8.",
+        "en": "The white inscription labels a control, not by itself the function’s current state. According to the manual, activation is shown by a coloured bar in the control field or an LED; availability/layout depends on equipment. Only the cited Audi A8 edition.",
+        "de": "Die weiße Aufschrift kennzeichnet eine Bedienung, nicht allein den aktuellen Funktionszustand. Laut Anleitung zeigt ein farbiger Balken im Bedienfeld bzw. eine LED die Aktivierung; Verfügbarkeit/Anordnung sind ausstattungsabhängig. Nur genannte Audi-A8-Ausgabe."
+      },
+      "alt": {
+        "cs": "OFF – vypnutí klimatizace Audi A8",
+        "en": "OFF – Audi A8 climate system off",
+        "de": "OFF – Audi-A8-Klimaanlage ausschalten"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            113,
+            114
+          ],
+          "pdf_pages": [
+            115,
+            116
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "method": "Exact functional inscription and line arrangement visually compared on source pages; own short-text typesetting, not a replacement pictogram. Full named functional paragraph read. No whole climate chapter closure.",
+            "graphic_printed_pages": [
+              113,
+              114
+            ],
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription OFF",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Only the exact short functional inscription and documented line arrangement are typeset; no manufacturer font or pictogram copied, no alternate system symbol substituted. Source Audi A8 06.2025 pp113–115.",
+        "file": "wp-content/uploads/kontrolky/climate-off-control-bila.svg",
+        "sha256": "5e392b4cc3b97dc0d828b147aeb7144c08e5eb21c68869b1b567133c7b3d102f"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "audi-a4-ac-max-control",
+      "graphic": "ac-max-control",
+      "graphic_path": "wp-content/uploads/kontrolky/ac-max-control-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "A/C MAX – maximální chlazení Audi A4",
+        "en": "A/C MAX – Audi A4 maximum cooling",
+        "de": "A/C MAX – maximale Kühlung Audi A4"
+      },
+      "meaning": {
+        "cs": "U základní klimatizace ovládá tlačítko A/C MAX rychlé maximální chlazení a odvlhčení. U třízónové komfortní klimatizace se maximální chladicí výkon volí kolébkovým ovladačem podle výbavy.",
+        "en": "On the basic system, A/C MAX controls rapid maximum cooling and dehumidification. On the three-zone comfort system, maximum cooling is selected with the rocker control, depending on equipment.",
+        "de": "Bei der einfachen Klimaanlage bedient A/C MAX schnelle maximale Kühlung/Entfeuchtung. Bei der Dreizonen-Komfortanlage wird maximale Kühlleistung ausstattungsabhängig über die Wipptaste gewählt."
+      },
+      "action": {
+        "cs": "Používejte krátkodobě. U popsaného třízónového režimu může při nepříznivých podmínkách vzniknout zamlžení; zvolte nastavení zajišťující výhled.",
+        "en": "Use briefly. The described three-zone mode can contribute to misting in unfavourable conditions; choose settings that maintain visibility.",
+        "de": "Nur kurzzeitig nutzen. Beim beschriebenen Dreizonenmodus kann unter ungünstigen Bedingungen Beschlag entstehen; sichtwahrende Einstellung wählen."
+      },
+      "note": {
+        "cs": "Bílé schéma představuje označení ovladače, nikoli samo o sobě aktivaci či poruchu. Platí pouze pro uvedenou klimatizaci a výbavu.",
+        "en": "The white schematic represents a control label, not by itself activation or a fault. Only the specified climate system and equipment.",
+        "de": "Die weiße Darstellung kennzeichnet die Bedienung, nicht allein Aktivierung oder Störung. Nur genannte Klimaanlage und Ausstattung."
+      },
+      "alt": {
+        "cs": "A/C MAX – maximální chlazení Audi A4",
+        "en": "A/C MAX – Audi A4 maximum cooling",
+        "de": "A/C MAX – maximale Kühlung Audi A4"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            105,
+            106
+          ],
+          "pdf_pages": [
+            107,
+            108
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "graphic_printed_pages": [
+              105,
+              106
+            ],
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "method": "Exact functional label or conventional graphic independently visually compared in this model edition; source paragraph and limitations read. No inherited applicability."
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription A/C MAX",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Only the exact short functional inscription and documented line arrangement are typeset; no manufacturer font or pictogram copied, no alternate system symbol substituted. Source Audi A8 06.2025 pp113–115.",
+        "file": "wp-content/uploads/kontrolky/ac-max-control-bila.svg",
+        "sha256": "0872ad4c98379f46ee130bac4e713c108e1e5ddde222e0c5296126a7d08fcaad"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "audi-a4-ac-eco-control",
+      "graphic": "ac-eco-lower-control",
+      "graphic_path": "wp-content/uploads/kontrolky/ac-eco-lower-control-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "A/C eco – úsporné chlazení Audi A4",
+        "en": "A/C eco – Audi A4 energy-saving cooling",
+        "de": "A/C eco – energiesparender Kühlbetrieb Audi A4"
+      },
+      "meaning": {
+        "cs": "Položka třízónové komfortní klimatizace aktivuje energeticky úsporný chladicí režim. Malé „eco“ je označení tohoto vydání, nikoli výstraha.",
+        "en": "The three-zone comfort climate setting activates energy-saving cooling. Lowercase “eco” is this edition’s label, not a warning.",
+        "de": "Einstellung der Dreizonen-Komfortklimaanlage aktiviert energiesparenden Kühlbetrieb. Kleines „eco“ ist die Kennzeichnung dieser Ausgabe, keine Warnung."
+      },
+      "action": {
+        "cs": "Nastavte podle potřeb chlazení a viditelnosti. Změnu provádějte příslušným kolébkovým ovladačem; nejde o jízdní profil celého vozidla.",
+        "en": "Select according to cooling and visibility needs using the relevant rocker control; this is not a whole-vehicle driving profile.",
+        "de": "Nach Kühl-/Sichtbedarf mit zugehöriger Wipptaste wählen; kein Fahrprofil des gesamten Fahrzeugs."
+      },
+      "note": {
+        "cs": "Bílé schéma představuje označení ovladače, nikoli samo o sobě aktivaci či poruchu. Platí pouze pro uvedenou klimatizaci a výbavu.",
+        "en": "The white schematic represents a control label, not by itself activation or a fault. Only the specified climate system and equipment.",
+        "de": "Die weiße Darstellung kennzeichnet die Bedienung, nicht allein Aktivierung oder Störung. Nur genannte Klimaanlage und Ausstattung."
+      },
+      "alt": {
+        "cs": "A/C eco – úsporné chlazení Audi A4",
+        "en": "A/C eco – Audi A4 energy-saving cooling",
+        "de": "A/C eco – energiesparender Kühlbetrieb Audi A4"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            106
+          ],
+          "pdf_pages": [
+            108
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "graphic_printed_pages": [
+              106
+            ],
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "method": "Exact functional label or conventional graphic independently visually compared in this model edition; source paragraph and limitations read. No inherited applicability."
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription A/C eco",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Exact short functional inscription documented in Audi A4 07.2024 p106; no manufacturer font embedded and no pictogram reconstructed.",
+        "file": "wp-content/uploads/kontrolky/ac-eco-lower-control-bila.svg",
+        "sha256": "f3c018c3f5dfce25d334e40fb2c711abd3c54608a4e46b47ed4e6dbed81f2399"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "audi-a4-ac-on-control",
+      "graphic": "ac-on-control",
+      "graphic_path": "wp-content/uploads/kontrolky/ac-on-control-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "A/C ON – zapnutý chladicí režim",
+        "en": "A/C ON – cooling mode on",
+        "de": "A/C ON – Kühlbetrieb eingeschaltet"
+      },
+      "meaning": {
+        "cs": "U uvedené třízónové klimatizace znamená A/C ON zapnuté, automaticky regulované chlazení. Ventilátor musí být v chodu; při nízké venkovní teplotě se chlazení může samo vypnout.",
+        "en": "On the specified three-zone system, A/C ON means cooling is switched on and automatically controlled. The fan must run; cooling may switch off automatically at low outside temperatures.",
+        "de": "Bei genannter Dreizonenanlage bedeutet A/C ON eingeschalteten, automatisch geregelten Kühlbetrieb. Gebläse muss laufen; bei niedriger Außentemperatur kann Kühlung automatisch abschalten."
+      },
+      "action": {
+        "cs": "Režim volte příslušným kolébkovým ovladačem a sledujte skutečně zvolenou položku na displeji. Při zamlžení zajistěte odvlhčení a dostatečný průtok vzduchu.",
+        "en": "Select using the relevant rocker and check the actual display selection. Ensure dehumidification and sufficient airflow if windows mist.",
+        "de": "Mit zugehöriger Wipptaste wählen und tatsächliche Displayauswahl beachten. Bei Beschlag Entfeuchtung und ausreichende Luftmenge sicherstellen."
+      },
+      "note": {
+        "cs": "Bílé schéma představuje označení ovladače, nikoli samo o sobě aktivaci či poruchu. Platí pouze pro uvedenou klimatizaci a výbavu.",
+        "en": "The white schematic represents a control label, not by itself activation or a fault. Only the specified climate system and equipment.",
+        "de": "Die weiße Darstellung kennzeichnet die Bedienung, nicht allein Aktivierung oder Störung. Nur genannte Klimaanlage und Ausstattung."
+      },
+      "alt": {
+        "cs": "A/C ON – zapnutý chladicí režim",
+        "en": "A/C ON – cooling mode on",
+        "de": "A/C ON – Kühlbetrieb eingeschaltet"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            106
+          ],
+          "pdf_pages": [
+            108
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "graphic_printed_pages": [
+              106
+            ],
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "method": "Exact functional label or conventional graphic independently visually compared in this model edition; source paragraph and limitations read. No inherited applicability."
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription A/C ON",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Exact short functional inscription documented in Audi A4 07.2024 p106; no manufacturer font embedded and no pictogram reconstructed.",
+        "file": "wp-content/uploads/kontrolky/ac-on-control-bila.svg",
+        "sha256": "0650146234dabf9efd456e3c3b17cd72a98e1553b98923d142f7a825302ca73d"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "audi-a4-ac-off-control",
+      "graphic": "ac-off-control",
+      "graphic_path": "wp-content/uploads/kontrolky/ac-off-control-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "A/C OFF – chlazení vypnuté, nikoli celá klimatizace",
+        "en": "A/C OFF – cooling off, not the whole climate system",
+        "de": "A/C OFF – Kühlbetrieb aus, nicht gesamte Klimaanlage"
+      },
+      "meaning": {
+        "cs": "Tato položka třízónové klimatizace vypíná chladicí režim. Vzduch se potom nechladí ani neodvlhčuje; nejde o totéž jako celkové tlačítko OFF.",
+        "en": "This three-zone setting switches cooling off. Air is then neither cooled nor dehumidified; this is different from the overall OFF control.",
+        "de": "Diese Dreizoneneinstellung schaltet Kühlbetrieb aus. Luft wird dann weder gekühlt noch entfeuchtet; nicht identisch mit der Gesamttaste OFF."
+      },
+      "action": {
+        "cs": "Při zamlžení znovu zvolte odpovídající chlazení/odvlhčení a proudění vzduchu. Neslučujte tento stav s poruchou chladiva nebo kompresoru.",
+        "en": "Restore appropriate cooling/dehumidification and airflow if windows mist. Do not equate this setting with a refrigerant or compressor fault.",
+        "de": "Bei Beschlag passenden Kühl-/Entfeuchtungsbetrieb und Luftstrom wiederherstellen. Nicht mit Kältemittel-/Kompressorstörung gleichsetzen."
+      },
+      "note": {
+        "cs": "Bílé schéma představuje označení ovladače, nikoli samo o sobě aktivaci či poruchu. Platí pouze pro uvedenou klimatizaci a výbavu.",
+        "en": "The white schematic represents a control label, not by itself activation or a fault. Only the specified climate system and equipment.",
+        "de": "Die weiße Darstellung kennzeichnet die Bedienung, nicht allein Aktivierung oder Störung. Nur genannte Klimaanlage und Ausstattung."
+      },
+      "alt": {
+        "cs": "A/C OFF – chlazení vypnuté, nikoli celá klimatizace",
+        "en": "A/C OFF – cooling off, not the whole climate system",
+        "de": "A/C OFF – Kühlbetrieb aus, nicht gesamte Klimaanlage"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            106
+          ],
+          "pdf_pages": [
+            108
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "graphic_printed_pages": [
+              106
+            ],
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "method": "Exact functional label or conventional graphic independently visually compared in this model edition; source paragraph and limitations read. No inherited applicability."
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription A/C OFF",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Exact short functional inscription documented in Audi A4 07.2024 p106; no manufacturer font embedded and no pictogram reconstructed.",
+        "file": "wp-content/uploads/kontrolky/ac-off-control-bila.svg",
+        "sha256": "fcb53dd5276a743bbb51894ce2f1a385d8bc08ecf7ae7463517349f8ae8ca1b5"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "audi-a4-climate-off-control",
+      "graphic": "climate-off-control",
+      "graphic_path": "wp-content/uploads/kontrolky/climate-off-control-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "OFF – vypnutí klimatizace Audi A4",
+        "en": "OFF – Audi A4 climate system off",
+        "de": "OFF – Audi-A4-Klimaanlage ausschalten"
+      },
+      "meaning": {
+        "cs": "Celkové OFF vypne klimatizaci a uzavře přívod vzduchu zvenčí. Základní a třízónové provedení mají podle tohoto návodu jiné fyzické ovládání.",
+        "en": "Overall OFF switches climate control off and closes the outside-air supply. Basic and three-zone versions use different physical controls in this manual.",
+        "de": "Gesamtes OFF schaltet Klimaanlage aus und sperrt Außenluftzufuhr. Einfache und Dreizonenausführung haben laut Anleitung unterschiedliche physische Bedienung."
+      },
+      "action": {
+        "cs": "Použijte příslušný otočný ovladač nebo tlačítko OFF. Jiným tlačítkem nebo otočným ovladačem lze systém znovu zapnout. Při zamlžení obnovte vhodný režim.",
+        "en": "Use the relevant rotary control or OFF button. Another button/rotary control can switch the system back on. Restore an appropriate mode if windows mist.",
+        "de": "Entsprechenden Drehregler bzw. OFF-Taste nutzen. Andere Taste/Drehregler schaltet wieder ein. Bei Beschlag geeigneten Betrieb wiederherstellen."
+      },
+      "note": {
+        "cs": "Bílé schéma představuje označení ovladače, nikoli samo o sobě aktivaci či poruchu. Platí pouze pro uvedenou klimatizaci a výbavu.",
+        "en": "The white schematic represents a control label, not by itself activation or a fault. Only the specified climate system and equipment.",
+        "de": "Die weiße Darstellung kennzeichnet die Bedienung, nicht allein Aktivierung oder Störung. Nur genannte Klimaanlage und Ausstattung."
+      },
+      "alt": {
+        "cs": "OFF – vypnutí klimatizace Audi A4",
+        "en": "OFF – Audi A4 climate system off",
+        "de": "OFF – Audi-A4-Klimaanlage ausschalten"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            105,
+            106
+          ],
+          "pdf_pages": [
+            107,
+            108
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "graphic_printed_pages": [
+              105,
+              106
+            ],
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "method": "Exact functional label or conventional graphic independently visually compared in this model edition; source paragraph and limitations read. No inherited applicability."
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription OFF",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Only the exact short functional inscription and documented line arrangement are typeset; no manufacturer font or pictogram copied, no alternate system symbol substituted. Source Audi A8 06.2025 pp113–115.",
+        "file": "wp-content/uploads/kontrolky/climate-off-control-bila.svg",
+        "sha256": "5e392b4cc3b97dc0d828b147aeb7144c08e5eb21c68869b1b567133c7b3d102f"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "audi-a4-set-rear-control",
+      "graphic": "set-rear-control",
+      "graphic_path": "wp-content/uploads/kontrolky/set-rear-control-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "SET REAR – nastavení zadní klimatizace z kokpitu",
+        "en": "SET REAR – adjust rear climate from the cockpit",
+        "de": "SET REAR – Fondklima vom Cockpit einstellen"
+      },
+      "meaning": {
+        "cs": "U třízónové komfortní klimatizace lze z předního panelu nastavovat zadní část. Po tuto dobu nelze používat zadní panel; režim se ukončí po čase nebo opuštění nabídky.",
+        "en": "On the three-zone comfort system, rear settings can be adjusted from the front panel. Rear-panel operation is blocked during this mode; it ends after a time or on leaving the menu.",
+        "de": "Bei Dreizonen-Komfortanlage sind Fondeinstellungen vorn möglich. Währenddessen ist hintere Bedienung gesperrt; Modus endet nach einer Zeit oder Verlassen des Menüs."
+      },
+      "action": {
+        "cs": "Zvolte funkci příslušnou kolébkovou volbou a po nastavení nabídku opusťte. Nejde o závadu zadního ovládání ani o vyhřívání zadního skla.",
+        "en": "Select with the applicable rocker and leave the menu after adjustment. Not a rear-control fault or rear-window heating.",
+        "de": "Mit zugehöriger Wipptaste wählen und Menü nach Einstellung verlassen. Keine Störung der Fondbedienung und keine Heckscheibenheizung."
+      },
+      "note": {
+        "cs": "Bílé schéma představuje označení ovladače, nikoli samo o sobě aktivaci či poruchu. Platí pouze pro uvedenou klimatizaci a výbavu.",
+        "en": "The white schematic represents a control label, not by itself activation or a fault. Only the specified climate system and equipment.",
+        "de": "Die weiße Darstellung kennzeichnet die Bedienung, nicht allein Aktivierung oder Störung. Nur genannte Klimaanlage und Ausstattung."
+      },
+      "alt": {
+        "cs": "SET REAR – nastavení zadní klimatizace z kokpitu",
+        "en": "SET REAR – adjust rear climate from the cockpit",
+        "de": "SET REAR – Fondklima vom Cockpit einstellen"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            106
+          ],
+          "pdf_pages": [
+            108
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "graphic_printed_pages": [
+              106
+            ],
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "method": "Exact functional label or conventional graphic independently visually compared in this model edition; source paragraph and limitations read. No inherited applicability."
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription SET REAR",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Exact short functional inscription documented in Audi A4 07.2024 p106; no manufacturer font embedded and no pictogram reconstructed.",
+        "file": "wp-content/uploads/kontrolky/set-rear-control-bila.svg",
+        "sha256": "e4e231a42c0d5e7578c36553851afadd7f178bf11141ac266ca2d3e82451c8e8"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "audi-a8-residual-heat-control",
+      "graphic": "front-demist",
+      "graphic_path": "wp-content/uploads/kontrolky/front-demist-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "MAX při vypnutém zapalování – zbytkové teplo Audi A8",
+        "en": "MAX with ignition off – Audi A8 residual heat",
+        "de": "MAX bei ausgeschalteter Zündung – Audi A8 Restwärme"
+      },
+      "meaning": {
+        "cs": "Stejné tlačítko jako pro odmlžení má v tomto konkrétním kontextu jinou funkci: využije teplo chladicí kapaliny pro vytápění interiéru.",
+        "en": "In this specific context, the defrost button has another function: using coolant residual heat to warm the cabin.",
+        "de": "Die Entfrostertaste hat in diesem konkreten Zusammenhang eine andere Funktion: Kühlwasserrestwärme zum Heizen des Innenraums nutzen."
+      },
+      "action": {
+        "cs": "Podle uvedeného návodu držte při vypnutém zapalování tlačítko déle než dvě sekundy. Funkce se přibližně za 15 minut automaticky vypne.",
+        "en": "According to the specified manual, hold the button for more than two seconds with the ignition off. The function switches off automatically after approximately 15 minutes.",
+        "de": "Laut genannter Anleitung bei ausgeschalteter Zündung Taste länger als zwei Sekunden drücken. Funktion schaltet nach etwa 15 Minuten automatisch ab."
+      },
+      "note": {
+        "cs": "Nejde o důkaz automatického zapnutí ani o univerzální postup pro jinou klimatizaci. Audi A4 07.2024 používá pro zbytkové teplo jiný ovladač; tento postup se na něj nepřenáší.",
+        "en": "Not proof of automatic activation or a universal procedure for other climate systems. Audi A4 07.2024 uses another residual-heat control; do not transfer this procedure to it.",
+        "de": "Kein Nachweis automatischer Aktivierung oder allgemeiner Ablauf für andere Klimaanlagen. Audi A4 07.2024 nutzt andere Restwärmebedienung; diesen Ablauf nicht darauf übertragen."
+      },
+      "alt": {
+        "cs": "MAX při vypnutém zapalování – zbytkové teplo Audi A8",
+        "en": "MAX with ignition off – Audi A8 residual heat",
+        "de": "MAX bei ausgeschalteter Zündung – Audi A8 Restwärme"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            115,
+            116
+          ],
+          "pdf_pages": [
+            117,
+            118
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "graphic_printed_pages": [
+              115,
+              116
+            ],
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "method": "Exact functional label or conventional graphic independently visually compared in this model edition; source paragraph and limitations read. No inherited applicability."
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "ISO 7000 – Ref-No 0635B",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0635B.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/2/25/ISO_7000_-_Ref-No_0635B.svg",
+        "author": "Mrmw",
+        "license": "CC0 1.0 / public-domain functional symbol",
+        "license_url": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0635B.svg#Licensing",
+        "modifications": "Licensed demist geometry retained with stroke-only elements unfilled; registration marks removed; white schematic foreground and exact MAX/REAR functional inscription added only where shown in the cited Terramar control diagram. Not a dashboard warning state.",
+        "file": "wp-content/uploads/kontrolky/front-demist-bila.svg",
+        "sha256": "f132aaba0be2a18abf2a2528a107dd9069227dd7864ecc74b120abb311725595"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
+    },
+    {
+      "id": "audi-a4-residual-heat-control",
+      "graphic": "climate-auto-text",
+      "graphic_path": "wp-content/uploads/kontrolky/climate-auto-text-bila.svg",
+      "color": "bila",
+      "group": "ovladani",
+      "state": "control",
+      "kind": "information",
+      "name": {
+        "cs": "AUTO při vypnutém zapalování – zbytkové teplo Audi A4",
+        "en": "AUTO with ignition off – Audi A4 residual heat",
+        "de": "AUTO bei ausgeschalteter Zündung – Audi A4 Restwärme"
+      },
+      "meaning": {
+        "cs": "Při vypnutém zapalování příslušný otočný ovladač využije teplo chladicí kapaliny k vytápění interiéru. Nejde o běžný automatický režim klimatizace při jízdě.",
+        "en": "With ignition off, the applicable rotary control uses coolant residual heat to warm the cabin. Not ordinary automatic climate operation while driving.",
+        "de": "Bei ausgeschalteter Zündung nutzt der betreffende Drehregler Kühlwasserrestwärme zum Heizen des Innenraums. Nicht gewöhnlicher Klimaautomatikbetrieb während der Fahrt."
+      },
+      "action": {
+        "cs": "U základní klimatizace stiskněte podle návodu otočný ovladač 1; u třízónové komfortní klimatizace levý ovladač 1. Funkce se přibližně za 15 minut automaticky vypne.",
+        "en": "For the basic climate system, press rotary control 1 according to the manual; for three-zone comfort climate, press left control 1. The function switches off automatically after approximately 15 minutes.",
+        "de": "Bei einfacher Klimaanlage laut Anleitung Drehregler 1 drücken; bei Dreizonen-Komfortanlage linken Regler 1. Funktion schaltet nach etwa 15 Minuten automatisch ab."
+      },
+      "note": {
+        "cs": "Označení AUTO a jeho jiný význam jsou doložené obrázkem ovládání a odstavcem Restwärme. Postup Audi A8 s podržením MAX se na toto A4 nepřenáší. Samotný bílý nápis nedokládá aktivaci.",
+        "en": "AUTO label and its different context are documented by the controller illustration and Restwärme paragraph. The Audi A8 MAX-hold procedure must not be transferred to this A4. The white label alone proves no activation.",
+        "de": "AUTO-Kennzeichnung und anderer Kontext durch Bedienabbildung und Absatz Restwärme belegt. Audi-A8-Ablauf mit MAX-Halten nicht auf dieses A4 übertragen. Weiße Aufschrift allein belegt keine Aktivierung."
+      },
+      "alt": {
+        "cs": "AUTO – zbytkové teplo Audi A4 při vypnutém zapalování",
+        "en": "AUTO – Audi A4 residual heat with ignition off",
+        "de": "AUTO – Restwärme Audi A4 bei ausgeschalteter Zündung"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            105,
+            108
+          ],
+          "pdf_pages": [
+            107,
+            110
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "AUTO-labelled physical rotary control in figure97 plus independent Restwärme paragraph p108; different function/context from A8 MAX. No inherited procedure.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              105
+            ],
+            "checked": "2026-10-30"
+          }
+        }
+      ],
+      "graphic_source": {
+        "title": "Functional inscription AUTO",
+        "page": "",
+        "original": "",
+        "author": "Original typesetting for J&S SERVIS",
+        "license": "Functional text; original typesetting",
+        "license_url": "",
+        "modifications": "Exact short functional inscription from the cited manual and supplied photographs; no manufacturer typeface embedded. Not a substitute for a different pictogram.",
+        "file": "wp-content/uploads/kontrolky/climate-auto-text-bila.svg",
+        "sha256": "2b7a066d34af875ab1372e4f7d64d6869aee683cf43229d187a7eb2a55b79ad5"
+      },
+      "checked": "2026-10-30",
+      "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
     }
   ],
   "pending_items": [
@@ -21084,6 +23268,95 @@
         "review_status": "preview-awaiting-automotive-review"
       },
       "reason_cs": "Bílá barva u těchto vydání není v prohlédnutém návodu výslovně potvrzená. Modrá varianta Born je vedena samostatně."
+    },
+    {
+      "id": "audi-start-stop-control",
+      "brand": "audi",
+      "manuals": [
+        "audi-a4-2024-07-de",
+        "audi-a8-2025-06-de"
+      ],
+      "status": "meaning-and-original-graphic-verified-exact-reusable-layout-pending",
+      "name": {
+        "cs": "A OFF – tlačítko systému start-stop Audi",
+        "en": "A OFF – Audi start-stop system button",
+        "de": "A OFF – Audi Start-Stop-Taste"
+      },
+      "reason": {
+        "cs": "Fyzický ovladač Audi má A se šipkou a OFF vedle něj. Licencovaná grafika Terramar má OFF pod A a nesmí být použita jako přesná varianta Audi. Význam a původní obrázek jsou doložené; samostatná přesná grafika s ověřeným právem použití není připravená.",
+        "en": "Audi’s physical control has A with an arrow and OFF beside it. The licensed Terramar graphic puts OFF below A and must not be used as the exact Audi variant. Meaning and original artwork are documented; an exact reusable graphic with confirmed use rights is not prepared.",
+        "de": "Die physische Audi-Bedienung hat A mit Pfeil und OFF daneben. Die lizenzierte Terramar-Grafik hat OFF unter A und darf nicht als genaue Audi-Variante verwendet werden. Bedeutung und Originalbild belegt; genaue nachnutzbare Grafik mit bestätigter Erlaubnis noch nicht vorbereitet."
+      },
+      "source_scopes": [
+        {
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi",
+          "model": "A4",
+          "model_year": null,
+          "generation": null,
+          "edition": "07.2024",
+          "language": "DE",
+          "printed_pages": [
+            124,
+            125,
+            126
+          ],
+          "pdf_pages": [
+            126,
+            127,
+            128
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "7d87c21c997dbe0f9d8b8e9529adb4ce4dfbf1475c3cbaae8b9b6b79d3f59f1d",
+            "graphic_printed_pages": [
+              124
+            ],
+            "checked": "2026-10-30"
+          },
+          "model_note": {
+            "cs": "Pouze vozidla vybavená tímto systémem start-stop. Omezení se nevztahuje automaticky na řízení spalovacího motoru při elektrické jízdě plug-in hybridu.",
+            "en": "Only vehicles equipped with this start-stop system. This scope does not automatically cover combustion-engine management during plug-in-hybrid electric driving.",
+            "de": "Nur Fahrzeuge mit diesem Start-Stop-System. Geltung nicht automatisch für Verbrennungsmotormanagement während elektrischer Plug-in-Hybrid-Fahrt."
+          }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            137,
+            138
+          ],
+          "pdf_pages": [
+            139,
+            140
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Exact printed graphic, colour and state compared visually with the existing licensed functional graphic; complete indicated source paragraphs read independently in this edition. No model-year inheritance.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              137
+            ],
+            "checked": "2026-10-30"
+          },
+          "model_note": {
+            "cs": "Pouze vozidla vybavená tímto systémem start-stop. Omezení se nevztahuje automaticky na řízení spalovacího motoru při elektrické jízdě plug-in hybridu.",
+            "en": "Only vehicles equipped with this start-stop system. This scope does not automatically cover combustion-engine management during plug-in-hybrid electric driving.",
+            "de": "Nur Fahrzeuge mit diesem Start-Stop-System. Geltung nicht automatisch für Verbrennungsmotormanagement während elektrischer Plug-in-Hybrid-Fahrt."
+          }
+        }
+      ]
     }
   ],
   "gaps": [
@@ -22078,16 +24351,115 @@
       "modifications": "Short functional inscription independently documented in the cited exact edition. System sans-serif; no manufacturer font embedded; no unrelated symbol used.",
       "file": "wp-content/uploads/kontrolky/esc-off-text-zluta.svg",
       "sha256": "ad89457cf8cfc4db88d6da35cc7ae26e026be3f486a2c452cc93bc0ec65730f0"
+    },
+    "ac-max-control-bila": {
+      "title": "Functional inscription A/C MAX",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Only the exact short functional inscription and documented line arrangement are typeset; no manufacturer font or pictogram copied, no alternate system symbol substituted. Source Audi A8 06.2025 pp113–115.",
+      "file": "wp-content/uploads/kontrolky/ac-max-control-bila.svg",
+      "sha256": "0872ad4c98379f46ee130bac4e713c108e1e5ddde222e0c5296126a7d08fcaad"
+    },
+    "ac-eco-control-bila": {
+      "title": "Functional inscription A/C ECO",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Only the exact short functional inscription and documented line arrangement are typeset; no manufacturer font or pictogram copied, no alternate system symbol substituted. Source Audi A8 06.2025 pp113–115.",
+      "file": "wp-content/uploads/kontrolky/ac-eco-control-bila.svg",
+      "sha256": "6f6daa9583da75a8c1adb2cae5af17a1ebbf093f3d3a2c0853bb0a3f9c74334d"
+    },
+    "rear-climate-control-bila": {
+      "title": "Functional inscription REAR",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Only the exact short functional inscription and documented line arrangement are typeset; no manufacturer font or pictogram copied, no alternate system symbol substituted. Source Audi A8 06.2025 pp113–115.",
+      "file": "wp-content/uploads/kontrolky/rear-climate-control-bila.svg",
+      "sha256": "5c13b78f3d285c0f1fdac63774c50054be84291623ba53e47d0799bd8bc79882"
+    },
+    "climate-sync-control-bila": {
+      "title": "Functional inscription SYNC",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Only the exact short functional inscription and documented line arrangement are typeset; no manufacturer font or pictogram copied, no alternate system symbol substituted. Source Audi A8 06.2025 pp113–115.",
+      "file": "wp-content/uploads/kontrolky/climate-sync-control-bila.svg",
+      "sha256": "f5f245012a08fdd93d0640fde1fba2d39527ef043ffb0834ed5d75b294f6a2b9"
+    },
+    "climate-off-control-bila": {
+      "title": "Functional inscription OFF",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Only the exact short functional inscription and documented line arrangement are typeset; no manufacturer font or pictogram copied, no alternate system symbol substituted. Source Audi A8 06.2025 pp113–115.",
+      "file": "wp-content/uploads/kontrolky/climate-off-control-bila.svg",
+      "sha256": "5e392b4cc3b97dc0d828b147aeb7144c08e5eb21c68869b1b567133c7b3d102f"
+    },
+    "ac-eco-lower-control-bila": {
+      "title": "Functional inscription A/C eco",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Exact short functional inscription documented in Audi A4 07.2024 p106; no manufacturer font embedded and no pictogram reconstructed.",
+      "file": "wp-content/uploads/kontrolky/ac-eco-lower-control-bila.svg",
+      "sha256": "f3c018c3f5dfce25d334e40fb2c711abd3c54608a4e46b47ed4e6dbed81f2399"
+    },
+    "ac-on-control-bila": {
+      "title": "Functional inscription A/C ON",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Exact short functional inscription documented in Audi A4 07.2024 p106; no manufacturer font embedded and no pictogram reconstructed.",
+      "file": "wp-content/uploads/kontrolky/ac-on-control-bila.svg",
+      "sha256": "0650146234dabf9efd456e3c3b17cd72a98e1553b98923d142f7a825302ca73d"
+    },
+    "ac-off-control-bila": {
+      "title": "Functional inscription A/C OFF",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Exact short functional inscription documented in Audi A4 07.2024 p106; no manufacturer font embedded and no pictogram reconstructed.",
+      "file": "wp-content/uploads/kontrolky/ac-off-control-bila.svg",
+      "sha256": "fcb53dd5276a743bbb51894ce2f1a385d8bc08ecf7ae7463517349f8ae8ca1b5"
+    },
+    "set-rear-control-bila": {
+      "title": "Functional inscription SET REAR",
+      "page": "",
+      "original": "",
+      "author": "Original typesetting for J&S SERVIS",
+      "license": "Functional text; original typesetting",
+      "license_url": "",
+      "modifications": "Exact short functional inscription documented in Audi A4 07.2024 p106; no manufacturer font embedded and no pictogram reconstructed.",
+      "file": "wp-content/uploads/kontrolky/set-rear-control-bila.svg",
+      "sha256": "e4e231a42c0d5e7578c36553851afadd7f178bf11141ac266ca2d3e82451c8e8"
     }
   },
   "counts": {
-    "semantic_records": 142,
+    "semantic_records": 159,
     "legacy_generic_volkswagen": 1,
-    "model_documented_semantic_records": 138,
-    "model_edition_assignments": 510,
+    "model_documented_semantic_records": 155,
+    "model_edition_assignments": 554,
     "partially_reviewed_manual_editions": 42,
-    "shared_graphic_colour_variants": 83,
-    "distinct_pictogram_shapes": 58,
+    "shared_graphic_colour_variants": 92,
+    "distinct_pictogram_shapes": 67,
     "by_brand": {
       "volkswagen": {
         "distinct_pictogram_shapes": 25,
@@ -22100,10 +24472,10 @@
         "third_party_hosted_manual_editions": 0
       },
       "audi": {
-        "distinct_pictogram_shapes": 43,
-        "graphic_colour_variants": 55,
-        "semantic_variants": 64,
-        "model_edition_assignments": 137,
+        "distinct_pictogram_shapes": 54,
+        "graphic_colour_variants": 66,
+        "semantic_variants": 83,
+        "model_edition_assignments": 181,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 5,
         "first_party_hosted_manual_editions": 0,
@@ -22439,12 +24811,33 @@
         "en": "Resolved: full 338-page Q4 e-tron 07.2024, 89A012705AM, obtained through the ordinary public browser viewer. SHA-256 matches the file identifier. Selected images and instructions checked individually; not a complete review of the manual.",
         "de": "Gelöst: vollständige 338-seitige Q4-e-tron-Anleitung 07.2024, 89A012705AM, über den normalen öffentlichen Browser-Betrachter abgerufen. SHA-256 entspricht der Dateikennung. Ausgewählte Bilder und Anweisungen einzeln verglichen; keine vollständige Anleitungsprüfung."
       }
+    },
+    {
+      "id": "vw-range-european-source-search-20261030",
+      "checked": "2026-10-30",
+      "item": "vw-range",
+      "result": "unresolved",
+      "examined_candidates": [
+        "Touareg 11.2019 German digital manual: lighting troubleshooting does not confirm this exact symbol",
+        "Passat B8 MJ2016 attachment 752102: HTTP 403, actual PDF not obtained",
+        "Touareg 2013/2014 English manual mirrors: European market scope not established, not accepted as European proof",
+        "Phaeton SSP 272: early-2000s publication, not evidence for a 2010+ model-year assignment"
+      ],
+      "source_url": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/headlight-range-control.html",
+      "conclusion": "Generic official VW UK meaning retained with explicit missing-model qualification; no unsupported specific-model scope added.",
+      "brand": "volkswagen",
+      "url": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/headlight-range-control.html",
+      "summary": {
+        "cs": "Modelové doložení vw-range zůstává otevřené. Touareg 11.2019 přesnou variantu nepotvrdil; kopie Passat B8 MJ2016 vrátila HTTP 403. Anglické příklady Touareg 2013/2014 nemají doloženou evropskou platnost; SSP 272 nepokrývá požadovaný rozsah od 2010. Bez modelového přiřazení.",
+        "en": "Model evidence for vw-range remains open. Touareg 11.2019 did not confirm the exact variant; the Passat B8 MY2016 copy returned HTTP 403. English Touareg 2013/2014 examples lack established European applicability; SSP 272 does not cover the requested 2010+ scope. No model assignment added.",
+        "de": "Modellnachweis vw-range offen. Touareg 11.2019 bestätigt genaue Variante nicht; Passat-B8-MJ2016-Kopie liefert HTTP 403. Europäische Geltung englischer Touareg-2013/2014-Beispiele unbelegt; SSP 272 deckt geforderten Bereich ab 2010 nicht ab. Keine Modellzuordnung ergänzt."
+      }
     }
   ],
   "counting_method": {
-    "cs": "Odlišný tvar symbolu počítáme jednou bez ohledu na barvu a počet přiřazených modelů. Barevné obrazové varianty, významové záznamy a modelová přiřazení vykazujeme zvlášť. Dvě příručky Škoda jsou kopie vydání výrobce hostované třetí stranou; nejsou vydávané za soubory ověřené na serveru výrobce.",
-    "en": "A distinct pictogram shape is counted once regardless of colour or model assignments. Colour renditions, semantic records and model assignments are reported separately. Two Škoda manuals are manufacturer-authored editions hosted by third parties, not files verified on the manufacturer’s server.",
-    "de": "Eine unterschiedliche Piktogrammform wird unabhängig von Farbe und Modellzuordnungen einmal gezählt. Farbvarianten, Bedeutungseinträge und Modellzuordnungen werden getrennt ausgewiesen. Zwei Škoda-Anleitungen sind von Dritten gehostete Herstellerausgaben, keine auf dem Herstellerserver geprüften Dateien."
+    "cs": "Odlišný tvar symbolu počítáme jednou bez ohledu na barvu a počet přiřazených modelů. Barevné obrazové varianty, významové záznamy a modelová přiřazení vykazujeme zvlášť. Dvě příručky Škoda jsou kopie vydání výrobce hostované třetí stranou; nejsou vydávané za soubory ověřené na serveru výrobce. Tyto grafické identity zahrnují také doložené funkční nápisy (například AUTO, LIM, A/C), nikoli jen obrazové piktogramy. Nejde o počet všech symbolů výrobce ani důkaz úplnosti.",
+    "en": "A distinct pictogram shape is counted once regardless of colour or model assignments. Colour renditions, semantic records and model assignments are reported separately. Two Škoda manuals are manufacturer-authored editions hosted by third parties, not files verified on the manufacturer’s server. These graphic identities also include documented functional inscriptions (such as AUTO, LIM, A/C), not only pictorial symbols. They are neither a count of every manufacturer symbol nor evidence of completeness.",
+    "de": "Eine unterschiedliche Piktogrammform wird unabhängig von Farbe und Modellzuordnungen einmal gezählt. Farbvarianten, Bedeutungseinträge und Modellzuordnungen werden getrennt ausgewiesen. Zwei Škoda-Anleitungen sind von Dritten gehostete Herstellerausgaben, keine auf dem Herstellerserver geprüften Dateien. Diese Grafikidentitäten schließen auch belegte Funktionsaufschriften (etwa AUTO, LIM, A/C) ein, nicht nur Bildpiktogramme. Keine Anzahl sämtlicher Herstellersymbole und kein Vollständigkeitsbeleg."
   },
   "review_gaps": {
     "cs": [
@@ -24325,6 +26718,307 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "Exact newly acquired Q4 06.2023 89A012705AH has a white cup break-recommendation symbol; not the eye of 07.2024 and not a substitute for missing 2022 documentation. Entire small Pausenempfehlung subsection compared, not the whole manual."
+    },
+    {
+      "id": "audi-start-stop-and-direct-tyres",
+      "checked": "2026-10-30",
+      "before_semantic_records": 142,
+      "after_semantic_records": 146,
+      "added_record_ids": [
+        "audi-start-stop-no-stop",
+        "audi-direct-pressure-low",
+        "audi-direct-pressure-critical",
+        "audi-direct-wheel-change"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "audi-start-stop-green",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-start-stop-no-stop",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-hold-green-p",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-q4-lim-active",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-q4-lim-overridden",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "cruise-active",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-direct-pressure-low",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-direct-pressure-critical",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-direct-wheel-change",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-tpms-fault",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "bulb-fault",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-q4-turn-left",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-q4-turn-right",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-start-stop-green",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-start-stop-no-stop",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-hold-green-p",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-q4-lim-active",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-q4-lim-overridden",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "cruise-active",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-direct-pressure-low",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-direct-pressure-critical",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-direct-wheel-change",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-tpms-fault",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "bulb-fault",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-q4-turn-left",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-q4-turn-right",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        }
+      ],
+      "corrected_record_ids": [
+        "audi-hold-green-p",
+        "audi-q4-lim-active",
+        "audi-q4-lim-overridden"
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Exact A4 07.2024 and A8 06.2025 source instructions compared. Start-stop ordinary conditions distinguished from control label and explicit fault messages; direct tyre-system messages separated. No new icon shapes or recolouring. Physical A OFF candidate withheld: exact beside-A layout differs from licensed Terramar below-A variant.",
+      "withheld_candidate_ids": [
+        "audi-start-stop-control"
+      ]
+    },
+    {
+      "id": "a8-documented-climate-text-controls",
+      "checked": "2026-10-30",
+      "before_semantic_records": 146,
+      "after_semantic_records": 151,
+      "added_record_ids": [
+        "audi-a8-ac-max-control",
+        "audi-a8-ac-eco-control",
+        "audi-a8-rear-climate-control",
+        "audi-a8-climate-sync-control",
+        "audi-a8-climate-off-control"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "audi-a8-ac-max-control",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a8-ac-eco-control",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a8-rear-climate-control",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a8-climate-sync-control",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a8-climate-off-control",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Five source-documented textual control labels, not invented system-name substitute pictograms. REAR access to rear climate distinguished from rear-window heater. Ordinary white labels do not prove activation."
+    },
+    {
+      "id": "a4-a8-climate-context-variants",
+      "checked": "2026-10-30",
+      "before_semantic_records": 151,
+      "after_semantic_records": 158,
+      "added_record_ids": [
+        "audi-a4-ac-max-control",
+        "audi-a4-ac-eco-control",
+        "audi-a4-ac-on-control",
+        "audi-a4-ac-off-control",
+        "audi-a4-climate-off-control",
+        "audi-a4-set-rear-control",
+        "audi-a8-residual-heat-control"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "audi-a4-ac-max-control",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a4-ac-eco-control",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a4-ac-on-control",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a4-ac-off-control",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a4-climate-off-control",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a4-set-rear-control",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a8-residual-heat-control",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "terramar-front-max",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "terramar-rear-heating",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "terramar-front-max",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "terramar-rear-heating",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a8-climate-sync-control",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        }
+      ],
+      "corrected_record_ids": [
+        "terramar-front-max",
+        "audi-a8-climate-sync-control"
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Independent chapter review separates A4 A/C OFF from whole-system OFF, SET REAR from A8 REAR, and A8 residual-heat press context from ordinary defrost. Matching MAX/REAR graphics verified in each model source; no cross-model operation inferred."
+    },
+    {
+      "id": "a4-residual-heat-context",
+      "checked": "2026-10-30",
+      "before_semantic_records": 158,
+      "after_semantic_records": 159,
+      "added_record_ids": [
+        "audi-a4-residual-heat-control"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "audi-a4-residual-heat-control",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "A4 own ignition-off rotary-AUTO operation documented separately from A8 MAX hold. No new graphic or shape."
     }
   ],
   "evidence_gaps_revision": [

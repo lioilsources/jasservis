@@ -1,0 +1,85 @@
+{
+  "manual": "vwcv-caddy-2025-11-de",
+  "edition": "11.2025",
+  "part_number": "2K7012767AM",
+  "checked": "2026-10-30",
+  "source_document_url": "https://www.volkswagen.de/de/besitzer-und-service/ueber-ihr-auto/digitale-betriebsanleitung-welcome.html?part-number-app=2K7012767AM&brand-pattern-app=WV1",
+  "whole_manual_complete": false,
+  "graphics": [
+    {
+      "source_row": 65,
+      "manual": "vwcv-caddy-2025-11-de",
+      "source_label": "Spurhalteassistent (Lane Assist)  ausgeschaltet → Fahren mit Lane Assist",
+      "source_url": "https://userguide.volkswagen.de:443/vwn/api/consumer/V4/media?language=de_DE&key=img731c3937f29a608e0adf02e724114451_1_--_--_vw_Symbol_SVG_online_yellow.svg",
+      "source_sha256": "e09abb27fefc89316675ae99b30a4b7a1b441bfb40feca57fae4f28812c33440",
+      "geometry_sha256": "0f1a46a9db08a20da1fc4278b588e60d217ac4f5702a10590c021a97bafaad3e",
+      "source_fills": [
+        "#ffd100"
+      ],
+      "checked": "2026-10-30",
+      "geometry_and_colour_compared": true,
+      "customer_graphic_published": false,
+      "publication_blocker": "No confirmed reuse licence for the manufacturer SVG; no substitute or recoloured Terramar graphic published. Source files kept private."
+    },
+    {
+      "source_row": 70,
+      "manual": "vwcv-caddy-2025-11-de",
+      "source_label": "Spurhalteassistent (Lane Assist) nicht verfügbar →    Lane Assist nicht verfügbar",
+      "source_url": "https://userguide.volkswagen.de:443/vwn/api/consumer/V4/media?language=de_DE&key=img191dbe6af29a637c0adf02e7399da116_1_--_--_vw_Symbol_SVG_online_yellow.svg",
+      "source_sha256": "fc444e0ea91152a1a6273bf63272d2b6a7807ea64adb69bf9a73c40086f93a9a",
+      "geometry_sha256": "a677365dca24a74a81a3aa5bb7198bc6ef9bf5484b6ff7170b28708364c73710",
+      "source_fills": [
+        "#ffd100"
+      ],
+      "checked": "2026-10-30",
+      "geometry_and_colour_compared": true,
+      "customer_graphic_published": false,
+      "publication_blocker": "No confirmed reuse licence for the manufacturer SVG; no substitute or recoloured Terramar graphic published. Source files kept private."
+    },
+    {
+      "source_row": 71,
+      "manual": "vwcv-caddy-2025-11-de",
+      "source_label": "Spurhalteassistent (Lane Assist) regelt → Fahren mit Lane Assist",
+      "source_url": "https://userguide.volkswagen.de:443/vwn/api/consumer/V4/media?language=de_DE&key=imgab12f3c2f29a827e0adf02e768d0d1ff_1_--_--_vw_Symbol_SVG_online_yellow.svg",
+      "source_sha256": "16cb176ad8b0b5d159ea42787bd5bdc85b4da47cda6cc596b096331ea08d8781",
+      "geometry_sha256": "e824b3391078863cf952e9c8245dbdf05f401a9a0bddd72a3033a72f93ce3c7a",
+      "source_fills": [
+        "#ffd100"
+      ],
+      "checked": "2026-10-30",
+      "geometry_and_colour_compared": true,
+      "customer_graphic_published": false,
+      "publication_blocker": "No confirmed reuse licence for the manufacturer SVG; no substitute or recoloured Terramar graphic published. Source files kept private."
+    },
+    {
+      "source_row": 104,
+      "manual": "vwcv-caddy-2025-11-de",
+      "source_label": "Spurhalteassistent (Lane Assist) bereit zu regeln → Fahren mit Lane Assist",
+      "source_url": "https://userguide.volkswagen.de:443/vwn/api/consumer/V4/media?language=de_DE&key=imgab12f3c2f29a827e0adf02e768d0d1ff_1_--_--_vw_Symbol_SVG_online_green.svg",
+      "source_sha256": "7340f7ac5a6e547ebf29697b71ead2a6429e1c7473714cd5587390321c87b764",
+      "geometry_sha256": "e824b3391078863cf952e9c8245dbdf05f401a9a0bddd72a3033a72f93ce3c7a",
+      "source_fills": [
+        "#b9c900"
+      ],
+      "checked": "2026-10-30",
+      "geometry_and_colour_compared": true,
+      "customer_graphic_published": false,
+      "publication_blocker": "No confirmed reuse licence for the manufacturer SVG; no substitute or recoloured Terramar graphic published. Source files kept private."
+    },
+    {
+      "source_row": 121,
+      "manual": "vwcv-caddy-2025-11-de",
+      "source_label": "Spurhalteassistent (Lane Assist) nicht bereit zu regeln → Fahren mit Lane Assist",
+      "source_url": "https://userguide.volkswagen.de:443/vwn/api/consumer/V4/media?language=de_DE&key=imgab12f3c2f29a827e0adf02e768d0d1ff_1_--_--_vw_Symbol_SVG_online_grey.svg",
+      "source_sha256": "c82c72bef30ce835918e688e94dcb69906080618ebac99ed13f3bbabf01b34f5",
+      "geometry_sha256": "e824b3391078863cf952e9c8245dbdf05f401a9a0bddd72a3033a72f93ce3c7a",
+      "source_fills": [
+        "#808080"
+      ],
+      "checked": "2026-10-30",
+      "geometry_and_colour_compared": true,
+      "customer_graphic_published": false,
+      "publication_blocker": "No confirmed reuse licence for the manufacturer SVG; no substitute or recoloured Terramar graphic published. Source files kept private."
+    }
+  ]
+}

@@ -2,13 +2,13 @@
   "canonical_catalog": "../_warnings/catalog.json",
   "review_status": "incomplete-preview",
   "checked": "2026-10-30",
-  "semantic_records": 142,
+  "semantic_records": 159,
   "legacy_generic_volkswagen": 1,
-  "model_documented_semantic_records": 138,
-  "model_edition_assignments": 510,
+  "model_documented_semantic_records": 155,
+  "model_edition_assignments": 554,
   "partially_reviewed_manual_editions": 42,
-  "shared_graphic_colour_variants": 83,
-  "distinct_pictogram_shapes": 58,
+  "shared_graphic_colour_variants": 92,
+  "distinct_pictogram_shapes": 67,
   "by_brand": {
     "volkswagen": {
       "distinct_pictogram_shapes": 25,
@@ -21,10 +21,10 @@
       "third_party_hosted_manual_editions": 0
     },
     "audi": {
-      "distinct_pictogram_shapes": 43,
-      "graphic_colour_variants": 55,
-      "semantic_variants": 64,
-      "model_edition_assignments": 137,
+      "distinct_pictogram_shapes": 54,
+      "graphic_colour_variants": 66,
+      "semantic_variants": 83,
+      "model_edition_assignments": 181,
       "generic_brand_assignments": 0,
       "reviewed_manual_editions": 5,
       "first_party_hosted_manual_editions": 0,

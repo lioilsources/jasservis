@@ -1943,8 +1943,19 @@
       "verified_item_ids": [
         "abs-fault",
         "audi-12v-system-red",
+        "audi-a4-ac-eco-control",
+        "audi-a4-ac-max-control",
+        "audi-a4-ac-off-control",
+        "audi-a4-ac-on-control",
+        "audi-a4-climate-off-control",
+        "audi-a4-residual-heat-control",
+        "audi-a4-set-rear-control",
+        "audi-a8-climate-sync-control",
         "audi-ac-cooling-control",
         "audi-climate-auto-control",
+        "audi-direct-pressure-critical",
+        "audi-direct-pressure-low",
+        "audi-direct-wheel-change",
         "audi-fatigue-break-recommended",
         "audi-fatigue-break-required",
         "audi-fatigue-unavailable",
@@ -1952,7 +1963,17 @@
         "audi-high-beam-auto-enabled",
         "audi-high-beam-auto-on",
         "audi-high-beam-auto-unavailable",
+        "audi-hold-green-p",
+        "audi-q4-lim-active",
+        "audi-q4-lim-overridden",
+        "audi-q4-turn-left",
+        "audi-q4-turn-right",
+        "audi-start-stop-green",
+        "audi-start-stop-no-stop",
+        "audi-tpms-fault",
         "brake-fault",
+        "bulb-fault",
+        "cruise-active",
         "esc-fault",
         "esc-off-inscription",
         "esc-regulating",
@@ -1961,7 +1982,9 @@
         "pads-worn",
         "parking-applied",
         "seatbelt",
-        "steering-red"
+        "steering-red",
+        "terramar-front-max",
+        "terramar-rear-heating"
       ],
       "reviewed_printed_pages": [
         13,
@@ -1971,15 +1994,26 @@
         82,
         105,
         106,
+        107,
+        108,
+        124,
+        125,
+        126,
         127,
         128,
+        129,
         141,
         144,
         145,
         163,
         164,
+        168,
+        169,
         287,
-        293
+        293,
+        307,
+        308,
+        309
       ],
       "reviewed_html_sections": [],
       "sections": {
@@ -2008,8 +2042,17 @@
       "verified_item_ids": [
         "abs-fault",
         "audi-12v-system-red",
+        "audi-a8-ac-eco-control",
+        "audi-a8-ac-max-control",
+        "audi-a8-climate-off-control",
+        "audi-a8-climate-sync-control",
+        "audi-a8-rear-climate-control",
+        "audi-a8-residual-heat-control",
         "audi-ac-cooling-control",
         "audi-climate-auto-control",
+        "audi-direct-pressure-critical",
+        "audi-direct-pressure-low",
+        "audi-direct-wheel-change",
         "audi-fatigue-break-recommended",
         "audi-fatigue-break-required",
         "audi-fatigue-unavailable",
@@ -2017,7 +2060,17 @@
         "audi-high-beam-auto-enabled",
         "audi-high-beam-auto-on",
         "audi-high-beam-auto-unavailable",
+        "audi-hold-green-p",
+        "audi-q4-lim-active",
+        "audi-q4-lim-overridden",
+        "audi-q4-turn-left",
+        "audi-q4-turn-right",
+        "audi-start-stop-green",
+        "audi-start-stop-no-stop",
+        "audi-tpms-fault",
         "brake-fault",
+        "bulb-fault",
+        "cruise-active",
         "esc-fault",
         "esc-off-inscription",
         "esc-regulating",
@@ -2026,7 +2079,9 @@
         "pads-worn",
         "parking-applied",
         "seatbelt",
-        "steering-red"
+        "steering-red",
+        "terramar-front-max",
+        "terramar-rear-heating"
       ],
       "reviewed_printed_pages": [
         13,
@@ -2036,15 +2091,26 @@
         94,
         113,
         114,
+        115,
+        116,
+        137,
+        138,
         140,
+        141,
         148,
         150,
         151,
         190,
         191,
         192,
+        197,
+        198,
+        199,
         342,
-        348
+        348,
+        362,
+        363,
+        364
       ],
       "reviewed_html_sections": [],
       "sections": {
@@ -72783,11 +72849,14 @@
     "received_identifiable_photographs": 6,
     "visually_reviewed": 6,
     "fully_source_matched_photographs": 0,
-    "status": "six-received-and-visually-reviewed-individual-source-matching-incomplete",
+    "status": "six-reviewed-some-exact-context-variants-unresolved",
     "evidence": "terramar-photo-review.json",
     "note": "All six distinct user photographs visually reviewed. Exact state matching is incomplete; the sixth cluster photograph at 0 rpm is not proof of simultaneous faults. Model year/software and original file metadata unknown.",
     "comparison_evidence": "terramar-photo-review.json",
-    "comparison_scope": "69 individual non-aggregate observations with concrete occurrences and positions; exact artwork, function, current website status, source edition/pages and needed action separate. Full photo/model match incomplete."
+    "comparison_scope": "69 individual non-aggregate observations with concrete occurrences and positions; exact artwork, function, current website status, source edition/pages and needed action separate. Full photo/model match incomplete.",
+    "latest_resolved_observations": [
+      "phone-app / Full Link, printed 287, edition 11.25"
+    ]
   },
   "new_items": {
     "id": "116-q4-and-control-icons",
@@ -73832,6 +73901,307 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "Exact newly acquired Q4 06.2023 89A012705AH has a white cup break-recommendation symbol; not the eye of 07.2024 and not a substitute for missing 2022 documentation. Entire small Pausenempfehlung subsection compared, not the whole manual."
+    },
+    {
+      "id": "audi-start-stop-and-direct-tyres",
+      "checked": "2026-10-30",
+      "before_semantic_records": 142,
+      "after_semantic_records": 146,
+      "added_record_ids": [
+        "audi-start-stop-no-stop",
+        "audi-direct-pressure-low",
+        "audi-direct-pressure-critical",
+        "audi-direct-wheel-change"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "audi-start-stop-green",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-start-stop-no-stop",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-hold-green-p",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-q4-lim-active",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-q4-lim-overridden",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "cruise-active",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-direct-pressure-low",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-direct-pressure-critical",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-direct-wheel-change",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-tpms-fault",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "bulb-fault",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-q4-turn-left",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-q4-turn-right",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-start-stop-green",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-start-stop-no-stop",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-hold-green-p",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-q4-lim-active",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-q4-lim-overridden",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "cruise-active",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-direct-pressure-low",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-direct-pressure-critical",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-direct-wheel-change",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-tpms-fault",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "bulb-fault",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-q4-turn-left",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-q4-turn-right",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        }
+      ],
+      "corrected_record_ids": [
+        "audi-hold-green-p",
+        "audi-q4-lim-active",
+        "audi-q4-lim-overridden"
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Exact A4 07.2024 and A8 06.2025 source instructions compared. Start-stop ordinary conditions distinguished from control label and explicit fault messages; direct tyre-system messages separated. No new icon shapes or recolouring. Physical A OFF candidate withheld: exact beside-A layout differs from licensed Terramar below-A variant.",
+      "withheld_candidate_ids": [
+        "audi-start-stop-control"
+      ]
+    },
+    {
+      "id": "a8-documented-climate-text-controls",
+      "checked": "2026-10-30",
+      "before_semantic_records": 146,
+      "after_semantic_records": 151,
+      "added_record_ids": [
+        "audi-a8-ac-max-control",
+        "audi-a8-ac-eco-control",
+        "audi-a8-rear-climate-control",
+        "audi-a8-climate-sync-control",
+        "audi-a8-climate-off-control"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "audi-a8-ac-max-control",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a8-ac-eco-control",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a8-rear-climate-control",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a8-climate-sync-control",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a8-climate-off-control",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Five source-documented textual control labels, not invented system-name substitute pictograms. REAR access to rear climate distinguished from rear-window heater. Ordinary white labels do not prove activation."
+    },
+    {
+      "id": "a4-a8-climate-context-variants",
+      "checked": "2026-10-30",
+      "before_semantic_records": 151,
+      "after_semantic_records": 158,
+      "added_record_ids": [
+        "audi-a4-ac-max-control",
+        "audi-a4-ac-eco-control",
+        "audi-a4-ac-on-control",
+        "audi-a4-ac-off-control",
+        "audi-a4-climate-off-control",
+        "audi-a4-set-rear-control",
+        "audi-a8-residual-heat-control"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "audi-a4-ac-max-control",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a4-ac-eco-control",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a4-ac-on-control",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a4-ac-off-control",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a4-climate-off-control",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a4-set-rear-control",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a8-residual-heat-control",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "terramar-front-max",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "terramar-rear-heating",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        },
+        {
+          "id": "terramar-front-max",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "terramar-rear-heating",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a8-climate-sync-control",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        }
+      ],
+      "corrected_record_ids": [
+        "terramar-front-max",
+        "audi-a8-climate-sync-control"
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Independent chapter review separates A4 A/C OFF from whole-system OFF, SET REAR from A8 REAR, and A8 residual-heat press context from ordinary defrost. Matching MAX/REAR graphics verified in each model source; no cross-model operation inferred."
+    },
+    {
+      "id": "a4-residual-heat-context",
+      "checked": "2026-10-30",
+      "before_semantic_records": 158,
+      "after_semantic_records": 159,
+      "added_record_ids": [
+        "audi-a4-residual-heat-control"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "audi-a4-residual-heat-control",
+          "manual": "audi-a4-2024-07-de",
+          "brand": "audi"
+        }
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "A4 own ignition-off rotary-AUTO operation documented separately from A8 MAX hold. No new graphic or shape."
     }
   ],
   "chapter_register": "chapter-review.json",
@@ -73846,6 +74216,18 @@
     "seat-leon-2026-11-25-lane-control-lamps",
     "enyaq-2020-lane-status",
     "golf-2020-lane-operating-lamps",
-    "caddy-2025-lane-operating-lamps"
+    "caddy-2025-lane-operating-lamps",
+    "audi-a4-2024-07-de-start-stop-section",
+    "audi-a4-2024-07-de-speed-signal-list",
+    "audi-a4-2024-07-de-direct-tyre-system",
+    "audi-a8-2025-06-de-start-stop-section",
+    "audi-a8-2025-06-de-speed-signal-list",
+    "audi-a8-2025-06-de-direct-tyre-system",
+    "audi-a4-2024-07-de-full-klimaanlage-source-comparison",
+    "audi-a8-2025-06-de-full-klimaanlage-source-comparison",
+    "a8-rear-climate",
+    "a8-climate-sync",
+    "a8-climate-off",
+    "a8-cooling-control-paragraph"
   ]
 }

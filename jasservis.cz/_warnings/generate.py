@@ -129,7 +129,10 @@ def chapter_page(lang,page):
     item=next(i for i in CAT['items']if i['id']==id);out+='<a href="./?znacka='+m['brand']+'#kontrolka-'+(item['legacy_id'].lower()if item.get('legacy_id')and m['brand']=='volkswagen'else id+'-'+m['brand'])+'">'+esc(item['name'][lang])+'</a> '
    if not state['catalogue_ids']:out+=esc(t[9])
    out+='</li>'
-  out+='</ul><p>'+esc(row['remaining'][lang])+'</p></div></details>'
+  out+='</ul><p>'+esc(row['remaining'][lang])+'</p>'
+  if row.get('evidence_file'):
+   out+='<p><a href="'+rel('_warnings/'+row['evidence_file'],page)+'">JSON</a> · <a href="'+rel('_warnings/'+row['evidence_file'].replace('.json','.'+lang+'.csv'),page)+'">CSV</a></p>'
+  out+='</div></details>'
  out+='</section><section id="navody"><h2>'+t[10]+'</h2><p><a href="'+rel('_warnings/chapter-review.'+lang+'.csv',page)+'">CSV</a> · <a href="'+rel('_warnings/chapter-review.json',page)+'">JSON</a></p>'
  status=dict(zip(['selected-items-compared-not-full-chapter','not-yet-compared','bounded-subsections-compared-rest-open','functions-compared-exact-graphics-pending'],t[18:22]))
  for m in d['manuals']:
@@ -138,7 +141,7 @@ def chapter_page(lang,page):
    loc=', '.join(map(str,row['reviewed_printed_pages']))or' / '.join(row['reviewed_html_sections']);vals=[row['title'][lang],status[row['status']],loc,', '.join(row['verified_catalogue_ids']),row['remaining'][lang]]
    out+='<tr>'+''.join('<td data-label="'+esc(label)+'">'+esc(value)+'</td>'for label,value in zip(t[11:16],vals))+'</tr>'
   out+='</tbody></table></div></details>'
- out+='</section><section id="chybejici-podklady"><h2>'+t[16]+'</h2><ul>'
+ out+='</section><section id="grafiky-caddy"><h2>'+{'cs':'Caddy 11.2025 – kontrola přesných zdrojových grafik','en':'Caddy 11.2025 – exact source-graphic comparison','de':'Caddy 11.2025 – Vergleich genauer Quellgrafiken'}[lang]+'</h2><p>'+{'cs':'Porovnány originální SVG: OFF, nedostupnost s vykřičníkem a žlutý, zelený a šedý provozní stav. Provozní trojice má stejnou geometrii a samostatné barvy přímo ze zdroje. Předání souborů do zákaznického přehledu čeká na potvrzené oprávnění k dalšímu použití; nejde o nedostupný dokument. Žádná varianta není nahrazena přerušovanými pruhy Terramar.','en':'Original SVGs compared: OFF, exclamation-mark unavailability and amber, green and grey operating states. The operating trio shares geometry and has separate source-native colours. Republishing these files in the customer overview awaits confirmed use rights; the document is not unavailable. No variant is replaced by Terramar’s dashed lanes.','de':'Original-SVGs verglichen: OFF, Nichtverfügbarkeit mit Ausrufezeichen sowie gelber, grüner und grauer Betriebszustand. Die Betriebszustände haben gleiche Geometrie und getrennte Originalfarben. Übernahme der Dateien in Kundenübersicht wartet auf bestätigte Nutzungsrechte; das Dokument ist nicht unzugänglich. Keine Variante durch gestrichelte Terramar-Spuren ersetzt.'}[lang]+'</p><a href="'+rel('_warnings/caddy-source-graphic-review.json',page)+'">'+{'cs':'Zdrojové adresy, kontrolní otisky a výsledek porovnání','en':'Source URLs, checksums and comparison result','de':'Quelladressen, Prüfsummen und Vergleichsergebnis'}[lang]+'</a></section><section id="chybejici-podklady"><h2>'+t[16]+'</h2><ul>'
  for msg in CAT['review_gaps'][lang]:out+='<li>'+esc(msg)+'</li>'
  out+='</ul></section><p>'+t[17]+' <a href="'+rel('_warnings/verification.json',page)+'">JSON</a></p></body></html>';return out
 
@@ -216,7 +219,7 @@ def review_page(lang,page):
   vals=[u['brands'][m['brand']]+' '+str(m['model']),m['edition']]+[t[10]if m['sections'][k]=='selected-entries-reviewed'else t[11]for k in ['instrument-panel','driver-assistance','infotainment-and-control-icons','comfort-controls']]+[t[12]]
   out+='<tr>'+''.join('<td data-label="'+esc(label)+'">'+esc(value)+'</td>'for label,value in zip(t[3:10],vals))+'</tr>'
  out+='</tbody></table><p><a href="revize-kapitol.html">'+{'cs':'Revize po modelech, vydáních a kapitolách; identifikace fotografií','en':'Review by model, edition and chapter; photo identification','de':'Prüfung nach Modell, Ausgabe und Kapitel; Fotoidentifikation'}[lang]+'</a></p><h2>'+t[13]+'</h2><p>'+t[14]+'</p><p>'+t[15]+'</p><h2>'+t[16]+'</h2><ul>'
- events=[e for e in CAT['change_history']if e['id']in ['116-q4-and-control-icons','129-to-131-terramar-user-photos','terramar-functional-photo-comparison','independent-seat-vw-lane-review','audi-editions-and-chapter-states','q4-2023-cup-edition']];event={'added_record_ids':[id for e in events for id in e['added_record_ids']]}
+ events=[e for e in CAT['change_history']if e['id']in ['116-q4-and-control-icons','129-to-131-terramar-user-photos','terramar-functional-photo-comparison','independent-seat-vw-lane-review','audi-editions-and-chapter-states','q4-2023-cup-edition','audi-start-stop-and-direct-tyres','a8-documented-climate-text-controls','a4-a8-climate-context-variants','a4-residual-heat-context']];event={'added_record_ids':[id for e in events for id in e['added_record_ids']]}
  for i in CAT['items']:
   if i['id']in event['added_record_ids']:out+='<li><code>'+esc(i['id'])+'</code> — '+esc(i['name'][lang])+'</li>'
  out+='</ul><h2>'+t[17]+'</h2><ul>'+''.join('<li>'+esc(x)+'</li>'for x in CAT['review_gaps'][lang])+'</ul><p>'+t[21]+'</p><ul>'
