@@ -1086,13 +1086,123 @@
         "audi-q4-ac-co2-yellow"
       ],
       "whole_manual_complete": false
+    },
+    {
+      "brand": "skoda",
+      "manual": "skoda-enyaq-2020-11-de",
+      "model": "Enyaq iV",
+      "model_year": null,
+      "edition": "11.2020",
+      "source_url": "https://firstev.de/wp-content/uploads/2024/10/A_SUVe_Enyaq_OwnersManual.pdf",
+      "printed_pages": [
+        17,
+        18,
+        100,
+        101
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "Fahrleistungsverfügbarkeit / Problemlösung, dvě úrovně výkonu",
+        "en": "Fahrleistungsverfügbarkeit / Problemlösung, two power levels",
+        "de": "Fahrleistungsverfügbarkeit / Problemlösung, zwei Leistungsstufen"
+      },
+      "remaining": {
+        "cs": "Červený i žlutý stav vložené podle vlastních pokynů; nejde o celé zobrazení ukazatele výkonu ani o pozdější vydání.",
+        "en": "Red and amber inserted from own instructions; not the entire power-gauge display or later editions.",
+        "de": "Rot/Gelb nach eigenen Anweisungen eingefügt; nicht gesamte Leistungsanzeige oder spätere Ausgaben."
+      },
+      "catalogue_ids": [
+        "ev-power-limited-ring",
+        "enyaq-power-insufficient-red"
+      ],
+      "whole_manual_complete": false
+    },
+    {
+      "brand": "skoda",
+      "manual": "skoda-enyaq-2020-11-de",
+      "model": "Enyaq iV",
+      "model_year": null,
+      "edition": "11.2020",
+      "source_url": "https://firstev.de/wp-content/uploads/2024/10/A_SUVe_Enyaq_OwnersManual.pdf",
+      "printed_pages": [
+        201
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "Hochvoltsystem / Problemlösung, celý oddíl str.201 před nabíjením",
+        "en": "Hochvoltsystem / Problemlösung, entire p201 section before charging",
+        "de": "Hochvoltsystem / Problemlösung, ganzer Abschnitt S201 vor Laden"
+      },
+      "remaining": {
+        "cs": "EPC ověřeno a zachováno. Přesné grafiky červeného/žlutého elektrického pohonu a kombinace přehřátí nejsou publikované; významy ověřené zvlášť.",
+        "en": "EPC verified and retained. Exact red/amber drive and overheat-combination graphics not published; meanings verified separately.",
+        "de": "EPC geprüft und erhalten. Genaue rote/gelbe Antriebs-/Überhitzungskombinationsgrafiken nicht veröffentlicht; Bedeutungen getrennt geprüft."
+      },
+      "catalogue_ids": [
+        "enyaq-epc"
+      ],
+      "whole_manual_complete": false
+    },
+    {
+      "brand": "skoda",
+      "manual": "skoda-enyaq-2020-11-de",
+      "model": "Enyaq iV",
+      "model_year": null,
+      "edition": "11.2020",
+      "source_url": "https://firstev.de/wp-content/uploads/2024/10/A_SUVe_Enyaq_OwnersManual.pdf",
+      "printed_pages": [
+        163
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "Rekuperation / Problemlösung, společné zobrazení s ABS",
+        "en": "Rekuperation / Problemlösung, simultaneous ABS indication",
+        "de": "Rekuperation / Problemlösung, gemeinsame Anzeige mit ABS"
+      },
+      "remaining": {
+        "cs": "Vyžaduje elektrický pohon a ABS současně; nelze připsat ABS samotnému. Přesná použitelná grafika chybí, nevložena náhrada.",
+        "en": "Requires drive and ABS together; not attributable to ABS alone. Exact reusable graphic missing; no substitute inserted.",
+        "de": "Erfordert Antrieb und ABS zusammen; ABS allein nicht zuzuordnen. Genaue nutzbare Grafik fehlt; kein Ersatz eingefügt."
+      },
+      "catalogue_ids": [],
+      "whole_manual_complete": false
+    },
+    {
+      "brand": "skoda",
+      "manual": "skoda-enyaq-2020-11-de",
+      "model": "Enyaq iV",
+      "model_year": null,
+      "edition": "11.2020",
+      "source_url": "https://firstev.de/wp-content/uploads/2024/10/A_SUVe_Enyaq_OwnersManual.pdf",
+      "printed_pages": [
+        221,
+        222
+      ],
+      "source_sections": [],
+      "reviewed": {
+        "cs": "12V akumulátor / Problemlösung, čtyři případy str.221–222",
+        "en": "12V battery / Problemlösung, four cases pp221–222",
+        "de": "12V-Batterie / Problemlösung, vier Fälle S221–222"
+      },
+      "remaining": {
+        "cs": "Textové modelové podmínky společné výstrahy uvedené; samostatné obrázky celé kombinace ještě nejsou publikované. Závada, slabé nabití a opotřebení se neslučují.",
+        "en": "Text states model co-warning conditions; full combination pictures not yet published. Fault, low charge and wear are not merged.",
+        "de": "Text nennt Modellbedingungen der Begleitwarnung; vollständige Kombinationsbilder noch nicht veröffentlicht. Störung, geringe Ladung und Verschleiß nicht zusammengeführt."
+      },
+      "catalogue_ids": [
+        "enyaq-12v-charge-fault",
+        "enyaq-12v-fault",
+        "enyaq-12v-low",
+        "ev-12v-yellow-replace"
+      ],
+      "whole_manual_complete": false
     }
   ],
   "counts": {
-    "semantic_records": 168,
+    "semantic_records": 169,
     "legacy_generic_volkswagen": 1,
-    "model_documented_semantic_records": 164,
-    "model_edition_assignments": 583,
+    "model_documented_semantic_records": 165,
+    "model_edition_assignments": 584,
     "partially_reviewed_manual_editions": 43,
     "shared_graphic_colour_variants": 94,
     "distinct_pictogram_shapes": 67,
@@ -1119,9 +1229,9 @@
       },
       "skoda": {
         "distinct_pictogram_shapes": 28,
-        "graphic_colour_variants": 35,
-        "semantic_variants": 48,
-        "model_edition_assignments": 66,
+        "graphic_colour_variants": 36,
+        "semantic_variants": 49,
+        "model_edition_assignments": 67,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 2,
         "first_party_hosted_manual_editions": 0,

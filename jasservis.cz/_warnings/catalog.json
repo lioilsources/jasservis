@@ -10305,6 +10305,11 @@
             "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
+          },
+          "model_note": {
+            "cs": "Enyaq DE11.2020 str.222: žlutý akumulátor společně se žlutým výstražným trojúhelníkem a hlášením o opotřebení/výměně. Nejde o shodný výklad při hlášení nízkého nabití nebo jiné závady.",
+            "en": "Enyaq DE11.2020 p222: amber battery together with amber warning triangle and a wear/replacement message. Not the same interpretation as a low-charge or other-fault message.",
+            "de": "Enyaq DE11.2020 S222: gelbe Batterie mit gelbem Warndreieck und Verschleiß-/Wechselmeldung. Nicht gleicher Befund wie bei geringer Ladung oder anderer Störung."
           }
         }
       ],
@@ -14959,9 +14964,11 @@
           "edition": "11.2020",
           "language": "DE",
           "printed_pages": [
+            19,
             201
           ],
           "pdf_pages": [
+            21,
             203
           ],
           "powertrains": [
@@ -14971,6 +14978,11 @@
             "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
+          },
+          "model_note": {
+            "cs": "Enyaq DE 11.2020 str. 19 a 201 výslovně spojují žlutý nápis EPC s chybou řízení motoru tohoto elektrického vozidla. Návod požaduje odbornou pomoc; nepřebírá se vysvětlení benzinové škrticí klapky.",
+            "en": "Enyaq DE11.2020 pp19 and201 explicitly link amber EPC to a motor-control fault in this electric vehicle. The manual calls for specialist help; a petrol throttle-valve explanation is not inherited.",
+            "de": "Enyaq DE11.2020 S19 und201 ordnen gelbes EPC ausdrücklich einem Motorsteuerungsfehler dieses Elektrofahrzeugs zu. Fachhilfe verlangt; keine Übernahme einer Benzin-Drosselklappenerklärung."
           }
         }
       ],
@@ -15042,6 +15054,11 @@
             "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
+          },
+          "model_note": {
+            "cs": "Oddíl str.221 vyžaduje současnou červenou výstrahu akumulátoru a doprovodný červený trojúhelník. Nepokračovat, vypnout zapalování a zajistit odbornou pomoc. Jde o konkrétní kombinaci, nikoli univerzální význam každého symbolu zvlášť.",
+            "en": "Section p221 requires the battery warning together with the accompanying red triangle. Do not continue, switch ignition off and obtain specialist help. A specific combination, not a universal meaning of either symbol alone.",
+            "de": "AbschnittS221 verlangt Batteriewarnung zusammen mit begleitendem rotem Dreieck. Nicht weiterfahren, Zündung aus, Fachhilfe holen. Konkrete Kombination, keine allgemeine Bedeutung beider Einzelzeichen."
           }
         }
       ],
@@ -15114,6 +15131,11 @@
             "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
+          },
+          "model_note": {
+            "cs": "Str.222: žlutý akumulátor společně se žlutou výstrahou a textem závady akumulátoru nebo sekundárních systémů. Samotný obrázek neprokazuje příčinu ani vadný akumulátor.",
+            "en": "P222: amber battery together with amber warning and a battery/secondary-system fault message. The image alone establishes neither cause nor a failed battery.",
+            "de": "S222: gelbe Batterie zusammen mit gelber Warnung und Meldung zu Batterie-/Folgesystemstörung. Bild allein belegt weder Ursache noch defekte Batterie."
           }
         }
       ],
@@ -15186,6 +15208,11 @@
             "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
+          },
+          "model_note": {
+            "cs": "Str.222: žlutý akumulátor společně se žlutou výstrahou a textem slabého nebo vybitého 12V akumulátoru. Postup dobití se řídí tímto hlášením a návodem; neplatí místo červené závady nabíjení ani jiného STOP.",
+            "en": "P222: amber battery with amber warning and a weak/discharged12V battery message. Recharging follows this message and manual; not a substitute for a red charging fault or other STOP.",
+            "de": "S222: gelbe Batterie mit gelber Warnung und Meldung zu schwacher/entladener12V-Batterie. Nach dieser Meldung/Anleitung laden; ersetzt weder roten Ladefehler noch anderes STOP."
           }
         }
       ],
@@ -15258,6 +15285,11 @@
             "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
+          },
+          "model_note": {
+            "cs": "Str.219 popisuje samostatné hlášení hladiny/teploty chladicí kapaliny. Nezaměňovat s kombinací přehřátého elektrického systému na str.201, kde návod výslovně zakazuje doplnění kapaliny. Rozhoduje celé hlášení a kombinace symbolů.",
+            "en": "P219 describes the separate coolant-level/temperature message. Not the overheated-electrical-system combination on p201, for which the manual explicitly prohibits adding coolant. Full message and symbol combination are decisive.",
+            "de": "S219 beschreibt gesonderte Kühlmittelstands-/Temperaturmeldung. Nicht Kombination bei überhitztem elektrischem System aufS201, wo Nachfüllen ausdrücklich verboten ist. Ganze Meldung/Zeichenkombination maßgeblich."
           }
         }
       ],
@@ -24434,6 +24466,81 @@
         "de": "Gelb blinkendes Lenkrad mit Ausrufezeichen – Lenkungswarnung Terramar"
       },
       "kind": "warning"
+    },
+    {
+      "id": "enyaq-power-insufficient-red",
+      "graphic": "turtle-ring",
+      "graphic_path": "wp-content/uploads/kontrolky/turtle-ring-cervena.svg",
+      "color": "cervena",
+      "group": "elektro",
+      "state": "steady",
+      "kind": "restriction",
+      "name": {
+        "cs": "Enyaq iV – nedostatečný jízdní výkon, červená želva",
+        "en": "Enyaq iV – insufficient driving power, red turtle",
+        "de": "Enyaq iV – unzureichende Fahrleistung, rote Schildkröte"
+      },
+      "meaning": {
+        "cs": "V uvedeném vydání Enyaqu červený symbol označuje nedostatečný jízdní výkon při velmi nízkém nabití vysokonapěťového akumulátoru. Výkon mohou ovlivnit také velmi nízké nebo vysoké teploty akumulátoru.",
+        "en": "In this Enyaq edition the red symbol denotes insufficient driving power when the high-voltage battery charge is very low. Very low or high battery temperatures can also affect available power.",
+        "de": "In dieser Enyaq-Ausgabe kennzeichnet das rote Symbol unzureichende Fahrleistung bei sehr niedrigem Ladezustand der Hochvoltbatterie. Auch sehr niedrige oder hohe Batterietemperaturen können die Leistung beeinflussen."
+      },
+      "action": {
+        "cs": "Návod požaduje nabití vysokonapěťového akumulátoru a přizpůsobení jízdy dostupnému výkonu. Počítejte s omezenou rychlostí a zrychlením. Pokud nelze bezpečně pokračovat, bezpečně zastavte a zajistěte pomoc; respektujte případná další hlášení vozidla.",
+        "en": "The manual calls for charging the high-voltage battery and adapting driving to available power. Allow for limited speed and acceleration. If safe travel is not possible, stop safely and obtain help; observe any additional vehicle messages.",
+        "de": "Die Anleitung verlangt Laden der Hochvoltbatterie und Anpassung der Fahrweise an die verfügbare Leistung. Mit begrenzter Geschwindigkeit/Beschleunigung rechnen. Ist sicheres Weiterfahren nicht möglich, sicher anhalten und Hilfe holen; weitere Fahrzeugmeldungen beachten."
+      },
+      "note": {
+        "cs": "Pouze Enyaq iV, návod DE 11.2020, str. 17 a 100–101. Odlišit od žlutého omezeného výkonu. Stejná červená želva má v jiném vydání Audi Q4 jiný konkrétní pokyn; ten se sem nepřenáší. Z této výstrahy samotné neurčujeme vadný akumulátor ani zbývající dojezd.",
+        "en": "Only Enyaq iV, DE manual 11.2020 pp17 and100–101. Distinguish amber restricted power. The same red turtle has different specific instructions in an Audi Q4 edition; those are not inherited here. This warning alone identifies neither a failed battery nor remaining range.",
+        "de": "Nur Enyaq iV, DE-Anleitung11.2020 S17 und100–101. Gelb eingeschränkte Leistung unterscheiden. Gleiche rote Schildkröte hat in einer Audi-Q4-Ausgabe andere konkrete Anweisungen; nicht übertragen. Warnung allein bestimmt weder defekte Batterie noch Restreichweite."
+      },
+      "alt": {
+        "cs": "Červená želva v kruhu – nedostatečný jízdní výkon Enyaqu",
+        "en": "Red turtle in a circle – insufficient Enyaq driving power",
+        "de": "Rote Schildkröte im Kreis – unzureichende Enyaq-Fahrleistung"
+      },
+      "graphic_source": {
+        "title": "File:ISO 7000 - Ref-No 2811.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_2811.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/1/1a/ISO_7000_-_Ref-No_2811.svg",
+        "author": "Mrmw",
+        "license": "CC0 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "modifications": "Licensed turtle outline uniformly scaled without reshaping; registration marks removed. Simple circular frame added only for the ringed variant independently shown in each cited manual; source-documented red/yellow states kept separate.",
+        "file": "wp-content/uploads/kontrolky/turtle-ring-cervena.svg",
+        "sha256": "3bffd20b5fb41e5b14a27b053793c8c91da267804f3de1b8c2bdd78ed0366819"
+      },
+      "scopes": [
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            17,
+            100,
+            101
+          ],
+          "pdf_pages": [
+            19,
+            102,
+            103
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "checked": "2026-10-30",
+            "method": "Own native red symbol p17 visually compared; complete availability section100–101 read independently. Existing licensed red turtle graphic reused without modification; not inferred by recolouring amber or borrowing Q4 meaning.",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b"
+          }
+        }
+      ],
+      "checked": "2026-10-30",
+      "review_status": "specific-manual-and-licensed-pictogram-reviewed; complete-model-inventory-not-claimed"
     }
   ],
   "pending_items": [
@@ -25772,10 +25879,10 @@
     }
   },
   "counts": {
-    "semantic_records": 168,
+    "semantic_records": 169,
     "legacy_generic_volkswagen": 1,
-    "model_documented_semantic_records": 164,
-    "model_edition_assignments": 583,
+    "model_documented_semantic_records": 165,
+    "model_edition_assignments": 584,
     "partially_reviewed_manual_editions": 43,
     "shared_graphic_colour_variants": 94,
     "distinct_pictogram_shapes": 67,
@@ -25802,9 +25909,9 @@
       },
       "skoda": {
         "distinct_pictogram_shapes": 28,
-        "graphic_colour_variants": 35,
-        "semantic_variants": 48,
-        "model_edition_assignments": 66,
+        "graphic_colour_variants": 36,
+        "semantic_variants": 49,
+        "model_edition_assignments": 67,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 2,
         "first_party_hosted_manual_editions": 0,
@@ -28614,6 +28721,34 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "Own Q4 07.2024 AUTO control checked from original figure77 and pp88–89, with Q4-specific recirculation/ventilation behaviour. One model assignment, not a new unique symbol. Complete Klimaanlage source subsection88–92 compared; remaining exact control graphics not automatically inherited."
+    },
+    {
+      "id": "enyaq-independent-2020-electric-review",
+      "checked": "2026-10-30",
+      "before_semantic_records": 168,
+      "after_semantic_records": 169,
+      "added_record_ids": [
+        "enyaq-power-insufficient-red"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "enyaq-power-insufficient-red",
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda"
+        }
+      ],
+      "corrected_record_ids": [],
+      "enriched_existing_model_scopes": [
+        "enyaq-epc",
+        "enyaq-12v-charge-fault",
+        "enyaq-12v-fault",
+        "enyaq-12v-low",
+        "enyaq-coolant",
+        "ev-12v-yellow-replace"
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Independent known DE11.2020 copy, NOT identification or comparison of missing five requested photos12–17. Red insufficient power differs from amber limitation/Q4 red meaning. Existing EV-specific EPC verified, not duplicated. Co-warning conditions made explicit for12V/coolant."
     }
   ],
   "evidence_gaps_revision": [

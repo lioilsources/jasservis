@@ -1,0 +1,275 @@
+{
+  "checked": "2026-10-30",
+  "requested_photo_group": "enyaq-manual-five-12-17",
+  "requested_photo_comparison_complete": false,
+  "reason": "Five photos not present in current message or local attachment archive. No photo/page or row mapping invented.",
+  "independent_manual": "skoda-enyaq-2020-11-de",
+  "edition": "11.2020 DE",
+  "model_year": null,
+  "not_identification_of_requested_manual": true,
+  "known_overview_pages": [
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "rows": [
+    {
+      "id": "red-insufficient-power",
+      "printed_pages": [
+        17,
+        100,
+        101
+      ],
+      "source_label": {
+        "cs": "Nedostatečný výkon, červená",
+        "en": "Insufficient power, red",
+        "de": "Unzureichende Leistung, rot"
+      },
+      "catalogue_entries": [
+        "enyaq-power-insufficient-red"
+      ],
+      "meaning_verified": true,
+      "exact_usable_graphic_verified": true,
+      "publication_stage": "published",
+      "notes": {
+        "cs": "Pouze Enyaq iV, návod DE 11.2020, str. 17 a 100–101. Odlišit od žlutého omezeného výkonu. Stejná červená želva má v jiném vydání Audi Q4 jiný konkrétní pokyn; ten se sem nepřenáší. Z této výstrahy samotné neurčujeme vadný akumulátor ani zbývající dojezd.",
+        "en": "Only Enyaq iV, DE manual 11.2020 pp17 and100–101. Distinguish amber restricted power. The same red turtle has different specific instructions in an Audi Q4 edition; those are not inherited here. This warning alone identifies neither a failed battery nor remaining range.",
+        "de": "Nur Enyaq iV, DE-Anleitung11.2020 S17 und100–101. Gelb eingeschränkte Leistung unterscheiden. Gleiche rote Schildkröte hat in einer Audi-Q4-Ausgabe andere konkrete Anweisungen; nicht übertragen. Warnung allein bestimmt weder defekte Batterie noch Restreichweite."
+      }
+    },
+    {
+      "id": "amber-limited-power",
+      "printed_pages": [
+        18,
+        100,
+        101
+      ],
+      "source_label": {
+        "cs": "Omezený výkon, žlutá",
+        "en": "Restricted power, amber",
+        "de": "Eingeschränkte Leistung, gelb"
+      },
+      "catalogue_entries": [
+        "ev-power-limited-ring"
+      ],
+      "meaning_verified": true,
+      "exact_usable_graphic_verified": true,
+      "publication_stage": "published",
+      "notes": {
+        "cs": "Odlišná úroveň výkonu; neslučuje se s červenou.",
+        "en": "Different power level; not merged with red.",
+        "de": "Andere Leistungsstufe; nicht mit Rot zusammengeführt."
+      }
+    },
+    {
+      "id": "electric-motor-epc",
+      "printed_pages": [
+        19,
+        201
+      ],
+      "source_label": {
+        "cs": "Elektrický pohon – EPC, závada řízení motoru",
+        "en": "Electric drive – EPC motor-control fault",
+        "de": "Elektroantrieb – EPC, Fehler der Motorsteuerung"
+      },
+      "catalogue_entries": [
+        "enyaq-epc"
+      ],
+      "meaning_verified": true,
+      "exact_usable_graphic_verified": true,
+      "publication_stage": "published",
+      "notes": {
+        "cs": "Enyaq DE 11.2020 str. 19 a 201 výslovně spojují žlutý nápis EPC s chybou řízení motoru tohoto elektrického vozidla. Návod požaduje odbornou pomoc; nepřebírá se vysvětlení benzinové škrticí klapky.",
+        "en": "Enyaq DE11.2020 pp19 and201 explicitly link amber EPC to a motor-control fault in this electric vehicle. The manual calls for specialist help; a petrol throttle-valve explanation is not inherited.",
+        "de": "Enyaq DE11.2020 S19 und201 ordnen gelbes EPC ausdrücklich einem Motorsteuerungsfehler dieses Elektrofahrzeugs zu. Fachhilfe verlangt; keine Übernahme einer Benzin-Drosselklappenerklärung."
+      }
+    },
+    {
+      "id": "enyaq-12v-charge-fault",
+      "printed_pages": [
+        17,
+        221
+      ],
+      "source_label": {
+        "cs": "Enyaq iV – 12V akumulátor se nenabíjí",
+        "en": "Enyaq iV – 12 V battery not charging",
+        "de": "Enyaq iV – 12-Volt-Batterie wird nicht geladen"
+      },
+      "catalogue_entries": [
+        "enyaq-12v-charge-fault"
+      ],
+      "meaning_verified": true,
+      "exact_usable_graphic_verified": false,
+      "publication_stage": "conditional-text-published-full-combination-image-pending",
+      "notes": {
+        "cs": "Oddíl str.221 vyžaduje současnou červenou výstrahu akumulátoru a doprovodný červený trojúhelník. Nepokračovat, vypnout zapalování a zajistit odbornou pomoc. Jde o konkrétní kombinaci, nikoli univerzální význam každého symbolu zvlášť.",
+        "en": "Section p221 requires the battery warning together with the accompanying red triangle. Do not continue, switch ignition off and obtain specialist help. A specific combination, not a universal meaning of either symbol alone.",
+        "de": "AbschnittS221 verlangt Batteriewarnung zusammen mit begleitendem rotem Dreieck. Nicht weiterfahren, Zündung aus, Fachhilfe holen. Konkrete Kombination, keine allgemeine Bedeutung beider Einzelzeichen."
+      },
+      "combined_symbol_image_published": false,
+      "co_display_condition_explained_in_customer_text": true
+    },
+    {
+      "id": "enyaq-12v-fault",
+      "printed_pages": [
+        18,
+        222
+      ],
+      "source_label": {
+        "cs": "Enyaq iV – závada 12V akumulátoru nebo souvisejících systémů",
+        "en": "Enyaq iV – 12 V battery or related-system fault",
+        "de": "Enyaq iV – Störung der 12-Volt-Batterie oder zugehöriger Systeme"
+      },
+      "catalogue_entries": [
+        "enyaq-12v-fault"
+      ],
+      "meaning_verified": true,
+      "exact_usable_graphic_verified": false,
+      "publication_stage": "conditional-text-published-full-combination-image-pending",
+      "notes": {
+        "cs": "Str.222: žlutý akumulátor společně se žlutou výstrahou a textem závady akumulátoru nebo sekundárních systémů. Samotný obrázek neprokazuje příčinu ani vadný akumulátor.",
+        "en": "P222: amber battery together with amber warning and a battery/secondary-system fault message. The image alone establishes neither cause nor a failed battery.",
+        "de": "S222: gelbe Batterie zusammen mit gelber Warnung und Meldung zu Batterie-/Folgesystemstörung. Bild allein belegt weder Ursache noch defekte Batterie."
+      },
+      "combined_symbol_image_published": false,
+      "co_display_condition_explained_in_customer_text": true
+    },
+    {
+      "id": "enyaq-12v-low",
+      "printed_pages": [
+        18,
+        222
+      ],
+      "source_label": {
+        "cs": "Enyaq iV – nízké nabití 12V akumulátoru",
+        "en": "Enyaq iV – low 12 V battery charge",
+        "de": "Enyaq iV – niedriger Ladezustand der 12-Volt-Batterie"
+      },
+      "catalogue_entries": [
+        "enyaq-12v-low"
+      ],
+      "meaning_verified": true,
+      "exact_usable_graphic_verified": false,
+      "publication_stage": "conditional-text-published-full-combination-image-pending",
+      "notes": {
+        "cs": "Str.222: žlutý akumulátor společně se žlutou výstrahou a textem slabého nebo vybitého 12V akumulátoru. Postup dobití se řídí tímto hlášením a návodem; neplatí místo červené závady nabíjení ani jiného STOP.",
+        "en": "P222: amber battery with amber warning and a weak/discharged12V battery message. Recharging follows this message and manual; not a substitute for a red charging fault or other STOP.",
+        "de": "S222: gelbe Batterie mit gelber Warnung und Meldung zu schwacher/entladener12V-Batterie. Nach dieser Meldung/Anleitung laden; ersetzt weder roten Ladefehler noch anderes STOP."
+      },
+      "combined_symbol_image_published": false,
+      "co_display_condition_explained_in_customer_text": true
+    },
+    {
+      "id": "enyaq-coolant",
+      "printed_pages": [
+        17,
+        219
+      ],
+      "source_label": {
+        "cs": "Enyaq iV – chladicí kapalina",
+        "en": "Enyaq iV – coolant warning",
+        "de": "Enyaq iV – Kühlmittelwarnung"
+      },
+      "catalogue_entries": [
+        "enyaq-coolant"
+      ],
+      "meaning_verified": true,
+      "exact_usable_graphic_verified": true,
+      "publication_stage": "published",
+      "notes": {
+        "cs": "Str.219 popisuje samostatné hlášení hladiny/teploty chladicí kapaliny. Nezaměňovat s kombinací přehřátého elektrického systému na str.201, kde návod výslovně zakazuje doplnění kapaliny. Rozhoduje celé hlášení a kombinace symbolů.",
+        "en": "P219 describes the separate coolant-level/temperature message. Not the overheated-electrical-system combination on p201, for which the manual explicitly prohibits adding coolant. Full message and symbol combination are decisive.",
+        "de": "S219 beschreibt gesonderte Kühlmittelstands-/Temperaturmeldung. Nicht Kombination bei überhitztem elektrischem System aufS201, wo Nachfüllen ausdrücklich verboten ist. Ganze Meldung/Zeichenkombination maßgeblich."
+      }
+    },
+    {
+      "id": "regen-abs-combination",
+      "printed_pages": [
+        18,
+        163
+      ],
+      "source_label": {
+        "cs": "Závada rekuperace společně s ABS",
+        "en": "Regeneration fault together with ABS",
+        "de": "Rekuperationsfehler zusammen mit ABS"
+      },
+      "catalogue_entries": [],
+      "meaning_verified": true,
+      "exact_usable_graphic_verified": false,
+      "publication_stage": "exact-graphic-not-published",
+      "notes": {
+        "cs": "Vyžaduje současný žlutý symbol elektrického pohonu a ABS a hlášení o rekuperaci. Návod žádá odbornou pomoc. Význam se nepřenáší na ABS samotné; přesná použitelná grafika elektrického pohonu není doložená.",
+        "en": "Requires simultaneous amber electric-drive and ABS symbols plus regeneration message. Manual requests specialist help. Not assigned to ABS alone; exact reusable drive graphic not established.",
+        "de": "Erfordert gelbes Antriebs- und ABS-Zeichen zugleich sowie Rekuperationsmeldung. Anleitung verlangt Fachhilfe. Nicht auf ABS allein übertragen; genaue nutzbare Antriebsgrafik nicht belegt."
+      }
+    },
+    {
+      "id": "electrical-overheat-combination",
+      "printed_pages": [
+        18,
+        201
+      ],
+      "source_label": {
+        "cs": "Přehřátí elektrického systému – kombinace",
+        "en": "Electrical-system overheat – combination",
+        "de": "Elektrisches System überhitzt – Kombination"
+      },
+      "catalogue_entries": [],
+      "meaning_verified": true,
+      "exact_usable_graphic_verified": false,
+      "publication_stage": "exact-graphic-not-published",
+      "notes": {
+        "cs": "Červený elektrický pohon spolu s teploměrem; zastavit, vypnout zapalování, nedoplňovat chladicí kapalinu a zajistit odbornou pomoc. Není to samostatné hlášení nízké chladicí kapaliny.",
+        "en": "Red drive with thermometer; stop, ignition off, do not add coolant, seek specialist help. Not the separate low-coolant message.",
+        "de": "Roter Antrieb mit Thermometer; anhalten, Zündung aus, kein Kühlmittel nachfüllen, Fachhilfe. Nicht gesonderte Kühlmittelstandsmeldung."
+      }
+    },
+    {
+      "id": "electric-drive-red-amber",
+      "printed_pages": [
+        18,
+        201
+      ],
+      "source_label": {
+        "cs": "Závada elektrického pohonu – červená/žlutá",
+        "en": "Electric-drive fault – red/amber",
+        "de": "Elektrischer Antriebsfehler – rot/gelb"
+      },
+      "catalogue_entries": [],
+      "meaning_verified": true,
+      "exact_usable_graphic_verified": false,
+      "publication_stage": "exact-graphic-not-published",
+      "notes": {
+        "cs": "Žlutá varianta má v tomto vydání opatrnou další jízdu k odborné pomoci; červená nepokračovat a vypnout zapalování. Tyto pokyny nejsou zobecněné na jiné symboly nebo vydání.",
+        "en": "In this edition amber permits appropriately careful continued travel with specialist help; red requires stopping and ignition off. Not generalized to other symbols/editions.",
+        "de": "Gelb erlaubt in dieser Ausgabe entsprechend vorsichtige Weiterfahrt mit Fachhilfe; Rot verlangt Anhalten/Zündung aus. Keine Verallgemeinerung auf andere Zeichen/Ausgaben."
+      }
+    },
+    {
+      "id": "enyaq-12v-worn",
+      "printed_pages": [
+        222
+      ],
+      "source_label": {
+        "cs": "12V akumulátor – hlášení požaduje kontrolu nebo výměnu",
+        "en": "12 V battery – message requests inspection or replacement",
+        "de": "12-V-Batterie – Meldung zur Prüfung oder zum Austausch"
+      },
+      "catalogue_entries": [
+        "ev-12v-yellow-replace"
+      ],
+      "meaning_verified": true,
+      "exact_usable_graphic_verified": false,
+      "publication_stage": "conditional-text-published-full-combination-image-pending",
+      "combined_symbol_image_published": false,
+      "co_display_condition_explained_in_customer_text": true,
+      "notes": {
+        "cs": "Enyaq DE11.2020 str.222: žlutý akumulátor společně se žlutým výstražným trojúhelníkem a hlášením o opotřebení/výměně. Nejde o shodný výklad při hlášení nízkého nabití nebo jiné závady.",
+        "en": "Enyaq DE11.2020 p222: amber battery together with amber warning triangle and a wear/replacement message. Not the same interpretation as a low-charge or other-fault message.",
+        "de": "Enyaq DE11.2020 S222: gelbe Batterie mit gelbem Warndreieck und Verschleiß-/Wechselmeldung. Nicht gleicher Befund wie bei geringer Ladung oder anderer Störung."
+      }
+    }
+  ]
+}

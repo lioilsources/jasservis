@@ -584,7 +584,11 @@
             "enyaq-dynamic-light-assist-section",
             "enyaq-electronic-parking-section",
             "enyaq-auto-hold-section",
-            "enyaq-esound-section"
+            "enyaq-esound-section",
+            "enyaq-2020-power-troubleshooting",
+            "enyaq-2020-hv-troubleshooting",
+            "enyaq-2020-regen-troubleshooting",
+            "enyaq-2020-12v-troubleshooting"
           ],
           "whole_manual_complete": false,
           "remaining": {
@@ -951,9 +955,9 @@
           "edition": "11.2018",
           "source_url": "https://octaviaclub.cz/wp-content/uploads/2019/06/N%C3%A1vod-k-obsluze-%C5%A0koda-Octavia-III-3.pdf",
           "remaining": {
-            "cs": "Dosud neuzavřené modelové významy, přesné grafiky a stavové varianty jsou vedené po vydáních v revizi kapitol. Dostupný návod neznamená ověřenou položku.",
-            "en": "Unclosed model meanings, exact graphics and state variants are tracked by edition in chapter review. Available manual does not mean a verified entry.",
-            "de": "Offene Modellbedeutungen, genaue Grafiken und Zustandsvarianten nach Ausgabe in Kapitelprüfung erfasst. Verfügbare Anleitung bedeutet keinen geprüften Eintrag."
+            "cs": "Nových pět fotografií Enyaq12–17 není dostupných, vydání ani ročník se neodhadují. DE11.2020 je jiný samostatně ověřovaný podklad: nově odlišena červená nedostatečná a žlutá omezená výkonnost, potvrzené elektrické EPC. Další přesné grafiky kombinací, požadované CO₂/požární/Traction varianty a zbývající kapitoly nejsou tímto doložené.",
+            "en": "Five new Enyaq12–17 photos unavailable; edition/year not guessed. DE11.2020 is a separate independently reviewed source: red insufficient versus amber restricted power now separated, electric EPC confirmed. Other exact combination graphics, requested CO₂/fire/Traction variants and remaining chapters not established by this.",
+            "de": "Fünf neue Enyaq-Fotos12–17 fehlen; Ausgabe/Jahr nicht geraten. DE11.2020 ist getrennte eigenständig geprüfte Quelle: rote unzureichende/gelb eingeschränkte Leistung unterschieden, elektrisches EPC bestätigt. Weitere genaue Kombinationsgrafiken, angeforderte CO₂-/Brand-/Traction-Varianten und restliche Kapitel dadurch nicht belegt."
           }
         },
         {

@@ -1473,6 +1473,7 @@
         "enyaq-dynamic-light-assist-active",
         "enyaq-epc",
         "enyaq-parking-steep-slope",
+        "enyaq-power-insufficient-red",
         "esc-fault",
         "esc-regulating",
         "ev-12v-yellow-replace",
@@ -1499,6 +1500,7 @@
       ],
       "reviewed_printed_pages": [
         17,
+        19,
         60,
         61,
         73,
@@ -74545,6 +74547,34 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "Own Q4 07.2024 AUTO control checked from original figure77 and pp88–89, with Q4-specific recirculation/ventilation behaviour. One model assignment, not a new unique symbol. Complete Klimaanlage source subsection88–92 compared; remaining exact control graphics not automatically inherited."
+    },
+    {
+      "id": "enyaq-independent-2020-electric-review",
+      "checked": "2026-10-30",
+      "before_semantic_records": 168,
+      "after_semantic_records": 169,
+      "added_record_ids": [
+        "enyaq-power-insufficient-red"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "enyaq-power-insufficient-red",
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda"
+        }
+      ],
+      "corrected_record_ids": [],
+      "enriched_existing_model_scopes": [
+        "enyaq-epc",
+        "enyaq-12v-charge-fault",
+        "enyaq-12v-fault",
+        "enyaq-12v-low",
+        "enyaq-coolant",
+        "ev-12v-yellow-replace"
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "Independent known DE11.2020 copy, NOT identification or comparison of missing five requested photos12–17. Red insufficient power differs from amber limitation/Q4 red meaning. Existing EV-specific EPC verified, not duplicated. Co-warning conditions made explicit for12V/coolant."
     }
   ],
   "chapter_register": "chapter-review.json",
@@ -74594,113 +74624,28 @@
     "terramar-1125-mainbeam-assist",
     "terramar-1125-cruise-section",
     "terramar-1125-tyre-pressure-section",
-    "q4-2024-full-klimaanlage-review"
+    "q4-2024-full-klimaanlage-review",
+    "enyaq-2020-power-troubleshooting",
+    "enyaq-2020-hv-troubleshooting",
+    "enyaq-2020-regen-troubleshooting",
+    "enyaq-2020-12v-troubleshooting"
   ],
   "latest_round": {
-    "before_semantic_records": 166,
-    "after_semantic_records": 168,
+    "before_semantic_records": 168,
+    "after_semantic_records": 169,
     "added_record_ids": [
-      "terramar-parking-brake-fault",
-      "terramar-steering-yellow-flashing"
+      "enyaq-power-insufficient-red"
     ],
-    "added_model_assignments": [
-      {
-        "id": "brake-fluid",
-        "manual": "cupra-terramar-2026-11-25",
-        "brand": "cupra"
-      },
-      {
-        "id": "brake-servo",
-        "manual": "cupra-terramar-2026-11-25",
-        "brand": "cupra"
-      },
-      {
-        "id": "pads-worn",
-        "manual": "cupra-terramar-2026-11-25",
-        "brand": "cupra"
-      },
-      {
-        "id": "oil-pressure",
-        "manual": "cupra-terramar-2026-11-25",
-        "brand": "cupra"
-      },
-      {
-        "id": "rear-fog",
-        "manual": "cupra-terramar-2026-11-25",
-        "brand": "cupra"
-      },
-      {
-        "id": "bulb-fault",
-        "manual": "cupra-terramar-2026-11-25",
-        "brand": "cupra"
-      },
-      {
-        "id": "steering-yellow",
-        "manual": "cupra-terramar-2026-11-25",
-        "brand": "cupra"
-      },
-      {
-        "id": "central-yellow",
-        "manual": "cupra-terramar-2026-11-25",
-        "brand": "cupra"
-      },
-      {
-        "id": "high-beam",
-        "manual": "cupra-terramar-2026-11-25",
-        "brand": "cupra"
-      },
-      {
-        "id": "turn-signals",
-        "manual": "cupra-terramar-2026-11-25",
-        "brand": "cupra"
-      },
-      {
-        "id": "cruise-active",
-        "manual": "cupra-terramar-2026-11-25",
-        "brand": "cupra"
-      },
-      {
-        "id": "high-beam-assist-blue",
-        "manual": "cupra-terramar-2026-11-25",
-        "brand": "cupra"
-      },
-      {
-        "id": "caddy-brake-servo-yellow-restricted",
-        "manual": "cupra-terramar-2026-11-25",
-        "brand": "cupra"
-      },
-      {
-        "id": "terramar-parking-brake-fault",
-        "manual": "cupra-terramar-2026-11-25",
-        "brand": "cupra"
-      },
-      {
-        "id": "terramar-steering-yellow-flashing",
-        "manual": "cupra-terramar-2026-11-25",
-        "brand": "cupra"
-      },
-      {
-        "id": "tpms-low",
-        "manual": "cupra-terramar-2026-11-25",
-        "brand": "cupra"
-      },
-      {
-        "id": "tpms-fault",
-        "manual": "cupra-terramar-2026-11-25",
-        "brand": "cupra"
-      },
-      {
-        "id": "audi-climate-auto-control",
-        "manual": "audi-q4-etron-2024-07-de",
-        "brand": "audi"
-      }
-    ],
-    "corrected_record_ids": [
-      "parking-applied",
-      "high-beam-assist-blue",
-      "caddy-brake-servo-yellow-restricted"
+    "enriched_model_scopes": [
+      "enyaq-epc",
+      "enyaq-12v-charge-fault",
+      "enyaq-12v-fault",
+      "enyaq-12v-low",
+      "enyaq-coolant",
+      "ev-12v-yellow-replace"
     ],
     "whole_manuals_complete": 0,
-    "attachment_register": "attachment-groups.json"
+    "requested_photos_available": 0,
+    "requested_photos_expected": 5
   }
 }

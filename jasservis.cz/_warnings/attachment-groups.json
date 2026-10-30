@@ -64,6 +64,31 @@
         "en": "Three earlier overview photos pp9–13 are absent from available context/local archive. Their previous Audi label is not verified document identification.",
         "de": "Drei frühere Übersichtsfotos S.9–13 fehlen im verfügbaren Kontext/lokalen Archiv. Bisherige Bezeichnung Audi ist keine geprüfte Dokumentidentifikation."
       }
+    },
+    {
+      "id": "enyaq-manual-five-12-17",
+      "expected": 5,
+      "available_in_conversation": 0,
+      "visually_compared": 0,
+      "brand_asserted_by_user": "Škoda",
+      "model_asserted_by_user": "Enyaq",
+      "verified_model_from_document": null,
+      "verified_edition": null,
+      "verified_model_year": null,
+      "requested_printed_pages": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "kind": "five requested photographs spanning printed12–17; overlaps unknown",
+      "status": {
+        "cs": "Pět fotografií v aktuální zprávě a dostupném archivu chybí. Škoda Enyaq potvrzen uživatelem; vydání, modelový rok, varianty a přiřazení stránek k fotografiím nedoložené. Dostupný DE11.2020 je jiný, nezávisle vedený podklad.",
+        "en": "Five photos absent from the current message/available archive. User confirms Škoda Enyaq; edition, model year, variants and photo/page mapping undocumented. Available DE11.2020 is a separate independent source.",
+        "de": "Fünf Fotos fehlen in aktueller Nachricht/verfügbarem Archiv. Škoda Enyaq vom Nutzer bestätigt; Ausgabe, Modelljahr, Varianten und Foto-/Seitenzuordnung unbelegt. Verfügbare DE11.2020 ist eigenständige andere Quelle."
+      }
     }
   ],
   "search_checks": {
