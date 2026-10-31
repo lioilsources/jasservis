@@ -78,11 +78,15 @@ jobs:
           CURRENT_URL: ${{ steps.deploy.outputs.deployment-url }}
           PROJECT: ${{ vars.VIBE_SLUG }}-vibe
         run: |
-          npx wrangler pages deployment list --project-name="$PROJECT" --json > deployments.json
-          jq -r --arg current "$CURRENT_URL" '.[] | select(.url != $current) | .id' deployments.json > old-deployments.txt
+          api="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/$PROJECT/deployments"
+          curl -fsS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$api?per_page=100" > deployments.json
+          jq -e '.success == true' deployments.json >/dev/null
+          jq -r --arg current "$CURRENT_URL" '.result[] | select(.url != $current) | .id' deployments.json > old-deployments.txt
           while IFS= read -r id; do
-            [[ -z "$id" ]] || npx wrangler pages deployment delete "$id" --project-name="$PROJECT" --force
+            [[ -z "$id" ]] || curl -fsS -X DELETE -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$api/$id" >/dev/null
           done < old-deployments.txt
+          curl -fsS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$api?per_page=100" > remaining.json
+          test "$(jq '[.result[] | select(.url != $current)] | length' --arg current "$CURRENT_URL" remaining.json)" = 0
       - name: Pick the link to share
         id: link
         env:
