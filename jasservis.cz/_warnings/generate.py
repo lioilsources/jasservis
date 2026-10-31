@@ -137,25 +137,15 @@ def source_label(m,lang):
  if m.get('host_kind')=='third-party-copy':label+=' · '+{'cs':'kopie vydání výrobce na jiném serveru','en':'manufacturer edition hosted by a third party','de':'von Dritten gehostete Herstellerausgabe'}[lang]
  return label
 def options(vals,allText):return '<option value="">'+esc(allText)+'</option>'+''.join(f'<option value="{esc(k)}">{esc(v)}</option>' for k,v in vals.items())
-def customer_scope(scopes,brand,lang):
- u=UI[lang];rows=[]
- power_label={'cs':'pohon','en':'powertrain','de':'Antrieb'}[lang]
- for s in scopes:
-  if s.get('manual'):
-   powers=', '.join(u['powers'][p] for p in s['powertrains'])
-   label=u['brands'][brand]+' '+str(s['model'])+(f' · MY {s["model_year"]}'if s.get('model_year')else'')
-   rows.append(label+(f' · {power_label}: {powers}'if powers else''))
-  else:rows.append(localized(s.get('scope'),lang,u['generic']))
- return list(dict.fromkeys(rows))
 def card(item,brand,lang,page):
  u=UI[lang];scopes=[s for s in item['scopes'] if s['brand']==brand];i=item;data=[{'model':modelkey(s),'power':s['powertrains']} for s in scopes];sid=item_anchor(i,brand)
  states=list(dict.fromkeys(sc.get('signal_state',i['state']) for sc in scopes))
  state_label=' / '.join(u['states'][state] for state in states)
  search=' '.join(i['name'].values())+' '+i['id']+' '+u['brands'][brand]+' '+' '.join(str(s.get('model') or '') for s in scopes)
- labels={'cs':('Platí pro','Rozhodující signalizace'),'en':('Applies to','Key indication'),'de':('Gilt für','Entscheidende Anzeige')}[lang]
+ signal_label={'cs':'Rozhodující signalizace','en':'Key indication','de':'Entscheidende Anzeige'}[lang]
  out=f'<article class="wl-card" id="{sid}" tabindex="-1" data-item="{esc(i["id"])}" data-brand="{brand}" data-color="{i["color"]}" data-system="{i["group"]}" data-search="{esc(search)}" data-scopes="{esc(json.dumps(data))}"><div class="wl-card-head"><span class="wl-symbol"><img src="{rel(i["graphic_path"],page)}" width="112" height="84" alt="{esc(i["alt"][lang])}"></span><h4 class="wl-name">{esc(i["name"][lang])}</h4><p class="wl-status">{esc(u["colors"][i["color"]])} · {esc(u["kinds"][i["kind"]])} · {esc(state_label)}</p></div><div class="wl-detail">'
  for key,label in [('meaning','meaning'),('action','action')]:out+=f'<h5>{esc(u[label])}</h5><p>{esc(i[key][lang])}</p>'
- out+=f'<h5>{esc(labels[1])}</h5><p>{esc(i["note"][lang])}</p><h5>{esc(labels[0])}</h5><ul class="wl-applicability">'+''.join('<li>'+esc(row)+'</li>'for row in customer_scope(scopes,brand,lang))+'</ul></div></article>'
+ out+=f'<h5>{esc(signal_label)}</h5><p>{esc(i["note"][lang])}</p></div></article>'
  return out
 
 def catalog_content(lang,page):

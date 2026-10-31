@@ -56,7 +56,6 @@
 .warning-lights .wl-detail h3:first-child{margin-top:0}
 .warning-lights .wl-detail h5{font:700 1rem/1.4 var(--js-font,Ubuntu,sans-serif);color:#111;margin:14px 0 4px;text-transform:none}
 .warning-lights .wl-detail h5:first-child{margin-top:0}
-.warning-lights .wl-applicability{margin:0;padding-left:20px}
 .warning-lights .wl-detail a,.warning-lights .wl-review a{color:#111;text-decoration:underline}
 .warning-lights .wl-credit{font-size:.875rem;border-top:1px solid #aaa;padding-top:12px}
 .warning-lights .wl-contact{border:1px solid #e3e3e3;border-left:4px solid var(--js-brand);padding:20px;margin-top:28px}
