@@ -87,9 +87,9 @@
       "ovladani": "Ovládací ikony a infotainment"
     },
     "powers": {
-      "spalovaci": "Spalovací",
-      "phev": "Plug-in hybridní",
-      "elektricky": "Elektrický"
+      "spalovaci": "spalovací motor",
+      "phev": "plug-in hybrid",
+      "elektricky": "elektrický pohon"
     },
     "brands": {
       "volkswagen": "Volkswagen",
@@ -194,9 +194,9 @@
       "ovladani": "Control icons and infotainment"
     },
     "powers": {
-      "spalovaci": "Combustion",
-      "phev": "Plug-in hybrid",
-      "elektricky": "Electric"
+      "spalovaci": "combustion engine",
+      "phev": "plug-in hybrid",
+      "elektricky": "electric powertrain"
     },
     "brands": {
       "volkswagen": "Volkswagen",
@@ -301,9 +301,9 @@
       "ovladani": "Bedienzeichen und Infotainment"
     },
     "powers": {
-      "spalovaci": "Verbrenner",
+      "spalovaci": "Verbrennungsmotor",
       "phev": "Plug-in-Hybrid",
-      "elektricky": "Elektrisch"
+      "elektricky": "Elektroantrieb"
     },
     "brands": {
       "volkswagen": "Volkswagen",

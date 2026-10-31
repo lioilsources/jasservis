@@ -139,11 +139,12 @@ def source_label(m,lang):
 def options(vals,allText):return '<option value="">'+esc(allText)+'</option>'+''.join(f'<option value="{esc(k)}">{esc(v)}</option>' for k,v in vals.items())
 def customer_scope(scopes,brand,lang):
  u=UI[lang];rows=[]
+ power_label={'cs':'pohon','en':'powertrain','de':'Antrieb'}[lang]
  for s in scopes:
   if s.get('manual'):
    powers=', '.join(u['powers'][p] for p in s['powertrains'])
    label=u['brands'][brand]+' '+str(s['model'])+(f' · MY {s["model_year"]}'if s.get('model_year')else'')
-   rows.append(label+(f' · {powers}'if powers else''))
+   rows.append(label+(f' · {power_label}: {powers}'if powers else''))
   else:rows.append(localized(s.get('scope'),lang,u['generic']))
  return list(dict.fromkeys(rows))
 def card(item,brand,lang,page):
