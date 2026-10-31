@@ -201,6 +201,7 @@ def create_page(lang):
   s=s.replace('/js/service-navigation.js?','/js/service-navigation.'+lang+'.js?').replace('/js/contact-actions.js?','/js/contact-actions.'+lang+'.js?')
   s=s.replace('</head>',f'<link rel="stylesheet" href="../../wp-content/themes/theme53985/languages.css?v=20261029-i18n" /></head>')
  u=UI[lang];prefix=locale_root(lang);url='https://jasservis.cz/'+prefix+ROUTE+'/'
+ advice={'cs':'Rady pro řidiče','en':'Driver advice','de':'Fahrertipps'}[lang]
  s=re.sub(r'(<html\b[^>]*\blang=["\'])[^"\']+',r'\g<1>'+lang,s,count=1)
  s=re.sub(r'<main id="warning-lights".*?</main>',lambda m:main(lang,page),s,count=1,flags=re.S)
  s=re.sub(r'<nav class="language-switcher".*?</nav>',lambda m:switcher(lang,page),s,count=1,flags=re.S)
@@ -209,13 +210,19 @@ def create_page(lang):
  s=re.sub(r'<link\b[^>]*(?:rel=["\']canonical["\']|hreflang=)[^>]*>','',s,flags=re.I)
  s=re.sub(r'<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>.*?</script>','',s,flags=re.S)
  s=re.sub(r'(<h1 class="title-header">).*?(</h1>)',lambda m:m[1]+esc(u['title'].upper())+m[2],s,count=1,flags=re.S)
- crumb=f'<ul class="breadcrumb breadcrumb__t"><li><a href="{rel(prefix or ".",page)}">{esc(u["home"])}</a></li><li class="divider"></li><li><a href="{rel(prefix+"autoservis",page)}">{esc(u["services"])}</a></li><li class="divider"></li><li class="active" aria-current="page">{esc(u["title"])}</li></ul>'
+ crumb=f'<ul class="breadcrumb breadcrumb__t"><li><a href="{rel(prefix or ".",page)}">{esc(u["home"])}</a></li><li class="divider"></li><li class="active" aria-current="page">{esc(advice)}</li></ul>'
  s=re.sub(r'<ul class="breadcrumb breadcrumb__t">.*?</ul>',lambda m:crumb,s,count=1,flags=re.S)
+ # The catalogue belongs only to the separate Driver advice header entry.
+ # Clear stale service-menu ancestry inherited from the source template and
+ # mark the real catalogue entry as current for assistive technology and CSS.
+ s=re.sub(r'(<li id="menu-item-2076" class=")[^"]*(")',r'\1menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children\2',s,count=1)
+ s=re.sub(r'<a class="header-driver-advice(?: is-current)?"(?: aria-current="page")?([^>]*)>',r'<a class="header-driver-advice is-current" aria-current="page"\1>',s,count=1)
  s=re.sub(r'(warning-lights\.(?:css|js)\?v=)[^"\']+',r'\g<1>'+VERSION,s)
+ s=re.sub(r'(jasservis\.css\?v=)[^"\']+',r'\g<1>20261031-driver-advice-v1',s)
  meta=f'<meta name="robots" content="noindex, nofollow" /><meta name="description" content="{esc(u["intro3"])}" /><link rel="canonical" href="{url}" /><meta property="og:title" content="{esc(u["title"])} | J&amp;S SERVIS" /><meta property="og:description" content="{esc(u["scopeTitle"])}" /><meta property="og:url" content="{url}" /><meta property="og:locale" content="'+{'cs':'cs_CZ','en':'en_GB','de':'de_DE'}[lang]+'" />'
  for l in LANGS:meta+=f'<link rel="alternate" hreflang="{l}" href="https://jasservis.cz/{locale_root(l)}{ROUTE}/" />'
  meta+=f'<link rel="alternate" hreflang="x-default" href="https://jasservis.cz/{ROUTE}/" />'
- schema={'@context':'https://schema.org','@graph':[{'@type':'WebPage','url':url,'name':u['title'],'inLanguage':lang,'description':u['scopeTitle']},{'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':u['home'],'item':'https://jasservis.cz/'+prefix},{'@type':'ListItem','position':2,'name':u['services'],'item':'https://jasservis.cz/'+prefix+'autoservis/'},{'@type':'ListItem','position':3,'name':u['title'],'item':url}]}]}
+ schema={'@context':'https://schema.org','@graph':[{'@type':'WebPage','url':url,'name':u['title'],'inLanguage':lang,'description':u['scopeTitle']},{'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':u['home'],'item':'https://jasservis.cz/'+prefix},{'@type':'ListItem','position':2,'name':advice,'item':url}]}]}
  meta+='<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False).replace('</','<\\/')+'</script>'
  s=s.replace('</head>',meta+'</head>');s=re.sub(r'(?m)^[ \t]+$','',s);return page,s
 

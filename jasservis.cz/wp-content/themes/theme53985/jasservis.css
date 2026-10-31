@@ -1188,6 +1188,10 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
 .header .header-driver-advice:hover,.header .header-driver-advice:focus-visible{
  background:#ff8055;color:var(--js-ink);border-color:#ff8055
 }
+.page-warning-lights .header .header-driver-advice.is-current{
+	background:#b63b00;
+	box-shadow:inset 0 -3px 0 #fff;
+}
 @media(max-width:1199px){
  .header .header-driver-advice{order:2;flex:0 0 auto;min-height:44px;padding:4px 8px;font-size:14px;line-height:24px}
 }
