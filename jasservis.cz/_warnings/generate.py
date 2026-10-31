@@ -6,7 +6,7 @@ from pathlib import Path
 import json,re,html,os,sys,csv,io
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parent
 CAT=json.loads((HERE/'catalog.json').read_text());UI=json.loads((HERE/'locales.json').read_text())
-ROUTE='kontrolky-a-vystrazna-hlaseni';LANGS=['cs','en','de'];VERSION='20261031-driver-topics-v1'
+ROUTE='kontrolky-a-vystrazna-hlaseni';LANGS=['cs','en','de'];VERSION='20261031-brand-tiles-v1'
 def esc(x):return html.escape(str(x),quote=True)
 def rel(target,page):return os.path.relpath(ROOT/target,page.parent).replace(os.sep,'/')+('/' if not Path(target).suffix else '')
 def locale_root(lang):return '' if lang=='cs' else lang+'/'
@@ -137,45 +137,37 @@ def source_label(m,lang):
  if m.get('host_kind')=='third-party-copy':label+=' · '+{'cs':'kopie vydání výrobce na jiném serveru','en':'manufacturer edition hosted by a third party','de':'von Dritten gehostete Herstellerausgabe'}[lang]
  return label
 def options(vals,allText):return '<option value="">'+esc(allText)+'</option>'+''.join(f'<option value="{esc(k)}">{esc(v)}</option>' for k,v in vals.items())
+def customer_scope(scopes,brand,lang):
+ u=UI[lang];rows=[]
+ for s in scopes:
+  if s.get('manual'):
+   powers=', '.join(u['powers'][p] for p in s['powertrains'])
+   label=u['brands'][brand]+' '+str(s['model'])+(f' · MY {s["model_year"]}'if s.get('model_year')else'')
+   rows.append(label+(f' · {powers}'if powers else''))
+  else:rows.append(localized(s.get('scope'),lang,u['generic']))
+ return list(dict.fromkeys(rows))
 def card(item,brand,lang,page):
  u=UI[lang];scopes=[s for s in item['scopes'] if s['brand']==brand];i=item;data=[{'model':modelkey(s),'power':s['powertrains']} for s in scopes];sid=item_anchor(i,brand)
  states=list(dict.fromkeys(sc.get('signal_state',i['state']) for sc in scopes))
  state_label=' / '.join(u['states'][state] for state in states)
  search=' '.join(i['name'].values())+' '+i['id']+' '+u['brands'][brand]+' '+' '.join(str(s.get('model') or '') for s in scopes)
- out=f'<details class="wl-card" id="{sid}" data-item="{esc(i["id"])}" data-brand="{brand}" data-color="{i["color"]}" data-system="{i["group"]}" data-search="{esc(search)}" data-scopes="{esc(json.dumps(data))}"><summary><span class="wl-symbol"><img src="{rel(i["graphic_path"],page)}" width="96" height="72" alt="{esc(i["alt"][lang])}"></span><span class="wl-name">{esc(i["name"][lang])}</span><span class="wl-status">{esc(u["colors"][i["color"]])} · {esc(u["kinds"][i["kind"]])} · {esc(state_label)}</span><span class="wl-open">{esc(u["detail"])} <span aria-hidden="true"></span></span></summary><div class="wl-detail">'
- if not any(sc.get('manual')for sc in scopes):out=out.replace('<span class="wl-open">','<span class="wl-status">'+esc(u['generic'])+'</span><span class="wl-open">',1)
- for key,label in [('meaning','meaning'),('action','action'),('note','signal')]:out+=f'<h4>{esc(u[label])}</h4><p>{esc(i[key][lang])}</p>'
- out+=f'<h4>{esc(u["validity"])}</h4><ul class="wl-sources">'
- for s in scopes:
-  if s.get('manual'):
-   m=CAT['manuals'][s['manual']];powers=', '.join(u['powers'][p] for p in s['powertrains'])
-   if m.get('document_type')=='html':
-    url=m['url'];location=' · '.join(s['source_sections'])
-   else:
-    pg=', '.join(map(str,s['printed_pages']));pdf=', '.join(map(str,s['pdf_pages']));url=m['url']+'#page='+str(s['pdf_pages'][0]);location=f'{u["pages"]} {pg} ({u["pdfPages"]} {pdf})'
-   out+=f'<li><strong>{esc(u["brands"][brand])} {esc(model_label(s["model"],s["model_year"]))}</strong><br>{esc(s["edition"])} · {esc(powers)}<br><a href="{esc(url)}" target="_blank" rel="noopener">{esc(source_label(m,lang))}: {esc(location)}</a>'
-   if m.get('viewer_url'):
-    alternate=m['viewer_url'].replace('{page}',str(s['pdf_pages'][0]));out+='<br><a href="'+esc(alternate)+'" target="_blank" rel="noopener">'+{'cs':'Alternativní prohlížeč stejného vydání','en':'Alternative viewer for the same edition','de':'Alternativer Betrachter derselben Ausgabe'}[lang]+'</a>'
-   if s.get('model_note'):out+='<p>'+esc(s['model_note'][lang])+'</p>'
-   out+='</li>'
-  else:out+=f'<li><strong>{esc(u["generic"])}</strong><p>{esc(s["scope"][lang])}</p><a href="{esc(s["url"])}" target="_blank" rel="noopener">{esc(s.get("source_label", "Volkswagen UK (English)"))}</a></li>'
- out+='</ul><p>'+esc(u['equipment'])+'</p>'
- for sc in scopes:
-  if sc.get('manual') and CAT['manuals'][sc['manual']].get('model_year_note'):out+='<p>'+esc(CAT['manuals'][sc['manual']]['model_year_note'][lang])+'</p>'
- g=i['graphic_source'];credit=f'<a href="{esc(g["page"])}" target="_blank" rel="noopener">{esc(g["title"].replace("File:",""))}</a>' if g.get('page') else esc(g['title'])
- out+=f'<p class="wl-credit">{esc(u["graphic"])}: {credit} · {esc(g["author"])} · {esc(g["license"])}. <a href="zdroje.html#graphic-{esc(i["graphic"]+"-"+i["color"])}">{esc(u["auditLink"])}</a><br>{esc(u["checked"])}: {i["checked"]}.</p></div></details>'
+ labels={'cs':('Platí pro','Rozhodující signalizace'),'en':('Applies to','Key indication'),'de':('Gilt für','Entscheidende Anzeige')}[lang]
+ out=f'<article class="wl-card" id="{sid}" tabindex="-1" data-item="{esc(i["id"])}" data-brand="{brand}" data-color="{i["color"]}" data-system="{i["group"]}" data-search="{esc(search)}" data-scopes="{esc(json.dumps(data))}"><div class="wl-card-head"><span class="wl-symbol"><img src="{rel(i["graphic_path"],page)}" width="112" height="84" alt="{esc(i["alt"][lang])}"></span><h4 class="wl-name">{esc(i["name"][lang])}</h4><p class="wl-status">{esc(u["colors"][i["color"]])} · {esc(u["kinds"][i["kind"]])} · {esc(state_label)}</p></div><div class="wl-detail">'
+ for key,label in [('meaning','meaning'),('action','action')]:out+=f'<h5>{esc(u[label])}</h5><p>{esc(i[key][lang])}</p>'
+ out+=f'<h5>{esc(labels[1])}</h5><p>{esc(i["note"][lang])}</p><h5>{esc(labels[0])}</h5><ul class="wl-applicability">'+''.join('<li>'+esc(row)+'</li>'for row in customer_scope(scopes,brand,lang))+'</ul></div></article>'
  return out
 
 def catalog_content(lang,page):
  u=UI[lang];models={s['manual']:f'{u["brands"][s["brand"]]} {model_label(s["model"],s["model_year"])} · {s["edition"]}' for i in CAT['items'] for s in i['scopes'] if s.get('manual')}
  models['generic']=u['generic']
- out=f'<div class="driver-catalog"><script type="application/json" id="wl-messages">'+json.dumps({k:u[k] for k in ['brands','overview','count','empty','missingBrand','preset']},ensure_ascii=False).replace('</','<\\/')+'</script>'
- out+='<div class="wl-intro">'+''.join('<p>'+esc(u[k])+'</p>' for k in ['intro1','intro2','intro3'])+'</div>'
- out+=f'<aside class="wl-stop" aria-labelledby="wl-stop-title"><h2 id="wl-stop-title">{esc(u["stopTitle"])}</h2><p>{esc(u["stop"])}</p></aside>'
- out+=f'<aside class="wl-scope"><strong>{esc(u["scopeTitle"])}</strong><p>{esc(u["scope"])}</p><p>{esc(u["yearNote"])}</p><a href="zdroje.html">{esc(u["auditLink"])}</a></aside><noscript><p>{esc(u["nojs"])}</p></noscript>'
- out+='<form class="wl-filters" role="search" aria-label="'+esc(u['search'])+'" hidden><label>'+esc(u['search'])+'<input type="search" id="wl-search" autocomplete="off"></label>'
- for key,vals,al in [('brand',u['brands'],'allBrands'),('model',models,'allModels'),('color',u['colors'],'allColors'),('system',u['groups'],'allSystems'),('power',u['powers'],'allPowers')]:out+=f'<label>{esc(u[key])}<select id="wl-{key}">'+options(vals,u[al])+'</select></label>'
- out+=f'<button type="reset">{esc(u["reset"])}</button></form><section id="prehled-kontrolek" class="wl-results" aria-labelledby="wl-results-title"><h2 id="wl-results-title" tabindex="-1">{esc(u["overview"])}</h2><p id="wl-brand-context" class="wl-brand-context" hidden></p><div class="wl-countline"><p id="wl-count" role="status" aria-live="polite"></p><a href="./#prehled-kontrolek">{esc(u["all"])}</a></div><p id="wl-empty" role="status" hidden>{esc(u["empty"])}</p>'
+ messages={k:u[k] for k in ['brands','overview','count','empty','missingBrand','preset']}
+ intro={'cs':'Vyberte značku svého vozu. Zobrazí se přehled kontrolek, jejich význam a doporučený postup. Význam vždy posuzujte společně s hlášením na displeji a návodem k obsluze svého vozidla.','en':'Select your vehicle brand. You will see an overview of warning lights, their meaning and the recommended action. Always assess the meaning together with the message on the display and the owner’s manual for your vehicle.','de':'Wählen Sie Ihre Fahrzeugmarke. Anschließend sehen Sie die Kontrollleuchten, ihre Bedeutung und das empfohlene Vorgehen. Beurteilen Sie die Bedeutung immer zusammen mit der Displaymeldung und der Betriebsanleitung Ihres Fahrzeugs.'}[lang]
+ filter_title={'cs':'Vyhledávání a upřesnění vozidla','en':'Search and refine the vehicle','de':'Suche und Fahrzeug eingrenzen'}[lang]
+ out=f'<div class="driver-catalog"><script type="application/json" id="wl-messages">'+json.dumps(messages,ensure_ascii=False).replace('</','<\\/')+'</script><div class="wl-intro"><p>'+esc(intro)+'</p></div><div class="wl-brand-tiles" role="group" aria-label="'+esc(u['brand'])+'">'
+ out+=''.join(f'<button type="button" class="wl-brand-tile" data-brand="{brand}" aria-pressed="false" aria-controls="prehled-kontrolek">{esc(name)}</button>'for brand,name in u['brands'].items())+'</div><noscript><p>'+esc(u['nojs'])+'</p></noscript>'
+ out+='<details class="wl-filter-panel" hidden><summary>'+esc(filter_title)+'</summary><form class="wl-filters" role="search" aria-label="'+esc(u['search'])+'"><select id="wl-brand" aria-label="'+esc(u['brand'])+'" hidden>'+options(u['brands'],u['allBrands'])+'</select><label>'+esc(u['search'])+'<input type="search" id="wl-search" autocomplete="off"></label>'
+ for key,vals,al in [('model',models,'allModels'),('color',u['colors'],'allColors'),('system',u['groups'],'allSystems'),('power',u['powers'],'allPowers')]:out+=f'<label>{esc(u[key])}<select id="wl-{key}">'+options(vals,u[al])+'</select></label>'
+ out+=f'<button type="reset">{esc(u["reset"])}</button></form></details><section id="prehled-kontrolek" class="wl-results" aria-labelledby="wl-results-title" hidden><h2 id="wl-results-title" tabindex="-1">{esc(u["overview"])}</h2><p id="wl-brand-context" class="wl-brand-context" hidden></p><div class="wl-countline"><p id="wl-count" role="status" aria-live="polite"></p></div><p id="wl-empty" role="status" hidden>{esc(u["empty"])}</p>'
  for brand,bname in u['brands'].items():
   entries=[i for i in CAT['items'] if any(s['brand']==brand for s in i['scopes'])]
   if not entries:continue
@@ -186,7 +178,7 @@ def catalog_content(lang,page):
   out+='</section>'
  out+='</section>'
  out+=f'<section class="wl-contact"><h2>{esc(u["contactTitle"])}</h2><p>{esc(u["contact"])}</p><p><strong>{esc(u["hours"])}</strong></p><p>{esc(u["office"])}: <a href="tel:+420605399448">+420 605 399 448</a><br>{esc(u["workshop"])}: <a href="tel:+420608313437">+420 608 313 437</a></p><a class="tlacitko-akce" href="{rel(locale_root(lang)+"kontakt",page)}" data-booking-panel>{esc(u["contactButton"])}</a><p class="wl-note">{esc(u["notAssistance"])}</p></section>'
- out+=f'<details class="wl-review"><summary>{esc(u["audit"])}</summary><p>{esc(u["counts"].format(items=len(CAT["items"]),graphics=CAT["counts"]["shared_graphic_colour_variants"],shapes=CAT["counts"]["distinct_pictogram_shapes"]))}</p><p>{esc(u["auditNote"])}</p><p><a href="zdroje.html">{esc(u["auditLink"])}</a> · <a href="{rel("_warnings/catalog.json",page)}">JSON</a></p></details></div>'
+ out+='</div>'
  return out
 
 DRIVER_TOPICS={
