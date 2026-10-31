@@ -172,6 +172,10 @@ INFO_CATEGORY_LABELS={
  'cs':{'media':'Média','radio':'Rádio','navigation':'Navigace','phone':'Telefon a zprávy','app-connect':'Připojení telefonu a aplikací','other':'Další symboly'},
  'en':{'media':'Media','radio':'Radio','navigation':'Navigation','phone':'Phone and messages','app-connect':'Phone and app connectivity','other':'Other symbols'},
  'de':{'media':'Medien','radio':'Radio','navigation':'Navigation','phone':'Telefon und Nachrichten','app-connect':'Telefon- und App-Verbindung','other':'Weitere Symbole'}}
+BRAND_TILE_LABELS={
+ 'cs':{'volkswagen':'Můj Volkswagen','audi':'Moje Audi','skoda':'Moje Škoda','seat':'Můj SEAT','cupra':'Moje CUPRA','volkswagen-uzitkove-vozy':'Můj užitkový Volkswagen'},
+ 'en':{'volkswagen':'My Volkswagen','audi':'My Audi','skoda':'My Škoda','seat':'My SEAT','cupra':'My CUPRA','volkswagen-uzitkove-vozy':'My Volkswagen Commercial Vehicle'},
+ 'de':{'volkswagen':'Mein Volkswagen','audi':'Mein Audi','skoda':'Mein Škoda','seat':'Mein SEAT','cupra':'Mein CUPRA','volkswagen-uzitkove-vozy':'Mein Volkswagen Nutzfahrzeug'}}
 def info_category(item):
  raw=str(item.get('category')or'').lower();id=item['id'].lower()
  if raw in ('navigation','navigace'):return'navigation'
@@ -213,8 +217,8 @@ def catalog_content(lang,page):
  messages={k:u[k] for k in ['brands','overview','count','empty','missingBrand','preset']}
  intro={'cs':'Vyberte značku svého vozu. Zobrazí se přehled kontrolek a symbolů, jejich význam a doporučený postup. Význam vždy posuzujte společně s hlášením na displeji a návodem k obsluze svého vozidla.','en':'Select your vehicle brand. You will see an overview of warning lights and symbols, their meaning and the recommended action. Always assess the meaning together with the message on the display and the owner’s manual for your vehicle.','de':'Wählen Sie Ihre Fahrzeugmarke. Anschließend sehen Sie die Kontrollleuchten und Symbole, ihre Bedeutung und das empfohlene Vorgehen. Beurteilen Sie die Bedeutung immer zusammen mit der Displaymeldung und der Betriebsanleitung Ihres Fahrzeugs.'}[lang]
  vin_note={'cs':'Vyobrazení kontrolky se nemusí shodovat s konkrétním modelem nebo výbavou. Pro přesné určení jejího významu a funkce je nutné ověření podle VIN vozidla, zobrazeného hlášení a příslušného návodu k obsluze.','en':'The warning-light graphic may differ for a specific model or equipment version. Its exact meaning and function must be verified using the vehicle VIN, the displayed message and the corresponding owner’s manual.','de':'Die Darstellung der Kontrollleuchte kann je nach Modell oder Ausstattung abweichen. Bedeutung und Funktion müssen anhand der Fahrzeug-Identifizierungsnummer (VIN), der angezeigten Meldung und der zugehörigen Betriebsanleitung genau geprüft werden.'}[lang]
- out=f'<div class="driver-catalog"><script type="application/json" id="wl-messages">'+json.dumps(messages,ensure_ascii=False).replace('</','<\\/')+'</script><div class="wl-intro"><p>'+esc(intro)+'</p></div><div class="wl-brand-tiles" role="group" aria-label="'+esc(u['brand'])+'">'
- out+=''.join(f'<button type="button" class="wl-brand-tile" data-brand="{brand}" aria-pressed="false" aria-controls="prehled-kontrolek">{esc(name)}</button>'for brand,name in u['brands'].items())+'</div><noscript><p>'+esc(u['nojs'])+'</p></noscript>'
+ out=f'<div class="driver-catalog"><script type="application/json" id="wl-messages">'+json.dumps(messages,ensure_ascii=False).replace('</','<\\/')+'</script><div class="wl-brand-tiles" role="group" aria-label="'+esc(u['brand'])+'">'
+ out+=''.join(f'<button type="button" class="wl-brand-tile" data-brand="{brand}" aria-pressed="false" aria-controls="prehled-kontrolek">{esc(BRAND_TILE_LABELS[lang][brand])}</button>'for brand in u['brands'])+'</div><div class="wl-intro"><p>'+esc(intro)+'</p></div><noscript><p>'+esc(u['nojs'])+'</p></noscript>'
  search_label={'cs':'Hledat v otevřené značce','en':'Search within the selected brand','de':'In der ausgewählten Marke suchen'}[lang]
  out+=f'<section id="prehled-kontrolek" class="wl-results" aria-labelledby="wl-results-title" hidden><h2 id="wl-results-title" tabindex="-1">{esc(u["overview"])}</h2><p class="wl-vin-note">{esc(vin_note)}</p><label class="wl-brand-search">{esc(search_label)}<input type="search" id="wl-search" autocomplete="off"></label><p class="wl-search-empty" hidden>{esc(u["empty"])}</p>'
  for brand,bname in u['brands'].items():
@@ -279,7 +283,7 @@ ONLINE_UI={
 def online_services_content(lang):
  u=ONLINE_UI[lang];brand_names=UI[lang]['brands']
  out=f'<div class="online-services"><p class="online-intro">{esc(u["intro"])}</p><div class="online-brand-tiles" role="group" aria-label="{esc(UI[lang]["brand"])}">'
- out+=''.join(f'<button type="button" class="online-brand-tile" data-online-brand="{brand}" aria-pressed="false" aria-controls="online-panel-{brand}">{esc(brand_names[brand])}</button>' for brand in brand_names)
+ out+=''.join(f'<button type="button" class="online-brand-tile" data-online-brand="{brand}" aria-pressed="false" aria-controls="online-panel-{brand}">{esc(BRAND_TILE_LABELS[lang][brand])}</button>' for brand in brand_names)
  out+='</div>'
  for brand in brand_names:
   item=ONLINE_SERVICES[brand];app_url=item.get('app_url')
@@ -333,11 +337,11 @@ DRIVER_TOPICS={
 
 def main(lang,page):
  u=UI[lang];d=DRIVER_TOPICS[lang]
- out=f'<main id="warning-lights" class="warning-lights driver-advice" lang="{lang}"><div class="driver-advice-intro"><p>{esc(d["intro"])}</p></div><section class="driver-topics" aria-label="{esc(d["page"])}">'
+ out=f'<main id="warning-lights" class="warning-lights driver-advice" lang="{lang}"><section class="driver-topics" aria-label="{esc(d["page"])}">'
  for index,title in enumerate(d['titles']):
   topic_id=['kontrolky','prihlaseni-online-sluzby','pojistky','tlak-pneumatik','oleje','chladici-kapaliny','servisni-intervaly'][index]
   topic_title=(f'<span class="driver-topic-title"><span class="driver-profile-icon" aria-hidden="true"></span>{esc(title)}</span>' if index==1 else f'<span>{esc(title)}</span>')
-  out+=f'<details class="driver-topic" id="{topic_id}"><summary>{topic_title}<span class="driver-topic-arrow" aria-hidden="true"></span></summary><div class="driver-topic-body">'
+  out+=f'<details class="driver-topic" id="{topic_id}"{" open" if index==0 else ""}><summary>{topic_title}<span class="driver-topic-arrow" aria-hidden="true"></span></summary><div class="driver-topic-body">'
   if index==0:out+=catalog_content(lang,page)
   elif index==1:out+=online_services_content(lang)
   else:

@@ -1053,12 +1053,15 @@ def check_online_services(audit):
         "https://www.cupra.com/en/faqs/cupra-connect/gen-4-general-information",
         "https://www.vw-uzitkove.cz/digitalni-sluzby-a-aplikace/vw-connect/aktivace",
     }
+    first_tile = {"cs": "Můj Volkswagen", "en": "My Volkswagen", "de": "Mein Volkswagen"}
     for lang in LANGS:
         page = ROOT / ("" if lang == "cs" else lang) / ROUTE / "index.html"
         text = page.read_text(encoding="utf-8")
         label = f"{lang} online services"
         audit.check(text.count('class="online-brand-tile"') == 6, "online_services", f"{label}: expected six brand tiles")
         audit.check(text.count('class="online-brand-panel"') == 6, "online_services", f"{label}: expected six brand panels")
+        audit.check(f'id="kontrolky" open' in text, "online_services", f"{label}: warning-light brand selection is not open on entry")
+        audit.check(first_tile[lang] in text, "online_services", f"{label}: customer-facing brand labels are missing")
         for url in account_urls | help_urls:
             audit.check(url in text, "online_services", f"{label}: missing official URL {url}")
         audit.check(not re.search(r'<input[^>]+type=["\'](?:password|text)["\']', text, re.I), "online_services", f"{label}: must not contain a credential input")
