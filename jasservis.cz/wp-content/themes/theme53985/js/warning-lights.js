@@ -9,13 +9,11 @@
  function updateLanguageLinks(){Array.from(document.querySelectorAll('.language-switcher a')).forEach(function(link){var path=link.getAttribute('href').split(/[?#]/)[0];link.setAttribute('href',path+(selectedBrand?'?znacka='+encodeURIComponent(selectedBrand):'')+(location.hash||''));});}
  function updateURL(){var url=new URL(location.href);if(selectedBrand)url.searchParams.set('znacka',selectedBrand);else url.searchParams.delete('znacka');history.replaceState(null,'',url.pathname+url.search+url.hash);updateLanguageLinks();}
  function showBrand(){
-  var count=0;
-  cards.forEach(function(card){var show=selectedBrand&&card.dataset.brand===selectedBrand;card.hidden=!show;if(show)count++;});
+  cards.forEach(function(card){var show=selectedBrand&&card.dataset.brand===selectedBrand;card.hidden=!show;});
   groups.forEach(function(group){group.hidden=!group.querySelector('.wl-card:not([hidden])');});
   brandGroups.forEach(function(group){group.hidden=!group.querySelector('.wl-card:not([hidden])');});
   tiles.forEach(function(tile){tile.setAttribute('aria-pressed',String(tile.dataset.brand===selectedBrand));});
   results.hidden=!selectedBrand;heading.textContent=selectedBrand?text.brands[selectedBrand]+' — '+text.overview:text.overview;
-  root.querySelector('#wl-count').textContent=selectedBrand?text.count.replace('{count}',count).replace('{total}',count):'';
  }
  function selectBrand(brand,moveFocus){selectedBrand=brand;showBrand();updateURL();if(brand&&moveFocus)requestAnimationFrame(function(){results.scrollIntoView({behavior:'smooth',block:'start'});heading.focus({preventScroll:true});});}
  tiles.forEach(function(tile){tile.addEventListener('click',function(){selectBrand(selectedBrand===tile.dataset.brand?'':tile.dataset.brand,true);});});
