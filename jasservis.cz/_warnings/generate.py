@@ -8,7 +8,7 @@ HERE=Path(__file__).resolve().parent;ROOT=HERE.parent;REPO=ROOT.parent
 CAT=json.loads((HERE/'catalog.json').read_text());UI=json.loads((HERE/'locales.json').read_text())
 INFO_ROOT=REPO/'source-materials/infotainment-2026-10-31-rev2'
 INFO=json.loads((INFO_ROOT/'internal/manifest.json').read_text());INFO_TEXT=json.loads((INFO_ROOT/'translations.json').read_text())
-ROUTE='kontrolky-a-vystrazna-hlaseni';LANGS=['cs','en','de'];VERSION='20261031-washer-fluid-v1'
+ROUTE='kontrolky-a-vystrazna-hlaseni';LANGS=['cs','en','de'];VERSION='20261031-topic-hierarchy-v1'
 def esc(x):return html.escape(str(x),quote=True)
 def rel(target,page):return os.path.relpath(ROOT/target,page.parent).replace(os.sep,'/')+('/' if not Path(target).suffix else '')
 def locale_root(lang):return '' if lang=='cs' else lang+'/'
@@ -835,9 +835,14 @@ DRIVER_TOPICS={
 def main(lang,page):
  u=UI[lang];d=DRIVER_TOPICS[lang]
  intro={'cs':'Vyberte značku svého vozu a téma, které vás zajímá.','en':'Select your vehicle brand and the topic you are interested in.','de':'Wählen Sie Ihre Fahrzeugmarke und das gewünschte Thema.'}[lang]
+ hierarchy={'cs':['Vozidlo a připojení','Bezpečnost a informace pro řidiče','Kapaliny a pohonné hmoty','Emise a údržba'],'en':['Vehicle and connectivity','Safety and driver information','Fluids and fuels','Emissions and maintenance'],'de':['Fahrzeug und Vernetzung','Sicherheit und Fahrerinformationen','Flüssigkeiten und Kraftstoffe','Abgas und Wartung']}[lang]
+ topic_ids=['identifikace-vozu-vin','prihlaseni-online-sluzby','kontrolky','pojistky','tlak-pneumatik','oleje','chladici-kapaliny','servisni-intervaly','brzdova-kapalina','cisteni-vyfukovych-plynu','pohonne-hmoty','kapaliny-do-ostrikovacu']
+ order=[0,1,2,3,4,10,5,6,8,11,9,7]
+ group_at={0:hierarchy[0],2:hierarchy[1],5:hierarchy[2],10:hierarchy[3]}
  out=f'<main id="warning-lights" class="warning-lights driver-advice" lang="{lang}"><p class="driver-selection-intro">{esc(intro)}</p>{brand_selector_content(lang)}<section id="brand-advice" class="brand-advice" hidden aria-labelledby="brand-advice-title"><h2 id="brand-advice-title" tabindex="-1"></h2><div class="driver-topics" aria-label="{esc(d["page"])}">'
- for index,title in enumerate(d['titles']):
-  topic_id=['identifikace-vozu-vin','prihlaseni-online-sluzby','kontrolky','pojistky','tlak-pneumatik','oleje','chladici-kapaliny','servisni-intervaly','brzdova-kapalina','cisteni-vyfukovych-plynu','pohonne-hmoty','kapaliny-do-ostrikovacu'][index]
+ for position,index in enumerate(order):
+  title=d['titles'][index];topic_id=topic_ids[index]
+  if position in group_at:out+=f'<h3 class="driver-topic-group-title">{esc(group_at[position])}</h3>'
   if index==0:topic_title=f'<span class="driver-topic-title"><span class="driver-vin-icon" aria-hidden="true">VIN</span>{esc(title)}</span>'
   elif index==1:topic_title=f'<span class="driver-topic-title"><span class="driver-profile-icon" aria-hidden="true"></span>{esc(title)}</span>'
   else:topic_title=f'<span>{esc(title)}</span>'

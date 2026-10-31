@@ -1063,6 +1063,10 @@ def check_online_services(audit):
         audit.check('id="brand-advice" class="brand-advice" hidden' in text, "online_services", f"{label}: brand topic menu must be initially hidden")
         audit.check(text.count('<details class="driver-topic"') == 12, "online_services", f"{label}: expected twelve equal main topic accordions")
         audit.check(text.find('id="identifikace-vozu-vin"') < text.find('id="prihlaseni-online-sluzby"') < text.find('id="kontrolky"'), "online_services", f"{label}: VIN, online services and warning-light topic order is wrong")
+        hierarchy = {"cs": ["Vozidlo a připojení", "Bezpečnost a informace pro řidiče", "Kapaliny a pohonné hmoty", "Emise a údržba"], "en": ["Vehicle and connectivity", "Safety and driver information", "Fluids and fuels", "Emissions and maintenance"], "de": ["Fahrzeug und Vernetzung", "Sicherheit und Fahrerinformationen", "Flüssigkeiten und Kraftstoffe", "Abgas und Wartung"]}[lang]
+        hierarchy_positions = [text.find(f'class="driver-topic-group-title">{title}') for title in hierarchy]
+        audit.check(text.count('class="driver-topic-group-title"') == 4 and hierarchy_positions == sorted(hierarchy_positions) and hierarchy_positions[0] >= 0, "online_services", f"{label}: four translated topic hierarchy headings are missing or out of order")
+        audit.check(text.find('id="pohonne-hmoty"') < text.find('id="oleje"') < text.find('id="chladici-kapaliny"') < text.find('id="brzdova-kapalina"') < text.find('id="kapaliny-do-ostrikovacu"') < text.find('id="cisteni-vyfukovych-plynu"') < text.find('id="servisni-intervaly"'), "online_services", f"{label}: fluid, fuel, emissions and maintenance hierarchy order is wrong")
         audit.check(text.count('class="vin-brand-panel"') == 6, "online_services", f"{label}: expected six brand-aware VIN panels")
         audit.check(text.count('class="fuse-safety"') == 1 and text.find('class="fuse-safety"') > text.find('id="pojistky"'), "online_services", f"{label}: fuse safety notice is missing or misplaced")
         audit.check(text.count('class="fuse-swatch ') == 13 and text.count('class="fuse-colour-guide"') == 1, "online_services", f"{label}: fuse colour guide must contain 13 documented rows")
@@ -1115,7 +1119,7 @@ def check_online_services(audit):
         audit.check(all(value in fuels_html for value in ('EN 228','E5','E10','EN 590','B7','EN 15940','XTL','HVO100','RON','51','DPF','FAME')), "online_services", f"{label}: fuel standards, labels or technical values are incomplete")
         audit.check('class="fuels-recommendation"' in fuels_html and 'class="fuels-wrong-warning"' in fuels_html, "online_services", f"{label}: fuel recommendation or wrong-fuel warning is missing")
         washer_start = text.find('<details class="driver-topic" id="kapaliny-do-ostrikovacu"')
-        washer_end = text.find('</div></section></main>', washer_start)
+        washer_end = text.find('<details class="driver-topic"', washer_start + 1)
         washer_html = text[washer_start:washer_end] if washer_start >= 0 and washer_end > washer_start else ""
         audit.check(washer_html.count('class="washer-section"') == 7 and '<details class="washer-section" open' not in washer_html, "online_services", f"{label}: washer-fluid guidance must contain seven initially closed subtopics")
         audit.check(washer_html.count('class="washer-table"') == 1 and washer_html.count('<td data-label=') == 6, "online_services", f"{label}: washer-fluid guidance must contain one responsive comparison table")
