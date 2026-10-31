@@ -1033,6 +1033,34 @@ def check_infotainment(audit, catalogue_ids):
     audit.check(len(public_paths) == 235, "infotainment", f"expected 235 public SVG paths, found {len(public_paths)}")
     return {"semantic_items": len(items), "svg_paths": len(public_paths), "distinct_svg_hashes": len({x["svg_sha256"] for x in items})}
 
+def check_online_services(audit):
+    account_urls = {
+        "https://www.myvolkswagen.net/cz/cs/myvolkswagen.html",
+        "https://my.audi.com/", "https://skodaid.vwgroup.io/",
+        "https://seatid.vwgroup.io/", "https://cupraid.vwgroup.io/",
+    }
+    help_urls = {
+        "https://www.volkswagen.cz/technologie/konektivita/vw-connect",
+        "https://www.audi.cz/servis-a-prislusenstvi/konektivita-a-technologie/audi-connect/nastaveni-sluzby",
+        "https://www.skoda-auto.cz/konektivita/skoda-connect",
+        "https://www.skoda-auto.cz/konektivita/myskoda",
+        "https://www.seat.cz/servis-a-prislusenstvi/konektivita-a-technologie/seat-connect",
+        "https://www.cupraofficial.cz/cupra-connect/cupra-connect-gen3",
+        "https://www.cupra.com/en/faqs/cupra-connect/gen-4-general-information",
+        "https://www.vw-uzitkove.cz/digitalni-sluzby-a-aplikace/vw-connect/aktivace",
+    }
+    for lang in LANGS:
+        page = ROOT / ("" if lang == "cs" else lang) / ROUTE / "index.html"
+        text = page.read_text(encoding="utf-8")
+        label = f"{lang} online services"
+        audit.check(text.count('class="online-brand-tile"') == 6, "online_services", f"{label}: expected six brand tiles")
+        audit.check(text.count('class="online-brand-panel"') == 6, "online_services", f"{label}: expected six brand panels")
+        for url in account_urls | help_urls:
+            audit.check(url in text, "online_services", f"{label}: missing official URL {url}")
+        audit.check(not re.search(r'<input[^>]+type=["\'](?:password|text)["\']', text, re.I), "online_services", f"{label}: must not contain a credential input")
+        audit.check(not re.search(r'https?://[^"\']+(?:access_token|id_token|session=|oauth[^/]*\?)', text, re.I), "online_services", f"{label}: contains a temporary login URL")
+    return {"brands": 6, "account_entry_urls": 5, "official_help_urls": len(help_urls)}
+
 
 def main():
     audit = Audit()
@@ -1045,6 +1073,7 @@ def main():
         queues = audit.read_json("work-queues.json")
         ids, hashes, summary = check_catalogue(audit, cat, locales)
         summary["infotainment"] = check_infotainment(audit, ids)
+        summary["online_services"] = check_online_services(audit)
         check_csv(audit, cat, hashes)
         summary["whole_manuals_complete"] = check_reviews(audit, cat, register, queues)
         summary["selected_photos_available"] = check_photos_and_queues(audit, register, attachments, queues, cat)
