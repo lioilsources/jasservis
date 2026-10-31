@@ -1181,8 +1181,10 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
 @media(min-width:1200px) and (hover:hover) and (pointer:fine){
  #motopress-main .header .header_block_1>.language-contact-row{
   position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto auto minmax(0,1fr);
-  align-items:center;column-gap:10px;min-height:48px;margin:0
+  align-items:center;column-gap:10px;row-gap:0;min-height:64px;margin:0
  }
+ #motopress-main .header .header_block_1>.language-contact-row::before,
+ #motopress-main .header .header_block_1>.language-contact-row::after{display:none}
  #motopress-main .header .header_block_1>.language-contact-row>.span6:first-child{
   grid-column:1;min-width:0;padding-right:16px
  }
@@ -1202,15 +1204,15 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
  }
  #motopress-main .header .header_block_1 .header-driver-advice{grid-column:3;align-self:center}
  #motopress-main .header .header_block_1 .tel{
-  grid-column:4;display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;
-  justify-self:stretch;gap:0 12px;min-width:0;padding-right:62px;text-align:right
+  grid-column:4;display:grid;grid-auto-flow:row;justify-items:start;align-content:center;
+  align-self:center;justify-self:end;gap:1px;min-width:0;margin:0;padding-right:132px;text-align:left
  }
  #motopress-main .header .header_block_1 .tel .header-phone a{
-  display:flex;align-items:center;gap:4px;min-height:44px;padding:0;font-size:13px;line-height:20px;white-space:nowrap
+  display:flex;align-items:center;gap:4px;min-height:20px;padding:0;font-size:13px;line-height:20px;white-space:nowrap
  }
  #motopress-main .header .header_block_1 .tel .header-phone a span{font-size:inherit}
  #motopress-main .header .header_block_1 .tel .header-hours{
-  flex:1 0 100%;margin:-6px 0 0;font-size:12px;line-height:18px;text-align:right;white-space:nowrap
+  margin:0;font-size:12px;line-height:18px;text-align:left;white-space:nowrap
  }
  #motopress-main .header .header_block_1>.language-contact-row>.language-switcher{
   position:absolute;right:0;top:50%;margin:0;transform:translateY(-50%)
@@ -1220,7 +1222,7 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
  #motopress-main .header .header_block_1>.language-contact-row{column-gap:14px}
  #motopress-main .header .header_block_1 #text-8>.textwidget>b>a,
  #motopress-main .header .header_block_1 .header-driver-advice{padding-inline:15px;font-size:14px}
- #motopress-main .header .header_block_1 .tel{gap:0 16px;padding-right:72px}
+ #motopress-main .header .header_block_1 .tel{gap:2px;padding-right:142px}
  #motopress-main .header .header_block_1 .tel .header-phone a{font-size:14px}
  #motopress-main .header .header_block_1 .tel .header-hours{font-size:13px}
 }
