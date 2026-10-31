@@ -294,6 +294,13 @@
     var logoHome = document.createComment('logo original position');
     var landscapeRow;
     var languageSwitch = document.querySelector('.language-switcher');
+    if (languageSwitch) {
+        var selectedBrand = new URLSearchParams(window.location.search).get('znacka');
+        Array.prototype.forEach.call(languageSwitch.querySelectorAll('a[hreflang]'), function (link) {
+            var suffix = selectedBrand ? '?znacka=' + encodeURIComponent(selectedBrand) : '';
+            link.setAttribute('href', link.getAttribute('href').split(/[?#]/)[0] + suffix + window.location.hash);
+        });
+    }
     var languageCompact = window.matchMedia('(max-width:1199px), (max-width:1399px) and (any-pointer:coarse)');
     var languageHome = document.createComment('language original position');
     var languageDetails = languageSwitch && languageSwitch.querySelector('.language-mobile');
