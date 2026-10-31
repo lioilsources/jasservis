@@ -439,8 +439,12 @@ def main(lang,page):
   elif index==1:out+=online_services_content(lang)
   elif index==2:out+=warning_content(lang,page)
   else:
-   if topic_id=='pojistky':out+=fuse_safety_content(lang)+fuse_colour_content(lang)
-   for heading,text in d['topics'][index]:out+=f'<section class="driver-subtopic"><h2>{esc(heading)}</h2><p>{esc(text)}</p></section>'
+   if topic_id=='pojistky':
+    out+=fuse_safety_content(lang)+'<div class="fuse-overview-layout"><div class="fuse-overview-copy">'
+    for heading,text in d['topics'][index]:out+=f'<section class="driver-subtopic"><h2>{esc(heading)}</h2><p>{esc(text)}</p></section>'
+    out+='</div>'+fuse_colour_content(lang)+'</div>'
+   else:
+    for heading,text in d['topics'][index]:out+=f'<section class="driver-subtopic"><h2>{esc(heading)}</h2><p>{esc(text)}</p></section>'
   out+='</div></details>'
  out+='</div></section></main>'
  return out
