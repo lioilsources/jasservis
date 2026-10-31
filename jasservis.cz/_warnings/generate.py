@@ -137,11 +137,16 @@ def source_label(m,lang):
  if m.get('host_kind')=='third-party-copy':label+=' · '+{'cs':'kopie vydání výrobce na jiném serveru','en':'manufacturer edition hosted by a third party','de':'von Dritten gehostete Herstellerausgabe'}[lang]
  return label
 def options(vals,allText):return '<option value="">'+esc(allText)+'</option>'+''.join(f'<option value="{esc(k)}">{esc(v)}</option>' for k,v in vals.items())
+DISPLAY_GROUP_BY_GRAPHIC={
+ 'dpf':'motor',
+ 'epc':'motor',
+ 'coolant':'motor',
+ 'lane-assist':'asistenty',
+}
 def display_group(item,brand):
- # Customer-facing Volkswagen overview keeps the DPF warning with engine items;
- # the canonical technical group remains emissions in catalog.json.
- if brand=='volkswagen' and item['id']=='vw-h':return 'motor'
- return item['group']
+ # Identical pictograms use one customer-facing category across all brands.
+ # Canonical technical groups remain unchanged in catalog.json.
+ return DISPLAY_GROUP_BY_GRAPHIC.get(item['graphic'],item['group'])
 def card(items,brand,lang,page):
  u=UI[lang];first=items[0];sid=item_anchor(first,brand);signal_label={'cs':'Rozhodující signalizace','en':'Key indication','de':'Entscheidende Anzeige'}[lang]
  aliases=''.join(f'<span class="wl-card-alias" id="{item_anchor(i,brand)}" tabindex="-1"></span>'for i in items[1:])
