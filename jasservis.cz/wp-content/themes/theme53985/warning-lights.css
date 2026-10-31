@@ -23,10 +23,6 @@
 .warning-lights .wl-brand-tile:hover{background:#ff8055;border-color:#000;color:var(--js-ink)}
 .warning-lights .wl-brand-tile[aria-pressed="true"]{background:var(--js-card);border-color:#000;color:var(--js-paper)}
 .warning-lights .wl-brand-tile:focus-visible{outline:3px solid var(--js-card);outline-offset:3px}
-.warning-lights .wl-filter-panel{margin:0 0 20px;border:1px solid #000;border-radius:var(--js-radius);background:var(--js-paper)}
-.warning-lights .wl-filter-panel>summary{min-height:48px;padding:10px 14px;cursor:pointer;font-weight:600}
-.warning-lights .wl-filter-panel[open]>summary{border-bottom:1px solid #000}
-.warning-lights .wl-filter-panel .wl-filters{padding:14px}
 .warning-lights .wl-stop{background:#fdf1ec;border:1px solid #e3e3e3;border-left:4px solid var(--js-brand);padding:20px;margin:24px 0}
 .warning-lights .wl-stop h2{color:#333}
 .warning-lights .wl-stop p{margin:0;max-width:80ch}

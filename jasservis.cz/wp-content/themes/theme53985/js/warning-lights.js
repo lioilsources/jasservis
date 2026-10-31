@@ -1,44 +1,24 @@
 (function(){
  'use strict';
  var root=document.getElementById('warning-lights');if(!root)return;
- var text=JSON.parse(root.querySelector('#wl-messages').textContent),form=root.querySelector('.wl-filters');
+ var text=JSON.parse(root.querySelector('#wl-messages').textContent);
  var cards=Array.from(root.querySelectorAll('.wl-card')),groups=Array.from(root.querySelectorAll('.wl-group')),brandGroups=Array.from(root.querySelectorAll('.wl-brand'));
- var tiles=Array.from(root.querySelectorAll('.wl-brand-tile')),filterPanel=root.querySelector('.wl-filter-panel');
- var fields={};['search','brand','model','color','system','power'].forEach(function(k){fields[k]=root.querySelector('#wl-'+k);});
- cards.forEach(function(card){card._scopes=JSON.parse(card.dataset.scopes);});
- var results=root.querySelector('#prehled-kontrolek'),heading=root.querySelector('#wl-results-title');
- function normalize(value){return value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();}
+ var tiles=Array.from(root.querySelectorAll('.wl-brand-tile')),results=root.querySelector('#prehled-kontrolek'),heading=root.querySelector('#wl-results-title');
+ var selectedBrand='';
  function validBrand(brand){return Object.prototype.hasOwnProperty.call(text.brands,brand);}
- function updateLanguageLinks(){Array.from(document.querySelectorAll('.language-switcher a')).forEach(function(link){var path=link.getAttribute('href').split(/[?#]/)[0];link.setAttribute('href',path+(fields.brand.value?'?znacka='+encodeURIComponent(fields.brand.value):'')+(location.hash||''));});}
- function updateURL(){var url=new URL(location.href);if(fields.brand.value)url.searchParams.set('znacka',fields.brand.value);else url.searchParams.delete('znacka');history.replaceState(null,'',url.pathname+url.search+url.hash);updateLanguageLinks();}
- function updateModels(){
-  var available=new Set();cards.forEach(function(card){if(card.dataset.brand===fields.brand.value)card._scopes.forEach(function(s){available.add(s.model);});});
-  Array.from(fields.model.options).forEach(function(option){if(!option.value)return;option.hidden=!available.has(option.value);option.disabled=option.hidden;});
-  if(fields.model.selectedOptions[0]&&fields.model.selectedOptions[0].disabled)fields.model.value='';
- }
- function filter(){
-  var brand=fields.brand.value,words=normalize(fields.search.value).split(/\s+/).filter(Boolean),count=0,total=0;
-  updateModels();
-  cards.forEach(function(card){
-   var inBrand=brand&&card.dataset.brand===brand;if(inBrand)total++;
-   var matchScope=card._scopes.some(function(s){return (!fields.model.value||s.model===fields.model.value)&&(!fields.power.value||s.power.indexOf(fields.power.value)!==-1);});
-   var show=inBrand&&matchScope&&(!fields.color.value||card.dataset.color===fields.color.value)&&(!fields.system.value||card.dataset.system===fields.system.value)&&words.every(function(word){return normalize(card.dataset.search).indexOf(word)!==-1;});
-   card.hidden=!show;if(show)count++;
-  });
+ function updateLanguageLinks(){Array.from(document.querySelectorAll('.language-switcher a')).forEach(function(link){var path=link.getAttribute('href').split(/[?#]/)[0];link.setAttribute('href',path+(selectedBrand?'?znacka='+encodeURIComponent(selectedBrand):'')+(location.hash||''));});}
+ function updateURL(){var url=new URL(location.href);if(selectedBrand)url.searchParams.set('znacka',selectedBrand);else url.searchParams.delete('znacka');history.replaceState(null,'',url.pathname+url.search+url.hash);updateLanguageLinks();}
+ function showBrand(){
+  var count=0;
+  cards.forEach(function(card){var show=selectedBrand&&card.dataset.brand===selectedBrand;card.hidden=!show;if(show)count++;});
   groups.forEach(function(group){group.hidden=!group.querySelector('.wl-card:not([hidden])');});
   brandGroups.forEach(function(group){group.hidden=!group.querySelector('.wl-card:not([hidden])');});
-  tiles.forEach(function(tile){tile.setAttribute('aria-pressed',String(tile.dataset.brand===brand));});
-  results.hidden=!brand;filterPanel.hidden=!brand;
-  heading.textContent=brand?text.brands[brand]+' — '+text.overview:text.overview;
-  root.querySelector('#wl-count').textContent=brand?text.count.replace('{count}',count).replace('{total}',total):'';
-  var empty=root.querySelector('#wl-empty');empty.hidden=!brand||count!==0;empty.textContent=brand&&total===0?text.missingBrand+' '+text.empty:text.empty;
+  tiles.forEach(function(tile){tile.setAttribute('aria-pressed',String(tile.dataset.brand===selectedBrand));});
+  results.hidden=!selectedBrand;heading.textContent=selectedBrand?text.brands[selectedBrand]+' — '+text.overview:text.overview;
+  root.querySelector('#wl-count').textContent=selectedBrand?text.count.replace('{count}',count).replace('{total}',count):'';
  }
- function clearRefinements(){fields.search.value='';fields.model.value='';fields.color.value='';fields.system.value='';fields.power.value='';}
- function selectBrand(brand,moveFocus){fields.brand.value=brand;clearRefinements();filter();updateURL();if(brand&&moveFocus)requestAnimationFrame(function(){results.scrollIntoView({behavior:'smooth',block:'start'});heading.focus({preventScroll:true});});}
- tiles.forEach(function(tile){tile.addEventListener('click',function(){selectBrand(fields.brand.value===tile.dataset.brand?'':tile.dataset.brand,true);});});
- form.addEventListener('submit',function(event){event.preventDefault();});
- form.addEventListener('input',filter);form.addEventListener('change',filter);
- form.addEventListener('reset',function(event){event.preventDefault();clearRefinements();filter();});
+ function selectBrand(brand,moveFocus){selectedBrand=brand;showBrand();updateURL();if(brand&&moveFocus)requestAnimationFrame(function(){results.scrollIntoView({behavior:'smooth',block:'start'});heading.focus({preventScroll:true});});}
+ tiles.forEach(function(tile){tile.addEventListener('click',function(){selectBrand(selectedBrand===tile.dataset.brand?'':tile.dataset.brand,true);});});
  var userMoved=false;['wheel','touchstart','pointerdown','keydown'].forEach(function(type){window.addEventListener(type,function(){userMoved=true;},{passive:true});});
  function headerOffset(){var offset=12;Array.from(document.querySelectorAll('header.header, .isStuck, [data-sticky-header]')).forEach(function(header){var style=getComputedStyle(header),box=header.getBoundingClientRect();if((style.position==='fixed'||style.position==='sticky')&&box.height>0&&box.top<=1&&box.bottom>0)offset=Math.max(offset,box.bottom+12);});return offset;}
  function targetForHash(){
@@ -51,15 +31,15 @@
  function revealHash(initial){
   var target=targetForHash();if(!target)return;
   var parentTopic=target.closest('details.driver-topic');if(parentTopic)parentTopic.open=true;
-  var branded=target.closest('[data-brand]');if(branded&&branded.dataset.brand!==fields.brand.value){fields.brand.value=branded.dataset.brand;clearRefinements();filter();updateURL();}
+  var branded=target.closest('[data-brand]');if(branded&&branded.dataset.brand!==selectedBrand){selectedBrand=branded.dataset.brand;showBrand();updateURL();}
   if(target.closest('[hidden]'))target=results;
   requestAnimationFrame(function(){if(initial===true&&userMoved)return;var offset=headerOffset();results.style.setProperty('--wl-anchor-offset',offset+'px');scrollTo(0,Math.max(0,scrollY+target.getBoundingClientRect().top-offset));(target===results?heading:target).focus({preventScroll:true});});
  }
- var requested=new URLSearchParams(location.search).get('znacka');fields.brand.value=validBrand(requested)?requested:'';
- var hashTarget=targetForHash(),hashBrand=hashTarget&&hashTarget.closest('[data-brand]');if(hashBrand)fields.brand.value=hashBrand.dataset.brand;
- if(fields.brand.value){var warningTopic=document.getElementById('kontrolky');if(warningTopic)warningTopic.open=true;}
- filter();updateLanguageLinks();
- window.addEventListener('popstate',function(){var brand=new URLSearchParams(location.search).get('znacka');fields.brand.value=validBrand(brand)?brand:'';clearRefinements();filter();});
+ var requested=new URLSearchParams(location.search).get('znacka');selectedBrand=validBrand(requested)?requested:'';
+ var hashTarget=targetForHash(),hashBrand=hashTarget&&hashTarget.closest('[data-brand]');if(hashBrand)selectedBrand=hashBrand.dataset.brand;
+ if(selectedBrand){var warningTopic=document.getElementById('kontrolky');if(warningTopic)warningTopic.open=true;}
+ showBrand();updateLanguageLinks();
+ window.addEventListener('popstate',function(){var brand=new URLSearchParams(location.search).get('znacka');selectedBrand=validBrand(brand)?brand:'';showBrand();});
  window.addEventListener('hashchange',function(){userMoved=false;updateLanguageLinks();revealHash();});
  if(location.hash){
   if(window.ResizeObserver){var initialLayout=new ResizeObserver(function(){if(!userMoved)revealHash(true);});initialLayout.observe(root);initialLayout.observe(document.body);setTimeout(function(){initialLayout.disconnect();},2500);}
