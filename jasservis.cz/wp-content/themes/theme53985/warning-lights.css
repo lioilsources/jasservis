@@ -117,6 +117,7 @@
    the temporary space occupied while the existing sticky header settles. */
 @media(max-height:500px) and (orientation:landscape){#warning-lights .wl-symbol{height:80px}}
 .driver-topic-title{display:inline-flex;align-items:center;gap:10px;min-width:0}
+.driver-brand-entry{margin:0 0 12px}
 .driver-profile-icon{position:relative;width:24px;height:24px;flex:0 0 24px;border:1.5px solid currentColor;border-radius:50%}
 .driver-profile-icon:before{content:"";position:absolute;left:8px;top:4px;width:6px;height:6px;border:1.5px solid currentColor;border-radius:50%}
 .driver-profile-icon:after{content:"";position:absolute;left:5px;bottom:4px;width:12px;height:6px;border:1.5px solid currentColor;border-bottom:0;border-radius:9px 9px 0 0}

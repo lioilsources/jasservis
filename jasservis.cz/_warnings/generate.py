@@ -245,7 +245,7 @@ def catalog_content(lang,page):
     out+='</details>'
   out+='</section>'
  out+='</section>'
- out+=f'<section class="wl-contact"><h2>{esc(u["contactTitle"])}</h2><p>{esc(u["contact"])}</p><p><strong>{esc(u["hours"])}</strong></p><p>{esc(u["office"])}: <a href="tel:+420605399448">+420 605 399 448</a><br>{esc(u["workshop"])}: <a href="tel:+420608313437">+420 608 313 437</a></p><a class="tlacitko-akce" href="{rel(locale_root(lang)+"kontakt",page)}" data-booking-panel>{esc(u["contactButton"])}</a><p class="wl-note">{esc(u["notAssistance"])}</p></section>'
+ out+=f'<section class="wl-contact" hidden><h2>{esc(u["contactTitle"])}</h2><p>{esc(u["contact"])}</p><p><strong>{esc(u["hours"])}</strong></p><p>{esc(u["office"])}: <a href="tel:+420605399448">+420 605 399 448</a><br>{esc(u["workshop"])}: <a href="tel:+420608313437">+420 608 313 437</a></p><a class="tlacitko-akce" href="{rel(locale_root(lang)+"kontakt",page)}" data-booking-panel>{esc(u["contactButton"])}</a><p class="wl-note">{esc(u["notAssistance"])}</p></section>'
  out+='</div>'
  return out
 
@@ -340,10 +340,12 @@ def main(lang,page):
  out=f'<main id="warning-lights" class="warning-lights driver-advice" lang="{lang}"><section class="driver-topics" aria-label="{esc(d["page"])}">'
  for index,title in enumerate(d['titles']):
   topic_id=['kontrolky','prihlaseni-online-sluzby','pojistky','tlak-pneumatik','oleje','chladici-kapaliny','servisni-intervaly'][index]
+  if index==0:
+   out+=f'<section class="driver-brand-entry" id="{topic_id}" aria-label="{esc(title)}">{catalog_content(lang,page)}</section>'
+   continue
   topic_title=(f'<span class="driver-topic-title"><span class="driver-profile-icon" aria-hidden="true"></span>{esc(title)}</span>' if index==1 else f'<span>{esc(title)}</span>')
-  out+=f'<details class="driver-topic" id="{topic_id}"{" open" if index==0 else ""}><summary>{topic_title}<span class="driver-topic-arrow" aria-hidden="true"></span></summary><div class="driver-topic-body">'
-  if index==0:out+=catalog_content(lang,page)
-  elif index==1:out+=online_services_content(lang)
+  out+=f'<details class="driver-topic" id="{topic_id}"><summary>{topic_title}<span class="driver-topic-arrow" aria-hidden="true"></span></summary><div class="driver-topic-body">'
+  if index==1:out+=online_services_content(lang)
   else:
    for heading,text in d['topics'][index]:out+=f'<section class="driver-subtopic"><h2>{esc(heading)}</h2><p>{esc(text)}</p></section>'
   out+='</div></details>'

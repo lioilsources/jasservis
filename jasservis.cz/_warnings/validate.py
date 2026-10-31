@@ -1060,7 +1060,8 @@ def check_online_services(audit):
         label = f"{lang} online services"
         audit.check(text.count('class="online-brand-tile"') == 6, "online_services", f"{label}: expected six brand tiles")
         audit.check(text.count('class="online-brand-panel"') == 6, "online_services", f"{label}: expected six brand panels")
-        audit.check(f'id="kontrolky" open' in text, "online_services", f"{label}: warning-light brand selection is not open on entry")
+        audit.check('class="driver-brand-entry" id="kontrolky"' in text, "online_services", f"{label}: brand selection is not the direct entry content")
+        audit.check('<details class="driver-topic" id="kontrolky"' not in text, "online_services", f"{label}: obsolete warning-light topic tile remains above the brands")
         audit.check(first_tile[lang] in text, "online_services", f"{label}: customer-facing brand labels are missing")
         for url in account_urls | help_urls:
             audit.check(url in text, "online_services", f"{label}: missing official URL {url}")
