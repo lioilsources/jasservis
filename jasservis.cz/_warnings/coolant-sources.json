@@ -27,5 +27,12 @@
     "pack": "1.5 l concentrate",
     "official_part_url": "https://parts.vw.com/p/Volkswagen__/Coolant/53693210/G013A8JM1.html",
     "evidence_note": "Volkswagen Genuine Parts identifies G013A8JM1 as a genuine coolant part; independent catalogue listings consistently identify the 1.5-litre G13 form as concentrate. Current suitability and supersession remain catalogue- and vehicle-specific."
+  },
+  "g12_plus_plus": {
+    "specification": "VW TL 774 G",
+    "part_number": "G 012 A8G M1",
+    "pack": "1.5 l concentrate",
+    "official_part_url": "https://parts.vw.com/p/Volkswagen__/COOLANT-AD/67824149/G012A8GM1.html",
+    "evidence_note": "Volkswagen Genuine Parts identifies G012A8GM1 as a genuine coolant part and lists related later numbers. Independent catalogue evidence identifies the 1.5-litre G12++ form as concentrate. Current suitability and supersession must be checked for the exact vehicle."
   }
 }
