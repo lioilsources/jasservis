@@ -231,7 +231,7 @@ def warning_content(lang,page):
    existing=next((row for row in brand_grouped if row[0]['graphic_path']==i['graphic_path']),None)
    if existing is None:brand_grouped.append([i])
    else:existing.append(i)
-  out+=f'<section class="wl-brand" data-brand="{brand}" aria-labelledby="brand-{brand}"><h2 id="brand-{brand}">{esc(bname)}</h2>'
+  out+=f'<section class="wl-brand" data-brand="{brand}" aria-label="{esc(bname)}">'
   for group,gname in u['groups'].items():
    grouped=[items for items in brand_grouped if display_group(items[0],brand)==group]
    if group=='ovladani':
