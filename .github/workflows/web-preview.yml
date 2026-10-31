@@ -34,24 +34,55 @@ jobs:
           echo "head_sha=$HEAD_SHA" >> "$GITHUB_OUTPUT"
           echo "checkout_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
           echo "tree_sha=$(git rev-parse HEAD^{tree})" >> "$GITHUB_OUTPUT"
-      - name: Validate the warning catalogue
+      - name: Build customer-only artifact
         id: validation
-        run: |
-          python3 jasservis.cz/_warnings/validate.py
-          python3 jasservis.cz/_warnings/generate.py --check
-          python3 -m unittest discover -s jasservis.cz/_warnings -p test_validate.py
+        run: .github/scripts/build-public-site.sh jasservis.cz .pages-dist
       - name: Generate sitemap.xml
-        run: .github/scripts/sitemap.sh jasservis.cz https://jasservis.cz
+        run: .github/scripts/sitemap.sh .pages-dist https://jasservis.cz
       - name: Keep previews out of search engines
         run: |
-          printf '/*\n  X-Robots-Tag: noindex\n' > jasservis.cz/_headers
+          printf '/*\n  X-Robots-Tag: noindex\n' > .pages-dist/_headers
       - name: Deploy to Cloudflare Pages
         id: deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy jasservis.cz --project-name=${{ vars.VIBE_SLUG }}-vibe --branch=${{ github.head_ref || github.ref_name }}
+          command: pages deploy .pages-dist --project-name=${{ vars.VIBE_SLUG }}-vibe --branch=${{ github.head_ref || github.ref_name }}
+      - name: Verify customer page and blocked internal paths
+        env:
+          DEPLOYMENT_URL: ${{ steps.deploy.outputs.deployment-url }}
+        run: |
+          test "$(curl -L -sS -o /dev/null -w '%{http_code}' "$DEPLOYMENT_URL/kontrolky-a-vystrazna-hlaseni/")" = 200
+          for path in \
+            _warnings/catalog.json \
+            _warnings/review-register.json \
+            _media/catalog.json \
+            kontrolky-a-vystrazna-hlaseni/revize.html \
+            kontrolky-a-vystrazna-hlaseni/revize-kapitol.html \
+            kontrolky-a-vystrazna-hlaseni/druha-kontrola.html \
+            kontrolky-a-vystrazna-hlaseni/zdroje.html \
+            kontrolky-a-vystrazna-hlaseni/evidence.json \
+            en/kontrolky-a-vystrazna-hlaseni/revize.html \
+            en/kontrolky-a-vystrazna-hlaseni/evidence.json \
+            de/kontrolky-a-vystrazna-hlaseni/zdroje.html \
+            de/kontrolky-a-vystrazna-hlaseni/druha-kontrola.html
+          do
+            status="$(curl -L -sS -o /dev/null -w '%{http_code}' "$DEPLOYMENT_URL/$path")"
+            case "$status" in 403|404) ;; *) echo "Internal URL is public: $path ($status)" >&2; exit 1;; esac
+          done
+      - name: Remove superseded preview deployments
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CURRENT_URL: ${{ steps.deploy.outputs.deployment-url }}
+          PROJECT: ${{ vars.VIBE_SLUG }}-vibe
+        run: |
+          npx wrangler pages deployment list --project-name="$PROJECT" --json > deployments.json
+          jq -r --arg current "$CURRENT_URL" '.[] | select(.url != $current) | .id' deployments.json > old-deployments.txt
+          while IFS= read -r id; do
+            [[ -z "$id" ]] || npx wrangler pages deployment delete "$id" --project-name="$PROJECT" --force
+          done < old-deployments.txt
       - name: Pick the link to share
         id: link
         env:
