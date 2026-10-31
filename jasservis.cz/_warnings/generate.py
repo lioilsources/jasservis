@@ -6,7 +6,7 @@ from pathlib import Path
 import json,re,html,os,sys,csv,io
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parent
 CAT=json.loads((HERE/'catalog.json').read_text());UI=json.loads((HERE/'locales.json').read_text())
-ROUTE='kontrolky-a-vystrazna-hlaseni';LANGS=['cs','en','de'];VERSION='20261031-review-v8'
+ROUTE='kontrolky-a-vystrazna-hlaseni';LANGS=['cs','en','de'];VERSION='20261031-driver-topics-v1'
 def esc(x):return html.escape(str(x),quote=True)
 def rel(target,page):return os.path.relpath(ROOT/target,page.parent).replace(os.sep,'/')+('/' if not Path(target).suffix else '')
 def locale_root(lang):return '' if lang=='cs' else lang+'/'
@@ -166,10 +166,10 @@ def card(item,brand,lang,page):
  out+=f'<p class="wl-credit">{esc(u["graphic"])}: {credit} · {esc(g["author"])} · {esc(g["license"])}. <a href="zdroje.html#graphic-{esc(i["graphic"]+"-"+i["color"])}">{esc(u["auditLink"])}</a><br>{esc(u["checked"])}: {i["checked"]}.</p></div></details>'
  return out
 
-def main(lang,page):
+def catalog_content(lang,page):
  u=UI[lang];models={s['manual']:f'{u["brands"][s["brand"]]} {model_label(s["model"],s["model_year"])} · {s["edition"]}' for i in CAT['items'] for s in i['scopes'] if s.get('manual')}
  models['generic']=u['generic']
- out=f'<main id="warning-lights" class="warning-lights" lang="{lang}"><script type="application/json" id="wl-messages">'+json.dumps({k:u[k] for k in ['brands','overview','count','empty','missingBrand','preset']},ensure_ascii=False).replace('</','<\\/')+'</script>'
+ out=f'<div class="driver-catalog"><script type="application/json" id="wl-messages">'+json.dumps({k:u[k] for k in ['brands','overview','count','empty','missingBrand','preset']},ensure_ascii=False).replace('</','<\\/')+'</script>'
  out+='<div class="wl-intro">'+''.join('<p>'+esc(u[k])+'</p>' for k in ['intro1','intro2','intro3'])+'</div>'
  out+=f'<aside class="wl-stop" aria-labelledby="wl-stop-title"><h2 id="wl-stop-title">{esc(u["stopTitle"])}</h2><p>{esc(u["stop"])}</p></aside>'
  out+=f'<aside class="wl-scope"><strong>{esc(u["scopeTitle"])}</strong><p>{esc(u["scope"])}</p><p>{esc(u["yearNote"])}</p><a href="zdroje.html">{esc(u["auditLink"])}</a></aside><noscript><p>{esc(u["nojs"])}</p></noscript>'
@@ -186,7 +186,56 @@ def main(lang,page):
   out+='</section>'
  out+='</section>'
  out+=f'<section class="wl-contact"><h2>{esc(u["contactTitle"])}</h2><p>{esc(u["contact"])}</p><p><strong>{esc(u["hours"])}</strong></p><p>{esc(u["office"])}: <a href="tel:+420605399448">+420 605 399 448</a><br>{esc(u["workshop"])}: <a href="tel:+420608313437">+420 608 313 437</a></p><a class="tlacitko-akce" href="{rel(locale_root(lang)+"kontakt",page)}" data-booking-panel>{esc(u["contactButton"])}</a><p class="wl-note">{esc(u["notAssistance"])}</p></section>'
- out+=f'<details class="wl-review"><summary>{esc(u["audit"])}</summary><p>{esc(u["counts"].format(items=len(CAT["items"]),graphics=CAT["counts"]["shared_graphic_colour_variants"],shapes=CAT["counts"]["distinct_pictogram_shapes"]))}</p><p>{esc(u["auditNote"])}</p><p><a href="zdroje.html">{esc(u["auditLink"])}</a> · <a href="{rel("_warnings/catalog.json",page)}">JSON</a></p></details></main>'
+ out+=f'<details class="wl-review"><summary>{esc(u["audit"])}</summary><p>{esc(u["counts"].format(items=len(CAT["items"]),graphics=CAT["counts"]["shared_graphic_colour_variants"],shapes=CAT["counts"]["distinct_pictogram_shapes"]))}</p><p>{esc(u["auditNote"])}</p><p><a href="zdroje.html">{esc(u["auditLink"])}</a> · <a href="{rel("_warnings/catalog.json",page)}">JSON</a></p></details></div>'
+ return out
+
+DRIVER_TOPICS={
+ 'cs':{
+  'page':'Rady pro řidiče','intro':'Praktické přehledy pro správnou reakci na hlášení vozidla a základní kontrolu provozních údajů. Konkrétní údaj vždy ověřte pro přesný model, modelový rok, výbavu a pohon.',
+  'titles':['Kontrolky a výstražná hlášení','Pojistky – barvy a hodnoty','Tlak pneumatik','Oleje – viskozita a specifikace','Chladicí kapaliny','Servis a servisní intervaly'],
+  'topics':[
+   [],
+   [('Typy automobilových pojistek','Před určením náhrady zjistěte konstrukční typ pojistky. Stejná barva u odlišných rodin pojistek sama nepotvrzuje shodné provedení.'),('Barevné značení a proudové hodnoty','Barvu a hodnotu v ampérech posuzujte jen v tabulce pro daný typ pojistky. Přehled neobsahuje obsazení pojistkových skříní ani přiřazení spotřebičů.'),('Jak určit odpovídající pojistku','Rozhoduje návod konkrétního vozidla, poloha ve správné pojistkové skříni, typ pojistky a předepsaná proudová hodnota.'),('Zásady správné náhrady','Vypněte příslušný spotřebič a zapalování podle návodu. Použijte pouze pojistku stejného typu a hodnoty; opakované přepálení vyžaduje diagnostiku.')],
+   [('Kde najdu tlakový štítek','Umístění musí být doloženo pro konkrétní model a generaci. Může jít o sloupek nebo rám dveří, vnitřní stranu víčka palivové nádrže či jiné místo uvedené v návodu. Modelově ověřené fotografie a čitelné detaily štítků zatím nejsou zveřejněny.'),('Jak přečtu správné hodnoty','Nejprve porovnejte rozměr pneumatiky a stav zatížení na štítku. Hodnoty pro běžné a plné zatížení ani přední a zadní nápravu nezaměňujte.'),('Kontrola a úprava tlaku','Tlak kontrolujte na studených pneumatikách podle podmínek uvedených výrobcem. Nejdříve skutečný tlak změřte a upravte; samotné zhasnutí kontrolky není cílem.'),('Uložení nebo nastavení systému','Uložení přes infotainment, tlačítko SET nebo jiný postup lze uvést jen pro odpovídající model a systém. Po úpravě tlaku postupujte podle návodu vozidla.')],
+   [('Motorové oleje a označení SAE','SAE popisuje viskozitní třídu. Neurčuje samo schválení výrobce ani vhodnost pro konkrétní motor.'),('Normy a schválení Volkswagen Group','Použijte přesné schválení uvedené pro motor a servisní režim. Shodná viskozita neprokazuje zaměnitelnost.'),('Výběr, kontrola hladiny a doplnění','Rozhoduje konkrétní motor, servisní režim a návod. Hladinu kontrolujte předepsaným postupem; nepřeplňujte.'),('Mísení a nouzové doplnění','Možnost mísení nebo nouzového doplnění musí být výslovně doložena pro danou specifikaci. Obecná podobnost názvu nestačí.'),('Převodové a další oleje','Náplně manuálních převodovek, DSG, ostatních automatů, rozvodovek, diferenciálů a spojek pohonu všech kol se posuzují odděleně podle konkrétní konstrukce.')],
+   [('Označení a specifikace výrobce','Barva kapaliny není jediným kritériem. Rozhoduje specifikace předepsaná pro konkrétní vozidlo a chladicí okruh.'),('Koncentrát, hotová směs a ředění','Rozlišujte koncentrát a předmíchanou kapalinu. Poměr ředění, požadovanou vodu a ochranu proti zamrznutí přebírejte z příslušného návodu.'),('Mísitelnost a náhrady','Mísitelnost ani náhradu staršího produktu nelze odvodit jen z obchodního názvu. Musí být doložena výrobcem pro daný okruh.'),('Bezpečná kontrola a doplňování','Nikdy neotvírejte horký okruh. Při neznámé náplni, opakovaném úbytku nebo výstraze nejprve zjistěte příčinu; u hybridů a elektromobilů rozlišujte jednotlivé okruhy.')],
+   [('Výběr správného servisního plánu','Je nutné určit značku, model a generaci, modelový rok, motor nebo pohon, převodovku a podle potřeby VIN, kódy agregátů a PR kódy.'),('Servisní prohlídky a olejový servis','Inspekční prohlídku, olejový servis a samostatné úkony posuzujte odděleně. Pevný a proměnlivý režim mají rozdílné podmínky.'),('Filtry, svíčky, rozvody a pomocné pohony','První a následující termíny i časové a kilometrové podmínky musí pocházet z odpovídajícího servisního plánu.'),('Převodovka, pohon všech kol, brzdy a kapaliny','Pro DSG, jiné automaty ani pohon 4×4 neexistuje jeden univerzální interval. Rozhoduje konkrétní konstrukce, servisovaný okruh, náplň a případný filtr.'),('Další údržba konkrétní výbavy','Kontrolu, doplnění, pravidelnou výměnu a výměnu podle stavu rozlišujte. Předpis výrobce a preventivní doporučení J&S SERVIS musí být uvedeny samostatně.')]
+  ]},
+ 'en':{
+  'page':'Driver advice','intro':'Practical guidance for responding to vehicle messages and checking basic operating information. Always verify a specific value for the exact model, model year, equipment and powertrain.',
+  'titles':['Warning lights and driver messages','Fuses – colours and ratings','Tyre pressures','Oils – viscosity and specifications','Coolants','Service and maintenance intervals'],
+  'topics':[
+   [],
+   [('Automotive fuse types','Identify the fuse construction before selecting a replacement. A matching colour in a different fuse family does not establish the same design.'),('Colour coding and ampere ratings','Use colour and ampere rating only with the table for that fuse type. This section does not reproduce fuse-box positions or consumer assignments.'),('Selecting the correct fuse','Use the exact vehicle manual, the position in the correct fuse box, the fuse type and the specified ampere rating.'),('Safe replacement','Switch off the relevant consumer and ignition as instructed. Use only the same type and rating; repeated failure requires diagnosis.')],
+   [('Finding the pressure placard','The location must be documented for the exact model and generation. It may be on a door pillar or frame, inside the fuel flap, or elsewhere stated by the manual. Model-verified location photographs and readable placard details are not yet published.'),('Reading the correct values','Match the tyre size and load condition shown on the placard. Do not interchange normal/full-load or front/rear values.'),('Checking and adjusting pressure','Check cold tyres under the manufacturer’s stated conditions. Measure and correct the real pressure first; merely clearing a warning is not the objective.'),('Storing or setting the system','Infotainment storage, a SET button or another procedure may be assigned only to the matching model and system. Follow the vehicle manual after adjustment.')],
+   [('Engine oils and SAE','SAE describes a viscosity grade. It does not by itself establish manufacturer approval or suitability for an engine.'),('Volkswagen Group approvals','Use the exact approval stated for the engine and service regime. Equal viscosity does not prove interchangeability.'),('Selection, level check and topping up','Use the exact engine, service regime and manual. Follow the prescribed level-check procedure and do not overfill.'),('Mixing and emergency top-up','Mixing or emergency top-up must be explicitly documented for the specification; a similar product name is insufficient.'),('Transmission and other oils','Manual transmissions, DSG, other automatics, transfer cases, differentials and all-wheel-drive clutches require separate assessment for the exact construction.')],
+   [('Manufacturer designation and specification','Colour is not a sufficient selection criterion. Use the specification for the exact vehicle and cooling circuit.'),('Concentrate, premix and dilution','Distinguish concentrate from premix. Use the manual for dilution, water requirements and frost protection.'),('Mixing and supersession','Do not infer mixing or replacement of an older product from its trade name. Manufacturer evidence for the circuit is required.'),('Safe checking and topping up','Never open a hot circuit. With unknown coolant, repeated loss or a warning, find the cause first; distinguish separate hybrid and EV circuits.')],
+   [('Selecting the correct service plan','Identify brand, model and generation, model year, engine or powertrain, transmission and, where necessary, VIN, unit codes and PR codes.'),('Inspections and oil service','Treat inspections, oil service and individual operations separately. Fixed and flexible regimes have different conditions.'),('Filters, plugs, timing and auxiliary drives','First and subsequent due dates and time/mileage conditions must come from the matching service plan.'),('Transmission, all-wheel drive, brakes and fluids','There is no universal DSG, automatic-transmission or 4×4 interval. The exact design, serviced circuit, fluid and filter determine the requirement.'),('Equipment-specific maintenance','Distinguish inspection, topping up, scheduled replacement and condition-based replacement. Manufacturer requirements and J&S SERVIS preventive advice must be separate.')]
+  ]},
+ 'de':{
+  'page':'Fahrertipps','intro':'Praktische Hinweise zur richtigen Reaktion auf Fahrzeugmeldungen und zur Kontrolle grundlegender Betriebsangaben. Konkrete Werte immer für Modell, Modelljahr, Ausstattung und Antrieb prüfen.',
+  'titles':['Kontrollleuchten und Warnmeldungen','Sicherungen – Farben und Werte','Reifendruck','Öle – Viskosität und Spezifikationen','Kühlmittel','Service und Wartungsintervalle'],
+  'topics':[
+   [],
+   [('Kfz-Sicherungstypen','Vor der Ersatzwahl die Bauform bestimmen. Gleiche Farben in verschiedenen Sicherungsfamilien belegen nicht dieselbe Ausführung.'),('Farbcodierung und Amperewerte','Farbe und Amperewert nur anhand der Tabelle für den jeweiligen Sicherungstyp verwenden. Sicherungskastenbelegung und Verbraucherzuordnung sind nicht Bestandteil.'),('Passende Sicherung bestimmen','Maßgeblich sind die konkrete Fahrzeuganleitung, die Position im richtigen Sicherungskasten, Bauform und vorgeschriebener Amperewert.'),('Sicher ersetzen','Betroffenen Verbraucher und Zündung nach Anleitung ausschalten. Nur gleichen Typ und Wert einsetzen; wiederholtes Auslösen erfordert Diagnose.')],
+   [('Reifendruckschild finden','Der Einbauort muss für Modell und Generation belegt sein: Türsäule oder -rahmen, Innenseite der Tankklappe oder ein anderer in der Anleitung genannter Ort. Modellgeprüfte Fotos und lesbare Schilddetails sind noch nicht veröffentlicht.'),('Richtige Werte lesen','Reifengröße und Beladungszustand auf dem Schild abgleichen. Normal-/Volllast- sowie Vorder-/Hinterachswerte nicht vertauschen.'),('Druck prüfen und korrigieren','Kalte Reifen unter den Herstellerbedingungen prüfen. Zuerst den tatsächlichen Druck messen und korrigieren; bloßes Löschen der Warnung ist nicht das Ziel.'),('System speichern oder einstellen','Infotainment-Speicherung, SET-Taste oder andere Verfahren nur dem passenden Modell und System zuordnen. Nach der Korrektur die Fahrzeuganleitung befolgen.')],
+   [('Motoröle und SAE','SAE beschreibt die Viskositätsklasse, nicht allein die Herstellerfreigabe oder Motoreignung.'),('Volkswagen-Group-Freigaben','Die genaue Freigabe für Motor und Serviceregime verwenden. Gleiche Viskosität beweist keine Austauschbarkeit.'),('Auswahl, Füllstand und Nachfüllen','Konkreten Motor, Serviceregime und Anleitung beachten. Füllstand vorgeschrieben prüfen und nicht überfüllen.'),('Mischen und Notnachfüllen','Mischung oder Notnachfüllung muss für die Spezifikation ausdrücklich belegt sein; ein ähnlicher Produktname genügt nicht.'),('Getriebe- und weitere Öle','Schaltgetriebe, DSG, andere Automatikgetriebe, Verteilergetriebe, Differentiale und Allradkupplungen getrennt nach genauer Konstruktion beurteilen.')],
+   [('Herstellerbezeichnung und Spezifikation','Farbe ist kein ausreichendes Auswahlkriterium. Maßgeblich ist die Spezifikation für Fahrzeug und Kühlkreis.'),('Konzentrat, Fertigmischung und Verdünnung','Konzentrat und Fertigmischung unterscheiden. Verdünnung, Wasseranforderung und Frostschutz aus der Anleitung übernehmen.'),('Mischbarkeit und Ersatz','Mischbarkeit oder Ersatz älterer Produkte nicht aus dem Handelsnamen ableiten. Herstellerbeleg für den Kreis ist erforderlich.'),('Sicher prüfen und nachfüllen','Heißen Kreis nie öffnen. Bei unbekannter Füllung, wiederholtem Verlust oder Warnung zuerst Ursache klären; Hybrid-/EV-Kreise unterscheiden.')],
+   [('Passenden Wartungsplan wählen','Marke, Modell und Generation, Modelljahr, Motor/Antrieb, Getriebe sowie bei Bedarf VIN, Aggregat- und PR-Codes bestimmen.'),('Inspektion und Ölservice','Inspektion, Ölservice und Einzelarbeiten getrennt behandeln. Feste und flexible Regime haben unterschiedliche Bedingungen.'),('Filter, Kerzen, Steuer- und Nebenantriebe','Erste und folgende Termine sowie Zeit-/Kilometerbedingungen müssen aus dem passenden Wartungsplan stammen.'),('Getriebe, Allrad, Bremsen und Flüssigkeiten','Kein universelles DSG-, Automatik- oder 4×4-Intervall. Konstruktion, gewarteter Kreis, Öl und Filter entscheiden.'),('Ausstattungsspezifische Wartung','Prüfung, Ergänzung, regelmäßigen und zustandsabhängigen Wechsel unterscheiden. Herstellervorgabe und J&S-Prävention getrennt ausweisen.')]
+  ]}
+}
+
+def main(lang,page):
+ u=UI[lang];d=DRIVER_TOPICS[lang]
+ out=f'<main id="warning-lights" class="warning-lights driver-advice" lang="{lang}"><div class="driver-advice-intro"><p>{esc(d["intro"])}</p></div><section class="driver-topics" aria-label="{esc(d["page"])}">'
+ for index,title in enumerate(d['titles']):
+  topic_id=['kontrolky','pojistky','tlak-pneumatik','oleje','chladici-kapaliny','servisni-intervaly'][index]
+  out+=f'<details class="driver-topic" id="{topic_id}"><summary><span>{esc(title)}</span><span class="driver-topic-arrow" aria-hidden="true"></span></summary><div class="driver-topic-body">'
+  if index==0:out+=catalog_content(lang,page)
+  else:
+   for heading,text in d['topics'][index]:out+=f'<section class="driver-subtopic"><h2>{esc(heading)}</h2><p>{esc(text)}</p></section>'
+  out+='</div></details>'
+ out+='</section></main>'
  return out
 
 def create_page(lang):
@@ -205,11 +254,11 @@ def create_page(lang):
  s=re.sub(r'(<html\b[^>]*\blang=["\'])[^"\']+',r'\g<1>'+lang,s,count=1)
  s=re.sub(r'<main id="warning-lights".*?</main>',lambda m:main(lang,page),s,count=1,flags=re.S)
  s=re.sub(r'<nav class="language-switcher".*?</nav>',lambda m:switcher(lang,page),s,count=1,flags=re.S)
- s=re.sub(r'<title>.*?</title>','<title>'+esc(u['title'])+' | J&amp;S SERVIS</title>',s,count=1,flags=re.S)
+ s=re.sub(r'<title>.*?</title>','<title>'+esc(advice)+' | J&amp;S SERVIS</title>',s,count=1,flags=re.S)
  s=re.sub(r'<meta\b[^>]*(?:name=["\'](?:description|robots)["\']|property=["\'](?:og:title|og:description|og:url|og:locale|article:modified_time)["\'])[^>]*>','',s,flags=re.I)
  s=re.sub(r'<link\b[^>]*(?:rel=["\']canonical["\']|hreflang=)[^>]*>','',s,flags=re.I)
  s=re.sub(r'<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>.*?</script>','',s,flags=re.S)
- s=re.sub(r'(<h1 class="title-header">).*?(</h1>)',lambda m:m[1]+esc(u['title'].upper())+m[2],s,count=1,flags=re.S)
+ s=re.sub(r'(<h1 class="title-header">).*?(</h1>)',lambda m:m[1]+esc(advice.upper())+m[2],s,count=1,flags=re.S)
  crumb=f'<ul class="breadcrumb breadcrumb__t"><li><a href="{rel(prefix or ".",page)}">{esc(u["home"])}</a></li><li class="divider"></li><li class="active" aria-current="page">{esc(advice)}</li></ul>'
  s=re.sub(r'<ul class="breadcrumb breadcrumb__t">.*?</ul>',lambda m:crumb,s,count=1,flags=re.S)
  # The catalogue belongs only to the separate Driver advice header entry.
@@ -219,10 +268,10 @@ def create_page(lang):
  s=re.sub(r'<a class="header-driver-advice(?: is-current)?"(?: aria-current="page")?([^>]*)>',r'<a class="header-driver-advice is-current" aria-current="page"\1>',s,count=1)
  s=re.sub(r'(warning-lights\.(?:css|js)\?v=)[^"\']+',r'\g<1>'+VERSION,s)
  s=re.sub(r'(jasservis\.css\?v=)[^"\']+',r'\g<1>20261031-tile-outline-v1',s)
- meta=f'<meta name="robots" content="noindex, nofollow" /><meta name="description" content="{esc(u["intro3"])}" /><link rel="canonical" href="{url}" /><meta property="og:title" content="{esc(u["title"])} | J&amp;S SERVIS" /><meta property="og:description" content="{esc(u["scopeTitle"])}" /><meta property="og:url" content="{url}" /><meta property="og:locale" content="'+{'cs':'cs_CZ','en':'en_GB','de':'de_DE'}[lang]+'" />'
+ meta=f'<meta name="robots" content="noindex, nofollow" /><meta name="description" content="{esc(DRIVER_TOPICS[lang]["intro"])}" /><link rel="canonical" href="{url}" /><meta property="og:title" content="{esc(advice)} | J&amp;S SERVIS" /><meta property="og:description" content="{esc(DRIVER_TOPICS[lang]["intro"])}" /><meta property="og:url" content="{url}" /><meta property="og:locale" content="'+{'cs':'cs_CZ','en':'en_GB','de':'de_DE'}[lang]+'" />'
  for l in LANGS:meta+=f'<link rel="alternate" hreflang="{l}" href="https://jasservis.cz/{locale_root(l)}{ROUTE}/" />'
  meta+=f'<link rel="alternate" hreflang="x-default" href="https://jasservis.cz/{ROUTE}/" />'
- schema={'@context':'https://schema.org','@graph':[{'@type':'WebPage','url':url,'name':u['title'],'inLanguage':lang,'description':u['scopeTitle']},{'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':u['home'],'item':'https://jasservis.cz/'+prefix},{'@type':'ListItem','position':2,'name':advice,'item':url}]}]}
+ schema={'@context':'https://schema.org','@graph':[{'@type':'WebPage','url':url,'name':advice,'inLanguage':lang,'description':DRIVER_TOPICS[lang]['intro']},{'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':u['home'],'item':'https://jasservis.cz/'+prefix},{'@type':'ListItem','position':2,'name':advice,'item':url}]}]}
  meta+='<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False).replace('</','<\\/')+'</script>'
  s=s.replace('</head>',meta+'</head>');s=re.sub(r'(?m)^[ \t]+$','',s);return page,s
 

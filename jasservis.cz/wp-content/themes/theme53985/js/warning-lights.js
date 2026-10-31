@@ -6,7 +6,7 @@
  var fields={};['search','brand','model','color','system','power'].forEach(function(k){fields[k]=root.querySelector('#wl-'+k);});
  cards.forEach(function(card){card._scopes=JSON.parse(card.dataset.scopes);});
  var results=root.querySelector('#prehled-kontrolek'),heading=root.querySelector('#wl-results-title'),context=root.querySelector('#wl-brand-context');
- var requested=new URLSearchParams(location.search).get('znacka');if(Object.prototype.hasOwnProperty.call(text.brands,requested))fields.brand.value=requested;
+ var requested=new URLSearchParams(location.search).get('znacka');if(Object.prototype.hasOwnProperty.call(text.brands,requested)){fields.brand.value=requested;var warningTopic=document.getElementById('kontrolky');if(warningTopic)warningTopic.open=true;}
  function normalize(value){return value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();}
  function updateLanguageLinks(){Array.from(document.querySelectorAll('.language-switcher a')).forEach(function(link){var path=link.getAttribute('href').split(/[?#]/)[0];link.setAttribute('href',path+(fields.brand.value?'?znacka='+encodeURIComponent(fields.brand.value):'')+(location.hash||''));});}
  function updateURL(){var url=new URL(location.href);if(fields.brand.value)url.searchParams.set('znacka',fields.brand.value);else url.searchParams.delete('znacka');history.replaceState(null,'',url.pathname+url.search+url.hash);updateLanguageLinks();}
@@ -54,6 +54,7 @@
   if(!target&&id.indexOf('kontrolka-')===0)target=root.querySelector('[data-item="vw-'+id.slice(9).toLowerCase()+'"]');
   if(!target&&['motor','brzdy','pneumatiky','bezpecnost','osvetleni','emise','elektricka-soustava'].indexOf(id)!==-1)target=root.querySelector('.wl-group[id$="-'+id+'"]');
   if(!target||!root.contains(target))return;
+  var parentTopic=target.closest('details.driver-topic');if(parentTopic)parentTopic.open=true;
   if(target!==results&&target.closest('[hidden]'))target=results;
   if(target.tagName==='DETAILS')target.open=true;
   requestAnimationFrame(function(){if(initial===true&&userMoved)return;var offset=headerOffset();results.style.setProperty('--wl-anchor-offset',offset+'px');scrollTo(0,Math.max(0,scrollY+target.getBoundingClientRect().top-offset));(target===results?heading:target).focus({preventScroll:true});});
