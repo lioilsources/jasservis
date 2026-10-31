@@ -1083,6 +1083,15 @@ def check_online_services(audit):
         audit.check(coolant_html.find('class="coolant-safety"') < coolant_html.find('class="coolant-accordion"') < coolant_html.find('class="coolant-section"'), "online_services", f"{label}: coolant safety notice must precede the uninterrupted accordion")
         audit.check('<details class="coolant-section" open' not in coolant_html and coolant_html.count('class="coolant-table ') == 2, "online_services", f"{label}: coolant subtopics must start closed and include both tables")
         audit.check(coolant_html.find('VW TL 774 G') < coolant_html.find('VW TL 774 J') < coolant_html.find('VW TL 774 L') < coolant_html.find('G 012 A8G M1') < coolant_html.find('G 013 A8J M1') < coolant_html.find('000 096 320 JG') < coolant_html.find('G 12E 050 A2'), "online_services", f"{label}: coolant specifications or product details are missing or out of order")
+        service_start = text.find('<details class="driver-topic" id="servisni-intervaly"')
+        service_end = text.find('</div></section></main>', service_start)
+        service_html = text[service_start:service_end] if service_start >= 0 and service_end > service_start else ""
+        recommendation = {"cs": "15 000 km", "en": "15,000 km", "de": "15.000 km"}[lang]
+        audit.check(service_html.count('class="service-section"') == 6 and service_html.count('class="service-recommendation"') == 1, "online_services", f"{label}: service layout must contain one recommendation and six subtopics")
+        audit.check('<details class="service-section" open' not in service_html and service_html.count('class="service-table ') == 5, "online_services", f"{label}: service subtopics must start closed and include five responsive tables")
+        audit.check(service_html.find('class="service-intro"') < service_html.find('class="service-recommendation"') < service_html.find('class="service-accordion"'), "online_services", f"{label}: service introduction, recommendation and accordion order is wrong")
+        audit.check(recommendation in service_html and all(code in service_html for code in ('QI0','QI1','QI2','QI3','QI4','QI6','QG0','QG1','QG2')), "online_services", f"{label}: recommendation or QI/QG reference values are incomplete")
+        audit.check(all(model in service_html for model in ('Volkswagen ID.','Enyaq/Elroq','Born/Tavascan','Q4 e-tron','Q8 e-tron','e-tron GT')), "online_services", f"{label}: electric and hybrid model-group exceptions are incomplete")
         audit.check('<details class="driver-topic" id="kontrolky"' in text, "online_services", f"{label}: warning lights must be a main topic accordion")
         audit.check('class="wl-intro"' not in text, "online_services", f"{label}: obsolete explanatory text remains below the brand tiles")
         audit.check('data-after-brand' not in text, "online_services", f"{label}: obsolete per-topic brand gating remains")
