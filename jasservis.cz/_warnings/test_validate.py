@@ -134,6 +134,61 @@ class ReviewRegressionTests(unittest.TestCase):
         self.assertTrue(any('summary occurrence count differs' in error for error in self.audit.errors))
         self.assertTrue(any('every received photograph must be referenced' in error for error in self.audit.errors))
 
+    def test_audi_manual_photo_review_counts_and_identity_pass(self):
+        path = HERE / 'audi-manual-photo-review.json'
+        if not path.exists():
+            self.skipTest('Audi manual photo evidence not present')
+        evidence = json.loads(path.read_text())
+        validation.check_audi_manual_photo_review(self.audit, self.catalogue, evidence, check_csv=False)
+        self.assertEqual(self.audit.errors, [])
+
+    def test_audi_manual_cannot_claim_model_or_missing_page_coverage(self):
+        path = HERE / 'audi-manual-photo-review.json'
+        if not path.exists():
+            self.skipTest('Audi manual photo evidence not present')
+        evidence = json.loads(path.read_text())
+        evidence['source']['model'] = 'A8'
+        evidence['source']['missing_printed_pages'] = []
+        evidence['rows'][0]['printed_page'] = 11
+        validation.check_audi_manual_photo_review(self.audit, self.catalogue, evidence, check_csv=False)
+        self.assertTrue(any('model must be explicit null' in error for error in self.audit.errors))
+        self.assertTrue(any('missing printed page 11' in error for error in self.audit.errors))
+        self.assertTrue(any('uncovered or missing printed page' in error for error in self.audit.errors))
+
+    def test_audi_manual_graphic_count_and_separate_states_are_enforced(self):
+        path = HERE / 'audi-manual-photo-review.json'
+        if not path.exists():
+            self.skipTest('Audi manual photo evidence not present')
+        evidence = json.loads(path.read_text())
+        evidence['counts']['graphic_occurrences'] -= 1
+        evidence['rows'][0]['exact_reusable_graphic'] = True
+        evidence['rows'][0]['model_scope_result'] = 'claimed_exact_model_scope'
+        evidence['rows'][0]['published'] = True
+        validation.check_audi_manual_photo_review(self.audit, self.catalogue, evidence, check_csv=False)
+        self.assertTrue(any('103 graphic occurrences' in error for error in self.audit.errors))
+        self.assertTrue(any('independently reusable exact graphic' in error for error in self.audit.errors))
+        self.assertTrue(any('cannot claim exact model scope' in error for error in self.audit.errors))
+        self.assertTrue(any('must not be promoted directly' in error for error in self.audit.errors))
+
+    def test_audi_manual_legend_references_and_required_no_merges_are_enforced(self):
+        evidence = json.loads((HERE / 'audi-manual-photo-review.json').read_text())
+        evidence['source']['checkmark_legend']['en'] = ''
+        next(row for row in evidence['rows'] if row['id'] == 'p10-left-04')['referenced_printed_pages'] = [274]
+        evidence['must_not_merge'] = []
+        validation.check_audi_manual_photo_review(self.audit, self.catalogue, evidence, check_csv=False)
+        self.assertTrue(any('checkmark_legend.en' in error for error in self.audit.errors))
+        self.assertTrue(any('pages 99 and 274' in error for error in self.audit.errors))
+        self.assertTrue(any('loose-wheel/direct-wheel-change' in error for error in self.audit.errors))
+        self.assertTrue(any('parking-control/unavailability' in error for error in self.audit.errors))
+
+    def test_unidentified_audi_manual_queue_cannot_claim_a_model(self):
+        row = next(r for g in self.queues['groups'] for r in g['rows']
+                   if r.get('source_file') == '_warnings/audi-manual-photo-review.json')
+        row['model'] = 'A7 Sportback'
+        self.photo_checks()
+        self.assertTrue(any('unidentified Audi manual queue must not claim a model' in error
+                            for error in self.audit.errors))
+
     def test_audi_html_localises_codes_and_separates_review_states(self):
         if not (HERE / 'audi-photo-review.json').exists():
             self.skipTest('Audi photo evidence not present')
@@ -149,6 +204,32 @@ class ReviewRegressionTests(unittest.TestCase):
             self.assertTrue(all(heading in section for heading in headings[lang]))
             for raw_code in ('warning-indicator', 'steady-visible', 'mmi-control', 'menu-tile'):
                 self.assertNotIn(raw_code, section)
+
+    def test_audi_manual_html_separates_semantic_graphic_model_and_publication(self):
+        if not (HERE / 'audi-manual-photo-review.json').exists():
+            self.skipTest('Audi manual photo evidence not present')
+        headings = {
+            'cs': ('Odkázané tištěné strany', 'Významový výsledek', 'Grafický výsledek', 'Modelová platnost', 'Publikováno z fotografií'),
+            'en': ('Referenced printed pages', 'Semantic result', 'Graphic result', 'Model scope', 'Published from the photos'),
+            'de': ('Verwiesene Druckseiten', 'Bedeutungsergebnis', 'Grafikergebnis', 'Modellgültigkeit', 'Aus den Fotos veröffentlicht'),
+        }
+        evidence = json.loads((HERE / 'audi-manual-photo-review.json').read_text())
+        for lang in validation.LANGS:
+            page = validation.ROOT / ('' if lang == 'cs' else lang) / validation.ROUTE / 'druha-kontrola.html'
+            text = page.read_text()
+            self.assertIn('id="audi-manual-fotografie"', text)
+            section = text.split('id="audi-manual-fotografie"', 1)[1].split('id="audi-q4-climate"', 1)[0]
+            self.assertTrue(all(heading in section for heading in headings[lang]))
+            self.assertIn(evidence['source']['checkmark_legend'][lang], section)
+            self.assertIn(validation.AUDI_MANUAL_SPECIAL_COLOUR_LABELS[lang], section)
+            tbody = section.split('<tbody>', 1)[1].split('</tbody>', 1)[0]
+            self.assertEqual(tbody.count('<tr>'), 102)
+            drive_row = next(part for part in tbody.split('<tr>') if 'Hnací systém; Palubní síť' in part)
+            self.assertIn('99, 274', drive_row)
+            for raw_position in ('main1', 'left1', 'right1'):
+                self.assertNotIn(raw_position, section)
+            catalogue = validation.ROOT / ('' if lang == 'cs' else lang) / validation.ROUTE / 'index.html'
+            self.assertNotIn(validation.AUDI_MANUAL_SPECIAL_COLOUR_LABELS[lang], catalogue.read_text())
 
     def test_review_export_manifest_and_file_bytes(self):
         with zipfile.ZipFile(HERE / 'catalog-review-export.zip') as archive:
@@ -172,6 +253,10 @@ class ReviewRegressionTests(unittest.TestCase):
                 required.add('audi-photo-review.json')
                 required.update(f'audi-photo-comparison.{lang}.csv' for lang in validation.LANGS)
                 required.update(f'audi-photo-inventory.{lang}.csv' for lang in validation.LANGS)
+            if (HERE / 'audi-manual-photo-review.json').exists():
+                required.add('audi-manual-photo-review.json')
+                required.update(f'audi-manual-photo-review.{lang}.csv' for lang in validation.LANGS)
+                required.update(f'audi-manual-photo-inventory.{lang}.csv' for lang in validation.LANGS)
             self.assertTrue(required <= set(names))
 
 

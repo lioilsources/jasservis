@@ -814,6 +814,31 @@
             "de": "Alle fünf Fotos sind transkribiert und verglichen. Modell, Produktionsdatum/Modelljahr, Software und Anleitungsausgabe fehlen. Genaue Einträge fehlen insbesondere für Kraftstoff, Serviceschlüssel, Beifahrerairbag ON, Tempozeichen 50, Spurstatus, Sitzheizung, Umluft und Parkbedienelemente. Zwei neue Einträge und ein erweiterter Geltungsbereich aus der A8-Anleitung 06.2025 beweisen nicht, dass das fotografierte Fahrzeug ein A8 ist."
           },
           "source_edition_identified": false
+        },
+        {
+          "brand": "audi",
+          "model": null,
+          "edition": "nedoložené / undocumented / unbelegt",
+          "source_kind": "photographed-manual-overview",
+          "document_kind": "user-provided Czech manual photographs",
+          "source_url": null,
+          "source_file": "_warnings/audi-manual-photo-review.json",
+          "meaning_verified": false,
+          "exact_source_graphic_verified": false,
+          "published": false,
+          "closed_comparisons": [
+            "4/4 supplied photographs visually compared",
+            "printed pages 9, 10, 12 and 13 transcribed; page 11 missing",
+            "102 semantic rows / 103 graphic occurrences recorded",
+            "Audi brand established from visible Audi pre sense wording"
+          ],
+          "remaining": {
+            "cs": "Čtyři fotografie stran 9, 10, 12 a 13 jsou přepsané a porovnané; strana 11 chybí. Text Audi pre sense potvrzuje značku, ale model, generace, modelový rok, tiráž a vydání návodu nejsou doložené. Ze 102 řádků proto nevzniká žádná modelově přesná shoda, publikovaná položka ani samostatně použitelná přesná grafika. Nynější čtyři soubory také nelze prohlásit za totožné s historickou očekávanou sadou tří fotografií.",
+            "en": "The four photographs of pages 9, 10, 12 and 13 are transcribed and compared; page 11 is missing. The Audi pre sense wording confirms the brand, but model, generation, model year, imprint and manual edition are undocumented. The 102 rows therefore produce no model-exact match, published item or independently reusable exact graphic. The current four files also cannot be claimed identical to the historically expected set of three photographs.",
+            "de": "Die vier Fotos der Seiten 9, 10, 12 und 13 sind transkribiert und verglichen; Seite 11 fehlt. Die Formulierung Audi pre sense bestätigt die Marke, Modell, Generation, Modelljahr, Impressum und Anleitungsausgabe sind jedoch unbelegt. Aus den 102 Zeilen entsteht daher weder eine modellgenaue Übereinstimmung noch ein veröffentlichter Eintrag oder eine eigenständig nutzbare genaue Grafik. Die vier aktuellen Dateien können außerdem nicht als identisch mit dem historisch erwarteten Satz von drei Fotos bezeichnet werden."
+          },
+          "source_edition_identified": false,
+          "document_identity_established": false
         }
       ]
     },
@@ -967,9 +992,9 @@
           "edition": "11.2024",
           "source_url": "https://drivers-college.de/wp-content/uploads/2025/06/audi-q3-2025-betriebsanleitung.pdf",
           "remaining": {
-            "cs": "Dostupná vydání Q3/Q4/A4/A8 nejsou kompletně porovnaná. Pět fotografií vozu Audi je nyní položkově porovnáno, ale model a vydání zůstávají nedoložené; tři starší fotografie návodu stran 9–13 stále nejsou dostupné a jejich značka není ověřená. Další přesné ovladače a varianty asistentů/pohonu zůstávají otevřené.",
-            "en": "Available Q3/Q4/A4/A8 editions are not fully compared. Five Audi vehicle photos are now compared item by item, but model and edition remain undocumented; three earlier manual photos pp9–13 are still unavailable and their brand is unverified. Further exact controls and assistance/drive variants remain open.",
-            "de": "Die verfügbaren Q3-/Q4-/A4-/A8-Ausgaben sind nicht vollständig verglichen. Fünf Audi-Fahrzeugfotos sind nun elementweise verglichen, Modell und Ausgabe bleiben jedoch unbelegt; drei frühere Anleitungsfotos S.9–13 fehlen weiterhin und ihre Marke ist ungeprüft. Weitere genaue Bedien-, Assistenz- und Antriebsvarianten bleiben offen."
+            "cs": "Dostupná vydání Q3/Q4/A4/A8 nejsou kompletně porovnaná. Pět fotografií vozu Audi je položkově porovnaných, ale model a vydání zůstávají nedoložené. Samostatné čtyři fotografie českého přehledu návodu pokrývají strany 9, 10, 12 a 13 a potvrzují značku Audi; strana 11, model, tiráž a vydání chybějí. Další přesné ovladače a varianty asistentů/pohonu zůstávají otevřené.",
+            "en": "Available Q3/Q4/A4/A8 editions are not fully compared. Five Audi vehicle photos are compared item by item, but model and edition remain undocumented. A separate set of four Czech manual-overview photographs covers pages 9, 10, 12 and 13 and confirms the Audi brand; page 11, model, imprint and edition are missing. Further exact controls and assistance/drive variants remain open.",
+            "de": "Die verfügbaren Q3-/Q4-/A4-/A8-Ausgaben sind nicht vollständig verglichen. Fünf Audi-Fahrzeugfotos sind elementweise verglichen, Modell und Ausgabe bleiben jedoch unbelegt. Vier getrennte Fotos einer tschechischen Anleitungsübersicht decken die Seiten 9, 10, 12 und 13 ab und bestätigen die Marke Audi; Seite 11, Modell, Impressum und Ausgabe fehlen. Weitere genaue Bedien-, Assistenz- und Antriebsvarianten bleiben offen."
           }
         },
         {

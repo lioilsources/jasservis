@@ -58,7 +58,7 @@
   },
   "brand_page_cta_tests": 36,
   "physical_devices_tested": [],
-  "device_note": "The 54-case Chromium/WebKit matrix belongs to the 2026-10-30 revision. For the current 2026-10-31 metadata revision, Chromium is retested separately; WebKit is not rerun because its executable is unavailable. No physical iPhone, Android phone or tablet was tested.",
+  "device_note": "The 54-case Chromium/WebKit matrix belongs to the 2026-10-30 revision. Chromium 154 was rerun for the current Audi manual-photo revision across three languages and nine viewports; WebKit was not rerun because its executable is unavailable in the current environment. No physical iPhone, Android phone or tablet was tested.",
   "unrelated_content": "Shared headers unchanged. Other brand-page content unchanged apart from warning-catalogue availability notes. Media parity: 28 page groups, 76 entries.",
   "audi_and_new_vw_models": {
     "cases": 54,
@@ -409,7 +409,14 @@
     "audi-photo-comparison.de.csv",
     "audi-photo-inventory.cs.csv",
     "audi-photo-inventory.en.csv",
-    "audi-photo-inventory.de.csv"
+    "audi-photo-inventory.de.csv",
+    "audi-manual-photo-review.json",
+    "audi-manual-photo-review.cs.csv",
+    "audi-manual-photo-review.en.csv",
+    "audi-manual-photo-review.de.csv",
+    "audi-manual-photo-inventory.cs.csv",
+    "audi-manual-photo-inventory.en.csv",
+    "audi-manual-photo-inventory.de.csv"
   ],
   "latest_chapter_revision": {
     "checked": "2026-10-30",
@@ -1575,7 +1582,7 @@
   },
   "latest_metadata_revision": {
     "checked": "2026-10-31",
-    "change": "Five Audi vehicle photos transcribed and compared; model/manual identity remains undocumented. Independent A8 06.2025 additions are source-based and are not attributed to the photographed vehicle.",
+    "change": "Four Czech Audi manual-overview photographs covering printed pages 9, 10, 12 and 13 were transcribed into 102 semantic rows and 103 graphic occurrences. Page 11 is missing. Visible Audi pre sense wording establishes the brand, while model, generation, model year, imprint and edition remain undocumented; no row was published or assigned an exact model scope.",
     "chromium_comprehensive_test": {
       "result": "PASS",
       "applies_to_latest_revision": true,
@@ -1599,12 +1606,11 @@
         "2560x1440"
       ],
       "checks": [
-        "shared driver-advice navigation and touch targets",
-        "no header overlap or horizontal overflow",
-        "171 distinct semantic record IDs",
-        "54 Audi evidence rows and 91 occurrences",
-        "Enyaq 122 and Multivan 129 evidence rows",
-        "all six direct brand service entries and presets",
+        "shared driver-advice navigation, touch targets, header alignment and no horizontal overflow",
+        "171 distinct semantic record IDs and all six direct brand service entries in CS/EN/DE",
+        "Enyaq 122, Multivan 129 and Audi vehicle-photo 54-row review tables",
+        "Audi manual-photo section with 102 rows, 103 graphic occurrences, four covered pages and missing page 11",
+        "functional-check legend, referenced pages 99/274, unknown model scope and zero publication/reusable-graphic claims",
         "visible catalogue images decode"
       ],
       "physical_devices": false
@@ -1630,6 +1636,31 @@
       "meaning_unresolved": 8,
       "published_from_photo_set": 0,
       "exact_reusable_graphics_verified_from_photo_set": 0
+    },
+    "audi_manual_photo_evidence": {
+      "photos": 4,
+      "printed_pages_covered": [
+        9,
+        10,
+        12,
+        13
+      ],
+      "missing_printed_pages": [
+        11
+      ],
+      "semantic_rows": 102,
+      "graphic_occurrences": 103,
+      "brand": "Audi",
+      "brand_basis": "Visible Audi pre sense wording on the photographed pages",
+      "model": null,
+      "generation": null,
+      "model_year": null,
+      "imprint": null,
+      "manual_edition": null,
+      "exact_model_scoped_matches": 0,
+      "published_from_photo_set": 0,
+      "exact_reusable_graphics_verified_from_photo_set": 0,
+      "current_files_proven_identical_to_historical_expected_set": false
     },
     "applies_to_latest_revision": true,
     "snapshot_status": "current-revision"

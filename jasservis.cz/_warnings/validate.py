@@ -4,7 +4,7 @@
 This checks relationships and generated artefacts, not automotive correctness.
 It never repairs files, fetches remote sources or promotes a review to complete.
 """
-from collections import Counter
+from collections import Counter, defaultdict
 import csv
 import hashlib
 from html.parser import HTMLParser
@@ -43,6 +43,48 @@ AUDI_INVENTORY_STATUS = {
     "cs": ("model nedoložen", "vydání nedoloženo; zdrojem je fotografie vozidla", "modelový rok nedoložen", "obrazově porovnáno", "stránka se nepoužije – zdrojem je fotografie displeje vozidla"),
     "en": ("model not established", "edition not established; source is a vehicle photograph", "model year not established", "visually reviewed", "page not applicable – source is a vehicle-display photograph"),
     "de": ("Modell unbelegt", "Ausgabe unbelegt; Quelle ist ein Fahrzeugfoto", "Modelljahr unbelegt", "visuell verglichen", "Seite nicht anwendbar – Quelle ist ein Foto der Fahrzeuganzeige"),
+}
+AUDI_MANUAL_PRINTED_PAGES = (9, 10, 12, 13)
+AUDI_MANUAL_REQUESTED_PAGES = (9, 10, 11, 12, 13)
+AUDI_MANUAL_PAGE_COUNTS = {9: (5, 5), 10: (35, 35), 12: (38, 38), 13: (24, 25)}
+AUDI_MANUAL_POSITION_COUNTS = {
+    (9, "main"): 5,
+    (10, "left"): 17, (10, "right"): 18,
+    (12, "left"): 18, (12, "right"): 20,
+    (13, "left"): 19, (13, "right"): 5,
+}
+AUDI_MANUAL_SOURCE_PAGE_STATUS = "photographed-manual-page"
+AUDI_MANUAL_INVENTORY_STATUS = {
+    "cs": ("model nedoložen", "vydání návodu nedoloženo", "modelový rok nedoložen", "obrazově porovnáno a řádkově přepsáno", "tištěná strana fotografovaného návodu"),
+    "en": ("model not established", "manual edition not established", "model year not established", "visually reviewed and transcribed row by row", "printed page of the photographed manual"),
+    "de": ("Modell unbelegt", "Anleitungsausgabe unbelegt", "Modelljahr unbelegt", "visuell geprüft und zeilenweise transkribiert", "gedruckte Seite der fotografierten Anleitung"),
+}
+AUDI_MANUAL_SEMANTIC_RESULTS = {
+    "compatible_candidate", "partial_candidate", "missing", "rejected_mismatch", "pending_only",
+}
+AUDI_MANUAL_GRAPHIC_RESULTS = {
+    "compatible_unverified", "mismatch", "missing", "state_unresolved", "pending", "multiple_distinct",
+}
+AUDI_MANUAL_MODEL_SCOPE_RESULT = "unknown_source_model_no_exact_scope"
+AUDI_MANUAL_SEMANTIC_LABELS = {
+    "cs": {"compatible_candidate": "slučitelný významový kandidát", "partial_candidate": "částečný významový kandidát", "missing": "použitelný kandidát chybí", "rejected_mismatch": "kandidát odmítnut pro odlišný význam", "pending_only": "pouze čekající kandidát"},
+    "en": {"compatible_candidate": "compatible semantic candidate", "partial_candidate": "partial semantic candidate", "missing": "no usable candidate", "rejected_mismatch": "candidate rejected as a semantic mismatch", "pending_only": "pending candidate only"},
+    "de": {"compatible_candidate": "passender Bedeutungskandidat", "partial_candidate": "teilweiser Bedeutungskandidat", "missing": "kein nutzbarer Kandidat", "rejected_mismatch": "Kandidat wegen abweichender Bedeutung verworfen", "pending_only": "nur ausstehender Kandidat"},
+}
+AUDI_MANUAL_GRAPHIC_LABELS = {
+    "cs": {"compatible_unverified": "podoba slučitelná, přesná grafika neověřena", "mismatch": "grafická varianta se neshoduje", "missing": "přesná grafická varianta chybí", "state_unresolved": "grafický stav nelze uzavřít z přehledu", "pending": "grafika zůstává čekající", "multiple_distinct": "řádek obsahuje více odlišných grafik"},
+    "en": {"compatible_unverified": "appearance compatible; exact graphic unverified", "mismatch": "graphic variant differs", "missing": "exact graphic variant missing", "state_unresolved": "graphic state unresolved from the overview", "pending": "graphic remains pending", "multiple_distinct": "row contains multiple distinct graphics"},
+    "de": {"compatible_unverified": "Darstellung passend; genaue Grafik ungeprüft", "mismatch": "Grafikvariante weicht ab", "missing": "genaue Grafikvariante fehlt", "state_unresolved": "Grafikzustand aus der Übersicht nicht geklärt", "pending": "Grafik bleibt ausstehend", "multiple_distinct": "Zeile enthält mehrere unterschiedliche Grafiken"},
+}
+AUDI_MANUAL_MODEL_SCOPE_LABELS = {
+    "cs": "model zdroje není znám; přesný modelový rozsah nedoložen",
+    "en": "source model unknown; no exact model scope established",
+    "de": "Quellmodell unbekannt; kein genauer Modellumfang belegt",
+}
+AUDI_MANUAL_SPECIAL_COLOUR_LABELS = {
+    "cs": "Smíšená / odstín nejistý",
+    "en": "Mixed / hue unresolved",
+    "de": "Gemischt / Farbton ungeklärt",
 }
 
 
@@ -493,6 +535,285 @@ def check_audi_photo_review(audit, cat, evidence, attachment_group=None, check_c
     return observation_ids
 
 
+def check_audi_manual_photo_review(audit, cat, evidence, attachment_group=None, check_csv=True):
+    """Check the photographed Audi overview without assigning it to a model or edition."""
+    label = "audi-manual-photo-review.json"
+    audit.check(evidence.get("schema") == "jasservis-audi-manual-photo-review-v1", "photo_status",
+                f"{label}: unsupported or missing schema")
+    source = evidence.get("source", {})
+    audit.check(source.get("kind") == "user-supplied-photographs", "photo_identity",
+                f"{label}: source kind must remain user-supplied photographs")
+    audit.check(source.get("brand") == "audi", "photo_identity", f"{label}: source brand must be 'audi'")
+    for lang in LANGS:
+        brand_evidence = source.get("brand_evidence", {})
+        audit.check(isinstance(brand_evidence.get(lang), str) and bool(brand_evidence[lang].strip()),
+                    "translations", f"{label}: source.brand_evidence.{lang} is missing")
+        scope_note = evidence.get("scope_note", {})
+        audit.check(isinstance(scope_note.get(lang), str) and bool(scope_note[lang].strip()),
+                    "translations", f"{label}: scope_note.{lang} is missing")
+        legend = source.get("checkmark_legend", {})
+        audit.check(isinstance(legend.get(lang), str) and "✓" in legend[lang] and bool(legend[lang].strip()),
+                    "translations", f"{label}: source.checkmark_legend.{lang} is missing or does not explain ✓")
+    for field in ("model", "edition", "model_year", "generation", "imprint"):
+        audit.check(field in source and source.get(field) is None, "photo_identity",
+                    f"{label}: {field} must be explicit null")
+    audit.check(source.get("language") == "cs", "photo_identity", f"{label}: photographed source language must be cs")
+    audit.check(evidence.get("photos_received") == source.get("photo_count") == 4, "photo_status",
+                f"{label}: expected four supplied photographs in both evidence and source inventory")
+    audit.check(tuple(source.get("photographed_printed_pages", [])) == AUDI_MANUAL_PRINTED_PAGES,
+                "photo_status", f"{label}: photographed pages must be 9, 10, 12 and 13")
+    audit.check(source.get("missing_printed_pages") == [11], "photo_status",
+                f"{label}: missing printed page 11 must remain explicit")
+
+    photos = evidence.get("photos", [])
+    photo_pages = [photo.get("printed_page") for photo in photos]
+    audit.check(len(photos) == 5 and len(photo_pages) == len(set(photo_pages)) and
+                tuple(sorted(photo_pages)) == AUDI_MANUAL_REQUESTED_PAGES,
+                "photo_status", f"{label}: page inventory must explicitly cover supplied and missing pages 9–13")
+    supplied_photos = [photo for photo in photos if photo.get("status") == "supplied"]
+    missing_photos = [photo for photo in photos if photo.get("status") == "missing"]
+    audit.check(tuple(photo.get("printed_page") for photo in supplied_photos) == AUDI_MANUAL_PRINTED_PAGES,
+                "photo_status", f"{label}: exactly pages 9, 10, 12 and 13 must be supplied")
+    audit.check(len(missing_photos) == 1 and missing_photos[0].get("printed_page") == 11 and
+                missing_photos[0].get("row_count") is None and
+                missing_photos[0].get("graphic_occurrence_count") is None,
+                "photo_status", f"{label}: page 11 must remain an explicit missing inventory row")
+    if attachment_group:
+        audit.check(attachment_group.get("expected") == 3, "photo_status",
+                    f"{label}: attachment inventory must preserve the historical expected count of three")
+        audit.check(source.get("photo_count") == attachment_group.get("available_in_conversation") == 4,
+                    "photo_status", f"{label}: supplied photo count differs from attachment inventory")
+        audit.check(attachment_group.get("visually_compared") == 4, "photo_status",
+                    f"{label}: all four supplied photographs must be visually compared")
+        audit.check(attachment_group.get("unique_printed_pages_covered") == list(AUDI_MANUAL_PRINTED_PAGES),
+                    "photo_status", f"{label}: attachment page coverage differs")
+        audit.check(attachment_group.get("missing_printed_pages") == [11], "photo_status",
+                    f"{label}: attachment inventory must retain missing page 11")
+
+    rows = evidence.get("rows", [])
+    row_ids = unique_ids(audit, rows, f"{label}.rows")
+    audit.check(len(rows) == evidence.get("counts", {}).get("rows") == 102, "photo_status",
+                f"{label}: expected 102 semantic rows")
+    catalogue_ids = {item["id"] for item in cat.get("items", [])}
+    positions = []
+    position_numbers = defaultdict(list)
+    page_rows = Counter()
+    page_graphics = Counter()
+    graphic_occurrences = 0
+    for row in rows:
+        row_label = f"{label}.rows[{row.get('id')}]"
+        page = row.get("printed_page")
+        audit.check(page in AUDI_MANUAL_PRINTED_PAGES and page != 11, "photo_status",
+                    f"{row_label}: row uses an uncovered or missing printed page {page!r}")
+        position = (page, row.get("column"), row.get("position_in_column"))
+        positions.append(position)
+        position_numbers[(page, row.get("column"))].append(row.get("position_in_column"))
+        audit.check(row.get("column") in {"main", "left", "right"} and
+                    isinstance(row.get("position_in_column"), int) and row["position_in_column"] > 0,
+                    "photo_status", f"{row_label}: invalid row position")
+        audit.check(isinstance(row.get("description_cs_verbatim"), str) and bool(row["description_cs_verbatim"].strip()),
+                    "photo_status", f"{row_label}: literal Czech caption is missing")
+        occurrence_count = row.get("graphic_occurrence_count")
+        audit.check(isinstance(occurrence_count, int) and not isinstance(occurrence_count, bool) and occurrence_count > 0,
+                    "photo_status", f"{row_label}: graphic_occurrence_count must be a positive integer")
+        if isinstance(occurrence_count, int) and not isinstance(occurrence_count, bool):
+            graphic_occurrences += occurrence_count
+            page_graphics[page] += occurrence_count
+        page_rows[page] += 1
+        occurrences = row.get("graphic_occurrences", [])
+        audit.check(isinstance(occurrences, list) and len(occurrences) == occurrence_count,
+                    "photo_status", f"{row_label}: graphic occurrence inventory differs from its count")
+        if isinstance(occurrences, list):
+            audit.check([x.get("index") for x in occurrences] == list(range(1, len(occurrences) + 1)) and
+                        all(isinstance(x.get("visual_description_cs"), str) and x["visual_description_cs"].strip() for x in occurrences),
+                        "photo_status", f"{row_label}: graphic occurrences need ordered Czech descriptions")
+        candidates = set(row.get("candidate_ids", []))
+        audit.check(candidates <= catalogue_ids, "photo_candidates",
+                    f"{row_label}: unknown catalogue candidates {sorted(candidates - catalogue_ids)}")
+        rejected = set(row.get("rejected_merge_candidate_ids", []))
+        audit.check(rejected <= catalogue_ids, "photo_candidates",
+                    f"{row_label}: unknown rejected merge candidates {sorted(rejected - catalogue_ids)}")
+        pending = set(row.get("pending_candidate_ids", []))
+        audit.check(all(isinstance(x, str) and x for x in row.get("pending_candidate_ids", [])),
+                    "photo_candidates", f"{row_label}: pending candidate IDs must be nonempty strings")
+        semantic_result = row.get("semantic_result")
+        audit.check(semantic_result in AUDI_MANUAL_SEMANTIC_RESULTS, "photo_status",
+                    f"{row_label}: unsupported semantic result {row.get('semantic_result')!r}")
+        audit.check(not (candidates & rejected), "photo_candidates",
+                    f"{row_label}: the same catalogue ID cannot be a candidate and a rejected merge")
+        if semantic_result in {"compatible_candidate", "partial_candidate"}:
+            audit.check(bool(candidates), "photo_candidates", f"{row_label}: candidate result requires a published candidate ID")
+        elif semantic_result == "missing":
+            audit.check(not candidates, "photo_candidates", f"{row_label}: missing result cannot carry a usable candidate ID")
+        elif semantic_result == "pending_only":
+            audit.check(bool(pending) and not candidates, "photo_candidates",
+                        f"{row_label}: pending-only result requires a pending ID and no published candidate")
+        elif semantic_result == "rejected_mismatch":
+            audit.check(bool(rejected) and not candidates, "photo_candidates",
+                        f"{row_label}: rejected mismatch requires a rejected ID and no usable candidate")
+        audit.check(row.get("graphic_result") in AUDI_MANUAL_GRAPHIC_RESULTS, "photo_status",
+                    f"{row_label}: unsupported graphic result {row.get('graphic_result')!r}")
+        audit.check(row.get("model_scope_result") == AUDI_MANUAL_MODEL_SCOPE_RESULT, "photo_identity",
+                    f"{row_label}: unidentified source cannot claim exact model scope")
+        result_text = row.get("text", {})
+        for lang in LANGS:
+            local = result_text.get(lang, {}) if isinstance(result_text, dict) else {}
+            audit.check(isinstance(local.get("label"), str) and bool(local["label"].strip()) and
+                        isinstance(local.get("assessment"), str) and bool(local["assessment"].strip()),
+                        "translations", f"{row_label}: text.{lang} label or assessment is missing")
+            if "review_note" in row:
+                note = row.get("review_note", {}).get(lang)
+                audit.check(isinstance(note, str) and bool(note.strip()), "translations",
+                            f"{row_label}: review_note.{lang} is missing")
+        audit.check(row.get("exact_reusable_graphic") is False, "photo_identity",
+                    f"{row_label}: photograph must not claim an independently reusable exact graphic")
+        audit.check(row.get("published") is False and row.get("published_exact_match") is False, "photo_identity",
+                    f"{row_label}: photographed row must not be promoted directly to the catalogue")
+        audit.check(all(isinstance(page, int) and page > 0 for page in row.get("referenced_printed_pages", [])),
+                    "photo_status", f"{row_label}: referenced printed pages must be positive integers")
+    audit.check(len(positions) == len(set(positions)), "photo_status",
+                f"{label}: duplicate page/column/row positions")
+    audit.check(set(position_numbers) == set(AUDI_MANUAL_POSITION_COUNTS), "photo_status",
+                f"{label}: page/column groups differ from the photographed table")
+    for page_column, expected_count in AUDI_MANUAL_POSITION_COUNTS.items():
+        audit.check(sorted(position_numbers.get(page_column, [])) == list(range(1, expected_count + 1)),
+                    "photo_status", f"{label}: {page_column} positions must be contiguous 1–{expected_count}")
+    rows_by_id = {row.get("id"): row for row in rows}
+    audit.check(rows_by_id.get("p10-left-04", {}).get("referenced_printed_pages") == [99, 274],
+                "photo_status", f"{label}: p10-left-04 must retain both referenced pages 99 and 274")
+    audit.check(rows_by_id.get("p10-left-17", {}).get("referenced_printed_pages") == [109],
+                "photo_status", f"{label}: p10-left-17 must retain referenced page 109")
+    audit.check(rows_by_id.get("p13-left-02", {}).get("color") == "bila",
+                "photo_status", f"{label}: p13-left-02 must remain the white pull-away-assistant variant")
+    audit.check(rows_by_id.get("p12-right-12", {}).get("color") == "smisena_neurcena" and
+                rows_by_id.get("p12-right-12", {}).get("graphic_result") == "state_unresolved",
+                "photo_status", f"{label}: p12-right-12 must retain mixed/unresolved source colour")
+    audit.check(rows_by_id.get("p13-right-05", {}).get("graphic_occurrence_count") == 2,
+                "photo_status", f"{label}: child-lock row must retain two graphic occurrences")
+    audit.check(graphic_occurrences == evidence.get("counts", {}).get("graphic_occurrences") == 103, "photo_status",
+                f"{label}: expected 103 graphic occurrences across 102 rows")
+    photo_by_page = {photo.get("printed_page"): photo for photo in supplied_photos}
+    for page in AUDI_MANUAL_PRINTED_PAGES:
+        expected_rows, expected_graphics = AUDI_MANUAL_PAGE_COUNTS[page]
+        audit.check(photo_by_page.get(page, {}).get("row_count") == page_rows[page] == expected_rows and
+                    photo_by_page.get(page, {}).get("graphic_occurrence_count") == page_graphics[page] == expected_graphics,
+                    "photo_status", f"{label}: page {page} inventory counts differ from rows")
+    audit.check(sum("✓" in row.get("description_cs_verbatim", "") for row in rows) == 14,
+                "photo_status", f"{label}: expected 14 rows carrying the source functional-check mark ✓")
+    counts = evidence.get("counts", {})
+    semantic_counts = Counter(row.get("semantic_result") for row in rows)
+    graphic_counts = Counter(row.get("graphic_result") for row in rows)
+    audit.check(counts.get("semantic_results") == dict(semantic_counts), "photo_status",
+                f"{label}: semantic result counts differ from rows")
+    audit.check(counts.get("graphic_results") == dict(graphic_counts), "photo_status",
+                f"{label}: graphic result counts differ from rows")
+    audit.check(counts.get("exact_model_scoped_matches") == 0 and
+                counts.get("published_semantic_candidate_rows") == semantic_counts["compatible_candidate"] + semantic_counts["partial_candidate"] == 48 and
+                counts.get("rows_without_usable_published_candidate") == len(rows) - 48 == 54 and
+                counts.get("pending_only_candidate_rows") == semantic_counts["pending_only"] == 1,
+                "photo_status", f"{label}: summary candidate/model-scope counts differ from rows")
+    audit.check(not any(row.get("published") or row.get("published_exact_match") or row.get("exact_reusable_graphic")
+                        for row in rows), "photo_identity",
+                f"{label}: unidentified manual must publish no exact match or reusable graphic")
+    rules = evidence.get("must_not_merge", [])
+    audit.check(any(rule.get("catalog_id") == "audi-direct-wheel-change" and
+                    {"p10-right-02", "p10-right-16"} <= set(rule.get("photo_rows", [])) for rule in rules),
+                "photo_candidates", f"{label}: required loose-wheel/direct-wheel-change no-merge rule is missing")
+    audit.check(any(rule.get("pending_catalog_id") == "audi-a8-parking-assistance-controls" and
+                    rule.get("published_catalog_id") == "audi-park-assist-unavailable" and
+                    {"p13-left-14", "p13-left-15"} <= set(rule.get("photo_rows", [])) for rule in rules),
+                "photo_candidates", f"{label}: required parking-control/unavailability no-merge rule is missing")
+    for index, rule in enumerate(rules):
+        rule_label = f"{label}.must_not_merge[{index}]"
+        audit.check(bool(rule.get("photo_rows")) and set(rule["photo_rows"]) <= row_ids,
+                    "photo_candidates", f"{rule_label}: unknown or missing photo rows")
+        published_id = rule.get("catalog_id") or rule.get("published_catalog_id")
+        audit.check(not published_id or published_id in catalogue_ids, "photo_candidates",
+                    f"{rule_label}: unknown published catalogue ID {published_id!r}")
+        pending_id = rule.get("pending_catalog_id")
+        pending_ids = {x for row in rows for x in row.get("pending_candidate_ids", [])}
+        audit.check(not pending_id or pending_id in pending_ids, "photo_candidates",
+                    f"{rule_label}: unknown pending candidate ID {pending_id!r}")
+        for lang in LANGS:
+            reason = rule.get("reason", {}).get(lang)
+            audit.check(isinstance(reason, str) and bool(reason.strip()), "translations",
+                        f"{rule_label}: reason.{lang} is missing")
+
+    if check_csv:
+        rows_by_id = {row["id"]: row for row in rows}
+        supplied_by_id = {f"audi-manual-photo-p{photo['printed_page']:02d}": photo for photo in supplied_photos}
+        for lang in LANGS:
+            comparison = audit.csv_rows(f"audi-manual-photo-review.{lang}.csv")
+            if comparison is not None:
+                ids = [row.get("row_id") for row in comparison]
+                audit.check(len(ids) == len(set(ids)) and set(ids) == row_ids, "csv",
+                            f"audi-manual-photo-review.{lang}.csv: rows differ from JSON")
+                expected_model, expected_edition, expected_model_year, _, expected_page = AUDI_MANUAL_INVENTORY_STATUS[lang]
+                for exported in comparison:
+                    row_label = f"audi-manual-photo-review.{lang}.csv:{exported.get('row_id', '')}"
+                    source_row = rows_by_id.get(exported.get("row_id"), {})
+                    expected_photo = f"audi-manual-photo-p{source_row.get('printed_page', 0):02d}"
+                    audit.check(exported.get("photo") == expected_photo and
+                                exported.get("printed_page") == str(source_row.get("printed_page", "")) and
+                                exported.get("graphic_occurrence_count") == str(source_row.get("graphic_occurrence_count", "")),
+                                "csv", f"{row_label}: photo, page or graphic occurrence count differs")
+                    audit.check(exported.get("semantic_result_code") == source_row.get("semantic_result") and
+                                exported.get("semantic_result") == AUDI_MANUAL_SEMANTIC_LABELS[lang].get(source_row.get("semantic_result")) and
+                                exported.get("semantic_assessment") == source_row.get("text", {}).get(lang, {}).get("assessment"),
+                                "translations", f"{row_label}: semantic result is not localised from JSON")
+                    audit.check(exported.get("source_checkmark_legend") == source.get("checkmark_legend", {}).get(lang),
+                                "translations", f"{row_label}: source checkmark legend is missing or not localised")
+                    audit.check(exported.get("graphic_result_code") == source_row.get("graphic_result") and
+                                exported.get("graphic_result") == AUDI_MANUAL_GRAPHIC_LABELS[lang].get(source_row.get("graphic_result")),
+                                "translations", f"{row_label}: graphic result is not localised")
+                    audit.check(exported.get("model_scope_result_code") == AUDI_MANUAL_MODEL_SCOPE_RESULT and
+                                exported.get("model_scope_result") == AUDI_MANUAL_MODEL_SCOPE_LABELS[lang],
+                                "translations", f"{row_label}: model-scope result is not localised")
+                    for field in ("published", "published_exact_match", "exact_reusable_graphic"):
+                        audit.check(exported.get(field) == str(source_row.get(field)), "csv",
+                                    f"{row_label}: {field} differs from JSON")
+                    audit.check(not exported.get("model") and not exported.get("manual_edition") and not exported.get("model_year"),
+                                "photo_identity", f"{row_label}: unknown identity must remain blank")
+                    audit.check(exported.get("model_status") == expected_model and
+                                exported.get("manual_edition_status") == expected_edition and
+                                exported.get("model_year_status") == expected_model_year,
+                                "translations", f"{row_label}: missing identity statuses are not localised")
+                    audit.check(exported.get("source_page_status_code") == AUDI_MANUAL_SOURCE_PAGE_STATUS and
+                                exported.get("source_page_status") == expected_page,
+                                "translations", f"{row_label}: photographed-page status is not localised")
+                    if source_row.get("color") == "smisena_neurcena":
+                        audit.check(exported.get("photo_colour") == AUDI_MANUAL_SPECIAL_COLOUR_LABELS[lang],
+                                    "translations", f"{row_label}: mixed unresolved source colour is not localised")
+                    try:
+                        exported_graphics = json.loads(exported.get("graphic_occurrences_CS_json") or "[]")
+                    except (TypeError, ValueError):
+                        exported_graphics = None
+                    audit.check(exported_graphics == source_row.get("graphic_occurrences"), "csv",
+                                f"{row_label}: graphic occurrence inventory differs from JSON")
+            inventory = audit.csv_rows(f"audi-manual-photo-inventory.{lang}.csv")
+            if inventory is not None:
+                ids = [row.get("working_photo_reference") for row in inventory]
+                audit.check(len(ids) == len(set(ids)) and set(ids) == set(supplied_by_id), "csv",
+                            f"audi-manual-photo-inventory.{lang}.csv: photo inventory differs from JSON")
+                expected_model, expected_edition, expected_model_year, expected_review, expected_page = AUDI_MANUAL_INVENTORY_STATUS[lang]
+                for exported in inventory:
+                    row_label = f"audi-manual-photo-inventory.{lang}.csv:{exported.get('working_photo_reference', '')}"
+                    source_photo = supplied_by_id.get(exported.get("working_photo_reference"), {})
+                    audit.check(exported.get("printed_page") == str(source_photo.get("printed_page", "")) and
+                                exported.get("row_count") == str(source_photo.get("row_count", "")) and
+                                exported.get("graphic_occurrence_count") == str(source_photo.get("graphic_occurrence_count", "")), "csv",
+                                f"{row_label}: printed page differs from JSON")
+                    audit.check(exported.get("model_status") == expected_model and
+                                exported.get("edition_status") == expected_edition and
+                                exported.get("model_year_status") == expected_model_year and
+                                exported.get("comparison_status") == expected_review,
+                                "translations", f"{row_label}: inventory statuses are not localised")
+                    audit.check(exported.get("page_status_code") == AUDI_MANUAL_SOURCE_PAGE_STATUS and
+                                exported.get("page_status") == expected_page,
+                                "translations", f"{row_label}: inventory page status is not localised")
+    return row_ids
+
+
 def check_photos_and_queues(audit, register, attachments, queues, cat=None):
     groups = {g["id"]: g for g in attachments["groups"]}
     latest = register["latest_round"]
@@ -534,6 +855,8 @@ def check_photos_and_queues(audit, register, attachments, queues, cat=None):
             audit.check(source.get("photos_received") == group["available_in_conversation"], "photo_status", f"{name}: photos_received differs from attachment inventory")
             if name == "audi-photo-review.json" and cat is not None:
                 check_audi_photo_review(audit, cat, source, group)
+            if name == "audi-manual-photo-review.json" and cat is not None:
+                check_audi_manual_photo_review(audit, cat, source, group)
     audi_path = HERE / "audi-photo-review.json"
     if audi_path.exists() and "audi-photo-review.json" not in photo_evidence:
         source = audit.read_json("audi-photo-review.json")
@@ -542,6 +865,14 @@ def check_photos_and_queues(audit, register, attachments, queues, cat=None):
             check_audi_photo_review(audit, cat, source)
         audit.check(any(g.get("row_comparison") == "audi-photo-review.json" for g in groups.values()),
                     "photo_status", "audi-photo-review.json: no attachment group row_comparison binding")
+    audi_manual_path = HERE / "audi-manual-photo-review.json"
+    if audi_manual_path.exists() and "audi-manual-photo-review.json" not in photo_evidence:
+        source = audit.read_json("audi-manual-photo-review.json")
+        photo_evidence["audi-manual-photo-review.json"] = source
+        if cat is not None:
+            check_audi_manual_photo_review(audit, cat, source)
+        audit.check(any(g.get("row_comparison") == "audi-manual-photo-review.json" for g in groups.values()),
+                    "photo_status", "audi-manual-photo-review.json: no attachment group row_comparison binding")
     source_bindings = []
     for group in queues["groups"]:
         for index, row in enumerate(group["rows"]):
@@ -553,6 +884,20 @@ def check_photos_and_queues(audit, register, attachments, queues, cat=None):
                     evidence = json.loads(path.read_text(encoding="utf-8"))
                     if "model_confirmed_by_user" in evidence:
                         check_photo_queue_identity(audit, row, evidence, label)
+                    if evidence.get("schema") == "jasservis-audi-manual-photo-review-v1":
+                        source_meta = evidence.get("source", {})
+                        audit.check(row.get("brand") == "audi" and row.get("model") is None,
+                                    "photo_identity", f"{label}: unidentified Audi manual queue must not claim a model")
+                        audit.check(source_meta.get("model") is None and source_meta.get("edition") is None,
+                                    "photo_identity", f"{label}: bound Audi manual evidence must retain unknown model and edition")
+                        audit.check(not urlsplit(row.get("source_url") or "").scheme,
+                                    "photo_identity", f"{label}: photographed manual queue must use its local evidence, not an external manual")
+                        audit.check(row.get("meaning_verified") is False and
+                                    row.get("exact_source_graphic_verified") is False and
+                                    row.get("published") is False and
+                                    row.get("source_edition_identified") is False and
+                                    row.get("document_identity_established") is False,
+                                    "photo_identity", f"{label}: photographed manual queue overclaims identity, meaning, graphic or publication")
                     source_bindings.append(Path(source_file).name)
             if group["id"] == "unverified-meanings-and-graphics":
                 text = " ".join(row.get("remaining", {}).values())
@@ -570,6 +915,9 @@ def check_photos_and_queues(audit, register, attachments, queues, cat=None):
     if "audi-photo-review.json" in photo_evidence:
         audit.check("audi-photo-review.json" in source_bindings, "photo_identity",
                     "audi-photo-review.json: work queue lacks a source_file binding")
+    if "audi-manual-photo-review.json" in photo_evidence:
+        audit.check("audi-manual-photo-review.json" in source_bindings, "photo_identity",
+                    "audi-manual-photo-review.json: work queue lacks a source_file binding")
     return sum(g["available_in_conversation"] for g in selected)
 
 

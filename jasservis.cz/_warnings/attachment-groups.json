@@ -70,17 +70,46 @@
     {
       "id": "earlier-unidentified-manual-9-13",
       "expected": 3,
-      "available_in_conversation": 0,
-      "visually_compared": 0,
+      "available_in_conversation": 4,
+      "visually_compared": 4,
       "previous_unverified_label": "Audi",
-      "verified_brand_from_document": null,
+      "verified_brand_from_document": "Audi",
       "verified_model": null,
       "verified_edition": null,
-      "kind": "3 earlier photographs of manual overview pp9–13",
+      "verified_model_year": null,
+      "verified_generation": null,
+      "verified_imprint": null,
+      "kind": "four currently supplied photographs of a Czech manual overview covering printed pp9, 10, 12 and 13; historical expected count remains three",
+      "requested_printed_pages": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "unique_printed_pages_covered": [
+        9,
+        10,
+        12,
+        13
+      ],
+      "missing_printed_pages": [
+        11
+      ],
+      "photos": [
+        "audi-manual-photo-p09",
+        "audi-manual-photo-p10",
+        "audi-manual-photo-p12",
+        "audi-manual-photo-p13"
+      ],
+      "row_comparison": "audi-manual-photo-review.json",
+      "document_identity_established": false,
+      "source_edition_identified": false,
+      "current_files_proven_identical_to_historical_expected_set": false,
       "status": {
-        "cs": "Tři dřívější fotografie přehledu stran 9–13 nejsou v dostupném kontextu ani lokálním archivu. Původní označení Audi není ověřenou identifikací dokumentu.",
-        "en": "Three earlier overview photos pp9–13 are absent from available context/local archive. Their previous Audi label is not verified document identification.",
-        "de": "Drei frühere Übersichtsfotos S.9–13 fehlen im verfügbaren Kontext/lokalen Archiv. Bisherige Bezeichnung Audi ist keine geprüfte Dokumentidentifikation."
+        "cs": "Čtyři nyní dodané fotografie jsou položkově přepsané a obrazově porovnané; pokrývají tištěné strany 9, 10, 12 a 13, zatímco strana 11 chybí. Historický očekávaný počet tří snímků zůstává evidovaný a nelze doložit, že nynější čtyři soubory jsou s touto dřívější sadou totožné. Text „Audi pre sense“ potvrzuje značku Audi; model, generace, modelový rok, tiráž a vydání návodu nejsou doložené. Evidence obsahuje 102 významových řádků a 103 grafických výskytů, ale nevytváří žádnou modelově přesnou ani publikovanou shodu.",
+        "en": "Four currently supplied photographs have been transcribed item by item and visually compared. They cover printed pages 9, 10, 12 and 13; page 11 is missing. The historical expected count of three images remains recorded, and the current four files cannot be shown to be identical to that earlier set. The wording ‘Audi pre sense’ confirms the Audi brand; model, generation, model year, imprint and manual edition are undocumented. The evidence contains 102 semantic rows and 103 graphic occurrences, but creates no model-exact or published match.",
+        "de": "Vier jetzt bereitgestellte Fotos wurden elementweise transkribiert und visuell verglichen. Sie decken die gedruckten Seiten 9, 10, 12 und 13 ab; Seite 11 fehlt. Die historische Sollzahl von drei Bildern bleibt dokumentiert, und es lässt sich nicht belegen, dass die vier aktuellen Dateien mit diesem früheren Satz identisch sind. Die Formulierung „Audi pre sense“ bestätigt die Marke Audi; Modell, Generation, Modelljahr, Impressum und Anleitungsausgabe sind unbelegt. Die Evidenz umfasst 102 Bedeutungszeilen und 103 Grafikvorkommen, erzeugt jedoch keine modellgenaue oder veröffentlichte Übereinstimmung."
       }
     },
     {
@@ -149,7 +178,7 @@
     }
   ],
   "search_checks": {
-    "local_attachment_archive": "Uploaded attachment archive scanned; only PDFs/ZIPs were present, with no corresponding new photographs.",
+    "local_attachment_archive": "The historical expected set of three overview photographs was not found in the local attachment archive. Four current photographs are available in the conversation and reviewed, but their file identity with that historical set is not established.",
     "local_source_renders": "not counted as user photographs",
     "drive": "Audi A8/Q8/A6 manual and SSP metadata searches checked. Local A8 06.2025 manual provides a candidate function comparison only and does not identify the photographed model. CUPRA search status unchanged; no missing attachment set was substituted."
   },
