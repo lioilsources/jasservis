@@ -15,7 +15,7 @@
   tiles.forEach(function(tile){tile.setAttribute('aria-pressed',String(tile.dataset.brand===selectedBrand));});
   results.hidden=!selectedBrand;heading.textContent=selectedBrand?text.brands[selectedBrand]+' — '+text.overview:text.overview;
  }
- function selectBrand(brand,moveFocus){selectedBrand=brand;showBrand();updateURL();if(brand&&moveFocus)requestAnimationFrame(function(){results.scrollIntoView({behavior:'smooth',block:'start'});heading.focus({preventScroll:true});});}
+ function selectBrand(brand,moveFocus){selectedBrand=brand;groups.forEach(function(group){group.open=false;});showBrand();updateURL();if(brand&&moveFocus)requestAnimationFrame(function(){results.scrollIntoView({behavior:'smooth',block:'start'});heading.focus({preventScroll:true});});}
  tiles.forEach(function(tile){tile.addEventListener('click',function(){selectBrand(selectedBrand===tile.dataset.brand?'':tile.dataset.brand,true);});});
  var userMoved=false;['wheel','touchstart','pointerdown','keydown'].forEach(function(type){window.addEventListener(type,function(){userMoved=true;},{passive:true});});
  function headerOffset(){var offset=12;Array.from(document.querySelectorAll('header.header, .isStuck, [data-sticky-header]')).forEach(function(header){var style=getComputedStyle(header),box=header.getBoundingClientRect();if((style.position==='fixed'||style.position==='sticky')&&box.height>0&&box.top<=1&&box.bottom>0)offset=Math.max(offset,box.bottom+12);});return offset;}
@@ -30,6 +30,8 @@
   var target=targetForHash();if(!target)return;
   var parentTopic=target.closest('details.driver-topic');if(parentTopic)parentTopic.open=true;
   var branded=target.closest('[data-brand]');if(branded&&branded.dataset.brand!==selectedBrand){selectedBrand=branded.dataset.brand;showBrand();updateURL();}
+  var parentGroup=target.closest('details.wl-group');if(parentGroup)parentGroup.open=true;
+  if(target.matches&&target.matches('details.wl-group'))target.open=true;
   if(target.closest('[hidden]'))target=results;
   requestAnimationFrame(function(){if(initial===true&&userMoved)return;var offset=headerOffset();results.style.setProperty('--wl-anchor-offset',offset+'px');scrollTo(0,Math.max(0,scrollY+target.getBoundingClientRect().top-offset));(target===results?heading:target).focus({preventScroll:true});});
  }
