@@ -137,15 +137,20 @@ def source_label(m,lang):
  if m.get('host_kind')=='third-party-copy':label+=' · '+{'cs':'kopie vydání výrobce na jiném serveru','en':'manufacturer edition hosted by a third party','de':'von Dritten gehostete Herstellerausgabe'}[lang]
  return label
 def options(vals,allText):return '<option value="">'+esc(allText)+'</option>'+''.join(f'<option value="{esc(k)}">{esc(v)}</option>' for k,v in vals.items())
-def card(item,brand,lang,page):
- u=UI[lang];scopes=[s for s in item['scopes'] if s['brand']==brand];i=item;data=[{'model':modelkey(s),'power':s['powertrains']} for s in scopes];sid=item_anchor(i,brand)
- states=list(dict.fromkeys(sc.get('signal_state',i['state']) for sc in scopes))
- state_label=' / '.join(u['states'][state] for state in states)
- search=' '.join(i['name'].values())+' '+i['id']+' '+u['brands'][brand]+' '+' '.join(str(s.get('model') or '') for s in scopes)
- signal_label={'cs':'Rozhodující signalizace','en':'Key indication','de':'Entscheidende Anzeige'}[lang]
- out=f'<article class="wl-card" id="{sid}" tabindex="-1" data-item="{esc(i["id"])}" data-brand="{brand}" data-color="{i["color"]}" data-system="{i["group"]}" data-search="{esc(search)}" data-scopes="{esc(json.dumps(data))}"><div class="wl-card-head"><span class="wl-symbol"><img src="{rel(i["graphic_path"],page)}" width="112" height="84" alt="{esc(i["alt"][lang])}"></span><h4 class="wl-name">{esc(i["name"][lang])}</h4><p class="wl-status">{esc(u["colors"][i["color"]])} · {esc(u["kinds"][i["kind"]])} · {esc(state_label)}</p></div><div class="wl-detail">'
- for key,label in [('meaning','meaning'),('action','action')]:out+=f'<h5>{esc(u[label])}</h5><p>{esc(i[key][lang])}</p>'
- out+=f'<h5>{esc(signal_label)}</h5><p>{esc(i["note"][lang])}</p></div></article>'
+def card(items,brand,lang,page):
+ u=UI[lang];first=items[0];sid=item_anchor(first,brand);signal_label={'cs':'Rozhodující signalizace','en':'Key indication','de':'Entscheidende Anzeige'}[lang]
+ aliases=''.join(f'<span class="wl-card-alias" id="{item_anchor(i,brand)}" tabindex="-1"></span>'for i in items[1:])
+ multiple=len(items)>1;title=first['name'][lang]
+ if multiple:title+=' · '+{'cs':'více významů stejného symbolu','en':'multiple meanings of the same symbol','de':'mehrere Bedeutungen desselben Symbols'}[lang]
+ out=f'<article class="wl-card" id="{sid}" tabindex="-1" data-brand="{brand}">{aliases}<div class="wl-card-head"><span class="wl-symbol"><img src="{rel(first["graphic_path"],page)}" width="112" height="84" alt="{esc(first["alt"][lang])}"></span><h4 class="wl-name">{esc(title)}</h4></div><div class="wl-detail">'
+ for i in items:
+  scopes=[s for s in i['scopes'] if s['brand']==brand];states=list(dict.fromkeys(sc.get('signal_state',i['state']) for sc in scopes));state_label=' / '.join(u['states'][state] for state in states)
+  out+='<section class="wl-meaning-variant">'
+  if multiple:out+=f'<h5 class="wl-variant-name">{esc(i["name"][lang])}</h5>'
+  out+=f'<p class="wl-status">{esc(u["colors"][i["color"]])} · {esc(u["kinds"][i["kind"]])} · {esc(state_label)}</p>'
+  for key,label in [('meaning','meaning'),('action','action')]:out+=f'<h6>{esc(u[label])}</h6><p>{esc(i[key][lang])}</p>'
+  out+=f'<h6>{esc(signal_label)}</h6><p>{esc(i["note"][lang])}</p></section>'
+ out+='</div></article>'
  return out
 
 def catalog_content(lang,page):
@@ -159,13 +164,18 @@ def catalog_content(lang,page):
  for brand,bname in u['brands'].items():
   entries=[i for i in CAT['items'] if any(s['brand']==brand for s in i['scopes'])]
   if not entries:continue
+  brand_grouped=[]
+  for i in entries:
+   existing=next((row for row in brand_grouped if row[0]['graphic_path']==i['graphic_path']),None)
+   if existing is None:brand_grouped.append([i])
+   else:existing.append(i)
   out+=f'<section class="wl-brand" data-brand="{brand}" aria-labelledby="brand-{brand}"><h2 id="brand-{brand}">{esc(bname)}</h2>'
   for group,gname in u['groups'].items():
-   groupitems=[i for i in entries if i['group']==group]
-   if groupitems:
+   grouped=[items for items in brand_grouped if items[0]['group']==group]
+   if grouped:
     if brand=='audi' and group=='motor':out+='<h3 class="wl-audi-section">'+esc({'cs':'Kontrolky vozidla','en':'Vehicle warning lights','de':'Fahrzeug-Kontrollleuchten'}[lang])+'</h3>'
     if brand=='audi' and group=='ovladani':out+='<h3 class="wl-audi-section">'+esc({'cs':'Symboly a hlášení MMI','en':'MMI symbols and messages','de':'MMI-Symbole und Meldungen'}[lang])+'</h3>'
-    out+=f'<section class="wl-group" id="{group if brand=='volkswagen' else brand+'-'+group}"><h3>{esc(gname)}</h3><div class="wl-grid">'+''.join(card(i,brand,lang,page) for i in groupitems)+'</div></section>'
+    out+=f'<section class="wl-group" id="{group if brand=='volkswagen' else brand+'-'+group}"><h3>{esc(gname)}</h3><div class="wl-grid">'+''.join(card(items,brand,lang,page) for items in grouped)+'</div></section>'
   out+='</section>'
  out+='</section>'
  out+=f'<section class="wl-contact"><h2>{esc(u["contactTitle"])}</h2><p>{esc(u["contact"])}</p><p><strong>{esc(u["hours"])}</strong></p><p>{esc(u["office"])}: <a href="tel:+420605399448">+420 605 399 448</a><br>{esc(u["workshop"])}: <a href="tel:+420608313437">+420 608 313 437</a></p><a class="tlacitko-akce" href="{rel(locale_root(lang)+"kontakt",page)}" data-booking-panel>{esc(u["contactButton"])}</a><p class="wl-note">{esc(u["notAssistance"])}</p></section>'
