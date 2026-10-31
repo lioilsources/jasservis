@@ -1071,7 +1071,7 @@ def check_online_services(audit):
         oil_end = text.find('<details class="driver-topic"', oil_start + 1)
         oil_html = text[oil_start:oil_end] if oil_start >= 0 and oil_end > oil_start else ""
         oil_titles = {"cs": "Hladina motorového oleje během provozu roste?", "en": "Is the engine-oil level rising during use?", "de": "Steigt der Motorölstand während des Betriebs?"}
-        audit.check(oil_html.count('class="oil-level-guidance"') == 1 and oil_html.count('class="oil-exchange-note"') == 1, "online_services", f"{label}: rising oil-level guidance or highlighted exchange conclusion is missing")
+        audit.check(oil_html.count('class="driver-subtopic oil-level-guidance"') == 1 and oil_html.count('class="oil-exchange-note"') == 1, "online_services", f"{label}: rising oil-level guidance or highlighted exchange conclusion is missing")
         audit.check(oil_titles[lang] in oil_html and 'DPF' in oil_html and oil_html.count('<li>') >= 5, "online_services", f"{label}: rising oil-level guidance is incomplete")
         audit.check('<details' not in oil_html[oil_html.find('class="oil-level-guidance"'):], "online_services", f"{label}: oil-level guidance must not add nested accordions")
         coolant_start = text.find('<div class="coolant-guide">')
