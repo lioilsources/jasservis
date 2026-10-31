@@ -8,7 +8,7 @@ HERE=Path(__file__).resolve().parent;ROOT=HERE.parent;REPO=ROOT.parent
 CAT=json.loads((HERE/'catalog.json').read_text());UI=json.loads((HERE/'locales.json').read_text())
 INFO_ROOT=REPO/'source-materials/infotainment-2026-10-31-rev2'
 INFO=json.loads((INFO_ROOT/'internal/manifest.json').read_text());INFO_TEXT=json.loads((INFO_ROOT/'translations.json').read_text())
-ROUTE='kontrolky-a-vystrazna-hlaseni';LANGS=['cs','en','de'];VERSION='20261031-coolant-g12-v4'
+ROUTE='kontrolky-a-vystrazna-hlaseni';LANGS=['cs','en','de'];VERSION='20261031-oil-level-v1'
 def esc(x):return html.escape(str(x),quote=True)
 def rel(target,page):return os.path.relpath(ROOT/target,page.parent).replace(os.sep,'/')+('/' if not Path(target).suffix else '')
 def locale_root(lang):return '' if lang=='cs' else lang+'/'
@@ -415,6 +415,43 @@ def coolant_content(lang):
  stop=''.join(f'<p>{esc(x)}</p>' for x in u['stop'])
  return '<div class="coolant-guide">'+safety+'<div class="coolant-accordion">'+detail(u['useTitle'],use)+detail(u['mixTitle'],mix)+detail(u['sealedTitle'],sealed)+detail(u['refillTitle'],refill)+detail(u['stopTitle'],stop)+'</div></div>'
 
+OIL_LEVEL_UI={
+ 'cs':{
+  'sectionTitle':'Kontrolky oleje a návštěva servisu','title':'Hladina motorového oleje během provozu roste? Pouhé odsátí přebytku nemusí stačit.','intro':['Pokud byla hladina oleje po výměně nebo doplnění správná a během dalšího provozu se zvyšuje, je nutné zjistit příčinu. Zvláštní pozornost vyžaduje situace, kdy vozidlo požaduje snížení hladiny, přestože olej nebyl mezitím doléván. Jednou z možných příčin je pronikání paliva do motorového oleje.'],
+  'dpfTitle':'Jak to může souviset s filtrem pevných částic DPF','dpf':['Při aktivní regeneraci DPF se u některých dieselových motorů používá dodatečné vstřikování nafty ke zvýšení teploty výfukových plynů. Část tohoto paliva může proniknout do olejové náplně.','K hromadění paliva v oleji mohou přispívat časté krátké jízdy, nedostatečné prohřívání motoru a opakovaně přerušované regenerace. Souvislost je potřeba prověřit také při neobvykle častých regeneracích.','Samotné hlášení vysoké hladiny ale nepotvrzuje závadu DPF. Ředění oleje palivem se může objevit i u benzinových motorů, například při opakovaných krátkých jízdách.'],
+  'whyTitle':'Proč nestačí pouze snížit hladinu','why':['Nadměrné zředění palivem mění vlastnosti oleje a může zhoršit ochranu mazaných součástí motoru.','Pouhým odsátím přebytečného množství se upraví hladina, ale zbývající olej zůstává zředěný. Jeho původní mazací vlastnosti se tím neobnoví.'],
+  'exchange':['Při potvrzeném nadměrném zředění nebo jiném znehodnocení oleje je potřeba zajistit jeho bezodkladnou výměnu.','Doporučujeme provést výměnu motorového oleje i olejového filtru podle postupu výrobce a současně prověřit příčinu problému. Na běžný termín výměny oleje se v takovém případě nečeká.'],
+  'afterExchange':'Samotná výměna oleje neodstraní případnou závadu. Bez zjištění příčiny se problém může opakovat.',
+  'driverTitle':'Co má udělat řidič','driver':['Další olej nedoplňujte.','Kontaktujte servis bez zbytečného odkladu. Sdělte přesné hlášení, kdy proběhla poslední výměna nebo dolití oleje a zda se hladina postupně zvyšovala.','Další jízdu řiďte přesným hlášením vozidla a jeho návodem; vhodný postup domluvte se servisem.','Vysokou hladinu a podezření na zředění oleje nezkoušejte bez kontroly řešit dlouhou jízdou za účelem „vypálení“ DPF ani vlastní nucenou regenerací.','Při výzvě STOP, zákazu pokračovat v jízdě nebo hlášení nízkého tlaku oleje bezpečně zastavte, vypněte motor a zajistěte odbornou pomoc.'],
+  'distTitle':'Přeplnění a rostoucí hladina nejsou stejná situace','dist':['Pokud bylo do motoru při výměně nebo dolévání nalito příliš mnoho správného oleje a náplň není znehodnocená, může servis upravit její množství.','Jestliže však hladina narůstá během provozu bez dalšího dolévání, nelze stav automaticky považovat za obyčejné přeplnění. Servis musí ověřit skutečnou hladinu, správnost měření a stav olejové náplně.']},
+ 'en':{
+  'sectionTitle':'Oil warnings and when to visit a workshop','title':'Is the engine-oil level rising during use? Simply extracting the excess may not be enough.','intro':['If the oil level was correct after a change or top-up and then rises during subsequent use, the cause must be identified. Particular attention is required if the vehicle asks for the level to be reduced even though no oil has been added in the meantime. Fuel entering the engine oil is one possible cause.'],
+  'dpfTitle':'How this may relate to the diesel particulate filter (DPF)','dpf':['During active DPF regeneration, some diesel engines use additional fuel injection to raise exhaust-gas temperature. Some of this fuel can enter the oil fill.','Frequent short trips, insufficient engine warm-up and repeatedly interrupted regenerations can contribute to fuel accumulating in the oil. The connection should also be investigated if regenerations occur unusually often.','A high-level message alone does not confirm a DPF fault. Fuel dilution of the oil can also occur in petrol engines, for example after repeated short trips.'],
+  'whyTitle':'Why merely reducing the level is not enough','why':['Excessive fuel dilution changes the oil’s properties and can reduce protection for lubricated engine components.','Extracting only the excess corrects the level, but the remaining oil stays diluted. This does not restore its original lubricating properties.'],
+  'exchange':['If excessive dilution or other oil degradation is confirmed, arrange an oil change without delay.','We recommend replacing both the engine oil and oil filter in accordance with the manufacturer procedure while also investigating the cause. Do not wait for the normal oil-change interval in this situation.'],
+  'afterExchange':'Changing the oil alone does not rectify an underlying fault. The problem can recur unless its cause is identified.',
+  'driverTitle':'What the driver should do','driver':['Do not add any more oil.','Contact a workshop without unnecessary delay. State the exact message, when the oil was last changed or topped up, and whether the level rose gradually.','Base any further driving on the exact vehicle message and its manual; agree the appropriate course of action with the workshop.','Do not try to address a high level and suspected oil dilution by taking a long drive to “burn off” the DPF or by initiating a forced regeneration yourself without inspection.','If STOP is displayed, driving is prohibited, or low oil pressure is reported, stop safely, switch off the engine and obtain qualified assistance.'],
+  'distTitle':'Overfilling and a rising level are different situations','dist':['If too much of the correct oil was added during a change or top-up and the fill has not degraded, a workshop may adjust its quantity.','If the level rises during use without further oil being added, the condition cannot automatically be treated as simple overfilling. A workshop must verify the true level, the measurement method and the condition of the oil fill.']},
+ 'de':{
+  'sectionTitle':'Ölwarnungen und Werkstattbesuch','title':'Steigt der Motorölstand während des Betriebs? Bloßes Absaugen des Überschusses reicht möglicherweise nicht aus.','intro':['War der Ölstand nach einem Wechsel oder Nachfüllen korrekt und steigt er im weiteren Betrieb, muss die Ursache ermittelt werden. Besondere Aufmerksamkeit ist erforderlich, wenn das Fahrzeug eine Verringerung des Ölstands verlangt, obwohl zwischenzeitlich kein Öl nachgefüllt wurde. Eine mögliche Ursache ist der Eintrag von Kraftstoff in das Motoröl.'],
+  'dpfTitle':'Möglicher Zusammenhang mit dem Dieselpartikelfilter (DPF)','dpf':['Bei der aktiven DPF-Regeneration wird bei einigen Dieselmotoren zusätzlich Kraftstoff eingespritzt, um die Abgastemperatur zu erhöhen. Ein Teil dieses Kraftstoffs kann in die Ölfüllung gelangen.','Häufige Kurzstrecken, unzureichendes Erwärmen des Motors und wiederholt abgebrochene Regenerationen können zur Ansammlung von Kraftstoff im Öl beitragen. Der Zusammenhang sollte auch bei ungewöhnlich häufigen Regenerationen geprüft werden.','Eine Meldung über zu hohen Ölstand allein bestätigt keinen DPF-Fehler. Eine Kraftstoffverdünnung des Öls kann auch bei Ottomotoren auftreten, beispielsweise bei wiederholten Kurzstrecken.'],
+  'whyTitle':'Warum eine bloße Verringerung des Ölstands nicht ausreicht','why':['Übermäßige Kraftstoffverdünnung verändert die Eigenschaften des Öls und kann den Schutz geschmierter Motorbauteile verschlechtern.','Durch bloßes Absaugen des Überschusses wird der Füllstand korrigiert, das verbleibende Öl bleibt jedoch verdünnt. Seine ursprünglichen Schmiereigenschaften werden dadurch nicht wiederhergestellt.'],
+  'exchange':['Bei bestätigter übermäßiger Verdünnung oder einer anderen Schädigung des Öls ist ein unverzüglicher Ölwechsel zu veranlassen.','Wir empfehlen, Motoröl und Ölfilter nach Herstellervorgabe zu wechseln und gleichzeitig die Ursache zu prüfen. In diesem Fall wird nicht bis zum regulären Ölwechseltermin gewartet.'],
+  'afterExchange':'Der Ölwechsel allein beseitigt eine mögliche Störung nicht. Ohne Ursachenklärung kann das Problem erneut auftreten.',
+  'driverTitle':'Was der Fahrer tun sollte','driver':['Kein weiteres Öl nachfüllen.','Ohne unnötigen Aufschub eine Werkstatt kontaktieren. Genaue Meldung, Zeitpunkt des letzten Ölwechsels oder Nachfüllens und einen gegebenenfalls allmählichen Anstieg des Füllstands mitteilen.','Die weitere Fahrt nach der genauen Fahrzeugmeldung und der Anleitung richten; das geeignete Vorgehen mit der Werkstatt abstimmen.','Einen hohen Ölstand und den Verdacht auf Ölverdünnung nicht ohne Prüfung durch eine lange Fahrt zum „Freibrennen“ des DPF oder durch eine eigenständig erzwungene Regeneration zu beheben versuchen.','Bei STOP-Aufforderung, Verbot der Weiterfahrt oder Meldung über zu niedrigen Öldruck sicher anhalten, Motor abstellen und fachkundige Hilfe anfordern.'],
+  'distTitle':'Überfüllung und steigender Ölstand sind nicht dasselbe','dist':['Wurde beim Ölwechsel oder Nachfüllen zu viel vom richtigen Öl eingefüllt und ist die Füllung nicht geschädigt, kann eine Werkstatt die Menge korrigieren.','Steigt der Ölstand jedoch während des Betriebs ohne weiteres Nachfüllen, darf dies nicht automatisch als einfache Überfüllung behandelt werden. Die Werkstatt muss tatsächlichen Füllstand, korrekte Messung und Zustand der Ölfüllung prüfen.']}
+}
+def oil_level_content(lang):
+ u=OIL_LEVEL_UI[lang]
+ out=f'<section class="driver-subtopic oil-level-guidance"><h2>{esc(u["sectionTitle"])}</h2><h3>{esc(u["title"])}</h3>'
+ out+=''.join(f'<p>{esc(x)}</p>' for x in u['intro'])
+ out+=f'<h3>{esc(u["dpfTitle"])}</h3>'+''.join(f'<p>{esc(x)}</p>' for x in u['dpf'])
+ out+=f'<h3>{esc(u["whyTitle"])}</h3>'+''.join(f'<p>{esc(x)}</p>' for x in u['why'])
+ out+='<aside class="oil-exchange-note" role="note">'+''.join(f'<p>{esc(x)}</p>' for x in u['exchange'])+'</aside><p>'+esc(u['afterExchange'])+'</p>'
+ out+=f'<h3>{esc(u["driverTitle"])}</h3><ul class="oil-driver-actions">'+''.join(f'<li>{esc(x)}</li>' for x in u['driver'])+'</ul>'
+ out+=f'<h3>{esc(u["distTitle"])}</h3>'+''.join(f'<p>{esc(x)}</p>' for x in u['dist'])
+ return out+'</section>'
+
 ONLINE_SERVICES={
  'volkswagen':{'name':'Volkswagen','account':'Volkswagen ID','app':'Volkswagen','account_url':'https://www.myvolkswagen.net/cz/cs/myvolkswagen.html','help_url':'https://www.volkswagen.cz/technologie/konektivita/vw-connect','note':{
   'cs':'Podle provedení může vůz použít naskenování kódu, ověření dvěma klíči nebo zadání aktivačního kódu. Použijte pouze postup zobrazený pro váš vůz a infotainment.',
@@ -521,6 +558,9 @@ def main(lang,page):
     out+=tyre_content(lang)
     for heading,text in d['topics'][index]:out+=f'<section class="driver-subtopic"><h2>{esc(heading)}</h2><p>{esc(text)}</p></section>'
    elif topic_id=='chladici-kapaliny':out+=coolant_content(lang)
+   elif topic_id=='oleje':
+    for heading,text in d['topics'][index]:out+=f'<section class="driver-subtopic"><h2>{esc(heading)}</h2><p>{esc(text)}</p></section>'
+    out+=oil_level_content(lang)
    else:
     for heading,text in d['topics'][index]:out+=f'<section class="driver-subtopic"><h2>{esc(heading)}</h2><p>{esc(text)}</p></section>'
   out+='</div></details>'

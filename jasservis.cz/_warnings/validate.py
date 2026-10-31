@@ -1067,6 +1067,13 @@ def check_online_services(audit):
         audit.check(text.count('class="fuse-safety"') == 1 and text.find('class="fuse-safety"') > text.find('id="pojistky"'), "online_services", f"{label}: fuse safety notice is missing or misplaced")
         audit.check(text.count('class="fuse-swatch ') == 13 and text.count('class="fuse-colour-guide"') == 1, "online_services", f"{label}: fuse colour guide must contain 13 documented rows")
         audit.check(text.count('class="tyre-code-token"') == 7 and text.count('class="tyre-pressure-note"') == 1, "online_services", f"{label}: tyre code or pressure guidance is incomplete")
+        oil_start = text.find('<details class="driver-topic" id="oleje"')
+        oil_end = text.find('<details class="driver-topic"', oil_start + 1)
+        oil_html = text[oil_start:oil_end] if oil_start >= 0 and oil_end > oil_start else ""
+        oil_titles = {"cs": "Hladina motorového oleje během provozu roste?", "en": "Is the engine-oil level rising during use?", "de": "Steigt der Motorölstand während des Betriebs?"}
+        audit.check(oil_html.count('class="oil-level-guidance"') == 1 and oil_html.count('class="oil-exchange-note"') == 1, "online_services", f"{label}: rising oil-level guidance or highlighted exchange conclusion is missing")
+        audit.check(oil_titles[lang] in oil_html and 'DPF' in oil_html and oil_html.count('<li>') >= 5, "online_services", f"{label}: rising oil-level guidance is incomplete")
+        audit.check('<details' not in oil_html[oil_html.find('class="oil-level-guidance"'):], "online_services", f"{label}: oil-level guidance must not add nested accordions")
         coolant_start = text.find('<div class="coolant-guide">')
         coolant_end = text.find('<details class="driver-topic"', coolant_start + 1)
         coolant_html = text[coolant_start:coolant_end] if coolant_start >= 0 and coolant_end > coolant_start else ""
