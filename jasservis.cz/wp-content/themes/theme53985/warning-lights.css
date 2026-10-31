@@ -17,7 +17,6 @@
 .driver-subtopic{max-width:82ch;margin:0 0 24px}
 .driver-subtopic:last-child{margin-bottom:0}
 .driver-subtopic h2{margin:0 0 8px!important;font-size:1.25rem!important}
-.warning-lights .wl-intro p{max-width:78ch}
 .warning-lights .wl-brand-tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:20px 0 24px}
 .warning-lights .wl-brand-tile{display:flex;align-items:center;justify-content:center;width:100%;min-height:72px;padding:14px;border:1px solid #000;border-radius:var(--js-radius);background:var(--js-brand);color:var(--js-ink);text-align:center;font:700 1.0625rem/1.35 var(--js-font,Ubuntu,sans-serif)}
 .warning-lights .wl-brand-tile:hover{background:#ff8055;border-color:#000;color:var(--js-ink)}
