@@ -1,24 +1,14 @@
-# The feedback loop: every PR gets a live URL on Cloudflare Pages, so the
-# owner can look at the change on their phone *before* merging.
-#
-# This is a preview only. Production is GitHub Pages (deploy.yml), which runs
-# on push to master — nothing here touches jasservis.cz.
+# Preview only. Production remains in deploy.yml.
 name: Web Preview
-
 on:
   push:
     branches: [master]
   pull_request:
-
 concurrency:
   group: web-${{ github.ref }}
   cancel-in-progress: true
-
 jobs:
   deploy:
-    # Off until the repo is configured (VIBE_SLUG variable + Cloudflare
-    # secrets), so pushes before that don't fail loudly for no reason. PRs from
-    # forks are skipped too: they get no secrets and the deploy would only fail.
     if: |
       vars.VIBE_SLUG != '' &&
       (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
@@ -26,96 +16,193 @@ jobs:
     timeout-minutes: 10
     permissions:
       contents: read
-      pull-requests: write
-      issues: write
+    outputs:
+      url: ${{ steps.link.outputs.url }}
+      deployment_url: ${{ steps.deploy.outputs.deployment-url }}
+      head_sha: ${{ steps.provenance.outputs.head_sha }}
+      checkout_sha: ${{ steps.provenance.outputs.checkout_sha }}
+      tree_sha: ${{ steps.provenance.outputs.tree_sha }}
     steps:
       - uses: actions/checkout@v4
         with:
-          # Full history: sitemap.sh dates each page by its last commit.
           fetch-depth: 0
-
-      # Same step deploy.yml runs, so a broken sitemap shows up here first.
-      # The URLs point at the live domain on purpose — that is what ships.
+      - name: Record the source version
+        id: provenance
+        env:
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          echo "head_sha=$HEAD_SHA" >> "$GITHUB_OUTPUT"
+          echo "checkout_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "tree_sha=$(git rev-parse HEAD^{tree})" >> "$GITHUB_OUTPUT"
+      - name: Build customer-only artifact
+        id: validation
+        run: .github/scripts/build-public-site.sh jasservis.cz .pages-dist
       - name: Generate sitemap.xml
-        run: .github/scripts/sitemap.sh jasservis.cz https://jasservis.cz
-
-      # Every Cloudflare deployment is a preview, including the master one at
-      # <slug>-vibe.pages.dev, which Cloudflare itself does not mark noindex.
-      # Only the live domain may be indexed, so all of them say so explicitly.
+        run: .github/scripts/sitemap.sh .pages-dist https://jasservis.cz
       - name: Keep previews out of search engines
         run: |
-          printf '/*\n  X-Robots-Tag: noindex\n' > jasservis.cz/_headers
-
-      # Same directory deploy.yml publishes — no build beyond the sitemap.
+          printf '/*\n  X-Robots-Tag: noindex\n' > .pages-dist/_headers
+      - name: Audit Cloudflare account and Access permissions
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          PROJECT: ${{ vars.VIBE_SLUG }}-vibe
+        run: |
+          auth="Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+          account_api="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID"
+          account_code="$(curl -sS -o account.json -w '%{http_code}' -H "$auth" "$account_api")"
+          project_code="$(curl -sS -o project.json -w '%{http_code}' -H "$auth" "$account_api/pages/projects/$PROJECT")"
+          access_code="$(curl -sS -o access.json -w '%{http_code}' -H "$auth" "$account_api/access/apps")"
+          access_write_probe="$(curl -sS -o access-write.json -w '%{http_code}' -X POST -H "$auth" -H 'Content-Type: application/json' --data '{}' "$account_api/access/apps")"
+          account_name="$(jq -r '.result.name // "unavailable"' account.json 2>/dev/null || true)"
+          access_result="denied"
+          [[ "$access_code" = 200 ]] && access_result="read"
+          {
+            echo '## Cloudflare security ownership audit'
+            echo "Account name: $account_name"
+            echo "Account identifier suffix: …${CLOUDFLARE_ACCOUNT_ID: -6}"
+            echo "Account API: $account_code"
+            echo "Pages project API: $project_code"
+            echo "Access applications API: $access_code ($access_result)"
+            echo "Access write probe: $access_write_probe"
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "Cloudflare account: $account_name; Pages: $project_code; Access read: $access_code; Access write probe: $access_write_probe"
+          test "$project_code" = 200
       - name: Deploy to Cloudflare Pages
         id: deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy jasservis.cz --project-name=${{ vars.VIBE_SLUG }}-vibe --branch=${{ github.head_ref || github.ref_name }}
-
-      # Cloudflare gives every deployment its own URL and every branch an alias
-      # that always serves the branch's latest deployment. The alias is the link
-      # to hand out: it never goes stale, wherever it was pasted.
+          command: pages deploy .pages-dist --project-name=${{ vars.VIBE_SLUG }}-vibe --branch=${{ github.head_ref || github.ref_name }}
+      - name: Verify customer page and blocked internal paths
+        env:
+          DEPLOYMENT_URL: ${{ steps.deploy.outputs.deployment-url }}
+        run: |
+          test "$(curl -L -sS -o /dev/null -w '%{http_code}' "$DEPLOYMENT_URL/kontrolky-a-vystrazna-hlaseni/")" = 200
+          for path in \
+            _warnings/catalog.json \
+            _warnings/review-register.json \
+            _media/catalog.json \
+            kontrolky-a-vystrazna-hlaseni/revize.html \
+            kontrolky-a-vystrazna-hlaseni/revize-kapitol.html \
+            kontrolky-a-vystrazna-hlaseni/druha-kontrola.html \
+            kontrolky-a-vystrazna-hlaseni/zdroje.html \
+            kontrolky-a-vystrazna-hlaseni/evidence.json \
+            en/kontrolky-a-vystrazna-hlaseni/revize.html \
+            en/kontrolky-a-vystrazna-hlaseni/evidence.json \
+            de/kontrolky-a-vystrazna-hlaseni/zdroje.html \
+            de/kontrolky-a-vystrazna-hlaseni/druha-kontrola.html
+          do
+            status="$(curl -L -sS -o /dev/null -w '%{http_code}' "$DEPLOYMENT_URL/$path")"
+            case "$status" in 403|404) ;; *) echo "Internal URL is public: $path ($status)" >&2; exit 1;; esac
+          done
+      - name: Inventory remaining Cloudflare deployments
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          PROJECT: ${{ vars.VIBE_SLUG }}-vibe
+        run: |
+          api="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/$PROJECT/deployments"
+          curl -fsS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$api" > deployments.json
+          jq -e '.success == true' deployments.json >/dev/null
+          echo "Remaining Cloudflare deployments returned by API: $(jq '.result | length' deployments.json)"
+          jq -r '.result[] | [.url, .environment, .deployment_trigger.metadata.branch, .created_on] | @tsv' deployments.json
       - name: Pick the link to share
         id: link
         env:
           ALIAS: ${{ steps.deploy.outputs.pages-deployment-alias-url }}
           DEPLOYMENT: ${{ steps.deploy.outputs.deployment-url }}
-        run: echo "url=${ALIAS:-$DEPLOYMENT}" >> "$GITHUB_OUTPUT"
-
-      - name: Comment the preview link on the PR
-        if: github.event_name == 'pull_request'
-        uses: marocchino/sticky-pull-request-comment@v2
-        with:
-          header: web-preview
-          message: |
-            ### 👀 Podívej se na změnu
-
-            **[Otevřít náhled](${{ steps.link.outputs.url }})**
-
-            Tohle je živá verze téhle změny — klikni z telefonu. Odkaz platí
-            pořád a ukazuje vždy poslední verzi. Ostrý web `jasservis.cz` se
-            zatím nezměnil. Když se ti náhled líbí, dej **Merge** a za minutu
-            dvě je změna na ostrém webu.
-
-            <sub>Právě tato verze: ${{ steps.deploy.outputs.deployment-url }}</sub>
-
-      # The comment ends up far down a long PR, and agents (Codex, Claude) write
-      # their own descriptions with links to previews that go stale. One marked
-      # block at the top of the description is the place to look, kept current.
-      - name: Put the preview link at the top of the PR description
-        if: github.event_name == 'pull_request'
-        env:
-          GH_TOKEN: ${{ github.token }}
-          NUMBER: ${{ github.event.pull_request.number }}
-          URL: ${{ steps.link.outputs.url }}
         run: |
-          body=$(gh pr view "$NUMBER" --repo "$GITHUB_REPOSITORY" --json body --jq .body)
-          rest=$(printf '%s' "$body" | perl -0pe 's/<!-- preview-link -->.*?<!-- \/preview-link -->\n*//s')
-          block="<!-- preview-link -->
-          **[▶ Otevřít aktuální náhled]($URL)** — vždy poslední verze této změny.
-          <!-- /preview-link -->"
-          printf '%s\n\n%s\n' "$block" "$rest" > "$RUNNER_TEMP/body.md"
-          gh pr edit "$NUMBER" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/body.md"
-
-      # The owner asked for the change in an issue and is watching that thread,
-      # not the PR. Claude's branches are named claude/issue-<N>-..., so the
-      # link goes back there too. One comment per issue, updated in place.
-      - name: Comment the preview link on the original issue
-        if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'claude/issue-')
+          url="${ALIAS:-$DEPLOYMENT}"
+          if [[ "$url" != https://* ]]; then
+            echo '::error::Cloudflare did not return a usable preview URL.'
+            exit 1
+          fi
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+      - name: Publish the deployment result
+        if: always()
         env:
-          GH_TOKEN: ${{ github.token }}
-          HEAD_REF: ${{ github.head_ref }}
+          VALIDATION: ${{ steps.validation.outcome }}
+          UPLOAD: ${{ steps.deploy.outcome }}
+          HEAD_SHA: ${{ steps.provenance.outputs.head_sha }}
+          CHECKOUT_SHA: ${{ steps.provenance.outputs.checkout_sha }}
+          TREE_SHA: ${{ steps.provenance.outputs.tree_sha }}
           PREVIEW_URL: ${{ steps.link.outputs.url }}
-          PR_URL: ${{ github.event.pull_request.html_url }}
+          DEPLOYMENT_URL: ${{ steps.deploy.outputs.deployment-url }}
         run: |
-          [[ "$HEAD_REF" =~ ^claude/issue-([0-9]+)- ]] || exit 0
-          gh issue comment "${BASH_REMATCH[1]}" --repo "$GITHUB_REPOSITORY" \
-            --edit-last --create-if-none --body "### 👀 Náhled je připravený
-
-          **[Otevřít náhled]($PREVIEW_URL)**
-
-          Ostrý web se zatím nezměnil. Když se ti náhled líbí, otevři
-          [návrh změny]($PR_URL) a dej **Merge**."
+          {
+            echo '## Výsledek náhledu'
+            echo "Kontrola katalogu: $VALIDATION"
+            echo "Nahrání do Cloudflare: $UPLOAD"
+            echo "Zdrojová verze: $HEAD_SHA"
+            echo "Skutečný checkout: $CHECKOUT_SHA"
+            echo "Git strom: $TREE_SHA"
+            echo "Aktuální náhled: $PREVIEW_URL"
+            echo "Konkrétní sestavení: $DEPLOYMENT_URL"
+            echo 'Oznámení odkazu má samostatnou úlohu.'
+          } >> "$GITHUB_STEP_SUMMARY"
+  notify:
+    needs: deploy
+    if: github.event_name == 'pull_request' && needs.deploy.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    continue-on-error: true
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    steps:
+      - name: Share the successful preview without uploading again
+        uses: actions/github-script@v9
+        env:
+          PREVIEW_URL: ${{ needs.deploy.outputs.url }}
+          DEPLOYMENT_URL: ${{ needs.deploy.outputs.deployment_url }}
+          HEAD_SHA: ${{ needs.deploy.outputs.head_sha }}
+        with:
+          retries: 3
+          script: |
+            const {owner, repo} = context.repo;
+            const issue_number = context.issue.number;
+            const url = process.env.PREVIEW_URL;
+            const deployment = process.env.DEPLOYMENT_URL;
+            const sha = process.env.HEAD_SHA;
+            const {data: pr} = await github.rest.pulls.get({owner, repo, pull_number: issue_number});
+            if (pr.head.sha !== sha || pr.state !== 'open') {
+              core.notice('Skipped an outdated or closed pull request.');
+              return;
+            }
+            const marker = '<!-- Sticky Pull Request Commentweb-preview -->';
+            const tasks = [
+              ['Komentář náhledu', async () => {
+                const comments = await github.paginate(github.rest.issues.listComments, {owner, repo, issue_number, per_page: 100});
+                const previous = comments.find(c => c.user?.login === 'github-actions[bot]' && c.body?.includes(marker));
+                const body = `${marker}\n### Náhled je připravený\n\n**[Otevřít aktuální náhled](${url})**\n\nPouze testovací náhled. Ostrý web se tímto nasazením nemění.\n\n[Konkrétní sestavení](${deployment}) · verze ${sha}`;
+                if (previous) await github.rest.issues.updateComment({owner, repo, comment_id: previous.id, body});
+                else await github.rest.issues.createComment({owner, repo, issue_number, body});
+              }],
+              ['Popis návrhu změny', async () => {
+                const {data: current} = await github.rest.pulls.get({owner, repo, pull_number: issue_number});
+                if (current.head.sha !== sha || current.state !== 'open') return;
+                const rest = (current.body || '').replace(/<!-- preview-link -->[\s\S]*?<!-- \/preview-link -->\s*/g, '');
+                const block = `<!-- preview-link -->\n**[▶ Otevřít aktuální náhled](${url})** — vždy poslední verze této změny.\n\n[Konkrétní sestavení](${deployment}) · verze ${sha}\n<!-- /preview-link -->`;
+                await github.rest.pulls.update({owner, repo, pull_number: issue_number, body: `${block}\n\n${rest}`});
+              }]
+            ];
+            const issueMatch = pr.head.ref.match(/^claude\/issue-(\d+)-/);
+            if (issueMatch) tasks.push(['Původní zadání', async () => {
+              const original = Number(issueMatch[1]);
+              const issueMarker = '<!-- web-preview-origin -->';
+              const comments = await github.paginate(github.rest.issues.listComments, {owner, repo, issue_number: original, per_page: 100});
+              const previous = comments.find(c => c.user?.login === 'github-actions[bot]' && (c.body?.includes(issueMarker) || (c.body?.includes(pr.html_url) && c.body?.includes('Náhled je připravený'))));
+              const body = `${issueMarker}\n### Náhled je připravený\n\n**[Otevřít náhled](${url})**\n\nPouze testovací náhled. [Návrh změny](${pr.html_url}).`;
+              if (previous) await github.rest.issues.updateComment({owner, repo, comment_id: previous.id, body});
+              else await github.rest.issues.createComment({owner, repo, issue_number: original, body});
+            }]);
+            let failed = false;
+            for (const [label, task] of tasks) {
+              try { await task(); core.info(`${label}: OK`); }
+              catch (error) { failed = true; core.warning(`${label}: ${error.status || 'API error'}. Náhled: ${url}`); }
+            }
+            await core.summary.addHeading('Předání odkazu').addLink('Aktuální náhled', url).addBreak().addLink('Konkrétní sestavení', deployment).addBreak().addRaw(failed ? 'Některé oznámení selhalo. Úspěšné nahrání náhledu zůstává platné.' : 'Oznámení byla dokončena.').write();
+            if (failed) core.setFailed('Některé oznámení odkazu selhalo; nahrání náhledu uspělo.');
