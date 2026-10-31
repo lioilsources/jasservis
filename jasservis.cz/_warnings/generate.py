@@ -8,7 +8,7 @@ HERE=Path(__file__).resolve().parent;ROOT=HERE.parent;REPO=ROOT.parent
 CAT=json.loads((HERE/'catalog.json').read_text());UI=json.loads((HERE/'locales.json').read_text())
 INFO_ROOT=REPO/'source-materials/infotainment-2026-10-31-rev2'
 INFO=json.loads((INFO_ROOT/'internal/manifest.json').read_text());INFO_TEXT=json.loads((INFO_ROOT/'translations.json').read_text())
-ROUTE='kontrolky-a-vystrazna-hlaseni';LANGS=['cs','en','de'];VERSION='20261031-coolant-layout-v2'
+ROUTE='kontrolky-a-vystrazna-hlaseni';LANGS=['cs','en','de'];VERSION='20261031-coolant-g13-v3'
 def esc(x):return html.escape(str(x),quote=True)
 def rel(target,page):return os.path.relpath(ROOT/target,page.parent).replace(os.sep,'/')+('/' if not Path(target).suffix else '')
 def locale_root(lang):return '' if lang=='cs' else lang+'/'
@@ -403,7 +403,7 @@ def coolant_content(lang):
  safety=f'<aside class="coolant-safety" role="note"><h2>{esc(u["safetyTitle"])}</h2><ul>'+''.join(f'<li>{esc(x)}</li>' for x in u['safety'])+'</ul></aside>'
  specs=f'<table class="coolant-table coolant-specs"><thead><tr>'+''.join(f'<th scope="col">{esc(x)}</th>' for x in u['specHead'])+'</tr></thead><tbody><tr><td>G12++</td><td>VW TL 774 G</td></tr><tr><td>G13</td><td>VW TL 774 J</td></tr><tr><td>G12evo</td><td>VW TL 774 L</td></tr></tbody></table>'
  products=f'<h3>{esc(u["productTitle"])}</h3><table class="coolant-table coolant-products-table"><thead><tr>'+''.join(f'<th scope="col">{esc(x)}</th>' for x in u['productHead'])+'</tr></thead><tbody>'
- product_rows=[('Škoda G12evo','000 096 320 JG','1 l · ready mix · −35 °C'),('G12evo','G 12E 050 A2','1 l · ready mix')]
+ product_rows=[('G13','G 013 A8J M1','1,5 l · koncentrát' if lang=='cs' else '1.5 l · concentrate' if lang=='en' else '1,5 l · Konzentrat'),('Škoda G12evo','000 096 320 JG','1 l · ready mix · −35 °C'),('G12evo','G 12E 050 A2','1 l · ready mix')]
  for product,number,pack in product_rows:
   values=[esc(product),f'<strong>{esc(number)}</strong>',esc(pack)]
   products+='<tr>'+''.join(f'<td data-label="{esc(label)}">{value}</td>' for label,value in zip(u['productHead'],values))+'</tr>'
