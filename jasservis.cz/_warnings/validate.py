@@ -1031,6 +1031,10 @@ def check_infotainment(audit, catalogue_ids):
             text = content.decode("utf-8", errors="replace")
             audit.check(not re.search(r"<image\b|data:image/|<script\b|https?://[^\s\"']+\.(?:png|jpe?g|webp)", text, re.I), "infotainment", f"{label}: SVG embeds a photo or script")
     audit.check(len(public_paths) == 235, "infotainment", f"expected 235 public SVG paths, found {len(public_paths)}")
+    for lang in LANGS:
+        page = ROOT / ("" if lang == "cs" else lang) / ROUTE / "index.html"
+        html = page.read_text(encoding="utf-8")
+        audit.check('class="wl-info-scope"' not in html, "infotainment", f"{lang}: public infotainment cards still expose model/system scope paragraphs")
     return {"semantic_items": len(items), "svg_paths": len(public_paths), "distinct_svg_hashes": len({x["svg_sha256"] for x in items})}
 
 def check_online_services(audit):

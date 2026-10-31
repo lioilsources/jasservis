@@ -7,7 +7,7 @@ import json,re,html,os,sys,csv,io
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parent;REPO=ROOT.parent
 CAT=json.loads((HERE/'catalog.json').read_text());UI=json.loads((HERE/'locales.json').read_text())
 INFO_ROOT=REPO/'source-materials/infotainment-2026-10-31-rev2'
-INFO=json.loads((INFO_ROOT/'internal/manifest.json').read_text());INFO_TEXT=json.loads((INFO_ROOT/'translations.json').read_text());INFO_SCOPE_TEXT=json.loads((INFO_ROOT/'scope-translations.json').read_text())
+INFO=json.loads((INFO_ROOT/'internal/manifest.json').read_text());INFO_TEXT=json.loads((INFO_ROOT/'translations.json').read_text())
 ROUTE='kontrolky-a-vystrazna-hlaseni';LANGS=['cs','en','de'];VERSION='20261031-brand-tiles-v1'
 def esc(x):return html.escape(str(x),quote=True)
 def rel(target,page):return os.path.relpath(ROOT/target,page.parent).replace(os.sep,'/')+('/' if not Path(target).suffix else '')
@@ -182,10 +182,6 @@ def info_category(item):
  for key,needles in [('navigation',('navigation','navigace')),('radio',('radio-',)),('media',('media-',)),('phone',('phone-','telephone-','telefon-','sms-')),('app-connect',('mirrorlink','smartlink','app-connect','connect-'))]:
   if any(x in id for x in needles):return key
  return'other'
-def info_scope_text(scope_id,lang):
- scope=INFO['scopes'][scope_id];model=scope['model'];system=INFO_SCOPE_TEXT[scope_id][lang]
- labels={'cs':('Provedení','Systém'),'en':('Variant','System'),'de':('Ausführung','System')}[lang]
- return f'{labels[0]}: {model} · {labels[1]}: {system}'
 def infotainment_card(items,brand,lang,page):
  first=items[0];sid='infotainment-'+first['id'];aliases=''.join(f'<span class="wl-card-alias" id="infotainment-{i["id"]}" tabindex="-1"></span>'for i in items[1:]);t=INFO_TEXT[first['id']][lang];title=t['name']
  if len(items)>1:title+=' · '+{'cs':'více použití stejného symbolu','en':'multiple uses of the same symbol','de':'mehrere Verwendungen desselben Symbols'}[lang]
@@ -196,7 +192,7 @@ def infotainment_card(items,brand,lang,page):
   text=INFO_TEXT[i['id']][lang];kind={'infotainment-status':{'cs':'Informace o stavu','en':'Status information','de':'Statusinformation'},'infotainment-map-point':{'cs':'Bod nebo údaj mapy','en':'Map point or information','de':'Kartenpunkt oder Information'},'infotainment-traffic-information':{'cs':'Dopravní informace','en':'Traffic information','de':'Verkehrsinformation'}}.get(i.get('kind'),{'cs':'Ovládací symbol','en':'Control symbol','de':'Bediensymbol'})[lang]
   out+='<section class="wl-meaning-variant">'
   if len(items)>1:out+=f'<h5 class="wl-variant-name">{esc(text["name"])}</h5>'
-  out+=f'<p class="wl-status">{esc(kind)}</p><h6>'+esc({'cs':'Význam a funkce','en':'Meaning and function','de':'Bedeutung und Funktion'}[lang])+f'</h6><p>{esc(text["meaning"])}</p><p class="wl-info-scope">{esc(info_scope_text(i["scope_id"],lang))}</p></section>'
+  out+=f'<p class="wl-status">{esc(kind)}</p><h6>'+esc({'cs':'Význam a funkce','en':'Meaning and function','de':'Bedeutung und Funktion'}[lang])+f'</h6><p>{esc(text["meaning"])}</p></section>'
  out+='</div></article>';return out
 def infotainment_content(brand,lang,page):
  items=[i for i in INFO['items'] if INFO_BRANDS.get(INFO['scopes'][i['scope_id']]['brand'])==brand]

@@ -49,7 +49,6 @@
 .warning-lights .wl-info-category{margin:22px 0}
 .warning-lights .wl-info-category>h4{font:700 1.25rem/1.35 var(--js-font,Ubuntu,sans-serif);color:#111;margin:0;padding:10px 14px;border:1px solid #000;border-radius:4px;background:var(--js-brand)}
 .warning-lights .wl-infotainment-card .wl-symbol{background:#f4f4f4;border:1px solid #000}
-.warning-lights .wl-info-scope{margin-top:14px!important;padding-top:10px;border-top:1px solid #aaa;font-size:.875rem!important;line-height:1.45!important}
 .warning-lights .wl-card{border:1px solid #000;border-radius:var(--js-radius);background:var(--js-paper);min-width:0;overflow:hidden;scroll-margin-top:20px}
 .warning-lights .wl-card-head{display:flex;flex-direction:column;gap:10px;padding:16px;color:#111}
 .warning-lights summary::-webkit-details-marker{display:none}
