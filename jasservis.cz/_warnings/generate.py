@@ -302,6 +302,33 @@ def vin_content(lang):
   out+=f'<section class="vin-section vin-wmi"><h2>{esc(u["wmiTitle"])}</h2><p>{esc(u["wmi"].format(codes=", ".join(codes)))}</p></section><section class="vin-section"><h2>{esc(u["keyTitle"])}</h2><p>{esc(u["key"])}</p></section></section>'
  return out+'</div>'
 
+FUSE_SAFETY={
+ 'cs':{
+  'title':'Pojistka se znovu přepálila? Další výměnu již nezkoušejte.',
+  'paragraphs':[
+   'Pokud se nová pojistka předepsaného typu a proudové hodnoty znovu přepálí, další již nevkládejte. Nechte příčinu závady zjistit v odborném servisu. Může jít například o zkrat, přetížení elektrického obvodu nebo závadu připojeného zařízení.',
+   'Nikdy nepoužívejte „silnější“ pojistku s vyšší hodnotou v ampérech. Pojistky neopravujte ani nepřemosťujte drátem nebo jiným předmětem.',
+   'Takový zásah narušuje ochranu elektrického obvodu a může způsobit přehřátí a poškození kabeláže, konektorů či elektronických součástí. V krajním případě hrozí požár vozidla.',
+   'Náhradní pojistka musí vždy odpovídat typu, rozměrům a proudové hodnotě předepsaným výrobcem vozidla.']},
+ 'en':{
+  'title':'Has the fuse blown again? Do not try another replacement.',
+  'paragraphs':[
+   'If a new fuse of the specified type and current rating blows again, do not insert another one. Have the cause of the fault identified by a qualified workshop. Possible causes include a short circuit, an overloaded electrical circuit or a fault in a connected device.',
+   'Never use a “stronger” fuse with a higher ampere rating. Do not repair a fuse or bridge it with wire or any other object.',
+   'Doing so defeats the protection of the electrical circuit and can cause overheating and damage to wiring, connectors or electronic components. In an extreme case, the vehicle could catch fire.',
+   'A replacement fuse must always match the type, dimensions and current rating specified by the vehicle manufacturer.']},
+ 'de':{
+  'title':'Ist die Sicherung erneut durchgebrannt? Versuchen Sie keinen weiteren Austausch.',
+  'paragraphs':[
+   'Wenn eine neue Sicherung des vorgeschriebenen Typs und Nennstroms erneut durchbrennt, setzen Sie keine weitere ein. Lassen Sie die Störungsursache von einem Fachbetrieb feststellen. Mögliche Ursachen sind zum Beispiel ein Kurzschluss, eine Überlastung des Stromkreises oder ein Fehler eines angeschlossenen Geräts.',
+   'Verwenden Sie niemals eine „stärkere“ Sicherung mit höherem Amperewert. Sicherungen dürfen weder repariert noch mit Draht oder einem anderen Gegenstand überbrückt werden.',
+   'Ein solcher Eingriff setzt den Schutz des Stromkreises außer Kraft und kann zur Überhitzung sowie zu Schäden an Leitungen, Steckverbindungen oder elektronischen Bauteilen führen. Im Extremfall besteht Fahrzeugbrandgefahr.',
+   'Eine Ersatzsicherung muss stets dem vom Fahrzeughersteller vorgeschriebenen Typ, den Abmessungen und dem Nennstrom entsprechen.']}
+}
+def fuse_safety_content(lang):
+ u=FUSE_SAFETY[lang]
+ return '<aside class="fuse-safety" role="note"><h2>'+esc(u['title'])+'</h2>'+''.join('<p>'+esc(p)+'</p>' for p in u['paragraphs'])+'</aside>'
+
 ONLINE_SERVICES={
  'volkswagen':{'name':'Volkswagen','account':'Volkswagen ID','app':'Volkswagen','account_url':'https://www.myvolkswagen.net/cz/cs/myvolkswagen.html','help_url':'https://www.volkswagen.cz/technologie/konektivita/vw-connect','note':{
   'cs':'Podle provedení může vůz použít naskenování kódu, ověření dvěma klíči nebo zadání aktivačního kódu. Použijte pouze postup zobrazený pro váš vůz a infotainment.',
@@ -400,6 +427,7 @@ def main(lang,page):
   elif index==1:out+=online_services_content(lang)
   elif index==2:out+=warning_content(lang,page)
   else:
+   if topic_id=='pojistky':out+=fuse_safety_content(lang)
    for heading,text in d['topics'][index]:out+=f'<section class="driver-subtopic"><h2>{esc(heading)}</h2><p>{esc(text)}</p></section>'
   out+='</div></details>'
  out+='</div></section></main>'

@@ -1064,6 +1064,7 @@ def check_online_services(audit):
         audit.check(text.count('<details class="driver-topic"') == 8, "online_services", f"{label}: expected eight equal main topic accordions")
         audit.check(text.find('id="identifikace-vozu-vin"') < text.find('id="prihlaseni-online-sluzby"') < text.find('id="kontrolky"'), "online_services", f"{label}: VIN, online services and warning-light topic order is wrong")
         audit.check(text.count('class="vin-brand-panel"') == 6, "online_services", f"{label}: expected six brand-aware VIN panels")
+        audit.check(text.count('class="fuse-safety"') == 1 and text.find('class="fuse-safety"') > text.find('id="pojistky"'), "online_services", f"{label}: fuse safety notice is missing or misplaced")
         audit.check('<details class="driver-topic" id="kontrolky"' in text, "online_services", f"{label}: warning lights must be a main topic accordion")
         audit.check('class="wl-intro"' not in text, "online_services", f"{label}: obsolete explanatory text remains below the brand tiles")
         audit.check('data-after-brand' not in text, "online_services", f"{label}: obsolete per-topic brand gating remains")
