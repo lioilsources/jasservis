@@ -214,12 +214,10 @@ def infotainment_content(brand,lang,page):
 
 def catalog_content(lang,page):
  u=UI[lang]
- messages={k:u[k] for k in ['brands','overview','count','empty','missingBrand','preset']}
- vin_note={'cs':'Vyobrazení kontrolky se nemusí shodovat s konkrétním modelem nebo výbavou. Pro přesné určení jejího významu a funkce je nutné ověření podle VIN vozidla, zobrazeného hlášení a příslušného návodu k obsluze.','en':'The warning-light graphic may differ for a specific model or equipment version. Its exact meaning and function must be verified using the vehicle VIN, the displayed message and the corresponding owner’s manual.','de':'Die Darstellung der Kontrollleuchte kann je nach Modell oder Ausstattung abweichen. Bedeutung und Funktion müssen anhand der Fahrzeug-Identifizierungsnummer (VIN), der angezeigten Meldung und der zugehörigen Betriebsanleitung genau geprüft werden.'}[lang]
+ messages={'brands':u['brands']}
  out=f'<div class="driver-catalog"><script type="application/json" id="wl-messages">'+json.dumps(messages,ensure_ascii=False).replace('</','<\\/')+'</script><div class="wl-brand-tiles" role="group" aria-label="'+esc(u['brand'])+'">'
  out+=''.join(f'<button type="button" class="wl-brand-tile" data-brand="{brand}" aria-pressed="false" aria-controls="prehled-kontrolek">{esc(BRAND_TILE_LABELS[lang][brand])}</button>'for brand in u['brands'])+'</div><noscript><p>'+esc(u['nojs'])+'</p></noscript>'
- search_label={'cs':'Hledat v otevřené značce','en':'Search within the selected brand','de':'In der ausgewählten Marke suchen'}[lang]
- out+=f'<section id="prehled-kontrolek" class="wl-results" aria-labelledby="wl-results-title" hidden><h2 id="wl-results-title" tabindex="-1">{esc(u["overview"])}</h2><p class="wl-vin-note">{esc(vin_note)}</p><label class="wl-brand-search">{esc(search_label)}<input type="search" id="wl-search" autocomplete="off"></label><p class="wl-search-empty" hidden>{esc(u["empty"])}</p>'
+ out+='<section id="prehled-kontrolek" class="wl-results" tabindex="-1" hidden>'
  for brand,bname in u['brands'].items():
   entries=[i for i in CAT['items'] if any(s['brand']==brand for s in i['scopes'])]
   if not entries:continue

@@ -86,14 +86,7 @@
 #warning-lights details[open]>summary .wl-open>span{transform:rotate(225deg);margin-bottom:-4px}
 /* Compact results landing: the selected brand, icons and names share the first view. */
 #warning-lights .wl-results{scroll-margin-top:var(--wl-anchor-offset,12px)}
-#warning-lights .wl-results>h2{font-size:1.25rem;line-height:1.3;margin:0 0 4px}
-#warning-lights .wl-vin-note{max-width:82ch;margin:8px 0 14px;padding:12px 14px;border:1px solid #000;border-left:4px solid var(--js-brand);background:var(--js-muted);font-size:1rem;line-height:1.5}
-#warning-lights .wl-brand-search{max-width:520px;margin:0 0 18px}
-#warning-lights .wl-brand-search input{margin-top:6px}
-#warning-lights .wl-search-empty{padding:12px 14px;border:1px solid #000;background:var(--js-muted)}
 #warning-lights .wl-results>.wl-group{margin-top:12px}
-
-#warning-lights #wl-results-title:focus{outline:none}
 /* Model evidence, shared pictograms and brand groups; all rules stay inside this page. */
 #warning-lights .wl-filters:not([hidden]){grid-template-columns:repeat(3,minmax(0,1fr));align-items:end}
 #warning-lights .wl-filters>label:first-child{grid-column:span 2}
