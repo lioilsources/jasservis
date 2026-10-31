@@ -1070,7 +1070,11 @@ def check_online_services(audit):
         audit.check(text.count('class="vin-brand-panel"') == 6, "online_services", f"{label}: expected six brand-aware VIN panels")
         audit.check(text.count('class="fuse-safety"') == 1 and text.find('class="fuse-safety"') > text.find('id="pojistky"'), "online_services", f"{label}: fuse safety notice is missing or misplaced")
         audit.check(text.count('class="fuse-swatch ') == 13 and text.count('class="fuse-colour-guide"') == 1, "online_services", f"{label}: fuse colour guide must contain 13 documented rows")
-        audit.check(text.count('class="tyre-code-token"') == 7 and text.count('class="tyre-pressure-note"') == 1, "online_services", f"{label}: tyre code or pressure guidance is incomplete")
+        audit.check('ATO/ATC' in text and text.count('class="tyre-code-token"') == 7 and text.count('class="tyre-inner-block ') == 3 and text.count('tyre-pressure-note"') == 1, "online_services", f"{label}: fuse-family or tyre inner-block guidance is incomplete")
+        tyre_start = text.find('<details class="driver-topic" id="tlak-pneumatik"')
+        tyre_end = text.find('<details class="driver-topic"', tyre_start + 1)
+        tyre_html = text[tyre_start:tyre_end] if tyre_start >= 0 and tyre_end > tyre_start else ""
+        audit.check('class="driver-subtopic"' not in tyre_html and ('TPMS' in tyre_html or {'cs':'Kontrolní systém tlaku','en':'tyre-pressure monitoring system','de':'Reifendruckkontrollsystem'}[lang] in tyre_html), "online_services", f"{label}: legacy repeated tyre paragraphs remain or TPMS guidance is missing")
         oil_start = text.find('<details class="driver-topic" id="oleje"')
         oil_end = text.find('<details class="driver-topic"', oil_start + 1)
         oil_html = text[oil_start:oil_end] if oil_start >= 0 and oil_end > oil_start else ""
@@ -1078,7 +1082,7 @@ def check_online_services(audit):
         bonnet_notes = {"cs": "po zavření kapoty", "en": "after the bonnet has been closed", "de": "nach dem Schließen der Motorhaube"}
         audit.check(oil_html.count('class="oil-section"') == 10 and oil_html.count('class="oil-exchange-note"') == 1, "online_services", f"{label}: oil guidance must contain ten collapsed chapters and one exchange conclusion")
         audit.check('<details class="oil-section" open' not in oil_html and oil_html.count('class="oil-standards-table"') == 1 and oil_html.count('<td data-label=') >= 30, "online_services", f"{label}: oil chapters must start closed and include the ten-row responsive standards table")
-        audit.check(oil_titles[lang] in oil_html and 'DPF' in oil_html and bonnet_notes[lang] in oil_html and oil_html.count('VW 506 01') >= 2, "online_services", f"{label}: rising-level, Audi bonnet or standard-exception guidance is incomplete")
+        audit.check(oil_titles[lang] in oil_html and 'DPF' in oil_html and bonnet_notes[lang] in oil_html and 'data-brand-only="audi" hidden' in oil_html and oil_html.count('VW 506 01') >= 2, "online_services", f"{label}: rising-level, Audi-only bonnet or standard-exception guidance is incomplete")
         audit.check('VW 508 00' in oil_html and 'VW 509 00' in oil_html and 'VW 511 00' in oil_html and 'LongLife' in oil_html, "online_services", f"{label}: oil standards or trade-name guidance is incomplete")
         coolant_start = text.find('<div class="coolant-guide">')
         coolant_end = text.find('<details class="driver-topic"', coolant_start + 1)
@@ -1095,7 +1099,8 @@ def check_online_services(audit):
         audit.check('<details class="service-section" open' not in service_html and service_html.count('class="service-table ') == 5, "online_services", f"{label}: service subtopics must start closed and include five responsive tables")
         audit.check(service_html.find('class="service-intro"') < service_html.find('class="service-recommendation"') < service_html.find('class="service-accordion"'), "online_services", f"{label}: service introduction, recommendation and accordion order is wrong")
         audit.check(recommendation in service_html and all(code in service_html for code in ('QI0','QI1','QI2','QI3','QI4','QI6','QG0','QG1','QG2')), "online_services", f"{label}: recommendation or QI/QG reference values are incomplete")
-        audit.check(all(model in service_html for model in ('Volkswagen ID.','Enyaq/Elroq','Born/Tavascan','Q4 e-tron','Q8 e-tron','e-tron GT')), "online_services", f"{label}: electric and hybrid model-group exceptions are incomplete")
+        two_years = {"cs":"nejpozději každé 2 roky, bez omezení počtem najetých kilometrů", "en":"no later than every 2 years, without a mileage limit", "de":"spätestens alle 2 Jahre eine regelmäßige Serviceinspektion vorgeschrieben, ohne Kilometerbegrenzung"}[lang]
+        audit.check(all(model in service_html for model in ('Volkswagen ID.','Enyaq/Elroq','Born/Tavascan','Q4 e-tron','Q8 e-tron','e-tron GT')) and two_years in service_html, "online_services", f"{label}: electric and hybrid model-group exceptions or the Enyaq/ID. two-year inspection are incomplete")
         brake_start = text.find('<details class="driver-topic" id="brzdova-kapalina"')
         brake_end = text.find('</div></section></main>', brake_start)
         brake_html = text[brake_start:brake_end] if brake_start >= 0 and brake_end > brake_start else ""
@@ -1103,14 +1108,18 @@ def check_online_services(audit):
         audit.check('<details class="brake-fluid-section" open' not in brake_html and brake_html.count('class="brake-fluid-table ') == 2, "online_services", f"{label}: brake-fluid subtopics must start closed and include two responsive tables")
         audit.check(brake_html.find('class="brake-fluid-accordion"') < brake_html.find('class="brake-fluid-safety"'), "online_services", f"{label}: brake-fluid safety warning must follow the accordion")
         audit.check('VW 501 14' in brake_html and 'DOT 4' in brake_html and '180 °C' in brake_html and all(number in brake_html for number in ('B 000 750 M1','B 000 750 M2','B 000 750 M3')), "online_services", f"{label}: brake-fluid specifications, boiling-point guidance or genuine pack numbers are incomplete")
+        brake_plan = {"cs":"Vybrané modely a servisní plány", "en":"Selected models and service schedules", "de":"Ausgewählte Modelle und Servicepläne"}[lang]
+        audit.check(brake_plan in brake_html, "online_services", f"{label}: brake-fluid first-three-year regime is incorrectly limited to older vehicles")
         emissions_start = text.find('<details class="driver-topic" id="cisteni-vyfukovych-plynu"')
         emissions_end = text.find('<details class="driver-topic"', emissions_start + 1)
         emissions_html = text[emissions_start:emissions_end] if emissions_start >= 0 and emissions_end > emissions_start else ""
         audit.check(emissions_html.count('class="emissions-section"') == 7 and '<details class="emissions-section" open' not in emissions_html, "online_services", f"{label}: emissions guidance must contain seven initially closed subtopics")
         audit.check(emissions_html.count('class="emissions-table ') == 2 and emissions_html.count('<td data-label=') == 12, "online_services", f"{label}: emissions guidance must contain both responsive tables")
         audit.check(all(value in emissions_html for value in ('60 km/h','2,000 rpm' if lang == 'en' else '2.000 U/min' if lang == 'de' else '2 000 ot./min.','80 km/h','20–40','250,000 km' if lang == 'en' else '250.000 km' if lang == 'de' else '250 000 km','ISO 22241-1','AUS 32','32.5%' if lang == 'en' else '32,5','67.5%' if lang == 'en' else '67,5','30')), "online_services", f"{label}: emissions technical values or qualifications are incomplete")
-        start_lock = {"cs": "pouhé dolití AdBlue nestačí", "en": "topping up AdBlue alone is not sufficient", "de": "reicht das Nachfüllen von AdBlue"}[lang]
-        audit.check('class="emissions-heat"' in emissions_html and 'class="emissions-fluid-warning"' in emissions_html and 'class="emissions-start-lock"' in emissions_html and start_lock in emissions_html and 'DPF' in emissions_html and 'GPF/OPF' in emissions_html and 'SCR' in emissions_html, "online_services", f"{label}: emissions safety, diagnostic start-enabling or system distinctions are incomplete")
+        start_lock = {"cs": "Samotné vyčerpání AdBlue neznamená automaticky", "en": "AdBlue depletion alone does not automatically", "de": "Das Aufbrauchen von AdBlue allein bedeutet nicht automatisch"}[lang]
+        dpf_fault = {"cs":"kontrolka závady motoru nebo EPC", "en":"engine fault or EPC warning", "de":"Motorstörungs- oder EPC-Warnung"}[lang]
+        fuel_reserve = {"cs":"kontrolka rezervy paliva", "en":"fuel-reserve warning", "de":"Kraftstoffreserve"}[lang]
+        audit.check('class="emissions-heat"' in emissions_html and 'class="emissions-fluid-warning"' in emissions_html and 'class="emissions-start-lock"' in emissions_html and start_lock in emissions_html and dpf_fault in emissions_html and fuel_reserve in emissions_html and emissions_html.count('30') >= 2 and 'DPF' in emissions_html and 'GPF/OPF' in emissions_html and 'SCR' in emissions_html, "online_services", f"{label}: emissions safety, AdBlue recognition, DPF fault symptoms or fuel-reserve distinction are incomplete")
         fuels_start = text.find('<details class="driver-topic" id="pohonne-hmoty"')
         fuels_end = text.find('<details class="driver-topic"', fuels_start + 1)
         fuels_html = text[fuels_start:fuels_end] if fuels_start >= 0 and fuels_end > fuels_start else ""
@@ -1124,7 +1133,10 @@ def check_online_services(audit):
         audit.check(washer_html.count('class="washer-section"') == 7 and '<details class="washer-section" open' not in washer_html, "online_services", f"{label}: washer-fluid guidance must contain seven initially closed subtopics")
         audit.check(washer_html.count('class="washer-table"') == 1 and washer_html.count('<td data-label=') == 6, "online_services", f"{label}: washer-fluid guidance must contain one responsive comparison table")
         audit.check(all(value in washer_html for value in ('1:1','−20 °C','−16 °C','isopropanol' if lang == 'cs' else 'isopropanol' if lang == 'en' else 'Isopropanol')), "online_services", f"{label}: washer-fluid temperature, dilution or composition details are incomplete")
-        audit.check('class="washer-forbidden"' in washer_html and 'class="washer-recommendation"' in washer_html, "online_services", f"{label}: washer-fluid prohibited-products or final recommendation warning is missing")
+        evaporation = {"cs":"odpařování tenkou vrstvu ochlazuje", "en":"evaporation cools the thin film", "de":"Verdunstung kühlt den dünnen Film"}[lang]
+        audit.check('class="washer-glass-safety"' in washer_html and evaporation in washer_html and 'class="washer-forbidden"' in washer_html and 'class="washer-recommendation"' in washer_html, "online_services", f"{label}: washer-fluid cold-glass safety, evaporation distinction, prohibited-products or final recommendation is missing")
+        audit.check('<meta name="robots" content="index, follow"' in text and 'noindex, nofollow' not in text, "online_services", f"{label}: public customer page must be indexable independently of preview blocking")
+        audit.check('WUA' in text and {'cs':'konkrétní vozidlo', 'en':'particular vehicle', 'de':'bestimmtes Fahrzeug'}[lang] in text, "online_services", f"{label}: Audi WUA example or brand-neutral data-sticker wording is missing")
         audit.check('<details class="driver-topic" id="kontrolky"' in text, "online_services", f"{label}: warning lights must be a main topic accordion")
         audit.check('class="wl-intro"' not in text, "online_services", f"{label}: obsolete explanatory text remains below the brand tiles")
         audit.check('data-after-brand' not in text, "online_services", f"{label}: obsolete per-topic brand gating remains")
