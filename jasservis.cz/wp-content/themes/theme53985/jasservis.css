@@ -1181,7 +1181,7 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
 @media(min-width:1200px) and (hover:hover) and (pointer:fine){
  #motopress-main .header .header_block_1>.language-contact-row{
   position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto auto minmax(0,1fr);
-  align-items:center;column-gap:10px;row-gap:0;min-height:64px;margin:0
+  align-items:center;column-gap:24px;row-gap:0;min-height:64px;margin:0
  }
  #motopress-main .header .header_block_1>.language-contact-row::before,
  #motopress-main .header .header_block_1>.language-contact-row::after{display:none}
@@ -1219,7 +1219,7 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
  }
 }
 @media(min-width:1600px) and (hover:hover) and (pointer:fine){
- #motopress-main .header .header_block_1>.language-contact-row{column-gap:14px}
+ #motopress-main .header .header_block_1>.language-contact-row{column-gap:24px}
  #motopress-main .header .header_block_1 #text-8>.textwidget>b>a,
  #motopress-main .header .header_block_1 .header-driver-advice{padding-inline:15px;font-size:14px}
  #motopress-main .header .header_block_1 .tel{gap:2px;padding-right:142px}
