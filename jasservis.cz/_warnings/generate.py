@@ -137,6 +137,11 @@ def source_label(m,lang):
  if m.get('host_kind')=='third-party-copy':label+=' · '+{'cs':'kopie vydání výrobce na jiném serveru','en':'manufacturer edition hosted by a third party','de':'von Dritten gehostete Herstellerausgabe'}[lang]
  return label
 def options(vals,allText):return '<option value="">'+esc(allText)+'</option>'+''.join(f'<option value="{esc(k)}">{esc(v)}</option>' for k,v in vals.items())
+def display_group(item,brand):
+ # Customer-facing Volkswagen overview keeps the DPF warning with engine items;
+ # the canonical technical group remains emissions in catalog.json.
+ if brand=='volkswagen' and item['id']=='vw-h':return 'motor'
+ return item['group']
 def card(items,brand,lang,page):
  u=UI[lang];first=items[0];sid=item_anchor(first,brand);signal_label={'cs':'Rozhodující signalizace','en':'Key indication','de':'Entscheidende Anzeige'}[lang]
  aliases=''.join(f'<span class="wl-card-alias" id="{item_anchor(i,brand)}" tabindex="-1"></span>'for i in items[1:])
@@ -171,7 +176,7 @@ def catalog_content(lang,page):
    else:existing.append(i)
   out+=f'<section class="wl-brand" data-brand="{brand}" aria-labelledby="brand-{brand}"><h2 id="brand-{brand}">{esc(bname)}</h2>'
   for group,gname in u['groups'].items():
-   grouped=[items for items in brand_grouped if items[0]['group']==group]
+   grouped=[items for items in brand_grouped if display_group(items[0],brand)==group]
    if grouped:
     if brand=='audi' and group=='motor':out+='<h3 class="wl-audi-section">'+esc({'cs':'Kontrolky vozidla','en':'Vehicle warning lights','de':'Fahrzeug-Kontrollleuchten'}[lang])+'</h3>'
     if brand=='audi' and group=='ovladani':out+='<h3 class="wl-audi-section">'+esc({'cs':'Symboly a hlášení MMI','en':'MMI symbols and messages','de':'MMI-Symbole und Meldungen'}[lang])+'</h3>'
