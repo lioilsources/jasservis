@@ -1176,6 +1176,55 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
  .header .nav__primary:not(.desktop-menu-collapsed) #topnav>li>.sub-menu{translate:var(--dropdown-shift-x,0px) 0}
 }
 
+/* Desktop contact bar: the two actions are centred against the complete bar,
+   independently of the wider contact cluster on the right. */
+@media(min-width:1200px) and (hover:hover) and (pointer:fine){
+ #motopress-main .header .header_block_1>.language-contact-row{
+  position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto auto minmax(0,1fr);
+  align-items:center;column-gap:10px;min-height:48px;margin:0
+ }
+ #motopress-main .header .header_block_1>.language-contact-row>.span6:first-child{
+  grid-column:1;min-width:0;padding-right:16px
+ }
+ #motopress-main .header .header_block_1>.language-contact-row>.span6:nth-child(2),
+ #motopress-main .header .header_block_1 .header_widget_2,
+ #motopress-main .header .header_block_1 #custom_html-3,
+ #motopress-main .header .header_block_1 #custom_html-3>.textwidget,
+ #motopress-main .header .header_block_1 #text-8,
+ #motopress-main .header .header_block_1 #text-8>.textwidget{display:contents}
+ #motopress-main .header .header_block_1 #text-8>.textwidget>b{
+  grid-column:2;display:flex;align-items:stretch;align-self:center
+ }
+ #motopress-main .header .header_block_1 #text-8>.textwidget>b>a,
+ #motopress-main .header .header_block_1 .header-driver-advice{
+  display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;
+  min-height:44px;padding:9px 12px;font:700 13px/24px var(--js-font);white-space:nowrap
+ }
+ #motopress-main .header .header_block_1 .header-driver-advice{grid-column:3;align-self:center}
+ #motopress-main .header .header_block_1 .tel{
+  grid-column:4;display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;
+  justify-self:stretch;gap:0 12px;min-width:0;padding-right:62px;text-align:right
+ }
+ #motopress-main .header .header_block_1 .tel .header-phone a{
+  display:flex;align-items:center;gap:4px;min-height:44px;padding:0;font-size:13px;line-height:20px;white-space:nowrap
+ }
+ #motopress-main .header .header_block_1 .tel .header-phone a span{font-size:inherit}
+ #motopress-main .header .header_block_1 .tel .header-hours{
+  flex:1 0 100%;margin:-6px 0 0;font-size:12px;line-height:18px;text-align:right;white-space:nowrap
+ }
+ #motopress-main .header .header_block_1>.language-contact-row>.language-switcher{
+  position:absolute;right:0;top:50%;margin:0;transform:translateY(-50%)
+ }
+}
+@media(min-width:1600px) and (hover:hover) and (pointer:fine){
+ #motopress-main .header .header_block_1>.language-contact-row{column-gap:14px}
+ #motopress-main .header .header_block_1 #text-8>.textwidget>b>a,
+ #motopress-main .header .header_block_1 .header-driver-advice{padding-inline:15px;font-size:14px}
+ #motopress-main .header .header_block_1 .tel{gap:0 16px;padding-right:72px}
+ #motopress-main .header .header_block_1 .tel .header-phone a{font-size:14px}
+ #motopress-main .header .header_block_1 .tel .header-hours{font-size:13px}
+}
+
 /* A second route into the shared warning-light catalogue.  It stays beside the
    existing booking action and retains a full 44px touch target. */
 .header .header-driver-advice{
