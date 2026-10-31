@@ -677,6 +677,137 @@
         "de": "Hersteller führt diese Ausgabe unter MY2024. Konkrete Ausstattung/Antrieb laut Fahrzeugunterlagen. Nicht belegt, dass diese Datei die ausdrücklich zugeordnete Grundlage der Ergänzung 01.24 ist; Ausgaben getrennt."
       },
       "portal_catalogue": "https://www.seat.com/owners/about-my-car/manuals"
+    },
+    "skoda-enyaq-2020-11-cs": {
+      "brand": "skoda",
+      "model": "Enyaq iV",
+      "generation": "5A",
+      "year": null,
+      "edition": "11.2020",
+      "lang": "CS",
+      "url": "https://autotrip.cz/wp-content/uploads/2023/01/Navod-k-obsluze-Skoda-Enyaq-iV-2020.pdf",
+      "bytes": 22024200,
+      "sha256": "65d1a27e117f5b0fba02c18dc5e4159267fa5fd9a660abf4520f7bd560c0f461",
+      "pages": 279,
+      "status": "selected-symbols-and-instructions-reviewed-not-complete",
+      "publisher": "ŠKODA AUTO a.s.",
+      "host_kind": "third-party-copy",
+      "research_filename": "skoda-enyaq-2020-11-cs.pdf",
+      "version": "V1, R8",
+      "market": "Česká republika",
+      "locale": "cs_CZ",
+      "publication_code": null,
+      "portal_catalogue": "https://manual.skoda-auto.com/005/cs-BZ/api/Editions?model=Enyaq_IV_5A",
+      "portal_catalogue_entry": "11-2020 / 5LG012715CE",
+      "source_note": {
+        "cs": "Kopie dokumentu výrobce hostovaná mimo server výrobce. Kód 5LG012715CE pochází ze samostatného záznamu oficiálního portálu; samotný soubor jej nedokládá.",
+        "en": "A manufacturer-authored document copy hosted outside the manufacturer server. The publication code 5LG012715CE comes from a separate official-portal catalogue entry; the file itself does not establish it.",
+        "de": "Kopie eines Herstellerdokuments außerhalb des Herstellerservers. Die Nummer 5LG012715CE stammt aus einem separaten Katalogeintrag des offiziellen Portals; die Datei selbst belegt sie nicht."
+      },
+      "model_year_note": {
+        "cs": "Vydání návodu 11.2020 není údaj o modelovém roku a neidentifikuje fotografovanou českou knihu se stranami 12–17.",
+        "en": "The 11.2020 manual edition is not a model-year statement and does not identify the photographed Czech book covering pp. 12–17.",
+        "de": "Die Ausgabe 11.2020 ist keine Modelljahresangabe und identifiziert nicht das fotografierte tschechische Buch mit S. 12–17."
+      }
+    },
+    "cupra-terramar-2025-11-cs": {
+      "brand": "cupra",
+      "model": "Terramar",
+      "generation": null,
+      "year": null,
+      "edition": "11.25",
+      "lang": "CS",
+      "url": "https://www.cupraofficial.cz/dam/files/download/e4373aafb1adbda5c5931e1df8d88175d96988c7/5a872a9f6545d115c8db636160aa2bc0/dd30ea02-c3b8-45cf-bf78-08c7620bd1b3/CUPRA-Terramar-(2025.11)-2-cs_CZ_v.2.pdf",
+      "bytes": 17889354,
+      "sha256": "05bb8e17050fcc5d9ac57af3570a46e041dc4c5e3fe7d8f54d85ae03f6a47379",
+      "pages": 438,
+      "publisher": "SEAT S.A.",
+      "host_kind": "manufacturer",
+      "part_number": "578012715AC",
+      "reprint": "15.11.25",
+      "document_kind": "complete-owner-manual",
+      "status": "selected-symbols-and-instructions-reviewed-not-complete",
+      "checked": "2026-10-31",
+      "portal_catalogue": "https://www.cupraofficial.cz/servis-a-prislusenstvi/manualy/manualy-cupra-terramar",
+      "model_year_note": {
+        "cs": "Vydání 11.25 není automaticky modelový rok ani důkaz softwaru fotografovaného vozu. Platnost je omezena na tento český úplný návod a uvedenou výbavu.",
+        "en": "Edition 11.25 does not automatically establish a model year or the photographed vehicle software. Applicability is limited to this Czech full manual and the stated equipment.",
+        "de": "Die Ausgabe 11.25 belegt nicht automatisch ein Modelljahr oder den Softwarestand des fotografierten Fahrzeugs. Die Gültigkeit ist auf diese vollständige tschechische Anleitung und die genannte Ausstattung begrenzt."
+      }
+    },
+    "cupra-terramar-2025-11-cs-readme": {
+      "brand": "cupra",
+      "model": "Terramar",
+      "generation": null,
+      "year": null,
+      "edition": "11.25",
+      "lang": "CS",
+      "url": "https://www.cupraofficial.cz/dam/files/download/0337bdeee8226f64eff9378c4c1c541127d6dd92/550967ef7504266b8286943dec6b77a3/109849d5-599e-41af-ae85-51ff61765b43/CUPRA-Terramar-README-(2025.11)-1-cs_CZ.pdf",
+      "bytes": 4452199,
+      "sha256": "b7b564df179ff0a62eded868758caaa6b3d5adfcf125c48eae80613d90c931b3",
+      "pages": 82,
+      "publisher": "SEAT S.A.",
+      "host_kind": "manufacturer",
+      "part_number": "578012815AC",
+      "reprint": "15.11.25",
+      "document_kind": "readme-quick-reference",
+      "status": "overview-reviewed-not-complete",
+      "checked": "2026-10-31",
+      "portal_catalogue": "https://www.cupraofficial.cz/servis-a-prislusenstvi/manualy/manualy-cupra-terramar",
+      "source_note": {
+        "cs": "Samostatný stručný README; není náhradou úplného návodu 578012715AC.",
+        "en": "Separate condensed README; it does not replace full manual 578012715AC.",
+        "de": "Separate Kurzfassung README; kein Ersatz für die vollständige Anleitung 578012715AC."
+      }
+    },
+    "seat-tarraco-2023-06-de": {
+      "brand": "seat",
+      "model": "Tarraco",
+      "generation": "KN2",
+      "year": null,
+      "edition": "06.2023",
+      "lang": "DE",
+      "url": "https://www.seat.at/dam/files/0e8c4c66b8f67977e3f368ae35b819dffb898609/0a36c8cd39639f9f352d34b4fe7a4fe8/38e8a194-5b74-4c84-acec-c0afb518e044/seat-tarraco-202306-dede.pdf",
+      "bytes": 20768202,
+      "sha256": "20692a45d5bf61fcf6e4c010e1b1b3adad14029e752918709861a1947ecfec23",
+      "pages": 436,
+      "publisher": "SEAT S.A.",
+      "host_kind": "manufacturer",
+      "part_number": "5FJ012705BR",
+      "reprint": "15.06.23",
+      "document_kind": "complete-owner-manual",
+      "status": "selected-symbols-and-instructions-reviewed-not-complete",
+      "checked": "2026-10-31",
+      "portal_catalogue": "https://www.seat.at/service-und-zubehoer/onlinedienste/bedienungsanleitungen/tarraco",
+      "model_year_note": {
+        "cs": "Německé vydání 06.2023 není automaticky modelový rok. Není prokázáno, že právě tento soubor je výslovně určeným základem dodatku 01.2024; dokumenty se vedou samostatně.",
+        "en": "German edition 06.2023 does not automatically establish a model year. It is not proven to be the explicitly designated base for the 01.2024 supplement; the documents remain separate.",
+        "de": "Die deutsche Ausgabe 06.2023 belegt nicht automatisch ein Modelljahr. Sie ist nicht als ausdrücklich zugeordnete Grundlage der Ergänzung 01.2024 nachgewiesen; die Dokumente werden getrennt geführt."
+      }
+    },
+    "seat-tarraco-2024-01-de-supplement": {
+      "brand": "seat",
+      "model": "Tarraco",
+      "generation": "KN2",
+      "year": null,
+      "edition": "01.2024",
+      "lang": "DE",
+      "url": "https://www.seat.at/dam/files/7494713ee5354a80725467e4a70434d58045fb6d/5829408a8f6f0e6d7900d91f2ae57ad5/f0666ce4-8c19-40c1-9dbf-7f756deb0ef0/tarraco0124de.pdf",
+      "bytes": 835744,
+      "sha256": "d95560758b52adc8e38ac6827399ff92b6aa839f1ae34db73f376f278b25cfc9",
+      "pages": 20,
+      "publisher": "SEAT S.A.",
+      "host_kind": "manufacturer",
+      "part_number": "5FJ012705FE",
+      "document_kind": "supplement",
+      "status": "complete-supplement-reviewed-base-link-not-proven",
+      "checked": "2026-10-31",
+      "portal_catalogue": "https://www.seat.at/service-und-zubehoer/onlinedienste/bedienungsanleitungen/tarraco",
+      "source_note": {
+        "cs": "Dodatek neuvádí kód 5FJ012705BR ani vydání 06.23 a neříká, že nahrazuje či doplňuje tento konkrétní základ. Používá se pouze pro vlastní témata dodatku.",
+        "en": "The supplement names neither 5FJ012705BR nor edition 06.23 and does not state that it replaces or amends that particular base manual. It is used only for its own topics.",
+        "de": "Die Zusatzanleitung nennt weder 5FJ012705BR noch die Ausgabe 06.23 und erklärt nicht, diese konkrete Grundanleitung zu ersetzen oder zu ergänzen. Sie wird nur für ihre eigenen Themen verwendet."
+      }
     }
   },
   "items": [
@@ -5885,9 +6016,95 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-cs",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "CS",
+          "printed_pages": [
+            19,
+            172,
+            173
+          ],
+          "pdf_pages": [
+            21,
+            174,
+            175
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state and driver instruction reviewed in the manufacturer-authored Czech PDF copy; edition identity read from the file; no applicability inferred for the unidentified photographed book.",
+            "document_sha256": "65d1a27e117f5b0fba02c18dc5e4159267fa5fd9a660abf4520f7bd560c0f461",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2025-11-cs",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": null,
+          "generation": null,
+          "edition": "11.25",
+          "language": "CS",
+          "printed_pages": [
+            14,
+            216,
+            218
+          ],
+          "pdf_pages": [
+            16,
+            218,
+            220
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact Czech text, symbol shape, colour/state and driver instruction read in the official complete 11.25 manual; README used only as a separate overview and no applicability inferred from the photographed vehicle.",
+            "document_sha256": "05bb8e17050fcc5d9ac57af3570a46e041dc4c5e3fe7d8f54d85ae03f6a47379",
+            "checked": "2026-10-31",
+            "graphic_printed_pages": [
+              14
+            ]
+          }
+        },
+        {
+          "manual": "seat-tarraco-2023-06-de",
+          "brand": "seat",
+          "model": "Tarraco",
+          "model_year": null,
+          "generation": "KN2",
+          "edition": "06.2023",
+          "language": "DE",
+          "printed_pages": [
+            212
+          ],
+          "pdf_pages": [
+            214
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact symbol shape, colour/state and complete associated German instructions visually and textually compared in the official 06.2023 manual. No inference from the separate 01.2024 supplement or English edition.",
+            "document_sha256": "20692a45d5bf61fcf6e4c010e1b1b3adad14029e752918709861a1947ecfec23",
+            "checked": "2026-10-31",
+            "graphic_printed_pages": [
+              212
+            ]
+          }
         }
       ],
-      "checked": "2026-10-30",
+      "checked": "2026-10-31",
       "review_status": "preview-awaiting-automotive-review",
       "graphic_path": "wp-content/uploads/kontrolky/lane-assist-zelena.svg",
       "graphic_source": {
@@ -6161,9 +6378,93 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-cs",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "CS",
+          "printed_pages": [
+            19,
+            172
+          ],
+          "pdf_pages": [
+            21,
+            174
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state and driver instruction reviewed in the manufacturer-authored Czech PDF copy; edition identity read from the file; no applicability inferred for the unidentified photographed book.",
+            "document_sha256": "65d1a27e117f5b0fba02c18dc5e4159267fa5fd9a660abf4520f7bd560c0f461",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2025-11-cs",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": null,
+          "generation": null,
+          "edition": "11.25",
+          "language": "CS",
+          "printed_pages": [
+            13,
+            216,
+            218
+          ],
+          "pdf_pages": [
+            15,
+            218,
+            220
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact Czech text, symbol shape, colour/state and driver instruction read in the official complete 11.25 manual; README used only as a separate overview and no applicability inferred from the photographed vehicle.",
+            "document_sha256": "05bb8e17050fcc5d9ac57af3570a46e041dc4c5e3fe7d8f54d85ae03f6a47379",
+            "checked": "2026-10-31",
+            "graphic_printed_pages": [
+              13
+            ]
+          }
+        },
+        {
+          "manual": "seat-tarraco-2023-06-de",
+          "brand": "seat",
+          "model": "Tarraco",
+          "model_year": null,
+          "generation": "KN2",
+          "edition": "06.2023",
+          "language": "DE",
+          "printed_pages": [
+            212
+          ],
+          "pdf_pages": [
+            214
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact symbol shape, colour/state and complete associated German instructions visually and textually compared in the official 06.2023 manual. No inference from the separate 01.2024 supplement or English edition.",
+            "document_sha256": "20692a45d5bf61fcf6e4c010e1b1b3adad14029e752918709861a1947ecfec23",
+            "checked": "2026-10-31",
+            "graphic_printed_pages": [
+              212
+            ]
+          }
         }
       ],
-      "checked": "2026-10-30",
+      "checked": "2026-10-31",
       "review_status": "preview-awaiting-automotive-review",
       "graphic_path": "wp-content/uploads/kontrolky/lane-assist-zluta.svg",
       "graphic_source": {
@@ -6495,9 +6796,35 @@
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
           }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-cs",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "CS",
+          "printed_pages": [
+            19,
+            168
+          ],
+          "pdf_pages": [
+            21,
+            170
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state and driver instruction reviewed in the manufacturer-authored Czech PDF copy; edition identity read from the file; no applicability inferred for the unidentified photographed book.",
+            "document_sha256": "65d1a27e117f5b0fba02c18dc5e4159267fa5fd9a660abf4520f7bd560c0f461",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          }
         }
       ],
-      "checked": "2026-10-29",
+      "checked": "2026-10-31",
       "review_status": "preview-awaiting-automotive-review",
       "graphic_path": "wp-content/uploads/kontrolky/acc-zelena.svg",
       "graphic_source": {
@@ -6640,9 +6967,35 @@
             "en": "This Q4 edition displays break recommendation with a cup and evaluates steering behaviour. The separately verified 07.2024 edition uses a different eye depiction; graphics and instructions are not conflated.",
             "de": "Diese Q4-Ausgabe zeigt die Pausenempfehlung mit einer Tasse und wertet das Lenkverhalten aus. Die separat geprüfte Ausgabe 07.2024 verwendet eine andere Augendarstellung; Grafiken und Anleitungen werden nicht vermischt."
           }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-cs",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "CS",
+          "printed_pages": [
+            20,
+            178
+          ],
+          "pdf_pages": [
+            22,
+            180
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state and driver instruction reviewed in the manufacturer-authored Czech PDF copy; edition identity read from the file; no applicability inferred for the unidentified photographed book.",
+            "document_sha256": "65d1a27e117f5b0fba02c18dc5e4159267fa5fd9a660abf4520f7bd560c0f461",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          }
         }
       ],
-      "checked": "2026-10-29",
+      "checked": "2026-10-31",
       "review_status": "preview-awaiting-automotive-review",
       "graphic_path": "wp-content/uploads/kontrolky/fatigue-bila.svg",
       "graphic_source": {
@@ -7755,31 +8108,6 @@
           }
         },
         {
-          "manual": "skoda-enyaq-2020-11-de",
-          "brand": "skoda",
-          "model": "Enyaq iV",
-          "model_year": null,
-          "generation": "5A",
-          "edition": "11.2020",
-          "language": "DE",
-          "printed_pages": [
-            76,
-            79
-          ],
-          "pdf_pages": [
-            78,
-            81
-          ],
-          "powertrains": [
-            "elektricky"
-          ],
-          "verification": {
-            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
-            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
-            "level": "manufacturer-manual-third-party-copy"
-          }
-        },
-        {
           "manual": "vw-golf-2020-11-de",
           "brand": "volkswagen",
           "model": "Golf",
@@ -7890,7 +8218,7 @@
           }
         }
       ],
-      "checked": "2026-10-30",
+      "checked": "2026-10-31",
       "review_status": "preview-awaiting-automotive-review",
       "graphic_path": "wp-content/uploads/kontrolky/turn-signals-zelena.svg",
       "graphic_source": {
@@ -10633,7 +10961,7 @@
         "de": "In den genannten Ausgaben von Enyaq, Born und Terramar kennzeichnet das blaue A gemäß den jeweils eigenen Bedienhinweisen automatisch eingeschaltetes Fernlicht. Die neutrale Anzeige des eingeschalteten Assistenten ist ein anderer Zustand."
       },
       "action": {
-        "cs": "Sledujte protijedoucí i předjížděná vozidla a další účastníky. Podle potřeby dálková světla ručně vypněte; zakrytá kamera nebo špatně osvětlený účastník nemusí být správně rozpoznán.",
+        "cs": "Sledujte protijedoucí i vozidla jedoucí před vámi a další účastníky. Podle potřeby dálková světla ručně vypněte; zakrytá kamera nebo špatně osvětlený účastník nemusí být správně rozpoznán.",
         "en": "Watch oncoming/preceding vehicles and other road users. Switch main beam off manually when necessary; an obscured camera or poorly lit road user may not be recognised correctly.",
         "de": "Gegenverkehr, vorausfahrende Fahrzeuge und weitere Verkehrsteilnehmer beachten. Fernlicht nötigenfalls manuell ausschalten; verdeckte Kamera oder schlecht beleuchtete Teilnehmer können falsch erkannt werden."
       },
@@ -10717,9 +11045,35 @@
             "method": "Exact own-edition original overview colour/shape and referenced driver instructions independently compared; previously licensed standard graphic, not OEM artwork; no cross-brand/model inheritance.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375"
           }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-cs",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "CS",
+          "printed_pages": [
+            20,
+            76
+          ],
+          "pdf_pages": [
+            22,
+            78
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state and driver instruction reviewed in the manufacturer-authored Czech PDF copy; edition identity read from the file; no applicability inferred for the unidentified photographed book.",
+            "document_sha256": "65d1a27e117f5b0fba02c18dc5e4159267fa5fd9a660abf4520f7bd560c0f461",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          }
         }
       ],
-      "checked": "2026-10-29",
+      "checked": "2026-10-31",
       "review_status": "preview-awaiting-automotive-review",
       "graphic_path": "wp-content/uploads/kontrolky/high-beam-assist-modra.svg",
       "graphic_source": {
@@ -11093,19 +11447,19 @@
         "de": "Lenksäulenverriegelung – rotes Blinken"
       },
       "meaning": {
-        "cs": "U tohoto provedení nelze odemknout sloupek řízení.",
-        "en": "On this version, the steering column cannot be unlocked.",
-        "de": "Bei dieser Ausführung lässt sich die Lenksäule nicht entriegeln."
+        "cs": "Blikající červený symbol s příslušným hlášením označuje závadu zámku řízení.",
+        "en": "A flashing red symbol with the corresponding message indicates a steering-lock fault.",
+        "de": "Ein rot blinkendes Symbol mit zugehöriger Meldung kennzeichnet eine Störung der Lenkungsverriegelung."
       },
       "action": {
-        "cs": "Nepokračujte v jízdě a zajistěte odbornou pomoc. Vozidlo nenechte odtahovat na vlastních kolech.",
-        "en": "Do not continue driving and obtain professional assistance. Do not have the vehicle towed on its own wheels.",
-        "de": "Fahren Sie nicht weiter und holen Sie fachkundige Hilfe. Lassen Sie das Fahrzeug nicht auf eigenen Rädern abschleppen."
+        "cs": "Odstavte vozidlo, nepokračujte v jízdě a vyhledejte odbornou pomoc. Postupujte podle přesného hlášení konkrétního vozu.",
+        "en": "Stop the vehicle, do not continue driving and obtain professional assistance. Follow the exact message for the vehicle.",
+        "de": "Fahrzeug abstellen, nicht weiterfahren und fachkundige Hilfe in Anspruch nehmen. Die genaue Fahrzeugmeldung beachten."
       },
       "note": {
-        "cs": "Platí jen pro uvedená provedení a výbavu. Rozhoduje přesné hlášení a návod vašeho vozu.",
-        "en": "Only the listed versions and equipment are covered. Follow the exact message and your vehicle’s manual.",
-        "de": "Gilt nur für die aufgeführten Ausführungen und Ausstattungen. Maßgeblich sind die genaue Meldung und die Betriebsanleitung Ihres Fahrzeugs."
+        "cs": "Nezaměňujte s blikající žlutou závadou ani se žlutým stavem neodblokovaného zámku. U Enyaqu 11.2020 může po vypnutí zapalování přestat být možné zapalování znovu zapnout, zablokovat řízení nebo zapnout elektrické spotřebiče.",
+        "en": "Do not confuse this with the flashing amber fault or the amber lock-not-released state. On the 11.2020 Enyaq, switching the ignition off may then prevent restarting the ignition, locking the steering or operating electrical consumers.",
+        "de": "Nicht mit der gelb blinkenden Störung oder der gelben, nicht entriegelten Lenkungsverriegelung verwechseln. Beim Enyaq 11.2020 können nach dem Ausschalten der Zündung das erneute Einschalten, das Verriegeln der Lenkung und elektrische Verbraucher nicht mehr verfügbar sein."
       },
       "scopes": [
         {
@@ -11173,9 +11527,40 @@
             "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
             "level": "manufacturer-manual-third-party-copy"
           }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-cs",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "CS",
+          "printed_pages": [
+            17,
+            56
+          ],
+          "pdf_pages": [
+            19,
+            58
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state and driver instruction reviewed in the manufacturer-authored Czech PDF copy; edition identity read from the file; no applicability inferred for the unidentified photographed book.",
+            "document_sha256": "65d1a27e117f5b0fba02c18dc5e4159267fa5fd9a660abf4520f7bd560c0f461",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          },
+          "model_note": {
+            "cs": "Str. 56: červené blikání je závada zámku řízení; vůz odstavte a vyhledejte odborný servis.",
+            "en": "P. 56: red flashing is a steering-lock fault; stop the vehicle and seek a specialist workshop.",
+            "de": "S. 56: Rotes Blinken bedeutet Störung der Lenkungsverriegelung; Fahrzeug abstellen und Fachbetrieb aufsuchen."
+          }
         }
       ],
-      "checked": "2026-10-29",
+      "checked": "2026-10-31",
       "review_status": "preview-awaiting-automotive-review",
       "graphic_path": "wp-content/uploads/kontrolky/steering-alert-cervena.svg",
       "graphic_source": {
@@ -11601,34 +11986,9 @@
             "document_sha256": "de35e6e62c57b969e8a73d660ae326aae46b87c2db33176571ecef997e03ce4d",
             "level": "manufacturer-manual-third-party-copy"
           }
-        },
-        {
-          "manual": "skoda-enyaq-2020-11-de",
-          "brand": "skoda",
-          "model": "Enyaq iV",
-          "model_year": null,
-          "generation": "5A",
-          "edition": "11.2020",
-          "language": "DE",
-          "printed_pages": [
-            60,
-            61
-          ],
-          "pdf_pages": [
-            62,
-            63
-          ],
-          "powertrains": [
-            "elektricky"
-          ],
-          "verification": {
-            "method": "visual-symbol-colour-and-instruction-review; manufacturer-authored PDF copy; edition cross-checked against official portal catalogue",
-            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
-            "level": "manufacturer-manual-third-party-copy"
-          }
         }
       ],
-      "checked": "2026-10-29",
+      "checked": "2026-10-31",
       "review_status": "preview-awaiting-automotive-review",
       "graphic_path": "wp-content/uploads/kontrolky/steering-alert-zluta.svg",
       "graphic_source": {
@@ -13445,26 +13805,26 @@
       "graphic": "headlight-range",
       "color": "zluta",
       "group": "osvetleni",
-      "state": "source-dependent",
+      "state": "steady",
       "name": {
         "cs": "Regulace dosahu světlometů",
         "en": "Headlight range control",
         "de": "Leuchtweitenregelung"
       },
       "meaning": {
-        "cs": "U uvedeného provedení jde o závadu systému regulace dosahu světlometů.",
-        "en": "A headlight range control fault has been detected.",
-        "de": "Eine Störung der Leuchtweitenregelung wurde erkannt."
+        "cs": "Žlutá kontrolka v uvedeném obecném podkladu Volkswagen UK označuje závadu systému regulace dosahu světlometů.",
+        "en": "The amber indicator in the cited general Volkswagen UK source indicates a fault in the headlight range control system.",
+        "de": "Die gelbe Kontrollleuchte in der genannten allgemeinen Volkswagen-UK-Quelle kennzeichnet eine Störung der Leuchtweitenregelung."
       },
       "action": {
-        "cs": "Respektujte hlášení a objednejte odbornou kontrolu osvětlení.",
-        "en": "Follow the message and arrange professional inspection to restore correct light distribution. Avoid dazzling other road users.",
-        "de": "Beachten Sie die Meldung und lassen Sie das System zur Wiederherstellung der richtigen Lichtverteilung prüfen. Vermeiden Sie das Blenden anderer Verkehrsteilnehmer."
+        "cs": "Kontaktujte autorizovaný servis.",
+        "en": "Contact an authorised repairer.",
+        "de": "Kontaktieren Sie einen autorisierten Reparaturbetrieb."
       },
       "note": {
-        "cs": "Svícení. Nejde o automatické určení vadného snímače výšky ani o shodný výklad všech variant adaptivního osvětlení.",
-        "en": "Do not automatically equate this symbol with a failed bulb or a universal adaptive lighting fault.",
-        "de": "Setzen Sie dieses Symbol nicht automatisch mit einem Lampenausfall oder jeder Störung adaptiven Lichts gleich."
+        "cs": "Trvalý žlutý svit; obecná stránka neuvádí blikání. Jde samostatně o regulaci dosahu, nikoli o obecnou závadu osvětlení nebo automaticky vadný snímač výšky. Zdroj neurčuje model ani vydání návodu.",
+        "en": "Steady amber illumination; the general page does not state a flashing variant. This is specifically headlight range control, not a generic lighting fault or automatic proof of a failed level sensor. The source identifies no model or manual edition.",
+        "de": "Dauerhaft gelbes Leuchten; die allgemeine Seite nennt keine Blinkvariante. Es geht ausdrücklich um die Leuchtweitenregelung, nicht um eine allgemeine Lichtstörung oder automatisch um einen defekten Niveausensor. Die Quelle nennt weder Modell noch Anleitungsausgabe."
       },
       "scopes": [
         {
@@ -13473,14 +13833,12 @@
           "model_year": null,
           "generation": null,
           "edition": null,
-          "powertrains": [
-            "spalovaci"
-          ],
+          "powertrains": [],
           "url": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/headlight-range-control.html",
           "scope": {
-            "cs": "Příklad systému Volkswagen se spalovacím motorem z uvedeného přehledu pro britský trh. Model, generace a modelový rok nejsou zdrojem vymezeny. Platnost pro jiné značky ani pro konkrétní vůz tím není potvrzena.",
-            "en": "Example from the official Volkswagen UK overview, limited to the stated combustion-engine application. The source does not specify a model, generation or model year. Applicability to another brand or a specific vehicle is not established.",
-            "de": "Beispiel aus der offiziellen Volkswagen-UK-Übersicht, beschränkt auf den angegebenen Verbrenner-Anwendungsfall. Die Quelle nennt kein Modell, keine Generation und kein Modelljahr. Die Gültigkeit für andere Marken oder ein konkretes Fahrzeug ist nicht belegt."
+            "cs": "Obecný podklad Volkswagen UK pro britský trh. Zdroj neurčuje model, generaci, modelový rok, pohon ani výbavu; platnost pro konkrétní vůz musí potvrdit jeho návod.",
+            "en": "General Volkswagen UK source for the UK market. It identifies no model, generation, model year, powertrain or equipment; the vehicle manual must establish applicability to a specific vehicle.",
+            "de": "Allgemeine Quelle von Volkswagen UK für den britischen Markt. Sie nennt weder Modell, Generation, Modelljahr, Antrieb noch Ausstattung; für ein konkretes Fahrzeug muss die Betriebsanleitung die Gültigkeit belegen."
           }
         }
       ],
@@ -13495,8 +13853,8 @@
         "sha256": "75ca90f0cb477952a098bb599565a03af616f1e3011f3bc05d3484502bbd267a",
         "file": "wp-content/uploads/kontrolky/headlight-range-zluta.svg"
       },
-      "checked": "2026-10-29",
-      "review_status": "generic-Volkswagen-UK-not-model-year-verified",
+      "checked": "2026-10-31",
+      "review_status": "official-general-Volkswagen-UK-model-manual-evidence-pending",
       "graphic_path": "wp-content/uploads/kontrolky/headlight-range-zluta.svg",
       "alt": {
         "cs": "Regulace dosahu světlometů — žlutý symbol",
@@ -14283,9 +14641,35 @@
             "spalovaci",
             "phev"
           ]
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-cs",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "CS",
+          "printed_pages": [
+            20,
+            168
+          ],
+          "pdf_pages": [
+            22,
+            170
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state and driver instruction reviewed in the manufacturer-authored Czech PDF copy; edition identity read from the file; no applicability inferred for the unidentified photographed book.",
+            "document_sha256": "65d1a27e117f5b0fba02c18dc5e4159267fa5fd9a660abf4520f7bd560c0f461",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          }
         }
       ],
-      "checked": "2026-10-29",
+      "checked": "2026-10-31",
       "review_status": "preview-awaiting-automotive-review",
       "graphic_path": "wp-content/uploads/kontrolky/acc-seda.svg",
       "graphic_source": {
@@ -15529,6 +15913,37 @@
             "source_overview_row": 17,
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "seat-tarraco-2024-01-de-supplement",
+          "brand": "seat",
+          "model": "Tarraco",
+          "model_year": null,
+          "generation": "KN2",
+          "edition": "01.2024",
+          "language": "DE",
+          "printed_pages": [
+            14
+          ],
+          "pdf_pages": [
+            16
+          ],
+          "powertrains": [
+            "spalovaci"
+          ],
+          "verification": {
+            "method": "Complete official supplement reviewed. Exact red battery outline, steady illumination, conventional-vehicle limitation, charging-fault meaning and stop instruction were visually and textually compared; no base-manual pairing inferred.",
+            "document_sha256": "d95560758b52adc8e38ac6827399ff92b6aa839f1ae34db73f376f278b25cfc9",
+            "graphic_printed_pages": [
+              14
+            ],
+            "checked": "2026-10-31"
+          },
+          "model_note": {
+            "cs": "Pouze konvenční provedení podle dodatku. Generátor za jízdy nenabíjí 12V akumulátor; nejde o obecný údaj o stavu nabití.",
+            "en": "Conventional versions only, as stated by the supplement. The generator is no longer charging the 12 V battery while driving; this is not a generic state-of-charge indication.",
+            "de": "Laut Zusatzanleitung nur konventionelle Fahrzeuge. Der Generator lädt während der Fahrt die 12-Volt-Batterie nicht mehr; keine allgemeine Ladezustandsanzeige."
+          }
         }
       ],
       "graphic_source": {
@@ -15542,8 +15957,8 @@
         "sha256": "588729de9bb9a1f4d483ee81c0b9f98911942108bdeb151f74188cf5418da859",
         "file": "wp-content/uploads/kontrolky/charging-cervena.svg"
       },
-      "checked": "2026-10-30",
-      "review_status": "generic-Volkswagen-UK-not-model-year-verified",
+      "checked": "2026-10-31",
+      "review_status": "selected-model-sources-reviewed-not-whole-manual-complete",
       "graphic_path": "wp-content/uploads/kontrolky/charging-cervena.svg",
       "alt": {
         "cs": "Dobíjení – akumulátor se za jízdy nenabíjí",
@@ -15896,7 +16311,7 @@
       "graphic_path": "wp-content/uploads/kontrolky/take-steering-bila.svg",
       "color": "bila",
       "group": "asistenty",
-      "state": "message",
+      "state": "steady",
       "kind": "information-warning",
       "name": {
         "cs": "Výzva k převzetí řízení",
@@ -15914,9 +16329,9 @@
         "de": "Lenkung sicher übernehmen, Verkehr beobachten und die genaue Fahrzeugmeldung beachten. Bremsbereit sein."
       },
       "note": {
-        "cs": "Bílá a červená výzva mají rozdílnou naléhavost. Přesná návaznost na Travel Assist, Emergency Assist nebo Lane Assist závisí na výbavě a uvedeném návodu.",
-        "en": "White and red requests differ in urgency. The association with Travel Assist, Emergency Assist or Lane Assist depends on equipment and the cited manual.",
-        "de": "Weiße und rote Aufforderungen haben unterschiedliche Dringlichkeit. Der Zusammenhang mit Travel Assist, Emergency Assist oder Lane Assist hängt von Ausstattung und genannter Anleitung ab."
+        "cs": "Kontrolka svítí bíle a zobrazí se doprovodná výzva; v ověřených kapitolách blikání uvedeno není. Červená výzva má vyšší naléhavost. Přesná návaznost na Travel Assist, Emergency Assist nebo Lane Assist závisí na výbavě a citovaném návodu.",
+        "en": "The indicator illuminates white and an accompanying prompt appears; the reviewed chapters do not state flashing. The red request has higher urgency. Association with Travel Assist, Emergency Assist or Lane Assist depends on equipment and the cited manual.",
+        "de": "Die Kontrollleuchte leuchtet weiß und eine Begleitaufforderung erscheint; die geprüften Kapitel nennen kein Blinken. Die rote Aufforderung ist dringlicher. Der Zusammenhang mit Travel Assist, Emergency Assist oder Lane Assist hängt von Ausstattung und zitierter Anleitung ab."
       },
       "alt": {
         "cs": "Bílý symbol rukou na volantu.",
@@ -16030,6 +16445,86 @@
             "topic_response_sha256": "72ed418d7f8eab36b0638e50a56b8f0ddac971b2376cfa1abdb95eac2ffc720a",
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-cs",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "CS",
+          "printed_pages": [
+            20,
+            173
+          ],
+          "pdf_pages": [
+            22,
+            175
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state and driver instruction reviewed in the manufacturer-authored Czech PDF copy; edition identity read from the file; no applicability inferred for the unidentified photographed book.",
+            "document_sha256": "65d1a27e117f5b0fba02c18dc5e4159267fa5fd9a660abf4520f7bd560c0f461",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2025-11-cs",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": null,
+          "generation": null,
+          "edition": "11.25",
+          "language": "CS",
+          "printed_pages": [
+            220
+          ],
+          "pdf_pages": [
+            222
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact Czech text, symbol shape, colour/state and driver instruction read in the official complete 11.25 manual; README used only as a separate overview and no applicability inferred from the photographed vehicle.",
+            "document_sha256": "05bb8e17050fcc5d9ac57af3570a46e041dc4c5e3fe7d8f54d85ae03f6a47379",
+            "checked": "2026-10-31",
+            "graphic_printed_pages": [
+              220
+            ]
+          }
+        },
+        {
+          "manual": "seat-tarraco-2023-06-de",
+          "brand": "seat",
+          "model": "Tarraco",
+          "model_year": null,
+          "generation": "KN2",
+          "edition": "06.2023",
+          "language": "DE",
+          "printed_pages": [
+            216
+          ],
+          "pdf_pages": [
+            218
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact symbol shape, colour/state and complete associated German instructions visually and textually compared in the official 06.2023 manual. No inference from the separate 01.2024 supplement or English edition.",
+            "document_sha256": "20692a45d5bf61fcf6e4c010e1b1b3adad14029e752918709861a1947ecfec23",
+            "checked": "2026-10-31",
+            "graphic_printed_pages": [
+              216
+            ]
+          }
         }
       ],
       "graphic_source": {
@@ -16043,7 +16538,7 @@
         "file": "wp-content/uploads/kontrolky/take-steering-bila.svg",
         "sha256": "d9bd42f8987ae5b90036ab2576ab2f3a1f5c878481b58707a039c91c750728af"
       },
-      "checked": "2026-10-30",
+      "checked": "2026-10-31",
       "review_status": "model-source-and-licensed-outline-reviewed-not-complete"
     },
     {
@@ -16052,7 +16547,7 @@
       "graphic_path": "wp-content/uploads/kontrolky/take-steering-cervena.svg",
       "color": "cervena",
       "group": "asistenty",
-      "state": "message",
+      "state": "steady",
       "kind": "warning",
       "name": {
         "cs": "Okamžitě převezměte řízení",
@@ -16070,9 +16565,9 @@
         "de": "Lenkung sofort sicher übernehmen, Verkehr beobachten und die genaue Fahrzeugmeldung beachten. Bremsbereit sein."
       },
       "note": {
-        "cs": "Bílá a červená výzva mají rozdílnou naléhavost. Přesná návaznost na Travel Assist, Emergency Assist nebo Lane Assist závisí na výbavě a uvedeném návodu.",
-        "en": "White and red requests differ in urgency. The association with Travel Assist, Emergency Assist or Lane Assist depends on equipment and the cited manual.",
-        "de": "Weiße und rote Aufforderungen haben unterschiedliche Dringlichkeit. Der Zusammenhang mit Travel Assist, Emergency Assist oder Lane Assist hängt von Ausstattung und genannter Anleitung ab."
+        "cs": "Kontrolka svítí červeně s doprovodným hlášením; podle situace zazní zvuk nebo zavibruje volant. V ověřených kapitolách blikání uvedeno není. Přesná návaznost na Travel Assist, Emergency Assist nebo Lane Assist závisí na výbavě a citovaném návodu.",
+        "en": "The indicator illuminates red with an accompanying message; depending on the situation, a sound or steering-wheel vibration follows. The reviewed chapters do not state flashing. Association with Travel Assist, Emergency Assist or Lane Assist depends on equipment and the cited manual.",
+        "de": "Die Kontrollleuchte leuchtet rot mit Begleitmeldung; je nach Situation ertönt ein Ton oder das Lenkrad vibriert. Die geprüften Kapitel nennen kein Blinken. Der Zusammenhang mit Travel Assist, Emergency Assist oder Lane Assist hängt von Ausstattung und zitierter Anleitung ab."
       },
       "alt": {
         "cs": "Červený symbol rukou na volantu.",
@@ -16238,6 +16733,86 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-cs",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "CS",
+          "printed_pages": [
+            17,
+            173
+          ],
+          "pdf_pages": [
+            19,
+            175
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state and driver instruction reviewed in the manufacturer-authored Czech PDF copy; edition identity read from the file; no applicability inferred for the unidentified photographed book.",
+            "document_sha256": "65d1a27e117f5b0fba02c18dc5e4159267fa5fd9a660abf4520f7bd560c0f461",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2025-11-cs",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": null,
+          "generation": null,
+          "edition": "11.25",
+          "language": "CS",
+          "printed_pages": [
+            220
+          ],
+          "pdf_pages": [
+            222
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact Czech text, symbol shape, colour/state and driver instruction read in the official complete 11.25 manual; README used only as a separate overview and no applicability inferred from the photographed vehicle.",
+            "document_sha256": "05bb8e17050fcc5d9ac57af3570a46e041dc4c5e3fe7d8f54d85ae03f6a47379",
+            "checked": "2026-10-31",
+            "graphic_printed_pages": [
+              220
+            ]
+          }
+        },
+        {
+          "manual": "seat-tarraco-2023-06-de",
+          "brand": "seat",
+          "model": "Tarraco",
+          "model_year": null,
+          "generation": "KN2",
+          "edition": "06.2023",
+          "language": "DE",
+          "printed_pages": [
+            216
+          ],
+          "pdf_pages": [
+            218
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact symbol shape, colour/state and complete associated German instructions visually and textually compared in the official 06.2023 manual. No inference from the separate 01.2024 supplement or English edition.",
+            "document_sha256": "20692a45d5bf61fcf6e4c010e1b1b3adad14029e752918709861a1947ecfec23",
+            "checked": "2026-10-31",
+            "graphic_printed_pages": [
+              216
+            ]
+          }
         }
       ],
       "graphic_source": {
@@ -16251,7 +16826,7 @@
         "file": "wp-content/uploads/kontrolky/take-steering-cervena.svg",
         "sha256": "dcf2952513ebd9a5edac67cce9fa489267a441ec4a77941daab763db93a750f1"
       },
-      "checked": "2026-10-30",
+      "checked": "2026-10-31",
       "review_status": "model-source-and-licensed-outline-reviewed-not-complete"
     },
     {
@@ -21045,9 +21620,65 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            19,
+            76,
+            79
+          ],
+          "pdf_pages": [
+            21,
+            78,
+            81
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state, message distinction and driver instruction reviewed in the manufacturer-authored German PDF copy; no cross-model inheritance.",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-cs",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "CS",
+          "printed_pages": [
+            19,
+            72,
+            74
+          ],
+          "pdf_pages": [
+            21,
+            74,
+            76
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state and driver instruction reviewed in the manufacturer-authored Czech PDF copy; edition identity read from the file; no applicability inferred for the unidentified photographed book.",
+            "document_sha256": "65d1a27e117f5b0fba02c18dc5e4159267fa5fd9a660abf4520f7bd560c0f461",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          }
         }
       ],
-      "checked": "2026-10-30",
+      "checked": "2026-10-31",
       "review_status": "preview-awaiting-automotive-review",
       "graphic_path": "wp-content/uploads/kontrolky/turn-left-zelena.svg",
       "graphic_source": {
@@ -21204,9 +21835,65 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            19,
+            76,
+            79
+          ],
+          "pdf_pages": [
+            21,
+            78,
+            81
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state, message distinction and driver instruction reviewed in the manufacturer-authored German PDF copy; no cross-model inheritance.",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-cs",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "CS",
+          "printed_pages": [
+            19,
+            72,
+            74
+          ],
+          "pdf_pages": [
+            21,
+            74,
+            76
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state and driver instruction reviewed in the manufacturer-authored Czech PDF copy; edition identity read from the file; no applicability inferred for the unidentified photographed book.",
+            "document_sha256": "65d1a27e117f5b0fba02c18dc5e4159267fa5fd9a660abf4520f7bd560c0f461",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          }
         }
       ],
-      "checked": "2026-10-30",
+      "checked": "2026-10-31",
       "review_status": "preview-awaiting-automotive-review",
       "graphic_path": "wp-content/uploads/kontrolky/turn-right-zelena.svg",
       "graphic_source": {
@@ -21801,6 +22488,37 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "cupra-terramar-2025-11-cs",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": null,
+          "generation": null,
+          "edition": "11.25",
+          "language": "CS",
+          "printed_pages": [
+            14,
+            216,
+            218
+          ],
+          "pdf_pages": [
+            16,
+            218,
+            220
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact Czech text, symbol shape, colour/state and driver instruction read in the official complete 11.25 manual; README used only as a separate overview and no applicability inferred from the photographed vehicle.",
+            "document_sha256": "05bb8e17050fcc5d9ac57af3570a46e041dc4c5e3fe7d8f54d85ae03f6a47379",
+            "checked": "2026-10-31",
+            "graphic_printed_pages": [
+              14
+            ]
+          }
         }
       ],
       "graphic_source": {
@@ -21814,7 +22532,7 @@
         "file": "wp-content/uploads/kontrolky/lane-assist-seda.svg",
         "sha256": "f8e45e9a896acf9e5fe61611444294e718e7fc6bfc6f098b01909572facb9e81"
       },
-      "checked": "2026-10-30",
+      "checked": "2026-10-31",
       "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
     },
     {
@@ -21907,11 +22625,11 @@
       "review_status": "manual-instructions-and-user-photo-compared-not-whole-model-complete"
     },
     {
-      "id": "vw-golf-lane-unavailable",
+      "id": "lane-unavailable-exclamation",
       "graphic": "lane-alert",
       "color": "zluta",
       "group": "asistenty",
-      "state": "message",
+      "state": "steady",
       "name": {
         "cs": "Lane Assist – nedostupný, symbol s vykřičníkem",
         "en": "Lane Assist – unavailable, symbol with exclamation mark",
@@ -21928,9 +22646,9 @@
         "de": "Der Fahrer muss lenken. Laut Anleitung Kamerasicht prüfen/reinigen und Hindernisse oder Aufkleber entfernen. Bei anhaltendem Problem Fachbetrieb aufsuchen; Fahrzeugmeldungen beachten."
       },
       "note": {
-        "cs": "Pouze modelově doložené vydání Golf 5H0 11.2020. Žlutý zásah bez vykřičníku a zelená připravenost jsou jiné stavy. Nedostupnost může současně omezit Emergency Assist a Travel Assist.",
-        "en": "Only the documented Golf 5H0 11.2020 edition. Amber intervention without an exclamation mark and green availability are distinct states. Unavailability may also affect Emergency Assist and Travel Assist.",
-        "de": "Nur belegte Ausgabe Golf 5H0 11.2020. Gelber Eingriff ohne Ausrufezeichen und grüne Bereitschaft sind andere Zustände. Nichtverfügbarkeit kann auch Emergency Assist und Travel Assist betreffen."
+        "cs": "Doložená je vždy trvale žlutá varianta vozu mezi čarami s vykřičníkem a hlášením nedostupnosti: Golf 5H0 11.2020, ID.4 11.2021, Terramar CS 11.25 a Tarraco DE 06.2023. Žlutá barva bez vykřičníku může v jiném přesně citovaném stavu znamenat korekční zásah, zapnutý neaktivní systém nebo nerozpoznané značení; sama neprokazuje závadu.",
+        "en": "The documented state is the steady amber car-between-lanes variant with an exclamation mark and unavailable message: Golf 5H0 11.2020, ID.4 11.2021, Terramar CS 11.25 and Tarraco DE 06.2023. Amber without an exclamation mark may mean corrective intervention, switched-on inactive operation or undetected markings in another precisely cited state; amber alone does not prove a fault.",
+        "de": "Belegt ist jeweils die dauerhaft gelbe Fahrzeug-zwischen-Linien-Variante mit Ausrufezeichen und Nichtverfügbarkeitsmeldung: Golf 5H0 11.2020, ID.4 11.2021, Terramar CS 11.25 und Tarraco DE 06.2023. Gelb ohne Ausrufezeichen kann in einem anderen genau belegten Zustand Korrektureingriff, eingeschaltet-inaktiv oder nicht erkannte Markierungen bedeuten; Gelb allein beweist keine Störung."
       },
       "scopes": [
         {
@@ -21961,10 +22679,97 @@
             "topic_response_sha256": "2067dbccc1a87ccdf273333909ca3039027ca49e444c96d58959c01b9bee345e",
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "vw-id4-2021-11-de",
+          "brand": "volkswagen",
+          "model": "ID.4",
+          "model_year": null,
+          "generation": null,
+          "edition": "11.2021",
+          "language": "DE",
+          "source_sections": [
+            "Fahrerinformationen / Symbole im Kombi-Instrument",
+            "Fahrerassistenzsysteme / Lane Assist / Problemlösungen"
+          ],
+          "source_topic_ids": [
+            "18340f299e1e6c3b43008f07f295cf3c_203_de_DE",
+            "e760f07c5d24b9134e63f721a5da2e0c_1_de_DE"
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Official model-selected digital manual; exact exclamation-mark variant, amber colour, unavailable state and accompanying troubleshooting text reviewed. The OEM media is identical to the already compared Golf source; the public catalogue uses a licensed functional drawing, not manufacturer artwork.",
+            "source_image_sha256": "b26f1f671d301f570ff1e4189d1b6e4a5a8e9e6546d64b38455384d652d62826",
+            "source_image_url": "https://userguide.volkswagen.de:443/api/consumer/V4/media?language=de_DE&key=img4d7c1553559f84690adf02e72f9ea93f_1_--_--_vw_Symbol_SVG_online_yellow.svg",
+            "source_overview_row": 63,
+            "checked": "2026-10-31",
+            "source_overview_sha256": "0b00540155208eca8bebe395bd56e8bbaf73184dc4c19a105b7f5ff3d6d95998",
+            "source_tree_sha256": "f7913ca536aebec625523e7ae85c575d62e21fa33e46409e08d185ee84aae45a",
+            "operating_topic_response_sha256": "893e4901010ef61de1216efc88d18de7811c19908386b6c198b8a9816451f210"
+          }
+        },
+        {
+          "manual": "cupra-terramar-2025-11-cs",
+          "brand": "cupra",
+          "model": "Terramar",
+          "model_year": null,
+          "generation": null,
+          "edition": "11.25",
+          "language": "CS",
+          "printed_pages": [
+            13,
+            217
+          ],
+          "pdf_pages": [
+            15,
+            219
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact amber/exclamation pictogram, steady state, accompanying message, causes and driver instructions visually and textually compared in the official Czech complete manual. Distinct from OFF and corrective-intervention variants.",
+            "document_sha256": "05bb8e17050fcc5d9ac57af3570a46e041dc4c5e3fe7d8f54d85ae03f6a47379",
+            "graphic_printed_pages": [
+              13,
+              217
+            ],
+            "checked": "2026-10-31"
+          }
+        },
+        {
+          "manual": "seat-tarraco-2023-06-de",
+          "brand": "seat",
+          "model": "Tarraco",
+          "model_year": null,
+          "generation": "KN2",
+          "edition": "06.2023",
+          "language": "DE",
+          "printed_pages": [
+            213
+          ],
+          "pdf_pages": [
+            215
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Exact symbol shape, colour/state and complete associated German instructions visually and textually compared in the official 06.2023 manual. No inference from the separate 01.2024 supplement or English edition.",
+            "document_sha256": "20692a45d5bf61fcf6e4c010e1b1b3adad14029e752918709861a1947ecfec23",
+            "checked": "2026-10-31",
+            "graphic_printed_pages": [
+              213
+            ]
+          }
         }
       ],
-      "checked": "2026-10-30",
-      "review_status": "preview-awaiting-automotive-review",
+      "checked": "2026-10-31",
+      "review_status": "selected-model-state-and-instructions-reviewed-not-whole-manual-complete",
       "graphic_path": "wp-content/uploads/kontrolky/lane-alert-zluta.svg",
       "graphic_source": {
         "title": "File:ISO 7000 - Ref-No 3128.svg",
@@ -21973,7 +22778,7 @@
         "license": "Public domain",
         "license_url": "",
         "author": "Vectorization:    Mrmw",
-        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source. Licensed base geometry retained. Functional exclamation mark added only for the separately documented Golf 5H0 11.2020 unavailable variant, source overview row 61. This is a documented functional illustration, not an OEM contour-identical file.",
+        "modifications": "Standard ISO 7000-3128 car/lane geometry preserved; registration marks removed; source-documented amber colour applied. A functional exclamation mark is added for independently verified unavailable states in Golf 5H0 11.2020, ID.4 11.2021, Terramar CS 11.25 and Tarraco DE 06.2023. Licensed functional illustration, not manufacturer artwork.",
         "sha256": "0c0f6c2b56b63c088957ba65208a98b9d79bc96fa19c9068581c39b1233d2acd",
         "file": "wp-content/uploads/kontrolky/lane-alert-zluta.svg"
       },
@@ -21982,7 +22787,8 @@
         "en": "Amber car between dashed lane markings with exclamation mark – Lane Assist unavailable.",
         "de": "Gelbes Auto zwischen unterbrochenen Spurmarkierungen mit Ausrufezeichen – Lane Assist nicht verfügbar."
       },
-      "kind": "restriction"
+      "kind": "restriction",
+      "anchor_id": "vw-golf-lane-unavailable"
     },
     {
       "id": "audi-predictive-limiter-active",
@@ -24111,7 +24917,7 @@
         "de": "Dynamic Light Assist – automatisches Fernlicht mit Lichtkegelanpassung"
       },
       "meaning": {
-        "cs": "U uvedené výbavy Enyaqu modré A označuje automaticky zapnutá dálková světla. Dynamic Light Assist navíc upravuje světelný kužel, aby neoslňoval protijedoucí a předjížděná vozidla; samotná kontrolka nezaručuje jejich rozpoznání.",
+        "cs": "U uvedené výbavy Enyaqu modré A označuje automaticky zapnutá dálková světla. Dynamic Light Assist navíc upravuje světelný kužel, aby neoslňoval protijedoucí a vozidla jedoucí před vámi; samotná kontrolka nezaručuje jejich rozpoznání.",
         "en": "On the specified Enyaq equipment, blue A indicates automatically activated main beam. Dynamic Light Assist additionally adapts the beam to avoid dazzling oncoming/preceding vehicles; the indicator does not guarantee their recognition.",
         "de": "Bei genannter Enyaq-Ausstattung kennzeichnet blaues A automatisch eingeschaltetes Fernlicht. Dynamic Light Assist passt zusätzlich den Lichtkegel an, um Gegenverkehr/Vorausfahrende nicht zu blenden; die Anzeige garantiert deren Erkennung nicht."
       },
@@ -24154,9 +24960,40 @@
               82
             ]
           }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-cs",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "CS",
+          "printed_pages": [
+            20,
+            76,
+            77
+          ],
+          "pdf_pages": [
+            22,
+            78,
+            79
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state and driver instruction reviewed in the manufacturer-authored Czech PDF copy; edition identity read from the file; no applicability inferred for the unidentified photographed book.",
+            "document_sha256": "65d1a27e117f5b0fba02c18dc5e4159267fa5fd9a660abf4520f7bd560c0f461",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          },
+          "equipment": [
+            "Dynamic Light Assist"
+          ]
         }
       ],
-      "checked": "2026-10-29",
+      "checked": "2026-10-31",
       "review_status": "preview-awaiting-automotive-review",
       "graphic_path": "wp-content/uploads/kontrolky/high-beam-assist-modra.svg",
       "graphic_source": {
@@ -24819,6 +25656,204 @@
       ],
       "checked": "2026-10-30",
       "review_status": "specific-manual-and-licensed-pictogram-reviewed; complete-model-inventory-not-claimed"
+    },
+    {
+      "graphic": "steering-alert",
+      "color": "zluta",
+      "group": "pneumatiky",
+      "state": "flashing",
+      "graphic_path": "wp-content/uploads/kontrolky/steering-alert-zluta.svg",
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Lenkhilfe.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Lenkhilfe.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/1/19/Kontrollleuchte_Lenkhilfe.svg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Chris828",
+        "modifications": "One complete CC0 wheel/exclamation pictogram selected from the two-colour source sheet, preserving its contour; viewBox normalised; independently documented colour.",
+        "sha256": "14347a4cf4536fa3ddf55a5f8af6ff266d83a669cedf4293999d7eb44e1a9c63",
+        "file": "wp-content/uploads/kontrolky/steering-alert-zluta.svg"
+      },
+      "kind": "warning",
+      "id": "enyaq-steering-lock-fault-amber",
+      "name": {
+        "cs": "Enyaq – závada zámku řízení, žluté blikání",
+        "en": "Enyaq – steering-lock fault, amber flashing",
+        "de": "Enyaq – Störung der Lenkungsverriegelung, gelbes Blinken"
+      },
+      "meaning": {
+        "cs": "Blikající žlutý symbol s hlášením o závadě označuje závadu zámku řízení. Není to stav neodblokovaného zámku.",
+        "en": "A flashing amber symbol with a fault message indicates a steering-lock fault. It is not the lock-not-released state.",
+        "de": "Ein gelb blinkendes Symbol mit Störungsmeldung kennzeichnet eine Störung der Lenkungsverriegelung. Es ist nicht der Zustand „nicht entriegelt“. "
+      },
+      "action": {
+        "cs": "Se zvýšenou opatrností můžete pokračovat v jízdě; vyhledejte odborný servis.",
+        "en": "You may continue driving with increased caution; seek a specialist workshop.",
+        "de": "Mit erhöhter Vorsicht weiterfahren; Fachbetrieb aufsuchen."
+      },
+      "note": {
+        "cs": "Pouze Enyaq iV 5A, vydání 11.2020. Rozhoduje doprovodné hlášení.",
+        "en": "Only Enyaq iV 5A, 11.2020 edition. The accompanying message determines the state.",
+        "de": "Nur Enyaq iV 5A, Ausgabe 11.2020. Maßgeblich ist die Begleitmeldung."
+      },
+      "scopes": [
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            60
+          ],
+          "pdf_pages": [
+            62
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state, message distinction and driver instruction reviewed in the manufacturer-authored German PDF copy; no cross-model inheritance.",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-cs",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "CS",
+          "printed_pages": [
+            18,
+            56
+          ],
+          "pdf_pages": [
+            20,
+            58
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state and driver instruction reviewed in the manufacturer-authored Czech PDF copy; edition identity read from the file; no applicability inferred for the unidentified photographed book.",
+            "document_sha256": "65d1a27e117f5b0fba02c18dc5e4159267fa5fd9a660abf4520f7bd560c0f461",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          }
+        }
+      ],
+      "alt": {
+        "cs": "Žlutý blikající symbol volantu s vykřičníkem – závada zámku řízení Enyaqu",
+        "en": "Flashing amber steering-wheel/exclamation symbol – Enyaq steering-lock fault",
+        "de": "Gelb blinkendes Lenkrad-/Ausrufezeichen – Störung der Enyaq-Lenkungsverriegelung"
+      },
+      "checked": "2026-10-31",
+      "review_status": "selected-model-state-reviewed-not-complete"
+    },
+    {
+      "graphic": "steering-alert",
+      "color": "zluta",
+      "group": "pneumatiky",
+      "state": "flashing",
+      "graphic_path": "wp-content/uploads/kontrolky/steering-alert-zluta.svg",
+      "graphic_source": {
+        "title": "File:Kontrollleuchte Lenkhilfe.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kontrollleuchte_Lenkhilfe.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/1/19/Kontrollleuchte_Lenkhilfe.svg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Chris828",
+        "modifications": "One complete CC0 wheel/exclamation pictogram selected from the two-colour source sheet, preserving its contour; viewBox normalised; independently documented colour.",
+        "sha256": "14347a4cf4536fa3ddf55a5f8af6ff266d83a669cedf4293999d7eb44e1a9c63",
+        "file": "wp-content/uploads/kontrolky/steering-alert-zluta.svg"
+      },
+      "kind": "warning",
+      "id": "enyaq-steering-lock-not-unlocked",
+      "name": {
+        "cs": "Enyaq – zámek řízení se neodblokoval",
+        "en": "Enyaq – steering lock not released",
+        "de": "Enyaq – Lenkungsverriegelung nicht entriegelt"
+      },
+      "meaning": {
+        "cs": "Blikající žlutý symbol s výzvou k pohybu volantem znamená, že se zámek řízení neodblokoval. Není to obecná závada servořízení.",
+        "en": "A flashing amber symbol with a request to move the wheel means the steering lock has not released. It is not a general power-steering fault.",
+        "de": "Ein gelb blinkendes Symbol mit Aufforderung, das Lenkrad zu bewegen, bedeutet, dass die Lenkungsverriegelung nicht entriegelt wurde. Es ist keine allgemeine Servolenkungsstörung."
+      },
+      "action": {
+        "cs": "Pohybujte volantem střídavě na obě strany. Pokud se řízení neodblokuje, odstavte vůz a vyhledejte odbornou pomoc.",
+        "en": "Move the steering wheel alternately in both directions. If the steering does not unlock, stop the vehicle and obtain professional assistance.",
+        "de": "Lenkrad abwechselnd in beide Richtungen bewegen. Wird die Lenkung nicht entriegelt, Fahrzeug abstellen und fachkundige Hilfe aufsuchen."
+      },
+      "note": {
+        "cs": "Pouze Enyaq iV 5A, vydání 11.2020. Odlišit od žluté závady zámku, u níž je dovoleno opatrně pokračovat.",
+        "en": "Only Enyaq iV 5A, 11.2020 edition. Distinguish it from the amber lock fault for which cautious continued driving is permitted.",
+        "de": "Nur Enyaq iV 5A, Ausgabe 11.2020. Von der gelben Verriegelungsstörung unterscheiden, bei der vorsichtige Weiterfahrt zulässig ist."
+      },
+      "scopes": [
+        {
+          "manual": "skoda-enyaq-2020-11-de",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "DE",
+          "printed_pages": [
+            61
+          ],
+          "pdf_pages": [
+            63
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state, message distinction and driver instruction reviewed in the manufacturer-authored German PDF copy; no cross-model inheritance.",
+            "document_sha256": "8f718f243bb8cc0d9c12bfe40fcde77bfd846459a5f94a26bd8666c13aa98c8b",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          }
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-cs",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "model_year": null,
+          "generation": "5A",
+          "edition": "11.2020",
+          "language": "CS",
+          "printed_pages": [
+            18,
+            57
+          ],
+          "pdf_pages": [
+            20,
+            59
+          ],
+          "powertrains": [
+            "elektricky"
+          ],
+          "verification": {
+            "method": "Visual symbol, colour/state and driver instruction reviewed in the manufacturer-authored Czech PDF copy; edition identity read from the file; no applicability inferred for the unidentified photographed book.",
+            "document_sha256": "65d1a27e117f5b0fba02c18dc5e4159267fa5fd9a660abf4520f7bd560c0f461",
+            "level": "manufacturer-manual-third-party-copy",
+            "checked": "2026-10-31"
+          }
+        }
+      ],
+      "alt": {
+        "cs": "Žlutý blikající symbol volantu s vykřičníkem – zámek řízení Enyaqu se neodblokoval",
+        "en": "Flashing amber steering-wheel/exclamation symbol – Enyaq steering lock not released",
+        "de": "Gelb blinkendes Lenkrad-/Ausrufezeichen – Enyaq-Lenkungsverriegelung nicht entriegelt"
+      },
+      "checked": "2026-10-31",
+      "review_status": "selected-model-state-reviewed-not-complete"
     }
   ],
   "pending_items": [
@@ -25099,31 +26134,480 @@
           }
         }
       ]
+    },
+    {
+      "id": "vw-lane-enabled-road-markings-not-detected",
+      "brand": "volkswagen",
+      "status": "official-general-meaning-verified-model-scope-and-exact-reusable-graphic-pending",
+      "name": {
+        "cs": "Lane Assist zapnutý – značení jízdního pruhu nerozpoznáno",
+        "en": "Lane Assist switched on – road markings not detected",
+        "de": "Lane Assist eingeschaltet – Fahrbahnmarkierungen nicht erkannt"
+      },
+      "reason": {
+        "cs": "Oficiální obecná stránka Volkswagen UK dokládá, že žlutý symbol pouze s liniemi při zapnutém systému neznamená automaticky závadu. Závadu uvádí až s hlášením „system fault“. Stránka neuvádí model a její grafika se liší od licencované varianty s vozem; bez modelového návodu a přesné znovupoužitelné grafiky se položka nezveřejňuje jako zákaznická karta.",
+        "en": "The official general Volkswagen UK page establishes that the amber lane-lines-only symbol with the system switched on does not automatically mean a fault. A fault is identified only with the “system fault” message. The page names no model and its graphic differs from the licensed car-between-lanes version; without a model manual and exact reusable graphic it is not published as a customer card.",
+        "de": "Die offizielle allgemeine Volkswagen-UK-Seite belegt, dass das gelbe Symbol nur mit Fahrbahnlinien bei eingeschaltetem System nicht automatisch eine Störung bedeutet. Eine Störung nennt sie erst mit der Meldung „system fault“. Die Seite nennt kein Modell und die Grafik unterscheidet sich von der lizenzierten Fahrzeug-zwischen-Linien-Variante; ohne Modellanleitung und genaue nachnutzbare Grafik wird keine Kundenkarte veröffentlicht."
+      },
+      "source_url": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/lane-assist.html",
+      "source_review": "vw-warning-pages-review.json"
+    },
+    {
+      "id": "vw-golf-vii-lane-enabled-inactive",
+      "brand": "volkswagen",
+      "status": "meaning-verified-exact-reusable-graphic-or-source-identity-pending",
+      "reason": {
+        "cs": "Golf VII 11/2019: žlutý Lane Assist je zapnutý, ale neaktivní; nejde o závadu ani korekční zásah. OEM grafika pouze s čarami se liší od místní licencované kresby vozu mezi čarami; chybí přesná znovupoužitelná grafika.",
+        "en": "Golf VII 11/2019: amber Lane Assist is switched on but inactive; this is neither a fault nor corrective intervention. The OEM lane-lines-only graphic differs from the local licensed car-between-lanes drawing; an exact reusable graphic is missing.",
+        "de": "Golf VII 11/2019: Gelber Lane Assist ist eingeschaltet, aber inaktiv; weder Störung noch Korrektureingriff. Die OEM-Grafik nur mit Fahrbahnlinien weicht von der lokalen lizenzierten Fahrzeug-zwischen-Linien-Zeichnung ab; genaue nachnutzbare Grafik fehlt."
+      }
+    },
+    {
+      "id": "enyaq-lane-enabled-no-intervention-grey",
+      "brand": "skoda",
+      "status": "meaning-verified-exact-reusable-graphic-or-source-identity-pending",
+      "reason": {
+        "cs": "Fotografovaný Enyaq, řádek 16-R-04: šedý Lane Assist je aktivovaný bez aktuálního zásahu. Vydání knihy není identifikované a přesná neutrální grafika není ověřena.",
+        "en": "Photographed Enyaq row 16-R-04: grey Lane Assist is activated without current intervention. The book edition is unidentified and no exact neutral graphic is verified.",
+        "de": "Fotografierter Enyaq, Zeile 16-R-04: Grauer Lane Assist aktiviert ohne aktuellen Eingriff. Buchausgabe unbekannt und genaue neutrale Grafik ungeprüft."
+      }
+    },
+    {
+      "id": "enyaq-light-assist-enabled-neutral",
+      "brand": "skoda",
+      "status": "meaning-verified-exact-reusable-graphic-or-source-identity-pending",
+      "reason": {
+        "cs": "Enyaq CS 11/2020, str. 75–76: neutrální symbol znamená zapnutý Light Assist, odděleně od modrého stavu automaticky rozsvícených dálkových světel. Přesná neutrální grafika chybí.",
+        "en": "Enyaq CS 11/2020 pp.75–76: the neutral symbol means Light Assist enabled, separately from the blue automatically illuminated main beam. The exact neutral graphic is missing.",
+        "de": "Enyaq CS 11/2020, S. 75–76: Neutrales Symbol bedeutet Light Assist eingeschaltet, getrennt vom blauen automatisch eingeschalteten Fernlicht. Genaue neutrale Grafik fehlt."
+      }
+    },
+    {
+      "id": "enyaq-dynamic-light-assist-enabled-neutral",
+      "brand": "skoda",
+      "status": "meaning-verified-exact-reusable-graphic-or-source-identity-pending",
+      "reason": {
+        "cs": "Enyaq CS 11/2020, str. 76–77: neutrální symbol znamená zapnutý Dynamic Light Assist, odděleně od modrého aktivního světla. Přesná neutrální grafika chybí.",
+        "en": "Enyaq CS 11/2020 pp.76–77: the neutral symbol means Dynamic Light Assist enabled, separately from the blue active-light state. The exact neutral graphic is missing.",
+        "de": "Enyaq CS 11/2020, S. 76–77: Neutrales Symbol bedeutet Dynamic Light Assist eingeschaltet, getrennt vom blauen aktiven Lichtzustand. Genaue neutrale Grafik fehlt."
+      }
+    },
+    {
+      "id": "enyaq-travel-assist-composite-states",
+      "brand": "skoda",
+      "status": "meaning-verified-exact-reusable-graphic-or-source-identity-pending",
+      "reason": {
+        "cs": "Enyaq CS 11/2020, str. 173–174 rozlišuje Travel Assist s regulací rychlosti a vedením, pouze s regulací rychlosti a pouze s vedením v pruhu. Každý stav potřebuje přesnou kombinovanou grafiku.",
+        "en": "Enyaq CS 11/2020 pp.173–174 distinguishes speed-plus-lane, speed-only and lane-only Travel Assist. Each state needs an exact composite graphic.",
+        "de": "Enyaq CS 11/2020, S. 173–174 unterscheidet Travel Assist mit Geschwindigkeits- und Spurführung, nur Geschwindigkeit und nur Spurführung. Jeder Zustand benötigt eine genaue Kombinationsgrafik."
+      }
+    },
+    {
+      "id": "enyaq-12v-combined-red-central-warning",
+      "brand": "skoda",
+      "status": "meaning-verified-exact-reusable-graphic-or-source-identity-pending",
+      "reason": {
+        "cs": "Fotografovaný řádek 12-R-04 kombinuje červený akumulátor s červeným centrálním trojúhelníkem. Význam je známý, ale vydání knihy a přesná kombinovaná grafika nejsou ověřené.",
+        "en": "Photographed row 12-R-04 combines the red battery warning with the red central triangle. The meaning is known, but the book edition and exact combined graphic are unverified.",
+        "de": "Fotografierte Zeile 12-R-04 kombiniert rote Batteriewarnung mit rotem Zentraldreieck. Bedeutung bekannt, Buchausgabe und genaue Kombinationsgrafik ungeprüft."
+      }
+    },
+    {
+      "id": "enyaq-12v-combined-amber-warning",
+      "brand": "skoda",
+      "status": "meaning-verified-exact-reusable-graphic-or-source-identity-pending",
+      "reason": {
+        "cs": "Fotografovaný řádek 13-R-10 kombinuje žlutý akumulátor s další výstrahou; přesné hlášení rozlišuje závadu od nízkého nabití. Identita knihy a kombinovaná grafika nejsou ověřené.",
+        "en": "Photographed row 13-R-10 combines an amber battery with another warning; the exact message distinguishes a fault from low charge. Book identity and combined graphic are unverified.",
+        "de": "Fotografierte Zeile 13-R-10 kombiniert gelbe Batterie mit weiterer Warnung; genaue Meldung unterscheidet Störung und niedrigen Ladezustand. Buchidentität und Kombinationsgrafik ungeprüft."
+      }
+    },
+    {
+      "id": "terramar-travel-assist-unavailable",
+      "brand": "cupra",
+      "status": "meaning-verified-exact-reusable-graphic-or-source-identity-pending",
+      "reason": {
+        "cs": "Terramar CS 11.25, str. 220: žlutý Travel Assist s vykřičníkem a hlášením znamená nedostupnost nebo neočekávanou funkci. Přesná kombinovaná grafika chybí.",
+        "en": "Terramar CS 11.25 p.220: amber Travel Assist with exclamation and message means unavailable or unexpected operation. The exact composite graphic is missing.",
+        "de": "Terramar CS 11.25, S. 220: Gelber Travel Assist mit Ausrufezeichen und Meldung bedeutet Nichtverfügbarkeit oder unerwartete Funktion. Genaue Kombinationsgrafik fehlt."
+      }
+    },
+    {
+      "id": "terramar-fatigue-level-1-white",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "Bílá úroveň 1: rozpoznaná únava, zvuk a doporučení přestávky. Přesný Terramar šálek se liší od dostupné veřejně použitelné ISO kresby.",
+        "en": "White level 1: detected fatigue, sound and a break recommendation. The exact Terramar cup differs from the reusable ISO drawing.",
+        "de": "Weiße Stufe 1: erkannte Müdigkeit, Warnton und Pausenempfehlung. Die genaue Terramar-Tasse unterscheidet sich von der nachnutzbaren ISO-Zeichnung."
+      }
+    },
+    {
+      "id": "terramar-fatigue-level-2-red",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "Červená úroveň 2: rostoucí únava a přestávka co nejdříve. Přesná právně použitelná grafika chybí.",
+        "en": "Red level 2: increasing fatigue and a break as soon as possible. An exact lawfully reusable graphic is missing.",
+        "de": "Rote Stufe 2: zunehmende Müdigkeit und möglichst baldige Pause. Eine genaue rechtmäßig nachnutzbare Grafik fehlt."
+      }
+    },
+    {
+      "id": "terramar-fatigue-level-3-red",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "Červená úroveň 3: značné ohrožení, co nejrychleji zastavit a ihned odpočívat. Sdílí barvu a základní tvar s úrovní 2, ale musí zůstat samostatným významem.",
+        "en": "Red level 3: significant hazard; stop as quickly as possible and rest immediately. It shares colour and base shape with level 2 but remains a separate meaning.",
+        "de": "Rote Stufe 3: erhebliche Gefährdung; möglichst schnell anhalten und sofort pausieren. Farbe und Grundform entsprechen Stufe 2, die Bedeutung bleibt getrennt."
+      }
+    },
+    {
+      "id": "terramar-fatigue-time-break-white",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "Bílá časová informace po 4,5 hodinách bez přerušení není důkaz rozpoznané únavy. Přesná grafika chybí.",
+        "en": "The white time-based notice after 4.5 uninterrupted hours is not detected-fatigue evidence. The exact graphic is missing.",
+        "de": "Der weiße Zeithinweis nach 4,5 Stunden ohne Unterbrechung ist kein Nachweis erkannter Müdigkeit. Die genaue Grafik fehlt."
+      }
+    },
+    {
+      "id": "terramar-fatigue-limited-yellow",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "Žlutý šálek bez centrálního trojúhelníku znamená omezenou dostupnost; přesná grafika chybí.",
+        "en": "An amber cup without the central triangle means limited availability; the exact graphic is missing.",
+        "de": "Eine gelbe Tasse ohne Zentraldreieck bedeutet eingeschränkte Verfügbarkeit; die genaue Grafik fehlt."
+      }
+    },
+    {
+      "id": "terramar-fatigue-unavailable-yellow",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "Žlutý šálek společně se žlutou centrální výstrahou znamená nedostupnost; kombinovaná přesná grafika chybí.",
+        "en": "An amber cup together with the amber central warning means unavailable; the exact combined graphic is missing.",
+        "de": "Eine gelbe Tasse zusammen mit gelber Zentralwarnung bedeutet Nichtverfügbarkeit; die genaue Kombinationsgrafik fehlt."
+      }
+    },
+    {
+      "id": "tarraco-hdc-active-white",
+      "brand": "seat",
+      "manual": "seat-tarraco-2024-01-de-supplement",
+      "status": "meaning-colour-and-state-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "Dodatek str. 6 dokládá bílý trvalý symbol vozu na klesajícím svahu: HDC je aktivní; pouze 4Drive. Chybí přesná znovupoužitelná grafika.",
+        "en": "Supplement p.6 documents a steady white car-on-descent symbol: HDC active; 4Drive only. An exact reusable graphic is missing.",
+        "de": "Zusatzanleitung S. 6 belegt ein dauerhaft weißes Fahrzeug-am-Gefälle-Symbol: HDC aktiv; nur 4Drive. Eine genaue nachnutzbare Grafik fehlt."
+      }
+    },
+    {
+      "id": "tarraco-hdc-enabled-inactive-grey",
+      "brand": "seat",
+      "manual": "seat-tarraco-2024-01-de-supplement",
+      "status": "meaning-colour-and-state-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "Dodatek str. 6 dokládá šedý trvalý symbol: HDC je zapnutý, ale nezasahuje, protože nejsou splněné podmínky; nejde o závadu. Pouze 4Drive.",
+        "en": "Supplement p.6 documents a steady grey symbol: HDC is switched on but inactive because conditions are not met; this is not a fault. 4Drive only.",
+        "de": "Zusatzanleitung S. 6 belegt ein dauerhaft graues Symbol: HDC ist eingeschaltet, aber wegen nicht erfüllter Bedingungen inaktiv; keine Störung. Nur 4Drive."
+      }
+    },
+    {
+      "id": "tarraco-charging-connected-colour-unverified",
+      "brand": "seat",
+      "manual": "seat-tarraco-2024-01-de-supplement",
+      "status": "shape-and-trigger-reviewed-colour-and-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "Dodatek str. 5 uvádí rozsvícení symbolu nabíjecího připojení po zasunutí a uzamčení konektoru u PHEV, ale neurčuje barvu ani stavovou tabulku.",
+        "en": "Supplement p.5 states that the charging-connection symbol illuminates after the PHEV connector is inserted and locked, but gives no colour or state table.",
+        "de": "Zusatzanleitung S. 5 nennt das Aufleuchten des Ladeanschluss-Symbols nach Einstecken und Verriegeln beim PHEV, bestimmt aber weder Farbe noch Zustandstabelle."
+      }
+    },
+    {
+      "id": "terramar-lane-off-yellow",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-and-state-verified-exact-reusable-off-graphic-pending",
+      "reason": {
+        "cs": "Terramar CS 11.25 str. 217 dokládá podle země trvale žlutý symbol Lane Assist s nápisem OFF: systém je vypnutý. Chybí přesná právně použitelná OFF grafika; stav se neslučuje s nedostupností ani korekčním zásahem.",
+        "en": "Terramar CS 11.25 p.217 documents a country-dependent steady amber Lane Assist symbol marked OFF: the system is switched off. An exact lawfully reusable OFF graphic is missing; this state is not merged with unavailable or corrective intervention.",
+        "de": "Terramar CS 11.25 S. 217 belegt länderabhängig ein dauerhaft gelbes Lane-Assist-Symbol mit OFF: System ausgeschaltet. Eine genaue rechtmäßig nachnutzbare OFF-Grafik fehlt; der Zustand wird nicht mit Nichtverfügbarkeit oder Korrektureingriff zusammengeführt."
+      }
+    },
+    {
+      "id": "terramar-travel-active-full",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "Plně zelený kombinovaný symbol: aktivní Travel Assist, aktivní regulace odstupu i adaptivní vedení v pruhu. Chybí přesná právně použitelná kombinovaná grafika.",
+        "en": "Fully green composite: Travel Assist active with active distance control and adaptive lane guidance. An exact lawfully reusable composite graphic is missing.",
+        "de": "Vollständig grünes Kombinationssymbol: Travel Assist aktiv, Abstandsregelung und adaptive Spurführung aktiv. Eine genaue rechtmäßig nachnutzbare Kombinationsgrafik fehlt."
+      }
+    },
+    {
+      "id": "terramar-travel-active-lane-only",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "Částečně zelený kombinovaný symbol: Travel Assist je aktivní, regulace odstupu pasivní a adaptivní vedení v pruhu aktivní. Chybí přesná grafika.",
+        "en": "Partly green composite: Travel Assist is active, distance control passive and adaptive lane guidance active. The exact graphic is missing.",
+        "de": "Teilweise grünes Kombinationssymbol: Travel Assist aktiv, Abstandsregelung passiv und adaptive Spurführung aktiv. Die genaue Grafik fehlt."
+      }
+    },
+    {
+      "id": "terramar-travel-deactivated-grey",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "Šedý kombinovaný symbol: Travel Assist je deaktivovaný a nereguluje. Chybí přesná grafika.",
+        "en": "Grey composite: Travel Assist is deactivated and provides no control. The exact graphic is missing.",
+        "de": "Graues Kombinationssymbol: Travel Assist deaktiviert, keine Regelung. Die genaue Grafik fehlt."
+      }
+    },
+    {
+      "id": "terramar-attention-distracted-white",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "Bílý vykřičník vlevo od oka s hlášením „Sledujte provoz“ znamená rozpoznané odvedení pozornosti. Chybí přesná znovupoužitelná grafika.",
+        "en": "A white exclamation mark to the left of an eye with “Watch the traffic” means detected distraction. An exact reusable graphic is missing.",
+        "de": "Weißes Ausrufezeichen links vom Auge mit der Meldung „Verkehr beobachten“ bedeutet erkannte Ablenkung. Eine genaue nachnutzbare Grafik fehlt."
+      }
+    },
+    {
+      "id": "terramar-attention-limited-yellow",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "Žluté oko s vykřičníkem bez centrálního trojúhelníku znamená omezenou dostupnost monitoru pozornosti; přesná grafika chybí.",
+        "en": "An amber eye/exclamation without the central triangle means limited attention-monitor availability; the exact graphic is missing.",
+        "de": "Gelbes Auge/Ausrufezeichen ohne Zentraldreieck bedeutet eingeschränkte Verfügbarkeit des Aufmerksamkeitsmonitors; die genaue Grafik fehlt."
+      }
+    },
+    {
+      "id": "terramar-attention-unavailable-yellow",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "Žluté oko s vykřičníkem společně se žlutou centrální výstrahou znamená nedostupnost monitoru pozornosti; přesná kombinovaná grafika chybí.",
+        "en": "An amber eye/exclamation together with the amber central warning means the attention monitor is unavailable; the exact combined graphic is missing.",
+        "de": "Gelbes Auge/Ausrufezeichen zusammen mit gelber Zentralwarnung bedeutet Nichtverfügbarkeit des Aufmerksamkeitsmonitors; die genaue Kombinationsgrafik fehlt."
+      }
+    },
+    {
+      "id": "terramar-drive-fault-red",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "PHEV, červený obrys vozu s vykřičníkem: pohon není dostupný; bezpečně odstavit a zajistit odbornou pomoc. Chybí přesná grafika.",
+        "en": "PHEV, red vehicle outline with exclamation: propulsion is unavailable; stop safely and obtain professional help. The exact graphic is missing.",
+        "de": "PHEV, rote Fahrzeugkontur mit Ausrufezeichen: Antrieb nicht verfügbar; sicher abstellen und fachkundige Hilfe holen. Die genaue Grafik fehlt."
+      }
+    },
+    {
+      "id": "terramar-drive-fault-amber",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "PHEV, žlutý obrys vozu s vykřičníkem: elektrická hnací jednotka nefunguje správně; velmi pomalu do odborného servisu. Chybí přesná grafika.",
+        "en": "PHEV, amber vehicle outline with exclamation: the electric drive is malfunctioning; drive very slowly to a qualified workshop. The exact graphic is missing.",
+        "de": "PHEV, gelbe Fahrzeugkontur mit Ausrufezeichen: Elektroantrieb arbeitet nicht ordnungsgemäß; sehr langsam zum Fachbetrieb fahren. Die genaue Grafik fehlt."
+      }
+    },
+    {
+      "id": "terramar-electric-power-limited-amber",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "PHEV, stejný žlutý vůz s vykřičníkem, ale jiný význam: elektrický výkon je omezen kvůli nízkému nabití vysokonapěťového akumulátoru nebo teplotnímu limitu. Chybí přesná grafika.",
+        "en": "PHEV, the same amber vehicle/exclamation shape but a different meaning: electric power is limited by low high-voltage charge or a temperature limit. The exact graphic is missing.",
+        "de": "PHEV, gleiche gelbe Fahrzeug-/Ausrufezeichenform, aber andere Bedeutung: elektrische Leistung wegen niedrigem Hochvoltladezustand oder Temperaturgrenze eingeschränkt. Die genaue Grafik fehlt."
+      }
+    },
+    {
+      "id": "terramar-e-sound-fault-exact-graphic",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "PHEV, žlutý obrys vozu se zvukovými vlnami: závada vnějšího zvuku, vozidlo může být pro chodce neslyšitelné. Význam odpovídá e-sound-fault, ale místní vyplněný vůz má jinou geometrii; přesný asset chybí.",
+        "en": "PHEV, amber vehicle outline with sound waves: external-sound fault, so pedestrians may not hear the vehicle. The meaning matches e-sound-fault, but the local filled-car geometry differs; the exact asset is missing.",
+        "de": "PHEV, gelbe Fahrzeugkontur mit Schallwellen: Fehler des Außengeräuschs, Fahrzeug für Fußgänger möglicherweise unhörbar. Bedeutung entspricht e-sound-fault, aber die lokale ausgefüllte Fahrzeuggeometrie weicht ab; genauer Asset fehlt."
+      }
+    },
+    {
+      "id": "terramar-system-power-limited-combustion-unavailable",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "PHEV, žlutá želva v kruhu: výkon systému je omezen, protože spalovací motor nelze použít; sledovat dostupný výkon a při prázdné nádrži co nejdříve natankovat. Nesmí se sloučit s obecným omezením kvůli nabití/teplotě.",
+        "en": "PHEV, amber turtle in a circle: system power is limited because the combustion engine is unavailable; monitor available power and refuel promptly if the tank is empty. Do not merge with generic charge/temperature limitation.",
+        "de": "PHEV, gelbe Schildkröte im Kreis: Systemleistung eingeschränkt, weil der Verbrennungsmotor nicht verfügbar ist; verfügbare Leistung beobachten und bei leerem Tank bald tanken. Nicht mit allgemeiner Lade-/Temperaturbegrenzung zusammenführen."
+      }
+    },
+    {
+      "id": "terramar-electric-mode-unavailable-white",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-colour-state-and-instruction-verified-exact-reusable-graphic-pending",
+      "reason": {
+        "cs": "PHEV, bílý přeškrtnutý symbol E v kruhu: elektrický režim dočasně není k dispozici, protože nejsou splněny podmínky. Chybí přesná grafika.",
+        "en": "PHEV, white crossed-out E in a circle: electric mode is temporarily unavailable because operating conditions are not met. The exact graphic is missing.",
+        "de": "PHEV, weißes durchgestrichenes E im Kreis: Elektromodus vorübergehend nicht verfügbar, weil Bedingungen nicht erfüllt sind. Die genaue Grafik fehlt."
+      }
+    },
+    {
+      "id": "tarraco-fatigue-break-recommendation",
+      "brand": "seat",
+      "manual": "seat-tarraco-2023-06-de",
+      "status": "meaning-colour-state-and-instruction-reviewed-exact-reusable-graphic-or-single-state-pending",
+      "reason": {
+        "cs": "Str. 26 dokládá symbol šálku, text asi 5 sekund a zvuk při rozpoznané únavě (přibližně 65–200 km/h); systém nevaruje akutně před mikrospánkem. Přesná znovupoužitelná grafika Tarraco chybí.",
+        "en": "P.26 documents a cup, about five seconds of text and sound for detected fatigue (about 65–200 km/h); the system gives no acute microsleep warning. The exact reusable Tarraco graphic is missing.",
+        "de": "S. 26 belegt Tasse, etwa fünf Sekunden Text und Ton bei erkannter Müdigkeit (ca. 65–200 km/h); keine Akutwarnung vor Sekundenschlaf. Genaue nachnutzbare Tarraco-Grafik fehlt."
+      }
+    },
+    {
+      "id": "tarraco-traffic-sign-dynamic-display",
+      "brand": "seat",
+      "manual": "seat-tarraco-2023-06-de",
+      "status": "meaning-colour-state-and-instruction-reviewed-exact-reusable-graphic-or-single-state-pending",
+      "reason": {
+        "cs": "Str. 27 dokládá dynamické zobrazení rychlostí, zákazů předjíždění, nebezpečí a dodatkových značek podle země a výbavy. Není to jedna univerzální kontrolka.",
+        "en": "P.27 documents a dynamic display of speed limits, overtaking bans, hazards and supplementary signs depending on country and equipment. It is not one universal indicator.",
+        "de": "S. 27 belegt dynamische Anzeige von Geschwindigkeiten, Überholverboten, Gefahren und Zusatzzeichen je nach Land/Ausstattung. Keine universelle Einzelanzeige."
+      }
+    },
+    {
+      "id": "tarraco-lane-indicator-extinguished",
+      "brand": "seat",
+      "manual": "seat-tarraco-2023-06-de",
+      "status": "meaning-colour-state-and-instruction-reviewed-exact-reusable-graphic-or-single-state-pending",
+      "reason": {
+        "cs": "Str. 212 uvádí, že zhasnutá kontrolka může znamenat zapnutý systém nepřipravený k zásahu nebo vypnutý systém. Bez doprovodného stavu nelze vytvořit jednu významovou kartu.",
+        "en": "P.212 states that an extinguished indicator may mean the system is switched on but not ready to intervene, or switched off. One semantic card cannot be created without the accompanying state.",
+        "de": "S. 212 nennt bei erloschener Anzeige zwei Möglichkeiten: eingeschaltet, aber nicht eingriffsbereit, oder ausgeschaltet. Ohne Begleitzustand keine eindeutige Karte."
+      }
+    },
+    {
+      "id": "tarraco-travel-active-full",
+      "brand": "seat",
+      "manual": "seat-tarraco-2023-06-de",
+      "status": "meaning-colour-state-and-instruction-reviewed-exact-reusable-graphic-or-single-state-pending",
+      "reason": {
+        "cs": "Plně zelený kombinovaný symbol: Travel Assist aktivní, regulace odstupu i adaptivní vedení aktivní. Chybí přesná kombinovaná grafika.",
+        "en": "Fully green composite: Travel Assist active, distance control and adaptive lane guidance active. The exact composite graphic is missing.",
+        "de": "Vollständig grünes Kombinationssymbol: Travel Assist, Abstandsregelung und adaptive Spurführung aktiv. Genaue Kombinationsgrafik fehlt."
+      }
+    },
+    {
+      "id": "tarraco-travel-active-distance-only",
+      "brand": "seat",
+      "manual": "seat-tarraco-2023-06-de",
+      "status": "meaning-colour-state-and-instruction-reviewed-exact-reusable-graphic-or-single-state-pending",
+      "reason": {
+        "cs": "Částečně zelený kombinovaný symbol: Travel Assist aktivní, regulace odstupu aktivní a adaptivní vedení pasivní. Tento Tarraco stav je opačný k částečně zelenému rozdělení v ověřeném Terramaru 11.25; nesmí se přenášet.",
+        "en": "Partly green composite: Travel Assist active, distance control active and adaptive lane guidance passive. This Tarraco split is the reverse of the verified partly-green Terramar 11.25 state and must not be transferred.",
+        "de": "Teilweise grünes Kombinationssymbol: Travel Assist aktiv, Abstandsregelung aktiv, adaptive Spurführung passiv. Diese Tarraco-Aufteilung ist umgekehrt zum geprüften Terramar 11.25 und darf nicht übertragen werden."
+      }
+    },
+    {
+      "id": "tarraco-travel-deactivated-grey",
+      "brand": "seat",
+      "manual": "seat-tarraco-2023-06-de",
+      "status": "meaning-colour-state-and-instruction-reviewed-exact-reusable-graphic-or-single-state-pending",
+      "reason": {
+        "cs": "Šedý kombinovaný symbol: Travel Assist deaktivovaný, bez regulace. Chybí přesná grafika.",
+        "en": "Grey composite: Travel Assist deactivated, no control. The exact graphic is missing.",
+        "de": "Graues Kombinationssymbol: Travel Assist deaktiviert, keine Regelung. Genaue Grafik fehlt."
+      }
+    },
+    {
+      "id": "tarraco-travel-unavailable-amber",
+      "brand": "seat",
+      "manual": "seat-tarraco-2023-06-de",
+      "status": "meaning-colour-state-and-instruction-reviewed-exact-reusable-graphic-or-single-state-pending",
+      "reason": {
+        "cs": "Str. 216 dokládá trvale žlutý kombinovaný Travel Assist s hlášením nedostupnosti nebo neočekávané funkce. Přesná grafika chybí; stav se neslučuje s Lane Assist.",
+        "en": "P.216 documents a steady amber composite Travel Assist indicator with an unavailable/unexpected-operation message. The exact graphic is missing; this is not merged with Lane Assist.",
+        "de": "S. 216 belegt dauerhaft gelbe Travel-Assist-Kombinationsanzeige mit Nichtverfügbarkeits-/unerwarteter-Funktion-Meldung. Genaue Grafik fehlt; keine Zusammenführung mit Lane Assist."
+      }
+    },
+    {
+      "id": "terramar-speed-warning-level-1-flashing",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-state-and-instruction-verified-exact-dynamic-or-combined-graphic-pending",
+      "reason": {
+        "cs": "Terramar CS 11.25, str. 33: při překročení rozpoznané nejvyšší rychlosti dopravní značka nepřetržitě bliká v přístrojích/HUD. Tento odstavec neuvádí zvuk. Přesná dynamická grafika chybí.",
+        "en": "Terramar CS 11.25 p.33: when the detected maximum speed is exceeded, the road sign flashes continuously in the cluster/HUD. This paragraph does not state a sound. The exact dynamic graphic is missing.",
+        "de": "Terramar CS 11.25 S. 33: Bei Überschreitung der erkannten Höchstgeschwindigkeit blinkt das Verkehrszeichen kontinuierlich im Kombiinstrument/HUD. Dieser Absatz nennt keinen Ton. Genaue dynamische Grafik fehlt."
+      }
+    },
+    {
+      "id": "terramar-speed-warning-level-2-flashing-sound",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-state-and-instruction-verified-exact-dynamic-or-combined-graphic-pending",
+      "reason": {
+        "cs": "Terramar CS 11.25, str. 34: při pokračujícím překročení značka nepřetržitě bliká a zazní zvuk; výstraha končí po aktivním omezení rychlosti řidičem. Přesná grafika chybí.",
+        "en": "Terramar CS 11.25 p.34: if speeding continues, the sign flashes continuously and a sound is emitted; the warning ends when the driver actively reduces speed. The exact graphic is missing.",
+        "de": "Terramar CS 11.25 S. 34: Bei fortgesetzter Überschreitung blinkt das Zeichen kontinuierlich und ein Ton ertönt; Warnung endet nach aktiver Geschwindigkeitsreduzierung. Genaue Grafik fehlt."
+      }
+    },
+    {
+      "id": "terramar-extended-sign-recognition-unavailable",
+      "brand": "cupra",
+      "manual": "cupra-terramar-2025-11-cs",
+      "status": "meaning-state-and-instruction-verified-exact-dynamic-or-combined-graphic-pending",
+      "reason": {
+        "cs": "Terramar CS 11.25, str. 34: bílá systémová kontrolka spolu se žlutou centrální výstrahou a textem znamená nedostupnost rozšířeného rozpoznávání značek. Příčiny se dále rozlišují; přesná kombinovaná grafika chybí.",
+        "en": "Terramar CS 11.25 p.34: a white system indicator together with the amber central warning and text means extended traffic-sign recognition is unavailable. Causes are further distinguished; the exact combined graphic is missing.",
+        "de": "Terramar CS 11.25 S. 34: Weiße Systemanzeige zusammen mit gelber Zentralwarnung und Text bedeutet Nichtverfügbarkeit der erweiterten Verkehrszeichenerkennung. Ursachen werden weiter unterschieden; genaue Kombinationsgrafik fehlt."
+      }
     }
   ],
   "gaps": [
     {
       "brand": "volkswagen",
       "description": {
-        "cs": "Volkswagen: původní položky jsou modelově doložené ve 14 z 15 případů. Nově je ověřeno žhavení i blikající závada řízení dieselu Golf VII 11.2019 (5G0012705AK). Golf 5H0 11.2020 a ID.4 11.2021 (11A012705AF) mají další jednotlivá doložení. Stále chybí modelový doklad pro původní žlutou regulaci dosahu světlometů (vw-range); kontrola Golf VII a Touareg 11.2019 tento konkrétní symbol nepotvrdila. Obecný příklad zůstává výslovně bez modelu. Ostatní modely a roky od 2010 nejsou automaticky pokryté.",
-        "en": "Volkswagen: 14 of the original 15 entries now have model evidence. Preheating and a flashing diesel engine-management fault are newly verified for Golf VII 11.2019 (5G0012705AK). Golf 5H0 11.2020 and ID.4 11.2021 (11A012705AF) have further individual evidence. Model evidence for the original yellow headlight-range warning (vw-range) is still missing; reviewing Golf VII and Touareg 11.2019 did not confirm this exact pictogram. The general example remains explicitly without a model. Other models and years from 2010 are not automatically covered.",
-        "de": "Volkswagen: Für 14 der ursprünglichen 15 Einträge liegt jetzt ein Modellnachweis vor. Vorglühen und blinkende Diesel-Motorsteuerungsstörung sind neu für Golf VII 11.2019 (5G0012705AK) belegt. Golf 5H0 11.2020 und ID.4 11.2021 (11A012705AF) haben weitere Einzelnachweise. Für die ursprüngliche gelbe Leuchtweitenwarnung (vw-range) fehlt der Modellnachweis; die Prüfung von Golf VII und Touareg 11.2019 bestätigte dieses genaue Piktogramm nicht. Das allgemeine Beispiel bleibt ausdrücklich ohne Modell. Andere Modelle und Jahre ab 2010 sind nicht automatisch abgedeckt."
+        "cs": "Volkswagen: Golf 5H0 11/2020 a ID.4 11/2021 samostatně dokládají žlutou nedostupnost Lane Assist s vykřičníkem; Golf VII 11/2019 dokládá jiný žlutý stav „zapnutý, ale neaktivní“, jehož přesná použitelná grafika chybí. Žlutá regulace dosahu světlometů je doložena pouze obecnou stránkou Volkswagen UK bez modelu; návody Golf 11/2020, Golf VII 11/2019 a ID.4 11/2021 tento modelový scope nepotvrdily.",
+        "en": "Volkswagen: Golf 5H0 11/2020 and ID.4 11/2021 separately document amber Lane Assist unavailable with an exclamation mark; Golf VII 11/2019 documents a different amber “switched on but inactive” state whose exact reusable graphic is missing. The amber headlight-range fault is documented only by a general Volkswagen UK page without a model; Golf 11/2020, Golf VII 11/2019 and ID.4 11/2021 manuals did not establish a model scope.",
+        "de": "Volkswagen: Golf 5H0 11/2020 und ID.4 11/2021 belegen getrennt gelben Lane Assist nicht verfügbar mit Ausrufezeichen; Golf VII 11/2019 belegt den anderen gelben Zustand „eingeschaltet, aber inaktiv“, dessen genaue nachnutzbare Grafik fehlt. Die gelbe Leuchtweitenstörung ist nur durch die allgemeine Volkswagen-UK-Seite ohne Modell belegt; Golf 11/2020, Golf VII 11/2019 und ID.4 11/2021 begründen keinen Modellumfang."
       }
     },
     {
       "brand": "audi",
       "description": {
-        "cs": "Audi: vybrané položky Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) a Q4 e-tron 06.2023 (89A012705AH). Jde o dokumenty AUDI AG hostované třetími stranami; obálky, vydání a otisky jsou doložené, soubory výrobce nebyly porovnány. Nová vydání nejsou náhradou A4 8W 01.2016 (8W0012705AC), původního A8 4N pro 2018 ani Q4 pro 2022; pro tyto přesné rozsahy stále chybí přístupný odpovídající návod. Vybrané uzavřené oddíly neznamenají dokončené celé vydání. U A8 06.2025 zůstávají ovládací symboly parkování na stranách 230 a 244 čekající: P se senzorovými vlnami (ve druhé variantě doplněné obdélníkem displeje nebo kamery) a >>P se neshodují s dostupnou licencovanou grafikou P s volantem, která je na straně 243 kontrolkou nedostupnosti nebo přerušení.",
-        "en": "Audi: selected entries from Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) and Q4 e-tron 06.2023 (89A012705AH). AUDI AG documents hosted by third parties; covers, editions and hashes documented, manufacturer files not compared. New editions do not replace A4 8W 01.2016 (8W0012705AC), original A8 4N for 2018 or Q4 for 2022; accessible corresponding manuals remain missing for those exact scopes. Completed narrow subsections do not mean a complete edition. The A8 06.2025 parking-control symbols on pages 230 and 244 remain pending: the P-with-sensor-waves control (with a display or camera rectangle in the second variant) and the >>P control do not match the available licensed P-with-steering-wheel graphic, which is an unavailable-or-interrupted indicator on page 243.",
-        "de": "Audi: ausgewählte Einträge Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) und Q4 e-tron 06.2023 (89A012705AH). AUDI-AG-Dokumente von Dritten gehostet; Umschläge, Ausgaben und Hashes belegt, Herstellerdateien nicht abgeglichen. Neue Ausgaben ersetzen nicht A4 8W 01.2016 (8W0012705AC), ursprünglichen A8 4N für 2018 oder Q4 für 2022; passende zugängliche Anleitungen für diese genauen Bereiche fehlen weiterhin. Abgeschlossene Teilabschnitte sind keine vollständig abgeschlossene Ausgabe. Die Park-Bedientsymbole des A8 06.2025 auf den Seiten 230 und 244 bleiben offen: P mit Sensorwellen (in der zweiten Variante mit Display- oder Kamera-Rechteck) und >>P stimmen nicht mit der verfügbaren lizenzierten Grafik P mit Lenkrad überein, die auf Seite 243 eine Nichtverfügbarkeits- oder Unterbrechungsanzeige ist."
+        "cs": "Audi: přesná evropská vydání A4 B9/8W 01.2016 (8W0012705AC), Q4 e-tron 2022 a A8 D5/4N 2018 zůstávají nedoložená. Dokončený test 29.10. načetl aplikaci a konfiguraci (HTTP 200); HTTP 403 vrátil endpoint /web/models/, nikoli prokazatelně celý portál. Novější vydání ani GPSR vzorový identifikátor tyto rozsahy nenahrazují. Vybrané položky novějších kopií AUDI AG nejsou úplná revize vydání.",
+        "en": "Audi: the exact European A4 B9/8W 01.2016 (8W0012705AC), Q4 e-tron 2022 and A8 D5/4N 2018 editions remain unverified. The completed 29 October access test loaded the application and configuration (HTTP 200); /web/models/ returned HTTP 403, not demonstrably the whole portal. Newer editions and a GPSR sample identifier do not replace these scopes. Selected entries from newer AUDI AG copies are not whole-edition reviews.",
+        "de": "Audi: Genaue europäische Ausgaben A4 B9/8W 01.2016 (8W0012705AC), Q4 e-tron 2022 und A8 D5/4N 2018 bleiben unbelegt. Der abgeschlossene Zugriffstest vom 29.10. lud Anwendung und Konfiguration (HTTP 200); /web/models/ lieferte HTTP 403, nicht nachweislich das gesamte Portal. Neuere Ausgaben und GPSR-Musterkennung ersetzen diese Bereiche nicht. Ausgewählte Einträge neuerer AUDI-AG-Kopien sind keine vollständigen Ausgabenprüfungen."
       }
     },
     {
       "brand": "skoda",
       "description": {
-        "cs": "Škoda: zkontrolované vybrané položky pocházejí z kopie návodu Octavia 5E 11.2018 (5E0012715AQ) a Enyaq iV 11.2020, německy. Vydání není modelový rok a nepokrývá ostatní roky. Pro srovnání chybí původní soubory výrobce. Dále chybí Octavia 07.2019, Superb 05.2010 a pokyny digitálního návodu Octavia iV 11.2020 (5E4012715CB). Přesné dokumenty a výsledky přístupu jsou níže.",
-        "en": "Škoda: selected reviewed entries come from copies of the Octavia 5E 11.2018 manual (5E0012715AQ) and the German Enyaq iV 11.2020 manual. An edition is not a model year and does not cover other years. The original manufacturer files are still needed for comparison. Octavia 07.2019, Superb 05.2010 and the instructions in the Octavia iV 11.2020 digital manual (5E4012715CB) also remain missing. Exact documents and access outcomes are listed below.",
-        "de": "Škoda: Ausgewählte geprüfte Einträge stammen aus Kopien der Anleitung Octavia 5E 11.2018 (5E0012715AQ) und der deutschen Anleitung Enyaq iV 11.2020. Eine Ausgabe ist kein Modelljahr und deckt andere Jahre nicht ab. Für den Abgleich fehlen die Hersteller-Originaldateien. Außerdem fehlen Octavia 07.2019, Superb 05.2010 und die Fahrerhinweise der digitalen Anleitung Octavia iV 11.2020 (5E4012715CB). Genaue Dokumente und Zugriffsergebnisse sind unten aufgeführt."
+        "cs": "Škoda: česká a německá kopie Enyaq iV 11/2020 jsou vedené odděleně a vybrané kapitoly byly porovnány. Nově jsou rozdělené dvě žluté varianty zámku řízení, samostatné směrovky, ACC připravený/regulující a neutrální versus modré stavy světelných asistentů. Fotografovaná česká kniha se stranami 12–17 zůstává neidentifikovaná; je nutná její titulní nebo tirážní strana. Původní soubory výrobce a další uvedená vydání zůstávají otevřené.",
+        "en": "Škoda: Czech and German Enyaq iV 11/2020 copies are registered separately and selected chapters were compared. The two amber steering-lock variants, separate turn arrows, ACC standby/regulating and neutral versus blue lighting-assistant states are now distinguished. The photographed Czech book covering pp.12–17 remains unidentified and requires its title/imprint page. Manufacturer-hosted originals and other listed editions remain open.",
+        "de": "Škoda: Tschechische und deutsche Enyaq-iV-Kopien 11/2020 werden getrennt geführt; ausgewählte Kapitel wurden verglichen. Zwei gelbe Lenkverriegelungsvarianten, getrennte Blinker, ACC-Bereitschaft/Regelung sowie neutrale gegenüber blauen Lichtassistenzzuständen sind getrennt. Das fotografierte tschechische Buch S.12–17 bleibt unidentifiziert; Titel-/Impressumsseite nötig. Hersteller-Originale und weitere Ausgaben bleiben offen."
       }
     },
     {
@@ -25137,17 +26621,17 @@
     {
       "brand": "seat",
       "description": {
-        "cs": "SEAT a CUPRA: zachované položky platí jen pro výslovně uvedená vydání a výbavu. Kompletní revize všech modelů a let od 2010, resp. CUPRA od vzniku samostatné značky, není dokončená. Mezery mezi vydáními se automaticky nevyplňují.",
-        "en": "SEAT and CUPRA: retained entries apply only to explicitly listed editions and equipment. A complete review of all models and years from 2010, or CUPRA from its establishment as a separate brand, remains incomplete. Gaps between editions are not automatically filled.",
-        "de": "SEAT und CUPRA: Die erhaltenen Einträge gelten nur für ausdrücklich genannte Ausgaben und Ausstattungen. Die vollständige Prüfung aller Modelle und Jahre ab 2010 beziehungsweise CUPRA seit Gründung als eigenständige Marke ist noch nicht abgeschlossen. Lücken zwischen Ausgaben werden nicht automatisch geschlossen."
+        "cs": "SEAT: německý úplný Tarraco 06/2023 (5FJ012705BR) a německý dodatek 01/2024 (5FJ012705FE) jsou ověřené jako dva samostatné dokumenty; žádný soubor výslovně nepotvrzuje jejich vzájemné párování. Lane Assist a výzvy k převzetí byly doplněné jen u přesně shodných stavů, červená závada generátoru jen pro konvenční provedení. Únava, dynamické značky, kombinované Travel Assist a oba stavy HDC čekají na přesné použitelné grafiky.",
+        "en": "SEAT: the German full Tarraco 06/2023 (5FJ012705BR) and German supplement 01/2024 (5FJ012705FE) are verified as separate documents; neither file explicitly pairs them. Lane Assist and steering takeover states were added only where exact states match, and the red generator fault only for conventional versions. Fatigue, dynamic signs, composite Travel Assist and both HDC states await exact reusable graphics.",
+        "de": "SEAT: Vollständiger deutscher Tarraco 06/2023 (5FJ012705BR) und deutscher Nachtrag 01/2024 (5FJ012705FE) sind getrennte Dokumente; keine Datei ordnet sie ausdrücklich einander zu. Lane Assist und Lenkübernahme nur bei genau passenden Zuständen ergänzt, rote Generatorstörung nur konventionell. Müdigkeit, dynamische Zeichen, Travel-Assist-Kombinationen und beide HDC-Zustände warten auf genaue Grafiken."
       }
     },
     {
       "brand": "cupra",
       "description": {
-        "cs": "SEAT a CUPRA: zachované položky platí jen pro výslovně uvedená vydání a výbavu. Kompletní revize všech modelů a let od 2010, resp. CUPRA od vzniku samostatné značky, není dokončená. Mezery mezi vydáními se automaticky nevyplňují.",
-        "en": "SEAT and CUPRA: retained entries apply only to explicitly listed editions and equipment. A complete review of all models and years from 2010, or CUPRA from its establishment as a separate brand, remains incomplete. Gaps between editions are not automatically filled.",
-        "de": "SEAT und CUPRA: Die erhaltenen Einträge gelten nur für ausdrücklich genannte Ausgaben und Ausstattungen. Die vollständige Prüfung aller Modelle und Jahre ab 2010 beziehungsweise CUPRA seit Gründung als eigenständige Marke ist noch nicht abgeschlossen. Lücken zwischen Ausgaben werden nicht automatisch geschlossen."
+        "cs": "CUPRA: český úplný Terramar 11.25 (578012715AC) a samostatný README (578012815AC) jsou identifikované odděleně. Přidány jsou přesně porovnané stavy Lane Assist a bílé/červené převzetí řízení. Šest stavů únavy, tři stavy pozornosti, tři stavy dopravních značek, kombinované Travel Assist, Lane OFF a jednotlivé PHEV stavy jsou významově doložené, ale nezveřejněné bez přesných právně použitelných grafik. Datum výroby fotografovaného vozu 03/2026 neurčuje modelový rok ani software.",
+        "en": "CUPRA: the Czech full Terramar 11.25 manual (578012715AC) and separate README (578012815AC) are identified independently. Exactly compared Lane Assist and white/red steering takeover states were added. Six fatigue, three attention, three traffic-sign, composite Travel Assist, Lane OFF and individual PHEV states are semantically documented but unpublished without exact lawfully reusable graphics. The photographed vehicle manufacture date 03/2026 establishes neither model year nor software.",
+        "de": "CUPRA: Vollständige tschechische Terramar-Anleitung 11.25 (578012715AC) und separates README (578012815AC) sind getrennt identifiziert. Genau verglichene Lane-Assist- sowie weiße/rote Lenkübernahmezustände ergänzt. Sechs Müdigkeits-, drei Aufmerksamkeits-, drei Verkehrszeichen-, Travel-Assist-Kombinations-, Lane-OFF- und einzelne PHEV-Zustände sind bedeutungsmäßig belegt, aber ohne genaue rechtmäßig nachnutzbare Grafiken unveröffentlicht. Produktionsdatum 03/2026 belegt weder Modelljahr noch Software."
       }
     }
   ],
@@ -25211,6 +26695,30 @@
     {
       "title": "Audi SSP 668 – A8 (type 4N), driver assistance systems; Czech internal training copy",
       "use": "Technical context only; does not establish owner instructions or republication rights for the original graphics."
+    },
+    {
+      "title": "Volkswagen UK – Headlight range control and Lane Assist warning-light pages",
+      "source": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/headlight-range-control.html ; https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/lane-assist.html",
+      "checked": "2026-10-31",
+      "usage": "Official general meaning and state distinction only. No model, generation or manual edition is assigned from these pages. Exact live-response and source-image hashes are recorded in vw-warning-pages-review.json."
+    },
+    {
+      "title": "CUPRA Terramar – official Czech manual archive",
+      "source": "https://www.cupraofficial.cz/servis-a-prislusenstvi/manualy/manualy-cupra-terramar",
+      "checked": "2026-10-31",
+      "usage": "Full Czech manual 578012715AC and separate README 578012815AC are recorded independently; README does not replace the full manual."
+    },
+    {
+      "title": "Audi owner manuals – official access information and portal",
+      "source": "https://www.audi.de/de/service-zubehoer/bordbuch-bedienungsanleitungen/ ; https://ownersmanual.audi.com/home/cs_CZ",
+      "checked": "2026-10-31",
+      "usage": "Access method only. No warning meaning is inferred without an exact European model/edition result."
+    },
+    {
+      "title": "SEAT Tarraco – official Austrian manual archive",
+      "source": "https://www.seat.at/service-und-zubehoer/onlinedienste/bedienungsanleitungen/tarraco",
+      "checked": "2026-10-31",
+      "usage": "German base 5FJ012705BR and German supplement 5FJ012705FE are registered separately; no file-level statement pairs the supplement to that base."
     }
   ],
   "graphics": {
@@ -26087,7 +27595,7 @@
       "license": "Public domain",
       "license_url": "",
       "author": "Vectorization:    Mrmw",
-      "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source. Licensed base geometry retained. Functional exclamation mark added only for the separately documented Golf 5H0 11.2020 unavailable variant, source overview row 61. This is a documented functional illustration, not an OEM contour-identical file.",
+      "modifications": "Standard ISO 7000-3128 car/lane geometry preserved; registration marks removed; source-documented amber colour applied. A functional exclamation mark is added for independently verified unavailable states in Golf 5H0 11.2020, ID.4 11.2021, Terramar CS 11.25 and Tarraco DE 06.2023. Licensed functional illustration, not manufacturer artwork.",
       "sha256": "0c0f6c2b56b63c088957ba65208a98b9d79bc96fa19c9068581c39b1233d2acd",
       "file": "wp-content/uploads/kontrolky/lane-alert-zluta.svg"
     },
@@ -26247,24 +27755,14 @@
     }
   },
   "counts": {
-    "semantic_records": 171,
-    "legacy_generic_volkswagen": 1,
-    "model_documented_semantic_records": 167,
-    "model_edition_assignments": 587,
-    "partially_reviewed_manual_editions": 43,
-    "shared_graphic_colour_variants": 94,
+    "semantic_records": 173,
     "distinct_pictogram_shapes": 67,
+    "shared_graphic_colour_variants": 94,
+    "model_edition_assignments": 616,
+    "model_documented_semantic_records": 169,
+    "partially_reviewed_manual_editions": 47,
+    "legacy_generic_volkswagen": 1,
     "by_brand": {
-      "volkswagen": {
-        "distinct_pictogram_shapes": 26,
-        "graphic_colour_variants": 30,
-        "semantic_variants": 33,
-        "model_edition_assignments": 35,
-        "generic_brand_assignments": 1,
-        "reviewed_manual_editions": 3,
-        "first_party_hosted_manual_editions": 3,
-        "third_party_hosted_manual_editions": 0
-      },
       "audi": {
         "distinct_pictogram_shapes": 54,
         "graphic_colour_variants": 67,
@@ -26275,34 +27773,44 @@
         "first_party_hosted_manual_editions": 0,
         "third_party_hosted_manual_editions": 5
       },
-      "skoda": {
-        "distinct_pictogram_shapes": 28,
-        "graphic_colour_variants": 36,
-        "semantic_variants": 49,
-        "model_edition_assignments": 67,
+      "cupra": {
+        "distinct_pictogram_shapes": 41,
+        "graphic_colour_variants": 54,
+        "semantic_variants": 68,
+        "model_edition_assignments": 180,
         "generic_brand_assignments": 0,
-        "reviewed_manual_editions": 2,
-        "first_party_hosted_manual_editions": 0,
-        "third_party_hosted_manual_editions": 2
-      },
-      "seat": {
-        "distinct_pictogram_shapes": 29,
-        "graphic_colour_variants": 38,
-        "semantic_variants": 47,
-        "model_edition_assignments": 101,
-        "generic_brand_assignments": 0,
-        "reviewed_manual_editions": 20,
-        "first_party_hosted_manual_editions": 20,
+        "reviewed_manual_editions": 13,
+        "first_party_hosted_manual_editions": 13,
         "third_party_hosted_manual_editions": 0
       },
-      "cupra": {
-        "distinct_pictogram_shapes": 39,
-        "graphic_colour_variants": 51,
-        "semantic_variants": 65,
-        "model_edition_assignments": 174,
+      "seat": {
+        "distinct_pictogram_shapes": 32,
+        "graphic_colour_variants": 42,
+        "semantic_variants": 51,
+        "model_edition_assignments": 107,
         "generic_brand_assignments": 0,
-        "reviewed_manual_editions": 12,
-        "first_party_hosted_manual_editions": 12,
+        "reviewed_manual_editions": 22,
+        "first_party_hosted_manual_editions": 22,
+        "third_party_hosted_manual_editions": 0
+      },
+      "skoda": {
+        "distinct_pictogram_shapes": 31,
+        "graphic_colour_variants": 40,
+        "semantic_variants": 55,
+        "model_edition_assignments": 83,
+        "generic_brand_assignments": 0,
+        "reviewed_manual_editions": 3,
+        "first_party_hosted_manual_editions": 0,
+        "third_party_hosted_manual_editions": 3
+      },
+      "volkswagen": {
+        "distinct_pictogram_shapes": 26,
+        "graphic_colour_variants": 30,
+        "semantic_variants": 33,
+        "model_edition_assignments": 36,
+        "generic_brand_assignments": 1,
+        "reviewed_manual_editions": 3,
+        "first_party_hosted_manual_editions": 3,
         "third_party_hosted_manual_editions": 0
       },
       "volkswagen-uzitkove-vozy": {
@@ -26331,18 +27839,32 @@
       "brand": "volkswagen",
       "reviewed_models": [
         {
+          "model": "Golf",
+          "generation": "5H0",
+          "edition": "11.2020",
+          "part_number": "5H0012769AD"
+        },
+        {
           "model": "Golf VII",
+          "generation": "5G0",
           "edition": "11.2019",
           "part_number": "5G0012705AK"
         },
         {
+          "model": "ID.4",
+          "generation": null,
+          "edition": "11.2021",
+          "part_number": "11A012705AF"
+        },
+        {
           "model": "Touareg",
+          "generation": null,
           "edition": "11.2019",
           "part_number": "760012705AF"
         }
       ],
-      "reason": "The reviewed official symbol overview and lighting fault topic show a general lamp failure and dynamic cornering-light message, but do not establish this specific yellow headlight-range up/down warning pictogram. Audi Q3 evidence is not inherited by Volkswagen. A model-specific European Volkswagen manual showing this exact lamp and its instructions is still needed.",
-      "checked": "2026-10-30"
+      "reason": "The reviewed official symbol overviews and relevant lighting/headlight-range chapters do not establish this specific amber headlight-range up/down warning pictogram for these exact editions. Audi evidence is not inherited by Volkswagen. A model-specific European Volkswagen manual showing this exact lamp and its instructions is still needed.",
+      "checked": "2026-10-31"
     }
   ],
   "cross_checks": [
@@ -26390,14 +27912,14 @@
       "brand": "audi",
       "model": "A4 (8W)",
       "requested_year": "2016",
-      "document": "European German owner manual, 8W0012705AC, edition 01.2016",
+      "document": "European German owner manual requested: A4 B9/8W, edition 01.2016, publication 8W0012705AC; exact file not obtained",
       "url": "https://ownersmanual.audi.com/home/de_DE",
-      "result": "Model-list request /web/models/ returns HTTP 403. Official GPSR A4 link also returns 403. Third-party HTML copy for A4 2014 located, not accepted as verified official edition.",
-      "needed": "PDF or export of the European owner manual including warning overview and referenced instruction pages.",
+      "result": "Completed 2026-10-29 capture: the portal application shell and /web/config returned HTTP 200, while /web/models/ returned HTTP 403. The project access record states that the A4 GPSR request also returned HTTP 403; no 01.2016 instruction pages were obtained. A third-party A4 2014 HTML copy is a different edition and was rejected. The incomplete 2026-10-31 request produced no HTTP result and does not supersede the completed capture.",
+      "needed": "Exact European German PDF or complete portal export for publication 8W0012705AC, including cover, imprint, warning overview and every referenced driver-instruction page used for catalogue entries.",
       "summary": {
-        "cs": "A4 8W, návod 01.2016, číslo 8W0012705AC: evropský portál i seznam modelů vrací 403. Potřebuji příslušný PDF návod nebo export.",
-        "en": "A4 8W, manual 01.2016, part 8W0012705AC: European portal and model list return 403. The PDF manual or an export is needed.",
-        "de": "A4 8W, Anleitung 01.2016, Nummer 8W0012705AC: Europäisches Portal und Modellliste liefern 403. Benötigt wird die PDF-Anleitung oder ein Export."
+        "cs": "A4 B9/8W, požadovaný evropský německý návod 01.2016, publikace 8W0012705AC: aplikace portálu a konfigurace se 29. 10. 2026 načetly (HTTP 200), ale API seznamu modelů /web/models/ a evidovaný GPSR požadavek A4 vrátily HTTP 403. To neprokazuje, že celý portál vrací 403. Chybí přesný PDF nebo úplný export s obálkou, tiráží, přehledem kontrolek a navazujícími pokyny.",
+        "en": "A4 B9/8W, requested European German manual 01.2016, publication 8W0012705AC: the portal application and configuration loaded on 29 October 2026 (HTTP 200), but the /web/models/ API and the recorded A4 GPSR request returned HTTP 403. This does not establish that the whole portal returns 403. The exact PDF or complete export with cover, imprint, warning overview and referenced instructions is still required.",
+        "de": "A4 B9/8W, angeforderte europäische deutsche Anleitung 01.2016, Publikation 8W0012705AC: Portalanwendung und Konfiguration wurden am 29. Oktober 2026 geladen (HTTP 200), aber die API /web/models/ und der protokollierte A4-GPSR-Aufruf lieferten HTTP 403. Damit ist nicht belegt, dass das gesamte Portal HTTP 403 liefert. Benötigt wird die genaue PDF-Datei oder ein vollständiger Export mit Umschlag, Impressum, Kontrollleuchtenübersicht und den verwiesenen Anweisungen."
       },
       "date": "2026-10-29"
     },
@@ -26405,14 +27927,14 @@
       "brand": "audi",
       "model": "Q4 e-tron",
       "requested_year": "2022",
-      "document": "European owner manual; exact edition not established",
+      "document": "European/RDW owner manual for Q4 e-tron F4, model-year scope 2022; exact edition, language and publication code not established",
       "url": "https://ownersmanual.audi.com/web/rdw/start?vin=GPSRSAMPLEQ4E0001&language=de_DE&origin=GPSR",
-      "result": "Official European model portal blocked (403); no year-specific instruction pages obtained. The GPSR sample link is manufacturer-published, not a customer VIN.",
-      "needed": "European model-year 2022 owner manual, warning overview and electric-drive/assistance chapters.",
+      "result": "Completed 2026-10-29 capture: the portal application shell and /web/config returned HTTP 200, while /web/models/ returned HTTP 403. GPSRSAMPLEQ4E0001 is a manufacturer-published sample identifier, not a customer VIN, and does not establish a 2022 edition. No year-specific instruction pages were obtained. The incomplete 2026-10-31 request produced no HTTP result and does not supersede the completed capture.",
+      "needed": "A European/RDW model-selection result for model year 2022 in de_DE or cs_CZ and the corresponding complete manual/export, including cover, imprint/publication code, warning overview and electric-drive, lighting and assistance chapters.",
       "summary": {
-        "cs": "Q4 e-tron 2022: konkrétní evropské vydání dosud nebylo zpřístupněno. Potřebný je návod s přehledem symbolů a kapitolami o pohonu a asistentech.",
-        "en": "Q4 e-tron 2022: the specific European edition remains inaccessible. The manual’s symbol overview and drive/assistance chapters are needed.",
-        "de": "Q4 e-tron 2022: Die konkrete europäische Ausgabe ist noch nicht zugänglich. Benötigt werden Symbolübersicht und Kapitel zu Antrieb und Assistenzsystemen."
+        "cs": "Q4 e-tron F4, evropský rozsah modelového roku 2022: aplikace portálu a konfigurace se 29. 10. 2026 načetly (HTTP 200), ale API seznamu modelů /web/models/ vrátilo HTTP 403. GPSRSAMPLEQ4E0001 je vzorový identifikátor výrobce, nikoli zákaznický VIN, a nedokládá rok 2022 ani konkrétní vydání. Chybí výsledek evropského modelového výběru a odpovídající úplný návod s tiráží, přehledem symbolů a kapitolami pohonu, osvětlení a asistentů.",
+        "en": "Q4 e-tron F4, European model-year 2022 scope: the portal application and configuration loaded on 29 October 2026 (HTTP 200), but the /web/models/ API returned HTTP 403. GPSRSAMPLEQ4E0001 is a manufacturer sample identifier, not a customer VIN, and does not establish model year 2022 or a specific edition. A European model-selection result and the corresponding complete manual with imprint, symbol overview and drive, lighting and assistance chapters are required.",
+        "de": "Q4 e-tron F4, europäischer Modelljahresumfang 2022: Portalanwendung und Konfiguration wurden am 29. Oktober 2026 geladen (HTTP 200), aber die API /web/models/ lieferte HTTP 403. GPSRSAMPLEQ4E0001 ist eine Musterkennung des Herstellers, keine Kunden-FIN, und belegt weder das Modelljahr 2022 noch eine konkrete Ausgabe. Benötigt werden das Ergebnis der europäischen Modellauswahl und die zugehörige vollständige Anleitung mit Impressum, Symbolübersicht sowie Kapiteln zu Antrieb, Beleuchtung und Assistenzsystemen."
       },
       "date": "2026-10-29"
     },
@@ -26420,14 +27942,14 @@
       "brand": "audi",
       "model": "A8 (4N)",
       "requested_year": "2018",
-      "document": "European owner manual; SSP 668 available as supplementary technical source",
+      "document": "European owner manual for A8 D5/4N, 2018 scope; exact edition and publication code not established; SSP 668 is supplementary only",
       "url": "https://ownersmanual.audi.com/home/de_DE",
-      "result": "Model list blocked (403). SSP 668 reviewed for system context, no driver instructions or graphic reuse rights inferred.",
-      "needed": "European owner manual for A8 4N 2018 with exact edition.",
+      "result": "Completed 2026-10-29 capture: the portal application shell and /web/config returned HTTP 200, while /web/models/ returned HTTP 403. The project register records the linked A8 GPSR request as HTTP 403; no 2018 owner-manual instruction pages were obtained. SSP 668 was reviewed only as technical context and does not provide model-specific driver instructions or graphic reuse rights. The incomplete 2026-10-31 request produced no HTTP result and does not supersede the completed capture.",
+      "needed": "Exact European owner manual/export matching A8 D5/4N 2018, including cover, imprint/publication code, warning overview and every referenced driver-instruction page used for catalogue entries.",
       "summary": {
-        "cs": "A8 4N 2018: dostupný SSP 668 nenahrazuje návod k obsluze. Potřebuji evropské vydání návodu včetně pokynů pro řidiče.",
-        "en": "A8 4N 2018: available SSP 668 does not replace the owner’s manual. A European manual including driver instructions is needed.",
-        "de": "A8 4N 2018: Das verfügbare SSP 668 ersetzt keine Betriebsanleitung. Benötigt wird die europäische Ausgabe einschließlich Fahrerhinweisen."
+        "cs": "A8 D5/4N, evropský rozsah roku 2018: aplikace portálu a konfigurace se 29. 10. 2026 načetly (HTTP 200), ale API seznamu modelů /web/models/ a evidovaný GPSR požadavek A8 vrátily HTTP 403. SSP 668 je pouze technický školicí podklad a nenahrazuje návod ani pokyny pro řidiče. Chybí přesné evropské vydání, publikační kód a úplný návod s přehledem kontrolek a navazujícími pokyny.",
+        "en": "A8 D5/4N, European 2018 scope: the portal application and configuration loaded on 29 October 2026 (HTTP 200), but the /web/models/ API and the recorded A8 GPSR request returned HTTP 403. SSP 668 is supplementary technical training material and does not replace the owner manual or driver instructions. The exact European edition, publication code and complete manual with warning overview and referenced instructions remain required.",
+        "de": "A8 D5/4N, europäischer Umfang 2018: Portalanwendung und Konfiguration wurden am 29. Oktober 2026 geladen (HTTP 200), aber die API /web/models/ und der protokollierte A8-GPSR-Aufruf lieferten HTTP 403. SSP 668 ist nur technisches Schulungsmaterial und ersetzt weder Betriebsanleitung noch Fahrerhinweise. Benötigt werden die genaue europäische Ausgabe, die Publikationsnummer und die vollständige Anleitung mit Kontrollleuchtenübersicht und verwiesenen Anweisungen."
       },
       "date": "2026-10-29"
     },
@@ -26470,9 +27992,9 @@
       "result": "Official catalogue accessible. Normal digital entry POST returns error ERR_01_003_TP. Manufacturer-authored German PDF copy of edition 11.2020 reviewed; it is explicitly labelled as third-party hosted.",
       "needed": "Official PDF/export or functioning public digital manual for comparison with the reviewed copy.",
       "summary": {
-        "cs": "Enyaq iV 11.2020: běžný vstup do českého digitálního návodu 5LG012715CE vrací ERR_01_003_TP. Prohlédnuta byla zvlášť označená německá PDF kopie. Chybí srovnání s originálním souborem.",
-        "en": "Enyaq iV 11.2020: normal access to Czech digital manual 5LG012715CE returns ERR_01_003_TP. A separately identified German PDF copy was reviewed. Comparison with the original file remains outstanding.",
-        "de": "Enyaq iV 11.2020: Der normale Zugang zur tschechischen digitalen Anleitung 5LG012715CE liefert ERR_01_003_TP. Eine gesondert gekennzeichnete deutsche PDF-Kopie wurde geprüft. Der Abgleich mit der Originaldatei steht noch aus."
+        "cs": "Enyaq iV 11.2020: běžný vstup do českého digitálního návodu 5LG012715CE vrací ERR_01_003_TP. Samostatně označené kopie dokumentu výrobce CS (V1, R8, cs_CZ) a DE byly pro vybrané kapitoly prohlédnuty. Nadále chybí srovnání s originálním souborem z portálu výrobce.",
+        "en": "Enyaq iV 11.2020: normal access to Czech digital manual 5LG012715CE returns ERR_01_003_TP. Separately identified CS (V1, R8, cs_CZ) and DE copies of the manufacturer document were reviewed for selected chapters. Comparison with the original manufacturer-portal file remains outstanding.",
+        "de": "Enyaq iV 11.2020: Der normale Zugang zur tschechischen digitalen Anleitung 5LG012715CE liefert ERR_01_003_TP. Gesondert gekennzeichnete CS- (V1, R8, cs_CZ) und DE-Kopien des Herstellerdokuments wurden in ausgewählten Kapiteln geprüft. Der Abgleich mit der Originaldatei aus dem Herstellerportal steht weiter aus."
       },
       "date": "2026-10-29"
     },
@@ -26607,13 +28129,16 @@
       }
     },
     {
-      "id": "vw-range-european-source-search-20261030",
-      "checked": "2026-10-30",
+      "id": "vw-range-european-source-search-20261031",
+      "checked": "2026-10-31",
       "item": "vw-range",
       "result": "unresolved",
       "examined_candidates": [
-        "Touareg 11.2019 German digital manual: lighting troubleshooting does not confirm this exact symbol",
-        "Passat B8 MJ2016 attachment 752102: HTTP 403, actual PDF not obtained",
+        "Golf 5H0 11.2020, 5H0012769AD: official symbol overview and range-control chapter do not establish this exact amber up/down pictogram",
+        "Golf VII 11.2019, 5G0012705AK: official symbol overview and lighting-fault topic do not establish this exact pictogram",
+        "ID.4 11.2021, 11A012705AF: official symbol overview and range-control chapter do not establish this exact pictogram",
+        "Touareg 11.2019, 760012705AF: official symbol overview and lighting-fault topic do not establish this exact pictogram",
+        "Passat B8 MY2016 attachment 752102: HTTP 403, actual PDF not obtained",
         "Touareg 2013/2014 English manual mirrors: European market scope not established, not accepted as European proof",
         "Phaeton SSP 272: early-2000s publication, not evidence for a 2010+ model-year assignment"
       ],
@@ -26622,41 +28147,41 @@
       "brand": "volkswagen",
       "url": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/headlight-range-control.html",
       "summary": {
-        "cs": "Modelové doložení vw-range zůstává otevřené. Touareg 11.2019 přesnou variantu nepotvrdil; kopie Passat B8 MJ2016 vrátila HTTP 403. Anglické příklady Touareg 2013/2014 nemají doloženou evropskou platnost; SSP 272 nepokrývá požadovaný rozsah od 2010. Bez modelového přiřazení.",
-        "en": "Model evidence for vw-range remains open. Touareg 11.2019 did not confirm the exact variant; the Passat B8 MY2016 copy returned HTTP 403. English Touareg 2013/2014 examples lack established European applicability; SSP 272 does not cover the requested 2010+ scope. No model assignment added.",
-        "de": "Modellnachweis vw-range offen. Touareg 11.2019 bestätigt genaue Variante nicht; Passat-B8-MJ2016-Kopie liefert HTTP 403. Europäische Geltung englischer Touareg-2013/2014-Beispiele unbelegt; SSP 272 deckt geforderten Bereich ab 2010 nicht ab. Keine Modellzuordnung ergänzt."
+        "cs": "Modelové doložení vw-range zůstává otevřené. Přesnou variantu nepotvrdily modelové návody Golf 5H0 11.2020 (5H0012769AD), Golf VII 11.2019 (5G0012705AK), ID.4 11.2021 (11A012705AF) ani Touareg 11.2019 (760012705AF). Kopie Passat B8 MY2016 vrátila HTTP 403; další kandidáti nemají doloženou evropskou platnost nebo požadované období. Bez modelového přiřazení.",
+        "en": "Model evidence for vw-range remains open. The exact variant was not established by the Golf 5H0 11.2020 (5H0012769AD), Golf VII 11.2019 (5G0012705AK), ID.4 11.2021 (11A012705AF) or Touareg 11.2019 (760012705AF) model manuals. The Passat B8 MY2016 copy returned HTTP 403; other candidates lack established European applicability or the requested period. No model assignment added.",
+        "de": "Der Modellnachweis für vw-range bleibt offen. Die genaue Variante ist weder durch Golf 5H0 11.2020 (5H0012769AD), Golf VII 11.2019 (5G0012705AK), ID.4 11.2021 (11A012705AF) noch Touareg 11.2019 (760012705AF) belegt. Die Passat-B8-MJ2016-Kopie liefert HTTP 403; weitere Kandidaten haben keine belegte europäische Geltung oder liegen außerhalb des geforderten Zeitraums. Keine Modellzuordnung ergänzt."
       }
     }
   ],
   "counting_method": {
-    "cs": "Odlišný tvar symbolu počítáme jednou bez ohledu na barvu a počet přiřazených modelů. Barevné obrazové varianty, významové záznamy a modelová přiřazení vykazujeme zvlášť. Dvě příručky Škoda jsou kopie vydání výrobce hostované třetí stranou; nejsou vydávané za soubory ověřené na serveru výrobce. Tyto grafické identity zahrnují také doložené funkční nápisy (například AUTO, LIM, A/C), nikoli jen obrazové piktogramy. Nejde o počet všech symbolů výrobce ani důkaz úplnosti.",
-    "en": "A distinct pictogram shape is counted once regardless of colour or model assignments. Colour renditions, semantic records and model assignments are reported separately. Two Škoda manuals are manufacturer-authored editions hosted by third parties, not files verified on the manufacturer’s server. These graphic identities also include documented functional inscriptions (such as AUTO, LIM, A/C), not only pictorial symbols. They are neither a count of every manufacturer symbol nor evidence of completeness.",
-    "de": "Eine unterschiedliche Piktogrammform wird unabhängig von Farbe und Modellzuordnungen einmal gezählt. Farbvarianten, Bedeutungseinträge und Modellzuordnungen werden getrennt ausgewiesen. Zwei Škoda-Anleitungen sind von Dritten gehostete Herstellerausgaben, keine auf dem Herstellerserver geprüften Dateien. Diese Grafikidentitäten schließen auch belegte Funktionsaufschriften (etwa AUTO, LIM, A/C) ein, nicht nur Bildpiktogramme. Keine Anzahl sämtlicher Herstellersymbole und kein Vollständigkeitsbeleg."
+    "cs": "Odlišný tvar symbolu počítáme jednou bez ohledu na barvu a počet přiřazených modelů. Barevné obrazové varianty, významové záznamy a modelová přiřazení vykazujeme zvlášť. Tři příručky Škoda jsou kopie vydání výrobce hostované třetí stranou: Octavia 5E 11.2018 a samostatné české a německé Enyaq iV 11.2020; nejsou vydávané za soubory porovnané s originálem na serveru výrobce. Grafické identity zahrnují i doložené funkční nápisy (např. AUTO, LIM, A/C). Nejde o počet všech symbolů výrobce ani důkaz úplnosti.",
+    "en": "A distinct pictogram shape is counted once regardless of colour or model assignments. Colour renditions, semantic records and model assignments are reported separately. Three Škoda manuals are manufacturer-authored copies hosted by third parties: Octavia 5E 11.2018 and separate Czech and German Enyaq iV 11.2020 copies; they are not represented as files compared with manufacturer-hosted originals. Graphic identities also include documented functional inscriptions (for example AUTO, LIM and A/C). They are neither a count of every manufacturer symbol nor evidence of completeness.",
+    "de": "Eine unterschiedliche Piktogrammform wird unabhängig von Farbe und Modellzuordnungen einmal gezählt. Farbvarianten, Bedeutungseinträge und Modellzuordnungen werden getrennt ausgewiesen. Drei Škoda-Anleitungen sind von Dritten gehostete Kopien von Herstellerdokumenten: Octavia 5E 11.2018 sowie getrennte tschechische und deutsche Enyaq-iV-Kopien 11.2020; sie werden nicht als mit Hersteller-Originaldateien abgeglichen dargestellt. Grafikidentitäten schließen auch belegte Funktionsaufschriften (z. B. AUTO, LIM und A/C) ein. Keine Anzahl sämtlicher Herstellersymbole und kein Vollständigkeitsbeleg."
   },
   "review_gaps": {
     "cs": [
-      "Volkswagen: původní položky jsou modelově doložené ve 14 z 15 případů. Nově je ověřeno žhavení i blikající závada řízení dieselu Golf VII 11.2019 (5G0012705AK). Golf 5H0 11.2020 a ID.4 11.2021 (11A012705AF) mají další jednotlivá doložení. Stále chybí modelový doklad pro původní žlutou regulaci dosahu světlometů (vw-range); kontrola Golf VII a Touareg 11.2019 tento konkrétní symbol nepotvrdila. Obecný příklad zůstává výslovně bez modelu. Ostatní modely a roky od 2010 nejsou automaticky pokryté.",
-      "Audi: vybrané položky Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) a Q4 e-tron 06.2023 (89A012705AH). Jde o dokumenty AUDI AG hostované třetími stranami; obálky, vydání a otisky jsou doložené, soubory výrobce nebyly porovnány. Nová vydání nejsou náhradou A4 8W 01.2016 (8W0012705AC), původního A8 4N pro 2018 ani Q4 pro 2022; pro tyto přesné rozsahy stále chybí přístupný odpovídající návod. Vybrané uzavřené oddíly neznamenají dokončené celé vydání. U A8 06.2025 zůstávají ovládací symboly parkování na stranách 230 a 244 čekající: P se senzorovými vlnami (ve druhé variantě doplněné obdélníkem displeje nebo kamery) a >>P se neshodují s dostupnou licencovanou grafikou P s volantem, která je na straně 243 kontrolkou nedostupnosti nebo přerušení.",
-      "Škoda: zkontrolované vybrané položky pocházejí z kopie návodu Octavia 5E 11.2018 (5E0012715AQ) a Enyaq iV 11.2020, německy. Vydání není modelový rok a nepokrývá ostatní roky. Pro srovnání chybí původní soubory výrobce. Dále chybí Octavia 07.2019, Superb 05.2010 a pokyny digitálního návodu Octavia iV 11.2020 (5E4012715CB). Přesné dokumenty a výsledky přístupu jsou níže.",
+      "Volkswagen: Golf 5H0 11/2020 a ID.4 11/2021 samostatně dokládají žlutou nedostupnost Lane Assist s vykřičníkem; Golf VII 11/2019 dokládá jiný žlutý stav „zapnutý, ale neaktivní“, jehož přesná použitelná grafika chybí. Žlutá regulace dosahu světlometů je doložena pouze obecnou stránkou Volkswagen UK bez modelu; návody Golf 11/2020, Golf VII 11/2019 a ID.4 11/2021 tento modelový scope nepotvrdily.",
+      "Audi: přesná evropská vydání A4 B9/8W 01.2016 (8W0012705AC), Q4 e-tron 2022 a A8 D5/4N 2018 zůstávají nedoložená. Dokončený test 29.10. načetl aplikaci a konfiguraci (HTTP 200); HTTP 403 vrátil endpoint /web/models/, nikoli prokazatelně celý portál. Novější vydání ani GPSR vzorový identifikátor tyto rozsahy nenahrazují. Vybrané položky novějších kopií AUDI AG nejsou úplná revize vydání.",
+      "Škoda: česká a německá kopie Enyaq iV 11/2020 jsou vedené odděleně a vybrané kapitoly byly porovnány. Nově jsou rozdělené dvě žluté varianty zámku řízení, samostatné směrovky, ACC připravený/regulující a neutrální versus modré stavy světelných asistentů. Fotografovaná česká kniha se stranami 12–17 zůstává neidentifikovaná; je nutná její titulní nebo tirážní strana. Původní soubory výrobce a další uvedená vydání zůstávají otevřené.",
       "Volkswagen Užitkové vozy: nově doložen Caddy 2K7, digitální návod 11.2025. U 17 původních obecných příkladů je obecný rozsah nahrazen konkrétním doložením; původní zdroje jsou v evidenci zachovány. Zbývajících 7 příkladů dosud není modelově potvrzeno: EPC, obecná brzdová výstraha, DPF, převzetí ovládání ACC a tři varianty prostého volantu. Nový Caddy používá u řízení a některých asistentů jiné značky; podobnost není důkazem shody. Starší Caddy, T6/T6.1, nový Transporter, ID. Buzz, Crafter a Amarok nejsou tímto vydáním pokryté.",
-      "SEAT a CUPRA: zachované položky platí jen pro výslovně uvedená vydání a výbavu. Kompletní revize všech modelů a let od 2010, resp. CUPRA od vzniku samostatné značky, není dokončená. Mezery mezi vydáními se automaticky nevyplňují.",
-      "Zůstávají nedoplněné přesné, legálně použitelné grafické varianty některých systémů: kombinované stavy Travel Assist, Front Assist, dopravní značky a jejich doplňkové stavy, některé parkovací funkce, AdBlue/SCR a výstrahy vysokonapěťové soustavy. Například ID.4 11.2021 rozlišuje červený STOP, žluté auto s vykřičníkem a smíšené barevné stavy Travel Assist; nenahrazujeme je podobným obrázkem. Audi Q3 11.2024 únavu zobrazuje okem, nikoli kávou; tato varianta je již samostatně doplněná."
+      "SEAT: německý úplný Tarraco 06/2023 (5FJ012705BR) a německý dodatek 01/2024 (5FJ012705FE) jsou ověřené jako dva samostatné dokumenty; žádný soubor výslovně nepotvrzuje jejich vzájemné párování. Lane Assist a výzvy k převzetí byly doplněné jen u přesně shodných stavů, červená závada generátoru jen pro konvenční provedení. Únava, dynamické značky, kombinované Travel Assist a oba stavy HDC čekají na přesné použitelné grafiky.",
+      "CUPRA: český úplný Terramar 11.25 (578012715AC) a samostatný README (578012815AC) jsou identifikované odděleně. Přidány jsou přesně porovnané stavy Lane Assist a bílé/červené převzetí řízení. Šest stavů únavy, tři stavy pozornosti, tři stavy dopravních značek, kombinované Travel Assist, Lane OFF a jednotlivé PHEV stavy jsou významově doložené, ale nezveřejněné bez přesných právně použitelných grafik. Datum výroby fotografovaného vozu 03/2026 neurčuje modelový rok ani software."
     ],
     "en": [
-      "Volkswagen: 14 of the original 15 entries now have model evidence. Preheating and a flashing diesel engine-management fault are newly verified for Golf VII 11.2019 (5G0012705AK). Golf 5H0 11.2020 and ID.4 11.2021 (11A012705AF) have further individual evidence. Model evidence for the original yellow headlight-range warning (vw-range) is still missing; reviewing Golf VII and Touareg 11.2019 did not confirm this exact pictogram. The general example remains explicitly without a model. Other models and years from 2010 are not automatically covered.",
-      "Audi: selected entries from Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) and Q4 e-tron 06.2023 (89A012705AH). AUDI AG documents hosted by third parties; covers, editions and hashes documented, manufacturer files not compared. New editions do not replace A4 8W 01.2016 (8W0012705AC), original A8 4N for 2018 or Q4 for 2022; accessible corresponding manuals remain missing for those exact scopes. Completed narrow subsections do not mean a complete edition. The A8 06.2025 parking-control symbols on pages 230 and 244 remain pending: the P-with-sensor-waves control (with a display or camera rectangle in the second variant) and the >>P control do not match the available licensed P-with-steering-wheel graphic, which is an unavailable-or-interrupted indicator on page 243.",
-      "Škoda: selected reviewed entries come from copies of the Octavia 5E 11.2018 manual (5E0012715AQ) and the German Enyaq iV 11.2020 manual. An edition is not a model year and does not cover other years. The original manufacturer files are still needed for comparison. Octavia 07.2019, Superb 05.2010 and the instructions in the Octavia iV 11.2020 digital manual (5E4012715CB) also remain missing. Exact documents and access outcomes are listed below.",
+      "Volkswagen: Golf 5H0 11/2020 and ID.4 11/2021 separately document amber Lane Assist unavailable with an exclamation mark; Golf VII 11/2019 documents a different amber “switched on but inactive” state whose exact reusable graphic is missing. The amber headlight-range fault is documented only by a general Volkswagen UK page without a model; Golf 11/2020, Golf VII 11/2019 and ID.4 11/2021 manuals did not establish a model scope.",
+      "Audi: the exact European A4 B9/8W 01.2016 (8W0012705AC), Q4 e-tron 2022 and A8 D5/4N 2018 editions remain unverified. The completed 29 October access test loaded the application and configuration (HTTP 200); /web/models/ returned HTTP 403, not demonstrably the whole portal. Newer editions and a GPSR sample identifier do not replace these scopes. Selected entries from newer AUDI AG copies are not whole-edition reviews.",
+      "Škoda: Czech and German Enyaq iV 11/2020 copies are registered separately and selected chapters were compared. The two amber steering-lock variants, separate turn arrows, ACC standby/regulating and neutral versus blue lighting-assistant states are now distinguished. The photographed Czech book covering pp.12–17 remains unidentified and requires its title/imprint page. Manufacturer-hosted originals and other listed editions remain open.",
       "Volkswagen Commercial Vehicles: Caddy 2K7, digital manual 11.2025, is now documented. Seventeen original general examples have been replaced by specific model evidence, with their previous sources retained in the audit. Seven examples remain without model confirmation: EPC, general brake warning, DPF, ACC take-over prompt and three plain steering-wheel variants. New Caddy steering and some assistant pictograms differ; similarity is not evidence of equivalence. Earlier Caddy, T6/T6.1, new Transporter, ID. Buzz, Crafter and Amarok are not covered by this edition.",
-      "SEAT and CUPRA: retained entries apply only to explicitly listed editions and equipment. A complete review of all models and years from 2010, or CUPRA from its establishment as a separate brand, remains incomplete. Gaps between editions are not automatically filled.",
-      "Exact, lawfully reusable graphic variants remain outstanding for some systems: combined Travel Assist states, Front Assist, traffic signs and their supplementary states, some parking functions, AdBlue/SCR and high-voltage warnings. For example, ID.4 11.2021 distinguishes red STOP, a yellow car with an exclamation mark and mixed-colour Travel Assist states; these are not replaced with a similar image. Audi Q3 11.2024 uses an eye for fatigue rather than a coffee cup; that variant has now been added separately."
+      "SEAT: the German full Tarraco 06/2023 (5FJ012705BR) and German supplement 01/2024 (5FJ012705FE) are verified as separate documents; neither file explicitly pairs them. Lane Assist and steering takeover states were added only where exact states match, and the red generator fault only for conventional versions. Fatigue, dynamic signs, composite Travel Assist and both HDC states await exact reusable graphics.",
+      "CUPRA: the Czech full Terramar 11.25 manual (578012715AC) and separate README (578012815AC) are identified independently. Exactly compared Lane Assist and white/red steering takeover states were added. Six fatigue, three attention, three traffic-sign, composite Travel Assist, Lane OFF and individual PHEV states are semantically documented but unpublished without exact lawfully reusable graphics. The photographed vehicle manufacture date 03/2026 establishes neither model year nor software."
     ],
     "de": [
-      "Volkswagen: Für 14 der ursprünglichen 15 Einträge liegt jetzt ein Modellnachweis vor. Vorglühen und blinkende Diesel-Motorsteuerungsstörung sind neu für Golf VII 11.2019 (5G0012705AK) belegt. Golf 5H0 11.2020 und ID.4 11.2021 (11A012705AF) haben weitere Einzelnachweise. Für die ursprüngliche gelbe Leuchtweitenwarnung (vw-range) fehlt der Modellnachweis; die Prüfung von Golf VII und Touareg 11.2019 bestätigte dieses genaue Piktogramm nicht. Das allgemeine Beispiel bleibt ausdrücklich ohne Modell. Andere Modelle und Jahre ab 2010 sind nicht automatisch abgedeckt.",
-      "Audi: ausgewählte Einträge Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) und Q4 e-tron 06.2023 (89A012705AH). AUDI-AG-Dokumente von Dritten gehostet; Umschläge, Ausgaben und Hashes belegt, Herstellerdateien nicht abgeglichen. Neue Ausgaben ersetzen nicht A4 8W 01.2016 (8W0012705AC), ursprünglichen A8 4N für 2018 oder Q4 für 2022; passende zugängliche Anleitungen für diese genauen Bereiche fehlen weiterhin. Abgeschlossene Teilabschnitte sind keine vollständig abgeschlossene Ausgabe. Die Park-Bedientsymbole des A8 06.2025 auf den Seiten 230 und 244 bleiben offen: P mit Sensorwellen (in der zweiten Variante mit Display- oder Kamera-Rechteck) und >>P stimmen nicht mit der verfügbaren lizenzierten Grafik P mit Lenkrad überein, die auf Seite 243 eine Nichtverfügbarkeits- oder Unterbrechungsanzeige ist.",
-      "Škoda: Ausgewählte geprüfte Einträge stammen aus Kopien der Anleitung Octavia 5E 11.2018 (5E0012715AQ) und der deutschen Anleitung Enyaq iV 11.2020. Eine Ausgabe ist kein Modelljahr und deckt andere Jahre nicht ab. Für den Abgleich fehlen die Hersteller-Originaldateien. Außerdem fehlen Octavia 07.2019, Superb 05.2010 und die Fahrerhinweise der digitalen Anleitung Octavia iV 11.2020 (5E4012715CB). Genaue Dokumente und Zugriffsergebnisse sind unten aufgeführt.",
+      "Volkswagen: Golf 5H0 11/2020 und ID.4 11/2021 belegen getrennt gelben Lane Assist nicht verfügbar mit Ausrufezeichen; Golf VII 11/2019 belegt den anderen gelben Zustand „eingeschaltet, aber inaktiv“, dessen genaue nachnutzbare Grafik fehlt. Die gelbe Leuchtweitenstörung ist nur durch die allgemeine Volkswagen-UK-Seite ohne Modell belegt; Golf 11/2020, Golf VII 11/2019 und ID.4 11/2021 begründen keinen Modellumfang.",
+      "Audi: Genaue europäische Ausgaben A4 B9/8W 01.2016 (8W0012705AC), Q4 e-tron 2022 und A8 D5/4N 2018 bleiben unbelegt. Der abgeschlossene Zugriffstest vom 29.10. lud Anwendung und Konfiguration (HTTP 200); /web/models/ lieferte HTTP 403, nicht nachweislich das gesamte Portal. Neuere Ausgaben und GPSR-Musterkennung ersetzen diese Bereiche nicht. Ausgewählte Einträge neuerer AUDI-AG-Kopien sind keine vollständigen Ausgabenprüfungen.",
+      "Škoda: Tschechische und deutsche Enyaq-iV-Kopien 11/2020 werden getrennt geführt; ausgewählte Kapitel wurden verglichen. Zwei gelbe Lenkverriegelungsvarianten, getrennte Blinker, ACC-Bereitschaft/Regelung sowie neutrale gegenüber blauen Lichtassistenzzuständen sind getrennt. Das fotografierte tschechische Buch S.12–17 bleibt unidentifiziert; Titel-/Impressumsseite nötig. Hersteller-Originale und weitere Ausgaben bleiben offen.",
       "Volkswagen Nutzfahrzeuge: Neu belegt ist Caddy 2K7, digitale Anleitung 11.2025. Bei 17 ursprünglichen allgemeinen Beispielen wurde der allgemeine Geltungsbereich durch konkreten Modellnachweis ersetzt; bisherige Quellen bleiben in der Dokumentation. Sieben Beispiele bleiben ohne Modellbestätigung: EPC, allgemeine Bremswarnung, DPF, ACC-Übernahmeaufforderung und drei einfache Lenkradvarianten. Beim neuen Caddy weichen Lenkungs- und manche Assistenzpiktogramme ab; Ähnlichkeit ist kein Gleichheitsnachweis. Ältere Caddy, T6/T6.1, neuer Transporter, ID. Buzz, Crafter und Amarok sind durch diese Ausgabe nicht abgedeckt.",
-      "SEAT und CUPRA: Die erhaltenen Einträge gelten nur für ausdrücklich genannte Ausgaben und Ausstattungen. Die vollständige Prüfung aller Modelle und Jahre ab 2010 beziehungsweise CUPRA seit Gründung als eigenständige Marke ist noch nicht abgeschlossen. Lücken zwischen Ausgaben werden nicht automatisch geschlossen.",
-      "Genaue, rechtmäßig nutzbare Grafikvarianten fehlen weiterhin für einige Systeme: kombinierte Travel-Assist-Zustände, Front Assist, Verkehrszeichen mit Zusatzanzeigen, manche Parkfunktionen, AdBlue/SCR und Hochvoltwarnungen. ID.4 11.2021 unterscheidet beispielsweise rotes STOP, ein gelbes Auto mit Ausrufezeichen und mehrfarbige Travel-Assist-Zustände; ähnliche Ersatzbilder werden nicht verwendet. Audi Q3 11.2024 zeigt Müdigkeit als Auge statt Kaffeetasse; diese Variante wurde jetzt separat ergänzt."
+      "SEAT: Vollständiger deutscher Tarraco 06/2023 (5FJ012705BR) und deutscher Nachtrag 01/2024 (5FJ012705FE) sind getrennte Dokumente; keine Datei ordnet sie ausdrücklich einander zu. Lane Assist und Lenkübernahme nur bei genau passenden Zuständen ergänzt, rote Generatorstörung nur konventionell. Müdigkeit, dynamische Zeichen, Travel-Assist-Kombinationen und beide HDC-Zustände warten auf genaue Grafiken.",
+      "CUPRA: Vollständige tschechische Terramar-Anleitung 11.25 (578012715AC) und separates README (578012815AC) sind getrennt identifiziert. Genau verglichene Lane-Assist- sowie weiße/rote Lenkübernahmezustände ergänzt. Sechs Müdigkeits-, drei Aufmerksamkeits-, drei Verkehrszeichen-, Travel-Assist-Kombinations-, Lane-OFF- und einzelne PHEV-Zustände sind bedeutungsmäßig belegt, aber ohne genaue rechtmäßig nachnutzbare Grafiken unveröffentlicht. Produktionsdatum 03/2026 belegt weder Modelljahr noch Software."
     ]
   },
   "rendering_review": {
@@ -29177,6 +30702,49 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "A8 06.2025 independently supports red and yellow central-message indicators and a single combined instruction for a steady or flashing emissions indicator. The parking-control graphics remain pending because neither matches the available licensed P-with-steering-wheel graphic or its unavailable/interrupted meaning. No vehicle identity, model year or wider edition applicability is inferred."
+    },
+    {
+      "id": "2026-10-31-vw-enyaq-terramar-tarraco-source-revision",
+      "checked": "2026-10-31",
+      "before_semantic_records": 171,
+      "after_semantic_records": 173,
+      "added_record_ids": [
+        "enyaq-steering-lock-fault-amber",
+        "enyaq-steering-lock-not-unlocked"
+      ],
+      "renamed_record_ids": [
+        {
+          "from": "vw-golf-lane-unavailable",
+          "to": "lane-unavailable-exclamation",
+          "reason": "The exact semantic state is now documented for Volkswagen, CUPRA and SEAT; the established public HTML anchor is retained."
+        }
+      ],
+      "corrected_record_ids": [
+        "vw-range",
+        "steering-red-flash",
+        "lane-unavailable-exclamation",
+        "take-steering-request",
+        "take-steering-immediate"
+      ],
+      "enriched_existing_model_scopes": [
+        "audi-q4-turn-left",
+        "audi-q4-turn-right",
+        "lane-ready",
+        "lane-correction",
+        "terramar-lane-passive",
+        "high-beam-assist-blue",
+        "enyaq-dynamic-light-assist-active",
+        "acc-standby",
+        "acc-regulating",
+        "fatigue",
+        "vwcv-battery-charge-fault"
+      ],
+      "removed_or_split_scopes": [
+        "turn-signals / Enyaq DE replaced by separate left and right arrows",
+        "steering-yellow-flash / Enyaq DE split into exact red fault, amber fault and amber not-released states"
+      ],
+      "whole_manuals_complete": 0,
+      "note": "Exact selected states were compared in Enyaq CS 11.2020, Terramar CS 11.25, Tarraco DE 06.2023 and its separately recorded 01.2024 supplement, and Volkswagen model-selected manuals. General VW UK pages remain non-model evidence. Audi A4 01/2016, Q4 2022 and A8 2018 remain unresolved."
     }
   ],
   "evidence_gaps_revision": [
@@ -29185,7 +30753,9 @@
       "claim_not_established": "This exact yellow headlamp up/down range-control pictogram applies to a specific European Volkswagen model/edition from 2010.",
       "missing_source": "European Volkswagen owner manual with this exact pictogram, colour and instructions, plus model and edition. General VW UK page does not establish a model.",
       "checked_sources": [
+        "Golf 5H0 11.2020 5H0012769AD official symbol overview and headlight-range-control chapter",
         "Golf VII 11.2019 5G0012705AK official symbol overview and lighting-fault topic",
+        "ID.4 11.2021 11A012705AF official symbol overview and headlight-range-control chapter",
         "Touareg 11.2019 760012705AF official symbol overview and lighting-fault topic",
         "Targeted searches for Phaeton/Touareg/Golf range-control warning; accessory/wiring/workshop pages rejected as driver-symbol evidence"
       ],

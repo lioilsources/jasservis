@@ -1,0 +1,44 @@
+{
+  "checked": "2026-10-31",
+  "source_type": "Official Volkswagen UK general warning-light pages",
+  "scope_limitation": "These pages establish the general symbol meaning shown by Volkswagen UK. They do not identify a model, generation, manual edition, powertrain or equipment package and therefore do not replace the model-selected Golf 11/2020, Golf VII 11/2019 and ID.4 11/2021 manuals.",
+  "pages": [
+    {
+      "id": "headlight-range-control",
+      "url": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/headlight-range-control.html",
+      "http_status": 200,
+      "page_title": "Yellow Headlight Range Control Warning Light | Volkswagen UK",
+      "live_response_sha256": "90f4a9f80518c31ac83917a36658605bf820602119947e1f897e5064e65fd5fa",
+      "statement": "There is a fault in the headlight range control system. Please contact an authorised repairer.",
+      "colour": "amber",
+      "state": "illuminated; no flashing variant stated on this page",
+      "source_image": {
+        "alt": "Amber headlight range control warning light",
+        "url": "https://assets.volkswagen.com/is/image/volkswagenag/my_car-warning_lights-headlight_range_control-4_3-2500x1865?Zm10PXBuZy1hbHBoYSZ3aWQ9ODAwJmJmYz1vZmYmMGFmYw==",
+        "sha256": "4b4771e986eaeef7203ff2ec570568a782ee0f62e87678a1e8d28259665cdf0b",
+        "republication": "not included; used only for visual source comparison"
+      },
+      "catalogue_result": "The existing vw-range record is retained as a general Volkswagen UK assignment and explicitly distinguished from a generic lighting/bulb fault. Model applicability remains pending until an exact model manual documents this symbol."
+    },
+    {
+      "id": "lane-assist",
+      "url": "https://www.volkswagen.co.uk/en/owners-and-services/my-car/warning-light/lane-assist.html",
+      "http_status": 200,
+      "page_title": "Lane Assist Warning Light | Yellow | Volkswagen UK",
+      "live_response_sha256": "5680192c44d5f494165770b29eb6ea6fbcecb03d704a1c6c50ab29ef6a3ff2de",
+      "statements": [
+        "The amber indicator comes on when Lane Assist is switched on and road markings cannot be detected.",
+        "Only when the indicator is accompanied by the message ‘system fault’ does this page instruct the driver to contact a retailer."
+      ],
+      "colour": "amber",
+      "state": "system enabled but road markings not detected; fault only with the stated accompanying message",
+      "source_image": {
+        "alt": "Amber - Lane assist symbol",
+        "url": "https://assets.volkswagen.com/is/image/volkswagenag/my_car_warning_lights-Lane_Assist-4_3-2500x1865?Zm10PXBuZy1hbHBoYSZ3aWQ9ODAwJmJmYz1vZmYmMGFmYw==",
+        "sha256": "2c3603d19cd3f1f090d0c353b94f77520bd3cafd68eea8330d51accbda9b32e0",
+        "republication": "not included; used only for visual source comparison"
+      },
+      "catalogue_result": "The page is recorded as evidence that amber alone is not a fault. It is not assigned to a specific model. The page’s lane-lines-only source graphic differs from the current licensed car-between-lanes depiction, so no approximate customer card is published from this general page."
+    }
+  ]
+}

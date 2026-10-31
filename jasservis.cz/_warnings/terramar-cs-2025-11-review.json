@@ -1,0 +1,202 @@
+{
+  "id": "cupra-terramar-cs-2025-11-source-review",
+  "checked": "2026-10-31",
+  "brand": "cupra",
+  "model": "Terramar",
+  "whole_manual_complete": false,
+  "official_archive": {
+    "url": "https://www.cupraofficial.cz/servis-a-prislusenstvi/manualy/manualy-cupra-terramar",
+    "http_status": 200,
+    "response_sha256": "5ab967cceb4da763d0920a75037778f9a5da6960447021786725b28be0fde0fa"
+  },
+  "documents": [
+    {
+      "id": "cupra-terramar-2025-11-cs",
+      "kind": "complete-owner-manual",
+      "language": "cs_CZ",
+      "edition": "11.25",
+      "publication_code": "578012715AC",
+      "reprint": "15.11.25",
+      "pages": 438,
+      "bytes": 17889354,
+      "sha256": "05bb8e17050fcc5d9ac57af3570a46e041dc4c5e3fe7d8f54d85ae03f6a47379",
+      "url": "https://www.cupraofficial.cz/dam/files/download/e4373aafb1adbda5c5931e1df8d88175d96988c7/5a872a9f6545d115c8db636160aa2bc0/dd30ea02-c3b8-45cf-bf78-08c7620bd1b3/CUPRA-Terramar-(2025.11)-2-cs_CZ_v.2.pdf",
+      "page_mapping": "PDF page = printed page + 2",
+      "overview": {
+        "printed_pages": [
+          11,
+          12,
+          13,
+          14
+        ],
+        "pdf_pages": [
+          13,
+          14,
+          15,
+          16
+        ]
+      }
+    },
+    {
+      "id": "cupra-terramar-2025-11-cs-readme",
+      "kind": "readme-quick-reference",
+      "language": "cs_CZ",
+      "edition": "11.25",
+      "publication_code": "578012815AC",
+      "reprint": "15.11.25",
+      "pages": 82,
+      "bytes": 4452199,
+      "sha256": "b7b564df179ff0a62eded868758caaa6b3d5adfcf125c48eae80613d90c931b3",
+      "url": "https://www.cupraofficial.cz/dam/files/download/0337bdeee8226f64eff9378c4c1c541127d6dd92/550967ef7504266b8286943dec6b77a3/109849d5-599e-41af-ae85-51ff61765b43/CUPRA-Terramar-README-(2025.11)-1-cs_CZ.pdf",
+      "page_mapping": "PDF page = printed page + 2",
+      "overview": {
+        "printed_pages": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "pdf_pages": [
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "limitation": "The README is a separate condensed publication and does not replace the complete manual or its detailed instructions."
+    }
+  ],
+  "reviewed_sections": [
+    {
+      "topic": "Lane Assist",
+      "printed_pages": [
+        13,
+        14,
+        215,
+        216,
+        217,
+        218
+      ],
+      "pdf_pages": [
+        15,
+        16,
+        217,
+        218,
+        219,
+        220
+      ],
+      "verified_states": [
+        "grey: passive and unavailable for lane guidance",
+        "green: active and available for lane guidance",
+        "amber: corrective steering intervention in progress",
+        "amber OFF: switched off; availability depends on country",
+        "amber with message: unavailable; camera obstruction, damage or fault are possible causes"
+      ],
+      "catalogue_action": "Grey, green and amber-intervention states were scoped individually. The amber exclamation-mark unavailable state was added to the established unavailable semantic card after exact visual comparison. The amber OFF variant remains pending an exact reusable OFF asset."
+    },
+    {
+      "topic": "Fatigue monitoring",
+      "printed_pages": [
+        27,
+        28,
+        29
+      ],
+      "pdf_pages": [
+        29,
+        30,
+        31
+      ],
+      "operating_condition": "Warnings are displayed only above 70 km/h; the system has stated limits and does not replace driver attention.",
+      "verified_states": [
+        "level 1: white cup, text and acoustic warning; break recommended",
+        "level 2: red cup, text and acoustic warning; break as soon as possible",
+        "level 3: red cup, text and acoustic warning; significant hazard, stop as quickly as possible and take a break immediately",
+        "time-based: white cup after 4.5 hours uninterrupted driving without detected fatigue signs; break recommended",
+        "limited: amber cup, text and acoustic warning; fault/malfunction, restart drive readiness and seek workshop if persistent",
+        "unavailable: amber cup plus amber central warning, text and sound; fault/malfunction or system limits, restart/check settings and seek workshop if persistent"
+      ],
+      "signal_note": "The manual describes the indicators as displayed or illuminated with text and sound; it does not describe these reviewed fatigue states as flashing.",
+      "catalogue_action": "All six meanings are kept separate in pending evidence. No customer card is published because the reusable public-domain cup differs visibly from the exact Terramar cup and OEM artwork reuse rights are not established."
+    },
+    {
+      "topic": "Driver attention monitor",
+      "printed_pages": [
+        29,
+        30,
+        31
+      ],
+      "pdf_pages": [
+        31,
+        32,
+        33
+      ],
+      "verified_state": "The amber eye/exclamation graphic is used with text and sound for unavailable/fault states.",
+      "catalogue_action": "Pending only: the local eye-only licensed drawing lacks the exclamation mark and is not an exact graphic match."
+    },
+    {
+      "topic": "Traffic-sign recognition",
+      "printed_pages": [
+        31,
+        32,
+        33,
+        34
+      ],
+      "pdf_pages": [
+        33,
+        34,
+        35,
+        36
+      ],
+      "catalogue_action": "Three states remain separately pending exact dynamic/combined graphics. No Audi or generic single sign card is substituted.",
+      "verified_states": [
+        "speed warning level 1: detected road sign flashes continuously in the cluster/HUD when the detected maximum speed is exceeded; this paragraph states no sound",
+        "speed warning level 2: if speeding continues, the same sign flashes continuously and an acoustic warning sounds until the driver actively reduces speed",
+        "extended traffic-sign recognition unavailable: white system indicator plus amber central warning and text; camera, fault, speed-warning, navigation-data and operating-area causes are separately described"
+      ]
+    },
+    {
+      "topic": "Travel Assist",
+      "printed_pages": [
+        218,
+        219,
+        220
+      ],
+      "pdf_pages": [
+        220,
+        221,
+        222
+      ],
+      "verified_states": [
+        "green: active distance control and adaptive lane guidance",
+        "partly green: active Travel Assist, passive distance control and adaptive lane guidance",
+        "grey: deactivated, no control",
+        "amber with message: unavailable or unexpected operation",
+        "white hands-on-wheel: take over steering",
+        "red hands-on-wheel: take over steering immediately"
+      ],
+      "catalogue_action": "White and red takeover requests were scoped individually. Three composite operating states and amber unavailability remain pending exact reusable composite graphics."
+    },
+    {
+      "topic": "Electric drive",
+      "printed_pages": [
+        174,
+        175
+      ],
+      "pdf_pages": [
+        176,
+        177
+      ],
+      "verified_states": [
+        "steady red vehicle outline with exclamation: propulsion unavailable; stop safely and obtain professional help",
+        "steady amber vehicle outline with exclamation: electric-drive fault; drive very slowly to a qualified workshop",
+        "steady amber vehicle outline with exclamation: electric power limited by low high-voltage charge or a temperature limit; distinct from the fault state despite the same base shape",
+        "steady amber vehicle outline with sound waves: external engine-sound fault; pedestrians may not hear the vehicle",
+        "steady amber turtle in a circle: system power limited because the combustion engine is unavailable; distinct from generic charge/temperature limitation",
+        "steady white crossed-out E in a circle: electric mode temporarily unavailable because conditions are not met"
+      ],
+      "catalogue_action": "All meanings remain individually pending exact reusable graphics. The e-sound meaning matches an existing semantic concept, but its local filled-car asset differs from the exact Terramar outline and is not scoped.",
+      "scope": "Hybrid/PHEV vehicles only; do not transfer to conventional combustion-only versions."
+    }
+  ],
+  "photographed_vehicle_separation": "The user-stated manufacture date 03/2026 is not used as evidence of model year, software version or automatic identity with edition 11.25."
+}

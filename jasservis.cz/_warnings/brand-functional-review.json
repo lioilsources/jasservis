@@ -28,7 +28,7 @@
       "catalogue_ids": [
         "lane-ready",
         "lane-correction",
-        "vw-golf-lane-unavailable"
+        "lane-unavailable-exclamation"
       ],
       "whole_manual_complete": false
     },
@@ -1203,62 +1203,62 @@
     }
   ],
   "counts": {
-    "semantic_records": 169,
-    "legacy_generic_volkswagen": 1,
-    "model_documented_semantic_records": 165,
-    "model_edition_assignments": 584,
-    "partially_reviewed_manual_editions": 43,
-    "shared_graphic_colour_variants": 94,
+    "semantic_records": 173,
     "distinct_pictogram_shapes": 67,
+    "shared_graphic_colour_variants": 94,
+    "model_edition_assignments": 616,
+    "model_documented_semantic_records": 169,
+    "partially_reviewed_manual_editions": 47,
+    "legacy_generic_volkswagen": 1,
     "by_brand": {
-      "volkswagen": {
-        "distinct_pictogram_shapes": 26,
-        "graphic_colour_variants": 30,
-        "semantic_variants": 33,
-        "model_edition_assignments": 35,
-        "generic_brand_assignments": 1,
-        "reviewed_manual_editions": 3,
-        "first_party_hosted_manual_editions": 3,
-        "third_party_hosted_manual_editions": 0
-      },
       "audi": {
         "distinct_pictogram_shapes": 54,
-        "graphic_colour_variants": 66,
-        "semantic_variants": 83,
-        "model_edition_assignments": 182,
+        "graphic_colour_variants": 67,
+        "semantic_variants": 85,
+        "model_edition_assignments": 185,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 5,
         "first_party_hosted_manual_editions": 0,
         "third_party_hosted_manual_editions": 5
       },
-      "skoda": {
-        "distinct_pictogram_shapes": 28,
-        "graphic_colour_variants": 36,
-        "semantic_variants": 49,
-        "model_edition_assignments": 67,
+      "cupra": {
+        "distinct_pictogram_shapes": 41,
+        "graphic_colour_variants": 54,
+        "semantic_variants": 68,
+        "model_edition_assignments": 180,
         "generic_brand_assignments": 0,
-        "reviewed_manual_editions": 2,
-        "first_party_hosted_manual_editions": 0,
-        "third_party_hosted_manual_editions": 2
-      },
-      "seat": {
-        "distinct_pictogram_shapes": 29,
-        "graphic_colour_variants": 38,
-        "semantic_variants": 47,
-        "model_edition_assignments": 101,
-        "generic_brand_assignments": 0,
-        "reviewed_manual_editions": 20,
-        "first_party_hosted_manual_editions": 20,
+        "reviewed_manual_editions": 13,
+        "first_party_hosted_manual_editions": 13,
         "third_party_hosted_manual_editions": 0
       },
-      "cupra": {
-        "distinct_pictogram_shapes": 39,
-        "graphic_colour_variants": 51,
-        "semantic_variants": 65,
-        "model_edition_assignments": 174,
+      "seat": {
+        "distinct_pictogram_shapes": 32,
+        "graphic_colour_variants": 42,
+        "semantic_variants": 51,
+        "model_edition_assignments": 107,
         "generic_brand_assignments": 0,
-        "reviewed_manual_editions": 12,
-        "first_party_hosted_manual_editions": 12,
+        "reviewed_manual_editions": 22,
+        "first_party_hosted_manual_editions": 22,
+        "third_party_hosted_manual_editions": 0
+      },
+      "skoda": {
+        "distinct_pictogram_shapes": 31,
+        "graphic_colour_variants": 40,
+        "semantic_variants": 55,
+        "model_edition_assignments": 83,
+        "generic_brand_assignments": 0,
+        "reviewed_manual_editions": 3,
+        "first_party_hosted_manual_editions": 0,
+        "third_party_hosted_manual_editions": 3
+      },
+      "volkswagen": {
+        "distinct_pictogram_shapes": 26,
+        "graphic_colour_variants": 30,
+        "semantic_variants": 33,
+        "model_edition_assignments": 36,
+        "generic_brand_assignments": 1,
+        "reviewed_manual_editions": 3,
+        "first_party_hosted_manual_editions": 3,
         "third_party_hosted_manual_editions": 0
       },
       "volkswagen-uzitkove-vozy": {

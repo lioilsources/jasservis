@@ -63,10 +63,10 @@ class ReviewRegressionTests(unittest.TestCase):
             shutil.copytree(validation.ROOT / relative, root / relative)
             page = root / validation.ROUTE / 'druha-kontrola.html'
             page.write_text(page.read_text().replace('</body>',
-                '<a href="./?znacka=skoda#kontrolka-fatigue-skoda">invalid candidate</a></body>'))
+                '<a href="./?znacka=volkswagen#kontrolka-fatigue-volkswagen">invalid candidate</a></body>'))
             with patch.object(validation, 'ROOT', root):
                 validation.check_pages(self.audit)
-        self.assertTrue(any('kontrolka-fatigue-skoda' in e for e in self.audit.errors))
+        self.assertTrue(any('kontrolka-fatigue-volkswagen' in e for e in self.audit.errors))
 
     def test_current_photo_bindings_and_counters_pass(self):
         self.photo_checks()

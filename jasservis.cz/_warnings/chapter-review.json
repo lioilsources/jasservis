@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-30",
+  "checked": "2026-10-31",
   "method": "Precise bounded source subsection closure is separate from entire chapter, entire manual, publication completeness and technical web tests. Broad chapter status is never marked complete from a selected subset. No model/year inheritance. Closed comparison records can overlap (for example AUTO and the complete Klimaanlage section); their count must not be summed as a count of distinct completed chapters.",
   "area_labels": {
     "instrument-panel": {
@@ -6618,6 +6618,8 @@
           "status": "functions-compared-exact-graphics-pending",
           "whole_chapter_complete": false,
           "verified_catalogue_ids": [
+            "terramar-lane-control",
+            "terramar-start-stop-control",
             "terramar-tp-control"
           ],
           "reviewed_printed_pages": [
@@ -10717,6 +10719,8 @@
             "acc-regulating",
             "acc-unavailable",
             "airbag-diagnostic-off",
+            "audi-q4-turn-left",
+            "audi-q4-turn-right",
             "auto-hold-active",
             "auto-hold-standby",
             "brake-fluid",
@@ -10730,6 +10734,8 @@
             "enyaq-12v-low",
             "enyaq-coolant",
             "enyaq-epc",
+            "enyaq-steering-lock-fault-amber",
+            "enyaq-steering-lock-not-unlocked",
             "esc-fault",
             "esc-regulating",
             "ev-12v-yellow-replace",
@@ -10747,12 +10753,10 @@
             "steering-red",
             "steering-red-flash",
             "steering-yellow",
-            "steering-yellow-flash",
             "take-steering-immediate",
             "take-steering-request",
             "tpms-fault",
-            "tpms-low",
-            "turn-signals"
+            "tpms-low"
           ],
           "reviewed_printed_pages": [
             17,
@@ -10868,12 +10872,13 @@
           "status": "bounded-subsections-compared-rest-open",
           "whole_chapter_complete": false,
           "verified_catalogue_ids": [
+            "audi-q4-turn-left",
+            "audi-q4-turn-right",
             "bulb-fault",
             "enyaq-dynamic-light-assist-active",
             "high-beam",
             "high-beam-assist-blue",
-            "rear-fog",
-            "turn-signals"
+            "rear-fog"
           ],
           "reviewed_printed_pages": [
             76,
@@ -10911,6 +10916,8 @@
             "enyaq-coolant",
             "enyaq-epc",
             "enyaq-power-insufficient-red",
+            "enyaq-steering-lock-fault-amber",
+            "enyaq-steering-lock-not-unlocked",
             "ev-12v-yellow-replace",
             "ev-power-limited-ring",
             "mii-selector-lock"
@@ -11042,7 +11049,7 @@
             "vw-d",
             "vw-e",
             "vw-f",
-            "vw-golf-lane-unavailable",
+            "lane-unavailable-exclamation",
             "vw-h",
             "vw-i",
             "vw-j",
@@ -11099,7 +11106,7 @@
             "lane-ready",
             "take-steering-immediate",
             "take-steering-request",
-            "vw-golf-lane-unavailable"
+            "lane-unavailable-exclamation"
           ],
           "reviewed_printed_pages": [],
           "reviewed_html_sections": [
@@ -12033,6 +12040,7 @@
             "id4-battery-empty-stop",
             "id4-too-cold-drive",
             "lane-ready",
+            "lane-unavailable-exclamation",
             "take-steering-immediate",
             "take-steering-request"
           ],
@@ -12064,6 +12072,7 @@
           "whole_chapter_complete": false,
           "verified_catalogue_ids": [
             "lane-ready",
+            "lane-unavailable-exclamation",
             "take-steering-immediate",
             "take-steering-request"
           ],
@@ -12858,7 +12867,10 @@
           "verified_catalogue_ids": [
             "abs-fault",
             "audi-12v-system-red",
+            "audi-a8-emissions-system",
             "audi-ac-cooling-control",
+            "audi-central-red",
+            "audi-central-yellow",
             "audi-climate-auto-control",
             "audi-direct-pressure-critical",
             "audi-direct-pressure-low",
@@ -13032,6 +13044,7 @@
           "whole_chapter_complete": false,
           "verified_catalogue_ids": [
             "audi-12v-system-red",
+            "audi-a8-emissions-system",
             "audi-start-stop-green",
             "audi-start-stop-no-stop",
             "oil-pressure"
@@ -13493,6 +13506,985 @@
             "cs": "Dostupný celý návod; tato kapitola není kompletně porovnána.",
             "en": "Full manual available; this chapter has not been completely compared.",
             "de": "Vollständige Anleitung verfügbar; dieses Kapitel noch nicht vollständig verglichen."
+          }
+        }
+      ]
+    },
+    {
+      "manual": "skoda-enyaq-2020-11-cs",
+      "brand": "skoda",
+      "model": "Enyaq iV",
+      "model_year": null,
+      "edition": "11.2020",
+      "part_number": null,
+      "source_url": "https://autotrip.cz/wp-content/uploads/2023/01/Navod-k-obsluze-Skoda-Enyaq-iV-2020.pdf",
+      "whole_manual_complete": false,
+      "areas": [
+        {
+          "area": "instrument-panel",
+          "title": {
+            "cs": "Přehled a přístrojový panel",
+            "en": "Overview and instrument cluster",
+            "de": "Übersicht und Kombiinstrument"
+          },
+          "status": "selected-items-compared-not-full-chapter",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [
+            "acc-regulating",
+            "acc-standby",
+            "audi-q4-turn-left",
+            "audi-q4-turn-right",
+            "enyaq-dynamic-light-assist-active",
+            "enyaq-steering-lock-fault-amber",
+            "enyaq-steering-lock-not-unlocked",
+            "fatigue",
+            "high-beam-assist-blue",
+            "lane-correction",
+            "lane-ready",
+            "steering-red-flash",
+            "take-steering-immediate",
+            "take-steering-request"
+          ],
+          "reviewed_printed_pages": [
+            17,
+            18,
+            19,
+            20,
+            56,
+            57,
+            168,
+            172,
+            173,
+            174,
+            176,
+            178
+          ],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "assistants",
+          "title": {
+            "cs": "Asistenční systémy",
+            "en": "Driver-assistance systems",
+            "de": "Fahrerassistenzsysteme"
+          },
+          "status": "selected-items-compared-not-full-chapter",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [
+            "acc-regulating",
+            "acc-standby",
+            "fatigue",
+            "lane-correction",
+            "lane-ready",
+            "take-steering-immediate",
+            "take-steering-request"
+          ],
+          "reviewed_printed_pages": [
+            168,
+            172,
+            173,
+            174,
+            176,
+            178
+          ],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "parking",
+          "title": {
+            "cs": "Parkování a manévrování",
+            "en": "Parking and manoeuvring",
+            "de": "Parken und Rangieren"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "lighting",
+          "title": {
+            "cs": "Osvětlení a výhled",
+            "en": "Lighting and visibility",
+            "de": "Licht und Sicht"
+          },
+          "status": "selected-items-compared-not-full-chapter",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [
+            "audi-q4-turn-left",
+            "audi-q4-turn-right",
+            "enyaq-dynamic-light-assist-active",
+            "high-beam-assist-blue"
+          ],
+          "reviewed_printed_pages": [
+            72,
+            74,
+            75,
+            76,
+            77
+          ],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "powertrain",
+          "title": {
+            "cs": "Pohon a elektrická soustava",
+            "en": "Powertrain and electrical system",
+            "de": "Antrieb und Bordnetz"
+          },
+          "status": "selected-items-compared-not-full-chapter",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [
+            "enyaq-steering-lock-fault-amber",
+            "enyaq-steering-lock-not-unlocked",
+            "steering-red-flash"
+          ],
+          "reviewed_printed_pages": [
+            56,
+            57
+          ],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "infotainment",
+          "title": {
+            "cs": "Infotainment a média",
+            "en": "Infotainment and media",
+            "de": "Infotainment und Medien"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "connectivity",
+          "title": {
+            "cs": "Konektivita a telefon",
+            "en": "Connectivity and telephone",
+            "de": "Konnektivität und Telefon"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "climate",
+          "title": {
+            "cs": "Klimatizace a komfort",
+            "en": "Climate and comfort",
+            "de": "Klima und Komfort"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        }
+      ]
+    },
+    {
+      "manual": "cupra-terramar-2025-11-cs",
+      "brand": "cupra",
+      "model": "Terramar",
+      "model_year": null,
+      "edition": "11.25",
+      "part_number": "578012715AC",
+      "source_url": "https://www.cupraofficial.cz/dam/files/download/e4373aafb1adbda5c5931e1df8d88175d96988c7/5a872a9f6545d115c8db636160aa2bc0/dd30ea02-c3b8-45cf-bf78-08c7620bd1b3/CUPRA-Terramar-(2025.11)-2-cs_CZ_v.2.pdf",
+      "whole_manual_complete": false,
+      "areas": [
+        {
+          "area": "instrument-panel",
+          "title": {
+            "cs": "Přehled a přístrojový panel",
+            "en": "Overview and instrument cluster",
+            "de": "Übersicht und Kombiinstrument"
+          },
+          "status": "selected-items-compared-not-full-chapter",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [
+            "lane-correction",
+            "lane-ready",
+            "take-steering-immediate",
+            "take-steering-request",
+            "terramar-lane-passive",
+            "lane-unavailable-exclamation"
+          ],
+          "reviewed_printed_pages": [
+            11,
+            12,
+            13,
+            14,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            174,
+            175,
+            216,
+            217,
+            218,
+            220
+          ],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "assistants",
+          "title": {
+            "cs": "Asistenční systémy",
+            "en": "Driver-assistance systems",
+            "de": "Fahrerassistenzsysteme"
+          },
+          "status": "selected-items-compared-not-full-chapter",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [
+            "lane-correction",
+            "lane-ready",
+            "take-steering-immediate",
+            "take-steering-request",
+            "terramar-lane-passive",
+            "lane-unavailable-exclamation"
+          ],
+          "reviewed_printed_pages": [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            215,
+            216,
+            217,
+            218,
+            219,
+            220
+          ],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "parking",
+          "title": {
+            "cs": "Parkování a manévrování",
+            "en": "Parking and manoeuvring",
+            "de": "Parken und Rangieren"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "lighting",
+          "title": {
+            "cs": "Osvětlení a výhled",
+            "en": "Lighting and visibility",
+            "de": "Licht und Sicht"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "powertrain",
+          "title": {
+            "cs": "Pohon a elektrická soustava",
+            "en": "Powertrain and electrical system",
+            "de": "Antrieb und Bordnetz"
+          },
+          "status": "selected-items-compared-not-full-chapter",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [
+            174,
+            175
+          ],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "infotainment",
+          "title": {
+            "cs": "Infotainment a média",
+            "en": "Infotainment and media",
+            "de": "Infotainment und Medien"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "connectivity",
+          "title": {
+            "cs": "Konektivita a telefon",
+            "en": "Connectivity and telephone",
+            "de": "Konnektivität und Telefon"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "climate",
+          "title": {
+            "cs": "Klimatizace a komfort",
+            "en": "Climate and comfort",
+            "de": "Klima und Komfort"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        }
+      ]
+    },
+    {
+      "manual": "cupra-terramar-2025-11-cs-readme",
+      "brand": "cupra",
+      "model": "Terramar",
+      "model_year": null,
+      "edition": "11.25",
+      "part_number": "578012815AC",
+      "source_url": "https://www.cupraofficial.cz/dam/files/download/0337bdeee8226f64eff9378c4c1c541127d6dd92/550967ef7504266b8286943dec6b77a3/109849d5-599e-41af-ae85-51ff61765b43/CUPRA-Terramar-README-(2025.11)-1-cs_CZ.pdf",
+      "whole_manual_complete": false,
+      "areas": [
+        {
+          "area": "instrument-panel",
+          "title": {
+            "cs": "Přehled a přístrojový panel",
+            "en": "Overview and instrument cluster",
+            "de": "Übersicht und Kombiinstrument"
+          },
+          "status": "selected-items-compared-not-full-chapter",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "assistants",
+          "title": {
+            "cs": "Asistenční systémy",
+            "en": "Driver-assistance systems",
+            "de": "Fahrerassistenzsysteme"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "parking",
+          "title": {
+            "cs": "Parkování a manévrování",
+            "en": "Parking and manoeuvring",
+            "de": "Parken und Rangieren"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "lighting",
+          "title": {
+            "cs": "Osvětlení a výhled",
+            "en": "Lighting and visibility",
+            "de": "Licht und Sicht"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "powertrain",
+          "title": {
+            "cs": "Pohon a elektrická soustava",
+            "en": "Powertrain and electrical system",
+            "de": "Antrieb und Bordnetz"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "infotainment",
+          "title": {
+            "cs": "Infotainment a média",
+            "en": "Infotainment and media",
+            "de": "Infotainment und Medien"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "connectivity",
+          "title": {
+            "cs": "Konektivita a telefon",
+            "en": "Connectivity and telephone",
+            "de": "Konnektivität und Telefon"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "climate",
+          "title": {
+            "cs": "Klimatizace a komfort",
+            "en": "Climate and comfort",
+            "de": "Klima und Komfort"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        }
+      ]
+    },
+    {
+      "manual": "seat-tarraco-2023-06-de",
+      "brand": "seat",
+      "model": "Tarraco",
+      "model_year": null,
+      "edition": "06.2023",
+      "part_number": "5FJ012705BR",
+      "source_url": "https://www.seat.at/dam/files/0e8c4c66b8f67977e3f368ae35b819dffb898609/0a36c8cd39639f9f352d34b4fe7a4fe8/38e8a194-5b74-4c84-acec-c0afb518e044/seat-tarraco-202306-dede.pdf",
+      "whole_manual_complete": false,
+      "areas": [
+        {
+          "area": "instrument-panel",
+          "title": {
+            "cs": "Přehled a přístrojový panel",
+            "en": "Overview and instrument cluster",
+            "de": "Übersicht und Kombiinstrument"
+          },
+          "status": "selected-items-compared-not-full-chapter",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [
+            "lane-correction",
+            "lane-ready",
+            "take-steering-immediate",
+            "take-steering-request",
+            "lane-unavailable-exclamation"
+          ],
+          "reviewed_printed_pages": [
+            11,
+            26,
+            27,
+            212,
+            213,
+            214,
+            216
+          ],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "assistants",
+          "title": {
+            "cs": "Asistenční systémy",
+            "en": "Driver-assistance systems",
+            "de": "Fahrerassistenzsysteme"
+          },
+          "status": "selected-items-compared-not-full-chapter",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [
+            "lane-correction",
+            "lane-ready",
+            "take-steering-immediate",
+            "take-steering-request",
+            "lane-unavailable-exclamation"
+          ],
+          "reviewed_printed_pages": [
+            26,
+            27,
+            211,
+            212,
+            213,
+            214,
+            215,
+            216
+          ],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "parking",
+          "title": {
+            "cs": "Parkování a manévrování",
+            "en": "Parking and manoeuvring",
+            "de": "Parken und Rangieren"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "lighting",
+          "title": {
+            "cs": "Osvětlení a výhled",
+            "en": "Lighting and visibility",
+            "de": "Licht und Sicht"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "powertrain",
+          "title": {
+            "cs": "Pohon a elektrická soustava",
+            "en": "Powertrain and electrical system",
+            "de": "Antrieb und Bordnetz"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "infotainment",
+          "title": {
+            "cs": "Infotainment a média",
+            "en": "Infotainment and media",
+            "de": "Infotainment und Medien"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "connectivity",
+          "title": {
+            "cs": "Konektivita a telefon",
+            "en": "Connectivity and telephone",
+            "de": "Konnektivität und Telefon"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "climate",
+          "title": {
+            "cs": "Klimatizace a komfort",
+            "en": "Climate and comfort",
+            "de": "Klima und Komfort"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        }
+      ]
+    },
+    {
+      "manual": "seat-tarraco-2024-01-de-supplement",
+      "brand": "seat",
+      "model": "Tarraco",
+      "model_year": null,
+      "edition": "01.2024",
+      "part_number": "5FJ012705FE",
+      "source_url": "https://www.seat.at/dam/files/7494713ee5354a80725467e4a70434d58045fb6d/5829408a8f6f0e6d7900d91f2ae57ad5/f0666ce4-8c19-40c1-9dbf-7f756deb0ef0/tarraco0124de.pdf",
+      "whole_manual_complete": false,
+      "areas": [
+        {
+          "area": "instrument-panel",
+          "title": {
+            "cs": "Přehled a přístrojový panel",
+            "en": "Overview and instrument cluster",
+            "de": "Übersicht und Kombiinstrument"
+          },
+          "status": "selected-items-compared-not-full-chapter",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [
+            "vwcv-battery-charge-fault"
+          ],
+          "reviewed_printed_pages": [
+            5,
+            6,
+            14
+          ],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "assistants",
+          "title": {
+            "cs": "Asistenční systémy",
+            "en": "Driver-assistance systems",
+            "de": "Fahrerassistenzsysteme"
+          },
+          "status": "selected-items-compared-not-full-chapter",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [
+            6
+          ],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "parking",
+          "title": {
+            "cs": "Parkování a manévrování",
+            "en": "Parking and manoeuvring",
+            "de": "Parken und Rangieren"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "lighting",
+          "title": {
+            "cs": "Osvětlení a výhled",
+            "en": "Lighting and visibility",
+            "de": "Licht und Sicht"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "powertrain",
+          "title": {
+            "cs": "Pohon a elektrická soustava",
+            "en": "Powertrain and electrical system",
+            "de": "Antrieb und Bordnetz"
+          },
+          "status": "selected-items-compared-not-full-chapter",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [
+            "vwcv-battery-charge-fault"
+          ],
+          "reviewed_printed_pages": [
+            5,
+            14
+          ],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "infotainment",
+          "title": {
+            "cs": "Infotainment a média",
+            "en": "Infotainment and media",
+            "de": "Infotainment und Medien"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "connectivity",
+          "title": {
+            "cs": "Konektivita a telefon",
+            "en": "Connectivity and telephone",
+            "de": "Konnektivität und Telefon"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
+          }
+        },
+        {
+          "area": "climate",
+          "title": {
+            "cs": "Klimatizace a komfort",
+            "en": "Climate and comfort",
+            "de": "Klima und Komfort"
+          },
+          "status": "not-yet-compared",
+          "whole_chapter_complete": false,
+          "verified_catalogue_ids": [],
+          "reviewed_printed_pages": [],
+          "reviewed_html_sections": [],
+          "completed_bounded_subsections": [],
+          "remaining": {
+            "cs": "Porovnány jsou pouze výslovně uvedené stránky a stavy; zbytek kapitoly a celé vydání zůstávají neúplné.",
+            "en": "Only the explicitly listed pages and states were compared; the rest of the chapter and whole edition remain incomplete.",
+            "de": "Nur die ausdrücklich genannten Seiten und Zustände wurden verglichen; Rest des Kapitels und gesamte Ausgabe bleiben unvollständig."
           }
         }
       ]

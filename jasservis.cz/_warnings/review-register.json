@@ -1458,6 +1458,8 @@
         "acc-regulating",
         "acc-unavailable",
         "airbag-diagnostic-off",
+        "audi-q4-turn-left",
+        "audi-q4-turn-right",
         "auto-hold-active",
         "auto-hold-standby",
         "brake-fluid",
@@ -1474,6 +1476,8 @@
         "enyaq-epc",
         "enyaq-parking-steep-slope",
         "enyaq-power-insufficient-red",
+        "enyaq-steering-lock-fault-amber",
+        "enyaq-steering-lock-not-unlocked",
         "esc-fault",
         "esc-regulating",
         "ev-12v-yellow-replace",
@@ -1491,12 +1495,10 @@
         "steering-red",
         "steering-red-flash",
         "steering-yellow",
-        "steering-yellow-flash",
         "take-steering-immediate",
         "take-steering-request",
         "tpms-fault",
-        "tpms-low",
-        "turn-signals"
+        "tpms-low"
       ],
       "reviewed_printed_pages": [
         17,
@@ -1566,6 +1568,7 @@
         "high-beam",
         "lane-correction",
         "lane-ready",
+        "lane-unavailable-exclamation",
         "take-steering-immediate",
         "take-steering-request",
         "turn-signals",
@@ -1578,7 +1581,6 @@
         "vw-d",
         "vw-e",
         "vw-f",
-        "vw-golf-lane-unavailable",
         "vw-h",
         "vw-i",
         "vw-j",
@@ -1845,6 +1847,7 @@
         "id4-battery-empty-stop",
         "id4-too-cold-drive",
         "lane-ready",
+        "lane-unavailable-exclamation",
         "take-steering-immediate",
         "take-steering-request"
       ],
@@ -2249,6 +2252,236 @@
         212
       ],
       "reviewed_html_sections": []
+    },
+    {
+      "id": "skoda-enyaq-2020-11-cs",
+      "brand": "skoda",
+      "model": "Enyaq iV",
+      "edition": "11.2020",
+      "model_year": null,
+      "source_url": "https://autotrip.cz/wp-content/uploads/2023/01/Navod-k-obsluze-Skoda-Enyaq-iV-2020.pdf",
+      "part_number": null,
+      "whole_manual_comparison": "not-complete",
+      "verified_item_ids": [
+        "acc-regulating",
+        "acc-standby",
+        "audi-q4-turn-left",
+        "audi-q4-turn-right",
+        "enyaq-dynamic-light-assist-active",
+        "enyaq-steering-lock-fault-amber",
+        "enyaq-steering-lock-not-unlocked",
+        "fatigue",
+        "high-beam-assist-blue",
+        "lane-correction",
+        "lane-ready",
+        "steering-red-flash",
+        "take-steering-immediate",
+        "take-steering-request"
+      ],
+      "reviewed_printed_pages": [
+        17,
+        18,
+        19,
+        20,
+        56,
+        57,
+        72,
+        74,
+        75,
+        76,
+        77,
+        168,
+        172,
+        173,
+        174,
+        176,
+        178
+      ],
+      "reviewed_html_sections": [],
+      "sections": {
+        "instrument-panel": "selected-entries-reviewed",
+        "driver-assistance": "selected-entries-reviewed",
+        "infotainment-and-control-icons": "not-yet-item-compared",
+        "comfort-controls": "not-yet-item-compared"
+      },
+      "source_scan": {
+        "method": "Only explicitly cited pages/sections were individually read and visually compared; no automated whole-manual glyph completeness is claimed.",
+        "pdf_pages": 279,
+        "document_sha256": "65d1a27e117f5b0fba02c18dc5e4159267fa5fd9a660abf4520f7bd560c0f461",
+        "indexed_character_keys": null
+      },
+      "unresolved": "Selected warning, KESSY, lighting, ACC, Lane Assist, Travel Assist, traffic-sign and Driver Alert sections were reviewed. Whole manual and photographed-book identity remain incomplete."
+    },
+    {
+      "id": "cupra-terramar-2025-11-cs",
+      "brand": "cupra",
+      "model": "Terramar",
+      "edition": "11.25",
+      "model_year": null,
+      "source_url": "https://www.cupraofficial.cz/dam/files/download/e4373aafb1adbda5c5931e1df8d88175d96988c7/5a872a9f6545d115c8db636160aa2bc0/dd30ea02-c3b8-45cf-bf78-08c7620bd1b3/CUPRA-Terramar-(2025.11)-2-cs_CZ_v.2.pdf",
+      "part_number": "578012715AC",
+      "whole_manual_comparison": "not-complete",
+      "verified_item_ids": [
+        "lane-correction",
+        "lane-ready",
+        "lane-unavailable-exclamation",
+        "take-steering-immediate",
+        "take-steering-request",
+        "terramar-lane-passive"
+      ],
+      "reviewed_printed_pages": [
+        11,
+        12,
+        13,
+        14,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        174,
+        175,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220
+      ],
+      "reviewed_html_sections": [],
+      "sections": {
+        "instrument-panel": "selected-entries-reviewed",
+        "driver-assistance": "selected-entries-reviewed",
+        "infotainment-and-control-icons": "not-yet-item-compared",
+        "comfort-controls": "not-yet-item-compared"
+      },
+      "source_scan": {
+        "method": "Only explicitly cited pages/sections were individually read and visually compared; no automated whole-manual glyph completeness is claimed.",
+        "pdf_pages": 438,
+        "document_sha256": "05bb8e17050fcc5d9ac57af3570a46e041dc4c5e3fe7d8f54d85ae03f6a47379",
+        "indexed_character_keys": null
+      },
+      "unresolved": "Selected overview, fatigue, attention, traffic-sign, electric-drive, Lane Assist and Travel Assist sections were reviewed. Whole manual remains incomplete; exact reusable graphics remain pending for explicitly listed states."
+    },
+    {
+      "id": "cupra-terramar-2025-11-cs-readme",
+      "brand": "cupra",
+      "model": "Terramar",
+      "edition": "11.25",
+      "model_year": null,
+      "source_url": "https://www.cupraofficial.cz/dam/files/download/0337bdeee8226f64eff9378c4c1c541127d6dd92/550967ef7504266b8286943dec6b77a3/109849d5-599e-41af-ae85-51ff61765b43/CUPRA-Terramar-README-(2025.11)-1-cs_CZ.pdf",
+      "part_number": "578012815AC",
+      "whole_manual_comparison": "not-complete",
+      "verified_item_ids": [],
+      "reviewed_printed_pages": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "reviewed_html_sections": [],
+      "sections": {
+        "instrument-panel": "selected-entries-reviewed",
+        "driver-assistance": "selected-entries-reviewed",
+        "infotainment-and-control-icons": "not-yet-item-compared",
+        "comfort-controls": "not-yet-item-compared"
+      },
+      "source_scan": {
+        "method": "Only explicitly cited pages/sections were individually read and visually compared; no automated whole-manual glyph completeness is claimed.",
+        "pdf_pages": 82,
+        "document_sha256": "b7b564df179ff0a62eded868758caaa6b3d5adfcf125c48eae80613d90c931b3",
+        "indexed_character_keys": null
+      },
+      "unresolved": "README overview reviewed and kept separate from the complete owner manual. It does not replace detailed instructions and carries no customer-card scope by itself."
+    },
+    {
+      "id": "seat-tarraco-2023-06-de",
+      "brand": "seat",
+      "model": "Tarraco",
+      "edition": "06.2023",
+      "model_year": null,
+      "source_url": "https://www.seat.at/dam/files/0e8c4c66b8f67977e3f368ae35b819dffb898609/0a36c8cd39639f9f352d34b4fe7a4fe8/38e8a194-5b74-4c84-acec-c0afb518e044/seat-tarraco-202306-dede.pdf",
+      "part_number": "5FJ012705BR",
+      "whole_manual_comparison": "not-complete",
+      "verified_item_ids": [
+        "lane-correction",
+        "lane-ready",
+        "lane-unavailable-exclamation",
+        "take-steering-immediate",
+        "take-steering-request"
+      ],
+      "reviewed_printed_pages": [
+        11,
+        26,
+        27,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216
+      ],
+      "reviewed_html_sections": [],
+      "sections": {
+        "instrument-panel": "selected-entries-reviewed",
+        "driver-assistance": "selected-entries-reviewed",
+        "infotainment-and-control-icons": "not-yet-item-compared",
+        "comfort-controls": "not-yet-item-compared"
+      },
+      "source_scan": {
+        "method": "Only explicitly cited pages/sections were individually read and visually compared; no automated whole-manual glyph completeness is claimed.",
+        "pdf_pages": 436,
+        "document_sha256": "20692a45d5bf61fcf6e4c010e1b1b3adad14029e752918709861a1947ecfec23",
+        "indexed_character_keys": null
+      },
+      "unresolved": "Selected overview, fatigue, traffic-sign, Lane Assist and Travel Assist sections reviewed. Whole manual remains incomplete; composite and dynamic states without exact reusable graphics remain pending."
+    },
+    {
+      "id": "seat-tarraco-2024-01-de-supplement",
+      "brand": "seat",
+      "model": "Tarraco",
+      "edition": "01.2024",
+      "model_year": null,
+      "source_url": "https://www.seat.at/dam/files/7494713ee5354a80725467e4a70434d58045fb6d/5829408a8f6f0e6d7900d91f2ae57ad5/f0666ce4-8c19-40c1-9dbf-7f756deb0ef0/tarraco0124de.pdf",
+      "part_number": "5FJ012705FE",
+      "whole_manual_comparison": "not-complete",
+      "verified_item_ids": [
+        "vwcv-battery-charge-fault"
+      ],
+      "reviewed_printed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "reviewed_html_sections": [],
+      "sections": {
+        "instrument-panel": "selected-entries-reviewed",
+        "driver-assistance": "selected-entries-reviewed",
+        "infotainment-and-control-icons": "not-yet-item-compared",
+        "comfort-controls": "not-yet-item-compared"
+      },
+      "source_scan": {
+        "method": "Only explicitly cited pages/sections were individually read and visually compared; no automated whole-manual glyph completeness is claimed.",
+        "pdf_pages": 20,
+        "document_sha256": "d95560758b52adc8e38ac6827399ff92b6aa839f1ae34db73f376f278b25cfc9",
+        "indexed_character_keys": null
+      },
+      "unresolved": "The complete supplement was read, but it does not identify 5FJ012705BR or edition 06.23 as its specific base. It remains a separate document and whole base-manual completeness is not claimed."
     }
   ],
   "source_character_index": [
@@ -73255,27 +73488,51 @@
     },
     {
       "id": "audi-legacy",
-      "model": "Audi A4 8W",
-      "edition": "01.2016, 8W0012705AC",
-      "obstacle": "Official model portal and linked manual requests return 403; no verified accessible copy acquired."
+      "model": "Audi A4 B9/8W",
+      "edition": "Requested 01.2016, publication 8W0012705AC; exact file not obtained",
+      "obstacle": "Completed 2026-10-29 capture loaded the portal shell/configuration (HTTP 200), while /web/models/ and the recorded A4 GPSR request returned HTTP 403. No exact manual pages or file hash are available."
     },
     {
       "id": "audi-a8",
-      "model": "Audi A8 4N, 2018",
-      "edition": "Exact owner-manual edition not obtained; SSP 668 is supplementary only",
-      "obstacle": "Official model portal/GPSR links return 403; no manufacturer-authored driver instruction edition verified."
+      "model": "Audi A8 D5/4N, 2018 scope",
+      "edition": "Exact European owner-manual edition and publication code not obtained; SSP 668 supplementary only",
+      "obstacle": "Completed 2026-10-29 capture loaded the portal shell/configuration (HTTP 200), while /web/models/ and the recorded A8 GPSR request returned HTTP 403. SSP 668 is not a driver manual."
     },
     {
       "id": "audi-q4-2022",
-      "model": "Audi Q4 e-tron, 2022",
-      "edition": "2022 edition not obtained",
-      "obstacle": "07.2024 is independently reviewed, not substituted for a 2022 edition."
+      "model": "Audi Q4 e-tron F4, European 2022 scope",
+      "edition": "Exact edition, language and publication code not established",
+      "obstacle": "The portal shell/configuration loaded (HTTP 200) but /web/models/ returned HTTP 403. GPSRSAMPLEQ4E0001 does not establish a 2022 edition; 06.2023 and 07.2024 remain separate and are not substituted."
     },
     {
       "id": "q4-combined-graphics",
       "model": "Audi Q4 e-tron",
       "edition": "07.2024, 89A012705AM",
       "obstacle": "Full file now acquired. Combined adaptive-assist, pre-sense, HV car/exclamation, distraction and several comfort/infotainment graphics still require exact lawful assets and individual state review."
+    },
+    {
+      "id": "enyaq-photo-identity",
+      "model": "Škoda Enyaq photographed Czech book",
+      "edition": "Unknown; visible pp.12–17 only",
+      "obstacle": "A readable title/imprint photograph with edition, language/market and publication code is required. Separate CS and DE 11.2020 manuals do not identify the photographed book."
+    },
+    {
+      "id": "multivan-photo-identity",
+      "model": "Volkswagen Multivan photographed book",
+      "edition": "Unknown",
+      "obstacle": "The supplied pages do not show a title/imprint or publication code. Caddy 2K7 DE 11.2025 is a separate model/manual and cannot identify it."
+    },
+    {
+      "id": "terramar-exact-assets",
+      "model": "CUPRA Terramar",
+      "edition": "CS 11.25, 578012715AC",
+      "obstacle": "Exact reusable graphics remain missing for six fatigue states, three attention states, three traffic-sign states, Travel composite states and individual PHEV drive states; meanings remain individually recorded and unpublished."
+    },
+    {
+      "id": "tarraco-exact-assets",
+      "model": "SEAT Tarraco",
+      "edition": "DE 06.2023 plus separate DE supplement 01.2024",
+      "obstacle": "Exact reusable graphics remain missing for fatigue, dynamic traffic-sign display, Travel composites and both HDC states. Supplement-to-base pairing is not stated by either file."
     }
   ],
   "new_item_events": [
@@ -73709,7 +73966,7 @@
       "before_semantic_records": 136,
       "after_semantic_records": 137,
       "added_record_ids": [
-        "vw-golf-lane-unavailable"
+        "lane-unavailable-exclamation"
       ],
       "added_model_assignments": [
         {
@@ -73718,7 +73975,7 @@
           "manual": "seat-leon-2026-11-25"
         },
         {
-          "id": "vw-golf-lane-unavailable",
+          "id": "lane-unavailable-exclamation",
           "brand": "volkswagen",
           "manual": "vw-golf-2020-11-de"
         }
@@ -74652,9 +74909,18 @@
   ],
   "latest_round": {
     "before_semantic_records": 171,
-    "after_semantic_records": 171,
-    "added_record_ids": [],
-    "enriched_model_scopes": [],
+    "after_semantic_records": 173,
+    "added_record_ids": [
+      "enyaq-steering-lock-fault-amber",
+      "enyaq-steering-lock-not-unlocked"
+    ],
+    "enriched_model_scopes": [
+      "Enyaq iV CS 11.2020: 14 exact semantic states",
+      "Terramar CS 11.25: Lane active, corrective, passive, unavailable and two steering takeover prompts",
+      "Tarraco DE 06.2023: Lane active, corrective, unavailable and two steering takeover prompts",
+      "Tarraco DE supplement 01.2024: steady red generator/12-V charging fault for conventional vehicles",
+      "ID.4 DE 11.2021: Lane Assist unavailable with amber exclamation-mark variant"
+    ],
     "whole_manuals_complete": 0,
     "requested_photos_available": 24,
     "requested_photos_expected": 16,
@@ -74739,7 +75005,9 @@
       {
         "id": "cupra-new-manual-7-10",
         "expected": 3,
-        "available_in_conversation": 0
+        "available_in_conversation": 0,
+        "content_source_resolved": true,
+        "content_source": "cupra-terramar-2025-11-cs-readme / 578012815AC; printed pp.7–10 = PDF pp.9–12"
       }
     ],
     "other_missing_requested_photos_expected": 3,
@@ -74758,7 +75026,14 @@
       "3 days until oil change/inspection"
     ],
     "pending_gap_ids": [
-      "audi-a8-parking-assistance-controls"
+      "enyaq-photographed-book-imprint",
+      "multivan-photographed-book-imprint",
+      "audi-a4-8w-2016-01",
+      "audi-q4-2022",
+      "audi-a8-4n-2018",
+      "terramar-exact-fatigue-attention-travel-drive-assets",
+      "tarraco-exact-fatigue-travel-hdc-assets",
+      "vw-golf-vii-lane-inactive-exact-asset"
     ],
     "audi_photo_occurrences": 91,
     "audi_photo_meanings_verified": 46,

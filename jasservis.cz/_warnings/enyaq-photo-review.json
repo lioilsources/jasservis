@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-30",
+  "checked": "2026-10-31",
   "source_type": "user-provided inline photographs",
   "brand_confirmed_by_user": "Škoda",
   "model_confirmed_by_user": "Enyaq",
@@ -262,7 +262,10 @@
         "de": "Die Bedeutung ist im Katalog, die genaue kombinierte Grafikvariante des Fotos jedoch nicht veröffentlicht."
       },
       "actually_added_from_this_photo_set": false,
-      "notes_cs": ""
+      "notes_cs": "",
+      "pending_catalogue_ids": [
+        "enyaq-12v-combined-red-central-warning"
+      ]
     },
     {
       "id": "enyaq-photo-13-L-01",
@@ -998,7 +1001,10 @@
         "de": "Die Bedeutung ist im Katalog, die genaue kombinierte Grafikvariante des Fotos jedoch nicht veröffentlicht."
       },
       "actually_added_from_this_photo_set": false,
-      "notes_cs": ""
+      "notes_cs": "",
+      "pending_catalogue_ids": [
+        "enyaq-12v-combined-amber-warning"
+      ]
     },
     {
       "id": "enyaq-photo-13-R-11",
@@ -1491,7 +1497,7 @@
       "detailed_driver_instruction_verified": false,
       "exact_reusable_graphic_verified": false,
       "candidate_catalogue_ids": [
-        "steering-yellow-flash"
+        "enyaq-steering-lock-fault-amber"
       ],
       "matching_current_enyaq_catalogue_ids": [],
       "catalogue_result": "needs-detailed-chapter",
@@ -1501,7 +1507,10 @@
         "de": "Die Zeile ist lesbar; die genaue Zustandsabgrenzung erfordert jedoch das zugehörige Detailkapitel dieser Ausgabe."
       },
       "actually_added_from_this_photo_set": false,
-      "notes_cs": ""
+      "notes_cs": "Fotografovaný popisek říká závada; samostatný návod CS 11.2020 rozlišuje žlutou závadu od neodblokovaného zámku. Shodu vydání ale fotografie nedokládají.",
+      "contrast_catalogue_ids": [
+        "enyaq-steering-lock-not-unlocked"
+      ]
     },
     {
       "id": "enyaq-photo-14-R-01",
@@ -2517,7 +2526,7 @@
       "detailed_driver_instruction_verified": false,
       "exact_reusable_graphic_verified": false,
       "candidate_catalogue_ids": [
-        "turn-signals"
+        "audi-q4-turn-left"
       ],
       "matching_current_enyaq_catalogue_ids": [],
       "catalogue_result": "needs-detailed-chapter",
@@ -2527,7 +2536,7 @@
         "de": "Die Zeile ist lesbar; die genaue Zustandsabgrenzung erfordert jedoch das zugehörige Detailkapitel dieser Ausgabe."
       },
       "actually_added_from_this_photo_set": false,
-      "notes_cs": "Současný katalog sdílí obecný záznam směrovek, nikoli samostatnou levou grafiku."
+      "notes_cs": "Samostatná levá grafika je v katalogu a nově doložená pro samostatný návod Enyaq CS/DE 11.2020; fotografované vydání zůstává neidentifikované."
     },
     {
       "id": "enyaq-photo-15-R-08",
@@ -2550,7 +2559,7 @@
       "detailed_driver_instruction_verified": false,
       "exact_reusable_graphic_verified": false,
       "candidate_catalogue_ids": [
-        "turn-signals"
+        "audi-q4-turn-right"
       ],
       "matching_current_enyaq_catalogue_ids": [],
       "catalogue_result": "needs-detailed-chapter",
@@ -2560,7 +2569,7 @@
         "de": "Die Zeile ist lesbar; die genaue Zustandsabgrenzung erfordert jedoch das zugehörige Detailkapitel dieser Ausgabe."
       },
       "actually_added_from_this_photo_set": false,
-      "notes_cs": "Současný katalog sdílí obecný záznam směrovek, nikoli samostatnou pravou grafiku."
+      "notes_cs": "Samostatná pravá grafika je v katalogu a nově doložená pro samostatný návod Enyaq CS/DE 11.2020; fotografované vydání zůstává neidentifikované."
     },
     {
       "id": "enyaq-photo-15-R-09",
@@ -3205,9 +3214,7 @@
       "overview_meaning_readable": true,
       "detailed_driver_instruction_verified": false,
       "exact_reusable_graphic_verified": false,
-      "candidate_catalogue_ids": [
-        "lane-ready"
-      ],
+      "candidate_catalogue_ids": [],
       "matching_current_enyaq_catalogue_ids": [],
       "catalogue_result": "needs-detailed-chapter",
       "catalogue_result_text": {
@@ -3216,7 +3223,10 @@
         "de": "Die Zeile ist lesbar; die genaue Zustandsabgrenzung erfordert jedoch das zugehörige Detailkapitel dieser Ausgabe."
       },
       "actually_added_from_this_photo_set": false,
-      "notes_cs": ""
+      "notes_cs": "Šedý aktivovaný stav bez zásahu není zelená připravenost lane-ready; přesný stav fotografovaného vydání vyžaduje jeho kapitolu Lane Assist.",
+      "pending_catalogue_ids": [
+        "enyaq-lane-enabled-no-intervention-grey"
+      ]
     },
     {
       "id": "enyaq-photo-16-R-05",
@@ -3335,9 +3345,7 @@
       "overview_meaning_readable": true,
       "detailed_driver_instruction_verified": false,
       "exact_reusable_graphic_verified": false,
-      "candidate_catalogue_ids": [
-        "high-beam-assist-blue"
-      ],
+      "candidate_catalogue_ids": [],
       "matching_current_enyaq_catalogue_ids": [],
       "catalogue_result": "needs-detailed-chapter",
       "catalogue_result_text": {
@@ -3346,7 +3354,10 @@
         "de": "Die Zeile ist lesbar; die genaue Zustandsabgrenzung erfordert jedoch das zugehörige Detailkapitel dieser Ausgabe."
       },
       "actually_added_from_this_photo_set": false,
-      "notes_cs": "Neslučovat s modrým stavem automaticky rozsvícených dálkových světel."
+      "notes_cs": "Neslučovat s modrým stavem automaticky rozsvícených dálkových světel.",
+      "pending_catalogue_ids": [
+        "enyaq-light-assist-enabled-neutral"
+      ]
     },
     {
       "id": "enyaq-photo-16-R-09",
@@ -3368,9 +3379,7 @@
       "overview_meaning_readable": true,
       "detailed_driver_instruction_verified": false,
       "exact_reusable_graphic_verified": false,
-      "candidate_catalogue_ids": [
-        "enyaq-dynamic-light-assist-active"
-      ],
+      "candidate_catalogue_ids": [],
       "matching_current_enyaq_catalogue_ids": [],
       "catalogue_result": "needs-detailed-chapter",
       "catalogue_result_text": {
@@ -3379,7 +3388,10 @@
         "de": "Die Zeile ist lesbar; die genaue Zustandsabgrenzung erfordert jedoch das zugehörige Detailkapitel dieser Ausgabe."
       },
       "actually_added_from_this_photo_set": false,
-      "notes_cs": "Neslučovat s modrým stavem automaticky rozsvícených dálkových světel."
+      "notes_cs": "Neslučovat s modrým stavem automaticky rozsvícených dálkových světel.",
+      "pending_catalogue_ids": [
+        "enyaq-dynamic-light-assist-enabled-neutral"
+      ]
     },
     {
       "id": "enyaq-photo-16-R-10",
@@ -3526,7 +3538,7 @@
       "detailed_driver_instruction_verified": false,
       "exact_reusable_graphic_verified": false,
       "candidate_catalogue_ids": [
-        "acc-regulating"
+        "acc-standby"
       ],
       "matching_current_enyaq_catalogue_ids": [],
       "catalogue_result": "needs-detailed-chapter",
@@ -3536,7 +3548,7 @@
         "de": "Die Zeile ist lesbar; die genaue Zustandsabgrenzung erfordert jedoch das zugehörige Detailkapitel dieser Ausgabe."
       },
       "actually_added_from_this_photo_set": false,
-      "notes_cs": "Pohotovost a skutečnou regulaci je nutné rozlišit podle barvy a kapitoly."
+      "notes_cs": "Aktivovaný ACC je stav bez potvrzení probíhající regulace; samostatný návod CS 11.2020 jej výslovně odlišuje od regulace. Fotografované vydání zůstává neidentifikované."
     },
     {
       "id": "enyaq-photo-17-L-01",
@@ -4100,5 +4112,78 @@
       "actually_added_from_this_photo_set": false,
       "notes_cs": ""
     }
-  ]
+  ],
+  "current_recount": {
+    "checked": "2026-10-31",
+    "semantic_rows": 122,
+    "catalogue_result_counts": {
+      "correct-existing-model-entry": 37,
+      "generic-without-enyaq-scope": 5,
+      "meaning-present-graphic-incomplete": 2,
+      "meaning-present-state-corrected": 1,
+      "missing": 69,
+      "needs-detailed-chapter": 8
+    },
+    "missing_semantic_rows": 69,
+    "distinct_editorial_photo_shape_ids_among_missing_rows": 59,
+    "distinct_shape_and_colour_combinations_among_missing_rows": 64,
+    "distinct_literal_captions_among_missing_rows": 68,
+    "rows_with_exact_reusable_graphic_verified": 0,
+    "distinct_editorial_photo_shape_ids_all_rows": 89,
+    "distinct_shape_and_colour_combinations_all_rows": 105,
+    "counting_limit": {
+      "cs": "69 je počet významových řádků s výsledkem „chybí“. Není to počet unikátních SVG. Hodnoty photo_shape_id jsou redakční klasifikace a přesná znovupoužitelná grafika není ověřena u žádného ze 122 řádků.",
+      "en": "69 is the number of semantic rows classified as missing. It is not a count of unique SVGs. photo_shape_id values are editorial classifications and no exact reusable graphic is verified for any of the 122 rows.",
+      "de": "69 ist die Zahl der als fehlend eingestuften Bedeutungszeilen, nicht die Zahl eindeutiger SVGs. photo_shape_id-Werte sind redaktionelle Klassen; für keine der 122 Zeilen ist eine genaue wiederverwendbare Grafik belegt."
+    },
+    "repeated_shape_colour_groups_among_missing_rows": [
+      {
+        "photo_shape_id": "cruise-gauge-OFF",
+        "photo_colour": "neutralni-seda",
+        "row_ids": [
+          "enyaq-photo-17-L-01",
+          "enyaq-photo-17-L-02",
+          "enyaq-photo-17-L-03"
+        ]
+      },
+      {
+        "photo_shape_id": "key-wireless",
+        "photo_colour": "zluta",
+        "row_ids": [
+          "enyaq-photo-14-R-01",
+          "enyaq-photo-14-R-02"
+        ]
+      },
+      {
+        "photo_shape_id": "limiter-gauge-LIM",
+        "photo_colour": "neutralni-seda",
+        "row_ids": [
+          "enyaq-photo-16-R-12",
+          "enyaq-photo-16-R-13"
+        ]
+      },
+      {
+        "photo_shape_id": "travel-assist-combined",
+        "photo_colour": "neutralni-seda",
+        "row_ids": [
+          "enyaq-photo-16-R-05",
+          "enyaq-photo-16-R-06"
+        ]
+      }
+    ]
+  },
+  "identification_search_result": {
+    "checked": "2026-10-31",
+    "result": "not-established-from-available-project-evidence",
+    "available_evidence": "Ten inline photographs of printed overview pages 12–17; no title/imprint page, publication code, original filename or raw image file is available in the workspace.",
+    "required_evidence": {
+      "cs": "Fotografie tiráže nebo titulní strany s datem vydání, jazykem a kódem publikace této konkrétní knihy.",
+      "en": "A photograph of the imprint or title page showing the edition date, language and publication code of this exact book.",
+      "de": "Ein Foto von Impressum oder Titelseite mit Ausgabedatum, Sprache und Publikationsnummer genau dieses Buchs."
+    },
+    "independent_manuals_do_not_identify_photo_book": [
+      "skoda-enyaq-2020-11-de",
+      "skoda-enyaq-2020-11-cs"
+    ]
+  }
 }

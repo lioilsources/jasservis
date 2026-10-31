@@ -839,6 +839,117 @@
           },
           "source_edition_identified": false,
           "document_identity_established": false
+        },
+        {
+          "manual": "skoda-enyaq-2020-11-cs",
+          "brand": "skoda",
+          "model": "Enyaq iV",
+          "edition": "11.2020, V1 R8, cs_CZ",
+          "source_url": "https://autotrip.cz/wp-content/uploads/2023/01/Navod-k-obsluze-Skoda-Enyaq-iV-2020.pdf",
+          "source_file": "_warnings/enyaq-cs-2020-11-review.json",
+          "document_type": "pdf-third-party-copy",
+          "closed_comparisons": [
+            "warning overview pp.17–20",
+            "steering lock pp.56–57",
+            "Light/Dynamic Light Assist pp.75–77",
+            "ACC p.168",
+            "Lane/Travel Assist pp.172–174",
+            "traffic signs p.176",
+            "Driver Alert p.178"
+          ],
+          "whole_manual_complete": false,
+          "remaining": {
+            "cs": "Vybrané české kapitoly jsou porovnané. Chybí úplná revize ostatních kapitol a porovnání s původním souborem výrobce; kopie sama nedokládá publikační kód 5LG012715CE a neidentifikuje fotografovanou knihu.",
+            "en": "Selected Czech chapters were compared. The remaining chapters and comparison with the manufacturer-hosted original remain open; this copy does not itself establish part 5LG012715CE or identify the photographed book.",
+            "de": "Ausgewählte tschechische Kapitel wurden verglichen. Übrige Kapitel und Abgleich mit Hersteller-Original bleiben offen; die Kopie belegt selbst weder 5LG012715CE noch die fotografierte Buchausgabe."
+          },
+          "document_kind": "owner-manual-copy"
+        },
+        {
+          "manual": "cupra-terramar-2025-11-cs",
+          "brand": "cupra",
+          "model": "Terramar",
+          "edition": "11.25, 578012715AC, CS",
+          "source_url": "https://www.cupraofficial.cz/servis-a-prislusenstvi/manualy/manualy-cupra-terramar",
+          "source_file": "_warnings/terramar-cs-2025-11-review.json",
+          "document_type": "pdf",
+          "closed_comparisons": [
+            "overview pp.11–14",
+            "fatigue pp.27–29",
+            "attention pp.29–31",
+            "traffic signs pp.31–34",
+            "electric drive pp.174–175",
+            "Lane Assist pp.215–217",
+            "Travel Assist pp.218–220"
+          ],
+          "whole_manual_complete": false,
+          "remaining": {
+            "cs": "Vybrané kapitoly jsou porovnané. Přesné použitelné grafiky chybějí pro jednotlivé stavy únavy, pozornosti, dopravních značek, kombinované Travel Assist a PHEV pohonu; zbytek návodu není úplně porovnaný.",
+            "en": "Selected chapters were compared. Exact reusable graphics remain missing for individual fatigue, attention, traffic-sign, composite Travel Assist and PHEV drive states; the rest of the manual is not fully compared.",
+            "de": "Ausgewählte Kapitel wurden verglichen. Genaue nachnutzbare Grafiken fehlen für einzelne Müdigkeits-, Aufmerksamkeits-, Verkehrszeichen-, kombinierte Travel-Assist- und PHEV-Antriebszustände; Rest der Anleitung nicht vollständig verglichen."
+          },
+          "document_kind": "complete-owner-manual"
+        },
+        {
+          "manual": "cupra-terramar-2025-11-cs-readme",
+          "brand": "cupra",
+          "model": "Terramar",
+          "edition": "11.25, 578012815AC, CS README",
+          "source_url": "https://www.cupraofficial.cz/servis-a-prislusenstvi/manualy/manualy-cupra-terramar",
+          "source_file": "_warnings/terramar-cs-2025-11-review.json",
+          "document_type": "pdf",
+          "closed_comparisons": [
+            "overview pp.7–10"
+          ],
+          "whole_manual_complete": false,
+          "remaining": {
+            "cs": "README je samostatný stručný dokument. Nenahrazuje úplný návod 578012715AC ani navazující pokyny a sám nepřidává zákaznické karty.",
+            "en": "The README is a separate condensed document. It does not replace full manual 578012715AC or its detailed instructions and adds no customer cards by itself.",
+            "de": "README ist eine separate Kurzfassung. Kein Ersatz für 578012715AC oder Detailanweisungen und allein keine Kundenkarten."
+          },
+          "document_kind": "readme-quick-reference"
+        },
+        {
+          "manual": "seat-tarraco-2023-06-de",
+          "brand": "seat",
+          "model": "Tarraco",
+          "edition": "06.2023, 5FJ012705BR, DE",
+          "source_url": "https://www.seat.at/service-und-zubehoer/onlinedienste/bedienungsanleitungen/tarraco",
+          "source_file": "_warnings/tarraco-de-2023-06-2024-01-review.json",
+          "document_type": "pdf",
+          "closed_comparisons": [
+            "overview p.11",
+            "fatigue p.26",
+            "traffic signs p.27",
+            "Lane Assist pp.211–213",
+            "Travel Assist pp.213–216"
+          ],
+          "whole_manual_complete": false,
+          "remaining": {
+            "cs": "Vybrané německé kapitoly jsou porovnané. Chybí zbytek návodu a přesné použitelné grafiky pro únavu, dynamické značky a kombinované Travel Assist; vazba dodatku 5FJ012705FE na tento základ není v souborech výslovně uvedena.",
+            "en": "Selected German chapters were compared. The rest of the manual and exact reusable graphics for fatigue, dynamic signs and composite Travel Assist remain open; the files do not explicitly pair supplement 5FJ012705FE to this base.",
+            "de": "Ausgewählte deutsche Kapitel wurden verglichen. Rest der Anleitung sowie genaue nachnutzbare Grafiken für Müdigkeit, dynamische Zeichen und kombinierte Travel-Assist-Zustände fehlen; Dateien ordnen 5FJ012705FE nicht ausdrücklich dieser Grundlage zu."
+          },
+          "document_kind": "complete-owner-manual"
+        },
+        {
+          "manual": "seat-tarraco-2024-01-de-supplement",
+          "brand": "seat",
+          "model": "Tarraco",
+          "edition": "01.2024, 5FJ012705FE, DE supplement",
+          "source_url": "https://www.seat.at/service-und-zubehoer/onlinedienste/bedienungsanleitungen/tarraco",
+          "source_file": "_warnings/tarraco-de-2023-06-2024-01-review.json",
+          "document_type": "pdf",
+          "closed_comparisons": [
+            "complete supplement pp.1–15"
+          ],
+          "whole_manual_complete": false,
+          "remaining": {
+            "cs": "Celý dodatek byl přečten. Neuvádí 5FJ012705BR ani vydání 06.23 jako svůj základ; HDC a nabíjecí symboly čekají na přesné grafiky, zatímco červená závada generátoru je modelově doplněna.",
+            "en": "The full supplement was read. It names neither 5FJ012705BR nor edition 06.23 as its base; HDC and charging symbols await exact graphics, while the red generator fault received a model scope.",
+            "de": "Gesamte Zusatzanleitung gelesen. Weder 5FJ012705BR noch 06.23 als Grundlage genannt; HDC-/Ladesymbole warten auf genaue Grafiken, rote Generatorstörung erhielt Modellumfang."
+          },
+          "document_kind": "supplement"
         }
       ]
     },
@@ -853,34 +964,34 @@
         {
           "brand": "audi",
           "model": "A4 (8W)",
-          "edition": "European German owner manual, 8W0012705AC, edition 01.2016",
+          "edition": "European German owner manual requested: A4 B9/8W, edition 01.2016, publication 8W0012705AC; exact file not obtained",
           "source_url": "https://ownersmanual.audi.com/home/de_DE",
           "remaining": {
-            "cs": "A4 8W, návod 01.2016, číslo 8W0012705AC: evropský portál i seznam modelů vrací 403. Potřebuji příslušný PDF návod nebo export.",
-            "en": "A4 8W, manual 01.2016, part 8W0012705AC: European portal and model list return 403. The PDF manual or an export is needed.",
-            "de": "A4 8W, Anleitung 01.2016, Nummer 8W0012705AC: Europäisches Portal und Modellliste liefern 403. Benötigt wird die PDF-Anleitung oder ein Export."
+            "cs": "Aplikace portálu se načetla, ale API /web/models/ a evidovaný GPSR požadavek A4 vrátily HTTP 403; celý portál proto nelze označit za blokovaný. Chybí přesný návod 01.2016, 8W0012705AC, s obálkou, tiráží, přehledem kontrolek a navazujícími pokyny.",
+            "en": "The portal application loaded, but the /web/models/ API and the recorded A4 GPSR request returned HTTP 403; the whole portal therefore must not be described as blocked. The exact 01.2016 manual, 8W0012705AC, with cover, imprint, warning overview and referenced instructions is still required.",
+            "de": "Die Portalanwendung wurde geladen, aber die API /web/models/ und der protokollierte A4-GPSR-Aufruf lieferten HTTP 403; das gesamte Portal darf daher nicht als blockiert bezeichnet werden. Benötigt wird die genaue Anleitung 01.2016, 8W0012705AC, mit Umschlag, Impressum, Kontrollleuchtenübersicht und verwiesenen Anweisungen."
           }
         },
         {
           "brand": "audi",
           "model": "Q4 e-tron",
-          "edition": "European owner manual; exact edition not established",
+          "edition": "European/RDW owner manual for Q4 e-tron F4, model-year scope 2022; exact edition, language and publication code not established",
           "source_url": "https://ownersmanual.audi.com/web/rdw/start?vin=GPSRSAMPLEQ4E0001&language=de_DE&origin=GPSR",
           "remaining": {
-            "cs": "Q4 e-tron 2022: konkrétní evropské vydání dosud nebylo zpřístupněno. Potřebný je návod s přehledem symbolů a kapitolami o pohonu a asistentech.",
-            "en": "Q4 e-tron 2022: the specific European edition remains inaccessible. The manual’s symbol overview and drive/assistance chapters are needed.",
-            "de": "Q4 e-tron 2022: Die konkrete europäische Ausgabe ist noch nicht zugänglich. Benötigt werden Symbolübersicht und Kapitel zu Antrieb und Assistenzsystemen."
+            "cs": "Aplikace portálu se načetla, API /web/models/ vrátilo HTTP 403. GPSRSAMPLEQ4E0001 je vzor výrobce, nikoli zákaznický VIN, a nedokládá rok 2022 ani vydání. Chybí evropský modelový výběr 2022 a odpovídající úplný návod s tiráží, přehledem symbolů a kapitolami pohonu, osvětlení a asistentů.",
+            "en": "The portal application loaded and the /web/models/ API returned HTTP 403. GPSRSAMPLEQ4E0001 is a manufacturer sample, not a customer VIN, and establishes neither model year 2022 nor an edition. A European 2022 model-selection result and corresponding complete manual with imprint, symbol overview and drive, lighting and assistance chapters are required.",
+            "de": "Die Portalanwendung wurde geladen; die API /web/models/ lieferte HTTP 403. GPSRSAMPLEQ4E0001 ist ein Herstellermuster, keine Kunden-FIN, und belegt weder das Modelljahr 2022 noch eine Ausgabe. Benötigt werden eine europäische Modellauswahl für 2022 und die zugehörige vollständige Anleitung mit Impressum, Symbolübersicht sowie Kapiteln zu Antrieb, Beleuchtung und Assistenzsystemen."
           }
         },
         {
           "brand": "audi",
           "model": "A8 (4N)",
-          "edition": "European owner manual; SSP 668 available as supplementary technical source",
+          "edition": "European owner manual for A8 D5/4N, 2018 scope; exact edition and publication code not established; SSP 668 supplementary only",
           "source_url": "https://ownersmanual.audi.com/home/de_DE",
           "remaining": {
-            "cs": "A8 4N 2018: dostupný SSP 668 nenahrazuje návod k obsluze. Potřebuji evropské vydání návodu včetně pokynů pro řidiče.",
-            "en": "A8 4N 2018: available SSP 668 does not replace the owner’s manual. A European manual including driver instructions is needed.",
-            "de": "A8 4N 2018: Das verfügbare SSP 668 ersetzt keine Betriebsanleitung. Benötigt wird die europäische Ausgabe einschließlich Fahrerhinweisen."
+            "cs": "Aplikace portálu se načetla, ale API /web/models/ a evidovaný GPSR požadavek A8 vrátily HTTP 403. SSP 668 je pouze technický školicí podklad a nenahrazuje pokyny pro řidiče. Chybí přesné evropské vydání pro rozsah 2018, publikační kód a úplný návod.",
+            "en": "The portal application loaded, but the /web/models/ API and the recorded A8 GPSR request returned HTTP 403. SSP 668 is supplementary technical training material and does not replace driver instructions. The exact European edition for the 2018 scope, its publication code and complete manual are required.",
+            "de": "Die Portalanwendung wurde geladen, aber die API /web/models/ und der protokollierte A8-GPSR-Aufruf lieferten HTTP 403. SSP 668 ist nur technisches Schulungsmaterial und ersetzt keine Fahrerhinweise. Benötigt werden die genaue europäische Ausgabe für den Umfang 2018, ihre Publikationsnummer und die vollständige Anleitung."
           }
         },
         {
@@ -911,9 +1022,9 @@
           "edition": "Digital owner manual 11.2020, part 5LG012715CE, cs_CZ",
           "source_url": "https://manual.skoda-auto.com/005/cs-BZ/api/Manuals?model=Enyaq_IV_5A&edition=11-2020&market=C&language=cs",
           "remaining": {
-            "cs": "Enyaq iV 11.2020: běžný vstup do českého digitálního návodu 5LG012715CE vrací ERR_01_003_TP. Prohlédnuta byla zvlášť označená německá PDF kopie. Chybí srovnání s originálním souborem.",
-            "en": "Enyaq iV 11.2020: normal access to Czech digital manual 5LG012715CE returns ERR_01_003_TP. A separately identified German PDF copy was reviewed. Comparison with the original file remains outstanding.",
-            "de": "Enyaq iV 11.2020: Der normale Zugang zur tschechischen digitalen Anleitung 5LG012715CE liefert ERR_01_003_TP. Eine gesondert gekennzeichnete deutsche PDF-Kopie wurde geprüft. Der Abgleich mit der Originaldatei steht noch aus."
+            "cs": "Enyaq iV 11.2020: běžný vstup do českého digitálního návodu 5LG012715CE vrací ERR_01_003_TP. Samostatně označené kopie dokumentu výrobce CS (V1, R8, cs_CZ) a DE byly pro vybrané kapitoly prohlédnuty. Nadále chybí srovnání s originálním souborem z portálu výrobce.",
+            "en": "Enyaq iV 11.2020: normal access to Czech digital manual 5LG012715CE returns ERR_01_003_TP. Separately identified CS (V1, R8, cs_CZ) and DE copies of the manufacturer document were reviewed for selected chapters. Comparison with the original manufacturer-portal file remains outstanding.",
+            "de": "Enyaq iV 11.2020: Der normale Zugang zur tschechischen digitalen Anleitung 5LG012715CE liefert ERR_01_003_TP. Gesondert gekennzeichnete CS- (V1, R8, cs_CZ) und DE-Kopien des Herstellerdokuments wurden in ausgewählten Kapiteln geprüft. Der Abgleich mit der Originaldatei aus dem Herstellerportal steht weiter aus."
           }
         },
         {
@@ -928,25 +1039,14 @@
           }
         },
         {
-          "brand": "seat",
-          "model": "Tarraco",
-          "edition": "01.2024 appendix, 5FJ012720FE",
-          "source_url": "https://www.seat.com/datamanual-manual/tarraco/my25_w03/en-uk/TARRACO_01_24_EN.pdf",
-          "remaining": {
-            "cs": "Dvacetistránkový doplněk neuvádí jednoznačně základní vydání. Celý oficiální návod 06.2023, 5FJ012720BR, nově zpracováván samostatně; vztah k doplňku není doložen.",
-            "en": "The 20-page appendix does not identify its exact base edition unambiguously. Full official 06.2023 manual, 5FJ012720BR, now reviewed independently; relationship to appendix not established.",
-            "de": "Der 20-seitige Nachtrag nennt die genaue Basisausgabe nicht eindeutig. Vollständige offizielle Anleitung 06.2023, 5FJ012720BR, jetzt eigenständig bearbeitet; Bezug zum Nachtrag nicht belegt."
-          }
-        },
-        {
           "brand": "volkswagen",
           "model": "not established",
           "edition": "vw-range: amber headlight-range warning",
           "source_url": "https://www.volkswagen.de/de/besitzer-und-service/ueber-ihr-auto/digitale-betriebsanleitung-welcome.html",
           "remaining": {
-            "cs": "Chybí evropský model, vydání a stránka pro přesnou žlutou variantu. Prověřené přehledy Golf VII/Touareg 11.2019 ji nepotvrdily. Kandidát Passat B8 MY2016 nepřístupný (403), obsah nepotvrzen. Neodvozeno z Audi.",
-            "en": "European model, edition and page for the precise amber variant missing. Checked Golf VII/Touareg 11.2019 overviews did not confirm it. Passat B8 MY2016 candidate inaccessible (403), contents unconfirmed. Not inherited from Audi.",
-            "de": "Europäisches Modell, Ausgabe und Seite für die genaue gelbe Variante fehlen. Geprüfte Übersichten Golf VII/Touareg 11.2019 bestätigen sie nicht. Kandidat Passat B8 MY2016 unzugänglich (403), Inhalt unbestätigt. Nicht von Audi übernommen."
+            "cs": "Chybí evropský model, vydání a stránka pro přesnou žlutou variantu. Prověřené modelové návody Golf 5H0 11.2020 (5H0012769AD), Golf VII 11.2019 (5G0012705AK), ID.4 11.2021 (11A012705AF) a Touareg 11.2019 (760012705AF) ji nepotvrdily. Kandidát Passat B8 MY2016 je nepřístupný (403), obsah nepotvrzen. Neodvozeno z Audi.",
+            "en": "A European model, edition and page for the exact amber variant are missing. Checked model manuals for Golf 5H0 11.2020 (5H0012769AD), Golf VII 11.2019 (5G0012705AK), ID.4 11.2021 (11A012705AF) and Touareg 11.2019 (760012705AF) did not establish it. The Passat B8 MY2016 candidate is inaccessible (403), with contents unconfirmed. Not inherited from Audi.",
+            "de": "Europäisches Modell, Ausgabe und Seite für die genaue gelbe Variante fehlen. Geprüfte Modellanleitungen für Golf 5H0 11.2020 (5H0012769AD), Golf VII 11.2019 (5G0012705AK), ID.4 11.2021 (11A012705AF) und Touareg 11.2019 (760012705AF) belegen sie nicht. Kandidat Passat B8 MJ2016 ist unzugänglich (403), Inhalt unbestätigt. Nicht von Audi übernommen."
           }
         },
         {
@@ -1003,9 +1103,9 @@
           "edition": "Photographed Czech manual pp.12–17; edition undocumented",
           "source_url": null,
           "remaining": {
-            "cs": "Fotografie Enyaqu pokrývají celý přehled stran12–17 a všech122 čitelných významových řádků je přepsáno a porovnáno. Vydání a ročník se neodhadují. DE11.2020 zůstává samostatný zdroj. Chybí tiráž, podrobné odkazované kapitoly a přesné použitelné grafiky69 chybějících variant;2 kombinované grafiky jsou neúplné a8 stavů vyžaduje detail kapitoly.",
-            "en": "Enyaq photos cover the complete overview on pp12–17 and all122 readable semantic rows are transcribed and compared. Edition/year are not guessed. DE11.2020 remains a separate source. The imprint, referenced detailed chapters and exact usable graphics for69 missing variants remain open;2 combined graphics are incomplete and8 states need chapter detail.",
-            "de": "Enyaq-Fotos decken die vollständige Übersicht S12–17 ab; alle122 lesbaren Bedeutungszeilen sind transkribiert und verglichen. Ausgabe/Jahr werden nicht geraten. DE11.2020 bleibt getrennte Quelle. Titelei, verwiesene Detailkapitel und genaue nutzbare Grafiken für69 fehlende Varianten bleiben offen;2 Kombinationsgrafiken sind unvollständig und8 Zustände brauchen Kapitelprüfung."
+            "cs": "Fotografie Enyaqu pokrývají celý přehled stran 12–17 a všech 122 čitelných významových řádků je přepsáno. Vydání a ročník se neodhadují; samostatné návody CS/DE 11.2020 fotografovanou knihu neidentifikují. Ze 69 řádků označených „chybí“ vychází 59 redakčních tvarů a 64 kombinací tvaru s barvou, nikoli 69 SVG. Přesná znovupoužitelná grafika není ověřena u žádného řádku; dvě kombinované grafiky jsou neúplné a osm stavů vyžaduje kapitolu stejného fotografovaného vydání.",
+            "en": "The Enyaq photos cover the complete overview on pp. 12–17 and all 122 readable semantic rows are transcribed. Edition/year are not guessed; the separate CS/DE 11/2020 manuals do not identify the photographed book. The 69 rows classified as missing contain 59 editorial shapes and 64 shape/colour combinations, not 69 SVGs. No exact reusable graphic is verified for any row; two combined graphics are incomplete and eight states require the corresponding chapter of the photographed edition.",
+            "de": "Die Enyaq-Fotos decken die vollständige Übersicht S. 12–17 ab; alle 122 lesbaren Bedeutungszeilen sind transkribiert. Ausgabe/Jahr werden nicht geschätzt; die getrennten Anleitungen CS/DE 11/2020 identifizieren das fotografierte Buch nicht. Die 69 als fehlend eingestuften Zeilen enthalten 59 redaktionelle Formen und 64 Form-Farb-Kombinationen, nicht 69 SVGs. Für keine Zeile ist eine genaue wiederverwendbare Grafik belegt; zwei Kombinationsgrafiken sind unvollständig und acht Zustände benötigen das zugehörige Kapitel der fotografierten Ausgabe."
           },
           "source_file": "_warnings/enyaq-photo-review.json",
           "source_kind": "photographed-manual-overview",
@@ -1025,13 +1125,14 @@
         {
           "brand": "cupra",
           "model": "Terramar",
-          "edition": "Edition 11.25",
-          "source_url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
+          "edition": "CS 11.25, full 578012715AC; README 578012815AC separate",
+          "source_url": "https://www.cupraofficial.cz/servis-a-prislusenstvi/manualy/manualy-cupra-terramar",
           "remaining": {
-            "cs": "Terramar 11.2025: celý přehled 110 buněk porovnán; chybí mj. přesné SOS/Front/Travel/Emergency Assist a prediktivní varianty, nové olejové a hybridní grafiky a další ovladače. Tabulka odlišuje ověřené významy od dosud neprověřených pokynů. Nové fotografie stran 7–10 nejsou dostupné ani identifikované.",
-            "en": "Terramar 11.2025: all 110 overview cells compared; exact SOS/Front/Travel/Emergency Assist and predictive variants, new oil/hybrid graphics and further controls remain missing. Table separates verified meanings from unreviewed instructions. New pp7–10 photos unavailable/unidentified.",
-            "de": "Terramar 11.2025: alle 110 Übersichtszellen verglichen; genaue SOS-/Front-/Travel-/Emergency-Assist- und Prädiktivvarianten, neue Öl-/Hybridgrafiken sowie weitere Bedienungen fehlen. Tabelle trennt geprüfte Bedeutung von ungeprüften Anweisungen. Neue Fotos S.7–10 fehlen/unidentifiziert."
-          }
+            "cs": "Úplný český návod i samostatný README jsou identifikované. Přesné tvary chybějí pro šest stavů únavy, tři stavy pozornosti, tři stavy rozpoznávání značek, kombinované Travel Assist, Lane OFF a jednotlivé PHEV stavy. Tyto významy jsou vedené odděleně a nejsou nahrazené podobnými ikonami.",
+            "en": "The full Czech manual and separate README are identified. Exact shapes remain missing for six fatigue states, three attention states, three traffic-sign states, composite Travel Assist, Lane OFF and individual PHEV states. These meanings remain separate and are not replaced by similar icons.",
+            "de": "Vollständige tschechische Anleitung und separates README identifiziert. Genaue Formen fehlen für sechs Müdigkeits-, drei Aufmerksamkeits-, drei Verkehrszeichen-, kombinierte Travel-Assist-, Lane-OFF- und einzelne PHEV-Zustände. Bedeutungen bleiben getrennt, keine ähnlichen Ersatzsymbole."
+          },
+          "source_file": "_warnings/terramar-cs-2025-11-review.json"
         },
         {
           "brand": "volkswagen-uzitkove-vozy",
@@ -1039,9 +1140,9 @@
           "edition": "fotografovaný český návod, vydání nedoložené",
           "source_url": null,
           "remaining": {
-            "cs": "Strany16–19 jsou přepsané po všech129 čitelných významových řádcích. Žádná položka zatím nemá doložený rozsah Multivan;37 řádků má pouze kandidáta a92 žádného. Pět grafik je obrazově nejasných. Chybí tiráž, odkazované kapitoly a přesné použitelné grafiky.",
-            "en": "Pages16–19 are transcribed across all129 readable semantic rows. No item yet has documented Multivan scope;37 rows only have a candidate and92 have none. Five graphics are visually unclear. The imprint, referenced chapters and exact usable graphics are missing.",
-            "de": "Seiten16–19 sind über alle129 lesbaren Bedeutungszeilen transkribiert. Kein Eintrag hat bislang belegten Multivan-Umfang;37 Zeilen haben nur einen Kandidaten und92 keinen. Fünf Grafiken sind visuell unklar. Titelei, verwiesene Kapitel und genaue nutzbare Grafiken fehlen."
+            "cs": "Strany 16–19 jsou přepsané po všech 129 čitelných významových řádcích. Žádná položka zatím nemá doložený rozsah Multivan; 37 řádků má pouze kandidáta a 92 žádného. Pět grafik je obrazově nejasných. V dostupných podkladech chybí tiráž nebo titulní strana s datem vydání, jazykem a kódem publikace; návod Caddy 2K7012767AM Multivan neidentifikuje.",
+            "en": "Pages 16–19 are transcribed across all 129 readable semantic rows. No item yet has documented Multivan scope; 37 rows only have a candidate and 92 have none. Five graphics are visually unclear. The available evidence lacks an imprint or title page showing edition date, language and publication code; Caddy manual 2K7012767AM does not identify the Multivan.",
+            "de": "Seiten 16–19 sind über alle 129 lesbaren Bedeutungszeilen transkribiert. Kein Eintrag hat belegten Multivan-Umfang; 37 Zeilen haben nur einen Kandidaten, 92 keinen. Fünf Grafiken sind visuell unklar. In den verfügbaren Unterlagen fehlt ein Impressum oder eine Titelseite mit Ausgabedatum, Sprache und Publikationsnummer; die Caddy-Anleitung 2K7012767AM identifiziert den Multivan nicht."
           },
           "source_file": "_warnings/multivan-photo-review.json",
           "source_kind": "photographed-manual-overview",

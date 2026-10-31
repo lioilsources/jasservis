@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-30",
+  "checked": "2026-10-31",
   "brand_confirmed_by_user": "Volkswagen Užitkové vozy",
   "model_confirmed_by_user": "Multivan",
   "manual_edition": null,
@@ -4148,5 +4148,17 @@
       "detailed_source": "Odkazované tištěné strany fotografovaného návodu; úplný odpovídající dokument dosud nezískán.",
       "notes_cs": ""
     }
-  ]
+  ],
+  "document_identity_established": false,
+  "identification_search_result": {
+    "checked": "2026-10-31",
+    "result": "not-established-from-available-project-evidence",
+    "available_evidence": "Five inline photographs of printed overview pages 16–19; original filenames and raw image files are unavailable and no title/imprint page or publication code is present.",
+    "required_evidence": {
+      "cs": "Fotografie tiráže nebo titulní strany s datem vydání, jazykem a kódem publikace této konkrétní knihy.",
+      "en": "A photograph of the imprint or title page showing the edition date, language and publication code of this exact book.",
+      "de": "Ein Foto von Impressum oder Titelseite mit Ausgabedatum, Sprache und Publikationsnummer genau dieses Buchs."
+    },
+    "caddy_manual_not_identification_evidence": "2K7012767AM, DE 11/2025 is a Caddy manual and cannot identify the photographed Multivan manual."
+  }
 }

@@ -33,10 +33,38 @@
       "verified_edition": null,
       "kind": "3 photographs of manual pp7–10",
       "status": {
-        "cs": "Nové tři fotografie stran 7–10 nejsou v dostupných přílohách tohoto zadání ani lokálním archivu. CUPRA podle zadání; model a vydání nelze doložit. Nejde o Audi ani automaticky Terramar.",
-        "en": "The three new photos of pp7–10 are absent from available task attachments/local archive. CUPRA as specified by user; model and edition cannot be established. Not Audi or automatically Terramar.",
-        "de": "Drei neue Fotos S.7–10 fehlen in verfügbaren Aufgabenanhängen/lokalem Archiv. CUPRA laut Auftrag; Modell/Ausgabe nicht belegbar. Nicht Audi oder automatisch Terramar."
-      }
+        "cs": "Historické tři fotografie stran 7–10 nejsou v dostupných přílohách, takže jejich souborovou identitu nelze potvrdit. Obsah je nyní samostatně doložen oficiálním českým README Terramar 11.25, 578012815AC (tištěné strany 7–10 = PDF 9–12); README nenahrazuje úplný návod 578012715AC.",
+        "en": "The historical three photographs of pp. 7–10 are absent, so their file identity cannot be established. The content is now documented separately by the official Czech Terramar 11.25 README, 578012815AC (printed pp. 7–10 = PDF pp. 9–12); the README does not replace the complete manual 578012715AC.",
+        "de": "Die historischen drei Fotos der S. 7–10 fehlen, daher ist ihre Dateiidentität nicht belegbar. Der Inhalt ist nun getrennt durch den offiziellen tschechischen Terramar-README 11.25, 578012815AC (gedruckte S. 7–10 = PDF-S. 9–12) dokumentiert; der README ersetzt nicht die vollständige Anleitung 578012715AC."
+      },
+      "content_source_resolved": true,
+      "new_photo_identity_established": false,
+      "independent_document_checks": [
+        {
+          "manual": "cupra-terramar-2025-11-cs",
+          "publication_code": "578012715AC",
+          "document_kind": "complete-owner-manual",
+          "edition": "11.25"
+        },
+        {
+          "manual": "cupra-terramar-2025-11-cs-readme",
+          "publication_code": "578012815AC",
+          "document_kind": "readme-quick-reference",
+          "edition": "11.25",
+          "printed_pages": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "pdf_pages": [
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      ]
     },
     {
       "id": "audi-vehicle-four",
