@@ -212,12 +212,17 @@ def infotainment_content(brand,lang,page):
   if rows:out+=f'<details class="wl-info-category"><summary><span>{esc(INFO_CATEGORY_LABELS[lang][category])}</span><span class="wl-group-arrow" aria-hidden="true"></span></summary><div class="wl-grid">'+''.join(infotainment_card(x,brand,lang,page)for x in rows)+'</div></details>'
  return out+'</div>'
 
-def catalog_content(lang,page):
+def brand_selector_content(lang):
  u=UI[lang]
- messages={'brands':u['brands']}
- out=f'<div class="driver-catalog"><script type="application/json" id="wl-messages">'+json.dumps(messages,ensure_ascii=False).replace('</','<\\/')+'</script><div class="wl-brand-tiles" role="group" aria-label="'+esc(u['brand'])+'">'
- out+=''.join(f'<button type="button" class="wl-brand-tile" data-brand="{brand}" aria-pressed="false" aria-controls="prehled-kontrolek">{esc(BRAND_TILE_LABELS[lang][brand])}</button>'for brand in u['brands'])+'</div><noscript><p>'+esc(u['nojs'])+'</p></noscript>'
- out+='<section id="prehled-kontrolek" class="wl-results" tabindex="-1" hidden>'
+ prefix={'cs':'Rady pro řidiče','en':'Driver advice','de':'Fahrertipps'}[lang]
+ messages={'brands':u['brands'],'advicePrefix':prefix}
+ out='<script type="application/json" id="wl-messages">'+json.dumps(messages,ensure_ascii=False).replace('</','<\\/')+'</script><div class="wl-brand-tiles" role="group" aria-label="'+esc(u['brand'])+'">'
+ out+=''.join(f'<button type="button" class="wl-brand-tile" data-brand="{brand}" aria-pressed="false" aria-controls="brand-advice">{esc(BRAND_TILE_LABELS[lang][brand])}</button>'for brand in u['brands'])
+ return out+'</div>'
+
+def warning_content(lang,page):
+ u=UI[lang]
+ out='<section id="prehled-kontrolek" class="wl-results">'
  for brand,bname in u['brands'].items():
   entries=[i for i in CAT['items'] if any(s['brand']==brand for s in i['scopes'])]
   if not entries:continue
@@ -243,9 +248,7 @@ def catalog_content(lang,page):
     out+='<div class="wl-grid">'+''.join(card(items,brand,lang,page) for items in grouped)+'</div>'
     out+='</details>'
   out+='</section>'
- out+='</section>'
- out+=f'<section class="wl-contact" hidden><h2>{esc(u["contactTitle"])}</h2><p>{esc(u["contact"])}</p><p><strong>{esc(u["hours"])}</strong></p><p>{esc(u["office"])}: <a href="tel:+420605399448">+420 605 399 448</a><br>{esc(u["workshop"])}: <a href="tel:+420608313437">+420 608 313 437</a></p><a class="tlacitko-akce" href="{rel(locale_root(lang)+"kontakt",page)}" data-booking-panel>{esc(u["contactButton"])}</a><p class="wl-note">{esc(u["notAssistance"])}</p></section>'
- out+='</div>'
+ out+=f'<section class="wl-contact"><h2>{esc(u["contactTitle"])}</h2><p>{esc(u["contact"])}</p><p><strong>{esc(u["hours"])}</strong></p><p>{esc(u["office"])}: <a href="tel:+420605399448">+420 605 399 448</a><br>{esc(u["workshop"])}: <a href="tel:+420608313437">+420 608 313 437</a></p><a class="tlacitko-akce" href="{rel(locale_root(lang)+"kontakt",page)}" data-booking-panel>{esc(u["contactButton"])}</a><p class="wl-note">{esc(u["notAssistance"])}</p></section></section><noscript><p>'+esc(u['nojs'])+'</p></noscript>'
  return out
 
 ONLINE_SERVICES={
@@ -281,9 +284,7 @@ ONLINE_UI={
 }
 def online_services_content(lang):
  u=ONLINE_UI[lang];brand_names=UI[lang]['brands']
- out=f'<div class="online-services"><p class="online-intro">{esc(u["intro"])}</p><div class="online-brand-tiles" role="group" aria-label="{esc(UI[lang]["brand"])}">'
- out+=''.join(f'<button type="button" class="online-brand-tile" data-online-brand="{brand}" aria-pressed="false" aria-controls="online-panel-{brand}">{esc(BRAND_TILE_LABELS[lang][brand])}</button>' for brand in brand_names)
- out+='</div>'
+ out='<div class="online-services">'
  for brand in brand_names:
   item=ONLINE_SERVICES[brand];app_url=item.get('app_url')
   fmt=lambda key: u[key].format(account=item['account'],app=item['app'])
@@ -336,19 +337,18 @@ DRIVER_TOPICS={
 
 def main(lang,page):
  u=UI[lang];d=DRIVER_TOPICS[lang]
- out=f'<main id="warning-lights" class="warning-lights driver-advice" lang="{lang}"><section class="driver-topics" aria-label="{esc(d["page"])}">'
+ intro={'cs':'Vyberte značku svého vozu a téma, které vás zajímá.','en':'Select your vehicle brand and the topic you are interested in.','de':'Wählen Sie Ihre Fahrzeugmarke und das gewünschte Thema.'}[lang]
+ out=f'<main id="warning-lights" class="warning-lights driver-advice" lang="{lang}"><p class="driver-selection-intro">{esc(intro)}</p>{brand_selector_content(lang)}<section id="brand-advice" class="brand-advice" hidden aria-labelledby="brand-advice-title"><h2 id="brand-advice-title" tabindex="-1"></h2><div class="driver-topics" aria-label="{esc(d["page"])}">'
  for index,title in enumerate(d['titles']):
   topic_id=['kontrolky','prihlaseni-online-sluzby','pojistky','tlak-pneumatik','oleje','chladici-kapaliny','servisni-intervaly'][index]
-  if index==0:
-   out+=f'<section class="driver-brand-entry" id="{topic_id}" aria-label="{esc(title)}">{catalog_content(lang,page)}</section>'
-   continue
   topic_title=(f'<span class="driver-topic-title"><span class="driver-profile-icon" aria-hidden="true"></span>{esc(title)}</span>' if index==1 else f'<span>{esc(title)}</span>')
-  out+=f'<details class="driver-topic" id="{topic_id}" data-after-brand hidden><summary>{topic_title}<span class="driver-topic-arrow" aria-hidden="true"></span></summary><div class="driver-topic-body">'
-  if index==1:out+=online_services_content(lang)
+  out+=f'<details class="driver-topic" id="{topic_id}"><summary>{topic_title}<span class="driver-topic-arrow" aria-hidden="true"></span></summary><div class="driver-topic-body">'
+  if index==0:out+=warning_content(lang,page)
+  elif index==1:out+=online_services_content(lang)
   else:
    for heading,text in d['topics'][index]:out+=f'<section class="driver-subtopic"><h2>{esc(heading)}</h2><p>{esc(text)}</p></section>'
   out+='</div></details>'
- out+='</section></main>'
+ out+='</div></section></main>'
  return out
 
 def create_page(lang):
