@@ -1067,6 +1067,7 @@ def check_online_services(audit):
         audit.check(text.count('class="fuse-safety"') == 1 and text.find('class="fuse-safety"') > text.find('id="pojistky"'), "online_services", f"{label}: fuse safety notice is missing or misplaced")
         audit.check(text.count('class="fuse-swatch ') == 13 and text.count('class="fuse-colour-guide"') == 1, "online_services", f"{label}: fuse colour guide must contain 13 documented rows")
         audit.check(text.count('class="tyre-code-token"') == 7 and text.count('class="tyre-pressure-note"') == 1, "online_services", f"{label}: tyre code or pressure guidance is incomplete")
+        audit.check(text.count('class="coolant-section"') == 5 and text.count('class="coolant-safety"') == 1, "online_services", f"{label}: G12evo coolant guidance is incomplete")
         audit.check('<details class="driver-topic" id="kontrolky"' in text, "online_services", f"{label}: warning lights must be a main topic accordion")
         audit.check('class="wl-intro"' not in text, "online_services", f"{label}: obsolete explanatory text remains below the brand tiles")
         audit.check('data-after-brand' not in text, "online_services", f"{label}: obsolete per-topic brand gating remains")
