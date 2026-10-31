@@ -161,7 +161,7 @@ def catalog_content(lang,page):
  u=UI[lang];models={s['manual']:f'{u["brands"][s["brand"]]} {model_label(s["model"],s["model_year"])} · {s["edition"]}' for i in CAT['items'] for s in i['scopes'] if s.get('manual')}
  models['generic']=u['generic']
  messages={k:u[k] for k in ['brands','overview','count','empty','missingBrand','preset']}
- intro={'cs':'Vyberte značku svého vozu. Zobrazí se přehled kontrolek, jejich význam a doporučený postup. Význam vždy posuzujte společně s hlášením na displeji a návodem k obsluze svého vozidla.','en':'Select your vehicle brand. You will see an overview of warning lights, their meaning and the recommended action. Always assess the meaning together with the message on the display and the owner’s manual for your vehicle.','de':'Wählen Sie Ihre Fahrzeugmarke. Anschließend sehen Sie die Kontrollleuchten, ihre Bedeutung und das empfohlene Vorgehen. Beurteilen Sie die Bedeutung immer zusammen mit der Displaymeldung und der Betriebsanleitung Ihres Fahrzeugs.'}[lang]
+ intro={'cs':'Vyberte značku svého vozu. Zobrazí se přehled kontrolek a symbolů, jejich význam a doporučený postup. Význam vždy posuzujte společně s hlášením na displeji a návodem k obsluze svého vozidla.','en':'Select your vehicle brand. You will see an overview of warning lights and symbols, their meaning and the recommended action. Always assess the meaning together with the message on the display and the owner’s manual for your vehicle.','de':'Wählen Sie Ihre Fahrzeugmarke. Anschließend sehen Sie die Kontrollleuchten und Symbole, ihre Bedeutung und das empfohlene Vorgehen. Beurteilen Sie die Bedeutung immer zusammen mit der Displaymeldung und der Betriebsanleitung Ihres Fahrzeugs.'}[lang]
  filter_title={'cs':'Vyhledávání a upřesnění vozidla','en':'Search and refine the vehicle','de':'Suche und Fahrzeug eingrenzen'}[lang]
  out=f'<div class="driver-catalog"><script type="application/json" id="wl-messages">'+json.dumps(messages,ensure_ascii=False).replace('</','<\\/')+'</script><div class="wl-intro"><p>'+esc(intro)+'</p></div><div class="wl-brand-tiles" role="group" aria-label="'+esc(u['brand'])+'">'
  out+=''.join(f'<button type="button" class="wl-brand-tile" data-brand="{brand}" aria-pressed="false" aria-controls="prehled-kontrolek">{esc(name)}</button>'for brand,name in u['brands'].items())+'</div><noscript><p>'+esc(u['nojs'])+'</p></noscript>'
@@ -174,7 +174,10 @@ def catalog_content(lang,page):
   out+=f'<section class="wl-brand" data-brand="{brand}" aria-labelledby="brand-{brand}"><h2 id="brand-{brand}">{esc(bname)}</h2>'
   for group,gname in u['groups'].items():
    groupitems=[i for i in entries if i['group']==group]
-   if groupitems:out+=f'<section class="wl-group" id="{group if brand=='volkswagen' else brand+'-'+group}"><h3>{esc(gname)}</h3><div class="wl-grid">'+''.join(card(i,brand,lang,page) for i in groupitems)+'</div></section>'
+   if groupitems:
+    if brand=='audi' and group=='motor':out+='<h3 class="wl-audi-section">'+esc({'cs':'Kontrolky vozidla','en':'Vehicle warning lights','de':'Fahrzeug-Kontrollleuchten'}[lang])+'</h3>'
+    if brand=='audi' and group=='ovladani':out+='<h3 class="wl-audi-section">'+esc({'cs':'Symboly a hlášení MMI','en':'MMI symbols and messages','de':'MMI-Symbole und Meldungen'}[lang])+'</h3>'
+    out+=f'<section class="wl-group" id="{group if brand=='volkswagen' else brand+'-'+group}"><h3>{esc(gname)}</h3><div class="wl-grid">'+''.join(card(i,brand,lang,page) for i in groupitems)+'</div></section>'
   out+='</section>'
  out+='</section>'
  out+=f'<section class="wl-contact"><h2>{esc(u["contactTitle"])}</h2><p>{esc(u["contact"])}</p><p><strong>{esc(u["hours"])}</strong></p><p>{esc(u["office"])}: <a href="tel:+420605399448">+420 605 399 448</a><br>{esc(u["workshop"])}: <a href="tel:+420608313437">+420 608 313 437</a></p><a class="tlacitko-akce" href="{rel(locale_root(lang)+"kontakt",page)}" data-booking-panel>{esc(u["contactButton"])}</a><p class="wl-note">{esc(u["notAssistance"])}</p></section>'

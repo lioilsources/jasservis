@@ -88,6 +88,7 @@
 #warning-lights .wl-filters>label:first-child{grid-column:span 2}
 #warning-lights .wl-scope p{margin:8px 0}
 #warning-lights .wl-brand>h2{font-size:1.5rem;margin:16px 0 8px;border-bottom:1px solid #777;padding-bottom:8px}
+#warning-lights .wl-audi-section{font:700 1.5rem/1.35 var(--js-font,Ubuntu,sans-serif);color:#111;margin:28px 0 12px;padding-bottom:8px;border-bottom:1px solid #000}
 #warning-lights .wl-group>h3{font:600 1.25rem/1.35 var(--js-font,Ubuntu,sans-serif);text-transform:none;color:#111;background:var(--js-brand);border:1px solid #333;border-radius:4px;padding:10px 14px;margin:0 0 14px}
 #warning-lights .wl-detail h4{font:600 1.125rem/1.4 var(--js-font,Ubuntu,sans-serif);text-transform:none;color:#111;margin:18px 0 8px}
 #warning-lights .wl-detail h4:first-child{margin-top:0}

@@ -166,6 +166,10 @@ def check_catalogue(audit, cat, locales):
                     audit.check(key in ui[group], "translations", f"{label}: missing {lang}.{group}.{key}")
         meta = item.get("graphic_source", {})
         path = item["graphic_path"]
+        suffix = Path(path).suffix.lower()
+        audit.check(suffix in {".svg", ".png"}, "graphics", f"{label}: public graphic must be a standalone SVG or PNG")
+        audit.check(not re.search(r"(?:photo|manual|screen|screenshot|page|fotograf)", path, re.I),
+                    "graphics", f"{label}: public graphic path looks like a source photograph: {path}")
         audit.check(meta.get("file") == path, "graphics", f"{label}: graphic_source.file differs from graphic_path")
         candidates = [g for g in graphics.values() if g.get("file") == path]
         audit.check(len(candidates) == 1, "graphics", f"{label}: graphic metadata is not unique for {path}")
@@ -181,6 +185,10 @@ def check_catalogue(audit, cat, locales):
             actual = hashlib.sha256(path.read_bytes()).hexdigest()
             hashes[meta["file"]] = actual
             audit.check(actual == meta.get("sha256"), "graphics", f"{meta['file']}: SHA-256 mismatch")
+            if path.suffix.lower() == ".svg":
+                svg = path.read_text(encoding="utf-8", errors="replace")
+                audit.check(not re.search(r"<image\b|data:image/", svg, re.I), "graphics",
+                            f"{meta['file']}: standalone SVG embeds a raster or remote image")
     computed = {
         "semantic_records": len(items),
         "distinct_pictogram_shapes": len({x["graphic"] for x in items}),
