@@ -275,12 +275,26 @@ VIN_UI={
   'keyTitle':'Daten im Schlüssel','key':'Bei einigen Fahrzeugen sind Identifikationsdaten und ausgewählte Serviceinformationen auch im Schlüssel gespeichert. Ein Betrieb mit geeigneter Ausstattung kann sie mit einem spezialisierten Lesegerät auslesen. Verfügbarkeit und Umfang hängen vom Fahrzeugmodell und von der Schlüsselausführung ab.'}
 }
 VIN_WMI={'volkswagen':['WVW','WVG'],'audi':['WAU'],'skoda':['TMB'],'seat':['VSS'],'cupra':['VSS'],'volkswagen-uzitkove-vozy':['WV1','WV2']}
+VIN_PLATE_UI={
+ 'cs':{'title':'Jak číst datový štítek','note':'Schematický příklad – skutečný vzhled, pořadí a rozsah údajů se liší podle modelu, generace a provedení. Nejde o výrobní štítek ani o náhradu VIN vyznačeného na karoserii.','example':'Názorný příklad datového štítku','fields':[('VIN','Celý 17znakový identifikátor vozidla.'),('Typ vozidla','Modelový nebo typový údaj výrobce; jeho podoba není u všech vozidel stejná.'),('Motor a převodovka','Kódy konkrétních agregátů, pokud je daný štítek uvádí.'),('Lak a interiér','Kód barvy laku a kód provedení interiéru, pokud jsou uvedeny.'),('Kódy výbavy','Kódy výrobní výbavy. Jejich význam se ověřuje v dokumentaci pro konkrétní vozidlo.')]},
+ 'en':{'title':'How to read a vehicle data sticker','note':'Schematic example—the actual appearance, order and scope of data vary by model, generation and version. This is not the manufacturer’s plate and does not replace the VIN marked on the body.','example':'Illustrative vehicle data sticker','fields':[('VIN','The complete 17-character vehicle identifier.'),('Vehicle type','The manufacturer’s model or type information; its format is not identical on every vehicle.'),('Engine and gearbox','Codes for the specific units, where the sticker provides them.'),('Paint and interior','Paint colour and interior-trim codes, where stated.'),('Equipment codes','Production equipment codes. Their meaning must be checked in documentation for the exact vehicle.')]},
+ 'de':{'title':'Fahrzeugdatenträger lesen','note':'Schematisches Beispiel – Aussehen, Reihenfolge und Umfang der Angaben unterscheiden sich je nach Modell, Generation und Ausführung. Dies ist kein Herstellerschild und ersetzt nicht die an der Karosserie angebrachte VIN.','example':'Beispiel eines Fahrzeugdatenträgers','fields':[('VIN','Die vollständige Fahrzeugkennung aus 17 Zeichen.'),('Fahrzeugtyp','Modell- oder Typangabe des Herstellers; das Format ist nicht bei allen Fahrzeugen gleich.'),('Motor und Getriebe','Codes der konkreten Aggregate, sofern der Datenträger sie enthält.'),('Lack und Innenraum','Code der Lackfarbe und der Innenausstattung, sofern angegeben.'),('Ausstattungscodes','Codes der Produktionsausstattung. Ihre Bedeutung ist in den Unterlagen des konkreten Fahrzeugs zu prüfen.')]}
+}
+def vin_plate_content(lang,wmi):
+ u=VIN_PLATE_UI[lang];masked=wmi+'•'*14
+ rows=[masked,'MODEL / TYPE','XXXX / XXX','XX / XX','XXX  XXX  XXX']
+ plate='<div class="vin-plate-example" role="img" aria-label="'+esc(u['example'])+'">'
+ for index,value in enumerate(rows,1):plate+=f'<div class="vin-plate-row"><span class="vin-plate-number">{index}</span><span>{esc(value)}</span></div>'
+ plate+='</div><ol class="vin-plate-legend">'
+ for name,meaning in u['fields']:plate+=f'<li><strong>{esc(name)}</strong><span>{esc(meaning)}</span></li>'
+ return f'<figure class="vin-data-plate"><figcaption><strong>{esc(u["title"])}</strong><span>{esc(u["note"])}</span></figcaption><div class="vin-plate-layout">{plate}</ol></div></figure>'
 def vin_content(lang):
  u=VIN_UI[lang];out='<div class="vin-content">'
  for brand,codes in VIN_WMI.items():
   out+=f'<section class="vin-brand-panel" data-vin-panel="{brand}" hidden><div class="vin-intro"><span class="vin-icon" aria-hidden="true"><span>VIN</span></span><div><h2>{esc(u["whatTitle"])}</h2><p>{esc(u["what"])}</p></div></div>'
   for key in ('docs','vehicle','labels'):
    out+=f'<section class="vin-section"><h2>{esc(u[key+"Title"])}</h2><p>{esc(u[key])}</p></section>'
+  out+=vin_plate_content(lang,codes[0])
   out+=f'<section class="vin-section vin-wmi"><h2>{esc(u["wmiTitle"])}</h2><p>{esc(u["wmi"].format(codes=", ".join(codes)))}</p></section><section class="vin-section"><h2>{esc(u["keyTitle"])}</h2><p>{esc(u["key"])}</p></section></section>'
  return out+'</div>'
 

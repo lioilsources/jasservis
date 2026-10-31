@@ -157,5 +157,19 @@
 .vin-icon>span{font:700 .875rem/1 var(--js-font,Ubuntu,sans-serif);letter-spacing:.08em}
 .vin-section{margin:0 0 24px}
 .vin-wmi{padding:16px;border:1px solid #000;border-left:4px solid var(--js-brand);background:var(--js-muted)}
+.vin-data-plate{margin:4px 0 28px;padding:18px;border:1px solid #000;background:var(--js-paper)}
+.vin-data-plate figcaption{display:grid;gap:6px;margin:0 0 16px}
+.vin-data-plate figcaption strong{font-size:1.25rem;color:#111}
+.vin-data-plate figcaption span{max-width:82ch;font-size:.9375rem;line-height:1.55}
+.vin-plate-layout{display:grid;grid-template-columns:minmax(260px,420px) minmax(0,1fr);gap:22px;align-items:start}
+.vin-plate-example{display:grid;gap:0;border:2px solid #111;border-radius:5px;background:#f4f4f4;padding:12px;font:600 .9375rem/1.35 ui-monospace,SFMono-Regular,Consolas,monospace;color:#111}
+.vin-plate-row{display:grid;grid-template-columns:28px minmax(0,1fr);align-items:center;min-height:38px;border-bottom:1px solid #999;overflow-wrap:anywhere}
+.vin-plate-row:last-child{border-bottom:0}
+.vin-plate-number{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border:1px solid #111;border-radius:50%;background:#fff;font:700 .75rem/1 var(--js-font,Ubuntu,sans-serif)}
+.vin-plate-legend{display:grid;gap:12px;margin:0;padding:0;list-style:none;counter-reset:vin-field}
+.vin-plate-legend li{position:relative;display:grid;gap:2px;min-width:0;padding-left:34px;counter-increment:vin-field}
+.vin-plate-legend li:before{content:counter(vin-field);position:absolute;left:0;top:1px;display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border:1px solid #111;border-radius:50%;background:var(--js-muted);color:#111;font:700 .75rem/1 var(--js-font,Ubuntu,sans-serif)}
+.vin-plate-legend strong{color:#111}.vin-plate-legend span{font-size:.9375rem;line-height:1.45}
 @media(max-width:1000px){.online-brand-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:599px){.online-brand-tiles{grid-template-columns:minmax(0,1fr);gap:10px}.warning-lights .online-brand-tile{min-height:58px}.online-actions{display:grid;grid-template-columns:minmax(0,1fr)}.online-action{width:100%}.vin-intro{grid-template-columns:minmax(0,1fr)}.vin-icon{width:78px;height:48px}}
+@media(max-width:760px){.vin-plate-layout{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:599px){.online-brand-tiles{grid-template-columns:minmax(0,1fr);gap:10px}.warning-lights .online-brand-tile{min-height:58px}.online-actions{display:grid;grid-template-columns:minmax(0,1fr)}.online-action{width:100%}.vin-intro{grid-template-columns:minmax(0,1fr)}.vin-icon{width:78px;height:48px}.vin-data-plate{padding:14px}.vin-plate-example{padding:10px}.vin-plate-row{grid-template-columns:26px minmax(0,1fr)}}
