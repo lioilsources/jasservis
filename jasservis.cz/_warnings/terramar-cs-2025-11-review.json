@@ -198,5 +198,60 @@
       "scope": "Hybrid/PHEV vehicles only; do not transfer to conventional combustion-only versions."
     }
   ],
-  "photographed_vehicle_separation": "The user-stated manufacture date 03/2026 is not used as evidence of model year, software version or automatic identity with edition 11.25."
+  "photographed_vehicle_separation": "The user-stated manufacture date 03/2026 is not used as evidence of model year, software version or automatic identity with edition 11.25.",
+  "graphic_state_comparison": {
+    "checked": "2026-10-31",
+    "source": "Complete official CS manual 11.25, publication 578012715AC (printed pages; PDF pages are +2).",
+    "groups": [
+      {
+        "topic": "Lane Assist OFF",
+        "printed_pages": "13–14, 215–218",
+        "semantic_rows": 5,
+        "distinct_shape_families": 2,
+        "variants": "standard lane symbol: grey passive, green active, amber intervention, amber OFF; unavailable uses lane symbol with exclamation plus message",
+        "catalogue_change": "Verified existing active/intervention/unavailable rows; OFF retained pending because no exact reusable OFF graphic is established."
+      },
+      {
+        "topic": "fatigue monitoring",
+        "printed_pages": "27–29",
+        "semantic_rows": 6,
+        "distinct_shape_families": 1,
+        "variants": "same cup family in white, red and amber; unavailable additionally combines the amber central warning",
+        "catalogue_change": "Six meanings and urgency levels recorded separately; no approximate customer graphic published."
+      },
+      {
+        "topic": "attention assistant",
+        "printed_pages": "29–31",
+        "semantic_rows": 3,
+        "distinct_shape_families": 2,
+        "variants": "white exclamation beside eye for distraction; amber eye/exclamation for limited; same amber family plus central warning for unavailable",
+        "catalogue_change": "Three separate rows recorded; no substitution with the fatigue cup."
+      },
+      {
+        "topic": "traffic-sign recognition",
+        "printed_pages": "31–34",
+        "semantic_rows": 3,
+        "distinct_shape_families": 2,
+        "variants": "dynamic road-sign display flashes for level 1 and level 2; level 2 also sounds; unavailable uses white system symbol plus amber central warning and text",
+        "catalogue_change": "Flashing/no-sound and flashing/with-sound kept separate; no universal sign icon inferred."
+      },
+      {
+        "topic": "Travel Assist",
+        "printed_pages": "218–220",
+        "semantic_rows": 6,
+        "distinct_shape_families": 2,
+        "variants": "composite vehicle/lane/distance graphic: full green active, partially green distance passive/lane active, grey off, amber unavailable; separate white and red takeover prompts",
+        "catalogue_change": "Takeover rows verified; composite variants remain unpublished until exact reusable graphics are available."
+      },
+      {
+        "topic": "electric drive",
+        "printed_pages": "174–175",
+        "semantic_rows": 6,
+        "distinct_shape_families": 5,
+        "variants": "red/amber car with exclamation shares one shape but has stop, fault and power-limited meanings; separate car-with-waves, turtle-in-circle and crossed-E shapes",
+        "catalogue_change": "Six semantic rows retained separately; no shape transferred from another model."
+      }
+    ],
+    "vehicle_photo_limit": "The photographed vehicle production date 03/2026 is not used as evidence of model year, software level or automatic conformity with this 11/2025 manual."
+  }
 }

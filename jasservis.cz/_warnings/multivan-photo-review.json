@@ -4155,10 +4155,11 @@
     "result": "not-established-from-available-project-evidence",
     "available_evidence": "Five inline photographs of printed overview pages 16–19; original filenames and raw image files are unavailable and no title/imprint page or publication code is present.",
     "required_evidence": {
-      "cs": "Fotografie tiráže nebo titulní strany s datem vydání, jazykem a kódem publikace této konkrétní knihy.",
-      "en": "A photograph of the imprint or title page showing the edition date, language and publication code of this exact book.",
-      "de": "Ein Foto von Impressum oder Titelseite mit Ausgabedatum, Sprache und Publikationsnummer genau dieses Buchs."
+      "cs": "Celostránkovou fotografii titulní strany a tirážní/copyrightové strany této konkrétní příručky Volkswagen Multivan; musí být čitelné označení modelu, jazyk/trh, měsíc a rok vydání a kód publikace (objednací číslo). Pokud jsou údaje rozdělené, dodat obě strany.",
+      "en": "Full-page photographs of the title page and imprint/copyright page of this exact Volkswagen Multivan manual, showing the model designation, language/market, edition month and year, and publication/order code. Supply both pages if the data is split.",
+      "de": "Ganzseitige Fotos von Titelseite und Impressum/Urheberrechtsseite genau dieser Volkswagen Multivan-Anleitung; Modellbezeichnung, Sprache/Markt, Ausgabemonat und -jahr sowie Publikations-/Bestellnummer müssen lesbar sein. Bei verteilten Angaben beide Seiten liefern."
     },
-    "caddy_manual_not_identification_evidence": "2K7012767AM, DE 11/2025 is a Caddy manual and cannot identify the photographed Multivan manual."
+    "caddy_manual_not_identification_evidence": "2K7012767AM, DE 11/2025 is a Caddy manual and cannot identify the photographed Multivan manual.",
+    "workspace_search_scope": "All supplied project photographs and files available in /workspace were searched; only the listed overview-page photographs were found for this book."
   }
 }

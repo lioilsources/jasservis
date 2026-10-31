@@ -12,9 +12,26 @@
       "publication_code": "5H0012769AD",
       "overview_topic_id": "d4f6d40a9b1c74c356b9864eeec3b034_102_de_DE",
       "states": [
-        {"source_row_one_based": 61, "meaning": "Lane Assist unavailable", "colour": "amber", "graphic": "lane symbol with exclamation mark"},
-        {"source_row_one_based": 62, "meaning": "Lane Assist regulating", "colour": "amber", "graphic": "standard lane symbol", "source_image_sha256": "39bdf4556e9ee5d5b457eca30f375fe7074cd69c55e06cc35c4fd018f3bc8354"},
-        {"source_row_one_based": 87, "meaning": "Lane Assist active", "colour": "green", "graphic": "standard lane symbol", "source_image_sha256": "cdbb733efb104b67cf3d1e4760a13dcf9ef826dc11cdc249f0243b5d375f63ea"}
+        {
+          "source_row_one_based": 61,
+          "meaning": "Lane Assist unavailable",
+          "colour": "amber",
+          "graphic": "lane symbol with exclamation mark"
+        },
+        {
+          "source_row_one_based": 62,
+          "meaning": "Lane Assist regulating",
+          "colour": "amber",
+          "graphic": "standard lane symbol",
+          "source_image_sha256": "39bdf4556e9ee5d5b457eca30f375fe7074cd69c55e06cc35c4fd018f3bc8354"
+        },
+        {
+          "source_row_one_based": 87,
+          "meaning": "Lane Assist active",
+          "colour": "green",
+          "graphic": "standard lane symbol",
+          "source_image_sha256": "cdbb733efb104b67cf3d1e4760a13dcf9ef826dc11cdc249f0243b5d375f63ea"
+        }
       ]
     },
     {
@@ -24,8 +41,25 @@
       "publication_code": "5G0012705AK",
       "overview_topic_id": "c9e0fa0ce3cffe70547ad9437301e145_101_de_DE",
       "states": [
-        {"source_row_one_based": 45, "meaning": "Lane Assist switched on but inactive", "colour": "amber", "graphic": "lane-lines-only", "source_image_sha256": "00dd5d3118f605303a8759a75a636d562f20e66699c76e7d2de59fca7c9f4508", "catalogue_result": "pending: exact OEM graphic differs from licensed local car-between-lanes geometry"},
-        {"source_row_one_based": 63, "meaning": "Lane Assist active", "colour": "green", "graphic": "lane-lines-only", "source_image_sha256": "724a61a3ec0f040ab07d67c540928b527d50b006777696d3da06496fe4e83d26", "catalogue_result": "pending: exact reusable graphic not established"}
+        {
+          "source_row_one_based": 45,
+          "meaning": "Lane Assist switched on but inactive",
+          "colour": "amber",
+          "graphic": "lane-lines-only",
+          "source_image_sha256": "00dd5d3118f605303a8759a75a636d562f20e66699c76e7d2de59fca7c9f4508",
+          "catalogue_result": "pending: exact OEM graphic differs from licensed local car-between-lanes geometry",
+          "source_state": "steady amber; Lane Assist switched on but inactive",
+          "shape_comparison": "two lane boundary lines only; no vehicle and no exclamation mark",
+          "customer_catalogue_change": "No approximate card published; the licensed local car-between-lanes graphic is a different shape."
+        },
+        {
+          "source_row_one_based": 63,
+          "meaning": "Lane Assist active",
+          "colour": "green",
+          "graphic": "lane-lines-only",
+          "source_image_sha256": "724a61a3ec0f040ab07d67c540928b527d50b006777696d3da06496fe4e83d26",
+          "catalogue_result": "pending: exact reusable graphic not established"
+        }
       ]
     },
     {
@@ -35,11 +69,60 @@
       "publication_code": "11A012705AF",
       "overview_topic_id": "18340f299e1e6c3b43008f07f295cf3c_203_de_DE",
       "states": [
-        {"source_row_one_based": 63, "meaning": "Lane Assist unavailable", "colour": "amber", "graphic": "lane symbol with exclamation mark", "source_image_sha256": "b26f1f671d301f570ff1e4189d1b6e4a5a8e9e6546d64b38455384d652d62826", "catalogue_result": "added to the exact unavailable semantic card"},
-        {"source_row_one_based": 65, "meaning": "Lane Assist regulating", "colour": null, "graphic": null, "catalogue_result": "not published: captured row proves the meaning label but not the graphic or colour"},
-        {"source_row_one_based": 84, "meaning": "Lane Assist active", "colour": "green", "graphic": "standard lane symbol", "catalogue_result": "existing active meaning; no new graphic claim"}
+        {
+          "source_row_one_based": 63,
+          "meaning": "Lane Assist unavailable",
+          "colour": "amber",
+          "graphic": "lane symbol with exclamation mark",
+          "source_image_sha256": "b26f1f671d301f570ff1e4189d1b6e4a5a8e9e6546d64b38455384d652d62826",
+          "catalogue_result": "added to the exact unavailable semantic card"
+        },
+        {
+          "source_row_one_based": 65,
+          "meaning": "Lane Assist regulating",
+          "colour": null,
+          "graphic": null,
+          "catalogue_result": "not published: captured row proves the meaning label but not the graphic or colour"
+        },
+        {
+          "source_row_one_based": 84,
+          "meaning": "Lane Assist active",
+          "colour": "green",
+          "graphic": "standard lane symbol",
+          "catalogue_result": "existing active meaning; no new graphic claim"
+        }
       ]
     }
   ],
-  "headlight_range_result": "A headlight-range-control chapter exists in each reviewed manual, but the reviewed warning overview does not establish the specific amber fault symbol. The general Volkswagen UK card therefore remains without a model scope."
+  "headlight_range_result": "No model scope was added to vw-range. The three manuals prove system/fault applicability, not applicability of the exact UK warning-light shape. The general Volkswagen record remains explicitly separate from a generic lighting/bulb fault.",
+  "headlight_range_model_review": {
+    "checked": "2026-10-31",
+    "general_exact_symbol_source": "Volkswagen UK Headlight Range Control warning-light page; amber symbol, steady illumination, fault in range-control system; no model scope stated.",
+    "manual_results": [
+      {
+        "model": "Golf",
+        "generation": "5H0",
+        "edition": "11.2020",
+        "publication_code": "5H0012769AD",
+        "topic_id": "60edd2a3aabbd6d0fdd27f378f66d51e_2_de_DE",
+        "result": "Dynamic headlight range-control fault and immediate workshop check are model-manual verified; the topic does not display the UK amber warning-light graphic."
+      },
+      {
+        "model": "Golf VII",
+        "generation": "5G0",
+        "edition": "11.2019",
+        "publication_code": "5G0012705AK",
+        "topic_id": "26a7a60b9f7cb305cfc266b0c64bd65e_1_de_DE",
+        "result": "Dynamic headlight range-control fault and immediate workshop check are model-manual verified; the topic does not display the UK amber warning-light graphic."
+      },
+      {
+        "model": "ID.4",
+        "edition": "11.2021",
+        "publication_code": "11A012705AF",
+        "topic_id": "ba6d589b4e39f8d2c72b98468f4650f3_4_de_DE",
+        "result": "Headlight range-control malfunction and qualified-workshop instruction are model-manual verified; the topic does not display the UK amber warning-light graphic."
+      }
+    ],
+    "catalogue_action": "No model scope was added to vw-range. The three manuals prove system/fault applicability, not applicability of the exact UK warning-light shape. The general Volkswagen record remains explicitly separate from a generic lighting/bulb fault."
+  }
 }

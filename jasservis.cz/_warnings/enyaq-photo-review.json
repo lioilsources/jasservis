@@ -4177,13 +4177,14 @@
     "result": "not-established-from-available-project-evidence",
     "available_evidence": "Ten inline photographs of printed overview pages 12–17; no title/imprint page, publication code, original filename or raw image file is available in the workspace.",
     "required_evidence": {
-      "cs": "Fotografie tiráže nebo titulní strany s datem vydání, jazykem a kódem publikace této konkrétní knihy.",
-      "en": "A photograph of the imprint or title page showing the edition date, language and publication code of this exact book.",
-      "de": "Ein Foto von Impressum oder Titelseite mit Ausgabedatum, Sprache und Publikationsnummer genau dieses Buchs."
+      "cs": "Celostránkovou fotografii titulní strany a tirážní/copyrightové strany této konkrétní příručky Škoda Enyaq; musí být čitelné označení modelu, jazyk/trh, měsíc a rok vydání a kód publikace (objednací číslo). Pokud jsou údaje rozdělené, dodat obě strany.",
+      "en": "Full-page photographs of the title page and imprint/copyright page of this exact Škoda Enyaq manual, showing the model designation, language/market, edition month and year, and publication/order code. Supply both pages if the data is split.",
+      "de": "Ganzseitige Fotos von Titelseite und Impressum/Urheberrechtsseite genau dieser Škoda Enyaq-Anleitung; Modellbezeichnung, Sprache/Markt, Ausgabemonat und -jahr sowie Publikations-/Bestellnummer müssen lesbar sein. Bei verteilten Angaben beide Seiten liefern."
     },
     "independent_manuals_do_not_identify_photo_book": [
       "skoda-enyaq-2020-11-de",
       "skoda-enyaq-2020-11-cs"
-    ]
+    ],
+    "workspace_search_scope": "All supplied project photographs and files available in /workspace were searched; only the listed overview-page photographs were found for this book."
   }
 }

@@ -175,5 +175,68 @@
       "driver attention monitor",
       "traffic-sign recognition"
     ]
+  },
+  "graphic_state_comparison": {
+    "checked": "2026-10-31",
+    "source": "Official archive: base DE 06/2023 5FJ012705BR and separate supplement DE 01/2024 5FJ012705FE.",
+    "pairing_rule": "The supplement is reviewed as a separate later document for revised equipment. It is not treated as a blanket replacement of every base-manual state unless the supplement explicitly changes that topic.",
+    "groups": [
+      {
+        "topic": "fatigue monitoring",
+        "document": "base",
+        "printed_pages": "26",
+        "semantic_rows": 1,
+        "variants": "cup warning with text and acoustic signal; operating range 65–200 km/h",
+        "catalogue_change": "Meaning recorded; exact customer graphic remains unpublished."
+      },
+      {
+        "topic": "traffic-sign recognition",
+        "document": "base",
+        "printed_pages": "27",
+        "semantic_rows": "dynamic",
+        "variants": "display content changes with recognised signs; not one universal warning icon",
+        "catalogue_change": "No single inferred graphic published."
+      },
+      {
+        "topic": "Lane Assist",
+        "document": "base",
+        "printed_pages": "211–213",
+        "semantic_rows": 4,
+        "variants": "green active, amber corrective intervention, amber unavailable, extinguished state ambiguous between on/not ready and off",
+        "catalogue_change": "Three explicit states verified; no separate OFF card claimed from extinguishing alone."
+      },
+      {
+        "topic": "Travel Assist",
+        "document": "base",
+        "printed_pages": "213–216",
+        "semantic_rows": 6,
+        "variants": "full green both active; partially green means distance active/lane passive (opposite allocation to reviewed Terramar); grey off; amber unavailable; white/red takeover",
+        "catalogue_change": "Model-specific colour allocation recorded; composite graphics remain unpublished."
+      },
+      {
+        "topic": "charging indication",
+        "document": "supplement",
+        "printed_pages": "5",
+        "semantic_rows": 1,
+        "variants": "connection/charging context stated, but the page does not establish a complete colour/state table",
+        "catalogue_change": "No colour or urgency inferred; item remains open."
+      },
+      {
+        "topic": "HDC",
+        "document": "supplement",
+        "printed_pages": "6",
+        "semantic_rows": 2,
+        "variants": "same HDC shape: white active, grey enabled but inactive; 4Drive equipment scope",
+        "catalogue_change": "Two meanings recorded separately; no exact reusable graphic established."
+      },
+      {
+        "topic": "PHEV/electric drive",
+        "document": "supplement",
+        "printed_pages": "5–6, 14",
+        "semantic_rows": 3,
+        "variants": "charging/HDC equipment states plus red generator warning on page 14",
+        "catalogue_change": "Red generator row verified; charging and HDC remain pending exact evidence stated above."
+      }
+    ]
   }
 }

@@ -2,7 +2,7 @@
   "id": "audi-european-manual-access-review-2026-10-31",
   "brand": "audi",
   "checked": "2026-10-31",
-  "review_method": "Saved access artefacts and current project records; no new network request was made for this review.",
+  "review_method": "Saved official-portal captures, current endpoint checks and independently registered European PDF artefacts; only completed responses are reported.",
   "whole_manuals_complete": false,
   "official_entry_points": [
     {
@@ -150,6 +150,37 @@
       ],
       "needed_input": "Exact European owner manual/export matching A8 D5/4N 2018, including cover, imprint/publication code, warning overview and every referenced driver-instruction page used for catalogue entries.",
       "catalogue_action": "retain-open-gap; add or change no symbol, colour, state, meaning or driver instruction"
+    }
+  ],
+  "current_specific_endpoint_checks": {
+    "checked": "2026-10-31",
+    "result": "HTTP 403 for guessed model-selection endpoints for A4 2016, Q4 e-tron 2022 and A8 2018; no manual content response obtained. Guessed routes are access diagnostics, not proof that a document is absent.",
+    "catalogue_change": "none; no symbol, colour, state or instruction was transferred from a newer or North-American manual"
+  },
+  "rejected_european_manual_artifacts": [
+    {
+      "model": "A4",
+      "edition": "07.2024",
+      "publication_code": "8W1012705AN",
+      "reason": "newer than requested 01.2016"
+    },
+    {
+      "model": "Q4 e-tron",
+      "edition": "06.2023",
+      "publication_code": "89A012705AH",
+      "reason": "newer than requested 2022 scope"
+    },
+    {
+      "model": "Q4 e-tron",
+      "edition": "07.2024",
+      "publication_code": "89A012705AM",
+      "reason": "newer than requested 2022 scope"
+    },
+    {
+      "model": "A8",
+      "edition": "06.2025",
+      "publication_code": "4N1012705AH",
+      "reason": "newer than requested 2018 scope"
     }
   ]
 }
