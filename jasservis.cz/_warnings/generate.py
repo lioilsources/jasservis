@@ -329,6 +329,18 @@ def fuse_safety_content(lang):
  u=FUSE_SAFETY[lang]
  return '<aside class="fuse-safety" role="note"><h2>'+esc(u['title'])+'</h2>'+''.join('<p>'+esc(p)+'</p>' for p in u['paragraphs'])+'</aside>'
 
+FUSE_COLOUR_UI={
+ 'cs':{'title':'Barevné označení pojistek','note':'Tento přehled platí pouze pro odpovídající rodinu nožových pojistek. Barva sama nepotvrzuje správný konstrukční typ, rozměr ani umístění ve vozidle. Vždy zkontrolujte hodnotu vyznačenou na pojistce a předpis pro konkrétní vozidlo.','colour':'Barva','rating':'Proudová hodnota','amp':'A','names':['Černá','Šedá','Fialová','Růžová','Světle hnědá','Hnědá','Červená','Světle modrá','Žlutá','Bílá nebo průsvitná','Světle zelená','Modrozelená','Oranžová']},
+ 'en':{'title':'Fuse colour coding','note':'This table applies only to the corresponding family of blade fuses. Colour alone does not confirm the correct construction type, dimensions or position in the vehicle. Always check the rating marked on the fuse and the specification for the exact vehicle.','colour':'Colour','rating':'Current rating','amp':'A','names':['Black','Grey','Violet','Pink','Light brown','Brown','Red','Light blue','Yellow','White or transparent','Light green','Blue-green','Orange']},
+ 'de':{'title':'Farbkennzeichnung der Sicherungen','note':'Diese Übersicht gilt nur für die entsprechende Familie von Flachsicherungen. Die Farbe allein bestätigt weder Bauart und Abmessungen noch die Einbauposition im Fahrzeug. Prüfen Sie stets den auf der Sicherung angegebenen Wert und die Vorgabe für das konkrete Fahrzeug.','colour':'Farbe','rating':'Nennstrom','amp':'A','names':['Schwarz','Grau','Violett','Rosa','Hellbraun','Braun','Rot','Hellblau','Gelb','Weiß oder transparent','Hellgrün','Blaugrün','Orange']}
+}
+FUSE_COLOURS=[('black','1'),('grey','2'),('violet','3'),('pink','4'),('tan','5'),('brown','7,5'),('red','10'),('light-blue','15'),('yellow','20'),('clear','25'),('light-green','30'),('blue-green','35'),('orange','40')]
+def fuse_colour_content(lang):
+ u=FUSE_COLOUR_UI[lang]
+ out=f'<section class="fuse-colour-guide" aria-labelledby="fuse-colour-title-{lang}"><h2 id="fuse-colour-title-{lang}">{esc(u["title"])}</h2><p class="fuse-colour-note">{esc(u["note"])}</p><div class="fuse-table-wrap"><table><thead><tr><th scope="col">{esc(u["colour"])}</th><th scope="col">{esc(u["rating"])}</th></tr></thead><tbody>'
+ for (colour,value),name in zip(FUSE_COLOURS,u['names']):out+=f'<tr><th scope="row"><span class="fuse-swatch fuse-swatch-{colour}" aria-hidden="true"></span>{esc(name)}</th><td>{esc(value)} {esc(u["amp"])}</td></tr>'
+ return out+'</tbody></table></div></section>'
+
 ONLINE_SERVICES={
  'volkswagen':{'name':'Volkswagen','account':'Volkswagen ID','app':'Volkswagen','account_url':'https://www.myvolkswagen.net/cz/cs/myvolkswagen.html','help_url':'https://www.volkswagen.cz/technologie/konektivita/vw-connect','note':{
   'cs':'Podle provedení může vůz použít naskenování kódu, ověření dvěma klíči nebo zadání aktivačního kódu. Použijte pouze postup zobrazený pro váš vůz a infotainment.',
@@ -427,7 +439,7 @@ def main(lang,page):
   elif index==1:out+=online_services_content(lang)
   elif index==2:out+=warning_content(lang,page)
   else:
-   if topic_id=='pojistky':out+=fuse_safety_content(lang)
+   if topic_id=='pojistky':out+=fuse_safety_content(lang)+fuse_colour_content(lang)
    for heading,text in d['topics'][index]:out+=f'<section class="driver-subtopic"><h2>{esc(heading)}</h2><p>{esc(text)}</p></section>'
   out+='</div></details>'
  out+='</div></section></main>'
