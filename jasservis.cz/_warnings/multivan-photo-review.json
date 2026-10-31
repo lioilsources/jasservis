@@ -4160,6 +4160,14 @@
       "de": "Ganzseitige Fotos von Titelseite und Impressum/Urheberrechtsseite genau dieser Volkswagen Multivan-Anleitung; Modellbezeichnung, Sprache/Markt, Ausgabemonat und -jahr sowie Publikations-/Bestellnummer müssen lesbar sein. Bei verteilten Angaben beide Seiten liefern."
     },
     "caddy_manual_not_identification_evidence": "2K7012767AM, DE 11/2025 is a Caddy manual and cannot identify the photographed Multivan manual.",
-    "workspace_search_scope": "All supplied project photographs and files available in /workspace were searched; only the listed overview-page photographs were found for this book."
+    "workspace_search_scope": "All supplied project photographs and files available in /workspace were searched; only the listed overview-page photographs were found for this book.",
+    "confirmed_vehicle_fact": "Vehicle manufacture year 2024, confirmed by the user; not used as manual-edition or model-year evidence."
+  },
+  "manufacture_year": 2024,
+  "manufacture_year_source": "user-confirmed in conversation 2026-10-31",
+  "manufacture_year_scope_note": {
+    "cs": "Rok výroby vozidla 2024 neurčuje modelový rok ani vydání fotografované příručky.",
+    "en": "Vehicle manufacture year 2024 does not establish the model year or the edition of the photographed manual.",
+    "de": "Das Fahrzeug-Produktionsjahr 2024 bestimmt weder das Modelljahr noch die Ausgabe der fotografierten Anleitung."
   }
 }
