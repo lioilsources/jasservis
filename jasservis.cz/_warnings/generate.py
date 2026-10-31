@@ -8,7 +8,7 @@ HERE=Path(__file__).resolve().parent;ROOT=HERE.parent;REPO=ROOT.parent
 CAT=json.loads((HERE/'catalog.json').read_text());UI=json.loads((HERE/'locales.json').read_text())
 INFO_ROOT=REPO/'source-materials/infotainment-2026-10-31-rev2'
 INFO=json.loads((INFO_ROOT/'internal/manifest.json').read_text());INFO_TEXT=json.loads((INFO_ROOT/'translations.json').read_text())
-ROUTE='kontrolky-a-vystrazna-hlaseni';LANGS=['cs','en','de'];VERSION='20261031-service-intervals-v1'
+ROUTE='kontrolky-a-vystrazna-hlaseni';LANGS=['cs','en','de'];VERSION='20261031-brake-fluid-v1'
 def esc(x):return html.escape(str(x),quote=True)
 def rel(target,page):return os.path.relpath(ROOT/target,page.parent).replace(os.sep,'/')+('/' if not Path(target).suffix else '')
 def locale_root(lang):return '' if lang=='cs' else lang+'/'
@@ -565,6 +565,55 @@ def online_services_content(lang):
   out+=f'</ol><p class="online-brand-note"><strong>{esc(item["note"][lang])}</strong></p><p>{esc(u["availability"])}</p><p class="online-password-note">{esc(u["linkNote"])}</p></section>'
  return out+'</div>'
 
+BRAKE_FLUID_UI={
+ 'cs':{
+  'intro':'Brzdová kapalina přenáší hydraulický tlak k brzdám. Její správná specifikace, hladina a stav jsou zásadní pro bezpečné brzdění. V J&S SERVIS při běžném servisu kontrolujeme hladinu a měříme bod varu brzdové kapaliny.',
+  'titles':['Jaká kapalina patří do vozů Volkswagen Group?','Po jaké době se kapalina mění?','Proč měříme bod varu?','Proč hladina postupně klesá?','Opakované dolévání vyžaduje kontrolu'],
+  'spec':['U řady vozů Volkswagen, Audi, Škoda, SEAT a CUPRA je předepsána brzdová kapalina podle normy VW 501 14, se sníženou viskozitou za nízkých teplot.','Samotný nápis „DOT 4“ na obalu nestačí k potvrzení vhodnosti pro každý vůz. Rozhoduje přesná specifikace předepsaná výrobcem. Nízká viskozita je důležitá také pro rychlou činnost systémů ABS a ESC při nízkých teplotách.'],
+  'productTitle':'Příklady originálních objednacích čísel','productHeads':['Objednací číslo','Velikost balení'],'productRows':[('B 000 750 M1','250 ml'),('B 000 750 M2','500 ml'),('B 000 750 M3','1 litr')],'productNote':'Jde o velikosti balení, nikoli o předepsané množství pro výměnu. Použitelnost a případné aktuální náhrady ověřujeme v katalogu podle konkrétního vozidla.',
+  'intervalIntro':'Rozhoduje časový servisní plán konkrétního vozu. Malý nájezd kilometrů není důvodem k odkládání výměny.','intervalHeads':['Servisní režim','Interval'],'intervalRows':[('Běžný interval u řady současných vozů','Každé 2 roky'),('Vybrané starší modely','První výměna po 3 letech, potom každé 2 roky'),('Například Škoda Enyaq a Volkswagen ID.','Každé 2 roky podle příslušného plánu')],'intervalNote':'První tříletý interval nelze automaticky vztáhnout na všechny nové vozy. Brzdovou kapalinu potřebují pravidelně měnit také elektromobily.',
+  'boiling':['Brzdová kapalina postupně přijímá vlhkost, která snižuje její bod varu. Při intenzivním brzdění potom může začít vařit dříve.','Vzniklé stlačitelné parní bubliny mohou způsobit měkký pedál, prodloužení jeho chodu a výrazný pokles brzdného účinku až jeho selhání.','Naměřený bod varu kolem 180 °C a nižší znamená sníženou tepelnou rezervu. Z preventivních důvodů doporučujeme výměnu kapaliny. Riziko se projeví zejména při velkém tepelném zatížení, například při dlouhém brzdění ve sjezdu. Nejde o teplotu, při které brzdy automaticky přestanou fungovat.','Výsledek měření posuzujeme podle předepsané kapaliny. Ani dobrý výsledek nenahrazuje výměnu v termínu stanoveném výrobcem.'],
+  'level':['Mírný pokles může souviset s opotřebením brzdových destiček. Písty se postupně vysouvají a v brzdových třmenech zůstává větší objem kapaliny. V nádržce proto hladina klesá, aniž by kapalina musela unikat.','Ani jednorázová potřeba doplnění však sama nepotvrzuje opotřebené destičky. Je nutné zkontrolovat jejich stav i těsnost soustavy. Kapalinu nedoplňujeme automaticky k MAX bez zjištění příčiny poklesu.'],
+  'repeat':['Brzdová kapalina se běžným provozem nespotřebovává. Opakovaný nebo rychlý pokles hladiny může signalizovat netěsnost či jinou závadu. Pouhé dolévání problém neřeší.','V J&S SERVIS zkontrolujeme příčinu úbytku, stav brzd a těsnost příslušné hydraulické soustavy.'],
+  'safetyTitle':'Bezpečnostní upozornění','safety':'Při červeném upozornění na nízkou hladinu brzdové kapaliny nebo při náhlém zhoršení brzdného účinku nepokračujte v jízdě a zajistěte odbornou pomoc.'},
+ 'en':{
+  'intro':'Brake fluid transmits hydraulic pressure to the brakes. The correct specification, level and condition are essential for safe braking. During routine service, J&S SERVIS checks the level and measures the brake fluid boiling point.',
+  'titles':['Which fluid belongs in Volkswagen Group vehicles?','When should the fluid be changed?','Why do we measure the boiling point?','Why does the level gradually fall?','Repeated topping up requires inspection'],
+  'spec':['Many Volkswagen, Audi, Škoda, SEAT and CUPRA vehicles specify low-viscosity brake fluid meeting VW 501 14.','A “DOT 4” label alone does not confirm suitability for every vehicle. The manufacturer’s exact specification governs. Low viscosity also supports rapid ABS and ESC operation at low temperatures.'],
+  'productTitle':'Examples of genuine part numbers','productHeads':['Part number','Pack size'],'productRows':[('B 000 750 M1','250 ml'),('B 000 750 M2','500 ml'),('B 000 750 M3','1 litre')],'productNote':'These are pack sizes, not the prescribed quantity for a fluid change. We verify suitability and any current superseding number in the catalogue for the exact vehicle.',
+  'intervalIntro':'The time-based service schedule for the exact vehicle governs. Low mileage is not a reason to postpone the change.','intervalHeads':['Service regime','Interval'],'intervalRows':[('Common interval for many current vehicles','Every 2 years'),('Selected older models','First change after 3 years, then every 2 years'),('For example Škoda Enyaq and Volkswagen ID.','Every 2 years under the applicable schedule')],'intervalNote':'The initial three-year interval must not be applied automatically to every new vehicle. Electric vehicles also require regular brake-fluid changes.',
+  'boiling':['Brake fluid gradually absorbs moisture, which lowers its boiling point. It can then boil sooner during intensive braking.','The resulting compressible vapour bubbles can cause a soft pedal, increased pedal travel and a major reduction or loss of braking effect.','A measured boiling point around 180 °C or lower means reduced thermal reserve. We recommend preventive fluid replacement. The risk is most relevant under high heat load, such as prolonged braking on a descent. This is not a temperature at which the brakes automatically stop working.','We assess the result against the specified fluid. Even a good result does not replace a change due under the manufacturer’s schedule.'],
+  'level':['A slight fall can be associated with brake-pad wear. The pistons extend progressively, leaving more fluid in the calipers, so the reservoir level can fall without a leak.','A single need to top up does not by itself prove worn pads. Pad condition and system tightness must be checked. We do not automatically fill to MAX without finding the cause of the lower level.'],
+  'repeat':['Brake fluid is not consumed in normal operation. A repeated or rapid fall can indicate a leak or another fault. Topping up alone does not solve the problem.','J&S SERVIS checks the cause of the loss, brake condition and tightness of the relevant hydraulic system.'],
+  'safetyTitle':'Safety warning','safety':'With a red low brake-fluid warning or a sudden deterioration in braking effect, do not continue driving; arrange qualified assistance.'},
+ 'de':{
+  'intro':'Bremsflüssigkeit überträgt den hydraulischen Druck zu den Bremsen. Richtige Spezifikation, Füllstand und Zustand sind für sicheres Bremsen entscheidend. Beim regulären Service prüft J&S SERVIS den Füllstand und misst den Siedepunkt der Bremsflüssigkeit.',
+  'titles':['Welche Flüssigkeit gehört in Fahrzeuge des Volkswagen Konzerns?','Wann muss die Flüssigkeit gewechselt werden?','Warum messen wir den Siedepunkt?','Warum sinkt der Füllstand allmählich?','Wiederholtes Nachfüllen erfordert eine Prüfung'],
+  'spec':['Für viele Fahrzeuge von Volkswagen, Audi, Škoda, SEAT und CUPRA ist niedrigviskose Bremsflüssigkeit nach VW 501 14 vorgeschrieben.','Die Aufschrift „DOT 4“ allein bestätigt nicht die Eignung für jedes Fahrzeug. Maßgeblich ist die genaue Herstellerspezifikation. Niedrige Viskosität unterstützt auch die schnelle Funktion von ABS und ESC bei tiefen Temperaturen.'],
+  'productTitle':'Beispiele für Original-Teilenummern','productHeads':['Teilenummer','Gebindegröße'],'productRows':[('B 000 750 M1','250 ml'),('B 000 750 M2','500 ml'),('B 000 750 M3','1 Liter')],'productNote':'Dies sind Gebindegrößen und keine vorgeschriebene Wechselmenge. Eignung und aktuelle Ersetzungen prüfen wir anhand des konkreten Fahrzeugs im Katalog.',
+  'intervalIntro':'Maßgeblich ist der zeitabhängige Serviceplan des konkreten Fahrzeugs. Eine geringe Laufleistung ist kein Grund, den Wechsel aufzuschieben.','intervalHeads':['Serviceregelung','Intervall'],'intervalRows':[('Übliches Intervall bei vielen aktuellen Fahrzeugen','Alle 2 Jahre'),('Ausgewählte ältere Modelle','Erster Wechsel nach 3 Jahren, danach alle 2 Jahre'),('Zum Beispiel Škoda Enyaq und Volkswagen ID.','Alle 2 Jahre nach dem zutreffenden Plan')],'intervalNote':'Das erste Dreijahresintervall darf nicht automatisch auf alle Neufahrzeuge übertragen werden. Auch Elektrofahrzeuge benötigen regelmäßige Bremsflüssigkeitswechsel.',
+  'boiling':['Bremsflüssigkeit nimmt allmählich Feuchtigkeit auf, wodurch ihr Siedepunkt sinkt. Bei starker Bremsbeanspruchung kann sie dadurch früher sieden.','Die entstehenden kompressiblen Dampfblasen können ein weiches Pedal, einen längeren Pedalweg und eine deutliche Verringerung bis zum Ausfall der Bremswirkung verursachen.','Ein gemessener Siedepunkt um 180 °C oder darunter bedeutet eine verringerte thermische Reserve. Vorbeugend empfehlen wir den Flüssigkeitswechsel. Das Risiko zeigt sich besonders bei hoher Wärmebelastung, etwa langem Bremsen im Gefälle. Es ist keine Temperatur, bei der die Bremsen automatisch ausfallen.','Das Messergebnis wird anhand der vorgeschriebenen Flüssigkeit beurteilt. Auch ein guter Wert ersetzt den termingerechten Wechsel nach Herstellervorgabe nicht.'],
+  'level':['Ein leichter Rückgang kann mit dem Verschleiß der Bremsbeläge zusammenhängen. Die Kolben fahren schrittweise weiter aus und in den Bremssätteln verbleibt mehr Flüssigkeit. Dadurch kann der Behälterstand auch ohne Leck sinken.','Ein einmaliger Nachfüllbedarf beweist jedoch nicht von selbst verschlissene Beläge. Belagzustand und Dichtheit der Anlage müssen geprüft werden. Ohne Klärung der Ursache füllen wir nicht automatisch bis MAX auf.'],
+  'repeat':['Bremsflüssigkeit wird im normalen Betrieb nicht verbraucht. Ein wiederholter oder schneller Abfall kann auf eine Undichtigkeit oder einen anderen Fehler hinweisen. Bloßes Nachfüllen löst das Problem nicht.','J&S SERVIS prüft die Ursache des Verlusts, den Bremsenzustand und die Dichtheit des betreffenden Hydrauliksystems.'],
+  'safetyTitle':'Sicherheitshinweis','safety':'Bei einer roten Warnung wegen zu niedrigen Bremsflüssigkeitsstands oder einer plötzlichen Verschlechterung der Bremswirkung nicht weiterfahren und Fachhilfe anfordern.'}
+}
+
+
+def brake_fluid_content(lang):
+ u=BRAKE_FLUID_UI[lang]
+ def paragraphs(items):return "".join(f'<p>{esc(x)}</p>' for x in items)
+ def table(heads,rows,extra):
+  out=f'<table class="brake-fluid-table {extra}"><thead><tr>'+"".join(f'<th scope="col">{esc(x)}</th>' for x in heads)+'</tr></thead><tbody>'
+  for row in rows:out+='<tr>'+"".join(f'<td data-label="{esc(label)}">{esc(value)}</td>' for label,value in zip(heads,row))+'</tr>'
+  return out+'</tbody></table>'
+ def detail(title,body):return f'<details class="brake-fluid-section"><summary><span>{esc(title)}</span><span class="wl-group-arrow" aria-hidden="true"></span></summary><div class="brake-fluid-section-body">{body}</div></details>'
+ specification=paragraphs(u["spec"])+f'<h3>{esc(u["productTitle"])}</h3>'+table(u["productHeads"],u["productRows"],"brake-fluid-products")+f'<p class="brake-fluid-note">{esc(u["productNote"])}</p>'
+ intervals=f'<p>{esc(u["intervalIntro"])}</p>'+table(u["intervalHeads"],u["intervalRows"],"brake-fluid-intervals")+f'<p class="brake-fluid-note">{esc(u["intervalNote"])}</p>'
+ bodies=[specification,intervals,paragraphs(u["boiling"]),paragraphs(u["level"]),paragraphs(u["repeat"])]
+ accordion="".join(detail(title,body) for title,body in zip(u["titles"],bodies))
+ safety=f'<aside class="brake-fluid-safety" role="alert"><h2>{esc(u["safetyTitle"])}</h2><p>{esc(u["safety"])}</p></aside>'
+ return f'<div class="brake-fluid-guide"><p class="brake-fluid-intro">{esc(u["intro"])}</p><div class="brake-fluid-accordion">{accordion}</div>{safety}</div>'
+
 SERVICE_UI={
  'cs':{
   'intro':'Servisní interval určuje konkrétní vozidlo, jeho výbava, provozní podmínky a aktuální servisní nastavení. Termín olejového servisu a servisní prohlídky posuzujte odděleně.','recommend':'J&S SERVIS doporučuje výměnu motorového oleje a filtru nejpozději po 1 roce nebo 15 000 km – podle toho, co nastane dříve. Předepisuje-li výrobce kratší interval, platí kratší.','titles':['Pevný interval a LongLife','Co znamenají kódy QI a QG','Kde zjistím svůj servisní interval','Možnosti přenastavení intervalu','Servis elektromobilů a hybridů','Výměna oleje versus servisní prohlídka'],'fixedHeads':['Režim','Jak se termín určuje','Důležité'],'fixedRows':[('Pevný interval','Předem stanovený čas a počet kilometrů. Termín nastane podle hodnoty, která se naplní dříve.','Používá se pevně nastavený servisní ukazatel a odpovídající olejový režim.'),('LongLife / flexibilní','Vozidlo vypočítává termín olejového servisu podle provozních dat; současně platí nejzazší mez výrobce.','LongLife olej sám režim nezapne ani automaticky neprodlouží interval.')],
@@ -616,7 +665,7 @@ def service_content(lang):
 DRIVER_TOPICS={
  'cs':{
   'page':'Rady pro řidiče','intro':'Praktické přehledy pro správnou reakci na hlášení vozidla a základní kontrolu provozních údajů. Konkrétní údaj vždy ověřte pro přesný model, modelový rok, výbavu a pohon.',
-  'titles':['Identifikace mého vozu – VIN','Přihlášení a online služby vozidla','Kontrolky a výstražná hlášení','Pojistky – barvy a hodnoty','Pneumatiky – označení, tlak a štítek','Oleje – viskozita a specifikace','Chladicí kapaliny','Servis a servisní intervaly'],
+  'titles':['Identifikace mého vozu – VIN','Přihlášení a online služby vozidla','Kontrolky a výstražná hlášení','Pojistky – barvy a hodnoty','Pneumatiky – označení, tlak a štítek','Oleje – viskozita a specifikace','Chladicí kapaliny','Servis a servisní intervaly','Brzdová kapalina'],
   'topics':[
    [],[],[],
    [('Typy automobilových pojistek','Před určením náhrady zjistěte konstrukční typ pojistky. Stejná barva u odlišných rodin pojistek sama nepotvrzuje shodné provedení.'),('Barevné značení a proudové hodnoty','Barvu a hodnotu v ampérech posuzujte jen v tabulce pro daný typ pojistky. Přehled neobsahuje obsazení pojistkových skříní ani přiřazení spotřebičů.'),('Jak určit odpovídající pojistku','Rozhoduje návod konkrétního vozidla, poloha ve správné pojistkové skříni, typ pojistky a předepsaná proudová hodnota.'),('Zásady správné náhrady','Vypněte příslušný spotřebič a zapalování podle návodu. Použijte pouze pojistku stejného typu a hodnoty; opakované přepálení vyžaduje diagnostiku.')],
@@ -627,7 +676,7 @@ DRIVER_TOPICS={
   ]},
  'en':{
   'page':'Driver advice','intro':'Practical guidance for responding to vehicle messages and checking basic operating information. Always verify a specific value for the exact model, model year, equipment and powertrain.',
-  'titles':['Identifying my vehicle – VIN','Sign-in and online vehicle services','Warning lights and driver messages','Fuses – colours and ratings','Tyres – markings, pressures and placard','Oils – viscosity and specifications','Coolants','Service and maintenance intervals'],
+  'titles':['Identifying my vehicle – VIN','Sign-in and online vehicle services','Warning lights and driver messages','Fuses – colours and ratings','Tyres – markings, pressures and placard','Oils – viscosity and specifications','Coolants','Service and maintenance intervals','Brake fluid'],
   'topics':[
    [],[],[],
    [('Automotive fuse types','Identify the fuse construction before selecting a replacement. A matching colour in a different fuse family does not establish the same design.'),('Colour coding and ampere ratings','Use colour and ampere rating only with the table for that fuse type. This section does not reproduce fuse-box positions or consumer assignments.'),('Selecting the correct fuse','Use the exact vehicle manual, the position in the correct fuse box, the fuse type and the specified ampere rating.'),('Safe replacement','Switch off the relevant consumer and ignition as instructed. Use only the same type and rating; repeated failure requires diagnosis.')],
@@ -638,7 +687,7 @@ DRIVER_TOPICS={
   ]},
  'de':{
   'page':'Fahrertipps','intro':'Praktische Hinweise zur richtigen Reaktion auf Fahrzeugmeldungen und zur Kontrolle grundlegender Betriebsangaben. Konkrete Werte immer für Modell, Modelljahr, Ausstattung und Antrieb prüfen.',
-  'titles':['Identifikation meines Fahrzeugs – VIN','Anmeldung und Online-Fahrzeugdienste','Kontrollleuchten und Warnmeldungen','Sicherungen – Farben und Werte','Reifen – Kennzeichnungen, Druck und Schild','Öle – Viskosität und Spezifikationen','Kühlmittel','Service und Wartungsintervalle'],
+  'titles':['Identifikation meines Fahrzeugs – VIN','Anmeldung und Online-Fahrzeugdienste','Kontrollleuchten und Warnmeldungen','Sicherungen – Farben und Werte','Reifen – Kennzeichnungen, Druck und Schild','Öle – Viskosität und Spezifikationen','Kühlmittel','Service und Wartungsintervalle','Bremsflüssigkeit'],
   'topics':[
    [],[],[],
    [('Kfz-Sicherungstypen','Vor der Ersatzwahl die Bauform bestimmen. Gleiche Farben in verschiedenen Sicherungsfamilien belegen nicht dieselbe Ausführung.'),('Farbcodierung und Amperewerte','Farbe und Amperewert nur anhand der Tabelle für den jeweiligen Sicherungstyp verwenden. Sicherungskastenbelegung und Verbraucherzuordnung sind nicht Bestandteil.'),('Passende Sicherung bestimmen','Maßgeblich sind die konkrete Fahrzeuganleitung, die Position im richtigen Sicherungskasten, Bauform und vorgeschriebener Amperewert.'),('Sicher ersetzen','Betroffenen Verbraucher und Zündung nach Anleitung ausschalten. Nur gleichen Typ und Wert einsetzen; wiederholtes Auslösen erfordert Diagnose.')],
@@ -654,7 +703,7 @@ def main(lang,page):
  intro={'cs':'Vyberte značku svého vozu a téma, které vás zajímá.','en':'Select your vehicle brand and the topic you are interested in.','de':'Wählen Sie Ihre Fahrzeugmarke und das gewünschte Thema.'}[lang]
  out=f'<main id="warning-lights" class="warning-lights driver-advice" lang="{lang}"><p class="driver-selection-intro">{esc(intro)}</p>{brand_selector_content(lang)}<section id="brand-advice" class="brand-advice" hidden aria-labelledby="brand-advice-title"><h2 id="brand-advice-title" tabindex="-1"></h2><div class="driver-topics" aria-label="{esc(d["page"])}">'
  for index,title in enumerate(d['titles']):
-  topic_id=['identifikace-vozu-vin','prihlaseni-online-sluzby','kontrolky','pojistky','tlak-pneumatik','oleje','chladici-kapaliny','servisni-intervaly'][index]
+  topic_id=['identifikace-vozu-vin','prihlaseni-online-sluzby','kontrolky','pojistky','tlak-pneumatik','oleje','chladici-kapaliny','servisni-intervaly','brzdova-kapalina'][index]
   if index==0:topic_title=f'<span class="driver-topic-title"><span class="driver-vin-icon" aria-hidden="true">VIN</span>{esc(title)}</span>'
   elif index==1:topic_title=f'<span class="driver-topic-title"><span class="driver-profile-icon" aria-hidden="true"></span>{esc(title)}</span>'
   else:topic_title=f'<span>{esc(title)}</span>'
@@ -673,6 +722,7 @@ def main(lang,page):
    elif topic_id=='chladici-kapaliny':out+=coolant_content(lang)
    elif topic_id=='oleje':out+=oil_content(lang)
    elif topic_id=='servisni-intervaly':out+=service_content(lang)
+   elif topic_id=='brzdova-kapalina':out+=brake_fluid_content(lang)
    else:
     for heading,text in d['topics'][index]:out+=f'<section class="driver-subtopic"><h2>{esc(heading)}</h2><p>{esc(text)}</p></section>'
   out+='</div></details>'
