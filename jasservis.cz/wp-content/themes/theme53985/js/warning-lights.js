@@ -4,7 +4,7 @@
  var text=JSON.parse(root.querySelector('#wl-messages').textContent);
  var tiles=Array.from(root.querySelectorAll('.wl-brand-tile')),brandAdvice=root.querySelector('#brand-advice'),adviceTitle=root.querySelector('#brand-advice-title');
  var cards=Array.from(root.querySelectorAll('.wl-card')),groups=Array.from(root.querySelectorAll('.wl-group')),brandGroups=Array.from(root.querySelectorAll('.wl-brand'));
- var mainTopics=Array.from(root.querySelectorAll('details.driver-topic')),infoDetails=Array.from(root.querySelectorAll('.wl-infotainment-section,.wl-info-category')),onlinePanels=Array.from(root.querySelectorAll('.online-brand-panel'));
+ var mainTopics=Array.from(root.querySelectorAll('details.driver-topic')),infoDetails=Array.from(root.querySelectorAll('.wl-infotainment-section,.wl-info-category')),onlinePanels=Array.from(root.querySelectorAll('.online-brand-panel')),vinPanels=Array.from(root.querySelectorAll('.vin-brand-panel'));
  var selectedBrand='',changingTopic=false;
  function validBrand(brand){return Object.prototype.hasOwnProperty.call(text.brands,brand);}
  function updateLanguageLinks(){Array.from(document.querySelectorAll('.language-switcher a')).forEach(function(link){var path=link.getAttribute('href').split(/[?#]/)[0];link.setAttribute('href',path+(selectedBrand?'?znacka='+encodeURIComponent(selectedBrand):'')+(location.hash||''));});}
@@ -16,6 +16,7 @@
   Array.from(root.querySelectorAll('.wl-info-category,.wl-infotainment-section')).forEach(function(section){var owner=section.closest('.wl-brand');section.hidden=!(owner&&owner.dataset.brand===selectedBrand);});
   brandGroups.forEach(function(group){group.hidden=group.dataset.brand!==selectedBrand;});
   onlinePanels.forEach(function(panel){panel.hidden=panel.dataset.onlinePanel!==selectedBrand;});
+  vinPanels.forEach(function(panel){panel.hidden=panel.dataset.vinPanel!==selectedBrand;});
   tiles.forEach(function(tile){tile.setAttribute('aria-pressed',String(tile.dataset.brand===selectedBrand));});
   brandAdvice.hidden=!selectedBrand;
   adviceTitle.textContent=selectedBrand?text.advicePrefix+' – '+text.brands[selectedBrand]:'';

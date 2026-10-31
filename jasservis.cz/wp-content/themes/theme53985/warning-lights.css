@@ -121,6 +121,7 @@
    the temporary space occupied while the existing sticky header settles. */
 @media(max-height:500px) and (orientation:landscape){#warning-lights .wl-symbol{height:80px}}
 .driver-topic-title{display:inline-flex;align-items:center;gap:10px;min-width:0}
+.driver-vin-icon{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;width:34px;height:24px;flex:0 0 34px;border:1.5px solid currentColor;border-radius:3px;font:700 .625rem/1 var(--js-font,Ubuntu,sans-serif);letter-spacing:.03em}
 .driver-profile-icon{position:relative;width:24px;height:24px;flex:0 0 24px;border:1.5px solid currentColor;border-radius:50%}
 .driver-profile-icon:before{content:"";position:absolute;left:8px;top:4px;width:6px;height:6px;border:1.5px solid currentColor;border-radius:50%}
 .driver-profile-icon:after{content:"";position:absolute;left:5px;bottom:4px;width:12px;height:6px;border:1.5px solid currentColor;border-bottom:0;border-radius:9px 9px 0 0}
@@ -143,5 +144,16 @@
 .online-password-note{max-width:82ch;font-size:.9375rem}
 .online-steps{max-width:82ch;margin:20px 0;padding-left:24px}
 .online-steps li{margin-bottom:18px;padding-left:5px}.online-steps h3{margin:0 0 5px;font-size:1.125rem;text-transform:none;color:#111}.online-steps p{margin:0}
+.vin-content{font-size:1rem;line-height:1.6;color:#333}
+.vin-brand-panel{max-width:none}
+.vin-intro{display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;align-items:start;margin:0 0 24px;padding:18px;border:1px solid #000;background:var(--js-muted)}
+.vin-intro h2,.vin-section h2{margin:0 0 8px!important;font-size:1.25rem!important}
+.vin-intro p,.vin-section p{max-width:82ch;margin:0}
+.vin-icon{position:relative;display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:86px;height:54px;border:2px solid #111;border-radius:5px;background:#fff;color:#111}
+.vin-icon:before,.vin-icon:after{content:"";position:absolute;top:18px;width:10px;height:10px;border:2px solid #111;border-radius:50%;background:#fff}
+.vin-icon:before{left:-7px}.vin-icon:after{right:-7px}
+.vin-icon>span{font:700 .875rem/1 var(--js-font,Ubuntu,sans-serif);letter-spacing:.08em}
+.vin-section{margin:0 0 24px}
+.vin-wmi{padding:16px;border:1px solid #000;border-left:4px solid var(--js-brand);background:var(--js-muted)}
 @media(max-width:1000px){.online-brand-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:599px){.online-brand-tiles{grid-template-columns:minmax(0,1fr);gap:10px}.warning-lights .online-brand-tile{min-height:58px}.online-actions{display:grid;grid-template-columns:minmax(0,1fr)}.online-action{width:100%}}
+@media(max-width:599px){.online-brand-tiles{grid-template-columns:minmax(0,1fr);gap:10px}.warning-lights .online-brand-tile{min-height:58px}.online-actions{display:grid;grid-template-columns:minmax(0,1fr)}.online-action{width:100%}.vin-intro{grid-template-columns:minmax(0,1fr)}.vin-icon{width:78px;height:48px}}
