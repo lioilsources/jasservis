@@ -1,0 +1,3544 @@
+{
+  "vw-golf-5h-media-albums-category": {
+    "cs": {
+      "name": "Alba",
+      "meaning": "Označuje kategorii alb."
+    },
+    "en": {
+      "name": "Albums",
+      "meaning": "Indicates the album category."
+    },
+    "de": {
+      "name": "Alben",
+      "meaning": "Gibt die Albumkategorie an."
+    }
+  },
+  "vw-golf-5h-media-artists-category": {
+    "cs": {
+      "name": "Interpreti",
+      "meaning": "Označuje kategorii interpretů."
+    },
+    "en": {
+      "name": "Interpreters",
+      "meaning": "Indicates the performer category."
+    },
+    "de": {
+      "name": "Dolmetscher",
+      "meaning": "Gibt die Darstellerkategorie an."
+    }
+  },
+  "vw-golf-5h-media-audiobooks-category": {
+    "cs": {
+      "name": "Audioknihy",
+      "meaning": "Označuje kategorii audioknih."
+    },
+    "en": {
+      "name": "Audiobooks",
+      "meaning": "Indicates the audiobook category."
+    },
+    "de": {
+      "name": "Hörbücher",
+      "meaning": "Gibt die Hörbuchkategorie an."
+    }
+  },
+  "vw-golf-5h-media-bluetooth-source": {
+    "cs": {
+      "name": "Média přes Bluetooth",
+      "meaning": "Vybere zařízení připojené prostřednictvím Bluetooth jako zdroj médií."
+    },
+    "en": {
+      "name": "Media via Bluetooth",
+      "meaning": "Selects the device connected via Bluetooth as the media source."
+    },
+    "de": {
+      "name": "Medien über Bluetooth",
+      "meaning": "Wählt das über Bluetooth verbundene Gerät als Medienquelle aus."
+    }
+  },
+  "vw-golf-5h-media-favourites-list": {
+    "cs": {
+      "name": "Seznam oblíbených",
+      "meaning": "Zobrazí seznam oblíbených."
+    },
+    "en": {
+      "name": "Favorites list",
+      "meaning": "Displays a list of favorites."
+    },
+    "de": {
+      "name": "Favoritenliste",
+      "meaning": "Zeigt eine Favoritenliste an."
+    }
+  },
+  "vw-golf-5h-media-genres-category": {
+    "cs": {
+      "name": "Žánry",
+      "meaning": "Označuje kategorii hudebních žánrů."
+    },
+    "en": {
+      "name": "Genres",
+      "meaning": "Indicates a category of music genres."
+    },
+    "de": {
+      "name": "Genres",
+      "meaning": "Gibt eine Kategorie von Musikgenres an."
+    }
+  },
+  "vw-golf-5h-media-music-category": {
+    "cs": {
+      "name": "Hudební skladby",
+      "meaning": "Označuje kategorii hudebních skladeb."
+    },
+    "en": {
+      "name": "Musical compositions",
+      "meaning": "Indicates the category of music tracks."
+    },
+    "de": {
+      "name": "Musikalische Kompositionen",
+      "meaning": "Gibt die Kategorie der Musiktitel an."
+    }
+  },
+  "vw-golf-5h-media-my-media": {
+    "cs": {
+      "name": "Moje média",
+      "meaning": "Vybere zdroj Moje média, v němž lze zvolit připojená zařízení USB."
+    },
+    "en": {
+      "name": "My media",
+      "meaning": "Selects the My Media source where connected USB devices can be selected."
+    },
+    "de": {
+      "name": "Meine Medien",
+      "meaning": "Wählt die Quelle „Meine Medien“ aus, über die angeschlossene USB-Geräte ausgewählt werden können."
+    }
+  },
+  "vw-golf-5h-media-next-track": {
+    "cs": {
+      "name": "Následující skladba",
+      "meaning": "Přejde na následující skladbu."
+    },
+    "en": {
+      "name": "Next track",
+      "meaning": "Skips to the next track."
+    },
+    "de": {
+      "name": "Nächster Titel",
+      "meaning": "Springt zum nächsten Titel."
+    }
+  },
+  "vw-golf-5h-media-pause": {
+    "cs": {
+      "name": "Pozastavit",
+      "meaning": "Pozastaví přehrávání."
+    },
+    "en": {
+      "name": "Pause",
+      "meaning": "Pauses playback."
+    },
+    "de": {
+      "name": "Pause",
+      "meaning": "Pausiert die Wiedergabe."
+    }
+  },
+  "vw-golf-5h-media-play": {
+    "cs": {
+      "name": "Přehrát",
+      "meaning": "Spustí přehrávání."
+    },
+    "en": {
+      "name": "Replay",
+      "meaning": "Starts playback."
+    },
+    "de": {
+      "name": "Wiederholung",
+      "meaning": "Startet die Wiedergabe."
+    }
+  },
+  "vw-golf-5h-media-playlists-category": {
+    "cs": {
+      "name": "Playlisty",
+      "meaning": "Označuje kategorii seznamů skladeb."
+    },
+    "en": {
+      "name": "Playlists",
+      "meaning": "Indicates a category of playlists."
+    },
+    "de": {
+      "name": "Wiedergabelisten",
+      "meaning": "Gibt eine Kategorie von Wiedergabelisten an."
+    }
+  },
+  "vw-golf-5h-media-podcasts-category": {
+    "cs": {
+      "name": "Podcasty",
+      "meaning": "Označuje kategorii podcastů."
+    },
+    "en": {
+      "name": "Podcasts",
+      "meaning": "Indicates the podcast category."
+    },
+    "de": {
+      "name": "Podcasts",
+      "meaning": "Gibt die Podcast-Kategorie an."
+    }
+  },
+  "vw-golf-5h-media-previous-track": {
+    "cs": {
+      "name": "Předchozí skladba",
+      "meaning": "Přejde na předchozí skladbu."
+    },
+    "en": {
+      "name": "Previous track",
+      "meaning": "Skips to the previous track."
+    },
+    "de": {
+      "name": "Vorheriger Titel",
+      "meaning": "Springt zum vorherigen Titel."
+    }
+  },
+  "vw-golf-5h-media-repeat-all": {
+    "cs": {
+      "name": "Opakovat všechny skladby",
+      "meaning": "Zapne opakování všech skladeb."
+    },
+    "en": {
+      "name": "Repeat all tracks",
+      "meaning": "Turns all tracks on repeat."
+    },
+    "de": {
+      "name": "Wiederholen Sie alle Titel",
+      "meaning": "Schaltet alle Titel auf Wiederholung."
+    }
+  },
+  "vw-golf-5h-media-repeat-track": {
+    "cs": {
+      "name": "Opakovat skladbu",
+      "meaning": "Zapne opakování aktuální skladby."
+    },
+    "en": {
+      "name": "Repeat the song",
+      "meaning": "Turns on repeat of the current track."
+    },
+    "de": {
+      "name": "Wiederholen Sie das Lied",
+      "meaning": "Schaltet die Wiederholung des aktuellen Titels ein."
+    }
+  },
+  "vw-golf-5h-media-root-folder": {
+    "cs": {
+      "name": "Nejvyšší složka zdroje médií",
+      "meaning": "Vrátí se do nejvyšší složky zdroje médií."
+    },
+    "en": {
+      "name": "The topmost folder of a media source",
+      "meaning": "It will return to the top folder of the media source."
+    },
+    "de": {
+      "name": "Der oberste Ordner einer Medienquelle",
+      "meaning": "Es kehrt zum obersten Ordner der Medienquelle zurück."
+    }
+  },
+  "vw-golf-5h-media-shuffle": {
+    "cs": {
+      "name": "Náhodné pořadí",
+      "meaning": "Zapne přehrávání v náhodném pořadí."
+    },
+    "en": {
+      "name": "Random order",
+      "meaning": "Turns on random playback."
+    },
+    "de": {
+      "name": "Zufällige Reihenfolge",
+      "meaning": "Schaltet die Zufallswiedergabe ein."
+    }
+  },
+  "vw-golf-5h-media-streaming-services": {
+    "cs": {
+      "name": "Streamovací služby",
+      "meaning": "Otevře nastavení dostupných streamovacích služeb. Již nastavené služby se zobrazují vlastním logem."
+    },
+    "en": {
+      "name": "Streaming services",
+      "meaning": "Opens the settings for available streaming services. Already set services are displayed with their own logo."
+    },
+    "de": {
+      "name": "Streaming-Dienste",
+      "meaning": "Öffnet die Einstellungen für verfügbare Streaming-Dienste. Bereits eingestellte Dienste werden mit einem eigenen Logo angezeigt."
+    }
+  },
+  "vw-golf-5h-media-video-category": {
+    "cs": {
+      "name": "Videa",
+      "meaning": "Označuje kategorii videí."
+    },
+    "en": {
+      "name": "Videos",
+      "meaning": "Indicates the video category."
+    },
+    "de": {
+      "name": "Videos",
+      "meaning": "Gibt die Videokategorie an."
+    }
+  },
+  "vw-golf-5h-media-video-fullscreen": {
+    "cs": {
+      "name": "Video na celou obrazovku",
+      "meaning": "Zobrazí video v režimu celé obrazovky."
+    },
+    "en": {
+      "name": "Full screen video",
+      "meaning": "Displays the video in full screen mode."
+    },
+    "de": {
+      "name": "Vollbildvideo",
+      "meaning": "Zeigt das Video im Vollbildmodus an."
+    }
+  },
+  "vw-golf-5h-media-video-minimise": {
+    "cs": {
+      "name": "Zmenšit přehrávání videa",
+      "meaning": "Zmenší zobrazení přehrávaného videa."
+    },
+    "en": {
+      "name": "Minimize video playback",
+      "meaning": "Shrinks the view of the video being played."
+    },
+    "de": {
+      "name": "Minimieren Sie die Videowiedergabe",
+      "meaning": "Verkleinert die Ansicht des abgespielten Videos."
+    }
+  },
+  "vw-golf-5h-navigation-address-destination-search": {
+    "cs": {
+      "name": "Vyhledat cíl podle adresy",
+      "meaning": "Otevře podrobné zadání adresy cíle."
+    },
+    "en": {
+      "name": "Search destination by address",
+      "meaning": "Opens the detailed entry of the destination address."
+    },
+    "de": {
+      "name": "Ziel nach Adresse suchen",
+      "meaning": "Öffnet die detaillierte Eingabe der Zieladresse."
+    }
+  },
+  "vw-golf-5h-navigation-announcement-volume": {
+    "cs": {
+      "name": "Hlasitost navigačních pokynů",
+      "meaning": "Ovládání hlasitosti navigačních pokynů."
+    },
+    "en": {
+      "name": "Navigation guidance volume",
+      "meaning": "Control volume of navigation instructions."
+    },
+    "de": {
+      "name": "Lautstärke der Navigationsführung",
+      "meaning": "Steuern Sie die Lautstärke der Navigationsanweisungen."
+    }
+  },
+  "vw-golf-5h-navigation-automatic-map-mode": {
+    "cs": {
+      "name": "Automatické zobrazení mapy",
+      "meaning": "Zapne plně automatický režim mapy: orientaci ve směru jízdy, polohu, přiblížení a náklon."
+    },
+    "en": {
+      "name": "Automatic map display",
+      "meaning": "Turns on fully automatic map mode: orientation in direction of travel, position, zoom and tilt."
+    },
+    "de": {
+      "name": "Automatische Kartenanzeige",
+      "meaning": "Aktiviert den vollautomatischen Kartenmodus: Ausrichtung in Fahrtrichtung, Position, Zoom und Neigung."
+    }
+  },
+  "vw-golf-5h-navigation-close-route-plan": {
+    "cs": {
+      "name": "Zavřít plán trasy",
+      "meaning": "Zavře plán trasy."
+    },
+    "en": {
+      "name": "Close route plan",
+      "meaning": "Closes the route plan."
+    },
+    "de": {
+      "name": "Routenplan schließen",
+      "meaning": "Schließt den Routenplan."
+    }
+  },
+  "vw-golf-5h-navigation-current-destination": {
+    "cs": {
+      "name": "Aktuální cíl navigování",
+      "meaning": "Označuje cíl právě probíhajícího vedení k cíli."
+    },
+    "en": {
+      "name": "Current navigation destination",
+      "meaning": "Indicates the destination of the current route to the destination."
+    },
+    "de": {
+      "name": "Aktuelles Navigationsziel",
+      "meaning": "Zeigt das Ziel der aktuellen Route zum Ziel an."
+    }
+  },
+  "vw-golf-5h-navigation-destination-memory": {
+    "cs": {
+      "name": "Paměť cílů",
+      "meaning": "Zobrazí uložené cíle."
+    },
+    "en": {
+      "name": "Target memory",
+      "meaning": "Displays saved destinations."
+    },
+    "de": {
+      "name": "Zielspeicher",
+      "meaning": "Zeigt gespeicherte Ziele an."
+    }
+  },
+  "vw-golf-5h-navigation-end-guidance": {
+    "cs": {
+      "name": "Ukončit navigování",
+      "meaning": "Ukončí aktuální vedení k cíli."
+    },
+    "en": {
+      "name": "End navigation",
+      "meaning": "Terminates the current guidance to the destination."
+    },
+    "de": {
+      "name": "Navigation beenden",
+      "meaning": "Beendet die aktuelle Zielführung."
+    }
+  },
+  "vw-golf-5h-navigation-guidance-options": {
+    "cs": {
+      "name": "Další možnosti navigování",
+      "meaning": "Zobrazí další možnosti vedení k cíli."
+    },
+    "en": {
+      "name": "Additional navigation options",
+      "meaning": "Shows additional route options."
+    },
+    "de": {
+      "name": "Zusätzliche Navigationsmöglichkeiten",
+      "meaning": "Zeigt zusätzliche Routenoptionen an."
+    }
+  },
+  "vw-golf-5h-navigation-map-scale": {
+    "cs": {
+      "name": "Měřítko mapy",
+      "meaning": "Označuje měřítko mapy."
+    },
+    "en": {
+      "name": "Map scale",
+      "meaning": "Indicates the scale of the map."
+    },
+    "de": {
+      "name": "Kartenmaßstab",
+      "meaning": "Gibt den Maßstab der Karte an."
+    }
+  },
+  "vw-golf-5h-navigation-north-up": {
+    "cs": {
+      "name": "Mapa orientovaná na sever",
+      "meaning": "Natočí mapu severem nahoru."
+    },
+    "en": {
+      "name": "North oriented map",
+      "meaning": "Rotates the map north up."
+    },
+    "de": {
+      "name": "Nordorientierte Karte",
+      "meaning": "Dreht die Karte nach Norden nach oben."
+    }
+  },
+  "vw-golf-5h-navigation-poi-bank": {
+    "cs": {
+      "name": "Banka",
+      "meaning": "Označuje banku na navigační mapě."
+    },
+    "en": {
+      "name": "Bank",
+      "meaning": "Indicates a bank on the navigation map."
+    },
+    "de": {
+      "name": "Bank",
+      "meaning": "Zeigt eine Bank auf der Navigationskarte an."
+    }
+  },
+  "vw-golf-5h-navigation-poi-charging-station": {
+    "cs": {
+      "name": "Nabíjecí stanice",
+      "meaning": "Označuje nabíjecí stanici na navigační mapě."
+    },
+    "en": {
+      "name": "Charging station",
+      "meaning": "Indicates a charging station on the navigation map."
+    },
+    "de": {
+      "name": "Ladestation",
+      "meaning": "Zeigt eine Ladestation auf der Navigationskarte an."
+    }
+  },
+  "vw-golf-5h-navigation-poi-fuel-station": {
+    "cs": {
+      "name": "Čerpací stanice",
+      "meaning": "Označuje čerpací stanici na navigační mapě."
+    },
+    "en": {
+      "name": "Gas station",
+      "meaning": "Indicates a gas station on the navigation map."
+    },
+    "de": {
+      "name": "Tankstelle",
+      "meaning": "Zeigt eine Tankstelle auf der Navigationskarte an."
+    }
+  },
+  "vw-golf-5h-navigation-poi-parking": {
+    "cs": {
+      "name": "Parkoviště",
+      "meaning": "Označuje parkoviště na navigační mapě."
+    },
+    "en": {
+      "name": "Parking lot",
+      "meaning": "Indicates the parking lot on the navigation map."
+    },
+    "de": {
+      "name": "Parkplatz",
+      "meaning": "Zeigt den Parkplatz auf der Navigationskarte an."
+    }
+  },
+  "vw-golf-5h-navigation-poi-restaurant": {
+    "cs": {
+      "name": "Restaurace",
+      "meaning": "Označuje restauraci na navigační mapě."
+    },
+    "en": {
+      "name": "Restaurant",
+      "meaning": "Indicates a restaurant on the navigation map."
+    },
+    "de": {
+      "name": "Restaurant",
+      "meaning": "Zeigt ein Restaurant auf der Navigationskarte an."
+    }
+  },
+  "vw-golf-5h-navigation-poi-tourist-information": {
+    "cs": {
+      "name": "Turistické informace",
+      "meaning": "Označuje turistické informační místo na navigační mapě."
+    },
+    "en": {
+      "name": "Tourist information",
+      "meaning": "Indicates a tourist information point on the navigation map."
+    },
+    "de": {
+      "name": "Touristische Informationen",
+      "meaning": "Zeigt einen Touristeninformationspunkt auf der Navigationskarte an."
+    }
+  },
+  "vw-golf-5h-navigation-poi-train-station": {
+    "cs": {
+      "name": "Železniční stanice",
+      "meaning": "Označuje železniční stanici na navigační mapě."
+    },
+    "en": {
+      "name": "Railway station",
+      "meaning": "Indicates a railway station on the navigation map."
+    },
+    "de": {
+      "name": "Bahnhof",
+      "meaning": "Zeigt auf der Navigationskarte einen Bahnhof an."
+    }
+  },
+  "vw-golf-5h-navigation-repeat-announcement": {
+    "cs": {
+      "name": "Zopakovat navigační pokyn",
+      "meaning": "Zopakuje poslední hlasový navigační pokyn."
+    },
+    "en": {
+      "name": "Repeat the navigation instruction",
+      "meaning": "Repeats the last voice navigation command."
+    },
+    "de": {
+      "name": "Wiederholen Sie die Navigationsanweisung",
+      "meaning": "Wiederholt den letzten Sprachnavigationsbefehl."
+    }
+  },
+  "vw-golf-5h-navigation-route-options-window": {
+    "cs": {
+      "name": "Okno možností trasy",
+      "meaning": "Zobrazí doplňkové okno s možnostmi trasy."
+    },
+    "en": {
+      "name": "Route options window",
+      "meaning": "Displays an additional window with route options."
+    },
+    "de": {
+      "name": "Fenster „Routenoptionen“.",
+      "meaning": "Zeigt ein zusätzliches Fenster mit Routenoptionen an."
+    }
+  },
+  "vw-golf-5h-navigation-route-overview": {
+    "cs": {
+      "name": "Přehled a alternativy trasy",
+      "meaning": "Zobrazí přehled trasy a alternativní trasy k aktuálně zvolenému cíli."
+    },
+    "en": {
+      "name": "Overview and route alternatives",
+      "meaning": "Displays an overview of the route and alternative routes to the currently selected destination."
+    },
+    "de": {
+      "name": "Übersicht und Routenalternativen",
+      "meaning": "Zeigt eine Übersicht der Route und Alternativrouten zum aktuell ausgewählten Ziel an."
+    }
+  },
+  "vw-golf-5h-navigation-show-map": {
+    "cs": {
+      "name": "Navigační mapa",
+      "meaning": "Zobrazí navigační mapu."
+    },
+    "en": {
+      "name": "Navigation map",
+      "meaning": "Displays the navigation map."
+    },
+    "de": {
+      "name": "Navigationskarte",
+      "meaning": "Zeigt die Navigationskarte an."
+    }
+  },
+  "vw-golf-5h-navigation-show-position": {
+    "cs": {
+      "name": "Zobrazit aktuální polohu",
+      "meaning": "Zobrazí aktuální polohu vozidla."
+    },
+    "en": {
+      "name": "Show current location",
+      "meaning": "Displays the current location of the vehicle."
+    },
+    "de": {
+      "name": "Aktuellen Standort anzeigen",
+      "meaning": "Zeigt den aktuellen Standort des Fahrzeugs an."
+    }
+  },
+  "vw-golf-5h-navigation-stored-contact-addresses": {
+    "cs": {
+      "name": "Uložené adresy kontaktů",
+      "meaning": "Otevře uložené adresy v seznamu kontaktů připojeného mobilního zařízení."
+    },
+    "en": {
+      "name": "Saved contact addresses",
+      "meaning": "Opens the saved addresses in the contact list of the connected mobile device."
+    },
+    "de": {
+      "name": "Gespeicherte Kontaktadressen",
+      "meaning": "Öffnet die gespeicherten Adressen in der Kontaktliste des verbundenen Mobilgeräts."
+    }
+  },
+  "vw-golf-5h-navigation-traffic-accident": {
+    "cs": {
+      "name": "Dopravní nehoda",
+      "meaning": "Označuje dopravní nehodu v navigačních dopravních informacích."
+    },
+    "en": {
+      "name": "Traffic accident",
+      "meaning": "Indicates a traffic accident in navigation traffic information."
+    },
+    "de": {
+      "name": "Verkehrsunfall",
+      "meaning": "Zeigt einen Verkehrsunfall in den Verkehrsinformationen der Navigation an."
+    }
+  },
+  "vw-golf-5h-navigation-traffic-congestion": {
+    "cs": {
+      "name": "Dopravní zácpa",
+      "meaning": "Označuje dopravní zácpu v navigačních dopravních informacích."
+    },
+    "en": {
+      "name": "Traffic jam",
+      "meaning": "Indicates a traffic jam in navigation traffic information."
+    },
+    "de": {
+      "name": "Stau",
+      "meaning": "Zeigt einen Stau in den Verkehrsinformationen der Navigation an."
+    }
+  },
+  "vw-golf-5h-radio-dab-unavailable": {
+    "cs": {
+      "name": "Příjem DAB není možný",
+      "meaning": "Označuje stav, kdy není možný příjem DAB."
+    },
+    "en": {
+      "name": "DAB reception is not possible",
+      "meaning": "Indicates a state where DAB reception is not possible."
+    },
+    "de": {
+      "name": "DAB-Empfang ist nicht möglich",
+      "meaning": "Zeigt einen Zustand an, in dem kein DAB-Empfang möglich ist."
+    }
+  },
+  "vw-golf-5h-radio-fm-dab-station-list": {
+    "cs": {
+      "name": "Seznam stanic FM a DAB",
+      "meaning": "Zobrazí seznam rozhlasových stanic FM a DAB."
+    },
+    "en": {
+      "name": "List of FM and DAB stations",
+      "meaning": "Displays a list of FM and DAB radio stations."
+    },
+    "de": {
+      "name": "Liste der UKW- und DAB-Sender",
+      "meaning": "Zeigt eine Liste von UKW- und DAB-Radiosendern an."
+    }
+  },
+  "vw-golf-5h-radio-manual-fm-frequency": {
+    "cs": {
+      "name": "Ruční volba frekvence FM",
+      "meaning": "Zobrazí pásmo pro ruční volbu frekvence FM. Funkce je dostupná při vypnutém sloučeném seznamu stanic."
+    },
+    "en": {
+      "name": "Manual FM frequency selection",
+      "meaning": "Displays the band for manual FM frequency selection. The function is available when the merged station list is turned off."
+    },
+    "de": {
+      "name": "Manuelle FM-Frequenzauswahl",
+      "meaning": "Zeigt das Band für die manuelle UKW-Frequenzauswahl an. Die Funktion ist verfügbar, wenn die zusammengeführte Senderliste deaktiviert ist."
+    }
+  },
+  "vw-golf-5h-radio-next-station": {
+    "cs": {
+      "name": "Následující stanice",
+      "meaning": "Vybere následující stanici ze seznamu nebo stanici na následující předvolbě."
+    },
+    "en": {
+      "name": "Next station",
+      "meaning": "Selects the next station from the list or the station on the next preset."
+    },
+    "de": {
+      "name": "Nächste Station",
+      "meaning": "Wählt den nächsten Sender aus der Liste oder den Sender auf der nächsten Voreinstellung."
+    }
+  },
+  "vw-golf-5h-radio-previous-station": {
+    "cs": {
+      "name": "Předchozí stanice",
+      "meaning": "Vybere předchozí stanici ze seznamu nebo stanici na předchozí předvolbě."
+    },
+    "en": {
+      "name": "Previous station",
+      "meaning": "Selects the previous station from the list or the station on the previous preset."
+    },
+    "de": {
+      "name": "Vorheriger Sender",
+      "meaning": "Wählt den vorherigen Sender aus der Liste oder den Sender auf der vorherigen Voreinstellung aus."
+    }
+  },
+  "vw-golf-5h-radio-station-presets": {
+    "cs": {
+      "name": "Předvolby stanic",
+      "meaning": "Zobrazí předvolby stanic."
+    },
+    "en": {
+      "name": "Station presets",
+      "meaning": "Displays station presets."
+    },
+    "de": {
+      "name": "Sendervoreinstellungen",
+      "meaning": "Zeigt voreingestellte Sender an."
+    }
+  },
+  "vw-golf-5h-telephone-call-controls": {
+    "cs": {
+      "name": "Ovládání hovoru",
+      "meaning": "Zobrazí hovor a jeho ovládání."
+    },
+    "en": {
+      "name": "Call control",
+      "meaning": "Displays the call and its controls."
+    },
+    "de": {
+      "name": "Anrufsteuerung",
+      "meaning": "Zeigt den Anruf und seine Steuerelemente an."
+    }
+  },
+  "vw-golf-5h-telephone-call-lists": {
+    "cs": {
+      "name": "Seznamy hovorů",
+      "meaning": "Zobrazí seznamy příchozích a odchozích hovorů."
+    },
+    "en": {
+      "name": "Call lists",
+      "meaning": "Displays lists of incoming and outgoing calls."
+    },
+    "de": {
+      "name": "Anruflisten",
+      "meaning": "Zeigt Listen eingehender und ausgehender Anrufe an."
+    }
+  },
+  "vw-golf-5h-telephone-conference-call": {
+    "cs": {
+      "name": "Konferenční hovor",
+      "meaning": "Přidá účastníka do konference nebo zahájí konferenční hovor."
+    },
+    "en": {
+      "name": "Conference call",
+      "meaning": "Adds a participant to a conference or starts a conference call."
+    },
+    "de": {
+      "name": "Telefonkonferenz",
+      "meaning": "Fügt einen Teilnehmer zu einer Konferenz hinzu oder startet eine Telefonkonferenz."
+    }
+  },
+  "vw-golf-5h-telephone-contacts": {
+    "cs": {
+      "name": "Kontakty",
+      "meaning": "Otevře kontakty."
+    },
+    "en": {
+      "name": "Contacts",
+      "meaning": "Opens contacts."
+    },
+    "de": {
+      "name": "Kontakte",
+      "meaning": "Öffnet Kontakte."
+    }
+  },
+  "vw-golf-5h-telephone-dial-number": {
+    "cs": {
+      "name": "Vytočit číslo",
+      "meaning": "Otevře vytáčení telefonního čísla."
+    },
+    "en": {
+      "name": "Dial the number",
+      "meaning": "Opens the phone number dialer."
+    },
+    "de": {
+      "name": "Wählen Sie die Nummer",
+      "meaning": "Öffnet den Rufnummernwähler."
+    }
+  },
+  "vw-golf-5h-telephone-end-reject-call": {
+    "cs": {
+      "name": "Ukončit nebo odmítnout hovor",
+      "meaning": "Ukončí probíhající hovor nebo odmítne příchozí hovor."
+    },
+    "en": {
+      "name": "End or reject the call",
+      "meaning": "Ends an ongoing call or rejects an incoming call."
+    },
+    "de": {
+      "name": "Beenden Sie den Anruf oder lehnen Sie ihn ab",
+      "meaning": "Beendet einen laufenden Anruf oder lehnt einen eingehenden Anruf ab."
+    }
+  },
+  "vw-golf-5h-telephone-hold-call": {
+    "cs": {
+      "name": "Přidržet hovor",
+      "meaning": "Přidrží hovor."
+    },
+    "en": {
+      "name": "Put the call on hold",
+      "meaning": "Puts the call on hold."
+    },
+    "de": {
+      "name": "Halten Sie den Anruf",
+      "meaning": "Setzt den Anruf in die Warteschleife."
+    }
+  },
+  "vw-golf-5h-telephone-incoming-call": {
+    "cs": {
+      "name": "Příchozí hovor",
+      "meaning": "Označuje příchozí hovor v seznamu hovorů."
+    },
+    "en": {
+      "name": "Incoming call",
+      "meaning": "Indicates an incoming call in the call list."
+    },
+    "de": {
+      "name": "Eingehender Anruf",
+      "meaning": "Zeigt einen eingehenden Anruf in der Anrufliste an."
+    }
+  },
+  "vw-golf-5h-telephone-messages": {
+    "cs": {
+      "name": "Zprávy",
+      "meaning": "Otevře textové zprávy SMS a e-maily podle dostupných funkcí."
+    },
+    "en": {
+      "name": "Messages",
+      "meaning": "Opens SMS text messages and emails according to available functions."
+    },
+    "de": {
+      "name": "Nachrichten",
+      "meaning": "Öffnet SMS-Textnachrichten und E-Mails entsprechend den verfügbaren Funktionen."
+    }
+  },
+  "vw-golf-5h-telephone-missed-call": {
+    "cs": {
+      "name": "Zmeškaný hovor",
+      "meaning": "Označuje nepřijatý hovor v seznamu hovorů."
+    },
+    "en": {
+      "name": "Missed call",
+      "meaning": "Indicates a missed call in the call list."
+    },
+    "de": {
+      "name": "Anruf verpasst",
+      "meaning": "Zeigt einen verpassten Anruf in der Anrufliste an."
+    }
+  },
+  "vw-golf-5h-telephone-mobile-number": {
+    "cs": {
+      "name": "Mobilní telefonní číslo",
+      "meaning": "Označuje mobilní telefonní číslo kontaktu."
+    },
+    "en": {
+      "name": "Mobile phone number",
+      "meaning": "Indicates the mobile phone number of the contact."
+    },
+    "de": {
+      "name": "Mobiltelefonnummer",
+      "meaning": "Gibt die Mobiltelefonnummer des Kontakts an."
+    }
+  },
+  "vw-golf-5h-telephone-mute-handsfree": {
+    "cs": {
+      "name": "Ztlumit handsfree",
+      "meaning": "Ztlumí zařízení handsfree při hovoru."
+    },
+    "en": {
+      "name": "Mute handsfree",
+      "meaning": "Mutes the hands-free device during a call."
+    },
+    "de": {
+      "name": "Freisprecheinrichtung stumm schalten",
+      "meaning": "Schaltet die Freisprecheinrichtung während eines Anrufs stumm."
+    }
+  },
+  "vw-golf-5h-telephone-outgoing-call": {
+    "cs": {
+      "name": "Odchozí hovor",
+      "meaning": "Označuje odchozí hovor v seznamu hovorů."
+    },
+    "en": {
+      "name": "Outgoing call",
+      "meaning": "Indicates an outgoing call in the call list."
+    },
+    "de": {
+      "name": "Ausgehender Anruf",
+      "meaning": "Zeigt einen ausgehenden Anruf in der Anrufliste an."
+    }
+  },
+  "vw-golf-5h-telephone-search-contacts": {
+    "cs": {
+      "name": "Vyhledat kontakt",
+      "meaning": "Otevře zadávání pro vyhledání kontaktu."
+    },
+    "en": {
+      "name": "Search for a contact",
+      "meaning": "Opens the contact search input."
+    },
+    "de": {
+      "name": "Suchen Sie nach einem Kontakt",
+      "meaning": "Öffnet die Eingabe für die Kontaktsuche."
+    }
+  },
+  "vw-golf-5h-telephone-select-active-phone": {
+    "cs": {
+      "name": "Vybrat aktivní telefon",
+      "meaning": "Vybere aktivní zařízení ze dvou nebo více připojených mobilních telefonů."
+    },
+    "en": {
+      "name": "Select an active phone",
+      "meaning": "Selects the active device from two or more connected mobile phones."
+    },
+    "de": {
+      "name": "Wählen Sie ein aktives Telefon aus",
+      "meaning": "Wählt das aktive Gerät aus zwei oder mehr verbundenen Mobiltelefonen aus."
+    }
+  },
+  "vw-golf-5h-telephone-settings": {
+    "cs": {
+      "name": "Nastavení telefonu",
+      "meaning": "Otevře nastavení telefonního rozhraní."
+    },
+    "en": {
+      "name": "Phone settings",
+      "meaning": "Opens the phone interface settings."
+    },
+    "de": {
+      "name": "Telefoneinstellungen",
+      "meaning": "Öffnet die Einstellungen der Telefonschnittstelle."
+    }
+  },
+  "vw-golf-5h-telephone-voicemail": {
+    "cs": {
+      "name": "Hlasová schránka",
+      "meaning": "Otevře hlasovou schránku."
+    },
+    "en": {
+      "name": "Voicemail",
+      "meaning": "Opens voicemail."
+    },
+    "de": {
+      "name": "Voicemail",
+      "meaning": "Öffnet die Voicemail."
+    }
+  },
+  "skoda-superb-bolero-2019-11-connect-location-active": {
+    "cs": {
+      "name": "Aktivní lokalizační služby",
+      "meaning": "Symbol ve stavovém řádku označuje aktivní lokalizační služby Škoda Connect; informace o jednotlivých službách jsou ve správě služeb."
+    },
+    "en": {
+      "name": "Active location services",
+      "meaning": "The symbol in the status bar indicates active Škoda Connect localization services; information about individual services is in the service management."
+    },
+    "de": {
+      "name": "Aktive Ortungsdienste",
+      "meaning": "Das Symbol in der Statusleiste zeigt aktive Škoda Connect-Lokalisierungsdienste an; Informationen zu einzelnen Diensten finden Sie in der Dienstverwaltung."
+    }
+  },
+  "skoda-superb-bolero-2019-11-media-files": {
+    "cs": {
+      "name": "Správa souborů a multimediální databáze",
+      "meaning": "Otevírá správu souborů nebo multimediální databázi připojeného zdroje."
+    },
+    "en": {
+      "name": "File and multimedia database management",
+      "meaning": "Opens the file manager or multimedia database of the connected resource."
+    },
+    "de": {
+      "name": "Datei- und Multimedia-Datenbankverwaltung",
+      "meaning": "Öffnet den Dateimanager oder die Multimedia-Datenbank der verbundenen Ressource."
+    }
+  },
+  "skoda-superb-bolero-2019-11-media-next": {
+    "cs": {
+      "name": "Následující titul",
+      "meaning": "Stisknutí přehraje následující titul; přidržení slouží k rychlému posunu vpřed."
+    },
+    "en": {
+      "name": "Next track",
+      "meaning": "Press to play the next track; hold is used to fast forward."
+    },
+    "de": {
+      "name": "Nächster Titel",
+      "meaning": "Drücken, um den nächsten Titel abzuspielen; Halten wird zum schnellen Vorlauf verwendet."
+    }
+  },
+  "skoda-superb-bolero-2019-11-media-pause": {
+    "cs": {
+      "name": "Pozastavení přehrávání",
+      "meaning": "Pozastaví přehrávání média."
+    },
+    "en": {
+      "name": "Pause playback",
+      "meaning": "Pauses media playback."
+    },
+    "de": {
+      "name": "Wiedergabe anhalten",
+      "meaning": "Pausiert die Medienwiedergabe."
+    }
+  },
+  "skoda-superb-bolero-2019-11-media-play": {
+    "cs": {
+      "name": "Spuštění přehrávání",
+      "meaning": "Spustí přehrávání média."
+    },
+    "en": {
+      "name": "Start playback",
+      "meaning": "Starts media playback."
+    },
+    "de": {
+      "name": "Starten Sie die Wiedergabe",
+      "meaning": "Startet die Medienwiedergabe."
+    }
+  },
+  "skoda-superb-bolero-2019-11-media-previous": {
+    "cs": {
+      "name": "Předchozí titul nebo návrat na začátek",
+      "meaning": "Stisknutí do 3 sekund od začátku přehraje předchozí titul, po 3 sekundách přehraje aktuální titul od začátku; přidržení slouží k rychlému posunu zpět."
+    },
+    "en": {
+      "name": "Previous track or return to the beginning",
+      "meaning": "Pressing within 3 seconds from the beginning will play the previous track, after 3 seconds it will play the current track from the beginning; hold is used to quickly move back."
+    },
+    "de": {
+      "name": "Vorheriger Titel oder Rückkehr zum Anfang",
+      "meaning": "Wenn Sie innerhalb von 3 Sekunden nach Beginn drücken, wird der vorherige Titel abgespielt, nach 3 Sekunden wird der aktuelle Titel von Anfang an abgespielt; Halten dient zum schnellen Zurückbewegen."
+    }
+  },
+  "skoda-superb-bolero-2019-11-media-repeat-folder": {
+    "cs": {
+      "name": "Opakování alba nebo složky",
+      "meaning": "Zapíná nebo vypíná opakování aktuálního alba nebo složky."
+    },
+    "en": {
+      "name": "Repeating an album or folder",
+      "meaning": "Turns the repeat of the current album or folder on or off."
+    },
+    "de": {
+      "name": "Wiederholen eines Albums oder Ordners",
+      "meaning": "Schaltet die Wiederholung des aktuellen Albums oder Ordners ein oder aus."
+    }
+  },
+  "skoda-superb-bolero-2019-11-media-repeat-title": {
+    "cs": {
+      "name": "Opakování aktuálního titulu",
+      "meaning": "Zapíná nebo vypíná opakování právě přehrávaného titulu."
+    },
+    "en": {
+      "name": "Repeating the current track",
+      "meaning": "Turns on or off the repeat of the currently playing track."
+    },
+    "de": {
+      "name": "Wiederholung des aktuellen Titels",
+      "meaning": "Schaltet die Wiederholung des aktuell wiedergegebenen Titels ein oder aus."
+    }
+  },
+  "skoda-superb-bolero-2019-11-media-shuffle": {
+    "cs": {
+      "name": "Náhodné pořadí přehrávání",
+      "meaning": "Zapíná nebo vypíná náhodné přehrávání aktuálního alba nebo složky."
+    },
+    "en": {
+      "name": "Random playback order",
+      "meaning": "Turns random playback of the current album or folder on or off."
+    },
+    "de": {
+      "name": "Zufällige Wiedergabereihenfolge",
+      "meaning": "Schaltet die Zufallswiedergabe des aktuellen Albums oder Ordners ein oder aus."
+    }
+  },
+  "skoda-superb-bolero-2019-11-mirrorlink-controls-bottom": {
+    "cs": {
+      "name": "Ovládací tlačítka dole",
+      "meaning": "Při ovládání spuštěné aplikace MirrorLink zobrazí ovládací tlačítka dole."
+    },
+    "en": {
+      "name": "Control buttons below",
+      "meaning": "When controlling a running MirrorLink app, it displays the control buttons at the bottom."
+    },
+    "de": {
+      "name": "Steuertasten unten",
+      "meaning": "Beim Steuern einer laufenden MirrorLink-App werden unten die Steuerschaltflächen angezeigt."
+    }
+  },
+  "skoda-superb-bolero-2019-11-mirrorlink-controls-top": {
+    "cs": {
+      "name": "Ovládací tlačítka nahoře",
+      "meaning": "Při ovládání spuštěné aplikace MirrorLink zobrazí ovládací tlačítka nahoře."
+    },
+    "en": {
+      "name": "Control buttons on top",
+      "meaning": "When controlling a running MirrorLink application, it displays the control buttons at the top."
+    },
+    "de": {
+      "name": "Steuertasten oben",
+      "meaning": "Beim Steuern einer laufenden MirrorLink-Anwendung werden oben die Steuerschaltflächen angezeigt."
+    }
+  },
+  "skoda-superb-bolero-2019-11-mirrorlink-driving-lock": {
+    "cs": {
+      "name": "Aplikaci nelze ovládat během jízdy",
+      "meaning": "Označuje aplikaci MirrorLink, kterou není možné ovládat během jízdy."
+    },
+    "en": {
+      "name": "The application cannot be controlled while driving",
+      "meaning": "Indicates the MirrorLink application cannot be controlled while driving."
+    },
+    "de": {
+      "name": "Die Anwendung kann während der Fahrt nicht gesteuert werden",
+      "meaning": "Zeigt an, dass die MirrorLink-Anwendung während der Fahrt nicht gesteuert werden kann."
+    }
+  },
+  "skoda-superb-bolero-2019-11-mirrorlink-home": {
+    "cs": {
+      "name": "Návrat do hlavní nabídky MirrorLink",
+      "meaning": "Při ovládání spuštěné aplikace se vrátí do hlavní nabídky MirrorLink."
+    },
+    "en": {
+      "name": "Return to the MirrorLink main menu",
+      "meaning": "When controlling a running application, it returns to the MirrorLink main menu."
+    },
+    "de": {
+      "name": "Kehren Sie zum MirrorLink-Hauptmenü zurück",
+      "meaning": "Beim Steuern einer laufenden Anwendung wird zum MirrorLink-Hauptmenü zurückgekehrt."
+    }
+  },
+  "skoda-superb-bolero-2019-11-mirrorlink-last-app": {
+    "cs": {
+      "name": "Poslední spuštěná aplikace MirrorLink",
+      "meaning": "Zobrazí poslední spuštěnou aplikaci na připojeném mobilním zařízení."
+    },
+    "en": {
+      "name": "Last running MirrorLink application",
+      "meaning": "Displays the last running application on the connected mobile device."
+    },
+    "de": {
+      "name": "Zuletzt ausgeführte MirrorLink-Anwendung",
+      "meaning": "Zeigt die zuletzt ausgeführte Anwendung auf dem verbundenen Mobilgerät an."
+    }
+  },
+  "skoda-superb-bolero-2019-11-mirrorlink-running-apps": {
+    "cs": {
+      "name": "Seznam spuštěných aplikací MirrorLink",
+      "meaning": "Zobrazí seznam spuštěných aplikací v prostředí MirrorLink."
+    },
+    "en": {
+      "name": "List of running MirrorLink applications",
+      "meaning": "Displays a list of running applications in the MirrorLink environment."
+    },
+    "de": {
+      "name": "Liste der ausgeführten MirrorLink-Anwendungen",
+      "meaning": "Zeigt eine Liste der laufenden Anwendungen in der MirrorLink-Umgebung an."
+    }
+  },
+  "skoda-superb-bolero-2019-11-mirrorlink-smartlink-home": {
+    "cs": {
+      "name": "Návrat do hlavní nabídky SmartLink",
+      "meaning": "V prostředí MirrorLink se vrátí do hlavní nabídky SmartLink."
+    },
+    "en": {
+      "name": "Return to the main SmartLink menu",
+      "meaning": "In the MirrorLink environment, it returns to the main SmartLink menu."
+    },
+    "de": {
+      "name": "Kehren Sie zum Hauptmenü von SmartLink zurück",
+      "meaning": "In der MirrorLink-Umgebung wird zum Hauptmenü von SmartLink zurückgekehrt."
+    }
+  },
+  "skoda-superb-bolero-2019-11-phone-answer": {
+    "cs": {
+      "name": "Přijmout hovor nebo se vrátit do hovoru",
+      "meaning": "Přijme příchozí hovor nebo obnoví přidržený hovor; v konferenci slouží také k návratu do přidržené konference."
+    },
+    "en": {
+      "name": "Answer the call or return to the call",
+      "meaning": "Answers an incoming call or resumes a held call; in the conference is also used to return to the held conference."
+    },
+    "de": {
+      "name": "Nehmen Sie den Anruf entgegen oder kehren Sie zum Anruf zurück",
+      "meaning": "Beantwortet einen eingehenden Anruf oder setzt einen gehaltenen Anruf fort; In der Konferenz wird auch verwendet, um zur gehaltenen Konferenz zurückzukehren."
+    }
+  },
+  "skoda-superb-bolero-2019-11-phone-audio-handsfree": {
+    "cs": {
+      "name": "Přepnutí zvuku hovoru do reproduktorů",
+      "meaning": "Přepne zvuk hovoru z telefonu do reproduktorů vozidla."
+    },
+    "en": {
+      "name": "Switch the call sound to the speakers",
+      "meaning": "Switches the call sound from the phone to the vehicle's speakers."
+    },
+    "de": {
+      "name": "Schalten Sie den Anrufton auf die Lautsprecher um",
+      "meaning": "Schaltet den Anrufton vom Telefon auf die Lautsprecher des Fahrzeugs um."
+    }
+  },
+  "skoda-superb-bolero-2019-11-phone-call-lists": {
+    "cs": {
+      "name": "Seznamy volání",
+      "meaning": "Otevře seznamy telefonních hovorů."
+    },
+    "en": {
+      "name": "Call lists",
+      "meaning": "Opens the phone call lists."
+    },
+    "de": {
+      "name": "Anruflisten",
+      "meaning": "Öffnet die Anruflisten."
+    }
+  },
+  "skoda-superb-bolero-2019-11-phone-caller-detail": {
+    "cs": {
+      "name": "Podrobnosti volajícího nebo účastníka konference",
+      "meaning": "Zobrazí podrobnosti volajícího; v detailu konference zobrazí podrobnosti vybraného účastníka."
+    },
+    "en": {
+      "name": "Caller or conference participant details",
+      "meaning": "Shows caller details; in the details of the conference will display the details of the selected participant."
+    },
+    "de": {
+      "name": "Details zum Anrufer oder Konferenzteilnehmer",
+      "meaning": "Zeigt Anruferdetails an; In den Details der Konferenz werden die Details des ausgewählten Teilnehmers angezeigt."
+    }
+  },
+  "skoda-superb-bolero-2019-11-phone-conference-detail": {
+    "cs": {
+      "name": "Podrobnosti konferenčního hovoru",
+      "meaning": "Otevře podrobnosti probíhajícího konferenčního hovoru."
+    },
+    "en": {
+      "name": "Conference call details",
+      "meaning": "Opens the details of an ongoing conference call."
+    },
+    "de": {
+      "name": "Details zur Telefonkonferenz",
+      "meaning": "Öffnet die Details einer laufenden Telefonkonferenz."
+    }
+  },
+  "skoda-superb-bolero-2019-11-phone-conference-private": {
+    "cs": {
+      "name": "Hovor s účastníkem mimo konferenci",
+      "meaning": "V podrobnostech konference umožní samostatný hovor s vybraným účastníkem mimo konferenční hovor."
+    },
+    "en": {
+      "name": "Talk to a participant outside the conference",
+      "meaning": "In the conference details, it will enable a separate call with the selected participant outside the conference call."
+    },
+    "de": {
+      "name": "Sprechen Sie mit einem Teilnehmer außerhalb der Konferenz",
+      "meaning": "In den Konferenzdetails wird ein separates Gespräch mit dem ausgewählten Teilnehmer außerhalb der Telefonkonferenz ermöglicht."
+    }
+  },
+  "skoda-superb-bolero-2019-11-phone-conference-start": {
+    "cs": {
+      "name": "Vytvoření konferenčního hovoru",
+      "meaning": "Spojí hovory do konferenčního hovoru, pokud je funkce dostupná a splněny podmínky připojeného telefonu."
+    },
+    "en": {
+      "name": "Create a conference call",
+      "meaning": "Combines calls into a conference call if the function is available and the conditions of the connected phone are met."
+    },
+    "de": {
+      "name": "Erstellen Sie eine Telefonkonferenz",
+      "meaning": "Fasst Anrufe zu einer Telefonkonferenz zusammen, wenn die Funktion verfügbar ist und die Bedingungen des verbundenen Telefons erfüllt sind."
+    }
+  },
+  "skoda-superb-bolero-2019-11-phone-contacts": {
+    "cs": {
+      "name": "Telefonní kontakty",
+      "meaning": "Otevře seznam telefonních kontaktů."
+    },
+    "en": {
+      "name": "Telephone contacts",
+      "meaning": "Opens the phone contact list."
+    },
+    "de": {
+      "name": "Telefonkontakte",
+      "meaning": "Öffnet die Telefonkontaktliste."
+    }
+  },
+  "skoda-superb-bolero-2019-11-phone-dial": {
+    "cs": {
+      "name": "Zadání telefonního čísla",
+      "meaning": "Otevře zadávání telefonního čísla."
+    },
+    "en": {
+      "name": "Entering a phone number",
+      "meaning": "Opens phone number entry."
+    },
+    "de": {
+      "name": "Eingabe einer Telefonnummer",
+      "meaning": "Öffnet die Telefonnummerneingabe."
+    }
+  },
+  "skoda-superb-bolero-2019-11-phone-end": {
+    "cs": {
+      "name": "Ukončit nebo odmítnout hovor",
+      "meaning": "Podle situace ukončí vytáčení, odmítne příchozí hovor nebo ukončí probíhající hovor; stejný symbol ukončuje také konferenci."
+    },
+    "en": {
+      "name": "End or reject the call",
+      "meaning": "Depending on the situation, it ends dialing, rejects an incoming call or terminates an ongoing call; the same symbol also ends the conference."
+    },
+    "de": {
+      "name": "Beenden Sie den Anruf oder lehnen Sie ihn ab",
+      "meaning": "Je nach Situation beendet es die Wahl, weist einen eingehenden Anruf ab oder beendet ein laufendes Gespräch; Das gleiche Symbol beendet auch die Konferenz."
+    }
+  },
+  "skoda-superb-bolero-2019-11-phone-hold": {
+    "cs": {
+      "name": "Přidržení hovoru",
+      "meaning": "Přidrží aktuální hovor; v konferenci umožňuje její dočasné opuštění, zatímco konference na pozadí pokračuje."
+    },
+    "en": {
+      "name": "Call on hold",
+      "meaning": "Holds the current call; in a conference allows you to leave it temporarily while the conference continues in the background."
+    },
+    "de": {
+      "name": "Anruf in der Warteschleife",
+      "meaning": "Hält den aktuellen Anruf; In einer Konferenz können Sie diese vorübergehend verlassen, während die Konferenz im Hintergrund weiterläuft."
+    }
+  },
+  "skoda-superb-bolero-2019-11-phone-messages": {
+    "cs": {
+      "name": "Textové zprávy",
+      "meaning": "Otevře nabídku textových zpráv."
+    },
+    "en": {
+      "name": "Messages",
+      "meaning": "Opens the text message menu."
+    },
+    "de": {
+      "name": "Textnachrichten",
+      "meaning": "Öffnet das SMS-Menü."
+    }
+  },
+  "skoda-superb-bolero-2019-11-phone-microphone-off": {
+    "cs": {
+      "name": "Vypnutí mikrofonu",
+      "meaning": "Vypne mikrofon během hovoru nebo konferenčního hovoru."
+    },
+    "en": {
+      "name": "Mute the microphone",
+      "meaning": "Mutes the microphone during a call or conference call."
+    },
+    "de": {
+      "name": "Schalten Sie das Mikrofon stumm",
+      "meaning": "Schaltet das Mikrofon während eines Anrufs oder einer Telefonkonferenz stumm."
+    }
+  },
+  "skoda-superb-bolero-2019-11-phone-microphone-on": {
+    "cs": {
+      "name": "Zapnutí mikrofonu",
+      "meaning": "Zapne mikrofon během hovoru nebo konferenčního hovoru."
+    },
+    "en": {
+      "name": "Turn on the microphone",
+      "meaning": "Turns on the microphone during a call or conference call."
+    },
+    "de": {
+      "name": "Schalten Sie das Mikrofon ein",
+      "meaning": "Schaltet das Mikrofon während eines Anrufs oder einer Telefonkonferenz ein."
+    }
+  },
+  "skoda-superb-bolero-2019-11-phone-ringer-off": {
+    "cs": {
+      "name": "Vypnutí vyzvánění",
+      "meaning": "Ovládání vypnutí vyzvánění příchozího hovoru; jde o stav vyzvánění, nikoli o závadu telefonu."
+    },
+    "en": {
+      "name": "Turn off ringtone",
+      "meaning": "Incoming call ringer mute control; it's a ringtone status, not a phone fault."
+    },
+    "de": {
+      "name": "Klingelton ausschalten",
+      "meaning": "Stummschaltung des Klingeltons bei eingehenden Anrufen; Es handelt sich um einen Klingeltonstatus, nicht um einen Telefonfehler."
+    }
+  },
+  "skoda-superb-bolero-2019-11-phone-ringer-on": {
+    "cs": {
+      "name": "Zapnutí vyzvánění",
+      "meaning": "Ovládání zapnutí vyzvánění příchozího hovoru."
+    },
+    "en": {
+      "name": "Turn on ringtone",
+      "meaning": "Incoming call ringer activation control."
+    },
+    "de": {
+      "name": "Klingelton einschalten",
+      "meaning": "Steuerung der Aktivierung des Klingeltons bei eingehenden Anrufen."
+    }
+  },
+  "skoda-superb-bolero-2019-11-phone-swap": {
+    "cs": {
+      "name": "Záměna hlavního a doplňkového telefonu",
+      "meaning": "Zamění role hlavního a doplňkového telefonu připojeného k infotainmentu."
+    },
+    "en": {
+      "name": "Exchange of main and additional telephone",
+      "meaning": "It swaps the roles of the main and additional phone connected to the infotainment."
+    },
+    "de": {
+      "name": "Austausch von Haupt- und Zusatztelefon",
+      "meaning": "Es vertauscht die Rollen des Haupt- und Zusatztelefons, das an das Infotainment angeschlossen ist."
+    }
+  },
+  "skoda-superb-bolero-2019-11-radio-dab-no-signal": {
+    "cs": {
+      "name": "Signál DAB není dostupný",
+      "meaning": "U dané digitální stanice není dostupný signál DAB."
+    },
+    "en": {
+      "name": "DAB signal is not available",
+      "meaning": "DAB signal is not available for the given digital station."
+    },
+    "de": {
+      "name": "Das DAB-Signal ist nicht verfügbar",
+      "meaning": "Für den angegebenen digitalen Sender ist kein DAB-Signal verfügbar."
+    }
+  },
+  "skoda-superb-bolero-2019-11-radio-dab-uncertain": {
+    "cs": {
+      "name": "Nejistý příjem DAB",
+      "meaning": "Příjem signálu dané digitální stanice je nejistý."
+    },
+    "en": {
+      "name": "Uncertain DAB reception",
+      "meaning": "The signal reception of the given digital station is uncertain."
+    },
+    "de": {
+      "name": "Unsicherer DAB-Empfang",
+      "meaning": "Der Signalempfang des jeweiligen Digitalsenders ist unsicher."
+    }
+  },
+  "skoda-superb-bolero-2019-11-radio-favourite": {
+    "cs": {
+      "name": "Stanice uložená mezi oblíbenými",
+      "meaning": "Označuje stanici uloženou v předvolbách oblíbených stanic."
+    },
+    "en": {
+      "name": "Station saved to favorites",
+      "meaning": "Indicates a station stored in favorite station presets."
+    },
+    "de": {
+      "name": "Sender in den Favoriten gespeichert",
+      "meaning": "Zeigt einen Sender an, der in den Lieblingssender-Voreinstellungen gespeichert ist."
+    }
+  },
+  "skoda-superb-bolero-2019-11-radio-filter": {
+    "cs": {
+      "name": "Filtrování seznamu FM stanic",
+      "meaning": "Otevírá filtrování FM stanic podle abecedy, skupiny nebo žánru; vyžaduje zapnuté RDS a AF."
+    },
+    "en": {
+      "name": "Filtering the list of FM stations",
+      "meaning": "Opens to filter FM stations by alphabet, group or genre; requires RDS and AF turned on."
+    },
+    "de": {
+      "name": "Filtern der Liste der UKW-Sender",
+      "meaning": "Öffnet, um UKW-Sender nach Alphabet, Gruppe oder Genre zu filtern; erfordert die Aktivierung von RDS und AF."
+    }
+  },
+  "skoda-superb-bolero-2019-11-radio-playing": {
+    "cs": {
+      "name": "Přehrávaná rozhlasová stanice",
+      "meaning": "Označuje stanici, kterou právě posloucháte."
+    },
+    "en": {
+      "name": "The radio station being played",
+      "meaning": "Indicates the station you are currently listening to."
+    },
+    "de": {
+      "name": "Der gespielte Radiosender",
+      "meaning": "Zeigt den Sender an, den Sie gerade hören."
+    }
+  },
+  "skoda-superb-bolero-2019-11-radio-refresh": {
+    "cs": {
+      "name": "Aktualizace seznamu stanic",
+      "meaning": "Manuálně aktualizuje seznam dostupných rozhlasových stanic."
+    },
+    "en": {
+      "name": "Updating the station list",
+      "meaning": "Manually updates the list of available radio stations."
+    },
+    "de": {
+      "name": "Aktualisierung der Senderliste",
+      "meaning": "Aktualisiert die Liste der verfügbaren Radiosender manuell."
+    }
+  },
+  "skoda-superb-bolero-2019-11-radio-traffic-tp": {
+    "cs": {
+      "name": "Stanice s dopravním zpravodajstvím",
+      "meaning": "Označuje rozhlasovou stanici, která vysílá dopravní zpravodajství."
+    },
+    "en": {
+      "name": "Traffic news station",
+      "meaning": "Indicates a radio station that broadcasts traffic news."
+    },
+    "de": {
+      "name": "Verkehrsnachrichtensender",
+      "meaning": "Zeigt einen Radiosender an, der Verkehrsnachrichten sendet."
+    }
+  },
+  "skoda-superb-bolero-2019-11-settings": {
+    "cs": {
+      "name": "Nastavení",
+      "meaning": "Otevírá nastavení aktuální nabídky infotainmentu."
+    },
+    "en": {
+      "name": "Settings",
+      "meaning": "Opens the settings of the current infotainment menu."
+    },
+    "de": {
+      "name": "Einstellungen",
+      "meaning": "Öffnet die Einstellungen des aktuellen Infotainment-Menüs."
+    }
+  },
+  "skoda-superb-bolero-2019-11-smartlink-disconnect": {
+    "cs": {
+      "name": "Ukončení aktivního spojení SmartLink",
+      "meaning": "Ukončí aktivní spojení mobilního zařízení prostřednictvím SmartLink."
+    },
+    "en": {
+      "name": "Ending an active SmartLink connection",
+      "meaning": "Terminates the active connection of the mobile device via SmartLink."
+    },
+    "de": {
+      "name": "Beenden einer aktiven SmartLink-Verbindung",
+      "meaning": "Beendet die aktive Verbindung des Mobilgeräts über SmartLink."
+    }
+  },
+  "skoda-superb-bolero-2019-11-smartlink-info": {
+    "cs": {
+      "name": "Informace o SmartLink",
+      "meaning": "Zobrazí informace o funkci SmartLink."
+    },
+    "en": {
+      "name": "About SmartLink",
+      "meaning": "Displays information about the SmartLink feature."
+    },
+    "de": {
+      "name": "Über SmartLink",
+      "meaning": "Zeigt Informationen zur SmartLink-Funktion an."
+    }
+  },
+  "skoda-superb-bolero-2019-11-sms-forward": {
+    "cs": {
+      "name": "Přeposlání textové zprávy",
+      "meaning": "Přepošle přijatou zprávu; před odesláním ji lze upravit."
+    },
+    "en": {
+      "name": "Forwarding a text message",
+      "meaning": "Forwards the received message; it can be edited before sending."
+    },
+    "de": {
+      "name": "Weiterleiten einer Textnachricht",
+      "meaning": "Leitet die empfangene Nachricht weiter; Es kann vor dem Senden bearbeitet werden."
+    }
+  },
+  "skoda-superb-bolero-2019-11-sms-inbox": {
+    "cs": {
+      "name": "Přijaté textové zprávy",
+      "meaning": "Otevře přijaté textové zprávy; po výběru konkrétní zprávy se zobrazí její obsah."
+    },
+    "en": {
+      "name": "Received text messages",
+      "meaning": "Opens received text messages; after selecting a specific message, its contents will be displayed."
+    },
+    "de": {
+      "name": "SMS erhalten",
+      "meaning": "Öffnet empfangene Textnachrichten; Nach Auswahl einer bestimmten Nachricht wird deren Inhalt angezeigt."
+    }
+  },
+  "skoda-superb-bolero-2019-11-sms-more": {
+    "cs": {
+      "name": "Další funkce přijaté zprávy",
+      "meaning": "Otevře další funkce přijaté zprávy: odpověď šablonou, smazání nebo rozpoznání telefonních čísel."
+    },
+    "en": {
+      "name": "Additional functions of received messages",
+      "meaning": "Opens other functions of the received message: reply with a template, delete or recognize phone numbers."
+    },
+    "de": {
+      "name": "Zusätzliche Funktionen empfangener Nachrichten",
+      "meaning": "Öffnet weitere Funktionen der empfangenen Nachricht: Mit einer Vorlage antworten, Telefonnummern löschen oder erkennen."
+    }
+  },
+  "skoda-superb-bolero-2019-11-sms-new": {
+    "cs": {
+      "name": "Nová textová zpráva",
+      "meaning": "Otevře vytvoření nové textové zprávy v nabídce Telefon."
+    },
+    "en": {
+      "name": "New text message",
+      "meaning": "Opens Create a new text message in the Phone menu."
+    },
+    "de": {
+      "name": "Neue SMS",
+      "meaning": "Öffnet „Neue Textnachricht erstellen“ im Menü „Telefon“."
+    }
+  },
+  "skoda-superb-bolero-2019-11-sms-read-aloud": {
+    "cs": {
+      "name": "Přečtení textové zprávy nahlas",
+      "meaning": "Přečte přijatou textovou zprávu generovaným hlasem infotainmentu."
+    },
+    "en": {
+      "name": "Read a text message aloud",
+      "meaning": "Reads the received text message with the infotainment voice generated."
+    },
+    "de": {
+      "name": "Lesen Sie eine Textnachricht laut vor",
+      "meaning": "Liest die empfangene Textnachricht mit der generierten Infotainment-Stimme."
+    }
+  },
+  "skoda-superb-bolero-2019-11-sms-reply": {
+    "cs": {
+      "name": "Odpověď odesílateli",
+      "meaning": "Umožní odpovědět odesílateli přijaté textové zprávy."
+    },
+    "en": {
+      "name": "Reply to sender",
+      "meaning": "Allows you to reply to the sender of a received text message."
+    },
+    "de": {
+      "name": "Antwort an den Absender",
+      "meaning": "Ermöglicht Ihnen, dem Absender einer empfangenen Textnachricht zu antworten."
+    }
+  },
+  "skoda-superb-bolero-2019-11-sms-send": {
+    "cs": {
+      "name": "Odeslání textové zprávy",
+      "meaning": "Odešle připravenou zprávu zvoleným a potvrzeným příjemcům."
+    },
+    "en": {
+      "name": "Sending a text message",
+      "meaning": "Sends a prepared message to selected and confirmed recipients."
+    },
+    "de": {
+      "name": "Senden einer Textnachricht",
+      "meaning": "Sendet eine vorbereitete Nachricht an ausgewählte und bestätigte Empfänger."
+    }
+  },
+  "seat-leon-2021-06-media-add-favourite": {
+    "cs": {
+      "name": "Přidat do oblíbených",
+      "meaning": "Přidá multimediální soubor mezi oblíbené."
+    },
+    "en": {
+      "name": "Add to favorites",
+      "meaning": "Adds a multimedia file to favorites."
+    },
+    "de": {
+      "name": "Zu Favoriten hinzufügen",
+      "meaning": "Fügt eine Multimediadatei zu den Favoriten hinzu."
+    }
+  },
+  "seat-leon-2021-06-media-favourites": {
+    "cs": {
+      "name": "Oblíbené",
+      "meaning": "Zobrazí seznam oblíbených položek."
+    },
+    "en": {
+      "name": "Favorites",
+      "meaning": "Displays a list of favorites."
+    },
+    "de": {
+      "name": "Favoriten",
+      "meaning": "Zeigt eine Favoritenliste an."
+    }
+  },
+  "seat-leon-2021-06-media-next-track": {
+    "cs": {
+      "name": "Následující titul",
+      "meaning": "Přejde na následující titul."
+    },
+    "en": {
+      "name": "Next track",
+      "meaning": "Skips to the next track."
+    },
+    "de": {
+      "name": "Nächster Titel",
+      "meaning": "Springt zum nächsten Titel."
+    }
+  },
+  "seat-leon-2021-06-media-pause": {
+    "cs": {
+      "name": "Pozastavit",
+      "meaning": "Pozastaví přehrávání média."
+    },
+    "en": {
+      "name": "Pause",
+      "meaning": "Pauses media playback."
+    },
+    "de": {
+      "name": "Pause",
+      "meaning": "Pausiert die Medienwiedergabe."
+    }
+  },
+  "seat-leon-2021-06-media-play": {
+    "cs": {
+      "name": "Přehrát",
+      "meaning": "Spustí přehrávání zvoleného média."
+    },
+    "en": {
+      "name": "Replay",
+      "meaning": "Starts playback of the selected media."
+    },
+    "de": {
+      "name": "Wiederholung",
+      "meaning": "Startet die Wiedergabe des ausgewählten Mediums."
+    }
+  },
+  "seat-leon-2021-06-media-previous-track": {
+    "cs": {
+      "name": "Předchozí titul",
+      "meaning": "Přejde na předchozí titul."
+    },
+    "en": {
+      "name": "Previous track",
+      "meaning": "Goes to the previous track."
+    },
+    "de": {
+      "name": "Vorheriger Titel",
+      "meaning": "Geht zum vorherigen Titel."
+    }
+  },
+  "seat-leon-2021-06-media-repeat-all": {
+    "cs": {
+      "name": "Opakovat všechny tituly",
+      "meaning": "Opakuje všechny tituly aktuálního výběru."
+    },
+    "en": {
+      "name": "Repeat all tracks",
+      "meaning": "Repeats all tracks of the current selection."
+    },
+    "de": {
+      "name": "Wiederholen Sie alle Titel",
+      "meaning": "Wiederholt alle Titel der aktuellen Auswahl."
+    }
+  },
+  "seat-leon-2021-06-media-repeat-track": {
+    "cs": {
+      "name": "Opakovat aktuální titul",
+      "meaning": "Opakuje právě přehrávaný titul."
+    },
+    "en": {
+      "name": "Repeat current track",
+      "meaning": "Repeats the currently playing track."
+    },
+    "de": {
+      "name": "Aktuellen Titel wiederholen",
+      "meaning": "Wiederholt den aktuell wiedergegebenen Titel."
+    }
+  },
+  "seat-leon-2021-06-media-root-folder": {
+    "cs": {
+      "name": "Nejvyšší složka zdroje médií",
+      "meaning": "Vrátí se do nejvyšší složky zdroje médií."
+    },
+    "en": {
+      "name": "The topmost folder of a media source",
+      "meaning": "It will return to the top folder of the media source."
+    },
+    "de": {
+      "name": "Der oberste Ordner einer Medienquelle",
+      "meaning": "Es kehrt zum obersten Ordner der Medienquelle zurück."
+    }
+  },
+  "seat-leon-2021-06-media-search": {
+    "cs": {
+      "name": "Vyhledávání",
+      "meaning": "Otevře vyhledávání médií."
+    },
+    "en": {
+      "name": "Searching",
+      "meaning": "Opens the media search."
+    },
+    "de": {
+      "name": "Suchen",
+      "meaning": "Öffnet die Mediensuche."
+    }
+  },
+  "seat-leon-2021-06-media-select-source": {
+    "cs": {
+      "name": "Vybrat zdroj",
+      "meaning": "Vpravo nahoře otevře výběr zdroje médií."
+    },
+    "en": {
+      "name": "Select source",
+      "meaning": "At the top right, it will open the media source selection."
+    },
+    "de": {
+      "name": "Quelle auswählen",
+      "meaning": "Oben rechts öffnet sich die Medienquellenauswahl."
+    }
+  },
+  "seat-leon-2021-06-media-settings": {
+    "cs": {
+      "name": "Nastavení",
+      "meaning": "Otevře nastavení režimu médií."
+    },
+    "en": {
+      "name": "Settings",
+      "meaning": "Opens media mode settings."
+    },
+    "de": {
+      "name": "Einstellungen",
+      "meaning": "Öffnet die Einstellungen für den Medienmodus."
+    }
+  },
+  "seat-leon-2021-06-media-shuffle": {
+    "cs": {
+      "name": "Náhodné pořadí",
+      "meaning": "Zapne přehrávání v náhodném pořadí."
+    },
+    "en": {
+      "name": "Random order",
+      "meaning": "Turns on random playback."
+    },
+    "de": {
+      "name": "Zufällige Reihenfolge",
+      "meaning": "Schaltet die Zufallswiedergabe ein."
+    }
+  },
+  "seat-leon-2021-06-navigace-centre-map": {
+    "cs": {
+      "name": "Vystředit mapu",
+      "meaning": "Vystředí navigační mapu na aktuální polohu vozidla."
+    },
+    "en": {
+      "name": "Center the map",
+      "meaning": "Centers the navigation map on the current vehicle position."
+    },
+    "de": {
+      "name": "Zentrieren Sie die Karte",
+      "meaning": "Zentriert die Navigationskarte auf die aktuelle Fahrzeugposition."
+    }
+  },
+  "seat-leon-2021-06-navigace-change-map-view": {
+    "cs": {
+      "name": "Změnit zobrazení mapy",
+      "meaning": "Přepíná mezi zobrazením 2D se severem nahoře, 2D ve směru jízdy a 3D ve směru jízdy."
+    },
+    "en": {
+      "name": "Change map view",
+      "meaning": "Toggles between 2D with North Up, 2D in the direction of travel, and 3D in the direction of travel."
+    },
+    "de": {
+      "name": "Kartenansicht ändern",
+      "meaning": "Schaltet zwischen 2D mit Norden oben, 2D in Fahrtrichtung und 3D in Fahrtrichtung um."
+    }
+  },
+  "seat-leon-2021-06-navigace-current-position-map": {
+    "cs": {
+      "name": "Aktuální poloha na mapě",
+      "meaning": "Označuje aktuální polohu vozidla na navigační mapě."
+    },
+    "en": {
+      "name": "Current location on the map",
+      "meaning": "Indicates the current position of the vehicle on the navigation map."
+    },
+    "de": {
+      "name": "Aktueller Standort auf der Karte",
+      "meaning": "Zeigt die aktuelle Position des Fahrzeugs auf der Navigationskarte an."
+    }
+  },
+  "seat-leon-2021-06-navigace-destinations-along-route": {
+    "cs": {
+      "name": "Cíle podél trasy",
+      "meaning": "Označuje cíle podél navigační trasy."
+    },
+    "en": {
+      "name": "Destinations along the route",
+      "meaning": "Marks destinations along the navigation route."
+    },
+    "de": {
+      "name": "Ziele entlang der Route",
+      "meaning": "Markiert Ziele entlang der Navigationsroute."
+    }
+  },
+  "seat-leon-2021-06-navigace-favourite-destinations": {
+    "cs": {
+      "name": "Oblíbené cíle",
+      "meaning": "Označuje oblíbené navigační cíle."
+    },
+    "en": {
+      "name": "Favorite destinations",
+      "meaning": "Indicates favorite navigation destinations."
+    },
+    "de": {
+      "name": "Lieblingsziele",
+      "meaning": "Zeigt bevorzugte Navigationsziele an."
+    }
+  },
+  "seat-leon-2021-06-navigace-final-destination": {
+    "cs": {
+      "name": "Konečný cíl",
+      "meaning": "Označuje konečný cíl navigační trasy."
+    },
+    "en": {
+      "name": "The ultimate goal",
+      "meaning": "Indicates the final destination of the navigation route."
+    },
+    "de": {
+      "name": "Das ultimative Ziel",
+      "meaning": "Zeigt das endgültige Ziel der Navigationsroute an."
+    }
+  },
+  "seat-leon-2021-06-navigace-home-address": {
+    "cs": {
+      "name": "Domovská adresa",
+      "meaning": "Označuje uloženou domovskou adresu."
+    },
+    "en": {
+      "name": "Home address",
+      "meaning": "Indicates the stored home address."
+    },
+    "de": {
+      "name": "Heimatadresse",
+      "meaning": "Zeigt die gespeicherte Heimatadresse an."
+    }
+  },
+  "seat-leon-2021-06-navigace-repeat-navigation-announcement": {
+    "cs": {
+      "name": "Zopakovat navigační pokyn",
+      "meaning": "Zopakuje poslední hlasový navigační pokyn."
+    },
+    "en": {
+      "name": "Repeat the navigation instruction",
+      "meaning": "Repeats the last voice navigation command."
+    },
+    "de": {
+      "name": "Wiederholen Sie die Navigationsanweisung",
+      "meaning": "Wiederholt den letzten Sprachnavigationsbefehl."
+    }
+  },
+  "seat-leon-2021-06-navigace-search-destinations-map": {
+    "cs": {
+      "name": "Vyhledat cíl na mapě",
+      "meaning": "Otevře vyhledávání navigačních cílů z mapového zobrazení."
+    },
+    "en": {
+      "name": "Find the destination on the map",
+      "meaning": "Opens the search for navigation destinations from the map view."
+    },
+    "de": {
+      "name": "Finden Sie das Ziel auf der Karte",
+      "meaning": "Öffnet die Suche nach Navigationszielen aus der Kartenansicht."
+    }
+  },
+  "seat-leon-2021-06-navigace-work-address": {
+    "cs": {
+      "name": "Pracovní adresa",
+      "meaning": "Označuje uloženou pracovní adresu."
+    },
+    "en": {
+      "name": "Work address",
+      "meaning": "Indicates the stored work address."
+    },
+    "de": {
+      "name": "Arbeitsadresse",
+      "meaning": "Gibt die gespeicherte Arbeitsadresse an."
+    }
+  },
+  "seat-leon-2021-06-radio-dab-slideshow": {
+    "cs": {
+      "name": "DAB Slideshow",
+      "meaning": "Označuje stanici DAB, která podporuje doprovodnou obrazovou prezentaci."
+    },
+    "en": {
+      "name": "DAB Slideshow",
+      "meaning": "Indicates a DAB station that supports accompanying picture presentation."
+    },
+    "de": {
+      "name": "DAB-Diashow",
+      "meaning": "Zeigt einen DAB-Sender an, der die begleitende Bilddarstellung unterstützt."
+    }
+  },
+  "seat-leon-2021-06-radio-dab-unavailable": {
+    "cs": {
+      "name": "DAB není dostupné",
+      "meaning": "Označuje, že digitální příjem DAB není dostupný."
+    },
+    "en": {
+      "name": "DAB is not available",
+      "meaning": "Indicates that DAB digital reception is not available."
+    },
+    "de": {
+      "name": "DAB ist nicht verfügbar",
+      "meaning": "Zeigt an, dass kein DAB-Digitalempfang verfügbar ist."
+    }
+  },
+  "seat-leon-2021-06-radio-manual-tuning": {
+    "cs": {
+      "name": "Ruční ladění rádia",
+      "meaning": "Otevře stupnici pro ruční volbu frekvence. U FM je podle návodu tato volba dostupná při vypnutém souhrnném seznamu stanic; u AM otevírá stupnici AM."
+    },
+    "en": {
+      "name": "Manual radio tuning",
+      "meaning": "Opens the scale for manual frequency selection. For FM, according to the instructions, this option is available when the summary list of stations is turned off; for AM opens the AM scale."
+    },
+    "de": {
+      "name": "Manuelle Radioabstimmung",
+      "meaning": "Öffnet die Skala zur manuellen Frequenzauswahl. Für UKW ist diese Option laut Anleitung verfügbar, wenn die zusammenfassende Senderliste ausgeschaltet ist; für AM öffnet die AM-Skala."
+    }
+  },
+  "seat-leon-2021-06-radio-online-podcasts": {
+    "cs": {
+      "name": "Internetové podcasty",
+      "meaning": "Zobrazí dostupné internetové podcasty."
+    },
+    "en": {
+      "name": "Internet podcasts",
+      "meaning": "Displays available internet podcasts."
+    },
+    "de": {
+      "name": "Internet-Podcasts",
+      "meaning": "Zeigt verfügbare Internet-Podcasts an."
+    }
+  },
+  "seat-leon-2021-06-radio-online-recent-stations": {
+    "cs": {
+      "name": "Poslední internetové stanice",
+      "meaning": "Zobrazí naposledy poslouchané internetové rozhlasové stanice."
+    },
+    "en": {
+      "name": "Last internet station",
+      "meaning": "Displays the most recently listened Internet radio stations."
+    },
+    "de": {
+      "name": "Letzter Internetsender",
+      "meaning": "Zeigt die zuletzt gehörten Internetradiosender an."
+    }
+  },
+  "seat-leon-2021-06-radio-online-station-selection": {
+    "cs": {
+      "name": "Výběr internetové stanice",
+      "meaning": "Zobrazí výběr stanic v režimu internetového rádia."
+    },
+    "en": {
+      "name": "Internet station selection",
+      "meaning": "Displays a selection of stations in Internet Radio mode."
+    },
+    "de": {
+      "name": "Auswahl des Internetsenders",
+      "meaning": "Zeigt eine Auswahl von Sendern im Internetradio-Modus an."
+    }
+  },
+  "seat-leon-2021-06-radio-online-stations-country": {
+    "cs": {
+      "name": "Internetové stanice podle země",
+      "meaning": "Zobrazí internetové rozhlasové stanice uspořádané podle země."
+    },
+    "en": {
+      "name": "Internet stations by country",
+      "meaning": "Displays internet radio stations organized by country."
+    },
+    "de": {
+      "name": "Internetsender nach Ländern",
+      "meaning": "Zeigt nach Ländern sortierte Internetradiosender an."
+    }
+  },
+  "seat-leon-2021-06-radio-online-stations-genre": {
+    "cs": {
+      "name": "Internetové stanice podle žánru",
+      "meaning": "Zobrazí internetové rozhlasové stanice podle požadovaného hudebního žánru."
+    },
+    "en": {
+      "name": "Internet stations by genre",
+      "meaning": "Displays Internet radio stations according to the desired music genre."
+    },
+    "de": {
+      "name": "Internetsender nach Genre",
+      "meaning": "Zeigt Internetradiosender entsprechend dem gewünschten Musikgenre an."
+    }
+  },
+  "seat-leon-2021-06-radio-online-stations-language": {
+    "cs": {
+      "name": "Internetové stanice podle jazyka",
+      "meaning": "Zobrazí internetové rozhlasové stanice podle zvoleného jazyka."
+    },
+    "en": {
+      "name": "Internet stations by language",
+      "meaning": "Displays Internet radio stations according to the selected language."
+    },
+    "de": {
+      "name": "Internetsender nach Sprache",
+      "meaning": "Zeigt Internetradiosender entsprechend der ausgewählten Sprache an."
+    }
+  },
+  "seat-leon-2021-06-radio-refresh-am-list": {
+    "cs": {
+      "name": "Aktualizovat seznam AM",
+      "meaning": "Ručně aktualizuje seznam stanic v pásmu AM."
+    },
+    "en": {
+      "name": "Update the AM list",
+      "meaning": "Manually updates the AM station list."
+    },
+    "de": {
+      "name": "Aktualisieren Sie die AM-Liste",
+      "meaning": "Aktualisiert die AM-Senderliste manuell."
+    }
+  },
+  "seat-leon-2021-06-telefon-call-list": {
+    "cs": {
+      "name": "Seznam hovorů",
+      "meaning": "Otevře seznam příchozích a odchozích hovorů."
+    },
+    "en": {
+      "name": "Call list",
+      "meaning": "Opens a list of incoming and outgoing calls."
+    },
+    "de": {
+      "name": "Anrufliste",
+      "meaning": "Öffnet eine Liste der eingehenden und ausgehenden Anrufe."
+    }
+  },
+  "seat-leon-2021-06-telefon-conference-call": {
+    "cs": {
+      "name": "Konferenční hovor",
+      "meaning": "Zahájí konferenční hovor, pokud jej připojené zařízení a služba podporují."
+    },
+    "en": {
+      "name": "Conference call",
+      "meaning": "Starts a conference call if supported by the connected device and service."
+    },
+    "de": {
+      "name": "Telefonkonferenz",
+      "meaning": "Startet eine Telefonkonferenz, sofern dies vom verbundenen Gerät und Dienst unterstützt wird."
+    }
+  },
+  "seat-leon-2021-06-telefon-contacts": {
+    "cs": {
+      "name": "Kontakty",
+      "meaning": "Otevře kontakty v hlavní nabídce telefonu."
+    },
+    "en": {
+      "name": "Contacts",
+      "meaning": "Opens contacts in the phone's main menu."
+    },
+    "de": {
+      "name": "Kontakte",
+      "meaning": "Öffnet Kontakte im Hauptmenü des Telefons."
+    }
+  },
+  "seat-leon-2021-06-telefon-dial-number": {
+    "cs": {
+      "name": "Zadat telefonní číslo",
+      "meaning": "Otevře zadávání telefonního čísla."
+    },
+    "en": {
+      "name": "Enter a phone number",
+      "meaning": "Opens phone number entry."
+    },
+    "de": {
+      "name": "Geben Sie eine Telefonnummer ein",
+      "meaning": "Öffnet die Telefonnummerneingabe."
+    }
+  },
+  "seat-leon-2021-06-telefon-end-reject-call": {
+    "cs": {
+      "name": "Ukončit nebo odmítnout hovor",
+      "meaning": "Ukončí probíhající hovor nebo odmítne příchozí hovor."
+    },
+    "en": {
+      "name": "End or reject the call",
+      "meaning": "Ends an ongoing call or rejects an incoming call."
+    },
+    "de": {
+      "name": "Beenden Sie den Anruf oder lehnen Sie ihn ab",
+      "meaning": "Beendet einen laufenden Anruf oder lehnt einen eingehenden Anruf ab."
+    }
+  },
+  "seat-leon-2021-06-telefon-hold-call": {
+    "cs": {
+      "name": "Podržet hovor",
+      "meaning": "Podrží aktuální telefonní hovor."
+    },
+    "en": {
+      "name": "Hold the call",
+      "meaning": "Puts the current phone call on hold."
+    },
+    "de": {
+      "name": "Halten Sie den Anruf",
+      "meaning": "Setzt den aktuellen Anruf in die Warteschleife."
+    }
+  },
+  "seat-leon-2021-06-telefon-messages": {
+    "cs": {
+      "name": "Zprávy",
+      "meaning": "Otevře textové zprávy, tedy SMS a e-maily, podle podporovaných funkcí připojeného telefonu a infotainmentu."
+    },
+    "en": {
+      "name": "Messages",
+      "meaning": "It opens text messages, i.e. SMS and e-mails, according to the supported functions of the connected phone and infotainment."
+    },
+    "de": {
+      "name": "Nachrichten",
+      "meaning": "Es öffnet Textnachrichten, also SMS und E-Mails, entsprechend den unterstützten Funktionen des angeschlossenen Telefons und Infotainments."
+    }
+  },
+  "seat-leon-2021-06-telefon-mute-hands-free": {
+    "cs": {
+      "name": "Ztlumení handsfree při hovoru",
+      "meaning": "Ztlumí handsfree během telefonního hovoru."
+    },
+    "en": {
+      "name": "Mute the handsfree during a call",
+      "meaning": "Mutes the handsfree during a phone call."
+    },
+    "de": {
+      "name": "Schalten Sie die Freisprecheinrichtung während eines Anrufs stumm",
+      "meaning": "Schaltet die Freisprecheinrichtung während eines Telefongesprächs stumm."
+    }
+  },
+  "seat-leon-2021-06-telefon-private-mode": {
+    "cs": {
+      "name": "Soukromý režim hovoru",
+      "meaning": "Přepne telefonní hovor do soukromého režimu."
+    },
+    "en": {
+      "name": "Private call mode",
+      "meaning": "Switches the phone call to private mode."
+    },
+    "de": {
+      "name": "Privatanrufmodus",
+      "meaning": "Schaltet den Telefonanruf in den privaten Modus."
+    }
+  },
+  "seat-leon-2021-06-telefon-start-call": {
+    "cs": {
+      "name": "Zahájit hovor",
+      "meaning": "Zahájí telefonní hovor nebo přenese probíhající hovor do popředí."
+    },
+    "en": {
+      "name": "Start a call",
+      "meaning": "Starts a phone call or brings an ongoing call to the foreground."
+    },
+    "de": {
+      "name": "Starten Sie einen Anruf",
+      "meaning": "Startet einen Telefonanruf oder bringt einen laufenden Anruf in den Vordergrund."
+    }
+  },
+  "vwn-caddy-app-connect-android-auto": {
+    "cs": {
+      "name": "Android Auto",
+      "meaning": "Zvolí technologii Android Auto."
+    },
+    "en": {
+      "name": "Android Auto",
+      "meaning": "Selects Android Auto technology."
+    },
+    "de": {
+      "name": "Android Auto",
+      "meaning": "Wählt die Android Auto-Technologie aus."
+    }
+  },
+  "vwn-caddy-app-connect-apple-carplay": {
+    "cs": {
+      "name": "Apple CarPlay",
+      "meaning": "Zvolí technologii Apple CarPlay."
+    },
+    "en": {
+      "name": "Apple CarPlay",
+      "meaning": "Selects Apple CarPlay technology."
+    },
+    "de": {
+      "name": "Apple CarPlay",
+      "meaning": "Wählt die Apple CarPlay-Technologie aus."
+    }
+  },
+  "vwn-caddy-media-add-favourite": {
+    "cs": {
+      "name": "Přidat do oblíbených",
+      "meaning": "Přidá mediální soubor mezi oblíbené."
+    },
+    "en": {
+      "name": "Add to favorites",
+      "meaning": "Adds a media file to favorites."
+    },
+    "de": {
+      "name": "Zu Favoriten hinzufügen",
+      "meaning": "Fügt eine Mediendatei zu den Favoriten hinzu."
+    }
+  },
+  "vwn-caddy-media-albums": {
+    "cs": {
+      "name": "Alba",
+      "meaning": "Označuje kategorii hudebních alb."
+    },
+    "en": {
+      "name": "Albums",
+      "meaning": "Indicates the category of music albums."
+    },
+    "de": {
+      "name": "Alben",
+      "meaning": "Gibt die Kategorie der Musikalben an."
+    }
+  },
+  "vwn-caddy-media-artists": {
+    "cs": {
+      "name": "Interpreti",
+      "meaning": "Označuje kategorii interpretů."
+    },
+    "en": {
+      "name": "Interpreters",
+      "meaning": "Indicates the performer category."
+    },
+    "de": {
+      "name": "Dolmetscher",
+      "meaning": "Gibt die Darstellerkategorie an."
+    }
+  },
+  "vwn-caddy-media-audiobooks": {
+    "cs": {
+      "name": "Audioknihy",
+      "meaning": "Označuje kategorii audioknih."
+    },
+    "en": {
+      "name": "Audiobooks",
+      "meaning": "Indicates the audiobook category."
+    },
+    "de": {
+      "name": "Hörbücher",
+      "meaning": "Gibt die Hörbuchkategorie an."
+    }
+  },
+  "vwn-caddy-media-bluetooth-media": {
+    "cs": {
+      "name": "Média přes Bluetooth",
+      "meaning": "Zvolí zařízení připojené přes Bluetooth jako zdroj médií; umožňuje také vybrat a připojit dosud nepřipojené zařízení."
+    },
+    "en": {
+      "name": "Media via Bluetooth",
+      "meaning": "Selects a device connected via Bluetooth as a media source; it also allows you to select and connect a previously unconnected device."
+    },
+    "de": {
+      "name": "Medien über Bluetooth",
+      "meaning": "Wählt ein über Bluetooth verbundenes Gerät als Medienquelle aus; Außerdem können Sie damit ein zuvor nicht verbundenes Gerät auswählen und verbinden."
+    }
+  },
+  "vwn-caddy-media-compilations": {
+    "cs": {
+      "name": "Kompilace",
+      "meaning": "Označuje kategorii kompilací."
+    },
+    "en": {
+      "name": "Compilation",
+      "meaning": "Indicates the compilation category."
+    },
+    "de": {
+      "name": "Zusammenstellung",
+      "meaning": "Gibt die Kompilierungskategorie an."
+    }
+  },
+  "vwn-caddy-media-current-playback": {
+    "cs": {
+      "name": "Aktuální přehrávání",
+      "meaning": "Otevře obrazovku aktuálního přehrávání."
+    },
+    "en": {
+      "name": "Current playback",
+      "meaning": "Opens the current playback screen."
+    },
+    "de": {
+      "name": "Aktuelle Wiedergabe",
+      "meaning": "Öffnet den aktuellen Wiedergabebildschirm."
+    }
+  },
+  "vwn-caddy-media-favourites": {
+    "cs": {
+      "name": "Oblíbené",
+      "meaning": "Otevře seznam oblíbených položek."
+    },
+    "en": {
+      "name": "Favorites",
+      "meaning": "Opens the favorites list."
+    },
+    "de": {
+      "name": "Favoriten",
+      "meaning": "Öffnet die Favoritenliste."
+    }
+  },
+  "vwn-caddy-media-genres": {
+    "cs": {
+      "name": "Žánry",
+      "meaning": "Označuje kategorii hudebních žánrů."
+    },
+    "en": {
+      "name": "Genres",
+      "meaning": "Indicates a category of music genres."
+    },
+    "de": {
+      "name": "Genres",
+      "meaning": "Gibt eine Kategorie von Musikgenres an."
+    }
+  },
+  "vwn-caddy-media-media-source": {
+    "cs": {
+      "name": "Výběr zdroje médií",
+      "meaning": "Umožňuje zvolit zdroj médií; v popsaném rozhraní je tento ovladač vpravo nahoře."
+    },
+    "en": {
+      "name": "Selecting a media source",
+      "meaning": "Allows you to choose a media source; in the described interface, this controller is at the top right."
+    },
+    "de": {
+      "name": "Auswählen einer Medienquelle",
+      "meaning": "Ermöglicht Ihnen die Auswahl einer Medienquelle; In der beschriebenen Oberfläche befindet sich dieser Controller oben rechts."
+    }
+  },
+  "vwn-caddy-media-minimize-playback": {
+    "cs": {
+      "name": "Zmenšit přehrávání",
+      "meaning": "Zmenší zobrazení přehrávání."
+    },
+    "en": {
+      "name": "Minimize playback",
+      "meaning": "Minimizes the playback view."
+    },
+    "de": {
+      "name": "Wiedergabe minimieren",
+      "meaning": "Minimiert die Wiedergabeansicht."
+    }
+  },
+  "vwn-caddy-media-music": {
+    "cs": {
+      "name": "Hudební skladby",
+      "meaning": "Označuje kategorii hudebních skladeb."
+    },
+    "en": {
+      "name": "Musical compositions",
+      "meaning": "Indicates the category of music tracks."
+    },
+    "de": {
+      "name": "Musikalische Kompositionen",
+      "meaning": "Gibt die Kategorie der Musiktitel an."
+    }
+  },
+  "vwn-caddy-media-my-media": {
+    "cs": {
+      "name": "Moje média",
+      "meaning": "Zvolí společnou databázi médií. Zde lze vybrat také připojená USB zařízení a jejich složky."
+    },
+    "en": {
+      "name": "My media",
+      "meaning": "Selects a common media database. Here you can also select connected USB devices and their folders."
+    },
+    "de": {
+      "name": "Meine Medien",
+      "meaning": "Wählt eine gemeinsame Mediendatenbank aus. Hier können Sie auch angeschlossene USB-Geräte und deren Ordner auswählen."
+    }
+  },
+  "vwn-caddy-media-next-track": {
+    "cs": {
+      "name": "Následující skladba",
+      "meaning": "Přejde na následující skladbu."
+    },
+    "en": {
+      "name": "Next track",
+      "meaning": "Skips to the next track."
+    },
+    "de": {
+      "name": "Nächster Titel",
+      "meaning": "Springt zum nächsten Titel."
+    }
+  },
+  "vwn-caddy-media-pause": {
+    "cs": {
+      "name": "Pozastavit přehrávání",
+      "meaning": "Pozastaví přehrávání."
+    },
+    "en": {
+      "name": "Pause playback",
+      "meaning": "Pauses playback."
+    },
+    "de": {
+      "name": "Wiedergabe anhalten",
+      "meaning": "Pausiert die Wiedergabe."
+    }
+  },
+  "vwn-caddy-media-play": {
+    "cs": {
+      "name": "Přehrát",
+      "meaning": "Spustí přehrávání."
+    },
+    "en": {
+      "name": "Replay",
+      "meaning": "Starts playback."
+    },
+    "de": {
+      "name": "Wiederholung",
+      "meaning": "Startet die Wiedergabe."
+    }
+  },
+  "vwn-caddy-media-playlists": {
+    "cs": {
+      "name": "Playlisty",
+      "meaning": "Označuje seznamy skladeb."
+    },
+    "en": {
+      "name": "Playlists",
+      "meaning": "Indicates playlists."
+    },
+    "de": {
+      "name": "Wiedergabelisten",
+      "meaning": "Zeigt Wiedergabelisten an."
+    }
+  },
+  "vwn-caddy-media-podcasts": {
+    "cs": {
+      "name": "Podcasty",
+      "meaning": "Označuje kategorii podcastů."
+    },
+    "en": {
+      "name": "Podcasts",
+      "meaning": "Indicates the podcast category."
+    },
+    "de": {
+      "name": "Podcasts",
+      "meaning": "Gibt die Podcast-Kategorie an."
+    }
+  },
+  "vwn-caddy-media-previous-track": {
+    "cs": {
+      "name": "Předchozí skladba",
+      "meaning": "Přejde na předchozí skladbu."
+    },
+    "en": {
+      "name": "Previous track",
+      "meaning": "Skips to the previous track."
+    },
+    "de": {
+      "name": "Vorheriger Titel",
+      "meaning": "Springt zum vorherigen Titel."
+    }
+  },
+  "vwn-caddy-media-repeat-all": {
+    "cs": {
+      "name": "Opakovat všechny skladby",
+      "meaning": "Opakuje všechny skladby."
+    },
+    "en": {
+      "name": "Repeat all tracks",
+      "meaning": "Repeats all tracks."
+    },
+    "de": {
+      "name": "Wiederholen Sie alle Titel",
+      "meaning": "Wiederholt alle Titel."
+    }
+  },
+  "vwn-caddy-media-repeat-track": {
+    "cs": {
+      "name": "Opakovat aktuální skladbu",
+      "meaning": "Opakuje právě přehrávanou skladbu."
+    },
+    "en": {
+      "name": "Repeat current track",
+      "meaning": "Repeats the currently playing track."
+    },
+    "de": {
+      "name": "Aktuellen Titel wiederholen",
+      "meaning": "Wiederholt den aktuell wiedergegebenen Titel."
+    }
+  },
+  "vwn-caddy-media-root-folder": {
+    "cs": {
+      "name": "Nejvyšší složka zdroje médií",
+      "meaning": "Vrátí se do nejvyšší složky zdroje médií."
+    },
+    "en": {
+      "name": "The topmost folder of a media source",
+      "meaning": "It will return to the top folder of the media source."
+    },
+    "de": {
+      "name": "Der oberste Ordner einer Medienquelle",
+      "meaning": "Es kehrt zum obersten Ordner der Medienquelle zurück."
+    }
+  },
+  "vwn-caddy-media-search": {
+    "cs": {
+      "name": "Vyhledávání",
+      "meaning": "Otevře vyhledávání."
+    },
+    "en": {
+      "name": "Searching",
+      "meaning": "Opens the search."
+    },
+    "de": {
+      "name": "Suchen",
+      "meaning": "Öffnet die Suche."
+    }
+  },
+  "vwn-caddy-media-settings": {
+    "cs": {
+      "name": "Nastavení",
+      "meaning": "Otevře nastavení."
+    },
+    "en": {
+      "name": "Settings",
+      "meaning": "Opens the settings."
+    },
+    "de": {
+      "name": "Einstellungen",
+      "meaning": "Öffnet die Einstellungen."
+    }
+  },
+  "vwn-caddy-media-shuffle": {
+    "cs": {
+      "name": "Náhodné pořadí",
+      "meaning": "Zapne přehrávání skladeb v náhodném pořadí."
+    },
+    "en": {
+      "name": "Random order",
+      "meaning": "Turns the songs on in random order."
+    },
+    "de": {
+      "name": "Zufällige Reihenfolge",
+      "meaning": "Schaltet die Songs in zufälliger Reihenfolge ein."
+    }
+  },
+  "vwn-caddy-media-usb-media": {
+    "cs": {
+      "name": "Média z USB",
+      "meaning": "Zvolí zařízení připojené k USB jako zdroj médií."
+    },
+    "en": {
+      "name": "Media from USB",
+      "meaning": "Selects the USB connected device as the media source."
+    },
+    "de": {
+      "name": "Medien von USB",
+      "meaning": "Wählt das über USB angeschlossene Gerät als Medienquelle aus."
+    }
+  },
+  "vwn-caddy-media-video-fullscreen": {
+    "cs": {
+      "name": "Video na celou obrazovku",
+      "meaning": "Přepne video do režimu celé obrazovky."
+    },
+    "en": {
+      "name": "Full screen video",
+      "meaning": "Switches the video to full screen mode."
+    },
+    "de": {
+      "name": "Vollbildvideo",
+      "meaning": "Schaltet das Video in den Vollbildmodus."
+    }
+  },
+  "vwn-caddy-media-videos": {
+    "cs": {
+      "name": "Videa",
+      "meaning": "Označuje kategorii videí."
+    },
+    "en": {
+      "name": "Videos",
+      "meaning": "Indicates the video category."
+    },
+    "de": {
+      "name": "Videos",
+      "meaning": "Gibt die Videokategorie an."
+    }
+  },
+  "vwn-caddy-navigation-address-entry": {
+    "cs": {
+      "name": "Zadání nebo otevření adresy",
+      "meaning": "Při hledání cíle otevře podrobné zadání adresy; v seznamu kontaktů otevře adresu."
+    },
+    "en": {
+      "name": "Enter or open an address",
+      "meaning": "When searching for a destination, it opens the detailed address entry; opens the address in the contact list."
+    },
+    "de": {
+      "name": "Geben Sie eine Adresse ein oder öffnen Sie sie",
+      "meaning": "Bei der Suche nach einem Ziel öffnet sich der detaillierte Adresseintrag; öffnet die Adresse in der Kontaktliste."
+    }
+  },
+  "vwn-caddy-navigation-arrival-time": {
+    "cs": {
+      "name": "Odhadovaný čas příjezdu",
+      "meaning": "Zobrazuje odhadovaný čas příjezdu do cíle. Klepnutím lze přepnout na odhadovanou dobu do cíle."
+    },
+    "en": {
+      "name": "Estimated time of arrival",
+      "meaning": "Displays the estimated time of arrival at the destination. Tap to switch to estimated time to destination."
+    },
+    "de": {
+      "name": "Voraussichtliche Ankunftszeit",
+      "meaning": "Zeigt die voraussichtliche Ankunftszeit am Ziel an. Tippen Sie hier, um zur geschätzten Zeit bis zum Ziel zu wechseln."
+    }
+  },
+  "vwn-caddy-navigation-automatic-map": {
+    "cs": {
+      "name": "Automatický režim mapy",
+      "meaning": "Označuje plně automatický režim mapy: orientaci ve směru jízdy, polohu, přiblížení a náklon."
+    },
+    "en": {
+      "name": "Automatic map mode",
+      "meaning": "Indicates fully automatic map mode: orientation in the direction of travel, position, zoom and tilt."
+    },
+    "de": {
+      "name": "Automatischer Kartenmodus",
+      "meaning": "Zeigt den vollautomatischen Kartenmodus an: Ausrichtung in Fahrtrichtung, Position, Zoom und Neigung."
+    }
+  },
+  "vwn-caddy-navigation-close-route-plan": {
+    "cs": {
+      "name": "Zavřít plán trasy",
+      "meaning": "Zavře plán trasy."
+    },
+    "en": {
+      "name": "Close route plan",
+      "meaning": "Closes the route plan."
+    },
+    "de": {
+      "name": "Routenplan schließen",
+      "meaning": "Schließt den Routenplan."
+    }
+  },
+  "vwn-caddy-navigation-destination-search": {
+    "cs": {
+      "name": "Vyhledat cíl",
+      "meaning": "Umožňuje zadat a vyhledat cíl navigace."
+    },
+    "en": {
+      "name": "Search destination",
+      "meaning": "Allows you to enter and search for a navigation destination."
+    },
+    "de": {
+      "name": "Ziel suchen",
+      "meaning": "Ermöglicht die Eingabe und Suche eines Navigationsziels."
+    }
+  },
+  "vwn-caddy-navigation-distance-to-destination": {
+    "cs": {
+      "name": "Odhadovaná vzdálenost do cíle",
+      "meaning": "Zobrazuje odhadovanou vzdálenost do cíle trasy. Klepnutím lze přepnout na odhadovaný čas příjezdu nebo dobu zbývající do cíle."
+    },
+    "en": {
+      "name": "Estimated distance to destination",
+      "meaning": "Displays the estimated distance to the destination of the route. Tap to switch to estimated arrival time or time remaining to destination."
+    },
+    "de": {
+      "name": "Geschätzte Entfernung zum Ziel",
+      "meaning": "Zeigt die geschätzte Entfernung zum Ziel der Route an. Tippen Sie hier, um zur geschätzten Ankunftszeit oder der verbleibenden Zeit bis zum Ziel zu wechseln."
+    }
+  },
+  "vwn-caddy-navigation-home": {
+    "cs": {
+      "name": "Domov",
+      "meaning": "Označuje domácí adresu."
+    },
+    "en": {
+      "name": "Home",
+      "meaning": "Indicates the home address."
+    },
+    "de": {
+      "name": "Zuhause",
+      "meaning": "Gibt die Heimatadresse an."
+    }
+  },
+  "vwn-caddy-navigation-map": {
+    "cs": {
+      "name": "Navigační mapa",
+      "meaning": "Otevře navigační mapu."
+    },
+    "en": {
+      "name": "Navigation map",
+      "meaning": "Opens the navigation map."
+    },
+    "de": {
+      "name": "Navigationskarte",
+      "meaning": "Öffnet die Navigationskarte."
+    }
+  },
+  "vwn-caddy-navigation-map-orientation": {
+    "cs": {
+      "name": "Orientace mapy",
+      "meaning": "Umožňuje nastavit orientaci mapy."
+    },
+    "en": {
+      "name": "Map orientation",
+      "meaning": "Allows you to set the orientation of the map."
+    },
+    "de": {
+      "name": "Kartenausrichtung",
+      "meaning": "Ermöglicht Ihnen, die Ausrichtung der Karte festzulegen."
+    }
+  },
+  "vwn-caddy-navigation-map-scale": {
+    "cs": {
+      "name": "Měřítko mapy",
+      "meaning": "Označuje měřítko mapy."
+    },
+    "en": {
+      "name": "Map scale",
+      "meaning": "Indicates the scale of the map."
+    },
+    "de": {
+      "name": "Kartenmaßstab",
+      "meaning": "Gibt den Maßstab der Karte an."
+    }
+  },
+  "vwn-caddy-navigation-remaining-duration": {
+    "cs": {
+      "name": "Odhadovaná doba do cíle",
+      "meaning": "Zobrazuje odhadovanou dobu do cíle trasy. Klepnutím lze přepnout na odhadovaný čas příjezdu."
+    },
+    "en": {
+      "name": "Estimated time to destination",
+      "meaning": "Displays the estimated time to the destination of the route. Tap to switch to estimated arrival time."
+    },
+    "de": {
+      "name": "Geschätzte Zeit bis zum Ziel",
+      "meaning": "Zeigt die geschätzte Zeit bis zum Ziel der Route an. Tippen Sie hier, um zur voraussichtlichen Ankunftszeit zu wechseln."
+    }
+  },
+  "vwn-caddy-navigation-route-destination": {
+    "cs": {
+      "name": "Cíl aktuální trasy",
+      "meaning": "Označuje cíl právě probíhajícího navádění."
+    },
+    "en": {
+      "name": "The destination of the current route",
+      "meaning": "Indicates the destination of the current guidance."
+    },
+    "de": {
+      "name": "Das Ziel der aktuellen Route",
+      "meaning": "Zeigt das Ziel der aktuellen Zielführung an."
+    }
+  },
+  "vwn-caddy-navigation-route-information": {
+    "cs": {
+      "name": "Informace o trase",
+      "meaning": "V přehledu trasy otevře informace o trase."
+    },
+    "en": {
+      "name": "Route information",
+      "meaning": "Opens information about the route in the route overview."
+    },
+    "de": {
+      "name": "Routeninformationen",
+      "meaning": "Öffnet Informationen zur Route in der Routenübersicht."
+    }
+  },
+  "vwn-caddy-navigation-route-options": {
+    "cs": {
+      "name": "Možnosti trasy",
+      "meaning": "Při aktivním navádění zobrazí v přehledu trasy možnosti trasy."
+    },
+    "en": {
+      "name": "Route options",
+      "meaning": "When guidance is active, it displays route options in the route overview."
+    },
+    "de": {
+      "name": "Routenoptionen",
+      "meaning": "Wenn die Zielführung aktiv ist, werden Routenoptionen in der Routenübersicht angezeigt."
+    }
+  },
+  "vwn-caddy-navigation-route-overview": {
+    "cs": {
+      "name": "Přehled trasy a alternativy",
+      "meaning": "Při aktivním navádění zobrazí přehled trasy a alternativní trasy k aktuálnímu cíli."
+    },
+    "en": {
+      "name": "Route overview and alternatives",
+      "meaning": "During active guidance, it displays an overview of the route and alternative routes to the current destination."
+    },
+    "de": {
+      "name": "Routenübersicht und Alternativen",
+      "meaning": "Während der aktiven Zielführung wird eine Übersicht über die Route und Alternativrouten zum aktuellen Ziel angezeigt."
+    }
+  },
+  "vwn-caddy-navigation-saved-addresses": {
+    "cs": {
+      "name": "Uložené adresy a kontakty",
+      "meaning": "Otevře uložené adresy a případně také seznam kontaktů připojeného mobilního telefonu."
+    },
+    "en": {
+      "name": "Saved addresses and contacts",
+      "meaning": "Opens the saved addresses and possibly also the contact list of the connected mobile phone."
+    },
+    "de": {
+      "name": "Gespeicherte Adressen und Kontakte",
+      "meaning": "Öffnet die gespeicherten Adressen und ggf. auch die Kontaktliste des verbundenen Mobiltelefons."
+    }
+  },
+  "vwn-caddy-navigation-settings": {
+    "cs": {
+      "name": "Nastavení navigace",
+      "meaning": "Otevře nastavení navigace, například nastavení navigačních hlášení."
+    },
+    "en": {
+      "name": "Navigation settings",
+      "meaning": "Opens navigation settings, such as navigation notification settings."
+    },
+    "de": {
+      "name": "Navigationseinstellungen",
+      "meaning": "Öffnet Navigationseinstellungen, z. B. Navigationsbenachrichtigungseinstellungen."
+    }
+  },
+  "vwn-caddy-navigation-show-current-position": {
+    "cs": {
+      "name": "Zobrazit aktuální polohu",
+      "meaning": "Zobrazí aktuální polohu."
+    },
+    "en": {
+      "name": "Show current location",
+      "meaning": "Displays the current location."
+    },
+    "de": {
+      "name": "Aktuellen Standort anzeigen",
+      "meaning": "Zeigt den aktuellen Standort an."
+    }
+  },
+  "vwn-caddy-navigation-side-window-route-overview": {
+    "cs": {
+      "name": "Přehled trasy v doplňkovém okně",
+      "meaning": "V doplňkovém okně zobrazí přehled trasy. Nespouští přímo navádění: nejprve ukáže podrobnosti a alternativní trasy."
+    },
+    "en": {
+      "name": "Route overview in additional window",
+      "meaning": "An additional window displays the route overview. It doesn't start guidance directly: it shows details and alternative routes first."
+    },
+    "de": {
+      "name": "Routenübersicht im Zusatzfenster",
+      "meaning": "Ein zusätzliches Fenster zeigt die Routenübersicht an. Die Zielführung wird nicht direkt gestartet, sondern zunächst Details und Alternativrouten angezeigt."
+    }
+  },
+  "vwn-caddy-navigation-side-window-save-favourite": {
+    "cs": {
+      "name": "Uložit mezi oblíbené",
+      "meaning": "V doplňkovém okně uloží položku mezi oblíbené."
+    },
+    "en": {
+      "name": "Save to favorites",
+      "meaning": "Saves the item to favorites in the additional window."
+    },
+    "de": {
+      "name": "In den Favoriten speichern",
+      "meaning": "Speichert den Artikel in den Favoriten im Zusatzfenster."
+    }
+  },
+  "vwn-caddy-navigation-vehicle-position": {
+    "cs": {
+      "name": "Aktuální poloha vozidla",
+      "meaning": "Klepnutím vystředí mapu na vozidlo nebo zobrazí podrobnosti o poloze vozidla podle aktuálního zobrazení."
+    },
+    "en": {
+      "name": "Current vehicle location",
+      "meaning": "Click to center the map on the vehicle or display vehicle location details based on the current view."
+    },
+    "de": {
+      "name": "Aktueller Fahrzeugstandort",
+      "meaning": "Klicken Sie, um die Karte auf dem Fahrzeug zu zentrieren oder Fahrzeugstandortdetails basierend auf der aktuellen Ansicht anzuzeigen."
+    }
+  },
+  "vwn-caddy-navigation-work": {
+    "cs": {
+      "name": "Pracoviště",
+      "meaning": "Označuje pracoviště nebo firemní adresu."
+    },
+    "en": {
+      "name": "Workplace",
+      "meaning": "Indicates a workplace or business address."
+    },
+    "de": {
+      "name": "Arbeitsplatz",
+      "meaning": "Gibt einen Arbeitsplatz oder eine Geschäftsadresse an."
+    }
+  },
+  "vwn-caddy-phone-bluetooth-device": {
+    "cs": {
+      "name": "Zařízení Bluetooth",
+      "meaning": "Umožňuje vybrat zařízení připojené přes Bluetooth pro spárování."
+    },
+    "en": {
+      "name": "Bluetooth device",
+      "meaning": "Allows you to select a Bluetooth connected device for pairing."
+    },
+    "de": {
+      "name": "Bluetooth-Gerät",
+      "meaning": "Ermöglicht die Auswahl eines über Bluetooth verbundenen Geräts zum Koppeln."
+    }
+  },
+  "vwn-caddy-phone-call": {
+    "cs": {
+      "name": "Telefonní hovor",
+      "meaning": "Slouží k zahájení, ovládání nebo zobrazení hovoru podle aktuální obrazovky."
+    },
+    "en": {
+      "name": "A phone call",
+      "meaning": "Used to start, control or display a call according to the current screen."
+    },
+    "de": {
+      "name": "Ein Anruf",
+      "meaning": "Wird verwendet, um einen Anruf entsprechend dem aktuellen Bildschirm zu starten, zu steuern oder anzuzeigen."
+    }
+  },
+  "vwn-caddy-phone-call-lists": {
+    "cs": {
+      "name": "Seznamy hovorů a časté kontakty",
+      "meaning": "Otevře seznamy příchozích a odchozích hovorů a často používaných čísel či kontaktů. Podporuje-li to aktivně připojený telefon, zobrazí také jeho oblíbené a často používané kontakty."
+    },
+    "en": {
+      "name": "Call lists and frequent contacts",
+      "meaning": "Opens lists of incoming and outgoing calls and frequently used numbers or contacts. If the actively connected phone supports it, it will also display its favorite and frequently used contacts."
+    },
+    "de": {
+      "name": "Anruflisten und häufige Kontakte",
+      "meaning": "Öffnet Listen eingehender und ausgehender Anrufe sowie häufig verwendeter Nummern oder Kontakte. Wenn das aktiv verbundene Telefon dies unterstützt, werden auch seine bevorzugten und häufig verwendeten Kontakte angezeigt."
+    }
+  },
+  "vwn-caddy-phone-conference": {
+    "cs": {
+      "name": "Konferenční hovor",
+      "meaning": "Přidá účastníka do konference nebo spojí hovory a zahájí konferenci."
+    },
+    "en": {
+      "name": "Conference call",
+      "meaning": "Adds a participant to a conference or joins calls and starts a conference."
+    },
+    "de": {
+      "name": "Telefonkonferenz",
+      "meaning": "Fügt einen Teilnehmer zu einer Konferenz hinzu oder nimmt an Anrufen teil und startet eine Konferenz."
+    }
+  },
+  "vwn-caddy-phone-contacts": {
+    "cs": {
+      "name": "Kontakty",
+      "meaning": "Otevře seznam kontaktů připojeného mobilního telefonu."
+    },
+    "en": {
+      "name": "Contacts",
+      "meaning": "Opens the contact list of the connected mobile phone."
+    },
+    "de": {
+      "name": "Kontakte",
+      "meaning": "Öffnet die Kontaktliste des verbundenen Mobiltelefons."
+    }
+  },
+  "vwn-caddy-phone-dial-number": {
+    "cs": {
+      "name": "Vytočit telefonní číslo",
+      "meaning": "Umožňuje vytočit telefonní číslo."
+    },
+    "en": {
+      "name": "Dial a phone number",
+      "meaning": "Allows you to dial a phone number."
+    },
+    "de": {
+      "name": "Wählen Sie eine Telefonnummer",
+      "meaning": "Ermöglicht das Wählen einer Telefonnummer."
+    }
+  },
+  "vwn-caddy-phone-dictate-message": {
+    "cs": {
+      "name": "Nadiktovat textovou zprávu",
+      "meaning": "Umožňuje vytvořit textovou zprávu hlasem."
+    },
+    "en": {
+      "name": "Dictate a text message",
+      "meaning": "Allows you to create a text message by voice."
+    },
+    "de": {
+      "name": "Diktieren Sie eine Textnachricht",
+      "meaning": "Ermöglicht das Erstellen einer Textnachricht per Spracheingabe."
+    }
+  },
+  "vwn-caddy-phone-end-call": {
+    "cs": {
+      "name": "Ukončit nebo odmítnout hovor",
+      "meaning": "Ukončí probíhající hovor nebo odmítne příchozí hovor."
+    },
+    "en": {
+      "name": "End or reject the call",
+      "meaning": "Ends an ongoing call or rejects an incoming call."
+    },
+    "de": {
+      "name": "Beenden Sie den Anruf oder lehnen Sie ihn ab",
+      "meaning": "Beendet einen laufenden Anruf oder lehnt einen eingehenden Anruf ab."
+    }
+  },
+  "vwn-caddy-phone-hold-call": {
+    "cs": {
+      "name": "Přidržet hovor",
+      "meaning": "Přidrží probíhající hovor."
+    },
+    "en": {
+      "name": "Put the call on hold",
+      "meaning": "Puts an ongoing call on hold."
+    },
+    "de": {
+      "name": "Halten Sie den Anruf",
+      "meaning": "Setzt einen laufenden Anruf in die Warteschleife."
+    }
+  },
+  "vwn-caddy-phone-incoming-call": {
+    "cs": {
+      "name": "Příchozí hovor",
+      "meaning": "V seznamu hovorů označuje příchozí hovor."
+    },
+    "en": {
+      "name": "Incoming call",
+      "meaning": "Indicates an incoming call in the call list."
+    },
+    "de": {
+      "name": "Eingehender Anruf",
+      "meaning": "Zeigt einen eingehenden Anruf in der Anrufliste an."
+    }
+  },
+  "vwn-caddy-phone-messages": {
+    "cs": {
+      "name": "Zprávy",
+      "meaning": "Otevře textové zprávy SMS a v podporovaných zemích také e-mail."
+    },
+    "en": {
+      "name": "Messages",
+      "meaning": "Opens SMS text messages and in supported countries also email."
+    },
+    "de": {
+      "name": "Nachrichten",
+      "meaning": "Öffnet SMS-Textnachrichten und in unterstützten Ländern auch E-Mail."
+    }
+  },
+  "vwn-caddy-phone-missed-call": {
+    "cs": {
+      "name": "Zmeškaný hovor",
+      "meaning": "V seznamu hovorů označuje nepřijatý hovor."
+    },
+    "en": {
+      "name": "Missed call",
+      "meaning": "Indicates a missed call in the call list."
+    },
+    "de": {
+      "name": "Anruf verpasst",
+      "meaning": "Zeigt einen verpassten Anruf in der Anrufliste an."
+    }
+  },
+  "vwn-caddy-phone-mute-handsfree": {
+    "cs": {
+      "name": "Ztlumit handsfree",
+      "meaning": "Ztlumí handsfree. Přesný účinek posuzujte podle aktuální obrazovky hovoru."
+    },
+    "en": {
+      "name": "Mute handsfree",
+      "meaning": "Mutes the handsfree. Judge the exact effect by the current call screen."
+    },
+    "de": {
+      "name": "Freisprecheinrichtung stumm schalten",
+      "meaning": "Schaltet die Freisprecheinrichtung stumm. Beurteilen Sie den genauen Effekt anhand des aktuellen Anrufbildschirms."
+    }
+  },
+  "vwn-caddy-phone-outgoing-call": {
+    "cs": {
+      "name": "Odchozí hovor",
+      "meaning": "V seznamu hovorů označuje odchozí hovor."
+    },
+    "en": {
+      "name": "Outgoing call",
+      "meaning": "Indicates an outgoing call in the call list."
+    },
+    "de": {
+      "name": "Ausgehender Anruf",
+      "meaning": "Zeigt einen ausgehenden Anruf in der Anrufliste an."
+    }
+  },
+  "vwn-caddy-phone-received-message": {
+    "cs": {
+      "name": "Přijatá textová zpráva",
+      "meaning": "Označuje přijatou textovou zprávu."
+    },
+    "en": {
+      "name": "Text message received",
+      "meaning": "Indicates a received text message."
+    },
+    "de": {
+      "name": "SMS erhalten",
+      "meaning": "Zeigt eine empfangene Textnachricht an."
+    }
+  },
+  "vwn-caddy-phone-reject-call-with-sms": {
+    "cs": {
+      "name": "Odmítnout hovor zprávou",
+      "meaning": "Odmítne hovor pomocí šablony SMS."
+    },
+    "en": {
+      "name": "Reject a call with a message",
+      "meaning": "Rejects the call using the SMS template."
+    },
+    "de": {
+      "name": "Einen Anruf mit einer Nachricht ablehnen",
+      "meaning": "Lehnt den Anruf mithilfe der SMS-Vorlage ab."
+    }
+  },
+  "vwn-caddy-phone-select-active-phone": {
+    "cs": {
+      "name": "Vybrat aktivní telefon",
+      "meaning": "Ze dvou nebo více připojených mobilních telefonů umožní vybrat aktivní zařízení."
+    },
+    "en": {
+      "name": "Select an active phone",
+      "meaning": "It allows you to select the active device from two or more connected mobile phones."
+    },
+    "de": {
+      "name": "Wählen Sie ein aktives Telefon aus",
+      "meaning": "Damit können Sie das aktive Gerät aus zwei oder mehr verbundenen Mobiltelefonen auswählen."
+    }
+  },
+  "vwn-caddy-phone-sent-message": {
+    "cs": {
+      "name": "Odeslaná textová zpráva",
+      "meaning": "Označuje odeslanou textovou zprávu."
+    },
+    "en": {
+      "name": "Text message sent",
+      "meaning": "Indicates a sent text message."
+    },
+    "de": {
+      "name": "SMS gesendet",
+      "meaning": "Zeigt eine gesendete Textnachricht an."
+    }
+  },
+  "vwn-caddy-phone-voicemail": {
+    "cs": {
+      "name": "Hlasová schránka",
+      "meaning": "Označuje funkci hlasové schránky."
+    },
+    "en": {
+      "name": "Voicemail",
+      "meaning": "Indicates the voicemail function."
+    },
+    "de": {
+      "name": "Voicemail",
+      "meaning": "Zeigt die Voicemail-Funktion an."
+    }
+  },
+  "vwn-caddy-radio-add-favourite": {
+    "cs": {
+      "name": "Přidat stanici do oblíbených",
+      "meaning": "Přidá rozhlasovou stanici mezi oblíbené."
+    },
+    "en": {
+      "name": "Add station to favourites",
+      "meaning": "Adds a radio station to favorites."
+    },
+    "de": {
+      "name": "Sender zu Favoriten hinzufügen",
+      "meaning": "Fügt einen Radiosender zu den Favoriten hinzu."
+    }
+  },
+  "vwn-caddy-radio-back": {
+    "cs": {
+      "name": "Zpět o úroveň",
+      "meaning": "Vrátí se do nadřazené úrovně."
+    },
+    "en": {
+      "name": "Back a level",
+      "meaning": "It will return to the parent level."
+    },
+    "de": {
+      "name": "Ein Level zurück",
+      "meaning": "Es kehrt zur übergeordneten Ebene zurück."
+    }
+  },
+  "vwn-caddy-radio-current-playback": {
+    "cs": {
+      "name": "Aktuální přehrávání rádia",
+      "meaning": "Otevře aktuální přehrávání rádia."
+    },
+    "en": {
+      "name": "Current radio playback",
+      "meaning": "Opens the current radio playback."
+    },
+    "de": {
+      "name": "Aktuelle Radiowiedergabe",
+      "meaning": "Öffnet die aktuelle Radiowiedergabe."
+    }
+  },
+  "vwn-caddy-radio-dab-slideshow": {
+    "cs": {
+      "name": "Stanice DAB podporuje Slideshow",
+      "meaning": "Označuje stanici DAB podporující doprovodné obrázky Slideshow."
+    },
+    "en": {
+      "name": "DAB station supports Slideshow",
+      "meaning": "Indicates a DAB station supporting Slideshow accompanying images."
+    },
+    "de": {
+      "name": "Der DAB-Sender unterstützt Slideshow",
+      "meaning": "Zeigt einen DAB-Sender an, der Diashow-Begleitbilder unterstützt."
+    }
+  },
+  "vwn-caddy-radio-dab-slideshow-unavailable": {
+    "cs": {
+      "name": "Slideshow není k dispozici",
+      "meaning": "Označuje, že doprovodné obrázky Slideshow nejsou pro danou stanici DAB dostupné."
+    },
+    "en": {
+      "name": "Slideshow not available",
+      "meaning": "Indicates that accompanying Slideshow images are not available for that DAB station."
+    },
+    "de": {
+      "name": "Diashow nicht verfügbar",
+      "meaning": "Zeigt an, dass die begleitenden Diashow-Bilder für diesen DAB-Sender nicht verfügbar sind."
+    }
+  },
+  "vwn-caddy-radio-dab-unavailable": {
+    "cs": {
+      "name": "Příjem DAB není možný",
+      "meaning": "Označuje, že příjem DAB není možný."
+    },
+    "en": {
+      "name": "DAB reception is not possible",
+      "meaning": "Indicates that DAB reception is not possible."
+    },
+    "de": {
+      "name": "DAB-Empfang ist nicht möglich",
+      "meaning": "Zeigt an, dass kein DAB-Empfang möglich ist."
+    }
+  },
+  "vwn-caddy-radio-favourites": {
+    "cs": {
+      "name": "Oblíbené rozhlasové stanice",
+      "meaning": "Otevře oblíbené. Malý symbol v seznamu stanic označuje stanici, která už je mezi oblíbenými uložená."
+    },
+    "en": {
+      "name": "Favorite radio stations",
+      "meaning": "Opens favorites. A small symbol in the station list indicates a station that is already saved in the favorites."
+    },
+    "de": {
+      "name": "Lieblingsradiosender",
+      "meaning": "Öffnet Favoriten. Ein kleines Symbol in der Senderliste weist auf einen Sender hin, der bereits in den Favoriten gespeichert ist."
+    }
+  },
+  "vwn-caddy-radio-full-text-search": {
+    "cs": {
+      "name": "Fulltextové vyhledávání",
+      "meaning": "Otevře fulltextové vyhledávání."
+    },
+    "en": {
+      "name": "Full text search",
+      "meaning": "Opens a full-text search."
+    },
+    "de": {
+      "name": "Volltextsuche",
+      "meaning": "Öffnet eine Volltextsuche."
+    }
+  },
+  "vwn-caddy-radio-manual-frequency": {
+    "cs": {
+      "name": "Ruční volba frekvence",
+      "meaning": "Otevře frekvenční pásmo pro ruční výběr frekvence. U FM je tato volba dostupná pouze při vypnutém společném seznamu stanic v nastavení rádia."
+    },
+    "en": {
+      "name": "Manual frequency selection",
+      "meaning": "Opens the frequency band for manual frequency selection. For FM, this option is only available when the common list of stations is turned off in the radio settings."
+    },
+    "de": {
+      "name": "Manuelle Frequenzauswahl",
+      "meaning": "Öffnet das Frequenzband zur manuellen Frequenzauswahl. Für UKW ist diese Option nur verfügbar, wenn die gemeinsame Senderliste in den Radioeinstellungen deaktiviert ist."
+    }
+  },
+  "vwn-caddy-radio-my-playlist": {
+    "cs": {
+      "name": "Můj playlist",
+      "meaning": "Označuje funkci Můj playlist v režimu rádia."
+    },
+    "en": {
+      "name": "My playlist",
+      "meaning": "Indicates the My Playlist function in radio mode."
+    },
+    "de": {
+      "name": "Meine Playlist",
+      "meaning": "Zeigt die Funktion „Meine Playlist“ im Radiomodus an."
+    }
+  },
+  "vwn-caddy-radio-next-station": {
+    "cs": {
+      "name": "Následující rozhlasová stanice",
+      "meaning": "Vybere následující stanici ze seznamu stanic nebo oblíbených."
+    },
+    "en": {
+      "name": "The following radio station",
+      "meaning": "Selects the next station from the station list or favorites."
+    },
+    "de": {
+      "name": "Der folgende Radiosender",
+      "meaning": "Wählt den nächsten Sender aus der Senderliste oder den Favoriten aus."
+    }
+  },
+  "vwn-caddy-radio-previous-station": {
+    "cs": {
+      "name": "Předchozí rozhlasová stanice",
+      "meaning": "Vybere předchozí stanici ze seznamu stanic nebo oblíbených."
+    },
+    "en": {
+      "name": "Previous radio station",
+      "meaning": "Selects the previous station from the station list or favorites."
+    },
+    "de": {
+      "name": "Vorheriger Radiosender",
+      "meaning": "Wählt den vorherigen Sender aus der Senderliste oder den Favoriten aus."
+    }
+  },
+  "vwn-caddy-radio-reception-type": {
+    "cs": {
+      "name": "Výběr pásma nebo druhu příjmu",
+      "meaning": "Umožňuje vybrat frekvenční pásmo nebo druh příjmu."
+    },
+    "en": {
+      "name": "Selecting a band or type of reception",
+      "meaning": "Allows you to select a frequency band or type of reception."
+    },
+    "de": {
+      "name": "Auswählen eines Bandes oder einer Empfangsart",
+      "meaning": "Ermöglicht die Auswahl eines Frequenzbandes oder einer Empfangsart."
+    }
+  },
+  "vwn-caddy-radio-refresh-stations": {
+    "cs": {
+      "name": "Aktualizovat seznam stanic",
+      "meaning": "Ručně aktualizuje seznam rozhlasových stanic."
+    },
+    "en": {
+      "name": "Update station list",
+      "meaning": "Manually updates the list of radio stations."
+    },
+    "de": {
+      "name": "Senderliste aktualisieren",
+      "meaning": "Aktualisiert die Liste der Radiosender manuell."
+    }
+  },
+  "vwn-caddy-radio-settings": {
+    "cs": {
+      "name": "Nastavení rádia",
+      "meaning": "Otevře nastavení rádia."
+    },
+    "en": {
+      "name": "Radio settings",
+      "meaning": "Opens the radio settings."
+    },
+    "de": {
+      "name": "Radioeinstellungen",
+      "meaning": "Öffnet die Radioeinstellungen."
+    }
+  },
+  "vwn-caddy-radio-sound-muted": {
+    "cs": {
+      "name": "Zvuk rádia ztlumený",
+      "meaning": "Reproduktory jsou ztlumené. Klepnutím se zvuk rádia znovu zapne."
+    },
+    "en": {
+      "name": "Radio sound muted",
+      "meaning": "The speakers are muted. Tap to turn the radio back on."
+    },
+    "de": {
+      "name": "Radioton stummgeschaltet",
+      "meaning": "Die Lautsprecher sind stummgeschaltet. Tippen Sie, um das Radio wieder einzuschalten."
+    }
+  },
+  "vwn-caddy-radio-sound-on": {
+    "cs": {
+      "name": "Zvuk rádia zapnutý",
+      "meaning": "Reproduktory jsou zapnuté a rádio je slyšitelné. Klepnutím se zvuk ztlumí."
+    },
+    "en": {
+      "name": "Radio sound on",
+      "meaning": "The speakers are on and the radio is audible. Tap to mute the sound."
+    },
+    "de": {
+      "name": "Radioton an",
+      "meaning": "Die Lautsprecher sind eingeschaltet und das Radio ist hörbar. Tippen Sie, um den Ton stummzuschalten."
+    }
+  },
+  "vwn-caddy-radio-station-list": {
+    "cs": {
+      "name": "Seznam rozhlasových stanic",
+      "meaning": "Otevře seznam rozhlasových stanic."
+    },
+    "en": {
+      "name": "List of radio stations",
+      "meaning": "Opens a list of radio stations."
+    },
+    "de": {
+      "name": "Liste der Radiosender",
+      "meaning": "Öffnet eine Liste von Radiosendern."
+    }
+  },
+  "vwn-caddy-radio-switch-radio-media": {
+    "cs": {
+      "name": "Přepnout rádio a média",
+      "meaning": "Přepíná mezi režimy Rádio a Média."
+    },
+    "en": {
+      "name": "Switch radio and media",
+      "meaning": "Switches between Radio and Media modes."
+    },
+    "de": {
+      "name": "Radio und Medien wechseln",
+      "meaning": "Wechselt zwischen Radio- und Medienmodus."
+    }
+  }
+}

@@ -44,6 +44,12 @@
 .warning-lights .wl-group[open] .wl-group-arrow{margin-top:5px;transform:rotate(225deg)}
 .warning-lights .wl-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start;padding:16px}
 .warning-lights .wl-empty-category{margin:0;padding:16px;max-width:82ch;font-size:1rem;line-height:1.5}
+.warning-lights .wl-infotainment-section{margin-top:30px;padding-top:18px;border-top:1px solid #000}
+.warning-lights .wl-infotainment-section>h3{font:700 1.5rem/1.35 var(--js-font,Ubuntu,sans-serif);color:#111;margin:0 0 12px;text-transform:none}
+.warning-lights .wl-info-category{margin:22px 0}
+.warning-lights .wl-info-category>h4{font:700 1.25rem/1.35 var(--js-font,Ubuntu,sans-serif);color:#111;margin:0;padding:10px 14px;border:1px solid #000;border-radius:4px;background:var(--js-brand)}
+.warning-lights .wl-infotainment-card .wl-symbol{background:#f4f4f4;border:1px solid #000}
+.warning-lights .wl-info-scope{margin-top:14px!important;padding-top:10px;border-top:1px solid #aaa;font-size:.875rem!important;line-height:1.45!important}
 .warning-lights .wl-card{border:1px solid #000;border-radius:var(--js-radius);background:var(--js-paper);min-width:0;overflow:hidden;scroll-margin-top:20px}
 .warning-lights .wl-card-head{display:flex;flex-direction:column;gap:10px;padding:16px;color:#111}
 .warning-lights summary::-webkit-details-marker{display:none}
@@ -84,6 +90,9 @@
 #warning-lights .wl-results{scroll-margin-top:var(--wl-anchor-offset,12px)}
 #warning-lights .wl-results>h2{font-size:1.25rem;line-height:1.3;margin:0 0 4px}
 #warning-lights .wl-vin-note{max-width:82ch;margin:8px 0 14px;padding:12px 14px;border:1px solid #000;border-left:4px solid var(--js-brand);background:var(--js-muted);font-size:1rem;line-height:1.5}
+#warning-lights .wl-brand-search{max-width:520px;margin:0 0 18px}
+#warning-lights .wl-brand-search input{margin-top:6px}
+#warning-lights .wl-search-empty{padding:12px 14px;border:1px solid #000;background:var(--js-muted)}
 #warning-lights .wl-results>.wl-group{margin-top:12px}
 
 #warning-lights #wl-results-title:focus{outline:none}

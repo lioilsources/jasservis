@@ -18,6 +18,7 @@ from urllib.parse import unquote, urlsplit
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
+REPO = ROOT.parent
 LANGS = ("cs", "en", "de")
 BRANDS = {
     "volkswagen", "audi", "skoda", "seat", "cupra",
@@ -998,9 +999,39 @@ def check_pages(audit):
                 audit.check(fragment in pages[target].ids, "html_anchors", f"{label}: missing target #{fragment} in {target.relative_to(ROOT)} (href={href!r})")
         for src in parser.svg_sources:
             target, _ = local_target(path, src)
-            if target and target.suffix.lower() == ".svg" and "wp-content/uploads/kontrolky" in target.as_posix():
+            if target and target.suffix.lower() == ".svg" and ("wp-content/uploads/kontrolky" in target.as_posix() or "wp-content/uploads/infotainment" in target.as_posix()):
                 audit.check(target.is_file(), "html_assets", f"{label}: missing catalogue SVG {src!r}")
     return len(pages), anchors
+
+def check_infotainment(audit, catalogue_ids):
+    root = REPO / "source-materials/infotainment-2026-10-31-rev2"
+    manifest = json.loads((root / "internal/manifest.json").read_text(encoding="utf-8"))
+    translations = json.loads((root / "translations.json").read_text(encoding="utf-8"))
+    scopes = json.loads((root / "scope-translations.json").read_text(encoding="utf-8"))
+    items = manifest["items"]
+    ids = unique_ids(audit, items, "infotainment manifest items")
+    audit.check(len(items) == 253, "infotainment", f"expected 253 infotainment meanings, found {len(items)}")
+    audit.check(not ids.intersection(catalogue_ids), "infotainment", "infotainment IDs collide with warning catalogue IDs")
+    audit.check(set(translations) == ids, "infotainment", "infotainment translations do not match item IDs")
+    audit.check(set(scopes) == set(manifest["scopes"]), "infotainment", "scope translations do not match scope IDs")
+    public_paths = set()
+    for item in items:
+        label = f"infotainment {item['id']}"
+        audit.check(item["scope_id"] in manifest["scopes"], "infotainment", f"{label}: unknown scope")
+        for lang in LANGS:
+            value = translations.get(item["id"], {}).get(lang, {})
+            audit.check(bool(value.get("name", "").strip()) and bool(value.get("meaning", "").strip()), "translations", f"{label}: missing {lang} text")
+        relpath = Path(item["svg_file"]).relative_to("icons")
+        path = ROOT / "wp-content/uploads/infotainment" / relpath
+        public_paths.add(path)
+        audit.check(path.is_file(), "infotainment", f"{label}: missing public SVG {relpath}")
+        if path.is_file():
+            content = path.read_bytes()
+            audit.check(hashlib.sha256(content).hexdigest() == item["svg_sha256"], "infotainment", f"{label}: SVG hash mismatch")
+            text = content.decode("utf-8", errors="replace")
+            audit.check(not re.search(r"<image\b|data:image/|<script\b|https?://[^\s\"']+\.(?:png|jpe?g|webp)", text, re.I), "infotainment", f"{label}: SVG embeds a photo or script")
+    audit.check(len(public_paths) == 235, "infotainment", f"expected 235 public SVG paths, found {len(public_paths)}")
+    return {"semantic_items": len(items), "svg_paths": len(public_paths), "distinct_svg_hashes": len({x["svg_sha256"] for x in items})}
 
 
 def main():
@@ -1013,6 +1044,7 @@ def main():
         attachments = audit.read_json("attachment-groups.json")
         queues = audit.read_json("work-queues.json")
         ids, hashes, summary = check_catalogue(audit, cat, locales)
+        summary["infotainment"] = check_infotainment(audit, ids)
         check_csv(audit, cat, hashes)
         summary["whole_manuals_complete"] = check_reviews(audit, cat, register, queues)
         summary["selected_photos_available"] = check_photos_and_queues(audit, register, attachments, queues, cat)

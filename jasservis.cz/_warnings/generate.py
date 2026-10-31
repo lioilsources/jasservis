@@ -4,8 +4,10 @@ No runtime translation; no remote requests; no changes to shared header styling.
 """
 from pathlib import Path
 import json,re,html,os,sys,csv,io
-HERE=Path(__file__).resolve().parent;ROOT=HERE.parent
+HERE=Path(__file__).resolve().parent;ROOT=HERE.parent;REPO=ROOT.parent
 CAT=json.loads((HERE/'catalog.json').read_text());UI=json.loads((HERE/'locales.json').read_text())
+INFO_ROOT=REPO/'source-materials/infotainment-2026-10-31-rev2'
+INFO=json.loads((INFO_ROOT/'internal/manifest.json').read_text());INFO_TEXT=json.loads((INFO_ROOT/'translations.json').read_text());INFO_SCOPE_TEXT=json.loads((INFO_ROOT/'scope-translations.json').read_text())
 ROUTE='kontrolky-a-vystrazna-hlaseni';LANGS=['cs','en','de'];VERSION='20261031-brand-tiles-v1'
 def esc(x):return html.escape(str(x),quote=True)
 def rel(target,page):return os.path.relpath(ROOT/target,page.parent).replace(os.sep,'/')+('/' if not Path(target).suffix else '')
@@ -152,7 +154,8 @@ def card(items,brand,lang,page):
  aliases=''.join(f'<span class="wl-card-alias" id="{item_anchor(i,brand)}" tabindex="-1"></span>'for i in items[1:])
  multiple=len(items)>1;title=first['name'][lang]
  if multiple:title+=' · '+{'cs':'více významů stejného symbolu','en':'multiple meanings of the same symbol','de':'mehrere Bedeutungen desselben Symbols'}[lang]
- out=f'<article class="wl-card" id="{sid}" tabindex="-1" data-brand="{brand}">{aliases}<div class="wl-card-head"><span class="wl-symbol"><img src="{rel(first["graphic_path"],page)}" width="112" height="84" alt="{esc(first["alt"][lang])}"></span><h4 class="wl-name">{esc(title)}</h4></div><div class="wl-detail">'
+ search=' '.join(i['name'][lang]+' '+i['meaning'][lang]+' '+i['note'][lang] for i in items)
+ out=f'<article class="wl-card" id="{sid}" tabindex="-1" data-brand="{brand}" data-search="{esc(search)}">{aliases}<div class="wl-card-head"><span class="wl-symbol"><img src="{rel(first["graphic_path"],page)}" width="112" height="84" alt="{esc(first["alt"][lang])}"></span><h4 class="wl-name">{esc(title)}</h4></div><div class="wl-detail">'
  for i in items:
   scopes=[s for s in i['scopes'] if s['brand']==brand];states=list(dict.fromkeys(sc.get('signal_state',i['state']) for sc in scopes));state_label=' / '.join(u['states'][state] for state in states)
   out+='<section class="wl-meaning-variant">'
@@ -163,6 +166,52 @@ def card(items,brand,lang,page):
  out+='</div></article>'
  return out
 
+INFO_BRANDS={'Volkswagen':'volkswagen','Škoda':'skoda','SEAT':'seat','Volkswagen Užitkové vozy':'volkswagen-uzitkove-vozy'}
+INFO_CATEGORY_ORDER=['media','radio','navigation','phone','app-connect','other']
+INFO_CATEGORY_LABELS={
+ 'cs':{'media':'Média','radio':'Rádio','navigation':'Navigace','phone':'Telefon a zprávy','app-connect':'Připojení telefonu a aplikací','other':'Další symboly'},
+ 'en':{'media':'Media','radio':'Radio','navigation':'Navigation','phone':'Phone and messages','app-connect':'Phone and app connectivity','other':'Other symbols'},
+ 'de':{'media':'Medien','radio':'Radio','navigation':'Navigation','phone':'Telefon und Nachrichten','app-connect':'Telefon- und App-Verbindung','other':'Weitere Symbole'}}
+def info_category(item):
+ raw=str(item.get('category')or'').lower();id=item['id'].lower()
+ if raw in ('navigation','navigace'):return'navigation'
+ if raw in ('telephone','telefon','phone'):return'phone'
+ if raw in ('radio','rádio'):return'radio'
+ if raw=='media':return'media'
+ if raw=='app-connect':return'app-connect'
+ for key,needles in [('navigation',('navigation','navigace')),('radio',('radio-',)),('media',('media-',)),('phone',('phone-','telephone-','telefon-','sms-')),('app-connect',('mirrorlink','smartlink','app-connect','connect-'))]:
+  if any(x in id for x in needles):return key
+ return'other'
+def info_scope_text(scope_id,lang):
+ scope=INFO['scopes'][scope_id];model=scope['model'];system=INFO_SCOPE_TEXT[scope_id][lang]
+ labels={'cs':('Provedení','Systém'),'en':('Variant','System'),'de':('Ausführung','System')}[lang]
+ return f'{labels[0]}: {model} · {labels[1]}: {system}'
+def infotainment_card(items,brand,lang,page):
+ first=items[0];sid='infotainment-'+first['id'];aliases=''.join(f'<span class="wl-card-alias" id="infotainment-{i["id"]}" tabindex="-1"></span>'for i in items[1:]);t=INFO_TEXT[first['id']][lang];title=t['name']
+ if len(items)>1:title+=' · '+{'cs':'více použití stejného symbolu','en':'multiple uses of the same symbol','de':'mehrere Verwendungen desselben Symbols'}[lang]
+ path='wp-content/uploads/infotainment/'+str(Path(first['svg_file']).relative_to('icons')).replace(os.sep,'/')
+ search=' '.join(INFO_TEXT[i['id']][lang]['name']+' '+INFO_TEXT[i['id']][lang]['meaning'] for i in items)
+ out=f'<article class="wl-card wl-infotainment-card" id="{sid}" tabindex="-1" data-brand="{brand}" data-search="{esc(search)}">{aliases}<div class="wl-card-head"><span class="wl-symbol"><img src="{rel(path,page)}" width="112" height="84" alt="{esc(t["name"])}"></span><h4 class="wl-name">{esc(title)}</h4></div><div class="wl-detail">'
+ for i in items:
+  text=INFO_TEXT[i['id']][lang];kind={'infotainment-status':{'cs':'Informace o stavu','en':'Status information','de':'Statusinformation'},'infotainment-map-point':{'cs':'Bod nebo údaj mapy','en':'Map point or information','de':'Kartenpunkt oder Information'},'infotainment-traffic-information':{'cs':'Dopravní informace','en':'Traffic information','de':'Verkehrsinformation'}}.get(i.get('kind'),{'cs':'Ovládací symbol','en':'Control symbol','de':'Bediensymbol'})[lang]
+  out+='<section class="wl-meaning-variant">'
+  if len(items)>1:out+=f'<h5 class="wl-variant-name">{esc(text["name"])}</h5>'
+  out+=f'<p class="wl-status">{esc(kind)}</p><h6>'+esc({'cs':'Význam a funkce','en':'Meaning and function','de':'Bedeutung und Funktion'}[lang])+f'</h6><p>{esc(text["meaning"])}</p><p class="wl-info-scope">{esc(info_scope_text(i["scope_id"],lang))}</p></section>'
+ out+='</div></article>';return out
+def infotainment_content(brand,lang,page):
+ items=[i for i in INFO['items'] if INFO_BRANDS.get(INFO['scopes'][i['scope_id']]['brand'])==brand]
+ if not items:return''
+ grouped=[]
+ for i in items:
+  row=next((x for x in grouped if x[0]['svg_sha256']==i['svg_sha256']),None)
+  if row is None:grouped.append([i])
+  else:row.append(i)
+ out='<div class="wl-infotainment-content">'
+ for category in INFO_CATEGORY_ORDER:
+  rows=[x for x in grouped if info_category(x[0])==category]
+  if rows:out+=f'<section class="wl-info-category"><h4>{esc(INFO_CATEGORY_LABELS[lang][category])}</h4><div class="wl-grid">'+''.join(infotainment_card(x,brand,lang,page)for x in rows)+'</div></section>'
+ return out+'</div>'
+
 def catalog_content(lang,page):
  u=UI[lang]
  messages={k:u[k] for k in ['brands','overview','count','empty','missingBrand','preset']}
@@ -170,7 +219,8 @@ def catalog_content(lang,page):
  vin_note={'cs':'Vyobrazení kontrolky se nemusí shodovat s konkrétním modelem nebo výbavou. Pro přesné určení jejího významu a funkce je nutné ověření podle VIN vozidla, zobrazeného hlášení a příslušného návodu k obsluze.','en':'The warning-light graphic may differ for a specific model or equipment version. Its exact meaning and function must be verified using the vehicle VIN, the displayed message and the corresponding owner’s manual.','de':'Die Darstellung der Kontrollleuchte kann je nach Modell oder Ausstattung abweichen. Bedeutung und Funktion müssen anhand der Fahrzeug-Identifizierungsnummer (VIN), der angezeigten Meldung und der zugehörigen Betriebsanleitung genau geprüft werden.'}[lang]
  out=f'<div class="driver-catalog"><script type="application/json" id="wl-messages">'+json.dumps(messages,ensure_ascii=False).replace('</','<\\/')+'</script><div class="wl-intro"><p>'+esc(intro)+'</p></div><div class="wl-brand-tiles" role="group" aria-label="'+esc(u['brand'])+'">'
  out+=''.join(f'<button type="button" class="wl-brand-tile" data-brand="{brand}" aria-pressed="false" aria-controls="prehled-kontrolek">{esc(name)}</button>'for brand,name in u['brands'].items())+'</div><noscript><p>'+esc(u['nojs'])+'</p></noscript>'
- out+=f'<section id="prehled-kontrolek" class="wl-results" aria-labelledby="wl-results-title" hidden><h2 id="wl-results-title" tabindex="-1">{esc(u["overview"])}</h2><p class="wl-vin-note">{esc(vin_note)}</p>'
+ search_label={'cs':'Hledat v otevřené značce','en':'Search within the selected brand','de':'In der ausgewählten Marke suchen'}[lang]
+ out+=f'<section id="prehled-kontrolek" class="wl-results" aria-labelledby="wl-results-title" hidden><h2 id="wl-results-title" tabindex="-1">{esc(u["overview"])}</h2><p class="wl-vin-note">{esc(vin_note)}</p><label class="wl-brand-search">{esc(search_label)}<input type="search" id="wl-search" autocomplete="off"></label><p class="wl-search-empty" hidden>{esc(u["empty"])}</p>'
  for brand,bname in u['brands'].items():
   entries=[i for i in CAT['items'] if any(s['brand']==brand for s in i['scopes'])]
   if not entries:continue
@@ -182,15 +232,16 @@ def catalog_content(lang,page):
   out+=f'<section class="wl-brand" data-brand="{brand}" aria-labelledby="brand-{brand}"><h2 id="brand-{brand}">{esc(bname)}</h2>'
   for group,gname in u['groups'].items():
    grouped=[items for items in brand_grouped if display_group(items[0],brand)==group]
-   if grouped or group=='ovladani':
-    if group=='ovladani':
-     gname=({'cs':'Symboly a hlášení MMI','en':'MMI symbols and messages','de':'MMI-Symbole und Meldungen'}if brand=='audi'else{'cs':'Symboly infotainmentu a ovládání','en':'Infotainment and control symbols','de':'Infotainment- und Bediensymbole'})[lang]
+   if group=='ovladani':
+    info_html=infotainment_content(brand,lang,page);gname=({'cs':'Symboly a hlášení MMI','en':'MMI symbols and messages','de':'MMI-Symbole und Meldungen'}if brand=='audi'else{'cs':'Symboly infotainmentu a ovládání','en':'Infotainment and control symbols','de':'Infotainment- und Bediensymbole'})[lang]
+    out+=f'<section class="wl-infotainment-section" id="{brand}-ovladani"><h3>{esc(gname)}</h3>'
+    if grouped:out+='<div class="wl-grid">'+''.join(card(items,brand,lang,page) for items in grouped)+'</div>'
+    out+=info_html+'</section>'
+    continue
+   if grouped:
     if brand=='audi' and group=='motor':out+='<h3 class="wl-audi-section">'+esc({'cs':'Kontrolky vozidla','en':'Vehicle warning lights','de':'Fahrzeug-Kontrollleuchten'}[lang])+'</h3>'
     out+=f'<details class="wl-group" id="{group if brand=='volkswagen' else brand+'-'+group}"><summary><span>{esc(gname)}</span><span class="wl-group-arrow" aria-hidden="true"></span></summary>'
-    if grouped:out+='<div class="wl-grid">'+''.join(card(items,brand,lang,page) for items in grouped)+'</div>'
-    else:
-     note={'cs':'Pro tuto značku zatím nejsou v katalogu modelově ověřené samostatné ikony infotainmentu. Symboly z jiné značky nepřebíráme bez ověření konkrétního modelu, systému a grafické podoby.','en':'The catalogue does not yet contain model-verified standalone infotainment icons for this brand. Icons from another brand are not reused without verification of the exact model, system and graphic.','de':'Für diese Marke enthält der Katalog derzeit keine modellgeprüften eigenständigen Infotainment-Symbole. Symbole einer anderen Marke werden ohne Prüfung von Modell, System und Grafik nicht übernommen.'}[lang]
-     out+='<p class="wl-empty-category">'+esc(note)+'</p>'
+    out+='<div class="wl-grid">'+''.join(card(items,brand,lang,page) for items in grouped)+'</div>'
     out+='</details>'
   out+='</section>'
  out+='</section>'
@@ -675,4 +726,4 @@ for p,s in outputs:
  else:
   if isinstance(s,bytes):p.write_bytes(s)
   else:p.write_text(s)
-print(('Checked' if '--check' in sys.argv else 'Generated')+': 3 static locales, '+str(len(CAT['items']))+' semantic entries; shared images only.')
+print(('Checked' if '--check' in sys.argv else 'Generated')+': 3 static locales, '+str(len(CAT['items']))+' warning-light entries and '+str(len(INFO['items']))+' infotainment entries; shared images only.')

@@ -3,20 +3,26 @@
  var root=document.getElementById('warning-lights');if(!root)return;
  var text=JSON.parse(root.querySelector('#wl-messages').textContent);
  var cards=Array.from(root.querySelectorAll('.wl-card')),groups=Array.from(root.querySelectorAll('.wl-group')),brandGroups=Array.from(root.querySelectorAll('.wl-brand'));
- var tiles=Array.from(root.querySelectorAll('.wl-brand-tile')),results=root.querySelector('#prehled-kontrolek'),heading=root.querySelector('#wl-results-title');
+ var tiles=Array.from(root.querySelectorAll('.wl-brand-tile')),results=root.querySelector('#prehled-kontrolek'),heading=root.querySelector('#wl-results-title'),search=root.querySelector('#wl-search');
  var selectedBrand='';
+ function normalize(value){return value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();}
  function validBrand(brand){return Object.prototype.hasOwnProperty.call(text.brands,brand);}
  function updateLanguageLinks(){Array.from(document.querySelectorAll('.language-switcher a')).forEach(function(link){var path=link.getAttribute('href').split(/[?#]/)[0];link.setAttribute('href',path+(selectedBrand?'?znacka='+encodeURIComponent(selectedBrand):'')+(location.hash||''));});}
  function updateURL(){var url=new URL(location.href);if(selectedBrand)url.searchParams.set('znacka',selectedBrand);else url.searchParams.delete('znacka');history.replaceState(null,'',url.pathname+url.search+url.hash);updateLanguageLinks();}
  function showBrand(){
-  cards.forEach(function(card){var show=selectedBrand&&card.dataset.brand===selectedBrand;card.hidden=!show;});
+  var words=normalize(search.value).split(/\s+/).filter(Boolean),visible=0;
+  cards.forEach(function(card){var show=selectedBrand&&card.dataset.brand===selectedBrand&&words.every(function(word){return normalize(card.dataset.search||'').indexOf(word)!==-1;});card.hidden=!show;if(show)visible++;});
   groups.forEach(function(group){var hasCards=group.querySelector('.wl-card');var owner=group.closest('.wl-brand');group.hidden=hasCards?!group.querySelector('.wl-card:not([hidden])'):!(owner&&owner.dataset.brand===selectedBrand);});
+  Array.from(root.querySelectorAll('.wl-info-category')).forEach(function(section){section.hidden=!section.querySelector('.wl-card:not([hidden])');});
+  Array.from(root.querySelectorAll('.wl-infotainment-section')).forEach(function(section){section.hidden=!section.querySelector('.wl-card:not([hidden])');});
   brandGroups.forEach(function(group){group.hidden=!group.querySelector('.wl-card:not([hidden])');});
   tiles.forEach(function(tile){tile.setAttribute('aria-pressed',String(tile.dataset.brand===selectedBrand));});
   results.hidden=!selectedBrand;heading.textContent=selectedBrand?text.brands[selectedBrand]+' — '+text.overview:text.overview;
+  root.querySelector('.wl-search-empty').hidden=!selectedBrand||visible!==0;
  }
- function selectBrand(brand,moveFocus){selectedBrand=brand;groups.forEach(function(group){group.open=false;});showBrand();updateURL();if(brand&&moveFocus)requestAnimationFrame(function(){results.scrollIntoView({behavior:'smooth',block:'start'});heading.focus({preventScroll:true});});}
+ function selectBrand(brand,moveFocus){selectedBrand=brand;search.value='';groups.forEach(function(group){group.open=false;});showBrand();updateURL();if(brand&&moveFocus)requestAnimationFrame(function(){results.scrollIntoView({behavior:'smooth',block:'start'});heading.focus({preventScroll:true});});}
  tiles.forEach(function(tile){tile.addEventListener('click',function(){selectBrand(selectedBrand===tile.dataset.brand?'':tile.dataset.brand,true);});});
+ search.addEventListener('input',showBrand);
  var userMoved=false;['wheel','touchstart','pointerdown','keydown'].forEach(function(type){window.addEventListener(type,function(){userMoved=true;},{passive:true});});
  function headerOffset(){var offset=12;Array.from(document.querySelectorAll('header.header, .isStuck, [data-sticky-header]')).forEach(function(header){var style=getComputedStyle(header),box=header.getBoundingClientRect();if((style.position==='fixed'||style.position==='sticky')&&box.height>0&&box.top<=1&&box.bottom>0)offset=Math.max(offset,box.bottom+12);});return offset;}
  function targetForHash(){

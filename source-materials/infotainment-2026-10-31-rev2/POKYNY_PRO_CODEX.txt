@@ -1,0 +1,23 @@
+J&S SERVIS – IKONY INFOTAINMENTU PRO CODEX
+Připraveno 31. 10. 2026 – rozšířená revize 2
+
+OBSAH
+Samostatné SVG a průhledné PNG pro čtyři zbývající značky. Počty a přesná použitelnost jsou v internal/manifest.json a internal/inventory.cs.csv.
+
+POKYNY PRO VLOŽENÍ
+1. Použij přednostně SVG z icons/. Zachovej přesný tvar a proporce. PNG jsou alternativní export týchž ikon.
+2. Ke každé položce připoj name_cs a meaning_cs a dodrž scope_id. Vydání návodu neoznačuj jako modelový rok. Rozsah není automaticky celá značka.
+3. Fotografie, stránky návodů a celé obrazovky se na web nesmějí vkládat. V tomto balíčku nejsou.
+4. Zdrojové údaje, manifest, inventář, kontroly a přehled pro kontrolu zůstanou interní. Veřejně zobraz pouze jednotlivé ikony, vysvětlení a nezbytnou modelovou/systémovou použitelnost.
+5. Rozliš ovládací tlačítko, stav systému a závadu. Nepřenášej význam ikony podle podobnosti mezi systémy či značkami.
+6. Tiskové monochromní symboly nejsou automatickým dokladem všech barevných stavů displeje. Nedoplňuj barvy domněnkou.
+7. Použij pouze položky manifestu. Historické podklady Car-Net a malé rastrové podklady nejsou součástí hotové sady.
+8. Zkontroluj duplicity s aktuálním katalogem. Stejný tvar lze sdílet jen při doložené shodě, význam a systémový rozsah zůstávají samostatné.
+9. Na stránce zachovej postup: krátký úvod → dlaždice značek → po kliknutí ikony s významy. Vstup pouze přes RADY PRO ŘIDIČE. Zachovej současné barvy webu a úplné tenké černé rámečky dlaždic.
+10. Překlady CZ/EN/DE musí zachovat význam a podmínky. Ověř PC, mobil i tablet. Připrav náhled; nenasazuj do produkce.
+
+ROZSAH
+Jde o konkrétní doložené sady uvedených systémů, nikoli kompletní katalog všech infotainmentů všech modelových let. Provenience jednotlivých získaných dokumentů je přesně vedená v manifestu, včetně kopií hostovaných třetí stranou a jejich ověřovacích omezení.
+
+AKTUALIZACE REVIZE 2
+Balíček nahrazuje předchozí ZIP: obsahuje původních113 a140 nových významových položek, celkem253. Importuj podle stabilních ID; původní položky nevkládej podruhé. Přesné nové ID jsou v change_summary.added_item_ids manifestu. Dodrž rozsah každého systému; historicky popsané MirrorLink a podobné funkce nevydávej za ověřenou současnou podporu. Fotografie a zdrojové stránky se na web nevkládají.
