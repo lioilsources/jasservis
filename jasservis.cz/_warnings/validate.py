@@ -1063,6 +1063,7 @@ def check_online_services(audit):
         audit.check('class="driver-brand-entry" id="kontrolky"' in text, "online_services", f"{label}: brand selection is not the direct entry content")
         audit.check('<details class="driver-topic" id="kontrolky"' not in text, "online_services", f"{label}: obsolete warning-light topic tile remains above the brands")
         audit.check('class="wl-intro"' not in text, "online_services", f"{label}: obsolete explanatory text remains below the brand tiles")
+        audit.check(text.count('data-after-brand hidden') == 6, "online_services", f"{label}: secondary driver-advice topics must be hidden until a brand is selected")
         audit.check(first_tile[lang] in text, "online_services", f"{label}: customer-facing brand labels are missing")
         for url in account_urls | help_urls:
             audit.check(url in text, "online_services", f"{label}: missing official URL {url}")

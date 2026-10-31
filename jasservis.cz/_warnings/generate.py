@@ -343,7 +343,7 @@ def main(lang,page):
    out+=f'<section class="driver-brand-entry" id="{topic_id}" aria-label="{esc(title)}">{catalog_content(lang,page)}</section>'
    continue
   topic_title=(f'<span class="driver-topic-title"><span class="driver-profile-icon" aria-hidden="true"></span>{esc(title)}</span>' if index==1 else f'<span>{esc(title)}</span>')
-  out+=f'<details class="driver-topic" id="{topic_id}"><summary>{topic_title}<span class="driver-topic-arrow" aria-hidden="true"></span></summary><div class="driver-topic-body">'
+  out+=f'<details class="driver-topic" id="{topic_id}" data-after-brand hidden><summary>{topic_title}<span class="driver-topic-arrow" aria-hidden="true"></span></summary><div class="driver-topic-body">'
   if index==1:out+=online_services_content(lang)
   else:
    for heading,text in d['topics'][index]:out+=f'<section class="driver-subtopic"><h2>{esc(heading)}</h2><p>{esc(text)}</p></section>'
