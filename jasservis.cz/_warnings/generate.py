@@ -8,7 +8,7 @@ HERE=Path(__file__).resolve().parent;ROOT=HERE.parent;REPO=ROOT.parent
 CAT=json.loads((HERE/'catalog.json').read_text());UI=json.loads((HERE/'locales.json').read_text())
 INFO_ROOT=REPO/'source-materials/infotainment-2026-10-31-rev2'
 INFO=json.loads((INFO_ROOT/'internal/manifest.json').read_text());INFO_TEXT=json.loads((INFO_ROOT/'translations.json').read_text())
-ROUTE='kontrolky-a-vystrazna-hlaseni';LANGS=['cs','en','de'];VERSION='20261031-oil-guide-v2'
+ROUTE='kontrolky-a-vystrazna-hlaseni';LANGS=['cs','en','de'];VERSION='20261031-tyre-title-v3'
 def esc(x):return html.escape(str(x),quote=True)
 def rel(target,page):return os.path.relpath(ROOT/target,page.parent).replace(os.sep,'/')+('/' if not Path(target).suffix else '')
 def locale_root(lang):return '' if lang=='cs' else lang+'/'
@@ -568,7 +568,7 @@ def online_services_content(lang):
 DRIVER_TOPICS={
  'cs':{
   'page':'Rady pro řidiče','intro':'Praktické přehledy pro správnou reakci na hlášení vozidla a základní kontrolu provozních údajů. Konkrétní údaj vždy ověřte pro přesný model, modelový rok, výbavu a pohon.',
-  'titles':['Identifikace mého vozu – VIN','Přihlášení a online služby vozidla','Kontrolky a výstražná hlášení','Pojistky – barvy a hodnoty','Tlak pneumatik','Oleje – viskozita a specifikace','Chladicí kapaliny','Servis a servisní intervaly'],
+  'titles':['Identifikace mého vozu – VIN','Přihlášení a online služby vozidla','Kontrolky a výstražná hlášení','Pojistky – barvy a hodnoty','Pneumatiky – označení, tlak a štítek','Oleje – viskozita a specifikace','Chladicí kapaliny','Servis a servisní intervaly'],
   'topics':[
    [],[],[],
    [('Typy automobilových pojistek','Před určením náhrady zjistěte konstrukční typ pojistky. Stejná barva u odlišných rodin pojistek sama nepotvrzuje shodné provedení.'),('Barevné značení a proudové hodnoty','Barvu a hodnotu v ampérech posuzujte jen v tabulce pro daný typ pojistky. Přehled neobsahuje obsazení pojistkových skříní ani přiřazení spotřebičů.'),('Jak určit odpovídající pojistku','Rozhoduje návod konkrétního vozidla, poloha ve správné pojistkové skříni, typ pojistky a předepsaná proudová hodnota.'),('Zásady správné náhrady','Vypněte příslušný spotřebič a zapalování podle návodu. Použijte pouze pojistku stejného typu a hodnoty; opakované přepálení vyžaduje diagnostiku.')],
@@ -579,7 +579,7 @@ DRIVER_TOPICS={
   ]},
  'en':{
   'page':'Driver advice','intro':'Practical guidance for responding to vehicle messages and checking basic operating information. Always verify a specific value for the exact model, model year, equipment and powertrain.',
-  'titles':['Identifying my vehicle – VIN','Sign-in and online vehicle services','Warning lights and driver messages','Fuses – colours and ratings','Tyre pressures','Oils – viscosity and specifications','Coolants','Service and maintenance intervals'],
+  'titles':['Identifying my vehicle – VIN','Sign-in and online vehicle services','Warning lights and driver messages','Fuses – colours and ratings','Tyres – markings, pressures and placard','Oils – viscosity and specifications','Coolants','Service and maintenance intervals'],
   'topics':[
    [],[],[],
    [('Automotive fuse types','Identify the fuse construction before selecting a replacement. A matching colour in a different fuse family does not establish the same design.'),('Colour coding and ampere ratings','Use colour and ampere rating only with the table for that fuse type. This section does not reproduce fuse-box positions or consumer assignments.'),('Selecting the correct fuse','Use the exact vehicle manual, the position in the correct fuse box, the fuse type and the specified ampere rating.'),('Safe replacement','Switch off the relevant consumer and ignition as instructed. Use only the same type and rating; repeated failure requires diagnosis.')],
@@ -590,7 +590,7 @@ DRIVER_TOPICS={
   ]},
  'de':{
   'page':'Fahrertipps','intro':'Praktische Hinweise zur richtigen Reaktion auf Fahrzeugmeldungen und zur Kontrolle grundlegender Betriebsangaben. Konkrete Werte immer für Modell, Modelljahr, Ausstattung und Antrieb prüfen.',
-  'titles':['Identifikation meines Fahrzeugs – VIN','Anmeldung und Online-Fahrzeugdienste','Kontrollleuchten und Warnmeldungen','Sicherungen – Farben und Werte','Reifendruck','Öle – Viskosität und Spezifikationen','Kühlmittel','Service und Wartungsintervalle'],
+  'titles':['Identifikation meines Fahrzeugs – VIN','Anmeldung und Online-Fahrzeugdienste','Kontrollleuchten und Warnmeldungen','Sicherungen – Farben und Werte','Reifen – Kennzeichnungen, Druck und Schild','Öle – Viskosität und Spezifikationen','Kühlmittel','Service und Wartungsintervalle'],
   'topics':[
    [],[],[],
    [('Kfz-Sicherungstypen','Vor der Ersatzwahl die Bauform bestimmen. Gleiche Farben in verschiedenen Sicherungsfamilien belegen nicht dieselbe Ausführung.'),('Farbcodierung und Amperewerte','Farbe und Amperewert nur anhand der Tabelle für den jeweiligen Sicherungstyp verwenden. Sicherungskastenbelegung und Verbraucherzuordnung sind nicht Bestandteil.'),('Passende Sicherung bestimmen','Maßgeblich sind die konkrete Fahrzeuganleitung, die Position im richtigen Sicherungskasten, Bauform und vorgeschriebener Amperewert.'),('Sicher ersetzen','Betroffenen Verbraucher und Zündung nach Anleitung ausschalten. Nur gleichen Typ und Wert einsetzen; wiederholtes Auslösen erfordert Diagnose.')],
