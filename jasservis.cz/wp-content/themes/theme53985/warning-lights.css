@@ -43,6 +43,7 @@
 .warning-lights .wl-group-arrow{width:10px;height:10px;flex:0 0 auto;margin:-5px 4px 0 12px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg)}
 .warning-lights .wl-group[open] .wl-group-arrow{margin-top:5px;transform:rotate(225deg)}
 .warning-lights .wl-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start;padding:16px}
+.warning-lights .wl-empty-category{margin:0;padding:16px;max-width:82ch;font-size:1rem;line-height:1.5}
 .warning-lights .wl-card{border:1px solid #000;border-radius:var(--js-radius);background:var(--js-paper);min-width:0;overflow:hidden;scroll-margin-top:20px}
 .warning-lights .wl-card-head{display:flex;flex-direction:column;gap:10px;padding:16px;color:#111}
 .warning-lights summary::-webkit-details-marker{display:none}

@@ -182,10 +182,16 @@ def catalog_content(lang,page):
   out+=f'<section class="wl-brand" data-brand="{brand}" aria-labelledby="brand-{brand}"><h2 id="brand-{brand}">{esc(bname)}</h2>'
   for group,gname in u['groups'].items():
    grouped=[items for items in brand_grouped if display_group(items[0],brand)==group]
-   if grouped:
+   if grouped or group=='ovladani':
+    if group=='ovladani':
+     gname=({'cs':'Symboly a hlášení MMI','en':'MMI symbols and messages','de':'MMI-Symbole und Meldungen'}if brand=='audi'else{'cs':'Symboly infotainmentu a ovládání','en':'Infotainment and control symbols','de':'Infotainment- und Bediensymbole'})[lang]
     if brand=='audi' and group=='motor':out+='<h3 class="wl-audi-section">'+esc({'cs':'Kontrolky vozidla','en':'Vehicle warning lights','de':'Fahrzeug-Kontrollleuchten'}[lang])+'</h3>'
-    if brand=='audi' and group=='ovladani':out+='<h3 class="wl-audi-section">'+esc({'cs':'Symboly a hlášení MMI','en':'MMI symbols and messages','de':'MMI-Symbole und Meldungen'}[lang])+'</h3>'
-    out+=f'<details class="wl-group" id="{group if brand=='volkswagen' else brand+'-'+group}"><summary><span>{esc(gname)}</span><span class="wl-group-arrow" aria-hidden="true"></span></summary><div class="wl-grid">'+''.join(card(items,brand,lang,page) for items in grouped)+'</div></details>'
+    out+=f'<details class="wl-group" id="{group if brand=='volkswagen' else brand+'-'+group}"><summary><span>{esc(gname)}</span><span class="wl-group-arrow" aria-hidden="true"></span></summary>'
+    if grouped:out+='<div class="wl-grid">'+''.join(card(items,brand,lang,page) for items in grouped)+'</div>'
+    else:
+     note={'cs':'Pro tuto značku zatím nejsou v katalogu modelově ověřené samostatné ikony infotainmentu. Symboly z jiné značky nepřebíráme bez ověření konkrétního modelu, systému a grafické podoby.','en':'The catalogue does not yet contain model-verified standalone infotainment icons for this brand. Icons from another brand are not reused without verification of the exact model, system and graphic.','de':'Für diese Marke enthält der Katalog derzeit keine modellgeprüften eigenständigen Infotainment-Symbole. Symbole einer anderen Marke werden ohne Prüfung von Modell, System und Grafik nicht übernommen.'}[lang]
+     out+='<p class="wl-empty-category">'+esc(note)+'</p>'
+    out+='</details>'
   out+='</section>'
  out+='</section>'
  out+=f'<section class="wl-contact"><h2>{esc(u["contactTitle"])}</h2><p>{esc(u["contact"])}</p><p><strong>{esc(u["hours"])}</strong></p><p>{esc(u["office"])}: <a href="tel:+420605399448">+420 605 399 448</a><br>{esc(u["workshop"])}: <a href="tel:+420608313437">+420 608 313 437</a></p><a class="tlacitko-akce" href="{rel(locale_root(lang)+"kontakt",page)}" data-booking-panel>{esc(u["contactButton"])}</a><p class="wl-note">{esc(u["notAssistance"])}</p></section>'

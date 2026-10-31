@@ -10,7 +10,7 @@
  function updateURL(){var url=new URL(location.href);if(selectedBrand)url.searchParams.set('znacka',selectedBrand);else url.searchParams.delete('znacka');history.replaceState(null,'',url.pathname+url.search+url.hash);updateLanguageLinks();}
  function showBrand(){
   cards.forEach(function(card){var show=selectedBrand&&card.dataset.brand===selectedBrand;card.hidden=!show;});
-  groups.forEach(function(group){group.hidden=!group.querySelector('.wl-card:not([hidden])');});
+  groups.forEach(function(group){var hasCards=group.querySelector('.wl-card');var owner=group.closest('.wl-brand');group.hidden=hasCards?!group.querySelector('.wl-card:not([hidden])'):!(owner&&owner.dataset.brand===selectedBrand);});
   brandGroups.forEach(function(group){group.hidden=!group.querySelector('.wl-card:not([hidden])');});
   tiles.forEach(function(tile){tile.setAttribute('aria-pressed',String(tile.dataset.brand===selectedBrand));});
   results.hidden=!selectedBrand;heading.textContent=selectedBrand?text.brands[selectedBrand]+' — '+text.overview:text.overview;
