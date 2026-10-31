@@ -209,7 +209,7 @@ def infotainment_content(brand,lang,page):
  out='<div class="wl-infotainment-content">'
  for category in INFO_CATEGORY_ORDER:
   rows=[x for x in grouped if info_category(x[0])==category]
-  if rows:out+=f'<section class="wl-info-category"><h4>{esc(INFO_CATEGORY_LABELS[lang][category])}</h4><div class="wl-grid">'+''.join(infotainment_card(x,brand,lang,page)for x in rows)+'</div></section>'
+  if rows:out+=f'<details class="wl-info-category"><summary><span>{esc(INFO_CATEGORY_LABELS[lang][category])}</span><span class="wl-group-arrow" aria-hidden="true"></span></summary><div class="wl-grid">'+''.join(infotainment_card(x,brand,lang,page)for x in rows)+'</div></details>'
  return out+'</div>'
 
 def catalog_content(lang,page):
@@ -231,9 +231,11 @@ def catalog_content(lang,page):
    grouped=[items for items in brand_grouped if display_group(items[0],brand)==group]
    if group=='ovladani':
     info_html=infotainment_content(brand,lang,page);gname=({'cs':'Symboly a hlášení MMI','en':'MMI symbols and messages','de':'MMI-Symbole und Meldungen'}if brand=='audi'else{'cs':'Symboly infotainmentu a ovládání','en':'Infotainment and control symbols','de':'Infotainment- und Bediensymbole'})[lang]
-    out+=f'<section class="wl-infotainment-section" id="{brand}-ovladani"><h3>{esc(gname)}</h3>'
-    if grouped:out+='<div class="wl-grid">'+''.join(card(items,brand,lang,page) for items in grouped)+'</div>'
-    out+=info_html+'</section>'
+    out+=f'<details class="wl-infotainment-section" id="{brand}-ovladani"><summary><span>{esc(gname)}</span><span class="wl-group-arrow" aria-hidden="true"></span></summary><div class="wl-infotainment-body">'
+    if grouped:
+     existing_label={'cs':'Ovládání a klimatizace','en':'Controls and climate','de':'Bedienung und Klima'}[lang]
+     out+=f'<details class="wl-info-category wl-info-existing"><summary><span>{esc(existing_label)}</span><span class="wl-group-arrow" aria-hidden="true"></span></summary><div class="wl-grid">'+''.join(card(items,brand,lang,page) for items in grouped)+'</div></details>'
+    out+=info_html+'</div></details>'
     continue
    if grouped:
     if brand=='audi' and group=='motor':out+='<h3 class="wl-audi-section">'+esc({'cs':'Kontrolky vozidla','en':'Vehicle warning lights','de':'Fahrzeug-Kontrollleuchten'}[lang])+'</h3>'

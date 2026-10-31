@@ -1065,6 +1065,8 @@ def check_online_services(audit):
         audit.check('class="wl-intro"' not in text, "online_services", f"{label}: obsolete explanatory text remains below the brand tiles")
         audit.check(text.count('data-after-brand hidden') == 6, "online_services", f"{label}: secondary driver-advice topics must be hidden until a brand is selected")
         audit.check('wl-results-title' not in text and 'wl-vin-note' not in text and 'wl-brand-search' not in text, "online_services", f"{label}: obsolete catalogue heading, note or search remains")
+        audit.check(text.count('<details class="wl-infotainment-section"') == 6, "online_services", f"{label}: every brand must have one collapsed infotainment section")
+        audit.check('<section class="wl-info-category"' not in text and '<details class="wl-info-category"' in text, "online_services", f"{label}: infotainment categories must be nested accordions")
         audit.check(first_tile[lang] in text, "online_services", f"{label}: customer-facing brand labels are missing")
         for url in account_urls | help_urls:
             audit.check(url in text, "online_services", f"{label}: missing official URL {url}")

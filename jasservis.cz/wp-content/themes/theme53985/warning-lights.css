@@ -43,10 +43,16 @@
 .warning-lights .wl-group[open] .wl-group-arrow{margin-top:5px;transform:rotate(225deg)}
 .warning-lights .wl-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start;padding:16px}
 .warning-lights .wl-empty-category{margin:0;padding:16px;max-width:82ch;font-size:1rem;line-height:1.5}
-.warning-lights .wl-infotainment-section{margin-top:30px;padding-top:18px;border-top:1px solid #000}
-.warning-lights .wl-infotainment-section>h3{font:700 1.5rem/1.35 var(--js-font,Ubuntu,sans-serif);color:#111;margin:0 0 12px;text-transform:none}
-.warning-lights .wl-info-category{margin:22px 0}
-.warning-lights .wl-info-category>h4{font:700 1.25rem/1.35 var(--js-font,Ubuntu,sans-serif);color:#111;margin:0;padding:10px 14px;border:1px solid #000;border-radius:4px;background:var(--js-brand)}
+.warning-lights .wl-infotainment-section{margin:30px 0 12px;border:1px solid #000;border-radius:4px;background:var(--js-paper);overflow:hidden}
+.warning-lights .wl-infotainment-section>summary,.warning-lights .wl-info-category>summary{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:52px;padding:11px 16px;list-style:none;background:var(--js-brand);color:#111;font:700 1.25rem/1.35 var(--js-font,Ubuntu,sans-serif);cursor:pointer}
+.warning-lights .wl-infotainment-section>summary:hover,.warning-lights .wl-info-category>summary:hover{background:#ff8055}
+.warning-lights .wl-infotainment-section>summary:focus-visible,.warning-lights .wl-info-category>summary:focus-visible{outline:3px solid #000;outline-offset:-4px}
+.warning-lights .wl-infotainment-section[open]>summary{background:var(--js-card);color:var(--js-paper)}
+.warning-lights .wl-infotainment-section[open]>summary .wl-group-arrow,.warning-lights .wl-info-category[open]>summary .wl-group-arrow{margin-top:5px;transform:rotate(225deg)}
+.warning-lights .wl-infotainment-body{padding:12px 16px 16px}
+.warning-lights .wl-info-category{margin:10px 0;border:1px solid #000;border-radius:4px;background:var(--js-paper);overflow:hidden}
+.warning-lights .wl-info-category>summary{font-size:1.125rem}
+.warning-lights .wl-info-category[open]>summary{background:#f4f4f4}
 .warning-lights .wl-infotainment-card .wl-symbol{background:#f4f4f4;border:1px solid #000}
 .warning-lights .wl-card{border:1px solid #000;border-radius:var(--js-radius);background:var(--js-paper);min-width:0;overflow:hidden;scroll-margin-top:20px}
 .warning-lights .wl-card-head{display:flex;flex-direction:column;gap:10px;padding:16px;color:#111}
