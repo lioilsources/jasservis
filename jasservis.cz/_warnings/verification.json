@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-30",
+  "checked": "2026-10-31",
   "deployment": "preview-only",
   "catalogue_complete": false,
   "browser_matrix": {
@@ -52,11 +52,13 @@
         1920,
         1080
       ]
-    ]
+    ],
+    "checked": "2026-10-30",
+    "applies_to_latest_revision": false
   },
   "brand_page_cta_tests": 36,
   "physical_devices_tested": [],
-  "device_note": "Linux Chromium and WebKit with viewport/touch emulation; no physical iPhone, Android phone or tablet tested.",
+  "device_note": "The 54-case Chromium/WebKit matrix belongs to the 2026-10-30 revision. For the current 2026-10-31 metadata revision, Chromium is retested separately; WebKit is not rerun because its executable is unavailable. No physical iPhone, Android phone or tablet was tested.",
   "unrelated_content": "Shared headers unchanged. Other brand-page content unchanged apart from warning-catalogue availability notes. Media parity: 28 page groups, 76 entries.",
   "audi_and_new_vw_models": {
     "cases": 54,
@@ -182,7 +184,7 @@
   "physical_devices": [],
   "limitations": [
     "No manual is claimed fully compared. Selected entries and full text-layer indexing do not prove completeness.",
-    "All six supplied Terramar photographs visually reviewed. Individual icons partially source-matched; no photograph is claimed fully source-matched. Vehicle model year/software version unknown.",
+    "All six supplied Terramar photographs visually reviewed. Individual icons partially source-matched; no photograph is claimed fully source-matched. User-confirmed manufacture date 03/2026; vehicle model year/software version unknown.",
     "Exact Volkswagen headlight-range warning still has no specific model/edition proof.",
     "Audi A4 8W 01.2016, A8 4N for 2018 and Q4 e-tron 2022 remain unsupported; Q4 07.2024 is not substituted for another edition.",
     "Combined ADAS/HV and additional infotainment/comfort graphics still require exact lawful assets and state-specific review.",
@@ -245,7 +247,11 @@
     "fully_source_matched_photographs": 0,
     "status": "six-received-and-visually-reviewed-individual-source-matching-incomplete",
     "evidence": "terramar-photo-review.json",
-    "note": "All six distinct user photographs visually reviewed. Exact state matching is incomplete; the sixth cluster photograph at 0 rpm is not proof of simultaneous faults. Model year/software and original file metadata unknown."
+    "note": "All six distinct user photographs visually reviewed. Exact state matching is incomplete; the sixth cluster photograph at 0 rpm is not proof of simultaneous faults. User-confirmed manufacture date 03/2026; model year/software and original file metadata unknown.",
+    "manufacture_date": "2026-03",
+    "manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+    "model_year": null,
+    "software_version": null
   },
   "navigation": {
     "catalogue_access": "Six brand-specific Autoservis CTA blocks only; all 18 language/brand links retained",
@@ -1538,6 +1544,26 @@
       "shared_media_items": 76
     },
     "physical_devices": [],
+    "technical_tests_do_not_prove_content_completeness": true
+  },
+  "latest_metadata_revision": {
+    "checked": "2026-10-31",
+    "change": "User-confirmed Terramar manufacture date 03/2026 recorded separately from model year, software and manual edition.",
+    "chromium_comprehensive_test": {
+      "result": "PASS",
+      "assertion_groups": 45,
+      "languages": [
+        "cs",
+        "en",
+        "de"
+      ],
+      "scope": "brand entries, filters, anchors, symbol rendering, Enyaq/Multivan review tables and shared driver-advice entry"
+    },
+    "webkit_test": {
+      "result": "NOT_RUN",
+      "reason": "Playwright WebKit executable webkit-2227/pw_run.sh is unavailable in the current environment."
+    },
+    "previous_webkit_results_apply_to_earlier_revision_only": true,
     "technical_tests_do_not_prove_content_completeness": true
   }
 }

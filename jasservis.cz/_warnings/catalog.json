@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked": "2026-10-30",
+  "checked": "2026-10-31",
   "scope_requested": {
     "from_production_year": 2010,
     "cupra_from_standalone_brand": 2018
@@ -947,17 +947,21 @@
             "phev"
           ],
           "model_note": {
-            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
-            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
-            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+            "cs": "Položka je doložena konkrétním vydáním návodu. Datum výroby fotografovaného vozu 03/2026 potvrdil uživatel; jeho modelový rok a software nejsou známé. Fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The user confirmed the photographed vehicle’s manufacture date as 03/2026; its model year and software are unknown. The photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026; Modelljahr und Softwarestand sind unbekannt. Das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
           },
           "verification": {
-            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or from the photographed vehicle’s user-confirmed manufacture date 03/2026. Its model year and software version remain undocumented.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "graphic_printed_pages": [
               12
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           }
         },
         {
@@ -3788,17 +3792,21 @@
             "phev"
           ],
           "verification": {
-            "method": "Source-manual instructions and actual source pictogram compared with the corresponding user-supplied Terramar photograph. The photographed vehicle model year, VIN and software version are not known and are not inferred from the manual edition.",
+            "method": "Source-manual instructions and actual source pictogram compared with the corresponding user-supplied Terramar photograph. The user confirmed the photographed vehicle’s manufacture date as 03/2026; model year, VIN and software version are not known and are not inferred from the manufacture date or manual edition.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "photo_refs": [
               "terramar-photo-05"
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           },
           "model_note": {
-            "cs": "Fotografie dodané zadavatelem potvrzují podobu na fotografovaném Terramaru; jeho modelový rok ani verze softwaru nejsou doložené. Rozsah tohoto záznamu se řídí samostatně uvedeným vydáním návodu.",
-            "en": "User-supplied photographs confirm the depiction on the photographed Terramar; its model year and software version are not documented. This entry’s scope follows the separately cited manual edition.",
-            "de": "Die bereitgestellten Fotos bestätigen die Darstellung am fotografierten Terramar; Modelljahr und Softwarestand sind nicht belegt. Der Geltungsbereich folgt der separat genannten Anleitungsausgabe."
+            "cs": "Fotografie dodané zadavatelem potvrzují podobu na fotografovaném Terramaru s uživatelem potvrzeným datem výroby 03/2026. Jeho modelový rok ani verze softwaru nejsou doložené. Rozsah tohoto záznamu se řídí samostatně uvedeným vydáním návodu.",
+            "en": "User-supplied photographs confirm the depiction on the photographed Terramar, whose manufacture date 03/2026 was confirmed by the user. Its model year and software version are not documented. This entry’s scope follows the separately cited manual edition.",
+            "de": "Die bereitgestellten Fotos bestätigen die Darstellung am fotografierten Terramar mit dem nutzerbestätigten Produktionsdatum 03/2026. Modelljahr und Softwarestand sind nicht belegt. Der Geltungsbereich folgt der separat genannten Anleitungsausgabe."
           }
         },
         {
@@ -4250,17 +4258,21 @@
             "phev"
           ],
           "model_note": {
-            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
-            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
-            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+            "cs": "Položka je doložena konkrétním vydáním návodu. Datum výroby fotografovaného vozu 03/2026 potvrdil uživatel; jeho modelový rok a software nejsou známé. Fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The user confirmed the photographed vehicle’s manufacture date as 03/2026; its model year and software are unknown. The photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026; Modelljahr und Softwarestand sind unbekannt. Das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
           },
           "verification": {
-            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or from the photographed vehicle’s user-confirmed manufacture date 03/2026. Its model year and software version remain undocumented.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "graphic_printed_pages": [
               47
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           }
         },
         {
@@ -5828,17 +5840,21 @@
             "phev"
           ],
           "model_note": {
-            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
-            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
-            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+            "cs": "Položka je doložena konkrétním vydáním návodu. Datum výroby fotografovaného vozu 03/2026 potvrdil uživatel; jeho modelový rok a software nejsou známé. Fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The user confirmed the photographed vehicle’s manufacture date as 03/2026; its model year and software are unknown. The photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026; Modelljahr und Softwarestand sind unbekannt. Das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
           },
           "verification": {
-            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or from the photographed vehicle’s user-confirmed manufacture date 03/2026. Its model year and software version remain undocumented.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "graphic_printed_pages": [
               14
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           }
         },
         {
@@ -6100,17 +6116,21 @@
             "phev"
           ],
           "model_note": {
-            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
-            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
-            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+            "cs": "Položka je doložena konkrétním vydáním návodu. Datum výroby fotografovaného vozu 03/2026 potvrdil uživatel; jeho modelový rok a software nejsou známé. Fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The user confirmed the photographed vehicle’s manufacture date as 03/2026; its model year and software are unknown. The photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026; Modelljahr und Softwarestand sind unbekannt. Das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
           },
           "verification": {
-            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or from the photographed vehicle’s user-confirmed manufacture date 03/2026. Its model year and software version remain undocumented.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "graphic_printed_pages": [
               13
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           }
         },
         {
@@ -8321,17 +8341,21 @@
             "phev"
           ],
           "model_note": {
-            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
-            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
-            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+            "cs": "Položka je doložena konkrétním vydáním návodu. Datum výroby fotografovaného vozu 03/2026 potvrdil uživatel; jeho modelový rok a software nejsou známé. Fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The user confirmed the photographed vehicle’s manufacture date as 03/2026; its model year and software are unknown. The photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026; Modelljahr und Softwarestand sind unbekannt. Das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
           },
           "verification": {
-            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or from the photographed vehicle’s user-confirmed manufacture date 03/2026. Its model year and software version remain undocumented.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "graphic_printed_pages": [
               14
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           }
         }
       ],
@@ -8453,17 +8477,21 @@
             "phev"
           ],
           "model_note": {
-            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
-            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
-            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+            "cs": "Položka je doložena konkrétním vydáním návodu. Datum výroby fotografovaného vozu 03/2026 potvrdil uživatel; jeho modelový rok a software nejsou známé. Fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The user confirmed the photographed vehicle’s manufacture date as 03/2026; its model year and software are unknown. The photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026; Modelljahr und Softwarestand sind unbekannt. Das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
           },
           "verification": {
-            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or from the photographed vehicle’s user-confirmed manufacture date 03/2026. Its model year and software version remain undocumented.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "graphic_printed_pages": [
               14
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           }
         }
       ],
@@ -10966,12 +10994,16 @@
             "de": "Terramar 11.2025 S.186: bei roter Lenkungsstörung nicht weiterfahren, Fachhilfe holen und nicht auf eigenen Rädern abschleppen. Gelbes Dauer-/Blinklicht unterscheiden."
           },
           "verification": {
-            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or from the photographed vehicle’s user-confirmed manufacture date 03/2026. Its model year and software version remain undocumented.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "graphic_printed_pages": [
               12
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           }
         },
         {
@@ -11736,17 +11768,21 @@
             "phev"
           ],
           "model_note": {
-            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
-            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
-            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+            "cs": "Položka je doložena konkrétním vydáním návodu. Datum výroby fotografovaného vozu 03/2026 potvrdil uživatel; jeho modelový rok a software nejsou známé. Fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The user confirmed the photographed vehicle’s manufacture date as 03/2026; its model year and software are unknown. The photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026; Modelljahr und Softwarestand sind unbekannt. Das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
           },
           "verification": {
-            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or from the photographed vehicle’s user-confirmed manufacture date 03/2026. Its model year and software version remain undocumented.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "graphic_printed_pages": [
               12
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           }
         }
       ],
@@ -12030,17 +12066,21 @@
             "phev"
           ],
           "verification": {
-            "method": "Source-manual instructions and actual source pictogram compared with the corresponding user-supplied Terramar photograph. The photographed vehicle model year, VIN and software version are not known and are not inferred from the manual edition.",
+            "method": "Source-manual instructions and actual source pictogram compared with the corresponding user-supplied Terramar photograph. The user confirmed the photographed vehicle’s manufacture date as 03/2026; model year, VIN and software version are not known and are not inferred from the manufacture date or manual edition.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "photo_refs": [
               "terramar-photo-05"
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           },
           "model_note": {
-            "cs": "Fotografie dodané zadavatelem potvrzují podobu na fotografovaném Terramaru; jeho modelový rok ani verze softwaru nejsou doložené. Rozsah tohoto záznamu se řídí samostatně uvedeným vydáním návodu.",
-            "en": "User-supplied photographs confirm the depiction on the photographed Terramar; its model year and software version are not documented. This entry’s scope follows the separately cited manual edition.",
-            "de": "Die bereitgestellten Fotos bestätigen die Darstellung am fotografierten Terramar; Modelljahr und Softwarestand sind nicht belegt. Der Geltungsbereich folgt der separat genannten Anleitungsausgabe."
+            "cs": "Fotografie dodané zadavatelem potvrzují podobu na fotografovaném Terramaru s uživatelem potvrzeným datem výroby 03/2026. Jeho modelový rok ani verze softwaru nejsou doložené. Rozsah tohoto záznamu se řídí samostatně uvedeným vydáním návodu.",
+            "en": "User-supplied photographs confirm the depiction on the photographed Terramar, whose manufacture date 03/2026 was confirmed by the user. Its model year and software version are not documented. This entry’s scope follows the separately cited manual edition.",
+            "de": "Die bereitgestellten Fotos bestätigen die Darstellung am fotografierten Terramar mit dem nutzerbestätigten Produktionsdatum 03/2026. Modelljahr und Softwarestand sind nicht belegt. Der Geltungsbereich folgt der separat genannten Anleitungsausgabe."
           }
         }
       ],
@@ -14117,17 +14157,21 @@
             "phev"
           ],
           "model_note": {
-            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
-            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
-            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+            "cs": "Položka je doložena konkrétním vydáním návodu. Datum výroby fotografovaného vozu 03/2026 potvrdil uživatel; jeho modelový rok a software nejsou známé. Fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The user confirmed the photographed vehicle’s manufacture date as 03/2026; its model year and software are unknown. The photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026; Modelljahr und Softwarestand sind unbekannt. Das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
           },
           "verification": {
-            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or from the photographed vehicle’s user-confirmed manufacture date 03/2026. Its model year and software version remain undocumented.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "graphic_printed_pages": [
               14
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           }
         }
       ],
@@ -21078,7 +21122,7 @@
             "phev"
           ],
           "verification": {
-            "method": "Source-manual instructions and actual source pictogram compared with the corresponding user-supplied Terramar photograph. The photographed vehicle model year, VIN and software version are not known and are not inferred from the manual edition.",
+            "method": "Source-manual instructions and actual source pictogram compared with the corresponding user-supplied Terramar photograph. The user confirmed the photographed vehicle’s manufacture date as 03/2026; model year, VIN and software version are not known and are not inferred from the manufacture date or manual edition.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "photo_refs": [
               "terramar-photo-01",
@@ -21086,12 +21130,16 @@
               "terramar-photo-03",
               "terramar-photo-04"
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           },
           "model_note": {
-            "cs": "Fotografie dodané zadavatelem potvrzují podobu na fotografovaném Terramaru; jeho modelový rok ani verze softwaru nejsou doložené. Rozsah tohoto záznamu se řídí samostatně uvedeným vydáním návodu.",
-            "en": "User-supplied photographs confirm the depiction on the photographed Terramar; its model year and software version are not documented. This entry’s scope follows the separately cited manual edition.",
-            "de": "Die bereitgestellten Fotos bestätigen die Darstellung am fotografierten Terramar; Modelljahr und Softwarestand sind nicht belegt. Der Geltungsbereich folgt der separat genannten Anleitungsausgabe."
+            "cs": "Fotografie dodané zadavatelem potvrzují podobu na fotografovaném Terramaru s uživatelem potvrzeným datem výroby 03/2026. Jeho modelový rok ani verze softwaru nejsou doložené. Rozsah tohoto záznamu se řídí samostatně uvedeným vydáním návodu.",
+            "en": "User-supplied photographs confirm the depiction on the photographed Terramar, whose manufacture date 03/2026 was confirmed by the user. Its model year and software version are not documented. This entry’s scope follows the separately cited manual edition.",
+            "de": "Die bereitgestellten Fotos bestätigen die Darstellung am fotografierten Terramar mit dem nutzerbestätigten Produktionsdatum 03/2026. Modelljahr und Softwarestand sind nicht belegt. Der Geltungsbereich folgt der separat genannten Anleitungsausgabe."
           }
         }
       ],
@@ -21165,7 +21213,7 @@
             "spalovaci"
           ],
           "verification": {
-            "method": "Source-manual instructions and actual source pictogram compared with the corresponding user-supplied Terramar photograph. The photographed vehicle model year, VIN and software version are not known and are not inferred from the manual edition.",
+            "method": "Source-manual instructions and actual source pictogram compared with the corresponding user-supplied Terramar photograph. The user confirmed the photographed vehicle’s manufacture date as 03/2026; model year, VIN and software version are not known and are not inferred from the manufacture date or manual edition.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "photo_refs": [
               "terramar-photo-01",
@@ -21173,12 +21221,16 @@
               "terramar-photo-03",
               "terramar-photo-04"
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           },
           "model_note": {
-            "cs": "Fotografie dodané zadavatelem potvrzují podobu na fotografovaném Terramaru; jeho modelový rok ani verze softwaru nejsou doložené. Rozsah tohoto záznamu se řídí samostatně uvedeným vydáním návodu.",
-            "en": "User-supplied photographs confirm the depiction on the photographed Terramar; its model year and software version are not documented. This entry’s scope follows the separately cited manual edition.",
-            "de": "Die bereitgestellten Fotos bestätigen die Darstellung am fotografierten Terramar; Modelljahr und Softwarestand sind nicht belegt. Der Geltungsbereich folgt der separat genannten Anleitungsausgabe."
+            "cs": "Fotografie dodané zadavatelem potvrzují podobu na fotografovaném Terramaru s uživatelem potvrzeným datem výroby 03/2026. Jeho modelový rok ani verze softwaru nejsou doložené. Rozsah tohoto záznamu se řídí samostatně uvedeným vydáním návodu.",
+            "en": "User-supplied photographs confirm the depiction on the photographed Terramar, whose manufacture date 03/2026 was confirmed by the user. Its model year and software version are not documented. This entry’s scope follows the separately cited manual edition.",
+            "de": "Die bereitgestellten Fotos bestätigen die Darstellung am fotografierten Terramar mit dem nutzerbestätigten Produktionsdatum 03/2026. Modelljahr und Softwarestand sind nicht belegt. Der Geltungsbereich folgt der separat genannten Anleitungsausgabe."
           }
         }
       ],
@@ -21249,17 +21301,21 @@
             "phev"
           ],
           "model_note": {
-            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
-            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
-            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+            "cs": "Položka je doložena konkrétním vydáním návodu. Datum výroby fotografovaného vozu 03/2026 potvrdil uživatel; jeho modelový rok a software nejsou známé. Fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The user confirmed the photographed vehicle’s manufacture date as 03/2026; its model year and software are unknown. The photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026; Modelljahr und Softwarestand sind unbekannt. Das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
           },
           "verification": {
-            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or from the photographed vehicle’s user-confirmed manufacture date 03/2026. Its model year and software version remain undocumented.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "graphic_printed_pages": [
               148
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           }
         }
       ],
@@ -21332,18 +21388,22 @@
             "phev"
           ],
           "model_note": {
-            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
-            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
-            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+            "cs": "Položka je doložena konkrétním vydáním návodu. Datum výroby fotografovaného vozu 03/2026 potvrdil uživatel; jeho modelový rok a software nejsou známé. Fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The user confirmed the photographed vehicle’s manufacture date as 03/2026; its model year and software are unknown. The photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026; Modelljahr und Softwarestand sind unbekannt. Das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
           },
           "verification": {
-            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or from the photographed vehicle’s user-confirmed manufacture date 03/2026. Its model year and software version remain undocumented.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "graphic_printed_pages": [
               148,
               150
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           }
         }
       ],
@@ -21416,18 +21476,22 @@
             "phev"
           ],
           "model_note": {
-            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
-            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
-            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+            "cs": "Položka je doložena konkrétním vydáním návodu. Datum výroby fotografovaného vozu 03/2026 potvrdil uživatel; jeho modelový rok a software nejsou známé. Fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The user confirmed the photographed vehicle’s manufacture date as 03/2026; its model year and software are unknown. The photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026; Modelljahr und Softwarestand sind unbekannt. Das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
           },
           "verification": {
-            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or from the photographed vehicle’s user-confirmed manufacture date 03/2026. Its model year and software version remain undocumented.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "graphic_printed_pages": [
               295,
               296
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           }
         }
       ],
@@ -21502,17 +21566,21 @@
             "phev"
           ],
           "model_note": {
-            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
-            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
-            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+            "cs": "Položka je doložena konkrétním vydáním návodu. Datum výroby fotografovaného vozu 03/2026 potvrdil uživatel; jeho modelový rok a software nejsou známé. Fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The user confirmed the photographed vehicle’s manufacture date as 03/2026; its model year and software are unknown. The photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026; Modelljahr und Softwarestand sind unbekannt. Das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
           },
           "verification": {
-            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or from the photographed vehicle’s user-confirmed manufacture date 03/2026. Its model year and software version remain undocumented.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "graphic_printed_pages": [
               14
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           }
         },
         {
@@ -21616,17 +21684,21 @@
             "phev"
           ],
           "model_note": {
-            "cs": "Položka je doložena konkrétním vydáním návodu. Modelový rok a software fotografovaného vozu nejsou známé; fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
-            "en": "This entry is documented for the specified manual edition. The photographed vehicle’s model year and software are unknown; the photo does not extend applicability to all editions or equipment.",
-            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Modelljahr und Software des fotografierten Fahrzeugs sind unbekannt; das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
+            "cs": "Položka je doložena konkrétním vydáním návodu. Datum výroby fotografovaného vozu 03/2026 potvrdil uživatel; jeho modelový rok a software nejsou známé. Fotografie proto nerozšiřuje platnost na všechna vydání nebo všechny výbavy.",
+            "en": "This entry is documented for the specified manual edition. The user confirmed the photographed vehicle’s manufacture date as 03/2026; its model year and software are unknown. The photo does not extend applicability to all editions or equipment.",
+            "de": "Der Eintrag ist für die genannte Anleitungsausgabe belegt. Der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026; Modelljahr und Softwarestand sind unbekannt. Das Foto erweitert die Gültigkeit nicht auf alle Ausgaben oder Ausstattungen."
           },
           "verification": {
-            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or unknown photo model year.",
+            "method": "Actual manual pictogram, printed colour/state and operating instructions individually read and visually compared; no applicability inferred from another brand or from the photographed vehicle’s user-confirmed manufacture date 03/2026. Its model year and software version remain undocumented.",
             "document_sha256": "bc5dba5c2793381277381f45c24e40ccacfa997b1e68f096e5d59e71428ab375",
             "graphic_printed_pages": [
               12
             ],
-            "checked": "2026-10-30"
+            "checked": "2026-10-30",
+            "photo_vehicle_manufacture_date": "2026-03",
+            "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+            "photo_vehicle_model_year": null,
+            "photo_vehicle_software_version": null
           }
         }
       ],
@@ -28810,6 +28882,14 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "Normal preheating classified as information; Q4 cruise standby instructions no longer describe a limiter in any locale. Airbag diagnostic-deactivation signal checked independently against Born 08.21 p45, Enyaq DE11.2020 p73 and Octavia CS11.2018 p45; signal sequence is scoped by manual, not transferred across models. Caddy timing remains source-dependent pending a dedicated reread. No additional catalogue completeness claimed."
+    },
+    {
+      "id": "terramar-manufacture-date-user-confirmed",
+      "checked": "2026-10-31",
+      "added_record_ids": [],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "User confirmed manufacture date 03/2026 for the Terramar shown in all six photographs. This is stored separately from model year, VIN, software and manual edition; no catalogue meaning, graphic or model scope was added from the date alone."
     }
   ],
   "evidence_gaps_revision": [
@@ -28830,5 +28910,30 @@
       "missing_source": "A4 8W 01.2016 8W0012705AC; A8 4N owner manual matching 2018 vehicle scope (exact edition still unidentified); Q4 e-tron owner manual matching 2022 vehicle scope.",
       "result": "No substitution. Newly obtained editions registered independently."
     }
-  ]
+  ],
+  "photographed_vehicle_evidence": {
+    "id": "terramar-user-photo-set",
+    "brand": "cupra",
+    "model": "Terramar",
+    "manufacture_date": "2026-03",
+    "manufacture_date_display": "03/2026",
+    "manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+    "model_year": null,
+    "vin": null,
+    "software_version": null,
+    "photographs": [
+      "terramar-photo-01",
+      "terramar-photo-02",
+      "terramar-photo-03",
+      "terramar-photo-04",
+      "terramar-photo-05",
+      "terramar-photo-06"
+    ],
+    "comparison_manual": "cupra-terramar-2026-11-25",
+    "scope_note": {
+      "cs": "Datum výroby fotografovaného vozu nedokládá jeho modelový rok, software ani automatickou shodu s vydáním návodu Terramar 11.25.",
+      "en": "The photographed vehicle’s manufacture date does not establish its model year, software or automatic identity with Terramar manual edition 11.25.",
+      "de": "Das Produktionsdatum des fotografierten Fahrzeugs belegt weder Modelljahr noch Softwarestand oder eine automatische Übereinstimmung mit der Terramar-Anleitung 11.25."
+    }
+  }
 }

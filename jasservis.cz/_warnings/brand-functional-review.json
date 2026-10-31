@@ -1,6 +1,6 @@
 {
-  "checked": "2026-10-30",
-  "scope": "Selected independent own-brand manual chapter checks; not complete all-model or whole-manual comparison. No photographed Terramar model-year inference.",
+  "checked": "2026-10-31",
+  "scope": "Selected independent own-brand manual chapter checks; not complete all-model or whole-manual comparison. Photographed Terramar manufacture date 03/2026 is user-confirmed; no model-year, software or manual-edition inference.",
   "rows": [
     {
       "brand": "volkswagen",
@@ -198,9 +198,9 @@
         "de": "Alle sechs Fotos mit konkreten Positionen, Typ, Bedeutung, Webstatus und Quelle. Fünf neue Kundenübersicht-Einträge und neun einzelne Modellzuordnungen bestehender Einträge."
       },
       "remaining": {
-        "cs": "Přesné samostatně použitelné grafiky HUD, Keyless, telefonu, Wi-Fi/hotspotu, Bluetooth, médií a dalších ovladačů ještě chybí. Rok/software fotografovaného vozu není doložen; nejasné zkratky nejsou určeny odhadem.",
-        "en": "Exact independently usable graphics for HUD, Keyless, telephone, Wi-Fi/hotspot, Bluetooth, media and further controls remain missing. Photo vehicle year/software undocumented; ambiguous shortcuts are not guessed.",
-        "de": "Genaue eigenständig nutzbare Grafiken für HUD, Keyless, Telefon, Wi-Fi/Hotspot, Bluetooth, Medien und weitere Bedienungen fehlen noch. Foto-Fahrzeugjahr/Software nicht belegt; unklare Verknüpfungen nicht geraten."
+        "cs": "Přesné samostatně použitelné grafiky HUD, Keyless, telefonu, Wi-Fi/hotspotu, Bluetooth, médií a dalších ovladačů ještě chybí. Uživatel potvrdil datum výroby fotografovaného vozu 03/2026; modelový rok a software nejsou doložené. Nejasné zkratky nejsou určeny odhadem.",
+        "en": "Exact independently usable graphics for HUD, Keyless, telephone, Wi-Fi/hotspot, Bluetooth, media and further controls remain missing. The user confirmed the photographed vehicle’s manufacture date as 03/2026; model year and software are undocumented. Ambiguous shortcuts are not guessed.",
+        "de": "Genaue eigenständig nutzbare Grafiken für HUD, Keyless, Telefon, Wi-Fi/Hotspot, Bluetooth, Medien und weitere Bedienungen fehlen noch. Der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026; Modelljahr und Softwarestand sind nicht belegt. Unklare Verknüpfungen werden nicht geraten."
       },
       "catalogue_ids": [
         "terramar-clima-control",
@@ -209,7 +209,11 @@
         "terramar-lane-passive",
         "terramar-esc-tcs-off"
       ],
-      "whole_manual_complete": false
+      "whole_manual_complete": false,
+      "photo_vehicle_manufacture_date": "2026-03",
+      "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+      "photo_vehicle_model_year": null,
+      "photo_vehicle_software_version": null
     },
     {
       "brand": "volkswagen-uzitkove-vozy",

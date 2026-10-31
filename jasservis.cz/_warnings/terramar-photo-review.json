@@ -4,6 +4,9 @@
   "visually_reviewed_photographs": 6,
   "missing_photographs": 0,
   "photo_vehicle_model": "CUPRA Terramar as stated by the user",
+  "manufacture_date": "2026-03",
+  "manufacture_date_display": "03/2026",
+  "manufacture_date_source": "user-confirmed in conversation 2026-10-31",
   "model_year": null,
   "software_version": null,
   "photos": [
@@ -18,6 +21,8 @@
       "visual_review": true,
       "original_filename": null,
       "file_hash": null,
+      "manufacture_date": "2026-03",
+      "manufacture_date_source": "user-confirmed in conversation 2026-10-31",
       "model_year": null,
       "software_version": null,
       "working_reference": "terramar-photo-01",
@@ -39,6 +44,8 @@
       "visual_review": true,
       "original_filename": null,
       "file_hash": null,
+      "manufacture_date": "2026-03",
+      "manufacture_date_source": "user-confirmed in conversation 2026-10-31",
       "model_year": null,
       "software_version": null,
       "working_reference": "terramar-photo-02",
@@ -60,6 +67,8 @@
       "visual_review": true,
       "original_filename": null,
       "file_hash": null,
+      "manufacture_date": "2026-03",
+      "manufacture_date_source": "user-confirmed in conversation 2026-10-31",
       "model_year": null,
       "software_version": null,
       "working_reference": "terramar-photo-03",
@@ -81,6 +90,8 @@
       "visual_review": true,
       "original_filename": null,
       "file_hash": null,
+      "manufacture_date": "2026-03",
+      "manufacture_date_source": "user-confirmed in conversation 2026-10-31",
       "model_year": null,
       "software_version": null,
       "working_reference": "terramar-photo-04",
@@ -102,6 +113,8 @@
       "visual_review": true,
       "original_filename": null,
       "file_hash": null,
+      "manufacture_date": "2026-03",
+      "manufacture_date_source": "user-confirmed in conversation 2026-10-31",
       "model_year": null,
       "software_version": null,
       "working_reference": "terramar-photo-05",
@@ -123,6 +136,8 @@
       "visual_review": true,
       "original_filename": null,
       "file_hash": null,
+      "manufacture_date": "2026-03",
+      "manufacture_date_source": "user-confirmed in conversation 2026-10-31",
       "model_year": null,
       "software_version": null,
       "working_reference": "terramar-photo-06",
@@ -171,9 +186,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -244,9 +259,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -317,9 +332,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -392,9 +407,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -470,9 +485,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -577,9 +592,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true,
         "specific_shortcut_behaviour_confirmed": false
@@ -653,9 +668,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -734,9 +749,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -807,9 +822,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -882,9 +897,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -964,9 +979,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -1074,9 +1089,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -1179,9 +1194,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -1252,9 +1267,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -1323,9 +1338,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -1394,9 +1409,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -1465,9 +1480,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -1544,9 +1559,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -1619,9 +1634,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -1690,9 +1705,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": false
       },
@@ -1763,9 +1778,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": false
       },
@@ -1845,9 +1860,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -1953,9 +1968,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -2059,9 +2074,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -2167,9 +2182,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -2269,9 +2284,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -2369,9 +2384,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -2460,9 +2475,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -2568,9 +2583,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -2684,9 +2699,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -2796,9 +2811,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -2900,9 +2915,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -3005,9 +3020,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -3084,9 +3099,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -3166,9 +3181,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -3254,9 +3269,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -3328,9 +3343,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -3403,9 +3418,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -3480,9 +3495,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true,
         "photographic_shape_match": "tiny-variant-not-fully-resolved"
@@ -3558,9 +3573,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -3632,9 +3647,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true,
         "graphic_printed_pages": [
@@ -3733,9 +3748,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": false,
         "role_confirmed": true
@@ -3834,9 +3849,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -3926,9 +3941,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -4022,9 +4037,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true,
         "exact_original_shape_compared": true
@@ -4131,9 +4146,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -4223,9 +4238,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -4300,9 +4315,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -4388,9 +4403,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -4480,9 +4495,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -4568,9 +4583,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -4656,9 +4671,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -4740,9 +4755,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -4815,9 +4830,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": false
       },
@@ -4890,9 +4905,9 @@
         ],
         "specific_meaning_confirmed": true,
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "exact_original_shape_compared": true
       },
@@ -4992,9 +5007,9 @@
         ],
         "specific_meaning_confirmed": true,
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "exact_original_shape_compared": true
       },
@@ -5092,9 +5107,9 @@
         ],
         "specific_meaning_confirmed": false,
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         }
       },
       "web_result": "missing-exact-model-scoped-graphic-entry",
@@ -5191,9 +5206,9 @@
         ],
         "specific_meaning_confirmed": false,
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         }
       },
       "web_result": "missing-exact-model-scoped-graphic-entry",
@@ -5290,9 +5305,9 @@
         ],
         "specific_meaning_confirmed": false,
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         }
       },
       "web_result": "missing-exact-model-scoped-graphic-entry",
@@ -5387,9 +5402,9 @@
         ],
         "specific_meaning_confirmed": false,
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         }
       },
       "web_result": "missing-exact-model-scoped-graphic-entry",
@@ -5491,9 +5506,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -5591,9 +5606,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -5691,9 +5706,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -5793,9 +5808,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true,
         "exact_original_shape_compared": true
@@ -5896,9 +5911,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true,
         "exact_original_shape_compared": true
@@ -5997,9 +6012,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -6099,9 +6114,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true,
         "exact_original_shape_compared": true,
@@ -6201,9 +6216,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -6301,9 +6316,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -6385,9 +6400,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -6478,9 +6493,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -6568,9 +6583,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": true
       },
@@ -6648,9 +6663,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": false
       },
@@ -6731,9 +6746,9 @@
         "edition": "11.25",
         "url": "https://www.cupra.com/datamanual-manual/manuals/cupra/en-uk/CUPRA_Terramar_11_25_EN.pdf",
         "scope_note": {
-          "cs": "Návod Terramar 11.25; rok a software fotografovaného vozu nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
-          "en": "Terramar manual 11.25; the photographed vehicle’s year and software are undocumented. Shortcut appearance can vary with market, equipment and software.",
-          "de": "Terramar-Anleitung 11.25; Jahr und Software des fotografierten Fahrzeugs nicht belegt. Verknüpfungsdarstellung kann je nach Markt, Ausstattung und Software abweichen."
+          "cs": "Návod Terramar 11.25; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a verze softwaru nejsou doložené. Podoba zkratky může být odlišná podle trhu, výbavy a softwaru.",
+          "en": "Terramar manual 11.25; the user confirmed the photographed vehicle’s manufacture date as 03/2026. Its model year and software version are undocumented. Shortcut appearance can vary with market, equipment and software.",
+          "de": "Terramar-Anleitung 11.25; der Nutzer bestätigte das Produktionsdatum des fotografierten Fahrzeugs mit 03/2026. Modelljahr und Softwarestand sind nicht belegt. Die Darstellung der Verknüpfung kann je nach Markt, Ausstattung und Software abweichen."
         },
         "specific_meaning_confirmed": false
       },
@@ -6770,12 +6785,12 @@
     }
   ],
   "important_limitations": {
-    "cs": "Všech šest odlišných dodaných fotografií bylo vizuálně zkontrolováno. To neznamená úplné zdrojové ověření každé zobrazené ikony ani všech jejích stavů. Šestý snímek při 0 ot/min s více kontrolkami není důkazem souběžných závad; je nutné znát stav zapalování, hlášení a chování po nastartování. Modelový rok a software vozu nejsou doložené.",
-    "en": "All six distinct supplied photographs were visually reviewed. This does not fully validate every depicted icon or all of its states against sources. The sixth photo at 0 rpm with multiple lamps does not establish simultaneous faults; ignition state, messages and behaviour after starting are needed. Vehicle model year and software are undocumented.",
-    "de": "Alle sechs unterschiedlichen bereitgestellten Fotos wurden visuell geprüft. Dies bestätigt nicht jede abgebildete Ikone oder alle Zustände vollständig anhand von Quellen. Das sechste Foto bei 0 U/min mit mehreren Leuchten belegt keine gleichzeitigen Störungen; Zündungszustand, Meldungen und Verhalten nach dem Start sind erforderlich. Modelljahr und Softwarestand sind nicht belegt."
+    "cs": "Všech šest odlišných dodaných fotografií bylo vizuálně zkontrolováno. To neznamená úplné zdrojové ověření každé zobrazené ikony ani všech jejích stavů. Šestý snímek při 0 ot/min s více kontrolkami není důkazem souběžných závad; je nutné znát stav zapalování, hlášení a chování po nastartování. Datum výroby 03/2026 potvrdil uživatel; modelový rok a verze softwaru vozu nejsou doložené.",
+    "en": "All six distinct supplied photographs were visually reviewed. This does not fully validate every depicted icon or all of its states against sources. The sixth photo at 0 rpm with multiple lamps does not establish simultaneous faults; ignition state, messages and behaviour after starting are needed. The user confirmed manufacture date 03/2026; vehicle model year and software version are undocumented.",
+    "de": "Alle sechs unterschiedlichen bereitgestellten Fotos wurden visuell geprüft. Dies bestätigt nicht jede abgebildete Ikone oder alle Zustände vollständig anhand von Quellen. Das sechste Foto bei 0 U/min mit mehreren Leuchten belegt keine gleichzeitigen Störungen; Zündungszustand, Meldungen und Verhalten nach dem Start sind erforderlich. Das Produktionsdatum 03/2026 wurde vom Nutzer bestätigt; Modelljahr und Softwarestand sind nicht belegt."
   },
   "schema": 2,
-  "comparison_date": "2026-10-30",
+  "comparison_date": "2026-10-31",
   "catalogue_before_revision": "351a939",
   "catalogue_semantic_records_after": 159,
   "review_method": "Every distinguishable labelled shortcut and visible instrument symbol on all six supplied photographs compared with current CUPRA/Terramar catalogue scopes and separately cited manufacturer manual pages. Meaning, exact artwork, state, and model applicability are separate checks. Unreadable compound indicators are not guessed.",
@@ -6795,13 +6810,13 @@
     "received": 6,
     "missing": [],
     "clarification": {
-      "cs": "Šestá fotografie již byla dodána samostatně. Nejde o chybějící snímek; původní názvy souborů a originální soubory nebyly k vloženým obrázkům předány. Pracovní označení nejsou vydávána za skutečné názvy souborů.",
-      "en": "The sixth photograph was already supplied separately. No photograph is missing; original filenames and raw files were not provided with the inline images. Working references are not represented as original filenames.",
-      "de": "Das sechste Foto wurde bereits separat geliefert. Kein Foto fehlt; Originaldateinamen und Rohdateien wurden mit den eingebetteten Bildern nicht bereitgestellt. Arbeitskennungen sind keine behaupteten Originaldateinamen."
+      "cs": "Všech šest fotografií bylo dodáno. Původní názvy a originální soubory nebyly k vloženým obrázkům předány; pracovní označení proto nejsou vydávána za skutečné názvy souborů. Uživatel potvrdil datum výroby fotografovaného vozu 03/2026, nikoli jeho modelový rok nebo verzi softwaru.",
+      "en": "All six photographs were supplied. Original filenames and raw files were not provided with the inline images, so working references are not represented as original filenames. The user confirmed the photographed vehicle’s manufacture date as 03/2026, not its model year or software version.",
+      "de": "Alle sechs Fotos wurden bereitgestellt. Originaldateinamen und Rohdateien wurden mit den eingebetteten Bildern nicht übermittelt; Arbeitskennungen sind daher keine behaupteten Originaldateinamen. Der Nutzer bestätigte das Produktionsdatum 03/2026, nicht das Modelljahr oder den Softwarestand des fotografierten Fahrzeugs."
     }
   },
   "latest_revision": {
-    "checked": "2026-10-30",
+    "checked": "2026-10-31",
     "resolved_observation_ids": [
       "phone-app"
     ],
@@ -6815,6 +6830,8 @@
     ],
     "all_six_available": true,
     "request_repeat_delivery": false,
-    "all_photo_variants_source_matched": false
+    "all_photo_variants_source_matched": false,
+    "photo_vehicle_manufacture_date": "2026-03",
+    "photo_vehicle_manufacture_date_source": "user-confirmed in conversation 2026-10-31"
   }
 }

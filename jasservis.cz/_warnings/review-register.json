@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-30",
+  "checked": "2026-10-31",
   "scope": "European models from 2010; standalone CUPRA from establishment; applicability never inherited across models or editions",
   "fully_compared_manuals": [],
   "manuals": [
@@ -72934,12 +72934,16 @@
     "fully_source_matched_photographs": 0,
     "status": "six-reviewed-some-exact-context-variants-unresolved",
     "evidence": "terramar-photo-review.json",
-    "note": "All six distinct user photographs visually reviewed. Exact state matching is incomplete; the sixth cluster photograph at 0 rpm is not proof of simultaneous faults. Model year/software and original file metadata unknown.",
+    "note": "All six distinct user photographs visually reviewed. Exact state matching is incomplete; the sixth cluster photograph at 0 rpm is not proof of simultaneous faults. User-confirmed manufacture date 03/2026; model year/software and original file metadata unknown.",
     "comparison_evidence": "terramar-photo-review.json",
-    "comparison_scope": "69 individual non-aggregate observations with concrete occurrences and positions; exact artwork, function, current website status, source edition/pages and needed action separate. Full photo/model match incomplete.",
+    "comparison_scope": "74 total observations, including 69 individual non-aggregate observations with concrete occurrences and positions; exact artwork, function, current website status, source edition/pages and needed action separate. Full photo/model match incomplete.",
     "latest_resolved_observations": [
       "phone-app / Full Link, printed 287, edition 11.25"
-    ]
+    ],
+    "manufacture_date": "2026-03",
+    "manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+    "model_year": null,
+    "software_version": null
   },
   "new_items": {
     "id": "116-q4-and-control-icons",
@@ -74575,6 +74579,14 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "Independent known DE11.2020 copy, NOT identification or comparison of missing five requested photos12–17. Red insufficient power differs from amber limitation/Q4 red meaning. Existing EV-specific EPC verified, not duplicated. Co-warning conditions made explicit for12V/coolant."
+    },
+    {
+      "id": "terramar-manufacture-date-user-confirmed",
+      "checked": "2026-10-31",
+      "added_record_ids": [],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "User confirmed manufacture date 03/2026 for the Terramar depicted in all six photographs. Model year, software, VIN and original file metadata remain undocumented; no manual edition, catalogue meaning, graphic or model scope is inferred from the manufacture date."
     }
   ],
   "chapter_register": "chapter-review.json",

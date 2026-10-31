@@ -133,9 +133,11 @@ Zbývající ochranu celého náhledu přidává stávající preview workflow.
   jejichž bílá schematická barva neznamená závadu ani univerzální aktivaci.
 - Následně dodáno a vizuálně porovnáno **šest** fotografií Terramar: čtyři
   obrazovky Control Centre a dva odlišné snímky přístrojového panelu.
-  Modelový rok, software, původní názvy a otisky souborů nejsou doložené.
-  `terramar-photo-review.json` eviduje 54 pozorování; nejde o 54 nových
-  unikátních kontrolek ani o úplné zdrojové ověření všech šesti fotografií.
+  Datum výroby fotografovaného vozu 03/2026 potvrdil uživatel; modelový rok,
+  software, původní názvy a otisky souborů nejsou doložené.
+  `terramar-photo-review.json` eviduje 74 pozorování, z toho 69 jednotlivých
+  nesouhrnných řádků; nejde o 74 nových unikátních kontrolek ani o úplné
+  zdrojové ověření všech šesti fotografií.
 - `review-register.json` a `manual-review.csv` oddělují vybrané ověřené položky
   od kompletního porovnání celého vydání. **Kompletně porovnaná vydání: 0.**
   `source-character-review.csv` je pouze automatický pracovní index znaků
@@ -214,7 +216,7 @@ Nově ověřené výtisky Audi A4 DE 07.2024, A8 DE 06.2025 a Q4 e-tron DE 06.20
 
 Aktuálně 142 významových záznamů, 58 tvarů a 83 barevných grafik; 44 evidovaných návodů. `chapter-review.json` a přeložené CSV rozlišují 352 oblastí a 11 přesně ohraničených uzavřených porovnání. Deset jejich webových podmnožin je zveřejněno; Caddy čeká na přesné grafiky. Žádný celý návod ani značka není označena jako dokončená.
 
-Přijato všech šest odlišných fotografií Terramaru; původní názvy souborů nebyly předány. Pracovní identifikátory nejsou názvy originálů. Inventář obsahují `terramar-photo-inventory.*.csv`.
+Přijato všech šest odlišných fotografií Terramaru; datum výroby fotografovaného vozu 03/2026 potvrdil uživatel. Modelový rok a software zůstávají nedoložené. Původní názvy souborů nebyly předány a pracovní identifikátory nejsou názvy originálů. Inventář obsahují `terramar-photo-inventory.*.csv`.
 
 Technicky úspěšných 36 testů modelů a revizních stránek a 36 návazností značek v CZ/EN/DE, Chromium 154 a WebKit 26 na Linuxu. Kontrola 83 grafik v obou jádrech. Rozměry 360×800, 390×844, 844×390, 768×1024, 1366×768 a 1920×1080; nejde o skutečný iPhone ani Android. Tyto testy nedokládají obsahovou úplnost.
 

@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-30",
+  "checked": "2026-10-31",
   "scope": "Attachment groups are not interchangeable. Missing images are not substituted by manual renders, Drive search results or another model.",
   "groups": [
     {
@@ -13,10 +13,14 @@
       "kind": "4 infotainment + 2 instrument cluster",
       "evidence": "terramar-photo-review.json",
       "status": {
-        "cs": "Všech šest fotografií dostupných; obrazově porovnáno. Ne všechny významy a přesné varianty jsou zdrojově uzavřené.",
-        "en": "All six photos available and visually compared. Not all meanings and exact variants are source-closed.",
-        "de": "Alle sechs Fotos verfügbar und visuell verglichen. Nicht alle Bedeutungen und genauen Varianten quellenmäßig abgeschlossen."
-      }
+        "cs": "Všech šest fotografií je dostupných a obrazově porovnaných. Uživatel potvrdil datum výroby vozu 03/2026; modelový rok, software a shoda s konkrétním vydáním návodu nejsou doložené. Ne všechny významy a přesné varianty jsou zdrojově uzavřené.",
+        "en": "All six photos are available and visually compared. The user confirmed manufacture date 03/2026; model year, software and identity with a specific manual edition are undocumented. Not all meanings and exact variants are source-closed.",
+        "de": "Alle sechs Fotos sind verfügbar und visuell verglichen. Der Nutzer bestätigte das Produktionsdatum 03/2026; Modelljahr, Softwarestand und die Zuordnung zu einer bestimmten Anleitungsausgabe sind nicht belegt. Nicht alle Bedeutungen und genauen Varianten sind quellenmäßig abgeschlossen."
+      },
+      "verified_vehicle_manufacture_date": "2026-03",
+      "manufacture_date_source": "user-confirmed in conversation 2026-10-31",
+      "vehicle_model_year": null,
+      "software_version": null
     },
     {
       "id": "cupra-new-manual-7-10",
