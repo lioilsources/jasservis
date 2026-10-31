@@ -244,7 +244,7 @@ Technicky: 42 kombinací rozměru/jazyka/prohlížeče, šest dotykových a mode
 
 ## Sjednocené zadání a druhá kontrola – fotografie, Terramar a Q4
 
-- `attachment-groups.json` rozlišuje šest sad: šest dostupných fotografií Terramaru; tři dosud nedostupné fotografie návodu CUPRA7–10; čtyři nedostupné fotografie vozu Audi; tři nedostupné starší fotografie návodu9–13 s neověřeným dřívějším označením Audi; deset přijatých fotografií Enyaqu pokrývajících strany12–17 a pět přijatých fotografií Multivanu pokrývajících strany16–19. Opakované a náhradní záběry nejsou nové řádky. Neznámá vydání ani modelové roky nejsou odhadnuté.
+- `attachment-groups.json` odděluje jednotlivé fotografické sady a jejich původní požadované, skutečně přijaté a skutečně porovnané počty. Pět nových fotografií přístrojového štítu a MMI Audi se eviduje samostatně; značku dokládá uživatelský kontext a viditelné rozhraní Audi, model, generace, modelový rok a vydání návodu se z vzhledu kokpitu neodhadují. Opakované a náhradní záběry nejsou nové významové řádky.
 - Doložený celý Terramar EN 11.25, 578012720AC, má na stranách 7–10 pohledy na vozidlo; tabulky jsou 11–15. `terramar-1125-overview-review.json` a tři CSV evidují všech 110 významových buněk těchto tabulek. Není to 110 unikátních piktogramů ani identifikace nových chybějících fotografií. Zvlášť je přímo uvedeno ověření navazujících pokynů a skutečné vložení na web.
 - Vloženy dvě nové významové varianty: žlutá závada parkovací brzdy Terramar a žluté blikání řízení podle str.186. Přibylo 17 modelových přiřazení pro Terramar a jedno pro Q4. Modelová přiřazení nejsou nové unikátní symboly. Celkem 168 významových záznamů, 94 sdílených barevných grafik a 67 tvarových identit; žádný nový obrázkový soubor nevznikl.
 - Doplněné nezávislé rozsahy Terramar zahrnují mj. nízkou brzdovou kapalinu, červený/žlutý posilovač, obložení, tlak oleje, zadní mlhovku, vnější osvětlení, řízení, centrální výstrahu, dálková světla, modré A, směrovky, tempomat a nepřímé sledování tlaku. Str.387–389 rozlišují ztrátu tlaku, přibližně minutové blikání při závadě a krátké potvrzení kalibrace. Opraven přehled aktivní parkovací brzdy z chybné str.12 na str.11.
@@ -276,12 +276,20 @@ Technicky: 42 kombinací rozměru/jazyka/prohlížeče, šest dotykových a mode
 ## Opravy po auditu 30. 10. 2026
 
 - Pracovní fronty fotografovaných příruček Enyaqu a Multivanu odkazují na vlastní JSON evidenci. Identita vydání zůstává nedoložená; nepřebírá se příručka Octavie ani jiné modelové vydání.
-- Aktuální fotografický souhrn je odvozený z výslovně vymezených skupin Enyaq a Multivan: 15 přijatých fotografií vůči 9 původně požadovaným; překryvy a náhradní záběry nejsou nové řádky. Ostatní chybějící skupiny a Terramar jsou vedené samostatně.
+- Aktuální fotografický souhrn je odvozený z výslovně vymezených skupin Enyaq, Multivan a Audi: 20 přijatých fotografií vůči 13 původně požadovaným; překryvy, náhradní záběry a doplňkový pátý snímek Audi nejsou nové unikátní významy. Ostatní chybějící skupiny a Terramar jsou vedené samostatně.
 - Kandidát bez rozsahu příslušné značky se v revizní tabulce vypisuje bez odkazu na neexistující kartu. Nevzniká nové modelové přiřazení.
-- Generátor obnovuje také work-queues.*.csv. ZIP doplňuje coverage.csv, manual-review.csv, tři pracovní CSV a export-manifest.json s otisky všech ostatních položek archivu. Soukromé originály fotografií ani celé návody nepřidává.
+- Generátor obnovuje také work-queues.*.csv a, pokud je přítomná zdrojová evidence, tři jazykové verze `audi-photo-comparison.*.csv` a `audi-photo-inventory.*.csv`. ZIP doplňuje coverage.csv, manual-review.csv, tři pracovní CSV a export-manifest.json s otisky všech ostatních položek archivu. Soukromé originály fotografií ani celé návody nepřidává.
 - validate.py ověřuje počty, datové vazby, překlady, grafiky, CSV, vymezenou dostupnost fotografií, vztah fotopřehledu a modelu i kotvy 15 katalogových/revizních HTML stránek. Kontrola generátoru zůstává samostatná. Úspěch obou kontrol není odborným potvrzením všech pokynů ani úplnosti celého katalogu.
 
 ```sh
 python3 jasservis.cz/_warnings/validate.py
 python3 jasservis.cz/_warnings/generate.py --check
 ```
+
+## Audi fotografie a aktuální stav 31. 10. 2026
+
+- Pět fotografií jednoho vozu Audi je položkově přepsáno do 54 skupin a 91 výskytů. U 46 skupin je význam čitelný z fotografie nebo podpořen kandidátním návodem; osm významů či přesných stavů zůstává neuzavřených. Model, generace, modelový rok, datum výroby, software a vydání návodu fotografovaného vozu nejsou doložené. Žádná položka nebyla zveřejněna jen na základě těchto fotografií a žádná fotografie se nevydává za samostatně použitelnou zdrojovou grafiku.
+- Samostatně byl porovnán návod Audi A8 DE 06.2025, číslo dílu 4N1012705AH. Přidány jsou dvě zdrojově doložené položky `audi-central-yellow` a `audi-a8-emissions-system`; rozsah A8 byl doplněn k `audi-central-red`. Toto porovnání neurčuje fotografovaný vůz jako A8. Parkovací ovladače zůstávají čekající mezerou, protože dostupná grafika P s volantem má v návodu jiný význam než zobrazené ovladače P se senzorovými vlnami/kamerou a `>>P`.
+- Aktuální katalog obsahuje 171 významových záznamů, 587 modelových přiřazení, 94 sdílených barevných grafik a 67 tvarových identit. Celé návody kompletně porovnané: **0**.
+- `audi-photo-review.json`, tři porovnávací CSV a tři inventární CSV oddělují fotografii a polohu, čitelný význam, kandidátní návod, přesnost grafiky, modelovou platnost a skutečné publikování. ZIP obsahuje 155 souborů včetně `verification.json`; původní fotografie, celé návody a soukromé SSP v něm nejsou.
+- Aktuální pracovní verze prošla 45 skupinami kontrol v Chromium 154 pro CZ/EN/DE, devět rozměrů, společný i šest značkových vstupů, 171 záznamů a revizní tabulky Audi/Enyaq/Multivan. WebKit pro tuto poslední verzi nebyl spuštěn, protože v prostředí chybí jeho spustitelný soubor. Starší výsledky WebKitu jsou historické a tuto verzi neověřují.

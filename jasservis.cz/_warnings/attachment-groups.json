@@ -41,17 +41,31 @@
     {
       "id": "audi-vehicle-four",
       "expected": 4,
-      "available_in_conversation": 0,
-      "visually_compared": 0,
+      "available_in_conversation": 5,
+      "visually_compared": 5,
       "brand_asserted_by_user": "Audi",
       "verified_model": null,
       "verified_edition": null,
-      "kind": "4 instrument-cluster and infotainment photos",
+      "kind": "3 instrument-cluster + 2 MMI/centre-console photographs; fifth image is an additional supplied view",
       "status": {
-        "cs": "Čtyři fotografie vozu Audi nejsou v dostupných přílohách. Nelze prověřit servisní klíč, konkrétní palivové hlášení ani související oznámení MMI. Hodnota dojezdu 50 km se nepřebírá jako univerzální práh.",
-        "en": "Four Audi vehicle photos are absent from available attachments. Service wrench, specific fuel message and linked MMI notice cannot be checked. A displayed 50 km range is not adopted as a universal threshold.",
-        "de": "Vier Audi-Fahrzeugfotos fehlen in verfügbaren Anhängen. Serviceschlüssel, konkrete Kraftstoffmeldung und zugehöriger MMI-Hinweis nicht prüfbar. Angezeigte 50 km Reichweite nicht als allgemeine Schwelle übernommen."
-      }
+        "cs": "Pět odlišných fotografií Audi je dostupných a položkově obrazově porovnaných: tři přístrojové štíty a dva pohledy MMI/ovladačů. Původně požadovaný počet čtyři zůstává historickým základem; pátý snímek je další dodaný pohled. Značku potvrzuje kontext a text Audi drive select. Model, generace, modelový rok, datum výroby, software a vydání návodu nejsou doložené. Hodnoty 50 km a tři dny se neevidují jako univerzální prahy.",
+        "en": "Five distinct Audi photographs are available and visually compared item by item: three instrument-cluster views and two MMI/control views. The original requested count of four remains the historical basis; the fifth image is an additional supplied view. Context and the Audi drive select text confirm the brand. Model, generation, model year, manufacture date, software and manual edition are undocumented. The 50 km and three-day values are not recorded as universal thresholds.",
+        "de": "Fünf unterschiedliche Audi-Fotos sind verfügbar und elementweise visuell verglichen: drei Kombiinstrument- und zwei MMI-/Bedienansichten. Die ursprünglich angeforderte Zahl vier bleibt historische Grundlage; das fünfte Bild ist eine zusätzliche Ansicht. Kontext und der Text Audi drive select bestätigen die Marke. Modell, Generation, Modelljahr, Produktionsdatum, Software und Anleitungsausgabe sind unbelegt. 50 km und drei Tage werden nicht als allgemeine Schwellenwerte erfasst."
+      },
+      "verified_model_year": null,
+      "verified_generation": null,
+      "verified_vehicle_manufacture_date": null,
+      "software_version": null,
+      "document_identity_established": false,
+      "source_edition_identified": false,
+      "photos": [
+        "audi-photo-01",
+        "audi-photo-02",
+        "audi-photo-03",
+        "audi-photo-04",
+        "audi-photo-05"
+      ],
+      "row_comparison": "audi-photo-review.json"
     },
     {
       "id": "earlier-unidentified-manual-9-13",
@@ -135,9 +149,9 @@
     }
   ],
   "search_checks": {
-    "local_attachment_archive": "/workspace/attachments scanned; PDFs/ZIPs only, no corresponding new photos",
+    "local_attachment_archive": "Uploaded attachment archive scanned; only PDFs/ZIPs were present, with no corresponding new photographs.",
     "local_source_renders": "not counted as user photographs",
-    "drive": "CUPRA metadata search and one Audi image-search page checked; no requested attachment set identified. Not a claim of an exhaustive image search. SSPs/maintenance documents remain technical context, not driver instructions."
+    "drive": "Audi A8/Q8/A6 manual and SSP metadata searches checked. Local A8 06.2025 manual provides a candidate function comparison only and does not identify the photographed model. CUPRA search status unchanged; no missing attachment set was substituted."
   },
   "independent_document_check": {
     "manual": "cupra-terramar-2026-11-25",

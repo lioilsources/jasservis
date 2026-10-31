@@ -28,6 +28,67 @@ def candidate_link(item,brand,lang):
  if not any(s['brand']==brand for s in item['scopes']):return label+' <code>'+esc(item['id'])+'</code>'
  return '<a href="./?znacka='+esc(brand)+'#'+esc(item_anchor(item,brand))+'">'+label+'</a>'
 def model_label(model,year):return str(model)+(f' · MY {year}' if year else '')
+def localized(value,lang,default=''):
+ if isinstance(value,dict):return value.get(lang)or value.get('cs')or next((x for x in value.values()if x),default)
+ if isinstance(value,list):return ', '.join(str(x)for x in value)
+ return default if value is None else str(value)
+def audi_photo_occurrences(row):
+ occurrences=row.get('occurrences')or[]
+ if occurrences:return occurrences
+ if row.get('photos'):return [{'photo':x,'position':''}for x in row['photos']]
+ if row.get('photo'):return [{'photo':row['photo'],'position':row.get('position')or row.get('position_cs')or''}]
+ return []
+def audi_photo_title(row,lang):
+ return localized(row.get('name'),lang)or localized(row.get('literal_text'),lang)or str(row.get('literal_text_cs')or row.get('observed_text')or row.get('source_caption_cs')or row.get('id')or'')
+def audi_photo_candidates(row):return row.get('candidate_catalogue_ids_not_model_verified',row.get('candidate_catalogue_ids',row.get('catalogue_entries',[])))or[]
+AUDI_PHOTO_CLASSIFICATIONS={
+ 'warning-indicator':{'cs':'výstražná kontrolka','en':'warning indicator','de':'Warnleuchte'},'operating-status':{'cs':'provozní stav','en':'operating status','de':'Betriebsstatus'},
+ 'physical-control':{'cs':'fyzický ovladač','en':'physical control','de':'physisches Bedienelement'},'mmi-control':{'cs':'ovládací prvek MMI','en':'MMI control','de':'MMI-Bedienelement'},
+ 'control':{'cs':'ovládací prvek','en':'vehicle control','de':'Bedienelement'},'unresolved':{'cs':'neověřený prvek','en':'unresolved element','de':'ungeklärtes Element'},
+ 'mmi-status':{'cs':'stav MMI','en':'MMI status','de':'MMI-Status'},'driver-message':{'cs':'hlášení pro řidiče','en':'driver message','de':'Fahrermeldung'},
+ 'vehicle-data':{'cs':'údaje vozidla','en':'vehicle data','de':'Fahrzeugdaten'},'service-reminder':{'cs':'servisní připomínka','en':'service reminder','de':'Servicehinweis'},
+ 'control-state':{'cs':'stav ovládacího prvku','en':'control state','de':'Bedienstatus'}}
+AUDI_PHOTO_STATES={
+ 'displayed':{'cs':'zobrazeno','en':'displayed in photo','de':'angezeigt'},'control-visible-not-activation-proof':{'cs':'ovladač je viditelný; aktivace není prokázána','en':'control visible; activation not established','de':'Bedienelement sichtbar; Aktivierung nicht belegt'},
+ 'menu-tile':{'cs':'dlaždice nabídky','en':'menu tile','de':'Menükachel'},'message-displayed':{'cs':'hlášení je zobrazeno','en':'message displayed','de':'Meldung angezeigt'},
+ 'control-visible':{'cs':'ovladač je viditelný','en':'control visible','de':'Bedienelement sichtbar'},'visible':{'cs':'viditelné','en':'visible in photo','de':'sichtbar'},
+ 'steady-visible':{'cs':'na snímku trvale viditelné; časový průběh není doložen','en':'steadily visible in the still; timing is not established','de':'im Standbild dauerhaft sichtbar; Zeitverlauf nicht belegt'},
+ 'visible-state-duration-unknown':{'cs':'stav je viditelný; doba trvání není známá','en':'state visible; duration unknown','de':'Zustand sichtbar; Dauer unbekannt'},
+ 'visible-state-unknown':{'cs':'prvek je viditelný; přesný stav není ověřen','en':'element visible; exact state unverified','de':'Element sichtbar; genauer Zustand ungeprüft'},
+ 'control-visible-system-unknown':{'cs':'ovladač je viditelný; systém není určen','en':'control visible; system unknown','de':'Bedienelement sichtbar; System unbekannt'},
+ 'control-visible-function-unconfirmed':{'cs':'ovladač je viditelný; funkce není potvrzena','en':'control visible; function unconfirmed','de':'Bedienelement sichtbar; Funktion unbestätigt'}}
+AUDI_PHOTO_COLOURS={code:{lang:UI[lang]['colors'][code] for lang in LANGS} for code in ['cervena','zluta','zelena','modra','bila','seda']}
+AUDI_PHOTO_COLOURS['cervena-bila']={'cs':'Červená a bílá','en':'Red and white','de':'Rot und Weiß'}
+AUDI_MEANING_BASES={
+ 'photo-visible-text-or-graphic':{'cs':'ověřeno z čitelného textu nebo grafiky fotografie; bez modelově přiřazeného návodu','en':'verified from photo-visible text or graphic; no model-assigned manual','de':'anhand lesbaren Textes oder Grafik des Fotos geprüft; keine modellzugeordnete Anleitung'},
+ 'photo-plus-candidate-manual':{'cs':'fotografie a kandidátní manuálová reference; neurčuje model vozu','en':'photo plus candidate manual reference; does not identify the vehicle model','de':'Foto plus Kandidaten-Anleitungsreferenz; identifiziert nicht das Fahrzeugmodell'},
+ 'unresolved':{'cs':'význam není uzavřen','en':'meaning unresolved','de':'Bedeutung ungeklärt'}}
+AUDI_SOURCE_PAGE_STATUS={'cs':'stránka se nepoužije – zdrojem je fotografie displeje vozidla','en':'page not applicable – source is a vehicle-display photograph','de':'Seite nicht anwendbar – Quelle ist ein Foto der Fahrzeuganzeige'}
+AUDI_INVENTORY_STATUS={
+ 'model':{'cs':'model nedoložen','en':'model not established','de':'Modell unbelegt'},
+ 'edition':{'cs':'vydání nedoloženo; zdrojem je fotografie vozidla','en':'edition not established; source is a vehicle photograph','de':'Ausgabe unbelegt; Quelle ist ein Fahrzeugfoto'},
+ 'model_year':{'cs':'modelový rok nedoložen','en':'model year not established','de':'Modelljahr unbelegt'},
+ 'reviewed':{'cs':'obrazově porovnáno','en':'visually reviewed','de':'visuell verglichen'},
+ 'pending':{'cs':'přijato; porovnání čeká','en':'received; comparison pending','de':'empfangen; Vergleich ausstehend'}}
+AUDI_PHOTO_VIEWS={
+ 'instrument-cluster':{'cs':'přístrojový štít','en':'instrument cluster','de':'Kombiinstrument'},
+ 'mmi-dual-display':{'cs':'dvojice displejů MMI','en':'dual MMI display','de':'MMI-Doppeldisplay'},
+ 'mmi-and-centre-console':{'cs':'MMI a středová konzola','en':'MMI and centre console','de':'MMI und Mittelkonsole'}}
+AUDI_PHOTO_ROLES={
+ 'primary evidence':{'cs':'hlavní obrazový podklad','en':'primary visual evidence','de':'primärer Bildbeleg'},
+ 'additional supplied view':{'cs':'doplňkový dodaný pohled','en':'additional visual evidence','de':'zusätzlich bereitgestellte Ansicht'}}
+def audi_photo_classification(row,lang):return AUDI_PHOTO_CLASSIFICATIONS.get(row.get('classification')or row.get('category'),{}).get(lang,{'cs':'neznámý typ','en':'unknown type','de':'unbekannter Typ'}[lang])
+def audi_photo_state(row,lang):return AUDI_PHOTO_STATES.get(row.get('signal_state_from_photo'),{}).get(lang,{'cs':'stav není lokalizován','en':'state not localised','de':'Zustand nicht lokalisiert'}[lang])
+def audi_photo_colour(row,lang):return AUDI_PHOTO_COLOURS.get(row.get('photo_colour'),{}).get(lang,{'cs':'barva nedoložena','en':'colour not established','de':'Farbe unbelegt'}[lang])
+def audi_meaning_basis(row,lang):return AUDI_MEANING_BASES.get(row.get('meaning_verification_basis'),{}).get(lang,AUDI_MEANING_BASES['unresolved'][lang])
+def audi_photo_view(photo,lang):return AUDI_PHOTO_VIEWS.get(photo.get('view'),{}).get(lang,{'cs':'nepopsaný pohled','en':'unlabelled view','de':'unbeschriebene Ansicht'}[lang])
+def audi_photo_role(photo,lang):return AUDI_PHOTO_ROLES.get(photo.get('role'),{}).get(lang,{'cs':'obrazový podklad','en':'visual evidence','de':'Bildbeleg'}[lang])
+def audi_manual_references(row,lang):
+ result=[]
+ for reference in row.get('candidate_manual_references',[]):
+  manual_id=reference.get('manual','');manual=CAT.get('manuals',{}).get(manual_id,{})
+  result.append({'manual_id':manual_id,'model':manual.get('model',''),'edition':manual.get('edition',''),'part_number':manual.get('part_number',''),'printed_pages':reference.get('printed_pages',[]),'relationship':localized(reference.get('relationship'),lang),'candidate_only':True,'identifies_photographed_vehicle':False,'url':manual.get('url','')})
+ return result
 def source_label(m,lang):
  names={'cs':{'CS':'čeština','DE':'němčina','EN':'angličtina'},'en':{'CS':'Czech','DE':'German','EN':'English'},'de':{'CS':'Tschechisch','DE':'Deutsch','EN':'Englisch'}}
  label={'cs':'Návod','en':'Manual','de':'Anleitung'}[lang]+' · '+names[lang].get(m['lang'],m['lang'])
@@ -164,7 +225,31 @@ def second_review_page(lang,page):
   source_state=r['source_state_text'];state_key='steady'if source_state=='Svítí.'else'flashing'if source_state=='Bliká.'else'generic'
   vals=[esc(r['id'])+' · p'+str(r['printed_page'])+' · '+esc(r['column'])+str(r['row_from_top']),esc(r['source_caption_cs']),esc(r['photo_colour'])+' · '+esc(photo_states[state_key]),comparison,photo_labels[6]]
   out+='<tr>'+''.join('<td data-label="'+esc(label)+'">'+value+'</td>'for label,value in zip(photo_labels[:5],vals))+'</tr>'
- out+='</tbody></table></section><section id="audi-q4-climate"><h2>'+{'cs':'Audi Q4 07.2024 — porovnání funkcí klimatizace','en':'Audi Q4 07.2024 — climate-function comparison','de':'Audi Q4 07.2024 — Vergleich der Klimafunktionen'}[lang]+'</h2><p><a href="'+rel('_warnings/q4-climate-function-review.'+lang+'.csv',page)+'">CSV</a> · <a href="'+rel('_warnings/q4-climate-function-review.json',page)+'">JSON</a></p></section><p><a href="revize-kapitol.html#pracovni-fronty">'+t[5]+'</a></p></body></html>';return out
+ out+='</tbody></table></section>'
+ audi_path=HERE/'audi-photo-review.json'
+ if audi_path.exists():
+  audi=json.loads(audi_path.read_text())
+  al={'cs':['Audi — pět fotografií přístrojového štítu a MMI, model nedoložen','Fotografie a poloha','Viditelný text / symbol','Typ a stav','Porovnání s katalogem','Kandidátní manuálová reference','Význam ověřen','Přesná použitelná grafika ověřena','Vloženo z fotografií','Model, generace, modelový rok a vydání návodu nejsou doložené. Kandidátní manuál slouží jen ke kontrole obdobné funkce a neurčuje model fotografovaného vozu. Dojezd 50 km je hodnota zobrazená na fotografii, nikoli ověřený univerzální práh.','Ano','Ne','Bez modelově doložené shody','Kandidáti','Tištěné strany','Bez kandidátního návodu – zdrojem ověřeného významu je čitelný text nebo grafika fotografie.'],
+      'en':['Audi — five instrument-cluster and MMI photos, model undocumented','Photo and position','Visible text / symbol','Type and state','Catalogue comparison','Candidate manual reference','Meaning verified','Exact reusable graphic verified','Added from the photos','Model, generation, model year and manual edition are undocumented. A candidate manual is used only to check a corresponding function and does not identify the photographed vehicle model. The displayed 50 km range is an observed value, not a verified universal threshold.','Yes','No','No model-documented match','Candidates','Printed pages','No candidate manual – the verified meaning comes from readable text or graphics in the photo.'],
+      'de':['Audi — fünf Fotos von Kombiinstrument und MMI, Modell unbelegt','Foto und Position','Sichtbarer Text / Symbol','Typ und Zustand','Katalogvergleich','Kandidaten-Anleitungsreferenz','Bedeutung geprüft','Genaue nutzbare Grafik geprüft','Aus den Fotos ergänzt','Modell, Generation, Modelljahr und Anleitungsausgabe sind unbelegt. Eine Kandidaten-Anleitung dient nur zur Prüfung einer entsprechenden Funktion und identifiziert nicht das fotografierte Fahrzeugmodell. Die angezeigten 50 km sind ein beobachteter Wert, keine geprüfte allgemeine Schwelle.','Ja','Nein','Keine modellbelegte Übereinstimmung','Kandidaten','Gedruckte Seiten','Keine Kandidaten-Anleitung – die geprüfte Bedeutung stammt aus lesbarem Text oder Grafik des Fotos.']}[lang]
+  out+='<section id="audi-fotografie"><h2>'+al[0]+'</h2><p>'+al[9]+'</p><p><a href="'+rel('_warnings/audi-photo-comparison.'+lang+'.csv',page)+'">'+{'cs':'Položkové porovnání','en':'Item comparison','de':'Einzelvergleich'}[lang]+' CSV</a> · <a href="'+rel('_warnings/audi-photo-inventory.'+lang+'.csv',page)+'">'+{'cs':'Inventář fotografií','en':'Photo inventory','de':'Fotoinventar'}[lang]+' CSV</a> · <a href="'+rel('_warnings/audi-photo-review.json',page)+'">JSON</a></p><table><thead><tr>'+''.join('<th>'+esc(x)+'</th>'for x in al[1:9])+'</tr></thead><tbody>'
+  for row in audi.get('observations',[]):
+   occurrences=audi_photo_occurrences(row)
+   place='<br>'.join(esc(str(x.get('photo','')))+(': '+esc(localized(x.get('position'),lang))if x.get('position')else'')for x in occurrences)or'—'
+   candidates=[str(x)for x in audi_photo_candidates(row)]
+   matching=row.get('matching_model_scoped_catalogue_ids',[])or[]
+   comparison=esc(localized(row.get('catalogue_result_text'),lang))or(al[12] if not matching else ', '.join(map(esc,matching)))
+   if candidates:comparison+='<br>'+al[13]+': '+', '.join('<code>'+esc(x)+'</code>'for x in candidates)
+   references=audi_manual_references(row,lang);reference_html=[]
+   for reference in references:
+    title=esc(reference['manual_id']+' · '+reference['edition']+' · '+reference['part_number']);pages=', '.join(map(str,reference['printed_pages']))
+    reference_html.append(('<a href="'+esc(reference['url'])+'">'+title+'</a>'if reference['url']else title)+'<br>'+al[14]+': '+esc(pages)+'<br>'+esc(AUDI_MEANING_BASES['photo-plus-candidate-manual'][lang]))
+   reference_text='<br><br>'.join(reference_html)or(al[15]if row.get('meaning_verification_basis')=='photo-visible-text-or-graphic'else esc(AUDI_MEANING_BASES['unresolved'][lang]))
+   yes,no=al[10],al[11]
+   vals=[place,esc(audi_photo_title(row,lang)),esc(audi_photo_classification(row,lang))+' · '+esc(audi_photo_colour(row,lang))+' · '+esc(audi_photo_state(row,lang)),comparison,reference_text,(yes if row.get('meaning_verified')else no)+'<br>'+esc(audi_meaning_basis(row,lang)),yes if row.get('exact_reusable_graphic_verified')else no,yes if row.get('published_from_this_photo_set')else no]
+   out+='<tr>'+''.join('<td data-label="'+esc(label)+'">'+value+'</td>'for label,value in zip(al[1:9],vals))+'</tr>'
+  out+='</tbody></table></section>'
+ out+='<section id="audi-q4-climate"><h2>'+{'cs':'Audi Q4 07.2024 — porovnání funkcí klimatizace','en':'Audi Q4 07.2024 — climate-function comparison','de':'Audi Q4 07.2024 — Vergleich der Klimafunktionen'}[lang]+'</h2><p><a href="'+rel('_warnings/q4-climate-function-review.'+lang+'.csv',page)+'">CSV</a> · <a href="'+rel('_warnings/q4-climate-function-review.json',page)+'">JSON</a></p></section><p><a href="revize-kapitol.html#pracovni-fronty">'+t[5]+'</a></p></body></html>';return out
 
 def work_queue_section(lang,page):
  q=json.loads((HERE/'work-queues.json').read_text());u=UI[lang]
@@ -375,6 +460,25 @@ for lang in LANGS:
   location=','.join(map(str,row['printed_pages'])) if row['printed_pages'] else ' / '.join(row['source_sections'])
   w.writerow([row['brand'],row['model'],row['edition'],location,row['reviewed'][lang],row['remaining'][lang],row['source_url']])
  outputs.append((HERE/f'brand-functional-review.{lang}.csv',stream.getvalue()))
+audi_path=HERE/'audi-photo-review.json'
+if audi_path.exists():
+ audi=json.loads(audi_path.read_text())
+ for lang in LANGS:
+  stream=io.StringIO();w=csv.writer(stream,delimiter=';',lineterminator='\n')
+  w.writerow(['observation_id','photo','position','literal_text_CS','name','classification_code','classification','photo_colour_code','photo_colour','signal_state_from_photo_code','signal_state_from_photo','meaning','meaning_verification_basis_code','meaning_verification_basis','candidate_catalogue_ids_not_model_verified','matching_model_scoped_catalogue_ids','catalogue_result','catalogue_result_text','candidate_manual_references_json','candidate_manual_ids','candidate_manual_editions','candidate_manual_part_numbers','candidate_manual_printed_pages','candidate_manual_reference_status','meaning_verified','exact_reusable_graphic_verified','published_from_this_photo_set','source_type','brand','model','model_status','manual_edition','manual_edition_status','model_year','model_year_status','source_page','source_page_status_code','source_page_status','notes'])
+  for row in audi.get('observations',[]):
+   occurrences=audi_photo_occurrences(row)or[{'photo':'','position':''}]
+   for occurrence in occurrences:
+    references=audi_manual_references(row,lang);basis=row.get('meaning_verification_basis','unresolved')
+    w.writerow([row.get('id',''),occurrence.get('photo',''),localized(occurrence.get('position'),lang),row.get('literal_text_cs')or localized(row.get('literal_text'),'cs'),audi_photo_title(row,lang),row.get('classification')or row.get('category',''),audi_photo_classification(row,lang),row.get('photo_colour',''),audi_photo_colour(row,lang),row.get('signal_state_from_photo',''),audi_photo_state(row,lang),localized(row.get('meaning'),lang),basis,audi_meaning_basis(row,lang),','.join(map(str,audi_photo_candidates(row))),','.join(map(str,row.get('matching_model_scoped_catalogue_ids',[])or[])),row.get('catalogue_result',''),localized(row.get('catalogue_result_text'),lang),json.dumps(references,ensure_ascii=False), '|'.join(x['manual_id']for x in references),'|'.join(x['edition']for x in references),'|'.join(x['part_number']for x in references),'|'.join(x['manual_id']+':'+','.join(map(str,x['printed_pages']))for x in references),audi_meaning_basis(row,lang),row.get('meaning_verified',''),row.get('exact_reusable_graphic_verified',''),row.get('published_from_this_photo_set',''),audi.get('source_type',''),audi.get('brand_confirmed_by_user')or audi.get('brand_id',''),audi.get('model_confirmed_by_user')or'',AUDI_INVENTORY_STATUS['model'][lang],row.get('manual_edition',audi.get('manual_edition'))or'',AUDI_INVENTORY_STATUS['edition'][lang],row.get('model_year',audi.get('model_year'))or'',AUDI_INVENTORY_STATUS['model_year'][lang],row.get('source_page')if row.get('source_page')is not None else'',row.get('source_page_status',''),AUDI_SOURCE_PAGE_STATUS[lang],localized(row.get('notes'),lang)])
+  outputs.append((HERE/f'audi-photo-comparison.{lang}.csv','\ufeff'+stream.getvalue()))
+  stream=io.StringIO();w=csv.writer(stream,delimiter=';',lineterminator='\n')
+  w.writerow(['working_photo_reference','description','view','role','brand','brand_confirmation_basis','model','model_status','manual_edition','edition_status','printed_page','page_status_code','page_status','original_filename','comparison_status'])
+  basis=localized(audi.get('brand_confirmation_basis'),lang)
+  for photo in audi.get('photos',[]):
+   reviewed=bool(photo.get('visual_review'))or audi.get('photos_visually_inspected',0)>=len(audi.get('photos',[]))
+   w.writerow([photo.get('id',''),localized(photo.get('description')or photo.get('name'),lang),audi_photo_view(photo,lang),audi_photo_role(photo,lang),audi.get('brand_confirmed_by_user')or audi.get('brand_id',''),basis,audi.get('model_confirmed_by_user')or'',localized(audi.get('model_status'),lang,AUDI_INVENTORY_STATUS['model'][lang]),audi.get('manual_edition')or'',localized(audi.get('edition_status'),lang,AUDI_INVENTORY_STATUS['edition'][lang]),photo.get('printed_page')or'',photo.get('page_status',''),AUDI_SOURCE_PAGE_STATUS[lang],photo.get('original_filename')or'',localized(photo.get('comparison_status'),lang,AUDI_INVENTORY_STATUS['reviewed'if reviewed else'pending'][lang])])
+  outputs.append((HERE/f'audi-photo-inventory.{lang}.csv','\ufeff'+stream.getvalue()))
 queues=json.loads((HERE/'work-queues.json').read_text())
 for lang in LANGS:
  stream=io.StringIO();w=csv.writer(stream,delimiter=';',lineterminator='\n')

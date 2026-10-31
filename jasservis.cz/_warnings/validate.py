@@ -28,6 +28,22 @@ PAGE_NAMES = (
     "revize-kapitol.html", "druha-kontrola.html",
 )
 ROUTE = "kontrolky-a-vystrazna-hlaseni"
+AUDI_PHOTO_CLASSIFICATION_CODES = {
+    "warning-indicator", "operating-status", "physical-control", "mmi-control", "control",
+    "unresolved", "mmi-status", "driver-message", "vehicle-data", "service-reminder", "control-state",
+}
+AUDI_PHOTO_STATE_CODES = {
+    "displayed", "control-visible-not-activation-proof", "menu-tile", "message-displayed",
+    "control-visible", "visible", "steady-visible", "visible-state-duration-unknown",
+    "visible-state-unknown", "control-visible-system-unknown", "control-visible-function-unconfirmed",
+}
+AUDI_MEANING_BASES = {"photo-visible-text-or-graphic", "photo-plus-candidate-manual", "unresolved"}
+AUDI_SOURCE_PAGE_STATUS = "not-applicable-vehicle-display-photograph"
+AUDI_INVENTORY_STATUS = {
+    "cs": ("model nedoložen", "vydání nedoloženo; zdrojem je fotografie vozidla", "modelový rok nedoložen", "obrazově porovnáno", "stránka se nepoužije – zdrojem je fotografie displeje vozidla"),
+    "en": ("model not established", "edition not established; source is a vehicle photograph", "model year not established", "visually reviewed", "page not applicable – source is a vehicle-display photograph"),
+    "de": ("Modell unbelegt", "Ausgabe unbelegt; Quelle ist ein Fahrzeugfoto", "Modelljahr unbelegt", "visuell verglichen", "Seite nicht anwendbar – Quelle ist ein Foto der Fahrzeuganzeige"),
+}
 
 
 class Audit:
@@ -241,7 +257,243 @@ def check_reviews(audit, cat, register, queues):
     return len(complete)
 
 
-def check_photos_and_queues(audit, register, attachments, queues):
+def photo_occurrences(row):
+    occurrences = row.get("occurrences") or []
+    if occurrences:
+        return occurrences
+    if row.get("photos"):
+        return [{"photo": photo, "position": ""} for photo in row["photos"]]
+    if row.get("photo"):
+        return [{"photo": row["photo"], "position": row.get("position") or row.get("position_cs") or ""}]
+    return []
+
+
+def photo_candidates(row):
+    return row.get("candidate_catalogue_ids_not_model_verified",
+                   row.get("candidate_catalogue_ids", row.get("catalogue_entries", []))) or []
+
+
+def check_photo_queue_identity(audit, row, evidence, label):
+    model = evidence.get("model_confirmed_by_user")
+    brand_id = evidence.get("brand_id")
+    if brand_id:
+        audit.check(row.get("brand") == brand_id, "photo_identity",
+                    f"{label}: brand {row.get('brand')!r} disagrees with photo evidence {brand_id!r}")
+    if model:
+        audit.check(row.get("model") == model, "photo_identity",
+                    f"{label}: model {row.get('model')!r} disagrees with photo evidence {model!r}")
+    else:
+        audit.check(not row.get("model"), "photo_identity",
+                    f"{label}: model {row.get('model')!r} is claimed although photo evidence establishes no model")
+        audit.check(evidence.get("document_identity_established") is False, "photo_identity",
+                    f"{label}: unknown-model photo evidence must explicitly keep document identity unestablished")
+    if evidence.get("manual_edition") is None:
+        audit.check(row.get("source_edition_identified") is False, "photo_identity",
+                    f"{label}: unidentified photo edition must remain explicitly unestablished")
+        audit.check(bool(re.search(r"undocumented|not established|nedoložen|unbelegt", row.get("edition", ""), re.I)),
+                    "photo_identity", f"{label}: title presents an unidentified photographed edition as established")
+    audit.check(not row.get("source_url"), "photo_identity",
+                f"{label}: photo evidence must not inherit an unrelated manual URL")
+
+
+def check_audi_photo_review(audit, cat, evidence, attachment_group=None, check_csv=True):
+    label = "audi-photo-review.json"
+    audit.check(evidence.get("brand_id") == "audi", "photo_identity", f"{label}: brand_id must be 'audi'")
+    audit.check(evidence.get("brand_confirmed_by_user") == "Audi", "photo_identity",
+                f"{label}: Audi brand confirmation is missing")
+    audit.check(evidence.get("model_confirmed_by_user") is None, "photo_identity",
+                f"{label}: exact model is not established by the five photographs")
+    audit.check(evidence.get("document_identity_established") is False, "photo_identity",
+                f"{label}: document/model identity must remain explicitly unestablished")
+    for field in ("manual_edition", "model_year", "generation"):
+        audit.check(evidence.get(field) is None, "photo_identity", f"{label}: {field} must remain null")
+    photos = evidence.get("photos", [])
+    photo_ids = unique_ids(audit, photos, f"{label}.photos")
+    audit.check(evidence.get("expected_photo_count_originally_requested") == 4, "photo_status",
+                f"{label}: original requested count must remain four")
+    audit.check(evidence.get("photos_received") == len(photos), "photo_status",
+                f"{label}: photos_received differs from photo inventory")
+    audit.check(evidence.get("photos_received") == 5, "photo_status", f"{label}: expected five received photographs")
+    audit.check(evidence.get("original_filenames_available") is False, "photo_status",
+                f"{label}: original filenames must not be claimed")
+    audit.check(evidence.get("raw_image_files_available_in_workspace") is False, "photo_status",
+                f"{label}: raw image files must not be claimed")
+    inspected = evidence.get("photos_visually_inspected")
+    audit.check(isinstance(inspected, int) and 0 <= inspected <= len(photos), "photo_status",
+                f"{label}: photos_visually_inspected is invalid")
+    if attachment_group:
+        audit.check(evidence.get("photos_received") == attachment_group.get("available_in_conversation"),
+                    "photo_status", f"{label}: photos_received differs from attachment inventory")
+        audit.check(inspected == attachment_group.get("visually_compared"), "photo_status",
+                    f"{label}: photos_visually_inspected differs from attachment inventory")
+    observations = evidence.get("observations", [])
+    observation_ids = unique_ids(audit, observations, f"{label}.observations")
+    catalogue_ids = {item["id"] for item in cat.get("items", [])}
+    occurrence_keys = []
+    referenced_photos = Counter()
+    for row in observations:
+        row_label = f"{label}.observations[{row.get('id')}]"
+        occurrences = photo_occurrences(row)
+        audit.check(bool(occurrences), "photo_status", f"{row_label}: no photograph occurrence")
+        for occurrence in occurrences:
+            photo_id = occurrence.get("photo")
+            audit.check(photo_id in photo_ids, "photo_status", f"{row_label}: unknown photograph {photo_id!r}")
+            occurrence_keys.append((row.get("id", ""), photo_id or ""))
+            referenced_photos[photo_id] += 1
+        classification = row.get("classification") or row.get("category")
+        audit.check(classification in AUDI_PHOTO_CLASSIFICATION_CODES, "photo_status",
+                    f"{row_label}: unsupported classification {classification!r}")
+        state = row.get("signal_state_from_photo")
+        audit.check(state in AUDI_PHOTO_STATE_CODES, "photo_status", f"{row_label}: unsupported photo state {state!r}")
+        audit.check("source_page" in row and row.get("source_page") is None, "photo_identity",
+                    f"{row_label}: source_page must be explicit null for a vehicle photograph")
+        audit.check(row.get("source_page_status") == AUDI_SOURCE_PAGE_STATUS, "photo_identity",
+                    f"{row_label}: source_page_status must mark a vehicle photograph as not applicable")
+        candidates = set(photo_candidates(row))
+        audit.check(candidates <= catalogue_ids, "photo_candidates",
+                    f"{row_label}: unknown catalogue candidates {sorted(candidates - catalogue_ids)}")
+        audit.check(not (row.get("matching_model_scoped_catalogue_ids") or []), "photo_identity",
+                    f"{row_label}: unknown model cannot have a model-scoped catalogue match")
+        audit.check(row.get("published_from_this_photo_set") is False, "photo_identity",
+                    f"{row_label}: unknown-model photo observation must not be published as a catalogue item")
+        audit.check(row.get("exact_reusable_graphic_verified") is False, "photo_identity",
+                    f"{row_label}: still photograph is not an independently reusable exact graphic")
+        for field in ("manual_edition", "model_year"):
+            audit.check(row.get(field) is None, "photo_identity", f"{row_label}: {field} must remain null")
+        references = row.get("candidate_manual_references", [])
+        basis = row.get("meaning_verification_basis")
+        audit.check(basis in AUDI_MEANING_BASES, "photo_identity",
+                    f"{row_label}: invalid or missing meaning_verification_basis {basis!r}")
+        if row.get("meaning_verified") is True:
+            expected_basis = "photo-plus-candidate-manual" if references else "photo-visible-text-or-graphic"
+            audit.check(basis == expected_basis, "photo_identity",
+                        f"{row_label}: meaning verification basis should be {expected_basis!r}")
+        else:
+            audit.check(basis == "unresolved", "photo_identity",
+                        f"{row_label}: unverified meaning must remain unresolved")
+        for reference in references:
+            manual = reference.get("manual")
+            audit.check(manual in cat.get("manuals", {}), "manual_refs",
+                        f"{row_label}: unknown candidate manual {manual!r}")
+            pages = reference.get("printed_pages") or []
+            audit.check(bool(pages) and all(isinstance(page, int) and page > 0 for page in pages), "manual_refs",
+                        f"{row_label}: candidate manual reference has no printed pages")
+            relationship = json.dumps(reference.get("relationship", ""), ensure_ascii=False)
+            audit.check(bool(reference.get("relationship")) and bool(re.search(
+                        r"does not identify|not identify|neurčuje|neidentif|identifiziert nicht", relationship, re.I)), "photo_identity",
+                        f"{row_label}: candidate manual relationship is not qualified")
+            if manual in cat.get("manuals", {}):
+                source = cat["manuals"][manual]
+                audit.check(bool(source.get("edition")) and bool(source.get("part_number")), "manual_refs",
+                            f"{row_label}: candidate manual lacks edition or part number")
+    summary = evidence.get("summary", {})
+    audit.check(summary.get("observation_count") == len(observations), "photo_status",
+                f"{label}: summary observation count differs")
+    audit.check(summary.get("meaning_verified_count") == sum(row.get("meaning_verified") is True for row in observations),
+                "photo_status", f"{label}: summary meaning-verified count differs")
+    audit.check(summary.get("unresolved_count") == sum(row.get("meaning_verified") is not True for row in observations),
+                "photo_status", f"{label}: summary unresolved count differs")
+    audit.check(summary.get("catalogue_result_unresolved_count") ==
+                sum(row.get("catalogue_result") == "unresolved" for row in observations),
+                "photo_status", f"{label}: summary catalogue-result unresolved count differs")
+    audit.check(summary.get("occurrence_count") == len(occurrence_keys), "photo_status",
+                f"{label}: summary occurrence count differs")
+    audit.check(set(referenced_photos) == photo_ids and all(referenced_photos[photo_id] > 0 for photo_id in photo_ids),
+                "photo_status", f"{label}: every received photograph must be referenced by an observation")
+    audit.check(summary.get("published_from_this_photo_set_count") == 0 and
+                evidence.get("customer_catalogue_entries_added_from_this_photo_set") == 0,
+                "photo_identity", f"{label}: unknown-model photographs must add no customer catalogue records")
+    audit.check(summary.get("exact_reusable_graphic_verified_count") == 0,
+                "photo_identity", f"{label}: photographs must not claim independently reusable source graphics")
+    reference = evidence.get("candidate_reference_manual", {})
+    if reference:
+        audit.check(reference.get("manual") in cat.get("manuals", {}), "manual_refs",
+                    f"{label}: unknown candidate reference manual")
+        audit.check(reference.get("model") != evidence.get("model_confirmed_by_user"), "photo_identity",
+                    f"{label}: candidate reference model was promoted to photographed model")
+        audit.check(bool(reference.get("relationship")), "photo_identity",
+                    f"{label}: candidate reference manual needs an explicit non-identification relationship")
+    if check_csv:
+        observations_by_id = {row["id"]: row for row in observations}
+        for lang in LANGS:
+            comparison = audit.csv_rows(f"audi-photo-comparison.{lang}.csv")
+            if comparison is not None:
+                actual = [(r.get("observation_id", ""), r.get("photo", "")) for r in comparison]
+                audit.check(Counter(actual) == Counter(occurrence_keys), "csv",
+                            f"audi-photo-comparison.{lang}.csv: rows differ from JSON observations")
+                for row in comparison:
+                    row_label = f"audi-photo-comparison.{lang}.csv:{row.get('observation_id', '')}"
+                    source_row = observations_by_id.get(row.get("observation_id"), {})
+                    audit.check(row.get("brand") == "Audi", "photo_identity", f"{row_label}: brand differs")
+                    audit.check(not row.get("model") and not row.get("manual_edition") and not row.get("model_year"),
+                                "photo_identity", f"{row_label}: unknown identity must remain blank")
+                    expected_model, expected_edition, expected_model_year, _, _ = AUDI_INVENTORY_STATUS[lang]
+                    audit.check(row.get("model_status") == expected_model and
+                                row.get("manual_edition_status") == expected_edition and
+                                row.get("model_year_status") == expected_model_year,
+                                "translations", f"{row_label}: missing identity statuses are not localised")
+                    audit.check(not row.get("source_page") and
+                                row.get("source_page_status_code") == AUDI_SOURCE_PAGE_STATUS and
+                                bool(row.get("source_page_status")), "photo_identity",
+                                f"{row_label}: vehicle photograph must explicitly mark page as not applicable")
+                    audit.check(row.get("classification_code") == (source_row.get("classification") or source_row.get("category")) and
+                                bool(row.get("classification")) and row.get("classification") != row.get("classification_code"),
+                                "translations", f"{row_label}: classification is not localised")
+                    audit.check(row.get("photo_colour_code") == source_row.get("photo_colour") and
+                                bool(row.get("photo_colour")) and row.get("photo_colour") != row.get("photo_colour_code"),
+                                "translations", f"{row_label}: photo colour is not localised")
+                    audit.check(row.get("signal_state_from_photo_code") == source_row.get("signal_state_from_photo") and
+                                bool(row.get("signal_state_from_photo")) and
+                                row.get("signal_state_from_photo") != row.get("signal_state_from_photo_code"),
+                                "translations", f"{row_label}: photo state is not localised")
+                    audit.check(row.get("meaning_verification_basis_code") == source_row.get("meaning_verification_basis") and
+                                bool(row.get("meaning_verification_basis")) and
+                                row.get("meaning_verification_basis") != row.get("meaning_verification_basis_code"),
+                                "translations", f"{row_label}: meaning verification basis is not localised")
+                    try:
+                        exported_references = json.loads(row.get("candidate_manual_references_json") or "[]")
+                    except (TypeError, ValueError):
+                        exported_references = None
+                    expected_references = source_row.get("candidate_manual_references", [])
+                    audit.check(isinstance(exported_references, list) and
+                                [r.get("manual_id") for r in exported_references] == [r.get("manual") for r in expected_references] and
+                                [r.get("printed_pages") for r in exported_references] == [r.get("printed_pages") for r in expected_references],
+                                "csv", f"{row_label}: candidate manual references differ from JSON")
+                    if isinstance(exported_references, list):
+                        for reference in exported_references:
+                            manual = cat.get("manuals", {}).get(reference.get("manual_id"), {})
+                            audit.check(reference.get("edition") == manual.get("edition") and
+                                        reference.get("part_number") == manual.get("part_number") and
+                                        reference.get("candidate_only") is True and
+                                        reference.get("identifies_photographed_vehicle") is False,
+                                        "photo_identity", f"{row_label}: candidate manual metadata or qualification differs")
+                    audit.check(bool(row.get("candidate_manual_reference_status")), "translations",
+                                f"{row_label}: candidate manual reference status is missing")
+                    for field in ("meaning_verified", "exact_reusable_graphic_verified", "published_from_this_photo_set"):
+                        audit.check(row.get(field) == str(source_row.get(field)), "csv",
+                                    f"{row_label}: {field} differs from JSON")
+            inventory = audit.csv_rows(f"audi-photo-inventory.{lang}.csv")
+            if inventory is not None:
+                ids = [r.get("working_photo_reference") for r in inventory]
+                audit.check(len(ids) == len(set(ids)) and set(ids) == photo_ids, "csv",
+                            f"audi-photo-inventory.{lang}.csv: photo inventory differs from JSON")
+                expected_model, expected_edition, _, expected_review, expected_page = AUDI_INVENTORY_STATUS[lang]
+                for row in inventory:
+                    row_label = f"audi-photo-inventory.{lang}.csv:{row.get('working_photo_reference', '')}"
+                    audit.check(row.get("model_status") == expected_model and
+                                row.get("edition_status") == expected_edition and
+                                row.get("comparison_status") == expected_review,
+                                "translations", f"{row_label}: inventory statuses are not localised")
+                    audit.check(row.get("page_status_code") == AUDI_SOURCE_PAGE_STATUS and
+                                row.get("page_status") == expected_page,
+                                "translations", f"{row_label}: inventory page status is not localised")
+                    audit.check(row.get("view") not in {"instrument-cluster", "mmi-dual-display", "mmi-and-centre-console"} and
+                                row.get("role") not in {"primary evidence", "additional supplied view"},
+                                "translations", f"{row_label}: photo view or role exposes a technical code")
+    return observation_ids
+
+
+def check_photos_and_queues(audit, register, attachments, queues, cat=None):
     groups = {g["id"]: g for g in attachments["groups"]}
     latest = register["latest_round"]
     chosen = latest.get("requested_photos_scope_group_ids", [])
@@ -280,6 +532,17 @@ def check_photos_and_queues(audit, register, attachments, queues):
             source = audit.read_json(name)
             photo_evidence[name] = source
             audit.check(source.get("photos_received") == group["available_in_conversation"], "photo_status", f"{name}: photos_received differs from attachment inventory")
+            if name == "audi-photo-review.json" and cat is not None:
+                check_audi_photo_review(audit, cat, source, group)
+    audi_path = HERE / "audi-photo-review.json"
+    if audi_path.exists() and "audi-photo-review.json" not in photo_evidence:
+        source = audit.read_json("audi-photo-review.json")
+        photo_evidence["audi-photo-review.json"] = source
+        if cat is not None:
+            check_audi_photo_review(audit, cat, source)
+        audit.check(any(g.get("row_comparison") == "audi-photo-review.json" for g in groups.values()),
+                    "photo_status", "audi-photo-review.json: no attachment group row_comparison binding")
+    source_bindings = []
     for group in queues["groups"]:
         for index, row in enumerate(group["rows"]):
             label = f"work-queues.json:{group['id']}.rows[{index}]"
@@ -288,17 +551,14 @@ def check_photos_and_queues(audit, register, attachments, queues):
                 path = audit.local_file(source_file, label)
                 if path and path.suffix == ".json":
                     evidence = json.loads(path.read_text(encoding="utf-8"))
-                    model = evidence.get("model_confirmed_by_user")
-                    if model:
-                        audit.check(row.get("model") == model, "photo_identity", f"{label}: model {row.get('model')!r} disagrees with photo evidence {model!r}")
-                        if evidence.get("manual_edition") is None:
-                            audit.check(row.get("source_edition_identified") is False, "photo_identity", f"{label}: unidentified photo edition must remain explicitly unestablished")
-                            audit.check(bool(re.search(r"undocumented|nedoložen|unbelegt", row.get("edition", ""), re.I)), "photo_identity", f"{label}: title presents an unidentified photographed edition as established")
-                        audit.check(not row.get("source_url"), "photo_identity", f"{label}: photo evidence must not inherit an unrelated manual URL")
+                    if "model_confirmed_by_user" in evidence:
+                        check_photo_queue_identity(audit, row, evidence, label)
+                    source_bindings.append(Path(source_file).name)
             if group["id"] == "unverified-meanings-and-graphics":
                 text = " ".join(row.get("remaining", {}).values())
                 mentioned = [(name, evidence) for name, evidence in photo_evidence.items()
-                             if re.search(r"\b" + re.escape(evidence.get("model_confirmed_by_user", "")) + r"\b", text, re.I)]
+                             if evidence.get("model_confirmed_by_user") and
+                             re.search(r"\b" + re.escape(evidence["model_confirmed_by_user"]) + r"\b", text, re.I)]
                 if len(mentioned) == 1:
                     name, evidence = mentioned[0]
                     model = evidence["model_confirmed_by_user"]
@@ -307,6 +567,9 @@ def check_photos_and_queues(audit, register, attachments, queues):
                     audit.check(not urlsplit(row.get("source_url") or "").scheme, "photo_identity", f"{label}: photographed {model} work points to an external manual instead of its own review evidence")
                     if source_file:
                         audit.check(Path(source_file).name == name, "photo_identity", f"{label}: wrong photo review file for {model}")
+    if "audi-photo-review.json" in photo_evidence:
+        audit.check("audi-photo-review.json" in source_bindings, "photo_identity",
+                    "audi-photo-review.json: work queue lacks a source_file binding")
     return sum(g["available_in_conversation"] for g in selected)
 
 
@@ -396,7 +659,7 @@ def main():
         ids, hashes, summary = check_catalogue(audit, cat, locales)
         check_csv(audit, cat, hashes)
         summary["whole_manuals_complete"] = check_reviews(audit, cat, register, queues)
-        summary["selected_photos_available"] = check_photos_and_queues(audit, register, attachments, queues)
+        summary["selected_photos_available"] = check_photos_and_queues(audit, register, attachments, queues, cat)
         check_queue_csv(audit, queues)
         summary["html_pages"], summary["route_anchor_links"] = check_pages(audit)
     except (OSError, ValueError, TypeError, KeyError) as exc:

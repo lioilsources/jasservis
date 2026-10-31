@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-30",
+  "checked": "2026-10-31",
   "whole_manuals_complete": 0,
   "groups": [
     {
@@ -791,6 +791,29 @@
             "de": "Der Rest aller acht Bereiche ist nicht einzelweise abgeschlossen; siehe Kapitelprüfung. Dokumentzugang ist kein Hindernis."
           },
           "document_kind": "complete-owner-manual"
+        },
+        {
+          "brand": "audi",
+          "model": null,
+          "edition": "nedoložené / undocumented / unbelegt",
+          "source_kind": "vehicle-display-photographs",
+          "document_kind": "user-provided vehicle photographs",
+          "source_url": null,
+          "source_file": "_warnings/audi-photo-review.json",
+          "meaning_verified": false,
+          "exact_source_graphic_verified": false,
+          "published": false,
+          "closed_comparisons": [
+            "5/5 photographs visually compared",
+            "54 readable element groups / 91 occurrences recorded",
+            "A8 06.2025 candidate-function cross-check kept separate"
+          ],
+          "remaining": {
+            "cs": "Pět snímků je přepsáno a porovnáno. Model, datum výroby/modelový rok, software a vydání návodu chybějí. Přesné položky chybějí zejména pro palivo, servisní klíč, airbag spolujezdce ON, značku 50, stav pruhu, vyhřívání sedadel, recirkulaci a parkovací ovladače. Dvě nové položky a jeden rozšířený rozsah doložené z návodu A8 06.2025 nejsou důkazem, že fotografovaný vůz je A8.",
+            "en": "All five photos are transcribed and compared. Model, manufacture date/model year, software and manual edition are missing. Exact items remain missing especially for fuel, service wrench, passenger-airbag ON, speed sign 50, lane state, seat heating, recirculation and parking controls. Two new items and one expanded scope documented from the A8 06.2025 manual do not prove the photographed vehicle is an A8.",
+            "de": "Alle fünf Fotos sind transkribiert und verglichen. Modell, Produktionsdatum/Modelljahr, Software und Anleitungsausgabe fehlen. Genaue Einträge fehlen insbesondere für Kraftstoff, Serviceschlüssel, Beifahrerairbag ON, Tempozeichen 50, Spurstatus, Sitzheizung, Umluft und Parkbedienelemente. Zwei neue Einträge und ein erweiterter Geltungsbereich aus der A8-Anleitung 06.2025 beweisen nicht, dass das fotografierte Fahrzeug ein A8 ist."
+          },
+          "source_edition_identified": false
         }
       ]
     },
@@ -944,9 +967,9 @@
           "edition": "11.2024",
           "source_url": "https://drivers-college.de/wp-content/uploads/2025/06/audi-q3-2025-betriebsanleitung.pdf",
           "remaining": {
-            "cs": "Dostupná vydání Q3/Q4/A4/A8 nejsou kompletně porovnaná. Q4 07.2024 AUTO doplněné; další přesné ovladače a varianty asistentů/pohonu otevřené. Čtyři fotografie Audi a tři starší fotografie návodu 9–13 nejsou dostupné, jejich model nelze odhadnout.",
-            "en": "Available Q3/Q4/A4/A8 editions not fully compared. Q4 07.2024 AUTO added; other exact controls and assistance/drive variants open. Four Audi vehicle photos and three earlier pp9–13 manual photos unavailable; model cannot be guessed.",
-            "de": "Verfügbare Q3-/Q4-/A4-/A8-Ausgaben nicht vollständig verglichen. Q4 07.2024 AUTO ergänzt; weitere genaue Bedien-/Assistenz-/Antriebsvarianten offen. Vier Audi-Fahrzeugfotos und drei frühere Anleitungsfotos S.9–13 fehlen; Modell nicht schätzen."
+            "cs": "Dostupná vydání Q3/Q4/A4/A8 nejsou kompletně porovnaná. Pět fotografií vozu Audi je nyní položkově porovnáno, ale model a vydání zůstávají nedoložené; tři starší fotografie návodu stran 9–13 stále nejsou dostupné a jejich značka není ověřená. Další přesné ovladače a varianty asistentů/pohonu zůstávají otevřené.",
+            "en": "Available Q3/Q4/A4/A8 editions are not fully compared. Five Audi vehicle photos are now compared item by item, but model and edition remain undocumented; three earlier manual photos pp9–13 are still unavailable and their brand is unverified. Further exact controls and assistance/drive variants remain open.",
+            "de": "Die verfügbaren Q3-/Q4-/A4-/A8-Ausgaben sind nicht vollständig verglichen. Fünf Audi-Fahrzeugfotos sind nun elementweise verglichen, Modell und Ausgabe bleiben jedoch unbelegt; drei frühere Anleitungsfotos S.9–13 fehlen weiterhin und ihre Marke ist ungeprüft. Weitere genaue Bedien-, Assistenz- und Antriebsvarianten bleiben offen."
           }
         },
         {

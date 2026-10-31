@@ -78,11 +78,15 @@
       "ID.4 11.2021 (7 independently supported entries)"
     ],
     "errors": [],
-    "physical_devices": []
+    "physical_devices": [],
+    "applies_to_latest_revision": false,
+    "snapshot_status": "historical-earlier-revision"
   },
   "brand_cta_navigation": {
     "cases": 36,
-    "result": "PASS; all six brands, CS/EN/DE, Chromium and WebKit; brand query and overview anchor retained"
+    "result": "PASS; all six brands, CS/EN/DE, Chromium and WebKit; brand query and overview anchor retained",
+    "applies_to_latest_revision": false,
+    "snapshot_status": "historical-earlier-revision"
   },
   "svg_rendering": {
     "engines": [
@@ -97,7 +101,9 @@
         "images": 80
       }
     ],
-    "result": "PASS; all 80 SVG variants decode and render non-empty images"
+    "result": "PASS; all 80 SVG variants decode and render non-empty images",
+    "applies_to_latest_revision": false,
+    "snapshot_status": "historical-earlier-revision"
   },
   "current_catalogue": {
     "semantic_records": 137,
@@ -168,7 +174,9 @@
         "first_party_hosted_manual_editions": 1,
         "third_party_hosted_manual_editions": 0
       }
-    }
+    },
+    "applies_to_latest_revision": false,
+    "snapshot_status": "historical-earlier-revision"
   },
   "preservation": {
     "previous_116_records_and_scopes_retained": true,
@@ -238,7 +246,9 @@
       "Keyboard opening of native details after real keyboard interaction",
       "Czech/English/German parity",
       "Responsive noindex review table"
-    ]
+    ],
+    "applies_to_latest_revision": false,
+    "snapshot_status": "historical-earlier-revision"
   },
   "terramar_photographs": {
     "expected": 6,
@@ -290,7 +300,9 @@
       "A OFF control excluded for PHEV; Lane Assist control retained",
       "Keyboard opening, expanded content, image decoding and no horizontal overflow",
       "Photo review table in all three languages"
-    ]
+    ],
+    "applies_to_latest_revision": false,
+    "snapshot_status": "historical-earlier-revision"
   },
   "sixth_photo_review_page_checks": {
     "cases": 24,
@@ -328,7 +340,9 @@
       "lang",
       "noindex"
     ],
-    "physical_devices": []
+    "physical_devices": [],
+    "applies_to_latest_revision": false,
+    "snapshot_status": "historical-earlier-revision"
   },
   "photo_functional_comparison_revision": {
     "cases": 30,
@@ -379,14 +393,23 @@
     "touch_search_rotation_result": "PASS",
     "physical_devices": [],
     "source_completeness_verified": false,
-    "final_review_table_checks": 24
+    "final_review_table_checks": 24,
+    "applies_to_latest_revision": false,
+    "snapshot_status": "historical-earlier-revision"
   },
   "comparison_evidence": [
     "terramar-photo-review.json",
     "terramar-photo-comparison.cs.csv",
     "terramar-photo-comparison.en.csv",
     "terramar-photo-comparison.de.csv",
-    "brand-functional-review.json"
+    "brand-functional-review.json",
+    "audi-photo-review.json",
+    "audi-photo-comparison.cs.csv",
+    "audi-photo-comparison.en.csv",
+    "audi-photo-comparison.de.csv",
+    "audi-photo-inventory.cs.csv",
+    "audi-photo-inventory.en.csv",
+    "audi-photo-inventory.de.csv"
   ],
   "latest_chapter_revision": {
     "checked": "2026-10-30",
@@ -894,7 +917,9 @@
       }
     ],
     "physical_devices_tested": [],
-    "content_completeness_confirmed": false
+    "content_completeness_confirmed": false,
+    "applies_to_latest_revision": false,
+    "snapshot_status": "historical-earlier-revision"
   },
   "latest_content_revision": {
     "checked": "2026-10-30",
@@ -1544,26 +1569,69 @@
       "shared_media_items": 76
     },
     "physical_devices": [],
-    "technical_tests_do_not_prove_content_completeness": true
+    "technical_tests_do_not_prove_content_completeness": true,
+    "applies_to_latest_revision": false,
+    "snapshot_status": "historical-earlier-revision"
   },
   "latest_metadata_revision": {
     "checked": "2026-10-31",
-    "change": "User-confirmed Terramar manufacture date 03/2026 recorded separately from model year, software and manual edition.",
+    "change": "Five Audi vehicle photos transcribed and compared; model/manual identity remains undocumented. Independent A8 06.2025 additions are source-based and are not attributed to the photographed vehicle.",
     "chromium_comprehensive_test": {
       "result": "PASS",
+      "applies_to_latest_revision": true,
+      "engine": "Chromium",
+      "version": "154.0.8037.57",
       "assertion_groups": 45,
       "languages": [
         "cs",
         "en",
         "de"
       ],
-      "scope": "brand entries, filters, anchors, symbol rendering, Enyaq/Multivan review tables and shared driver-advice entry"
+      "viewports": [
+        "390x844",
+        "844x390",
+        "820x1180",
+        "1180x820",
+        "1280x720",
+        "1366x768",
+        "1440x900",
+        "1920x1080",
+        "2560x1440"
+      ],
+      "checks": [
+        "shared driver-advice navigation and touch targets",
+        "no header overlap or horizontal overflow",
+        "171 distinct semantic record IDs",
+        "54 Audi evidence rows and 91 occurrences",
+        "Enyaq 122 and Multivan 129 evidence rows",
+        "all six direct brand service entries and presets",
+        "visible catalogue images decode"
+      ],
+      "physical_devices": false
     },
     "webkit_test": {
       "result": "NOT_RUN",
-      "reason": "Playwright WebKit executable webkit-2227/pw_run.sh is unavailable in the current environment."
+      "applies_to_latest_revision": true,
+      "reason": "Playwright WebKit executable is unavailable in the current environment; earlier WebKit PASS results apply only to older revisions."
     },
     "previous_webkit_results_apply_to_earlier_revision_only": true,
-    "technical_tests_do_not_prove_content_completeness": true
+    "technical_tests_do_not_prove_content_completeness": true,
+    "catalogue_counts": {
+      "semantic_records": 171,
+      "model_edition_assignments": 587,
+      "shared_graphic_colour_variants": 94,
+      "distinct_pictogram_shapes": 67
+    },
+    "audi_photo_evidence": {
+      "photos": 5,
+      "observation_groups": 54,
+      "occurrences": 91,
+      "meaning_verified": 46,
+      "meaning_unresolved": 8,
+      "published_from_photo_set": 0,
+      "exact_reusable_graphics_verified_from_photo_set": 0
+    },
+    "applies_to_latest_revision": true,
+    "snapshot_status": "current-revision"
   }
 }

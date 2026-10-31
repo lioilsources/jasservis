@@ -18800,9 +18800,199 @@
             ],
             "checked": "2026-10-30"
           }
+        },
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            13
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source pictogram, colour, state and complete cited instruction were read and visually compared with the licensed standard graphic in the specified A8 edition. No model-year inheritance or whole-manual completeness is claimed.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              11
+            ],
+            "checked": "2026-10-31"
+          }
         }
       ],
-      "checked": "2026-10-30",
+      "checked": "2026-10-31",
+      "review_status": "specific-manual-and-licensed-pictogram-reviewed; complete-model-inventory-not-claimed"
+    },
+    {
+      "id": "audi-central-yellow",
+      "graphic": "central",
+      "graphic_path": "wp-content/uploads/kontrolky/central-zluta.svg",
+      "color": "zluta",
+      "group": "provoz",
+      "state": "message",
+      "kind": "warning",
+      "name": {
+        "cs": "Centrální výstraha Audi – žluté hlášení",
+        "en": "Audi central warning – amber message",
+        "de": "Audi Zentralkontrollleuchte – gelbe Meldung"
+      },
+      "meaning": {
+        "cs": "Žlutý centrální symbol upozorňuje na doprovodnou zprávu. Sám neurčuje systém ani vadnou součást.",
+        "en": "The amber central symbol draws attention to an accompanying message. It does not identify a system or failed component by itself.",
+        "de": "Das gelbe zentrale Symbol macht auf eine begleitende Meldung aufmerksam. Es bestimmt allein weder System noch defektes Bauteil."
+      },
+      "action": {
+        "cs": "Přečtěte si hlášení v přístrojovém panelu a postupujte podle něj. Potřebný zásah a jeho naléhavost určuje úplný text zprávy.",
+        "en": "Read the message in the instrument cluster and follow it. The full message determines the required action and its urgency.",
+        "de": "Lesen und beachten Sie den Fahrerhinweis im Kombiinstrument. Die vollständige Meldung bestimmt die erforderliche Maßnahme und ihre Dringlichkeit."
+      },
+      "note": {
+        "cs": "Žlutý trojúhelník není univerzální povolení pokračovat v jízdě ani diagnóza motoru. Rozhoduje úplný text zprávy.",
+        "en": "The amber triangle is neither universal permission to continue driving nor an engine diagnosis. The full message determines the response.",
+        "de": "Das gelbe Dreieck ist weder eine pauschale Weiterfahrerlaubnis noch eine Motordiagnose. Entscheidend ist der vollständige Meldungstext."
+      },
+      "alt": {
+        "cs": "Centrální výstraha Audi – žluté hlášení",
+        "en": "Audi central warning – amber message",
+        "de": "Audi Zentralkontrollleuchte – gelbe Meldung"
+      },
+      "graphic_source": {
+        "title": "File:ISO 7000 - Ref-No 0434B.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0434B.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/a/a6/ISO_7000_-_Ref-No_0434B.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "author": "Vectorization:    Mrmw",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "61f11f10e13010e144cf1a6fb4f9e0aff8a54540c9210e4dd4276a5042b22fbb",
+        "file": "wp-content/uploads/kontrolky/central-zluta.svg"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            11,
+            12
+          ],
+          "pdf_pages": [
+            13,
+            14
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source pictogram, colour, state and complete cited instruction were read and visually compared with the licensed standard graphic in the specified A8 edition. No model-year inheritance or whole-manual completeness is claimed.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              11,
+              12
+            ],
+            "checked": "2026-10-31"
+          }
+        }
+      ],
+      "checked": "2026-10-31",
+      "review_status": "specific-manual-and-licensed-pictogram-reviewed; complete-model-inventory-not-claimed"
+    },
+    {
+      "id": "audi-a8-emissions-system",
+      "graphic": "engine",
+      "graphic_path": "wp-content/uploads/kontrolky/engine-zluta.svg",
+      "color": "zluta",
+      "group": "motor",
+      "state": "steady-flashing",
+      "kind": "warning",
+      "name": {
+        "cs": "Emisní systém Audi – kontrolka svítí nebo bliká",
+        "en": "Audi emissions system – indicator lit or flashing",
+        "de": "Audi Abgaskontrollsystem – Kontrollleuchte leuchtet oder blinkt"
+      },
+      "meaning": {
+        "cs": "Svícení nebo blikání upozorňuje na závadu související s emisemi, která může zhoršit kvalitu výfukových plynů a poškodit katalyzátor. Kontrolka se může podle motoru a země rozsvítit také při nesprávně uzavřeném víčku nádrže. Samotný symbol neurčuje vadný díl.",
+        "en": "Steady or flashing illumination indicates an emissions-related fault that can worsen exhaust quality and damage the catalytic converter. Depending on engine and country, the indicator can also illuminate if the fuel cap is not properly closed. The symbol alone does not identify a failed component.",
+        "de": "Leuchten oder Blinken weist auf eine emissionsrelevante Störung hin, die die Abgasqualität verschlechtern und den Katalysator schädigen kann. Motor- und länderabhängig kann die Kontrollleuchte auch bei nicht richtig verschlossenem Tankdeckel aufleuchten. Das Symbol allein bestimmt kein defektes Bauteil."
+      },
+      "action": {
+        "cs": "Zkontrolujte, zda je víčko nádrže správně uzavřené. Pokud kontrolka bliká nebo zůstává rozsvícená, neprodleně jeďte sníženou rychlostí do odborného servisu a nechte závadu odstranit. Respektujte všechna doprovodná hlášení.",
+        "en": "Check that the fuel cap is properly closed. If the indicator flashes or remains illuminated, drive immediately at reduced speed to a qualified workshop and have the fault corrected. Follow every accompanying message.",
+        "de": "Prüfen Sie, ob der Tankdeckel richtig verschlossen ist. Wenn die Kontrollleuchte blinkt oder weiter leuchtet, fahren Sie unverzüglich mit verminderter Geschwindigkeit zu einem Fachbetrieb und lassen Sie die Störung beheben. Beachten Sie alle begleitenden Meldungen."
+      },
+      "note": {
+        "cs": "Rozsvícení při kontrole po zapnutí zapalování samo nedokazuje závadu. Rozhoduje, zda kontrolka po kontrole zhasne, její další chování a doprovodné hlášení. Návod A8 dává pro svícení i blikání společný pokyn, proto zde nejsou tyto stavy uměle rozdělené.",
+        "en": "Illumination during the ignition check does not by itself establish a fault. Whether the indicator goes out after the check, its subsequent behaviour and the accompanying message are decisive. The A8 manual gives one instruction for steady and flashing states, so they are not artificially split here.",
+        "de": "Das Leuchten bei der Einschaltkontrolle belegt allein keine Störung. Maßgeblich sind das Erlöschen nach der Kontrolle, das weitere Verhalten und die begleitende Meldung. Die A8-Anleitung gibt für Leuchten und Blinken eine gemeinsame Anweisung; die Zustände werden hier daher nicht künstlich getrennt."
+      },
+      "alt": {
+        "cs": "Emisní systém Audi – žlutá kontrolka motoru svítí nebo bliká",
+        "en": "Audi emissions system – amber engine indicator lit or flashing",
+        "de": "Audi Abgaskontrollsystem – gelbe Motorkontrollleuchte leuchtet oder blinkt"
+      },
+      "graphic_source": {
+        "title": "File:Motorkontrollleuchte.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Motorkontrollleuchte.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/6/60/Motorkontrollleuchte.svg",
+        "license": "Public domain",
+        "license_url": "",
+        "author": "Benutzer:chris828",
+        "modifications": "Standard pictogram geometry preserved; registration marks removed, foreground colour set only to the state documented in the cited source.",
+        "sha256": "92ecd8034224cf9c893b0762cabbe6633934b84dd0a8d189292df42c710e9a26",
+        "file": "wp-content/uploads/kontrolky/engine-zluta.svg"
+      },
+      "scopes": [
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            11,
+            14,
+            330,
+            337
+          ],
+          "pdf_pages": [
+            13,
+            16,
+            332,
+            339
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Actual source pictogram, colour, state and complete cited instruction were read and visually compared with the licensed standard graphic in the specified A8 edition. No model-year inheritance or whole-manual completeness is claimed.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              14,
+              330,
+              337
+            ],
+            "checked": "2026-10-31"
+          }
+        }
+      ],
+      "checked": "2026-10-31",
       "review_status": "specific-manual-and-licensed-pictogram-reviewed; complete-model-inventory-not-claimed"
     },
     {
@@ -24849,6 +25039,66 @@
           }
         }
       ]
+    },
+    {
+      "id": "audi-a8-parking-assistance-controls",
+      "brand": "audi",
+      "manuals": [
+        "audi-a8-2025-06-de"
+      ],
+      "status": "meaning-and-original-graphics-verified-exact-reusable-graphics-pending",
+      "name": {
+        "cs": "Ovládací symboly parkovací pomoci Audi A8",
+        "en": "Audi A8 parking-assistance control symbols",
+        "de": "Bedientsymbole der Einparkhilfe im Audi A8"
+      },
+      "reason": {
+        "cs": "Návod A8 06.2025 zobrazuje na straně 230 dvě varianty ovladače Einparkhilfe plus podle výbavy: P se senzorovými vlnami, případně doplněné obdélníkem displeje nebo kamery. Na straně 244 je ovladač Parkassistent plus označen >>P. Dostupná licencovaná grafika parking-assist-bila.svg je P s volantem; na straně 243 má tento tvar význam nedostupného nebo přerušeného parkovacího asistenta, nikoli ovladače. Její použití pro tyto ovladače by zaměnilo tvar i význam. Chybějí jejich přesné, právně použitelné grafiky.",
+        "en": "The A8 06.2025 manual shows two equipment-dependent versions of the parking-aid control on page 230: a P with sensor waves, optionally accompanied by a display or camera rectangle. The Park Assist Plus control on page 244 is marked >>P. The available licensed parking-assist-bila.svg is a P with a steering wheel; on page 243 that shape means the parking assistant is unavailable or interrupted, not a control. Using it for these controls would misstate both shape and meaning. Their exact lawfully reusable graphics are still required.",
+        "de": "Die A8-Anleitung 06.2025 zeigt auf Seite 230 zwei ausstattungsabhängige Varianten der Einparkhilfe-Taste: P mit Sensorwellen, gegebenenfalls ergänzt um ein Display- oder Kamera-Rechteck. Die Taste des Parkassistenten plus auf Seite 244 ist mit >>P gekennzeichnet. Die verfügbare lizenzierte Grafik parking-assist-bila.svg zeigt P mit Lenkrad; auf Seite 243 bedeutet diese Form, dass der Parkassistent nicht verfügbar oder unterbrochen ist, nicht eine Bedientaste. Ihre Verwendung für diese Tasten würde Form und Bedeutung verwechseln. Es fehlen deren genaue, rechtmäßig nachnutzbare Grafiken."
+      },
+      "source_scopes": [
+        {
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi",
+          "model": "A8",
+          "model_year": null,
+          "generation": null,
+          "edition": "06.2025",
+          "language": "DE",
+          "printed_pages": [
+            10,
+            230,
+            243,
+            244
+          ],
+          "pdf_pages": [
+            12,
+            232,
+            245,
+            246
+          ],
+          "powertrains": [
+            "spalovaci",
+            "phev"
+          ],
+          "verification": {
+            "method": "Both A8 control shapes and their instructions were read and visually compared with the available licensed P-with-steering-wheel graphic. The exact shape and semantic mismatch is documented; no substitute graphic or model-year inheritance is accepted.",
+            "document_sha256": "cac467a1a57a73a4aab5e06b713f19a628d25e86604c41f9038858f934091d00",
+            "graphic_printed_pages": [
+              230,
+              243,
+              244
+            ],
+            "checked": "2026-10-31"
+          },
+          "model_note": {
+            "cs": "Funkce závisí na výbavě a tento doklad platí jen pro uvedené vydání návodu.",
+            "en": "The functions depend on equipment and this evidence applies only to the stated manual edition.",
+            "de": "Die Funktionen sind ausstattungsabhängig; dieser Nachweis gilt nur für die angegebene Anleitungsausgabe."
+          }
+        }
+      ]
     }
   ],
   "gaps": [
@@ -24863,9 +25113,9 @@
     {
       "brand": "audi",
       "description": {
-        "cs": "Audi: vybrané položky Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) a Q4 e-tron 06.2023 (89A012705AH). Jde o dokumenty AUDI AG hostované třetími stranami; obálky, vydání a otisky jsou doložené, soubory výrobce nebyly porovnány. Nová vydání nejsou náhradou A4 8W 01.2016 (8W0012705AC), původního A8 4N pro 2018 ani Q4 pro 2022; pro tyto přesné rozsahy stále chybí přístupný odpovídající návod. Vybrané uzavřené oddíly neznamenají dokončené celé vydání.",
-        "en": "Audi: selected entries from Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) and Q4 e-tron 06.2023 (89A012705AH). AUDI AG documents hosted by third parties; covers, editions and hashes documented, manufacturer files not compared. New editions do not replace A4 8W 01.2016 (8W0012705AC), original A8 4N for 2018 or Q4 for 2022; accessible corresponding manuals remain missing for those exact scopes. Completed narrow subsections do not mean a complete edition.",
-        "de": "Audi: ausgewählte Einträge Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) und Q4 e-tron 06.2023 (89A012705AH). AUDI-AG-Dokumente von Dritten gehostet; Umschläge, Ausgaben und Hashes belegt, Herstellerdateien nicht abgeglichen. Neue Ausgaben ersetzen nicht A4 8W 01.2016 (8W0012705AC), ursprünglichen A8 4N für 2018 oder Q4 für 2022; passende zugängliche Anleitungen für diese genauen Bereiche fehlen weiterhin. Abgeschlossene Teilabschnitte sind keine vollständig abgeschlossene Ausgabe."
+        "cs": "Audi: vybrané položky Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) a Q4 e-tron 06.2023 (89A012705AH). Jde o dokumenty AUDI AG hostované třetími stranami; obálky, vydání a otisky jsou doložené, soubory výrobce nebyly porovnány. Nová vydání nejsou náhradou A4 8W 01.2016 (8W0012705AC), původního A8 4N pro 2018 ani Q4 pro 2022; pro tyto přesné rozsahy stále chybí přístupný odpovídající návod. Vybrané uzavřené oddíly neznamenají dokončené celé vydání. U A8 06.2025 zůstávají ovládací symboly parkování na stranách 230 a 244 čekající: P se senzorovými vlnami (ve druhé variantě doplněné obdélníkem displeje nebo kamery) a >>P se neshodují s dostupnou licencovanou grafikou P s volantem, která je na straně 243 kontrolkou nedostupnosti nebo přerušení.",
+        "en": "Audi: selected entries from Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) and Q4 e-tron 06.2023 (89A012705AH). AUDI AG documents hosted by third parties; covers, editions and hashes documented, manufacturer files not compared. New editions do not replace A4 8W 01.2016 (8W0012705AC), original A8 4N for 2018 or Q4 for 2022; accessible corresponding manuals remain missing for those exact scopes. Completed narrow subsections do not mean a complete edition. The A8 06.2025 parking-control symbols on pages 230 and 244 remain pending: the P-with-sensor-waves control (with a display or camera rectangle in the second variant) and the >>P control do not match the available licensed P-with-steering-wheel graphic, which is an unavailable-or-interrupted indicator on page 243.",
+        "de": "Audi: ausgewählte Einträge Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) und Q4 e-tron 06.2023 (89A012705AH). AUDI-AG-Dokumente von Dritten gehostet; Umschläge, Ausgaben und Hashes belegt, Herstellerdateien nicht abgeglichen. Neue Ausgaben ersetzen nicht A4 8W 01.2016 (8W0012705AC), ursprünglichen A8 4N für 2018 oder Q4 für 2022; passende zugängliche Anleitungen für diese genauen Bereiche fehlen weiterhin. Abgeschlossene Teilabschnitte sind keine vollständig abgeschlossene Ausgabe. Die Park-Bedientsymbole des A8 06.2025 auf den Seiten 230 und 244 bleiben offen: P mit Sensorwellen (in der zweiten Variante mit Display- oder Kamera-Rechteck) und >>P stimmen nicht mit der verfügbaren lizenzierten Grafik P mit Lenkrad überein, die auf Seite 243 eine Nichtverfügbarkeits- oder Unterbrechungsanzeige ist."
       }
     },
     {
@@ -25997,10 +26247,10 @@
     }
   },
   "counts": {
-    "semantic_records": 169,
+    "semantic_records": 171,
     "legacy_generic_volkswagen": 1,
-    "model_documented_semantic_records": 165,
-    "model_edition_assignments": 584,
+    "model_documented_semantic_records": 167,
+    "model_edition_assignments": 587,
     "partially_reviewed_manual_editions": 43,
     "shared_graphic_colour_variants": 94,
     "distinct_pictogram_shapes": 67,
@@ -26017,9 +26267,9 @@
       },
       "audi": {
         "distinct_pictogram_shapes": 54,
-        "graphic_colour_variants": 66,
-        "semantic_variants": 83,
-        "model_edition_assignments": 182,
+        "graphic_colour_variants": 67,
+        "semantic_variants": 85,
+        "model_edition_assignments": 185,
         "generic_brand_assignments": 0,
         "reviewed_manual_editions": 5,
         "first_party_hosted_manual_editions": 0,
@@ -26386,7 +26636,7 @@
   "review_gaps": {
     "cs": [
       "Volkswagen: původní položky jsou modelově doložené ve 14 z 15 případů. Nově je ověřeno žhavení i blikající závada řízení dieselu Golf VII 11.2019 (5G0012705AK). Golf 5H0 11.2020 a ID.4 11.2021 (11A012705AF) mají další jednotlivá doložení. Stále chybí modelový doklad pro původní žlutou regulaci dosahu světlometů (vw-range); kontrola Golf VII a Touareg 11.2019 tento konkrétní symbol nepotvrdila. Obecný příklad zůstává výslovně bez modelu. Ostatní modely a roky od 2010 nejsou automaticky pokryté.",
-      "Audi: vybrané položky Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) a Q4 e-tron 06.2023 (89A012705AH). Jde o dokumenty AUDI AG hostované třetími stranami; obálky, vydání a otisky jsou doložené, soubory výrobce nebyly porovnány. Nová vydání nejsou náhradou A4 8W 01.2016 (8W0012705AC), původního A8 4N pro 2018 ani Q4 pro 2022; pro tyto přesné rozsahy stále chybí přístupný odpovídající návod. Vybrané uzavřené oddíly neznamenají dokončené celé vydání.",
+      "Audi: vybrané položky Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) a Q4 e-tron 06.2023 (89A012705AH). Jde o dokumenty AUDI AG hostované třetími stranami; obálky, vydání a otisky jsou doložené, soubory výrobce nebyly porovnány. Nová vydání nejsou náhradou A4 8W 01.2016 (8W0012705AC), původního A8 4N pro 2018 ani Q4 pro 2022; pro tyto přesné rozsahy stále chybí přístupný odpovídající návod. Vybrané uzavřené oddíly neznamenají dokončené celé vydání. U A8 06.2025 zůstávají ovládací symboly parkování na stranách 230 a 244 čekající: P se senzorovými vlnami (ve druhé variantě doplněné obdélníkem displeje nebo kamery) a >>P se neshodují s dostupnou licencovanou grafikou P s volantem, která je na straně 243 kontrolkou nedostupnosti nebo přerušení.",
       "Škoda: zkontrolované vybrané položky pocházejí z kopie návodu Octavia 5E 11.2018 (5E0012715AQ) a Enyaq iV 11.2020, německy. Vydání není modelový rok a nepokrývá ostatní roky. Pro srovnání chybí původní soubory výrobce. Dále chybí Octavia 07.2019, Superb 05.2010 a pokyny digitálního návodu Octavia iV 11.2020 (5E4012715CB). Přesné dokumenty a výsledky přístupu jsou níže.",
       "Volkswagen Užitkové vozy: nově doložen Caddy 2K7, digitální návod 11.2025. U 17 původních obecných příkladů je obecný rozsah nahrazen konkrétním doložením; původní zdroje jsou v evidenci zachovány. Zbývajících 7 příkladů dosud není modelově potvrzeno: EPC, obecná brzdová výstraha, DPF, převzetí ovládání ACC a tři varianty prostého volantu. Nový Caddy používá u řízení a některých asistentů jiné značky; podobnost není důkazem shody. Starší Caddy, T6/T6.1, nový Transporter, ID. Buzz, Crafter a Amarok nejsou tímto vydáním pokryté.",
       "SEAT a CUPRA: zachované položky platí jen pro výslovně uvedená vydání a výbavu. Kompletní revize všech modelů a let od 2010, resp. CUPRA od vzniku samostatné značky, není dokončená. Mezery mezi vydáními se automaticky nevyplňují.",
@@ -26394,7 +26644,7 @@
     ],
     "en": [
       "Volkswagen: 14 of the original 15 entries now have model evidence. Preheating and a flashing diesel engine-management fault are newly verified for Golf VII 11.2019 (5G0012705AK). Golf 5H0 11.2020 and ID.4 11.2021 (11A012705AF) have further individual evidence. Model evidence for the original yellow headlight-range warning (vw-range) is still missing; reviewing Golf VII and Touareg 11.2019 did not confirm this exact pictogram. The general example remains explicitly without a model. Other models and years from 2010 are not automatically covered.",
-      "Audi: selected entries from Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) and Q4 e-tron 06.2023 (89A012705AH). AUDI AG documents hosted by third parties; covers, editions and hashes documented, manufacturer files not compared. New editions do not replace A4 8W 01.2016 (8W0012705AC), original A8 4N for 2018 or Q4 for 2022; accessible corresponding manuals remain missing for those exact scopes. Completed narrow subsections do not mean a complete edition.",
+      "Audi: selected entries from Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) and Q4 e-tron 06.2023 (89A012705AH). AUDI AG documents hosted by third parties; covers, editions and hashes documented, manufacturer files not compared. New editions do not replace A4 8W 01.2016 (8W0012705AC), original A8 4N for 2018 or Q4 for 2022; accessible corresponding manuals remain missing for those exact scopes. Completed narrow subsections do not mean a complete edition. The A8 06.2025 parking-control symbols on pages 230 and 244 remain pending: the P-with-sensor-waves control (with a display or camera rectangle in the second variant) and the >>P control do not match the available licensed P-with-steering-wheel graphic, which is an unavailable-or-interrupted indicator on page 243.",
       "Škoda: selected reviewed entries come from copies of the Octavia 5E 11.2018 manual (5E0012715AQ) and the German Enyaq iV 11.2020 manual. An edition is not a model year and does not cover other years. The original manufacturer files are still needed for comparison. Octavia 07.2019, Superb 05.2010 and the instructions in the Octavia iV 11.2020 digital manual (5E4012715CB) also remain missing. Exact documents and access outcomes are listed below.",
       "Volkswagen Commercial Vehicles: Caddy 2K7, digital manual 11.2025, is now documented. Seventeen original general examples have been replaced by specific model evidence, with their previous sources retained in the audit. Seven examples remain without model confirmation: EPC, general brake warning, DPF, ACC take-over prompt and three plain steering-wheel variants. New Caddy steering and some assistant pictograms differ; similarity is not evidence of equivalence. Earlier Caddy, T6/T6.1, new Transporter, ID. Buzz, Crafter and Amarok are not covered by this edition.",
       "SEAT and CUPRA: retained entries apply only to explicitly listed editions and equipment. A complete review of all models and years from 2010, or CUPRA from its establishment as a separate brand, remains incomplete. Gaps between editions are not automatically filled.",
@@ -26402,7 +26652,7 @@
     ],
     "de": [
       "Volkswagen: Für 14 der ursprünglichen 15 Einträge liegt jetzt ein Modellnachweis vor. Vorglühen und blinkende Diesel-Motorsteuerungsstörung sind neu für Golf VII 11.2019 (5G0012705AK) belegt. Golf 5H0 11.2020 und ID.4 11.2021 (11A012705AF) haben weitere Einzelnachweise. Für die ursprüngliche gelbe Leuchtweitenwarnung (vw-range) fehlt der Modellnachweis; die Prüfung von Golf VII und Touareg 11.2019 bestätigte dieses genaue Piktogramm nicht. Das allgemeine Beispiel bleibt ausdrücklich ohne Modell. Andere Modelle und Jahre ab 2010 sind nicht automatisch abgedeckt.",
-      "Audi: ausgewählte Einträge Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) und Q4 e-tron 06.2023 (89A012705AH). AUDI-AG-Dokumente von Dritten gehostet; Umschläge, Ausgaben und Hashes belegt, Herstellerdateien nicht abgeglichen. Neue Ausgaben ersetzen nicht A4 8W 01.2016 (8W0012705AC), ursprünglichen A8 4N für 2018 oder Q4 für 2022; passende zugängliche Anleitungen für diese genauen Bereiche fehlen weiterhin. Abgeschlossene Teilabschnitte sind keine vollständig abgeschlossene Ausgabe.",
+      "Audi: ausgewählte Einträge Q3 11.2024 (83B012705AA), Q4 e-tron 07.2024 (89A012705AM), A4 07.2024 (8W1012705AN), A8 06.2025 (4N1012705AH) und Q4 e-tron 06.2023 (89A012705AH). AUDI-AG-Dokumente von Dritten gehostet; Umschläge, Ausgaben und Hashes belegt, Herstellerdateien nicht abgeglichen. Neue Ausgaben ersetzen nicht A4 8W 01.2016 (8W0012705AC), ursprünglichen A8 4N für 2018 oder Q4 für 2022; passende zugängliche Anleitungen für diese genauen Bereiche fehlen weiterhin. Abgeschlossene Teilabschnitte sind keine vollständig abgeschlossene Ausgabe. Die Park-Bedientsymbole des A8 06.2025 auf den Seiten 230 und 244 bleiben offen: P mit Sensorwellen (in der zweiten Variante mit Display- oder Kamera-Rechteck) und >>P stimmen nicht mit der verfügbaren lizenzierten Grafik P mit Lenkrad überein, die auf Seite 243 eine Nichtverfügbarkeits- oder Unterbrechungsanzeige ist.",
       "Škoda: Ausgewählte geprüfte Einträge stammen aus Kopien der Anleitung Octavia 5E 11.2018 (5E0012715AQ) und der deutschen Anleitung Enyaq iV 11.2020. Eine Ausgabe ist kein Modelljahr und deckt andere Jahre nicht ab. Für den Abgleich fehlen die Hersteller-Originaldateien. Außerdem fehlen Octavia 07.2019, Superb 05.2010 und die Fahrerhinweise der digitalen Anleitung Octavia iV 11.2020 (5E4012715CB). Genaue Dokumente und Zugriffsergebnisse sind unten aufgeführt.",
       "Volkswagen Nutzfahrzeuge: Neu belegt ist Caddy 2K7, digitale Anleitung 11.2025. Bei 17 ursprünglichen allgemeinen Beispielen wurde der allgemeine Geltungsbereich durch konkreten Modellnachweis ersetzt; bisherige Quellen bleiben in der Dokumentation. Sieben Beispiele bleiben ohne Modellbestätigung: EPC, allgemeine Bremswarnung, DPF, ACC-Übernahmeaufforderung und drei einfache Lenkradvarianten. Beim neuen Caddy weichen Lenkungs- und manche Assistenzpiktogramme ab; Ähnlichkeit ist kein Gleichheitsnachweis. Ältere Caddy, T6/T6.1, neuer Transporter, ID. Buzz, Crafter und Amarok sind durch diese Ausgabe nicht abgedeckt.",
       "SEAT und CUPRA: Die erhaltenen Einträge gelten nur für ausdrücklich genannte Ausgaben und Ausstattungen. Die vollständige Prüfung aller Modelle und Jahre ab 2010 beziehungsweise CUPRA seit Gründung als eigenständige Marke ist noch nicht abgeschlossen. Lücken zwischen Ausgaben werden nicht automatisch geschlossen.",
@@ -28890,6 +29140,43 @@
       "removed_record_ids": [],
       "merged_record_ids": [],
       "note": "User confirmed manufacture date 03/2026 for the Terramar shown in all six photographs. This is stored separately from model year, VIN, software and manual edition; no catalogue meaning, graphic or model scope was added from the date alone."
+    },
+    {
+      "id": "audi-a8-2025-06-central-and-emissions-review",
+      "checked": "2026-10-31",
+      "before_semantic_records": 169,
+      "after_semantic_records": 171,
+      "added_record_ids": [
+        "audi-central-yellow",
+        "audi-a8-emissions-system"
+      ],
+      "added_model_assignments": [
+        {
+          "id": "audi-central-yellow",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-a8-emissions-system",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        },
+        {
+          "id": "audi-central-red",
+          "manual": "audi-a8-2025-06-de",
+          "brand": "audi"
+        }
+      ],
+      "corrected_record_ids": [],
+      "enriched_existing_model_scopes": [
+        "audi-central-red"
+      ],
+      "added_pending_item_ids": [
+        "audi-a8-parking-assistance-controls"
+      ],
+      "removed_record_ids": [],
+      "merged_record_ids": [],
+      "note": "A8 06.2025 independently supports red and yellow central-message indicators and a single combined instruction for a steady or flashing emissions indicator. The parking-control graphics remain pending because neither matches the available licensed P-with-steering-wheel graphic or its unavailable/interrupted meaning. No vehicle identity, model year or wider edition applicability is inferred."
     }
   ],
   "evidence_gaps_revision": [

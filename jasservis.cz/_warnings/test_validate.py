@@ -22,9 +22,10 @@ class ReviewRegressionTests(unittest.TestCase):
         self.register = json.loads((HERE / 'review-register.json').read_text())
         self.attachments = json.loads((HERE / 'attachment-groups.json').read_text())
         self.queues = json.loads((HERE / 'work-queues.json').read_text())
+        self.catalogue = json.loads((HERE / 'catalog.json').read_text())
 
     def photo_checks(self):
-        validation.check_photos_and_queues(self.audit, self.register, self.attachments, self.queues)
+        validation.check_photos_and_queues(self.audit, self.register, self.attachments, self.queues, self.catalogue)
 
     def test_original_zero_available_counter_is_rejected(self):
         self.register['latest_round']['requested_photos_available'] = 0
@@ -71,6 +72,84 @@ class ReviewRegressionTests(unittest.TestCase):
         self.photo_checks()
         self.assertEqual(self.audit.errors, [])
 
+    def test_unknown_audi_model_cannot_be_claimed_by_queue(self):
+        evidence = {
+            'brand_id': 'audi', 'model_confirmed_by_user': None,
+            'manual_edition': None, 'document_identity_established': False,
+        }
+        row = {
+            'brand': 'audi', 'model': 'A8', 'edition': 'vehicle photos; edition undocumented',
+            'source_edition_identified': False, 'source_url': None,
+        }
+        validation.check_photo_queue_identity(self.audit, row, evidence, 'synthetic Audi row')
+        self.assertTrue(any('A8' in error and 'establishes no model' in error for error in self.audit.errors))
+
+    def test_unknown_audi_photo_candidates_are_rejected(self):
+        evidence = {
+            'brand_id': 'audi', 'brand_confirmed_by_user': 'Audi',
+            'model_confirmed_by_user': None, 'manual_edition': None,
+            'model_year': None, 'generation': None,
+            'document_identity_established': False,
+            'photos_received': 1, 'photos_visually_inspected': 1,
+            'photos': [{'id': 'audi-photo-01'}],
+            'observations': [{
+                'id': 'audi-observation-01',
+                'occurrences': [{'photo': 'audi-photo-01', 'position': {'cs': 'uprostřed'}}],
+                'candidate_catalogue_ids_not_model_verified': ['does-not-exist'],
+                'matching_model_scoped_catalogue_ids': [],
+                'published_from_this_photo_set': False,
+                'exact_reusable_graphic_verified': False,
+                'manual_edition': None, 'model_year': None,
+            }],
+        }
+        validation.check_audi_photo_review(self.audit, self.catalogue, evidence, check_csv=False)
+        self.assertTrue(any('does-not-exist' in error for error in self.audit.errors))
+
+    def test_audi_photo_summary_sources_and_page_status_pass(self):
+        path = HERE / 'audi-photo-review.json'
+        if not path.exists():
+            self.skipTest('Audi photo evidence not present')
+        evidence = json.loads(path.read_text())
+        validation.check_audi_photo_review(self.audit, self.catalogue, evidence, check_csv=False)
+        self.assertEqual(self.audit.errors, [])
+
+    def test_audi_vehicle_photo_cannot_claim_a_manual_page(self):
+        path = HERE / 'audi-photo-review.json'
+        if not path.exists():
+            self.skipTest('Audi photo evidence not present')
+        evidence = json.loads(path.read_text())
+        evidence['observations'][0]['source_page'] = 11
+        validation.check_audi_photo_review(self.audit, self.catalogue, evidence, check_csv=False)
+        self.assertTrue(any('source_page must be explicit null' in error for error in self.audit.errors))
+
+    def test_audi_occurrence_summary_and_photo_coverage_are_enforced(self):
+        path = HERE / 'audi-photo-review.json'
+        if not path.exists():
+            self.skipTest('Audi photo evidence not present')
+        evidence = json.loads(path.read_text())
+        evidence['summary']['occurrence_count'] -= 1
+        for row in evidence['observations']:
+            row['occurrences'] = [x for x in row['occurrences'] if x.get('photo') != 'audi-photo-05']
+        validation.check_audi_photo_review(self.audit, self.catalogue, evidence, check_csv=False)
+        self.assertTrue(any('summary occurrence count differs' in error for error in self.audit.errors))
+        self.assertTrue(any('every received photograph must be referenced' in error for error in self.audit.errors))
+
+    def test_audi_html_localises_codes_and_separates_review_states(self):
+        if not (HERE / 'audi-photo-review.json').exists():
+            self.skipTest('Audi photo evidence not present')
+        headings = {
+            'cs': ('Význam ověřen', 'Přesná použitelná grafika ověřena', 'Vloženo z fotografií'),
+            'en': ('Meaning verified', 'Exact reusable graphic verified', 'Added from the photos'),
+            'de': ('Bedeutung geprüft', 'Genaue nutzbare Grafik geprüft', 'Aus den Fotos ergänzt'),
+        }
+        for lang in validation.LANGS:
+            page = validation.ROOT / ('' if lang == 'cs' else lang) / validation.ROUTE / 'druha-kontrola.html'
+            text = page.read_text()
+            section = text.split('id="audi-fotografie"', 1)[1].split('id="audi-q4-climate"', 1)[0]
+            self.assertTrue(all(heading in section for heading in headings[lang]))
+            for raw_code in ('warning-indicator', 'steady-visible', 'mmi-control', 'menu-tile'):
+                self.assertNotIn(raw_code, section)
+
     def test_review_export_manifest_and_file_bytes(self):
         with zipfile.ZipFile(HERE / 'catalog-review-export.zip') as archive:
             names = archive.namelist()
@@ -87,8 +166,13 @@ class ReviewRegressionTests(unittest.TestCase):
                 if name != 'README.txt':
                     source = validation.ROOT / name if name.startswith('wp-content/') else HERE / name
                     self.assertEqual(data, source.read_bytes(), name)
-            self.assertTrue({'coverage.csv', 'manual-review.csv', 'work-queues.cs.csv',
-                             'work-queues.en.csv', 'work-queues.de.csv'} <= set(names))
+            required = {'coverage.csv', 'manual-review.csv', 'work-queues.cs.csv',
+                        'work-queues.en.csv', 'work-queues.de.csv', 'verification.json'}
+            if (HERE / 'audi-photo-review.json').exists():
+                required.add('audi-photo-review.json')
+                required.update(f'audi-photo-comparison.{lang}.csv' for lang in validation.LANGS)
+                required.update(f'audi-photo-inventory.{lang}.csv' for lang in validation.LANGS)
+            self.assertTrue(required <= set(names))
 
 
 if __name__ == '__main__':
