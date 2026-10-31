@@ -1071,9 +1071,11 @@ def check_online_services(audit):
         oil_end = text.find('<details class="driver-topic"', oil_start + 1)
         oil_html = text[oil_start:oil_end] if oil_start >= 0 and oil_end > oil_start else ""
         oil_titles = {"cs": "Hladina motorového oleje během provozu roste?", "en": "Is the engine-oil level rising during use?", "de": "Steigt der Motorölstand während des Betriebs?"}
-        audit.check(oil_html.count('class="driver-subtopic oil-level-guidance"') == 1 and oil_html.count('class="oil-exchange-note"') == 1, "online_services", f"{label}: rising oil-level guidance or highlighted exchange conclusion is missing")
-        audit.check(oil_titles[lang] in oil_html and 'DPF' in oil_html and oil_html.count('<li>') >= 5, "online_services", f"{label}: rising oil-level guidance is incomplete")
-        audit.check('<details' not in oil_html[oil_html.find('class="oil-level-guidance"'):], "online_services", f"{label}: oil-level guidance must not add nested accordions")
+        bonnet_notes = {"cs": "po zavření kapoty", "en": "after the bonnet has been closed", "de": "nach dem Schließen der Motorhaube"}
+        audit.check(oil_html.count('class="oil-section"') == 10 and oil_html.count('class="oil-exchange-note"') == 1, "online_services", f"{label}: oil guidance must contain ten collapsed chapters and one exchange conclusion")
+        audit.check('<details class="oil-section" open' not in oil_html and oil_html.count('class="oil-standards-table"') == 1 and oil_html.count('<td data-label=') >= 30, "online_services", f"{label}: oil chapters must start closed and include the ten-row responsive standards table")
+        audit.check(oil_titles[lang] in oil_html and 'DPF' in oil_html and bonnet_notes[lang] in oil_html and oil_html.count('VW 506 01') >= 2, "online_services", f"{label}: rising-level, Audi bonnet or standard-exception guidance is incomplete")
+        audit.check('VW 508 00' in oil_html and 'VW 509 00' in oil_html and 'VW 511 00' in oil_html and 'LongLife' in oil_html, "online_services", f"{label}: oil standards or trade-name guidance is incomplete")
         coolant_start = text.find('<div class="coolant-guide">')
         coolant_end = text.find('<details class="driver-topic"', coolant_start + 1)
         coolant_html = text[coolant_start:coolant_end] if coolant_start >= 0 and coolant_end > coolant_start else ""
