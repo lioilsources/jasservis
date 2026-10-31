@@ -1220,3 +1220,63 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
  #motopress-main .header .header_block_1 .mobile-booking-trigger{grid-column:3;grid-row:2}
  #motopress-main .header .header_block_1 .header-driver-advice{grid-column:4;grid-row:2}
 }
+
+/* One complete outline for tile-shaped cards and actions across the site.
+   Border-box keeps their approved outer dimensions and alignment unchanged. */
+:is(
+ .header .header_block_1 #text-8>.textwidget>b a,
+ .header .mobile-booking-trigger,
+ .header .header-driver-advice,
+ .tlacitko-akce,
+ .service-box .btn-align a,
+ #post-2272 #portfolio-grid .btn,
+ #post-203 .home-service-brands a,
+ #post-203 .home-service-general a,
+ #post-14 .kontakt-prehled .kontakt-prehled__tlacitko,
+ #post-14 .kontakt-prehled__kopie,
+ .contact-booking-panel__call,
+ .contact-booking-panel__copy,
+ .mobile-nav-panel .mobile-nav-booking
+){box-sizing:border-box;border:1px solid #000!important;box-shadow:none!important}
+
+:is(
+ #post-203 .home-service-cards .service-box.style_1,
+ #post-203 .home-service-index .home-service-group,
+ #post-203 .home-service-brands,
+ #post-2272 #portfolio-grid .portfolio_item_holder,
+ .service-box.style_5,
+ .list_1>li,
+ .rozbalovaci,
+ .kontakt-karta,
+ #post-14 .kontakt-prehled__karta,
+ #post-14 .kontakt-prehled__udaje,
+ .contact-booking-panel__card,
+ .warning-lights .wl-card,
+ .warning-lights .wl-stop,
+ .warning-lights .wl-scope,
+ .warning-lights .wl-contact,
+ .warning-lights .wl-review
+){box-sizing:border-box;border:1px solid #000!important;box-shadow:none!important}
+
+:is(
+ #post-203 .home-service-index details[open],
+ details.rozbalovaci[open],
+ .warning-lights .wl-card[open],
+ .warning-lights .wl-review[open]
+)>summary{border-bottom:0!important}
+
+:is(
+ .header .header_block_1 #text-8>.textwidget>b a,
+ .header .mobile-booking-trigger,
+ .header .header-driver-advice,
+ .tlacitko-akce,
+ .service-box .btn-align a,
+ #post-2272 #portfolio-grid .btn,
+ #post-203 .home-service-brands a,
+ #post-203 .home-service-general a,
+ #post-14 .kontakt-prehled .kontakt-prehled__tlacitko,
+ #post-14 .kontakt-prehled__kopie,
+ .contact-booking-panel__call,
+ .contact-booking-panel__copy,
+ .mobile-nav-panel .mobile-nav-booking
+):focus-visible{outline:3px solid var(--js-brand)!important;outline-offset:3px}

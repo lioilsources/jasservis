@@ -218,7 +218,7 @@ def create_page(lang):
  s=re.sub(r'(<li id="menu-item-2076" class=")[^"]*(")',r'\1menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children\2',s,count=1)
  s=re.sub(r'<a class="header-driver-advice(?: is-current)?"(?: aria-current="page")?([^>]*)>',r'<a class="header-driver-advice is-current" aria-current="page"\1>',s,count=1)
  s=re.sub(r'(warning-lights\.(?:css|js)\?v=)[^"\']+',r'\g<1>'+VERSION,s)
- s=re.sub(r'(jasservis\.css\?v=)[^"\']+',r'\g<1>20261031-driver-advice-v2',s)
+ s=re.sub(r'(jasservis\.css\?v=)[^"\']+',r'\g<1>20261031-tile-outline-v1',s)
  meta=f'<meta name="robots" content="noindex, nofollow" /><meta name="description" content="{esc(u["intro3"])}" /><link rel="canonical" href="{url}" /><meta property="og:title" content="{esc(u["title"])} | J&amp;S SERVIS" /><meta property="og:description" content="{esc(u["scopeTitle"])}" /><meta property="og:url" content="{url}" /><meta property="og:locale" content="'+{'cs':'cs_CZ','en':'en_GB','de':'de_DE'}[lang]+'" />'
  for l in LANGS:meta+=f'<link rel="alternate" hreflang="{l}" href="https://jasservis.cz/{locale_root(l)}{ROUTE}/" />'
  meta+=f'<link rel="alternate" hreflang="x-default" href="https://jasservis.cz/{ROUTE}/" />'
