@@ -38,7 +38,7 @@ jobs:
         id: validation
         run: .github/scripts/build-public-site.sh jasservis.cz .pages-dist
       - name: Generate sitemap.xml
-        run: .github/scripts/sitemap.sh .pages-dist https://jasservis.cz
+        run: .github/scripts/sitemap.sh .pages-dist https://jasservis.cz jasservis.cz
       - name: Keep previews out of search engines
         run: |
           printf '/*\n  X-Robots-Tag: noindex\n' > .pages-dist/_headers

@@ -30,7 +30,7 @@ jobs:
       - name: Generate sitemap.xml
         run: |
           .github/scripts/build-public-site.sh jasservis.cz .pages-dist
-          .github/scripts/sitemap.sh .pages-dist https://jasservis.cz
+          .github/scripts/sitemap.sh .pages-dist https://jasservis.cz jasservis.cz
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
