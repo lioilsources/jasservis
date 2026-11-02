@@ -79,7 +79,18 @@ jobs:
         env:
           DEPLOYMENT_URL: ${{ steps.deploy.outputs.deployment-url }}
         run: |
-          test "$(curl -L -sS -o /dev/null -w '%{http_code}' "$DEPLOYMENT_URL/kontrolky-a-vystrazna-hlaseni/")" = 200
+          # Preview deployments sit behind Cloudflare Access: every path, even a
+          # missing one, answers 302 to <team>.cloudflareaccess.com. That counts
+          # as blocked. The public/internal boundary itself is enforced before
+          # upload by build-public-site.sh, so this is only a second look.
+          probe() { curl -sS -o /dev/null -w '%{http_code} %{redirect_url}' "$DEPLOYMENT_URL/$1"; }
+          blocked() { case "$1" in 403\ *|404\ *) return 0;; 302\ https://*.cloudflareaccess.com/*) return 0;; esac; return 1; }
+          page="$(probe kontrolky-a-vystrazna-hlaseni/)"
+          case "$page" in
+            200\ *) echo "Customer page is public (no Access on this deployment).";;
+            302\ https://*.cloudflareaccess.com/*) echo "Deployment is behind Cloudflare Access: $page";;
+            *) echo "Customer page unexpected: $page" >&2; exit 1;;
+          esac
           for path in \
             _warnings/catalog.json \
             _warnings/review-register.json \
@@ -104,8 +115,8 @@ jobs:
             vi/kontrolky-a-vystrazna-hlaseni/zdroje.html \
             vi/kontrolky-a-vystrazna-hlaseni/evidence.json
           do
-            status="$(curl -L -sS -o /dev/null -w '%{http_code}' "$DEPLOYMENT_URL/$path")"
-            case "$status" in 403|404) ;; *) echo "Internal URL is public: $path ($status)" >&2; exit 1;; esac
+            status="$(probe "$path")"
+            blocked "$status" || { echo "Internal URL is public: $path ($status)" >&2; exit 1; }
           done
       - name: Inventory remaining Cloudflare deployments
         env:
