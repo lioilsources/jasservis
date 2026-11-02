@@ -28,7 +28,9 @@ jobs:
           fetch-depth: 0
 
       - name: Generate sitemap.xml
-        run: .github/scripts/sitemap.sh jasservis.cz https://jasservis.cz
+        run: |
+          .github/scripts/build-public-site.sh jasservis.cz .pages-dist
+          .github/scripts/sitemap.sh .pages-dist https://jasservis.cz
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -36,7 +38,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: jasservis.cz/
+          path: .pages-dist/
 
       - name: Deploy to GitHub Pages
         id: deployment

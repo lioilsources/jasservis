@@ -51,3 +51,12 @@
 
 .brand-service-page .breadcrumb.breadcrumb__t{row-gap:4px}
 .brand-service-page .breadcrumb.breadcrumb__t li{max-width:100%;overflow-wrap:break-word}
+
+/* Only the clickable accordion heading changes colour. */
+.brand-service-content .vw-accordion>summary{transition:background-color .15s ease,color .15s ease,border-color .15s ease}
+@media(hover:hover) and (pointer:fine){
+ .brand-service-content .vw-accordion>summary:hover{background:#fff;color:#191818;border-color:#000}
+}
+.brand-service-content .vw-accordion>summary:focus-visible{background:#fff;color:#191818;border-color:#000;outline:3px solid var(--js-brand);outline-offset:3px}
+.brand-service-content .vw-accordion>summary:is(:hover,:focus-visible) :is(h2,strong){color:#191818}
+.brand-service-content .vw-accordion>summary:is(:hover,:focus-visible):after{border-color:#191818}

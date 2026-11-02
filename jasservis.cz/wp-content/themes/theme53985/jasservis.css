@@ -54,14 +54,16 @@
 .header .nav__primary #topnav > li > a:before { display:none; }
 /* Orange identifies the current page or section, independently of hover and focus. */
 .header .nav__primary #topnav > li.current-menu-item,
+.header .nav__primary #topnav > li.current_page_item,
 .header .nav__primary #topnav > li.current-menu-parent,
 .header .nav__primary #topnav > li.current-menu-ancestor {
-    background:#f36639;
+    background:transparent;
 }
 .header .nav__primary #topnav > li.current-menu-item > a,
+.header .nav__primary #topnav > li.current_page_item > a,
 .header .nav__primary #topnav > li.current-menu-parent > a,
 .header .nav__primary #topnav > li.current-menu-ancestor > a {
-    color:#fff; background:transparent;
+    color:var(--js-brand); background:transparent;
 }
 .header .nav__primary #topnav > li > .submenu-toggle { color:#fff; background:transparent; }
 /* The open state follows the actual panel state, so touch hover cannot leave it behind. */
@@ -75,12 +77,14 @@
     transform:rotate(225deg); margin-top:4px;
 }
 .header .nav__primary #topnav > li.current-menu-item.is-open,
+.header .nav__primary #topnav > li.current_page_item.is-open,
 .header .nav__primary #topnav > li.current-menu-parent.is-open,
-.header .nav__primary #topnav > li.current-menu-ancestor.is-open { background:#f36639; box-shadow:none; }
+.header .nav__primary #topnav > li.current-menu-ancestor.is-open { background:#292727; box-shadow:inset 0 -2px var(--js-brand); }
 .header .nav__primary #topnav > li.current-menu-item.is-open > .submenu-toggle,
+.header .nav__primary #topnav > li.current_page_item.is-open > .submenu-toggle,
 .header .nav__primary #topnav > li.current-menu-parent.is-open > .submenu-toggle,
 .header .nav__primary #topnav > li.current-menu-ancestor.is-open > .submenu-toggle {
-    color:#fff; background:#292727;
+    color:var(--js-brand); background:#292727;
 }
 @media (hover:hover) and (pointer:fine) {
     .header .nav__primary #topnav > li:not(.current-menu-item):not(.current-menu-parent):not(.current-menu-ancestor):hover {
@@ -274,6 +278,7 @@ iframe[data-cookie-src][hidden] {
 /* One presentation system for the approved PR #39 content. */
 :root {
     --js-brand:#f36639; --js-card:#c44720; --js-ink:#191818; --js-copy:#444; --js-paper:#fff;
+    --js-surface:#444444; --js-surface-link:#ff9b7a;
     --js-muted:#f2f2f2; --js-accent-text:#ae3814; --js-font:'Ubuntu',sans-serif; --js-text:16px;
     --js-small:14px; --js-leading:1.55; --js-heading:28px; --js-heading-leading:1.25;
     --js-section:32px; --js-gap:16px; --js-gutter:16px; --js-copy-width:800px;
@@ -439,8 +444,17 @@ iframe[data-cookie-src][hidden] {
 }
 .footer .footer-widgets a { color:#eee; }
 .footer .footer-widgets a:hover, .footer .footer-widgets a:focus-visible { color:#ffad93; text-decoration:underline; }
-.footer .copyright { padding:16px 0; border-top:1px solid #e3e3e3; }
-.footer .copyright .footer-text, .footer .copyright a { color:#555; }
+body .footer .copyright {
+    box-sizing:border-box; height:auto; min-height:0; padding:22px 0!important;
+    border-top:1px solid #e3e3e3; background:#fff;
+}
+body .footer .copyright .footer-text {
+    margin:0; color:#252525; font:700 19px/1.4 var(--js-font)!important; text-align:center;
+}
+body .footer .copyright .footer-brand { display:block; color:#252525; }
+body .footer .copyright .footer-preferences { margin:10px 0 0; }
+body .footer .copyright a { color:#555; }
+.content-holder { padding-bottom:0; }
 .footer #map { height:280px; }
 .footer .mapa-navigace { margin:16px 0; }
 /* Tablet keeps the brand and contacts side by side instead of stretching a phone header. */
@@ -1112,6 +1126,8 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
 .mobile-nav-panel #topnav>#menu-item-2275>.sub-menu>li:not(.menu-overview)>a[aria-current=page]{color:var(--js-brand)}
 .mobile-nav-panel #topnav>li>.reviews-toggle{display:grid;grid-template-columns:minmax(0,1fr) 48px;align-items:center;padding-left:14px;padding-right:0}
 .mobile-nav-panel #topnav>li>.reviews-toggle:after{justify-self:center}
+/* Mobile/tablet centring must not replace the approved desktop brand/navigation row. */
+@media(max-width:1199px), (min-width:1200px) and (max-width:1399px) and (hover:none) and (pointer:coarse){
 /* One independent centre for the main brand; the award occupies its left slot. */
 #motopress-main .header .header_block_2>.row{grid-template-columns:minmax(0,1fr);gap:0}
 #motopress-main .header .logo{--brand-width:200px;--award-width:80px;position:relative!important;display:grid!important;grid-template-columns:minmax(0,1fr) var(--brand-width) minmax(0,1fr);align-items:center;justify-content:normal;column-gap:12px!important;row-gap:0;box-sizing:border-box;float:none;width:100%!important;max-width:none;margin:8px auto!important;padding:0!important}
@@ -1120,7 +1136,18 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
 #motopress-main .header .logo .top-firma-badge{grid-column:1;grid-row:1;justify-self:end;position:static!important;display:flex;align-items:center;justify-content:center;flex:none!important;width:var(--award-width)!important;max-width:100%;min-height:44px;margin:0!important}
 #motopress-main .header .logo .top-firma-badge img{display:block;width:100%!important;height:auto!important}
 #motopress-main .header .logo .logo_tagline{grid-column:1/-1;grid-row:2;text-align:center!important}
-@media(max-width:767px){#motopress-main .header .logo{--brand-width:min(43vw,168px);--award-width:clamp(46px,13vw,56px);margin:4px auto 0!important}}
+}
+@media(max-width:767px){
+ #motopress-main .header .logo{--brand-width:min(43vw,168px);--award-width:clamp(46px,13vw,56px);margin:4px auto 0!important}
+ #motopress-main .header .logo .top-firma-badge{overflow:visible;transform:translateX(-13px)}
+ #motopress-main .header .logo .top-firma-badge img{
+  width:calc(100% * 1.15)!important;max-width:none!important;flex:none;
+  transform:translateY(3px) rotate(-10deg)
+ }
+}
+@media(max-width:1199px) and (max-height:500px) and (orientation:landscape){
+ #motopress-main .header .logo .top-firma-badge{transform:translateX(-13px)}
+}
 @media(min-width:768px) and (max-width:1199px) and (min-height:501px){
  #motopress-main .header>.container>.row>.span12{grid-template-columns:minmax(0,1fr);grid-template-areas:'brand' 'contacts' 'navigation';gap:4px 0}
  #motopress-main .header .logo{--brand-width:140px;--award-width:44px;margin:0 auto!important}
@@ -1146,4 +1173,519 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
 }
 @media(max-width:1199px){
  #motopress-main .header{padding-left:max(16px,env(safe-area-inset-left,0px),env(safe-area-inset-right,0px));padding-right:max(16px,env(safe-area-inset-left,0px),env(safe-area-inset-right,0px))}
+}
+
+/* Low-height phones: readable contact rows and breathing room around the brand. */
+@media(max-width:1199px) and (max-height:500px) and (orientation:landscape){
+ #motopress-main .header .address-street{display:none}
+ #motopress-main .header .header_block_1 .header_widget_1 b{white-space:nowrap}
+ #motopress-main .header .header_block_1>.row{column-gap:12px;row-gap:2px}
+ #motopress-main .header .header_block_1>.row>.span6:first-child{flex:0 0 auto}
+ #motopress-main .header .landscape-nav-row{box-sizing:border-box;min-height:66px;padding-block:8px}
+ #motopress-main .header .nav__primary .landscape-nav-row .logo{inset:8px 0}
+ #motopress-main .header .header_block_2 .nav__primary{margin-block:4px!important}
+}
+@media(max-width:599px) and (max-height:500px) and (orientation:landscape){
+ #motopress-main .header .nav__primary .landscape-nav-row .logo{inset:auto}
+}
+
+/* Compact landscape controls retain matching 44px touch targets. */
+@media(max-width:1199px) and (max-height:500px) and (orientation:landscape){
+ #motopress-main .header .nav__primary .landscape-nav-row .navigation-toggle{box-sizing:border-box;width:auto;min-width:0;min-height:44px;margin-block:0;padding:9px 10px;gap:8px;line-height:24px;align-self:center}
+ #motopress-main .header .landscape-nav-row .language-mobile>summary{min-height:44px}
+}
+
+/* Keep desktop flyouts within the real viewport; low windows retain vertical scrolling. */
+@media(min-width:1200px){
+ .header .nav__primary:not(.desktop-menu-collapsed) #topnav>li>.sub-menu{translate:var(--dropdown-shift-x,0px) 0}
+}
+
+/* Desktop contact bar: the two actions are centred against the complete bar,
+   independently of the wider contact cluster on the right. */
+@media(min-width:1200px) and (hover:hover) and (pointer:fine){
+ #motopress-main .header .header_block_1>.language-contact-row{
+  position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto auto minmax(0,1fr);
+  align-items:center;column-gap:24px;row-gap:0;min-height:64px;margin:0
+ }
+ #motopress-main .header .header_block_1>.language-contact-row::before,
+ #motopress-main .header .header_block_1>.language-contact-row::after{display:none}
+ #motopress-main .header .header_block_1>.language-contact-row>.span6:first-child{
+  grid-column:1;min-width:0;padding-right:16px
+ }
+ #motopress-main .header .header_block_1>.language-contact-row>.span6:nth-child(2),
+ #motopress-main .header .header_block_1 .header_widget_2,
+ #motopress-main .header .header_block_1 #custom_html-3,
+ #motopress-main .header .header_block_1 #custom_html-3>.textwidget,
+ #motopress-main .header .header_block_1 #text-8,
+ #motopress-main .header .header_block_1 #text-8>.textwidget{display:contents}
+ #motopress-main .header .header_block_1 #text-8>.textwidget>b{
+  grid-column:2;display:flex;align-items:stretch;align-self:center
+ }
+ #motopress-main .header .header_block_1 #text-8>.textwidget>b>a,
+ #motopress-main .header .header_block_1 .header-driver-advice{
+  display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;
+  min-height:44px;padding:9px 12px;font:700 13px/24px var(--js-font);white-space:nowrap
+ }
+ #motopress-main .header .header_block_1 .header-driver-advice{grid-column:3;align-self:center}
+ #motopress-main .header .header_block_1 .tel{
+  grid-column:4;display:grid;grid-auto-flow:row;justify-items:start;align-content:center;
+  align-self:center;justify-self:end;gap:1px;min-width:0;margin:0;padding-right:132px;text-align:left
+ }
+ #motopress-main .header .header_block_1 .tel .header-phone a{
+  display:flex;align-items:center;gap:4px;min-height:20px;padding:0;font-size:13px;line-height:20px;white-space:nowrap
+ }
+ #motopress-main .header .header_block_1 .tel .header-phone a span{font-size:inherit}
+ #motopress-main .header .header_block_1 .tel .header-hours{
+  margin:0;font-size:12px;line-height:18px;text-align:left;white-space:nowrap
+ }
+ #motopress-main .header .header_block_1>.language-contact-row>.language-switcher{
+  position:absolute;right:0;top:50%;margin:0;transform:translateY(-50%)
+ }
+}
+@media(min-width:1600px) and (hover:hover) and (pointer:fine){
+ #motopress-main .header .header_block_1>.language-contact-row{column-gap:24px}
+ #motopress-main .header .header_block_1 #text-8>.textwidget>b>a,
+ #motopress-main .header .header_block_1 .header-driver-advice{padding-inline:15px;font-size:14px}
+ #motopress-main .header .header_block_1 .tel{gap:2px;padding-right:142px}
+ #motopress-main .header .header_block_1 .tel .header-phone a{font-size:14px}
+ #motopress-main .header .header_block_1 .tel .header-hours{font-size:13px}
+}
+
+/* A second route into the shared warning-light catalogue.  It stays beside the
+   existing booking action and retains a full 44px touch target. */
+.header .header-driver-advice{
+ display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;
+ min-height:44px;padding:9px 14px;border:1px solid var(--js-brand);border-radius:var(--js-radius);
+ background:var(--js-brand);color:var(--js-ink);font-family:var(--js-font);font-size:var(--js-small);
+ font-weight:700;line-height:24px;text-align:center;text-decoration:none;white-space:normal;
+ transition:background-color .18s,color .18s,border-color .18s
+}
+.header .header-driver-advice:hover,.header .header-driver-advice:focus-visible{
+ background:#ff8055;color:var(--js-ink);border-color:#ff8055
+}
+.page-warning-lights .header .header-driver-advice.is-current{
+	background:var(--js-brand);border-color:var(--js-brand);color:var(--js-ink);
+	box-shadow:inset 0 -3px 0 #333;
+}
+.page-warning-lights .header .header-driver-advice.is-current:hover,
+.page-warning-lights .header .header-driver-advice.is-current:focus-visible{
+	background:#333;border-color:#333;color:var(--js-paper);box-shadow:none;
+}
+@media(max-width:1199px){
+ #motopress-main .header .header_block_1 :is(.mobile-booking-trigger,.header-driver-advice){
+  display:flex;align-items:center;justify-content:center;align-self:stretch;box-sizing:border-box;
+  flex:0 1 168px;width:168px;max-width:100%;min-width:44px;min-height:44px;padding:10px 12px;
+  font:700 14px/20px var(--js-font);text-align:center;white-space:normal;overflow-wrap:break-word
+ }
+ .header .header-driver-advice{order:2}
+}
+@media(max-width:767px) and (min-height:501px){
+ #motopress-main .header .header_block_1 #text-8>.textwidget{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:8px;text-align:center
+ }
+ #motopress-main .header .header_block_1 :is(.mobile-booking-trigger,.header-driver-advice){
+  width:100%;height:auto;min-width:0
+ }
+ #motopress-main .header .header_block_1 .mobile-booking-trigger{
+  grid-column:1;grid-row:1
+ }
+ #motopress-main .header .header_block_1 .header-driver-advice{
+  grid-column:2;grid-row:1
+ }
+ #motopress-main .header .header_block_1 .tel{grid-column:1/-1;grid-row:2}
+}
+@media(min-width:768px) and (max-width:1199px) and (min-height:501px){
+ #motopress-main .header .header_block_1 #text-8>.textwidget{
+  display:grid;grid-template-columns:repeat(2,minmax(0,168px));justify-content:center;align-items:stretch;gap:8px;text-align:center
+ }
+ #motopress-main .header .header_block_1 :is(.mobile-booking-trigger,.header-driver-advice){
+  width:100%;height:auto;min-width:0
+ }
+ #motopress-main .header .header_block_1 .mobile-booking-trigger{grid-column:1;grid-row:1}
+ #motopress-main .header .header_block_1 .header-driver-advice{grid-column:2;grid-row:1}
+ #motopress-main .header .header_block_1 .tel{
+  grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:repeat(2,max-content);
+  justify-content:center;gap:0 16px
+ }
+ #motopress-main .header .header_block_1 .tel .header-hours{grid-column:1/-1;text-align:center}
+}
+@media(max-width:1199px) and (max-height:500px) and (orientation:landscape){
+ #motopress-main .header .header_block_1 #text-8>.textwidget{display:contents}
+ #motopress-main .header .header-driver-advice{order:2}
+}
+@media(max-width:740px) and (max-height:500px) and (orientation:landscape){
+ #motopress-main .header .header_block_1>.row{grid-template-columns:repeat(4,minmax(0,1fr))}
+ #motopress-main .header .header_block_1 .header-phone:first-child{grid-column:1/3;grid-row:2}
+ #motopress-main .header .header_block_1 .header-phone:nth-child(2){grid-column:1/3;grid-row:3}
+ #motopress-main .header .header_block_1 .header-phone a{justify-content:flex-start}
+ #motopress-main .header .header_block_1 .mobile-booking-trigger{grid-column:3;grid-row:2;width:100%;min-width:0}
+ #motopress-main .header .header_block_1 .header-driver-advice{grid-column:4;grid-row:2;width:100%;min-width:0}
+ #motopress-main .header .header_block_1 .header-hours{grid-column:3/5;grid-row:3;text-align:center}
+}
+
+/* One complete outline for tile-shaped cards and actions across the site.
+   Border-box keeps their approved outer dimensions and alignment unchanged. */
+:is(
+ .header .header_block_1 #text-8>.textwidget>b a,
+ .header .mobile-booking-trigger,
+ .header .header-driver-advice,
+ .tlacitko-akce,
+ .service-box .btn-align a,
+ #post-2272 #portfolio-grid .btn,
+ #post-203 .home-service-brands a,
+ #post-203 .home-service-general a,
+ #post-14 .kontakt-prehled .kontakt-prehled__tlacitko,
+ #post-14 .kontakt-prehled__kopie,
+ .contact-booking-panel__call,
+ .contact-booking-panel__copy,
+ .mobile-nav-panel .mobile-nav-booking
+){box-sizing:border-box;border:1px solid #000!important;box-shadow:none!important}
+
+:is(
+ #post-203 .home-service-cards .service-box.style_1,
+ #post-203 .home-service-index .home-service-group,
+ #post-203 .home-service-brands,
+ #post-2272 #portfolio-grid .portfolio_item_holder,
+ .service-box.style_5,
+ .list_1>li,
+ .rozbalovaci,
+ .kontakt-karta,
+ #post-14 .kontakt-prehled__karta,
+ #post-14 .kontakt-prehled__udaje,
+ .contact-booking-panel__card,
+ .warning-lights .wl-card,
+ .warning-lights .wl-stop,
+ .warning-lights .wl-scope,
+ .warning-lights .wl-contact,
+ .warning-lights .wl-review
+){box-sizing:border-box;border:1px solid #000!important;box-shadow:none!important}
+
+:is(
+ #post-203 .home-service-index details[open],
+ details.rozbalovaci[open],
+ .warning-lights .wl-card[open],
+ .warning-lights .wl-review[open]
+)>summary{border-bottom:0!important}
+
+:is(
+ .header .header_block_1 #text-8>.textwidget>b a,
+ .header .mobile-booking-trigger,
+ .header .header-driver-advice,
+ .tlacitko-akce,
+ .service-box .btn-align a,
+ #post-2272 #portfolio-grid .btn,
+ #post-203 .home-service-brands a,
+ #post-203 .home-service-general a,
+ #post-14 .kontakt-prehled .kontakt-prehled__tlacitko,
+ #post-14 .kontakt-prehled__kopie,
+ .contact-booking-panel__call,
+ .contact-booking-panel__copy,
+ .mobile-nav-panel .mobile-nav-booking
+):focus-visible{outline:3px solid var(--js-brand)!important;outline-offset:3px}
+
+/* Shared interaction states. Hover is limited to a real pointing device so a
+   tap cannot leave a tile visually selected. Focus-visible mirrors the same
+   colours while retaining the component outline. */
+:is(
+ .header .header_block_1 #text-8>.textwidget>b>a,
+ .header .mobile-booking-trigger,
+ .header .header-driver-advice,
+ .header .nav__primary .navigation-toggle,
+ .header .nav__primary #topnav .sub-menu a,
+ .mobile-nav-panel .mobile-nav-booking,
+ .mobile-nav-panel #topnav .sub-menu a,
+ .tlacitko-akce,
+ .service-box .btn-align a,
+ #post-2272 #portfolio-grid .btn,
+ #post-203 .home-service-brands a,
+ #post-203 .home-service-general a,
+ #post-14 .kontakt-prehled .kontakt-prehled__tlacitko,
+ #post-14 .kontakt-prehled__kopie,
+ .contact-booking-panel__call,
+ .contact-booking-panel__copy,
+ #post-203 .home-service-index summary,
+ details.rozbalovaci>summary
+){transition:background-color .15s ease,color .15s ease,border-color .15s ease}
+
+@media(hover:hover) and (pointer:fine){
+ :is(
+  .header .header_block_1 #text-8>.textwidget>b>a,
+  .header .mobile-booking-trigger,
+  .header .header-driver-advice,
+  .header .nav__primary .navigation-toggle,
+  .header .nav__primary #topnav .sub-menu a,
+  .mobile-nav-panel .mobile-nav-booking,
+  .mobile-nav-panel #topnav .sub-menu a,
+  .tlacitko-akce,
+  .service-box .btn-align a,
+  #post-2272 #portfolio-grid .btn,
+  #post-203 .home-service-brands a,
+  #post-203 .home-service-general a,
+  #post-14 .kontakt-prehled .kontakt-prehled__tlacitko,
+  #post-14 .kontakt-prehled__kopie,
+  .contact-booking-panel__call,
+  .contact-booking-panel__copy,
+  #post-203 .home-service-index summary,
+  details.rozbalovaci>summary
+ ):hover{background:#fff!important;color:#191818!important;border-color:#000!important;text-shadow:none!important}
+}
+
+:is(
+ .header .header_block_1 #text-8>.textwidget>b>a,
+ .header .mobile-booking-trigger,
+ .header .header-driver-advice,
+ .header .nav__primary .navigation-toggle,
+ .header .nav__primary #topnav .sub-menu a,
+ .mobile-nav-panel .mobile-nav-booking,
+ .mobile-nav-panel #topnav .sub-menu a,
+ .tlacitko-akce,
+ .service-box .btn-align a,
+ #post-2272 #portfolio-grid .btn,
+ #post-203 .home-service-brands a,
+ #post-203 .home-service-general a,
+ #post-14 .kontakt-prehled .kontakt-prehled__tlacitko,
+ #post-14 .kontakt-prehled__kopie,
+ .contact-booking-panel__call,
+ .contact-booking-panel__copy,
+ #post-203 .home-service-index summary,
+ details.rozbalovaci>summary
+):focus-visible{background:#fff!important;color:#191818!important;border-color:#000!important;text-shadow:none!important;outline:3px solid var(--js-brand)!important;outline-offset:3px}
+
+:is(#post-203 .home-service-index summary,details.rozbalovaci>summary):is(:hover,:focus-visible) :is(h2,h3,h4,h5,p,span,strong),
+:is(#post-203 .home-service-index summary,details.rozbalovaci>summary):is(:hover,:focus-visible) .sluzby-sloupec,
+:is(#post-203 .home-service-index summary,details.rozbalovaci>summary):is(:hover,:focus-visible)::after{
+ color:#191818!important;border-color:#191818!important
+}
+
+#post-203 .home-offered-services .home-service-index summary:is(:hover,:focus-visible) .sluzby-sloupec{color:#191818!important}
+
+@media(hover:none){
+ :is(.header .mobile-booking-trigger,.header .header-driver-advice):hover{
+  background:var(--js-brand)!important;color:var(--js-ink)!important;border-color:var(--js-brand)!important
+ }
+}
+
+/* Main navigation: the label and its separate disclosure control share one
+   visual state while retaining their individual actions. */
+:is(.header .nav__primary,.mobile-nav-panel) #topnav>li{
+ background:transparent;color:var(--js-brand);transition:background-color .15s ease
+}
+:is(.header .nav__primary,.mobile-nav-panel) #topnav>li>:is(a,.reviews-toggle,.submenu-toggle){
+ color:var(--js-brand);background:transparent;transition:color .15s ease
+}
+@media(hover:hover) and (pointer:fine){
+ :is(.header .nav__primary,.mobile-nav-panel) #topnav>li:hover{background:#fff!important}
+ :is(.header .nav__primary,.mobile-nav-panel) #topnav>li:hover>:is(a,.reviews-toggle,.submenu-toggle){color:#191818;background:transparent!important}
+}
+:is(.header .nav__primary,.mobile-nav-panel) #topnav>li:has(>a:focus-visible,>.reviews-toggle:focus-visible,>.submenu-toggle:focus-visible){background:#fff!important}
+:is(.header .nav__primary,.mobile-nav-panel) #topnav>li:has(>a:focus-visible,>.reviews-toggle:focus-visible,>.submenu-toggle:focus-visible)>:is(a,.reviews-toggle,.submenu-toggle){color:#191818;background:transparent!important}
+
+/* Autoservis destinations use the submenu colour scheme, independently of
+   the orange top-level navigation. This includes all six brands and GVO. */
+:is(.header .nav__primary,.mobile-nav-panel) #topnav>#menu-item-2275>.sub-menu>li:not(.menu-overview)>a,
+:is(.header .nav__primary,.mobile-nav-panel) #topnav>#menu-item-2275>.sub-menu>li:not(.menu-overview)>a[aria-current=page]{
+ color:#fff!important
+}
+@media(hover:hover) and (pointer:fine){
+ :is(.header .nav__primary,.mobile-nav-panel) #topnav>#menu-item-2275>.sub-menu>li:not(.menu-overview)>a:hover{
+  color:#191818!important;background:#fff!important
+ }
+}
+:is(.header .nav__primary,.mobile-nav-panel) #topnav>#menu-item-2275>.sub-menu>li:not(.menu-overview)>a:focus-visible{
+ color:#191818!important;background:#fff!important
+}
+
+/* The three general service destinations match the brand tiles above. The
+   stronger selector also retires the old, page-local white GVO exception. */
+body #post-203 .home-offered-services .home-service-general{
+ grid-auto-rows:1fr
+}
+body #post-203 .home-offered-services .home-service-general>li>a,
+body #post-203 .home-offered-services .home-service-general>li>a[href$="servis-novych-vozu-v-zaruce-gvo/"]{
+ min-height:64px;padding:10px 12px;border:1px solid #000!important;border-radius:4px;
+ background:var(--js-card)!important;color:#fff!important;font-weight:700!important;
+ align-items:center;justify-content:center;text-align:center
+}
+@media(hover:hover) and (pointer:fine){
+ body #post-203 .home-offered-services .home-service-general>li>a:hover,
+ body #post-203 .home-offered-services .home-service-general>li>a[href$="servis-novych-vozu-v-zaruce-gvo/"]:hover{
+  background:#fff!important;color:#191818!important;text-decoration:none
+ }
+}
+body #post-203 .home-offered-services .home-service-general>li>a:focus-visible,
+body #post-203 .home-offered-services .home-service-general>li>a[href$="servis-novych-vozu-v-zaruce-gvo/"]:focus-visible{
+ background:#fff!important;color:#191818!important;outline:3px solid var(--js-brand)!important;outline-offset:3px
+}
+
+/* The page canvas follows the dark contact strip. Components with their own
+   light surface keep a local dark text colour; ordinary page copy inherits
+   the high-contrast light colour from the canvas. */
+.content-holder,
+.content-holder .content_box,
+.content-holder .content_box:before,
+.content-holder .content_box:after{background:#333}
+.content-holder,
+.content-holder .page,
+body .content-holder #post-203{color:#f5f5f5}
+#post-203 .home-offered-services .title-box_secondary{color:#f5f5f5!important}
+.content-holder .page :is(div,section,article):not(.warning-lights *){color:inherit!important}
+.content-holder .page :is(h1,h2,h3,h4,h5,h6,p,li,dt,dd):not(.warning-lights *){color:inherit!important}
+.content-holder .title-header{color:#ff8055!important}
+body .content-holder .page :is(
+ .rozbalovaci,
+ .cena-blok,
+ .geometry-price,
+ .home-service-brands,
+ .kontakt-karta,
+ .kontakt-prehled__karta,
+ .kontakt-prehled__udaje,
+ .lokring-service,
+ .portfolio_item_holder,
+ .post-author,
+ .comment-body,
+ table,
+ .service-box.style_5,
+ .vw-price,
+ .vw-accordion,
+ .brand-expertise__section,
+ .js-brand-models
+){color:#222!important}
+
+/* One neutral canvas around the deliberately darker logo/navigation bar. */
+html,body,.main-holder,
+.header,
+.header .header_block_1,
+.content-holder,
+.content-holder .content_box,
+.content-holder .content_box:before,
+.content-holder .content_box:after,
+.footer,
+.footer .footer-widgets,
+.footer .footer-widgets:before,
+.footer .footer-widgets:after,
+body .footer .copyright{
+ background:var(--js-surface)
+}
+
+/* The logo, award and primary navigation remain a distinct dark strip. */
+.header .header_block_2,
+.header .header_block_2:before,
+.header .header_block_2:after{
+ background:var(--js-ink)
+}
+@media(max-width:1199px){
+ .header .header_block_2>.row>.span3,
+ .header .header_block_2>.row>.span9{background:var(--js-ink)}
+}
+
+/* The brand heading belongs directly to the grey service canvas; only the
+   individual destinations retain their orange tile surfaces. */
+html body.home #motopress-main .content-holder #post-203 .home-offered-services .home-service-brands{
+ background:transparent!important;border:none!important;border-width:0!important;border-radius:0!important;box-shadow:none!important;
+ padding-right:0;padding-left:0
+}
+body #post-203 .home-offered-services .home-service-brands .home-brands-heading{
+ color:#fff!important;text-align:center
+}
+
+body .footer .copyright{border-top:1px solid rgb(255 255 255 / .18)}
+body .footer .copyright .footer-text,
+body .footer .copyright .footer-brand{color:#fff}
+body .footer .copyright a{color:#f5f5f5}
+
+/* Small links on the lighter grey surface need a lighter orange than the
+   large brand controls. Component cards with their own light surface keep
+   their local link colours. */
+.content-holder .page p>a:not(
+ .tlacitko-akce,
+ .btn,
+ summary a,
+ .home-service-brands a,
+ .home-service-general a,
+ .portfolio_item_holder a,
+ .rozbalovaci a,
+ .warning-lights a,
+ .kontakt-karta a,
+ .kontakt-prehled__karta a,
+ .service-contact-card a
+){color:var(--js-surface-link)!important}
+
+/* Autoservis: the heading and its legacy strong wrapper share the page's
+   light heading colour. */
+#post-2272 .autoservis-brand-grid-title,
+#post-2272 .autoservis-brand-grid-title strong{
+ color:#fff!important
+}
+
+/* Additional services: equal card rows, complete uncropped photographs and
+   actions pinned to the bottom without fixed copy heights. */
+#post-2065 #portfolio-grid{align-items:stretch}
+#post-2065 #portfolio-grid>li.portfolio_item{display:flex;min-width:0}
+#post-2065 #portfolio-grid .portfolio_item_holder{
+ display:flex;flex-direction:column;width:100%;height:100%;min-width:0;
+ box-sizing:border-box;border:1px solid #fff!important;border-radius:3px;overflow:hidden
+}
+#post-2065 #portfolio-grid .thumbnail{
+ display:flex;flex:0 0 auto;width:100%;aspect-ratio:600 / 380;margin:0;padding:0;
+ box-sizing:border-box;border:0;border-radius:0;background:#333;overflow:hidden
+}
+#post-2065 #portfolio-grid .thumbnail .image-wrap{
+ display:flex;width:100%;height:100%;align-items:center;justify-content:center
+}
+#post-2065 #portfolio-grid .thumbnail br{display:none}
+#post-2065 #portfolio-grid .thumbnail img{
+ display:block;width:100%;height:100%;max-width:100%;object-fit:contain;object-position:center
+}
+#post-2065 #portfolio-grid .caption{
+ display:flex;flex:1 1 auto;flex-direction:column;min-width:0;min-height:0!important;
+ box-sizing:border-box;padding:16px
+}
+#post-2065 #portfolio-grid .caption p.excerpt{min-height:0!important;margin:0 0 14px}
+#post-2065 #portfolio-grid .caption>p:last-child{margin:auto 0 0;padding:0}
+#post-2065 #portfolio-grid .caption .btn{display:flex;align-items:center;justify-content:center;min-height:44px;box-sizing:border-box}
+@media(min-width:980px){
+ #post-2065 #portfolio-grid>li.portfolio_item:last-child:nth-child(3n + 1){grid-column:2}
+}
+@media(min-width:550px) and (max-width:979px){
+ #post-2065 #portfolio-grid>li.portfolio_item:last-child:nth-child(2n + 1){
+  grid-column:1 / -1;width:calc((100% - 30px) / 2);justify-self:center
+ }
+}
+
+/* One shared booking strip immediately before the footer on every page. */
+.site-service-contact{
+ width:100%;box-sizing:border-box;margin:0;padding:28px var(--js-gutter);
+ background:var(--js-ink);color:#fff
+}
+.site-service-contact__inner{
+ display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;
+ width:100%;max-width:1170px;margin:0 auto;align-items:center
+}
+.site-service-contact__part{
+ display:flex;min-width:0;min-height:62px;flex-direction:column;
+ align-items:center;justify-content:center;gap:4px;text-align:center;
+ color:#fff;font:600 16px/1.4 var(--js-font,Ubuntu,sans-serif)
+}
+.site-service-contact__intro h2{
+ margin:0!important;color:#fff!important;font:700 21px/1.25 var(--js-font,Ubuntu,sans-serif)!important;
+ text-align:center;text-transform:none
+}
+.site-service-contact__intro p{margin:0;color:#fff;font:400 16px/1.4 var(--js-font,Ubuntu,sans-serif)}
+.site-service-contact__label{display:block;color:#fff;font-weight:700}
+.site-service-contact__phone{
+ display:inline-block;color:var(--js-brand)!important;font:700 20px/1.3 var(--js-font,Ubuntu,sans-serif);
+ text-decoration:none!important;white-space:nowrap
+}
+.site-service-contact__phone:hover{color:#fff!important;text-decoration:underline!important}
+.site-service-contact__phone:focus-visible{color:#fff!important;outline:3px solid var(--js-brand);outline-offset:4px}
+.site-service-contact__hours{font-weight:700}
+@media(min-width:600px) and (max-width:979px){
+ .site-service-contact__inner{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 28px}
+}
+@media(max-width:599px){
+ .site-service-contact{padding:24px var(--js-gutter)}
+ .site-service-contact__inner{grid-template-columns:minmax(0,1fr);gap:15px}
+ .site-service-contact__part{min-height:0;gap:3px}
+ .site-service-contact__intro h2{font-size:20px!important}
+ .site-service-contact__phone{font-size:19px}
 }

@@ -1,0 +1,1 @@
+(function(){if(!window.jQuery||!jQuery.magnificPopup)return;var d=jQuery.magnificPopup.defaults;var t=["Đóng (Esc)", "Đang tải…", "Trước (phím mũi tên trái)", "Tiếp theo (phím mũi tên phải)", "%curr% / %total%", "Không thể tải hình ảnh."];d.tClose=t[0];d.tLoading=t[1];d.gallery.tPrev=t[2];d.gallery.tNext=t[3];d.gallery.tCounter=t[4];d.image.tError=t[5];}());
