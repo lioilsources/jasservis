@@ -1689,3 +1689,44 @@ body .footer .copyright a{color:#f5f5f5}
  .site-service-contact__intro h2{font-size:20px!important}
  .site-service-contact__phone{font-size:19px}
 }
+
+/* Production mobile fixes: photograph outlines, cookie control contrast and
+   breathing room above the mobile brand row. */
+#post-2272 :is(.cupra-mobile-image,.cupra-desktop-image)>img{
+ display:block;box-sizing:border-box;border:1px solid #fff!important;
+ max-width:100%;height:auto
+}
+#post-2272 #portfolio-grid .portfolio_item_holder{
+ box-sizing:border-box;border:1px solid #fff!important
+}
+
+body #cookie-settings{
+ color:#fff!important;background:transparent!important;border:1px solid #fff!important;
+ text-shadow:none
+}
+body #cookie-settings:hover{
+ color:#000!important;background:#fff!important;border-color:#fff!important
+}
+body #cookie-settings:focus-visible{
+ color:#000!important;background:#fff!important;border-color:#fff!important;
+ outline:3px solid var(--js-brand)!important;outline-offset:3px
+}
+
+@media(max-width:767px){
+ #motopress-main .header .header_block_2 .logo{
+  padding-top:calc(22px + env(safe-area-inset-top,0px))!important
+ }
+}
+@media(max-width:1199px) and (max-height:500px) and (orientation:landscape){
+ #motopress-main .header .landscape-nav-row{
+  min-height:80px;padding:calc(22px + env(safe-area-inset-top,0px)) 0 8px
+ }
+ #motopress-main .header .nav__primary .landscape-nav-row .logo{
+  inset:calc(22px + env(safe-area-inset-top,0px)) 0 8px
+ }
+}
+@media(max-width:599px) and (max-height:500px) and (orientation:landscape){
+ #motopress-main .header .nav__primary .landscape-nav-row .logo{
+  inset:auto;padding-top:0!important
+ }
+}
