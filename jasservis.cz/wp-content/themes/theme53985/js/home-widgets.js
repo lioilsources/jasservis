@@ -1,97 +1,4 @@
-/* wp-content/plugins/cherry-plugin/includes/js/cherry-plugin.js */
-jQuery(document).ready(function(){
-
-	// OWL Carousel init.
-
-	cherryPluginCarouselInit();
-
-
-
-	// Full-width block with left-right paddings.
-
-	jQuery('.content_box.full-width').wrapInner('<div class="full-block-wrap"></div>');
-
-	jQuery(window).resize( function(){
-
-		contenBoxResizeFunction();
-
-	});
-
-
-
-	contenBoxResizeFunction();
-
-	function contenBoxResizeFunction(){
-
-		var width_of_viewport = jQuery(window).width(),
-
-			half_width_of_viewport = width_of_viewport / 2,
-
-			width_of_container = jQuery('.content-holder > .container').width();
-
-
-
-		jQuery('.content_box.full-width').width(width_of_container);
-
-		jQuery('.content_box.full-width').css({'padding-left': half_width_of_viewport+'px', 'padding-right': half_width_of_viewport+'px', 'margin-left': '-'+half_width_of_viewport+'px'});
-
-		jQuery('.full-block-wrap').width(width_of_container);
-
-	}
-
-});
-
-
-
-function cherryPluginCarouselInit() {
-
-	jQuery('div[id^="owl-carousel-"]').each(function(){
-
-		var carousel = jQuery(this),
-
-			auto_play = parseInt(carousel.attr('data-auto-play'))<1 ? false : parseInt(carousel.attr('data-auto-play')),
-
-			items_count = parseInt(carousel.attr('data-items')),
-
-			display_navs = carousel.attr('data-nav')=='true' ? true : false,
-
-			display_pagination = carousel.attr('data-pagination')=='true' ? true : false,
-
-			auto_height = items_count<=1 ? true : false,
-
-			keys = Object.keys(items_custom),
-
-			last_key = keys[keys.length-1];
-
-
-
-		items_custom[last_key] = [items_custom[last_key][0], items_count];
-
-
-
-		jQuery(carousel).owlCarousel({
-
-			autoPlay: auto_play,
-
-			navigation: display_navs,
-
-			pagination: display_pagination,
-
-			navigationText: false,
-
-			autoHeight: auto_height,
-
-			itemsCustom: items_custom
-
-		});
-
-	})
-
-	jQuery('.owl-prev').addClass('icon-chevron-left');
-
-	jQuery('.owl-next').addClass('icon-chevron-right');
-
-}
+/* Unused home initializer omitted; original retained: wp-content/plugins/cherry-plugin/includes/js/cherry-plugin.js */
 ;
 
 /* wp-content/plugins/cherry-lazy-load/js/cherry.lazy-load.js */
@@ -663,20 +570,10 @@ jQuery(document).ready(function($){
 (function(){var a,b,c,d,e,f,g,h,i,j;a=window.device,window.device={},c=window.document.documentElement,j=window.navigator.userAgent.toLowerCase(),device.ios=function(){return device.iphone()||device.ipod()||device.ipad()},device.iphone=function(){return d("iphone")},device.ipod=function(){return d("ipod")},device.ipad=function(){return d("ipad")},device.android=function(){return d("android")},device.androidPhone=function(){return device.android()&&d("mobile")},device.androidTablet=function(){return device.android()&&!d("mobile")},device.blackberry=function(){return d("blackberry")||d("bb10")||d("rim")},device.blackberryPhone=function(){return device.blackberry()&&!d("tablet")},device.blackberryTablet=function(){return device.blackberry()&&d("tablet")},device.windows=function(){return d("windows")},device.windowsPhone=function(){return device.windows()&&d("phone")},device.windowsTablet=function(){return device.windows()&&d("touch")},device.fxos=function(){return(d("(mobile;")||d("(tablet;"))&&d("; rv:")},device.fxosPhone=function(){return device.fxos()&&d("mobile")},device.fxosTablet=function(){return device.fxos()&&d("tablet")},device.meego=function(){return d("meego")},device.mobile=function(){return device.androidPhone()||device.iphone()||device.ipod()||device.windowsPhone()||device.blackberryPhone()||device.fxosPhone()||device.meego()},device.tablet=function(){return device.ipad()||device.androidTablet()||device.blackberryTablet()||device.windowsTablet()||device.fxosTablet()},device.portrait=function(){return 90!==Math.abs(window.orientation)},device.landscape=function(){return 90===Math.abs(window.orientation)},device.noConflict=function(){return window.device=a,this},d=function(a){return-1!==j.indexOf(a)},f=function(a){var b;return b=new RegExp(a,"i"),c.className.match(b)},b=function(a){return f(a)?void 0:c.className+=" "+a},h=function(a){return f(a)?c.className=c.className.replace(a,""):void 0},device.ios()?device.ipad()?b("ios ipad tablet"):device.iphone()?b("ios iphone mobile"):device.ipod()&&b("ios ipod mobile"):device.android()?device.androidTablet()?b("android tablet"):b("android mobile"):device.blackberry()?device.blackberryTablet()?b("blackberry tablet"):b("blackberry mobile"):device.windows()?device.windowsTablet()?b("windows tablet"):device.windowsPhone()?b("windows mobile"):b("desktop"):device.fxos()?device.fxosTablet()?b("fxos tablet"):b("fxos mobile"):device.meego()?b("meego mobile"):b("desktop"),e=function(){return device.landscape()?(h("portrait"),b("landscape")):(h("landscape"),b("portrait"))},i="onorientationchange"in window,g=i?"orientationchange":"resize",window.addEventListener?window.addEventListener(g,e,!1):window.attachEvent?window.attachEvent(g,e):window[g]=e,e()}).call(this);
 ;
 
-/* wp-content/themes/CherryFramework/js/jquery.debouncedresize.js */
-(function(a){var d=a.event,b,c;b=d.special.debouncedresize={setup:function(){a(this).on("resize",b.handler)},teardown:function(){a(this).off("resize",b.handler)},handler:function(a,f){var g=this,h=arguments,e=function(){a.type="debouncedresize";d.dispatch.apply(g,h)};c&&clearTimeout(c);f?e():c=setTimeout(e,b.threshold)},threshold:150}})(jQuery);
+/* Unused home initializer omitted; original retained: wp-content/themes/CherryFramework/js/jquery.debouncedresize.js */
 ;
 
-/* wp-content/themes/CherryFramework/js/jquery.ba-resize.min.js */
-/*
- * jQuery resize event - v1.1 - 3/14/2010
- * http://benalman.com/projects/jquery-resize-plugin/
- * 
- * Copyright (c) 2010 "Cowboy" Ben Alman
- * Dual licensed under the MIT and GPL licenses.
- * http://benalman.com/about/license/
- */
-(function($,h,c){var a=$([]),e=$.resize=$.extend($.resize,{}),i,k="setTimeout",j="resize",d=j+"-special-event",b="delay",f="throttleWindow";e[b]=250;e[f]=true;$.event.special[j]={setup:function(){if(!e[f]&&this[k]){return false}var l=$(this);a=a.add(l);$.data(this,d,{w:l.width(),h:l.height()});if(a.length===1){g()}},teardown:function(){if(!e[f]&&this[k]){return false}var l=$(this);a=a.not(l);l.removeData(d);if(!a.length){clearTimeout(i)}},add:function(l){if(!e[f]&&this[k]){return false}var n;function m(s,o,p){var q=$(this),r=$.data(this,d);r.w=o!==c?o:q.width();r.h=p!==c?p:q.height();n.apply(this,arguments)}if($.isFunction(l)){n=l;return m}else{n=l.handler;l.handler=m}}};function g(){i=h[k](function(){a.each(function(){var n=$(this),m=n.width(),l=n.height(),o=$.data(this,d);if(m!==o.w||l!==o.h){n.trigger(j,[o.w=m,o.h=l])}});g()},e[b])}})(jQuery,this);
+/* Unused home initializer omitted; original retained: wp-content/themes/CherryFramework/js/jquery.ba-resize.min.js */
 ;
 
 /* wp-content/themes/theme53985/parallax-slider/js/parallaxSlider.js */
@@ -712,6 +609,9 @@ jQuery(document).ready(function($){
         var sliderLabels = labels[lang] || labels.cs;
         var rotationButton;
         var initialServerSlide = false;
+        // Reuse the responsive first photograph when the slideshow cycles back.
+        var firstPicture = this[0].querySelector("#mainImageHolder picture");
+        firstPicture = firstPicture ? firstPicture.cloneNode(true) : null;
         
         var 
             _this = $(this)
@@ -1198,12 +1098,17 @@ jQuery(document).ready(function($){
             //------------------------- image slide type ----------------------------// 
             if(sliderData[currIndex].slide_type == 'image')
             {  
-                var img = new Image();
+                var responsivePicture = currIndex === 0 && firstPicture ? firstPicture.cloneNode(true) : null;
+                var img = responsivePicture ? responsivePicture.querySelector("img") : new Image();
+                var slideImageLoaded = false;
 
-                
                 img.onload = function ()
                 {
-                    if(!options.liteMode){ 
+                    if (slideImageLoaded) return;
+                    slideImageLoaded = true;
+                    if (responsivePicture) {
+                        obj_inner = $(img);
+                    } else if(!options.liteMode){
                         primaryImageHolder.html('<div class="parallax-slider-img obj-inner"></div>');
                         obj_inner = $('.parallax-slider-img', primaryImageHolder);
                         obj_inner.css('background-image', 'url(' + img.src + ')'); 
@@ -1214,14 +1119,19 @@ jQuery(document).ready(function($){
                     
                     if(isIE()) obj_inner.css({backgroundAttachment:'fixed'});
                     
-                    originalWidth = img.width;
-                    originalHeight = img.height;
+                    originalWidth = responsivePicture ? 1980 : img.width;
+                    originalHeight = responsivePicture ? 1312 : img.height;
                     objectResize(obj_inner, primaryImageHolder.width(), _baseHeight);
                 
                     onSlideLoaded();
                 }
                 
-                img.src = sliderData[currIndex].image;
+                if (responsivePicture) {
+                    primaryImageHolder[0].appendChild(responsivePicture);
+                    if (img.complete && img.naturalWidth) img.onload();
+                } else {
+                    img.src = sliderData[currIndex].image;
+                }
             }
             //------------------------- library video slide type ----------------------------// 
             if(sliderData[currIndex].slide_type == 'library_video')

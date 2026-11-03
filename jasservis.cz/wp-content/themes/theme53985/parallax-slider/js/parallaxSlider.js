@@ -30,6 +30,9 @@
         var sliderLabels = labels[lang] || labels.cs;
         var rotationButton;
         var initialServerSlide = false;
+        // Reuse the responsive first photograph when the slideshow cycles back.
+        var firstPicture = this[0].querySelector("#mainImageHolder picture");
+        firstPicture = firstPicture ? firstPicture.cloneNode(true) : null;
         
         var 
             _this = $(this)
@@ -516,12 +519,17 @@
             //------------------------- image slide type ----------------------------// 
             if(sliderData[currIndex].slide_type == 'image')
             {  
-                var img = new Image();
+                var responsivePicture = currIndex === 0 && firstPicture ? firstPicture.cloneNode(true) : null;
+                var img = responsivePicture ? responsivePicture.querySelector("img") : new Image();
+                var slideImageLoaded = false;
 
-                
                 img.onload = function ()
                 {
-                    if(!options.liteMode){ 
+                    if (slideImageLoaded) return;
+                    slideImageLoaded = true;
+                    if (responsivePicture) {
+                        obj_inner = $(img);
+                    } else if(!options.liteMode){
                         primaryImageHolder.html('<div class="parallax-slider-img obj-inner"></div>');
                         obj_inner = $('.parallax-slider-img', primaryImageHolder);
                         obj_inner.css('background-image', 'url(' + img.src + ')'); 
@@ -532,14 +540,19 @@
                     
                     if(isIE()) obj_inner.css({backgroundAttachment:'fixed'});
                     
-                    originalWidth = img.width;
-                    originalHeight = img.height;
+                    originalWidth = responsivePicture ? 1980 : img.width;
+                    originalHeight = responsivePicture ? 1312 : img.height;
                     objectResize(obj_inner, primaryImageHolder.width(), _baseHeight);
                 
                     onSlideLoaded();
                 }
                 
-                img.src = sliderData[currIndex].image;
+                if (responsivePicture) {
+                    primaryImageHolder[0].appendChild(responsivePicture);
+                    if (img.complete && img.naturalWidth) img.onload();
+                } else {
+                    img.src = sliderData[currIndex].image;
+                }
             }
             //------------------------- library video slide type ----------------------------// 
             if(sliderData[currIndex].slide_type == 'library_video')
