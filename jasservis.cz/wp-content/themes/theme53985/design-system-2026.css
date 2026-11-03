@@ -14,6 +14,7 @@
  .js-navigation .header .nav__primary:not(.navigation-ready){min-height:80px}
 }
 body .header .language-switcher .language-mobile>summary{color:#ffad93}
+#post-203 .home-service-cards .icon img{width:auto;max-width:100%}
 
 /* Keyboard users can reach the page without tabbing through the whole header. */
 .skip-to-content{
