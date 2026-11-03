@@ -90,16 +90,6 @@
 }
 
 .parallax-slider:not(.slider-ready) #mainImageHolder .primaryHolder {height:100%;}
-/* Override the legacy dark focus/hover colors, including list-link specificity. */
-body .footer .footer-widgets a,
-body .footer .footer-widgets a:visited,
-body .footer .footer-widgets ul li a,
-body .footer .footer-widgets ul li a:visited {color:#eee;transition:color .15s ease;}
-body .footer .footer-widgets a:is(:hover,:focus,:focus-visible,:active),
-body .footer .footer-widgets ul li a:is(:hover,:focus,:focus-visible,:active) {color:#ffad91;text-decoration:underline;}
-body .footer a:focus-visible,
-body .footer button:focus-visible {outline:3px solid #fff;outline-offset:3px;}
-
 /* Compact native control stays clear of captions, arrows and overlapping service cards. */
 .slider-rotation-icon {display:block;box-sizing:border-box;}
 .slider-rotation[data-paused="false"] .slider-rotation-icon {

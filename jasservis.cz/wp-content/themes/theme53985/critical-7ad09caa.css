@@ -1899,3 +1899,13 @@ body .content-holder .page a.btn:focus-visible{
 
 /* A deterministic sans-serif fallback also covers Cyrillic glyphs absent from Ubuntu subsets. */
 html body,html button,html input,html select,html textarea{font-family:var(--js-font)}
+
+/* Override the legacy dark focus/hover colors, including list-link specificity. */
+body .footer .footer-widgets a,
+body .footer .footer-widgets a:visited,
+body .footer .footer-widgets ul li a,
+body .footer .footer-widgets ul li a:visited {color:#eee;transition:color .15s ease;}
+body .footer .footer-widgets a:is(:hover,:focus,:focus-visible,:active),
+body .footer .footer-widgets ul li a:is(:hover,:focus,:focus-visible,:active) {color:#ffad91;text-decoration:underline;}
+body .footer a:focus-visible,
+body .footer button:focus-visible {outline:3px solid #fff;outline-offset:3px;}
