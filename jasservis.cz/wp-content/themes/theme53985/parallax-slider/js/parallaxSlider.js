@@ -168,7 +168,7 @@
             _this.append("<div class='controlBtn parallaxPrevBtn'><div class='innerBtn icon-angle-left'></div><div class='slidesCounter'></div></div><div class='controlBtn parallaxNextBtn'><div class='innerBtn icon-angle-right'></div><div class='slidesCounter'></div></div>");
             parallaxPrevBtn = $('.parallaxPrevBtn', _this);
             parallaxNextBtn = $('.parallaxNextBtn', _this);
-            rotationButton = $('<button type="button" class="slider-rotation"></button>').appendTo(_this);
+            rotationButton = $('<button type="button" class="slider-rotation"><span class="slider-rotation-icon" aria-hidden="true"></span></button>').appendTo(_this);
             rotationButton.on('click', function(){
                 persistentPaused = !persistentPaused;
                 if (!persistentPaused) pointerInside = false;
@@ -317,7 +317,7 @@
             var focused = _this[0].contains(document.activeElement) && document.activeElement !== rotationButton[0];
             var stopped = persistentPaused || motionQuery.matches;
             var rotationLabel = motionQuery.matches ? sliderLabels[4] : (persistentPaused ? sliderLabels[3] : sliderLabels[2]);
-            rotationButton.attr('aria-label', rotationLabel).attr('title', rotationLabel).attr('data-paused', stopped ? 'true' : 'false').html('<span class="slider-rotation-icon" aria-hidden="true"></span>');
+            rotationButton.attr('aria-label', rotationLabel).attr('title', rotationLabel).attr('data-paused', stopped ? 'true' : 'false');
             rotationButton.prop('disabled', motionQuery.matches);
             mainCaptionHolder.attr('aria-live', stopped || focused ? 'polite' : 'off');
             if(options.autoSwitcher && !stopped && !focused && !pointerInside && !document.hidden){
@@ -381,7 +381,7 @@
             document.addEventListener('visibilitychange', autoSwitcher);
             _this.on('focusin', autoSwitcher);
             _this.on('focusout', function(){ setTimeout(autoSwitcher, 0); });
-            _this.on('mouseenter', function(){ pointerInside = window.matchMedia('(hover: hover) and (pointer: fine)').matches; autoSwitcher(); });
+            _this.on('mouseenter', function(){ if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return; pointerInside = true; autoSwitcher(); });
             _this.on('mouseleave', function(){ pointerInside = false; autoSwitcher(); });
             if (motionQuery.addEventListener) motionQuery.addEventListener('change', autoSwitcher);
             else motionQuery.addListener(autoSwitcher);
