@@ -108,6 +108,3 @@ body .content-holder .page a.btn:focus-visible{
 
 /* A deterministic sans-serif fallback also covers Cyrillic glyphs absent from Ubuntu subsets. */
 html body,html button,html input,html select,html textarea{font-family:var(--js-font)}
-
-/* Static service cards already have their final CSS layout; never gate their paint on legacy DOM-ready scripts. */
-body .content-holder #portfolio-grid{visibility:visible}
