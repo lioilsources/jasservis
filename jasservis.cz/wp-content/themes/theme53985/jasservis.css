@@ -705,7 +705,7 @@ body .footer .copyright a { color:#555; }
     font-weight:300; margin:0 0 10px; padding:0; color:#fff; text-transform:none;
 }
 #post-2272 .autoservis-intro-heading {
-    font:normal 30px/33px Ubuntu; color:#333333;
+    font:normal 30px/33px Ubuntu,sans-serif; color:#333333;
 }
 @media (min-width:768px) and (max-width:979px) {
     #post-203 .home-service-cards .home-service-heading { font-size:21px; line-height:26px; }
