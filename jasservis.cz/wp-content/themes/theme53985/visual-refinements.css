@@ -103,3 +103,7 @@ body .footer .footer-widgets a:is(:hover,:focus,:focus-visible,:active),
 body .footer .footer-widgets ul li a:is(:hover,:focus,:focus-visible,:active) {color:#ffad91;text-decoration:underline;}
 body .footer a:focus-visible,
 body .footer button:focus-visible {outline:3px solid #fff;outline-offset:3px;}
+/* Above the overlapping service cards on tablet/desktop; mobile keeps its control row. */
+@media (min-width:768px) {
+ .parallax-slider .slider-rotation {top:12px;bottom:auto;}
+}
