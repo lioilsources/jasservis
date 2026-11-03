@@ -151,7 +151,7 @@
         function init()
         {               
             //  holder erase
-            initialServerSlide = !!_this.find('#mainImageHolder > .primaryHolder > img').length;
+            initialServerSlide = !!_this.find('#mainImageHolder > .primaryHolder img').length;
             _this.children('ul.baseList').remove();
             _this.addClass(options.animateLayout).attr('role', 'region').attr('aria-roledescription', 'carousel').attr('aria-label', sliderLabels[5]);
     
