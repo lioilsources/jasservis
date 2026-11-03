@@ -56,7 +56,9 @@
 :is(#post-2135,#post-ev-brzdy,#post-2703,#post-2784) details.rozbalovaci>summary{transition:background-color .15s ease,color .15s ease,border-color .15s ease}
 @media(hover:hover) and (pointer:fine){
  :is(#post-2135,#post-ev-brzdy,#post-2703,#post-2784) details.rozbalovaci>summary:hover{background:#fff!important;color:#191818!important;border-color:#000!important}
+ :is(#post-2135,#post-ev-brzdy,#post-2703,#post-2784) details.rozbalovaci>summary:hover :is(h2,h3){color:#191818!important}
+ :is(#post-2135,#post-ev-brzdy,#post-2703,#post-2784) details.rozbalovaci>summary:hover:after{border-color:#191818!important;color:#191818!important}
 }
 :is(#post-2135,#post-ev-brzdy,#post-2703,#post-2784) details.rozbalovaci>summary:focus-visible{background:#fff!important;color:#191818!important;border-color:#000!important;outline:3px solid var(--js-brand)!important;outline-offset:3px}
-:is(#post-2135,#post-ev-brzdy,#post-2703,#post-2784) details.rozbalovaci>summary:is(:hover,:focus-visible) :is(h2,h3){color:#191818!important}
-:is(#post-2135,#post-ev-brzdy,#post-2703,#post-2784) details.rozbalovaci>summary:is(:hover,:focus-visible):after{border-color:#191818!important;color:#191818!important}
+:is(#post-2135,#post-ev-brzdy,#post-2703,#post-2784) details.rozbalovaci>summary:focus-visible :is(h2,h3){color:#191818!important}
+:is(#post-2135,#post-ev-brzdy,#post-2703,#post-2784) details.rozbalovaci>summary:focus-visible:after{border-color:#191818!important;color:#191818!important}

@@ -1451,13 +1451,22 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
  details.rozbalovaci>summary
 ):focus-visible{background:#fff!important;color:#191818!important;border-color:#000!important;text-shadow:none!important;outline:3px solid var(--js-brand)!important;outline-offset:3px}
 
-:is(#post-203 .home-service-index summary,details.rozbalovaci>summary):is(:hover,:focus-visible) :is(h2,h3,h4,h5,p,span,strong),
-:is(#post-203 .home-service-index summary,details.rozbalovaci>summary):is(:hover,:focus-visible) .sluzby-sloupec,
-:is(#post-203 .home-service-index summary,details.rozbalovaci>summary):is(:hover,:focus-visible)::after{
+@media(hover:hover) and (pointer:fine){
+ :is(#post-203 .home-service-index summary,details.rozbalovaci>summary):hover :is(h2,h3,h4,h5,p,span,strong),
+ :is(#post-203 .home-service-index summary,details.rozbalovaci>summary):hover .sluzby-sloupec,
+ :is(#post-203 .home-service-index summary,details.rozbalovaci>summary):hover::after{
+  color:#191818!important;border-color:#191818!important
+ }
+ #post-203 .home-offered-services .home-service-index summary:hover .sluzby-sloupec{color:#191818!important}
+}
+
+:is(#post-203 .home-service-index summary,details.rozbalovaci>summary):focus-visible :is(h2,h3,h4,h5,p,span,strong),
+:is(#post-203 .home-service-index summary,details.rozbalovaci>summary):focus-visible .sluzby-sloupec,
+:is(#post-203 .home-service-index summary,details.rozbalovaci>summary):focus-visible::after{
  color:#191818!important;border-color:#191818!important
 }
 
-#post-203 .home-offered-services .home-service-index summary:is(:hover,:focus-visible) .sluzby-sloupec{color:#191818!important}
+#post-203 .home-offered-services .home-service-index summary:focus-visible .sluzby-sloupec{color:#191818!important}
 
 @media(hover:none){
  :is(.header .mobile-booking-trigger,.header .header-driver-advice):hover{
