@@ -103,3 +103,9 @@
  .parallax-slider .slider-rotation {top:6px;bottom:auto;right:6px;}
  .home .parallax-slider #mainCaptionHolder .hero-specialization {max-width:calc(100vw - 112px);}
 }
+/* A long Cyrillic word must not widen the caption's implicit grid column. */
+.home .parallax-slider #mainCaptionHolder .slider_caption {grid-template-columns:minmax(0,1fr);}
+.home .parallax-slider #mainCaptionHolder .hero-title {min-width:0;}
+@media (max-width:767px) {
+ html[lang="uk"] .home .parallax-slider #mainCaptionHolder .hero-title {font-size:clamp(1.25rem,6.4vw,1.75rem);}
+}
