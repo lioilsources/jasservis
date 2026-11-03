@@ -6,6 +6,14 @@
  --js-summary-fluid:clamp(1.125rem,1.05rem + .25vw,1.375rem);
  --js-reading-leading:1.65;
 }
+/* A script-enabled page reserves the closed header before deferred menu setup.
+   Without JavaScript the original complete navigation remains in document flow. */
+.js-navigation .header .nav__primary:not(.navigation-ready){min-height:60px}
+.js-navigation .header .nav__primary:not(.navigation-ready) #topnav{display:none}
+@media(min-width:1200px){
+ .js-navigation .header .nav__primary:not(.navigation-ready){min-height:80px}
+}
+body .header .language-switcher .language-mobile>summary{color:#ffad93}
 
 /* Keyboard users can reach the page without tabbing through the whole header. */
 .skip-to-content{
