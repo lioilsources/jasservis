@@ -1616,6 +1616,7 @@ body .footer .copyright a{color:#f5f5f5}
  .warning-lights a,
  .kontakt-karta a,
  .kontakt-prehled__karta a,
+ .kontakt-prehled__tlacitko,
  .service-contact-card a
 ){color:var(--js-surface-link)!important}
 

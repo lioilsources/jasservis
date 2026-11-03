@@ -1,0 +1,98 @@
+/* Shared refinements for the existing J&S identity. No layout replacement. */
+:root{
+ --js-radius:4px;
+ --js-title-fluid:clamp(1.5rem,1.15rem + 1.2vw,2.25rem);
+ --js-section-fluid:clamp(1.375rem,1.15rem + .7vw,1.875rem);
+ --js-summary-fluid:clamp(1.125rem,1.05rem + .25vw,1.375rem);
+ --js-reading-leading:1.65;
+}
+
+/* Keyboard users can reach the page without tabbing through the whole header. */
+.skip-to-content{
+ position:fixed;top:12px;left:12px;z-index:10000;transform:translateY(-200%);
+ display:inline-flex;align-items:center;min-height:44px;box-sizing:border-box;
+ padding:12px 18px;border:2px solid #191818;border-radius:var(--js-radius);
+ background:#fff;color:#191818;font:500 1rem/1.4 var(--js-font);text-decoration:underline
+}
+.skip-to-content:focus{transform:none;outline:3px solid var(--js-brand);outline-offset:3px}
+.footer .footer-widgets h3.footer-heading{
+ margin:0 0 16px;font:500 1rem/1.5 var(--js-font);text-transform:uppercase;color:inherit
+}
+
+/* Page identity is stronger than the breadcrumb, including on narrow screens. */
+body .content-holder .title-section{
+ padding-block:clamp(22px,2.5vw,36px)
+}
+body .content-holder .title-section .title-header{
+ margin:0;font-family:var(--js-font);font-size:var(--js-title-fluid)!important;
+ font-weight:500!important;line-height:1.25!important;letter-spacing:0;
+ overflow-wrap:break-word;text-wrap:balance
+}
+body .content-holder .title-section .breadcrumb{
+ font-size:.875rem;line-height:1.6;overflow-wrap:break-word
+}
+body .content-holder .title-section .breadcrumb :is(li,a,span){
+ font-size:inherit;line-height:inherit;text-shadow:none
+}
+body .content-holder .page .service-box.style_2 h1.sub-title,
+body .content-holder .page h2.autoservis-intro-heading{
+ font-family:var(--js-font);font-size:var(--js-section-fluid)!important;
+ line-height:1.3!important;font-weight:500!important;text-wrap:balance;
+ margin-bottom:20px
+}
+
+/* The same disclosure control has the same type, spacing and geometry. */
+body .content-holder .page :is(details.rozbalovaci,.vw-accordion){
+ border-radius:var(--js-radius);margin-bottom:16px
+}
+body .content-holder .page :is(details.rozbalovaci,.vw-accordion)>summary{
+ min-height:48px;box-sizing:border-box;padding:16px 52px 16px 20px;
+ border-radius:var(--js-radius);overflow-wrap:break-word
+}
+body .content-holder .page :is(details.rozbalovaci,.vw-accordion)>summary :is(h2,h3){
+ font-family:var(--js-font);font-size:var(--js-summary-fluid)!important;
+ line-height:1.4!important;font-weight:600!important;text-transform:none;
+ margin:0;text-wrap:pretty
+}
+body .content-holder .page :is(.service-box_txt,.rozbalovaci__obsah,.vw-accordion__body){
+ line-height:var(--js-reading-leading)
+}
+body .content-holder .page :is(.rozbalovaci__obsah,.vw-accordion__body)>:last-child{
+ margin-bottom:0
+}
+
+/* Keep primary booking actions orange and repeated card actions consistent. */
+body .content-holder :is(.tlacitko-akce,#portfolio-grid .btn,.home-booking-call){
+ border-radius:var(--js-radius);min-height:44px;box-sizing:border-box;
+ line-height:1.45;text-decoration:none
+}
+body .content-holder #portfolio-grid .caption{padding:20px}
+body .content-holder #portfolio-grid .caption :is(h3,p){overflow-wrap:break-word}
+body .content-holder #portfolio-grid .caption h3{line-height:1.35;text-wrap:balance}
+body .content-holder #portfolio-grid .caption p.excerpt{line-height:1.6}
+body .content-holder .page a.btn{
+ display:inline-flex;align-items:center;justify-content:center;min-height:44px;
+ box-sizing:border-box;padding:10px 18px;border:1px solid #000;
+ border-radius:var(--js-radius);background:var(--js-card);color:#fff;
+ font-family:var(--js-font);font-size:1rem;line-height:1.45;
+ text-decoration:none;text-shadow:none;white-space:normal
+}
+@media(hover:hover) and (pointer:fine){
+ body .content-holder .page a.btn:hover{background:#fff;color:#191818;border-color:#000}
+}
+body .content-holder .page a.btn:focus-visible{
+ background:#fff;color:#191818;outline:3px solid var(--js-brand);outline-offset:3px
+}
+
+@media(max-width:767px){
+ body .content-holder .page :is(details.rozbalovaci,.vw-accordion)>summary{
+  padding:14px 44px 14px 16px
+ }
+ body .content-holder #portfolio-grid .caption{padding:16px}
+}
+@media(prefers-reduced-motion:reduce){
+ .main-holder *,.main-holder *::before,.main-holder *::after{
+  animation-duration:.01ms!important;animation-iteration-count:1!important;
+  transition-duration:.01ms!important;scroll-behavior:auto!important
+ }
+}
