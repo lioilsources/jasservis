@@ -25,7 +25,7 @@ body .header .language-switcher .language-mobile>summary{color:#ffad93}
 }
 .skip-to-content:focus{transform:none;outline:3px solid var(--js-brand);outline-offset:3px}
 .footer .footer-widgets h3.footer-heading{
- margin:0 0 16px;font:500 1rem/1.5 var(--js-font);text-transform:uppercase;color:inherit
+ margin:0 0 16px;font:500 1rem/1.5 var(--js-font);text-transform:uppercase;color:#ccc
 }
 
 /* Page identity is stronger than the breadcrumb, including on narrow screens. */

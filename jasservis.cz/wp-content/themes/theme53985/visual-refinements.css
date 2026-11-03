@@ -62,3 +62,44 @@
 :is(#post-2135,#post-ev-brzdy,#post-2703,#post-2784) details.rozbalovaci>summary:focus-visible{background:#fff!important;color:#191818!important;border-color:#000!important;outline:3px solid var(--js-brand)!important;outline-offset:3px}
 :is(#post-2135,#post-ev-brzdy,#post-2703,#post-2784) details.rozbalovaci>summary:focus-visible :is(h2,h3){color:#191818!important}
 :is(#post-2135,#post-ev-brzdy,#post-2703,#post-2784) details.rozbalovaci>summary:focus-visible:after{border-color:#191818!important;color:#191818!important}
+
+/* A persistent, native control; separate from the caption and navigation arrows. */
+.parallax-slider .slider-rotation {
+ position:absolute; z-index:10; right:12px; bottom:12px;
+ min-height:44px; max-width:calc(100% - 24px); padding:8px 12px;
+ border:1px solid #ffad91; border-radius:3px; background:#191818;
+ color:#fff; font:500 14px/1.3 Ubuntu,Arial,sans-serif; cursor:pointer;
+}
+.parallax-slider .slider-rotation:hover { color:#ffad91; }
+.parallax-slider .slider-rotation:focus-visible { outline:3px solid #fff; outline-offset:3px; }
+.parallax-slider .slider-rotation:disabled { opacity:1; cursor:default; }
+@media (prefers-reduced-motion:reduce) {
+ .parallax-slider .obj-inner,
+ .parallax-slider .primaryHolder,
+ .parallax-slider .secondaryHolder,
+ .parallax-slider .primaryCaption,
+ .parallax-slider .secondaryCaption { transition:none !important; animation:none !important; }
+}
+
+/* Native first slide: the same crop and caption before the slider script initializes. */
+.parallax-slider:not(.slider-ready) #mainImageHolder .parallax-slider-img {
+ width:100%;height:100%;object-fit:cover;object-position:center;max-width:none;
+}
+
+.parallax-slider:not(.slider-ready) #mainImageHolder .primaryHolder {height:100%;}
+/* Keep the new rotation control clear of both arrows on narrow screens. */
+@media (max-width:767px) {
+ .home .parallax-slider .controlBtn {width:44px;height:44px;bottom:12px;}
+ .home .parallax-slider .parallaxPrevBtn {left:12px !important;}
+ .home .parallax-slider .parallaxNextBtn {left:64px !important;right:auto !important;}
+ .parallax-slider .slider-rotation {max-width:calc(100% - 132px);}
+}
+/* Override the legacy dark focus/hover colors, including list-link specificity. */
+body .footer .footer-widgets a,
+body .footer .footer-widgets a:visited,
+body .footer .footer-widgets ul li a,
+body .footer .footer-widgets ul li a:visited {color:#eee;transition:color .15s ease;}
+body .footer .footer-widgets a:is(:hover,:focus,:focus-visible,:active),
+body .footer .footer-widgets ul li a:is(:hover,:focus,:focus-visible,:active) {color:#ffad91;text-decoration:underline;}
+body .footer a:focus-visible,
+body .footer button:focus-visible {outline:3px solid #fff;outline-offset:3px;}

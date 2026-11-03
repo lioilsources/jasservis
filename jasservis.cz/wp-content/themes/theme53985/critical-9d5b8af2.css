@@ -1,0 +1,163 @@
+/* Source: wp-content/themes/theme53985/home-wide.css */
+/* Homepage only. Keep the approved phone, tablet and notebook layouts below 1440px. */
+@media (min-width:1440px) {
+ .home .header>.container,
+ .home .content-holder>.container,
+ .home .footer>.container{box-sizing:border-box;width:90%;max-width:1440px;margin-inline:auto}
+ .home .header>.container>.row,
+ .home .content-holder .row,
+ .home .footer>.container>.row{margin-left:0;margin-right:0}
+ .home .header>.container>.row>.span12,
+ .home .content-holder .row>.span12,
+ .home .footer>.container>.row>.span12{box-sizing:border-box;width:100%;min-width:0;margin-left:0;margin-right:0}
+ .home #post-203 .home-service-cards{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .home #post-203 .home-service-index{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .home #post-203 .home-service-cards .service-box_txt{font-size:1.0625rem;line-height:1.55}
+ .home #post-203 .home-service-cards :is(.home-service-heading,h2.title){font-size:1.5rem;line-height:1.25}
+ .home #post-203 .home-service-cards .service-box :is(p.service-card-subtitle,.home-service-heading .service-card-subtitle){font-size:1.1875rem;line-height:1.4;font-weight:400}
+ .home #post-203 .home-service-cards .btn-align a{font-size:1rem}
+ .home #post-203 .home-offered-services .arrow-list li a{font-size:1.125rem;line-height:1.5}
+ .home #post-203 .home-service-index summary .sluzby-sloupec{font-size:1.375rem;line-height:1.4}
+ .home #post-203 .home-offered-services .title-box .title-box_secondary,
+ .home #post-203 .home-offered-services .home-service-brands .home-brands-heading{font-size:1.5rem;line-height:1.3}
+ .home #post-203 .home-service-brands a,
+ .home #post-203 .home-service-general a{font-size:1.0625rem;line-height:1.45}
+ .home .header .header_block_1 .header_widget_1,
+ .home .header .header_block_1 .header-phone a,
+ .home .header .header_block_1 .header-phone a span,
+ .home .header .header_block_1 .tel .header-hours,
+ .home .header .header_block_1 #text-8>.textwidget>b a{font-size:1rem;line-height:1.5}
+ .home .header .nav__primary #topnav>li>a,
+ .home .header .nav__primary #topnav>li>.reviews-toggle{font-size:.9375rem}
+ .home #post-203 .home-booking h2{font-size:1.875rem;line-height:1.3}
+ .home #post-203 .home-booking p{font-size:1.25rem;line-height:1.6}
+ .home #post-203 .home-booking-call{font-size:1rem}
+ .home .footer .footer-widgets h4{font-size:1.125rem;line-height:1.4}
+ .home .footer .footer-widgets ul li a{font-size:1rem;line-height:1.5}
+ .home .footer .footer-widgets .textwidget{font-size:1.0625rem;line-height:1.6;font-weight:400}
+ .home .parallax-slider #mainCaptionHolder .slider_caption{width:760px;font-size:clamp(2.625rem,2.4vw,3rem);grid-template-rows:44px 176px 48px}
+ .home .parallax-slider .hero-specialization{font-size:1.1875rem;line-height:1.5}
+}
+
+/* Source: wp-content/themes/theme53985/languages.css */
+/* Static language editions: allow longer translated labels without changing Czech styling. */
+html:is([lang="en"],[lang="de"],[lang="uk"],[lang="vi"]) :is(.btn,.button,.home-general-links a,.home-brand-links a){white-space:normal;overflow-wrap:break-word}
+html:is([lang="en"],[lang="de"],[lang="uk"],[lang="vi"]) :is(summary,.service-groups a,.mobile-nav-panel a){overflow-wrap:break-word;hyphens:auto}
+html:is([lang="en"],[lang="de"],[lang="uk"],[lang="vi"]) .language-options a{color:#eee}
+html:is([lang="en"],[lang="de"],[lang="uk"],[lang="vi"]) .header .contact-booking-link{max-width:100%}
+html:is([lang="en"],[lang="de"],[lang="uk"],[lang="vi"]) .header .contact-booking-link .booking-short{white-space:normal}
+html:is([lang="en"],[lang="de"],[lang="uk"],[lang="vi"]) .parallax-slider .slider_caption{overflow-wrap:normal}
+.document-language-note{font-size:1rem;line-height:1.6;color:#333;margin:.5rem 0 1rem}
+@media(max-width:767px){html:is([lang="en"],[lang="de"],[lang="uk"],[lang="vi"]) .home-brand-links a{font-size:1rem}}
+
+/* Source: wp-content/themes/theme53985/design-system-2026.css */
+/* Shared refinements for the existing J&S identity. No layout replacement. */
+:root{
+ --js-radius:4px;
+ --js-title-fluid:clamp(1.5rem,1.15rem + 1.2vw,2.25rem);
+ --js-section-fluid:clamp(1.375rem,1.15rem + .7vw,1.875rem);
+ --js-summary-fluid:clamp(1.125rem,1.05rem + .25vw,1.375rem);
+ --js-reading-leading:1.65;
+}
+/* A script-enabled page reserves the closed header before deferred menu setup.
+   Without JavaScript the original complete navigation remains in document flow. */
+.js-navigation .header .nav__primary:not(.navigation-ready){min-height:60px}
+.js-navigation .header .nav__primary:not(.navigation-ready) #topnav{display:none}
+@media(min-width:1200px){
+ .js-navigation .header .nav__primary:not(.navigation-ready){min-height:80px}
+}
+body .header .language-switcher .language-mobile>summary{color:#ffad93}
+#post-203 .home-service-cards .icon img{width:auto;max-width:100%}
+
+/* Keyboard users can reach the page without tabbing through the whole header. */
+.skip-to-content{
+ position:fixed;top:12px;left:12px;z-index:10000;transform:translateY(-200%);
+ display:inline-flex;align-items:center;min-height:44px;box-sizing:border-box;
+ padding:12px 18px;border:2px solid #191818;border-radius:var(--js-radius);
+ background:#fff;color:#191818;font:500 1rem/1.4 var(--js-font);text-decoration:underline
+}
+.skip-to-content:focus{transform:none;outline:3px solid var(--js-brand);outline-offset:3px}
+.footer .footer-widgets h3.footer-heading{
+ margin:0 0 16px;font:500 1rem/1.5 var(--js-font);text-transform:uppercase;color:#ccc
+}
+
+/* Page identity is stronger than the breadcrumb, including on narrow screens. */
+body .content-holder .title-section{
+ padding-block:clamp(22px,2.5vw,36px)
+}
+body .content-holder .title-section .title-header{
+ margin:0;font-family:var(--js-font);font-size:var(--js-title-fluid)!important;
+ font-weight:500!important;line-height:1.25!important;letter-spacing:0;
+ overflow-wrap:break-word;text-wrap:balance
+}
+body .content-holder .title-section .breadcrumb{
+ font-size:.875rem;line-height:1.6;overflow-wrap:break-word
+}
+body .content-holder .title-section .breadcrumb :is(li,a,span){
+ font-size:inherit;line-height:inherit;text-shadow:none
+}
+body .content-holder .page .service-box.style_2 h1.sub-title,
+body .content-holder .page h2.autoservis-intro-heading{
+ font-family:var(--js-font);font-size:var(--js-section-fluid)!important;
+ line-height:1.3!important;font-weight:500!important;text-wrap:balance;
+ margin-bottom:20px
+}
+
+/* The same disclosure control has the same type, spacing and geometry. */
+body .content-holder .page :is(details.rozbalovaci,.vw-accordion){
+ border-radius:var(--js-radius);margin-bottom:16px
+}
+body .content-holder .page :is(details.rozbalovaci,.vw-accordion)>summary{
+ min-height:48px;box-sizing:border-box;padding:16px 52px 16px 20px;
+ border-radius:var(--js-radius);overflow-wrap:break-word
+}
+body .content-holder .page :is(details.rozbalovaci,.vw-accordion)>summary :is(h2,h3){
+ font-family:var(--js-font);font-size:var(--js-summary-fluid)!important;
+ line-height:1.4!important;font-weight:600!important;text-transform:none;
+ margin:0;text-wrap:pretty
+}
+body .content-holder .page :is(.service-box_txt,.rozbalovaci__obsah,.vw-accordion__body){
+ line-height:var(--js-reading-leading)
+}
+body .content-holder .page :is(.rozbalovaci__obsah,.vw-accordion__body)>:last-child{
+ margin-bottom:0
+}
+
+/* Keep primary booking actions orange and repeated card actions consistent. */
+body .content-holder :is(.tlacitko-akce,#portfolio-grid .btn,.home-booking-call){
+ border-radius:var(--js-radius);min-height:44px;box-sizing:border-box;
+ line-height:1.45;text-decoration:none
+}
+body .content-holder #portfolio-grid .caption{padding:20px}
+body .content-holder #portfolio-grid .caption :is(h3,p){overflow-wrap:break-word}
+body .content-holder #portfolio-grid .caption h3{line-height:1.35;text-wrap:balance}
+body .content-holder #portfolio-grid .caption p.excerpt{line-height:1.6}
+body .content-holder .page a.btn{
+ display:inline-flex;align-items:center;justify-content:center;min-height:44px;
+ box-sizing:border-box;padding:10px 18px;border:1px solid #000;
+ border-radius:var(--js-radius);background:var(--js-card);color:#fff;
+ font-family:var(--js-font);font-size:1rem;line-height:1.45;
+ text-decoration:none;text-shadow:none;white-space:normal
+}
+@media(hover:hover) and (pointer:fine){
+ body .content-holder .page a.btn:hover{background:#fff;color:#191818;border-color:#000}
+}
+body .content-holder .page a.btn:focus-visible{
+ background:#fff;color:#191818;outline:3px solid var(--js-brand);outline-offset:3px
+}
+
+@media(max-width:767px){
+ body .content-holder .page :is(details.rozbalovaci,.vw-accordion)>summary{
+  padding:14px 44px 14px 16px
+ }
+ body .content-holder #portfolio-grid .caption{padding:16px}
+}
+@media(prefers-reduced-motion:reduce){
+ .main-holder *,.main-holder *::before,.main-holder *::after{
+  animation-duration:.01ms!important;animation-iteration-count:1!important;
+  transition-duration:.01ms!important;scroll-behavior:auto!important
+ }
+}
+
+/* A deterministic sans-serif fallback also covers Cyrillic glyphs absent from Ubuntu subsets. */
+html body,html button,html input,html select,html textarea{font-family:var(--js-font)}

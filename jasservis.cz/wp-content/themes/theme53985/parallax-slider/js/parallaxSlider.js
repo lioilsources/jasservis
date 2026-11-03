@@ -17,6 +17,19 @@
         ,   liteMode: false
         }
         $.extend(options, o);
+        var motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+        var persistentPaused = false, pointerInside = false;
+        var lang = document.documentElement.lang.split('-')[0];
+        var labels = {
+            cs: ['Předchozí snímek','Následující snímek','Pozastavit střídání','Pokračovat ve střídání','Automatika vypnuta: omezený pohyb','Úvodní nabídka','Snímek'],
+            en: ['Previous slide','Next slide','Pause slideshow','Resume slideshow','Slideshow off: reduced motion','Featured services','Slide'],
+            de: ['Vorherige Folie','Nächste Folie','Diashow pausieren','Diashow fortsetzen','Automatik aus: reduzierte Bewegung','Ausgewählte Leistungen','Folie'],
+            uk: ['Попередній слайд','Наступний слайд','Призупинити показ','Продовжити показ','Автопоказ вимкнено: зменшення руху','Основні послуги','Слайд'],
+            vi: ['Trang chiếu trước','Trang chiếu tiếp','Tạm dừng trình chiếu','Tiếp tục trình chiếu','Tắt tự động: giảm chuyển động','Dịch vụ nổi bật','Trang chiếu']
+        };
+        var sliderLabels = labels[lang] || labels.cs;
+        var rotationButton;
+        var initialServerSlide = false;
         
         var 
             _this = $(this)
@@ -138,15 +151,16 @@
         function init()
         {               
             //  holder erase
-            _this.html('');
-            _this.addClass(options.animateLayout);
+            initialServerSlide = !!_this.find('#mainImageHolder > .primaryHolder > img').length;
+            _this.children('ul.baseList').remove();
+            _this.addClass(options.animateLayout).attr('role', 'region').attr('aria-roledescription', 'carousel').attr('aria-label', sliderLabels[5]);
     
             //  preview holder build
-            _this.append("<div id='mainImageHolder'></div>");
+            if (!initialServerSlide) _this.append("<div id='mainImageHolder'></div>");
             mainImageHolder = $('#mainImageHolder');
     
              //  caption holder build
-            _this.append("<div id='mainCaptionHolder'><div class='container'></div></div>");
+            if (!initialServerSlide) _this.append("<div id='mainCaptionHolder'><div class='container'></div></div>");
             mainCaptionHolder = $('#mainCaptionHolder');
             mainCaptionHolderContainer = $('>.container', mainCaptionHolder);
     
@@ -154,6 +168,11 @@
             _this.append("<div class='controlBtn parallaxPrevBtn'><div class='innerBtn icon-angle-left'></div><div class='slidesCounter'></div></div><div class='controlBtn parallaxNextBtn'><div class='innerBtn icon-angle-right'></div><div class='slidesCounter'></div></div>");
             parallaxPrevBtn = $('.parallaxPrevBtn', _this);
             parallaxNextBtn = $('.parallaxNextBtn', _this);
+            rotationButton = $('<button type="button" class="slider-rotation"></button>').appendTo(_this);
+            rotationButton.on('click', function(){
+                persistentPaused = !persistentPaused;
+                autoSwitcher();
+            });
     
             //  fullpreview pagination build
             _this.append("<div id='paralaxSliderPagination'><ul></ul></div>");
@@ -294,7 +313,12 @@
         function autoSwitcher()
         {
             clearInterval(intervalSwitcher);
-            if(options.autoSwitcher && !document.hidden){
+            var focused = _this[0].contains(document.activeElement);
+            var stopped = persistentPaused || motionQuery.matches;
+            rotationButton.text(motionQuery.matches ? sliderLabels[4] : (persistentPaused ? sliderLabels[3] : sliderLabels[2]));
+            rotationButton.prop('disabled', motionQuery.matches);
+            mainCaptionHolder.attr('aria-live', stopped || focused ? 'polite' : 'off');
+            if(options.autoSwitcher && !stopped && !focused && !pointerInside && !document.hidden){
                 if(itemLength>1){
                     intervalSwitcher = setInterval(function(){
                         nextSwither();
@@ -353,11 +377,15 @@
             
             // Pause when the tab is hidden and restart with a full interval on return.
             document.addEventListener('visibilitychange', autoSwitcher);
-            _this.on('focusin mouseenter', function(){ clearInterval(intervalSwitcher); });
-            _this.on('focusout mouseleave', function(){ autoSwitcher(); });
+            _this.on('focusin', autoSwitcher);
+            _this.on('focusout', function(){ setTimeout(autoSwitcher, 0); });
+            _this.on('mouseenter', function(){ pointerInside = true; autoSwitcher(); });
+            _this.on('mouseleave', function(){ pointerInside = false; autoSwitcher(); });
+            if (motionQuery.addEventListener) motionQuery.addEventListener('change', autoSwitcher);
+            else motionQuery.addListener(autoSwitcher);
             parallaxPrevBtn.add(parallaxNextBtn).attr('role', 'button').attr('tabindex', '0');
-            parallaxPrevBtn.attr('aria-label', 'Předchozí snímek');
-            parallaxNextBtn.attr('aria-label', 'Následující snímek');
+            parallaxPrevBtn.attr('aria-label', sliderLabels[0]);
+            parallaxNextBtn.attr('aria-label', sliderLabels[1]);
             parallaxPrevBtn.add(parallaxNextBtn).on('keydown', function(event){
                 if(event.key === 'Enter' || event.key === ' '){ event.preventDefault(); $(this).trigger('click'); }
             });
@@ -425,6 +453,21 @@
         //------------------------- main Swither ----------------------------//
         function imageSwitcher(currIndex)
         {
+            // Keep the first server-rendered image/caption nodes; no JS gate for the initial paint.
+            if (initialServerSlide && currIndex === 0) {
+                initialServerSlide = false;
+                primaryImageHolder = $('> .primaryHolder', mainImageHolder);
+                primaryCaption = $('> .primaryCaption', mainCaptionHolderContainer);
+                primaryCaption.attr('role', 'group').attr('aria-roledescription', sliderLabels[6]).attr('aria-label', '1 / ' + itemLength);
+                obj_inner = $('.obj-inner', primaryImageHolder);
+                originalWidth = 1980; originalHeight = 1312;
+                objectResize(obj_inner, primaryImageHolder.width(), _baseHeight);
+                slidesCounterList.attr('aria-hidden', 'true').text('1/' + itemLength);
+                primaryCaption.attr('aria-hidden', 'false');
+                previewSpinner.hide();
+                _this.addClass('slider-ready');
+                return;
+            }
             //  add next ImageHolder
             if(primaryImageHolder){
                 secondarImageHolder = primaryImageHolder;
@@ -450,13 +493,16 @@
             if(sliderData[currIndex].caption != ''){
                 mainCaptionHolderContainer.append('<div class="primaryCaption"></div>');
                 primaryCaption = $('> .primaryCaption', mainCaptionHolderContainer);
-                primaryCaption.html(sliderData[currIndex].caption).attr('aria-hidden', 'true').attr('inert', '');
+                primaryCaption.html(sliderData[currIndex].caption).attr('role', 'group').attr('aria-roledescription', sliderLabels[6]).attr('aria-label', (currIndex+1) + ' / ' + itemLength).attr('aria-hidden', 'true').attr('inert', '');
                 objectCssTransition(primaryCaption, 0, 'ease');
                 primaryCaption.addClass('animateState');   
             }
             if(sliderData[currIndex].link != '') mainCaptionHolder.append('<a href="'+sliderData[currIndex].link+'"></a>');
             
-            slidesCounterList.text((currIndex+1) + '/'+itemLength);
+            if (!secondarImageHolder && primaryCaption) {
+                primaryCaption.removeClass('animateState').attr('aria-hidden', 'false').removeAttr('inert');
+            }
+            slidesCounterList.attr('aria-hidden', 'true').text((currIndex+1) + '/'+itemLength);
             $(">ul >li", paralaxSliderPagination).removeClass('active').eq(currIndex).addClass('active');
     
             isPreviewLoading = true;
@@ -469,7 +515,7 @@
             if(sliderData[currIndex].slide_type == 'image')
             {  
                 var img = new Image();
-                img.src = sliderData[currIndex].image;
+
                 
                 img.onload = function ()
                 {
@@ -491,6 +537,7 @@
                     onSlideLoaded();
                 }
                 
+                img.src = sliderData[currIndex].image;
             }
             //------------------------- library video slide type ----------------------------// 
             if(sliderData[currIndex].slide_type == 'library_video')
@@ -540,7 +587,7 @@
                 originalHeight = videoElement.videoHeight;
                 
                 var img = new Image();
-                img.src = sliderData[currIndex].image;
+
                 
                 img.onload = function ()
                 {
@@ -667,11 +714,12 @@
             }
             
             function onSlideLoaded()
-            {  
+            {
+                var slideDuration = (!secondarImageHolder || motionQuery.matches) ? 0 : options.duration;
                 isPreviewLoading = false;
                 previewSpinner.stop().fadeTo(300, 0, function(){ $(this).css({display:'none'}); });
                 
-                objectCssTransition(primaryImageHolder, options.duration, 'outCubic');
+                objectCssTransition(primaryImageHolder, slideDuration, 'outCubic');
                 primaryImageHolder.removeClass('animateState');
                 
                 if(secondarImageHolder){
@@ -679,21 +727,21 @@
                         setTimeout(function(){
                             if(sliderData[prevIndex].slide_type == 'youtube_video') sliderData[prevIndex].youtube_video.player.stopVideo();
                             if(sliderData[prevIndex].slide_type == 'vimeo_video') sliderData[prevIndex].vimeo_video.player.api('unload');
-                        }, options.duration/1.25)
+                        }, slideDuration/1.25)
                     }
 
-                    objectCssTransition(secondarImageHolder, options.duration, 'outCubic');
+                    objectCssTransition(secondarImageHolder, slideDuration, 'outCubic');
                     secondarImageHolder.addClass('animateState');
                 }
                 
-                objectCssTransition(primaryCaption, options.duration, 'outCubic');
+                objectCssTransition(primaryCaption, slideDuration, 'outCubic');
                 if(primaryCaption){
                     
                     primaryCaption.removeClass('animateState').attr('aria-hidden', 'false').removeAttr('inert');
                 } 
                 
                 if(secondaryCaption){
-                    objectCssTransition(secondaryCaption, options.duration, 'outCubic');
+                    objectCssTransition(secondaryCaption, slideDuration, 'outCubic');
                     secondaryCaption.addClass('animateState');
                 }
                 
@@ -704,7 +752,7 @@
                     
                     isPreviewAnimate = false;
 
-                }, options.duration )
+                }, slideDuration )
             }         
         }
     
@@ -716,7 +764,7 @@
                 var durationValue;
         
                 if(duration !== 0){
-                    durationValue = duration/1000;
+                    durationValue = motionQuery.matches ? 0 : duration/1000;
                 }else{
                     durationValue = 0
                 }
@@ -782,7 +830,7 @@
         
         //------------------- main window scroll function -------------------//
         function mainScrollFunction(){
-             if(parallax || options.scrolling_description && !options.liteMode){
+             if(!motionQuery.matches && (parallax || options.scrolling_description && !options.liteMode)){
                 
                  var _documentScrollTop
                  ,   startScrollTop
