@@ -99,3 +99,7 @@
  width:0;height:0;border-top:8px solid transparent;border-bottom:8px solid transparent;border-left:12px solid currentColor;
 }
 .parallax-slider .slider-rotation:disabled {border-color:#ccc;color:#ccc;}
+@media (max-width:767px) {
+ .parallax-slider .slider-rotation {top:6px;bottom:auto;right:6px;}
+ .home .parallax-slider #mainCaptionHolder .hero-specialization {max-width:calc(100vw - 112px);}
+}

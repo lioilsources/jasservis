@@ -171,6 +171,7 @@
             rotationButton = $('<button type="button" class="slider-rotation"></button>').appendTo(_this);
             rotationButton.on('click', function(){
                 persistentPaused = !persistentPaused;
+                if (!persistentPaused) pointerInside = false;
                 autoSwitcher();
             });
     
@@ -313,7 +314,7 @@
         function autoSwitcher()
         {
             clearInterval(intervalSwitcher);
-            var focused = _this[0].contains(document.activeElement);
+            var focused = _this[0].contains(document.activeElement) && document.activeElement !== rotationButton[0];
             var stopped = persistentPaused || motionQuery.matches;
             var rotationLabel = motionQuery.matches ? sliderLabels[4] : (persistentPaused ? sliderLabels[3] : sliderLabels[2]);
             rotationButton.attr('aria-label', rotationLabel).attr('title', rotationLabel).attr('data-paused', stopped ? 'true' : 'false').html('<span class="slider-rotation-icon" aria-hidden="true"></span>');
@@ -380,7 +381,7 @@
             document.addEventListener('visibilitychange', autoSwitcher);
             _this.on('focusin', autoSwitcher);
             _this.on('focusout', function(){ setTimeout(autoSwitcher, 0); });
-            _this.on('mouseenter', function(){ pointerInside = true; autoSwitcher(); });
+            _this.on('mouseenter', function(){ pointerInside = window.matchMedia('(hover: hover) and (pointer: fine)').matches; autoSwitcher(); });
             _this.on('mouseleave', function(){ pointerInside = false; autoSwitcher(); });
             if (motionQuery.addEventListener) motionQuery.addEventListener('change', autoSwitcher);
             else motionQuery.addListener(autoSwitcher);
