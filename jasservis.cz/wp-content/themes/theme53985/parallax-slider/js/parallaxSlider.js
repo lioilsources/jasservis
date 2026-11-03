@@ -315,7 +315,8 @@
             clearInterval(intervalSwitcher);
             var focused = _this[0].contains(document.activeElement);
             var stopped = persistentPaused || motionQuery.matches;
-            rotationButton.text(motionQuery.matches ? sliderLabels[4] : (persistentPaused ? sliderLabels[3] : sliderLabels[2]));
+            var rotationLabel = motionQuery.matches ? sliderLabels[4] : (persistentPaused ? sliderLabels[3] : sliderLabels[2]);
+            rotationButton.attr('aria-label', rotationLabel).attr('title', rotationLabel).attr('data-paused', stopped ? 'true' : 'false').html('<span class="slider-rotation-icon" aria-hidden="true"></span>');
             rotationButton.prop('disabled', motionQuery.matches);
             mainCaptionHolder.attr('aria-live', stopped || focused ? 'polite' : 'off');
             if(options.autoSwitcher && !stopped && !focused && !pointerInside && !document.hidden){
