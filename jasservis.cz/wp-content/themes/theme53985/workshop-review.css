@@ -1,0 +1,83 @@
+/* Two review variants; only the homepage service components are restyled. */
+body.home #post-203{--workshop-radius:6px;--workshop-border:#74777a;--workshop-ink:#202428;--workshop-muted:#555b60;--workshop-accent:#b5451b;--workshop-time:220ms;}
+body.home #post-203 .home-service-cards{gap:24px;margin-bottom:clamp(36px,5vw,64px);}
+body.home #post-203 .home-service-cards .service-box.style_1{padding:clamp(22px,2.3vw,32px);border:1px solid var(--workshop-border);border-radius:var(--workshop-radius);box-shadow:none;transition:transform var(--workshop-time) ease,border-color var(--workshop-time) ease,box-shadow var(--workshop-time) ease;}
+body.home #post-203 .home-service-cards .service-box :is(.title,.home-service-heading){font-size:clamp(1.375rem,1.1rem + .55vw,1.625rem)!important;font-weight:600!important;line-height:1.25;letter-spacing:.01em;margin:0 0 8px;text-wrap:balance;}
+body.home #post-203 .home-service-cards .service-box :is(.service-card-subtitle,p.service-card-subtitle){font-size:1.125rem!important;font-weight:400!important;line-height:1.45;}
+body.home #post-203 .home-service-cards .service-box_txt{font-size:1rem;line-height:1.65;margin:8px 0 24px;opacity:1!important;}
+body.home #post-203 .home-service-cards .service-box :is(h1,h2,h3,p,a)::before,body.home #post-203 .home-service-cards .service-box :is(h1,h2,h3,p,a)::after{content:none;}
+body.home #post-203 .home-service-cards .icon{margin:0 0 20px;}
+body.home #post-203 .home-service-cards .btn-align{margin:0;}
+body.home #post-203 .home-service-cards a.btn{box-sizing:border-box;min-height:44px;padding:11px 18px;border:1px solid currentColor;border-radius:var(--workshop-radius);font-size:.9375rem;line-height:1.4;text-decoration:none;background-image:none;text-shadow:none;box-shadow:none;transition:background-color var(--workshop-time) ease,color var(--workshop-time) ease,border-color var(--workshop-time) ease;}
+body.home #post-203 .home-offered-services{padding:clamp(24px,3vw,40px);border:0;border-radius:var(--workshop-radius);}
+body.home #post-203 .home-offered-services .title-box{margin:0 0 28px;padding:0;}
+body.home #post-203 .home-offered-services .title-box_secondary{font-size:clamp(1.5rem,1.2rem + .7vw,2rem)!important;line-height:1.25;font-weight:600!important;margin:0;text-wrap:balance;}
+body.home #post-203 .home-offered-services .title-box::before,body.home #post-203 .home-offered-services .title-box::after,body.home #post-203 .home-offered-services .title-box_secondary::before,body.home #post-203 .home-offered-services .title-box_secondary::after{content:none;}
+body.home #post-203 .home-offered-services .home-service-index{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:auto;gap:20px;align-items:start;margin:0 0 36px;}
+body.home #post-203 .home-offered-services .home-service-index .home-service-group:nth-child(n){grid-column:auto;grid-row:auto!important;min-height:0!important;margin:0;overflow:hidden;border:1px solid var(--workshop-border);border-radius:var(--workshop-radius);}
+body.home #post-203 .home-offered-services .home-service-index details>summary{box-sizing:border-box;display:block;position:relative;list-style:none;min-height:56px;padding:18px 48px 18px 20px;border:0;border-radius:0;cursor:pointer;transition:background-color var(--workshop-time) ease,color var(--workshop-time) ease;}
+body.home #post-203 .home-offered-services .home-service-index details>summary::-webkit-details-marker{display:none;}
+body.home #post-203 .home-offered-services .home-service-index details>summary::before{content:none;}
+body.home #post-203 .home-offered-services .home-service-index details>summary::after{content:'';position:absolute;right:22px;top:50%;width:8px;height:8px;margin-top:-6px;border:0;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);transition:transform var(--workshop-time) ease;}
+body.home #post-203 .home-offered-services .home-service-index details[open]>summary::after{transform:rotate(225deg);margin-top:-2px;}
+body.home #post-203 .home-offered-services .home-service-index details>summary .sluzby-sloupec{margin:0;font-size:clamp(1.0625rem,1rem + .2vw,1.25rem)!important;font-weight:600!important;line-height:1.45;text-align:left;text-transform:none;}
+body.home #post-203 .home-offered-services .home-service-index details ul{box-sizing:border-box;margin:0;padding:4px 20px 20px;list-style:none;}
+body.home #post-203 .home-offered-services .home-service-index details ul li{margin:0;padding:0;}
+body.home #post-203 .home-offered-services .home-service-index details ul li::before{content:none;}
+body.home #post-203 .home-offered-services .home-service-index details ul a{display:block;box-sizing:border-box;min-height:44px;padding:10px 0;font-size:1rem;line-height:1.5;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px;}
+body.home #post-203 .home-offered-services .workshop-panel-body{overflow:hidden;}
+body.home #post-203 .home-offered-services :is(.home-service-brands,.home-service-general){margin-block:28px 0;}
+body.home #post-203 .home-offered-services .home-service-brands .home-brands-heading{font-size:clamp(1.125rem,1rem + .4vw,1.5rem)!important;line-height:1.4;font-weight:600!important;letter-spacing:.02em;margin-bottom:20px;}
+body.home #post-203 .home-offered-services :is(.home-service-brands,.home-service-general) a{box-sizing:border-box;min-height:44px;padding:12px 16px;border:1px solid var(--workshop-border);border-radius:var(--workshop-radius);font-size:1rem;line-height:1.45;text-decoration:none;box-shadow:none;transition:background-color var(--workshop-time) ease,border-color var(--workshop-time) ease,color var(--workshop-time) ease;}
+body.home #post-203 :is(.home-service-cards,.home-offered-services) :is(a,summary):focus-visible{outline:3px solid #aa3e16!important;outline-offset:3px!important;text-decoration:none;}
+@media(hover:hover) and (pointer:fine){
+ body.home #post-203 .home-service-cards .service-box.style_1:hover{transform:translateY(-3px);border-color:var(--workshop-accent);box-shadow:0 8px 18px rgb(0 0 0 / .13);}
+ body.home #post-203 .home-offered-services .home-service-index details ul a:hover{text-decoration-thickness:2px;}
+}
+@media(max-width:767px){
+ body.home #post-203 .home-service-cards{gap:16px;}
+ body.home #post-203 .home-offered-services{padding:24px 16px;}
+ body.home #post-203 .home-offered-services .home-service-index{grid-template-columns:minmax(0,1fr);gap:14px;}
+ body.home #post-203 .home-offered-services .home-service-index .home-service-group:nth-child(n){grid-column:1;}
+ body.home #post-203 .home-offered-services .home-service-index details>summary{padding:16px 46px 16px 16px;}
+ body.home #post-203 .home-offered-services .home-service-index details ul{padding:4px 16px 16px;}
+}
+@media(prefers-reduced-motion:reduce){
+ body.home #post-203 :is(.home-service-cards,.home-offered-services),body.home #post-203 :is(.home-service-cards,.home-offered-services) *,body.home #post-203 :is(.home-service-cards,.home-offered-services) *::after{transition:none!important;animation:none!important;}
+ body.home #post-203 .home-service-cards .service-box.style_1:hover{transform:none;}
+}
+body.home #post-203 .home-offered-services .home-service-index details>summary:focus-visible{outline-offset:-4px!important;}
+/* B: graphite cards, white reading surfaces, restrained orange accents. */
+body.home #post-203 .home-service-cards .service-box.style_1{background:#24282c;color:#f7f7f5;text-align:left;--workshop-border:#6f757b;--workshop-accent:#f36639;border-top:3px solid #cb5329;padding-top:calc(clamp(22px,2.3vw,32px) - 2px);}
+body.home #post-203 .home-service-cards .service-box :is(.title,.service-card-subtitle){color:#fff;}
+body.home #post-203 .home-service-cards .service-box_txt{color:#dedfdf;}
+body.home #post-203 .home-service-cards a.btn{background:transparent;color:#fff;border-color:#92979b;}
+body.home #post-203 .home-service-cards :is(a,summary):focus-visible{outline-color:#ffad91!important;}
+body.home #post-203 .home-offered-services{background:#fafaf8;color:var(--workshop-ink);}
+body.home #post-203 .home-offered-services :is(.title-box_secondary,.home-brands-heading){color:#202428!important;}
+body.home #post-203 .home-offered-services .home-service-index details{background:#fff;color:#202428;}
+body.home #post-203 .home-offered-services .home-service-index details>summary{background:#f0f1ef;color:#202428;}
+body.home #post-203 .home-offered-services .home-service-index details>summary .sluzby-sloupec{color:#202428;}
+body.home #post-203 .home-offered-services .home-service-index details>summary::after{color:#b5451b;}
+body.home #post-203 .home-offered-services .home-service-index details ul{background:#fff;color:#202428;}
+body.home #post-203 .home-offered-services .home-service-index details ul a{color:#26333b;}
+body.home #post-203 .home-offered-services :is(.home-service-brands,.home-service-general) a{background:#fff;color:#202428;}
+@media(hover:hover) and (pointer:fine){body.home #post-203 .home-service-cards a.btn:hover{background:#fff;color:#202428;border-color:#fff;}body.home #post-203 .home-offered-services .home-service-index details>summary:hover{background:#e6e8e5;}body.home #post-203 .home-offered-services :is(.home-service-brands,.home-service-general) a:hover{background:#f0f1ef;border-color:#a43d16;color:#202428;}}
+body.home #post-203{--workshop-button-bg:transparent;--workshop-button-border:#92979b;--workshop-card-focus:#ffad91;}
+body.home #post-203 .home-service-cards .service-box :is(.title,.service-card-subtitle){text-align:left;}
+
+/* Local specificity compensates the legacy :is() rule with two IDs.
+   Repeating the same ID keeps these overrides on this homepage component. */
+body.home #post-203#post-203 .home-offered-services .home-service-index summary .sluzby-sloupec{color:var(--workshop-ink)!important;}
+body.home #post-203#post-203 .home-offered-services :is(.home-service-brands,.home-service-general)>li>a,
+body.home #post-203#post-203 .home-offered-services .home-service-brands ul>li>a,
+body.home #post-203#post-203 .home-offered-services .home-service-general>li>a[href]{background:#fff!important;color:var(--workshop-ink)!important;border:1px solid var(--workshop-border)!important;font-weight:500!important;min-height:48px;padding:12px 16px;border-radius:var(--workshop-radius);}
+body.home #post-203#post-203 .home-service-cards a.btn{background:var(--workshop-button-bg)!important;color:#fff!important;border:1px solid var(--workshop-button-border)!important;box-shadow:none!important;}
+body.home #post-203#post-203 :is(.home-service-cards,.home-offered-services) :is(a,summary):focus-visible{outline:3px solid #aa3e16!important;outline-offset:3px!important;}
+body.home #post-203#post-203 .home-service-cards a:focus-visible{outline-color:var(--workshop-card-focus)!important;background:#fff!important;color:#202428!important;}
+body.home #post-203#post-203 .home-offered-services summary:focus-visible{outline-offset:-4px!important;}
+body.home #post-203 .home-service-cards .service-box:focus-within{border-color:var(--workshop-accent);}
+@media(hover:hover) and (pointer:fine){
+ body.home #post-203#post-203 .home-service-cards a.btn:hover{background:#fff!important;color:#202428!important;border-color:#fff!important;}
+ body.home #post-203#post-203 .home-offered-services :is(.home-service-brands,.home-service-general) a:hover{background:#eceeeb!important;border-color:#9c441f!important;}
+}
