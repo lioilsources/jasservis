@@ -611,7 +611,7 @@ jQuery(document).ready(function($){
         var initialServerSlide = false;
         // Reuse the responsive first photograph when the slideshow cycles back.
         var firstPicture = this[0].querySelector("#mainImageHolder picture");
-        firstPicture = firstPicture ? firstPicture.cloneNode(true) : null;
+        firstPicture = firstPicture ? firstPicture.outerHTML : null;
         
         var 
             _this = $(this)
@@ -1098,7 +1098,13 @@ jQuery(document).ready(function($){
             //------------------------- image slide type ----------------------------// 
             if(sliderData[currIndex].slide_type == 'image')
             {  
-                var responsivePicture = currIndex === 0 && firstPicture ? firstPicture.cloneNode(true) : null;
+                var responsivePicture = null;
+                if (currIndex === 0 && firstPicture) {
+                    // Template content stays inert until attached; avoid WebKit fetching a detached img/src fallback.
+                    var pictureTemplate = document.createElement('template');
+                    pictureTemplate.innerHTML = firstPicture;
+                    responsivePicture = pictureTemplate.content.firstElementChild;
+                }
                 var img = responsivePicture ? responsivePicture.querySelector("img") : new Image();
                 var slideImageLoaded = false;
 
