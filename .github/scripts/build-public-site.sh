@@ -13,6 +13,7 @@ mkdir -p "$output_dir"
 tar \
   --exclude='./_warnings' \
   --exclude='./_media' \
+  --exclude='*.zip' \
   --exclude='*/kontrolky-a-vystrazna-hlaseni/revize.html' \
   --exclude='*/kontrolky-a-vystrazna-hlaseni/revize-kapitol.html' \
   --exclude='*/kontrolky-a-vystrazna-hlaseni/druha-kontrola.html' \
@@ -48,6 +49,11 @@ while IFS= read -r path; do
     exit 1
   fi
 done <<< "$forbidden"
+
+if find "$output_dir" -type f -iname '*.zip' -print -quit | grep -q .; then
+  echo 'ZIP archive found in public artifact.' >&2
+  exit 1
+fi
 
 if find "$output_dir" -type f \( -name '*review*.json' -o -name '*review*.csv' -o -name '*inventory*.csv' -o -name 'catalog.json' \) -print -quit | grep -q .; then
   echo 'Internal catalogue, review or inventory material found in public artifact.' >&2
