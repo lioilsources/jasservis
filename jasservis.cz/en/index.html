@@ -926,6 +926,13 @@ body.home #post-203 .home-service-cards .service-box.style_1:focus-within::after
  body.home #post-203 .home-service-cards .service-box.style_1::after{transition:none!important;}
  body.home #post-203 .home-service-cards .service-box.style_1:focus-within{transform:none;}
 }
+
+/* Keep the three home cards readable at portrait-tablet widths only. */
+@media (min-width:768px) and (max-width:979px){
+ body.home #post-203 .home-service-cards{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:auto;gap:24px;position:relative;top:-48px;margin-bottom:calc(clamp(36px,5vw,64px) - 48px);}
+ body.home #post-203 .home-service-cards .service-box.style_1{margin-top:0;}
+ body.home #post-203 .home-service-cards>.span4:last-child{grid-column:1 / -1;}
+}
 </style>
 <link data-home-full-css="../wp-content/themes/theme53985/workshop-review.css?v=20261104-b-final" />
 </head><body class="home page-template page-template-page-home page-template-page-home-php page page-id-203">
