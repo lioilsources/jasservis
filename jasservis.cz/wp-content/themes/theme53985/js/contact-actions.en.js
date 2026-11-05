@@ -6,7 +6,7 @@
     dialog.innerHTML = '<div class="contact-booking-panel__header"><button type="button" class="contact-booking-panel__close" aria-label="Close contact panel">×</button>' +
         '<h2 id="contact-booking-title">Book a service</h2></div><div class="contact-booking-panel__cards">' +
         card('Office and bookings', '+420 605 399 448', '+420605399448', 'admin@jasservis.cz') +
-        card('Servis', '+420 608 313 437', '+420608313437', 'j.mateju@jasservis.cz') +
+        card('Workshop', '+420 608 313 437', '+420608313437', 'j.mateju@jasservis.cz') +
         '</div><p class="contact-booking-panel__hours">Mon–Fri 9:00–18:00</p>';
     document.body.appendChild(dialog);
     var opener;
@@ -45,7 +45,7 @@
         return '<section class="contact-booking-panel__card kontakt-prehled__karta"><h3>' + title + '</h3>' +
             '<span class="contact-booking-panel__phone" tabindex="0">' + number + '</span>' +
             '<a href="mailto:' + email + '">' + email + '</a>' +
-            '<a class="contact-booking-panel__call" href="tel:' + phone + '">Zavolat</a>' +
+            '<a class="contact-booking-panel__call" href="tel:' + phone + '">Call</a>' +
             '<button class="contact-booking-panel__copy" type="button" data-copy-number="' + number + '">Copy number</button>' +
             '<div role="status" aria-live="polite"></div></section>';
     }
