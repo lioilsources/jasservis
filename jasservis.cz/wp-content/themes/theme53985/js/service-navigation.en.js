@@ -61,7 +61,7 @@
     var booking = document.createElement('button');
     booking.type = 'button';
     booking.className = 'mobile-nav-booking';
-    booking.textContent = 'Zavolat a objednat servis';
+    booking.textContent = 'Call to book a service';
     var menuScroll = mobilePanel.querySelector('.mobile-nav-scroll');
     menuScroll.appendChild(booking);
     function closeMobilePanel(restoreFocus) {

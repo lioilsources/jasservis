@@ -54,14 +54,14 @@
     toggle.setAttribute('aria-controls', mobilePanel.id);
     toggle.setAttribute('aria-haspopup', 'dialog');
     mobilePanel.setAttribute('aria-labelledby', 'mobile-nav-title');
-    mobilePanel.innerHTML = '<div class="mobile-nav-toolbar"><h2 id="mobile-nav-title">Menu</h2><button type="button" class="mobile-nav-close">Schließen <span aria-hidden="true">×</span></button></div><div class="mobile-nav-scroll"></div>';
+    mobilePanel.innerHTML = '<div class="mobile-nav-toolbar"><h2 id="mobile-nav-title">Menü</h2><button type="button" class="mobile-nav-close">Schließen <span aria-hidden="true">×</span></button></div><div class="mobile-nav-scroll"></div>';
     document.body.appendChild(mobilePanel);
     var menuSlot = document.createComment('original navigation position');
     var savedScroll;
     var booking = document.createElement('button');
     booking.type = 'button';
     booking.className = 'mobile-nav-booking';
-    booking.textContent = 'Zavolat a objednat servis';
+    booking.textContent = 'Anrufen und Servicetermin vereinbaren';
     var menuScroll = mobilePanel.querySelector('.mobile-nav-scroll');
     menuScroll.appendChild(booking);
     function closeMobilePanel(restoreFocus) {

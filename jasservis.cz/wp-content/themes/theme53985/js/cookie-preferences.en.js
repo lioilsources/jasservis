@@ -35,7 +35,7 @@
         placeholder.className = 'cookie-embed-placeholder';
         var button = document.createElement('button');
         button.type = 'button';
-        button.textContent = frame.getAttribute('data-cookie-category') === 'maps' ? 'Nastavit souhlas pro Google mapy' : 'Nastavit souhlas pro Facebook';
+        button.textContent = frame.getAttribute('data-cookie-category') === 'maps' ? 'Manage consent for Google Maps' : 'Manage consent for Facebook';
         button.addEventListener('click', showSettings);
         placeholder.appendChild(button);
         frame.parentNode.insertBefore(placeholder, frame);
