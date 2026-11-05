@@ -372,3 +372,9 @@
     color: #822b0e;
     text-decoration-thickness: 2px;
 }
+
+/* Readable text inside the light driver-advice accordion surfaces. */
+.warning-lights .driver-topic-body,
+.warning-lights .driver-topic-body :is(h2, h4) {
+    color: #333;
+}
