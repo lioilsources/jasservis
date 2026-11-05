@@ -1480,14 +1480,17 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
  background:transparent;color:var(--js-brand);transition:background-color .15s ease
 }
 :is(.header .nav__primary,.mobile-nav-panel) #topnav>li>:is(a,.reviews-toggle,.submenu-toggle){
- color:var(--js-brand);background:transparent;transition:color .15s ease
+ color:var(--js-brand)!important;background:transparent;transition:color .15s ease
 }
 @media(hover:hover) and (pointer:fine){
  :is(.header .nav__primary,.mobile-nav-panel) #topnav>li:hover{background:#fff!important}
- :is(.header .nav__primary,.mobile-nav-panel) #topnav>li:hover>:is(a,.reviews-toggle,.submenu-toggle){color:#191818;background:transparent!important}
+ :is(.header .nav__primary,.mobile-nav-panel) #topnav>li:hover>:is(a,.reviews-toggle,.submenu-toggle){color:#000!important;background:transparent!important}
 }
-:is(.header .nav__primary,.mobile-nav-panel) #topnav>li:has(>a:focus-visible,>.reviews-toggle:focus-visible,>.submenu-toggle:focus-visible){background:#fff!important}
-:is(.header .nav__primary,.mobile-nav-panel) #topnav>li:has(>a:focus-visible,>.reviews-toggle:focus-visible,>.submenu-toggle:focus-visible)>:is(a,.reviews-toggle,.submenu-toggle){color:#191818;background:transparent!important}
+:is(.header .nav__primary,.mobile-nav-panel) #topnav>li:is(.is-open,:focus-within){background:#fff!important}
+:is(.header .nav__primary,.mobile-nav-panel) #topnav>li:is(.is-open,:focus-within)>:is(a,.reviews-toggle,.submenu-toggle){color:#000!important;background:transparent!important}
+
+:is(.header .nav__primary,.mobile-nav-panel) #topnav>li>.reviews-toggle>span{color:inherit!important}
+:is(.header .nav__primary,.mobile-nav-panel) #topnav>li>:is(a,.reviews-toggle,.submenu-toggle):focus-visible{outline:3px solid #000!important;outline-offset:-3px}
 
 /* Autoservis destinations use the submenu colour scheme, independently of
    the orange top-level navigation. This includes all six brands and GVO. */
