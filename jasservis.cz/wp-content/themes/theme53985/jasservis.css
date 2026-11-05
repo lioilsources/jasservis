@@ -705,7 +705,7 @@ body .footer .copyright a { color:#555; }
     font-weight:300; margin:0 0 10px; padding:0; color:#fff; text-transform:none;
 }
 #post-2272 .autoservis-intro-heading {
-    font:normal 30px/33px Ubuntu; color:#333333;
+    font:normal 30px/33px Ubuntu,sans-serif; color:#333333;
 }
 @media (min-width:768px) and (max-width:979px) {
     #post-203 .home-service-cards .home-service-heading { font-size:21px; line-height:26px; }
@@ -1451,13 +1451,22 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
  details.rozbalovaci>summary
 ):focus-visible{background:#fff!important;color:#191818!important;border-color:#000!important;text-shadow:none!important;outline:3px solid var(--js-brand)!important;outline-offset:3px}
 
-:is(#post-203 .home-service-index summary,details.rozbalovaci>summary):is(:hover,:focus-visible) :is(h2,h3,h4,h5,p,span,strong),
-:is(#post-203 .home-service-index summary,details.rozbalovaci>summary):is(:hover,:focus-visible) .sluzby-sloupec,
-:is(#post-203 .home-service-index summary,details.rozbalovaci>summary):is(:hover,:focus-visible)::after{
+@media(hover:hover) and (pointer:fine){
+ :is(#post-203 .home-service-index summary,details.rozbalovaci>summary):hover :is(h2,h3,h4,h5,p,span,strong),
+ :is(#post-203 .home-service-index summary,details.rozbalovaci>summary):hover .sluzby-sloupec,
+ :is(#post-203 .home-service-index summary,details.rozbalovaci>summary):hover::after{
+  color:#191818!important;border-color:#191818!important
+ }
+ #post-203 .home-offered-services .home-service-index summary:hover .sluzby-sloupec{color:#191818!important}
+}
+
+:is(#post-203 .home-service-index summary,details.rozbalovaci>summary):focus-visible :is(h2,h3,h4,h5,p,span,strong),
+:is(#post-203 .home-service-index summary,details.rozbalovaci>summary):focus-visible .sluzby-sloupec,
+:is(#post-203 .home-service-index summary,details.rozbalovaci>summary):focus-visible::after{
  color:#191818!important;border-color:#191818!important
 }
 
-#post-203 .home-offered-services .home-service-index summary:is(:hover,:focus-visible) .sluzby-sloupec{color:#191818!important}
+#post-203 .home-offered-services .home-service-index summary:focus-visible .sluzby-sloupec{color:#191818!important}
 
 @media(hover:none){
  :is(.header .mobile-booking-trigger,.header .header-driver-advice):hover{
@@ -1607,6 +1616,7 @@ body .footer .copyright a{color:#f5f5f5}
  .warning-lights a,
  .kontakt-karta a,
  .kontakt-prehled__karta a,
+ .kontakt-prehled__tlacitko,
  .service-contact-card a
 ){color:var(--js-surface-link)!important}
 
