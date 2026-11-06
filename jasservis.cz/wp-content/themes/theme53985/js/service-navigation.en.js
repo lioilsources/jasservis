@@ -61,7 +61,7 @@
     var booking = document.createElement('button');
     booking.type = 'button';
     booking.className = 'mobile-nav-booking';
-    booking.textContent = 'Zavolat a objednat servis';
+    booking.textContent = 'Call to book a service';
     var menuScroll = mobilePanel.querySelector('.mobile-nav-scroll');
     menuScroll.appendChild(booking);
     function closeMobilePanel(restoreFocus) {
@@ -346,19 +346,21 @@
     function arrangeShortHeader() {
         if (!logo) return;
         if (mobilePanel.open) { if (compact.matches) return; closeMobilePanel(false); }
+        // Firefox can update media queries during layout; keep this pass consistent.
+        var isShortLandscape = shortLandscape.matches;
         arrangingHeader = true;
         var focused = document.activeElement;
         var moved = false;
         var wasFull = nav.classList.contains('short-header-full-nav');
         var wasHidden = menu.hidden;
-        if (shortLandscape.matches && !landscapeRow) {
+        if (isShortLandscape && !landscapeRow) {
             landscapeRow = document.createElement('div');
             landscapeRow.className = 'landscape-nav-row';
             nav.insertBefore(landscapeRow, menu);
             landscapeRow.appendChild(logo);
             landscapeRow.appendChild(toggle);
             moved = true;
-        } else if (!shortLandscape.matches && landscapeRow) {
+        } else if (!isShortLandscape && landscapeRow) {
             logoHome.parentNode.insertBefore(logo, logoHome.nextSibling);
             if (menu.parentElement === landscapeRow) nav.insertBefore(menu, landscapeRow.nextSibling);
             nav.insertBefore(toggle, menu);
@@ -368,7 +370,7 @@
             moved = true;
         }
         if (languageSwitch) {
-            var languageTarget = shortLandscape.matches ? landscapeRow : (compact.matches ? nav : languageHome.parentNode);
+            var languageTarget = isShortLandscape ? landscapeRow : (compact.matches ? nav : languageHome.parentNode);
             if (languageSwitch.parentNode !== languageTarget) {
                 languageTarget.appendChild(languageSwitch);
                 moved = true;
@@ -380,17 +382,17 @@
         nav.classList.toggle('tablet-navigation', tablet.matches);
         var wasCollapsed = nav.classList.contains('desktop-menu-collapsed');
         nav.classList.remove('desktop-menu-collapsed');
-        if (shortLandscape.matches || tablet.matches) {
+        if (isShortLandscape || tablet.matches) {
             // Measure actual labels and original touch areas, rather than device names.
             nav.classList.add('measuring-short-nav');
             menu.hidden = false;
             var needed = menu.getBoundingClientRect().width;
-            var available = shortLandscape.matches ? landscapeRow.clientWidth - logo.getBoundingClientRect().width - 16 : nav.clientWidth;
+            var available = isShortLandscape ? landscapeRow.clientWidth - logo.getBoundingClientRect().width - 16 : nav.clientWidth;
             if (languageSwitch) available -= languageSwitch.getBoundingClientRect().width + 16;
             nav.classList.remove('measuring-short-nav');
             var fits = needed <= available;
             nav.classList.toggle('short-header-full-nav', fits);
-            if (shortLandscape.matches && fits && menu.parentElement !== landscapeRow) {
+            if (isShortLandscape && fits && menu.parentElement !== landscapeRow) {
                 landscapeRow.appendChild(menu);
                 moved = true;
             } else if (landscapeRow && !fits && menu.parentElement === landscapeRow) {

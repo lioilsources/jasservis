@@ -17,7 +17,7 @@
 - [Servis CUPRA](https://jasservis.cz/servis-cupra/): od 1 100 Kč / hodina
 - [Servis Volkswagen Užitkové vozy](https://jasservis.cz/servis-volkswagen-uzitkove-vozy/): od 1 100 Kč / hodina
 - [Servis nových vozů v záruce (GVO)](https://jasservis.cz/servis-novych-vozu-v-zaruce-gvo/): pravidelná údržba podle předpisů výrobce i během záruky
-- [Servis hybridních a elektrických vozidel](https://jasservis.cz/servis-hybridnich-a-elektrickych-vozidel/): od 2 000 Kč / hodina
+- [Servis hybridních a elektrických vozidel](https://jasservis.cz/servis-hybridnich-a-elektrickych-vozidel/): 2 000 Kč za hodinu práce včetně DPH, včetně běžné údržby. Díly, provozní kapaliny a materiál samostatně. Služby s vlastním ceníkem podle příslušné cenové nabídky; před zahájením zákazníka seznámíme s předpokládanými náklady.
 - [Autoservis pro firmy](https://jasservis.cz/autoservis-pro-firmy/)
 
 ## Služby
@@ -33,7 +33,7 @@
 - [Seřízení světlometů a mlhovek](https://jasservis.cz/serizeni-svetlometu/): od 950 Kč
 - [Pneuservis a diagnostika kol](https://jasservis.cz/prezuti-a-prodej-pneumatik-pro-vas-vuz/): kompletní přezutí 4 kol od 1 490 Kč
 - [Příprava a realizace STK](https://jasservis.cz/priprava-a-realizace-stk/): příprava vozidla a zajištění STK od 1 990 Kč
-- [Vyřízení škodní události](https://jasservis.cz/skodni-udalost-vyridime-za-vas/): včetně vstupní kontroly vozidla po nehodě, od 1 210 Kč
+- [Kontrola vozidla po nehodě](https://jasservis.cz/skodni-udalost-vyridime-za-vas/): 1 210 Kč za hodinu vstupní technické kontroly včetně DPH. Nejde o pevnou cenu úplného posouzení vozidla ani vyřízení škodní události. Navazující diagnostika, demontáž a opravy se účtují samostatně po dohodě.
 - [Dekarbonizace motoru](https://jasservis.cz/dekarbonizace-motoru/): od 1 500 Kč
 - [Výměna uložení nápravnice a ramen](https://jasservis.cz/vymena-ulozeni-napravnice-a-ramen/): originálními přípravky VAS, u vybraných vozidel bez demontáže nápravy, cena podle rozsahu prací
 
