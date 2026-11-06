@@ -1,0 +1,43 @@
+/* Homepage slogan: static, compact and scoped to the new introduction. */
+body.home #post-203 .home-slogan {
+  box-sizing: border-box;
+  margin: 0 0 clamp(20px, 3vw, 32px);
+  padding: clamp(14px, 2vw, 22px) clamp(12px, 2.5vw, 28px);
+  border: 0;
+  border-radius: var(--workshop-radius, 6px);
+  background: #252D34;
+  color: #F5F7F9;
+  text-align: center;
+  box-shadow: none;
+}
+body.home #post-203 .home-slogan .home-slogan__title {
+  margin: 0;
+  padding: 0;
+  color: #F5F7F9;
+  font-family: inherit;
+  font-size: clamp(1.375rem, 3vw, 2rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -.01em;
+  text-transform: none;
+  text-wrap: balance;
+}
+body.home #post-203 .home-slogan__title > span { display: block; }
+body.home #post-203 .home-slogan__title > .home-slogan__accent { color: var(--js-orange); }
+body.home #post-203 .home-slogan .home-slogan__description {
+  max-width: 84ch;
+  margin: 8px auto 0;
+  padding: 0;
+  color: #F5F7F9;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+/* The integrated slogan replaces the hero as the cards' immediate neighbour. */
+@media(min-width:768px) and (max-width:979px){
+ body.home #post-203 .home-slogan+.home-service-cards {
+  top:0;
+  margin-bottom:clamp(36px,5vw,64px);
+ }
+}

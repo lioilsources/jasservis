@@ -1,0 +1,104 @@
+/* Scoped homepage proposal; repeated ID overrides the legacy local cascade. */
+body.home #post-203#post-203#post-203 .home-offered-services {
+  --lower-surface:#303a43;
+  --lower-card:#252d34;
+  --lower-accent:var(--js-orange);
+  background:var(--lower-surface);
+  color:#f5f7f9;
+}
+body.home #post-203#post-203#post-203 .home-offered-services :is(h2,h3,.title-box_primary) {color:#f5f7f9!important;}
+body.home #post-203#post-203#post-203 .home-offered-services .home-service-index details {
+  background:var(--lower-card);
+  border:2px solid var(--lower-accent)!important;
+  border-radius:8px;
+}
+body.home #post-203#post-203#post-203 .home-offered-services .home-service-index details>summary {
+  background:var(--lower-accent)!important;
+  color:#252d34!important;
+  border-radius:6px;
+  transition:background-color 180ms ease;
+}
+body.home #post-203#post-203#post-203 .home-offered-services .home-service-index details>summary :is(.sluzby-sloupec,h3),
+body.home #post-203#post-203#post-203 .home-offered-services .home-service-index details>summary::after {color:#252d34!important;}
+body.home #post-203#post-203#post-203 .home-offered-services .home-service-index details[open]>summary {
+  background:var(--lower-surface)!important;
+  color:#f5f7f9!important;
+  border-bottom:1px solid var(--lower-accent);
+  border-radius:6px 6px 0 0;
+}
+body.home #post-203#post-203#post-203 .home-offered-services .home-service-index details[open]>summary :is(.sluzby-sloupec,h3) {color:#f5f7f9!important;}
+body.home #post-203#post-203#post-203 .home-offered-services .home-service-index details[open]>summary::after {color:var(--lower-accent)!important;}
+body.home #post-203#post-203#post-203 .home-offered-services .home-service-index details ul {background:var(--lower-surface)!important;color:#f5f7f9!important;}
+body.home #post-203#post-203#post-203 .home-offered-services .home-service-index a {color:#f5f7f9!important;text-decoration:underline;text-underline-offset:3px;}
+body.home #post-203#post-203#post-203 .home-offered-services :is(.home-service-brands ul,.home-service-general) {grid-auto-rows:1fr;}
+body.home #post-203#post-203#post-203 .home-offered-services :is(.home-service-brands,.home-service-general) a[href] {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-sizing:border-box;
+  min-height:96px;
+  height:100%;
+  background:var(--lower-card)!important;
+  color:#f5f7f9!important;
+  border:2px solid var(--lower-accent)!important;
+  border-radius:8px;
+  text-align:center;
+  text-decoration:none;
+  transition:background-color 180ms ease,border-color 180ms ease;
+}
+body.home #post-203#post-203#post-203 .home-offered-services :is(a,summary):focus {outline:3px solid #f5f7f9!important;outline-offset:-6px!important;}
+body.home #post-203#post-203#post-203 .home-offered-services .home-service-index details:not([open])>summary:focus {outline-color:#252d34!important;}
+@media(hover:hover) and (pointer:fine) {
+  body.home #post-203#post-203#post-203 .home-offered-services :is(.home-service-brands,.home-service-general) a[href]:hover,
+  body.home #post-203#post-203#post-203 .home-offered-services .home-service-index details[open]>summary:hover {background:#303a43!important;border-color:var(--js-orange)!important;color:#f5f7f9!important;}
+  body.home #post-203#post-203#post-203 .home-offered-services .home-service-index details:not([open])>summary:hover {background:var(--js-orange)!important;}
+  body.home #post-203#post-203#post-203 .home-offered-services .home-service-index a:hover {text-decoration-thickness:2px;}
+}
+@media(prefers-reduced-motion:reduce) {
+  body.home #post-203#post-203#post-203 .home-offered-services * {transition:none!important;}
+}
+
+/* The approved main cards retain their existing motion and geometry. */
+body.home #post-203#post-203#post-203 .home-service-cards .service-box.style_1 {
+  background:#252d34;
+  color:#f5f7f9;
+  border:2px solid var(--js-orange)!important;
+  border-radius:8px;
+}
+body.home #post-203#post-203#post-203 .home-service-cards .service-box :is(.title,.service-card-subtitle,.service-box_txt) {color:#f5f7f9!important;}
+body.home #post-203#post-203#post-203 .home-service-cards .service-box.style_1::after {box-shadow:inset 0 0 0 1px var(--js-orange),0 10px 22px rgb(0 0 0 / .16);}
+body.home #post-203#post-203#post-203 .home-service-cards a.btn {background:transparent!important;color:#f5f7f9!important;border:2px solid var(--js-orange)!important;border-radius:8px;}
+body.home #post-203#post-203#post-203 .home-service-cards a.btn:focus {background:var(--js-orange)!important;color:#252d34!important;outline:3px solid #f5f7f9!important;outline-offset:3px!important;}
+@media(hover:hover) and (pointer:fine) {
+  body.home #post-203#post-203#post-203 .home-service-cards a.btn:hover {background:var(--js-orange)!important;color:#252d34!important;border-color:var(--js-orange)!important;}
+}
+/* Navigation colors are scoped to the five homepage proposals. */
+body.home :is(.header,.mobile-nav-panel) #topnav#topnav>li>:is(a,button) {color:var(--js-orange)!important;}
+body.home :is(.header,.mobile-nav-panel) #topnav#topnav>li>:is(a,button):is(:hover,:focus,[aria-expanded="true"]),
+body.home :is(.header,.mobile-nav-panel) #topnav#topnav>li.sfHover>:is(a,button) {background:#fff!important;color:#000!important;}
+body.home :is(.header,.mobile-nav-panel) #topnav#topnav>li>:is(a,button):focus {outline:3px solid var(--js-orange)!important;outline-offset:-3px!important;}
+body.home :is(.header,.mobile-nav-panel) #topnav#topnav>li>:is(a,button)::after {color:inherit!important;border-color:currentColor!important;}
+
+body.home :is(.header,.mobile-nav-panel) #topnav#topnav>li:is(.is-open,:focus-within)>:is(a,button) {background:#fff!important;color:#000!important;}
+@media(hover:hover) and (pointer:fine) {
+ body.home :is(.header,.mobile-nav-panel) #topnav#topnav>li:hover>:is(a,button) {background:#fff!important;color:#000!important;}
+}
+@media(prefers-reduced-motion:reduce) {
+ body.home :is(.header,.mobile-nav-panel) #topnav#topnav * {transition:none!important;}
+}
+
+/* Separate the graphite service surface from its darker surrounding section. */
+body.home .content-holder {background:#252d34!important;}
+
+/* Exact solid brand orange, including interactive states. */
+body.home #post-203#post-203#post-203 :is(.home-offered-services,.home-service-cards) :is(details,summary,.service-box.style_1,a) {
+ filter:none!important;
+ opacity:1!important;
+ mix-blend-mode:normal!important;
+ background-image:none!important;
+}
+body.home #post-203#post-203#post-203 .home-offered-services .home-service-index summary .sluzby-sloupec {font-weight:700!important;}
+body.home #post-203#post-203#post-203 .home-service-cards .service-card-subtitle {font-size:1.1875rem!important;line-height:1.5;}
+body.home #post-203#post-203#post-203 .home-service-cards .service-box_txt {font-size:1.0625rem;line-height:1.6;}
+body.home #post-203#post-203#post-203 .home-service-cards a.btn {font-size:1rem;}
+body.home #post-203#post-203#post-203 .home-offered-services :is(.home-service-brands,.home-service-general) a[href] {font-size:1.0625rem;}
