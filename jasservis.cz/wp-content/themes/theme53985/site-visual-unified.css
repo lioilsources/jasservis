@@ -1,0 +1,175 @@
+/* Explicit component inventory; language/cookie disclosures and warning lights are excluded. */
+:root {--js-orange:#FF6B1A;}
+body.js-visual-preview {--js-brand:var(--js-orange);--js-accent:var(--js-orange);--workshop-accent:var(--js-orange);}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) :is(details.rozbalovaci,details.vw-accordion,details.driver-topic,details.wl-info-category,details.oil-section,details.washer-section,details.emissions-section,details.fuels-section,details.service-section,details.coolant-section,details.brake-fluid-section,details.wl-infotainment-section) {border:2px solid var(--js-orange)!important;border-radius:8px;background:#303A43;color:#F5F7F9;}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) :is(details.rozbalovaci,details.vw-accordion,details.driver-topic,details.wl-info-category,details.oil-section,details.washer-section,details.emissions-section,details.fuels-section,details.service-section,details.coolant-section,details.brake-fluid-section,details.wl-infotainment-section)>summary {background:var(--js-orange)!important;background-image:none!important;color:#252D34!important;opacity:1!important;filter:none!important;padding:18px 48px 18px 20px;min-height:60px;box-sizing:border-box;font-size:clamp(18px,1.6vw,20px);font-weight:700;line-height:1.45;}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) :is(details.rozbalovaci,details.vw-accordion,details.driver-topic,details.wl-info-category,details.oil-section,details.washer-section,details.emissions-section,details.fuels-section,details.service-section,details.coolant-section,details.brake-fluid-section,details.wl-infotainment-section)>summary :is(h2,h3,h4,.driver-topic-title) {color:inherit!important;font-size:inherit!important;font-weight:700!important;}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) :is(details.rozbalovaci,details.vw-accordion,details.driver-topic,details.wl-info-category,details.oil-section,details.washer-section,details.emissions-section,details.fuels-section,details.service-section,details.coolant-section,details.brake-fluid-section,details.wl-infotainment-section)[open]>summary {background:#303A43!important;color:#F5F7F9!important;border-bottom:1px solid var(--js-orange);}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) :is(details.rozbalovaci,details.vw-accordion,details.driver-topic,details.wl-info-category,details.oil-section,details.washer-section,details.emissions-section,details.fuels-section,details.service-section,details.coolant-section,details.brake-fluid-section,details.wl-infotainment-section)>summary::after {color:inherit!important;}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) .rozbalovaci__obsah {background:#303A43!important;color:#F5F7F9!important;padding:20px;}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) .rozbalovaci__obsah :is(p,li,h2,h3,h4,strong,figcaption) {color:#F5F7F9!important;}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) .rozbalovaci__obsah a {color:#F5F7F9!important;text-decoration:underline;text-decoration-color:var(--js-orange);text-underline-offset:3px;}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) figure>figcaption,body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) .wp-caption-text {display:block;position:relative;background:#252D34!important;color:#F5F7F9!important;opacity:1!important;filter:none!important;font-size:clamp(16px,1.2vw,18px)!important;line-height:1.6!important;padding:16px;margin:0;visibility:visible!important;}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) figure>figcaption :is(strong,b,h3,h4) {color:inherit!important;font-weight:700!important;}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) .ev-brakes-main-photo>figcaption {font-weight:600;}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) :is(details.rozbalovaci,details.vw-accordion,details.driver-topic,details.wl-info-category,details.oil-section,details.washer-section,details.emissions-section,details.fuels-section,details.service-section,details.coolant-section,details.brake-fluid-section,details.wl-infotainment-section)>summary:focus {outline:3px solid #252D34!important;outline-offset:-5px;}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) :is(details.rozbalovaci,details.vw-accordion,details.driver-topic,details.wl-info-category,details.oil-section,details.washer-section,details.emissions-section,details.fuels-section,details.service-section,details.coolant-section,details.brake-fluid-section,details.wl-infotainment-section)[open]>summary:focus {outline-color:#F5F7F9!important;}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) :is(.btn,.header-driver-advice) {border-color:var(--js-orange)!important;}
+body.js-visual-preview .header .submenu-toggle {color:var(--js-orange);}
+body.js-visual-preview #back-top>a {background:var(--js-orange)!important;color:#252D34!important;}
+@media(prefers-reduced-motion:reduce){body.js-visual-preview figure>figcaption {animation:none!important;transition:none!important;}}
+
+/* Canonicalize reviewed legacy brand selectors; semantic warning colors excluded. */
+@media  (max-width: 1199px) {body.js-visual-preview .header .nav__primary .navigation-toggle{background:var(--js-orange)!important}}
+@media  (max-width:1199px) {body.js-visual-preview .header .nav__primary #topnav > li > .submenu-toggle:focus-visible,body.js-visual-preview .header .nav__primary .navigation-toggle:focus-visible{outline:3px solid var(--js-orange)!important}}
+body.js-visual-preview #back-top-wrapper p#back-top a span{background-color:var(--js-orange)!important}
+body.js-visual-preview #cf-cookie-banner button,body.js-visual-preview #cookie-settings,body.js-visual-preview .cookie-embed-placeholder button{border:1px solid var(--js-orange)!important}
+body.js-visual-preview #cf-cookie-banner button[data-cookie-choice="accept"]{background:var(--js-orange)!important}
+body.js-visual-preview #sidebar .widget_categories ul li a:hover,body.js-visual-preview #sidebar .widget_archive ul li a:hover,body.js-visual-preview #sidebar .widget_nav_menu ul li a:hover,body.js-visual-preview #sidebar .widget_meta ul li a:hover,body.js-visual-preview #sidebar .widget_meta ul li a:hover,body.js-visual-preview #sidebar .widget_pages ul li a:hover,body.js-visual-preview #sidebar .widget_recent_comments ul li a:hover,body.js-visual-preview #sidebar .widget_recent_entries ul li a:hover{color:var(--js-orange)!important}
+body.js-visual-preview #sidebar .widget_categories ul li:before,body.js-visual-preview #sidebar .widget_archive ul li:before,body.js-visual-preview #sidebar .widget_nav_menu ul li:before,body.js-visual-preview #sidebar .widget_meta ul li:before,body.js-visual-preview #sidebar .widget_meta ul li:before,body.js-visual-preview #sidebar .widget_pages ul li:before,body.js-visual-preview #sidebar .widget_recent_comments ul li:before,body.js-visual-preview #sidebar .widget_recent_entries ul li:before{color:var(--js-orange)!important}
+body.js-visual-preview #topnav .service-group-title{color:var(--js-orange)!important}
+body.js-visual-preview .btn-link{color:var(--js-orange)!important}
+body.js-visual-preview .btn-primary{background-image:-moz-linear-gradient(top,var(--js-orange),#f3a439)!important;background-image:-webkit-gradient(linear,0 0,0 100%,from(var(--js-orange)),to(#f3a439))!important;background-image:-webkit-linear-gradient(top,var(--js-orange),#f3a439)!important;background-image:-o-linear-gradient(top,var(--js-orange),#f3a439)!important;background-image:linear-gradient(to bottom,var(--js-orange),#f3a439)!important}
+body.js-visual-preview .content-holder .title-header{color:var(--js-orange)!important}
+body.js-visual-preview .content_box.box_1 a.btn-primary:focus{background:var(--js-orange)!important;border-color:var(--js-orange)!important}
+body.js-visual-preview .content_box.box_1 a.btn-primary:hover{color:var(--js-orange)!important}
+body.js-visual-preview .footer .copyright .footer-nav ul li a:hover{color:var(--js-orange)!important}
+body.js-visual-preview .footer .copyright .footer-nav ul li.current-menu-item a{color:var(--js-orange)!important}
+body.js-visual-preview .footer .copyright a:hover{color:var(--js-orange)!important}
+body.js-visual-preview .footer .footer-widgets .social-nets-wrapper ul li a:before{color:var(--js-orange)!important}
+body.js-visual-preview .footer .footer-widgets .textwidget b:before{color:var(--js-orange)!important}
+body.js-visual-preview .footer .footer-widgets .textwidget em:before{color:var(--js-orange)!important}
+body.js-visual-preview .footer .footer-widgets .textwidget i:before{color:var(--js-orange)!important}
+body.js-visual-preview .footer .footer-widgets a:hover,body.js-visual-preview .footer .footer-widgets a:focus-visible{color:var(--js-orange)!important}
+body.js-visual-preview .footer .footer-widgets a:hover{color:var(--js-orange)!important}
+body.js-visual-preview .footer .footer-widgets a:is(:hover,body.js-visual-preview :focus,body.js-visual-preview :focus-visible,body.js-visual-preview :active),body.js-visual-preview .footer .footer-widgets ul li a:is(:hover,body.js-visual-preview :focus,body.js-visual-preview :focus-visible,body.js-visual-preview :active){color:var(--js-orange)!important}
+body.js-visual-preview .footer .footer-widgets ul li a:hover{color:var(--js-orange)!important}
+body.js-visual-preview .header .header-driver-advice:hover,body.js-visual-preview .header .header-driver-advice:focus-visible{background:var(--js-orange)!important;border-color:var(--js-orange)
+!important}
+body.js-visual-preview .header .header_block_1 #text-8 > .textwidget > b a:hover{background:var(--js-orange)!important}
+body.js-visual-preview .header .header_block_1 #text-8 > .textwidget > b{background:var(--js-orange)!important}
+body.js-visual-preview .header .header_block_1 .header_widget_1 .textwidget b:before{color:var(--js-orange)!important}
+body.js-visual-preview .header .header_block_1 .header_widget_1 h4{color:var(--js-orange)!important}
+body.js-visual-preview .header .header_block_1 .header_widget_2 .textwidget b{background:var(--js-orange)!important}
+body.js-visual-preview .header .header_block_1 .header_widget_2 h4{color:var(--js-orange)!important}
+body.js-visual-preview .header .language-switcher .language-mobile>summary{color:var(--js-orange)!important}
+body.js-visual-preview .header .nav__primary #topnav .sub-menu{border-top:2px solid var(--js-orange)!important}
+body.js-visual-preview .header .nav__primary #topnav > li.is-open > .submenu-toggle,body.js-visual-preview .header .nav__primary #topnav > li.is-open > .reviews-toggle{color:var(--js-orange)!important}
+body.js-visual-preview .header .nav__primary #topnav > li.is-open{box-shadow:inset 0 -2px var(--js-orange)!important}
+body.js-visual-preview .header .nav__primary #topnav li li a:hover{color:var(--js-orange)!important}
+body.js-visual-preview .header .nav__primary .sf-menu > li > a:before{background:var(--js-orange)!important}
+body.js-visual-preview .header .nav__primary .sf-menu li li > a:hover,body.js-visual-preview .header .nav__primary .sf-menu li li.sfHover > a,body.js-visual-preview .header .nav__primary .sf-menu li li.current-menu-item > a,body.js-visual-preview .header .nav__primary .sf-menu li li.current_page_item > a{color:var(--js-orange)!important}
+body.js-visual-preview .header .tel a:hover{color:var(--js-orange)!important}
+body.js-visual-preview .header a:focus-visible,body.js-visual-preview #topnav button:focus-visible,body.js-visual-preview .navigation-toggle:focus-visible{outline:3px solid var(--js-orange)!important}
+body.js-visual-preview .list.arrow-list ul li a:before{color:var(--js-orange)!important}
+body.js-visual-preview .list.arrow-list ul li a:focus:before{color:var(--js-orange)!important}
+body.js-visual-preview .list.arrow-list ul li a:hover{color:var(--js-orange)!important}
+body.js-visual-preview .list.arrow-list ul li:before{color:var(--js-orange)!important}
+body.js-visual-preview .nav .dropdown-toggle .caret{border-top-color:var(--js-orange)!important;border-bottom-color:var(--js-orange)!important}
+body.js-visual-preview .nav-list > .active > a,body.js-visual-preview .nav-list > .active > a:hover,body.js-visual-preview .nav-list > .active > a:focus{background-color:var(--js-orange)!important}
+body.js-visual-preview .nav-pills > .active > a,body.js-visual-preview .nav-pills > .active > a:hover,body.js-visual-preview .nav-pills > .active > a:focus{background-color:var(--js-orange)!important}
+body.js-visual-preview .parallax-slider .parallaxNextBtn:hover:before{color:var(--js-orange)!important}
+body.js-visual-preview .parallax-slider .parallaxPrevBtn:hover:before{color:var(--js-orange)!important}
+body.js-visual-preview .service-box.style_1:before{background:var(--js-orange)!important}
+body.js-visual-preview .service-box.style_2 h2{color:var(--js-orange)!important}
+body.js-visual-preview .service-box.style_3 h2{color:var(--js-orange)!important}
+body.js-visual-preview .service-box.style_4 h2{color:var(--js-orange)!important}
+body.js-visual-preview .service-box.style_5:before{background:var(--js-orange)!important}
+body.js-visual-preview .service-box.style_6 h2{color:var(--js-orange)!important}
+body.js-visual-preview .service-box.style_7 h2{color:var(--js-orange)!important}
+body.js-visual-preview .service-contact-card__phone:focus-visible{outline:3px solid var(--js-orange)!important}
+body.js-visual-preview .title-section h1{color:var(--js-orange)!important}
+body.js-visual-preview .title-section ul li a:focus{color:var(--js-orange)!important}
+body.js-visual-preview .title-section ul li a{color:var(--js-orange)!important}
+body.js-visual-preview .title-section ul li.divider:after{color:var(--js-orange)!important}
+body.js-visual-preview .title-section ul li{color:var(--js-orange)!important}
+body.js-visual-preview :root{--js-brand:var(--js-orange)!important}
+body.js-visual-preview a.btn-primary:focus{background:var(--js-orange)!important;border-color:var(--js-orange)!important}
+body.js-visual-preview a.btn-primary{background:var(--js-orange)!important;border:1px solid var(--js-orange)!important}
+body.js-visual-preview.home #post-203{--workshop-accent:var(--js-orange)!important}
+body.js-visual-preview.home #post-203{--workshop-card-focus:var(--js-orange)!important}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) details.rozbalovaci>summary::after {color:inherit!important;border-color:currentColor!important;}
+
+body.js-visual-preview .content-holder {background:#252D34;color:#F5F7F9;}
+body.js-visual-preview :is(.cena-blok,.kontakt-karta) {border-color:var(--js-orange)!important;}
+body.js-visual-preview :is(.tlacitko-akce,.header-driver-advice,.header [data-booking-panel]) {background:var(--js-orange)!important;color:#252D34!important;border-color:var(--js-orange)!important;background-image:none!important;}
+body.js-visual-preview :is(.site-service-contact__phone,.footer .icon,.header .icon) {color:var(--js-orange)!important;}
+/* Advice tables remain light reading surfaces; preserve semantic cell fills. */
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) .driver-topic-body td {color:#252D34!important;}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) .driver-topic-body th {background:#303A43!important;color:#F5F7F9!important;}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) .driver-topic-body :is(td,th) :is(strong,b,a) {color:inherit!important;}
+body.js-visual-preview :is(.header,.mobile-nav-panel) #topnav#topnav>li>:is(a,button) {color:var(--js-orange)!important;}
+body.js-visual-preview :is(.header,.mobile-nav-panel) #topnav#topnav>li:is(.is-open,:focus-within)>:is(a,button),
+body.js-visual-preview :is(.header,.mobile-nav-panel) #topnav#topnav>li>:is(a,button):focus {background:#fff!important;color:#000!important;outline-color:#000!important;}
+@media(hover:hover) and (pointer:fine){body.js-visual-preview :is(.header,.mobile-nav-panel) #topnav#topnav>li:hover>:is(a,button) {background:#fff!important;color:#000!important;}}
+/* Keep the original light reading bodies inside driver advice disclosures. */
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) .driver-topic-body,
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) .driver-topic-body details>div {background:#F5F7F9!important;color:#252D34!important;}
+/* Professional article titles: the original text and heading level are unchanged. */
+body.js-visual-preview .content-holder .title-section .title-header {
+ color:var(--js-orange)!important;
+ font-size:clamp(26px,2.4vw + 12px,42px)!important;
+ font-weight:600!important;
+ line-height:1.22!important;
+ margin:0!important;
+ overflow-wrap:break-word;
+ text-wrap:balance;
+}
+body.js-visual-preview .content-holder .title-section {background:#252D34!important;}
+/* Existing service CTA component only; no generic button override. */
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) a.btn {background:#252D34!important;background-image:none!important;color:#F5F7F9!important;border:2px solid var(--js-orange)!important;min-height:44px;box-sizing:border-box;font-size:1rem;}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) a.btn:focus {background:var(--js-orange)!important;color:#252D34!important;outline:3px solid #F5F7F9!important;outline-offset:3px;}
+@media(hover:hover)and(pointer:fine){body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) a.btn:hover {background:var(--js-orange)!important;color:#252D34!important;}}
+/* One pointer-entry nudge. Hover belongs to the tile, not its descendants. */
+@keyframes js-tile-nudge {
+  0%,100% {transform:translateX(0);}
+  20% {transform:translateX(-2px);}
+  40% {transform:translateX(2px);}
+  60% {transform:translateX(-1px);}
+  80% {transform:translateX(1px);}
+}
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) :is(.home-service-cards .service-box.style_1,.home-service-brands a,.home-service-general a) {transform:none;}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+ body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) :is(.home-service-cards .service-box.style_1,.home-service-brands a,.home-service-general a):hover,
+ body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) :is(details.home-service-group,details.rozbalovaci,details.vw-accordion,details.driver-topic,details.wl-info-category,details.oil-section,details.washer-section,details.emissions-section,details.fuels-section,details.service-section,details.coolant-section,details.brake-fluid-section,details.wl-infotainment-section)>summary:hover {
+  animation:js-tile-nudge 250ms ease-in-out 1;
+  border-color:var(--js-orange)!important;
+  box-shadow:0 0 0 1px var(--js-orange),0 0 8px rgb(255 107 26 / .28)!important;
+ }
+}
+@media(prefers-reduced-motion:reduce) {
+ body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) :is(.home-service-cards .service-box.style_1,.home-service-brands a,.home-service-general a,details>summary) {animation:none!important;}
+}
+/* Accessible header actions: emoji are decorative; the original targets remain. */
+body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget :is(a[data-booking-panel],a.header-driver-advice) {
+ align-items:center;justify-content:center;gap:8px;box-sizing:border-box;
+ min-height:48px;min-width:0;max-width:100%;height:auto;padding:12px 16px;
+ background:#FF6B1A!important;background-image:none!important;color:#252D34!important;
+ border:2px solid #FF6B1A!important;border-radius:8px;
+ font-size:16px!important;font-weight:700!important;line-height:1.3;text-transform:uppercase;
+ white-space:normal;text-align:center;text-decoration:none;
+}
+body.js-visual-preview .header .header-action-emoji {flex:0 0 auto;font-size:1.2em;line-height:1;}
+body.js-visual-preview .header .header-action-label {min-width:0;overflow-wrap:break-word;}
+body.js-visual-preview .header .booking-label-default {display:inline!important;}
+body.js-visual-preview .header .booking-label-landscape {display:none!important;}
+body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget :is(a[data-booking-panel],a.header-driver-advice):focus {outline:3px solid #252D34!important;outline-offset:3px!important;}
+@media(min-width:1200px){
+ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget :is(b>a[data-booking-panel],a.header-driver-advice){display:inline-flex;vertical-align:middle;}
+}
+@media(max-width:479px) and (min-height:501px){
+ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget{grid-template-columns:minmax(0,1fr);}
+ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 .mobile-booking-trigger{grid-column:1;grid-row:1;}
+ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 .header-driver-advice{grid-column:1;grid-row:2;}
+ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 .tel{grid-column:1;grid-row:3;}
+}
+@media(max-width:479px) and (min-height:501px){
+ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget :is(a[data-booking-panel],a.header-driver-advice){min-height:48px;}
+ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget{grid-template-rows:repeat(2,minmax(48px,1fr)) auto;}
+}
+/* Let the desktop action row wrap before it can collide with contact details. */
+@media(min-width:1200px) and (max-width:1350px){
+ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget {display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:8px;}
+ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget>b {display:flex;}
+}
+body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget :is(a[data-booking-panel],a.header-driver-advice):focus {outline-offset:-6px!important;}
