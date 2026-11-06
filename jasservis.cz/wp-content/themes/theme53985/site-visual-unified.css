@@ -173,3 +173,10 @@ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #t
  body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget>b {display:flex;}
 }
 body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget :is(a[data-booking-panel],a.header-driver-advice):focus {outline-offset:-6px!important;}
+/* PR #123: remove remaining legacy orange variants on the homepage. */
+body.js-visual-preview.home .parallax-slider #mainCaptionHolder .slider_caption em a::before {color:var(--js-orange)!important;}
+body.js-visual-preview.home #post-203#post-203#post-203 .home-service-cards .service-box.style_1::after {background:transparent!important;background-image:none!important;filter:none!important;}
+body.js-visual-preview.home #cf-cookie-banner a {color:var(--js-orange)!important;}
+body.js-visual-preview.home #cf-cookie-banner :is(a,input):focus-visible {outline-color:var(--js-orange)!important;}
+body.js-visual-preview.home .parallax-slider #mainCaptionHolder .slider_caption em a:is(:hover,:focus)::before {color:inherit!important;}
+body.js-visual-preview.home .parallax-slider #mainCaptionHolder .slider_caption em a:is(:hover,:focus) {background:var(--js-orange)!important;color:#252D34!important;border-color:var(--js-orange)!important;}
