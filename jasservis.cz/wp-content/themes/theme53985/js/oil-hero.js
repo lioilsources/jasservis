@@ -10,9 +10,10 @@
  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
  var fine=window.matchMedia('(hover: hover) and (pointer: fine)');
  var lang=hero.getAttribute('data-oil-lang');
- // Test-only A/B selection; all photographs, captions and destinations stay fixed.
- var choice=new URLSearchParams(window.location.search).get('oil');
- var flowSuffix=choice==='a'?'-a':choice==='b'?'-b':choice==='original'?'':'-c';
+ // Linux WebKit ends these clips early. Use the original photo on Safari/WebKit,
+ // including all iOS browsers; do not hide a decoder failure with seek/replay hacks.
+ var staticOil=/AppleWebKit\//.test(navigator.userAgent)&&!/(?:Chrome|Chromium|Edg|OPR|SamsungBrowser)\//.test(navigator.userAgent);
+ hero.setAttribute('data-oil-playback',staticOil?'static-webkit':'native-c');
  var labels={
   cs:['Pozastavit animaci a střídání textů','Pokračovat v animaci a střídání textů','Automatika vypnuta: omezený pohyb'],
   en:['Pause animation and text rotation','Resume animation and text rotation','Automatic motion off: reduced motion'],
@@ -20,31 +21,27 @@
   uk:['Призупинити анімацію та зміну текстів','Продовжити анімацію та зміну текстів','Автоматичний рух вимкнено: зменшення руху'],
   vi:['Tạm dừng hiệu ứng và chuyển nội dung','Tiếp tục hiệu ứng và chuyển nội dung','Tắt hiệu ứng tự động: giảm chuyển động']
  }[lang];
+ if(staticOil){
+  var textLabels={cs:['Pozastavit střídání textů','Pokračovat ve střídání textů'],en:['Pause text rotation','Resume text rotation'],de:['Textwechsel pausieren','Textwechsel fortsetzen'],uk:['Призупинити зміну текстів','Продовжити зміну текстів'],vi:['Tạm dừng chuyển nội dung','Tiếp tục chuyển nội dung']}[lang];
+  labels[0]=textLabels[0];labels[1]=textLabels[1];
+ }
  var index=0,timer=null,paused=false,focused=false,hovered=false,visible=false,loaded=false;
- var loading=false,mediaFailed=false,objectUrl=null,loadVersion=0,controller=null,formats=[];
+ var mediaFailed=false;
  var paintReady=false,photo=hero.querySelector('img');
  function clearFlow() {
-  ++loadVersion;if(controller) controller.abort();controller=null;
-  loading=false;loaded=false;mediaFailed=false;formats=[];
+  loaded=false;mediaFailed=false;
   video.autoplay=false;video.pause();video.classList.remove('is-playing');
   video.removeAttribute('src');video.replaceChildren();video.load();
-  if(objectUrl) URL.revokeObjectURL(objectUrl);objectUrl=null;
  }
- function nextSource(version) {
-  if(version!==loadVersion) return;
-  if(!formats.length){loading=false;mediaFailed=true;video.classList.remove('is-playing');return;}
-  var format=formats.shift();
-  var source=video.getAttribute('data-'+format).replace(/oil-flow\.(webm|mp4)$/,'oil-flow'+flowSuffix+'.$1');
-  // Buffer the short finite clip once to avoid HTTP-range loop seeks
-  // that stall the Linux WebKit media backend; the original photograph stays visible.
-  fetch(source,{signal:controller.signal,credentials:'same-origin'}).then(function(response){
-   if(!response.ok) throw new Error('Oil video unavailable');return response.blob();
-  }).then(function(blob){
-   if(version!==loadVersion) return;
-   if(objectUrl) URL.revokeObjectURL(objectUrl);
-   objectUrl=URL.createObjectURL(blob);video.muted=true;video.defaultMuted=true;
-   video.src=objectUrl;video.load();loaded=true;loading=false;run();
-  }).catch(function(error){if(version===loadVersion&&error.name!=='AbortError') nextSource(version);});
+ function loadFlow(){
+  video.muted=true;video.defaultMuted=true;
+  ['webm','mp4'].forEach(function(format){
+   var source=document.createElement('source');
+   source.src=video.getAttribute('data-'+format);
+   source.type=format==='webm'?'video/webm; codecs="vp9"':'video/mp4';
+   video.appendChild(source);
+  });
+  loaded=true;video.load();
  }
  function fit() {
   var w=Math.max(hero.clientWidth,hero.clientHeight*1980/1312);
@@ -68,17 +65,13 @@
   pause.setAttribute('aria-label',reduced.matches?labels[2]:(paused?labels[1]:labels[0]));
   pause.setAttribute('aria-pressed',String(paused||reduced.matches));
   icon.textContent='';
-  if (moving) {
-   video.classList.toggle('oil-hero__flow--contour',flowSuffix==='-c');
+  if (moving&&!staticOil&&!mediaFailed) {
+   video.classList.add('oil-hero__flow--contour');
    video.autoplay=true;
-   if (!loaded&&!loading&&!mediaFailed) {
-    loading=true;controller=new AbortController();
-    formats=['webm','mp4'].filter(function(format){return video.canPlayType(format==='webm'?'video/webm; codecs="vp9"':'video/mp4');});
-    nextSource(++loadVersion);
-   }
-   if(loaded){var playing=video.play();if(playing) playing.catch(function(){video.classList.remove('is-playing');});}
+   if(!loaded) loadFlow();
+   var playing=video.play();if(playing) playing.catch(function(){video.classList.remove('is-playing');});
   } else {video.autoplay=false;video.pause();}
-  if (reduced.matches&&(loaded||loading)) clearFlow();
+  if (reduced.matches&&loaded) clearFlow();
  }
  hero.querySelector('[data-oil-prev]').addEventListener('click',function(){show(index-1,true);run();});
  hero.querySelector('[data-oil-next]').addEventListener('click',function(){show(index+1,true);run();});
@@ -88,7 +81,7 @@
  hero.addEventListener('pointerenter',function(){if(fine.matches){hovered=true;run();}});
  hero.addEventListener('pointerleave',function(){hovered=false;run();});
  video.addEventListener('playing',function(){video.classList.add('is-playing');});
- video.addEventListener('error',function(){video.classList.remove('is-playing');if(loaded){loaded=false;loading=true;nextSource(loadVersion);}});
+ video.addEventListener('error',function(){mediaFailed=true;video.classList.remove('is-playing');video.pause();});
  document.addEventListener('visibilitychange',run);
  window.addEventListener('pagehide',clearFlow);
  window.addEventListener('pageshow',run);
