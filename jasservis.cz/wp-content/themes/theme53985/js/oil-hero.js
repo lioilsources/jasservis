@@ -10,6 +10,9 @@
  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
  var fine=window.matchMedia('(hover: hover) and (pointer: fine)');
  var lang=hero.getAttribute('data-oil-lang');
+ // Test-only A/B selection; all photographs, captions and destinations stay fixed.
+ var choice=new URLSearchParams(window.location.search).get('oil');
+ var flowSuffix=choice==='b'?'-b':choice==='original'?'':'-a';
  var labels={
   cs:['Pozastavit animaci a střídání textů','Pokračovat v animaci a střídání textů','Automatika vypnuta: omezený pohyb'],
   en:['Pause animation and text rotation','Resume animation and text rotation','Automatic motion off: reduced motion'],
@@ -18,7 +21,31 @@
   vi:['Tạm dừng hiệu ứng và chuyển nội dung','Tiếp tục hiệu ứng và chuyển nội dung','Tắt hiệu ứng tự động: giảm chuyển động']
  }[lang];
  var index=0,timer=null,paused=false,focused=false,hovered=false,visible=false,loaded=false;
+ var loading=false,mediaFailed=false,objectUrl=null,loadVersion=0,controller=null,formats=[];
  var paintReady=false,photo=hero.querySelector('img');
+ function clearFlow() {
+  ++loadVersion;if(controller) controller.abort();controller=null;
+  loading=false;loaded=false;mediaFailed=false;formats=[];
+  video.autoplay=false;video.pause();video.classList.remove('is-playing');
+  video.removeAttribute('src');video.replaceChildren();video.load();
+  if(objectUrl) URL.revokeObjectURL(objectUrl);objectUrl=null;
+ }
+ function nextSource(version) {
+  if(version!==loadVersion) return;
+  if(!formats.length){loading=false;mediaFailed=true;video.classList.remove('is-playing');return;}
+  var format=formats.shift();
+  var source=video.getAttribute('data-'+format).replace(/oil-flow\.(webm|mp4)$/,'oil-flow'+flowSuffix+'.$1');
+  // These finite clips are < 220 kB. Buffer once to avoid HTTP-range loop seeks
+  // that stall the Linux WebKit media backend; the original photograph stays visible.
+  fetch(source,{signal:controller.signal,credentials:'same-origin'}).then(function(response){
+   if(!response.ok) throw new Error('Oil video unavailable');return response.blob();
+  }).then(function(blob){
+   if(version!==loadVersion) return;
+   if(objectUrl) URL.revokeObjectURL(objectUrl);
+   objectUrl=URL.createObjectURL(blob);video.muted=true;video.defaultMuted=true;
+   video.src=objectUrl;video.load();loaded=true;loading=false;run();
+  }).catch(function(error){if(version===loadVersion&&error.name!=='AbortError') nextSource(version);});
+ }
  function fit() {
   var w=Math.max(hero.clientWidth,hero.clientHeight*1980/1312);
   frame.style.width=w+'px';frame.style.height=(w*1312/1980)+'px';
@@ -42,19 +69,15 @@
   pause.setAttribute('aria-pressed',String(paused||reduced.matches));
   icon.textContent='';
   if (moving) {
-   if (!loaded) {
-    ['webm','mp4'].forEach(function(format){
-     var source=document.createElement('source');
-     source.src=video.getAttribute('data-'+format);source.type='video/'+format;
-     video.appendChild(source);
-    });
-    video.muted=true;video.defaultMuted=true;video.load();loaded=true;
+   video.autoplay=true;
+   if (!loaded&&!loading&&!mediaFailed) {
+    loading=true;controller=new AbortController();
+    formats=['webm','mp4'].filter(function(format){return video.canPlayType(format==='webm'?'video/webm; codecs="vp9"':'video/mp4');});
+    nextSource(++loadVersion);
    }
-   var playing=video.play();if(playing) playing.catch(function(){video.classList.remove('is-playing');});
-  } else video.pause();
-  if (reduced.matches&&loaded) {
-   video.classList.remove('is-playing');video.replaceChildren();video.removeAttribute('src');video.load();loaded=false;
-  }
+   if(loaded){var playing=video.play();if(playing) playing.catch(function(){video.classList.remove('is-playing');});}
+  } else {video.autoplay=false;video.pause();}
+  if (reduced.matches&&(loaded||loading)) clearFlow();
  }
  hero.querySelector('[data-oil-prev]').addEventListener('click',function(){show(index-1,true);run();});
  hero.querySelector('[data-oil-next]').addEventListener('click',function(){show(index+1,true);run();});
@@ -64,8 +87,10 @@
  hero.addEventListener('pointerenter',function(){if(fine.matches){hovered=true;run();}});
  hero.addEventListener('pointerleave',function(){hovered=false;run();});
  video.addEventListener('playing',function(){video.classList.add('is-playing');});
- video.addEventListener('error',function(){video.classList.remove('is-playing');});
+ video.addEventListener('error',function(){video.classList.remove('is-playing');if(loaded){loaded=false;loading=true;nextSource(loadVersion);}});
  document.addEventListener('visibilitychange',run);
+ window.addEventListener('pagehide',clearFlow);
+ window.addEventListener('pageshow',run);
  reduced.addEventListener('change',run);
  if ('ResizeObserver' in window) new ResizeObserver(fit).observe(hero);
  else window.addEventListener('resize',fit);
