@@ -1,0 +1,45 @@
+/* Homepage slogan: static, compact and scoped to the new introduction. */
+body.home #post-203 .home-slogan {
+  box-sizing: border-box;
+  margin: 0 0 clamp(20px, 3vw, 32px);
+  padding: clamp(14px, 2vw, 22px) clamp(12px, 2.5vw, 28px);
+  border: 0;
+  border-radius: var(--workshop-radius, 6px);
+  background: #24282c;
+  color: #fff;
+  text-align: center;
+  box-shadow: none;
+}
+body.home #post-203 .home-slogan .home-slogan__title {
+  margin: 0;
+  padding: 0;
+  color: #fff !important;
+  font-family: inherit;
+  font-size: clamp(1.375rem, 3vw, 2rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -.01em;
+  text-transform: none;
+  text-wrap: balance;
+}
+body.home #post-203 .home-slogan__title > span { display: block; }
+body.home #post-203 .home-slogan__title > .home-slogan__accent { color: #f36639; }
+body.home #post-203 .home-slogan .home-slogan__description {
+  max-width: 84ch;
+  margin: 8px auto 0;
+  padding: 0;
+  color: #fff;
+  font-size: clamp(.875rem, 1.25vw, 1rem);
+  font-weight: 400;
+  line-height: 1.5;
+  text-wrap: balance;
+}
+/* The cards previously rose into the photograph. With an introduction between
+   them, keep that existing component inside its normal document flow. */
+body.home #post-203 .home-slogan + .home-service-cards {
+  top: 0;
+  margin-bottom: clamp(36px, 5vw, 64px);
+}
+body.home #post-203 .home-slogan + .home-service-cards .service-box.style_1 {
+  margin-top: 0;
+}
