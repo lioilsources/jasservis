@@ -5,6 +5,9 @@
 .home .oil-hero__photo{display:block;width:100%;height:100%;max-width:none;object-fit:fill}
 .home .oil-hero__flow{position:absolute;left:48.484848%;top:28.963415%;width:6.464646%;height:60.97561%;max-width:none;opacity:0;pointer-events:none;clip-path:polygon(67.1875% 1.25%,93.75% 1.75%,62.5% 27.5%,46.875% 52.5%,35.9375% 77.5%,29.6875% 97.5%,12.5% 97.5%,14.0625% 77.5%,21.875% 52.5%,34.375% 27.5%,53.125% 7.5%);transition:opacity .25s ease}
 .home .oil-hero__flow.is-playing{opacity:1}
+/* C: the moving silhouette is composited per video frame. This wider feathered
+   corridor replaces the old oil-only polygon and covers its former edge. */
+.home .oil-hero__flow.oil-hero__flow--contour{left:47.474747%;top:22.865854%;width:12.929293%;height:68.597561%;clip-path:none;mask-image:url('../../uploads/2026/11/oil-flow-c-blend.svg');mask-size:100% 100%;mask-repeat:no-repeat;-webkit-mask-image:url('../../uploads/2026/11/oil-flow-c-blend.svg');-webkit-mask-size:100% 100%;-webkit-mask-repeat:no-repeat}
 .home .oil-hero__shade{background:linear-gradient(90deg,rgba(10,15,20,.84),rgba(10,15,20,.73) 34%,rgba(10,15,20,.15) 66%,rgba(10,15,20,.08));z-index:1}
 .home .oil-hero__inner{position:relative;z-index:2;display:flex;align-items:center;width:min(1170px,100%);height:100%;box-sizing:border-box;margin:0 auto;padding:28px 30px 68px}
 .home .oil-hero__slides{display:grid;width:min(480px,100%)}
