@@ -12,7 +12,7 @@
  var lang=hero.getAttribute('data-oil-lang');
  // Test-only A/B selection; all photographs, captions and destinations stay fixed.
  var choice=new URLSearchParams(window.location.search).get('oil');
- var flowSuffix=choice==='b'?'-b':choice==='original'?'':'-a';
+ var flowSuffix=choice==='a'?'-a':choice==='b'?'-b':choice==='original'?'':'-c';
  var labels={
   cs:['Pozastavit animaci a střídání textů','Pokračovat v animaci a střídání textů','Automatika vypnuta: omezený pohyb'],
   en:['Pause animation and text rotation','Resume animation and text rotation','Automatic motion off: reduced motion'],
@@ -35,7 +35,7 @@
   if(!formats.length){loading=false;mediaFailed=true;video.classList.remove('is-playing');return;}
   var format=formats.shift();
   var source=video.getAttribute('data-'+format).replace(/oil-flow\.(webm|mp4)$/,'oil-flow'+flowSuffix+'.$1');
-  // These finite clips are < 220 kB. Buffer once to avoid HTTP-range loop seeks
+  // Buffer the short finite clip once to avoid HTTP-range loop seeks
   // that stall the Linux WebKit media backend; the original photograph stays visible.
   fetch(source,{signal:controller.signal,credentials:'same-origin'}).then(function(response){
    if(!response.ok) throw new Error('Oil video unavailable');return response.blob();
@@ -69,6 +69,7 @@
   pause.setAttribute('aria-pressed',String(paused||reduced.matches));
   icon.textContent='';
   if (moving) {
+   video.classList.toggle('oil-hero__flow--contour',flowSuffix==='-c');
    video.autoplay=true;
    if (!loaded&&!loading&&!mediaFailed) {
     loading=true;controller=new AbortController();
