@@ -1,0 +1,70 @@
+name: PR127 – ověření schváleného SHA
+on:
+  push:
+    branches: [ci/pr127-e872fb29]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: e872fb29e8c265e3d183d382d8d6ddb5c330e224
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Verify approved source
+        run: |
+          test "$(git rev-parse HEAD)" = e872fb29e8c265e3d183d382d8d6ddb5c330e224
+          test "$(git rev-parse HEAD^{tree})" = b7724b9c7fba3bf596038e1f392b75020af3f086
+      - name: Standard customer build
+        run: |
+          .github/scripts/build-public-site.sh jasservis.cz .pages-dist
+          .github/scripts/sitemap.sh .pages-dist https://jasservis.cz jasservis.cz
+          node --check jasservis.cz/wp-content/themes/theme53985/js/oil-hero.js
+          node --check jasservis.cz/wp-content/themes/theme53985/js/brand-headlights.js
+      - name: Verify unchanged safety fix
+        shell: bash
+        run: |
+          git diff --exit-code 49bb4d6dc440da7c9528373afc1920a1cbab46bf HEAD -- jasservis.cz/wp-content/uploads/2026/10/specializovana-diagnostika/Multivan-anonymizovany.pdf jasservis.cz/wp-content/uploads/2026/10/specializovana-diagnostika/03-konecny-protokol.webp
+      - name: Verify public boundary and local references
+        run: |
+          python3 - <<'PYCI'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          from urllib.parse import urlsplit, unquote
+          import json
+          root = Path('.pages-dist').resolve()
+          files = [p for p in root.rglob('*') if p.is_file()]
+          assert not any(p.suffix.lower() in {'.zip', '.7z', '.rar'} or 'ssp' in p.name.lower() for p in files)
+          assert not any(p.name in {'_warnings', '_media', 'private', 'evidence'} for p in root.rglob('*'))
+          for p in files:
+              if p.suffix.lower() in {'.html', '.js', '.txt', '.json', '.css'}:
+                  text = p.read_text(errors='replace')
+                  assert 'drive.google.com' not in text and 'docs.google.com' not in text
+          pages = list(root.rglob('index.html'))
+          assert len(pages) == 150
+          class Check(HTMLParser):
+              def handle_starttag(self, tag, attrs):
+                  attrs = dict(attrs)
+                  for name in ('href', 'src', 'data-webm', 'data-mp4'):
+                      value = attrs.get(name)
+                      if not value or value.startswith(('#', '//')):
+                          continue
+                      url = urlsplit(value)
+                      if url.scheme:
+                          continue
+                      target = (self.page.parent / unquote(url.path)).resolve()
+                      assert target.is_relative_to(root) and target.exists(), str(self.page.relative_to(root))
+          for p in pages:
+              parser = Check(); parser.page = p; parser.feed(p.read_text())
+          for lang in ('en', 'de', 'uk', 'vi'):
+              assert (root / lang / 'index.html').is_file()
+          print('Customer boundary, 150 pages, five languages and relative references: PASS')
+          PYCI
+      - name: Record source provenance
+        run: |
+          echo 'Approved source: e872fb29e8c265e3d183d382d8d6ddb5c330e224' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Source tree: b7724b9c7fba3bf596038e1f392b75020af3f086' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Build only: no Pages deployment or Cloudflare Access calls.' >> "$GITHUB_STEP_SUMMARY"
