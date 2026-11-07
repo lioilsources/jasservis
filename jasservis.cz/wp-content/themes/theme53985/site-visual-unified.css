@@ -182,6 +182,10 @@ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #t
  body.js-visual-preview .footer .footer-widgets .textwidget a{min-height:44px;min-width:44px;overflow-wrap:anywhere;}
  body.js-visual-preview #motopress-main .footer .copyright{padding:12px 0!important;}
 }
+/* Let German actions fit the longest word when a phone or tablet is rotated. */
+@media(max-width:1199px){
+ html[lang="de"] body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget :is(a[data-booking-panel],a.header-driver-advice){min-width:min-content;}
+}
 /* German tablet labels need room for whole words; keep the shared font size. */
 @media(min-width:768px) and (max-width:1199px) and (min-height:501px){
  html[lang="de"] body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget{
