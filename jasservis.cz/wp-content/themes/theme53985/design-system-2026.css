@@ -13,7 +13,7 @@
 @media(min-width:1200px){
  .js-navigation .header .nav__primary:not(.navigation-ready){min-height:80px}
 }
-body .header .language-switcher .language-mobile>summary{color:#ffad93}
+body .header .language-switcher .language-mobile>summary{color:var(--brand-orange)}
 #post-203 .home-service-cards .icon img{width:auto;max-width:100%}
 
 /* Keyboard users can reach the page without tabbing through the whole header. */
@@ -82,7 +82,7 @@ body .content-holder #portfolio-grid .caption p.excerpt{line-height:1.6}
 body .content-holder .page a.btn{
  display:inline-flex;align-items:center;justify-content:center;min-height:44px;
  box-sizing:border-box;padding:10px 18px;border:1px solid #000;
- border-radius:var(--js-radius);background:var(--js-card);color:#fff;
+ border-radius:var(--js-radius);background:var(--js-card);color:#252D34;
  font-family:var(--js-font);font-size:1rem;line-height:1.45;
  text-decoration:none;text-shadow:none;white-space:normal
 }
@@ -115,6 +115,6 @@ body .footer .footer-widgets a:visited,
 body .footer .footer-widgets ul li a,
 body .footer .footer-widgets ul li a:visited {color:#eee;transition:color .15s ease;}
 body .footer .footer-widgets a:is(:hover,:focus,:focus-visible,:active),
-body .footer .footer-widgets ul li a:is(:hover,:focus,:focus-visible,:active) {color:#ffad91;text-decoration:underline;}
+body .footer .footer-widgets ul li a:is(:hover,:focus,:focus-visible,:active) {color:#F5F7F9;text-decoration:underline;text-decoration:underline;text-decoration-color:var(--brand-orange);}
 body .footer a:focus-visible,
 body .footer button:focus-visible {outline:3px solid #fff;outline-offset:3px;}
