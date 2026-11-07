@@ -159,12 +159,9 @@ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #t
 @media(min-width:1200px){
  body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget :is(b>a[data-booking-panel],a.header-driver-advice){display:inline-flex;vertical-align:middle;}
 }
-/* One mobile spacing system; desktop geometry is unchanged. */
+/* Preserve the approved production header; retain the existing compact footer. */
 @media(max-width:767px){
- body.js-visual-preview #motopress-main#motopress-main .header .header_block_2 .logo{margin:8px auto!important;padding-top:calc(24px + env(safe-area-inset-top,0px))!important;padding-bottom:12px!important;}
- body.js-visual-preview #motopress-main#motopress-main .header .header_block_1>.row{gap:8px;}
- body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget :is(a[data-booking-panel],a.header-driver-advice){min-height:44px;padding:8px 16px;}
- body.js-visual-preview #motopress-main#motopress-main .header .navigation-toggle{min-height:44px;padding:9px 16px;}
+ body.js-visual-preview .header .language-switcher .language-mobile>summary{background:transparent;}
  body.js-visual-preview .site-service-contact{padding:16px var(--js-gutter);}
  body.js-visual-preview .site-service-contact__inner{gap:8px;}
  body.js-visual-preview .site-service-contact__part{min-height:0;gap:0;}
@@ -197,7 +194,7 @@ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #t
  body.js-visual-preview :is(.site-service-contact__phone,.footer .footer-widgets .textwidget a,.footer .footer-widgets ul li a){display:inline-flex;align-items:center;box-sizing:border-box;min-height:44px;min-width:44px;max-width:100%;overflow-wrap:anywhere;}
 }
 @media(max-width:479px) and (min-height:501px){
- body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget{grid-template-columns:minmax(0,1fr);grid-template-rows:repeat(2,minmax(44px,1fr)) auto;}
+ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget{grid-template-columns:minmax(0,1fr);grid-template-rows:repeat(2,minmax(48px,1fr)) auto;}
  body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 .mobile-booking-trigger{grid-column:1;grid-row:1;}
  body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 .header-driver-advice{grid-column:1;grid-row:2;}
  body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 .tel{grid-column:1;grid-row:3;}
