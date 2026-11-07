@@ -441,20 +441,13 @@
     if (window.visualViewport) window.visualViewport.addEventListener('resize', scheduleHeaderLayout);
     window.addEventListener('orientationchange', scheduleHeaderLayout);
     if (window.ResizeObserver) {
-        var observedHeaderWidths = new WeakMap();
-        var headerResize = new ResizeObserver(function (entries) {
-            var changed = false;
-            entries.forEach(function (entry) {
-                var width = entry.contentRect.width;
-                var previous = observedHeaderWidths.get(entry.target);
-                if (previous !== undefined && Math.abs(width - previous) < 0.5) return;
-                observedHeaderWidths.set(entry.target, width);
-                changed = true;
-            });
-            if (changed && !mobilePanel.open) scheduleHeaderLayout();
-        });
-        headerResize.observe(nav);
-        Array.prototype.forEach.call(menu.children, function (item) { headerResize.observe(item); });
+        var observedNavWidth = -1;
+        new ResizeObserver(function (entries) {
+            var width = entries[0].contentRect.width;
+            if (Math.abs(width - observedNavWidth) < 0.5) return;
+            observedNavWidth = width;
+            if (!mobilePanel.open) scheduleHeaderLayout();
+        }).observe(nav);
     }
     // Safari may restore an expanded menu from the back/forward cache.
     window.addEventListener('pageshow', function (event) { if (event.persisted) { closeMobilePanel(false); reset(); scheduleHeaderLayout(); } });
