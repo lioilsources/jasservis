@@ -214,3 +214,8 @@ body.js-visual-preview.home #cf-cookie-banner a {color:var(--brand-orange)!impor
 body.js-visual-preview.home #cf-cookie-banner :is(a,input):focus-visible {outline-color:var(--brand-orange)!important;}
 body.js-visual-preview.home .parallax-slider #mainCaptionHolder .slider_caption em a:is(:hover,:focus)::before {color:inherit!important;}
 body.js-visual-preview.home .parallax-slider #mainCaptionHolder .slider_caption em a:is(:hover,:focus) {background:var(--brand-orange)!important;color:#252D34!important;border-color:var(--brand-orange)!important;}
+
+/* Keep whole German action labels within the existing wrapping header on short landscape screens. */
+@media(max-width:740px) and (max-height:500px) and (orientation:landscape){
+ html[lang="de"] body.js-visual-preview #motopress-main#motopress-main .header .header_block_1>.row{display:flex;}
+}
