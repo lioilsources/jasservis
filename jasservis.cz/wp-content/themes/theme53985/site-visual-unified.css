@@ -138,6 +138,10 @@ body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) :is(.hom
 @media(prefers-reduced-motion:reduce) {
  body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) :is(.home-service-cards .service-box.style_1,.home-service-brands a,.home-service-general a,details>summary) {animation:none!important;}
 }
+/* Keep header layout boxes out of geometric transitions, including reduced motion. */
+body.js-visual-preview .header :is(.container,.row,.span12,.span9,.nav__primary){
+ transition-property:color,background-color,border-color,opacity!important;
+}
 /* Accessible header actions: emoji are decorative; the original targets remain. */
 body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget :is(a[data-booking-panel],a.header-driver-advice) {
  align-items:center;justify-content:center;gap:8px;box-sizing:border-box;
