@@ -14,7 +14,7 @@
 .brand-service-content .vw-price p:last-child{margin-bottom:0}
 .brand-service-content .brand-expertise{display:block}
 .brand-service-content .vw-accordion{box-sizing:border-box;min-width:0;margin:0 0 14px;border:1px solid #9a9a9a;border-radius:4px;background:#fff}
-.brand-service-content .vw-accordion>summary{position:relative;display:block;list-style:none;padding:16px 52px 16px 20px;background:var(--js-card);color:#fff;cursor:pointer;border-radius:3px;min-height:44px;box-sizing:border-box}
+.brand-service-content .vw-accordion>summary{position:relative;display:block;list-style:none;padding:16px 52px 16px 20px;background:var(--js-card);color:#252D34;cursor:pointer;border-radius:3px;min-height:44px;box-sizing:border-box}
 .brand-service-content .vw-accordion>summary::-webkit-details-marker{display:none}
 .brand-service-content .vw-accordion>summary:after{content:'';position:absolute;right:22px;top:50%;width:9px;height:9px;margin-top:-7px;border-right:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(45deg)}
 .brand-service-content .vw-accordion[open]>summary:after{transform:rotate(225deg);margin-top:-2px}

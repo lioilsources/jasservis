@@ -2,7 +2,7 @@
 body.home #post-203#post-203#post-203 .home-offered-services {
   --lower-surface:#303a43;
   --lower-card:#252d34;
-  --lower-accent:var(--js-orange);
+  --lower-accent:var(--brand-orange);
   background:var(--lower-surface);
   color:#f5f7f9;
 }
@@ -50,8 +50,8 @@ body.home #post-203#post-203#post-203 .home-offered-services :is(a,summary):focu
 body.home #post-203#post-203#post-203 .home-offered-services .home-service-index details:not([open])>summary:focus {outline-color:#252d34!important;}
 @media(hover:hover) and (pointer:fine) {
   body.home #post-203#post-203#post-203 .home-offered-services :is(.home-service-brands,.home-service-general) a[href]:hover,
-  body.home #post-203#post-203#post-203 .home-offered-services .home-service-index details[open]>summary:hover {background:#303a43!important;border-color:var(--js-orange)!important;color:#f5f7f9!important;}
-  body.home #post-203#post-203#post-203 .home-offered-services .home-service-index details:not([open])>summary:hover {background:var(--js-orange)!important;}
+  body.home #post-203#post-203#post-203 .home-offered-services .home-service-index details[open]>summary:hover {background:#303a43!important;border-color:var(--brand-orange)!important;color:#f5f7f9!important;}
+  body.home #post-203#post-203#post-203 .home-offered-services .home-service-index details:not([open])>summary:hover {background:#303A43!important;}
   body.home #post-203#post-203#post-203 .home-offered-services .home-service-index a:hover {text-decoration-thickness:2px;}
 }
 @media(prefers-reduced-motion:reduce) {
@@ -62,21 +62,21 @@ body.home #post-203#post-203#post-203 .home-offered-services .home-service-index
 body.home #post-203#post-203#post-203 .home-service-cards .service-box.style_1 {
   background:#252d34;
   color:#f5f7f9;
-  border:2px solid var(--js-orange)!important;
+  border:2px solid var(--brand-orange)!important;
   border-radius:8px;
 }
 body.home #post-203#post-203#post-203 .home-service-cards .service-box :is(.title,.service-card-subtitle,.service-box_txt) {color:#f5f7f9!important;}
-body.home #post-203#post-203#post-203 .home-service-cards .service-box.style_1::after {box-shadow:inset 0 0 0 1px var(--js-orange),0 10px 22px rgb(0 0 0 / .16);}
-body.home #post-203#post-203#post-203 .home-service-cards a.btn {background:transparent!important;color:#f5f7f9!important;border:2px solid var(--js-orange)!important;border-radius:8px;}
-body.home #post-203#post-203#post-203 .home-service-cards a.btn:focus {background:var(--js-orange)!important;color:#252d34!important;outline:3px solid #f5f7f9!important;outline-offset:3px!important;}
+body.home #post-203#post-203#post-203 .home-service-cards .service-box.style_1::after {box-shadow:none;}
+body.home #post-203#post-203#post-203 .home-service-cards a.btn {background:transparent!important;color:#f5f7f9!important;border:2px solid var(--brand-orange)!important;border-radius:8px;}
+body.home #post-203#post-203#post-203 .home-service-cards a.btn:focus {background:var(--brand-orange)!important;color:#252D34!important;outline:3px solid #f5f7f9!important;outline-offset:3px!important;}
 @media(hover:hover) and (pointer:fine) {
-  body.home #post-203#post-203#post-203 .home-service-cards a.btn:hover {background:var(--js-orange)!important;color:#252d34!important;border-color:var(--js-orange)!important;}
+  body.home #post-203#post-203#post-203 .home-service-cards a.btn:hover {background:var(--brand-orange)!important;color:#252D34!important;border-color:var(--brand-orange)!important;}
 }
 /* Navigation colors are scoped to the five homepage proposals. */
-body.home :is(.header,.mobile-nav-panel) #topnav#topnav>li>:is(a,button) {color:var(--js-orange)!important;}
+body.home :is(.header,.mobile-nav-panel) #topnav#topnav>li>:is(a,button) {color:var(--brand-orange)!important;}
 body.home :is(.header,.mobile-nav-panel) #topnav#topnav>li>:is(a,button):is(:hover,:focus,[aria-expanded="true"]),
 body.home :is(.header,.mobile-nav-panel) #topnav#topnav>li.sfHover>:is(a,button) {background:#fff!important;color:#000!important;}
-body.home :is(.header,.mobile-nav-panel) #topnav#topnav>li>:is(a,button):focus {outline:3px solid var(--js-orange)!important;outline-offset:-3px!important;}
+body.home :is(.header,.mobile-nav-panel) #topnav#topnav>li>:is(a,button):focus {outline:3px solid var(--brand-orange)!important;outline-offset:-3px!important;}
 body.home :is(.header,.mobile-nav-panel) #topnav#topnav>li>:is(a,button)::after {color:inherit!important;border-color:currentColor!important;}
 
 body.home :is(.header,.mobile-nav-panel) #topnav#topnav>li:is(.is-open,:focus-within)>:is(a,button) {background:#fff!important;color:#000!important;}

@@ -23,7 +23,7 @@ body.home #post-203 .home-slogan .home-slogan__title {
   text-wrap: balance;
 }
 body.home #post-203 .home-slogan__title > span { display: block; }
-body.home #post-203 .home-slogan__title > .home-slogan__accent { color: var(--js-orange); }
+body.home #post-203 .home-slogan__title > .home-slogan__accent { color: var(--brand-orange); }
 body.home #post-203 .home-slogan .home-slogan__description {
   max-width: 84ch;
   margin: 8px auto 0;
