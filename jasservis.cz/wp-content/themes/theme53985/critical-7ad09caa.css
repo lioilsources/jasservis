@@ -1243,6 +1243,7 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
   position:absolute;right:0;top:50%;margin:0;transform:translateY(-50%)
  }
 }
+@media(min-width:1351px) and (hover:hover) and (pointer:fine){#motopress-main .header .header_block_1>.language-contact-row{grid-template-columns:minmax(0,1fr) auto auto minmax(max-content,1fr)}}
 @media(min-width:1600px) and (hover:hover) and (pointer:fine){
  #motopress-main .header .header_block_1>.language-contact-row{column-gap:24px}
  #motopress-main .header .header_block_1 #text-8>.textwidget>b>a,
