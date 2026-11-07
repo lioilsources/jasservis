@@ -178,6 +178,12 @@ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #t
  body.js-visual-preview .footer .footer-widgets .textwidget a{min-height:44px;min-width:44px;overflow-wrap:anywhere;}
  body.js-visual-preview #motopress-main .footer .copyright{padding:12px 0!important;}
 }
+/* German tablet labels need room for whole words; keep the shared font size. */
+@media(min-width:768px) and (max-width:1199px) and (min-height:501px){
+ html[lang="de"] body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget{
+  grid-template-columns:minmax(0,280px) minmax(0,220px);
+ }
+}
 /* Tablet and rotated-phone touch targets; no desktop mouse layout change. */
 @media(min-width:768px) and (max-width:1199px) and (any-pointer:coarse){
  body.js-visual-preview :is(.site-service-contact__phone,.footer .footer-widgets .textwidget a,.footer .footer-widgets ul li a){display:inline-flex;align-items:center;box-sizing:border-box;min-height:44px;min-width:44px;max-width:100%;overflow-wrap:anywhere;}
