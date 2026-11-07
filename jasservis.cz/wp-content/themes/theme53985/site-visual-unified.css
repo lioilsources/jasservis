@@ -142,6 +142,10 @@ body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) :is(.hom
 body.js-visual-preview .header :is(.container,.row,.span12,.span9,.nav__primary){
  transition-property:color,background-color,border-color,opacity!important;
 }
+/* Measuring must not leave the real menu in an animated hidden state. */
+body.js-visual-preview .header #topnav{
+ transition-property:color,background-color,border-color,opacity,transform!important;
+}
 /* Accessible header actions: emoji are decorative; the original targets remain. */
 body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget :is(a[data-booking-panel],a.header-driver-advice) {
  align-items:center;justify-content:center;gap:8px;box-sizing:border-box;
