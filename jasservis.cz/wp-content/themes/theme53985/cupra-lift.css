@@ -1,0 +1,16 @@
+/* Original photograph remains the fallback and accessible image. */
+.cupra-lift-photo{position:relative;isolation:isolate;}
+.cupra-lift-photo.cupra-lift-ready>img{opacity:0;}
+.cupra-lift-scene{position:absolute;display:block;pointer-events:none;visibility:hidden;overflow:hidden;z-index:1;}
+.cupra-lift-ready>.cupra-lift-scene{visibility:visible!important;}
+.cupra-lift__car,.cupra-lift__bar{transform-box:view-box;transform-origin:0 0;animation-duration:18s;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-play-state:paused;}
+.cupra-lift__car{animation-name:cupra-lift-car;}
+.cupra-lift__bar{animation-name:cupra-lift-bar;}
+.cupra-lift-scene.is-running .cupra-lift__car,.cupra-lift-scene.is-running .cupra-lift__bar{animation-play-state:running;}
+@keyframes cupra-lift-car{0%,100%{transform:translateY(0);}50%{transform:translateY(-30px);}}
+@keyframes cupra-lift-bar{0%,100%{transform:translateY(0) scaleY(1);}50%{transform:translateY(var(--cupra-lift-bar-offset)) scaleY(var(--cupra-lift-bar-scale));}}
+@media(prefers-reduced-motion:reduce){
+ .cupra-lift-photo.cupra-lift-ready>img{opacity:1!important;}
+ .cupra-lift-scene{display:none!important;}
+ .cupra-lift__car,.cupra-lift__bar{animation:none!important;}
+}
