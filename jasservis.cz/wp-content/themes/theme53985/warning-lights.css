@@ -378,3 +378,12 @@
 .warning-lights .driver-topic-body :is(h2, h4) {
     color: #333;
 }
+
+/* Card/variant/label heading levels change semantics, while retaining their former metrics. */
+#warning-lights .wl-detail .wl-variant-name{font:700 1.0625rem/1.4 var(--js-font,Ubuntu,sans-serif);margin:14px 0 4px;text-transform:none}
+#warning-lights .wl-detail .wl-variant-name:first-child{margin-top:0}
+#warning-lights .wl-detail .wl-meaning-label{font:700 1rem/1.4 var(--js-font,Ubuntu,sans-serif);color:#111;margin:14px 0 4px;text-transform:none}
+#warning-lights .wl-detail .wl-meaning-label:first-child{margin-top:14px}
+
+/* The card name keeps the former h4 color and spacing after its semantic h3 correction. */
+#warning-lights .wl-name{color:#333;margin-bottom:22px}

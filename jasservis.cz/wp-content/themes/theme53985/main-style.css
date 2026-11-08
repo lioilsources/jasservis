@@ -1397,7 +1397,8 @@ body.home .content-holder { padding:0; }
 		font-size:30px;
 	}
 }
-.service-box.style_6 h5 {
+.service-box.style_6 h5,
+.service-box.style_6 p.vehicle-attention-title {
 	margin:0 0 28px 0;
 	padding:0;
 	line-height:50px;
@@ -1407,13 +1408,15 @@ body.home .content-holder { padding:0; }
 	color:#fff;
 }
 @media (max-width: 767px) {
-	.service-box.style_6 h5 {
+	.service-box.style_6 h5,
+.service-box.style_6 p.vehicle-attention-title {
 		line-height:40px;
 		font-size:40px;
 	}
 }
 @media (max-width: 480px) {
-	.service-box.style_6 h5 {
+	.service-box.style_6 h5,
+.service-box.style_6 p.vehicle-attention-title {
 		line-height:30px;
 		font-size:30px;
 	}
@@ -3609,3 +3612,10 @@ article.type-clients .thumbnail {
 .content-holder .page .pneuservis-illustration-note {
     margin:8px 0 0; font-size:14px; line-height:21px; color:#444;
 }
+
+/* Semantic heading levels retain the established visual metrics. */
+.service-box.style_6 p.vehicle-attention-title{font-family:Ubuntu,sans-serif}
+.rozbalovaci>summary h2.ev-topic-heading{margin:0;text-align:left;text-transform:none;font-size:19px;line-height:26px;font-weight:400!important;color:#333}
+#post-ev-brzdy .rozbalovaci__obsah h3.ev-detail-heading{margin:20px 0 8px;text-align:left;text-transform:none;font-size:17px;line-height:24px;font-weight:400!important;color:#222}
+#post-ev-brzdy .ev-odis-note h3.ev-detail-heading{line-height:1.5}
+@media(max-width:767px){.rozbalovaci>summary h2.ev-topic-heading{font-size:17px;line-height:23px}}

@@ -46,7 +46,7 @@
 <link rel="stylesheet" id="cherry-lazy-load-css" href="../../wp-content/plugins/cherry-lazy-load/css/lazy-load.css" type="text/css" media="all">
 <link rel="stylesheet" id="cherry-parallax-css" href="../../wp-content/plugins/cherry-parallax/css/parallax.css" type="text/css" media="all">
 <link rel="stylesheet" href="../../wp-content/themes/CherryFramework/css/style.css" />
-<link rel="stylesheet" id="theme53985-css" href="../../wp-content/themes/theme53985/main-style.css?v=20261107-orange-spacing-v1" type="text/css" media="all">
+<link rel="stylesheet" id="theme53985-css" href="../../wp-content/themes/theme53985/main-style.css?v=20261108-html-semantics-v2" type="text/css" media="all">
 <link rel="stylesheet" id="magnific-popup-css" href="../../wp-content/themes/CherryFramework/css/magnific-popup.css" type="text/css" media="all">
 <link rel="stylesheet" id="mpce-bootstrap-grid-css" href="../../wp-content/plugins/motopress-content-editor-lite/bootstrap/bootstrap-grid.min.css" type="text/css" media="all">
 <link rel="stylesheet" id="mpce-theme-css" href="../../wp-content/plugins/motopress-content-editor-lite/includes/css/theme.min.css" type="text/css" media="all">
@@ -101,9 +101,9 @@ div.service-box.style_1 {min-height: 267px;}
 
 .product-detail .span6>h2 {margin-top:0;}
 
-h3.article_header {text-align: left;font-size: 20px;position:relative;padding-bottom: 7px;margin-bottom: 12px;}
+h2.article_header, h3.article_header {text-align: left;font-size: 20px;position:relative;padding-bottom: 7px;margin-bottom: 12px;}
 
-h3.article_header:before {position:absolute;content:"";width:150px;height:1px;bottom:0;left:0;background:#333333;}
+h2.article_header:before, h3.article_header:before {position:absolute;content:"";width:150px;height:1px;bottom:0;left:0;background:#333333;}
 
 ul.filterable-portfolio .portfolio_item {width: 33%;}
 
@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', function(){
 <style>
 #post-2908 .geometry-intro { margin-bottom:24px; }
 #post-2908 .geometry-intro .cena-blok { margin-bottom:0; }
-#post-2908 .geometry-details h3.article_header { margin:24px 0 12px; font-size:20px; line-height:1.4; }
+#post-2908 .geometry-details h2.article_header, h3.article_header { margin:24px 0 12px; font-size:20px; line-height:1.4; }
 #post-2908 .geometry-details h3.article_header strong { font-weight:700; }
 #post-2908 .geometry-details > h3:first-child { margin-top:0; }
 #post-2908 .geometry-details p { margin:0 0 12px; }
@@ -336,14 +336,14 @@ document.addEventListener('DOMContentLoaded', function(){
 #post-2908 .geometry-measurement img { display:block; width:100%; height:auto; }
 #post-2908 .geometry-measurement figcaption { margin-top:8px; font-size:14px; line-height:1.5; color:#555; }
 #post-2908 .geometry-price { border-left:3px solid var(--brand-orange); background:#fdf1ec; padding:16px 20px; margin:24px 0 0; }
-#post-2908 .geometry-price h3.article_header { margin-top:0; }
+#post-2908 .geometry-price h2.article_header, h3.article_header { margin-top:0; }
 #post-2908 .geometry-price p:last-child { margin-bottom:0; }
 @media (max-width:767px) {
   #post-2908 .geometry-intro { margin-bottom:20px; }
   #post-2908 .geometry-intro .cena-blok { margin-bottom:16px; }
-  #post-2908 .geometry-details h3.article_header { font-size:19px; margin-top:22px; }
+  #post-2908 .geometry-details h2.article_header, h3.article_header { font-size:19px; margin-top:22px; }
   #post-2908 .geometry-details > h3:first-child,
-  #post-2908 .geometry-price h3.article_header { margin-top:0; }
+  #post-2908 .geometry-price h2.article_header, h3.article_header { margin-top:0; }
   #post-2908 .geometry-measurement { margin:16px auto 22px; }
   #post-2908 .geometry-price { padding:14px 16px; margin-top:22px; }
 }
@@ -355,6 +355,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 <link rel="stylesheet" href="../../wp-content/themes/theme53985/design-system-2026.css?v=20261107-orange-spacing-v1" />
 <link rel="stylesheet" href="../../wp-content/themes/theme53985/site-visual-unified.css?v=20261107-header-arrow-v4" />
+<link rel="stylesheet" href="../../wp-content/themes/theme53985/owner-polish.css?v=20261108-owner-v1">
 </head><body class="page-template page-template-page-fullwidth page-template-page-fullwidth-php page page-id-2908 js-visual-preview">
 <a class="skip-to-content" href="#main-content">Перейти до вмісту</a>
 
@@ -550,7 +551,7 @@ document.addEventListener('DOMContentLoaded', function(){
 <div class="mp-row-fluid motopress-row mpce-dsbl-margin-left mpce-dsbl-margin-right">
 <div class="motopress-clmn mp-span12  mpce-dsbl-margin-left mpce-dsbl-margin-right">
 <div class="motopress-text-obj geometry-details">
-<h3 class="article_header"><strong>3D розвал коліс – Beissbarth VAS 701 011</strong></h3>
+<h2 class="article_header"><strong>3D розвал коліс – Beissbarth VAS 701 011</strong></h2>
 <ul>
 <li>Вимірювання розташування чотирьох коліс.</li>
 <li>Перевірка сходження та регулювання в межах конструкції автомобіля.</li>
@@ -563,7 +564,7 @@ document.addEventListener('DOMContentLoaded', function(){
 <a href="../../wp-content/uploads/2026/10/geometrie-vas-701011.webp"><img src="../../wp-content/uploads/2026/10/geometrie-vas-701011.webp" width="1536" height="921" loading="lazy" alt="Дисплей вирівнювання коліс із значеннями розвалу, сходження та кута тяги."></a>
 <figcaption>Приклад показань розвалу коліс під час вимірювання.</figcaption>
 </figure><!-- shared-media:gallery-02:end -->
-<h3 class="article_header"><strong>Діагностика шасі - тестова лінія Beissbarth</strong></h3>
+<h2 class="article_header"><strong>Діагностика шасі - тестова лінія Beissbarth</strong></h2>
 <ul>
 <li>Вимірювання гальмівних сил та їх різниць на окремих колесах.</li>
 <li>Перевірка ефективності робочого та стоянкового гальм.</li>
@@ -571,11 +572,11 @@ document.addEventListener('DOMContentLoaded', function(){
 <li>Перевірка зазорів в підвісці коліс і осях.</li>
 <li>Оцінка технічного стану шасі в межах можливостей випробувальної лінії.</li>
 </ul>
-<h3 class="article_header"><strong>Системи допомоги та адаптації</strong></h3>
+<h2 class="article_header"><strong>Системи допомоги та адаптації</strong></h2>
 <p>Після оновлення геометрії ми оцінюємо необхідність базових налаштувань відповідних систем та можливого калібрування радарів або камер відповідно до вимог виробника. Ми виконуємо діагностичні функції за допомогою системи ODIS відповідно до конкретного автомобіля.</p>
 <p>Калібрування системи допомоги водієві не входить у базову вартість регулювання коліс.</p>
 <div class="geometry-price">
-<h3 class="article_header"><strong>Вартість послуги</strong></h3>
+<h2 class="article_header"><strong>Вартість послуги</strong></h2>
 <p>Базова ціна 3D вимірювання та регулювання розвалу коліс становить від 2 000 Kč без ПДВ (від 2 420 Kč з ПДВ).</p>
 <p>Ціна охоплює стандартне вимірювання і регулювання в межах конструкційного обмеження транспортного засобу. Ремонт підвіска, діагностика випробувального смугу, процедури діагностики та регулювання ODIS та калібрування системи допомоги водію оплачуються окремо за угодою з клієнтом.</p>
 <p>Ми працюємо відповідно до сервісних процедур виробника та враховуємо конструкцію та технічний стан конкретного автомобіля.</p>
@@ -652,7 +653,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	</div>
 
 	
-	<style id="motopress-ce-private-styles" data-posts="" type="text/css"></style>
+
 <script type="text/javascript" id="cherry-plugin-js-extra">
 /* <![CDATA[ */
 var items_custom = [[0,1],[480,2],[768,3],[980,4],[1170,5]];

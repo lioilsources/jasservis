@@ -1,0 +1,7 @@
+/* Only the five existing HUD panel outlines; the photograph stays untouched. */
+.js-diagnostic-panel-photo{position:relative;}
+.js-diagnostic-panel-overlay{position:absolute;display:block;pointer-events:none;overflow:hidden;z-index:2;}
+.js-diagnostic-panel-outline{fill:none;stroke:#74eeff;stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke;opacity:0;filter:drop-shadow(0 0 2px rgba(116,238,255,.65)) drop-shadow(0 0 4px rgba(75,218,255,.25));}
+@keyframes js-diagnostic-outline-pulse{0%,100%{opacity:0;}28%,58%{opacity:.88;}}
+.js-diagnostic-panel-outline.is-lit{animation:js-diagnostic-outline-pulse 3200ms ease-in-out 1;}
+@media(prefers-reduced-motion:reduce){.js-diagnostic-panel-overlay{display:none!important;}.js-diagnostic-panel-outline,.js-diagnostic-panel-outline.is-lit{animation:none!important;opacity:0!important;}}

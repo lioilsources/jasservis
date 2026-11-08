@@ -9,12 +9,16 @@
   if (started) return;
   started = true;
   if (observer) observer.disconnect();
-  var styles = Array.prototype.slice.call(document.querySelectorAll('link[data-home-full-css]'));
-  var stylesReady = Promise.all(styles.map(function (link) {
+  var styles = [];
+  var placeholders = Array.prototype.slice.call(document.querySelectorAll('template[data-home-full-css]'));
+  var stylesReady = Promise.all(placeholders.map(function (placeholder) {
    return new Promise(function (resolve) {
+    var link = document.createElement('link');
+    styles.push(link);
     link.onload = resolve; link.onerror = resolve;
     link.media = 'print'; link.rel = 'stylesheet';
-    link.href = link.getAttribute('data-home-full-css');
+    link.href = placeholder.getAttribute('data-home-full-css');
+    placeholder.parentNode.replaceChild(link, placeholder);
    });
   })).then(function () {
    return new Promise(function (resolve) {

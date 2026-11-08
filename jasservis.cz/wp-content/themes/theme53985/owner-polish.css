@@ -1,0 +1,185 @@
+/* Owner-requested spacing in the existing contact strip only.
+   Keep the original labels, colours, type sizes and navigation behaviour. */
+@media (min-width:1200px) {
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row {
+  display:grid;
+  grid-template-columns:minmax(140px,1fr) minmax(0,1.8fr) minmax(0,1.3fr) max-content max-content;
+  align-items:center;
+  column-gap:clamp(24px,2vw,36px);
+  row-gap:16px;
+  margin:0;
+  padding-block:8px;
+ }
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row::before,
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row::after {
+  display:none;
+ }
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row > .span6:first-child {
+  grid-column:1;
+  grid-row:1;
+  min-width:0;
+  width:auto;
+  margin:0;
+  padding-right:0;
+ }
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row > .span6:nth-child(2),
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 .header_widget_2,
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #custom_html-3,
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #custom_html-3 > .textwidget,
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #text-8,
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #text-8 > .textwidget {
+  display:contents;
+ }
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row > .span6:nth-child(2) > .clear {
+  display:none;
+ }
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #text-8 > .textwidget > b {
+  display:flex;
+  align-items:stretch;
+  align-self:center;
+  grid-column:2;
+  grid-row:1;
+  min-width:0;
+  margin:0;
+  padding:0;
+ }
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 .header-driver-advice {
+  grid-column:3;
+  grid-row:1;
+  align-self:center;
+ }
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 .tel {
+  grid-column:4;
+  grid-row:1;
+  display:grid;
+  grid-auto-flow:row;
+  justify-self:start;
+  justify-items:start;
+  align-content:center;
+  gap:4px;
+  min-width:0;
+  margin:0;
+  padding:0;
+  text-align:left;
+ }
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row > .language-switcher {
+  grid-column:5;
+  grid-row:1;
+  position:relative;
+  inset:auto;
+  justify-self:end;
+  align-self:center;
+  margin:0;
+  transform:none;
+ }
+}
+@media (max-width:1199px) {
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row {
+  row-gap:12px;
+ }
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 :is(.mobile-booking-trigger,.header-driver-advice) {
+  min-width:0;
+ }
+}
+@media (max-width:1199px) and (min-height:501px) {
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #text-8 > .textwidget {
+  column-gap:20px;
+  row-gap:14px;
+ }
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 .tel {
+  margin-top:4px;
+  column-gap:20px;
+  row-gap:4px;
+ }
+}
+@media (min-width:768px) and (max-width:1199px) and (min-height:501px) {
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #text-8 > .textwidget {
+  grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);
+ }
+}
+@media (max-width:479px) and (min-height:501px) {
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #text-8 > .textwidget {
+  grid-template-columns:minmax(0,1fr);
+ }
+}
+@media (max-width:1199px) and (max-height:500px) and (orientation:landscape) {
+ body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row {
+  column-gap:16px;
+  row-gap:8px;
+ }
+}
+
+/* Driver advice: one light accordion surface across every chapter and group.
+   The shared theme uses a three-ID :is() specificity branch plus !important.
+   Mirror that existing branch, then add page/component scope so this override
+   wins without changing warning images, brand controls or technical content. */
+body.page-warning-lights :is(#post-203#post-203#post-203,.content-holder) .warning-lights :is(
+ .driver-topic,.wl-group,.wl-infotainment-section,.wl-info-category,
+ .fuels-section,.oil-section,.coolant-section,.brake-fluid-section,
+ .washer-section,.emissions-section,.service-section
+)>summary{
+ background:#F5F7F9!important;
+ background-image:none!important;
+ color:#252D34!important;
+ border-color:#C4CBD1!important;
+ box-shadow:inset 4px 0 0 transparent!important;
+}
+
+body.page-warning-lights :is(#post-203#post-203#post-203,.content-holder) .warning-lights :is(
+ .driver-topic,.wl-group,.wl-infotainment-section,.wl-info-category,
+ .fuels-section,.oil-section,.coolant-section,.brake-fluid-section,
+ .washer-section,.emissions-section,.service-section
+)[open]>summary{
+ background:#FFF0E7!important;
+ color:#252D34!important;
+ border-color:#C4CBD1!important;
+ box-shadow:inset 4px 0 0 var(--brand-orange,#FF6B1A)!important;
+}
+
+@media(hover:hover){
+ body.page-warning-lights :is(#post-203#post-203#post-203,.content-holder) .warning-lights :is(
+  .driver-topic,.wl-group,.wl-infotainment-section,.wl-info-category,
+  .fuels-section,.oil-section,.coolant-section,.brake-fluid-section,
+  .washer-section,.emissions-section,.service-section
+ )>summary:hover{
+  background:#FFF0E7!important;
+  color:#252D34!important;
+  border-color:#C4CBD1!important;
+  box-shadow:inset 4px 0 0 var(--brand-orange,#FF6B1A)!important;
+ }
+}
+
+body.page-warning-lights :is(#post-203#post-203#post-203,.content-holder) .warning-lights :is(
+ .driver-topic,.wl-group,.wl-infotainment-section,.wl-info-category,
+ .fuels-section,.oil-section,.coolant-section,.brake-fluid-section,
+ .washer-section,.emissions-section,.service-section
+)>summary:focus-visible{
+ background:#FFF0E7!important;
+ color:#252D34!important;
+ border-color:#C4CBD1!important;
+ box-shadow:inset 4px 0 0 var(--brand-orange,#FF6B1A)!important;
+ outline:3px solid #252D34!important;
+ outline-offset:-4px!important;
+}
+
+/* Previous interaction rules force descendant span text and arrows separately. */
+body.page-warning-lights :is(#post-203#post-203#post-203,.content-holder) .warning-lights :is(
+ .driver-topic,.wl-group,.wl-infotainment-section,.wl-info-category,
+ .fuels-section,.oil-section,.coolant-section,.brake-fluid-section,
+ .washer-section,.emissions-section,.service-section
+)>summary :is(span,strong,b,h2,h3,h4,h5){
+ color:inherit!important;
+}
+body.page-warning-lights :is(#post-203#post-203#post-203,.content-holder) .warning-lights :is(
+ .driver-topic,.wl-group,.wl-infotainment-section,.wl-info-category,
+ .fuels-section,.oil-section,.coolant-section,.brake-fluid-section,
+ .washer-section,.emissions-section,.service-section
+)>summary :is(.driver-topic-arrow,.wl-group-arrow),
+body.page-warning-lights :is(#post-203#post-203#post-203,.content-holder) .warning-lights :is(
+ .driver-topic,.wl-group,.wl-infotainment-section,.wl-info-category,
+ .fuels-section,.oil-section,.coolant-section,.brake-fluid-section,
+ .washer-section,.emissions-section,.service-section
+)>summary::after{
+ color:inherit!important;
+ border-color:currentColor!important;
+}
