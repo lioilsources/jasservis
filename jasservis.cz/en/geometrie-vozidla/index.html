@@ -47,7 +47,7 @@
 <link rel='stylesheet' id='cherry-lazy-load-css' href='../../wp-content/plugins/cherry-lazy-load/css/lazy-load.css' type='text/css' media='all' />
 <link rel='stylesheet' id='cherry-parallax-css' href='../../wp-content/plugins/cherry-parallax/css/parallax.css' type='text/css' media='all' />
 <link rel="stylesheet" href="../../wp-content/themes/CherryFramework/css/style.css" />
-<link rel='stylesheet' id='theme53985-css' href='../../wp-content/themes/theme53985/main-style.css?v=20261107-orange-spacing-v1' type='text/css' media='all' />
+<link rel='stylesheet' id='theme53985-css' href='../../wp-content/themes/theme53985/main-style.css?v=20261108-html-semantics-v2' type='text/css' media='all' />
 <link rel='stylesheet' id='magnific-popup-css' href='../../wp-content/themes/CherryFramework/css/magnific-popup.css' type='text/css' media='all' />
 <link rel='stylesheet' id='mpce-bootstrap-grid-css' href='../../wp-content/plugins/motopress-content-editor-lite/bootstrap/bootstrap-grid.min.css' type='text/css' media='all' />
 <link rel='stylesheet' id='mpce-theme-css' href='../../wp-content/plugins/motopress-content-editor-lite/includes/css/theme.min.css' type='text/css' media='all' />
@@ -102,9 +102,9 @@ div.service-box.style_1 {min-height: 267px;}
 
 .product-detail .span6>h2 {margin-top:0;}
 
-h3.article_header {text-align: left;font-size: 20px;position:relative;padding-bottom: 7px;margin-bottom: 12px;}
+h2.article_header, h3.article_header {text-align: left;font-size: 20px;position:relative;padding-bottom: 7px;margin-bottom: 12px;}
 
-h3.article_header:before {position:absolute;content:"";width:150px;height:1px;bottom:0;left:0;background:#333333;}
+h2.article_header:before, h3.article_header:before {position:absolute;content:"";width:150px;height:1px;bottom:0;left:0;background:#333333;}
 
 ul.filterable-portfolio .portfolio_item {width: 33%;}
 
@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', function(){
 <style>
 #post-2908 .geometry-intro { margin-bottom:24px; }
 #post-2908 .geometry-intro .cena-blok { margin-bottom:0; }
-#post-2908 .geometry-details h3.article_header { margin:24px 0 12px; font-size:20px; line-height:1.4; }
+#post-2908 .geometry-details h2.article_header, h3.article_header { margin:24px 0 12px; font-size:20px; line-height:1.4; }
 #post-2908 .geometry-details h3.article_header strong { font-weight:700; }
 #post-2908 .geometry-details > h3:first-child { margin-top:0; }
 #post-2908 .geometry-details p { margin:0 0 12px; }
@@ -337,14 +337,14 @@ document.addEventListener('DOMContentLoaded', function(){
 #post-2908 .geometry-measurement img { display:block; width:100%; height:auto; }
 #post-2908 .geometry-measurement figcaption { margin-top:8px; font-size:14px; line-height:1.5; color:#555; }
 #post-2908 .geometry-price { border-left:3px solid var(--brand-orange); background:#fdf1ec; padding:16px 20px; margin:24px 0 0; }
-#post-2908 .geometry-price h3.article_header { margin-top:0; }
+#post-2908 .geometry-price h2.article_header, h3.article_header { margin-top:0; }
 #post-2908 .geometry-price p:last-child { margin-bottom:0; }
 @media (max-width:767px) {
   #post-2908 .geometry-intro { margin-bottom:20px; }
   #post-2908 .geometry-intro .cena-blok { margin-bottom:16px; }
-  #post-2908 .geometry-details h3.article_header { font-size:19px; margin-top:22px; }
+  #post-2908 .geometry-details h2.article_header, h3.article_header { font-size:19px; margin-top:22px; }
   #post-2908 .geometry-details > h3:first-child,
-  #post-2908 .geometry-price h3.article_header { margin-top:0; }
+  #post-2908 .geometry-price h2.article_header, h3.article_header { margin-top:0; }
   #post-2908 .geometry-measurement { margin:16px auto 22px; }
   #post-2908 .geometry-price { padding:14px 16px; margin-top:22px; }
 }
@@ -551,7 +551,7 @@ document.addEventListener('DOMContentLoaded', function(){
 <div class="mp-row-fluid motopress-row mpce-dsbl-margin-left mpce-dsbl-margin-right">
 <div class="motopress-clmn mp-span12  mpce-dsbl-margin-left mpce-dsbl-margin-right">
 <div class="motopress-text-obj geometry-details">
-<h3 class="article_header"><strong>3D wheel alignment – Beissbarth VAS 701 011</strong></h3>
+<h2 class="article_header"><strong>3D wheel alignment – Beissbarth VAS 701 011</strong></h2>
 <ul>
 <li>Four-wheel alignment measurement.</li>
 <li>Toe checks and adjustment within the vehicle's design limits.</li>
@@ -564,7 +564,7 @@ document.addEventListener('DOMContentLoaded', function(){
 <a href="../../wp-content/uploads/2026/10/geometrie-vas-701011.webp"><img src="../../wp-content/uploads/2026/10/geometrie-vas-701011.webp" width="1536" height="921" loading="lazy" alt="Wheel alignment display showing camber, toe and thrust angle values." /></a>
 <figcaption>Example of wheel alignment readings during measurement.</figcaption>
 </figure><!-- shared-media:gallery-02:end -->
-<h3 class="article_header"><strong>Chassis diagnostics - Beissbarth test line</strong></h3>
+<h2 class="article_header"><strong>Chassis diagnostics - Beissbarth test line</strong></h2>
 <ul>
 <li>Measurement of braking forces and their differences on individual wheels.</li>
 <li>Checking the effectiveness of the service and parking brakes.</li>
@@ -572,11 +572,11 @@ document.addEventListener('DOMContentLoaded', function(){
 <li>Checking the clearances in the wheel suspension and axles.</li>
 <li>Evaluation of the technical condition of the chassis within the range of possibilities of the test line.</li>
 </ul>
-<h3 class="article_header"><strong>Assistance systems and adaptation</strong></h3>
+<h2 class="article_header"><strong>Assistance systems and adaptation</strong></h2>
 <p>After adjusting the geometry, we assess the need for basic settings of the relevant systems and possible calibration of radars or cameras according to the manufacturer's requirements. We perform diagnostic functions using the ODIS system according to the specific vehicle.</p>
 <p>Driver assistance system calibration is not included in the basic wheel alignment price.</p>
 <div class="geometry-price">
-<h3 class="article_header"><strong>Service price</strong></h3>
+<h2 class="article_header"><strong>Service price</strong></h2>
 <p>The basic price of 3D wheel alignment measurement and adjustment is from 2 000 Kč excluding VAT (from 2 420 Kč including VAT).</p>
 <p>The price covers standard measurement and adjustment within the vehicle's design limits. Suspension repairs, test lane diagnostics, ODIS diagnostic and adjustment procedures and driver assistance system calibration are charged separately by agreement with the customer.</p>
 <p>We work according to the service procedures of the manufacturer and take into account the design and technical condition of the specific vehicle.</p>
@@ -653,7 +653,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	</div>
 
 	
-	<style id="motopress-ce-private-styles" data-posts="" type="text/css"></style>
+
 <script type='text/javascript' id='cherry-plugin-js-extra'>
 /* <![CDATA[ */
 var items_custom = [[0,1],[480,2],[768,3],[980,4],[1170,5]];
