@@ -22,3 +22,6 @@
 @media(max-width:1199px){.home .oil-hero{min-height:560px}.home .oil-hero__inner{min-height:560px;padding:24px 24px 28px}.home .oil-hero__slides{grid-template-columns:minmax(0,1fr);gap:28px;max-width:620px}.home .oil-hero__slide,.home .oil-hero__slide+.oil-hero__slide{grid-template-rows:auto auto;justify-items:center;gap:10px;text-align:center}.home .oil-hero__title{font-size:34px}.home .oil-hero__shade{background:rgba(10,15,20,.7)}}
 @media(max-width:767px){.home .oil-hero{min-height:500px}.home .oil-hero__frame{width:max(100%,754.573px)}.home .oil-hero__inner{min-height:500px;padding:24px 20px}.home .oil-hero__slides{max-width:500px}.home .oil-hero__slide,.home .oil-hero__slide+.oil-hero__slide{gap:9px}.home .oil-hero__specialization{font-size:15px;line-height:1.4}.home .oil-hero__title{font-size:clamp(23px,6vw,28px);line-height:1.2}.home .oil-hero__link{min-height:46px;padding:8px 20px;font-size:15px}}
 @media(prefers-reduced-motion:reduce){.home .oil-hero__flow,.home .oil-hero__link{transition:none}.home .oil-hero__flow{display:none}}
+
+/* D uses advected detail in the same bounded photograph corridor. */
+.home .oil-hero__flow.oil-hero__flow--flowing{mask-image:url('../../uploads/2026/11/oil-flow-d-blend.svg');-webkit-mask-image:url('../../uploads/2026/11/oil-flow-d-blend.svg')}
