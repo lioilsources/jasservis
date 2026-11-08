@@ -8,7 +8,7 @@
  // Linux WebKit ends these clips early. Use the original photo on Safari/WebKit,
  // including all iOS browsers; do not hide a decoder failure with seek/replay hacks.
  var staticOil=/AppleWebKit\//.test(navigator.userAgent)&&!/(?:Chrome|Chromium|Edg|OPR|SamsungBrowser)\//.test(navigator.userAgent);
- hero.setAttribute('data-oil-playback',staticOil?'static-webkit':'native-c');
+ hero.setAttribute('data-oil-playback',staticOil?'static-webkit':'native-d');
  var visible=false,loaded=false;
  var mediaFailed=false;
  var paintReady=false,photo=hero.querySelector('img');
@@ -35,6 +35,7 @@
   var moving=visible&&paintReady&&!document.hidden&&!reduced.matches;
   if (moving&&!staticOil&&!mediaFailed) {
    video.classList.add('oil-hero__flow--contour');
+   if(/oil-flow-d\./.test(video.getAttribute('data-webm')||'')) video.classList.add('oil-hero__flow--flowing');
    video.autoplay=true;
    if(!loaded) loadFlow();
    var playing=video.play();if(playing) playing.catch(function(){video.classList.remove('is-playing');});
