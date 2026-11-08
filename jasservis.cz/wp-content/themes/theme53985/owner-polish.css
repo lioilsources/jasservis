@@ -328,6 +328,14 @@ body.js-visual-preview #motopress-main .content-holder .title-section::after {
  }
 }
 
+/* The offered-services panel uses the page surface around its rounded edges;
+   legacy full-width pseudo-elements must not paint grey side strips. */
+body.js-visual-preview #motopress-main #post-203 .home-offered-services::before,
+body.js-visual-preview #motopress-main #post-203 .home-offered-services::after {
+ content:none!important;
+ display:none!important;
+}
+
 /* Match the orange homepage frames on the remaining service-card grids. */
 body.js-visual-preview #motopress-main :is(#post-2272,#post-2065) #portfolio-grid .portfolio_item_holder {
  border:2px solid var(--brand-orange)!important;
