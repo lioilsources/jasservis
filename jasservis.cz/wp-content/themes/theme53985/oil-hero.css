@@ -9,16 +9,16 @@
    corridor replaces the old oil-only polygon and covers its former edge. */
 .home .oil-hero__flow.oil-hero__flow--contour{left:47.474747%;top:22.865854%;width:12.929293%;height:68.597561%;clip-path:none;mask-image:url('../../uploads/2026/11/oil-flow-c-blend.svg');mask-size:100% 100%;mask-repeat:no-repeat;-webkit-mask-image:url('../../uploads/2026/11/oil-flow-c-blend.svg');-webkit-mask-size:100% 100%;-webkit-mask-repeat:no-repeat}
 .home .oil-hero__shade{background:linear-gradient(90deg,rgba(10,15,20,.84),rgba(10,15,20,.7) 30%,rgba(10,15,20,.15) 48%,rgba(10,15,20,.15) 56%,rgba(10,15,20,.7) 76%,rgba(10,15,20,.84));z-index:1}
-.home .oil-hero__inner{position:relative;z-index:2;display:flex;align-items:center;width:min(1170px,100%);min-height:500px;box-sizing:border-box;margin:0 auto;padding:40px 30px}
+.home .oil-hero__inner{position:relative;z-index:2;display:grid;grid-template-rows:auto 1fr;align-items:start;row-gap:20px;width:min(1170px,100%);min-height:500px;box-sizing:border-box;margin:0 auto;padding:24px 30px 40px}
 /* Both offers remain visible, with the original oil photograph between them. */
-.home .oil-hero__slides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(80px,14vw,200px);width:100%}
-.home .oil-hero__slide{display:grid;grid-template-rows:minmax(52px,auto) minmax(148px,1fr) auto;align-items:center;justify-items:start;gap:12px;min-width:0}
+.home .oil-hero__slides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(80px,14vw,200px);width:100%;align-self:center;justify-self:center}
+.home .oil-hero__slide{display:grid;grid-template-rows:minmax(148px,1fr) auto;align-items:center;justify-items:start;gap:12px;min-width:0}
 .home .oil-hero__slide+.oil-hero__slide{justify-items:end;text-align:right}
-.home .oil-hero__specialization{font-size:18px;line-height:1.45;font-weight:500;text-shadow:0 1px 3px #000}
+.home .oil-hero__specialization{margin:0;justify-self:start;text-align:left;font-size:18px;line-height:1.45;font-weight:500;text-shadow:0 1px 3px #000}
 .home .oil-hero__title{display:block;max-width:100%;font-size:clamp(30px,3.05vw,42px);font-weight:400;line-height:1.18;overflow-wrap:break-word;text-wrap:balance;text-shadow:0 1px 3px #000}
 .home .oil-hero__link{display:inline-flex;align-items:center;justify-content:center;min-height:48px;box-sizing:border-box;padding:9px 24px;border:2px solid var(--brand-orange);border-radius:4px;background:#252D34;color:#F5F7F9;font-size:16px;font-weight:500;line-height:24px;text-decoration:none;text-transform:uppercase;transition:background-color .18s,color .18s}
 .home .oil-hero__link:hover,.home .oil-hero__link:focus-visible{background:var(--brand-orange);color:#252D34;text-decoration:none}
 .home .oil-hero__link:focus-visible{outline:3px solid #F5F7F9;outline-offset:3px}
-@media(max-width:1199px){.home .oil-hero{min-height:560px}.home .oil-hero__inner{justify-content:center;min-height:560px;padding:28px 24px}.home .oil-hero__slides{grid-template-columns:minmax(0,1fr);gap:28px;max-width:620px}.home .oil-hero__slide,.home .oil-hero__slide+.oil-hero__slide{grid-template-rows:auto auto auto;justify-items:center;gap:10px;text-align:center}.home .oil-hero__title{font-size:34px}.home .oil-hero__shade{background:rgba(10,15,20,.7)}}
+@media(max-width:1199px){.home .oil-hero{min-height:560px}.home .oil-hero__inner{min-height:560px;padding:24px 24px 28px}.home .oil-hero__slides{grid-template-columns:minmax(0,1fr);gap:28px;max-width:620px}.home .oil-hero__slide,.home .oil-hero__slide+.oil-hero__slide{grid-template-rows:auto auto;justify-items:center;gap:10px;text-align:center}.home .oil-hero__title{font-size:34px}.home .oil-hero__shade{background:rgba(10,15,20,.7)}}
 @media(max-width:767px){.home .oil-hero{min-height:500px}.home .oil-hero__frame{width:max(100%,754.573px)}.home .oil-hero__inner{min-height:500px;padding:24px 20px}.home .oil-hero__slides{max-width:500px}.home .oil-hero__slide,.home .oil-hero__slide+.oil-hero__slide{gap:9px}.home .oil-hero__specialization{font-size:15px;line-height:1.4}.home .oil-hero__title{font-size:clamp(23px,6vw,28px);line-height:1.2}.home .oil-hero__link{min-height:46px;padding:8px 20px;font-size:15px}}
 @media(prefers-reduced-motion:reduce){.home .oil-hero__flow,.home .oil-hero__link{transition:none}.home .oil-hero__flow{display:none}}
