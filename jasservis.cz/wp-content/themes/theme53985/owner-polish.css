@@ -302,3 +302,28 @@ body.page-warning-lights :is(#post-203#post-203#post-203,.content-holder) .warni
   font-weight:700;
  }
 }
+
+/* The legacy heading used 10,000px grey extensions on both sides.
+   The surrounding content already has the same graphite surface. */
+body.js-visual-preview #motopress-main .content-holder .title-section::before,
+body.js-visual-preview #motopress-main .content-holder .title-section::after {
+ content:none!important;
+ display:none!important;
+}
+
+/* Phone layouts end with the compact copyright/preferences footer.
+   Contacts and directions remain available on the dedicated Contact page. */
+@media (max-width:767px), (max-width:1199px) and (max-height:500px) and (orientation:landscape) {
+ body.js-visual-preview #motopress-main .site-service-contact,
+ body.js-visual-preview #motopress-main .footer .footer-widgets,
+ body.js-visual-preview #motopress-main .footer [data-motopress-static-file="static/static-map.php"] {
+  display:none!important;
+ }
+ body.js-visual-preview #motopress-main .footer {
+  margin-top:0;
+  padding-top:0;
+ }
+ body.js-visual-preview #motopress-main .footer>.container {
+  border-top:0!important;
+ }
+}
