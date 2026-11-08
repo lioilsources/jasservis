@@ -15,12 +15,12 @@
 .home .oil-hero__slide.is-active{opacity:1;visibility:visible;pointer-events:auto;transition:opacity .38s ease,visibility 0s}
 .home .oil-hero__specialization{font-size:18px;line-height:1.45;font-weight:500;text-shadow:0 1px 3px #000}
 .home .oil-hero__title{display:block;max-width:100%;font-size:clamp(30px,3.05vw,46px);font-weight:400;line-height:1.18;overflow-wrap:break-word;text-wrap:balance;text-shadow:0 1px 3px #000}
-.home .oil-hero__link{display:inline-flex;align-items:center;justify-content:center;min-height:48px;box-sizing:border-box;padding:9px 24px;border:2px solid var(--js-orange,#FF6B1A);border-radius:4px;background:#252D34;color:#F5F7F9;font-size:16px;font-weight:500;line-height:24px;text-decoration:none;text-transform:uppercase;transition:background-color .18s,color .18s}
-.home .oil-hero__link:hover,.home .oil-hero__link:focus-visible{background:var(--js-orange,#FF6B1A);color:#252D34;text-decoration:none}
+.home .oil-hero__link{display:inline-flex;align-items:center;justify-content:center;min-height:48px;box-sizing:border-box;padding:9px 24px;border:2px solid var(--brand-orange);border-radius:4px;background:#252D34;color:#F5F7F9;font-size:16px;font-weight:500;line-height:24px;text-decoration:none;text-transform:uppercase;transition:background-color .18s,color .18s}
+.home .oil-hero__link:hover,.home .oil-hero__link:focus-visible{background:var(--brand-orange);color:#252D34;text-decoration:none}
 .home .oil-hero__controls{position:absolute;z-index:3;bottom:12px;right:max(16px,calc((100% - 1110px)/2));display:flex;align-items:center;gap:8px}
 .home .oil-hero__controls[hidden]{display:none}
-.home .oil-hero__controls button{display:grid;place-items:center;box-sizing:border-box;width:44px;height:44px;margin:0;padding:0;border:1px solid var(--js-orange,#FF6B1A);border-radius:4px;background:#252D34;color:#F5F7F9;font:500 24px/1 var(--js-font,Ubuntu,Arial,sans-serif);cursor:pointer}
-.home .oil-hero__controls button:hover{background:var(--js-orange,#FF6B1A);color:#252D34}
+.home .oil-hero__controls button{display:grid;place-items:center;box-sizing:border-box;width:44px;height:44px;margin:0;padding:0;border:1px solid var(--brand-orange);border-radius:4px;background:#252D34;color:#F5F7F9;font:500 24px/1 var(--js-font,Ubuntu,Arial,sans-serif);cursor:pointer}
+.home .oil-hero__controls button:hover{background:var(--brand-orange);color:#252D34}
 .home .oil-hero__controls button:disabled{cursor:default;color:#F5F7F9;background:#252D34}
 .home .oil-hero__controls [data-oil-pause-icon]{display:block;box-sizing:border-box;width:12px;height:16px;border-left:4px solid currentColor;border-right:4px solid currentColor}
 .home .oil-hero__controls [aria-pressed="true"] [data-oil-pause-icon]{width:0;height:0;border-top:8px solid transparent;border-bottom:8px solid transparent;border-left:12px solid currentColor;border-right:0}

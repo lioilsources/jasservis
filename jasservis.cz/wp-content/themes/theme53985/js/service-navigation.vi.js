@@ -80,7 +80,7 @@
             window.scrollTo(state.x, state.y);
         }
         if (restoreFocus !== false) toggle.focus({preventScroll:true});
-        window.requestAnimationFrame(arrangeShortHeader);
+        scheduleHeaderLayout();
     }
     function openMobilePanel() {
         closeLanguage(false);
@@ -272,7 +272,7 @@
     });
     function onNavigationBreakpoint() {
         if (!tablet.matches && !shortLandscape.matches) reset();
-        arrangeShortHeader();
+        scheduleHeaderLayout();
     }
     if (compact.addEventListener) compact.addEventListener('change', onNavigationBreakpoint);
     else compact.addListener(onNavigationBreakpoint);
@@ -399,7 +399,8 @@
                 nav.insertBefore(menu, landscapeRow.nextSibling);
                 moved = true;
             }
-            menu.hidden = fits ? false : (wasFull ? controls.every(function (control) { return control.panel.hidden; }) : wasHidden);
+            // Compact navigation is exposed through the modal MENU, never an inline overflow row.
+            menu.hidden = !fits;
         } else {
             nav.classList.remove('short-header-full-nav');
             if (!compact.matches) {
@@ -422,17 +423,39 @@
         else if (restoreFocus && focused && focused.isConnected && (focused === toggle || logo.contains(focused) || (languageSwitch && languageSwitch.contains(focused) && languageSummary.getClientRects().length) || (!menu.hidden && menu.contains(focused)))) focused.focus({preventScroll: true});
         arrangingHeader = false;
     }
-    if (tablet.addEventListener) tablet.addEventListener('change', arrangeShortHeader);
-    else tablet.addListener(arrangeShortHeader);
-    if (shortLandscape.addEventListener) shortLandscape.addEventListener('change', arrangeShortHeader);
-    else shortLandscape.addListener(arrangeShortHeader);
-    window.addEventListener('resize', arrangeShortHeader);
-    if (window.visualViewport) window.visualViewport.addEventListener('resize', arrangeShortHeader);
-    window.addEventListener('orientationchange', function () { window.requestAnimationFrame(arrangeShortHeader); });
+    // Resize/media-query events can precede the final CSS layout (including
+    // reduced-motion transitions). Coalesce them, then observe the real width.
+    var headerLayoutFrame = 0;
+    function scheduleHeaderLayout() {
+        if (headerLayoutFrame) return;
+        headerLayoutFrame = window.requestAnimationFrame(function () {
+            headerLayoutFrame = 0;
+            arrangeShortHeader();
+        });
+    }
+    if (tablet.addEventListener) tablet.addEventListener('change', scheduleHeaderLayout);
+    else tablet.addListener(scheduleHeaderLayout);
+    if (shortLandscape.addEventListener) shortLandscape.addEventListener('change', scheduleHeaderLayout);
+    else shortLandscape.addListener(scheduleHeaderLayout);
+    window.addEventListener('resize', scheduleHeaderLayout);
+    if (window.visualViewport) window.visualViewport.addEventListener('resize', scheduleHeaderLayout);
+    window.addEventListener('orientationchange', scheduleHeaderLayout);
+    if (window.ResizeObserver) {
+        var observedNavWidth = -1;
+        new ResizeObserver(function (entries) {
+            var width = entries[0].contentRect.width;
+            if (Math.abs(width - observedNavWidth) < 0.5) return;
+            observedNavWidth = width;
+            if (!mobilePanel.open) scheduleHeaderLayout();
+        }).observe(nav);
+    }
     // Safari may restore an expanded menu from the back/forward cache.
-    window.addEventListener('pageshow', function (event) { if (event.persisted) { closeMobilePanel(false); reset(); arrangeShortHeader(); } });
+    window.addEventListener('pageshow', function (event) { if (event.persisted) { closeMobilePanel(false); reset(); scheduleHeaderLayout(); } });
     nav.classList.add('navigation-ready');
     reset();
     arrangeShortHeader();
-    if (document.fonts && document.fonts.ready) document.fonts.ready.then(arrangeShortHeader);
+    if (document.fonts) {
+        document.fonts.ready.then(scheduleHeaderLayout);
+        document.fonts.addEventListener('loadingdone', scheduleHeaderLayout);
+    }
 }());
