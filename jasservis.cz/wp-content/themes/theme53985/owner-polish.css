@@ -327,3 +327,30 @@ body.js-visual-preview #motopress-main .content-holder .title-section::after {
   border-top:0!important;
  }
 }
+
+/* Match the orange homepage frames on the remaining service-card grids. */
+body.js-visual-preview #motopress-main :is(#post-2272,#post-2065) #portfolio-grid .portfolio_item_holder {
+ border:2px solid var(--brand-orange)!important;
+ border-radius:8px;
+ overflow:hidden;
+}
+/* Keep the photo frame above both the static image and the moving SVG layers.
+   An overlay avoids changing the lift's image-to-SVG alignment. */
+body.js-visual-preview #motopress-main #post-2272 :is(.cupra-mobile-image,.cupra-desktop-image) {
+ position:relative;
+ border-radius:8px;
+ overflow:hidden;
+}
+body.js-visual-preview #motopress-main #post-2272 :is(.cupra-mobile-image,.cupra-desktop-image)>img {
+ border:0!important;
+}
+body.js-visual-preview #motopress-main #post-2272 :is(.cupra-mobile-image,.cupra-desktop-image)::after {
+ content:'';
+ position:absolute;
+ inset:0;
+ z-index:3;
+ box-sizing:border-box;
+ border:2px solid var(--brand-orange);
+ border-radius:inherit;
+ pointer-events:none;
+}
