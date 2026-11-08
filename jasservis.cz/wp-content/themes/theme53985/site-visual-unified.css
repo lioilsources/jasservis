@@ -96,10 +96,12 @@ body.js-visual-preview :is(.site-service-contact__phone,.footer .icon,.header .i
 body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) .driver-topic-body td {color:#252D34!important;}
 body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) .driver-topic-body th {background:#303A43!important;color:#F5F7F9!important;}
 body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) .driver-topic-body :is(td,th) :is(strong,b,a) {color:inherit!important;}
+/* Paint the shared highlight on the parent tile only. Labels and disclosure
+   buttons stay transparent in hover, focus and open states. */
 body.js-visual-preview :is(.header,.mobile-nav-panel) #topnav#topnav>li>:is(a,button) {color:var(--brand-orange)!important;}
 body.js-visual-preview :is(.header,.mobile-nav-panel) #topnav#topnav>li:is(.is-open,:focus-within)>:is(a,button),
-body.js-visual-preview :is(.header,.mobile-nav-panel) #topnav#topnav>li>:is(a,button):focus {background:#fff!important;color:#000!important;outline-color:#000!important;}
-@media(hover:hover) and (pointer:fine){body.js-visual-preview :is(.header,.mobile-nav-panel) #topnav#topnav>li:hover>:is(a,button) {background:#fff!important;color:#000!important;}}
+body.js-visual-preview :is(.header,.mobile-nav-panel) #topnav#topnav>li>:is(a,button):focus {background:transparent!important;color:#000!important;outline-color:#000!important;}
+@media(hover:hover) and (pointer:fine){body.js-visual-preview :is(.header,.mobile-nav-panel) #topnav#topnav>li:hover>:is(a,button) {background:transparent!important;color:#000!important;}}
 /* Keep the original light reading bodies inside driver advice disclosures. */
 body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) .driver-topic-body,
 body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) .driver-topic-body details>div {background:#F5F7F9!important;color:#252D34!important;}
