@@ -1,6 +1,7 @@
 /* Overlay geometry follows each unmodified photograph, not the card. */
-.js-headlight-photo{position:relative;}
-.js-headlight-overlay{position:absolute;pointer-events:none;overflow:hidden;opacity:0;mix-blend-mode:screen;fill:#eff7ff;z-index:1;}
+.js-headlight-photo{position:relative;isolation:isolate;}
+.js-headlight-overlay{position:absolute;pointer-events:none;overflow:hidden;opacity:0;mix-blend-mode:screen;fill:#fff;z-index:1;}
+.js-headlight-overlay path{filter:drop-shadow(0 0 2px rgba(255,255,255,.8)) drop-shadow(0 0 6px rgba(255,255,255,.45));}
 @keyframes js-headlight-pulse{0%,100%{opacity:0;}50%{opacity:.68;}}
-.js-headlight-overlay.is-lit{animation:js-headlight-pulse 1200ms ease-in-out 1;}
+.js-headlight-overlay.is-lit{animation:js-headlight-pulse 2000ms ease-in-out 1;}
 @media(prefers-reduced-motion:reduce){.js-headlight-overlay,.js-headlight-overlay.is-lit{display:none!important;animation:none!important;}}
