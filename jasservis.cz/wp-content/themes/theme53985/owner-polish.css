@@ -444,3 +444,25 @@ body.js-visual-preview :is(#motopress-main,.mobile-nav-panel) #menu-item-recenze
  color:#56616b;
  font-size:11px;
 }
+
+/* Keep the complete oil photograph visible on wide desktop displays.
+   The photo and animated flow share the same frame and scale together. */
+@media(min-width:1200px) {
+ body.js-visual-preview.home .oil-hero,
+ body.js-visual-preview.home .oil-hero__inner {
+  min-height:clamp(500px,31.25vw,640px);
+ }
+ body.js-visual-preview.home .oil-hero__frame {
+  width:auto!important;
+  height:100%!important;
+  max-width:none;
+  aspect-ratio:1980 / 1312;
+ }
+ body.js-visual-preview.home .oil-hero__frame::after {
+  content:'';
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:linear-gradient(90deg,#252d34,transparent 9%,transparent 91%,#252d34);
+ }
+}
