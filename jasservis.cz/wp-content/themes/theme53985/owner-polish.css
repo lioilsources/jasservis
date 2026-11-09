@@ -400,3 +400,47 @@ body.js-visual-preview #motopress-main .nav__primary.desktop-menu-collapsed #top
  width:100%;
  max-width:100%;
 }
+
+/* Google summary uses the same responsive reviews dropdown as Firmy.cz. */
+body.js-visual-preview :is(#motopress-main,.mobile-nav-panel) #menu-item-recenze .google-review-rating {
+ display:flex;
+ flex-direction:column;
+ gap:3px;
+ box-sizing:border-box;
+ width:249px;
+ max-width:100%;
+ padding:10px 12px;
+ background:#fff;
+ color:#252d34;
+ border-radius:4px;
+ font:14px/1.4 system-ui,sans-serif;
+ text-transform:none;
+ letter-spacing:normal;
+}
+body.js-visual-preview :is(#motopress-main,.mobile-nav-panel) #menu-item-recenze .google-review-rating-line {
+ display:flex;
+ align-items:center;
+ gap:10px;
+ flex-wrap:wrap;
+}
+body.js-visual-preview :is(#motopress-main,.mobile-nav-panel) #menu-item-recenze .google-review-stars {
+ position:relative;
+ display:inline-block;
+ color:#d6d6d6;
+ font-size:20px;
+ line-height:1.2;
+ letter-spacing:1px;
+ white-space:nowrap;
+}
+body.js-visual-preview :is(#motopress-main,.mobile-nav-panel) #menu-item-recenze .google-review-stars>span {
+ position:absolute;
+ top:0;
+ left:0;
+ overflow:hidden;
+ color:#c77c00;
+ white-space:nowrap;
+}
+body.js-visual-preview :is(#motopress-main,.mobile-nav-panel) #menu-item-recenze .google-review-updated {
+ color:#56616b;
+ font-size:11px;
+}
