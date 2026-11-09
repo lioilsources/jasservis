@@ -101,3 +101,13 @@
     beacon.setAttribute('data-cf-beacon', '{"token":"76300e87f10c422e92a47f69dfbeead6"}');
     document.head.appendChild(beacon);
 }());
+
+/* Shared reviews enhancement; resolves relatively in all language directories. */
+(function () {
+    'use strict';
+    if (!document.currentScript || document.querySelector('script[data-review-ratings]')) return;
+    var script = document.createElement('script');
+    script.src = new URL('review-ratings.js?v=20261109-firmy-v1', document.currentScript.src).href;
+    script.setAttribute('data-review-ratings', '');
+    document.head.appendChild(script);
+}());
