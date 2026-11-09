@@ -85,3 +85,19 @@
     }
     reserveSpace();
 }());
+
+/* Owner-requested, cookie-free private analytics. Preview visits stay uncounted. */
+(function () {
+    'use strict';
+    if (!/^(www\.)?jasservis\.cz$/.test(window.location.hostname)) return;
+    var details = document.getElementById('cookie-details');
+    var explanation = details && details.querySelector('p');
+    if (explanation) explanation.textContent = "The website stores your choice in the technical cf-cookie-banner cookie for 365 days. Private traffic statistics use Cloudflare Web Analytics without analytics or advertising cookies. Statistics are not displayed publicly on the website. Rejecting embedded services does not restrict contact details or directions to the workshop.";
+    // Prevent a second beacon if a hosting-level integration is enabled later.
+    if (document.querySelector('script[data-cf-beacon]')) return;
+    var beacon = document.createElement('script');
+    beacon.type = 'module';
+    beacon.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    beacon.setAttribute('data-cf-beacon', '{"token":"76300e87f10c422e92a47f69dfbeead6"}');
+    document.head.appendChild(beacon);
+}());

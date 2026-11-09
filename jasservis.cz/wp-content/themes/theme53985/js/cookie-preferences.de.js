@@ -85,3 +85,19 @@
     }
     reserveSpace();
 }());
+
+/* Owner-requested, cookie-free private analytics. Preview visits stay uncounted. */
+(function () {
+    'use strict';
+    if (!/^(www\.)?jasservis\.cz$/.test(window.location.hostname)) return;
+    var details = document.getElementById('cookie-details');
+    var explanation = details && details.querySelector('p');
+    if (explanation) explanation.textContent = "Die Website speichert Ihre Auswahl für 365 Tage im technisch notwendigen Cookie cf-cookie-banner. Private Besucherstatistiken werden mit Cloudflare Web Analytics ohne Analyse- oder Werbe-Cookies erfasst. Die Statistiken werden auf der Website nicht öffentlich angezeigt. Das Ablehnen eingebetteter Dienste schränkt Kontaktdaten und Links zur Anfahrt nicht ein.";
+    // Prevent a second beacon if a hosting-level integration is enabled later.
+    if (document.querySelector('script[data-cf-beacon]')) return;
+    var beacon = document.createElement('script');
+    beacon.type = 'module';
+    beacon.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    beacon.setAttribute('data-cf-beacon', '{"token":"76300e87f10c422e92a47f69dfbeead6"}');
+    document.head.appendChild(beacon);
+}());

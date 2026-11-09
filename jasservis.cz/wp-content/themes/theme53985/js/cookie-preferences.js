@@ -85,3 +85,19 @@
     }
     reserveSpace();
 }());
+
+/* Owner-requested, cookie-free private analytics. Preview visits stay uncounted. */
+(function () {
+    'use strict';
+    if (!/^(www\.)?jasservis\.cz$/.test(window.location.hostname)) return;
+    var details = document.getElementById('cookie-details');
+    var explanation = details && details.querySelector('p');
+    if (explanation) explanation.textContent = "Web ukládá vaši volbu do technické cookie cf-cookie-banner na 365 dní. Soukromé statistiky návštěvnosti zajišťuje Cloudflare Web Analytics bez analytických a reklamních cookies. Statistiky nejsou veřejně zobrazené na webu. Odmítnutí vložených služeb neomezuje kontakty ani odkazy pro navigaci do servisu.";
+    // Prevent a second beacon if a hosting-level integration is enabled later.
+    if (document.querySelector('script[data-cf-beacon]')) return;
+    var beacon = document.createElement('script');
+    beacon.type = 'module';
+    beacon.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    beacon.setAttribute('data-cf-beacon', '{"token":"76300e87f10c422e92a47f69dfbeead6"}');
+    document.head.appendChild(beacon);
+}());
