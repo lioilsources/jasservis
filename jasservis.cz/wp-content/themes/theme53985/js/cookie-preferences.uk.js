@@ -108,7 +108,7 @@
     'use strict';
     if (!document.currentScript || document.querySelector('script[data-review-ratings]')) return;
     var script = document.createElement('script');
-    script.src = new URL('review-ratings.js?v=20261109-firmy-v1', document.currentScript.src).href;
+    script.src = new URL('review-ratings.js?v=20261109-google-v2', document.currentScript.src).href;
     script.setAttribute('data-review-ratings', '');
     document.head.appendChild(script);
 }());
