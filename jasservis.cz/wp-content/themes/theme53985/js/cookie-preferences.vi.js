@@ -86,3 +86,19 @@
     }
     reserveSpace();
 }());
+
+/* Owner-requested, cookie-free private analytics. Preview visits stay uncounted. */
+(function () {
+    'use strict';
+    if (!/^(www\.)?jasservis\.cz$/.test(window.location.hostname)) return;
+    var details = document.getElementById('cookie-details');
+    var explanation = details && details.querySelector('p');
+    if (explanation) explanation.textContent = "Trang web lưu lựa chọn của bạn trong cookie kỹ thuật cf-cookie-banner trong 365 ngày. Cloudflare Web Analytics cung cấp số liệu thống kê truy cập riêng tư mà không dùng cookie phân tích hoặc quảng cáo. Số liệu thống kê không được hiển thị công khai trên trang web. Từ chối các dịch vụ nhúng không hạn chế thông tin liên hệ hoặc liên kết chỉ đường đến gara.";
+    // Prevent a second beacon if a hosting-level integration is enabled later.
+    if (document.querySelector('script[data-cf-beacon]')) return;
+    var beacon = document.createElement('script');
+    beacon.type = 'module';
+    beacon.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    beacon.setAttribute('data-cf-beacon', '{"token":"76300e87f10c422e92a47f69dfbeead6"}');
+    document.head.appendChild(beacon);
+}());
