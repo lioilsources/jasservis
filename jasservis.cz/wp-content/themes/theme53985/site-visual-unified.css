@@ -171,7 +171,7 @@ body.js-visual-preview .header .header-action-emoji {flex:0 0 auto;font-size:1.2
 body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget>b>a[data-booking-panel] {width:100%;}
 body.js-visual-preview .header .header-advice-icons {display:inline-flex;align-items:center;gap:6px;flex:0 0 auto;}
 body.js-visual-preview .header .header-advice-car {display:inline-flex;align-items:center;line-height:1;color:#000;}
-body.js-visual-preview .header .header-advice-car svg {display:block;width:32px;height:20px;max-width:none;}
+body.js-visual-preview .header .header-advice-car svg {display:block;width:48px;height:32px;max-width:none;}
 /* Two brief attention cues, then rest; only the decorative advice emoji moves. */
 @keyframes js-advice-emoji-nudge {
  0%,20%,60%,80%,100% {transform:translateY(0) rotate(0deg);}
@@ -236,6 +236,13 @@ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #t
  body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 .mobile-booking-trigger{grid-column:1;grid-row:1;}
  body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 .header-driver-advice{grid-column:1;grid-row:2;}
  body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 .tel{grid-column:1;grid-row:3;}
+}
+/* Keep the wider car and the German label within the narrow phone gutters. */
+@media(min-width:480px) and (max-width:530px) and (min-height:501px){
+ html[lang="de"] body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget{grid-template-columns:minmax(0,1fr);grid-template-rows:repeat(2,minmax(48px,1fr)) auto;}
+ html[lang="de"] body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 .mobile-booking-trigger{grid-column:1;grid-row:1;}
+ html[lang="de"] body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 .header-driver-advice{grid-column:1;grid-row:2;}
+ html[lang="de"] body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 .tel{grid-column:1;grid-row:3;}
 }
 /* Let the desktop action row wrap before it can collide with contact details. */
 @media(min-width:1200px) and (max-width:1350px){
