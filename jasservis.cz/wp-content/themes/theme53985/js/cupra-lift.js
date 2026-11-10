@@ -6,8 +6,9 @@
  if(!photos.length)return;
  var ns='http://www.w3.org/2000/svg',serial=0,items=[],pagePaused=false;
  var motion=window.matchMedia('(prefers-reduced-motion: reduce)');
- // Concave lower edge follows both tyres and the rocker, excluding the floor.
- var vehicle='M132 397 C166 353 296 327 416 311 L488 259 C542 224 606 203 660 201 L699 199 L699 195 L738 196 L748 201 C835 200 921 219 978 256 L1022 292 L1057 322 L1074 343 L1080 393 L1087 452 L1083 498 L1071 521 C1068 568 1048 608 1011 615 C974 622 946 600 935 566 L931 529 L592 557 C589 627 555 680 498 687 C429 697 375 655 355 589 L353 582 L241 581 C197 577 145 561 128 543 L121 515 L119 476 L125 438 Z';
+ // The upper edge follows the bonnet and windscreen, leaving the cabinet fixed.
+ // The concave lower edge follows both tyres and the rocker, excluding the floor.
+ var vehicle='M132 397 C166 361 294 331 430 316 C478 282 539 243 597 222 C626 211 650 205 678 202 L699 199 L699 195 L738 196 L748 201 C835 200 921 219 978 256 L1022 292 L1057 322 L1074 343 L1080 393 L1087 452 L1083 498 L1071 521 C1068 568 1048 608 1011 615 C974 622 946 600 935 566 L931 529 L592 557 C589 627 555 680 498 687 C429 697 375 655 355 589 L353 582 L241 581 C197 577 145 561 128 543 L121 515 L119 476 L125 438 Z';
  var platform='M576 550 L930 526 L934 571 L611 614 L571 607 L573 570 Z';
  // Keep the complete mechanism in one continuous layer. The affine stretch
  // raises its top with the car while the floor contact at y=840 stays fixed.
