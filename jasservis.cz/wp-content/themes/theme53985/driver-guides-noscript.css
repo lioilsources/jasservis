@@ -1,0 +1,6 @@
+/* Loaded only when scripts are unavailable. Show the shared customer advice. */
+body.page-warning-lights #warning-lights #brand-advice[hidden]{display:block!important}
+body.page-warning-lights #warning-lights #brand-advice-title:empty{display:none!important}
+body.page-warning-lights #warning-lights #brand-advice>.driver-topics>:not(#jak-rozpoznat-zavadu){display:none!important}
+body.page-warning-lights #warning-lights #jak-rozpoznat-zavadu [data-advice-brands]{display:none!important}
+body.page-warning-lights #warning-lights #jak-rozpoznat-zavadu [data-advice-fallback][hidden]{display:revert!important}

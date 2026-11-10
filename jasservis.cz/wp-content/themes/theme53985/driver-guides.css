@@ -1,0 +1,48 @@
+/* Customer advice, isolated from the existing chapters and warning symbols. */
+body.page-warning-lights #warning-lights#warning-lights#warning-lights #jak-rozpoznat-zavadu>summary{
+ background:#FF6B1A!important;background-image:none!important;color:#252D34!important;
+ box-shadow:none!important;border-color:#252D34!important;
+}
+body.page-warning-lights #warning-lights#warning-lights#warning-lights #jak-rozpoznat-zavadu[open]>summary{
+ background:#fff!important;color:#252D34!important;border-bottom:1px solid #C4CBD1!important;
+}
+body.page-warning-lights #warning-lights#warning-lights#warning-lights #jak-rozpoznat-zavadu>summary:focus-visible{
+ outline:3px solid #252D34!important;outline-offset:-4px!important;
+}
+body.page-warning-lights #warning-lights#warning-lights#warning-lights #jak-rozpoznat-zavadu>.driver-topic-body{
+ background:#fff!important;color:#252D34!important;padding:22px;
+}
+#warning-lights .driver-guides-intro{font-size:1.125rem;font-weight:600;max-width:82ch}
+#warning-lights .driver-guides-scope-note{font-size:1rem;max-width:88ch;padding:14px 16px;border-left:4px solid #FF6B1A;background:#F5F7F9}
+#warning-lights .driver-article-list{display:grid;gap:12px;min-width:0;margin-top:22px}
+#warning-lights .driver-article{min-width:0;margin:0;border:1px solid #C4CBD1;border-radius:4px;background:#fff;overflow:hidden;scroll-margin-top:20px}
+#warning-lights .driver-article>summary{position:relative;display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:68px;padding:14px 18px;list-style:none;background:#F5F7F9;color:#252D34;cursor:pointer}
+#warning-lights .driver-article>summary::-webkit-details-marker{display:none}
+#warning-lights .driver-article>summary h3{margin:0!important;padding:0!important;min-width:0;color:inherit!important;font:700 1.125rem/1.4 var(--js-font,Ubuntu,sans-serif)!important;text-transform:none!important}
+#warning-lights .driver-article-title{display:block;font-weight:700;color:inherit}
+#warning-lights .driver-article-scope{display:block;margin-top:5px;color:#3B444C;font:400 .9375rem/1.45 var(--js-font,Ubuntu,sans-serif)}
+#warning-lights .driver-article[open]>summary{background:#fff;border-bottom:1px solid #C4CBD1}
+#warning-lights .driver-article>summary:focus-visible,#warning-lights .driver-article-table:focus-visible{outline:3px solid #252D34;outline-offset:-4px}
+#warning-lights .driver-article-arrow{display:block;flex:0 0 auto;width:10px;height:10px;margin:-5px 4px 0 10px;border-right:2px solid #252D34;border-bottom:2px solid #252D34;transform:rotate(45deg)}
+#warning-lights .driver-article[open]>summary .driver-article-arrow{margin-top:5px;transform:rotate(225deg)}
+#warning-lights .driver-article-body{padding:20px 22px;color:#252D34;background:#fff;font-size:1rem;line-height:1.65;min-width:0}
+#warning-lights .driver-article-body p{max-width:88ch;margin:0 0 15px;color:inherit;font-size:1rem;line-height:1.65}
+#warning-lights .driver-article-body>p:last-child{margin-bottom:0}
+#warning-lights .driver-article-body h4{margin:24px 0 10px!important;padding:0!important;max-width:88ch;color:#252D34!important;font:700 1.125rem/1.4 var(--js-font,Ubuntu,sans-serif)!important;text-transform:none!important}
+#warning-lights .driver-article-subtitle{font-weight:600}
+#warning-lights .driver-article-scope-full{color:#3B444C!important;font-size:.9375rem!important}
+#warning-lights .driver-article-table{max-width:100%;overflow-x:auto;margin:0 0 20px;border:1px solid #C4CBD1;-webkit-overflow-scrolling:touch}
+#warning-lights .driver-article-table table{width:100%;min-width:440px;margin:0;border-collapse:collapse;color:#252D34;background:#fff;font:400 1rem/1.5 var(--js-font,Ubuntu,sans-serif)}
+#warning-lights .driver-article-table th,#warning-lights .driver-article-table td{padding:11px 13px;border:1px solid #C4CBD1;vertical-align:top;text-align:left;white-space:normal;overflow-wrap:anywhere}
+#warning-lights .driver-article-table th{background:#F5F7F9;font-weight:700}
+#warning-lights .driver-article-table th:first-child,#warning-lights .driver-article-table td:first-child{width:34%}
+#warning-lights .driver-article[hidden],#warning-lights [data-advice-brands][hidden]{display:none!important}
+@media(hover:hover) and (pointer:fine){#warning-lights .driver-article>summary:hover{background:#FFF0E7}}
+@media(max-width:640px){
+ body.page-warning-lights #warning-lights#warning-lights#warning-lights #jak-rozpoznat-zavadu>.driver-topic-body{padding:14px}
+ #warning-lights .driver-article>summary{padding:12px 13px;gap:12px}
+ #warning-lights .driver-article-body{padding:16px 14px}
+ #warning-lights .driver-article>summary h3{font-size:1.0625rem!important}
+ #warning-lights .driver-article-scope{font-size:.875rem}
+ #warning-lights .driver-article-body h4{font-size:1.0625rem!important}
+}
