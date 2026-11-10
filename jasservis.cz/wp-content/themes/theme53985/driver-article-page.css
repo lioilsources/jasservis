@@ -2,7 +2,8 @@
 .page-driver-article .guide-article{max-width:960px;margin:0 auto 36px;color:#252D34}
 .page-driver-article .guide-article__back{margin:0 0 18px;font-size:1rem}
 .page-driver-article .guide-article__scope-note{margin:0 0 22px;padding:14px 18px;border-left:4px solid #FF6B1A;background:#F5F7F9;font-size:1rem;line-height:1.6}
-.page-driver-article .guide-article__body{padding:0!important}
+body.page-driver-article #motopress-main .guide-article :is(.guide-article__scope-note,.guide-brand-choice__label){color:#252D34!important}
+.page-driver-article .guide-article__body{padding:24px!important;border-radius:4px}
 .page-driver-article .guide-article__body h2{margin:28px 0 12px!important;color:#252D34!important;font:700 1.25rem/1.4 var(--js-font,Ubuntu,sans-serif)!important;text-transform:none!important}
 .page-driver-article .guide-article__body p{max-width:none!important}
 .page-driver-article .guide-brand-choice{margin:0 0 24px;padding:18px;border:1px solid #C4CBD1;border-radius:4px;background:#F5F7F9}
@@ -12,4 +13,4 @@
 .page-driver-article .guide-brand[aria-pressed=true]{border-color:#252D34;background:#FF6B1A;color:#252D34}
 .page-driver-article .guide-brand:focus-visible{outline:3px solid #252D34;outline-offset:2px}
 .page-driver-article .guide-article [data-advice-brands][hidden]{display:none!important}
-@media(max-width:640px){.page-driver-article .guide-brand-choice{padding:14px}.page-driver-article .guide-brand{font-size:.9375rem}.page-driver-article .guide-article__scope-note{padding:12px 14px}}
+@media(max-width:640px){.page-driver-article .guide-brand-choice{padding:14px}.page-driver-article .guide-brand{font-size:.9375rem}.page-driver-article .guide-article__scope-note{padding:12px 14px}.page-driver-article .guide-article__body{padding:18px!important}}
