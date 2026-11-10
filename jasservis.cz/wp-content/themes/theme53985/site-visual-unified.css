@@ -116,6 +116,10 @@ body.js-visual-preview .content-holder .title-section .title-header {
  text-wrap:balance;
 }
 body.js-visual-preview .content-holder .title-section {background:#252D34!important;}
+/* Give all service-card headings the same clear bold weight. */
+body.js-visual-preview .content-holder .caption__portfolio>h3,
+body.js-visual-preview .content-holder .caption__portfolio>h3>a,
+body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) .service-box :is(.title,.service-card-subtitle) {font-weight:700!important;}
 /* Existing service CTA component only; no generic button override. */
 body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) a.btn {background:#252D34!important;background-image:none!important;color:#F5F7F9!important;border:2px solid var(--brand-orange)!important;min-height:44px;box-sizing:border-box;font-size:1rem;}
 body.js-visual-preview :is(#post-203#post-203#post-203,.content-holder) a.btn:focus {background:var(--brand-orange)!important;color:#252D34!important;outline:3px solid #F5F7F9!important;outline-offset:3px;}
@@ -163,6 +167,29 @@ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #t
  white-space:normal;text-align:center;text-decoration:none;
 }
 body.js-visual-preview .header .header-action-emoji {flex:0 0 auto;font-size:1.2em;line-height:1;}
+/* Fill the orange wrapper so the booking icon and label share its real centre. */
+body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget>b>a[data-booking-panel] {width:100%;}
+body.js-visual-preview .header .header-advice-icons {display:inline-flex;align-items:center;gap:6px;flex:0 0 auto;}
+body.js-visual-preview .header .header-advice-car {display:inline-flex;align-items:center;line-height:1;color:#000;}
+body.js-visual-preview .header .header-advice-car svg {display:block;width:32px;height:20px;max-width:none;}
+/* Two brief attention cues, then rest; only the decorative advice emoji moves. */
+@keyframes js-advice-emoji-nudge {
+ 0%,20%,60%,80%,100% {transform:translateY(0) rotate(0deg);}
+ 4%,64% {transform:translateY(-3px) rotate(-10deg);}
+ 8%,68% {transform:translateY(-3px) rotate(9deg);}
+ 12%,72% {transform:translateY(-2px) rotate(-6deg);}
+ 16%,76% {transform:translateY(-1px) rotate(4deg);}
+}
+@media(prefers-reduced-motion:no-preference) {
+ body.js-visual-preview .header .header-driver-advice .header-action-emoji {
+  display:inline-block;transform-origin:50% 70%;
+  animation:js-advice-emoji-nudge 4.8s ease-in-out 1;
+ }
+ body.js-visual-preview .header .header-driver-advice:is(:hover,:focus-within) .header-action-emoji {animation:none;transform:none;}
+}
+@media(prefers-reduced-motion:reduce) {
+ body.js-visual-preview .header .header-driver-advice .header-action-emoji {animation:none!important;transform:none!important;}
+}
 body.js-visual-preview .header .header-action-label {min-width:0;overflow-wrap:break-word;}
 body.js-visual-preview .header .booking-label-default {display:inline!important;}
 body.js-visual-preview .header .booking-label-landscape {display:none!important;}
