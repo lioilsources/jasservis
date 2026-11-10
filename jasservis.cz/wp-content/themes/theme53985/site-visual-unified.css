@@ -167,6 +167,8 @@ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #t
  white-space:normal;text-align:center;text-decoration:none;
 }
 body.js-visual-preview .header .header-action-emoji {flex:0 0 auto;font-size:1.2em;line-height:1;}
+/* Give the paired advice icons a clear separation from the label. */
+body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget a.header-driver-advice {gap:20px;}
 /* Fill the orange wrapper so the booking icon and label share its real centre. */
 body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget>b>a[data-booking-panel] {width:100%;}
 body.js-visual-preview .header .header-advice-icons {display:inline-flex;align-items:center;gap:6px;flex:0 0 auto;}
@@ -238,7 +240,7 @@ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #t
  body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 .tel{grid-column:1;grid-row:3;}
 }
 /* Keep the wider car and the German label within the narrow phone gutters. */
-@media(min-width:480px) and (max-width:530px) and (min-height:501px){
+@media(min-width:480px) and (max-width:550px) and (min-height:501px){
  html[lang="de"] body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget{grid-template-columns:minmax(0,1fr);grid-template-rows:repeat(2,minmax(48px,1fr)) auto;}
  html[lang="de"] body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 .mobile-booking-trigger{grid-column:1;grid-row:1;}
  html[lang="de"] body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 .header-driver-advice{grid-column:1;grid-row:2;}
