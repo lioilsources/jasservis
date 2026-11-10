@@ -450,7 +450,7 @@ body.js-visual-preview :is(#motopress-main,.mobile-nav-panel) #menu-item-recenze
 @media(min-width:1200px) {
  body.js-visual-preview.home .oil-hero,
  body.js-visual-preview.home .oil-hero__inner {
-  min-height:clamp(500px,31.25vw,640px);
+  min-height:clamp(500px,36vw,800px);
  }
  body.js-visual-preview.home .oil-hero__frame {
   width:auto!important;
@@ -464,5 +464,26 @@ body.js-visual-preview :is(#motopress-main,.mobile-nav-panel) #menu-item-recenze
   inset:0;
   pointer-events:none;
   background:linear-gradient(90deg,#252d34,transparent 9%,transparent 91%,#252d34);
+ }
+}
+
+/* Wide desktop: align the homepage and its two offers with the shared header.
+   The photograph and flow retain one uncropped, proportional frame. */
+@media(min-width:1440px) {
+ body.js-visual-preview #motopress-main .header>.container,
+ body.js-visual-preview.home #motopress-main .content-holder>.container,
+ body.js-visual-preview.home #motopress-main .footer>.container {
+  box-sizing:border-box;
+  width:90%;
+  max-width:2240px;
+  margin-inline:auto;
+ }
+ body.js-visual-preview.home .oil-hero__inner {
+  width:90%;
+  max-width:2240px;
+  padding-inline:0;
+ }
+ body.js-visual-preview.home .oil-hero__slides {
+  gap:clamp(320px,28vw,1040px);
  }
 }
