@@ -1,0 +1,48 @@
+/* Homepage visual composition; the palette matches the existing service pages. */
+body.home #post-203 .professional-home{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(0,1fr);grid-template-areas:"photo copy" "services services";gap:clamp(28px,4vw,54px);margin:0 0 36px;padding:24px 0 0;background:#252d34;color:#f5f7f9;text-align:left;}
+body.home #post-203 .professional-home *,body.home #post-203 .professional-home *::before,body.home #post-203 .professional-home *::after{box-sizing:border-box;}
+body.home #post-203 .professional-home :is(h1,h2,h3){font-weight:700!important;text-transform:none!important;text-align:left!important;}
+body.home #post-203 .professional-home p{color:#f5f7f9!important;text-align:left!important;}
+body.home #post-203 .professional-home__copy{grid-area:copy;align-self:center;min-width:0;padding:12px 0 12px clamp(0px,1vw,16px);}
+body.home #post-203 .professional-home .professional-home__eyebrow{display:inline-block;margin:0 0 22px;padding:8px 13px;border-left:3px solid #ff6b1a;background:#191e23;color:#ff6b1a!important;font-size:14px;font-weight:700;line-height:1.5;letter-spacing:.035em;}
+body.home #post-203 .professional-home h1{margin:0 0 20px;padding:0;color:#ff6b1a!important;font-family:inherit;font-size:clamp(29px,2.75vw,48px);line-height:1.16;letter-spacing:-.025em;text-wrap:balance;}
+body.home #post-203 .professional-home__intro{margin:0 0 18px;padding:0;max-width:57ch;font-size:17px;line-height:1.6;}
+body.home #post-203 .professional-home .professional-home__brands{margin:0 0 25px;padding:0;color:#d5dde3!important;font-size:14px;line-height:1.7;}
+body.home #post-203 .professional-home__actions{display:flex;gap:12px;flex-wrap:wrap;align-items:stretch;}
+body.home #post-203 .professional-home__action{display:inline-flex;align-items:center;justify-content:center;min-height:48px;max-width:100%;padding:12px 18px;border:2px solid #ff6b1a;border-radius:4px;background:#ff6b1a;color:#252d34!important;font-size:16px;font-weight:700;line-height:1.45;text-align:center;text-decoration:none;text-transform:none;white-space:normal;}
+body.home #post-203 .professional-home__action--secondary{background:transparent;color:#f5f7f9!important;border-color:#71808b;}
+body.home #post-203 .professional-home__action:hover{background:#fff;border-color:#fff;color:#252d34!important;}
+body.home #post-203 .professional-home a:focus-visible{outline:3px solid #ff6b1a;outline-offset:5px;}
+body.home #post-203 .professional-home__photo{grid-area:photo;align-self:center;position:relative;min-width:0;margin:0;padding:0;border-left:3px solid #ff6b1a;}
+body.home #post-203 .professional-home__photo img{display:block;width:100%;max-width:100%;height:auto;}
+body.home #post-203 .professional-home .professional-home__photo figcaption{margin:0!important;padding:12px 16px!important;background:#191e23!important;color:#f5f7f9!important;font-size:13px;line-height:1.5;text-align:left!important;}
+body.home #post-203 .professional-home__services{grid-area:services;min-width:0;scroll-margin-top:24px;}
+body.home #post-203 .professional-home__services>h2{display:flex;align-items:center;gap:20px;margin:0 0 25px;padding:0;color:#ff6b1a!important;font-size:clamp(25px,2.2vw,34px);line-height:1.25;}
+body.home #post-203 .professional-home__services>h2::after{content:'';flex:1;height:1px;background:#64717a;opacity:.6;}
+body.home #post-203 .professional-home__grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:20px;}
+body.home #post-203 .professional-home__card{grid-column:span 4;min-width:0;margin:0;padding:0;border:1px solid #50606c;background:#191e23;}
+body.home #post-203 .professional-home__card:nth-child(1),body.home #post-203 .professional-home__card:nth-child(6){grid-column:span 5;}
+body.home #post-203 .professional-home__card:nth-child(3),body.home #post-203 .professional-home__card:nth-child(4){grid-column:span 3;}
+body.home #post-203 .professional-home__card>a{display:flex;flex-direction:column;height:100%;min-width:0;color:#f5f7f9!important;text-decoration:none;}
+body.home #post-203 .professional-home__card img{display:block;width:100%;height:clamp(170px,15vw,250px);object-fit:cover;object-position:center;border:0;}
+body.home #post-203 .professional-home__card:nth-child(2) img{object-position:center 65%;}
+body.home #post-203 .professional-home__card-caption{display:flex;align-items:center;gap:14px;flex:1;min-width:0;padding:18px 18px 15px;border-bottom:3px solid transparent;transition:border-color .18s ease;}
+body.home #post-203 .professional-home__card h3{flex:1;margin:0;padding:0;color:#f5f7f9!important;font-size:clamp(19px,1.6vw,24px);line-height:1.35;hyphens:manual;}
+body.home #post-203 .professional-home__card-arrow{position:relative;display:block;flex:none;width:20px;height:20px;}
+body.home #post-203 .professional-home__card-arrow::before{content:'';position:absolute;left:0;top:9px;width:22px;height:2px;background:#ff6b1a;transform:rotate(-45deg);}
+body.home #post-203 .professional-home__card-arrow::after{content:'';position:absolute;right:1px;top:1px;width:11px;height:11px;border-top:2px solid #ff6b1a;border-right:2px solid #ff6b1a;}
+body.home #post-203 .professional-home__card:hover .professional-home__card-caption,body.home #post-203 .professional-home__card:focus-within .professional-home__card-caption{border-color:#ff6b1a;}
+body.home #post-203 .professional-home__card:hover h3,body.home #post-203 .professional-home__card:focus-within h3{color:#ff6b1a!important;}
+body.home #post-203 .home-slogan{margin:0 0 32px;padding:20px 0;border-top:1px solid #50606c;border-bottom:1px solid #50606c;border-radius:0;}
+body.home #post-203 .home-slogan .home-slogan__title{font-size:clamp(21px,2.2vw,30px);line-height:1.4;}
+body.js-visual-preview.home .oil-hero.oil-hero--secondary,body.js-visual-preview.home .oil-hero.oil-hero--secondary .oil-hero__inner{min-height:340px;}
+body.js-visual-preview.home .oil-hero.oil-hero--secondary{margin:32px 0 0;border-radius:4px;}
+body.js-visual-preview.home .oil-hero.oil-hero--secondary .oil-hero__frame{width:auto!important;height:100%!important;aspect-ratio:1980/1312;}
+body.js-visual-preview.home .oil-hero.oil-hero--secondary .oil-hero__inner{width:100%;padding:24px;grid-template-rows:1fr;}
+body.js-visual-preview.home .oil-hero.oil-hero--secondary .oil-hero__slides{gap:clamp(100px,16vw,390px);}
+body.js-visual-preview.home .oil-hero.oil-hero--secondary .oil-hero__title{font-size:clamp(24px,2.2vw,34px);}
+@media(max-width:1199px){body.js-visual-preview.home .oil-hero.oil-hero--secondary .oil-hero__slides{gap:24px;}}
+@media(min-width:980px) and (max-width:1199px){body.home #post-203 .professional-home__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}body.home #post-203 .professional-home__card:nth-child(n){grid-column:auto;}body.home #post-203 .professional-home__card img{height:190px;}}
+@media(max-width:979px){body.home #post-203 .professional-home{grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "photo" "services";gap:30px;padding-top:12px;}body.home #post-203 .professional-home__copy{padding:0;}body.home #post-203 .professional-home h1{max-width:28ch;}body.home #post-203 .professional-home__photo{max-width:680px;width:100%;justify-self:center;}body.home #post-203 .professional-home__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}body.home #post-203 .professional-home__card:nth-child(n){grid-column:auto;}body.home #post-203 .professional-home__card img{height:190px;}}
+@media(max-width:519px){body.home #post-203 .professional-home__grid{grid-template-columns:minmax(0,1fr);}body.home #post-203 .professional-home__actions{flex-direction:column;}body.home #post-203 .professional-home__intro{font-size:16px;}body.home #post-203 .professional-home__card img{height:auto;aspect-ratio:16/9;}body.home #post-203 .professional-home__card h3{font-size:22px;}body.js-visual-preview.home .oil-hero.oil-hero--secondary .oil-hero__inner{padding:22px 16px;}}
+@media(prefers-reduced-motion:reduce){body.home #post-203 .professional-home__card-caption{transition:none;}}
