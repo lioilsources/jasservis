@@ -16,7 +16,7 @@ body.home #post-203 .professional-home a:focus-visible{outline:3px solid #ff6b1a
 body.home #post-203 .professional-home__services{grid-area:services;min-width:0;scroll-margin-top:24px;}
 body.home #post-203 .professional-home .professional-home__services>h2{display:block;margin:0 0 25px;padding:0;color:#ff6b1a!important;font-size:clamp(25px,2.2vw,34px);line-height:1.25;text-align:center!important;}
 body.home #post-203 .professional-home__services>h2::after{content:none;}
-body.home #post-203 .professional-home__grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:20px;}
+body.home #post-203 .professional-home__grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:28px;}
 body.home #post-203 .professional-home__card{position:relative;grid-column:span 4;min-width:0;margin:0;padding:0;border:1px solid #ff6b1a;background:#191e23;}
 body.home #post-203 .professional-home__card:nth-child(1),body.home #post-203 .professional-home__card:nth-child(6){grid-column:span 5;}
 body.home #post-203 .professional-home__card:nth-child(3),body.home #post-203 .professional-home__card:nth-child(4){grid-column:span 3;}
@@ -33,20 +33,21 @@ body.home #post-203 .professional-home__card-arrow::after{content:'';position:ab
 /* A separate light layer keeps the pulse on the outline alone. */
 body.home #post-203 .professional-home__card::after{content:'';position:absolute;inset:-1px;z-index:1;pointer-events:none;border:2px solid #ffb06b;box-shadow:0 0 5px 1px #ff8b3dcc,0 0 17px 3px #ff6b1a99,inset 0 0 5px #ff8b3d88;opacity:0;}
 @media(prefers-reduced-motion:no-preference){
- body.home #post-203 .professional-home__card::after{animation:specialization-outline-pulse 9.6s linear infinite;}
- body.home #post-203 .professional-home__card:nth-child(2)::after{animation-delay:1.6s;}
- body.home #post-203 .professional-home__card:nth-child(3)::after{animation-delay:3.2s;}
- body.home #post-203 .professional-home__card:nth-child(4)::after{animation-delay:4.8s;}
- body.home #post-203 .professional-home__card:nth-child(5)::after{animation-delay:6.4s;}
- body.home #post-203 .professional-home__card:nth-child(6)::after{animation-delay:8s;}
+ body.home #post-203 .professional-home__card::after{animation:specialization-outline-pulse 6s linear infinite;}
+ body.home #post-203 .professional-home__card:nth-child(2)::after{animation-delay:1s;}
+ body.home #post-203 .professional-home__card:nth-child(3)::after{animation-delay:2s;}
+ body.home #post-203 .professional-home__card:nth-child(4)::after{animation-delay:3s;}
+ body.home #post-203 .professional-home__card:nth-child(5)::after{animation-delay:4s;}
+ body.home #post-203 .professional-home__card:nth-child(6)::after{animation-delay:5s;}
 }
+@media(prefers-reduced-motion:reduce){body.home #post-203 .professional-home__card::after{opacity:.35;}}
 @keyframes specialization-outline-pulse{0%,16.6667%,100%{opacity:0;}3%,11%{opacity:1;}15%{opacity:0;}}
 body.home #post-203 .home-slogan{margin:0 0 32px;padding:20px 0;border-top:1px solid #50606c;border-bottom:1px solid #50606c;border-radius:0;}
 body.home #post-203 .home-slogan .home-slogan__title{font-size:clamp(21px,2.2vw,30px);line-height:1.4;}
 @media(min-width:1200px){body.home .oil-hero--intro .oil-hero__copy{position:relative;left:20px;}}
 @media(min-width:1440px){body.home .oil-hero.oil-hero--intro .oil-hero__inner{width:90%;max-width:2240px;padding-inline:0;}body.home .oil-hero.oil-hero--intro .oil-hero__frame{left:36%;}}
-@media(min-width:980px) and (max-width:1199px){body.home #post-203 .professional-home__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}body.home #post-203 .professional-home__card:nth-child(n){grid-column:auto;}body.home #post-203 .professional-home__card img{height:190px;}}
-@media(max-width:1199px){body.home .oil-hero.oil-hero--intro{min-height:0;}body.home .oil-hero.oil-hero--intro .oil-hero__scene{position:relative;height:clamp(230px,45vw,380px);}body.home .oil-hero.oil-hero--intro .oil-hero__frame{left:50%;}body.home .oil-hero.oil-hero--intro .oil-hero__shade{display:none;}body.home .oil-hero.oil-hero--intro .oil-hero__inner{min-height:0;padding:28px 24px 32px;justify-content:center;background:#252d34;}body.home .oil-hero--intro .oil-hero__copy{width:100%;max-width:620px;margin:0;padding:0;}body.home .oil-hero--intro h1{font-size:clamp(29px,4.5vw,42px);}body.home .oil-hero--intro .oil-hero__eyebrow{margin-bottom:12px;}body.home #post-203 .professional-home__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}body.home #post-203 .professional-home__card:nth-child(n){grid-column:auto;}body.home #post-203 .professional-home__card img{height:190px;}}
+@media(min-width:980px) and (max-width:1199px){body.home #post-203 .professional-home__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;}body.home #post-203 .professional-home__card:nth-child(n){grid-column:auto;}body.home #post-203 .professional-home__card img{height:190px;}}
+@media(max-width:1199px){body.home .oil-hero.oil-hero--intro{min-height:0;}body.home .oil-hero.oil-hero--intro .oil-hero__scene{position:relative;height:clamp(230px,45vw,380px);}body.home .oil-hero.oil-hero--intro .oil-hero__frame{left:50%;}body.home .oil-hero.oil-hero--intro .oil-hero__shade{display:none;}body.home .oil-hero.oil-hero--intro .oil-hero__inner{min-height:0;padding:28px 24px 32px;justify-content:center;background:#252d34;}body.home .oil-hero--intro .oil-hero__copy{width:100%;max-width:620px;margin:0;padding:0;}body.home .oil-hero--intro h1{font-size:clamp(29px,4.5vw,42px);}body.home .oil-hero--intro .oil-hero__eyebrow{margin-bottom:12px;}body.home #post-203 .professional-home__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;}body.home #post-203 .professional-home__card:nth-child(n){grid-column:auto;}body.home #post-203 .professional-home__card img{height:190px;}}
 @media(max-width:519px){body.home #post-203 .professional-home__grid{grid-template-columns:minmax(0,1fr);}body.home #post-203 .professional-home__card img{height:auto;aspect-ratio:16/9;}body.home #post-203 .professional-home__card h3{font-size:22px;}body.home .oil-hero.oil-hero--intro .oil-hero__inner{padding:24px 18px 28px;}body.home .oil-hero--intro .oil-hero__brands{font-size:15px;}}
 /* Keep the mobile introduction together instead of scattering its paragraphs. */
 @media(max-width:767px){

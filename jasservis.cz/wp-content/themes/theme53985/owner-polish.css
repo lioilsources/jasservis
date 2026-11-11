@@ -140,7 +140,7 @@ body.page-warning-lights :is(#post-203#post-203#post-203,.content-holder) .warni
  border-color:currentColor!important;
 }
 
-/* Mobile: larger branding with a compact gap before the action tiles.
+/* Mobile: larger branding and breathing room between the action tiles.
    Keep the existing short landscape navigation arrangement. */
 @media (max-width:767px) and (min-height:501px) {
  body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_2 .logo {
@@ -149,10 +149,14 @@ body.page-warning-lights :is(#post-203#post-203#post-203,.content-holder) .warni
   padding:calc(16px + env(safe-area-inset-top,0px)) 0 4px!important;
  }
  body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 {
-  padding:0 0 8px!important;
+  padding:0 0 16px!important;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row {
   padding-block:0;
+  row-gap:20px;
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #text-8 > .textwidget {
+  row-gap:24px;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header .header-trust-badges > .header-trust-badge {
   flex-basis:88px;
@@ -162,7 +166,7 @@ body.page-warning-lights :is(#post-203#post-203#post-203,.content-holder) .warni
  body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary {
   box-sizing:border-box;
   margin:0!important;
-  padding:4px 0 12px!important;
+  padding:8px 0 20px!important;
  }
  body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary>.navigation-toggle {
   box-sizing:border-box;
@@ -170,7 +174,7 @@ body.page-warning-lights :is(#post-203#post-203#post-203,.content-holder) .warni
   margin:0 auto!important;
  }
  body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary>.language-switcher {
-  top:4px;
+  top:8px;
  }
  body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary>.language-switcher .language-mobile>summary {
   box-sizing:border-box;
