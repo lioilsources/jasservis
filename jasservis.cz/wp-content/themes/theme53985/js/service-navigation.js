@@ -7,11 +7,9 @@
     // Keep keyboard order aligned with the shared action strip; move existing nodes only.
     var contactStrip = document.querySelector('.header #text-8 > .textwidget');
     if (contactStrip) {
-        var contactPhone = contactStrip.querySelector('.tel');
+        var serviceActions = contactStrip.querySelector('.header-service-actions');
         var adviceLink = contactStrip.querySelector('.header-driver-advice');
-        var bookingLink = contactStrip.querySelector('b > a[data-booking-panel]');
-        var mobileBookingLink = contactStrip.querySelector('.mobile-booking-trigger');
-        [contactPhone, bookingLink && bookingLink.parentElement, mobileBookingLink, adviceLink].forEach(function (item) {
+        [serviceActions, adviceLink].forEach(function (item) {
             if (item && item.parentElement === contactStrip) contactStrip.appendChild(item);
         });
     }
