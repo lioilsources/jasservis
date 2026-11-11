@@ -507,3 +507,6 @@ body.js-visual-preview :is(#motopress-main,.mobile-nav-panel) #menu-item-recenze
   gap:clamp(320px,28vw,1040px);
  }
 }
+
+/* Footer widgets are removed; the remaining map and copyright start flush. */
+body.js-visual-preview #motopress-main .footer>.container{border-top:0!important;}
