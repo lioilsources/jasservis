@@ -162,7 +162,7 @@ body.page-warning-lights :is(#post-203#post-203#post-203,.content-holder) .warni
  body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary {
   box-sizing:border-box;
   margin:0!important;
-  padding:12px 0!important;
+  padding:4px 0 12px!important;
  }
  body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary>.navigation-toggle {
   box-sizing:border-box;
@@ -170,7 +170,12 @@ body.page-warning-lights :is(#post-203#post-203#post-203,.content-holder) .warni
   margin:0 auto!important;
  }
  body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary>.language-switcher {
-  top:calc(12px + (var(--header-mobile-menu-height,64px) - 44px) / 2);
+  top:4px;
+ }
+ body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary>.language-switcher .language-mobile>summary {
+  box-sizing:border-box;
+  min-height:var(--header-mobile-menu-height,64px);
+  height:var(--header-mobile-menu-height,64px);
  }
 }
 @media (max-width:767px) {
