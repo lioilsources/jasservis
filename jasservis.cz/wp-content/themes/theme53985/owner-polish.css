@@ -138,26 +138,37 @@ body.page-warning-lights :is(#post-203#post-203#post-203,.content-holder) .warni
  border-color:currentColor!important;
 }
 
-/* Mobile: give the brand, location and navigation equal breathing room.
+/* Mobile: larger branding with a compact gap before the action tiles.
    Keep the existing short landscape navigation arrangement. */
 @media (max-width:767px) and (min-height:501px) {
  body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_2 .logo {
+  --brand-width:min(66vw,250px);
   margin:0 auto!important;
-  padding:calc(22px + env(safe-area-inset-top,0px)) 0 22px!important;
+  padding:calc(16px + env(safe-area-inset-top,0px)) 0 4px!important;
  }
  body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 {
-  padding:18px 0 16px!important;
+  padding:0 0 8px!important;
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row {
+  padding-block:0;
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header .header-trust-badges > .header-trust-badge {
+  flex-basis:88px;
+  width:88px!important;
+  height:88px;
  }
  body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary {
   box-sizing:border-box;
   margin:0!important;
-  padding:18px 0!important;
+  padding:12px 0!important;
  }
  body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary>.navigation-toggle {
+  box-sizing:border-box;
+  min-height:var(--header-mobile-menu-height,64px);
   margin:0 auto!important;
  }
  body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary>.language-switcher {
-  top:18px;
+  top:calc(12px + (var(--header-mobile-menu-height,64px) - 44px) / 2);
  }
 }
 @media (max-width:767px) {

@@ -440,6 +440,16 @@
             }
             else if (wasFull) menu.hidden = controls.every(function (control) { return control.panel.hidden; });
         }
+        // Match the actual action-tile height when translated mobile labels wrap.
+        if (compact.matches && !isShortLandscape) {
+            var actionTile = document.querySelector('.header .header-service-actions');
+            var adviceTile = document.querySelector('.header .header-driver-advice');
+            var mobileControlHeight = Math.max(64, actionTile ? actionTile.getBoundingClientRect().height : 0,
+                adviceTile ? adviceTile.getBoundingClientRect().height : 0);
+            nav.style.setProperty('--header-mobile-menu-height', mobileControlHeight.toFixed(2) + 'px');
+        } else {
+            nav.style.removeProperty('--header-mobile-menu-height');
+        }
         if (menu.hidden) controls.forEach(close);
         syncToggle();
         fitOpenDropdowns();
