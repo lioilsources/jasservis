@@ -48,7 +48,9 @@ body.home #post-203 .home-slogan .home-slogan__title{font-size:clamp(21px,2.2vw,
 @media(max-width:519px){body.home #post-203 .professional-home__grid{grid-template-columns:minmax(0,1fr);}body.home #post-203 .professional-home__card img{height:auto;aspect-ratio:16/9;}body.home #post-203 .professional-home__card h3{font-size:22px;}body.home .oil-hero.oil-hero--intro .oil-hero__inner{padding:24px 18px 28px;}body.home .oil-hero--intro .oil-hero__brands{font-size:15px;}}
 /* Keep the mobile introduction together instead of scattering its paragraphs. */
 @media(max-width:767px){
- body.home .oil-hero.oil-hero--intro .oil-hero__inner{padding:22px 18px 24px;}
+ body.home .oil-hero.oil-hero--intro{width:calc(100% + 2 * var(--js-gutter,16px));margin-inline:calc(-1 * var(--js-gutter,16px));}
+ body.home .oil-hero.oil-hero--intro .oil-hero__scene{height:auto;aspect-ratio:1980/1312;}
+ body.home .oil-hero.oil-hero--intro .oil-hero__inner{padding:22px calc(18px + var(--js-gutter,16px)) 24px;}
  body.home .oil-hero--intro .oil-hero__copy{display:flex;flex-direction:column;gap:12px;max-width:620px;}
  body.home .oil-hero--intro .oil-hero__copy>:is(.oil-hero__eyebrow,h1,.oil-hero__intro,.oil-hero__brands){margin:0;text-align:center;}
  body.home .oil-hero--intro .oil-hero__eyebrow{font-size:14px;line-height:1.4;letter-spacing:0;}
