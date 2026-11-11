@@ -8,7 +8,7 @@ body.home .oil-hero--intro .oil-hero__copy{box-sizing:border-box;width:31%;max-w
 body.home .oil-hero--intro .oil-hero__eyebrow{margin:0 0 18px;color:#ff6b1a;font-size:15px;font-weight:700;line-height:1.6;letter-spacing:.02em;}
 body.home .oil-hero--intro h1{margin:0 0 20px;padding:0;color:#f5f7f9!important;font-family:inherit;font-size:clamp(32px,3.2vw,54px);font-weight:700!important;line-height:1.13;letter-spacing:-.025em;text-align:left;text-transform:none!important;text-wrap:balance;}
 body.home .oil-hero--intro .oil-hero__intro{margin:0 0 18px;color:#ff6b1a;font-size:clamp(20px,1.65vw,25px);font-weight:700;line-height:1.45;text-align:left;}
-body.home .oil-hero--intro .oil-hero__brands{margin:0;color:#f5f7f9;font-size:clamp(15px,1.15vw,18px);font-weight:600;line-height:1.7;text-align:left;}
+body.home .oil-hero--intro .oil-hero__brands{margin:0;color:#f5f7f9;font-size:clamp(18px,1.3vw,22px);font-weight:700;line-height:1.6;text-align:left;}
 body.home #post-203 .professional-home{margin:0 0 36px;padding:0;background:#252d34;color:#f5f7f9;text-align:left;}
 body.home #post-203 .professional-home *,body.home #post-203 .professional-home *::before,body.home #post-203 .professional-home *::after{box-sizing:border-box;}
 body.home #post-203 .professional-home :is(h2,h3){font-weight:700!important;text-transform:none!important;text-align:left!important;}
@@ -43,7 +43,8 @@ body.home #post-203 .home-slogan .home-slogan__title{font-size:clamp(21px,2.2vw,
  body.home .oil-hero--intro .oil-hero__eyebrow{font-size:14px;line-height:1.4;letter-spacing:0;}
  body.home .oil-hero--intro h1{font-size:clamp(27px,7.4vw,34px);line-height:1.16;text-wrap:balance;}
  body.home .oil-hero--intro .oil-hero__intro{font-size:20px;line-height:1.35;text-wrap:balance;}
- body.home .oil-hero--intro .oil-hero__brands{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:center;gap:4px 12px;font-size:14px;font-weight:500;line-height:1.5;}
- body.home .oil-hero--intro .oil-hero__brand{display:inline-block;max-width:100%;white-space:nowrap;}
+ body.home .oil-hero--intro .oil-hero__brands{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:center;gap:6px 10px;font-size:17px;font-weight:700;line-height:1.5;}
+ body.home .oil-hero--intro .oil-hero__brand{display:inline-block;max-width:100%;white-space:normal;text-wrap:balance;}
+ body.home .oil-hero--intro .oil-hero__brand:last-child{flex-basis:100%;}
  body.home .oil-hero--intro .oil-hero__brand-separator{display:none;}
 }
