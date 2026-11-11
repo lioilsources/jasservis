@@ -171,26 +171,63 @@ body.js-visual-preview .header .header-action-emoji {flex:0 0 auto;font-size:1.2
 body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget a.header-driver-advice {gap:20px;}
 /* Fill the orange wrapper so the booking icon and label share its real centre. */
 body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget>b>a[data-booking-panel] {width:100%;}
-body.js-visual-preview .header .header-advice-icons {display:inline-flex;align-items:center;gap:6px;flex:0 0 auto;}
-body.js-visual-preview .header .header-advice-car {display:inline-flex;align-items:center;line-height:1;color:#000;}
+/* Fixed decoration slot: arrival, hood opening, then the driver's thought. */
+body.js-visual-preview .header .header-advice-icons {--advice-cycle:12s;position:relative;display:inline-flex;align-items:center;gap:6px;flex:0 0 80px;width:80px;height:32px;overflow:hidden;pointer-events:none;}
+body.js-visual-preview .header .header-advice-car {position:absolute;left:calc(100% - 80px);top:0;display:inline-flex;align-items:center;width:48px;height:32px;line-height:1;color:#000;}
 body.js-visual-preview .header .header-advice-car svg {display:block;width:48px;height:32px;max-width:none;}
-/* Two brief attention cues, then rest; only the decorative advice emoji moves. */
-@keyframes js-advice-emoji-nudge {
- 0%,20%,60%,80%,100% {transform:translateY(0) rotate(0deg);}
- 4%,64% {transform:translateY(-3px) rotate(-10deg);}
- 8%,68% {transform:translateY(-3px) rotate(9deg);}
- 12%,72% {transform:translateY(-2px) rotate(-6deg);}
- 16%,76% {transform:translateY(-1px) rotate(4deg);}
+body.js-visual-preview .header .header-advice-hood {transform-box:view-box;transform-origin:32px 16px;transform:rotate(-65deg);}
+body.js-visual-preview .header .header-advice-face {position:absolute;right:2px;top:2px;display:block;width:24px;height:28px;transform-origin:50% 70%;}
+body.js-visual-preview .header .header-advice-face>:is(.header-advice-neutral,.header-advice-thinking) {position:absolute;inset:4px 0 0;display:block;line-height:24px;text-align:center;}
+body.js-visual-preview .header .header-advice-neutral {opacity:0;}
+body.js-visual-preview .header .header-advice-thinking {opacity:1;}
+body.js-visual-preview .header .header-advice-thought {position:absolute;top:0;right:0;display:flex;align-items:center;gap:2px;height:4px;}
+body.js-visual-preview .header .header-advice-thought i {display:block;width:3px;height:3px;border-radius:50%;background:#000;}
+@keyframes js-advice-arrive {
+ 0%,2% {left:-52px;opacity:0;}
+ 4% {left:-52px;opacity:1;}
+ 18%,90% {left:calc(100% - 80px);opacity:1;}
+ 94% {left:calc(100% - 80px);opacity:0;}
+ 100% {left:-52px;opacity:0;}
+}
+@keyframes js-advice-open-hood {
+ 0%,23%,100% {transform:rotate(0deg);}
+ 31%,94% {transform:rotate(-65deg);}
+ 98% {transform:rotate(0deg);}
+}
+@keyframes js-advice-engine-visible {
+ 0%,26%,98%,100% {opacity:0;}
+ 31%,94% {opacity:1;}
+}
+@keyframes js-advice-neutral-face {
+ 0%,31%,96%,100% {opacity:1;}
+ 33%,94% {opacity:0;}
+}
+@keyframes js-advice-thinking-face {
+ 0%,31%,96%,100% {opacity:0;}
+ 33%,94% {opacity:1;}
+}
+@keyframes js-advice-reflect {
+ 0%,33%,48%,64%,80%,100% {transform:translateY(0) rotate(0deg);}
+ 37%,68% {transform:translateY(-1px) rotate(-8deg);}
+ 41%,72% {transform:translateY(-1px) rotate(6deg);}
+ 45%,76% {transform:translateY(0) rotate(-3deg);}
+}
+@keyframes js-advice-thought-visible {
+ 0%,34%,96%,100% {opacity:0;transform:translateY(2px) scale(.6);}
+ 39%,92% {opacity:1;transform:translateY(0) scale(1);}
 }
 @media(prefers-reduced-motion:no-preference) {
- body.js-visual-preview .header .header-driver-advice .header-action-emoji {
-  display:inline-block;transform-origin:50% 70%;
-  animation:js-advice-emoji-nudge 4.8s ease-in-out 1;
- }
- body.js-visual-preview .header .header-driver-advice:is(:hover,:focus-within) .header-action-emoji {animation:none;transform:none;}
+ body.js-visual-preview .header .header-advice-car {animation:js-advice-arrive var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .header-advice-hood {animation:js-advice-open-hood var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .header-advice-engine {animation:js-advice-engine-visible var(--advice-cycle) linear infinite;}
+ body.js-visual-preview .header .header-advice-neutral {animation:js-advice-neutral-face var(--advice-cycle) linear infinite;}
+ body.js-visual-preview .header .header-advice-thinking {animation:js-advice-thinking-face var(--advice-cycle) linear infinite;}
+ body.js-visual-preview .header .header-advice-face {animation:js-advice-reflect var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .header-advice-thought {animation:js-advice-thought-visible var(--advice-cycle) ease-in-out infinite;}
 }
 @media(prefers-reduced-motion:reduce) {
- body.js-visual-preview .header .header-driver-advice .header-action-emoji {animation:none!important;transform:none!important;}
+ body.js-visual-preview .header .header-advice-icons * {animation:none!important;}
+ body.js-visual-preview .header .header-advice-car,body.js-visual-preview .header .header-advice-face {transform:none;opacity:1;}
 }
 body.js-visual-preview .header .header-action-label {min-width:0;overflow-wrap:break-word;}
 body.js-visual-preview .header .booking-label-default {display:inline!important;}
