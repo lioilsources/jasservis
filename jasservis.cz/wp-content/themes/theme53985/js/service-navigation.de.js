@@ -362,7 +362,6 @@
         arrangingHeader = true;
         var focused = document.activeElement;
         var moved = false;
-        var wasFull = nav.classList.contains('short-header-full-nav');
         var wasHidden = menu.hidden;
         if (isShortLandscape && !landscapeRow) {
             landscapeRow = document.createElement('div');
@@ -438,7 +437,7 @@
                 nav.classList.toggle('desktop-menu-collapsed', !desktopFits);
                 menu.hidden = desktopFits ? false : (wasCollapsed ? wasHidden : true);
             }
-            else if (wasFull) menu.hidden = controls.every(function (control) { return control.panel.hidden; });
+            else menu.hidden = true; // Phone navigation always opens in the modal, including after a desktop resize.
         }
         // Match the actual action-tile height when translated mobile labels wrap.
         if (compact.matches && !isShortLandscape) {

@@ -466,3 +466,73 @@ body.js-visual-preview :is(#motopress-main,.mobile-nav-panel) #menu-item-recenze
 
 /* Footer widgets are removed; the remaining map and copyright start flush. */
 body.js-visual-preview #motopress-main .footer>.container{border-top:0!important;}
+
+/* Mobile: trust badges and navigation share a row below the large logo.
+   Apply only after the navigation enhancement exists; retain the HTML fallback. */
+@media (min-width:360px) and (max-width:767px) and (min-height:501px) {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) > .container > .row > .span12 {
+  grid-template-columns:minmax(0,1fr) 132px;
+  grid-template-areas:"brand brand" "trust navigation" "contacts contacts";
+  align-items:center;
+  gap:16px 8px;
+  padding-bottom:20px;
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .header_block_1,
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .header_block_1 > .language-contact-row {display:contents;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .header_block_1 > .language-contact-row > .span6:first-child {
+  grid-area:trust;
+  align-self:center;
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .header_block_1 > .language-contact-row > .span6:nth-child(2) {
+  grid-area:contacts;
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .header-trust-badges {justify-content:flex-start;gap:8px;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .header-trust-badges > .header-trust-badge {flex-basis:80px;width:80px!important;height:80px;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .header_block_2 .logo {padding:calc(12px + env(safe-area-inset-top,0px)) 0 0!important;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .header_block_2 > .row > .span9 {grid-area:navigation;min-width:0;align-self:center;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .nav__primary {
+  display:flex;align-items:center;justify-content:flex-start;gap:8px;
+  box-sizing:border-box;width:132px;min-height:64px;margin:0!important;padding:0!important;
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .nav__primary > .navigation-toggle {
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+  flex:0 0 80px;width:80px;min-width:80px;min-height:64px;margin:0!important;padding:8px!important;
+  font-size:14px;line-height:18px;
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .navigation-toggle .mobile-menu-icon {flex:none;width:22px;height:17px;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .nav__primary > .language-switcher {
+  position:relative;inset:auto;flex:0 0 44px;width:44px;min-width:44px;margin:0;transform:none;
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .language-mobile > summary {
+  box-sizing:border-box;justify-content:center;gap:3px;width:44px;min-width:44px;min-height:64px;height:64px;padding:0 4px;
+ }
+}
+@media (min-width:390px) and (max-width:767px) and (min-height:501px) {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .header-trust-badges > .header-trust-badge {flex-basis:88px;width:88px!important;height:88px;}
+}
+/* Run decorative motion only while its region is visible. The grid pauses as
+   one region so the six outlines keep their one-second sequence. */
+body.js-visual-preview .js-motion-region.is-motion-offscreen *,
+body.js-visual-preview .js-motion-region.is-motion-offscreen *::after,
+body.js-visual-preview.is-page-inactive .js-motion-region *,
+body.js-visual-preview.is-page-inactive .js-motion-region *::after {animation-play-state:paused!important;}
+
+/* Legacy clearfix pseudo-elements must not occupy slots in the mobile flex row. */
+@media (min-width:360px) and (max-width:767px) and (min-height:501px) {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .nav__primary::before,
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .nav__primary::after {display:none;content:none;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .nav__primary > .navigation-toggle,
+ html body.js-visual-preview #motopress-main#motopress-main .header.header:has(.navigation-toggle) .language-mobile > summary {
+  height:var(--header-mobile-menu-height,64px)!important;
+  min-height:var(--header-mobile-menu-height,64px)!important;
+ }
+}
+
+/* Narrow phones: put the small contact icons above long translated labels. */
+@media (max-width:359px) and (min-height:501px) {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #text-8 > .textwidget .header-service-actions > a {
+  flex-direction:column;gap:4px;padding:8px 6px;font-size:14px!important;line-height:1.25;
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 :is(.header-location-icon,.header-phone-icon) {flex-basis:18px;width:18px;height:18px;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header .header-driver-advice > .header-action-label {font-size:14px;line-height:1.25;}
+}

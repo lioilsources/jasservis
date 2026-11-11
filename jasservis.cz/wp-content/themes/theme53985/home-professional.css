@@ -31,7 +31,7 @@ body.home #post-203 .professional-home__card-arrow{position:relative;display:blo
 body.home #post-203 .professional-home__card-arrow::before{content:'';position:absolute;left:0;top:9px;width:22px;height:2px;background:#ff6b1a;transform:rotate(-45deg);}
 body.home #post-203 .professional-home__card-arrow::after{content:'';position:absolute;right:1px;top:1px;width:11px;height:11px;border-top:2px solid #ff6b1a;border-right:2px solid #ff6b1a;}
 /* A separate light layer keeps the pulse on the outline alone. */
-body.home #post-203 .professional-home__card::after{content:'';position:absolute;inset:-1px;z-index:1;pointer-events:none;border:2px solid #ffb06b;box-shadow:0 0 5px 1px #ff8b3dcc,0 0 17px 3px #ff6b1a99,inset 0 0 5px #ff8b3d88;opacity:0;}
+body.home #post-203 .professional-home__card::after{content:'';position:absolute;inset:-1px;z-index:1;pointer-events:none;border:2px solid #ffb06b;box-shadow:0 0 4px 1px #ff8b3dbb,0 0 12px 2px #ff6b1a73,inset 0 0 4px #ff8b3d66;opacity:0;}
 @media(prefers-reduced-motion:no-preference){
  body.home #post-203 .professional-home__card::after{animation:specialization-outline-pulse 6s linear infinite;}
  body.home #post-203 .professional-home__card:nth-child(2)::after{animation-delay:1s;}
@@ -63,4 +63,20 @@ body.home #post-203 .home-slogan .home-slogan__title{font-size:clamp(21px,2.2vw,
  body.home .oil-hero--intro .oil-hero__brand{display:inline-block;max-width:100%;white-space:normal;text-wrap:balance;}
  body.home .oil-hero--intro .oil-hero__brand:last-child{flex-basis:100%;}
  body.home .oil-hero--intro .oil-hero__brand-separator{display:none;}
+}
+
+/* Equal service cards make the offer easier to scan on desktop. */
+@media(min-width:1200px){
+ body.home #post-203 .professional-home__grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+ body.home #post-203 .professional-home__card:nth-child(n){grid-column:auto;}
+ body.home #post-203 .professional-home__card img{height:clamp(180px,15vw,280px);}
+ body.home #post-203 .professional-home__card-caption{min-height:96px;}
+}
+/* Lead with the service and brands on a phone, then show the complete photo. */
+@media(max-width:767px){
+ body.home .oil-hero.oil-hero--intro{display:flex;flex-direction:column;}
+ body.home .oil-hero.oil-hero--intro .oil-hero__inner{order:1;width:100%;padding:22px max(18px,var(--js-gutter,16px)) 24px;}
+ body.home .oil-hero.oil-hero--intro .oil-hero__scene{order:2;width:100%;}
+ body.home .oil-hero--intro .oil-hero__copy{gap:10px;}
+ body.home #post-203 .home-slogan{margin-bottom:28px;}
 }
