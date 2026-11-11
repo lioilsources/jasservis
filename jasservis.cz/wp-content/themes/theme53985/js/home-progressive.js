@@ -3,7 +3,7 @@
  'use strict';
  var source = document.currentScript.getAttribute('data-runtime-src');
  var widgetsSource = document.currentScript.getAttribute('data-widgets-src');
- var image = document.querySelector('[data-home-intro-image]') || document.querySelector('#mainImageHolder img');
+ var image = document.querySelector('#mainImageHolder img');
  var started = false, observer;
  function enhance() {
   if (started) return;
