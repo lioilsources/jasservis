@@ -1,9 +1,16 @@
-/* Shared header: one split directions/call tile, driver advice, language. */
-html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row{display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch;gap:12px 20px;margin:0;padding-block:8px;}
+/* Shared header: linked trust badges, split directions/call tile and advice. */
+html body.js-visual-preview #motopress-main#motopress-main .header.header{background:#191818!important;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1{background:#191818!important;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row{display:grid;grid-template-columns:minmax(0,1fr);align-items:center;gap:12px 20px;margin:0;padding-block:8px;}
 html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row::before,
 html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row::after{display:none;}
-html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row > .span6:first-child{display:none;}
-html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row > .span6:nth-child(2){display:block;grid-column:1 / -1;grid-row:1;float:none;box-sizing:border-box;width:auto;min-width:0;margin:0;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row > .span6:first-child{display:block;grid-column:1;grid-row:1;float:none;box-sizing:border-box;width:auto;min-width:0;margin:0;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row > .span6:nth-child(2){display:block;grid-column:1;grid-row:2;float:none;box-sizing:border-box;width:auto;min-width:0;margin:0;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 .header_widget_1{margin:0;padding:0;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header-trust-badges{display:flex;align-items:center;justify-content:center;gap:12px;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header-trust-badges > .header-trust-badge{position:static!important;display:flex;align-items:center;justify-content:center;flex:0 0 64px;box-sizing:border-box;width:64px!important;height:64px;min-height:44px;margin:0!important;padding:0;border:0;transform:none;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header-trust-badges > .header-trust-badge > img{display:block;width:100%!important;height:100%!important;max-width:100%;max-height:100%;object-fit:contain;transform:none;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header-trust-badges > .header-trust-badge:focus-visible{outline:3px solid var(--brand-orange,#ff6b1a);outline-offset:3px;}
 html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #text-8 > .textwidget{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:1fr;align-items:stretch;gap:16px;}
 html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #text-8 > .textwidget > .header-service-actions{position:relative;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-column:1;grid-row:1;order:1;align-items:stretch;box-sizing:border-box;min-width:0;width:100%;min-height:64px;height:100%;margin:0;padding:0;border:2px solid var(--brand-orange,#ff6b1a);border-radius:8px;background:var(--brand-orange,#ff6b1a);overflow:hidden;}
 html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #text-8 > .textwidget > .header-service-actions::after{content:"";position:absolute;top:12px;bottom:12px;left:50%;width:1px;background:#252d3480;pointer-events:none;}
@@ -21,8 +28,15 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header .heade
 html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #text-8 > .textwidget > a.header-driver-advice{grid-column:1;grid-row:2;}
 html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #text-8 > .textwidget .header-service-actions > a{font-size:15px!important;padding:10px 8px;}
 }
+/* Use the full desktop bar; give every menu section the same width. */
 @media(min-width:1200px){
-html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row{grid-template-columns:repeat(2,minmax(0,1fr)) max-content;gap:16px clamp(20px,2vw,32px);}
+html body.js-visual-preview #motopress-main#motopress-main .header.header > .container{box-sizing:border-box;width:100%;max-width:none;margin-inline:0;padding-inline:clamp(20px,2vw,40px);}
+html body.js-visual-preview #motopress-main#motopress-main .header.header > .container > .row{margin-inline:0;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header > .container > .row > .span12{float:none;box-sizing:border-box;width:100%;min-width:0;margin-inline:0;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row{grid-template-columns:max-content repeat(2,minmax(0,1fr)) max-content;gap:16px clamp(16px,1.5vw,28px);align-items:stretch;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row > .span6:first-child{grid-column:1;grid-row:1;align-self:center;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header-trust-badges{justify-content:flex-start;gap:12px;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header-trust-badges > .header-trust-badge{flex-basis:80px;width:80px!important;height:80px;}
 html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row > .span6:nth-child(2),
 html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 .header_widget_2,
 html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #custom_html-3,
@@ -30,17 +44,24 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header .heade
 html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #text-8,
 html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #text-8 > .textwidget{display:contents;}
 html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row > .span6:nth-child(2) > .clear{display:none;}
-html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row > .language-switcher{grid-column:3;grid-row:1;position:relative;inset:auto;justify-self:end;align-self:center;margin:0;transform:none;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #text-8 > .textwidget > .header-service-actions{grid-column:2;grid-row:1;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 #text-8 > .textwidget > a.header-driver-advice{grid-column:3;grid-row:1;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_1 > .language-contact-row > .language-switcher{grid-column:4;grid-row:1;position:relative;inset:auto;justify-self:end;align-self:center;margin:0;transform:none;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_2 > .row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,6fr);align-items:center;gap:0;min-height:112px;margin:0;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_2 .logo{display:flex!important;justify-content:flex-start;width:180px!important;max-width:100%;margin:12px auto!important;padding:0!important;gap:0!important;transform:none;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_2 .logo .logo_h{display:block!important;flex:none!important;width:100%!important;max-width:100%;min-width:0;margin:0!important;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_2 .logo .logo_h img{display:block;width:100%!important;height:auto!important;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary{width:100%;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary:not(.desktop-menu-collapsed):not(.desktop-menu-measuring) #topnav{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));align-items:stretch;width:100%;min-height:96px;margin:0;padding:0;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary:not(.desktop-menu-collapsed):not(.desktop-menu-measuring) #topnav > li{display:flex;align-items:center;justify-content:center;box-sizing:border-box;min-width:0;padding:0 4px;border-right:1px solid #ffffff26;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary #topnav > li:last-child{border-right:0;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary #topnav > li > :is(a,.reviews-toggle){font-size:18px!important;font-weight:700!important;line-height:1.25;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary:not(.desktop-menu-collapsed):not(.desktop-menu-measuring) #topnav > li > a{flex:1 1 auto;justify-content:center;min-width:0;min-height:96px;padding:12px 0;white-space:normal;overflow-wrap:normal;text-align:center;text-wrap:balance;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary:not(.desktop-menu-collapsed):not(.desktop-menu-measuring) #topnav > li > .reviews-toggle{justify-content:center;gap:8px;box-sizing:border-box;width:100%;min-width:0;min-height:96px;padding:12px 0;white-space:normal;text-align:center;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary #topnav > li > .submenu-toggle{flex:0 0 36px;width:36px;margin:0;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header .nav__primary #topnav > li > .submenu-toggle::before{margin-left:auto;margin-right:auto;}
 }
-
-/* Clearer main navigation labels and more space beside the desktop brand. */
 body.js-visual-preview :is(.header,.mobile-nav-panel) #topnav#topnav > li > :is(a,.reviews-toggle){font-weight:700!important;}
-@media(min-width:1200px){
- html body.js-visual-preview #motopress-main#motopress-main .header.header #topnav > li > :is(a,.reviews-toggle){font-size:16px!important;line-height:1.3;}
-}
-@media(min-width:1280px){
- html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_2 .logo{transform:translateX(-32px);}
-}
 
 /* Driver advice: one light accordion surface across every chapter and group.
    The shared theme uses a three-ID :is() specificity branch plus !important.

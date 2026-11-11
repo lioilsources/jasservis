@@ -415,11 +415,26 @@
         } else {
             nav.classList.remove('short-header-full-nav');
             if (!compact.matches) {
-                nav.classList.add('desktop-menu-measuring');
                 menu.hidden = false;
-                var desktopNeeded = menu.getBoundingClientRect().width;
-                nav.classList.remove('desktop-menu-measuring');
-                var desktopFits = desktopNeeded <= nav.clientWidth;
+                var desktopFits;
+                if (window.getComputedStyle(menu).display === 'grid') {
+                    // Equal desktop cells can wrap labels; measure their rendered targets.
+                    desktopFits = menu.getBoundingClientRect().width <= nav.clientWidth + 1 &&
+                        Array.prototype.every.call(menu.children, function (item) {
+                            var itemBox = item.getBoundingClientRect();
+                            return Array.prototype.every.call(item.children, function (target) {
+                                if (target.tagName !== 'A' && target.tagName !== 'BUTTON') return true;
+                                var targetBox = target.getBoundingClientRect();
+                                return target.scrollWidth <= target.clientWidth + 1 && target.scrollHeight <= target.clientHeight + 1 &&
+                                    targetBox.left >= itemBox.left - 1 && targetBox.right <= itemBox.right + 1;
+                            });
+                        });
+                } else {
+                    nav.classList.add('desktop-menu-measuring');
+                    var desktopNeeded = menu.getBoundingClientRect().width;
+                    nav.classList.remove('desktop-menu-measuring');
+                    desktopFits = desktopNeeded <= nav.clientWidth;
+                }
                 nav.classList.toggle('desktop-menu-collapsed', !desktopFits);
                 menu.hidden = desktopFits ? false : (wasCollapsed ? wasHidden : true);
             }
