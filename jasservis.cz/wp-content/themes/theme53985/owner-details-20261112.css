@@ -1,0 +1,65 @@
+/* Owner's review: comfortable branding, wide directions and aligned services. */
+@media(min-width:1200px){
+ html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_2>.row{grid-template-columns:minmax(180px,1fr) minmax(0,6fr);min-height:104px;padding:0 0 14px;box-sizing:border-box;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_2 .logo{width:174px!important;margin:0 auto!important;}
+}
+/* The map uses the available width with the same small gutter as the header. */
+body.js-visual-preview #motopress-main#motopress-main .footer>.container{box-sizing:border-box;width:100%;max-width:none;margin-inline:0;padding-inline:clamp(18px,2vw,36px);}
+body.js-visual-preview #motopress-main#motopress-main .footer>.container>.row{margin-inline:0;}
+body.js-visual-preview #motopress-main#motopress-main .footer>.container>.row>.span12{float:none;width:100%;margin-inline:0;}
+body.js-visual-preview #motopress-main#motopress-main .footer [data-motopress-static-file="static/static-map.php"]{box-sizing:border-box;width:100%;max-width:none;margin-inline:0;}
+/* Contact content shares one wide, compact grid. */
+body.page-id-14.js-visual-preview #motopress-main#motopress-main .content-holder{padding-top:0;}
+body.page-id-14.js-visual-preview #motopress-main#motopress-main .content-holder>.container{box-sizing:border-box;width:100%;max-width:none;margin-inline:0;padding-inline:clamp(18px,2vw,36px);}
+body.page-id-14.js-visual-preview #motopress-main#motopress-main .content-holder .row{margin-inline:0;}
+body.page-id-14.js-visual-preview #motopress-main#motopress-main .content-holder .span12{float:none;width:100%;margin-inline:0;}
+body.page-id-14.js-visual-preview #motopress-main#motopress-main .title-section{margin:0;padding:26px 0 22px;}
+body.page-id-14.js-visual-preview #motopress-main#motopress-main #post-14{margin:0;}
+body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled{width:100%;max-width:none;margin:0;color:#f5f7f9;}
+body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__heading{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:16px;}
+body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__heading>p{margin:0;color:#f5f7f9;}
+body.js-visual-preview #motopress-main#motopress-main #post-14 .contact-price-overview{flex:none;margin:0;}
+body.js-visual-preview #motopress-main#motopress-main #post-14 .contact-price-overview a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;box-sizing:border-box;padding:10px 20px;border:1px solid #ff761a;border-radius:6px;background:#ff761a;color:#252d34!important;font-weight:700;text-decoration:none;}
+body.js-visual-preview #motopress-main#motopress-main #post-14 #contact-booking-details{margin-bottom:22px;}
+body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__karty{align-items:stretch;gap:24px;margin-bottom:24px;}
+body.js-visual-preview #motopress-main#motopress-main #post-14 :is(.kontakt-prehled__karta,.kontakt-prehled__udaje){padding:26px;background:#f5f7f9;color:#252d34;border:1px solid #c4cbd1;border-radius:6px;}
+body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__karta{display:flex;flex-direction:column;}
+body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__akce{margin-top:auto;padding-top:16px;}
+body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled h2{margin:0 0 16px;text-align:left!important;color:#252d34!important;}
+body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__karta a:not(.kontakt-prehled__tlacitko){color:#252d34!important;}
+body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__tel{font-size:clamp(24px,2.2vw,34px);}
+body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__mapa{margin-top:24px;}
+body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__mapa h2{color:#f5f7f9!important;}
+body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__facebook a{color:#ffb47b;}
+@media(max-width:767px){
+ body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__heading{flex-direction:column;align-items:flex-start;gap:12px;}
+ body.js-visual-preview #motopress-main#motopress-main #post-14 :is(.kontakt-prehled__karta,.kontakt-prehled__udaje){padding:18px;}
+ body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__karty{gap:18px;}
+}
+/* The inline warranty-service link is a clear action, in every language. */
+body.js-visual-preview #motopress-main#motopress-main .autoservis-gvo-inline{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;max-width:100%;min-height:48px;padding:12px 20px;border:1px solid #ff761a;border-radius:6px;background:#ff761a;color:#252d34!important;font-weight:700;line-height:1.4;text-align:center;text-decoration:none!important;}
+body.js-visual-preview #motopress-main#motopress-main .autoservis-gvo-inline:focus-visible{outline:3px solid #f5f7f9;outline-offset:4px;}
+/* Only the outlines pulse; card contents and targets stay still. */
+body.js-visual-preview #motopress-main :is(#post-2272,#post-2065) #portfolio-grid>li{position:relative;}
+body.js-visual-preview #motopress-main :is(#post-2272,#post-2065) #portfolio-grid>li::after{content:"";position:absolute;inset:0;z-index:2;box-sizing:border-box;border:2px solid #ffb06b;border-radius:8px;box-shadow:0 0 4px 1px #ff8b3dbb,0 0 12px 2px #ff6b1a73,inset 0 0 4px #ff8b3d66;opacity:0;pointer-events:none;}
+@media(prefers-reduced-motion:no-preference){body.js-visual-preview #motopress-main :is(#post-2272,#post-2065) #portfolio-grid>li::after{animation:service-outline-pulse 6s linear infinite;animation-delay:var(--service-outline-delay,0s);}}
+@keyframes service-outline-pulse{0%,16.6667%,100%{opacity:0;}3%,11%{opacity:1;}15%{opacity:0;}}
+/* A larger TPMS photo fades to the page surface around its complete edge. */
+body.js-visual-preview #motopress-main#motopress-main #post-2063 .pneuservis-tpms{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;}
+body.js-visual-preview #motopress-main#motopress-main #post-2063 .pneuservis-tpms__photo img{display:block;width:100%;max-width:none;height:auto;}
+.service-photo-fade{position:relative;isolation:isolate;overflow:hidden;}
+.service-photo-fade::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;--photo-feather:clamp(18px,2.4vw,40px);background:linear-gradient(90deg,#252d34 0,rgba(37,45,52,0) var(--photo-feather),rgba(37,45,52,0) calc(100% - var(--photo-feather)),#252d34 100%),linear-gradient(180deg,#252d34 0,rgba(37,45,52,0) var(--photo-feather),rgba(37,45,52,0) calc(100% - var(--photo-feather)),#252d34 100%);}
+body.js-visual-preview #motopress-main#motopress-main #post-2063 .pneuservis-tpms__photo figcaption{margin-top:12px;color:#f5f7f9!important;text-align:center;}
+body.js-visual-preview #motopress-main#motopress-main #post-2063 .pneuservis-overview{align-items:stretch;gap:24px;}
+body.js-visual-preview #motopress-main#motopress-main #post-2063 .cena-blok{box-sizing:border-box;height:100%;margin:0;padding:24px;border:1px solid #c4cbd1!important;border-radius:6px;box-shadow:none!important;}
+body.js-visual-preview #motopress-main#motopress-main #post-2063 .pneuservis-overview__photo{display:flex;flex-direction:column;}
+body.js-visual-preview #motopress-main#motopress-main #post-2063 .pneuservis-overview__photo>.motopress-image-obj{flex:1;}
+body.js-visual-preview #motopress-main#motopress-main #post-2063 .pneuservis-overview__photo img{height:100%;object-fit:cover;}
+@media(max-width:767px){body.js-visual-preview #motopress-main#motopress-main #post-2063 .pneuservis-tpms{grid-template-columns:minmax(0,1fr);gap:20px;}}
+/* Existing related links sit below their own heading, one per row. */
+body.js-visual-preview #motopress-main#motopress-main .service-related{margin:28px 0 32px;text-align:center;}
+body.js-visual-preview #motopress-main#motopress-main .service-related>.article_header{margin:0 0 12px;text-align:center!important;}
+body.js-visual-preview #motopress-main#motopress-main .service-related>ul{display:flex;flex-direction:column;align-items:center;gap:8px;margin:0;padding:0;list-style:none;}
+body.js-visual-preview #motopress-main#motopress-main .service-related>ul>li{margin:0;padding:0;max-width:100%;list-style:none;}
+body.js-visual-preview #motopress-main#motopress-main .service-related>ul>li::before{content:none;}
+body.js-visual-preview #motopress-main#motopress-main .service-related a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:6px 12px;box-sizing:border-box;color:#ffb47b!important;text-align:center;text-decoration:underline;text-underline-offset:3px;}
