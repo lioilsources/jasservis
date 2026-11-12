@@ -441,6 +441,8 @@
         }
         // Match the actual action-tile height when translated mobile labels wrap.
         if (compact.matches && !isShortLandscape) {
+            // Measure the natural row again so a previous translation cannot keep controls tall.
+            nav.style.removeProperty('--header-mobile-menu-height');
             var actionTile = document.querySelector('.header .header-service-actions');
             var adviceTile = document.querySelector('.header .header-driver-advice');
             var mobileControlHeight = Math.max(64, actionTile ? actionTile.getBoundingClientRect().height : 0,
