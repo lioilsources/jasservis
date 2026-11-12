@@ -248,7 +248,7 @@ body.js-visual-preview .header .has-advice-reading .header-advice-mechanic-forea
 @media(prefers-reduced-motion:no-preference){
  body.js-visual-preview .header .has-advice-reading .header-advice-book{animation:js-advice-read-book var(--advice-cycle) ease-in-out infinite;}
  body.js-visual-preview .header .has-advice-reading .header-advice-idea{animation:js-advice-read-idea var(--advice-cycle) ease-in-out infinite;}
- body.js-visual-preview .header .has-advice-reading .header-advice-mechanic-turn{animation:js-advice-read-turn var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .has-advice-reading .header-advice-mechanic-turn{animation:js-advice-read-turn var(--advice-cycle) steps(1,end) infinite;}
  body.js-visual-preview .header .has-advice-reading .header-advice-mechanic-head{animation:js-advice-read-head var(--advice-cycle) ease-in-out infinite;}
  body.js-visual-preview .header .has-advice-reading .header-advice-mechanic-upper-arm{animation:js-advice-read-arm var(--advice-cycle) ease-in-out infinite;}
  body.js-visual-preview .header .has-advice-reading .header-advice-mechanic-forearm{animation:js-advice-read-forearm var(--advice-cycle) ease-in-out infinite;}
