@@ -445,7 +445,8 @@
             nav.style.removeProperty('--header-mobile-menu-height');
             var actionTile = document.querySelector('.header .header-service-actions');
             var adviceTile = document.querySelector('.header .header-driver-advice');
-            var mobileControlHeight = Math.max(64, actionTile ? actionTile.getBoundingClientRect().height : 0,
+            // Phone MENU and language have their own row; keep both targets at 64 px.
+            var mobileControlHeight = window.matchMedia('(max-width:767px)').matches ? 64 : Math.max(64, actionTile ? actionTile.getBoundingClientRect().height : 0,
                 adviceTile ? adviceTile.getBoundingClientRect().height : 0);
             nav.style.setProperty('--header-mobile-menu-height', mobileControlHeight.toFixed(2) + 'px');
         } else {

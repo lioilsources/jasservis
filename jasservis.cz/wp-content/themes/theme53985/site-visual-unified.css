@@ -172,12 +172,12 @@ body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #t
 /* Fill the orange wrapper so the booking icon and label share its real centre. */
 body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget>b>a[data-booking-panel] {width:100%;}
 /* A fixed scene keeps the text still: arrive, turn, lift the hood, then think. */
-body.js-visual-preview .header .header-advice-icons {--advice-cycle:8s;position:relative;display:inline-flex;align-items:center;flex:0 0 116px;width:116px;height:48px;overflow:hidden;pointer-events:none;color:#000;}
-body.js-visual-preview .header .header-advice-car {position:absolute;left:calc(100% - 116px);top:2px;display:inline-flex;align-items:center;width:64px;height:42.667px;line-height:1;color:#000;}
-body.js-visual-preview .header .header-advice-car svg {display:block;width:64px;height:42.667px;max-width:none;}
+body.js-visual-preview .header .header-advice-icons {--advice-cycle:8s;position:relative;display:inline-flex;align-items:center;flex:0 0 180px;width:180px;height:56px;overflow:hidden;pointer-events:none;color:#000;}
+body.js-visual-preview .header .header-advice-car {position:absolute;left:calc(100% - 132px);top:4px;display:inline-flex;align-items:center;width:72px;height:48px;line-height:1;color:#000;}
+body.js-visual-preview .header .header-advice-car svg {display:block;width:72px;height:48px;max-width:none;}
 body.js-visual-preview .header .header-advice-hood {transform-box:view-box;transform-origin:32px 16px;transform:rotate(-65deg);}
-body.js-visual-preview .header .header-advice-mechanic {position:absolute;left:calc(100% - 56px);top:0;display:block;width:56px;height:48px;color:#000;}
-body.js-visual-preview .header .header-advice-mechanic svg {display:block;width:56px;height:48px;max-width:none;overflow:visible;}
+body.js-visual-preview .header .header-advice-mechanic {position:absolute;left:calc(100% - 64px);top:0;display:block;width:64px;height:54.857px;color:#000;}
+body.js-visual-preview .header .header-advice-mechanic svg {display:block;width:64px;height:54.857px;max-width:none;overflow:visible;}
 body.js-visual-preview .header .header-advice-mechanic :is(.header-advice-mechanic-turn,.header-advice-mechanic-head,.header-advice-mechanic-upper-arm,.header-advice-mechanic-forearm,.header-advice-mechanic-thought) {transform-box:view-box;}
 body.js-visual-preview .header .header-advice-mechanic-turn {transform-origin:17px 24px;}
 body.js-visual-preview .header .header-advice-mechanic-head {transform-origin:17px 19px;}
@@ -185,11 +185,11 @@ body.js-visual-preview .header .header-advice-mechanic-upper-arm {transform-orig
 body.js-visual-preview .header .header-advice-mechanic-forearm {transform-origin:13px 34px;transform:rotate(155deg);}
 body.js-visual-preview .header .header-advice-mechanic-thought {transform-origin:40px 10px;}
 @keyframes js-advice-arrive {
- 0%,2% {left:-68px;opacity:0;}
- 4% {left:-68px;opacity:1;}
- 18%,90% {left:calc(100% - 116px);opacity:1;}
- 94% {left:calc(100% - 116px);opacity:0;}
- 100% {left:-68px;opacity:0;}
+ 0%,2% {left:-76px;opacity:0;}
+ 4% {left:-76px;opacity:1;}
+ 18%,90% {left:calc(100% - 132px);opacity:1;}
+ 94% {left:calc(100% - 132px);opacity:0;}
+ 100% {left:-76px;opacity:0;}
 }
 @keyframes js-advice-mechanic-turn {
  0%,20%,100% {transform:scaleX(-1);}
@@ -235,7 +235,7 @@ body.js-visual-preview .header .header-advice-mechanic-thought {transform-origin
 }
 @media(prefers-reduced-motion:reduce) {
  body.js-visual-preview .header .header-advice-icons * {animation:none!important;}
- body.js-visual-preview .header .header-advice-car {left:calc(100% - 116px);opacity:1;}
+ body.js-visual-preview .header .header-advice-car {left:calc(100% - 132px);opacity:1;}
 }
 body.js-visual-preview .header .header-action-label {min-width:0;overflow-wrap:break-word;}
 body.js-visual-preview .header .booking-label-default {display:inline!important;}
