@@ -1,0 +1,11 @@
+
+h1 { font: normal 30px/33px Ubuntu,sans-serif;  color:#333333; }
+h2 { font: normal 30px/33px Ubuntu,sans-serif;  color:#333333; }
+h3 { font: normal 30px/33px Ubuntu,sans-serif;  color:#333333; }
+h4 { font: normal 16px/20px Ubuntu,sans-serif;  color:#ffffff; }
+h5 { font: normal 16px/19px Ubuntu,sans-serif;  color:var(--brand-orange); }
+h6 { font: normal 12px/18px Ubuntu,sans-serif;  color:#333333; }
+body { font-weight: normal;}
+.logo_h__txt, .logo_link { font: normal 35px/35px Ubuntu,sans-serif;  color:#ffffff; }
+.sf-menu > li > a { font: normal 16px/20px Ubuntu,sans-serif;  color:#ffffff; }
+.nav.footer-nav a { font: normal 11px/19px Ubuntu,sans-serif;  color:#888888; }

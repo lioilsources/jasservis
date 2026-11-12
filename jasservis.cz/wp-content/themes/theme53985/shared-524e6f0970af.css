@@ -1,0 +1,23 @@
+
+#post-2908 .geometry-intro { margin-bottom:24px; }
+#post-2908 .geometry-intro .cena-blok { margin-bottom:0; }
+#post-2908 .geometry-details h2.article_header, h3.article_header { margin:24px 0 12px; font-size:20px; line-height:1.4; }
+#post-2908 .geometry-details h3.article_header strong { font-weight:700; }
+#post-2908 .geometry-details > h3:first-child { margin-top:0; }
+#post-2908 .geometry-details p { margin:0 0 12px; }
+#post-2908 .geometry-details ul { margin-top:0; margin-bottom:14px; }
+#post-2908 .geometry-measurement { max-width:840px; margin:18px auto 24px; }
+#post-2908 .geometry-measurement img { display:block; width:100%; height:auto; }
+#post-2908 .geometry-measurement figcaption { margin-top:8px; font-size:14px; line-height:1.5; color:#555; }
+#post-2908 .geometry-price { border-left:3px solid var(--brand-orange); background:#fdf1ec; padding:16px 20px; margin:24px 0 0; }
+#post-2908 .geometry-price h2.article_header, h3.article_header { margin-top:0; }
+#post-2908 .geometry-price p:last-child { margin-bottom:0; }
+@media (max-width:767px) {
+  #post-2908 .geometry-intro { margin-bottom:20px; }
+  #post-2908 .geometry-intro .cena-blok { margin-bottom:16px; }
+  #post-2908 .geometry-details h2.article_header, h3.article_header { font-size:19px; margin-top:22px; }
+  #post-2908 .geometry-details > h3:first-child,
+  #post-2908 .geometry-price h2.article_header, h3.article_header { margin-top:0; }
+  #post-2908 .geometry-measurement { margin:16px auto 22px; }
+  #post-2908 .geometry-price { padding:14px 16px; margin-top:22px; }
+}

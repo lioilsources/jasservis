@@ -1,0 +1,35 @@
+/* Short advice overview and direct specialist links. */
+.hero-expertise-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:22px;max-width:570px}
+.hero-expertise-links a{display:flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:48px;padding:9px 12px;border:1px solid #ff761a;border-radius:4px;color:#fff!important;background:#191d21e8;font:700 15px/1.35 Ubuntu,sans-serif;text-decoration:none!important;text-align:center;overflow-wrap:break-word}
+.hero-expertise-links a:hover,.hero-expertise-links a:focus-visible{background:#ff761a;color:#171717!important;outline:3px solid #fff;outline-offset:2px}
+body .oil-hero--intro{height:auto;min-height:410px}
+body .oil-hero--intro .oil-hero__inner{min-height:410px;padding-block:26px}
+body .oil-hero--intro .oil-hero__copy{max-width:590px}
+body .oil-hero--intro h1{font-size:clamp(27px,2.4vw,38px)!important;line-height:1.15!important}
+body .oil-hero--intro .oil-hero__brands{font-size:18px!important;line-height:1.5!important;margin-block:14px 0}
+.advice-index{box-sizing:border-box;width:min(1170px,100%);margin:0 auto;padding:28px 24px 42px;color:#fff;font:400 17px/1.6 Ubuntu,sans-serif}
+.advice-index h2{margin:34px 0 18px;color:#fff;font-weight:700;font-size:clamp(22px,2vw,30px);line-height:1.3}
+.advice-index__scope{max-width:75ch;color:#ddd;font-size:15px}
+.advice-index__brands{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}
+.advice-index__brands button{min-height:48px;box-sizing:border-box;padding:10px 16px;border:2px solid #ff761a;border-radius:4px;background:#24292e;color:#fff;font:700 16px/1.4 Ubuntu,sans-serif;cursor:pointer}
+.advice-index__brands button[aria-pressed=true]{background:#ff761a;color:#171717}
+.advice-index__cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:0;list-style:none}
+.advice-index__cards li{margin:0;min-width:0;list-style:none}
+.advice-index__cards a{display:flex;align-items:center;box-sizing:border-box;min-height:72px;height:100%;padding:18px;border:1px solid #ff761a;border-radius:4px;color:#fff!important;background:#292f34;font:700 18px/1.45 Ubuntu,sans-serif;text-decoration:none!important;overflow-wrap:break-word}
+.advice-index__cards a:hover{background:#343c43}
+.advice-index a:focus-visible,.advice-index button:focus-visible,.advice-topic-page a:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.advice-back{margin:12px 0 24px;font-size:17px}.advice-back a{color:#ff761a!important;text-decoration:underline}
+.advice-topic-page #warning-lights{width:100%;max-width:100%;padding-inline:0}
+.advice-topic-page .brand-advice{display:block}
+.advice-topic-page .wl-brand-tile{display:flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:48px;text-align:center;text-decoration:none!important;white-space:normal}
+.advice-topic-page .wl-brand-tile[aria-current=true]{background:#ff761a!important;color:#151515!important}
+.advice-topic-page [hidden]{display:none!important}
+.site-contact-preparation{font:400 16px/1.6 Ubuntu,sans-serif;color:#fff;max-width:65ch;margin:18px 0 0}
+.advice-index li[hidden]{display:none!important}
+.price-overview__service{margin:24px 0;padding:22px;border:1px solid #ff761a;border-radius:4px;background:#293037}.price-overview__service h2{margin-top:0;color:#fff}.price-overview__service h3{font-size:19px}.price-overview__service table{width:100%;table-layout:auto}.price-overview__service td,.price-overview__service th{overflow-wrap:anywhere}.price-overview__service p{max-width:75ch}.contact-price-overview a{display:inline-flex;align-items:center;min-height:48px;padding:10px 18px;border:1px solid #ff761a;border-radius:4px;font-size:18px;font-weight:700}
+@media(min-width:1200px){body .oil-hero--intro .oil-hero__copy{width:48%;margin-left:auto}body .oil-hero--intro .oil-hero__inner{max-width:1440px}}
+@media(min-width:768px) and (max-width:1199px){body .oil-hero--intro .oil-hero__copy{width:55%}.hero-expertise-links a{font-size:14px;padding:8px;min-height:48px}}
+@media(max-width:767px){body .oil-hero--intro{min-height:0}body .oil-hero--intro .oil-hero__inner{min-height:0;padding:22px 18px 26px!important}body .oil-hero--intro .oil-hero__copy{width:100%;max-width:100%;margin:0}body .oil-hero--intro h1{font-size:28px!important}body .oil-hero--intro .oil-hero__brands{font-size:17px!important}.hero-expertise-links{max-width:none;gap:12px;margin-top:18px}.hero-expertise-links a{font-size:14px;min-height:56px;padding:9px 7px}.advice-index{padding:20px 16px 32px}.advice-index__cards{grid-template-columns:1fr;gap:14px}.advice-index__brands{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.advice-index__brands button{padding:10px 8px;font-size:15px}.advice-index__cards a{font-size:17px;min-height:64px}}
+@media(prefers-reduced-motion:reduce){.hero-expertise-links *,.advice-index *{scroll-behavior:auto!important;transition:none!important}}
+
+.native-service-runtime .lazy-load-box{opacity:1!important;transform:none!important;animation:none!important}

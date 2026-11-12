@@ -1,0 +1,147 @@
+
+body { background-color:#ffffff }
+.header { background-color:#333333 }
+.content_box.call-to-action-row {background-color:#333;margin-bottom:0}
+
+.content_box.call-to-action-row p{color: #fff;font-size: 25px;margin-bottom: 0;line-height: 1.3em;}
+
+.content_box.call-to-action-row p a{color:#fff;font-weight:600;white-space: nowrap;}
+
+.content_box.call-to-action-row:before, .content_box.call-to-action-row:after {background-color:#333;}
+
+header.header .nav__primary .sf-menu > li > a {padding: 25px 16px 25px 16px;}
+
+.product-detail h2{text-align: left;margin-bottom: 10px;font-size: 25px;line-height: 30px;}
+
+.product-detail p+h2 {margin-top:35px;}
+
+section.title-section ul li {font-size: 22px;}
+
+section.title-section h1 {font-size: 22px;}
+
+.no-margin {margin:0 !important}
+
+.no-margin-bottom {margin-bottom:0 !important;}
+
+.no-margin-top {margin-top:0 !important;}
+
+.margin-bottom-45 {margin-bottom:45px;}
+
+div.service-box.style_1 {min-height: 267px;}
+
+.product-detail .span6>h2 {margin-top:0;}
+
+h2.article_header, h3.article_header {text-align: left;font-size: 20px;position:relative;padding-bottom: 7px;margin-bottom: 12px;}
+
+h2.article_header:before, h3.article_header:before {position:absolute;content:"";width:150px;height:1px;bottom:0;left:0;background:#333333;}
+
+ul.filterable-portfolio .portfolio_item {width: 33%;}
+
+ul.filterable-portfolio .portfolio_item br{display:none;}
+
+#portfolio-grid li .caption {min-height: 170px;}
+
+.service-box_txt ul{margin-left: 0;list-style: none;color: #fff;}
+
+.portfolio-container p.excerpt {min-height: 95px;}
+
+#map #content p {color: #000;font-size: 11px;}
+
+.parallax-slider #mainCaptionHolder:before {position:absolute;width:100%;height:100%;content:"";background:rgba(0,0,0,0.6)}
+.topGap {margin-top:3rem;}
+
+.footer .copyright .footer-text {font-size: 15px;}
+.footer .copyright a.website-developers {margin-left: 20px;}
+.footer .copyright a.website-developers+.website-developers {margin-left:8px;}
+.website-developers img {width:100px;position: relative;top: -2px;}
+.parallax-slider #mainCaptionHolder {z-index:1;}
+.social-nets-wrapper {display:none;}
+
+.header .tel {
+    float: right;
+    line-height: 1.5;
+    font-weight: normal;
+    font-size: 11px;
+    text-transform: none;
+    margin-top: -6px;
+}
+
+@media only screen and (min-width:980px) and (max-width:1199px)
+
+{
+
+#portfolio-grid li .caption {min-height:224px;}
+
+header.header .nav__primary .sf-menu > li > a {padding: 25px 10px 25px 10px;font-size: 15px;}
+
+.title-section {float: left;width: 100%;}
+
+section.title-section h1 {float: left;width:50%;}
+
+.title-section ul {float: right;}
+
+header.header .header_block_1 .header_widget_2 h4 {margin-bottom: 20px;float:right;}
+
+}
+
+@media only screen and (min-width: 768px)
+
+{
+
+.half-part {width:50%;float:left;padding:0 15px;box-sizing: border-box;}
+
+.half-part:first-of-type {padding-left:0}
+
+.half-part:last-of-type {padding-right:0}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:979px)
+
+{
+
+#portfolio-grid li .caption {min-height: 225px;}
+
+.title-section {float: left;width: 100%;}
+
+section.title-section h1 {float: left;width:50%;}
+
+.title-section ul {float: right;}
+
+header.header .header_block_1 .header_widget_2 h4 {float: right;margin-top: -9px;margin-bottom: 17px;}
+
+.header_block_2 .row .span9 {width:100%;}
+
+header.header .nav__primary .sf-menu > li > a {padding: 25px 12px 25px 12px;}
+
+}
+
+@media only screen and (min-width: 320px) and (max-width:767px)
+
+{
+
+    ul.filterable-portfolio .portfolio_item {width: 100%;}
+
+    section.title-section h1 {text-align: center;margin-bottom: 17px;}
+
+    .title-section {text-align: center;}
+    div.service-box.style_1 {min-height:1em;}
+    section.title-section h1 {line-height: 1.4em;}
+    section.title-section ul li {line-height: 1.4em;}
+   .footer .copyright a.website-developers {margin-left: 0;display: block;margin-top: 10px;}
+   .footer .copyright a.website-developers + .website-developers {margin-left: 0;margin-top: 8px;}
+}@media only screen and (min-width: 550px) and (max-width:767px)
+
+{
+
+    ul.filterable-portfolio .portfolio_item {width:50%;}
+
+    #portfolio-grid li .caption {min-height: 224px;}
+
+}@media only screen and (min-width: 320px) and (max-width:337px)
+
+{
+
+header.header .header_block_1 .header_widget_2 .textwidget b {display: block;}
+
+}

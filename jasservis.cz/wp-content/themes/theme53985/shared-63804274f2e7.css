@@ -1,0 +1,41 @@
+
+/* Local-only presentation adjustments; no global theme changes. */
+#post-ev-brzdy .product-detail > .span6:first-child {font-size:17px;line-height:1.65;}
+#post-ev-brzdy .product-detail > .span6:first-child p {font-size:inherit;line-height:inherit;margin-bottom:16px;}
+#post-ev-brzdy .product-detail > .span6:first-child p:first-child {font-size:20px;line-height:1.4;margin-bottom:18px;}
+#post-ev-brzdy figure figcaption {font-size:15px;line-height:1.5;font-weight:400;color:#3d3d3d;margin-top:9px;}
+/* Replace the legacy Bootstrap gutters and unequal columns locally. The
+   photo no longer sets an unnecessarily tall row below the shorter intro. */
+#post-ev-brzdy .product-detail {margin:0 0 20px;}
+#post-ev-brzdy .product-detail::before, #post-ev-brzdy .product-detail::after {display:none;}
+#post-ev-brzdy .product-detail > .span6 {float:none;width:auto;margin:0;min-width:0;}
+#post-ev-brzdy .product-detail > .span6:first-child p:last-child {margin-bottom:0;}
+#post-ev-brzdy .ev-brakes-main-photo {width:100%;max-width:320px;margin:0 auto;}
+@media (min-width:768px) {
+    #post-ev-brzdy .product-detail {display:grid;grid-template-columns:minmax(0, 0.9fr) minmax(0, 1.1fr);gap:28px;align-items:start;}
+}
+@media (max-width:767px) {
+    #post-ev-brzdy .product-detail {display:grid;gap:20px;}
+}
+#post-ev-brzdy .ev-odis-photo {width:100%;max-width:300px;margin:22px auto;}
+@media (min-width:980px) {
+    #post-ev-brzdy .ev-odis-photo {float:right;width:280px;margin:20px 0 18px 28px;}
+}
+#post-ev-brzdy .ev-odis .rozbalovaci__obsah {display:flow-root;}
+#post-ev-brzdy .ev-odis-note {clear:both;}
+#post-ev-brzdy .ev-odis-photo img {display:block;width:100%;height:auto;}
+#post-ev-brzdy .ev-odis-note {font-size:16px;line-height:1.6;color:#333;}
+#post-ev-brzdy .ev-odis-note p {font:inherit;color:inherit;}
+#post-ev-brzdy .ev-odis-note h4 {font-size:17px;line-height:1.5;}
+@media (max-width:767px) {#post-ev-brzdy .product-detail > .span6:first-child {font-size:16px;line-height:1.6;} #post-ev-brzdy .product-detail > .span6:first-child p:first-child {font-size:19px;} }
+
+/* Compact breadcrumb on this service page; keep the shared theme unchanged. */
+.ev-brakes-title .breadcrumb li {display:inline-block;white-space:nowrap;font-size:16px;line-height:24px;}
+.ev-brakes-title .breadcrumb li.divider:after {font-size:16px;line-height:24px;}
+#post-ev-brzdy .rozbalovaci > summary {box-sizing:border-box;min-height:48px;}
+@media (min-width:1200px) {.ev-brakes-title h1 {width:55%;} .ev-brakes-title .breadcrumb {width:45%;}}
+@media (max-width:1199px) {.ev-brakes-title .breadcrumb {margin-top:8px;}}
+@media (max-width:767px) {
+    .ev-brakes-title .breadcrumb li, .ev-brakes-title .breadcrumb li.divider:after {font-size:14px;line-height:20px;}
+    .ev-brakes-title .breadcrumb .breadcrumb-current, .ev-brakes-title .breadcrumb .breadcrumb-current-divider {display:none;}
+}

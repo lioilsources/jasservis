@@ -1,0 +1,117 @@
+
+/* Styles apply only to this service's content. */
+.specializovana-diagnostika {max-width:900px;margin:0 auto 24px;overflow-wrap:break-word;}
+.specializovana-diagnostika p {margin:0 0 16px;}
+.specializovana-diagnostika figure {margin:20px 0 24px;max-width:675px;}
+.specializovana-diagnostika figure img {display:block;width:100%;height:auto;}
+.specializovana-diagnostika figcaption {margin-top:8px;font-size:14px;line-height:1.5;}
+.specializovana-diagnostika h2,
+.specializovana-diagnostika h3 {margin:28px 0 12px;text-align:left;font-size:25px;line-height:1.25;font-weight:400;}
+.specializovana-diagnostika .protokol-nahled {max-width:900px;margin:16px auto 12px;}
+.specializovana-diagnostika .protokol-nahled > a {display:block;aspect-ratio:1224 / 1020;overflow:hidden;}
+.specializovana-diagnostika .protokol-nahled img {max-height:none;}
+.specializovana-diagnostika .protokol-nahled figcaption {text-align:center;}
+.specializovana-diagnostika .protokol-pdf {margin-bottom:24px;text-align:center;}
+.specializovana-diagnostika a:focus-visible {outline:3px solid #b70000;outline-offset:4px;}
+@media (max-width:767px) {
+    .specializovana-diagnostika h2,
+    .specializovana-diagnostika h3 {font-size:22px;margin-top:24px;}
+    .specializovana-diagnostika figure {margin-top:16px;margin-bottom:20px;}
+}
+
+.specializovana-diagnostika {max-width:1170px;}
+.specializovana-diagnostika .diagnostika-dvojice {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start;margin:20px 0 28px;}
+.specializovana-diagnostika .diagnostika-dvojice > * {min-width:0;}
+.specializovana-diagnostika .diagnostika-dvojice figure {max-width:none;margin:0;}
+.specializovana-diagnostika .diagnostika-dvojice h3:first-child {margin-top:0;}
+.specializovana-diagnostika .diagnostika-uvod {align-items:start;margin-top:0;}
+.specializovana-diagnostika .diagnosticka-metoda {border-top:1px solid #ddd;padding-top:28px;margin-top:32px;}
+.specializovana-diagnostika .diagnosticka-metoda > h2 {margin-top:0;}
+.specializovana-diagnostika h2 {font-size:28px;}
+.specializovana-diagnostika h3 {font-size:23px;}
+.specializovana-diagnostika .diagnostika-objednani {border-top:1px solid #ddd;margin-top:32px;padding-top:4px;}
+@media (max-width:767px) {
+    .specializovana-diagnostika .diagnostika-dvojice {grid-template-columns:minmax(0,1fr);gap:20px;margin:16px 0 24px;}
+    .specializovana-diagnostika h2 {font-size:24px;}
+    .specializovana-diagnostika h3 {font-size:21px;}
+    .specializovana-diagnostika .diagnosticka-metoda {padding-top:24px;margin-top:24px;}
+}
+
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary h2 {color:#333;margin:0;font-size:20px;font-weight:600 !important;line-height:26px;text-align:left;text-transform:none;overflow-wrap:break-word;}
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary::after {content:"▾";}
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci[open] > summary::after {content:"▴";}
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci[open] > summary h2,
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary:hover h2,
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary:focus-visible h2 {color:#252D34;}
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary:focus-visible {outline:2px solid var(--brand-orange);outline-offset:2px;}
+.specializovana-diagnostika .rozbalovaci__obsah > h3:first-child {margin-top:20px;}
+.specializovana-diagnostika .diagnostika-dvojice h4:first-child {margin-top:0;}
+@media (max-width:767px) {
+    .specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary {box-sizing:border-box;min-height:44px;padding:10px 40px 10px 12px;}
+    .specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary h2 {font-size:18px;line-height:25px;}
+}
+
+.specializovana-diagnostika .endoskopie-fotografie {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start;margin:20px 0 24px;}
+.specializovana-diagnostika .endoskopie-fotografie figure {margin:0;max-width:none;min-width:0;}
+.specializovana-diagnostika .endoskopie-fotografie img {width:auto;max-width:100%;height:auto;max-height:520px;margin:0 auto;}
+.specializovana-diagnostika .endoskopie-fotografie a {display:block;}
+.specializovana-diagnostika .endoskopie-fotografie figcaption {text-align:center;}
+@media (max-width:767px) {
+    .specializovana-diagnostika .endoskopie-fotografie {grid-template-columns:minmax(0,1fr);gap:20px;}
+    .specializovana-diagnostika .endoskopie-fotografie img {max-height:440px;}
+}
+
+/* Page-only readable typography; rem units follow the reader's root text size. */
+.specializovana-stranka #content {padding-top:1.5rem;}
+.specializovana-diagnostika {color:#333;font-weight:400;opacity:1;}
+.specializovana-diagnostika .diagnostika-uvod p {font-size:1.25rem;line-height:1.6;color:#333;font-weight:400;opacity:1;}
+.specializovana-diagnostika .rozbalovaci__obsah {font-size:1.125rem;line-height:1.6;color:#333;font-weight:400;opacity:1;}
+.specializovana-diagnostika .rozbalovaci__obsah p,
+.specializovana-diagnostika .rozbalovaci__obsah ul,
+.specializovana-diagnostika .rozbalovaci__obsah li {font-size:inherit;line-height:1.6;color:#333;font-weight:400;opacity:1;}
+.specializovana-diagnostika .rozbalovaci__obsah p,
+.specializovana-diagnostika .rozbalovaci__obsah ul {margin:0 0 1rem;}
+.specializovana-diagnostika .rozbalovaci__obsah ul {padding-left:1.25em;}
+.specializovana-diagnostika .rozbalovaci__obsah h3,
+.specializovana-diagnostika .rozbalovaci__obsah h4 {font-size:1.5rem;line-height:1.35;font-weight:600;text-transform:none;margin:1.5rem 0 .75rem;color:#333;}
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary {padding:1rem 3rem 1rem 1.125rem;}
+.specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary h2 {font-size:1.375rem;line-height:1.4;font-weight:600 !important;white-space:normal;}
+.specializovana-diagnostika figcaption {font-size:1rem;line-height:1.6;color:#333;font-weight:400;opacity:1;margin-top:.5rem;}
+.specializovana-diagnostika .rozbalovaci__obsah figcaption {font-size:1rem;}
+.specializovana-diagnostika .diagnostika-dvojice {gap:1.75rem;margin-top:1.25rem;margin-bottom:1.5rem;}
+.specializovana-diagnostika .diagnostika-uvod {margin-top:0;}
+@media (max-width:767px) {
+    .specializovana-stranka #content {padding-top:1rem;}
+    .specializovana-diagnostika .diagnostika-uvod p {font-size:1.125rem;}
+    .specializovana-diagnostika .diagnostika-metody > .rozbalovaci > summary h2 {font-size:1.25rem;}
+    .specializovana-diagnostika .rozbalovaci__obsah h3,
+    .specializovana-diagnostika .rozbalovaci__obsah h4 {font-size:1.375rem;}
+}
+
+.specializovana-diagnostika .kourova-fotografie {max-width:100%;margin:1.25rem auto 1.5rem;text-align:center;}
+.specializovana-diagnostika .kourova-fotografie img {width:auto;max-width:100%;height:auto;max-height:520px;margin:0 auto;}
+@media (max-width:767px) {
+    .specializovana-diagnostika .kourova-fotografie img {max-height:440px;}
+}
+
+.specializovana-diagnostika .uv-fotografie {max-width:100%;margin:1.25rem auto 1.5rem;text-align:center;}
+.specializovana-diagnostika .uv-fotografie img {width:auto;max-width:100%;height:auto;max-height:520px;margin:0 auto;}
+@media (max-width:767px) {
+    .specializovana-diagnostika .uv-fotografie img {max-height:440px;}
+}
+
+/* Only the two portrait-and-text blocks on this service page. */
+.specializovana-diagnostika .portret-rozlozeni {display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);grid-template-areas:"intro photo" "continuation photo";grid-template-rows:auto 1fr;column-gap:1.75rem;row-gap:0;align-items:start;margin:1.5rem 0;}
+.specializovana-diagnostika .portret-uvod {grid-area:intro;min-width:0;}
+.specializovana-diagnostika .portret-navazujici {grid-area:continuation;min-width:0;}
+.specializovana-diagnostika .portret-rozlozeni > figure {grid-area:photo;min-width:0;width:100%;max-width:100%;margin:0;}
+.specializovana-diagnostika .portret-rozlozeni > figure img {width:100%;height:auto;max-height:none;}
+.specializovana-diagnostika .portret-uvod > :first-child,
+.specializovana-diagnostika .portret-navazujici > :first-child {margin-top:0;}
+.specializovana-diagnostika .portret-sekce > :last-child {margin-bottom:0;}
+@media (max-width:991px) {
+    .specializovana-diagnostika .portret-rozlozeni {grid-template-columns:minmax(0,1fr);grid-template-areas:"intro" "photo" "continuation";grid-template-rows:auto auto auto;gap:1.25rem;margin:1.25rem 0;}
+    .specializovana-diagnostika .portret-rozlozeni > figure {max-width:26rem;justify-self:center;}
+    .specializovana-diagnostika .portret-uvod > :last-child,
+    .specializovana-diagnostika .portret-navazujici > :last-child {margin-bottom:0;}
+}

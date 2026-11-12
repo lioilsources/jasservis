@@ -1,13 +1,15 @@
 (function () {
     'use strict';
+    var shared=window.JASSERVIS_BUSINESS_DATA;
     var dialog = document.createElement('dialog');
     dialog.className = 'contact-booking-panel';
     dialog.setAttribute('aria-labelledby', 'contact-booking-title');
     dialog.innerHTML = '<div class="contact-booking-panel__header"><button type="button" class="contact-booking-panel__close" aria-label="Đóng bảng liên hệ">×</button>' +
         '<h2 id="contact-booking-title">Đặt lịch dịch vụ</h2></div><div class="contact-booking-panel__cards">' +
-        card('Văn phòng và đặt lịch', '+420 605 399 448', '+420605399448', 'admin@jasservis.cz') +
-        card('Dịch vụ', '+420 608 313 437', '+420608313437', 'j.mateju@jasservis.cz') +
+        card('Văn phòng và đặt lịch', shared.office.display, shared.office.tel, shared.office.email) +
+        card('Dịch vụ', shared.workshop.display, shared.workshop.tel, shared.workshop.email) +
         '</div><p class="contact-booking-panel__hours">Thứ Hai–Thứ Sáu 9:00–18:00</p>';
+    var preparation=document.createElement('p');preparation.className='site-contact-preparation';preparation.textContent=shared.preparation[document.documentElement.lang]||shared.preparation.cs;dialog.appendChild(preparation);
     document.body.appendChild(dialog);
     var opener;
     var scrollState;
