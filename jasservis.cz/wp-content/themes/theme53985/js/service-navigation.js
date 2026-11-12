@@ -3,6 +3,17 @@
     var menu = document.getElementById('topnav');
     if (!menu) return;
     var nav = menu.parentElement;
+
+    // Keep keyboard order aligned with the shared action strip; move existing nodes only.
+    var contactStrip = document.querySelector('.header #text-8 > .textwidget');
+    if (contactStrip) {
+        var serviceActions = contactStrip.querySelector('.header-service-actions');
+        var adviceLink = contactStrip.querySelector('.header-driver-advice');
+        [serviceActions, adviceLink].forEach(function (item) {
+            if (item && item.parentElement === contactStrip) contactStrip.appendChild(item);
+        });
+    }
+
     var compact = window.matchMedia('(max-width:1199px)');
     var tablet = window.matchMedia('(min-width:768px) and (max-width:1199px) and (min-height:501px)');
     var canHover = window.matchMedia('(hover:hover) and (pointer:fine)');
@@ -351,7 +362,6 @@
         arrangingHeader = true;
         var focused = document.activeElement;
         var moved = false;
-        var wasFull = nav.classList.contains('short-header-full-nav');
         var wasHidden = menu.hidden;
         if (isShortLandscape && !landscapeRow) {
             landscapeRow = document.createElement('div');
@@ -404,15 +414,43 @@
         } else {
             nav.classList.remove('short-header-full-nav');
             if (!compact.matches) {
-                nav.classList.add('desktop-menu-measuring');
                 menu.hidden = false;
-                var desktopNeeded = menu.getBoundingClientRect().width;
-                nav.classList.remove('desktop-menu-measuring');
-                var desktopFits = desktopNeeded <= nav.clientWidth;
+                var desktopFits;
+                if (window.getComputedStyle(menu).display === 'grid') {
+                    // Equal desktop cells can wrap labels; measure their rendered targets.
+                    desktopFits = menu.getBoundingClientRect().width <= nav.clientWidth + 1 &&
+                        Array.prototype.every.call(menu.children, function (item) {
+                            var itemBox = item.getBoundingClientRect();
+                            return Array.prototype.every.call(item.children, function (target) {
+                                if (target.tagName !== 'A' && target.tagName !== 'BUTTON') return true;
+                                var targetBox = target.getBoundingClientRect();
+                                return target.scrollWidth <= target.clientWidth + 1 && target.scrollHeight <= target.clientHeight + 1 &&
+                                    targetBox.left >= itemBox.left - 1 && targetBox.right <= itemBox.right + 1;
+                            });
+                        });
+                } else {
+                    nav.classList.add('desktop-menu-measuring');
+                    var desktopNeeded = menu.getBoundingClientRect().width;
+                    nav.classList.remove('desktop-menu-measuring');
+                    desktopFits = desktopNeeded <= nav.clientWidth;
+                }
                 nav.classList.toggle('desktop-menu-collapsed', !desktopFits);
                 menu.hidden = desktopFits ? false : (wasCollapsed ? wasHidden : true);
             }
-            else if (wasFull) menu.hidden = controls.every(function (control) { return control.panel.hidden; });
+            else menu.hidden = true; // Phone navigation always opens in the modal, including after a desktop resize.
+        }
+        // Match the actual action-tile height when translated mobile labels wrap.
+        if (compact.matches && !isShortLandscape) {
+            // Measure the natural row again so a previous translation cannot keep controls tall.
+            nav.style.removeProperty('--header-mobile-menu-height');
+            var actionTile = document.querySelector('.header .header-service-actions');
+            var adviceTile = document.querySelector('.header .header-driver-advice');
+            // Phone MENU and language have their own row; keep both targets at 64 px.
+            var mobileControlHeight = window.matchMedia('(max-width:767px)').matches ? 64 : Math.max(64, actionTile ? actionTile.getBoundingClientRect().height : 0,
+                adviceTile ? adviceTile.getBoundingClientRect().height : 0);
+            nav.style.setProperty('--header-mobile-menu-height', mobileControlHeight.toFixed(2) + 'px');
+        } else {
+            nav.style.removeProperty('--header-mobile-menu-height');
         }
         if (menu.hidden) controls.forEach(close);
         syncToggle();

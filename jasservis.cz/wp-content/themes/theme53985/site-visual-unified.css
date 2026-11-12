@@ -171,26 +171,71 @@ body.js-visual-preview .header .header-action-emoji {flex:0 0 auto;font-size:1.2
 body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget a.header-driver-advice {gap:20px;}
 /* Fill the orange wrapper so the booking icon and label share its real centre. */
 body.js-visual-preview #motopress-main#motopress-main .header .header_block_1 #text-8>.textwidget>b>a[data-booking-panel] {width:100%;}
-body.js-visual-preview .header .header-advice-icons {display:inline-flex;align-items:center;gap:6px;flex:0 0 auto;}
-body.js-visual-preview .header .header-advice-car {display:inline-flex;align-items:center;line-height:1;color:#000;}
-body.js-visual-preview .header .header-advice-car svg {display:block;width:48px;height:32px;max-width:none;}
-/* Two brief attention cues, then rest; only the decorative advice emoji moves. */
-@keyframes js-advice-emoji-nudge {
- 0%,20%,60%,80%,100% {transform:translateY(0) rotate(0deg);}
- 4%,64% {transform:translateY(-3px) rotate(-10deg);}
- 8%,68% {transform:translateY(-3px) rotate(9deg);}
- 12%,72% {transform:translateY(-2px) rotate(-6deg);}
- 16%,76% {transform:translateY(-1px) rotate(4deg);}
+/* A fixed scene keeps the text still: arrive, turn, lift the hood, then think. */
+body.js-visual-preview .header .header-advice-icons {--advice-cycle:8s;position:relative;display:inline-flex;align-items:center;flex:0 0 180px;width:180px;height:56px;overflow:hidden;pointer-events:none;color:#000;}
+body.js-visual-preview .header .header-advice-car {position:absolute;left:calc(100% - 132px);top:4px;display:inline-flex;align-items:center;width:72px;height:48px;line-height:1;color:#000;}
+body.js-visual-preview .header .header-advice-car svg {display:block;width:72px;height:48px;max-width:none;}
+body.js-visual-preview .header .header-advice-hood {transform-box:view-box;transform-origin:32px 16px;transform:rotate(-65deg);}
+body.js-visual-preview .header .header-advice-mechanic {position:absolute;left:calc(100% - 64px);top:0;display:block;width:64px;height:54.857px;color:#000;}
+body.js-visual-preview .header .header-advice-mechanic svg {display:block;width:64px;height:54.857px;max-width:none;overflow:visible;}
+body.js-visual-preview .header .header-advice-mechanic :is(.header-advice-mechanic-turn,.header-advice-mechanic-head,.header-advice-mechanic-upper-arm,.header-advice-mechanic-forearm,.header-advice-mechanic-thought) {transform-box:view-box;}
+body.js-visual-preview .header .header-advice-mechanic-turn {transform-origin:17px 24px;}
+body.js-visual-preview .header .header-advice-mechanic-head {transform-origin:17px 19px;}
+body.js-visual-preview .header .header-advice-mechanic-upper-arm {transform-origin:13px 22px;transform:rotate(80deg);}
+body.js-visual-preview .header .header-advice-mechanic-forearm {transform-origin:13px 34px;transform:rotate(155deg);}
+body.js-visual-preview .header .header-advice-mechanic-thought {transform-origin:40px 10px;}
+@keyframes js-advice-arrive {
+ 0%,2% {left:-76px;opacity:0;}
+ 4% {left:-76px;opacity:1;}
+ 18%,90% {left:calc(100% - 132px);opacity:1;}
+ 94% {left:calc(100% - 132px);opacity:0;}
+ 100% {left:-76px;opacity:0;}
+}
+@keyframes js-advice-mechanic-turn {
+ 0%,20%,100% {transform:scaleX(-1);}
+ 28%,92% {transform:scaleX(1);}
+}
+@keyframes js-advice-mechanic-reach {
+ 0%,28%,98%,100% {transform:rotate(-20deg);}
+ 34% {transform:rotate(35deg);}
+ 44% {transform:rotate(100deg);}
+ 54%,90% {transform:rotate(80deg);}
+}
+@keyframes js-advice-mechanic-lift {
+ 0%,28%,98%,100% {transform:rotate(100deg);}
+ 34% {transform:rotate(90deg);}
+ 44% {transform:rotate(24deg);}
+ 54%,90% {transform:rotate(155deg);}
+}
+@keyframes js-advice-open-hood {
+ 0%,34%,98%,100% {transform:rotate(0deg);}
+ 44%,94% {transform:rotate(-65deg);}
+}
+@keyframes js-advice-engine-visible {
+ 0%,37%,98%,100% {opacity:0;}
+ 44%,94% {opacity:1;}
+}
+@keyframes js-advice-mechanic-think {
+ 0%,52%,94%,100% {transform:rotate(0deg);}
+ 58%,88% {transform:rotate(-6deg);}
+}
+@keyframes js-advice-mechanic-thought {
+ 0%,52%,94%,100% {opacity:0;transform:translateY(2px) scale(.6);}
+ 58%,89% {opacity:1;transform:translateY(0) scale(1);}
 }
 @media(prefers-reduced-motion:no-preference) {
- body.js-visual-preview .header .header-driver-advice .header-action-emoji {
-  display:inline-block;transform-origin:50% 70%;
-  animation:js-advice-emoji-nudge 4.8s ease-in-out 1;
- }
- body.js-visual-preview .header .header-driver-advice:is(:hover,:focus-within) .header-action-emoji {animation:none;transform:none;}
+ body.js-visual-preview .header .header-advice-car {animation:js-advice-arrive var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .header-advice-hood {animation:js-advice-open-hood var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .header-advice-engine {animation:js-advice-engine-visible var(--advice-cycle) linear infinite;}
+ body.js-visual-preview .header .header-advice-mechanic-turn {animation:js-advice-mechanic-turn var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .header-advice-mechanic-upper-arm {animation:js-advice-mechanic-reach var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .header-advice-mechanic-forearm {animation:js-advice-mechanic-lift var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .header-advice-mechanic-head {animation:js-advice-mechanic-think var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .header-advice-mechanic-thought {animation:js-advice-mechanic-thought var(--advice-cycle) ease-in-out infinite;}
 }
 @media(prefers-reduced-motion:reduce) {
- body.js-visual-preview .header .header-driver-advice .header-action-emoji {animation:none!important;transform:none!important;}
+ body.js-visual-preview .header .header-advice-icons * {animation:none!important;}
+ body.js-visual-preview .header .header-advice-car {left:calc(100% - 132px);opacity:1;}
 }
 body.js-visual-preview .header .header-action-label {min-width:0;overflow-wrap:break-word;}
 body.js-visual-preview .header .booking-label-default {display:inline!important;}

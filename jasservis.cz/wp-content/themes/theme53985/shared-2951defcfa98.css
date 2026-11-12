@@ -1,0 +1,40 @@
+
+body.page-id-2106 .content-holder { padding-bottom:32px; }
+#post-2106 .fleet-service { margin:0 0 28px; overflow-wrap:anywhere; }
+#post-2106 .fleet-service p { margin:0; }
+#post-2106 .fleet-service .fleet-intro { margin-bottom:28px; }
+#post-2106 .fleet-inspection { margin-top:24px; }
+#post-2106 .fleet-specialization {
+    display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);
+    gap:32px; align-items:start;
+}
+#post-2106 .fleet-specialization > * { min-width:0; }
+#post-2106 .fleet-specialization img { display:block; width:100%; height:auto; margin:0; }
+#post-2106 .fleet-service h2 {
+    font-size:26px; line-height:1.3; font-weight:600 !important; text-align:left;
+    margin:0 0 16px; color:#333333; white-space:normal;
+    word-break:normal; overflow-wrap:anywhere;
+}
+#post-2106 .fleet-service a { color:#252D34; text-decoration:underline; }
+#post-2106 .call-to-action-row { margin:0; padding:22px 0; background:#191818; }
+#post-2106 .call-to-action-row:before,
+#post-2106 .call-to-action-row:after { background:#191818; }
+#post-2106 .fleet-contact { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px 24px; }
+#post-2106 .fleet-contact p { margin:0; color:#fff; font-size:16px; line-height:1.5; font-weight:400; text-align:left; }
+#post-2106 .fleet-contact .fleet-contact-title { font-size:18px; font-weight:500; }
+#post-2106 .fleet-contact-title span,
+#post-2106 .fleet-contact-label { font-size:14px; font-weight:400; color:#ddd; }
+#post-2106 .fleet-contact-label { display:block; }
+#post-2106 .fleet-contact a { display:inline-block; min-height:44px; box-sizing:border-box; padding:7px 0; color:var(--brand-orange); font-size:20px; line-height:30px; font-weight:500; }
+#post-2106 .fleet-contact a:hover { color:#fff; text-decoration:underline; }
+#post-2106 a:focus-visible { outline:2px solid var(--brand-orange); outline-offset:3px; }
+@media (max-width:979px) {
+    #post-2106 .fleet-specialization { grid-template-columns:minmax(0,1fr); gap:22px; }
+    #post-2106 .fleet-specialization .motopress-image-obj { width:100%; max-width:680px; margin:0 auto; }
+}
+@media (max-width:767px) {
+    body.page-id-2106 .content-holder { padding-top:28px; padding-bottom:24px; }
+    #post-2106 .fleet-service h2 { font-size:22px; margin-bottom:12px; }
+    #post-2106 .fleet-contact { justify-content:flex-start; gap:14px 24px; }
+    #post-2106 .fleet-contact-title, #post-2106 .fleet-hours { flex-basis:100%; }
+}

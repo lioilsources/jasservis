@@ -1,13 +1,15 @@
 (function () {
     'use strict';
+    var shared=window.JASSERVIS_BUSINESS_DATA;
     var dialog = document.createElement('dialog');
     dialog.className = 'contact-booking-panel';
     dialog.setAttribute('aria-labelledby', 'contact-booking-title');
     dialog.innerHTML = '<div class="contact-booking-panel__header"><button type="button" class="contact-booking-panel__close" aria-label="Kontaktfenster schließen">×</button>' +
         '<h2 id="contact-booking-title">Servicetermin vereinbaren</h2></div><div class="contact-booking-panel__cards">' +
-        card('Büro und Terminvereinbarung', '+420 605 399 448', '+420605399448', 'admin@jasservis.cz') +
-        card('Werkstatt', '+420 608 313 437', '+420608313437', 'j.mateju@jasservis.cz') +
+        card('Büro und Terminvereinbarung', shared.office.display, shared.office.tel, shared.office.email) +
+        card('Werkstatt', shared.workshop.display, shared.workshop.tel, shared.workshop.email) +
         '</div><p class="contact-booking-panel__hours">Mo–Fr 9:00–18:00</p>';
+    var preparation=document.createElement('p');preparation.className='site-contact-preparation';preparation.textContent=shared.preparation[document.documentElement.lang]||shared.preparation.cs;dialog.appendChild(preparation);
     document.body.appendChild(dialog);
     var opener;
     var scrollState;
@@ -62,6 +64,15 @@
     dialog.addEventListener('click', function (event) {
         var box = dialog.getBoundingClientRect();
         if (event.target === dialog && (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom)) dialog.close();
+    });
+    // Cycle focus within the modal; Escape still uses the native dialog behavior.
+    dialog.addEventListener('keydown', function (event) {
+        if (event.key !== 'Tab') return;
+        var controls = Array.prototype.filter.call(dialog.querySelectorAll('button:not([disabled]),a[href],input:not([disabled]),textarea:not([disabled]),select:not([disabled]),[tabindex]:not([tabindex="-1"])'), function (node) { return node.getBoundingClientRect().height > 0; });
+        if (!controls.length) return;
+        var first = controls[0], last = controls[controls.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
     });
     dialog.addEventListener('close', function () {
         unlockScroll();

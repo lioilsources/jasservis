@@ -1,0 +1,44 @@
+
+.diagnostika-systemy .rozbalovaci > summary h3 {
+    color:#333;
+    margin:0;
+    font-size:20px;
+    font-weight:600 !important;
+    line-height:26px;
+    text-align:left;
+    text-transform:none;
+    overflow-wrap:break-word;
+}
+.diagnostika-systemy .rozbalovaci__obsah h4 {
+    color:#222;
+    font-size:20px;
+    font-weight:600;
+    line-height:1.4;
+    margin:24px 0 8px;
+    text-align:left;
+    text-transform:none;
+    overflow-wrap:break-word;
+}
+.diagnostika-systemy .rozbalovaci[open] > summary h3,
+.diagnostika-systemy .rozbalovaci > summary:active h3,
+.diagnostika-systemy .rozbalovaci > summary:focus-visible h3 {
+    color:#252D34;
+}
+@media (hover:hover) and (pointer:fine) {
+    .diagnostika-systemy .rozbalovaci > summary:hover h3 { color:#252D34; }
+}
+@media (max-width:767px) {
+    .diagnostika-systemy .rozbalovaci { margin-bottom:8px; }
+    .diagnostika-systemy .rozbalovaci > summary {
+        box-sizing:border-box;
+        min-height:44px;
+        padding:10px 40px 10px 12px;
+    }
+    .diagnostika-systemy .rozbalovaci > summary h3 { font-size:18px; line-height:25px; }
+    .diagnostika-systemy .rozbalovaci__obsah { padding:0 12px 4px; }
+    .diagnostika-systemy .rozbalovaci__obsah h4 { font-size:18px; margin:20px 0 8px; }
+    .diagnostika-systemy .rozbalovaci__obsah p,
+    .diagnostika-systemy .rozbalovaci__obsah ul { margin-bottom:12px; }
+    .diagnostika-systemy .rozbalovaci__obsah > :first-child { margin-top:12px; }
+    .diagnostika-systemy .rozbalovaci__obsah > :last-child { margin-bottom:8px; }
+}

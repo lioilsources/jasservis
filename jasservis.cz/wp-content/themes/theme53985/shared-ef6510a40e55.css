@@ -1,0 +1,15 @@
+
+#post-203 .home-service-cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:30px; margin-left:0; }
+#post-203 .home-service-cards:before, #post-203 .home-service-cards:after { content:none; }
+#post-203 .home-service-cards > .span4 { float:none; width:auto; min-width:0; margin-left:0; display:flex; }
+#post-203 .home-service-cards section { display:flex; width:100%; min-width:0; }
+#post-203 .home-service-cards .service-box { box-sizing:border-box; width:100%; display:flex; flex-direction:column; }
+#post-203 .home-service-cards .service-box_body { flex:1; display:flex; flex-direction:column; min-width:0; }
+#post-203 .home-service-cards .service-box_txt { flex:1; }
+#post-203 .home-service-cards h2, #post-203 .home-service-cards h5, #post-203 .home-service-cards .service-box_txt { overflow-wrap:break-word; }
+@media(max-width:767px) {
+#post-203 .home-service-cards { grid-template-columns:minmax(0,1fr); gap:20px; }
+#post-203 .home-service-cards { display:flex; flex-direction:column; }
+
+#post-203 .home-service-cards section { transform:none !important; opacity:1 !important; }
+}

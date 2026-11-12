@@ -1,0 +1,34 @@
+
+#post-2784 { max-width: 1080px; margin-left: auto; margin-right: auto; }
+#post-2784 .klimatizace-feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 36px; align-items: center; margin: 0 0 36px; }
+#post-2784 .klimatizace-feature > * { min-width: 0; }
+#post-2784 .klimatizace-feature .article_header { margin-top: 0; }
+#post-2784 .klimatizace-feature p:last-child { margin-bottom: 0; }
+#post-2784 .klimatizace-photo { margin: 0; }
+#post-2784 .klimatizace-photo-link, #post-2784 .lokring-image-link { display: block; }
+#post-2784 .klimatizace-feature img, #post-2784 .lokring-gallery img { display: block; width: 100%; height: auto; }
+#post-2784 .klimatizace-photo figcaption, #post-2784 .lokring-gallery figcaption { font-size: 16px; line-height: 1.5; }
+#post-2784 .klimatizace-photo-original, #post-2784 .lokring-original { display: inline-block; margin-top: 8px; }
+#post-2784 .klimatizace-photo-link:focus-visible, #post-2784 .lokring-gallery a:focus-visible { outline: 3px solid var(--brand-orange); outline-offset: 4px; }
+#post-2784 .klimatizace-prices { margin: 0 0 36px; border-left-color: transparent; }
+#post-2784 .klimatizace-prices > ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; list-style: none; margin: 16px 0 20px; padding: 0; }
+#post-2784 .klimatizace-prices > ul > li { margin: 0; padding: 0; }
+#post-2784 .klimatizace-prices > ul > li + li { border-left: 1px solid #e6d8d1; padding-left: 24px; }
+#post-2784 .klimatizace-r744 { margin: 36px 0; }
+#post-2784 .lokring-service { margin: 36px 0; padding: 28px; border-top: 3px solid var(--brand-orange); background: #f7f7f7; }
+#post-2784 .lokring-service > .article_header { margin-top: 0; }
+#post-2784 .lokring-note { margin-bottom: 24px; }
+#post-2784 .lokring-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+#post-2784 .lokring-gallery figure { margin: 0; min-width: 0; }
+#post-2784 .lokring-gallery figcaption { margin-top: 14px; }
+#post-2784 .lokring-gallery figcaption strong { display: block; margin-bottom: 4px; }
+@media (max-width: 979px) {
+  #post-2784 .klimatizace-feature { grid-template-columns: 1fr; gap: 24px; }
+  #post-2784 .klimatizace-feature .klimatizace-photo, #post-2784 .klimatizace-r744-photo { width: 100%; max-width: 640px; margin: 0 auto; }
+}
+@media (max-width: 767px) {
+  #post-2784 .klimatizace-prices > ul { grid-template-columns: 1fr; gap: 16px; }
+  #post-2784 .klimatizace-prices > ul > li + li { border-left: 0; border-top: 1px solid #e6d8d1; padding: 16px 0 0; }
+  #post-2784 .lokring-service { padding: 20px; margin: 28px 0; }
+  #post-2784 .lokring-gallery { grid-template-columns: 1fr; gap: 28px; }
+}

@@ -4,6 +4,7 @@
  var hero=document.querySelector('[data-oil-hero]');
  if (!hero) return;
  var video=hero.querySelector('video'),frame=hero.querySelector('.oil-hero__frame');
+ var scene=hero.querySelector('.oil-hero__scene')||hero;
  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
  // Linux WebKit ends these clips early. Use the original photo on Safari/WebKit,
  // including all iOS browsers; do not hide a decoder failure with seek/replay hacks.
@@ -54,7 +55,7 @@
  if ('ResizeObserver' in window) new ResizeObserver(fit).observe(hero);
  else window.addEventListener('resize',fit);
  if ('IntersectionObserver' in window) {
-  new IntersectionObserver(function(entries){visible=entries[0].isIntersecting;run();},{threshold:0.05}).observe(hero);
+  new IntersectionObserver(function(entries){visible=entries[0].isIntersecting;run();},{threshold:0.1}).observe(scene);
  } else visible=true;
  function afterPhoto(){
   requestAnimationFrame(function(){requestAnimationFrame(function(){paintReady=true;run();});});

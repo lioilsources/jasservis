@@ -1,0 +1,21 @@
+/* Shared layout of the service overview pages. */
+.mp-row-fixed-width {max-width:1170px;}
+.filterable-portfolio {
+  visibility: visible;
+}
+@media (min-width:980px) {
+    #post-2272 #portfolio-grid > li.portfolio_item:last-child:nth-child(3n + 1) { grid-column:2; }
+}
+@media (min-width:550px) and (max-width:979px) {
+    #post-2272 #portfolio-grid > li.portfolio_item:last-child:nth-child(2n + 1) {
+        grid-column:1 / -1; width:calc((100% - 32px) / 2); justify-self:center;
+    }
+}
+.filterable-portfolio {
+  visibility: visible;
+}
+/* AA contrast for linked service titles on the existing light cards. */
+.page-id-2065 #portfolio-grid .portfolio_item_holder .caption h3 a,
+.page-id-2065 #portfolio-grid .portfolio_item_holder .caption h3 a:visited { color:#252D34; }
+.page-id-2065 #portfolio-grid .portfolio_item_holder .caption h3 a:is(:hover,:focus,:focus-visible,:active) { color:#191818; }
+.page-id-2065 #portfolio-grid .portfolio_item_holder .caption h3 a:focus-visible { outline:3px solid #191818;outline-offset:3px; }
