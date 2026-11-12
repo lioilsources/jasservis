@@ -28,7 +28,8 @@
    tile.style.setProperty('--advice-pull-dx',((s.right-t.left)/scaleX-33-x)+'px');
    tile.style.setProperty('--advice-pull-dy',((s.top-t.top)/scaleY+10-y)+'px');
    var font=window.getComputedStyle(label);
-   ['fontFamily','fontSize','fontWeight','fontStyle','lineHeight','letterSpacing','textTransform','textAlign'].forEach(function(property){copy.style[property]=font[property];});
+   ['fontFamily','fontSize','fontWeight','fontStyle','lineHeight','letterSpacing','textTransform'].forEach(function(property){copy.style[property]=font[property];});
+   copy.style.textAlign='left';
   }
   geometry();
   if('ResizeObserver' in window){var sizeObserver=new ResizeObserver(geometry);sizeObserver.observe(tile);sizeObserver.observe(label);sizeObserver.observe(scene);}
