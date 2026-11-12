@@ -131,3 +131,12 @@ body.home .oil-hero .professional-home__card-arrow::after {width:8px;height:8px;
  body.home .oil-hero.oil-hero--intro {width:100%;margin-inline:0;}
  body.home .oil-hero.oil-hero--intro .oil-hero__scene {box-sizing:border-box;width:calc(100% - 2 * max(18px,var(--js-gutter,16px)));margin:0 max(18px,var(--js-gutter,16px)) 24px;}
 }
+
+/* Blend the complete photo and its oil layer into the page on every edge. */
+body.home .oil-hero.oil-hero--intro .oil-hero__scene::after {
+ content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+ --oil-photo-feather:clamp(18px,2.4vw,42px);
+ background:
+  linear-gradient(90deg,#252d34 0,rgba(37,45,52,0) var(--oil-photo-feather),rgba(37,45,52,0) calc(100% - var(--oil-photo-feather)),#252d34 100%),
+  linear-gradient(180deg,#252d34 0,rgba(37,45,52,0) var(--oil-photo-feather),rgba(37,45,52,0) calc(100% - var(--oil-photo-feather)),#252d34 100%);
+}
