@@ -358,7 +358,8 @@
         if (!logo) return;
         if (mobilePanel.open) { if (compact.matches) return; closeMobilePanel(false); }
         // Firefox can update media queries during layout; keep this pass consistent.
-        var isShortLandscape = shortLandscape.matches;
+        // Keep the logo above paired trust badges in both orientations.
+        var isShortLandscape = shortLandscape.matches && !document.querySelector('.header-trust-badges');
         arrangingHeader = true;
         var focused = document.activeElement;
         var moved = false;
