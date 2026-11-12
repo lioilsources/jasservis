@@ -9,46 +9,46 @@ body.home .oil-hero--intro .oil-hero__eyebrow{margin:0 0 18px;color:#ff6b1a;font
 body.home .oil-hero--intro h1{margin:0 0 20px;padding:0;color:#f5f7f9!important;font-family:inherit;font-size:clamp(32px,3.2vw,54px);font-weight:700!important;line-height:1.13;letter-spacing:-.025em;text-align:left;text-transform:none!important;text-wrap:balance;}
 body.home .oil-hero--intro .oil-hero__intro{margin:0 0 18px;color:#ff6b1a;font-size:clamp(20px,1.65vw,25px);font-weight:700;line-height:1.45;text-align:left;}
 body.home .oil-hero--intro .oil-hero__brands{margin:0;color:#ff6b1a;font-size:clamp(20px,1.6vw,27px);font-weight:700;line-height:1.6;text-align:left;}
-body.home #post-203 .professional-home{margin:0 0 36px;padding:0;background:#252d34;color:#f5f7f9;text-align:left;}
-body.home #post-203 .professional-home *,body.home #post-203 .professional-home *::before,body.home #post-203 .professional-home *::after{box-sizing:border-box;}
-body.home #post-203 .professional-home :is(h2,h3){font-weight:700!important;text-transform:none!important;text-align:left!important;}
-body.home #post-203 .professional-home a:focus-visible{outline:3px solid #ff6b1a;outline-offset:5px;}
-body.home #post-203 .professional-home__services{grid-area:services;min-width:0;scroll-margin-top:24px;}
-body.home #post-203 .professional-home .professional-home__services>h2{display:block;margin:0 0 25px;padding:0;color:#ff6b1a!important;font-size:clamp(25px,2.2vw,34px);line-height:1.25;text-align:center!important;}
-body.home #post-203 .professional-home__services>h2::after{content:none;}
-body.home #post-203 .professional-home__grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:28px;}
-body.home #post-203 .professional-home__card{position:relative;grid-column:span 4;min-width:0;margin:0;padding:0;border:1px solid #ff6b1a;background:#191e23;}
-body.home #post-203 .professional-home__card:nth-child(1),body.home #post-203 .professional-home__card:nth-child(6){grid-column:span 5;}
-body.home #post-203 .professional-home__card:nth-child(3),body.home #post-203 .professional-home__card:nth-child(4){grid-column:span 3;}
-body.home #post-203 .professional-home__card>a{display:flex;flex-direction:column;height:100%;min-width:0;color:#f5f7f9!important;text-decoration:none;}
-body.home #post-203 .professional-home__card img{display:block;width:100%;height:clamp(170px,15vw,250px);object-fit:cover;object-position:center;border:0;}
-body.home #post-203 .professional-home__card:nth-child(2) img{object-position:center 65%;}
-body.home #post-203 .professional-home__card-caption{display:grid;grid-template-columns:20px minmax(0,1fr) 20px;align-items:center;gap:10px;flex:1;min-width:0;padding:18px;border-bottom:0;}
-body.home #post-203 .professional-home__card h3{grid-column:2;margin:0;padding:0;color:#ff6b1a!important;font-size:clamp(19px,1.6vw,24px);line-height:1.35;hyphens:auto;overflow-wrap:anywhere;}
-body.home #post-203 .professional-home .professional-home__card h3{text-align:center!important;}
-body.home #post-203 .professional-home__card-caption>.professional-home__card-arrow{grid-column:3;grid-row:1;}
-body.home #post-203 .professional-home__card-arrow{position:relative;display:block;flex:none;width:20px;height:20px;}
-body.home #post-203 .professional-home__card-arrow::before{content:'';position:absolute;left:0;top:9px;width:22px;height:2px;background:#ff6b1a;transform:rotate(-45deg);}
-body.home #post-203 .professional-home__card-arrow::after{content:'';position:absolute;right:1px;top:1px;width:11px;height:11px;border-top:2px solid #ff6b1a;border-right:2px solid #ff6b1a;}
+body.home .professional-home{margin:0 0 36px;padding:0;background:#252d34;color:#f5f7f9;text-align:left;}
+body.home .professional-home *,body.home .professional-home *::before,body.home .professional-home *::after{box-sizing:border-box;}
+body.home .professional-home :is(h2,h3){font-weight:700!important;text-transform:none!important;text-align:left!important;}
+body.home .professional-home a:focus-visible{outline:3px solid #ff6b1a;outline-offset:5px;}
+body.home .professional-home__services{grid-area:services;min-width:0;scroll-margin-top:24px;}
+body.home .professional-home .professional-home__services>h2{display:block;margin:0 0 25px;padding:0;color:#ff6b1a!important;font-size:clamp(25px,2.2vw,34px);line-height:1.25;text-align:center!important;}
+body.home .professional-home__services>h2::after{content:none;}
+body.home .professional-home__grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:28px;}
+body.home .professional-home__card{position:relative;grid-column:span 4;min-width:0;margin:0;padding:0;border:1px solid #ff6b1a;background:#191e23;}
+body.home .professional-home__card:nth-child(1),body.home .professional-home__card:nth-child(6){grid-column:span 5;}
+body.home .professional-home__card:nth-child(3),body.home .professional-home__card:nth-child(4){grid-column:span 3;}
+body.home .professional-home__card>a{display:flex;flex-direction:column;height:100%;min-width:0;color:#f5f7f9!important;text-decoration:none;}
+body.home .professional-home__card img{display:block;width:100%;height:clamp(170px,15vw,250px);object-fit:cover;object-position:center;border:0;}
+body.home .professional-home__card:nth-child(2) img{object-position:center 65%;}
+body.home .professional-home__card-caption{display:grid;grid-template-columns:20px minmax(0,1fr) 20px;align-items:center;gap:10px;flex:1;min-width:0;padding:18px;border-bottom:0;}
+body.home .professional-home__card h3{grid-column:2;margin:0;padding:0;color:#ff6b1a!important;font-size:clamp(19px,1.6vw,24px);line-height:1.35;hyphens:auto;overflow-wrap:anywhere;}
+body.home .professional-home .professional-home__card h3{text-align:center!important;}
+body.home .professional-home__card-caption>.professional-home__card-arrow{grid-column:3;grid-row:1;}
+body.home .professional-home__card-arrow{position:relative;display:block;flex:none;width:20px;height:20px;}
+body.home .professional-home__card-arrow::before{content:'';position:absolute;left:0;top:9px;width:22px;height:2px;background:#ff6b1a;transform:rotate(-45deg);}
+body.home .professional-home__card-arrow::after{content:'';position:absolute;right:1px;top:1px;width:11px;height:11px;border-top:2px solid #ff6b1a;border-right:2px solid #ff6b1a;}
 /* A separate light layer keeps the pulse on the outline alone. */
-body.home #post-203 .professional-home__card::after{content:'';position:absolute;inset:-1px;z-index:1;pointer-events:none;border:2px solid #ffb06b;box-shadow:0 0 4px 1px #ff8b3dbb,0 0 12px 2px #ff6b1a73,inset 0 0 4px #ff8b3d66;opacity:0;}
+body.home .professional-home__card::after{content:'';position:absolute;inset:-1px;z-index:1;pointer-events:none;border:2px solid #ffb06b;box-shadow:0 0 4px 1px #ff8b3dbb,0 0 12px 2px #ff6b1a73,inset 0 0 4px #ff8b3d66;opacity:0;}
 @media(prefers-reduced-motion:no-preference){
- body.home #post-203 .professional-home__card::after{animation:specialization-outline-pulse 6s linear infinite;}
- body.home #post-203 .professional-home__card:nth-child(2)::after{animation-delay:1s;}
- body.home #post-203 .professional-home__card:nth-child(3)::after{animation-delay:2s;}
- body.home #post-203 .professional-home__card:nth-child(4)::after{animation-delay:3s;}
- body.home #post-203 .professional-home__card:nth-child(5)::after{animation-delay:4s;}
- body.home #post-203 .professional-home__card:nth-child(6)::after{animation-delay:5s;}
+ body.home .professional-home__card::after{animation:specialization-outline-pulse 6s linear infinite;}
+ body.home .professional-home__card:nth-child(2)::after{animation-delay:1s;}
+ body.home .professional-home__card:nth-child(3)::after{animation-delay:2s;}
+ body.home .professional-home__card:nth-child(4)::after{animation-delay:3s;}
+ body.home .professional-home__card:nth-child(5)::after{animation-delay:4s;}
+ body.home .professional-home__card:nth-child(6)::after{animation-delay:5s;}
 }
-@media(prefers-reduced-motion:reduce){body.home #post-203 .professional-home__card::after{opacity:.35;}}
+@media(prefers-reduced-motion:reduce){body.home .professional-home__card::after{opacity:.35;}}
 @keyframes specialization-outline-pulse{0%,16.6667%,100%{opacity:0;}3%,11%{opacity:1;}15%{opacity:0;}}
 body.home #post-203 .home-slogan{margin:0 0 32px;padding:20px 0;border-top:1px solid #50606c;border-bottom:1px solid #50606c;border-radius:0;}
 body.home #post-203 .home-slogan .home-slogan__title{font-size:clamp(21px,2.2vw,30px);line-height:1.4;}
 @media(min-width:1200px){body.home .oil-hero--intro .oil-hero__copy{position:relative;left:20px;}}
 @media(min-width:1440px){body.home .oil-hero.oil-hero--intro .oil-hero__inner{width:90%;max-width:2240px;padding-inline:0;}body.home .oil-hero.oil-hero--intro .oil-hero__frame{left:36%;}}
-@media(min-width:980px) and (max-width:1199px){body.home #post-203 .professional-home__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;}body.home #post-203 .professional-home__card:nth-child(n){grid-column:auto;}body.home #post-203 .professional-home__card img{height:190px;}}
-@media(max-width:1199px){body.home .oil-hero.oil-hero--intro{min-height:0;}body.home .oil-hero.oil-hero--intro .oil-hero__scene{position:relative;height:clamp(230px,45vw,380px);}body.home .oil-hero.oil-hero--intro .oil-hero__frame{left:50%;}body.home .oil-hero.oil-hero--intro .oil-hero__shade{display:none;}body.home .oil-hero.oil-hero--intro .oil-hero__inner{min-height:0;padding:28px 24px 32px;justify-content:center;background:#252d34;}body.home .oil-hero--intro .oil-hero__copy{width:100%;max-width:620px;margin:0;padding:0;}body.home .oil-hero--intro h1{font-size:clamp(29px,4.5vw,42px);}body.home .oil-hero--intro .oil-hero__eyebrow{margin-bottom:12px;}body.home #post-203 .professional-home__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;}body.home #post-203 .professional-home__card:nth-child(n){grid-column:auto;}body.home #post-203 .professional-home__card img{height:190px;}}
-@media(max-width:519px){body.home #post-203 .professional-home__grid{grid-template-columns:minmax(0,1fr);}body.home #post-203 .professional-home__card img{height:auto;aspect-ratio:16/9;}body.home #post-203 .professional-home__card h3{font-size:22px;}body.home .oil-hero.oil-hero--intro .oil-hero__inner{padding:24px 18px 28px;}body.home .oil-hero--intro .oil-hero__brands{font-size:15px;}}
+@media(min-width:980px) and (max-width:1199px){body.home .professional-home__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;}body.home .professional-home__card:nth-child(n){grid-column:auto;}body.home .professional-home__card img{height:190px;}}
+@media(max-width:1199px){body.home .oil-hero.oil-hero--intro{min-height:0;}body.home .oil-hero.oil-hero--intro .oil-hero__scene{position:relative;height:clamp(230px,45vw,380px);}body.home .oil-hero.oil-hero--intro .oil-hero__frame{left:50%;}body.home .oil-hero.oil-hero--intro .oil-hero__shade{display:none;}body.home .oil-hero.oil-hero--intro .oil-hero__inner{min-height:0;padding:28px 24px 32px;justify-content:center;background:#252d34;}body.home .oil-hero--intro .oil-hero__copy{width:100%;max-width:620px;margin:0;padding:0;}body.home .oil-hero--intro h1{font-size:clamp(29px,4.5vw,42px);}body.home .oil-hero--intro .oil-hero__eyebrow{margin-bottom:12px;}body.home .professional-home__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;}body.home .professional-home__card:nth-child(n){grid-column:auto;}body.home .professional-home__card img{height:190px;}}
+@media(max-width:519px){body.home .professional-home__grid{grid-template-columns:minmax(0,1fr);}body.home .professional-home__card img{height:auto;aspect-ratio:16/9;}body.home .professional-home__card h3{font-size:22px;}body.home .oil-hero.oil-hero--intro .oil-hero__inner{padding:24px 18px 28px;}body.home .oil-hero--intro .oil-hero__brands{font-size:15px;}}
 /* Keep the mobile introduction together instead of scattering its paragraphs. */
 @media(max-width:767px){
  body.home .oil-hero.oil-hero--intro{width:calc(100% + 2 * var(--js-gutter,16px));margin-inline:calc(-1 * var(--js-gutter,16px));}
@@ -67,10 +67,10 @@ body.home #post-203 .home-slogan .home-slogan__title{font-size:clamp(21px,2.2vw,
 
 /* Equal service cards make the offer easier to scan on desktop. */
 @media(min-width:1200px){
- body.home #post-203 .professional-home__grid{grid-template-columns:repeat(3,minmax(0,1fr));}
- body.home #post-203 .professional-home__card:nth-child(n){grid-column:auto;}
- body.home #post-203 .professional-home__card img{height:clamp(180px,15vw,280px);}
- body.home #post-203 .professional-home__card-caption{min-height:96px;}
+ body.home .professional-home__grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+ body.home .professional-home__card:nth-child(n){grid-column:auto;}
+ body.home .professional-home__card img{height:clamp(180px,15vw,280px);}
+ body.home .professional-home__card-caption{min-height:96px;}
 }
 /* Lead with the service and brands on a phone, then show the complete photo. */
 @media(max-width:767px){
@@ -79,4 +79,42 @@ body.home #post-203 .home-slogan .home-slogan__title{font-size:clamp(21px,2.2vw,
  body.home .oil-hero.oil-hero--intro .oil-hero__scene{order:2;width:100%;}
  body.home .oil-hero--intro .oil-hero__copy{gap:10px;}
  body.home #post-203 .home-slogan{margin-bottom:28px;}
+}
+
+/* One visible service catalogue leads the introduction; the original oil
+   image and flow keep their shared proportional frame beside it. */
+body.home .oil-hero.oil-hero--intro {display:flex;flex-direction:column;min-height:0;margin-block:0;}
+body.home .oil-hero.oil-hero--intro .oil-hero__inner {order:1;width:100%;max-width:none;min-height:0;margin:0;padding:26px max(18px,var(--js-gutter,16px)) 28px!important;}
+body.home .oil-hero.oil-hero--intro .oil-hero__copy {position:static;left:auto;width:100%;max-width:none;margin:0;padding:0;gap:14px;}
+body.home .oil-hero.oil-hero--intro .oil-hero__shade {display:none;}
+body.home .oil-hero.oil-hero--intro .oil-hero__scene {position:relative;inset:auto;order:2;width:100%;height:auto;min-height:0;aspect-ratio:1980/1312;}
+body.home .oil-hero.oil-hero--intro .oil-hero__frame {left:50%;width:100%!important;height:auto!important;max-width:none;}
+body.home .oil-hero.oil-hero--intro h1 {margin:0 0 14px;font-size:clamp(28px,2.5vw,42px)!important;line-height:1.16;text-align:center;}
+body.home .oil-hero.oil-hero--intro .oil-hero__brands {margin:0;font-size:clamp(17px,1.3vw,21px)!important;line-height:1.5;text-align:center;}
+body.home .oil-hero .professional-home {margin:22px 0 0;padding:0;background:transparent;}
+body.home .oil-hero .professional-home .professional-home__services>h2 {margin:0 0 18px;font-size:clamp(21px,1.8vw,28px);text-align:center!important;}
+body.home .oil-hero .professional-home__grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+body.home .oil-hero .professional-home__card:nth-child(n) {grid-column:auto;border-radius:4px;}
+body.home .oil-hero .professional-home__card img {height:clamp(92px,21vw,160px);aspect-ratio:auto;border-radius:3px 3px 0 0;}
+body.home .oil-hero .professional-home__card-caption {grid-template-columns:minmax(0,1fr) 14px;gap:8px;min-height:66px;padding:12px;}
+body.home .oil-hero .professional-home__card h3 {grid-column:1;font-size:clamp(15px,1.25vw,19px);line-height:1.35;hyphens:auto;overflow-wrap:normal;}
+body.home .oil-hero .professional-home__card-caption>.professional-home__card-arrow {grid-column:2;width:14px;height:14px;}
+body.home .oil-hero .professional-home__card-arrow::before {top:7px;width:15px;}
+body.home .oil-hero .professional-home__card-arrow::after {width:8px;height:8px;}
+@media(min-width:768px) {
+ body.home .oil-hero .professional-home__grid {grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}
+ body.home .oil-hero .professional-home__card img {height:clamp(108px,12vw,170px);}
+}
+@media(min-width:1200px) {
+ body.home .oil-hero.oil-hero--intro {display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:center;}
+ body.home .oil-hero.oil-hero--intro .oil-hero__scene {grid-column:1;grid-row:1;align-self:stretch;aspect-ratio:auto;min-height:360px;}
+ body.home .oil-hero.oil-hero--intro .oil-hero__inner {grid-column:2;grid-row:1;padding:30px clamp(24px,2.5vw,48px)!important;}
+ body.home .oil-hero .professional-home__card img {height:clamp(96px,7.5vw,144px);}
+ body.home .oil-hero .professional-home__card-caption {min-height:72px;}
+}
+@media(max-width:359px) {
+ body.home .oil-hero .professional-home__grid {gap:14px;}
+ body.home .oil-hero .professional-home__card-caption {grid-template-columns:minmax(0,1fr);padding:12px 8px;min-height:78px;}
+ body.home .oil-hero .professional-home__card-caption>.professional-home__card-arrow {display:none;}
+ body.home .oil-hero .professional-home__card h3 {font-size:15px;}
 }
