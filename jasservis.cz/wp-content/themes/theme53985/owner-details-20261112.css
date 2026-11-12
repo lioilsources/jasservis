@@ -125,9 +125,9 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_2 .logo{margin:0 auto!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-trust-badges{justify-content:center;}
 }
-/* A bright orange core and a restrained halo keep the moving drawings clear. */
+/* Use the site orange with sharp, unblurred vector outlines. */
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-driver-advice :is(.header-advice-icons,.header-advice-car,.header-advice-mechanic){color:var(--brand-orange,#ff6b1a)!important;}
-html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-driver-advice :is(.header-advice-car,.header-advice-mechanic)>svg{filter:drop-shadow(0 0 1px #ff6b1a) drop-shadow(0 0 4px #ff6b1a80);}
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-driver-advice :is(.header-advice-car,.header-advice-mechanic)>svg{filter:none!important;}
 
 /* Directions and contacts keep their orange symbols in every action state. */
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8>.textwidget .header-service-actions>a{background:transparent!important;color:#fff!important;transition:none!important;}
