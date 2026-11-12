@@ -198,58 +198,73 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
 .mobile-nav-panel #topnav .service-group-title{text-align:left;letter-spacing:normal}
 .mobile-nav-panel #topnav .sub-menu a{text-align:left;justify-content:flex-start}
 
-/* Advice comes from the label: read the book, have an idea, return to the car. */
-body.js-visual-preview .header .header-advice-icons.has-advice-reading{--advice-cycle:12s;}
-body.js-visual-preview .header .has-advice-reading .header-advice-mechanic-thought{display:none;}
-body.js-visual-preview .header .has-advice-reading :is(.header-advice-book,.header-advice-idea){position:absolute;display:block;pointer-events:none;color:inherit;filter:none!important;}
-body.js-visual-preview .header .has-advice-reading .header-advice-book{right:0;top:27px;width:28px;height:23px;transform-origin:center;}
-body.js-visual-preview .header .has-advice-reading .header-advice-idea{right:4px;top:0;width:18px;height:21px;transform-origin:50% 90%;}
-body.js-visual-preview .header .has-advice-reading :is(.header-advice-book,.header-advice-idea)>svg{display:block;width:100%;height:100%;max-width:none;filter:none!important;}
-body.js-visual-preview .header .has-advice-reading .header-advice-mechanic-turn{transform:scaleX(-1);}
-body.js-visual-preview .header .has-advice-reading .header-advice-mechanic-head{transform:rotate(8deg);}
-body.js-visual-preview .header .has-advice-reading .header-advice-mechanic-upper-arm{transform:rotate(65deg);}
-body.js-visual-preview .header .has-advice-reading .header-advice-mechanic-forearm{transform:rotate(-110deg);}
-@keyframes js-advice-read-book{
- 0%,42%{opacity:0;transform:translateX(32px) rotate(8deg);}
- 44%{opacity:1;transform:translateX(32px) rotate(8deg);}
- 51%,65%{opacity:1;transform:translateX(0) rotate(0);}
- 70%,100%{opacity:0;transform:translateX(0) rotate(0);}
+/* Point to the advice label; three answers travel back to the thought bubble. */
+body.js-visual-preview .header .header-driver-advice.has-advice-source{position:relative;}
+body.js-visual-preview .header .has-advice-source>.header-advice-icons{--advice-cycle:12s;}
+body.js-visual-preview .header .has-advice-source .header-advice-mechanic-thought{display:none;}
+body.js-visual-preview .header .has-advice-source :is(.header-advice-question,.header-advice-idea){position:absolute;display:block;pointer-events:none;color:inherit;filter:none!important;}
+body.js-visual-preview .header .has-advice-source .header-advice-question{right:0;top:0;width:26px;height:22px;opacity:0;}
+body.js-visual-preview .header .has-advice-source .header-advice-idea{right:4px;top:0;width:18px;height:21px;transform-origin:50% 90%;}
+body.js-visual-preview .header .has-advice-source :is(.header-advice-question,.header-advice-idea)>svg{display:block;width:100%;height:100%;max-width:none;filter:none!important;}
+body.js-visual-preview .header .has-advice-source .header-action-label{position:relative;}
+body.js-visual-preview .header .has-advice-source .header-action-label:after{content:'';position:absolute;left:0;right:0;bottom:-5px;height:2px;background:var(--brand-orange,#ff6b1a);opacity:0;transform:scaleX(0);transform-origin:left;pointer-events:none;}
+body.js-visual-preview .header .has-advice-source .header-advice-transfer{position:absolute;inset:0;pointer-events:none;color:var(--brand-orange,#ff6b1a);--advice-cycle:12s;}
+body.js-visual-preview .header .has-advice-source .header-advice-transfer>i{position:absolute;left:var(--advice-source-x,60%);top:var(--advice-source-y,50%);display:block;width:3px;height:3px;border-radius:50%;background:currentColor;opacity:0;filter:none!important;}
+body.js-visual-preview .header .has-advice-source .header-advice-mechanic-turn{transform:scaleX(1);}
+body.js-visual-preview .header .has-advice-source .header-advice-mechanic-upper-arm{transform:rotate(35deg);}
+body.js-visual-preview .header .has-advice-source .header-advice-mechanic-forearm{transform:rotate(50deg);}
+@keyframes js-advice-source-question{
+ 0%,25%{opacity:0;transform:translateX(-64px);}
+ 29%,35%{opacity:1;transform:translateX(-64px);}
+ 49%,73%{opacity:1;transform:translateX(0);}
+ 76%,100%{opacity:0;transform:translateX(0);}
 }
-@keyframes js-advice-read-idea{
- 0%,65%{opacity:0;transform:translateY(2px) scale(.75);}
- 70%,88%{opacity:1;transform:translateY(0) scale(1);}
+@keyframes js-advice-source-idea{
+ 0%,74%{opacity:0;transform:translateY(2px) scale(.75);}
+ 78%,88%{opacity:1;transform:translateY(0) scale(1);}
  94%,100%{opacity:0;transform:translateY(0) scale(1);}
 }
-@keyframes js-advice-read-turn{
+@keyframes js-advice-source-turn{
  0%,20%,100%{transform:scaleX(-1);}
  28%,42%{transform:scaleX(1);}
- 49%,69%{transform:scaleX(-1);}
- 77%,93%{transform:scaleX(1);}
+ 49%,75%{transform:scaleX(-1);}
+ 80%,93%{transform:scaleX(1);}
 }
-@keyframes js-advice-read-head{
- 0%,46%,74%,100%{transform:rotate(0);}
- 53%,64%{transform:rotate(8deg);}
- 80%,89%{transform:rotate(-6deg);}
-}
-@keyframes js-advice-read-arm{
+@keyframes js-advice-source-arm{
  0%,28%,98%,100%{transform:rotate(-20deg);}
  34%{transform:rotate(35deg);}
  44%{transform:rotate(100deg);}
- 51%,66%{transform:rotate(65deg);}
- 78%,90%{transform:rotate(35deg);}
+ 51%,73%{transform:rotate(90deg);}
+ 80%,90%{transform:rotate(35deg);}
 }
-@keyframes js-advice-read-forearm{
+@keyframes js-advice-source-forearm{
  0%,28%,98%,100%{transform:rotate(100deg);}
  34%{transform:rotate(90deg);}
  44%{transform:rotate(24deg);}
- 51%,66%{transform:rotate(-110deg);}
- 78%,90%{transform:rotate(50deg);}
+ 51%,73%{transform:rotate(0);}
+ 80%,90%{transform:rotate(50deg);}
+}
+@keyframes js-advice-source-underline{
+ 0%,49%{opacity:0;transform:scaleX(0);}
+ 55%,73%{opacity:1;transform:scaleX(1);}
+ 78%,100%{opacity:0;transform:scaleX(1);}
+}
+@keyframes js-advice-source-dot{
+ 0%,58%{opacity:0;transform:translate(0,0);}
+ 59%{opacity:1;transform:translate(0,0);}
+ 64%{opacity:1;transform:translate(var(--advice-source-mid-dx,-40px),0);}
+ 70%{opacity:1;transform:translate(var(--advice-source-dx,-40px),var(--advice-source-dy,-20px));}
+ 71%,100%{opacity:0;transform:translate(var(--advice-source-dx,-40px),var(--advice-source-dy,-20px));}
 }
 @media(prefers-reduced-motion:no-preference){
- body.js-visual-preview .header .has-advice-reading .header-advice-book{animation:js-advice-read-book var(--advice-cycle) ease-in-out infinite;}
- body.js-visual-preview .header .has-advice-reading .header-advice-idea{animation:js-advice-read-idea var(--advice-cycle) ease-in-out infinite;}
- body.js-visual-preview .header .has-advice-reading .header-advice-mechanic-turn{animation:js-advice-read-turn var(--advice-cycle) steps(1,end) infinite;}
- body.js-visual-preview .header .has-advice-reading .header-advice-mechanic-head{animation:js-advice-read-head var(--advice-cycle) ease-in-out infinite;}
- body.js-visual-preview .header .has-advice-reading .header-advice-mechanic-upper-arm{animation:js-advice-read-arm var(--advice-cycle) ease-in-out infinite;}
- body.js-visual-preview .header .has-advice-reading .header-advice-mechanic-forearm{animation:js-advice-read-forearm var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .has-advice-source .header-advice-question{animation:js-advice-source-question var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .has-advice-source .header-advice-idea{animation:js-advice-source-idea var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .has-advice-source .header-advice-mechanic-turn{animation:js-advice-source-turn var(--advice-cycle) steps(1,end) infinite;}
+ body.js-visual-preview .header .has-advice-source .header-advice-mechanic-upper-arm{animation:js-advice-source-arm var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .has-advice-source .header-advice-mechanic-forearm{animation:js-advice-source-forearm var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .has-advice-source .header-advice-mechanic-head{animation:none;transform:rotate(0);}
+ body.js-visual-preview .header .has-advice-source .header-action-label:after{animation:js-advice-source-underline 12s ease-in-out infinite;}
+ body.js-visual-preview .header .has-advice-source .header-advice-transfer>i{animation:js-advice-source-dot var(--advice-cycle) linear infinite;}
+ body.js-visual-preview .header .has-advice-source .header-advice-transfer>i:nth-child(2){animation-delay:.18s;}
+ body.js-visual-preview .header .has-advice-source .header-advice-transfer>i:nth-child(3){animation-delay:.36s;}
 }
