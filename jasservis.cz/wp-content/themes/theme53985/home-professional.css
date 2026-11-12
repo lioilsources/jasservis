@@ -118,3 +118,16 @@ body.home .oil-hero .professional-home__card-arrow::after {width:8px;height:8px;
  body.home .oil-hero .professional-home__card-caption>.professional-home__card-arrow {display:none;}
  body.home .oil-hero .professional-home__card h3 {font-size:15px;}
 }
+
+/* Frame the oil photo with the same gutter on each side of the desktop grid. */
+@media(min-width:1200px) {
+ body.home .oil-hero.oil-hero--intro {--oil-photo-gutter:clamp(20px,2vw,36px);padding:var(--oil-photo-gutter);gap:var(--oil-photo-gutter);}
+ body.home .oil-hero.oil-hero--intro .oil-hero__inner {padding:0!important;}
+ body.home .oil-hero.oil-hero--intro .oil-hero__scene {height:100%;min-height:0;overflow:hidden;}
+ body.home .oil-hero.oil-hero--intro .oil-hero__frame {width:var(--oil-frame-width,100%)!important;height:var(--oil-frame-height,100%)!important;}
+ body.home .oil-hero.oil-hero--intro .oil-hero__photo {object-fit:cover;}
+}
+@media(max-width:1199px) {
+ body.home .oil-hero.oil-hero--intro {width:100%;margin-inline:0;}
+ body.home .oil-hero.oil-hero--intro .oil-hero__scene {box-sizing:border-box;width:calc(100% - 2 * max(18px,var(--js-gutter,16px)));margin:0 max(18px,var(--js-gutter,16px)) 24px;}
+}

@@ -29,8 +29,10 @@
   loaded=true;video.load();
  }
  function fit() {
-  var w=Math.max(hero.clientWidth,hero.clientHeight*1980/1312);
+  var w=Math.max(scene.clientWidth,scene.clientHeight*1980/1312);
+  if(!w)return;
   frame.style.width=w+'px';frame.style.height=(w*1312/1980)+'px';
+  frame.style.setProperty('--oil-frame-width',w+'px');frame.style.setProperty('--oil-frame-height',(w*1312/1980)+'px');
  }
  function run() {
   var moving=visible&&paintReady&&!document.hidden&&!reduced.matches;
@@ -52,7 +54,7 @@
  window.addEventListener('pagehide',clearFlow);
  window.addEventListener('pageshow',run);
  reduced.addEventListener('change',run);
- if ('ResizeObserver' in window) new ResizeObserver(fit).observe(hero);
+ if ('ResizeObserver' in window) new ResizeObserver(fit).observe(scene);
  else window.addEventListener('resize',fit);
  if ('IntersectionObserver' in window) {
   new IntersectionObserver(function(entries){visible=entries[0].isIntersecting;run();},{threshold:0.1}).observe(scene);

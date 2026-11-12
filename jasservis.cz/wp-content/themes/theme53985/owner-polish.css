@@ -574,3 +574,19 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header .heade
 
 /* Centre the label text itself inside the desktop advice tile. */
 html body.js-visual-preview #motopress-main#motopress-main .header.header .header-driver-advice > .header-action-label {display:flex;align-items:center;justify-content:center;align-self:center;}
+
+/* Expanded service copy needs its own light surface under the dark heading. */
+body.js-visual-preview #motopress-main .brand-service-content .vw-accordion__body {background:#f5f7f9!important;color:#252d34!important;border-radius:0 0 3px 3px;}
+body.js-visual-preview #motopress-main .brand-service-content .vw-accordion__body :is(p,li,ul,ol,strong,b,em,h3,h4) {color:#252d34!important;}
+body.js-visual-preview #motopress-main .brand-service-content .vw-accordion__body a {color:#854000!important;text-decoration:underline;text-underline-offset:3px;}
+body.js-visual-preview #motopress-main .brand-service-content .vw-accordion__body a:focus-visible {outline:3px solid #854000;outline-offset:3px;}
+body.js-visual-preview #motopress-main .brand-service-content .js-brand-models__grid li {background:#e6ebef!important;color:#252d34!important;}
+
+/* The map gutters share the page surface, without legacy grey extensions. */
+body.js-visual-preview #motopress-main .footer,
+body.js-visual-preview #motopress-main .footer>.container,
+body.js-visual-preview #motopress-main .footer .copyright {background:#252d34!important;}
+body.js-visual-preview #motopress-main .footer [data-motopress-static-file="static/static-map.php"] {background:#252d34!important;}
+body.js-visual-preview #motopress-main .footer [data-motopress-static-file="static/static-map.php"]::before,
+body.js-visual-preview #motopress-main .footer [data-motopress-static-file="static/static-map.php"]::after {content:none!important;display:none!important;}
+body.js-visual-preview #motopress-main .footer #map {box-sizing:border-box;max-width:100%;width:100%;margin-inline:0;border:0;}
