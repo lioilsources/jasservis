@@ -65,6 +65,15 @@
         var box = dialog.getBoundingClientRect();
         if (event.target === dialog && (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom)) dialog.close();
     });
+    // Cycle focus within the modal; Escape still uses the native dialog behavior.
+    dialog.addEventListener('keydown', function (event) {
+        if (event.key !== 'Tab') return;
+        var controls = Array.prototype.filter.call(dialog.querySelectorAll('button:not([disabled]),a[href],input:not([disabled]),textarea:not([disabled]),select:not([disabled]),[tabindex]:not([tabindex="-1"])'), function (node) { return node.getBoundingClientRect().height > 0; });
+        if (!controls.length) return;
+        var first = controls[0], last = controls[controls.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    });
     dialog.addEventListener('close', function () {
         unlockScroll();
         if (opener) opener.focus({preventScroll: true});

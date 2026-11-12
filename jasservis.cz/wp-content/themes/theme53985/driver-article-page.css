@@ -14,3 +14,16 @@ body.page-driver-article #motopress-main .guide-article :is(.guide-article__scop
 .page-driver-article .guide-brand:focus-visible{outline:3px solid #252D34;outline-offset:2px}
 .page-driver-article .guide-article [data-advice-brands][hidden]{display:none!important}
 @media(max-width:640px){.page-driver-article .guide-brand-choice{padding:14px}.page-driver-article .guide-brand{font-size:.9375rem}.page-driver-article .guide-article__scope-note{padding:12px 14px}.page-driver-article .guide-article__body{padding:18px!important}}
+/* The same short route through each advice article, with action before detail. */
+.page-driver-article .article-contents{margin:20px 0;border:1px solid #6a7176;border-radius:4px;padding:0 14px}
+.page-driver-article .article-contents>summary{display:list-item;box-sizing:border-box;min-height:48px;padding:12px 0;font-size:17px;font-weight:700;line-height:1.4;cursor:pointer}
+.page-driver-article .article-contents>summary:focus-visible{outline:3px solid #ff6b1a;outline-offset:3px}
+.page-driver-article .article-plan{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0;padding:0}
+.page-driver-article .article-plan a{display:flex;align-items:center;box-sizing:border-box;min-height:48px;padding:10px 12px;border:1px solid #6a7176;border-radius:4px;font-size:16px;font-weight:700;line-height:1.4;white-space:normal;overflow-wrap:anywhere;text-decoration:underline}
+.page-driver-article .article-plan a:focus-visible{outline:3px solid #ff6b1a;outline-offset:3px}
+.page-driver-article .article-section{scroll-margin-top:24px;margin-top:28px}
+.page-driver-article .article-section>h2{margin:0 0 16px!important}
+.page-driver-article .article-section h3{margin:22px 0 12px;color:#252d34;font:700 19px/1.4 var(--js-font,Ubuntu,sans-serif);text-transform:none}
+.page-driver-article .article-first-step{padding:18px;border:2px solid #ff6b1a;border-radius:5px;background:#fff5ed;color:#252d34}
+.page-driver-article .article-first-step>:last-child{margin-bottom:0}
+@media(max-width:519px){.page-driver-article .article-plan{grid-template-columns:minmax(0,1fr)}.page-driver-article .article-first-step{padding:14px}}
