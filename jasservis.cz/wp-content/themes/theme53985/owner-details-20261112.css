@@ -197,3 +197,73 @@ dialog.mobile-nav-panel::backdrop{background:#191818}
 .mobile-nav-panel #topnav .sub-menu .menu-overview{display:none}
 .mobile-nav-panel #topnav .service-group-title{text-align:left;letter-spacing:normal}
 .mobile-nav-panel #topnav .sub-menu a{text-align:left;justify-content:flex-start}
+
+/* Pull the advice label as one piece, bring it close, then think. */
+body.js-visual-preview .header .header-driver-advice.has-advice-pull{position:relative;overflow:hidden;}
+body.js-visual-preview .header .has-advice-pull>.header-advice-icons{--advice-cycle:12s;overflow:visible;}
+/* The fixed label masks the copy while it emerges, keeping the title readable. */
+body.js-visual-preview .header .has-advice-pull .header-action-label{position:relative;z-index:2;background:inherit;}
+body.js-visual-preview .header .has-advice-pull .header-action-label:after{content:'';position:absolute;left:0;right:0;bottom:-5px;height:2px;background:var(--brand-orange,#ff6b1a);opacity:0;transform:scaleX(0);transform-origin:left;pointer-events:none;}
+body.js-visual-preview .header .has-advice-pull .header-advice-transfer{position:absolute;inset:0;z-index:1;pointer-events:none;color:var(--brand-orange,#ff6b1a);--advice-cycle:12s;}
+body.js-visual-preview .header .has-advice-pull .header-advice-copy{position:absolute;left:var(--advice-copy-x,60%);top:var(--advice-copy-y,25%);display:block;box-sizing:border-box;width:var(--advice-copy-width,120px);height:var(--advice-copy-height,40px);margin:0;padding:0;white-space:normal;overflow-wrap:break-word;color:inherit;background:none;opacity:0;filter:none!important;transform-origin:0 0;}
+body.js-visual-preview .header .has-advice-pull .header-advice-mechanic-turn{transform:scaleX(1);}
+body.js-visual-preview .header .has-advice-pull .header-advice-mechanic-upper-arm{transform:rotate(80deg);}
+body.js-visual-preview .header .has-advice-pull .header-advice-mechanic-forearm{transform:rotate(155deg);}
+body.js-visual-preview .header .has-advice-pull .header-advice-mechanic-head{transform:rotate(-6deg);}
+@keyframes js-advice-pull-turn{
+ 0%,20%,100%{transform:scaleX(-1);}
+ 28%,42%{transform:scaleX(1);}
+ 49%,72%{transform:scaleX(-1);}
+ 77%,93%{transform:scaleX(1);}
+}
+@keyframes js-advice-pull-arm{
+ 0%,28%,98%,100%{transform:rotate(-20deg);}
+ 34%{transform:rotate(35deg);}
+ 44%{transform:rotate(100deg);}
+ 51%,56%{transform:rotate(90deg);}
+ 65%,71%{transform:rotate(60deg);}
+ 79%,91%{transform:rotate(80deg);}
+}
+@keyframes js-advice-pull-forearm{
+ 0%,28%,98%,100%{transform:rotate(100deg);}
+ 34%{transform:rotate(90deg);}
+ 44%{transform:rotate(24deg);}
+ 51%,56%{transform:rotate(0);}
+ 65%,71%{transform:rotate(130deg);}
+ 79%,91%{transform:rotate(155deg);}
+}
+@keyframes js-advice-pull-head{
+ 0%,73%,96%,100%{transform:rotate(0);}
+ 80%,90%{transform:rotate(-6deg);}
+}
+@keyframes js-advice-pull-underline{
+ 0%,49%{opacity:0;transform:scaleX(0);}
+ 55%,65%{opacity:1;transform:scaleX(1);}
+ 72%,100%{opacity:0;transform:scaleX(1);}
+}
+@keyframes js-advice-pull-copy{
+ 0%,52%{opacity:0;transform:translate(0,0) scale(1);}
+ 55%{opacity:1;transform:translate(0,0) scale(1);}
+ 65%,71%{opacity:1;transform:translate(var(--advice-pull-dx,-47px),var(--advice-pull-dy,8px)) scale(.4);}
+ 76%,100%{opacity:0;transform:translate(var(--advice-pull-dx,-47px),var(--advice-pull-dy,8px)) scale(.4);}
+}
+@keyframes js-advice-pull-thought{
+ 0%,75%{opacity:0;transform:translateY(3px) scale(.8);}
+ 80%,91%{opacity:1;transform:translateY(0) scale(1);}
+ 96%,100%{opacity:0;transform:translateY(0) scale(1);}
+}
+@keyframes js-advice-pull-dots{
+ 0%,79%{opacity:0;}
+ 84%,91%{opacity:1;}
+ 96%,100%{opacity:0;}
+}
+@media(prefers-reduced-motion:no-preference){
+ body.js-visual-preview .header .has-advice-pull .header-advice-mechanic-turn{animation:js-advice-pull-turn var(--advice-cycle) steps(1,end) infinite;}
+ body.js-visual-preview .header .has-advice-pull .header-advice-mechanic-upper-arm{animation:js-advice-pull-arm var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .has-advice-pull .header-advice-mechanic-forearm{animation:js-advice-pull-forearm var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .has-advice-pull .header-advice-mechanic-head{animation:js-advice-pull-head var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .has-advice-pull .header-action-label:after{animation:js-advice-pull-underline 12s ease-in-out infinite;}
+ body.js-visual-preview .header .has-advice-pull .header-advice-copy{animation:js-advice-pull-copy var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .has-advice-pull .header-advice-mechanic-thought{animation:js-advice-pull-thought var(--advice-cycle) ease-in-out infinite;}
+ body.js-visual-preview .header .has-advice-pull .header-advice-mechanic-thought>path{animation:js-advice-pull-dots var(--advice-cycle) ease-in-out infinite;}
+}
