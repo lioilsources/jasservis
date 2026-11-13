@@ -366,3 +366,23 @@ body.js-visual-preview.home #motopress-main#motopress-main .professional-home__p
  body.js-visual-preview.home #motopress-main#motopress-main .professional-home__photo::after {animation:none;opacity:.22;}
 }
 @keyframes photo-edge-light {0%,16.6667%,100%{opacity:0;}4%,10%{opacity:.8;}15%{opacity:0;}}
+/* Match the mobile orange on service links while preserving contrast on light panels. */
+body.js-visual-preview #motopress-main#motopress-main .brand-service-content .vw-accordion__body :is(a,a:visited),
+body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post :is(.price-overview__service,.price-table-details) :is(a,a:visited) {
+ display:inline-flex;align-items:center;box-sizing:border-box;max-width:100%;min-height:44px;
+ padding:4px 8px;border:0;border-radius:4px;background:#252d34!important;
+ color:var(--brand-orange)!important;font-weight:700;line-height:1.45;
+ text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere;
+}
+body.js-visual-preview #motopress-main#motopress-main .brand-service-content .vw-accordion__body a :is(span,strong,b,em),
+body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post :is(.price-overview__service,.price-table-details) a :is(span,strong,b,em) {
+ color:inherit!important;
+}
+body.js-visual-preview #motopress-main#motopress-main .brand-service-content .vw-accordion__body a:is(:hover,:focus-visible),
+body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post :is(.price-overview__service,.price-table-details) a:is(:hover,:focus-visible) {
+ background:#191818!important;color:var(--brand-orange)!important;
+}
+body.js-visual-preview #motopress-main#motopress-main .brand-service-content .vw-accordion__body a:focus-visible,
+body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post :is(.price-overview__service,.price-table-details) a:focus-visible {
+ outline:2px solid #252d34;outline-offset:3px;
+}
