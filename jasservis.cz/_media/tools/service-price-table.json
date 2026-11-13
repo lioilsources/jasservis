@@ -1,0 +1,1311 @@
+{
+  "schemaVersion": 1,
+  "labels": {
+    "item": {
+      "cs": "Služba / položka",
+      "en": "Service / item",
+      "de": "Leistung / Position",
+      "uk": "Послуга / позиція",
+      "vi": "Dịch vụ / hạng mục"
+    },
+    "net": {
+      "cs": "Cena bez DPH",
+      "en": "Price excl. VAT",
+      "de": "Preis ohne MwSt.",
+      "uk": "Ціна без ПДВ",
+      "vi": "Giá chưa VAT"
+    },
+    "gross": {
+      "cs": "Cena s DPH",
+      "en": "Price incl. VAT",
+      "de": "Preis inkl. MwSt.",
+      "uk": "Ціна з ПДВ",
+      "vi": "Giá gồm VAT"
+    },
+    "from": {
+      "cs": "od",
+      "en": "from",
+      "de": "ab",
+      "uk": "від",
+      "vi": "từ"
+    },
+    "nav": {
+      "cs": "Kategorie ceníku",
+      "en": "Price list categories",
+      "de": "Kategorien der Preisliste",
+      "uk": "Категорії прайс-листа",
+      "vi": "Danh mục bảng giá"
+    },
+    "detail": {
+      "cs": "Podrobnosti služby",
+      "en": "Service details",
+      "de": "Details zur Leistung",
+      "uk": "Докладніше про послугу",
+      "vi": "Chi tiết dịch vụ"
+    },
+    "intro": {
+      "cs": "Přehled cen servisních prací a materiálu. Konečný rozsah práce a předpokládanou cenu domluvíme předem.",
+      "en": "Overview of prices for service work and materials. We agree the scope of work and expected price in advance.",
+      "de": "Preisübersicht für Servicearbeiten und Material. Arbeitsumfang und voraussichtlichen Preis stimmen wir vorab ab.",
+      "uk": "Огляд цін на сервісні роботи та матеріали. Обсяг робіт і попередню вартість погоджуємо заздалегідь.",
+      "vi": "Bảng giá công việc bảo dưỡng và vật tư. Phạm vi công việc và giá dự kiến được thống nhất trước."
+    },
+    "blank": {
+      "cs": "U položek bez uvedené ceny vám nabídku připravíme podle konkrétního vozidla a rozsahu práce.",
+      "en": "For items without a listed price, we prepare a quotation for the specific vehicle and scope of work.",
+      "de": "Für Positionen ohne Preis erstellen wir ein Angebot nach Fahrzeug und Arbeitsumfang.",
+      "uk": "Для позицій без ціни підготуємо пропозицію відповідно до автомобіля й обсягу робіт.",
+      "vi": "Với hạng mục chưa ghi giá, chúng tôi báo giá theo xe và phạm vi công việc."
+    }
+  },
+  "groups": [
+    {
+      "id": "pneuservis",
+      "title": {
+        "cs": "Pneuservis",
+        "en": "Tyre service",
+        "de": "Reifenservice",
+        "uk": "Шиномонтаж",
+        "vi": "Dịch vụ lốp"
+      },
+      "services": [
+        "prezuti-a-prodej-pneumatik-pro-vas-vuz"
+      ],
+      "rows": [
+        {
+          "id": "pneu-16",
+          "label": {
+            "cs": "Kompletní pneuservis – kola do 16″",
+            "en": "Complete tyre service – wheels up to 16″",
+            "de": "Kompletter Reifenservice – Räder bis 16″",
+            "uk": "Комплексний шиномонтаж – колеса до 16″",
+            "vi": "Dịch vụ lốp trọn gói – bánh đến 16″"
+          },
+          "gross": "tyres.16",
+          "from": true,
+          "unit": {
+            "cs": "4 kola",
+            "en": "4 wheels",
+            "de": "4 Räder",
+            "uk": "4 колеса",
+            "vi": "4 bánh"
+          }
+        },
+        {
+          "id": "pneu-18",
+          "label": {
+            "cs": "Kompletní pneuservis – kola 17–18″",
+            "en": "Complete tyre service – wheels 17–18″",
+            "de": "Kompletter Reifenservice – Räder 17–18″",
+            "uk": "Комплексний шиномонтаж – колеса 17–18″",
+            "vi": "Dịch vụ lốp trọn gói – bánh 17–18″"
+          },
+          "gross": "tyres.18",
+          "from": true,
+          "unit": {
+            "cs": "4 kola",
+            "en": "4 wheels",
+            "de": "4 Räder",
+            "uk": "4 колеса",
+            "vi": "4 bánh"
+          }
+        },
+        {
+          "id": "pneu-20",
+          "label": {
+            "cs": "Kompletní pneuservis – kola 19–20″",
+            "en": "Complete tyre service – wheels 19–20″",
+            "de": "Kompletter Reifenservice – Räder 19–20″",
+            "uk": "Комплексний шиномонтаж – колеса 19–20″",
+            "vi": "Dịch vụ lốp trọn gói – bánh 19–20″"
+          },
+          "gross": "tyres.20",
+          "from": true,
+          "unit": {
+            "cs": "4 kola",
+            "en": "4 wheels",
+            "de": "4 Räder",
+            "uk": "4 колеса",
+            "vi": "4 bánh"
+          }
+        },
+        {
+          "id": "pneu-23",
+          "label": {
+            "cs": "Kompletní pneuservis – kola 21–23″",
+            "en": "Complete tyre service – wheels 21–23″",
+            "de": "Kompletter Reifenservice – Räder 21–23″",
+            "uk": "Комплексний шиномонтаж – колеса 21–23″",
+            "vi": "Dịch vụ lốp trọn gói – bánh 21–23″"
+          },
+          "gross": "tyres.23",
+          "from": true,
+          "unit": {
+            "cs": "4 kola",
+            "en": "4 wheels",
+            "de": "4 Räder",
+            "uk": "4 колеса",
+            "vi": "4 bánh"
+          }
+        },
+        {
+          "id": "pneu-suv",
+          "label": {
+            "cs": "Přezutí pneumatik – velká SUV",
+            "en": "Tyre fitting – large SUVs",
+            "de": "Reifenmontage – große SUV",
+            "uk": "Шиномонтаж – великі SUV",
+            "vi": "Thay lốp – SUV cỡ lớn"
+          }
+        },
+        {
+          "id": "kola-vymena",
+          "label": {
+            "cs": "Výměna kompletních kol (kola za kola)",
+            "en": "Seasonal wheel change (complete wheels)",
+            "de": "Wechsel kompletter Räder",
+            "uk": "Заміна коліс у зборі",
+            "vi": "Thay cả bộ bánh xe"
+          }
+        },
+        {
+          "id": "pneu-uskladneni",
+          "label": {
+            "cs": "Uskladnění pneumatik",
+            "en": "Tyre storage",
+            "de": "Reifeneinlagerung",
+            "uk": "Зберігання шин",
+            "vi": "Lưu kho lốp"
+          }
+        },
+        {
+          "id": "pneu-oprava",
+          "label": {
+            "cs": "Oprava pneumatiky",
+            "en": "Tyre repair",
+            "de": "Reifenreparatur",
+            "uk": "Ремонт шини",
+            "vi": "Sửa lốp"
+          },
+          "unit": {
+            "cs": "1 ks",
+            "en": "1 item",
+            "de": "1 Stück",
+            "uk": "1 шт.",
+            "vi": "1 chiếc"
+          }
+        },
+        {
+          "id": "pneu-likvidace",
+          "label": {
+            "cs": "Likvidace pneumatiky",
+            "en": "Tyre disposal",
+            "de": "Reifenentsorgung",
+            "uk": "Утилізація шини",
+            "vi": "Xử lý lốp cũ"
+          },
+          "unit": {
+            "cs": "1 ks",
+            "en": "1 item",
+            "de": "1 Stück",
+            "uk": "1 шт.",
+            "vi": "1 chiếc"
+          }
+        },
+        {
+          "id": "pneu-obal",
+          "label": {
+            "cs": "Obal na pneumatiku",
+            "en": "Tyre bag",
+            "de": "Reifenhülle",
+            "uk": "Чохол для шини",
+            "vi": "Túi đựng lốp"
+          },
+          "unit": {
+            "cs": "1 ks",
+            "en": "1 item",
+            "de": "1 Stück",
+            "uk": "1 шт.",
+            "vi": "1 chiếc"
+          }
+        },
+        {
+          "id": "pneu-vyvazeni",
+          "label": {
+            "cs": "Samostatné vyvážení kola",
+            "en": "Wheel balancing only",
+            "de": "Einzelnes Auswuchten eines Rades",
+            "uk": "Окреме балансування колеса",
+            "vi": "Cân bằng bánh xe riêng lẻ"
+          },
+          "unit": {
+            "cs": "1 ks",
+            "en": "1 item",
+            "de": "1 Stück",
+            "uk": "1 шт.",
+            "vi": "1 chiếc"
+          }
+        }
+      ],
+      "notes": [
+        {
+          "cs": "Kompletní pneuservis zahrnuje demontáž a zpětnou montáž kol na vozidlo, montáž pneumatik, standardní vyvážení včetně spotřebovaného závaží a strojní mytí kol.",
+          "en": "Complete tyre service includes removing and refitting the wheels on the vehicle, fitting tyres, standard balancing including balancing weights used, and machine wheel washing.",
+          "de": "Der komplette Reifenservice umfasst das Ab- und Anbauen der Räder am Fahrzeug, die Reifenmontage, das Standardauswuchten einschließlich verbrauchter Gewichte und die maschinelle Radwäsche.",
+          "uk": "Комплексний шиномонтаж включає зняття та встановлення коліс на автомобіль, монтаж шин, стандартне балансування з використаними тягарцями та машинне миття коліс.",
+          "vi": "Dịch vụ lốp trọn gói gồm tháo và lắp lại bánh trên xe, lắp lốp, cân bằng tiêu chuẩn bao gồm chì cân bằng đã sử dụng và rửa bánh bằng máy."
+        }
+      ]
+    },
+    {
+      "id": "geometrie",
+      "title": {
+        "cs": "Geometrie vozidla",
+        "en": "Wheel alignment",
+        "de": "Achsvermessung",
+        "uk": "Геометрія коліс",
+        "vi": "Căn chỉnh bánh xe"
+      },
+      "services": [
+        "geometrie-vozidla"
+      ],
+      "rows": [
+        {
+          "id": "geometrie-standard",
+          "label": {
+            "cs": "Standardní 3D měření a seřízení geometrie náprav",
+            "en": "Standard 3D wheel alignment measurement and adjustment",
+            "de": "Standardmäßige 3D-Achsvermessung und Einstellung",
+            "uk": "Стандартне 3D-вимірювання та регулювання геометрії коліс",
+            "vi": "Đo và căn chỉnh góc đặt bánh xe 3D tiêu chuẩn"
+          },
+          "gross": "geometry.gross",
+          "net": "geometry.net",
+          "from": true
+        },
+        {
+          "id": "geometrie-oprava",
+          "label": {
+            "cs": "Kontrola geometrie po opravě jedné nápravy",
+            "en": "Alignment check after repair of one axle",
+            "de": "Achsvermessung nach Reparatur einer Achse",
+            "uk": "Перевірка геометрії після ремонту однієї осі",
+            "vi": "Kiểm tra góc đặt bánh xe sau sửa một cầu"
+          }
+        },
+        {
+          "id": "geometrie-kontrola",
+          "label": {
+            "cs": "Samostatná kontrola geometrie",
+            "en": "Alignment check only",
+            "de": "Reine Kontrolle der Achsgeometrie",
+            "uk": "Окрема перевірка геометрії коліс",
+            "vi": "Kiểm tra góc đặt bánh xe riêng lẻ"
+          }
+        },
+        {
+          "id": "geometrie-zadni-rizena",
+          "label": {
+            "cs": "Geometrie vozidla s řízenou zadní nápravou",
+            "en": "Alignment for a vehicle with rear-wheel steering",
+            "de": "Achsvermessung bei Fahrzeugen mit Hinterachslenkung",
+            "uk": "Геометрія автомобіля з керованою задньою віссю",
+            "vi": "Căn chỉnh xe có hệ thống lái bánh sau"
+          }
+        }
+      ],
+      "notes": [
+        {
+          "cs": "Opravy podvozku, diagnostika na zkušební lince a kalibrace asistenčních systémů se účtují samostatně.",
+          "en": "Chassis repairs, testing-line diagnostics and driver assistance calibrations are charged separately.",
+          "de": "Fahrwerksreparaturen, Prüfstraßendiagnose und die Kalibrierung von Assistenzsystemen werden separat berechnet.",
+          "uk": "Ремонт підвіски, діагностика на випробувальній лінії та калібрування асистентів оплачуються окремо.",
+          "vi": "Sửa chữa gầm xe, chẩn đoán trên dây chuyền kiểm tra và hiệu chuẩn hệ thống hỗ trợ lái được tính phí riêng."
+        }
+      ]
+    },
+    {
+      "id": "klimatizace",
+      "title": {
+        "cs": "Klimatizace",
+        "en": "Air conditioning",
+        "de": "Klimaanlage",
+        "uk": "Кондиціонування",
+        "vi": "Điều hòa"
+      },
+      "services": [
+        "opravy-diagnostika-plneni-klimatizaci"
+      ],
+      "rows": [
+        {
+          "id": "klima-r134a",
+          "label": {
+            "cs": "Servis klimatizace – R134a",
+            "en": "Air conditioning service – R134a",
+            "de": "Klimaservice – R134a",
+            "uk": "Обслуговування кондиціонера – R134a",
+            "vi": "Bảo dưỡng điều hòa – R134a"
+          },
+          "gross": "climate.r134a",
+          "from": true,
+          "note": {
+            "cs": "Základní servisní práce; chladivo se účtuje samostatně podle doplněného množství.",
+            "en": "Basic service work; refrigerant is charged separately according to the quantity added.",
+            "de": "Grundlegende Servicearbeiten; Kältemittel wird nach der nachgefüllten Menge separat berechnet.",
+            "uk": "Базові сервісні роботи; холодоагент оплачується окремо за доданою кількістю.",
+            "vi": "Tiền công cơ bản; môi chất lạnh tính riêng theo lượng nạp bổ sung."
+          }
+        },
+        {
+          "id": "klima-r1234yf",
+          "label": {
+            "cs": "Servis klimatizace – R1234yf",
+            "en": "Air conditioning service – R1234yf",
+            "de": "Klimaservice – R1234yf",
+            "uk": "Обслуговування кондиціонера – R1234yf",
+            "vi": "Bảo dưỡng điều hòa – R1234yf"
+          },
+          "gross": "climate.r1234yf",
+          "from": true,
+          "note": {
+            "cs": "Základní servisní práce; chladivo se účtuje samostatně podle doplněného množství.",
+            "en": "Basic service work; refrigerant is charged separately according to the quantity added.",
+            "de": "Grundlegende Servicearbeiten; Kältemittel wird nach der nachgefüllten Menge separat berechnet.",
+            "uk": "Базові сервісні роботи; холодоагент оплачується окремо за доданою кількістю.",
+            "vi": "Tiền công cơ bản; môi chất lạnh tính riêng theo lượng nạp bổ sung."
+          }
+        },
+        {
+          "id": "klima-r744",
+          "label": {
+            "cs": "Servis klimatizace – R744 (CO₂)",
+            "en": "Air conditioning service – R744 (CO₂)",
+            "de": "Klimaservice – R744 (CO₂)",
+            "uk": "Обслуговування кондиціонера – R744 (CO₂)",
+            "vi": "Bảo dưỡng điều hòa – R744 (CO₂)"
+          },
+          "gross": "climate.r744",
+          "from": true,
+          "note": {
+            "cs": "Orientační cena. Standardní rozsah zahrnuje práci, chladivo a potřebné diagnostické úkony. Při větší náročnosti cenu předem dohodneme.",
+            "en": "Indicative price. Standard scope includes labour, refrigerant and necessary diagnostics. More complex work is agreed in advance.",
+            "de": "Richtpreis. Der Standardumfang beinhaltet Arbeit, Kältemittel und erforderliche Diagnosearbeiten. Bei höherem Aufwand vereinbaren wir den Preis vorab.",
+            "uk": "Орієнтовна ціна. Стандартний обсяг включає роботу, холодоагент і потрібну діагностику. Складніші роботи погоджуємо заздалегідь.",
+            "vi": "Giá tham khảo. Phạm vi tiêu chuẩn gồm tiền công, môi chất và chẩn đoán cần thiết. Công việc phức tạp hơn được thống nhất trước."
+          }
+        },
+        {
+          "id": "klima-unik",
+          "label": {
+            "cs": "Kontrola těsnosti a hledání úniku",
+            "en": "Leak test and leak detection",
+            "de": "Dichtheitsprüfung und Lecksuche",
+            "uk": "Перевірка герметичності та пошук витоку",
+            "vi": "Kiểm tra độ kín và tìm rò rỉ"
+          }
+        },
+        {
+          "id": "klima-dezinfekce",
+          "label": {
+            "cs": "Dezinfekce klimatizace",
+            "en": "Air conditioning disinfection",
+            "de": "Desinfektion der Klimaanlage",
+            "uk": "Дезінфекція кондиціонера",
+            "vi": "Khử khuẩn điều hòa"
+          }
+        },
+        {
+          "id": "klima-ozon",
+          "label": {
+            "cs": "Dezinfekce klimatizace ozónem",
+            "en": "Ozone air conditioning disinfection",
+            "de": "Ozon-Desinfektion der Klimaanlage",
+            "uk": "Озонова дезінфекція кондиціонера",
+            "vi": "Khử khuẩn điều hòa bằng ozone"
+          }
+        },
+        {
+          "id": "chladivo-r134a",
+          "label": {
+            "cs": "Chladivo R134a",
+            "en": "Refrigerant R134a",
+            "de": "Kältemittel R134a",
+            "uk": "Холодоагент R134a",
+            "vi": "Môi chất lạnh R134a"
+          },
+          "unit": {
+            "cs": "1 g",
+            "en": "1 g",
+            "de": "1 g",
+            "uk": "1 g",
+            "vi": "1 g"
+          }
+        },
+        {
+          "id": "chladivo-r1234yf",
+          "label": {
+            "cs": "Chladivo R1234yf",
+            "en": "Refrigerant R1234yf",
+            "de": "Kältemittel R1234yf",
+            "uk": "Холодоагент R1234yf",
+            "vi": "Môi chất lạnh R1234yf"
+          },
+          "unit": {
+            "cs": "1 g",
+            "en": "1 g",
+            "de": "1 g",
+            "uk": "1 g",
+            "vi": "1 g"
+          }
+        },
+        {
+          "id": "chladivo-r744",
+          "label": {
+            "cs": "Chladivo R744 (CO₂)",
+            "en": "Refrigerant R744 (CO₂)",
+            "de": "Kältemittel R744 (CO₂)",
+            "uk": "Холодоагент R744 (CO₂)",
+            "vi": "Môi chất lạnh R744 (CO₂)"
+          },
+          "unit": {
+            "cs": "1 g",
+            "en": "1 g",
+            "de": "1 g",
+            "uk": "1 g",
+            "vi": "1 g"
+          }
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "material",
+      "title": {
+        "cs": "Provozní kapaliny a materiál",
+        "en": "Fluids and materials",
+        "de": "Betriebsstoffe und Material",
+        "uk": "Рідини та матеріали",
+        "vi": "Chất lỏng và vật tư"
+      },
+      "services": [],
+      "rows": [
+        {
+          "id": "kapalina-brzdova",
+          "label": {
+            "cs": "Brzdová kapalina",
+            "en": "Brake fluid",
+            "de": "Bremsflüssigkeit",
+            "uk": "Гальмівна рідина",
+            "vi": "Dầu phanh"
+          },
+          "unit": {
+            "cs": "1 l",
+            "en": "1 l",
+            "de": "1 l",
+            "uk": "1 l",
+            "vi": "1 l"
+          }
+        },
+        {
+          "id": "smes-g12",
+          "label": {
+            "cs": "Chladicí směs G12 EVO",
+            "en": "G12 EVO coolant",
+            "de": "Kühlmittel G12 EVO",
+            "uk": "Охолоджувальна рідина G12 EVO",
+            "vi": "Nước làm mát G12 EVO"
+          },
+          "unit": {
+            "cs": "1 l",
+            "en": "1 l",
+            "de": "1 l",
+            "uk": "1 l",
+            "vi": "1 l"
+          }
+        },
+        {
+          "id": "olej-504",
+          "label": {
+            "cs": "Motorový olej – norma VW 504.00 / 507.00",
+            "en": "Engine oil – VW 504.00 / 507.00",
+            "de": "Motoröl – VW 504.00 / 507.00",
+            "uk": "Моторна олива – VW 504.00 / 507.00",
+            "vi": "Dầu động cơ – VW 504.00 / 507.00"
+          },
+          "unit": {
+            "cs": "1 l",
+            "en": "1 l",
+            "de": "1 l",
+            "uk": "1 l",
+            "vi": "1 l"
+          }
+        },
+        {
+          "id": "olej-502",
+          "label": {
+            "cs": "Motorový olej – norma VW 502.00 / 505.00",
+            "en": "Engine oil – VW 502.00 / 505.00",
+            "de": "Motoröl – VW 502.00 / 505.00",
+            "uk": "Моторна олива – VW 502.00 / 505.00",
+            "vi": "Dầu động cơ – VW 502.00 / 505.00"
+          },
+          "unit": {
+            "cs": "1 l",
+            "en": "1 l",
+            "de": "1 l",
+            "uk": "1 l",
+            "vi": "1 l"
+          }
+        },
+        {
+          "id": "olej-508",
+          "label": {
+            "cs": "Motorový olej – norma VW 508.00 / 509.00",
+            "en": "Engine oil – VW 508.00 / 509.00",
+            "de": "Motoröl – VW 508.00 / 509.00",
+            "uk": "Моторна олива – VW 508.00 / 509.00",
+            "vi": "Dầu động cơ – VW 508.00 / 509.00"
+          },
+          "unit": {
+            "cs": "1 l",
+            "en": "1 l",
+            "de": "1 l",
+            "uk": "1 l",
+            "vi": "1 l"
+          }
+        },
+        {
+          "id": "bg-palivo",
+          "label": {
+            "cs": "BG – čisticí prostředek palivového systému",
+            "en": "BG fuel system cleaning product",
+            "de": "BG-Reiniger für das Kraftstoffsystem",
+            "uk": "Засіб BG для очищення паливної системи",
+            "vi": "Dung dịch BG làm sạch hệ thống nhiên liệu"
+          }
+        },
+        {
+          "id": "bg-motor",
+          "label": {
+            "cs": "BG – čisticí prostředek motoru",
+            "en": "BG engine cleaning product",
+            "de": "BG-Motorreiniger",
+            "uk": "Засіб BG для очищення двигуна",
+            "vi": "Dung dịch BG làm sạch động cơ"
+          }
+        },
+        {
+          "id": "bg-chlazeni",
+          "label": {
+            "cs": "BG – čisticí prostředek chladicího systému",
+            "en": "BG cooling system cleaning product",
+            "de": "BG-Reiniger für das Kühlsystem",
+            "uk": "Засіб BG для очищення системи охолодження",
+            "vi": "Dung dịch BG làm sạch hệ thống làm mát"
+          }
+        },
+        {
+          "id": "baterie-2032",
+          "label": {
+            "cs": "Baterie 2032",
+            "en": "2032 battery",
+            "de": "Batterie 2032",
+            "uk": "Батарейка 2032",
+            "vi": "Pin 2032"
+          }
+        },
+        {
+          "id": "baterie-2025",
+          "label": {
+            "cs": "Baterie 2025",
+            "en": "2025 battery",
+            "de": "Batterie 2025",
+            "uk": "Батарейка 2025",
+            "vi": "Pin 2025"
+          }
+        },
+        {
+          "id": "ventilek",
+          "label": {
+            "cs": "Ventilek TR413 / TR414",
+            "en": "TR413 / TR414 tyre valve",
+            "de": "Reifenventil TR413 / TR414",
+            "uk": "Вентиль TR413 / TR414",
+            "vi": "Van lốp TR413 / TR414"
+          }
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "prace-kontroly",
+      "title": {
+        "cs": "Práce a kontroly vozidla",
+        "en": "Labour and vehicle checks",
+        "de": "Werkstattarbeiten und Fahrzeugkontrollen",
+        "uk": "Роботи та перевірки автомобіля",
+        "vi": "Tiền công và kiểm tra xe"
+      },
+      "services": [
+        "autoservis/servis-vw",
+        "servis-skoda",
+        "servis-seat",
+        "servis-cupra",
+        "servis-volkswagen-uzitkove-vozy",
+        "servis-audi",
+        "servis-novych-vozu-v-zaruce-gvo",
+        "servis-hybridnich-a-elektrickych-vozidel"
+      ],
+      "rows": [
+        {
+          "id": "prace-standard",
+          "label": {
+            "cs": "Mechanické práce – Volkswagen, Škoda, SEAT, CUPRA a Volkswagen Užitkové vozy",
+            "en": "Mechanical work – Volkswagen, Škoda, SEAT, CUPRA and Volkswagen Commercial Vehicles",
+            "de": "Mechanische Arbeiten – Volkswagen, Škoda, SEAT, CUPRA und Volkswagen Nutzfahrzeuge",
+            "uk": "Механічні роботи – Volkswagen, Škoda, SEAT, CUPRA та Volkswagen Комерційні автомобілі",
+            "vi": "Công cơ khí – Volkswagen, Škoda, SEAT, CUPRA và Volkswagen Xe thương mại"
+          },
+          "gross": "labor.standard",
+          "from": true,
+          "unit": {
+            "cs": "1 hodina",
+            "en": "1 hour",
+            "de": "1 Stunde",
+            "uk": "1 година",
+            "vi": "1 giờ"
+          }
+        },
+        {
+          "id": "prace-audi",
+          "label": {
+            "cs": "Mechanické práce – Audi",
+            "en": "Mechanical work – Audi",
+            "de": "Mechanische Arbeiten – Audi",
+            "uk": "Механічні роботи – Audi",
+            "vi": "Công cơ khí – Audi"
+          },
+          "gross": "labor.audi",
+          "from": true,
+          "unit": {
+            "cs": "1 hodina",
+            "en": "1 hour",
+            "de": "1 Stunde",
+            "uk": "1 година",
+            "vi": "1 giờ"
+          }
+        },
+        {
+          "id": "prace-elektrifikovane",
+          "label": {
+            "cs": "Hybridní, plug-in hybridní a elektrická vozidla VW Group, včetně běžné údržby",
+            "en": "VW Group hybrid, plug-in hybrid and electric vehicles, including routine maintenance",
+            "de": "Hybrid-, Plug-in-Hybrid- und Elektrofahrzeuge der VW Group, einschließlich regulärer Wartung",
+            "uk": "Гібридні, підзаряджувані гібридні та електричні автомобілі VW Group, включно зі звичайним ТО",
+            "vi": "Xe hybrid, plug-in hybrid và xe điện thuộc VW Group, bao gồm bảo dưỡng thông thường"
+          },
+          "gross": "labor.electrified",
+          "unit": {
+            "cs": "1 hodina",
+            "en": "1 hour",
+            "de": "1 Stunde",
+            "uk": "1 година",
+            "vi": "1 giờ"
+          }
+        },
+        {
+          "id": "prace-elektrikar",
+          "label": {
+            "cs": "Elektrikářské práce",
+            "en": "Auto electrical work",
+            "de": "Kfz-Elektrikarbeiten",
+            "uk": "Автоелектричні роботи",
+            "vi": "Công điện ô tô"
+          },
+          "unit": {
+            "cs": "1 hodina",
+            "en": "1 hour",
+            "de": "1 Stunde",
+            "uk": "1 година",
+            "vi": "1 giờ"
+          }
+        },
+        {
+          "id": "test-brzd",
+          "label": {
+            "cs": "Test brzd",
+            "en": "Brake test",
+            "de": "Bremsentest",
+            "uk": "Перевірка гальм",
+            "vi": "Kiểm tra phanh"
+          }
+        },
+        {
+          "id": "test-tlumicu",
+          "label": {
+            "cs": "Test tlumičů",
+            "en": "Shock absorber test",
+            "de": "Stoßdämpfertest",
+            "uk": "Перевірка амортизаторів",
+            "vi": "Kiểm tra giảm xóc"
+          }
+        },
+        {
+          "id": "mereni-laku",
+          "label": {
+            "cs": "Měření tloušťky laku",
+            "en": "Paint thickness measurement",
+            "de": "Lackschichtdickenmessung",
+            "uk": "Вимірювання товщини фарби",
+            "vi": "Đo độ dày sơn"
+          }
+        },
+        {
+          "id": "kontrola-podvozku",
+          "label": {
+            "cs": "Kontrola podvozku na zvedáku bez testu zavěšení",
+            "en": "Chassis check on a lift without suspension testing",
+            "de": "Fahrwerkskontrolle auf der Hebebühne ohne Aufhängungstest",
+            "uk": "Огляд підвіски на підйомнику без тесту підвіски",
+            "vi": "Kiểm tra gầm trên cầu nâng, không thử hệ thống treo"
+          }
+        },
+        {
+          "id": "kontrola-podvozku-test",
+          "label": {
+            "cs": "Kontrola podvozku na zvedáku a test zavěšení nápravy",
+            "en": "Chassis check on a lift and suspension testing",
+            "de": "Fahrwerkskontrolle auf der Hebebühne mit Aufhängungstest",
+            "uk": "Огляд підвіски на підйомнику та тест підвіски осі",
+            "vi": "Kiểm tra gầm trên cầu nâng và thử hệ thống treo"
+          }
+        },
+        {
+          "id": "kontrola-endoskop",
+          "label": {
+            "cs": "Kontrola a diagnostika endoskopem",
+            "en": "Endoscopic inspection and diagnostics",
+            "de": "Endoskopische Kontrolle und Diagnose",
+            "uk": "Ендоскопічний огляд і діагностика",
+            "vi": "Kiểm tra và chẩn đoán bằng camera nội soi"
+          }
+        },
+        {
+          "id": "kontrola-hlava",
+          "label": {
+            "cs": "Kontrola těsnosti hlavy válců",
+            "en": "Cylinder head leak test",
+            "de": "Dichtheitsprüfung des Zylinderkopfs",
+            "uk": "Перевірка герметичності головки блока циліндрів",
+            "vi": "Kiểm tra độ kín nắp máy"
+          }
+        }
+      ],
+      "notes": [
+        {
+          "cs": "Náhradní díly, provozní kapaliny a ostatní materiál se účtují samostatně. U elektrifikovaných užitkových vozů potvrdíme sazbu předem podle vozidla a požadované práce. Služby se samostatnou cenou se účtují podle příslušné nabídky.",
+          "en": "Spare parts, fluids and other materials are charged separately. For electrified commercial vehicles, we confirm the rate in advance for the vehicle and requested work. Services with a separate price are billed according to the relevant quotation.",
+          "de": "Ersatzteile, Betriebsstoffe und weiteres Material werden separat berechnet. Bei elektrifizierten Nutzfahrzeugen bestätigen wir den Satz vorab je nach Fahrzeug und Arbeit. Leistungen mit eigenem Preis werden nach dem jeweiligen Angebot abgerechnet.",
+          "uk": "Запчастини, рідини та інші матеріали оплачуються окремо. Для електрифікованих комерційних авто ставку підтверджуємо заздалегідь відповідно до автомобіля й робіт. Послуги з окремою ціною оплачуються за відповідною пропозицією.",
+          "vi": "Phụ tùng, chất lỏng và vật tư khác tính riêng. Với xe thương mại điện hóa, mức công được xác nhận trước theo xe và công việc. Dịch vụ có giá riêng được tính theo báo giá tương ứng."
+        }
+      ]
+    },
+    {
+      "id": "diagnostika-elektronika",
+      "title": {
+        "cs": "Diagnostika a elektronika",
+        "en": "Diagnostics and electronics",
+        "de": "Diagnose und Elektronik",
+        "uk": "Діагностика та електроніка",
+        "vi": "Chẩn đoán và điện tử"
+      },
+      "services": [
+        "kompletni-diagnostika-vaseho-vozu",
+        "prevodovky-dsg-s-tronic",
+        "skodni-udalost-vyridime-za-vas",
+        "serizeni-kalibrace-jizdnich-asistentu"
+      ],
+      "rows": [
+        {
+          "id": "diagnostika-odis",
+          "label": {
+            "cs": "Základní diagnostika ODIS",
+            "en": "Basic ODIS diagnostics",
+            "de": "ODIS-Basisdiagnose",
+            "uk": "Базова діагностика ODIS",
+            "vi": "Chẩn đoán ODIS cơ bản"
+          },
+          "gross": "diagnostic.gross",
+          "net": "diagnostic.net",
+          "from": true,
+          "unit": {
+            "cs": "do 60 minut",
+            "en": "up to 60 minutes",
+            "de": "bis 60 Minuten",
+            "uk": "до 60 хвилин",
+            "vi": "tối đa 60 phút"
+          }
+        },
+        {
+          "id": "diagnostika-dsg",
+          "label": {
+            "cs": "Základní diagnostika převodovky DSG / S tronic",
+            "en": "Basic DSG / S tronic gearbox diagnostics",
+            "de": "Basisdiagnose des DSG- / S tronic-Getriebes",
+            "uk": "Базова діагностика коробки DSG / S tronic",
+            "vi": "Chẩn đoán cơ bản hộp số DSG / S tronic"
+          },
+          "gross": "dsg.gross",
+          "net": "dsg.net",
+          "from": true,
+          "unit": {
+            "cs": "do 60 minut",
+            "en": "up to 60 minutes",
+            "de": "bis 60 Minuten",
+            "uk": "до 60 хвилин",
+            "vi": "tối đa 60 phút"
+          }
+        },
+        {
+          "id": "diagnostika-pamet",
+          "label": {
+            "cs": "Samostatné vyčtení paměti závad jednotky",
+            "en": "Fault memory readout only",
+            "de": "Reines Auslesen des Fehlerspeichers",
+            "uk": "Окреме зчитування пам’яті несправностей",
+            "vi": "Chỉ đọc bộ nhớ lỗi"
+          }
+        },
+        {
+          "id": "kontrola-nehoda",
+          "label": {
+            "cs": "Vstupní technická kontrola vozidla po nehodě",
+            "en": "Initial technical vehicle inspection after an accident",
+            "de": "Technische Erstkontrolle nach einem Unfall",
+            "uk": "Початкова технічна перевірка автомобіля після ДТП",
+            "vi": "Kiểm tra kỹ thuật ban đầu sau tai nạn"
+          },
+          "gross": "incident.hourly",
+          "unit": {
+            "cs": "1 hodina",
+            "en": "1 hour",
+            "de": "1 Stunde",
+            "uk": "1 година",
+            "vi": "1 giờ"
+          },
+          "note": {
+            "cs": "Hodinová sazba, nikoli pevná cena kompletního posouzení vozidla nebo vyřízení škodní události.",
+            "en": "Hourly rate, not a fixed price for a complete assessment or insurance claim handling.",
+            "de": "Stundensatz, kein Festpreis für eine vollständige Begutachtung oder Schadenabwicklung.",
+            "uk": "Погодинна ставка, а не фіксована ціна повної оцінки чи врегулювання страхового випадку.",
+            "vi": "Đơn giá theo giờ, không phải giá trọn gói đánh giá xe hoặc xử lý bảo hiểm."
+          }
+        },
+        {
+          "id": "kalibrace-asistent",
+          "label": {
+            "cs": "Standardní seřízení nebo kalibrace asistenčního systému",
+            "en": "Standard adjustment or calibration of a driver assistance system",
+            "de": "Standardeinstellung oder Kalibrierung eines Assistenzsystems",
+            "uk": "Стандартне налаштування або калібрування асистента",
+            "vi": "Căn chỉnh hoặc hiệu chuẩn tiêu chuẩn hệ thống hỗ trợ lái"
+          },
+          "gross": "adas.standard",
+          "from": true,
+          "unit": {
+            "cs": "1 systém",
+            "en": "1 system",
+            "de": "1 System",
+            "uk": "1 система",
+            "vi": "1 hệ thống"
+          }
+        },
+        {
+          "id": "software",
+          "label": {
+            "cs": "Přehrání softwaru",
+            "en": "Software flashing",
+            "de": "Software-Flash",
+            "uk": "Перепрошивання програмного забезпечення",
+            "vi": "Nạp lại phần mềm"
+          }
+        },
+        {
+          "id": "kodovani-klic",
+          "label": {
+            "cs": "Kódování klíče",
+            "en": "Key coding",
+            "de": "Schlüsselcodierung",
+            "uk": "Кодування ключа",
+            "vi": "Mã hóa chìa khóa"
+          }
+        },
+        {
+          "id": "kodovani-baterie",
+          "label": {
+            "cs": "Kódování baterie",
+            "en": "Battery coding",
+            "de": "Batteriecodierung",
+            "uk": "Кодування акумулятора",
+            "vi": "Mã hóa ắc quy"
+          }
+        }
+      ],
+      "notes": [
+        {
+          "cs": "Základní diagnostika zahrnuje diagnostické práce do 60 minut. Odhalení příčiny závady během této doby nelze vždy zaručit. Případné pokračování, rozsah a cenu předem dohodneme.",
+          "en": "Basic diagnostics cover up to 60 minutes of diagnostic work. Identifying the cause within this time cannot always be guaranteed. Any further work, scope and price are agreed in advance.",
+          "de": "Die Basisdiagnose umfasst Diagnosearbeiten bis zu 60 Minuten. Die Ermittlung der Ursache innerhalb dieser Zeit kann nicht immer garantiert werden. Weitere Arbeiten, Umfang und Preis werden vorab vereinbart.",
+          "uk": "Базова діагностика включає до 60 хвилин діагностичних робіт. Виявлення причини за цей час не завжди можна гарантувати. Подальші роботи, їх обсяг і ціну погоджуємо заздалегідь.",
+          "vi": "Chẩn đoán cơ bản gồm tối đa 60 phút làm việc. Không phải lúc nào cũng xác định được nguyên nhân trong thời gian này. Công việc tiếp theo, phạm vi và giá được thống nhất trước."
+        }
+      ]
+    },
+    {
+      "id": "brzdy-svetlomety",
+      "title": {
+        "cs": "Brzdové kotouče a světlomety",
+        "en": "Brake discs and headlights",
+        "de": "Bremsscheiben und Scheinwerfer",
+        "uk": "Гальмівні диски та фари",
+        "vi": "Đĩa phanh và đèn pha"
+      },
+      "services": [
+        "oprava-brzdovych-kotoucu",
+        "serizeni-svetlometu"
+      ],
+      "rows": [
+        {
+          "id": "kotouc-jeden",
+          "label": {
+            "cs": "Oprava / stočení jednoho předního brzdového kotouče",
+            "en": "Repair / resurfacing of one front brake disc",
+            "de": "Reparatur / Abdrehen einer vorderen Bremsscheibe",
+            "uk": "Ремонт / проточування одного переднього гальмівного диска",
+            "vi": "Sửa / tiện một đĩa phanh trước"
+          },
+          "gross": "brakes.one.gross",
+          "net": "brakes.one.net",
+          "from": true
+        },
+        {
+          "id": "kotouce-oba",
+          "label": {
+            "cs": "Oprava / stočení obou předních brzdových kotoučů",
+            "en": "Repair / resurfacing of both front brake discs",
+            "de": "Reparatur / Abdrehen beider vorderen Bremsscheiben",
+            "uk": "Ремонт / проточування обох передніх гальмівних дисків",
+            "vi": "Sửa / tiện cả hai đĩa phanh trước"
+          },
+          "gross": "brakes.pair.gross",
+          "net": "brakes.pair.net",
+          "from": true
+        },
+        {
+          "id": "svetlomety-halogen",
+          "label": {
+            "cs": "Halogenové světlomety",
+            "en": "Halogen headlights",
+            "de": "Halogenscheinwerfer",
+            "uk": "Галогенні фари",
+            "vi": "Đèn pha halogen"
+          },
+          "gross": "headlights.halogen",
+          "from": true,
+          "unit": {
+            "cs": "seřízení obou hlavních světlometů",
+            "en": "adjustment of both main headlights",
+            "de": "Einstellung beider Hauptscheinwerfer",
+            "uk": "регулювання обох основних фар",
+            "vi": "căn chỉnh cả hai đèn pha chính"
+          }
+        },
+        {
+          "id": "svetlomety-led",
+          "label": {
+            "cs": "LED světlomety",
+            "en": "LED headlights",
+            "de": "LED-Scheinwerfer",
+            "uk": "Світлодіодні фари",
+            "vi": "Đèn pha LED"
+          },
+          "gross": "headlights.led",
+          "from": true,
+          "unit": {
+            "cs": "seřízení obou hlavních světlometů",
+            "en": "adjustment of both main headlights",
+            "de": "Einstellung beider Hauptscheinwerfer",
+            "uk": "регулювання обох основних фар",
+            "vi": "căn chỉnh cả hai đèn pha chính"
+          }
+        },
+        {
+          "id": "svetlomety-matrix",
+          "label": {
+            "cs": "Matrix LED světlomety",
+            "en": "Matrix LED headlights",
+            "de": "Matrix-LED-Scheinwerfer",
+            "uk": "Фари Matrix LED",
+            "vi": "Đèn pha Matrix LED"
+          },
+          "gross": "headlights.matrix",
+          "from": true,
+          "unit": {
+            "cs": "seřízení obou hlavních světlometů",
+            "en": "adjustment of both main headlights",
+            "de": "Einstellung beider Hauptscheinwerfer",
+            "uk": "регулювання обох основних фар",
+            "vi": "căn chỉnh cả hai đèn pha chính"
+          }
+        },
+        {
+          "id": "svetlomety-laser",
+          "label": {
+            "cs": "Laserové světlomety Audi",
+            "en": "Audi laser headlights",
+            "de": "Audi-Laserscheinwerfer",
+            "uk": "Лазерні фари Audi",
+            "vi": "Đèn pha laser Audi"
+          },
+          "gross": "headlights.laser",
+          "from": true,
+          "unit": {
+            "cs": "seřízení obou hlavních světlometů",
+            "en": "adjustment of both main headlights",
+            "de": "Einstellung beider Hauptscheinwerfer",
+            "uk": "регулювання обох основних фар",
+            "vi": "căn chỉnh cả hai đèn pha chính"
+          }
+        },
+        {
+          "id": "svetlomety-xenon",
+          "label": {
+            "cs": "Seřízení xenonových světlometů",
+            "en": "Xenon headlight adjustment",
+            "de": "Einstellung von Xenonscheinwerfern",
+            "uk": "Регулювання ксенонових фар",
+            "vi": "Căn chỉnh đèn pha xenon"
+          }
+        },
+        {
+          "id": "svetlomety-mlhovky",
+          "label": {
+            "cs": "Samostatné seřízení předních mlhových světel",
+            "en": "Separate front fog light adjustment",
+            "de": "Separate Einstellung der Nebelscheinwerfer",
+            "uk": "Окреме регулювання передніх протитуманних фар",
+            "vi": "Căn chỉnh riêng đèn sương mù trước"
+          }
+        }
+      ],
+      "notes": [
+        {
+          "cs": "Xenonové a další specifické systémy, složitější kalibrační úkony a samostatné seřízení předních mlhových světel naceňujeme individuálně.",
+          "en": "Xenon and other specific systems, more complex calibrations and separate front fog light adjustment are quoted individually.",
+          "de": "Xenon- und weitere spezielle Systeme, aufwendigere Kalibrierungen und separate Nebelscheinwerfereinstellungen werden individuell kalkuliert.",
+          "uk": "Ксенонові та інші специфічні системи, складніші калібрування та окреме регулювання протитуманних фар розраховуємо індивідуально.",
+          "vi": "Hệ thống xenon và các hệ thống đặc thù khác, hiệu chuẩn phức tạp và căn chỉnh riêng đèn sương mù được báo giá riêng."
+        }
+      ]
+    },
+    {
+      "id": "stk",
+      "title": {
+        "cs": "STK",
+        "en": "Vehicle inspection (STK)",
+        "de": "Technische Untersuchung (STK)",
+        "uk": "Технічний огляд (STK)",
+        "vi": "Kiểm định xe (STK)"
+      },
+      "services": [
+        "priprava-a-realizace-stk"
+      ],
+      "rows": [
+        {
+          "id": "stk-balicek",
+          "label": {
+            "cs": "Příprava a přistavení vozidla na STK",
+            "en": "Preparation and delivery of the vehicle for STK",
+            "de": "Vorbereitung und Vorführung des Fahrzeugs zur STK",
+            "uk": "Підготовка та подача автомобіля на STK",
+            "vi": "Chuẩn bị và đưa xe đi kiểm định STK"
+          },
+          "gross": "inspection.preparation",
+          "from": true
+        },
+        {
+          "id": "stk-kontrola",
+          "label": {
+            "cs": "Samostatná příprava na STK – kontrola vozu",
+            "en": "STK preparation – vehicle check only",
+            "de": "Separate Vorbereitung auf die STK – Fahrzeugkontrolle",
+            "uk": "Окрема підготовка до STK – перевірка автомобіля",
+            "vi": "Chuẩn bị STK riêng – kiểm tra xe"
+          }
+        },
+        {
+          "id": "stk-vyrizeni",
+          "label": {
+            "cs": "Samostatné vyřízení STK",
+            "en": "STK arrangement only",
+            "de": "Separate Abwicklung der STK",
+            "uk": "Окреме оформлення STK",
+            "vi": "Thu xếp kiểm định STK riêng"
+          }
+        }
+      ],
+      "notes": [
+        {
+          "cs": "Cena přípravy a přistavení zahrnuje předběžnou kontrolu osvětlení, pneumatik, brzd, řízení a podvozku, základní diagnostiku ODIS, objednání termínu a přistavení vozidla. Nezahrnuje poplatek za technickou prohlídku ani případné měření emisí. Nezbytné opravy a rozšířená diagnostika se účtují zvlášť.",
+          "en": "Preparation and delivery include a preliminary check of lights, tyres, brakes, steering and chassis, basic ODIS diagnostics, booking the appointment and delivering the vehicle. The inspection fee and any emissions test are excluded. Necessary repairs and extended diagnostics are charged separately.",
+          "de": "Vorbereitung und Vorführung umfassen die Vorabkontrolle von Beleuchtung, Reifen, Bremsen, Lenkung und Fahrwerk, ODIS-Basisdiagnose, Terminvereinbarung und Vorführung. Prüfgebühr und eine eventuelle Abgasmessung sind nicht enthalten. Erforderliche Reparaturen und erweiterte Diagnose werden separat berechnet.",
+          "uk": "Підготовка та подача включають попередню перевірку освітлення, шин, гальм, кермового управління й підвіски, базову діагностику ODIS, запис і подачу авто. Плата за техогляд та можливий контроль викидів не включені. Необхідний ремонт і розширена діагностика оплачуються окремо.",
+          "vi": "Giá chuẩn bị và đưa xe gồm kiểm tra sơ bộ đèn, lốp, phanh, hệ thống lái và gầm, chẩn đoán ODIS cơ bản, đặt lịch và đưa xe đến trạm. Không gồm lệ phí kiểm định và kiểm tra khí thải nếu có. Sửa chữa cần thiết và chẩn đoán mở rộng tính riêng."
+        }
+      ]
+    },
+    {
+      "id": "dalsi-prace",
+      "title": {
+        "cs": "Další servisní práce",
+        "en": "Other service work",
+        "de": "Weitere Servicearbeiten",
+        "uk": "Інші сервісні роботи",
+        "vi": "Công việc bảo dưỡng khác"
+      },
+      "services": [
+        "dekarbonizace-motoru",
+        "vymena-rozvodu"
+      ],
+      "rows": [
+        {
+          "id": "bg-cisteni-olej",
+          "label": {
+            "cs": "BG – čištění olejového systému",
+            "en": "BG oil system cleaning",
+            "de": "BG-Ölsystemreinigung",
+            "uk": "Очищення мастильної системи BG",
+            "vi": "Làm sạch hệ thống dầu bằng BG"
+          },
+          "gross": "decarbon.oil",
+          "from": true
+        },
+        {
+          "id": "bg-cisteni-vstrikovani",
+          "label": {
+            "cs": "BG – přístrojové čištění vstřikovacího systému",
+            "en": "BG machine cleaning of the injection system",
+            "de": "BG-Gerätereinigung des Einspritzsystems",
+            "uk": "Апаратне очищення системи впорскування BG",
+            "vi": "Làm sạch hệ thống phun bằng thiết bị BG"
+          },
+          "gross": "decarbon.injection",
+          "from": true
+        },
+        {
+          "id": "bg-cisteni-sani",
+          "label": {
+            "cs": "BG – chemické čištění sání",
+            "en": "BG chemical intake cleaning",
+            "de": "Chemische BG-Ansaugreinigung",
+            "uk": "Хімічне очищення впуску BG",
+            "vi": "Làm sạch hóa học đường nạp bằng BG"
+          },
+          "gross": "decarbon.intake",
+          "from": true
+        },
+        {
+          "id": "rozvody-tsi",
+          "label": {
+            "cs": "Rozvody TSI – pouze práce u vybraných motorizací",
+            "en": "TSI timing system – labour only for selected engines",
+            "de": "TSI-Steuertrieb – nur Arbeit bei ausgewählten Motoren",
+            "uk": "Привід ГРМ TSI – лише робота для окремих двигунів",
+            "vi": "Hệ thống cam TSI – chỉ tiền công cho một số động cơ"
+          },
+          "gross": "timing.tsi",
+          "from": true
+        },
+        {
+          "id": "rozvody-tdi",
+          "label": {
+            "cs": "Řemenové rozvody TDI – pouze práce u vybraných motorizací",
+            "en": "TDI timing belt – labour only for selected engines",
+            "de": "TDI-Zahnriemen – nur Arbeit bei ausgewählten Motoren",
+            "uk": "Ремінний привід ГРМ TDI – лише робота для окремих двигунів",
+            "vi": "Dây đai cam TDI – chỉ tiền công cho một số động cơ"
+          },
+          "gross": "timing.tdi",
+          "from": true
+        },
+        {
+          "id": "sani-granulat",
+          "label": {
+            "cs": "Mechanické čištění sacích ventilů a kanálů granulátem",
+            "en": "Mechanical cleaning of intake valves and ports using granulate",
+            "de": "Mechanische Granulatreinigung der Einlassventile und Kanäle",
+            "uk": "Механічне очищення впускних клапанів і каналів гранулятом",
+            "vi": "Làm sạch cơ học van nạp và đường nạp bằng hạt"
+          },
+          "note": {
+            "cs": "Individuální kalkulace podle rozsahu práce, spotřeby granulátu, demontáže a montáže sání a dalšího materiálu.",
+            "en": "Individual quotation based on labour, granulate used, intake manifold removal and refitting, and other materials.",
+            "de": "Individuelle Kalkulation nach Arbeitsumfang, Granulatverbrauch, Aus- und Einbau des Ansaugkrümmers und weiterem Material.",
+            "uk": "Індивідуальний розрахунок за обсягом робіт, витратою грануляту, демонтажем і монтажем впуску та іншими матеріалами.",
+            "vi": "Báo giá riêng theo khối lượng công việc, lượng hạt sử dụng, tháo lắp cổ góp nạp và vật tư khác."
+          }
+        },
+        {
+          "id": "servis-tri-filtry",
+          "label": {
+            "cs": "Běžný servis – 3 filtry",
+            "en": "Routine service – 3 filters",
+            "de": "Regulärer Service – 3 Filter",
+            "uk": "Звичайне ТО – 3 фільтри",
+            "vi": "Bảo dưỡng thông thường – 3 bộ lọc"
+          }
+        },
+        {
+          "id": "servis-ctyri-filtry",
+          "label": {
+            "cs": "Běžný servis – 4 filtry",
+            "en": "Routine service – 4 filters",
+            "de": "Regulärer Service – 4 Filter",
+            "uk": "Звичайне ТО – 4 фільтри",
+            "vi": "Bảo dưỡng thông thường – 4 bộ lọc"
+          }
+        },
+        {
+          "id": "vymena-svicek",
+          "label": {
+            "cs": "Výměna zapalovacích svíček",
+            "en": "Spark plug replacement",
+            "de": "Zündkerzenwechsel",
+            "uk": "Заміна свічок запалювання",
+            "vi": "Thay bugi"
+          }
+        },
+        {
+          "id": "vymena-brzd",
+          "label": {
+            "cs": "Výměna brzd na jedné nápravě",
+            "en": "Brake replacement on one axle",
+            "de": "Bremsenwechsel an einer Achse",
+            "uk": "Заміна гальм на одній осі",
+            "vi": "Thay phanh trên một cầu"
+          }
+        }
+      ],
+      "notes": [
+        {
+          "cs": "U rozvodů se díly a materiál účtují zvlášť; rozsah určíme podle VIN.",
+          "en": "For timing work, parts and materials are charged separately; scope is determined by VIN.",
+          "de": "Bei Steuertriebarbeiten werden Teile und Material separat berechnet; der Umfang richtet sich nach der VIN.",
+          "uk": "Для робіт із ГРМ деталі та матеріали оплачуються окремо; обсяг визначаємо за VIN.",
+          "vi": "Với công việc hệ thống cam, phụ tùng và vật tư tính riêng; phạm vi xác định theo VIN."
+        }
+      ]
+    }
+  ]
+}

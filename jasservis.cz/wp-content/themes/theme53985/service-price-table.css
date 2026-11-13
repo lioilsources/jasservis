@@ -1,0 +1,68 @@
+/* Compact price tables, scoped to the price-list page in all five languages. */
+body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-overview {
+  max-width:1400px;
+}
+.price-table-section {position:relative;margin:28px 0;border:1px solid #c4cbd1;border-radius:5px;overflow:hidden;background:#f5f7f9;color:#252d34;scroll-margin-top:24px;}
+.price-table-anchor {position:absolute;top:0;scroll-margin-top:24px;}
+body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-table-section>h2 {
+  box-sizing:border-box;margin:0!important;padding:14px 18px!important;border:0;background:#ff6b1a;color:#252d34!important;
+  font:700 clamp(20px,1.8vw,25px)/1.35 var(--js-font,Ubuntu,sans-serif)!important;text-align:left!important;text-transform:none!important;
+}
+body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .service-price-table {
+  width:100%;margin:0;border:0;border-collapse:collapse;table-layout:fixed;background:#fff;color:#252d34;
+  font:400 16px/1.45 var(--js-font,Ubuntu,sans-serif);
+}
+.service-price-table__item-col {width:62%;}
+.service-price-table__price-col {width:19%;}
+body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .service-price-table :is(th,td) {
+  box-sizing:border-box;padding:12px 16px;border:0;border-bottom:1px solid #cbd1d6;border-right:1px solid #cbd1d6;
+  background:transparent;color:#252d34!important;vertical-align:top;overflow-wrap:break-word;text-shadow:none;
+}
+body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .service-price-table tr>:last-child {border-right:0;}
+.service-price-table thead {background:#e6ebef;}
+.service-price-table thead th {font-weight:700;text-align:right;}
+.service-price-table thead th:first-child,.service-price-table tbody th {text-align:left;}
+.service-price-table tbody th {font-weight:500;}
+.service-price-table tbody tr:nth-child(even) {background:#f1f4f6;}
+.service-price-table tbody tr:target {outline:3px solid #ff6b1a;outline-offset:-3px;}
+.service-price-table__price {font-weight:700;text-align:right;font-variant-numeric:tabular-nums;}
+.price-table-amount {white-space:nowrap;}
+body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .service-price-table :is(span,small) {color:inherit!important;}
+.service-price-table__unit,.service-price-table__note {display:block;margin-top:5px;font-size:14px;line-height:1.45;font-weight:400;}
+body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-table-section .price-table-note {
+  max-width:none;margin:0;padding:14px 18px;border-bottom:1px solid #cbd1d6;color:#252d34!important;font-size:15px;line-height:1.6;
+}
+body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-overview>.price-table-key {
+  max-width:none;margin:16px 0 20px;padding:12px 16px;border-left:4px solid #ff6b1a;background:#ffffff0b;font-size:16px;
+}
+.price-table-details {margin:0;padding:0 18px;}
+.price-table-details summary {box-sizing:border-box;min-height:48px;padding:13px 0;color:#252d34;font-weight:700;cursor:pointer;}
+.price-table-details ul {display:flex;flex-wrap:wrap;gap:0 24px;margin:0;padding:0 0 12px;list-style:none;}
+.price-table-details li {margin:0;padding:0;}
+body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-table-details a {
+  display:inline-flex;align-items:center;min-height:44px;color:#854000!important;text-decoration:underline;text-underline-offset:3px;
+}
+.price-table-nav ul {display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none;}
+.price-table-nav li {margin:0;padding:0;}
+body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-table-nav a {
+  display:flex;align-items:center;box-sizing:border-box;min-height:48px;padding:10px 14px;border:1px solid #ff6b1a;border-radius:4px;
+  background:#ff6b1a;color:#252d34!important;font-size:16px;font-weight:700;line-height:1.4;text-decoration:none;
+}
+body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-table-nav a:is(:hover,:focus-visible) {background:#f5f7f9;color:#252d34!important;}
+.price-table-nav a:focus-visible,.price-table-details :is(a,summary):focus-visible {outline:3px solid #ff6b1a;outline-offset:3px;}
+.price-table-sr-only {position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;}
+@media(max-width:639px) {
+ .price-table-section {margin:22px 0;}
+ .service-price-table__item-col {width:46%;}
+ .service-price-table__price-col {width:27%;}
+ body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .service-price-table {font-size:14px;line-height:1.4;}
+ body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .service-price-table :is(th,td) {padding:10px 7px;}
+ .service-price-table thead th {font-size:13px;}
+ .service-price-table__unit,.service-price-table__note {font-size:13px;}
+ .price-table-nav ul {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;}
+ .price-table-nav a {height:100%;overflow-wrap:anywhere;}
+ body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-table-nav a {padding:10px;font-size:14px;}
+ body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-table-section>h2 {padding:12px 14px!important;}
+ body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-table-section .price-table-note {padding:12px 14px;font-size:14px;}
+ .price-table-details {padding-inline:14px;}
+}
