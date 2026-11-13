@@ -169,3 +169,69 @@ body.js-visual-preview #motopress-main#motopress-main .footer .cookie-embed-plac
  body.js-visual-preview #motopress-main .service-pricelist-link>p {flex:1 1 240px;}
  body.js-visual-preview #motopress-main .service-pricelist-link a {width:100%;}
 }
+
+/* Requested service photographs blend into the existing page surface. */
+body.js-visual-preview #motopress-main#motopress-main img.service-photo-fade {
+ --photo-fade:clamp(18px,2.4vw,36px);
+ display:block;width:100%;height:auto;margin:0!important;border:0;box-shadow:none;
+ -webkit-mask-image:linear-gradient(to right,transparent,#000 var(--photo-fade),#000 calc(100% - var(--photo-fade)),transparent),linear-gradient(to bottom,transparent,#000 var(--photo-fade),#000 calc(100% - var(--photo-fade)),transparent);
+ mask-image:linear-gradient(to right,transparent,#000 var(--photo-fade),#000 calc(100% - var(--photo-fade)),transparent),linear-gradient(to bottom,transparent,#000 var(--photo-fade),#000 calc(100% - var(--photo-fade)),transparent);
+ -webkit-mask-composite:source-in;mask-composite:intersect;mask-mode:alpha;
+}
+body.js-visual-preview #motopress-main#motopress-main .service-photo-followup {display:flow-root;}
+body.js-visual-preview #motopress-main#motopress-main .service-followup-photo {
+ float:right;box-sizing:border-box;width:48%;margin:0 0 20px clamp(24px,3vw,48px);
+}
+body.js-visual-preview #motopress-main#motopress-main .service-followup-photo>.motopress-image-obj {margin:0;}
+
+/* Keep the DSG description flowing alongside the photograph. */
+body.js-visual-preview #motopress-main#motopress-main #post-4003 .service-intro-flow {
+ display:flow-root;min-height:0;margin-bottom:24px;
+}
+body.js-visual-preview #motopress-main#motopress-main #post-4003 .service-intro-flow>.service-intro-flow__photo {
+ display:block;float:right!important;width:48%!important;
+ margin:0 0 20px clamp(24px,3vw,48px)!important;
+}
+body.js-visual-preview #motopress-main#motopress-main #post-4003 .service-intro-flow>.service-intro-flow__copy,
+body.js-visual-preview #motopress-main#motopress-main #post-4003 .service-intro-flow>.motopress-text-obj,
+body.js-visual-preview #motopress-main#motopress-main #post-4003 .service-intro-flow__copy>.motopress-text-obj {display:contents;}
+body.js-visual-preview #motopress-main#motopress-main #post-4003 .service-intro-flow p {max-width:none;margin:0 0 16px;}
+
+/* A larger Enyaq photograph, with its original caption outside the fade. */
+body.js-visual-preview #motopress-main#motopress-main #post-ev-brzdy .ev-brakes-main-photo {
+ box-sizing:border-box;width:100%;max-width:680px;margin:0 auto;
+}
+
+/* Same orange, with a quieter size, weight and edge. */
+body.js-visual-preview #motopress-main#motopress-main #post-2272 .autoservis-gvo-inline {
+ min-height:44px;padding:8px 14px;border-radius:4px;
+ font-size:16px;font-weight:600;line-height:1.4;
+ box-shadow:none!important;text-shadow:none!important;filter:none!important;
+ animation:none!important;transform:none!important;
+}
+
+/* Let the home map use the available width and a taller useful viewport. */
+body.js-visual-preview.home #motopress-main#motopress-main .footer>.container {
+ box-sizing:border-box;width:100%;max-width:none;padding-inline:clamp(12px,1.5vw,28px);
+}
+body.js-visual-preview.home #motopress-main#motopress-main .footer #map {
+ box-sizing:border-box;width:100%!important;height:clamp(480px,38vw,680px);
+}
+body.js-visual-preview.home #motopress-main#motopress-main .footer .cookie-embed-placeholder {
+ min-height:clamp(480px,38vw,680px);
+}
+@media(max-width:1023px) {
+ body.js-visual-preview #motopress-main#motopress-main .service-followup-photo,
+ body.js-visual-preview #motopress-main#motopress-main #post-4003 .service-intro-flow>.service-intro-flow__photo {
+  float:none!important;width:100%!important;max-width:760px;margin:0 auto 20px!important;
+ }
+ body.js-visual-preview #motopress-main#motopress-main #post-4003 .service-intro-flow {display:flex;flex-direction:column;gap:20px;}
+ body.js-visual-preview #motopress-main#motopress-main #post-4003 .service-intro-flow>.service-intro-flow__copy {display:block;order:0;}
+ body.js-visual-preview #motopress-main#motopress-main #post-4003 .service-intro-flow>.service-intro-flow__photo {order:1;margin-bottom:0!important;}
+ body.js-visual-preview #motopress-main#motopress-main #post-4003 .service-intro-flow>.motopress-text-obj {display:block;order:2;}
+}
+@media(max-width:767px) {
+ body.js-visual-preview.home #motopress-main#motopress-main .footer {padding-inline:0;}
+ body.js-visual-preview.home #motopress-main#motopress-main .footer #map {height:380px;}
+ body.js-visual-preview.home #motopress-main#motopress-main .footer .cookie-embed-placeholder {min-height:380px;}
+}
