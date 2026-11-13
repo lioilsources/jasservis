@@ -1,4 +1,5 @@
 /* Continuous service layouts after moving all prices to the price list. */
+:root,body.js-visual-preview {--brand-orange:#FF6B1A;}
 /* Advice links and brand choices share the restrained cookie-settings style. */
 body.js-visual-preview #motopress-main#motopress-main .advice-index :is(.advice-index__cards a,.advice-index__brands a,.advice-index__brands button) {
   background:#252d34!important;background-image:none!important;
@@ -295,3 +296,73 @@ body.js-visual-preview #motopress-main#motopress-main .accident-introduction>.ac
  body.js-visual-preview #motopress-main#motopress-main .accident-introduction>.accident-introduction__lead {display:block;order:0;}
  body.js-visual-preview #motopress-main#motopress-main .accident-introduction>.accident-introduction__details {display:block;order:2;}
 }
+
+/* Whole-label menus remove the separate arrows while keeping every destination. */
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary #topnav>li>:is(a,.reviews-toggle) {
+ color:var(--brand-orange)!important;font-weight:500!important;font-size:16px!important;
+ line-height:1.35;text-shadow:none!important;letter-spacing:0;
+}
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary #topnav>li>.menu-label-toggle {
+ white-space:nowrap!important;text-wrap:nowrap;cursor:pointer;
+}
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary #topnav>li>.menu-label-toggle::after {
+ content:none!important;
+}
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary #topnav>li+li::before {
+ height:16px;background:#ffffff16;
+}
+@media(min-width:1200px) {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary:not(.desktop-menu-collapsed) #topnav {
+  grid-template-columns:repeat(6,max-content)!important;justify-content:space-between;column-gap:clamp(8px,1vw,20px);
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary:not(.desktop-menu-collapsed) #topnav>li {
+  min-width:0;padding-inline:clamp(6px,.7vw,12px);
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary:not(.desktop-menu-collapsed) #topnav>li>:is(a,.reviews-toggle) {
+  min-height:56px;padding-block:10px;white-space:nowrap!important;
+ }
+}
+body.js-visual-preview .mobile-nav-panel #topnav>:is(#menu-item-2275,#menu-item-2076) {
+ grid-template-columns:minmax(0,1fr);
+}
+body.js-visual-preview .mobile-nav-panel #topnav>li>.menu-label-toggle {
+ grid-column:1/-1;white-space:normal;cursor:pointer;font-weight:500!important;
+}
+
+/* Use the mobile brand orange for every shared decorative accent. */
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary #topnav>li>:is(a,.reviews-toggle):is(:hover,:focus-visible),
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header :is(.header-location-icon,.header-phone-icon,.header-advice-icons,.header-advice-car,.header-advice-mechanic),
+body.js-visual-preview .site-reconstruction__bulb {color:var(--brand-orange)!important;}
+
+/* Photo feathering and the light halo are separate layers; captions stay still. */
+body.js-visual-preview.home #motopress-main#motopress-main .professional-home__card:nth-child(n) {
+ border-color:transparent;background:transparent;box-shadow:none;
+}
+body.js-visual-preview.home #motopress-main#motopress-main .professional-home__card::after {content:none!important;}
+body.js-visual-preview.home #motopress-main#motopress-main .professional-home__photo {
+ display:block;position:relative;isolation:isolate;flex:none;
+}
+body.js-visual-preview.home #motopress-main#motopress-main .professional-home__photo>img {
+ --tile-feather:clamp(12px,1.4vw,22px);border-radius:0;
+ -webkit-mask-image:linear-gradient(to right,transparent,#000 var(--tile-feather),#000 calc(100% - var(--tile-feather)),transparent),linear-gradient(to bottom,transparent,#000 var(--tile-feather),#000 calc(100% - var(--tile-feather)),transparent);
+ mask-image:linear-gradient(to right,transparent,#000 var(--tile-feather),#000 calc(100% - var(--tile-feather)),transparent),linear-gradient(to bottom,transparent,#000 var(--tile-feather),#000 calc(100% - var(--tile-feather)),transparent);
+ -webkit-mask-composite:source-in;mask-composite:intersect;mask-mode:alpha;
+}
+body.js-visual-preview.home #motopress-main#motopress-main .professional-home__photo::after {
+ content:"";position:absolute;inset:6px;z-index:1;pointer-events:none;
+ border:2px solid var(--brand-orange);border-radius:12px;
+ box-shadow:0 0 10px 3px #ff6b1a66,inset 0 0 10px 2px #ff6b1a55;
+ filter:blur(3px);opacity:0;
+}
+@media(prefers-reduced-motion:no-preference) {
+ body.js-visual-preview.home #motopress-main#motopress-main .professional-home__photo::after {animation:photo-edge-light 12s linear infinite;}
+ body.js-visual-preview.home #motopress-main#motopress-main .professional-home__card:nth-child(2) .professional-home__photo::after {animation-delay:2s;}
+ body.js-visual-preview.home #motopress-main#motopress-main .professional-home__card:nth-child(3) .professional-home__photo::after {animation-delay:4s;}
+ body.js-visual-preview.home #motopress-main#motopress-main .professional-home__card:nth-child(4) .professional-home__photo::after {animation-delay:6s;}
+ body.js-visual-preview.home #motopress-main#motopress-main .professional-home__card:nth-child(5) .professional-home__photo::after {animation-delay:8s;}
+ body.js-visual-preview.home #motopress-main#motopress-main .professional-home__card:nth-child(6) .professional-home__photo::after {animation-delay:10s;}
+}
+@media(prefers-reduced-motion:reduce) {
+ body.js-visual-preview.home #motopress-main#motopress-main .professional-home__photo::after {animation:none;opacity:.22;}
+}
+@keyframes photo-edge-light {0%,16.6667%,100%{opacity:0;}4%,10%{opacity:.8;}15%{opacity:0;}}

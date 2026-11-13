@@ -127,7 +127,7 @@
         if (original) original.click();
     });
     mobilePanel.addEventListener('click', function (event) {
-        if (event.target.closest('a[href]')) closeMobilePanel(false);
+        if (event.target.closest('a[href]:not(.menu-label-toggle)')) closeMobilePanel(false);
     });
     function close(control) {
         window.clearTimeout(control.leaveTimer);
@@ -190,6 +190,13 @@
         if (!panel) return;
         var link = item.querySelector('.reviews-toggle') || item.querySelector('a');
         var button = item.querySelector('.reviews-toggle');
+        var labelToggle = item.id === 'menu-item-2275' || item.id === 'menu-item-2076';
+        if (labelToggle) {
+            button = link;
+            button.classList.add('menu-label-toggle');
+            button.setAttribute('role', 'button');
+            button.setAttribute('aria-haspopup', 'true');
+        }
         if (!button) {
             button = document.createElement('button');
             button.type = 'button';
@@ -207,13 +214,14 @@
             if (panel.hidden) open(control);
             else close(control);
         }
-        button.addEventListener('click', function () {
-            // Recenze is one tile that hover already opened; the click that follows keeps it open.
+        button.addEventListener('click', function (event) {
+            if (labelToggle) event.preventDefault();
+            // A whole-label control keeps a hover-opened menu open on its first click.
             if (control.hoverOpened && !panel.hidden) { control.hoverOpened = false; return; }
             toggle();
         });
-        if (link !== button) {
-            // A label is always a page link; the separate arrow controls its submenu.
+        if (link !== button || labelToggle) {
+            // Keep the overview page reachable when the full label controls the submenu.
             var overview = document.createElement('li');
             overview.className = 'menu-overview';
             var overviewLink = document.createElement('a');
@@ -243,6 +251,11 @@
             if (!isCompactMenu() && !item.contains(event.relatedTarget)) close(control);
         });
         item.addEventListener('keydown', function (event) {
+            if (labelToggle && event.target === button && event.key === ' ') {
+                event.preventDefault();
+                toggle();
+                return;
+            }
             if (event.key !== 'ArrowDown' || (event.target !== link && event.target !== button)) return;
             event.preventDefault();
             open(control);

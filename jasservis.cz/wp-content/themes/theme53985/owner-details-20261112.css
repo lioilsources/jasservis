@@ -19,7 +19,7 @@ body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled{
 body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__heading{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:16px;}
 body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__heading>p{margin:0;color:#f5f7f9;}
 body.js-visual-preview #motopress-main#motopress-main #post-14 .contact-price-overview{flex:none;margin:0;}
-body.js-visual-preview #motopress-main#motopress-main #post-14 .contact-price-overview a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;box-sizing:border-box;padding:10px 20px;border:1px solid #ff761a;border-radius:6px;background:#ff761a;color:#252d34!important;font-weight:700;text-decoration:none;}
+body.js-visual-preview #motopress-main#motopress-main #post-14 .contact-price-overview a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;box-sizing:border-box;padding:10px 20px;border:1px solid var(--brand-orange);border-radius:6px;background:var(--brand-orange);color:#252d34!important;font-weight:700;text-decoration:none;}
 body.js-visual-preview #motopress-main#motopress-main #post-14 #contact-booking-details{margin-bottom:22px;}
 body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__karty{align-items:stretch;gap:24px;margin-bottom:24px;}
 body.js-visual-preview #motopress-main#motopress-main #post-14 :is(.kontakt-prehled__karta,.kontakt-prehled__udaje){padding:26px;background:#f5f7f9;color:#252d34;border:1px solid #c4cbd1;border-radius:6px;}
@@ -30,19 +30,19 @@ body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled_
 body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__tel{font-size:clamp(24px,2.2vw,34px);}
 body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__mapa{margin-top:24px;}
 body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__mapa h2{color:#f5f7f9!important;}
-body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__facebook a{color:#ffb47b;}
+body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__facebook a{color:var(--brand-orange);}
 @media(max-width:767px){
  body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__heading{flex-direction:column;align-items:flex-start;gap:12px;}
  body.js-visual-preview #motopress-main#motopress-main #post-14 :is(.kontakt-prehled__karta,.kontakt-prehled__udaje){padding:18px;}
  body.js-visual-preview #motopress-main#motopress-main #post-14 .kontakt-prehled__karty{gap:18px;}
 }
 /* The inline warranty-service link is a clear action, in every language. */
-body.js-visual-preview #motopress-main#motopress-main .autoservis-gvo-inline{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;max-width:100%;min-height:48px;padding:12px 20px;border:1px solid #ff761a;border-radius:6px;background:#ff761a;color:#252d34!important;font-weight:700;line-height:1.4;text-align:center;text-decoration:none!important;}
+body.js-visual-preview #motopress-main#motopress-main .autoservis-gvo-inline{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;max-width:100%;min-height:48px;padding:12px 20px;border:1px solid var(--brand-orange);border-radius:6px;background:var(--brand-orange);color:#252d34!important;font-weight:700;line-height:1.4;text-align:center;text-decoration:none!important;}
 body.js-visual-preview #motopress-main#motopress-main .autoservis-gvo-inline:focus-visible{outline:3px solid #f5f7f9;outline-offset:4px;}
 /* Service outlines share the homepage geometry, light and six-second cycle. */
 body.js-visual-preview #motopress-main :is(#post-2272,#post-2065) #portfolio-grid>li::after{content:none;animation:none;}
 body.js-visual-preview #motopress-main#motopress-main :is(#post-2272,#post-2065) #portfolio-grid .portfolio_item_holder{position:relative;border:1px solid #ff6b1a!important;border-radius:0;overflow:visible;box-shadow:none!important;transform:none!important;}
-body.js-visual-preview #motopress-main :is(#post-2272,#post-2065) #portfolio-grid .portfolio_item_holder::after{content:"";position:absolute;inset:-1px;z-index:1;box-sizing:border-box;border:2px solid #ffb06b;border-radius:0;box-shadow:0 0 4px 1px #ff8b3dbb,0 0 12px 2px #ff6b1a73,inset 0 0 4px #ff8b3d66;opacity:0;pointer-events:none;}
+body.js-visual-preview #motopress-main :is(#post-2272,#post-2065) #portfolio-grid .portfolio_item_holder::after{content:"";position:absolute;inset:-1px;z-index:1;box-sizing:border-box;border:2px solid var(--brand-orange);border-radius:0;box-shadow:0 0 4px 1px #ff6b1abb,0 0 12px 2px #ff6b1a73,inset 0 0 4px #ff6b1a66;opacity:0;pointer-events:none;}
 @media(prefers-reduced-motion:no-preference){body.js-visual-preview #motopress-main :is(#post-2272,#post-2065) #portfolio-grid .portfolio_item_holder::after{animation:specialization-outline-pulse 6s linear infinite;animation-delay:var(--service-outline-delay,0s);}}
 @media(prefers-reduced-motion:reduce){body.js-visual-preview #motopress-main :is(#post-2272,#post-2065) #portfolio-grid .portfolio_item_holder::after{opacity:.35;}}
 @keyframes specialization-outline-pulse{0%,16.6667%,100%{opacity:0;}3%,11%{opacity:1;}15%{opacity:0;}}
@@ -64,7 +64,7 @@ body.js-visual-preview #motopress-main#motopress-main .service-related>.article_
 body.js-visual-preview #motopress-main#motopress-main .service-related>ul{display:flex;flex-direction:column;align-items:center;gap:8px;margin:0;padding:0;list-style:none;}
 body.js-visual-preview #motopress-main#motopress-main .service-related>ul>li{margin:0;padding:0;max-width:100%;list-style:none;}
 body.js-visual-preview #motopress-main#motopress-main .service-related>ul>li::before{content:none;}
-body.js-visual-preview #motopress-main#motopress-main .service-related a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:6px 12px;box-sizing:border-box;color:#ffb47b!important;text-align:center;text-decoration:underline;text-underline-offset:3px;}
+body.js-visual-preview #motopress-main#motopress-main .service-related a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:6px 12px;box-sizing:border-box;color:var(--brand-orange)!important;text-align:center;text-decoration:underline;text-underline-offset:3px;}
 
 /* A wider service introduction gives the complete, static Cupra photo room. */
 body.page-id-2272.js-visual-preview #motopress-main#motopress-main .content-holder{padding-inline:0;}
@@ -77,20 +77,20 @@ body.js-visual-preview #motopress-main#motopress-main #post-2272 :is(.cupra-mobi
 body.js-visual-preview #motopress-main#motopress-main #post-2272 :is(.cupra-mobile-image,.cupra-desktop-image)::after{content:"";position:absolute;inset:0;z-index:3;border:0;border-radius:0;pointer-events:none;--cupra-feather:clamp(18px,2.8vw,54px);background:linear-gradient(90deg,#252d34 0,transparent var(--cupra-feather),transparent calc(100% - var(--cupra-feather)),#252d34 100%),linear-gradient(180deg,#252d34 0,transparent var(--cupra-feather),transparent calc(100% - var(--cupra-feather)),#252d34 100%);}
 @media(min-width:768px){body.js-visual-preview #motopress-main#motopress-main #post-2272 .product-detail:has(>.cupra-desktop-image){display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:start;gap:clamp(28px,3vw,72px);margin-bottom:28px;}body.js-visual-preview #motopress-main#motopress-main #post-2272 .product-detail:has(>.cupra-desktop-image)::before,body.js-visual-preview #motopress-main#motopress-main #post-2272 .product-detail:has(>.cupra-desktop-image)::after{content:none;}}
 /* Filled actions replace the outlined buttons on both service catalogues. */
-body.js-visual-preview #motopress-main#motopress-main :is(#post-2272,#post-2065) #portfolio-grid .caption .btn{border:0!important;border-radius:4px;background:#ff761a!important;background-image:none!important;color:#252d34!important;box-shadow:none!important;text-shadow:none;min-height:48px;}
-body.js-visual-preview #motopress-main#motopress-main :is(#post-2272,#post-2065) #portfolio-grid .caption .btn:is(:hover,:focus-visible){background:#ffb47b!important;color:#191818!important;}
+body.js-visual-preview #motopress-main#motopress-main :is(#post-2272,#post-2065) #portfolio-grid .caption .btn{border:0!important;border-radius:4px;background:var(--brand-orange)!important;background-image:none!important;color:#252d34!important;box-shadow:none!important;text-shadow:none;min-height:48px;}
+body.js-visual-preview #motopress-main#motopress-main :is(#post-2272,#post-2065) #portfolio-grid .caption .btn:is(:hover,:focus-visible){background:var(--brand-orange)!important;color:#191818!important;}
 /* Quiet header surfaces retain generous touch targets and the full-width layout. */
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header .header_block_1 #text-8>.textwidget>.header-service-actions,
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header .header_block_1 #text-8>.textwidget>a.header-driver-advice{border:1px solid #ffffff30!important;border-radius:6px;background:#242323!important;box-shadow:none!important;color:#f5f7f9!important;}
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header .header_block_1 #text-8>.textwidget .header-service-actions>a{border:0!important;background:transparent!important;color:#f5f7f9!important;font-weight:600!important;text-transform:none;}
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header .header_block_1 #text-8>.textwidget>.header-service-actions::after{background:#ffffff24;}
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header .header_block_1 #text-8>.textwidget>a.header-driver-advice{font-weight:600!important;text-transform:none;}
-html body.js-visual-preview #motopress-main#motopress-main .header.header.header :is(.header-location-icon,.header-phone-icon,.header-advice-icons,.header-advice-car,.header-advice-mechanic){color:#ffb47b;}
-html body.js-visual-preview #motopress-main#motopress-main .header.header.header .header_block_1 #text-8>.textwidget .header-service-actions>a:focus{outline-color:#ffb47b!important;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header :is(.header-location-icon,.header-phone-icon,.header-advice-icons,.header-advice-car,.header-advice-mechanic){color:var(--brand-orange);}
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header .header_block_1 #text-8>.textwidget .header-service-actions>a:focus{outline-color:var(--brand-orange)!important;}
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header .nav__primary #topnav>li>:is(a,.reviews-toggle){font-size:17px!important;font-weight:600!important;}
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header .nav__primary .navigation-toggle{border:1px solid #ffffff30!important;border-radius:6px;background:#242323!important;box-shadow:none!important;color:#f5f7f9!important;font-weight:600;}
-html body.js-visual-preview #motopress-main#motopress-main .header.header.header .nav__primary .navigation-toggle[aria-expanded="true"]{border-color:#ffb47b!important;color:#ffb47b!important;}
-@media(hover:hover) and (pointer:fine){html body.js-visual-preview #motopress-main#motopress-main .header.header.header .header_block_1 #text-8>.textwidget .header-service-actions>a:hover,html body.js-visual-preview #motopress-main#motopress-main .header.header.header .header_block_1 #text-8>.textwidget>a.header-driver-advice:hover{background:#33302e!important;color:#ffb47b!important;}}
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header .nav__primary .navigation-toggle[aria-expanded="true"]{border-color:var(--brand-orange)!important;color:var(--brand-orange)!important;}
+@media(hover:hover) and (pointer:fine){html body.js-visual-preview #motopress-main#motopress-main .header.header.header .header_block_1 #text-8>.textwidget .header-service-actions>a:hover,html body.js-visual-preview #motopress-main#motopress-main .header.header.header .header_block_1 #text-8>.textwidget>a.header-driver-advice:hover{background:#33302e!important;color:var(--brand-orange)!important;}}
 @media(min-width:1200px){
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header .header_block_2>.row{min-height:92px;padding-bottom:8px;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header .nav__primary #topnav>li{position:relative;border-right:0!important;}
@@ -134,7 +134,7 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8>.textwidget .header-service-actions>a>span{color:inherit!important;transition:none!important;}
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8>.textwidget .header-service-actions>a:is(:hover,:focus,:active,[aria-current="page"]),
 html body.js-visual-preview:has(.contact-booking-panel[open]) #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8>.textwidget .header-service-actions>a.header-call-link{background:#fff!important;color:#191818!important;}
-html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8>.textwidget .header-service-actions>a:is(:focus-visible){outline:3px solid #ff761a!important;outline-offset:-4px!important;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8>.textwidget .header-service-actions>a:is(:focus-visible){outline:3px solid var(--brand-orange)!important;outline-offset:-4px!important;}
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8>.textwidget .header-service-actions>a>:is(.header-location-icon,.header-phone-icon){color:var(--brand-orange,#ff6b1a)!important;stroke:currentColor!important;}
 
 /* Price cards provide their own light surface instead of inheriting dark copy. */
@@ -145,7 +145,7 @@ body.page-price-overview.js-visual-preview #motopress-main#motopress-main .conte
 body.page-price-overview.js-visual-preview #motopress-main#motopress-main .title-section{margin:0;padding:26px 0 22px;}
 body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-overview{max-width:1200px;margin:0 auto 36px;color:#f5f7f9!important;}
 body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-overview>p{max-width:88ch;color:#f5f7f9!important;font-size:17px;line-height:1.65;}
-body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-overview__service{box-sizing:border-box;margin:24px 0;padding:clamp(18px,2.5vw,30px);border:1px solid #c4cbd1;border-top:4px solid #ff761a;border-radius:6px;background:#f5f7f9;color:#252d34!important;}
+body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-overview__service{box-sizing:border-box;margin:24px 0;padding:clamp(18px,2.5vw,30px);border:1px solid #c4cbd1;border-top:4px solid var(--brand-orange);border-radius:6px;background:#f5f7f9;color:#252d34!important;}
 body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-overview__service :is(p,li,ul,ol,strong,b,em,span,h2,h3,h4,table,thead,tbody,tr,th,td){color:#252d34!important;opacity:1;text-shadow:none;}
 body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-overview__service>h2{margin:0 0 20px!important;color:#252d34!important;font:700 clamp(20px,2vw,26px)/1.35 var(--js-font,Ubuntu,sans-serif)!important;text-align:left!important;text-transform:none!important;}
 body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-overview__service :is(h3,.cena-blok__titulek){margin:0 0 14px!important;font:700 18px/1.5 var(--js-font,Ubuntu,sans-serif)!important;text-transform:none!important;}
@@ -158,7 +158,7 @@ body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide
 body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-overview__service :is(a,a:visited){display:inline-flex;align-items:center;min-height:44px;max-width:100%;color:#854000!important;font-weight:700;text-decoration:underline;text-underline-offset:3px;}
 body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-overview__service a:focus-visible{outline:3px solid #854000;outline-offset:3px;}
 body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-overview__toc ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 24px;margin:0;padding:0 0 16px;list-style:none;}
-body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-overview__toc a{display:flex;align-items:center;box-sizing:border-box;min-height:44px;padding:6px 0;color:#ffb47b!important;font-size:16px;line-height:1.5;text-decoration:underline;}
+body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-overview__toc a{display:flex;align-items:center;box-sizing:border-box;min-height:44px;padding:6px 0;color:var(--brand-orange)!important;font-size:16px;line-height:1.5;text-decoration:underline;}
 @media(max-width:639px){
  body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-overview__toc ul{grid-template-columns:minmax(0,1fr);}
  body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post .price-overview__service :is(th,td){padding:9px!important;}
