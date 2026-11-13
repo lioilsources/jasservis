@@ -386,3 +386,6 @@ body.js-visual-preview #motopress-main#motopress-main .brand-service-content .vw
 body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide-post :is(.price-overview__service,.price-table-details) a:focus-visible {
  outline:2px solid #252d34;outline-offset:3px;
 }
+body.js-visual-preview #motopress-main#motopress-main .advice-index__change {
+ color:var(--brand-orange)!important;
+}
