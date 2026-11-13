@@ -1,8 +1,8 @@
 /* Continuous service layouts after moving all prices to the price list. */
-/* Advice links and brand choices use the same filled tile as service summaries. */
+/* Advice links and brand choices share the restrained cookie-settings style. */
 body.js-visual-preview #motopress-main#motopress-main .advice-index :is(.advice-index__cards a,.advice-index__brands a,.advice-index__brands button) {
-  background:var(--brand-orange)!important;background-image:none!important;
-  border-color:var(--brand-orange)!important;color:#252d34!important;text-shadow:none;
+  background:#252d34!important;background-image:none!important;
+  border:1px solid var(--brand-orange)!important;color:#fff!important;text-shadow:none;
 }
 body.js-visual-preview #motopress-main#motopress-main .advice-index :is(.advice-index__cards a,.advice-index__brands a,.advice-index__brands button):is(:hover,:focus-visible),
 body.js-visual-preview #motopress-main#motopress-main .advice-index .advice-index__brands button[aria-pressed="true"] {
@@ -116,7 +116,7 @@ body.js-visual-preview #motopress-main#motopress-main #post-2272 .autoservis-int
 body.js-visual-preview #motopress-main#motopress-main #post-2272 .autoservis-introduction>.cupra-desktop-image {
   display:block;float:right!important;width:49%!important;margin:0 0 20px clamp(24px,3vw,48px)!important;padding:0;
 }
-body.js-visual-preview #motopress-main#motopress-main #post-2272 .autoservis-introduction p {max-width:none;margin:0 0 16px;}
+body.js-visual-preview #motopress-main#motopress-main #post-2272 .autoservis-introduction p {max-width:none!important;margin:0 0 16px;}
 body.js-visual-preview #motopress-main #post-2272 .autoservis-introduction .autoservis-intro-heading {margin-top:0;}
 body.js-visual-preview #motopress-main#motopress-main #post-2272 .autoservis-gvo-inline {min-height:44px;padding:8px 14px;background:var(--brand-orange);border-color:var(--brand-orange);}
 
@@ -234,4 +234,64 @@ body.js-visual-preview.home #motopress-main#motopress-main .footer .cookie-embed
  body.js-visual-preview.home #motopress-main#motopress-main .footer {padding-inline:0;}
  body.js-visual-preview.home #motopress-main#motopress-main .footer #map {height:380px;}
  body.js-visual-preview.home #motopress-main#motopress-main .footer .cookie-embed-placeholder {min-height:380px;}
+}
+
+/* Keep the requested advice and additional-service tiles as quiet outlines. */
+body.owner-soft-tiles.js-visual-preview #motopress-main#motopress-main .content-holder :is(
+ .advice-index__cards a,.advice-index__brands a,.advice-index__brands button,
+ .wl-brand-tile,.driver-article-links a,summary,
+ .service-pricelist-link .tlacitko-akce,#post-2065 #portfolio-grid .caption .btn
+) {
+ box-sizing:border-box;background:#252d34!important;background-image:none!important;
+ color:#fff!important;border:1px solid var(--brand-orange)!important;border-radius:4px;
+ box-shadow:none!important;text-shadow:none!important;font-weight:600;
+}
+body.owner-soft-tiles.js-visual-preview #motopress-main#motopress-main .content-holder :is(
+ .advice-index__cards a,.advice-index__brands a,.advice-index__brands button,
+ .wl-brand-tile,.driver-article-links a,summary,
+ .service-pricelist-link .tlacitko-akce,#post-2065 #portfolio-grid .caption .btn
+):is(:hover,:focus-visible) {
+ background:#303a43!important;color:#fff!important;
+}
+body.owner-soft-tiles.js-visual-preview #motopress-main#motopress-main .content-holder :is(
+ .advice-index__brands [aria-pressed="true"],.wl-brand-tile[aria-current="true"],.wl-brand-tile[aria-pressed="true"]
+) {background:#303a43!important;color:#fff!important;box-shadow:inset 0 -3px var(--brand-orange)!important;}
+body.owner-soft-tiles.js-visual-preview #motopress-main#motopress-main .content-holder :is(
+ .advice-index a,.advice-index button,.wl-brand-tile,.driver-article-links a,summary,.service-pricelist-link a,#post-2065 .caption .btn
+):focus-visible {outline:3px solid var(--brand-orange)!important;outline-offset:3px;}
+body.owner-soft-tiles.js-visual-preview #motopress-main#motopress-main .content-holder summary :is(span,strong,b,h2,h3,h4) {color:inherit!important;}
+body.owner-soft-tiles.js-visual-preview #motopress-main#motopress-main .content-holder details {border-color:var(--brand-orange);border-radius:4px;}
+body.owner-soft-tiles.js-visual-preview #motopress-main#motopress-main #post-2065 #portfolio-grid .portfolio_item_holder {border-width:1px!important;}
+body.owner-soft-tiles.js-visual-preview #motopress-main#motopress-main #post-2065 #portfolio-grid .portfolio_item_holder::after {content:none!important;}
+
+/* Remove the extra inset between the advice heading and its first control. */
+body.page-warning-lights.js-visual-preview #motopress-main#motopress-main .content-holder .title-section {
+ width:100%;max-width:none;padding-block:20px 8px;margin-bottom:4px;
+}
+body.page-warning-lights.js-visual-preview #motopress-main#motopress-main .content-holder #content {padding-top:4px;}
+body.page-warning-lights.js-visual-preview #motopress-main#motopress-main .advice-index {
+ width:100%;max-width:none;margin-inline:0;padding:0 0 28px;
+}
+body.page-warning-lights.js-visual-preview #motopress-main#motopress-main .advice-index__change {min-height:44px;margin-bottom:8px;}
+body.page-warning-lights.js-visual-preview #motopress-main#motopress-main .advice-index h2 {margin-top:24px;}
+
+/* The accident photo starts with the introduction; text continues below it. */
+body.js-visual-preview #motopress-main#motopress-main .accident-introduction {display:flow-root;margin-bottom:24px;}
+body.js-visual-preview #motopress-main#motopress-main .accident-introduction>.accident-introduction__photo {
+ display:block;float:right!important;box-sizing:border-box;width:48%!important;
+ margin:0 0 20px clamp(24px,3vw,48px)!important;padding:0!important;
+}
+body.js-visual-preview #motopress-main#motopress-main .accident-introduction :is(.accident-introduction__lead,.accident-introduction__details,.motopress-text-obj) {display:contents;}
+body.js-visual-preview #motopress-main#motopress-main .accident-introduction p {max-width:none!important;margin:0 0 16px;}
+body.js-visual-preview #motopress-main#motopress-main .accident-introduction :is(h2,h3) {
+ margin:22px 0 12px!important;padding:0!important;text-align:left!important;
+ font:700 clamp(21px,1.8vw,26px)/1.35 var(--js-font,Ubuntu,sans-serif)!important;
+}
+body.js-visual-preview #motopress-main#motopress-main .accident-introduction ul {display:flow-root;margin-bottom:18px;}
+body.js-visual-preview #motopress-main#motopress-main .accident-introduction>.accident-introduction__photo .motopress-image-obj {margin:0;}
+@media(max-width:1023px) {
+ body.js-visual-preview #motopress-main#motopress-main .accident-introduction {display:flex;flex-direction:column;gap:20px;}
+ body.js-visual-preview #motopress-main#motopress-main .accident-introduction>.accident-introduction__photo {order:1;float:none!important;width:100%!important;max-width:760px;margin:0 auto!important;}
+ body.js-visual-preview #motopress-main#motopress-main .accident-introduction>.accident-introduction__lead {display:block;order:0;}
+ body.js-visual-preview #motopress-main#motopress-main .accident-introduction>.accident-introduction__details {display:block;order:2;}
 }
