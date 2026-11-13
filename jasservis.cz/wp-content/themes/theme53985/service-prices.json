@@ -182,45 +182,45 @@
     "kompletni-diagnostika-vaseho-vozu": {
       "cs": {
         "title": "Diagnostika vozidel Volkswagen Group",
-        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Cena</p>\n<p><strong>od <span data-price=\"diagnostic.gross\">{{diagnostic.gross}}</span> Kč včetně DPH</strong> – základní diagnostika do 60 minut.</p>\n<p>Základní diagnostika zahrnuje diagnostické práce v rozsahu do 60 minut. Odhalení příčiny závady během této doby nelze vždy zaručit. Pokud bude potřeba pokračovat, další rozsah a cenu s vámi předem dohodneme.</p>\n</div>"
+        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Cena</p>\n<p>Cena základní diagnostiky do 60 minut činí od <strong><span data-price=\"diagnostic.gross\">{{diagnostic.gross}}</span></strong> Kč včetně DPH (od <strong><span data-price=\"diagnostic.net\">{{diagnostic.net}}</span></strong> Kč bez DPH).</p>\n<p>Základní diagnostika zahrnuje diagnostické práce v rozsahu do 60 minut. Odhalení příčiny závady během této doby nelze vždy zaručit. Pokud bude potřeba pokračovat, další rozsah a cenu s vámi předem dohodneme.</p>\n</div>"
       },
       "en": {
         "title": "Volkswagen Group vehicle diagnostics",
-        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Price</p>\n<p><strong>from <span data-price=\"diagnostic.gross\">{{diagnostic.gross}}</span> Kč including VAT</strong> – basic diagnostic work of up to 60 minutes.</p>\n<p>Basic diagnostics covers up to 60 minutes of diagnostic work. Finding the cause of a fault within this time cannot always be guaranteed. If further work is needed, we agree its scope and price with you in advance.</p>\n</div>"
+        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Price</p>\n<p>Basic diagnostic work of up to 60 minutes starts at <strong><span data-price=\"diagnostic.gross\">{{diagnostic.gross}}</span></strong> Kč including VAT (from <strong><span data-price=\"diagnostic.net\">{{diagnostic.net}}</span></strong> Kč excluding VAT).</p>\n<p>Basic diagnostics covers up to 60 minutes of diagnostic work. Finding the cause of a fault within this time cannot always be guaranteed. If further work is needed, we agree its scope and price with you in advance.</p>\n</div>"
       },
       "de": {
         "title": "Diagnose für Volkswagen Group Fahrzeuge",
-        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Preis</p>\n<p><strong>ab <span data-price=\"diagnostic.gross\">{{diagnostic.gross}}</span> Kč inkl. MwSt</strong>. – Basisdiagnose im Umfang von bis zu 60 Minuten.</p>\n<p>Die Basisdiagnose umfasst Diagnosearbeiten von bis zu 60 Minuten. Die Fehlerursache lässt sich innerhalb dieser Zeit nicht immer sicher ermitteln. Sind weitere Arbeiten nötig, stimmen wir Umfang und Preis vorab mit Ihnen ab.</p>\n</div>"
+        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Preis</p>\n<p>Die Basisdiagnose bis zu 60 Minuten kostet ab <strong><span data-price=\"diagnostic.gross\">{{diagnostic.gross}}</span></strong> Kč einschließlich MwSt. (ab <strong><span data-price=\"diagnostic.net\">{{diagnostic.net}}</span></strong> Kč ohne MwSt.).</p>\n<p>Die Basisdiagnose umfasst Diagnosearbeiten von bis zu 60 Minuten. Die Fehlerursache lässt sich innerhalb dieser Zeit nicht immer sicher ermitteln. Sind weitere Arbeiten nötig, stimmen wir Umfang und Preis vorab mit Ihnen ab.</p>\n</div>"
       },
       "uk": {
         "title": "Діагностика автомобілів Volkswagen Group",
-        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Ціна</p>\n<p><strong>від <span data-price=\"diagnostic.gross\">{{diagnostic.gross}}</span> Kč з ПДВ</strong> – основна діагностична робота до 60 хвилин.</p>\n<p>Основна діагностика охоплює до 60 хвилин діагностичної роботи. Знайти причину помилки протягом цього часу не завжди можна гарантувати. Якщо потрібно буде продовжити роботу, ми заздалегідь узгодимо з вами її подальший обсяг і ціну.</p>\n</div>"
+        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Ціна</p>\n<p>Базова діагностична робота тривалістю до 60 хвилин починається з <strong><span data-price=\"diagnostic.gross\">{{diagnostic.gross}}</span></strong> Kč, включаючи ПДВ (від <strong><span data-price=\"diagnostic.net\">{{diagnostic.net}}</span></strong> Kč без ПДВ).</p>\n<p>Основна діагностика охоплює до 60 хвилин діагностичної роботи. Знайти причину помилки протягом цього часу не завжди можна гарантувати. Якщо потрібно буде продовжити роботу, ми заздалегідь узгодимо з вами її подальший обсяг і ціну.</p>\n</div>"
       },
       "vi": {
         "title": "Chẩn đoán xe thuộc Volkswagen Group",
-        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Giá</p>\n<p><strong>từ <span data-price=\"diagnostic.gross\">{{diagnostic.gross}}</span> Kč bao gồm VAT</strong> – công việc chẩn đoán cơ bản lên tới 60 phút.</p>\n<p>Chẩn đoán cơ bản bao gồm đến 60 phút công việc chẩn đoán. Việc tìm ra nguyên nhân của lỗi trong thời gian này không phải lúc nào cũng được đảm bảo. Nếu cần thêm công việc, chúng tôi sẽ đồng ý với bạn về phạm vi và giá của nó trước.</p>\n</div>"
+        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Giá</p>\n<p>Công việc chẩn đoán cơ bản lên tới 60 phút bắt đầu tại <strong><span data-price=\"diagnostic.gross\">{{diagnostic.gross}}</span></strong> Kč bao gồm VAT (từ <strong><span data-price=\"diagnostic.net\">{{diagnostic.net}}</span></strong> Kč không bao gồm VAT).</p>\n<p>Chẩn đoán cơ bản bao gồm đến 60 phút công việc chẩn đoán. Việc tìm ra nguyên nhân của lỗi trong thời gian này không phải lúc nào cũng được đảm bảo. Nếu cần thêm công việc, chúng tôi sẽ đồng ý với bạn về phạm vi và giá của nó trước.</p>\n</div>"
       }
     },
     "prevodovky-dsg-s-tronic": {
       "cs": {
         "title": "Převodovky DSG a S tronic",
-        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Cena</p>\n<p><strong>od <span data-price=\"dsg.gross\">{{dsg.gross}}</span> Kč včetně DPH</strong> – základní diagnostika převodovky do 60 minut. Opravy a výměna oleje se účtují samostatně.</p>\n</div>"
+        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Cena</p>\n<p>Cena základní diagnostiky převodovky do 60 minut činí od <strong><span data-price=\"dsg.gross\">{{dsg.gross}}</span></strong> Kč včetně DPH (od <strong><span data-price=\"dsg.net\">{{dsg.net}}</span></strong> Kč bez DPH).</p>\n</div>"
       },
       "en": {
         "title": "DSG and S tronic transmissions",
-        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Price</p>\n<p><strong>from <span data-price=\"dsg.gross\">{{dsg.gross}}</span> Kč including VAT</strong> – basic diagnostics of the transmission within 60 minutes. Repairs and oil changes are billed separately.</p>\n</div>"
+        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Price</p>\n<p>The price of basic transmission diagnostics within 60 minutes is from <strong><span data-price=\"dsg.gross\">{{dsg.gross}}</span></strong> Kč including VAT (from <strong><span data-price=\"dsg.net\">{{dsg.net}}</span></strong> Kč excluding VAT).</p>\n</div>"
       },
       "de": {
         "title": "DSG- und S tronic-Getriebe",
-        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Preis</p>\n<p><strong>ab <span data-price=\"dsg.gross\">{{dsg.gross}}</span> Kč inkl. MwSt</strong>. – Basis-Getriebediagnose bis zu 60 Minuten. Reparaturen und Ölwechsel werden gesondert berechnet.</p>\n</div>"
+        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Preis</p>\n<p>Die Basis-Getriebediagnose bis zu 60 Minuten kostet ab <strong><span data-price=\"dsg.gross\">{{dsg.gross}}</span></strong> Kč einschließlich MwSt. (ab <strong><span data-price=\"dsg.net\">{{dsg.net}}</span></strong> Kč ohne MwSt.).</p>\n</div>"
       },
       "uk": {
         "title": "Коробки передач DSG і S tronic",
-        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Ціна</p>\n<p><strong>від <span data-price=\"dsg.gross\">{{dsg.gross}}</span> Kč з ПДВ</strong> — базова діагностика коробки передач тривалістю до 60 хвилин. Ремонт і заміна оливи оплачуються окремо.</p>\n</div>"
+        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Ціна</p>\n<p>Вартість базової діагностики трансмісії протягом 60 хвилин від <strong><span data-price=\"dsg.gross\">{{dsg.gross}}</span></strong> Kč з ПДВ (від <strong><span data-price=\"dsg.net\">{{dsg.net}}</span></strong> Kč без ПДВ).</p>\n</div>"
       },
       "vi": {
         "title": "Hộp số DSG và S tronic",
-        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Giá</p>\n<p><strong>từ <span data-price=\"dsg.gross\">{{dsg.gross}}</span> Kč bao gồm VAT</strong> — chẩn đoán cơ bản hộp số trong tối đa 60 phút. Sửa chữa và thay dầu được tính phí riêng.</p>\n</div>"
+        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Giá</p>\n<p>Giá chẩn đoán hộp số cơ bản trong thời gian tối đa 60 phút là từ <strong><span data-price=\"dsg.gross\">{{dsg.gross}}</span></strong> Kč đã bao gồm VAT (từ <strong><span data-price=\"dsg.net\">{{dsg.net}}</span></strong> Kč chưa bao gồm VAT).</p>\n</div>"
       }
     },
     "skodni-udalost-vyridime-za-vas": {
@@ -270,23 +270,23 @@
     "oprava-brzdovych-kotoucu": {
       "cs": {
         "title": "Oprava brzdových kotoučů",
-        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Cena</p>\n<p><strong>od <span data-price=\"brakes.one.gross\">{{brakes.one.gross}}</span> Kč včetně DPH</strong> za 1 přední kotouč, <strong>od <span data-price=\"brakes.pair.gross\">{{brakes.pair.gross}}</span> Kč včetně DPH</strong> za oba přední kotouče. Brzdové destičky a práce spojené s jejich výměnou se účtují samostatně.</p>\n</div>"
+        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Cena</p>\n<p>1 přední brzdový kotouč: od <strong><span data-price=\"brakes.one.gross\">{{brakes.one.gross}}</span></strong> Kč včetně DPH (od <strong><span data-price=\"brakes.one.net\">{{brakes.one.net}}</span></strong> Kč bez DPH).</p><p>Oba přední brzdové kotouče: od <strong><span data-price=\"brakes.pair.gross\">{{brakes.pair.gross}}</span></strong> Kč včetně DPH (od <strong><span data-price=\"brakes.pair.net\">{{brakes.pair.net}}</span></strong> Kč bez DPH).</p>\n</div>"
       },
       "en": {
         "title": "Brake disc resurfacing",
-        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Price</p>\n<p><strong>from <span data-price=\"brakes.one.gross\">{{brakes.one.gross}}</span> Kč including VAT</strong> for 1 front disc, <strong>from <span data-price=\"brakes.pair.gross\">{{brakes.pair.gross}}</span> Kč including VAT</strong> for both front discs. Brake pads and work associated with their replacement are billed separately.</p>\n</div>"
+        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Price</p>\n<p>1 front brake disc: from <strong><span data-price=\"brakes.one.gross\">{{brakes.one.gross}}</span></strong> Kč including VAT (from <strong><span data-price=\"brakes.one.net\">{{brakes.one.net}}</span></strong> Kč excluding VAT).</p><p>Both front brake discs: from <strong><span data-price=\"brakes.pair.gross\">{{brakes.pair.gross}}</span></strong> Kč including VAT (from <strong><span data-price=\"brakes.pair.net\">{{brakes.pair.net}}</span></strong> Kč excluding VAT).</p>\n</div>"
       },
       "de": {
         "title": "Bremsscheibenbearbeitung",
-        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Preis</p>\n<p><strong>ab <span data-price=\"brakes.one.gross\">{{brakes.one.gross}}</span> Kč einschließlich MwSt.</strong> für 1 vordere Bremsscheibe, <strong>ab <span data-price=\"brakes.pair.gross\">{{brakes.pair.gross}}</span> Kč einschließlich MwSt.</strong> für beide vorderen Bremsscheiben. Bremsbeläge und die Arbeit für deren Austausch werden gesondert berechnet.</p>\n</div>"
+        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Preis</p>\n<p>1 vordere Bremsscheibe: ab <strong><span data-price=\"brakes.one.gross\">{{brakes.one.gross}}</span></strong> Kč einschließlich MwSt. (ab <strong><span data-price=\"brakes.one.net\">{{brakes.one.net}}</span></strong> Kč ohne MwSt.).</p><p>Beide vorderen Bremsscheiben: ab <strong><span data-price=\"brakes.pair.gross\">{{brakes.pair.gross}}</span></strong> Kč einschließlich MwSt. (ab <strong><span data-price=\"brakes.pair.net\">{{brakes.pair.net}}</span></strong> Kč ohne MwSt.).</p>\n</div>"
       },
       "uk": {
         "title": "Проточування гальмівних дисків",
-        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Ціна</p>\n<p><strong>Від <span data-price=\"brakes.one.gross\">{{brakes.one.gross}}</span> Kč з ПДВ</strong> за 1 передній диск, <strong>від <span data-price=\"brakes.pair.gross\">{{brakes.pair.gross}}</span> Kč з ПДВ</strong> за обидва передні диски. Нові гальмівні колодки та роботи з їх заміни оплачуються окремо.</p>\n</div>"
+        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Ціна</p>\n<p>1 передній гальмівний диск: від <strong><span data-price=\"brakes.one.gross\">{{brakes.one.gross}}</span></strong> Kč з ПДВ (від <strong><span data-price=\"brakes.one.net\">{{brakes.one.net}}</span></strong> Kč без ПДВ).</p><p>Обидва передні гальмівні диски: від <strong><span data-price=\"brakes.pair.gross\">{{brakes.pair.gross}}</span></strong> Kč з ПДВ (від <strong><span data-price=\"brakes.pair.net\">{{brakes.pair.net}}</span></strong> Kč без ПДВ).</p>\n</div>"
       },
       "vi": {
         "title": "Tiện láng đĩa phanh",
-        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Giá</p>\n<p><strong>Từ <span data-price=\"brakes.one.gross\">{{brakes.one.gross}}</span> Kč, đã bao gồm VAT</strong>, cho 1 đĩa phanh trước; <strong>từ <span data-price=\"brakes.pair.gross\">{{brakes.pair.gross}}</span> Kč, đã bao gồm VAT</strong>, cho cả hai đĩa phanh trước. Má phanh và công thay má phanh được tính phí riêng.</p>\n</div>"
+        "html": "<div class=\"cena-blok\">\n<p class=\"cena-blok__titulek\">Giá</p>\n<p>1 đĩa phanh trước: từ <strong><span data-price=\"brakes.one.gross\">{{brakes.one.gross}}</span></strong> Kč bao gồm VAT (từ <strong><span data-price=\"brakes.one.net\">{{brakes.one.net}}</span></strong> Kč không bao gồm VAT).</p><p>Cả hai đĩa phanh trước: từ <strong><span data-price=\"brakes.pair.gross\">{{brakes.pair.gross}}</span></strong> Kč bao gồm VAT (từ <strong><span data-price=\"brakes.pair.net\">{{brakes.pair.net}}</span></strong> Kč không bao gồm VAT).</p>\n</div>"
       }
     },
     "geometrie-vozidla": {
