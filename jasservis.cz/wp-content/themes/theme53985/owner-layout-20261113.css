@@ -1,4 +1,65 @@
 /* Continuous service layouts after moving all prices to the price list. */
+/* Advice links and brand choices use the same filled tile as service summaries. */
+body.js-visual-preview #motopress-main#motopress-main .advice-index :is(.advice-index__cards a,.advice-index__brands a,.advice-index__brands button) {
+  background:var(--brand-orange)!important;background-image:none!important;
+  border-color:var(--brand-orange)!important;color:#252d34!important;text-shadow:none;
+}
+body.js-visual-preview #motopress-main#motopress-main .advice-index :is(.advice-index__cards a,.advice-index__brands a,.advice-index__brands button):is(:hover,:focus-visible),
+body.js-visual-preview #motopress-main#motopress-main .advice-index .advice-index__brands button[aria-pressed="true"] {
+  background:#f5f7f9!important;color:#252d34!important;
+}
+/* Reviewed standalone articles: visible return route, clear headings and alerts. */
+body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article__back a {
+  display:inline-flex;align-items:center;gap:10px;box-sizing:border-box;max-width:100%;
+  min-height:48px;color:#f5f7f9!important;font-weight:700;text-decoration:none;
+}
+body.page-driver-article.js-visual-preview #motopress-main .guide-back-arrow {
+  flex:none;color:var(--brand-orange);font-size:1.5em;line-height:1;
+}
+body.page-driver-article.js-visual-preview #motopress-main .guide-back-label {min-width:0;overflow-wrap:anywhere;}
+body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article__back a:is(:hover,:focus-visible) {text-decoration:underline;text-underline-offset:4px;}
+body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article__back a:focus-visible {outline:3px solid var(--brand-orange);outline-offset:4px;}
+body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article .guide-article__scope-note {
+  box-sizing:border-box;padding:16px 20px;border:1px solid var(--brand-orange);border-radius:5px;
+  background:var(--brand-orange)!important;color:#252d34!important;
+}
+body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article .driver-article-body h2 {
+  margin:28px 0 16px!important;padding:0 0 10px!important;border-bottom:2px solid var(--brand-orange);
+  color:#252d34!important;font:700 clamp(21px,1.8vw,26px)/1.35 var(--js-font,Ubuntu,sans-serif)!important;
+  text-align:left!important;text-transform:none!important;text-wrap:balance;
+}
+body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article .driver-article-body h3 {
+  margin:22px 0 12px!important;padding:0!important;color:#252d34!important;
+  font:700 clamp(18px,1.4vw,21px)/1.4 var(--js-font,Ubuntu,sans-serif)!important;
+  text-align:left!important;text-transform:none!important;
+}
+body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article .driver-article-subtitle {font-weight:700;}
+body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article .article-section>h2 {margin-top:0!important;}
+body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article .article-first-step {
+  box-sizing:border-box;padding:20px;border:2px solid #7f1d1d;border-radius:5px;
+  background:#b4232b!important;color:#fff!important;
+}
+body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article .article-first-step :is(h2,h3,p,li,strong,b,a) {color:#fff!important;}
+body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article .article-first-step>h2 {border-bottom-color:#ffffff66;}
+body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article .driver-article-links {
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;
+  margin:0;padding:0;list-style:none;
+}
+body.page-driver-article.js-visual-preview #motopress-main .driver-article-links>li {min-width:0;margin:0;padding:0;list-style:none;}
+body.page-driver-article.js-visual-preview #motopress-main .driver-article-links>li::before {content:none;}
+body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article .driver-article-links a {
+  display:flex;align-items:center;box-sizing:border-box;height:100%;min-height:56px;
+  padding:14px 16px;border:1px solid var(--brand-orange);border-radius:5px;
+  background:var(--brand-orange)!important;color:#252d34!important;font-weight:700;
+  line-height:1.45;text-decoration:none!important;overflow-wrap:anywhere;
+}
+body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article .driver-article-links a:is(:hover,:focus-visible) {background:#252d34!important;color:#fff!important;}
+body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article .driver-article-links a:focus-visible {outline:3px solid #252d34;outline-offset:3px;}
+@media(max-width:639px) {
+ body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article .driver-article-links {grid-template-columns:minmax(0,1fr);}
+ body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article .article-first-step {padding:16px;}
+ body.page-driver-article.js-visual-preview #motopress-main#motopress-main .guide-article .guide-article__scope-note {padding:14px 16px;}
+}
 body.js-visual-preview:not(.home) #motopress-main#motopress-main .content-holder {padding-top:0;}
 body.js-visual-preview:not(.home) #motopress-main#motopress-main .content-holder>.container {
   box-sizing:border-box;width:100%;max-width:1920px;margin-inline:auto;padding-inline:clamp(18px,3vw,72px);
@@ -99,6 +160,8 @@ body.js-visual-preview #motopress-main#motopress-main .footer .cookie-embed-plac
  body.js-visual-preview #motopress-main #post-2063 .pneuservis-overview__photo {max-width:760px;margin-inline:auto;}
 }
 @media(max-width:767px) {
+ /* The container supplies the page gutter; do not add a second one around it. */
+ body.js-visual-preview:not(.home) #motopress-main#motopress-main .content-holder {padding-inline:0!important;}
  body.js-visual-preview #motopress-main#motopress-main #post-2272 .autoservis-introduction>.cupra-desktop-image {display:none;}
  body.js-visual-preview #motopress-main#motopress-main #post-2272 .autoservis-introduction .cupra-mobile-image {margin:16px 0 20px;}
  .site-reconstruction {align-items:flex-start;padding-block:12px;font-size:14px;}
