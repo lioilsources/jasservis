@@ -60,14 +60,15 @@ body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timin
 }
 body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__kit-frame {
   --timing-fade:clamp(12px,1.5vw,22px);
-  position:relative;aspect-ratio:16/9;overflow:hidden;
+  /* Trim only the furniture around the case: source rows 160 through 1500. */
+  position:relative;aspect-ratio:1340/864;overflow:hidden;
   -webkit-mask-image:linear-gradient(90deg,transparent,#000 var(--timing-fade),#000 calc(100% - var(--timing-fade)),transparent),linear-gradient(180deg,transparent,#000 var(--timing-fade),#000 calc(100% - var(--timing-fade)),transparent);
   mask-image:linear-gradient(90deg,transparent,#000 var(--timing-fade),#000 calc(100% - var(--timing-fade)),transparent),linear-gradient(180deg,transparent,#000 var(--timing-fade),#000 calc(100% - var(--timing-fade)),transparent);
   -webkit-mask-composite:source-in;mask-composite:intersect;mask-mode:alpha;
 }
 body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__kit-frame>img {
-  position:absolute;left:50%;top:50%;display:block;
-  width:56.25%!important;max-width:none!important;height:auto!important;margin:0!important;
+  position:absolute;left:45.373134%;top:50%;display:block;
+  width:64.477612%!important;max-width:none!important;height:auto!important;margin:0!important;
   transform:translate(-50%,-50%) rotate(-90deg);filter:brightness(1.06) contrast(1.025);
 }
 body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__kit figcaption {
