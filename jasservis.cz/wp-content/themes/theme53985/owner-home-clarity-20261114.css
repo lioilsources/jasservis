@@ -6,13 +6,26 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8 > .textwidget .header-service-actions > a {column-gap:14px!important;}
 body.js-visual-preview .site-reconstruction__bulb {color:var(--brand-orange)!important;opacity:1!important;}
 
-/* Shared mobile header: keep the actions comfortable while exposing the page sooner. */
-@media (max-width:767px) and (min-height:501px) {
+/* Leave a little air above the brand and between the desktop header rows. */
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header > .container > .row > .span12 {
+ padding-block:calc(18px + env(safe-area-inset-top,0px)) 14px;row-gap:14px;
+}
+
+/* Narrow zoomed windows use the same complete branding row as portrait phones. */
+@media (max-width:767px) and (min-height:501px), (max-width:479px) {
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) > .container > .row > .span12 {
+  display:grid!important;
   grid-template-columns:56px minmax(0,1fr) 56px!important;
   grid-template-areas:"firm brand gvo" "contacts contacts contacts" "advice advice advice" "navigation navigation navigation"!important;
-  align-items:center;gap:6px 10px!important;padding-block:calc(8px + env(safe-area-inset-top,0px)) 8px!important;
+  align-items:center;gap:10px!important;padding-block:calc(18px + env(safe-area-inset-top,0px)) 12px!important;
  }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) :is(.header_block_1,.header_block_1 > .language-contact-row,.header_block_2,.header_block_2 > .row),
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .language-contact-row > .span6:nth-child(2),
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_1 :is(.header_widget_2,#custom_html-3,#custom_html-3 > .textwidget,#text-8,#text-8 > .textwidget) {display:contents!important;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .language-contact-row > .span6:nth-child(2) > .clear {display:none!important;}
+ /* Override the legacy landscape rule that hides the original brand container. */
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_2 > .row > .span3 {display:block!important;grid-area:brand;box-sizing:border-box;width:100%;min-width:0;margin:0;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_2 > .row > .span9 {grid-area:navigation;box-sizing:border-box;width:100%;min-width:0;margin:0;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_2 .logo {
   --brand-width:100%;grid-template-columns:minmax(0,1fr)!important;width:100%!important;max-width:170px!important;margin:0 auto!important;padding:0!important;gap:0!important;
  }
@@ -27,6 +40,8 @@ body.js-visual-preview .site-reconstruction__bulb {color:var(--brand-orange)!imp
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_2 > .row > .span3 {justify-self:stretch;text-align:center;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header-trust-badges > .header-trust-badge {flex-basis:48px!important;width:48px!important;height:48px!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header-service-actions {grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)!important;min-height:48px!important;height:auto!important;gap:0!important;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_1 #text-8 > .textwidget > .header-service-actions {grid-area:contacts;margin-top:4px!important;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_1 #text-8 > .textwidget > a.header-driver-advice {grid-area:advice;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header-service-actions::after {left:55%!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_1 #text-8 > .textwidget .header-service-actions > a {flex-direction:row!important;gap:14px!important;min-height:48px!important;padding:6px 6px!important;font-size:15px!important;line-height:1.25!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_1 #text-8 > .textwidget > a.header-driver-advice {grid-template-columns:minmax(120px,.9fr) minmax(0,1fr)!important;gap:8px!important;min-height:56px!important;height:auto!important;padding:4px 10px!important;}
