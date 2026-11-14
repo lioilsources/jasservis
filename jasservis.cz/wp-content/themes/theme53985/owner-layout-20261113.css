@@ -1,3 +1,4 @@
+/* Compatibility copy for cached pages. Current pages use site-shared-layout-20261114.css. */
 /* Continuous service layouts after moving all prices to the price list. */
 :root,body.js-visual-preview {--brand-orange:#FF6B1A;}
 /* Advice links and brand choices share the restrained cookie-settings style. */

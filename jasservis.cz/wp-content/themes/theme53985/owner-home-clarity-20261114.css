@@ -1,3 +1,4 @@
+/* Compatibility copy for cached pages. Current pages use site-shared-layout-20261114.css. */
 /* Shared brand accents use the mobile orange on every viewport. */
 :root {--brand-orange:#FF6B1A;--header-action-surface:#242323;--header-action-hover:#33302e;}
 /* Both tiles share one surface and the same pointer/keyboard treatment. */

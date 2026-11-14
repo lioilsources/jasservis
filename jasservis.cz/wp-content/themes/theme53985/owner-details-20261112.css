@@ -1,3 +1,4 @@
+/* Compatibility copy for cached pages. Current pages use site-shared-layout-20261114.css. */
 /* Owner's review: comfortable branding, wide directions and aligned services. */
 @media(min-width:1200px){
  html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_2>.row{grid-template-columns:minmax(180px,1fr) minmax(0,6fr);min-height:104px;padding:0 0 14px;box-sizing:border-box;}
