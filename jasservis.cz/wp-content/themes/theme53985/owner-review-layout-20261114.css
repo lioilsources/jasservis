@@ -122,3 +122,31 @@ html body.js-visual-preview #motopress-main#motopress-main#motopress-main#motopr
 html body.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .content-holder .tlacitko-akce:focus-visible {
  outline:3px solid var(--brand-orange)!important;outline-offset:4px;
 }
+
+
+/* Wheel safety advice fills the space beside the complete socket-set photograph. */
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .wheel-safety {
+  margin:28px 0;clear:both;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .wheel-safety__intro {
+  display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,3vw,44px);align-items:start;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .wheel-safety__copy {min-width:0;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .wheel-safety h3 {
+  margin:24px 0 10px;padding:0;font-size:clamp(20px,1.6vw,24px);font-weight:600;line-height:1.4;text-align:left!important;text-transform:none;color:#f5f7f9;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .wheel-safety__copy>.wheel-safety__topic:first-child>h3 {margin-top:0;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .wheel-safety .review-locking-tools {
+  width:100%;max-width:620px;margin:0 auto;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .wheel-safety .review-locking-tools__frame {
+  aspect-ratio:1280/1195;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .wheel-safety .review-locking-tools__frame>img {
+  position:relative;left:auto;top:auto;display:block;width:100%!important;transform:none;margin:0!important;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .wheel-safety__followup {margin-top:24px;}
+@media(max-width:1023px) {
+ body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .wheel-safety__intro {grid-template-columns:minmax(0,1fr);gap:20px;}
+ body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .wheel-safety .review-locking-tools {max-width:540px;}
+}
