@@ -1,0 +1,110 @@
+/* Timing-service page: keep the original photographs and all equipment details. */
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .title-section {
+  margin-bottom:clamp(20px,2.5vw,36px);
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .title-header {
+  text-transform:none;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service {
+  display:grid;gap:clamp(28px,3vw,44px);min-width:0;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service :is(p,li) {
+  font-size:clamp(16px,1.25vw,18px);line-height:1.65;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service p {
+  max-width:70ch;margin:0 0 16px;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service p:last-child {
+  margin-bottom:0;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service .article_header {
+  margin:0 0 14px;text-transform:none!important;text-align:left!important;
+  font-size:clamp(23px,2vw,29px);line-height:1.25;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__intro {
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);
+  gap:clamp(24px,3vw,44px);align-items:center;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__copy,
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__measurement-copy {
+  min-width:0;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__copy>ul {
+  display:grid;gap:6px;margin:18px 0 0;padding-left:22px;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service .service-pricelist-link {
+  display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 0;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service .service-pricelist-link>p {
+  margin:0;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service .service-pricelist-link a {
+  display:inline-flex;align-items:center;justify-content:center;min-height:48px;
+  box-sizing:border-box;padding:10px 18px;text-align:center;line-height:1.4;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__hero-photo {
+  min-width:0;width:100%;margin:0;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__hero-photo>img {
+  display:block;width:100%;height:auto;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__measurement {
+  display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);
+  grid-template-areas:"kit copy";gap:clamp(24px,3vw,44px);align-items:center;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__measurement-copy {
+  grid-area:copy;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__kit {
+  grid-area:kit;min-width:0;width:100%;margin:0;text-align:center;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__kit-frame {
+  --timing-fade:clamp(12px,1.5vw,22px);
+  position:relative;aspect-ratio:16/9;overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 var(--timing-fade),#000 calc(100% - var(--timing-fade)),transparent),linear-gradient(180deg,transparent,#000 var(--timing-fade),#000 calc(100% - var(--timing-fade)),transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 var(--timing-fade),#000 calc(100% - var(--timing-fade)),transparent),linear-gradient(180deg,transparent,#000 var(--timing-fade),#000 calc(100% - var(--timing-fade)),transparent);
+  -webkit-mask-composite:source-in;mask-composite:intersect;mask-mode:alpha;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__kit-frame>img {
+  position:absolute;left:50%;top:50%;display:block;
+  width:56.25%!important;max-width:none!important;height:auto!important;margin:0!important;
+  transform:translate(-50%,-50%) rotate(-90deg);filter:brightness(1.06) contrast(1.025);
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__kit figcaption {
+  margin:12px 0 0;font-size:14px;line-height:1.5;color:#d4dbe1;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__notes {
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__notes>section {
+  min-width:0;padding:clamp(20px,2vw,28px);border:1px solid #ffffff26;
+  border-radius:8px;background:#1e242a55;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__related {
+  margin:0 0 16px;text-align:center;
+}
+body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__related>.article_header {
+  text-align:center!important;
+}
+@media(max-width:1023px) {
+  body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__intro,
+  body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__notes {
+    grid-template-columns:minmax(0,1fr);
+  }
+  body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__measurement {
+    grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "kit";
+  }
+  body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__hero-photo,
+  body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service__kit {
+    max-width:800px;margin-inline:auto;
+  }
+}
+@media(max-width:600px) {
+  body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service {
+    gap:28px;
+  }
+  body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service .service-pricelist-link>p,
+  body.timing-service-page.js-visual-preview #motopress-main#motopress-main .timing-service .service-pricelist-link a {
+    width:100%;
+  }
+}
