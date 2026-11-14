@@ -298,11 +298,11 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
 
 /* Match the main brand to the 80px desktop navigation tiles. */
 @media (min-width:1200px) {
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .logo,
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .logo_h {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_2 .logo,
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_2 .logo .logo_h {
   width:calc(80px * 356 / 158)!important;max-width:none!important;
  }
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .logo_h>img {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_2 .logo .logo_h>img {
   width:100%!important;max-width:none!important;height:80px!important;
  }
 }
