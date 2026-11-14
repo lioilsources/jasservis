@@ -389,3 +389,12 @@ body.page-price-overview.js-visual-preview #motopress-main#motopress-main #guide
 body.js-visual-preview #motopress-main#motopress-main .advice-index__change {
  color:var(--brand-orange)!important;
 }
+
+/* Customer photographs use the same feathered edges across service pages. */
+body.js-visual-preview #motopress-main#motopress-main img:is([src*="wp-content/uploads/" i],[src*="dekarbonizace%20final.webp" i]):is([src*=".jpg" i],[src*=".jpeg" i],[src*=".webp" i],[src*=".avif" i],[src*=".png" i]):not([src*="/logos/" i],[src*="/kontrolky/" i],[src*="/infotainment/" i],[src*="pravidelny-servis-banner.jpg" i],[src*="cupra-js-servis-zvedak.jpg" i]),
+body.js-visual-preview #motopress-main#motopress-main #post-2272 :is(.cupra-mobile-image,.cupra-desktop-image) {
+ --site-photo-feather:clamp(12px,1.4vw,22px);
+ -webkit-mask-image:linear-gradient(to right,transparent,#000 var(--site-photo-feather),#000 calc(100% - var(--site-photo-feather)),transparent),linear-gradient(to bottom,transparent,#000 var(--site-photo-feather),#000 calc(100% - var(--site-photo-feather)),transparent);
+ mask-image:linear-gradient(to right,transparent,#000 var(--site-photo-feather),#000 calc(100% - var(--site-photo-feather)),transparent),linear-gradient(to bottom,transparent,#000 var(--site-photo-feather),#000 calc(100% - var(--site-photo-feather)),transparent);
+ -webkit-mask-composite:source-in;mask-composite:intersect;mask-mode:alpha;
+}
