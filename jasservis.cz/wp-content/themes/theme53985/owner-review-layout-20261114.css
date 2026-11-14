@@ -140,10 +140,10 @@ body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopres
   width:100%;max-width:620px;margin:0 auto;
 }
 body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .wheel-safety .review-locking-tools__frame {
-  aspect-ratio:1195/1280;
+  aspect-ratio:1280/1195;
 }
 body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .wheel-safety .review-locking-tools__frame>img {
-  width:107.112971%!important;
+  position:relative;left:auto;top:auto;display:block;width:100%!important;transform:none;margin:0!important;
 }
 body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .wheel-safety__followup {margin-top:24px;}
 @media(max-width:1023px) {
