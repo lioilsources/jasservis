@@ -54,7 +54,7 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
   box-sizing:border-box;justify-content:center;gap:0;padding-inline:0;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-trust-badges > .header-trust-badge {
-  flex:0 0 70px!important;width:70px!important;height:70px!important;
+  flex:0 0 78px!important;width:78px!important;height:78px!important;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary:not(.desktop-menu-collapsed):not(.desktop-menu-measuring) #topnav {
   width:100%;grid-template-columns:repeat(6,minmax(0,1fr))!important;justify-content:stretch;column-gap:clamp(8px,1vw,20px);
@@ -139,7 +139,7 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .language-contact-row > .span6:first-child .clear {display:none!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .top-firma-badge {grid-area:firm;justify-self:center;align-self:center;position:relative!important;left:0;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_2 > .row > .span3 {justify-self:stretch;text-align:center;}
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header-trust-badges > .header-trust-badge {flex-basis:48px!important;width:48px!important;height:48px!important;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header-trust-badges > .header-trust-badge {flex-basis:52px!important;width:52px!important;height:52px!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header-service-actions {grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)!important;min-height:48px!important;height:auto!important;gap:0!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_1 #text-8 > .textwidget > .header-service-actions {grid-area:contacts;margin-top:4px!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_1 #text-8 > .textwidget > a.header-driver-advice {grid-area:advice;}
@@ -294,4 +294,44 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8 > .textwidget > a.header-driver-advice {
   grid-template-columns:minmax(0,1fr) minmax(120px,1fr)!important;
  }
+}
+
+/* Match the main brand to the 80px desktop navigation tiles. */
+@media (min-width:1200px) {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .logo,
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .logo_h {
+  width:calc(80px * 356 / 158)!important;max-width:none!important;
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .logo_h>img {
+  width:100%!important;max-width:none!important;height:80px!important;
+ }
+}
+/* The expertise line spans the same width as the service photographs. */
+body.home.js-visual-preview #motopress-main#motopress-main .home-expertise .home-expertise__services {
+ display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;
+ gap:6px 16px;width:100%;margin:0;text-align:left;
+}
+body.home.js-visual-preview #motopress-main#motopress-main .home-expertise__services>span {
+ max-width:100%;white-space:nowrap;
+}
+@media (max-width:1199px) {
+ body.home.js-visual-preview #motopress-main#motopress-main .home-expertise .home-expertise__services {
+  justify-content:center;text-align:center;
+ }
+}
+@media (max-width:767px) {
+ body.home.js-visual-preview #motopress-main#motopress-main .home-expertise__services>span {white-space:normal;}
+}
+/* Bring the footer controls closer and give the workshop signature more weight. */
+body.js-visual-preview #motopress-main#motopress-main .footer .copyright {
+ padding:10px 0 18px!important;
+}
+body.js-visual-preview #motopress-main#motopress-main .footer .footer-brand {
+ font-size:24px;font-weight:700;line-height:1.35;letter-spacing:.015em;
+}
+body.js-visual-preview #motopress-main#motopress-main .footer .footer-preferences {
+ margin-top:6px;
+}
+@media (max-width:767px) {
+ body.js-visual-preview #motopress-main#motopress-main .footer .footer-brand {font-size:21px;}
 }
