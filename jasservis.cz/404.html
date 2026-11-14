@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
   <title>Stránka nebyla nalezena | J&amp;S SERVIS</title>
+  <script>
+    (function () {
+      var match = location.pathname.match(/^\/(en\/|de\/|uk\/|vi\/)?(uvod|autoservis-pro-firmy)\/?$/);
+      if (!match) return;
+      var target = new URL(match[1] || '.', location.origin + '/');
+      if (match[2] === 'autoservis-pro-firmy') target = new URL('autoservis/', target);
+      target.search = location.search;
+      target.hash = location.hash;
+      location.replace(target.href);
+    }());
+  </script>
 </head>
 <body>
   <main>
