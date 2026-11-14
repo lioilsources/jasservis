@@ -266,3 +266,19 @@ html body.js-visual-preview :is(#motopress-main#motopress-main,.mobile-nav-panel
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary #topnav>li>.sub-menu {top:calc(100% + var(--service-menu-offset,0px))!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary #topnav>li.is-open::after {content:"";position:absolute;top:100%;left:0;right:0;width:100%;max-width:none;height:var(--service-menu-offset,0px);z-index:99;}
 }
+
+/* Keep the title on the left; mirror only the scene so the car arrives from the right. */
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8 > .textwidget > a.header-driver-advice {
+ display:grid!important;grid-template-columns:minmax(0,1fr) minmax(132px,1fr)!important;gap:8px!important;
+}
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-driver-advice > .header-action-label {
+ grid-column:1!important;grid-row:1!important;
+}
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-driver-advice > .header-advice-icons {
+ grid-column:2!important;grid-row:1!important;transform:scaleX(-1)!important;
+}
+@media (max-width:1199px) {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8 > .textwidget > a.header-driver-advice {
+  grid-template-columns:minmax(0,1fr) minmax(120px,1fr)!important;
+ }
+}

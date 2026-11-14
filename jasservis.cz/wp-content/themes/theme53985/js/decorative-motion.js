@@ -25,7 +25,8 @@
    tile.style.setProperty('--advice-copy-y',y+'px');
    tile.style.setProperty('--advice-copy-width',(l.width/scaleX)+'px');
    tile.style.setProperty('--advice-copy-height',(l.height/scaleY)+'px');
-   tile.style.setProperty('--advice-pull-dx',((s.right-t.left)/scaleX-33-x)+'px');
+   // The mirrored mechanic stands on the left of the scene, next to the title.
+   tile.style.setProperty('--advice-pull-dx',((s.left-t.left)/scaleX+33-(l.width/scaleX)*.4-x)+'px');
    tile.style.setProperty('--advice-pull-dy',((s.top-t.top)/scaleY+10-y)+'px');
    var font=window.getComputedStyle(label);
    ['fontFamily','fontSize','fontWeight','fontStyle','lineHeight','letterSpacing','textTransform'].forEach(function(property){copy.style[property]=font[property];});
