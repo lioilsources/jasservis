@@ -95,9 +95,22 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .language-mobile[open] > summary .language-choice-arrow {transform:rotate(225deg);}
 }
 
-/* Leave a little air above the brand and between the desktop header rows. */
+/* Keep compact screens readable, with more breathing room for both desktop rows. */
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header > .container > .row > .span12 {
  padding-block:calc(18px + env(safe-area-inset-top,0px)) 14px;row-gap:14px;
+}
+@media (min-width:1200px) {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header > .container > .row > .span12 {
+  padding-block:calc(28px + env(safe-area-inset-top,0px)) 24px;row-gap:24px;
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary:not(.desktop-menu-collapsed):not(.desktop-menu-measuring) #topnav > li > :is(a,.reviews-toggle) {
+  min-height:80px;padding-block:12px!important;
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8 > .textwidget > a.header-driver-advice,
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8 > .textwidget .header-service-actions > a,
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .reviews-toggle {
+  min-height:80px;
+ }
 }
 
 /* Narrow zoomed windows use the same complete branding row as portrait phones. */
@@ -157,7 +170,7 @@ body.home.js-visual-preview #motopress-main#motopress-main .professional-home__p
 body.home.js-visual-preview #motopress-main#motopress-main .professional-home__photo>img {display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
 body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-caption {box-sizing:border-box;grid-template-columns:minmax(0,1fr) 16px;gap:8px;min-height:70px;margin-top:10px;padding:12px;
  background:var(--header-action-surface);border:1px solid #ffffff30;border-radius:6px;transition:background-color .2s ease;}
-body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card h3 {color:#fff!important;grid-column:1;margin:0;font-size:18px!important;line-height:1.35!important;hyphens:none;overflow-wrap:normal;word-break:normal;text-wrap:balance;}
+body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card :is(h2,h3) {color:#fff!important;grid-column:1;margin:0;padding:0;text-align:center!important;font-family:var(--js-font,Ubuntu,sans-serif);font-weight:700;font-style:normal;letter-spacing:normal;text-transform:none;font-size:18px!important;line-height:1.35!important;hyphens:none;overflow-wrap:normal;word-break:normal;text-wrap:balance;}
 body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-caption>.professional-home__card-arrow {color:#ff4d4f!important;display:block;grid-column:2;width:14px;height:14px;}
 /* Caption tiles share the menu surface; only their arrows use red. */
 body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-arrow::before {background:currentColor!important;}
@@ -173,7 +186,7 @@ body.home.js-visual-preview #motopress-main#motopress-main .professional-home__c
  body.home.js-visual-preview #motopress-main#motopress-main .professional-home__services>h2 {margin:8px 0 14px!important;font-size:23px!important;}
  body.home.js-visual-preview #motopress-main#motopress-main .professional-home__grid {gap:12px;}
  body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-caption {grid-template-columns:minmax(0,1fr) 16px;gap:8px;min-height:70px;padding:10px 8px;}
- body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card h3 {font-size:16px!important;hyphens:auto;overflow-wrap:anywhere;}
+ body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card :is(h2,h3) {font-size:16px!important;hyphens:auto;overflow-wrap:anywhere;}
  body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-caption>.professional-home__card-arrow {display:block;}
 }
 @media (max-width:359px) {
