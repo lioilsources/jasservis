@@ -1,0 +1,124 @@
+/* Owner's page review: continuous content, restrained tiles and large photographs. */
+body.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .service-related {
+  margin:14px 0 18px!important;padding:0!important;
+}
+body.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .service-related>.article_header {
+  margin:0 0 6px!important;padding:0!important;
+}
+body.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .service-related>ul {gap:2px!important;}
+body.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .service-related a {min-height:44px;padding-block:4px;}
+body.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main #service-next-steps {
+  min-height:0;margin:22px 0 0!important;padding:0!important;
+}
+body.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main #service-next-steps>.article_header {
+  margin:0 0 12px!important;padding:0!important;
+}
+/* Brand service panels match the dark diagnostic panels in their closed state. */
+body.brand-service-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .content-holder .vw-accordion>summary {
+  box-sizing:border-box;background:#252d34!important;background-image:none!important;
+  color:#fff!important;border:1px solid var(--brand-orange)!important;
+  border-radius:4px;box-shadow:none!important;text-shadow:none!important;
+}
+body.brand-service-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .content-holder .vw-accordion>summary :is(h2,h3,strong,span) {color:inherit!important;}
+body.brand-service-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .content-holder .vw-accordion>summary:is(:hover,:focus-visible) {
+  background:#303a43!important;color:#fff!important;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .content-holder .title-section {
+  margin:0 0 8px;padding:22px 0 14px;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .content-holder #content {padding-top:4px;padding-bottom:0;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .content-holder {padding-bottom:8px!important;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .content-holder .mpce-post-div {margin-bottom:0;padding-bottom:0;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .content-holder :is(.article_header,.product-detail h2) {
+  margin:24px 0 12px;padding:0;text-align:left;text-transform:none!important;
+  font-size:clamp(22px,1.8vw,28px);line-height:1.35;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .content-holder :is(p,li) {line-height:1.65;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .content-holder p {margin-bottom:16px;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-flow-intro {
+  display:flow-root!important;min-height:0;margin:0 0 8px!important;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-flow-intro>.review-flow-photo {
+  display:block;box-sizing:border-box;float:right!important;width:49%!important;
+  min-width:0;margin:0 0 18px clamp(24px,3vw,44px)!important;padding:0!important;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-flow-intro>.review-flow-copy {display:contents!important;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-flow-intro .motopress-text-obj {display:contents;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-flow-intro>.review-flow-photo .motopress-image-obj {margin:0;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-flow-intro .service-pricelist-link {margin:18px 0 6px;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main :is([data-media-id="kompletni-diagnostika-vaseho-vozu-photo-01"],[data-media-id="serizeni-svetlometu-photo-01"]) {max-width:none!important;width:100%;height:auto;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-flow-photo:has([data-media-id="kompletni-diagnostika-vaseho-vozu-photo-01"]),
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-flow-photo:has([data-media-id="serizeni-svetlometu-photo-01"]) {width:58%!important;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .diagnostika-uvod {
+  display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(24px,3vw,44px);
+  align-items:center;margin-bottom:24px;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .diagnostika-uvod>figure {width:100%;max-width:none;margin:0;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .diagnostika-uvod img {display:block;width:100%;height:auto;}
+/* Rotate the complete source, without recreating any socket or engraving. */
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-locking-tools {width:100%;max-width:760px;margin:14px auto 24px;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-locking-tools__frame {
+  position:relative;aspect-ratio:1.45;overflow:hidden;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-locking-tools__frame>img {
+  position:absolute;left:50%;top:50%;width:64.38%!important;max-width:none!important;height:auto!important;
+  transform:translate(-50%,-50%) rotate(-90deg);margin:0!important;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-locking-tools figcaption {
+  padding:8px 0!important;font-size:15px!important;line-height:1.5!important;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .geometry-details {
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px 36px;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .geometry-details>.review-content-section {min-width:0;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .geometry-details>.review-content-section:is(:first-child,:last-child) {grid-column:1/-1;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .geometry-details h2 {margin-top:0;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-geometry-measurement {display:flow-root;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-geometry-measurement .geometry-measurement {
+  float:right;width:48%;max-width:none;margin:0 0 16px 32px;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .geometry-measurement figcaption {padding:8px!important;font-size:15px!important;}
+/* Lokring belongs to the same dark page surface as the other AC sections. */
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .lokring-service {
+  box-sizing:border-box;background:transparent!important;color:#f5f7f9!important;
+  margin:26px 0;padding:0!important;border:0!important;box-shadow:none!important;
+}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .lokring-service :is(h2,h3,p,strong,figcaption) {color:#f5f7f9!important;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .lokring-service :is(figure,.lokring-image-link,figcaption) {background:transparent!important;box-shadow:none!important;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .lokring-gallery {gap:24px;}
+body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .lokring-gallery img {display:block;width:100%;height:auto;}
+@media(max-width:1023px) {
+  body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-flow-intro {display:flex!important;flex-direction:column;gap:18px;}
+  body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-flow-intro>.review-flow-copy {display:block!important;order:0;}
+  body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-flow-intro>.review-flow-photo {order:1;float:none!important;width:100%!important;max-width:860px;margin:0 auto!important;}
+  body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .diagnostika-uvod,
+  body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .geometry-details {grid-template-columns:minmax(0,1fr);}
+  body.owner-review-page.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .review-geometry-measurement .geometry-measurement {float:none;width:100%;max-width:860px;margin:16px auto;}
+}
+
+/* One outlined action style on every page and in every language. */
+html body.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .content-holder :is(
+ .tlacitko-akce,.home-booking-call,.service-pricelist-link a,
+ .advice-index__cards a,.advice-index__brands a,.advice-index__brands button,
+ .wl-brand-tile,.driver-article-links a,.hero-expertise-links a,
+ details>summary,#portfolio-grid .caption .btn,.professional-home__card-caption
+) {
+ box-sizing:border-box;background:#252d34!important;background-image:none!important;
+ color:#fff!important;border:1px solid var(--brand-orange)!important;border-radius:4px;
+ box-shadow:none!important;text-shadow:none!important;font-weight:600;
+}
+html body.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .content-holder :is(
+ .tlacitko-akce,.home-booking-call,.service-pricelist-link a,
+ .advice-index__cards a,.advice-index__brands a,.advice-index__brands button,
+ .wl-brand-tile,.driver-article-links a,.hero-expertise-links a,
+ details>summary,#portfolio-grid .caption .btn,.professional-home__card-caption
+):is(:hover,:focus-visible) {
+ background:#303a43!important;color:#fff!important;border-color:var(--brand-orange)!important;
+}
+html body.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .content-holder .tlacitko-akce {
+ display:inline-flex;align-items:center;justify-content:center;max-width:100%;min-height:48px;
+ padding:12px 20px;line-height:1.4;text-align:center;text-decoration:none;
+}
+html body.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .content-holder .tlacitko-akce:focus-visible {
+ outline:3px solid var(--brand-orange)!important;outline-offset:4px;
+}
