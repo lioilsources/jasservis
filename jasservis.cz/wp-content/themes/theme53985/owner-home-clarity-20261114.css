@@ -35,8 +35,8 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
 }
 @media (min-width:1200px) {
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header > .container > .row > .span12 {
-  grid-template-columns:180px minmax(260px,2fr) minmax(240px,1.4fr) minmax(104px,.65fr) 104px;
-  grid-template-areas:"brand contacts advice reviews language" "trust navigation navigation navigation language";
+  grid-template-columns:180px minmax(240px,1.4fr) minmax(104px,.65fr) minmax(320px,2fr) 104px;
+  grid-template-areas:"brand navigation navigation navigation language" "trust advice reviews contacts language";
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8 > .textwidget > .header-service-actions {
   gap:clamp(8px,1vw,20px)!important;border:0!important;border-radius:0;background:transparent!important;box-shadow:none!important;
@@ -218,7 +218,7 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .logo_h>img {display:block!important;width:100%!important;max-width:180px!important;height:auto!important;}
 }
 
-/* Reviews share the upper action row; the price list ends the lower row. */
+/* Reviews share the lower action row; primary navigation sits beside the brand. */
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot[hidden] {display:none!important;}
 @media (min-width:1200px) {
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot {grid-area:reviews;position:relative;display:flex;align-self:stretch;min-width:0;margin:0;padding:0;list-style:none;z-index:110;}
@@ -226,7 +226,7 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .reviews-toggle {box-sizing:border-box;display:flex;align-items:center;justify-content:center;width:100%;min-width:0;min-height:76px;margin:0;padding:10px;border:1px solid #ffffff30;border-radius:6px;background:var(--header-action-surface)!important;color:#fff!important;font:600 16px/1.3 var(--js-font,Ubuntu,sans-serif);text-transform:none;text-align:center;white-space:normal;overflow-wrap:anywhere;box-shadow:none;text-shadow:none;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .reviews-toggle::after {display:none!important;content:none!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .reviews-toggle:is(:hover,:focus-visible) {background:var(--header-action-hover)!important;border-image-source:var(--tile-corner-image)!important;border-image-slice:10!important;border-image-width:10px!important;}
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .sub-menu {position:absolute;top:calc(100% + 6px);right:0;left:auto;display:block;box-sizing:border-box;width:280px;max-width:calc(100vw - 32px);max-height:var(--menu-available,360px);margin:0;padding:6px;border:1px solid #ffffff30;border-radius:6px;background:#242323;overflow:auto;opacity:1;visibility:visible;transform:translateX(var(--dropdown-shift-x,0px));z-index:1200;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .sub-menu {position:absolute;top:calc(100% + 6px);right:0;left:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;box-sizing:border-box;width:560px;max-width:calc(100vw - 32px);max-height:var(--menu-available,360px);margin:0;padding:6px;border:1px solid #ffffff30;border-radius:6px;background:#242323;overflow:auto;opacity:1;visibility:visible;transform:translateX(var(--dropdown-shift-x,0px));z-index:1200;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot [hidden] {display:none!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .sub-menu li {display:block;float:none;margin:0;padding:0;list-style:none;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .sub-menu a {display:flex;align-items:center;box-sizing:border-box;min-height:48px;padding:10px 12px;border:0;border-radius:4px;color:#fff;background:transparent;font:600 16px/1.4 var(--js-font,Ubuntu,sans-serif);text-transform:none;white-space:normal;overflow-wrap:anywhere;text-decoration:none;}
@@ -235,4 +235,34 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
 #sermi {scroll-margin-top:20px;}
 @media (min-width:768px) and (max-width:1199px) {
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-trust-badges {justify-content:center!important;}
+}
+
+/* Equal review cards keep both providers equally prominent, including fallbacks. */
+html body.js-visual-preview :is(#motopress-main#motopress-main,.mobile-nav-panel) #menu-item-recenze .sub-menu.js-review-ratings {padding:10px;}
+html body.js-visual-preview :is(#motopress-main#motopress-main,.mobile-nav-panel) #menu-item-recenze .sub-menu.js-review-ratings>li {display:flex!important;min-width:0;margin:0!important;padding:0!important;border:0!important;background:transparent!important;}
+html body.js-visual-preview :is(#motopress-main#motopress-main,.mobile-nav-panel) #menu-item-recenze .sub-menu .reviews-source-card {
+ display:grid!important;grid-template-rows:auto 1fr auto;align-items:stretch!important;gap:10px!important;box-sizing:border-box;width:100%;min-width:0;min-height:184px;padding:12px!important;
+ border:1px solid #ffffff30!important;border-radius:6px!important;background:var(--header-action-surface)!important;color:#fff!important;
+ font:600 16px/1.4 var(--js-font,Ubuntu,sans-serif)!important;text-align:left!important;white-space:normal!important;text-transform:none!important;text-decoration:none!important;
+}
+html body.js-visual-preview :is(#motopress-main#motopress-main,.mobile-nav-panel) #menu-item-recenze .reviews-source-card:is(:hover,:focus-visible) {background:var(--header-action-hover)!important;outline:2px solid var(--brand-orange)!important;outline-offset:-2px;}
+html body.js-visual-preview :is(#motopress-main#motopress-main,.mobile-nav-panel) #menu-item-recenze .reviews-rating-label {display:block;font-size:16px;font-weight:700;}
+html body.js-visual-preview :is(#motopress-main#motopress-main,.mobile-nav-panel) #menu-item-recenze .reviews-source-preview {
+ display:flex;align-items:center;justify-content:center;box-sizing:border-box;min-width:0;min-height:84px;padding:8px;border-radius:4px;background:#f5f7f9;color:#252d34;
+}
+html body.js-visual-preview :is(#motopress-main#motopress-main,.mobile-nav-panel) #menu-item-recenze .reviews-source-fallback {font:400 14px/1.4 var(--js-font,Ubuntu,sans-serif);text-align:center;}
+html body.js-visual-preview :is(#motopress-main#motopress-main,.mobile-nav-panel) #menu-item-recenze .reviews-source-action {display:block;font-size:14px;font-weight:600;}
+html body.js-visual-preview :is(#motopress-main#motopress-main,.mobile-nav-panel) #menu-item-recenze .reviews-source-action::after {content:" ↗";color:var(--brand-orange);}
+html body.js-visual-preview :is(#motopress-main#motopress-main,.mobile-nav-panel) #menu-item-recenze .reviews-source-preview .reviews-rating-badge {width:100%;max-width:249px;height:auto;}
+html body.js-visual-preview :is(#motopress-main#motopress-main,.mobile-nav-panel) #menu-item-recenze .reviews-source-preview .google-review-rating {width:100%;padding:0;background:transparent;font-weight:400;}
+html body.js-visual-preview :is(#motopress-main#motopress-main,.mobile-nav-panel) #menu-item-recenze .reviews-source-card [hidden] {display:none!important;}
+@media (max-width:1199px) {
+ html body.js-visual-preview :is(#motopress-main#motopress-main,.mobile-nav-panel) #menu-item-recenze .sub-menu.js-review-ratings {display:grid!important;grid-template-columns:minmax(0,1fr);gap:10px;width:100%!important;max-width:100%!important;box-sizing:border-box;}
+ html body.js-visual-preview :is(#motopress-main#motopress-main,.mobile-nav-panel) #menu-item-recenze .sub-menu.js-review-ratings[hidden] {display:none!important;}
+}
+
+/* Primary dropdowns open below both header rows and leave the lower controls visible. */
+@media (min-width:1200px) {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary #topnav>li>.sub-menu {top:calc(100% + var(--service-menu-offset,0px))!important;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary #topnav>li.is-open::after {content:"";position:absolute;top:100%;left:0;right:0;width:100%;max-width:none;height:var(--service-menu-offset,0px);z-index:99;}
 }

@@ -7,44 +7,68 @@
     var link = panel && panel.querySelector('a[href*="firmy.cz/detail/12996882-"]');
     if (!link || !button || panel.querySelector('.reviews-rating-badge')) return;
     panel.classList.add('js-review-ratings');
-    link.classList.add('reviews-rating-link');
+    var lang = (document.documentElement.lang || 'cs').split('-')[0];
+    var words = {
+        cs:['Hodnocení Google','recenzí','Aktualizováno','Hodnocení zákazníků na Googlu','Hodnocení zákazníků na Firmy.cz','Zobrazit recenze'],
+        en:['Google rating','reviews','Updated','Customer reviews on Google','Customer reviews on Firmy.cz','View reviews'],
+        de:['Google-Bewertung','Rezensionen','Aktualisiert','Kundenbewertungen auf Google','Kundenbewertungen auf Firmy.cz','Bewertungen ansehen'],
+        uk:['Рейтинг Google','відгуків','Оновлено','Відгуки клієнтів у Google','Відгуки клієнтів на Firmy.cz','Переглянути відгуки'],
+        vi:['Đánh giá Google','lượt đánh giá','Cập nhật','Đánh giá của khách hàng trên Google','Đánh giá của khách hàng trên Firmy.cz','Xem đánh giá']
+    }[lang];
+    if (!words) words = ['Google rating','reviews','Updated','Customer reviews on Google','Customer reviews on Firmy.cz','View reviews'];
+    function prepareCard(target, fallbackText) {
+        target.classList.add('reviews-rating-link', 'reviews-source-card');
+        var label = document.createElement('span');
+        label.className = 'reviews-rating-label';
+        label.textContent = target.textContent.trim();
+        var preview = document.createElement('span');
+        preview.className = 'reviews-source-preview';
+        var fallback = document.createElement('span');
+        fallback.className = 'reviews-source-fallback';
+        fallback.textContent = fallbackText;
+        preview.appendChild(fallback);
+        var action = document.createElement('span');
+        action.className = 'reviews-source-action';
+        action.textContent = words[5];
+        target.textContent = '';
+        target.appendChild(label);
+        target.appendChild(preview);
+        target.appendChild(action);
+        return {preview:preview, fallback:fallback};
+    }
+    var firmyCard = prepareCard(link, words[4]);
     link.href = 'https://www.firmy.cz/detail/12996882-j-s-servis-jaroslav-mateju-statenice.html#hodnoceni';
-    var label = document.createElement('span');
-    label.className = 'reviews-rating-label';
-    label.textContent = link.textContent.trim();
-    link.textContent = '';
-    link.appendChild(label);
     var badge = document.createElement('img');
     badge.className = 'reviews-rating-badge';
     badge.alt = 'J&S servis – Jaroslav Matějů na Firmy.cz';
     badge.width = 249;
     badge.height = 56;
     badge.decoding = 'async';
+    badge.hidden = true;
     badge.addEventListener('load', function () {
+        badge.hidden = false;
+        firmyCard.fallback.hidden = true;
         link.setAttribute('data-rating-state', 'ready');
     });
     badge.addEventListener('error', function () {
         badge.hidden = true;
+        firmyCard.fallback.hidden = false;
         link.setAttribute('data-rating-state', 'unavailable');
     });
-    link.appendChild(badge);
+    firmyCard.preview.appendChild(badge);
     var google = panel.querySelector('a[href*="g.page/"]');
+    var googleCard = google && prepareCard(google, words[3]);
     var googleLoaded = false;
     var googleBusy = false;
     var googleTime = 0;
-    var googleHref = google && google.href;
-    var lang = (document.documentElement.lang || 'cs').split('-')[0];
-    var words = {
-        cs:['Hodnocení Google','recenzí','Aktualizováno'],
-        en:['Google rating','reviews','Updated'],
-        de:['Google-Bewertung','Rezensionen','Aktualisiert'],
-        uk:['Рейтинг Google','відгуків','Оновлено'],
-        vi:['Đánh giá Google','lượt đánh giá','Cập nhật']
-    }[lang] || ['Google rating','reviews','Updated'];
+    // The established profile URL opens existing reviews even when the summary is unavailable.
+    var googleHref = 'https://maps.google.com/maps?cid=14113684367371719453';
+    if (google) google.href = googleHref;
     function loadGoogle() {
         if (googleLoaded && Date.now() - googleTime > 172800000) {
             var expired = google.querySelector('.google-review-rating');
             if (expired) expired.remove();
+            googleCard.fallback.hidden = false;
             google.href = googleHref;
             googleLoaded = false;
         }
@@ -89,9 +113,9 @@
                 updated.className = 'google-review-updated';
                 updated.textContent = words[2] + ' ' + new Intl.DateTimeFormat(lang,{dateStyle:'short',timeZone:'Europe/Prague'}).format(new Date(data.updatedAt));
                 card.appendChild(updated);
-                google.classList.add('reviews-rating-link');
                 google.href = data.profileUrl;
-                google.appendChild(card);
+                googleCard.preview.appendChild(card);
+                googleCard.fallback.hidden = true;
                 google.setAttribute('data-rating-state','ready');
                 googleTime = Date.parse(data.updatedAt);
                 googleLoaded = true;

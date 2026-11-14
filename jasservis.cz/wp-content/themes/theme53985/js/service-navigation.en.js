@@ -4,7 +4,15 @@
     if (!menu) return;
     var nav = menu.parentElement;
 
-    // Keep keyboard order aligned with the shared action strip; move existing nodes only.
+    // Match the desktop reading order to the primary navigation above the action row.
+    // Restore the original compact order without duplicating any links or controls.
+    var primaryRow = document.querySelector('.header .header_block_2');
+    var actionRow = document.querySelector('.header .header_block_1');
+    var primaryRowHome = document.createComment('original primary header position');
+    if (primaryRow && actionRow && primaryRow.parentNode === actionRow.parentNode) {
+        primaryRow.parentNode.insertBefore(primaryRowHome, primaryRow);
+    }
+    // Keep keyboard order aligned within the shared action strip.
     var contactStrip = document.querySelector('.header #text-8 > .textwidget');
     if (contactStrip) {
         var serviceActions = contactStrip.querySelector('.header-service-actions');
@@ -144,10 +152,12 @@
             control.item.style.removeProperty('--service-menu-offset');
             return;
         }
-        if (control.panel.classList.contains('service-groups')) {
+        if (control.item.parentNode === menu) {
             var header = nav.closest('header');
             var offset = header ? Math.max(0, header.getBoundingClientRect().bottom - control.item.getBoundingClientRect().bottom) : 0;
             control.item.style.setProperty('--service-menu-offset', Math.ceil(offset) + 'px');
+        } else {
+            control.item.style.removeProperty('--service-menu-offset');
         }
         var viewport = window.visualViewport;
         var bottom = viewport ? viewport.offsetTop + viewport.height : window.innerHeight;
@@ -263,7 +273,7 @@
             if (first) first.focus();
         });
     });
-    // Keep the original Reviews control beside Advice on desktop; restore it
+    // Keep the original Reviews control beside Advice in the lower desktop row; restore it
     // to the same menu before the compact dialog opens. Never copy controls.
     var reviewsItem = document.getElementById('menu-item-recenze');
     var reviewsHome = document.createComment('reviews original menu position');
@@ -284,6 +294,12 @@
             else target.insertBefore(reviewsItem, reviewsHome.nextSibling);
         }
         reviewsSlot.hidden = !desktop;
+        var stripOrder = desktop ? [adviceLink, reviewsSlot, serviceActions] : [serviceActions, adviceLink, reviewsSlot];
+        stripOrder.forEach(function (part, index) {
+            if (part && part.parentNode === contactStrip && contactStrip.children[index] !== part) {
+                contactStrip.insertBefore(part, contactStrip.children[index] || null);
+            }
+        });
     }
     function revealSermiInfo() {
         if (window.location.hash !== '#sermi') return;
@@ -404,11 +420,20 @@
         // Firefox can update media queries during layout; keep this pass consistent.
         // Keep the logo above paired trust badges in both orientations.
         var isShortLandscape = shortLandscape.matches && !document.querySelector('.header-trust-badges');
-        arrangeReviews();
         arrangingHeader = true;
         var focused = document.activeElement;
         var moved = false;
+        arrangeReviews();
         var wasHidden = menu.hidden;
+        if (primaryRowHome.parentNode) {
+            if (!compact.matches && primaryRow.nextElementSibling !== actionRow) {
+                actionRow.parentNode.insertBefore(primaryRow, actionRow);
+                moved = true;
+            } else if (compact.matches && primaryRow.previousElementSibling !== actionRow) {
+                primaryRowHome.parentNode.insertBefore(primaryRow, primaryRowHome.nextSibling);
+                moved = true;
+            }
+        }
         if (isShortLandscape && !landscapeRow) {
             landscapeRow = document.createElement('div');
             landscapeRow.className = 'landscape-nav-row';
@@ -505,7 +530,7 @@
         fitLanguagePanel();
         var restoreFocus = moved || document.activeElement !== focused;
         if (restoreFocus && focused === toggle && !isCompactMenu()) menu.querySelector('a, button').focus({preventScroll: true});
-        else if (restoreFocus && focused && focused.isConnected && (focused === toggle || logo.contains(focused) || (languageSwitch && languageSwitch.contains(focused) && languageSummary.getClientRects().length) || (!menu.hidden && menu.contains(focused)))) focused.focus({preventScroll: true});
+        else if (restoreFocus && focused && focused.isConnected && (focused === toggle || logo.contains(focused) || (contactStrip && contactStrip.contains(focused)) || (languageSwitch && languageSwitch.contains(focused) && languageSummary.getClientRects().length) || (!menu.hidden && menu.contains(focused)))) focused.focus({preventScroll: true});
         arrangingHeader = false;
     }
     // Resize/media-query events can precede the final CSS layout (including
