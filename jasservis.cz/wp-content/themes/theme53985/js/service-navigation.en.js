@@ -432,7 +432,8 @@
                 var desktopFits;
                 if (window.getComputedStyle(menu).display === 'grid') {
                     // Equal desktop cells can wrap labels; measure their rendered targets.
-                    desktopFits = menu.getBoundingClientRect().width <= nav.clientWidth + 1 &&
+                    desktopFits = menu.scrollWidth <= menu.clientWidth + 1 &&
+                        menu.getBoundingClientRect().width <= nav.clientWidth + 1 &&
                         Array.prototype.every.call(menu.children, function (item) {
                             var itemBox = item.getBoundingClientRect();
                             return Array.prototype.every.call(item.children, function (target) {
