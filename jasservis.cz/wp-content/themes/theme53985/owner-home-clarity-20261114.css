@@ -51,7 +51,7 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
   background:var(--header-action-hover)!important;color:#fff!important;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-trust-badges {
-  box-sizing:border-box;justify-content:space-between;gap:16px;padding-inline:0;
+  box-sizing:border-box;justify-content:center;gap:0;padding-inline:0;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-trust-badges > .header-trust-badge {
   flex:0 0 70px!important;width:70px!important;height:70px!important;
@@ -104,8 +104,8 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
 @media (max-width:767px) and (min-height:501px), (max-width:479px) {
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) > .container > .row > .span12 {
   display:grid!important;
-  grid-template-columns:56px minmax(0,1fr) 56px!important;
-  grid-template-areas:"firm brand gvo" "contacts contacts contacts" "advice advice advice" "navigation navigation navigation"!important;
+  grid-template-columns:minmax(0,1fr)!important;
+  grid-template-areas:"brand" "firm" "contacts" "advice" "navigation"!important;
   align-items:center;gap:10px!important;padding-block:calc(18px + env(safe-area-inset-top,0px)) 12px!important;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) :is(.header_block_1,.header_block_1 > .language-contact-row,.header_block_2,.header_block_2 > .row),
@@ -120,12 +120,11 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_2 .logo .logo_h {grid-column:1!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_2 .logo img {width:100%!important;max-width:170px!important;height:auto!important;}
- /* Let both badges occupy equal outer cells around the centred brand. */
+ /* Keep the single award centred below the brand. */
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .language-contact-row > .span6:first-child,
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .language-contact-row > .span6:first-child div {display:contents!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .language-contact-row > .span6:first-child .clear {display:none!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .top-firma-badge {grid-area:firm;justify-self:center;align-self:center;position:relative!important;left:0;}
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header-gvo-badge {grid-area:gvo;justify-self:center;align-self:center;position:relative!important;left:0;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_2 > .row > .span3 {justify-self:stretch;text-align:center;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header-trust-badges > .header-trust-badge {flex-basis:48px!important;width:48px!important;height:48px!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header-service-actions {grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)!important;min-height:48px!important;height:auto!important;gap:0!important;}
@@ -184,17 +183,10 @@ body.home.js-visual-preview #motopress-main#motopress-main .professional-home__c
  body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-caption {min-height:52px;padding:10px;}
 }
 
-/* Keep a single visible GVO link in each responsive layout. */
-html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary #topnav>.menu-item-gvo {display:none!important;}
-/* The native mobile dialog is attached to body, outside the header. */
-html body.js-visual-preview #mobile-nav-panel #topnav>.menu-item-gvo {display:none!important;}
-html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-gvo-badge {box-sizing:border-box;background:var(--header-action-surface)!important;border:1px solid #ffffff30!important;border-radius:6px!important;box-shadow:none!important;}
-html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-gvo-menu-link>img {display:block;width:52px!important;height:52px!important;max-width:52px!important;object-fit:contain;}
-@media (min-width:1200px) {
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-gvo-badge {display:none!important;}
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary:not(.desktop-menu-collapsed) #topnav>.menu-item-gvo {display:flex!important;}
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.nav__primary.desktop-menu-collapsed) .header-gvo-badge {display:flex!important;}
-}
+/* GVO stays in the navigation on every viewport, including the mobile dialog. */
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary #topnav>.menu-item-gvo,
+html body.js-visual-preview #mobile-nav-panel #topnav>.menu-item-gvo {display:flex!important;}
+html body.js-visual-preview :is(.header,#mobile-nav-panel) .header-gvo-menu-link>img {display:block;width:52px!important;height:52px!important;max-width:52px!important;object-fit:contain;}
 /* Remove only the lower-page separators; control outlines stay visible. */
 body.home.js-visual-preview #motopress-main#motopress-main .home-slogan,
 body.js-visual-preview #motopress-main#motopress-main .footer .copyright {border:0!important;}
@@ -240,12 +232,7 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .sub-menu a {display:flex;align-items:center;box-sizing:border-box;min-height:48px;padding:10px 12px;border:0;border-radius:4px;color:#fff;background:transparent;font:600 16px/1.4 var(--js-font,Ubuntu,sans-serif);text-transform:none;white-space:normal;overflow-wrap:anywhere;text-decoration:none;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .sub-menu a:is(:hover,:focus-visible) {background:#fff;color:#161616;outline:2px solid var(--brand-orange);outline-offset:-2px;}
 }
-/* An information link, visibly distinct from a certification mark. */
-html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-sermi-info {display:flex;flex-direction:column;align-items:center;justify-content:center;box-sizing:border-box;border:1px solid #ffffff70!important;border-radius:50%!important;background:transparent!important;color:#fff!important;text-align:center;text-decoration:none!important;box-shadow:none!important;line-height:1.2;}
-html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-sermi-info strong {font:700 13px/1.2 var(--js-font,Ubuntu,sans-serif);letter-spacing:.4px;}
-html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-sermi-info small {display:block;margin-top:4px;color:var(--brand-orange);font:500 10px/1.2 var(--js-font,Ubuntu,sans-serif);}
-html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-sermi-info:is(:hover,:focus-visible) {border-color:#fff!important;outline:2px solid var(--brand-orange)!important;outline-offset:3px!important;}
-@media (max-width:1199px) {
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-sermi-info {display:none!important;}
-}
 #sermi {scroll-margin-top:20px;}
+@media (min-width:768px) and (max-width:1199px) {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-trust-badges {justify-content:center!important;}
+}
