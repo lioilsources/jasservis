@@ -186,6 +186,8 @@ body.home.js-visual-preview #motopress-main#motopress-main .professional-home__c
 
 /* Keep a single visible GVO link in each responsive layout. */
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary #topnav>.menu-item-gvo {display:none!important;}
+/* The native mobile dialog is attached to body, outside the header. */
+html body.js-visual-preview #mobile-nav-panel #topnav>.menu-item-gvo {display:none!important;}
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-gvo-badge {box-sizing:border-box;background:var(--header-action-surface)!important;border:1px solid #ffffff30!important;border-radius:6px!important;box-shadow:none!important;}
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-gvo-menu-link>img {display:block;width:52px!important;height:52px!important;max-width:52px!important;object-fit:contain;}
 @media (min-width:1200px) {
@@ -212,7 +214,8 @@ html body.js-visual-preview #motopress-main#motopress-main#motopress-main#motopr
  .service-related a,.service-pricelist-link a,.autoservis-gvo-inline,
  #portfolio-grid .caption .btn,#cookie-settings,.cookie-embed-placeholder button,.warning-lights button
 ):is(:hover,:focus-visible),
-html body.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .professional-home__card>a:is(:hover,:focus-visible) .professional-home__card-caption {
+html body.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .professional-home__card>a:is(:hover,:focus-visible) .professional-home__card-caption,
+html body.js-visual-preview #mobile-nav-panel #topnav>li>:is(a,button):is(:hover,:focus-visible) {
  border-image-source:var(--tile-corner-image)!important;border-image-slice:10!important;border-image-width:10px!important;border-image-outset:0!important;border-image-repeat:stretch!important;outline:none!important;
 }
 /* Keep the shared brand column identical on home and inner pages. */
