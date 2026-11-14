@@ -156,9 +156,14 @@ body.home.js-visual-preview #motopress-main#motopress-main .home-expertise span 
 body.home.js-visual-preview #motopress-main#motopress-main .professional-home {margin:0!important;}
 body.home.js-visual-preview #motopress-main#motopress-main .professional-home__photo {aspect-ratio:600/380;background:#252d34;overflow:hidden;}
 body.home.js-visual-preview #motopress-main#motopress-main .professional-home__photo>img {display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
-body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-caption {grid-template-columns:minmax(0,1fr) 16px;gap:8px;min-height:62px;padding:10px 8px;}
+body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-caption {box-sizing:border-box;grid-template-columns:minmax(0,1fr) 16px;gap:8px;min-height:70px;margin-top:10px;padding:12px;
+ background:var(--header-action-surface);border:1px solid #ffffff30;border-radius:6px;transition:background-color .2s ease;}
 body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card h3 {color:#fff!important;grid-column:1;margin:0;font-size:18px!important;line-height:1.35!important;hyphens:none;overflow-wrap:normal;word-break:normal;text-wrap:balance;}
-body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-caption>.professional-home__card-arrow {color:var(--brand-orange)!important;display:block;grid-column:2;width:14px;height:14px;}
+body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-caption>.professional-home__card-arrow {color:#ff4d4f!important;display:block;grid-column:2;width:14px;height:14px;}
+/* Caption tiles share the menu surface; only their arrows use red. */
+body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-arrow::before {background:currentColor!important;}
+body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-arrow::after {border-color:currentColor!important;}
+body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card>a:is(:hover,:focus-visible) .professional-home__card-caption {background:var(--header-action-hover);}
 @media (min-width:1200px) {
  body.home.js-visual-preview #motopress-main#motopress-main .oil-hero.oil-hero--intro {grid-template-columns:minmax(0,.65fr) minmax(0,1.35fr);}
 }
@@ -168,9 +173,9 @@ body.home.js-visual-preview #motopress-main#motopress-main .professional-home__c
  body.home.js-visual-preview #motopress-main#motopress-main .home-expertise {margin:0 0 12px;font-size:15px;line-height:1.4;}
  body.home.js-visual-preview #motopress-main#motopress-main .professional-home__services>h2 {margin:8px 0 14px!important;font-size:23px!important;}
  body.home.js-visual-preview #motopress-main#motopress-main .professional-home__grid {gap:12px;}
- body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-caption {grid-template-columns:minmax(0,1fr);gap:0;min-height:62px;padding:10px 4px;}
- body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card h3 {font-size:16px!important;}
- body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-caption>.professional-home__card-arrow {display:none;}
+ body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-caption {grid-template-columns:minmax(0,1fr) 16px;gap:8px;min-height:70px;padding:10px 8px;}
+ body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card h3 {font-size:16px!important;hyphens:auto;overflow-wrap:anywhere;}
+ body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-caption>.professional-home__card-arrow {display:block;}
 }
 @media (max-width:359px) {
  body.home.js-visual-preview #motopress-main#motopress-main .professional-home__grid {grid-template-columns:minmax(0,1fr);}
@@ -178,3 +183,11 @@ body.home.js-visual-preview #motopress-main#motopress-main .professional-home__c
  body.home.js-visual-preview #motopress-main#motopress-main .professional-home__photo {aspect-ratio:2.25;}
  body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-caption {min-height:52px;padding:10px;}
 }
+
+/* Shared contact details and directions keep the footer controls understated. */
+body.js-visual-preview #motopress-main#motopress-main .site-service-contact :is(.site-service-contact__label,.site-service-contact__phone) {color:#fff!important;}
+body.js-visual-preview #motopress-main#motopress-main .footer .mapa-navigace>.tlacitko-akce {
+ background:transparent!important;background-image:none!important;color:#fff!important;border:1px solid var(--brand-orange)!important;border-radius:4px;
+ padding:8px 12px;font-family:var(--js-font,Ubuntu,sans-serif);font-size:14px;font-weight:600;line-height:1.5;box-shadow:none!important;text-shadow:none!important;
+}
+body.js-visual-preview #motopress-main#motopress-main .footer .mapa-navigace>.tlacitko-akce:is(:hover,:focus-visible) {background:#333!important;color:#fff!important;}
