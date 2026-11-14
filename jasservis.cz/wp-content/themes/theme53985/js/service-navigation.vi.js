@@ -50,10 +50,10 @@
     var toggle = document.createElement('button');
     toggle.type = 'button';
     toggle.className = 'navigation-toggle';
-    toggle.innerHTML = '<span class="mobile-menu-icon" aria-hidden="true"><span></span><span></span><span></span></span><span class="mobile-menu-label">MENU</span>';
+    toggle.innerHTML = '<span class="mobile-menu-icon" aria-hidden="true"><span></span><span></span><span></span></span><span class="mobile-menu-label">Menu</span>';
     function syncToggle() {
         toggle.setAttribute('aria-expanded', String(!menu.hidden));
-        toggle.querySelector('.mobile-menu-label').textContent = menu.hidden ? 'MENU' : 'ĐÓNG MENU';
+        toggle.querySelector('.mobile-menu-label').textContent = menu.hidden ? 'Menu' : 'Đóng menu';
     }
     toggle.setAttribute('aria-controls', menu.id);
     nav.insertBefore(toggle, menu);

@@ -578,8 +578,8 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header .heade
 /* Expanded service copy needs its own light surface under the dark heading. */
 body.js-visual-preview #motopress-main .brand-service-content .vw-accordion__body {background:#f5f7f9!important;color:#252d34!important;border-radius:0 0 3px 3px;}
 body.js-visual-preview #motopress-main .brand-service-content .vw-accordion__body :is(p,li,ul,ol,strong,b,em,h3,h4) {color:#252d34!important;}
-body.js-visual-preview #motopress-main .brand-service-content .vw-accordion__body a {color:#854000!important;text-decoration:underline;text-underline-offset:3px;}
-body.js-visual-preview #motopress-main .brand-service-content .vw-accordion__body a:focus-visible {outline:3px solid #854000;outline-offset:3px;}
+body.js-visual-preview #motopress-main .brand-service-content .vw-accordion__body a {color:#252d34!important;text-decoration:underline;text-decoration-color:var(--brand-orange);text-underline-offset:3px;}
+body.js-visual-preview #motopress-main .brand-service-content .vw-accordion__body a:focus-visible {outline:3px solid var(--brand-orange);outline-offset:3px;}
 body.js-visual-preview #motopress-main .brand-service-content .js-brand-models__grid li {background:#e6ebef!important;color:#252d34!important;}
 
 /* The map gutters share the page surface, without legacy grey extensions. */
