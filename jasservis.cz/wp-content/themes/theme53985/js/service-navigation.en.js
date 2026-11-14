@@ -4,7 +4,15 @@
     if (!menu) return;
     var nav = menu.parentElement;
 
-    // Keep keyboard order aligned with the shared action strip; move existing nodes only.
+    // Match the desktop reading order to the primary navigation above the action row.
+    // Restore the original compact order without duplicating any links or controls.
+    var primaryRow = document.querySelector('.header .header_block_2');
+    var actionRow = document.querySelector('.header .header_block_1');
+    var primaryRowHome = document.createComment('original primary header position');
+    if (primaryRow && actionRow && primaryRow.parentNode === actionRow.parentNode) {
+        primaryRow.parentNode.insertBefore(primaryRowHome, primaryRow);
+    }
+    // Keep keyboard order aligned within the shared action strip.
     var contactStrip = document.querySelector('.header #text-8 > .textwidget');
     if (contactStrip) {
         var serviceActions = contactStrip.querySelector('.header-service-actions');
@@ -144,10 +152,12 @@
             control.item.style.removeProperty('--service-menu-offset');
             return;
         }
-        if (control.panel.classList.contains('service-groups')) {
+        if (control.item.parentNode === menu) {
             var header = nav.closest('header');
             var offset = header ? Math.max(0, header.getBoundingClientRect().bottom - control.item.getBoundingClientRect().bottom) : 0;
             control.item.style.setProperty('--service-menu-offset', Math.ceil(offset) + 'px');
+        } else {
+            control.item.style.removeProperty('--service-menu-offset');
         }
         var viewport = window.visualViewport;
         var bottom = viewport ? viewport.offsetTop + viewport.height : window.innerHeight;
@@ -263,6 +273,43 @@
             if (first) first.focus();
         });
     });
+    // Keep the original Reviews control beside Advice in the lower desktop row; restore it
+    // to the same menu before the compact dialog opens. Never copy controls.
+    var reviewsItem = document.getElementById('menu-item-recenze');
+    var reviewsHome = document.createComment('reviews original menu position');
+    var reviewsSlot = document.createElement('ul');
+    reviewsSlot.className = 'header-reviews-slot';
+    reviewsSlot.hidden = true;
+    if (reviewsItem && contactStrip) {
+        reviewsItem.parentNode.insertBefore(reviewsHome, reviewsItem);
+        contactStrip.appendChild(reviewsSlot);
+    }
+    function arrangeReviews() {
+        if (!reviewsItem || !contactStrip) return;
+        var desktop = !compact.matches;
+        var target = desktop ? reviewsSlot : reviewsHome.parentNode;
+        if (reviewsItem.parentNode !== target) {
+            controls.forEach(function (control) { if (control.item === reviewsItem) close(control); });
+            if (desktop) reviewsSlot.appendChild(reviewsItem);
+            else target.insertBefore(reviewsItem, reviewsHome.nextSibling);
+        }
+        reviewsSlot.hidden = !desktop;
+        var stripOrder = desktop ? [adviceLink, reviewsSlot, serviceActions] : [serviceActions, adviceLink, reviewsSlot];
+        stripOrder.forEach(function (part, index) {
+            if (part && part.parentNode === contactStrip && contactStrip.children[index] !== part) {
+                contactStrip.insertBefore(part, contactStrip.children[index] || null);
+            }
+        });
+    }
+    function revealSermiInfo() {
+        if (window.location.hash !== '#sermi') return;
+        var section = document.getElementById('sermi');
+        if (!section || section.tagName !== 'DETAILS') return;
+        section.open = true;
+        window.requestAnimationFrame(function () { section.scrollIntoView({block:'start'}); });
+    }
+    window.addEventListener('hashchange', revealSermiInfo);
+    revealSermiInfo();
     function reset() {
         if (mobilePanel.open) return;
         controls.forEach(close);
@@ -276,7 +323,7 @@
         if (menu.hidden) controls.forEach(close);
     });
     document.addEventListener('click', function (event) {
-        if (!nav.contains(event.target) && !mobilePanel.contains(event.target)) {
+        if (!nav.contains(event.target) && !mobilePanel.contains(event.target) && !reviewsSlot.contains(event.target)) {
             controls.forEach(close);
             if (isCompactMenu()) {
                 menu.hidden = true;
@@ -288,7 +335,7 @@
         if (arrangingHeader) return;
         if (!nav.contains(event.relatedTarget)) controls.forEach(close);
     });
-    nav.addEventListener('keydown', function (event) {
+    nav.closest('header').addEventListener('keydown', function (event) {
         if (event.key !== 'Escape') return;
         var open = controls.filter(function (control) { return !control.panel.hidden; })[0];
         if (open) { close(open); open.button.focus(); }
@@ -376,7 +423,17 @@
         arrangingHeader = true;
         var focused = document.activeElement;
         var moved = false;
+        arrangeReviews();
         var wasHidden = menu.hidden;
+        if (primaryRowHome.parentNode) {
+            if (!compact.matches && primaryRow.nextElementSibling !== actionRow) {
+                actionRow.parentNode.insertBefore(primaryRow, actionRow);
+                moved = true;
+            } else if (compact.matches && primaryRow.previousElementSibling !== actionRow) {
+                primaryRowHome.parentNode.insertBefore(primaryRow, primaryRowHome.nextSibling);
+                moved = true;
+            }
+        }
         if (isShortLandscape && !landscapeRow) {
             landscapeRow = document.createElement('div');
             landscapeRow.className = 'landscape-nav-row';
@@ -473,7 +530,7 @@
         fitLanguagePanel();
         var restoreFocus = moved || document.activeElement !== focused;
         if (restoreFocus && focused === toggle && !isCompactMenu()) menu.querySelector('a, button').focus({preventScroll: true});
-        else if (restoreFocus && focused && focused.isConnected && (focused === toggle || logo.contains(focused) || (languageSwitch && languageSwitch.contains(focused) && languageSummary.getClientRects().length) || (!menu.hidden && menu.contains(focused)))) focused.focus({preventScroll: true});
+        else if (restoreFocus && focused && focused.isConnected && (focused === toggle || logo.contains(focused) || (contactStrip && contactStrip.contains(focused)) || (languageSwitch && languageSwitch.contains(focused) && languageSummary.getClientRects().length) || (!menu.hidden && menu.contains(focused)))) focused.focus({preventScroll: true});
         arrangingHeader = false;
     }
     // Resize/media-query events can precede the final CSS layout (including
