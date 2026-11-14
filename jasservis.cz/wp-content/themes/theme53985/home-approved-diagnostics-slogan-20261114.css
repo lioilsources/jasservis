@@ -1,0 +1,33 @@
+/* Keep the approved diagnostics composition visible, including the probe. */
+body.home.js-visual-preview #motopress-main#motopress-main .professional-home__photo--diagnostics {
+  aspect-ratio:600/380;
+}
+body.home.js-visual-preview #motopress-main#motopress-main .professional-home__photo--diagnostics>img {
+  object-fit:contain;
+}
+
+/* A larger two-part closing message in the established white and orange. */
+body.home.js-visual-preview #motopress-main #post-203 .home-slogan {
+  padding-block:clamp(28px,3.5vw,44px);
+}
+body.home.js-visual-preview #motopress-main #post-203 .home-slogan .home-slogan__title {
+  max-width:1100px;
+  margin-inline:auto;
+  font-size:clamp(30px,3.4vw,48px);
+  font-weight:700;
+  line-height:1.24;
+  letter-spacing:-.015em;
+  text-wrap:balance;
+}
+body.home.js-visual-preview #motopress-main #post-203 .home-slogan__title>.home-slogan__accent {
+  margin-top:8px;
+  color:var(--brand-orange);
+  font-size:1.06em;
+  text-shadow:0 2px 14px #ff6b1a26;
+}
+@media(max-width:767px) {
+  body.home.js-visual-preview #motopress-main #post-203 .home-slogan .home-slogan__title {
+    font-size:clamp(26px,6.8vw,32px);
+    line-height:1.28;
+  }
+}
