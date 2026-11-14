@@ -1031,7 +1031,5 @@ html body.js-visual-preview :is(.advice-quick,.warning-system-links)>a:is(:hover
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8>.textwidget>a.header-driver-advice,
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8>.textwidget .header-service-actions>a,
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .reviews-toggle{min-height:64px!important;}
- body.home.js-visual-preview #motopress-main#motopress-main .oil-hero.oil-hero--intro{grid-template-columns:minmax(0,.36fr) minmax(0,1.64fr);}
- body.home.js-visual-preview #motopress-main#motopress-main .oil-hero.oil-hero--intro .oil-hero__scene{height:clamp(300px,30vw,420px);}
 }
 @media(max-width:767px){.home-booking{flex-direction:column;margin:12px 0 18px;}.home-booking>p{text-align:center;}.home-booking__button{max-width:100%;}}
