@@ -51,13 +51,13 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
   background:var(--header-action-hover)!important;color:#fff!important;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-trust-badges {
-  box-sizing:border-box;justify-content:center;gap:16px;padding-inline:0;
+  box-sizing:border-box;justify-content:flex-start;gap:16px;padding-inline:0;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-trust-badges > .header-trust-badge {
   flex:0 0 70px!important;width:70px!important;height:70px!important;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary:not(.desktop-menu-collapsed):not(.desktop-menu-measuring) #topnav {
-  width:100%;grid-template-columns:repeat(6,minmax(0,1fr))!important;justify-content:stretch;column-gap:clamp(8px,1vw,20px);
+  width:100%;grid-template-columns:repeat(7,minmax(0,1fr))!important;justify-content:stretch;column-gap:clamp(8px,1vw,20px);
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary:not(.desktop-menu-collapsed):not(.desktop-menu-measuring) #topnav > li {
   display:flex;align-items:stretch;min-width:0;margin:0;padding:0!important;
@@ -184,10 +184,41 @@ body.home.js-visual-preview #motopress-main#motopress-main .professional-home__c
  body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-caption {min-height:52px;padding:10px;}
 }
 
-/* Shared contact details and directions keep the footer controls understated. */
-body.js-visual-preview #motopress-main#motopress-main .site-service-contact :is(.site-service-contact__label,.site-service-contact__phone) {color:#fff!important;}
-body.js-visual-preview #motopress-main#motopress-main .footer .mapa-navigace>.tlacitko-akce {
- background:transparent!important;background-image:none!important;color:#fff!important;border:1px solid var(--brand-orange)!important;border-radius:4px;
- padding:8px 12px;font-family:var(--js-font,Ubuntu,sans-serif);font-size:14px;font-weight:600;line-height:1.5;box-shadow:none!important;text-shadow:none!important;
+/* Keep a single visible GVO link in each responsive layout. */
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary #topnav>.menu-item-gvo {display:none!important;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-gvo-badge {box-sizing:border-box;background:var(--header-action-surface)!important;border:1px solid #ffffff30!important;border-radius:6px!important;box-shadow:none!important;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-gvo-menu-link>img {display:block;width:52px!important;height:52px!important;max-width:52px!important;object-fit:contain;}
+@media (min-width:1200px) {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-gvo-badge {display:none!important;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary:not(.desktop-menu-collapsed) #topnav>.menu-item-gvo {display:flex!important;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.nav__primary.desktop-menu-collapsed) .header-gvo-badge {display:flex!important;}
 }
-body.js-visual-preview #motopress-main#motopress-main .footer .mapa-navigace>.tlacitko-akce:is(:hover,:focus-visible) {background:#333!important;color:#fff!important;}
+/* Remove only the lower-page separators; control outlines stay visible. */
+body.home.js-visual-preview #motopress-main#motopress-main .home-slogan,
+body.js-visual-preview #motopress-main#motopress-main .footer .copyright {border:0!important;}
+/* The Firmy.cz award stays a standalone circular logo. */
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .top-firma-badge {background:transparent!important;border:0!important;border-radius:50%!important;box-shadow:none!important;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .top-firma-badge:not(:focus-visible) {outline:none!important;}
+@media (min-width:1200px) {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary {box-sizing:border-box;width:calc(100% + 110px)!important;max-width:none!important;margin-left:-110px!important;}
+}
+/* The same four white corners mark every tile on hover and keyboard focus. */
+:root {--tile-corner-image:url("data:image/svg+xml,%3Csvg%20width%3D%2230%22%20height%3D%2230%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2030%2030%22%20fill%3D%22none%22%3E%3Crect%20x%3D%22.5%22%20y%3D%22.5%22%20width%3D%2229%22%20height%3D%2229%22%20rx%3D%226%22%20stroke%3D%22white%22%20stroke-opacity%3D%22.2%22%2F%3E%3Cpath%20d%3D%22M9%201H7A6%206%200%200%200%201%207V9M21%201H23A6%206%200%200%201%2029%207V9M1%2021V23A6%206%200%200%200%207%2029H9M21%2029H23A6%206%200%200%200%2029%2023V21%22%20stroke%3D%22%23161616%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20d%3D%22M9%201H7A6%206%200%200%200%201%207V9M21%201H23A6%206%200%200%201%2029%207V9M1%2021V23A6%206%200%200%200%207%2029H9M21%2029H23A6%206%200%200%200%2029%2023V21%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E");}
+html body.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main :is(
+ #topnav>li>:is(a,button),.header-service-actions>a,.header-driver-advice,
+ .header-gvo-badge,.navigation-toggle,.language-mobile>summary,
+ .advice-index__cards a,.advice-index__brands :is(a,button),.wl-brand-tile,
+ .content-holder details>summary,.driver-article-links a,.hero-expertise-links a,
+ .service-related a,.service-pricelist-link a,.autoservis-gvo-inline,
+ #portfolio-grid .caption .btn,#cookie-settings,.cookie-embed-placeholder button,.warning-lights button
+):is(:hover,:focus-visible),
+html body.js-visual-preview #motopress-main#motopress-main#motopress-main#motopress-main .professional-home__card>a:is(:hover,:focus-visible) .professional-home__card-caption {
+ border-image-source:var(--tile-corner-image)!important;border-image-slice:10!important;border-image-width:10px!important;border-image-outset:0!important;border-image-repeat:stretch!important;outline:none!important;
+}
+/* Keep the shared brand column identical on home and inner pages. */
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .logo_tagline {display:none!important;}
+@media (min-width:1200px) {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .logo {display:block!important;float:none!important;box-sizing:border-box;width:180px!important;max-width:100%!important;margin:0!important;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .logo_h {display:block!important;width:100%!important;max-width:none!important;margin:0!important;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .logo_h>img {display:block!important;width:100%!important;max-width:180px!important;height:auto!important;}
+}
