@@ -35,8 +35,8 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
 }
 @media (min-width:1200px) {
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header > .container > .row > .span12 {
-  grid-template-columns:180px minmax(0,1fr) minmax(0,1fr) 104px;
-  grid-template-areas:"brand contacts advice language" "trust navigation navigation language";
+  grid-template-columns:180px minmax(260px,2fr) minmax(240px,1.4fr) minmax(104px,.65fr) 104px;
+  grid-template-areas:"brand contacts advice reviews language" "trust navigation navigation navigation language";
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8 > .textwidget > .header-service-actions {
   gap:clamp(8px,1vw,20px)!important;border:0!important;border-radius:0;background:transparent!important;box-shadow:none!important;
@@ -51,13 +51,13 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
   background:var(--header-action-hover)!important;color:#fff!important;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-trust-badges {
-  box-sizing:border-box;justify-content:flex-start;gap:16px;padding-inline:0;
+  box-sizing:border-box;justify-content:space-between;gap:16px;padding-inline:0;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-trust-badges > .header-trust-badge {
   flex:0 0 70px!important;width:70px!important;height:70px!important;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary:not(.desktop-menu-collapsed):not(.desktop-menu-measuring) #topnav {
-  width:100%;grid-template-columns:repeat(7,minmax(0,1fr))!important;justify-content:stretch;column-gap:clamp(8px,1vw,20px);
+  width:100%;grid-template-columns:repeat(6,minmax(0,1fr))!important;justify-content:stretch;column-gap:clamp(8px,1vw,20px);
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary:not(.desktop-menu-collapsed):not(.desktop-menu-measuring) #topnav > li {
   display:flex;align-items:stretch;min-width:0;margin:0;padding:0!important;
@@ -202,7 +202,7 @@ body.js-visual-preview #motopress-main#motopress-main .footer .copyright {border
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .top-firma-badge {background:transparent!important;border:0!important;border-radius:50%!important;box-shadow:none!important;}
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .top-firma-badge:not(:focus-visible) {outline:none!important;}
 @media (min-width:1200px) {
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary {box-sizing:border-box;width:calc(100% + 110px)!important;max-width:none!important;margin-left:-110px!important;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary {box-sizing:border-box;width:100%!important;max-width:none!important;margin-left:0!important;}
 }
 /* The same four white corners mark every tile on hover and keyboard focus. */
 :root {--tile-corner-image:url("data:image/svg+xml,%3Csvg%20width%3D%2230%22%20height%3D%2230%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2030%2030%22%20fill%3D%22none%22%3E%3Crect%20x%3D%22.5%22%20y%3D%22.5%22%20width%3D%2229%22%20height%3D%2229%22%20rx%3D%226%22%20stroke%3D%22white%22%20stroke-opacity%3D%22.2%22%2F%3E%3Cpath%20d%3D%22M9%201H7A6%206%200%200%200%201%207V9M21%201H23A6%206%200%200%201%2029%207V9M1%2021V23A6%206%200%200%200%207%2029H9M21%2029H23A6%206%200%200%200%2029%2023V21%22%20stroke%3D%22%23161616%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20d%3D%22M9%201H7A6%206%200%200%200%201%207V9M21%201H23A6%206%200%200%201%2029%207V9M1%2021V23A6%206%200%200%200%207%2029H9M21%2029H23A6%206%200%200%200%2029%2023V21%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E");}
@@ -225,3 +225,27 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .logo_h {display:block!important;width:100%!important;max-width:none!important;margin:0!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .logo_h>img {display:block!important;width:100%!important;max-width:180px!important;height:auto!important;}
 }
+
+/* Reviews share the upper action row; the price list ends the lower row. */
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot[hidden] {display:none!important;}
+@media (min-width:1200px) {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot {grid-area:reviews;position:relative;display:flex;align-self:stretch;min-width:0;margin:0;padding:0;list-style:none;z-index:110;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot>li {position:relative;display:flex;flex:1;min-width:0;margin:0;padding:0;list-style:none;background:transparent;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .reviews-toggle {box-sizing:border-box;display:flex;align-items:center;justify-content:center;width:100%;min-width:0;min-height:76px;margin:0;padding:10px;border:1px solid #ffffff30;border-radius:6px;background:var(--header-action-surface)!important;color:#fff!important;font:600 16px/1.3 var(--js-font,Ubuntu,sans-serif);text-transform:none;text-align:center;white-space:normal;overflow-wrap:anywhere;box-shadow:none;text-shadow:none;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .reviews-toggle::after {display:none!important;content:none!important;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .reviews-toggle:is(:hover,:focus-visible) {background:var(--header-action-hover)!important;border-image-source:var(--tile-corner-image)!important;border-image-slice:10!important;border-image-width:10px!important;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .sub-menu {position:absolute;top:calc(100% + 6px);right:0;left:auto;display:block;box-sizing:border-box;width:280px;max-width:calc(100vw - 32px);max-height:var(--menu-available,360px);margin:0;padding:6px;border:1px solid #ffffff30;border-radius:6px;background:#242323;overflow:auto;opacity:1;visibility:visible;transform:translateX(var(--dropdown-shift-x,0px));z-index:1200;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot [hidden] {display:none!important;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .sub-menu li {display:block;float:none;margin:0;padding:0;list-style:none;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .sub-menu a {display:flex;align-items:center;box-sizing:border-box;min-height:48px;padding:10px 12px;border:0;border-radius:4px;color:#fff;background:transparent;font:600 16px/1.4 var(--js-font,Ubuntu,sans-serif);text-transform:none;white-space:normal;overflow-wrap:anywhere;text-decoration:none;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .sub-menu a:is(:hover,:focus-visible) {background:#fff;color:#161616;outline:2px solid var(--brand-orange);outline-offset:-2px;}
+}
+/* An information link, visibly distinct from a certification mark. */
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-sermi-info {display:flex;flex-direction:column;align-items:center;justify-content:center;box-sizing:border-box;border:1px solid #ffffff70!important;border-radius:50%!important;background:transparent!important;color:#fff!important;text-align:center;text-decoration:none!important;box-shadow:none!important;line-height:1.2;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-sermi-info strong {font:700 13px/1.2 var(--js-font,Ubuntu,sans-serif);letter-spacing:.4px;}
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-sermi-info small {display:block;margin-top:4px;color:var(--brand-orange);font:500 10px/1.2 var(--js-font,Ubuntu,sans-serif);}
+html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-sermi-info:is(:hover,:focus-visible) {border-color:#fff!important;outline:2px solid var(--brand-orange)!important;outline-offset:3px!important;}
+@media (max-width:1199px) {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-sermi-info {display:none!important;}
+}
+#sermi {scroll-margin-top:20px;}

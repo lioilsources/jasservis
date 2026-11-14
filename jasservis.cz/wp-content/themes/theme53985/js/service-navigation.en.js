@@ -263,6 +263,37 @@
             if (first) first.focus();
         });
     });
+    // Keep the original Reviews control beside Advice on desktop; restore it
+    // to the same menu before the compact dialog opens. Never copy controls.
+    var reviewsItem = document.getElementById('menu-item-recenze');
+    var reviewsHome = document.createComment('reviews original menu position');
+    var reviewsSlot = document.createElement('ul');
+    reviewsSlot.className = 'header-reviews-slot';
+    reviewsSlot.hidden = true;
+    if (reviewsItem && contactStrip) {
+        reviewsItem.parentNode.insertBefore(reviewsHome, reviewsItem);
+        contactStrip.appendChild(reviewsSlot);
+    }
+    function arrangeReviews() {
+        if (!reviewsItem || !contactStrip) return;
+        var desktop = !compact.matches;
+        var target = desktop ? reviewsSlot : reviewsHome.parentNode;
+        if (reviewsItem.parentNode !== target) {
+            controls.forEach(function (control) { if (control.item === reviewsItem) close(control); });
+            if (desktop) reviewsSlot.appendChild(reviewsItem);
+            else target.insertBefore(reviewsItem, reviewsHome.nextSibling);
+        }
+        reviewsSlot.hidden = !desktop;
+    }
+    function revealSermiInfo() {
+        if (window.location.hash !== '#sermi') return;
+        var section = document.getElementById('sermi');
+        if (!section || section.tagName !== 'DETAILS') return;
+        section.open = true;
+        window.requestAnimationFrame(function () { section.scrollIntoView({block:'start'}); });
+    }
+    window.addEventListener('hashchange', revealSermiInfo);
+    revealSermiInfo();
     function reset() {
         if (mobilePanel.open) return;
         controls.forEach(close);
@@ -276,7 +307,7 @@
         if (menu.hidden) controls.forEach(close);
     });
     document.addEventListener('click', function (event) {
-        if (!nav.contains(event.target) && !mobilePanel.contains(event.target)) {
+        if (!nav.contains(event.target) && !mobilePanel.contains(event.target) && !reviewsSlot.contains(event.target)) {
             controls.forEach(close);
             if (isCompactMenu()) {
                 menu.hidden = true;
@@ -288,7 +319,7 @@
         if (arrangingHeader) return;
         if (!nav.contains(event.relatedTarget)) controls.forEach(close);
     });
-    nav.addEventListener('keydown', function (event) {
+    nav.closest('header').addEventListener('keydown', function (event) {
         if (event.key !== 'Escape') return;
         var open = controls.filter(function (control) { return !control.panel.hidden; })[0];
         if (open) { close(open); open.button.focus(); }
@@ -373,6 +404,7 @@
         // Firefox can update media queries during layout; keep this pass consistent.
         // Keep the logo above paired trust badges in both orientations.
         var isShortLandscape = shortLandscape.matches && !document.querySelector('.header-trust-badges');
+        arrangeReviews();
         arrangingHeader = true;
         var focused = document.activeElement;
         var moved = false;
