@@ -51,7 +51,10 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
   background:var(--header-action-hover)!important;color:#fff!important;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-trust-badges {
-  box-sizing:border-box;justify-content:flex-start;gap:32px;padding-inline-start:3px;
+  box-sizing:border-box;justify-content:center;gap:16px;padding-inline:0;
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-trust-badges > .header-trust-badge {
+  flex:0 0 70px!important;width:70px!important;height:70px!important;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary:not(.desktop-menu-collapsed):not(.desktop-menu-measuring) #topnav {
   width:100%;grid-template-columns:repeat(6,minmax(0,1fr))!important;justify-content:stretch;column-gap:clamp(8px,1vw,20px);
