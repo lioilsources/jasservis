@@ -16,3 +16,11 @@ html[lang="de"] .desktop-nav,html[lang="uk"] .desktop-nav,html[lang="vi"] .deskt
 @media(min-width:1121px) and (max-width:1250px){html[lang="uk"] .desktop-nav,html[lang="vi"] .desktop-nav{display:none}html[lang="uk"] .menu-toggle,html[lang="vi"] .menu-toggle{display:flex}html[lang="uk"] .header-tools,html[lang="vi"] .header-tools{margin-left:auto}}
 @media(max-width:640px){html:not([lang="cs"]) .hero h1{font-size:32px;line-height:1.15;overflow-wrap:anywhere}html:not([lang="cs"]) .hero-actions{gap:16px;flex-wrap:wrap}html:not([lang="cs"]) .hero-actions .button{min-width:120px}html:not([lang="cs"]) .preview-note{letter-spacing:.4px;font-size:8px}}
 .card-title{min-width:0}.card-title h3{min-width:0;overflow-wrap:anywhere;hyphens:auto}
+
+/* Owner refinement: readable navigation, original round workshop logo and larger GVO. */
+@media(min-width:1121px){.desktop-nav{flex:1;justify-content:space-between;margin-left:12px;font-size:14px;gap:16px}.header-inner{gap:20px}}
+@media(min-width:1121px) and (max-width:1250px){.desktop-nav{font-size:13px;gap:12px;margin-left:4px}.header-inner{gap:16px}}
+img.image-mark{display:block;width:62px;height:62px;object-fit:contain;border:0;border-radius:50%;flex-shrink:0}
+.gvo-feature img{width:76px;height:76px;flex-shrink:0}
+@media(max-width:1120px){img.image-mark{width:54px;height:54px}}
+@media(max-width:640px){img.image-mark{width:52px;height:52px}.gvo-feature img{width:58px;height:58px}.gvo-action{margin-left:70px}}
