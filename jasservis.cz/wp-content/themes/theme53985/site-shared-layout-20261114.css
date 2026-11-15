@@ -1006,3 +1006,27 @@ body.js-visual-preview #motopress-main#motopress-main .footer .footer-preference
 @media (max-width:767px) {
  body.js-visual-preview #motopress-main#motopress-main .footer .footer-brand {font-size:21px;}
 }
+
+/* Both desktop rows use the same six columns and gaps. */
+@media (min-width:1200px) {
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header > .container > .row > .span12 {
+  grid-template-columns:180px repeat(6,minmax(0,1fr)) 104px;
+  grid-template-areas:"brand navigation navigation navigation navigation navigation navigation language" "trust advice advice reviews contacts contacts contacts language";
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary:not(.desktop-menu-collapsed):not(.desktop-menu-measuring) #topnav {
+  column-gap:clamp(16px,1.5vw,28px);
+ }
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_2 > .row > .span3 {
+  align-self:end;
+ }
+ body.home.js-visual-preview #motopress-main#motopress-main .oil-hero.oil-hero--intro .oil-hero__inner {
+  align-self:start;margin-top:-12px;
+ }
+}
+/* Raise the closing message and signature by reducing the empty space. */
+body.home.js-visual-preview #motopress-main#motopress-main #post-203 .home-slogan {
+ padding-top:12px;
+}
+body.home.js-visual-preview #motopress-main#motopress-main .footer .copyright {
+ padding-top:2px!important;
+}
