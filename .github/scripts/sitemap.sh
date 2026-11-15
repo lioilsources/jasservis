@@ -19,6 +19,8 @@ src="${3:-$site}"
   echo '<?xml version="1.0" encoding="UTF-8"?>'
   echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
   find "$site" -name index.html -not -path "$site/wp-*" | LC_ALL=C sort | while read -r file; do
+    # Redirect aliases are not canonical content pages.
+    if grep -qi 'http-equiv="refresh"' "$file"; then continue; fi
     path="${file#"$site"/}"
     path="${path%index.html}"
     lastmod="$(git log -1 --format=%cs -- "$src/${path}index.html" 2>/dev/null || true)"
