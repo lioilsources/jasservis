@@ -1,6 +1,3 @@
-/* Canonical shared layout: details, page layout and header. Edit this file. */
-
-/* owner-details-20261112.css */
 /* Owner's review: comfortable branding, wide directions and aligned services. */
 @media(min-width:1200px){
  html body.js-visual-preview #motopress-main#motopress-main .header.header .header_block_2>.row{grid-template-columns:minmax(180px,1fr) minmax(0,6fr);min-height:104px;padding:0 0 14px;box-sizing:border-box;}
@@ -271,7 +268,6 @@ body.js-visual-preview .header .has-advice-pull .header-advice-mechanic-head{tra
  body.js-visual-preview .header .has-advice-pull .header-advice-mechanic-thought>path{animation:js-advice-pull-dots var(--advice-cycle) ease-in-out infinite;}
 }
 
-/* owner-layout-20261113.css */
 /* Continuous service layouts after moving all prices to the price list. */
 :root,body.js-visual-preview {--brand-orange:#FF6B1A;}
 /* Advice links and brand choices share the restrained cookie-settings style. */
@@ -673,7 +669,6 @@ body.js-visual-preview #motopress-main#motopress-main #post-2272 :is(.cupra-mobi
  -webkit-mask-composite:source-in;mask-composite:intersect;mask-mode:alpha;
 }
 
-/* owner-home-clarity-20261114.css */
 /* Shared brand accents use the mobile orange on every viewport. */
 :root {--brand-orange:#FF6B1A;--header-action-surface:#242323;--header-action-hover:#33302e;}
 /* Both tiles share one surface and the same pointer/keyboard treatment. */
@@ -730,7 +725,7 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
   box-sizing:border-box;justify-content:center;gap:0;padding-inline:0;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-trust-badges > .header-trust-badge {
-  flex:0 0 60px!important;width:60px!important;height:60px!important;
+  flex:0 0 78px!important;width:78px!important;height:78px!important;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary:not(.desktop-menu-collapsed):not(.desktop-menu-measuring) #topnav {
   width:100%;grid-template-columns:repeat(6,minmax(0,1fr))!important;justify-content:stretch;column-gap:clamp(8px,1vw,20px);
@@ -773,11 +768,11 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
 
 /* Keep compact screens readable, with more breathing room for both desktop rows. */
 html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header > .container > .row > .span12 {
- padding-block:calc(12px + env(safe-area-inset-top,0px)) 10px;row-gap:10px;
+ padding-block:calc(18px + env(safe-area-inset-top,0px)) 14px;row-gap:14px;
 }
 @media (min-width:1200px) {
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header > .container > .row > .span12 {
-  padding-block:calc(12px + env(safe-area-inset-top,0px)) 12px;row-gap:12px;
+  padding-block:calc(28px + env(safe-area-inset-top,0px)) 24px;row-gap:24px;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary:not(.desktop-menu-collapsed):not(.desktop-menu-measuring) #topnav > li > :is(a,.reviews-toggle) {
   min-height:80px;padding-block:12px!important;
@@ -785,7 +780,7 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8 > .textwidget > a.header-driver-advice,
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8 > .textwidget .header-service-actions > a,
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .reviews-toggle {
-  min-height:60px;
+  min-height:80px;
  }
 }
 
@@ -795,7 +790,7 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
   display:grid!important;
   grid-template-columns:minmax(0,1fr)!important;
   grid-template-areas:"brand" "firm" "contacts" "advice" "navigation"!important;
-  align-items:center;gap:8px!important;padding-block:calc(12px + env(safe-area-inset-top,0px)) 10px!important;
+  align-items:center;gap:10px!important;padding-block:calc(18px + env(safe-area-inset-top,0px)) 12px!important;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) :is(.header_block_1,.header_block_1 > .language-contact-row,.header_block_2,.header_block_2 > .row),
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .language-contact-row > .span6:nth-child(2),
@@ -805,17 +800,17 @@ html body.js-visual-preview #motopress-main#motopress-main .header.header.header
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_2 > .row > .span3 {display:block!important;grid-area:brand;box-sizing:border-box;width:100%;min-width:0;margin:0;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_2 > .row > .span9 {grid-area:navigation;box-sizing:border-box;width:100%;min-width:0;margin:0;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_2 .logo {
-  --brand-width:100%;grid-template-columns:minmax(0,1fr)!important;width:100%!important;max-width:150px!important;margin:0 auto!important;padding:0!important;gap:0!important;
+  --brand-width:100%;grid-template-columns:minmax(0,1fr)!important;width:100%!important;max-width:170px!important;margin:0 auto!important;padding:0!important;gap:0!important;
  }
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_2 .logo .logo_h {grid-column:1!important;}
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_2 .logo img {width:100%!important;max-width:150px!important;height:auto!important;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_2 .logo img {width:100%!important;max-width:170px!important;height:auto!important;}
  /* Keep the single award centred below the brand. */
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .language-contact-row > .span6:first-child,
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .language-contact-row > .span6:first-child div {display:contents!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .language-contact-row > .span6:first-child .clear {display:none!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .top-firma-badge {grid-area:firm;justify-self:center;align-self:center;position:relative!important;left:0;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_2 > .row > .span3 {justify-self:stretch;text-align:center;}
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header-trust-badges > .header-trust-badge {flex-basis:48px!important;width:48px!important;height:48px!important;}
+ html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header-trust-badges > .header-trust-badge {flex-basis:52px!important;width:52px!important;height:52px!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header-service-actions {grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)!important;min-height:48px!important;height:auto!important;gap:0!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_1 #text-8 > .textwidget > .header-service-actions {grid-area:contacts;margin-top:4px!important;}
  html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header:has(.navigation-toggle) .header_block_1 #text-8 > .textwidget > a.header-driver-advice {grid-area:advice;}
@@ -853,8 +848,7 @@ body.home.js-visual-preview #motopress-main#motopress-main .professional-home__c
 body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card-arrow::after {border-color:currentColor!important;}
 body.home.js-visual-preview #motopress-main#motopress-main .professional-home__card>a:is(:hover,:focus-visible) .professional-home__card-caption {background:var(--header-action-hover);}
 @media (min-width:1200px) {
- body.home.js-visual-preview #motopress-main#motopress-main .oil-hero.oil-hero--intro {grid-template-columns:minmax(0,.5fr) minmax(0,1.5fr);}
- body.home.js-visual-preview #motopress-main#motopress-main .oil-hero.oil-hero--intro .oil-hero__scene {align-self:center;height:clamp(380px,38vw,580px);}
+ body.home.js-visual-preview #motopress-main#motopress-main .oil-hero.oil-hero--intro {grid-template-columns:minmax(0,.65fr) minmax(0,1.35fr);}
 }
 @media (max-width:767px) {
  body.home.js-visual-preview #motopress-main#motopress-main .oil-hero.oil-hero--intro .oil-hero__inner {padding:16px 16px 20px!important;}
@@ -1012,24 +1006,3 @@ body.js-visual-preview #motopress-main#motopress-main .footer .footer-preference
 @media (max-width:767px) {
  body.js-visual-preview #motopress-main#motopress-main .footer .footer-brand {font-size:21px;}
 }
-
-/* Clear entry to the existing telephone/email contact panel. */
-.home-booking{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 18px;margin:12px 0 18px;}
-html body.js-visual-preview .home-booking__button{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:48px;padding:10px 22px;border:2px solid var(--brand-orange);border-radius:6px;background:#242323;color:#fff;font:600 17px/1.35 var(--js-font,Ubuntu,sans-serif);text-decoration:none;}
-html body.js-visual-preview .home-booking__button:is(:hover,:focus-visible){background:#343232;outline:2px solid #fff;outline-offset:3px;}
-.home-booking>p{margin:0;max-width:42ch;font-size:15px;line-height:1.4;color:#e5e5e5;}
-.advice-quick,.warning-system-links{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0 24px;}
-.advice-quick>strong,.warning-system-links>strong{flex-basis:100%;font-size:17px;line-height:1.4;}
-html body.js-visual-preview :is(.advice-quick,.warning-system-links)>a{display:inline-flex;align-items:center;box-sizing:border-box;min-height:44px;padding:9px 14px;border:1px solid var(--brand-orange);border-radius:6px;background:#242323;color:#fff;line-height:1.4;text-decoration:none;}
-html body.js-visual-preview :is(.advice-quick,.warning-system-links)>a:is(:hover,:focus-visible){background:#343232;outline:2px solid #fff;outline-offset:2px;}
-@media(min-width:1200px){
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header>.container>.row>.span12{row-gap:10px;}
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .nav__primary:not(.desktop-menu-collapsed):not(.desktop-menu-measuring) #topnav>li>:is(a,.reviews-toggle){min-height:64px;padding-block:8px!important;}
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_2 .logo,
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_2 .logo .logo_h{width:calc(64px * 356 / 158)!important;}
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_2 .logo .logo_h>img{height:64px!important;}
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8>.textwidget>a.header-driver-advice,
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header_block_1 #text-8>.textwidget .header-service-actions>a,
- html body.js-visual-preview #motopress-main#motopress-main .header.header.header.header .header-reviews-slot .reviews-toggle{min-height:64px!important;}
-}
-@media(max-width:767px){.home-booking{flex-direction:column;margin:12px 0 18px;}.home-booking>p{text-align:center;}.home-booking__button{max-width:100%;}}
