@@ -81,7 +81,7 @@ img.image-mark{display:block;width:62px;height:62px;object-fit:contain;border:0;
 
 /* More breathing room with a slightly larger mobile logo and badges closer to it. */
 @media(max-width:640px){
- .header .wrap.header-inner{width:calc(100% - 28px);min-height:76px;padding-block:8px;grid-template-columns:auto auto auto minmax(0,1fr);column-gap:clamp(8px,2.3vw,13px)}
+ .header .wrap.header-inner{width:calc(100% - 28px);min-height:76px;padding-block:8px;grid-template-columns:repeat(4,auto);justify-content:center;column-gap:clamp(8px,2.3vw,13px)}
  .header-inner>.logo{width:clamp(90px,28.5vw,128px)}
  .header-inner>.header-tools{gap:clamp(8px,2.3vw,12px)}
  .header-tools .menu-toggle{gap:5px}
