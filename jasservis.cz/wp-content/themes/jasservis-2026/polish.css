@@ -38,6 +38,7 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
 .review-source-card:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
 .review-source-name{font-size:18px}
 .review-source-preview{display:flex;align-items:center;width:100%;font-size:14px;line-height:1.6;color:var(--muted)}
+.review-source-card[data-review-source="firmy"] .review-source-preview{flex-direction:column;gap:12px}
 .review-source-fallback{display:block}
 .review-source-preview img{display:block;width:100%;max-width:249px;height:auto;min-height:40px;object-fit:contain}
 .review-source-action{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;margin-top:auto;min-height:34px}

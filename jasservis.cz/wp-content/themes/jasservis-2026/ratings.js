@@ -12,41 +12,69 @@
     vi:['lượt đánh giá','Đã xác minh','Đánh giá hiện tại của J&S SERVIS trên Firmy.cz']
   }[locale] || ['reviews','Verified','J&S SERVIS on Firmy.cz'];
   const googleProfile = 'https://maps.google.com/maps?cid=14113684367371719453';
+  const firmyProfile = 'https://www.firmy.cz/detail/12996882-j-s-servis-jaroslav-mateju-statenice-cerny-vul.html';
   const snapshotUrl = new URL('google-rating-snapshot.json', document.currentScript.src).href;
+  const firmySnapshotUrl = new URL('firmy-rating-snapshot.json', document.currentScript.src).href;
   const maxAge = 48 * 60 * 60 * 1000;
   let loaded = false;
   let expiry;
+  let firmyExpiry;
   let generation = 0;
   function fallback(card) {
     card.querySelector('.review-source-fallback').hidden = false;
     card.querySelector('.review-value')?.remove();
     card.dataset.ratingState = 'unavailable';
   }
-  function validate(data) {
+  function validate(data, source = 'Google', profile = googleProfile) {
     const timestamp = Date.parse(data.updatedAt);
     const age = Date.now() - timestamp;
-    if (data.source !== 'Google' || data.profileUrl !== googleProfile ||
+    if (data.source !== source || data.profileUrl !== profile ||
         typeof data.rating !== 'number' || !Number.isFinite(data.rating) || data.rating < 1 || data.rating > 5 ||
         !Number.isSafeInteger(data.count) || data.count < 1 || !Number.isFinite(age) || age < -300000 || age >= maxAge) {
       throw new Error('Invalid rating');
     }
     return {timestamp, age};
   }
-  async function readRating(url) {
+  async function readRating(url, source = 'Google', profile = googleProfile) {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 8000);
     try {
       const response = await fetch(url, {credentials:'omit', cache:'no-store', signal:controller.signal});
       if (!response.ok) throw new Error('Rating unavailable');
       const data = await response.json();
-      return {data, ...validate(data)};
+      return {data, ...validate(data, source, profile)};
     } finally {
       clearTimeout(timeout);
     }
   }
+  async function loadFirmyCount(card, request) {
+    let latestTimestamp = -Infinity;
+    await Promise.allSettled([firmySnapshotUrl, 'https://jasservis-google-hodnoceni.sleek-bass-5878.chatgpt.site/firmy-rating.json'].map(async url => {
+      const {data, timestamp, age} = await readRating(url, 'Firmy.cz', firmyProfile);
+      if (request !== generation || timestamp < latestTimestamp) return;
+      latestTimestamp = timestamp;
+      const value = document.createElement('span');
+      value.className = 'review-value review-firmy-value';
+      const count = document.createElement('span');
+      count.textContent = new Intl.NumberFormat(locale).format(data.count) + ' ' + words[0];
+      const updated = document.createElement('small');
+      updated.textContent = words[1] + ' ' + new Intl.DateTimeFormat(locale,{dateStyle:'short',timeZone:'Europe/Prague'}).format(new Date(timestamp));
+      value.append(count, updated);
+      card.querySelector('.review-firmy-value')?.remove();
+      card.querySelector('.review-source-preview').append(value);
+      card.dataset.ratingState = 'ready';
+      card.dataset.countSource = url === firmySnapshotUrl ? 'snapshot' : 'live';
+      clearTimeout(firmyExpiry);
+      firmyExpiry = setTimeout(() => {
+        card.querySelector('.review-firmy-value')?.remove();
+        card.dataset.ratingState = 'unavailable';
+      }, Math.max(1,maxAge - age));
+    }));
+  }
   async function load() {
     if (loaded) return;
     loaded = true;
+    const request = ++generation;
     const firmy = cards.find(card => card.dataset.reviewSource === 'firmy');
     if (firmy && !firmy.querySelector('.review-source-preview img')) {
       const badge = document.createElement('img');
@@ -63,10 +91,10 @@
       firmy.querySelector('.review-source-preview').append(badge);
       badge.src = 'https://www.firmy.cz/img-stars/light-12996882.svg';
     }
+    if (firmy) loadFirmyCount(firmy, request);
     const google = cards.find(card => card.dataset.reviewSource === 'google');
     if (!google || !window.fetch) return;
     google.dataset.ratingState = 'loading';
-    const request = ++generation;
     let latestTimestamp = -Infinity;
     let shown = false;
     await Promise.allSettled([snapshotUrl, 'https://jasservis-google-hodnoceni.sleek-bass-5878.chatgpt.site/rating.json'].map(async url => {
@@ -96,7 +124,7 @@
     if (!shown && request === generation) fallback(google);
   }
   load();
-  window.addEventListener('pagehide', () => { clearTimeout(expiry); generation++; });
+  window.addEventListener('pagehide', () => { clearTimeout(expiry); clearTimeout(firmyExpiry); generation++; });
   window.addEventListener('pageshow', event => {
     if (event.persisted) {
       const google = cards.find(card => card.dataset.reviewSource === 'google');
