@@ -66,3 +66,12 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
 @media(max-width:1120px){.hero-image img.image-mark{width:68px;height:68px}}
 @media(max-width:640px){.hero-image img.image-mark{width:72px;height:72px}}
 @media(max-width:380px){.hero-image img.image-mark{width:62px;height:62px}}
+
+/* One readable workshop signature: the round logo and the main message. */
+.hero-image figcaption{padding:12px 14px;gap:16px;background:rgba(8,11,13,.78);border:1px solid rgba(255,107,26,.32);border-radius:7px;box-shadow:0 5px 18px rgba(0,0,0,.2)}
+.hero-image figcaption img.image-mark{outline:1px solid rgba(255,107,26,.65);outline-offset:2px;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+.hero-image figcaption div>span{color:#c5c8cb}
+.hero-image figcaption strong{color:var(--orange);font-size:24px;font-weight:800;line-height:1.18;letter-spacing:-.35px;text-wrap:balance;text-shadow:0 1px 3px #000}
+.hero-image figcaption p{color:#f0f1f2}
+@media(max-width:1120px){.hero-image figcaption{padding:10px 12px;gap:12px}.hero-image figcaption strong{font-size:21px}}
+@media(max-width:640px){.hero-image figcaption{padding:10px;gap:12px}.hero-image figcaption strong{font-size:clamp(18px,4.8vw,22px)}}
