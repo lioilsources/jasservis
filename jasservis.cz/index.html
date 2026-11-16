@@ -28,6 +28,12 @@
  .header-firmy{min-width:36px;min-height:44px}
  .header-firmy img{width:36px;height:39px}
  .header-tools{gap:12px}
+ .header-inner>.header-firmy{position:relative;margin-left:5px;padding-left:12px}
+ .header-inner>.header-firmy:before{content:"";position:absolute;left:0;top:50%;height:38px;transform:translateY(-50%);border-left:1px solid #777}
+ .header-tools .menu-toggle{position:relative;padding-left:12px}
+ .header-tools .menu-toggle:before{content:"";position:absolute;left:0;top:50%;height:38px;transform:translateY(-50%);border-left:1px solid #777}
+ .header-tools .languages{position:relative;padding-left:12px}
+ .header-tools .languages:before{content:"";position:absolute;left:0;top:50%;height:38px;transform:translateY(-50%);border-left:1px solid #777}
  .header-tools .menu-toggle{order:0;gap:7px;white-space:nowrap;min-height:44px}
  .header-tools .languages{order:1}
  .header-tools .languages summary{min-height:44px}
@@ -42,7 +48,9 @@
  .logo{width:92px}
  .header-firmy{min-width:32px}
  .header-firmy img{width:32px;height:35px}
- .header-tools{gap:7px}
+ .header-tools{gap:5px}
+ .header-inner>.header-firmy{margin-left:0;padding-left:7px}
+ .header-tools .menu-toggle,.header-tools .languages{padding-left:7px}
  .menu-toggle{font-size:11px;gap:4px}
  .menu-toggle svg{width:19px}
  .languages{font-size:12px}
