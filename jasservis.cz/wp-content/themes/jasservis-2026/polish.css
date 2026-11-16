@@ -8,11 +8,11 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure>.preview
 main#obsah > #main-content.source-content.unified-page .tyre-disclosure>.preview-disclosure-body>p{max-width:76ch!important}
 main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:focus-visible{outline:2px solid var(--orange);outline-offset:7px;border-radius:2px}
 .review-source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:22px}
-.review-source-card{display:flex;flex-direction:column;align-items:flex-start;gap:14px;min-width:0;padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:4px}
+.review-source-card{display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-width:0;padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:4px}
 .review-source-card:hover{border-color:var(--orange);color:var(--text)}
 .review-source-card:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
 .review-source-name{font-size:18px}
-.review-source-preview{display:flex;align-items:center;min-height:76px;width:100%;font-size:14px;line-height:1.6;color:var(--muted)}
+.review-source-preview{display:flex;align-items:center;width:100%;font-size:14px;line-height:1.6;color:var(--muted)}
 .review-source-fallback{display:block}
 .review-source-preview img{display:block;width:100%;max-width:249px;height:auto;min-height:40px;object-fit:contain}
 .review-source-action{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;margin-top:auto;min-height:34px}
@@ -26,6 +26,6 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
 .review-stars-fill{color:#70757a}
 .review-source-preview [hidden]{display:none!important}
 @media(min-width:641px) and (max-width:950px){.review-source-grid{grid-template-columns:1fr}}
-@media(max-width:640px){.review-source-card{padding:15px;gap:12px}.review-source-grid{gap:12px}.review-source-preview{min-height:88px}.review-value strong{font-size:21px}.review-source-action{font-size:13px}}
-@media(max-width:380px){.review-source-grid{grid-template-columns:1fr}.review-source-preview{min-height:64px}}
+@media(max-width:640px){.review-source-card{padding:15px;gap:12px}.review-source-grid{gap:12px}.review-value strong{font-size:21px}.review-source-action{font-size:13px}}
+@media(max-width:380px){.review-source-grid{grid-template-columns:1fr}}
 .review-source-action svg{width:16px;height:16px;color:var(--orange);fill:none;stroke:currentColor;stroke-width:1.5}

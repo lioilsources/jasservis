@@ -78,3 +78,10 @@ img.image-mark{display:block;width:62px;height:62px;object-fit:contain;border:0;
  .hero-actions>.text-link svg{width:16px}
  .hero-phone{gap:3px 10px}
 }
+
+/* More breathing room while preserving the approved mobile logo order and sizes. */
+@media(max-width:640px){
+ .header .wrap.header-inner{width:calc(100% - 28px);min-height:76px;padding-block:8px;column-gap:clamp(8px,2.3vw,13px)}
+ .header-inner>.header-tools{gap:clamp(8px,2.3vw,12px)}
+ .header-tools .menu-toggle{gap:5px}
+}
