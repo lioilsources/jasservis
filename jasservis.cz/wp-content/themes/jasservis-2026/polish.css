@@ -40,6 +40,11 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
 .review-source-preview{display:flex;align-items:center;width:100%;font-size:14px;line-height:1.6;color:var(--muted)}
 .review-source-fallback{display:block}
 .review-source-preview img{display:block;width:100%;max-width:249px;height:auto;min-height:40px;object-fit:contain}
+.review-source-card[data-review-source="firmy"] .review-source-preview{flex-direction:column;gap:12px}
+/* The live 249 × 56 badge contains its count at x=154, y=29 (95 × 18).
+   Screen blending matches the existing dark card without a second white box. */
+.firmy-review-count{display:block;position:relative;overflow:hidden;width:100%;max-width:152px;aspect-ratio:95/18;background:#fff;filter:invert(1) brightness(1.7);mix-blend-mode:screen}
+.review-source-preview .firmy-review-count img{position:absolute;width:262.105263%;max-width:none;height:auto;min-height:0;left:-162.105263%;top:-161.111111%}
 .review-source-action{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;margin-top:auto;min-height:34px}
 .review-source-action>span,.review-stars{color:var(--orange)}
 .review-value{display:flex;flex-direction:column;gap:3px}
@@ -54,3 +59,10 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
 @media(max-width:640px){.review-source-card{padding:15px;gap:12px}.review-source-grid{gap:12px}.review-value strong{font-size:21px}.review-source-action{font-size:13px}}
 @media(max-width:380px){.review-source-grid{grid-template-columns:1fr}}
 .review-source-action svg{width:16px;height:16px;color:var(--orange);fill:none;stroke:currentColor;stroke-width:1.5}
+
+/* A clearer workshop mark, with room for the complete caption. */
+.hero-image img.image-mark{width:80px;height:80px}
+.hero-image figcaption>div{min-width:0}
+@media(max-width:1120px){.hero-image img.image-mark{width:68px;height:68px}}
+@media(max-width:640px){.hero-image img.image-mark{width:72px;height:72px}}
+@media(max-width:380px){.hero-image img.image-mark{width:62px;height:62px}}

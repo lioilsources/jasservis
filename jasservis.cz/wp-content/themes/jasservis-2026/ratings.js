@@ -5,12 +5,12 @@
   if (!cards.length) return;
   const locale = (document.documentElement.lang || 'cs').split('-')[0];
   const words = {
-    cs:['recenzí','Ověřeno','Živé hodnocení J&S SERVIS na Firmy.cz'],
-    en:['reviews','Verified','Live rating of J&S SERVIS on Firmy.cz'],
-    de:['Bewertungen','Geprüft','Aktuelle Bewertung von J&S SERVIS auf Firmy.cz'],
-    uk:['відгуків','Перевірено','Актуальна оцінка J&S SERVIS на Firmy.cz'],
-    vi:['lượt đánh giá','Đã xác minh','Đánh giá hiện tại của J&S SERVIS trên Firmy.cz']
-  }[locale] || ['reviews','Verified','J&S SERVIS on Firmy.cz'];
+    cs:['recenzí','Ověřeno','Živé hodnocení J&S SERVIS na Firmy.cz','Aktuální počet hodnocení na Firmy.cz'],
+    en:['reviews','Verified','Live rating of J&S SERVIS on Firmy.cz','Current number of reviews on Firmy.cz'],
+    de:['Bewertungen','Geprüft','Aktuelle Bewertung von J&S SERVIS auf Firmy.cz','Aktuelle Anzahl der Bewertungen auf Firmy.cz'],
+    uk:['відгуків','Перевірено','Актуальна оцінка J&S SERVIS на Firmy.cz','Актуальна кількість відгуків на Firmy.cz'],
+    vi:['lượt đánh giá','Đã xác minh','Đánh giá hiện tại của J&S SERVIS trên Firmy.cz','Số lượt đánh giá hiện tại trên Firmy.cz']
+  }[locale] || ['reviews','Verified','J&S SERVIS on Firmy.cz','Current number of reviews on Firmy.cz'];
   const googleProfile = 'https://maps.google.com/maps?cid=14113684367371719453';
   const snapshotUrl = new URL('google-rating-snapshot.json', document.currentScript.src).href;
   const maxAge = 48 * 60 * 60 * 1000;
@@ -52,6 +52,15 @@
       const badge = document.createElement('img');
       badge.width = 249; badge.height = 56; badge.alt = words[2];
       badge.hidden = true; badge.decoding = 'async';
+      // Enlarge the count from the same live SVG, without copying a fixed total.
+      const count = document.createElement('span');
+      count.className = 'firmy-review-count'; count.hidden = true;
+      const countImage = document.createElement('img');
+      countImage.width = 249; countImage.height = 56; countImage.alt = words[3];
+      countImage.decoding = 'async';
+      countImage.addEventListener('load', () => { count.hidden = false; });
+      countImage.addEventListener('error', () => { count.hidden = true; });
+      count.append(countImage);
       badge.addEventListener('load', () => {
         badge.hidden = false;
         firmy.querySelector('.review-source-fallback').hidden = true;
@@ -60,8 +69,8 @@
         badge.hidden = true;
         firmy.querySelector('.review-source-fallback').hidden = false;
       });
-      firmy.querySelector('.review-source-preview').append(badge);
-      badge.src = 'https://www.firmy.cz/img-stars/light-12996882.svg';
+      firmy.querySelector('.review-source-preview').append(badge, count);
+      badge.src = countImage.src = 'https://www.firmy.cz/img-stars/light-12996882.svg';
     }
     const google = cards.find(card => card.dataset.reviewSource === 'google');
     if (!google || !window.fetch) return;
