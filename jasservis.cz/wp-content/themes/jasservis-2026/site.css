@@ -86,3 +86,14 @@ img.image-mark{display:block;width:62px;height:62px;object-fit:contain;border:0;
  .header-inner>.header-tools{gap:clamp(8px,2.3vw,12px)}
  .header-tools .menu-toggle{gap:5px}
 }
+
+/* Wider, centered header and a compact footer across all language versions. */
+@media(min-width:641px){.header .wrap.header-inner,.header .mobile-nav{width:min(1320px,calc(100% - 48px))}}
+@media(max-width:640px){
+ .header .wrap.header-inner{width:calc(100% - 24px);column-gap:clamp(10px,2.8vw,16px)}
+ .footer{flex-wrap:nowrap;gap:12px;min-height:76px}
+ .footer .top-link{width:auto;min-height:44px}
+}
+@media(max-width:350px){.header .wrap.header-inner{column-gap:8px}}
+.footer{min-height:76px}
+.footer>div:first-child strong{font-size:14px}

@@ -4,6 +4,27 @@
 .brands-intro{text-align:center;font-weight:700;color:var(--orange)}
 .brands>div>a{align-items:center;text-align:center}
 @media(max-width:800px){.brands-intro{font-size:12px}}
+
+/* Centered home-page copy and brand tiles matching the service illustrations. */
+.hero-copy,.approach-copy,.resource,.contact-intro{text-align:center}
+.hero .eyebrow,.hero-actions,.hero-phone,.approach-points{justify-content:center}
+.hero-location,.hero-description,.resource>p:not(.eyebrow),.contact-intro>p:not(.eyebrow){margin-left:auto;margin-right:auto}
+.section-heading{flex-direction:column;align-items:center;gap:8px;text-align:center}
+.brands{display:block}
+.brands-intro{display:block;max-width:none;margin-bottom:16px}
+.brands>div{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;align-items:stretch}
+.brands>div>a{min-width:0;min-height:72px;padding:12px 8px;background:#202429;border:1px solid #34393e;border-radius:4px;white-space:normal;line-height:1.35;letter-spacing:0;font-size:15px;transition:border-color .18s,color .18s}
+.brands>div>a:hover{border-color:var(--orange)}
+.brands small{font-size:10px;line-height:1.4}
+.review-source-preview,.review-source-action{justify-content:center}
+.review-stars-fill{margin-inline:auto}
+@media(max-width:1000px){.brands>div{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:640px){
+ .brands>div{gap:12px 10px}
+ .brands>div>a{min-height:68px;font-size:13px;padding:10px 6px}
+ .section-heading .text-link{margin-top:0}
+}
+@media(max-width:350px){.brands>div>a{font-size:12px}}
 .service-card .card-image img.service-symbol{width:100%;height:100%;object-fit:contain;transform:none}
 main#obsah > #main-content.source-content.unified-page #portfolio-grid .thumbnail img.service-symbol{aspect-ratio:1.58;object-fit:contain!important;background:#202429;padding:22px!important;box-sizing:border-box}
 main#obsah > #main-content.source-content.unified-page .tyre-methods{display:block!important}
@@ -12,7 +33,7 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure>.preview
 main#obsah > #main-content.source-content.unified-page .tyre-disclosure>.preview-disclosure-body>p{max-width:76ch!important}
 main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:focus-visible{outline:2px solid var(--orange);outline-offset:7px;border-radius:2px}
 .review-source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:22px}
-.review-source-card{display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-width:0;padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:4px}
+.review-source-card{display:flex;flex-direction:column;align-items:center;gap:12px;min-width:0;padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:4px}
 .review-source-card:hover{border-color:var(--orange);color:var(--text)}
 .review-source-card:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
 .review-source-name{font-size:18px}
