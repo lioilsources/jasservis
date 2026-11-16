@@ -79,9 +79,11 @@ img.image-mark{display:block;width:62px;height:62px;object-fit:contain;border:0;
  .hero-phone{gap:3px 10px}
 }
 
-/* More breathing room while preserving the approved mobile logo order and sizes. */
+/* More breathing room with a slightly larger mobile logo and badges closer to it. */
 @media(max-width:640px){
  .header .wrap.header-inner{width:calc(100% - 28px);min-height:76px;padding-block:8px;column-gap:clamp(8px,2.3vw,13px)}
+ .header-inner>.logo{width:clamp(87px,27.5vw,123px)}
+ .header-inner>.header-firmy,.header-inner>.header-gvo{transform:translateX(-5px)}
  .header-inner>.header-tools{gap:clamp(8px,2.3vw,12px)}
  .header-tools .menu-toggle{gap:5px}
 }
