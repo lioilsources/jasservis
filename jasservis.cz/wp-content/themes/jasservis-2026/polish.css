@@ -1,5 +1,9 @@
 /* Consistent service illustrations and compact, accessible service details. */
-.service-card .card-image{background:#202429;border:1px solid #34393e}
+.service-card .card-image,.gvo-feature{background:#202429;border:1px solid #34393e}
+.gvo-feature{border-radius:4px}
+.brands-intro{text-align:center;font-weight:700;color:var(--orange)}
+.brands>div>a{align-items:center;text-align:center}
+@media(max-width:800px){.brands-intro{font-size:12px}}
 .service-card .card-image img.service-symbol{width:100%;height:100%;object-fit:contain;transform:none}
 main#obsah > #main-content.source-content.unified-page #portfolio-grid .thumbnail img.service-symbol{aspect-ratio:1.58;object-fit:contain!important;background:#202429;padding:22px!important;box-sizing:border-box}
 main#obsah > #main-content.source-content.unified-page .tyre-methods{display:block!important}
