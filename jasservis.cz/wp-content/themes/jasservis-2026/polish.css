@@ -88,7 +88,6 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
 /* Continuous header and hero; a full-width warranty panel aligned with the workshop photo. */
 .hero{padding-top:20px}
 .brands{border-top:0;border-bottom:0}
-.services#sluzby .service-card:last-child{border-bottom:0}
 .gvo-band{background:#202429;margin-bottom:40px}
 .gvo-band>.gvo-feature.wrap{border:0;border-radius:0;background:none;margin-bottom:0;padding:24px 0}
 
@@ -118,4 +117,15 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
  .contact-band.wrap>.contact{padding-inline:18px}
  .contact-phones strong{font-size:clamp(14px,4.15vw,18px)}
  .contact-phones,.contact-emails{column-gap:12px}
+}
+
+/* Larger warranty mark with centered copy and action in one text column. */
+.gvo-band>.gvo-feature.wrap{display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px 24px;text-align:center}
+.gvo-band .gvo-feature>img{grid-column:1;grid-row:1 / span 2;width:96px;height:96px;align-self:center}
+.gvo-band .gvo-feature>div{grid-column:2;min-width:0}
+.gvo-band .gvo-action{grid-column:2;justify-self:center;justify-content:center;width:auto;max-width:100%;margin:0;min-height:44px;white-space:normal;line-height:1.4}
+.gvo-band .gvo-action svg{flex-shrink:0}
+@media(max-width:640px){
+ .gvo-band>.gvo-feature.wrap{grid-template-columns:82px minmax(0,1fr);column-gap:16px}
+ .gvo-band .gvo-feature>img{width:82px;height:82px}
 }
