@@ -153,3 +153,10 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
 .hero .hero-phone:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
 .contact-details{text-align:center}
 .contact-phones>a{display:flex;flex-direction:column;align-items:center}
+
+/* A dedicated advice tile, matching the other grey panels. */
+.resource.advice{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px 24px;background:var(--panel);border:1px solid var(--line);border-radius:6px;color:var(--text);transition:border-color .18s}
+.resource.advice:hover{border-color:var(--orange);color:var(--text)}
+.resource.advice:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
+.resource.advice .text-link{margin-top:8px}
+@media(max-width:640px){.resource.advice{padding:28px 18px}}
