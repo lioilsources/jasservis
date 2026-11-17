@@ -95,8 +95,8 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
 .advice .text-link{justify-content:center;min-height:48px;padding:12px 20px;background:var(--orange);border:1px solid var(--orange);border-radius:6px;color:#161616;font-size:15px;font-weight:700;line-height:1.4;transition:background .18s,border-color .18s}
 .advice:hover .text-link,.advice:focus-visible .text-link{background:#ff812f;border-color:#ff812f}
 .advice .text-link svg{color:inherit;flex-shrink:0}
-.contact .address{padding:20px;background:var(--bg);border:1px solid var(--line);border-radius:6px;align-items:center;flex-wrap:wrap}
-.contact .address>div{flex:1 1 210px;min-width:0}
+.contact .address{padding:0;background:transparent;border:0;border-radius:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center}
+.contact .address>div{flex:none;width:100%;min-width:0}
 .contact .address .text-link{min-height:44px;padding:8px 14px;border:1px solid var(--line);border-radius:4px;flex-shrink:0}
 .contact .address .text-link:hover{border-color:var(--orange)}
 @media(min-width:1500px){.hero{padding-top:26px}}
@@ -105,8 +105,8 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
  .gvo-band{margin-bottom:28px}
  .gvo-band>.gvo-feature.wrap{padding-block:20px}
  .advice .text-link{max-width:100%;font-size:14px;padding-inline:18px}
- .contact .address{padding:18px;gap:14px}
- .contact .address>div{flex-basis:190px}
+ .contact .address{padding:0;gap:14px}
+ .contact .address>div{flex-basis:auto}
 }
 
 /* Keep the contact panel on the same outer edges as the review section. */
@@ -143,3 +143,13 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
  .hero-phone strong{gap:6px}
  .hero-phone strong svg{width:17px;height:17px}
 }
+
+/* One generous calling target; icon and number share the complete clickable area. */
+.hero .hero-phone{flex-direction:column;justify-content:center;gap:8px;width:max-content;min-width:min(260px,100%);max-width:100%;min-height:76px;margin:16px auto 0;padding:12px 18px;border:1px solid var(--line);border-radius:6px;text-align:center}
+.hero .hero-phone>span{width:auto}
+.hero .hero-phone strong{gap:12px}
+.hero .hero-phone strong svg{width:24px;height:24px}
+.hero .hero-phone:hover,.hero .hero-phone:focus-visible{border-color:var(--orange)}
+.hero .hero-phone:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+.contact-details{text-align:center}
+.contact-phones>a{display:flex;flex-direction:column;align-items:center}
