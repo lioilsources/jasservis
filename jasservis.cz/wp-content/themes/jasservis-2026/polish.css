@@ -194,3 +194,12 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
 .resource.advice{border:2px solid var(--orange)}
 .resource.advice>.eyebrow{font-size:15px;font-weight:800;line-height:1.4;letter-spacing:1.6px;margin-bottom:18px}
 .resource.advice .text-link{min-height:52px;padding:14px 22px;font-size:16px}
+
+/* Strong section labels, with a clear pause after the workshop photograph. */
+.hero{padding-bottom:18px}
+.brands{padding-top:18px}
+.brands-intro,.services#sluzby .section-heading .eyebrow{font-size:15px;font-weight:800;line-height:1.45;letter-spacing:1.2px;text-wrap:balance}
+@media(max-width:640px){
+ .hero{padding-bottom:14px}
+ .brands{padding-top:14px}
+}
