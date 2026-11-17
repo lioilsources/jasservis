@@ -32,7 +32,7 @@ Tady jsou jen věci, které se pro tebe liší nebo které nejčastěji pokazí�
   majitele, že vzniknou konflikty, a navrhni nejdřív to otevřené schválit
   nebo zavřít.
 - **Fotky z Firmy.cz** stahuj jen skriptem
-  `python3 .github/scripts/firmy-foto.py` (popis je v `CLAUDE.md`; potřebuje
+  `python3 .github/scripts/firmy-foto.py` (popis je v `docs/fotky.md`; potřebuje
   Pillow a přístup na firmy.cz). Když ho spustit nemůžeš, obrázky z internetu
   nestahuj jinak. Napiš majiteli, ať fotku přiloží nebo o ni požádá Clauda
   v issue.
