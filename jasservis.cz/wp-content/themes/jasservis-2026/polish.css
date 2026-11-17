@@ -164,3 +164,17 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
 /* Bring the brand heading closer to the workshop photo. */
 .hero{padding-bottom:10px}
 .brands{padding-top:10px}
+
+/* Readable secondary copy and comfortable direct contact links. */
+.hero-image figcaption div>span{font-size:10px;line-height:1.5;letter-spacing:1px}
+.hero-image figcaption p{font-size:12px;line-height:1.5}
+.brands small{font-size:11px;line-height:1.45}
+.hero .hero-location{min-height:44px}
+.contact-emails a{justify-content:center;min-height:44px;padding-block:6px}
+@media(max-width:640px){
+ .services .eyebrow,.approach-copy .eyebrow,.resources .eyebrow,.contact-intro .eyebrow{font-size:11px}
+ .approach-points{font-size:13px;line-height:1.6;gap:10px 16px}
+ .contact-phones span{font-size:13px;line-height:1.5}
+ .contact-emails{font-size:13px}
+ .address p{font-size:14px;line-height:1.6}
+}
