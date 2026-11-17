@@ -97,3 +97,14 @@ img.image-mark{display:block;width:62px;height:62px;object-fit:contain;border:0;
 @media(max-width:350px){.header .wrap.header-inner{column-gap:8px}}
 .footer{min-height:76px}
 .footer>div:first-child strong{font-size:14px}
+
+/* Give mobile menu and language controls separate space without shrinking the logos. */
+@media(min-width:641px) and (max-width:1120px){
+ .header .wrap.header-inner,.header .mobile-nav{width:calc(100% - 32px)}
+ .header .header-tools{gap:18px}
+}
+@media(max-width:640px){
+ .header .wrap.header-inner{width:calc(100% - 16px);justify-content:space-between;column-gap:clamp(8px,2.2vw,14px)}
+ .header .header-tools{gap:clamp(16px,4.8vw,20px)}
+ .header .languages summary{min-width:44px;justify-content:center;padding-inline:3px}
+}
