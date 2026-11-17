@@ -40,16 +40,11 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
 .review-source-preview{display:flex;align-items:center;width:100%;font-size:14px;line-height:1.6;color:var(--muted)}
 .review-source-fallback{display:block}
 .review-source-preview img{display:block;width:100%;max-width:249px;height:auto;min-height:40px;object-fit:contain}
-.review-source-card[data-review-source="firmy"] .review-source-preview{flex-direction:column;gap:12px}
-/* The live 249 × 56 badge contains its count at x=154, y=29 (95 × 18).
-   Screen blending matches the existing dark card without a second white box. */
-.firmy-review-count{display:block;position:relative;overflow:hidden;width:100%;max-width:152px;aspect-ratio:95/18;background:#fff;filter:invert(1) brightness(1.7);mix-blend-mode:screen}
-.review-source-preview .firmy-review-count img{position:absolute;width:262.105263%;max-width:none;height:auto;min-height:0;left:-162.105263%;top:-161.111111%}
 .review-source-action{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;margin-top:auto;min-height:34px}
 .review-source-action>span,.review-stars{color:var(--orange)}
 .review-value{display:flex;flex-direction:column;gap:3px}
 .review-value strong{color:var(--text);font-size:22px;line-height:1.3}
-.review-value small{display:block;font-size:11px;line-height:1.5}
+.review-value small{display:block;font-size:12px;line-height:1.5}
 .review-stars{letter-spacing:2px}
 .review-stars-fill{display:block;position:relative;width:max-content}
 .review-stars-fill>span{position:absolute;left:0;top:0;overflow:hidden;white-space:nowrap;color:var(--orange)}
@@ -75,3 +70,17 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
 .hero-image figcaption p{color:#f0f1f2}
 @media(max-width:1120px){.hero-image figcaption{padding:10px 12px;gap:12px}.hero-image figcaption strong{font-size:21px}}
 @media(max-width:640px){.hero-image figcaption{padding:10px;gap:12px}.hero-image figcaption strong{font-size:clamp(18px,4.8vw,22px)}}
+
+/* Clearer supporting copy on larger displays; keep the established heading sizes. */
+@media(min-width:641px){
+ .hero-phone,.gvo-feature div>span,.gvo-action,.approach-points,.contact-phones span,.contact-emails,.address p{font-size:14px}
+ .hero-description{font-size:15px}
+ .hero .eyebrow,.services .eyebrow,.approach-copy .eyebrow,.resources .eyebrow,.contact-intro .eyebrow,.brands-intro{font-size:11px}
+}
+
+/* The nine mobile service links remain visible, with less space between rows. */
+@media(max-width:640px){
+ .services#sluzby .service-grid{row-gap:8px}
+ .services#sluzby .service-card{grid-template-columns:108px minmax(0,1fr);padding-bottom:8px}
+ .services#sluzby .card-image{height:72px}
+}

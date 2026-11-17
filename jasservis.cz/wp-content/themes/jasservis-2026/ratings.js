@@ -1,115 +1,97 @@
-/* Prefer verified same-origin data. Never publish stale or mismatched ratings. */
+/* Each provider is verified independently; stale or mismatched values stay hidden. */
 (() => {
   'use strict';
   const cards = [...document.querySelectorAll('[data-review-source]')];
-  if (!cards.length) return;
+  if (!cards.length || !window.fetch) return;
   const locale = (document.documentElement.lang || 'cs').split('-')[0];
   const words = {
-    cs:['recenzí','Ověřeno','Živé hodnocení J&S SERVIS na Firmy.cz','Aktuální počet hodnocení na Firmy.cz'],
-    en:['reviews','Verified','Live rating of J&S SERVIS on Firmy.cz','Current number of reviews on Firmy.cz'],
-    de:['Bewertungen','Geprüft','Aktuelle Bewertung von J&S SERVIS auf Firmy.cz','Aktuelle Anzahl der Bewertungen auf Firmy.cz'],
-    uk:['відгуків','Перевірено','Актуальна оцінка J&S SERVIS на Firmy.cz','Актуальна кількість відгуків на Firmy.cz'],
-    vi:['lượt đánh giá','Đã xác minh','Đánh giá hiện tại của J&S SERVIS trên Firmy.cz','Số lượt đánh giá hiện tại trên Firmy.cz']
-  }[locale] || ['reviews','Verified','J&S SERVIS on Firmy.cz','Current number of reviews on Firmy.cz'];
-  const googleProfile = 'https://maps.google.com/maps?cid=14113684367371719453';
-  const snapshotUrl = new URL('google-rating-snapshot.json', document.currentScript.src).href;
+    cs:['recenzí','hodnocení','Ověřeno'],
+    en:['reviews','reviews','Verified'],
+    de:['Bewertungen','Bewertungen','Geprüft'],
+    uk:['відгуків','відгуків','Перевірено'],
+    vi:['lượt đánh giá','lượt đánh giá','Đã xác minh']
+  }[locale] || ['reviews','reviews','Verified'];
+  const scriptUrl = document.currentScript.src;
+  const service = 'https://jasservis-google-hodnoceni.sleek-bass-5878.chatgpt.site/';
+  const sources = [
+    {id:'google', source:'Google', profile:'https://maps.google.com/maps?cid=14113684367371719453', snapshot:'google-rating-snapshot.json', endpoint:'rating.json', countWord:words[0]},
+    {id:'firmy', source:'Firmy.cz', profile:'https://www.firmy.cz/detail/12996882-j-s-servis-jaroslav-mateju-statenice-cerny-vul.html', snapshot:'firmy-rating-snapshot.json', endpoint:'firmy-rating.json', countWord:words[1]}
+  ];
   const maxAge = 48 * 60 * 60 * 1000;
-  let loaded = false;
-  let expiry;
+  const expiry = new Map();
   let generation = 0;
   function fallback(card) {
+    clearTimeout(expiry.get(card));
+    expiry.delete(card);
     card.querySelector('.review-source-fallback').hidden = false;
     card.querySelector('.review-value')?.remove();
     card.dataset.ratingState = 'unavailable';
   }
-  function validate(data) {
-    const timestamp = Date.parse(data.updatedAt);
+  function validate(data, source) {
+    const timestamp = Date.parse(data && data.updatedAt);
     const age = Date.now() - timestamp;
-    if (data.source !== 'Google' || data.profileUrl !== googleProfile ||
+    if (!data || data.source !== source.source || data.profileUrl !== source.profile ||
         typeof data.rating !== 'number' || !Number.isFinite(data.rating) || data.rating < 1 || data.rating > 5 ||
         !Number.isSafeInteger(data.count) || data.count < 1 || !Number.isFinite(age) || age < -300000 || age >= maxAge) {
       throw new Error('Invalid rating');
     }
-    return {timestamp, age};
+    return timestamp;
   }
-  async function readRating(url) {
+  async function readRating(url, source) {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 8000);
     try {
       const response = await fetch(url, {credentials:'omit', cache:'no-store', signal:controller.signal});
       if (!response.ok) throw new Error('Rating unavailable');
       const data = await response.json();
-      return {data, ...validate(data)};
-    } finally {
-      clearTimeout(timeout);
-    }
+      return {data, timestamp:validate(data, source)};
+    } finally { clearTimeout(timeout); }
   }
-  async function load() {
-    if (loaded) return;
-    loaded = true;
-    const firmy = cards.find(card => card.dataset.reviewSource === 'firmy');
-    if (firmy && !firmy.querySelector('.review-source-preview img')) {
-      const badge = document.createElement('img');
-      badge.width = 249; badge.height = 56; badge.alt = words[2];
-      badge.hidden = true; badge.decoding = 'async';
-      // Enlarge the count from the same live SVG, without copying a fixed total.
-      const count = document.createElement('span');
-      count.className = 'firmy-review-count'; count.hidden = true;
-      const countImage = document.createElement('img');
-      countImage.width = 249; countImage.height = 56; countImage.alt = words[3];
-      countImage.decoding = 'async';
-      countImage.addEventListener('load', () => { count.hidden = false; });
-      countImage.addEventListener('error', () => { count.hidden = true; });
-      count.append(countImage);
-      badge.addEventListener('load', () => {
-        badge.hidden = false;
-        firmy.querySelector('.review-source-fallback').hidden = true;
-      });
-      badge.addEventListener('error', () => {
-        badge.hidden = true;
-        firmy.querySelector('.review-source-fallback').hidden = false;
-      });
-      firmy.querySelector('.review-source-preview').append(badge, count);
-      badge.src = countImage.src = 'https://www.firmy.cz/img-stars/light-12996882.svg';
-    }
-    const google = cards.find(card => card.dataset.reviewSource === 'google');
-    if (!google || !window.fetch) return;
-    google.dataset.ratingState = 'loading';
-    const request = ++generation;
+  function render(card, source, data, timestamp) {
+    const value = document.createElement('span'); value.className = 'review-value';
+    const rating = document.createElement('strong');
+    rating.textContent = new Intl.NumberFormat(locale,{minimumFractionDigits:1,maximumFractionDigits:1}).format(data.rating) + ' / 5';
+    const stars = document.createElement('span'); stars.className = 'review-stars review-stars-fill';
+    stars.setAttribute('aria-hidden','true'); stars.textContent = '★★★★★';
+    const fill = document.createElement('span'); fill.textContent = '★★★★★';
+    fill.style.width = (data.rating / 5 * 100) + '%'; stars.append(fill);
+    const count = document.createElement('span');
+    count.textContent = new Intl.NumberFormat(locale).format(data.count) + ' ' + source.countWord;
+    const updated = document.createElement('small');
+    updated.textContent = words[2] + ' ' + new Intl.DateTimeFormat(locale,{dateStyle:'short',timeZone:'Europe/Prague'}).format(new Date(timestamp));
+    value.append(rating, stars, count, updated);
+    card.querySelector('.review-value')?.remove();
+    card.querySelector('.review-source-preview').append(value);
+    card.querySelector('.review-source-fallback').hidden = true;
+    card.dataset.ratingState = 'ready';
+    clearTimeout(expiry.get(card));
+    expiry.set(card, setTimeout(() => fallback(card), Math.max(1, timestamp + maxAge - Date.now())));
+  }
+  async function loadSource(source, request) {
+    const card = cards.find(card => card.dataset.reviewSource === source.id);
+    if (!card) return;
+    card.dataset.ratingState = 'loading';
     let latestTimestamp = -Infinity;
     let shown = false;
-    await Promise.allSettled([snapshotUrl, 'https://jasservis-google-hodnoceni.sleek-bass-5878.chatgpt.site/rating.json'].map(async url => {
-      const {data, timestamp, age} = await readRating(url);
+    const urls = [new URL(source.snapshot,scriptUrl).href, service + source.endpoint];
+    await Promise.allSettled(urls.map(async url => {
+      const {data, timestamp} = await readRating(url, source);
       if (request !== generation || timestamp < latestTimestamp) return;
       latestTimestamp = timestamp;
-      const value = document.createElement('span'); value.className = 'review-value';
-      const rating = document.createElement('strong');
-      rating.textContent = new Intl.NumberFormat(locale,{minimumFractionDigits:1,maximumFractionDigits:1}).format(data.rating) + ' / 5';
-      const stars = document.createElement('span'); stars.className = 'review-stars review-stars-fill';
-      stars.setAttribute('aria-hidden','true'); stars.textContent = '★★★★★';
-      const fill = document.createElement('span'); fill.textContent = '★★★★★';
-      fill.style.width = (data.rating / 5 * 100) + '%'; stars.append(fill);
-      const count = document.createElement('span');
-      count.textContent = new Intl.NumberFormat(locale).format(data.count) + ' ' + words[0];
-      const updated = document.createElement('small');
-      updated.textContent = words[1] + ' ' + new Intl.DateTimeFormat(locale,{dateStyle:'short',timeZone:'Europe/Prague'}).format(new Date(timestamp));
-      value.append(rating, stars, count, updated);
-      google.querySelector('.review-value')?.remove();
-      google.querySelector('.review-source-preview').append(value);
-      google.querySelector('.review-source-fallback').hidden = true;
-      google.dataset.ratingState = 'ready';
-      clearTimeout(expiry);
-      expiry = setTimeout(() => fallback(google), Math.max(1,maxAge - age));
+      render(card, source, data, timestamp);
       shown = true;
     }));
-    if (!shown && request === generation) fallback(google);
+    if (!shown && request === generation) fallback(card);
+  }
+  function load() {
+    const request = ++generation;
+    sources.forEach(source => { loadSource(source, request); });
   }
   load();
-  window.addEventListener('pagehide', () => { clearTimeout(expiry); generation++; });
+  window.addEventListener('pagehide', () => {
+    expiry.forEach(timer => clearTimeout(timer)); expiry.clear(); generation++;
+  });
   window.addEventListener('pageshow', event => {
-    if (event.persisted) {
-      const google = cards.find(card => card.dataset.reviewSource === 'google');
-      if (google) { fallback(google); loaded = false; load(); }
-    }
+    if (event.persisted) { cards.forEach(fallback); load(); }
   });
 })();
