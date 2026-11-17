@@ -178,3 +178,14 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
  .contact-emails{font-size:13px}
  .address p{font-size:14px;line-height:1.6}
 }
+
+/* Equal space above and below the brand tile group. */
+.brands-intro{margin-bottom:30px}
+.brands{padding-bottom:4px}
+.services#sluzby{padding-top:26px}
+
+/* Driver advice follows warranty service, before the workshop introduction. */
+.resources.advice-section{display:block;padding-block:0;margin-bottom:40px}
+.resources.reviews-section{grid-template-columns:1fr}
+.reviews-section .reviews{border:0;padding:0}
+@media(max-width:640px){.resources.advice-section{margin-bottom:28px}}
