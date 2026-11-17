@@ -84,3 +84,28 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
  .services#sluzby .service-card{grid-template-columns:108px minmax(0,1fr);padding-bottom:8px}
  .services#sluzby .card-image{height:72px}
 }
+
+/* Continuous header and hero; a full-width warranty panel aligned with the workshop photo. */
+.hero{padding-top:20px}
+.brands{border-top:0}
+.services#sluzby .service-card:last-child{border-bottom:0}
+.gvo-band{background:#202429;margin-bottom:40px}
+.gvo-band>.gvo-feature.wrap{border:0;border-radius:0;background:none;margin-bottom:0;padding:24px 0}
+
+/* Give driver advice a clear action and keep the route together with the address. */
+.advice .text-link{justify-content:center;min-height:48px;padding:12px 20px;background:var(--orange);border:1px solid var(--orange);border-radius:6px;color:#161616;font-size:15px;font-weight:700;line-height:1.4;transition:background .18s,border-color .18s}
+.advice:hover .text-link,.advice:focus-visible .text-link{background:#ff812f;border-color:#ff812f}
+.advice .text-link svg{color:inherit;flex-shrink:0}
+.contact .address{padding:20px;background:var(--bg);border:1px solid var(--line);border-radius:6px;align-items:center;flex-wrap:wrap}
+.contact .address>div{flex:1 1 210px;min-width:0}
+.contact .address .text-link{min-height:44px;padding:8px 14px;border:1px solid var(--line);border-radius:4px;flex-shrink:0}
+.contact .address .text-link:hover{border-color:var(--orange)}
+@media(min-width:1500px){.hero{padding-top:26px}}
+@media(max-width:640px){
+ .hero{padding-top:15px}
+ .gvo-band{margin-bottom:28px}
+ .gvo-band>.gvo-feature.wrap{padding-block:20px}
+ .advice .text-link{max-width:100%;font-size:14px;padding-inline:18px}
+ .contact .address{padding:18px;gap:14px}
+ .contact .address>div{flex-basis:190px}
+}
