@@ -160,3 +160,7 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
 .resource.advice:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
 .resource.advice .text-link{margin-top:8px}
 @media(max-width:640px){.resource.advice{padding:28px 18px}}
+
+/* Bring the brand heading closer to the workshop photo. */
+.hero{padding-bottom:10px}
+.brands{padding-top:10px}
