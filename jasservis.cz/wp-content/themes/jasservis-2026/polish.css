@@ -129,3 +129,17 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
  .gvo-band>.gvo-feature.wrap{grid-template-columns:82px minmax(0,1fr);column-gap:16px}
  .gvo-band .gvo-feature>img{width:82px;height:82px}
 }
+
+/* Compact appointment label and a handset kept together with the phone number. */
+.hero-phone strong{display:inline-flex;align-items:center;gap:8px}
+.hero-phone strong svg{width:18px;height:18px;flex-shrink:0;fill:none;stroke:var(--orange);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* Both feature panels follow the same outer edges as the service tiles above. */
+.gvo-band.wrap,.approach-band.wrap{border:1px solid var(--line);border-radius:6px}
+.gvo-band.wrap>.gvo-feature.wrap{width:100%;padding-inline:24px}
+.approach-band.wrap>.approach{padding-inline:24px}
+@media(max-width:640px){
+ .gvo-band.wrap>.gvo-feature.wrap,.approach-band.wrap>.approach{padding-inline:18px}
+ .hero-phone strong{gap:6px}
+ .hero-phone strong svg{width:17px;height:17px}
+}
