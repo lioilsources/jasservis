@@ -87,7 +87,7 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
 
 /* Continuous header and hero; a full-width warranty panel aligned with the workshop photo. */
 .hero{padding-top:20px}
-.brands{border-top:0}
+.brands{border-top:0;border-bottom:0}
 .services#sluzby .service-card:last-child{border-bottom:0}
 .gvo-band{background:#202429;margin-bottom:40px}
 .gvo-band>.gvo-feature.wrap{border:0;border-radius:0;background:none;margin-bottom:0;padding:24px 0}
@@ -108,4 +108,14 @@ main#obsah > #main-content.source-content.unified-page .tyre-disclosure summary:
  .advice .text-link{max-width:100%;font-size:14px;padding-inline:18px}
  .contact .address{padding:18px;gap:14px}
  .contact .address>div{flex-basis:190px}
+}
+
+/* Keep the contact panel on the same outer edges as the review section. */
+.contact-band.wrap{border:1px solid var(--line);border-radius:6px}
+.contact-band.wrap>.contact{padding-inline:24px}
+@media(max-width:640px){
+ .hero{padding-top:7px}
+ .contact-band.wrap>.contact{padding-inline:18px}
+ .contact-phones strong{font-size:clamp(14px,4.15vw,18px)}
+ .contact-phones,.contact-emails{column-gap:12px}
 }
