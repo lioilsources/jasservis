@@ -1,0 +1,67 @@
+/* Approved prices, effective 1 November 2026. Scoped to the price-list content. */
+main#obsah > #main-content.source-content .approved-pricelist{width:100%;max-width:none;min-width:0}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-banner{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px;margin-bottom:24px;border:1px solid var(--line,#34373b);border-left:4px solid var(--orange,#ff6b1a);border-radius:6px;background:var(--panel,#202327)}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-valid{font-size:20px!important;font-weight:700!important;line-height:1.4!important;color:var(--text,#f7f7f5)!important;margin:0 0 6px!important}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-vat{font-size:16px!important;color:var(--muted,#b4b6bb)!important;margin:0!important}
+main#obsah > #main-content.source-content .approved-pricelist .approved-pdf{display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0}
+main#obsah > #main-content.source-content .approved-pricelist .approved-pdf>span{font-size:14px;line-height:1.5;color:var(--muted,#b4b6bb)}
+main#obsah > #main-content.source-content .approved-pricelist .approved-pdf-link{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 20px;border-radius:4px;background:var(--orange,#ff6b1a);color:#161616!important;font-size:16px!important;font-weight:700;line-height:1.5;text-align:center;text-decoration:none!important}
+main#obsah > #main-content.source-content .approved-pricelist .approved-pdf-link:hover{background:#ff8a48}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-nav ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:24px 0 36px!important;padding:0!important;list-style:none}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-nav li{list-style:none;margin:0!important;padding:0!important;min-width:0}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-nav a{display:flex;align-items:center;height:100%;min-height:52px;padding:13px 16px;background:var(--panel,#202327);border:1px solid var(--line,#34373b);border-radius:4px;color:var(--text,#f7f7f5)!important;font-size:16px!important;font-weight:600;line-height:1.5;text-decoration:none!important;overflow-wrap:anywhere}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-nav a:hover{border-color:var(--orange,#ff6b1a);color:var(--orange,#ff6b1a)!important}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-section{position:relative;margin:36px 0;scroll-margin-top:24px;min-width:0}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-anchor{display:block;position:absolute;top:0;scroll-margin-top:24px}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-section>h2{margin:0 0 18px!important;padding:0 0 0 14px!important;border-left:4px solid var(--orange,#ff6b1a);font-size:26px!important;line-height:1.4!important}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-section>h3{font-size:20px!important;line-height:1.4!important;margin:22px 0 14px!important}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-note{max-width:none!important;font-size:16px!important;line-height:1.75!important;margin:16px 0!important;color:var(--muted,#b4b6bb)!important}
+main#obsah > #main-content.source-content .approved-pricelist .approved-table-wrap{width:100%;margin:0 0 18px;border:1px solid var(--line,#34373b);border-radius:5px;overflow:hidden}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-table{display:table!important;width:100%!important;table-layout:fixed;border-collapse:collapse;margin:0!important;background:var(--panel,#202327)!important;color:var(--text,#f7f7f5)!important;font-size:16px!important;line-height:1.55!important}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-table thead{display:table-header-group;background:#181a1d}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-table tbody{display:table-row-group}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-table tr{display:table-row}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-table :is(th,td){display:table-cell;box-sizing:border-box;width:auto;padding:14px 16px;border:0;border-bottom:1px solid var(--line,#34373b);background:transparent!important;color:var(--text,#f7f7f5)!important;text-align:left;vertical-align:top;font-size:16px!important;line-height:1.55!important;overflow-wrap:break-word;text-shadow:none!important}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-table thead th{font-weight:700;border-bottom:2px solid var(--orange,#ff6b1a)}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-table th:first-child{width:55%;font-weight:500}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-table thead th:first-child{font-weight:700}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-table tr>:nth-child(2){width:25%}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-table tr>:last-child{width:20%;text-align:right}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-table tbody tr:nth-child(even){background:#25282c}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-table tbody tr:last-child>:is(th,td){border-bottom:0}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-table td.approved-price-unit{font-size:14px!important;color:var(--muted,#b4b6bb)!important}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-value{font-weight:700;font-variant-numeric:tabular-nums}
+main#obsah > #main-content.source-content .approved-pricelist .approved-price-amount{white-space:nowrap;color:inherit!important;font:inherit}
+main#obsah > #main-content.source-content .approved-pricelist .approved-model-table th:first-child{width:23%}
+main#obsah > #main-content.source-content .approved-pricelist .approved-model-table tr>:nth-child(2){width:57%}
+main#obsah > #main-content.source-content .approved-pricelist .approved-model-line{display:block;color:var(--text,#f7f7f5)!important;font-size:16px;line-height:1.55;margin-bottom:4px}
+main#obsah > #main-content.source-content .approved-pricelist .approved-model-line:last-child{margin-bottom:0}
+main#obsah > #main-content.source-content .approved-pricelist .approved-model-line strong{font-weight:600}
+main#obsah > #main-content.source-content .approved-pricelist :is(a:focus-visible,tr:target){outline:3px solid var(--orange,#ff6b1a);outline-offset:3px}
+@media(max-width:760px){
+ main#obsah > #main-content.source-content .approved-pricelist .approved-price-banner{flex-direction:column;align-items:stretch;padding:20px;gap:18px}
+ main#obsah > #main-content.source-content .approved-pricelist .approved-pdf{align-items:stretch}
+ main#obsah > #main-content.source-content .approved-pricelist .approved-pdf>span{text-align:center}
+ main#obsah > #main-content.source-content .approved-pricelist .approved-price-nav ul{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ main#obsah > #main-content.source-content .approved-pricelist .approved-price-nav a{padding:12px;font-size:14px!important}
+ main#obsah > #main-content.source-content .approved-pricelist .approved-price-section>h2{font-size:23px!important}
+ main#obsah > #main-content.source-content .approved-pricelist .approved-price-table,
+ main#obsah > #main-content.source-content .approved-pricelist .approved-price-table tbody{display:block!important;width:100%!important}
+ main#obsah > #main-content.source-content .approved-pricelist .approved-price-table thead{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+ main#obsah > #main-content.source-content .approved-pricelist .approved-price-table tbody tr{display:grid;grid-template-columns:minmax(0,1fr) minmax(100px,auto);padding:14px;border-bottom:1px solid var(--line,#34373b);gap:10px 12px}
+ main#obsah > #main-content.source-content .approved-pricelist .approved-price-table tbody tr:last-child{border-bottom:0}
+ main#obsah > #main-content.source-content .approved-pricelist .approved-price-table :is(th,td){display:block;width:auto!important;min-width:0;padding:0;border:0;font-size:16px!important}
+ main#obsah > #main-content.source-content .approved-pricelist .approved-price-table tbody th{grid-column:1 / -1;font-weight:600}
+ main#obsah > #main-content.source-content .approved-pricelist .approved-price-table .approved-price-value{align-self:end;text-align:right}
+ main#obsah > #main-content.source-content .approved-pricelist .approved-model-table td.approved-models{grid-column:1 / -1}
+ main#obsah > #main-content.source-content .approved-pricelist .approved-model-table .approved-price-value{grid-column:2}
+}
+@media print{
+ main#obsah > #main-content.source-content .approved-pricelist{color:#111!important}
+ main#obsah > #main-content.source-content .approved-pricelist .approved-price-nav,
+ main#obsah > #main-content.source-content .approved-pricelist .approved-pdf{display:none}
+ main#obsah > #main-content.source-content .approved-pricelist .approved-price-table,
+ main#obsah > #main-content.source-content .approved-pricelist .approved-price-table :is(th,td),
+ main#obsah > #main-content.source-content .approved-pricelist .approved-model-line{background:#fff!important;color:#111!important}
+ main#obsah > #main-content.source-content .approved-pricelist .approved-price-table tr{break-inside:avoid}
+}
