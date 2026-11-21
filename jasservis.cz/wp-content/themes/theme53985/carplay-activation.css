@@ -1,0 +1,9 @@
+/* Scoped to the Android Auto / Apple CarPlay article. */
+.carplay-article .carplay-table-scroll{max-width:100%;overflow-x:auto;margin:24px 0;overscroll-behavior-x:contain}
+.carplay-article .carplay-table{table-layout:fixed;width:100%;border-collapse:collapse;line-height:1.6}
+.carplay-article .carplay-table th,.carplay-article .carplay-table td{padding:12px;text-align:left;vertical-align:top;border:1px solid var(--line);overflow-wrap:anywhere;hyphens:auto}
+.carplay-article .carplay-table th:first-child{width:32%}
+.carplay-article .carplay-table tbody th{font-weight:600}
+.carplay-article .carplay-table-scroll:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+.carplay-article .carplay-contact{margin-top:28px;font-weight:700}
+@media(max-width:600px){.carplay-article .carplay-table th,.carplay-article .carplay-table td{padding:8px}.carplay-article .carplay-table th:first-child{width:35%}}
