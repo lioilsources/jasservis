@@ -1,11 +1,44 @@
-/* Brand-specific advice uses the existing guide selection behaviour. */
+/* Customer-first layout for the three infotainment guides. */
 .brand-advice [data-advice-brands][hidden]{display:none!important}
-.brand-advice__selection{margin:0 0 24px}
-main#obsah > #main-content.source-content .brand-advice .brand-advice__current{display:inline-block;box-sizing:border-box;max-width:100%;margin:0 0 8px!important;padding:10px 14px;border-left:3px solid var(--orange,#ff6b1a);border-radius:0 4px 4px 0;background:var(--panel,#202428);color:var(--orange,#ff6b1a)!important;font-size:20px!important;font-weight:700!important;line-height:1.45!important;overflow-wrap:anywhere}
+body.infotainment-guide main#obsah > #main-content.source-content .breadcrumb{display:none!important}
+body.infotainment-guide main#obsah > #main-content.source-content .title-section{padding:12px 0!important;margin:0 0 12px!important;border:0}
+body.infotainment-guide main#obsah > #main-content.source-content h1.title-header{font-size:36px!important;line-height:1.2!important;letter-spacing:-.6px!important}
+body.infotainment-guide main#obsah > #main-content.source-content #warning-lights,
+body.infotainment-guide main#obsah > #main-content.source-content #guide-article-body{padding:0!important;margin:0!important;background:transparent!important;border:0!important;border-radius:0;box-shadow:none!important}
+main#obsah > #main-content.source-content .brand-advice .brand-advice__selection{margin:0 0 18px}
+main#obsah > #main-content.source-content .brand-advice details.brand-advice__choice{padding:0!important;margin:0!important;background:transparent!important;border:0!important}
+main#obsah > #main-content.source-content .brand-advice .brand-advice__choice>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;box-sizing:border-box;min-height:44px;padding:6px 0!important;margin:0!important;border-bottom:1px solid var(--line,#34373b);background:transparent!important;cursor:pointer;list-style:none}
+.brand-advice__choice>summary::-webkit-details-marker{display:none}
+main#obsah > #main-content.source-content .brand-advice .brand-advice__current,
+main#obsah > #main-content.source-content .brand-advice .brand-advice__choose{min-width:0;margin:0!important;color:var(--orange,#ff6b1a)!important;font-size:18px!important;font-weight:700!important;line-height:1.4!important;overflow-wrap:anywhere}
 main#obsah > #main-content.source-content .brand-advice .brand-advice__current strong{color:inherit!important}
-.brand-advice__choice>summary{cursor:pointer;min-height:44px;padding:8px 0;box-sizing:border-box}
-.brand-advice__buttons{display:flex;flex-wrap:wrap;gap:10px;padding:10px 0}
+.brand-advice__change{flex-shrink:0;color:var(--muted,#b4b6bb);font-size:14px;font-weight:400;text-decoration:underline;text-underline-offset:3px}
+.brand-advice__choice:has(.brand-advice__choose:not([hidden])) .brand-advice__change{display:none}
+.brand-advice__buttons{display:flex;flex-wrap:wrap;gap:10px;padding:12px 0}
 main#obsah > #main-content.source-content .brand-advice .brand-advice__buttons button{min-height:44px;max-width:100%;white-space:normal;padding:10px 14px!important;border:1px solid var(--line,#59636d)!important;border-radius:4px;background:var(--panel,#202428)!important;color:var(--text,#fff)!important;font:inherit;cursor:pointer}
 main#obsah > #main-content.source-content .brand-advice .brand-advice__buttons button:hover{border-color:var(--orange,#ff6b1a)!important}
 main#obsah > #main-content.source-content .brand-advice .brand-advice__buttons button[aria-pressed=true]{background:var(--orange,#ff6b1a)!important;border-color:var(--orange,#ff6b1a)!important;color:#161616!important}
-.brand-advice__buttons button:focus-visible,.brand-advice__choice>summary:focus-visible{outline:2px solid var(--orange,#ff6b1a);outline-offset:3px}
+.brand-advice__buttons button:focus-visible,.brand-advice summary:focus-visible{outline:2px solid var(--orange,#ff6b1a);outline-offset:3px}
+main#obsah > #main-content.source-content .brand-advice #guide-article-body p,
+main#obsah > #main-content.source-content .brand-advice #guide-article-body li{font-size:16px;line-height:1.65}
+main#obsah > #main-content.source-content .brand-advice #guide-article-body .brand-advice__lead{font-size:17px;line-height:1.6;margin:0 0 18px!important}
+main#obsah > #main-content.source-content .brand-advice .brand-advice__quick h2{font-size:21px!important;margin:0 0 10px!important;line-height:1.3!important}
+.brand-advice__checklist{padding-left:22px;margin:0 0 18px}
+.brand-advice__checklist li{padding-left:2px;margin:0 0 5px}
+main#obsah > #main-content.source-content .brand-advice .brand-advice__action{margin:0 0 14px!important}
+.brand-advice__action a{box-sizing:border-box;max-width:100%;white-space:normal;text-align:center}
+main#obsah > #main-content.source-content .brand-advice #guide-article-body .brand-advice__note{font-size:15px;line-height:1.6;margin:0 0 24px!important}
+main#obsah > #main-content.source-content .brand-advice details.brand-advice__topic{padding:0!important;margin:0!important;border:0!important;border-bottom:1px solid var(--line,#34373b)!important;border-radius:0;background:transparent!important}
+main#obsah > #main-content.source-content .brand-advice .brand-advice__topic>summary{box-sizing:border-box;min-height:56px;padding:14px 0!important;margin:0!important;background:transparent!important;font-size:17px;font-weight:600;line-height:1.5;cursor:pointer}
+.brand-advice__topic>summary::marker{color:var(--orange,#ff6b1a)}
+.brand-advice__detail-body{padding:0 0 18px}
+main#obsah > #main-content.source-content .brand-advice .brand-advice__detail-body section{margin:18px 0 0}
+main#obsah > #main-content.source-content .brand-advice .brand-advice__detail-body h2{font-size:22px!important;line-height:1.35!important;margin:18px 0 12px!important}
+main#obsah > #main-content.source-content .brand-advice .brand-advice__detail-body h3{font-size:19px!important;line-height:1.4!important}
+main#obsah > #main-content.source-content .brand-advice .guide-article__back{margin:20px 0 0!important}
+main#obsah > #main-content.source-content .brand-advice .guide-article__back a{display:inline-flex;align-items:center;min-height:44px;font-size:14px!important}
+@media(max-width:640px){
+ body.infotainment-guide main#obsah > #main-content.source-content h1.title-header{font-size:28px!important;line-height:1.2!important;letter-spacing:-.4px!important}
+ body.infotainment-guide main#obsah > #main-content.source-content .title-section{padding:8px 0!important;margin-bottom:8px!important}
+ .brand-advice__action a{width:100%}
+}
