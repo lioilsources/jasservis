@@ -1,0 +1,9 @@
+/* Brand-specific advice uses the existing guide selection behaviour. */
+.brand-advice [data-advice-brands][hidden]{display:none!important}
+.brand-advice__selection{margin:0 0 24px}
+.brand-advice__current{margin:0 0 8px;color:var(--orange,#ff6b1a)}
+.brand-advice__choice>summary{cursor:pointer;min-height:44px;padding:8px 0;box-sizing:border-box}
+.brand-advice__buttons{display:flex;flex-wrap:wrap;gap:10px;padding:10px 0}
+.brand-advice__buttons button{min-height:44px;padding:10px 14px;border:1px solid var(--line,#59636d);border-radius:4px;background:var(--panel,#202428);color:var(--text,#fff);font:inherit;cursor:pointer}
+.brand-advice__buttons button[aria-pressed=true]{background:var(--orange,#ff6b1a);color:#111}
+.brand-advice__buttons button:focus-visible,.brand-advice__choice>summary:focus-visible{outline:2px solid var(--orange,#ff6b1a);outline-offset:3px}
