@@ -1,9 +1,11 @@
 /* Brand-specific advice uses the existing guide selection behaviour. */
 .brand-advice [data-advice-brands][hidden]{display:none!important}
 .brand-advice__selection{margin:0 0 24px}
-.brand-advice__current{margin:0 0 8px;color:var(--orange,#ff6b1a)}
+main#obsah > #main-content.source-content .brand-advice .brand-advice__current{display:inline-block;box-sizing:border-box;max-width:100%;margin:0 0 8px!important;padding:10px 14px;border-left:3px solid var(--orange,#ff6b1a);border-radius:0 4px 4px 0;background:var(--panel,#202428);color:var(--orange,#ff6b1a)!important;font-size:20px!important;font-weight:700!important;line-height:1.45!important;overflow-wrap:anywhere}
+main#obsah > #main-content.source-content .brand-advice .brand-advice__current strong{color:inherit!important}
 .brand-advice__choice>summary{cursor:pointer;min-height:44px;padding:8px 0;box-sizing:border-box}
 .brand-advice__buttons{display:flex;flex-wrap:wrap;gap:10px;padding:10px 0}
-.brand-advice__buttons button{min-height:44px;padding:10px 14px;border:1px solid var(--line,#59636d);border-radius:4px;background:var(--panel,#202428);color:var(--text,#fff);font:inherit;cursor:pointer}
-.brand-advice__buttons button[aria-pressed=true]{background:var(--orange,#ff6b1a);color:#111}
+main#obsah > #main-content.source-content .brand-advice .brand-advice__buttons button{min-height:44px;max-width:100%;white-space:normal;padding:10px 14px!important;border:1px solid var(--line,#59636d)!important;border-radius:4px;background:var(--panel,#202428)!important;color:var(--text,#fff)!important;font:inherit;cursor:pointer}
+main#obsah > #main-content.source-content .brand-advice .brand-advice__buttons button:hover{border-color:var(--orange,#ff6b1a)!important}
+main#obsah > #main-content.source-content .brand-advice .brand-advice__buttons button[aria-pressed=true]{background:var(--orange,#ff6b1a)!important;border-color:var(--orange,#ff6b1a)!important;color:#161616!important}
 .brand-advice__buttons button:focus-visible,.brand-advice__choice>summary:focus-visible{outline:2px solid var(--orange,#ff6b1a);outline-offset:3px}
