@@ -27,6 +27,7 @@ main#obsah > #main-content.source-content .brand-advice .brand-advice__quick h2{
 .brand-advice__checklist li{padding-left:2px;margin:0 0 5px}
 main#obsah > #main-content.source-content .brand-advice .brand-advice__action{margin:0 0 14px!important}
 .brand-advice__action a{box-sizing:border-box;max-width:100%;white-space:normal;text-align:center}
+main#obsah > #main-content.source-content .brand-advice #guide-article-body .brand-advice__action a.btn{color:#161616!important;background:var(--orange,#ff6b1a)!important}
 main#obsah > #main-content.source-content .brand-advice #guide-article-body .brand-advice__note{font-size:15px;line-height:1.6;margin:0 0 24px!important}
 main#obsah > #main-content.source-content .brand-advice details.brand-advice__topic{padding:0!important;margin:0!important;border:0!important;border-bottom:1px solid var(--line,#34373b)!important;border-radius:0;background:transparent!important}
 main#obsah > #main-content.source-content .brand-advice .brand-advice__topic>summary{box-sizing:border-box;min-height:56px;padding:14px 0!important;margin:0!important;background:transparent!important;font-size:17px;font-weight:600;line-height:1.5;cursor:pointer}
