@@ -25,7 +25,9 @@ document.addEventListener('keydown',e=>{
 document.addEventListener('click',e=>{
   document.querySelectorAll('.desktop-nav details[open],.languages[open]').forEach(d=>{if(!d.contains(e.target))d.open=false;});
 });
-window.matchMedia('(min-width: 1121px)').addEventListener('change',e=>{if(e.matches)closeMenu();});
+window.addEventListener('resize',()=>{
+  if(toggle.getAttribute('aria-expanded')==='true'&&!toggle.getClientRects().length)closeMenu();
+});
 const copyMessages={cs:'Číslo zkopírováno.',en:'Number copied.',de:'Nummer kopiert.',uk:'Номер скопійовано.',vi:'Đã sao chép số.'};
 document.querySelectorAll('[data-copy-number]').forEach(button=>{
   if(!navigator.clipboard)return;
