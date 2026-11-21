@@ -11,6 +11,13 @@
     uk:['відгуків','відгуків','Перевірено'],
     vi:['lượt đánh giá','lượt đánh giá','Đã xác minh']
   }[locale] || ['reviews','reviews','Verified'];
+  const unavailableText = {
+    cs:'Aktuální hodnocení se nepodařilo načíst.',
+    en:'The current rating could not be loaded.',
+    de:'Die aktuelle Bewertung konnte nicht geladen werden.',
+    uk:'Не вдалося завантажити актуальну оцінку.',
+    vi:'Không tải được đánh giá hiện tại.'
+  }[locale] || 'The current rating could not be loaded.';
   const scriptUrl = document.currentScript.src;
   const service = 'https://jasservis-google-hodnoceni.sleek-bass-5878.chatgpt.site/';
   const sources = [
@@ -23,7 +30,9 @@
   function fallback(card) {
     clearTimeout(expiry.get(card));
     expiry.delete(card);
-    card.querySelector('.review-source-fallback').hidden = false;
+    const message = card.querySelector('.review-source-fallback');
+    message.textContent = unavailableText;
+    message.hidden = false;
     card.querySelector('.review-value')?.remove();
     card.dataset.ratingState = 'unavailable';
   }
