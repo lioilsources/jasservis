@@ -1,0 +1,12 @@
+/* Driver advice: navigation and transparent reference notes only. */
+.advice-index nav.advice-quicknav{display:flex!important;flex-wrap:wrap;gap:12px;margin:0 0 28px}
+.advice-quicknav a{display:flex;align-items:center;justify-content:center;min-height:48px;padding:10px 20px;box-sizing:border-box;border:1px solid #ff7010;border-radius:4px;color:#ff7010;font-weight:700;text-decoration:none}
+.advice-quicknav a:hover{background:#202326;color:#fff}
+.advice-quicknav a:focus-visible,.advice-evidence summary:focus-visible{outline:3px solid #ff7010;outline-offset:4px}
+.advice-index__section-title{scroll-margin-top:140px}
+.guide-article .advice-evidence{clear:both;margin:32px 0 16px;padding:16px 0;border-top:1px solid #42464a;font-size:.9em;line-height:1.6}
+.guide-article .advice-evidence summary{cursor:pointer;font-weight:700;color:#ff7010;min-height:44px;display:list-item;align-content:center}
+.guide-article .advice-evidence p{margin:12px 0;font-size:inherit}
+.guide-article .advice-evidence a{overflow-wrap:anywhere}
+.guide-article .advice-evidence [hidden]{display:none!important}
+@media(max-width:480px){.advice-quicknav a{flex:1 1 130px;padding:10px 12px}}
