@@ -100,3 +100,24 @@ main#obsah > #main-content.source-content details>summary{background:var(--panel
 main#obsah > #main-content.source-content a.btn.btn-primary,main#obsah > #main-content.source-content a.btn.btn-primary *,main#obsah > #main-content.source-content a.tlacitko-akce,main#obsah > #main-content.source-content a.tlacitko-akce *{color:#161616!important}
 main#obsah > #main-content.source-content a.wl-brand-tile{background:var(--panel)!important;color:var(--text)!important;border:1px solid var(--line)!important;animation:none!important;transition:border-color .15s!important}
 main#obsah > #main-content.source-content a.wl-brand-tile[aria-current="true"]{background:var(--orange)!important;color:#161616!important;border-color:var(--orange)!important}
+
+.advice-index .advice-feedback {
+  margin-block-start: clamp(32px, 5vw, 52px);
+  padding: clamp(18px, 3vw, 28px);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+main#obsah > #main-content.source-content .advice-feedback h2 {
+  margin: 0 0 10px !important;
+}
+.advice-index .advice-feedback p {
+  max-width: 64ch;
+  margin: 0 0 18px;
+}
+main#obsah > #main-content.source-content .advice-feedback a.button {
+  max-width: 100%;
+  color: #161616;
+  text-align: center;
+  white-space: normal;
+}
