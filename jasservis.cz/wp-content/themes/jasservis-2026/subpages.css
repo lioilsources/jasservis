@@ -121,3 +121,32 @@ main#obsah > #main-content.source-content .advice-feedback a.button {
   text-align: center;
   white-space: normal;
 }
+
+.guide-article__contents {
+  margin-block: 20px 24px;
+}
+.guide-article__contents > p {
+  margin-block-end: 8px;
+  font-weight: 700;
+}
+.guide-article__contents-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.guide-article__contents-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--panel);
+}
+.guide-article__contents-links a:hover,
+.guide-article__contents-links a:focus-visible {
+  border-color: currentColor;
+}
+.guide-article__jump-target {
+  scroll-margin-block-start: 24px;
+}
