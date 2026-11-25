@@ -12,4 +12,7 @@
 .guide-article .advice-evidence p{margin:12px 0;font-size:inherit}
 .guide-article .advice-evidence a{overflow-wrap:anywhere}
 .guide-article .advice-evidence [hidden]{display:none!important}
-@media(max-width:480px){.advice-quicknav a{flex:1 1 130px;padding:10px 12px}}
+@media(max-width:480px){
+  .advice-quicknav a{flex:1 1 130px;padding:10px 12px}
+  .advice-index__group > .advice-quicknav a{justify-content:flex-start;text-align:left}
+}
