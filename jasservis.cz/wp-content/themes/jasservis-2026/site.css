@@ -108,3 +108,9 @@ img.image-mark{display:block;width:62px;height:62px;object-fit:contain;border:0;
  .header .header-tools{gap:clamp(16px,4.8vw,20px)}
  .header .languages summary{min-width:44px;justify-content:center;padding-inline:3px}
 }
+
+/* Let the home page use wide displays while keeping article reading widths. */
+main#obsah:not(.subpage-content){--wrap:1680px}
+@media(min-width:1440px){
+ .header .wrap.header-inner,.header .mobile-nav,body>.footer.wrap{width:min(1680px,calc(100% - 96px))}
+}
