@@ -150,3 +150,35 @@ main#obsah > #main-content.source-content .advice-feedback a.button {
 .guide-article__jump-target {
   scroll-margin-block-start: 24px;
 }
+
+main#obsah > #main-content.source-content details.advice-index__warning-chooser {
+  max-width: 570px;
+  padding-block: 0;
+}
+main#obsah > #main-content.source-content .advice-index__warning-chooser > summary {
+  padding-block: 12px;
+  margin-block-end: 0;
+}
+main#obsah > #main-content.source-content .advice-index__warning-chooser .advice-index__brands {
+  gap: 8px !important;
+  margin: 0 0 14px !important;
+}
+main#obsah > #main-content.source-content .advice-index__warning-chooser .advice-index__brands > a {
+  min-height: 48px;
+  padding: 8px !important;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 640px) {
+  main#obsah > #main-content.source-content .advice-index__warning-chooser .advice-index__brands {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 360px) {
+  main#obsah > #main-content.source-content details.advice-index__warning-chooser {
+    padding-inline: 10px;
+  }
+  main#obsah > #main-content.source-content .advice-index__warning-chooser .advice-index__brands > a {
+    padding-inline: 4px !important;
+    font-size: 14px !important;
+  }
+}
