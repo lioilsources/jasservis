@@ -4,6 +4,9 @@
 .advice-quicknav a:hover{background:#202326;color:#fff}
 .advice-quicknav a:focus-visible,.advice-evidence summary:focus-visible{outline:3px solid #ff7010;outline-offset:4px}
 .advice-index__section-title{scroll-margin-top:140px}
+@media(max-width:360px) and (max-height:640px){
+  .advice-index__group > #zavady-a-diagnostika{scroll-margin-top:24px}
+}
 .guide-article .advice-evidence{clear:both;margin:32px 0 16px;padding:16px 0;border-top:1px solid #42464a;font-size:.9em;line-height:1.6}
 .guide-article .advice-evidence summary{cursor:pointer;font-weight:700;color:#ff7010;min-height:44px;display:list-item;align-content:center}
 .guide-article .advice-evidence p{margin:12px 0;font-size:inherit}
