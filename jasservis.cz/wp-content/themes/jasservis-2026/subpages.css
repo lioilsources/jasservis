@@ -182,3 +182,32 @@ main#obsah > #main-content.source-content .advice-index__warning-chooser .advice
     font-size: 14px !important;
   }
 }
+
+.article-quick-actions {
+  border-inline-start: 3px solid var(--orange);
+  padding-inline-start: clamp(12px, 2vw, 20px);
+}
+main#obsah > #main-content.source-content .article-quick-actions > h2 {
+  margin-block-start: 0 !important;
+}
+.article-quick-actions__list {
+  margin: 0 0 12px;
+}
+.article-quick-actions__list > div {
+  display: grid;
+  gap: 4px 18px;
+  padding-block: 12px;
+  border-block-start: 1px solid var(--line);
+}
+.article-quick-actions__list dt {
+  color: var(--text);
+  font-weight: 700;
+}
+.article-quick-actions__list dd {
+  margin: 0;
+}
+@media (min-width: 761px) {
+  .article-quick-actions__list > div {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
+}
