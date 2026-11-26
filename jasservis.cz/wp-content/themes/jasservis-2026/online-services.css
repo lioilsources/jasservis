@@ -1,0 +1,79 @@
+/* Account and guide actions shared by every brand and language. */
+main#obsah #main-content [data-advice-topic="prihlaseni-online-sluzby"] .online-start {
+  margin: 32px 0 16px !important;
+}
+
+main#obsah #main-content [data-advice-topic="prihlaseni-online-sluzby"] .online-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  max-width: 44rem;
+  margin: 0 0 36px;
+}
+
+main#obsah #main-content [data-advice-topic="prihlaseni-online-sluzby"] .online-action {
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  max-width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #73777d;
+  border-radius: 5px;
+  background: var(--bg);
+  color: var(--text);
+  font: 700 1rem/1.5 Arial, Helvetica, sans-serif;
+  text-align: left;
+  text-decoration: none;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+main#obsah #main-content [data-advice-topic="prihlaseni-online-sluzby"] .online-action:first-child {
+  border-color: var(--orange);
+  background: var(--orange);
+  color: #161616;
+}
+
+main#obsah #main-content [data-advice-topic="prihlaseni-online-sluzby"] .online-action:hover {
+  border-color: var(--orange);
+  background: #2c3035;
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+main#obsah #main-content [data-advice-topic="prihlaseni-online-sluzby"] .online-action:first-child:hover {
+  background: #ff8a48;
+  color: #161616;
+}
+
+main#obsah #main-content [data-advice-topic="prihlaseni-online-sluzby"] .online-action:focus-visible {
+  outline: 3px solid var(--text);
+  outline-offset: 4px;
+}
+
+main#obsah #main-content [data-advice-topic="prihlaseni-online-sluzby"] .online-steps {
+  display: grid;
+  gap: 28px;
+  margin: 0 0 28px;
+  padding-left: 1.5rem;
+}
+
+main#obsah #main-content [data-advice-topic="prihlaseni-online-sluzby"] .online-steps > li {
+  min-width: 0;
+  margin: 0;
+  padding-left: 8px;
+}
+
+main#obsah #main-content [data-advice-topic="prihlaseni-online-sluzby"] .online-steps > li::marker {
+  color: var(--orange);
+  font-weight: 700;
+}
+
+main#obsah #main-content [data-advice-topic="prihlaseni-online-sluzby"] .online-steps h3 {
+  margin: 0 0 12px !important;
+}
+
+main#obsah #main-content [data-advice-topic="prihlaseni-online-sluzby"] .online-steps p:last-child {
+  margin-bottom: 0 !important;
+}
