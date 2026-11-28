@@ -7,7 +7,7 @@
   const brand = panel.querySelector('select');
   const status = panel.querySelector('[role="status"]');
   const results = panel.querySelector('ul');
-  const { ui, aliases, colours, guides, colour_prefixes: colourPrefixes = [] } =
+  const { ui, aliases, colours, guides, colour_prefixes: colourPrefixes = [], detail_terms: detailTerms = [] } =
     JSON.parse(panel.querySelector('script[type="application/json"]').textContent);
   const catalogueLinks = panel.closest('details').querySelectorAll('nav[aria-labelledby="warning-catalogues-title"] a');
   const brandLinks = new Map();
@@ -32,6 +32,7 @@
 
   const colourWords = new Map(Object.entries(colours).flatMap(([key, words]) => words.map(word => [fold(word), key])));
   const prefixes = new Set(colourPrefixes.map(fold));
+  const vagueWords = new Set(['stop', ...detailTerms.map(fold)]);
   const phrases = Object.entries(aliases).flatMap(([family, entries]) =>
     entries.map(entry => ({ family, phrase: fold(entry) }))
   ).sort((a, b) => b.phrase.length - a.phrase.length);
@@ -68,7 +69,6 @@
 
   function setStatus(message) {
     status.textContent = message;
-    status.hidden = !message;
   }
 
   function matchFamilies(query) {
@@ -117,7 +117,7 @@
     const words = query.split(' ');
     const requestedColours = words.map(word => colourWords.get(word)).filter(Boolean);
     const terms = words.filter(word => !colourWords.has(word) && (!requestedColours.length || !prefixes.has(word)));
-    if (!terms.length) {
+    if (terms.every(word => vagueWords.has(word))) {
       setStatus(ui.more_detail);
       return;
     }
@@ -135,7 +135,7 @@
         .filter(({ score }) => score > 0)
         .sort((a, b) => b.score - a.score);
 
-      const direct = selectedBrand ? null : guidesByName.get(text);
+      const direct = guidesByName.get(query) ?? guidesByName.get(text);
       const total = ranked.length + Number(Boolean(direct));
       const limit = 10;
       const displayed = [];
@@ -160,10 +160,8 @@
     const query = fold(input.value);
     results.replaceChildren();
     results.hidden = true;
-    if (query.length < 2) {
-      setStatus('');
-      return;
-    }
+    setStatus('');
+    if (query.length < 2) return;
 
     timer = setTimeout(() => search(query, brand.value, requestedRevision), delay);
   }
