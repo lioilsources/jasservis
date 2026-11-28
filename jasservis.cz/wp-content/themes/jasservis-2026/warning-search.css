@@ -43,6 +43,9 @@ main#obsah > #main-content.source-content .warning-search button.btn {
 main#obsah > #main-content.source-content .warning-search :is([role="status"], ul) {
   margin-block: 0.7rem 0;
 }
+main#obsah > #main-content.source-content .warning-search [role="status"]:empty {
+  margin-block: 0;
+}
 main#obsah > #main-content.source-content .warning-search ul {
   display: grid;
   gap: 0.45rem;
